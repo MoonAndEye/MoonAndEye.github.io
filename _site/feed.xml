@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T15:05:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2022-06-03T22:33:38+08:00</published><updated>2022-06-03T22:33:38+08:00</updated><id>http://localhost:4000/swift/2022/06/03/swiftui-and-compose</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T15:14:50+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2022-06-03T22:33:38+08:00</published><updated>2022-06-03T22:33:38+08:00</updated><id>http://localhost:4000/swift/2022/06/03/swiftui-and-compose</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
 
 &lt;p&gt;詳細的文章我寫在另一篇，可以直接從下方連結過去&lt;/p&gt;
 
@@ -74,7 +74,147 @@ _The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/60f673b3eda7&quot;&gt;February 4, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="[&quot;Kotlin&quot;, &quot;Cross platform&quot;]" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry><entry><title type="html">資料密集型應用系統設計-第六章筆記</title><link href="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html" rel="alternate" type="text/html" title="資料密集型應用系統設計-第六章筆記" /><published>2021-11-02T15:01:00+08:00</published><updated>2021-11-02T15:01:00+08:00</updated><id>http://localhost:4000/system%20design/2021/11/02/data-intensive-applications</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html">&lt;p&gt;這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="[&quot;Kotlin&quot;, &quot;Cross platform&quot;]" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry><entry><title type="html">Stripe 系統漸進式升級的過程</title><link href="http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate.html" rel="alternate" type="text/html" title="Stripe 系統漸進式升級的過程" /><published>2021-12-18T15:11:00+08:00</published><updated>2021-12-18T15:11:00+08:00</updated><id>http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate.html">&lt;p&gt;歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;stripe-系統漸進式升級的過程&quot;&gt;Stripe 系統漸進式升級的過程&lt;/h3&gt;
+
+&lt;p&gt;歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*kVy_4E7Jw81-keZ1SwVu1g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;stripe-進行過的-online-migrations&quot;&gt;Stripe 進行過的 online migrations&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stripe.com/blog/online-migrations&quot; title=&quot;https://stripe.com/blog/online-migrations&quot;&gt;&lt;strong&gt;Online migrations at scale&lt;/strong&gt;&lt;br /&gt;
+_Jacqueline Xu on February 2, 2017 in Engineering Engineering teams face a common challenge when building software: they…_stripe.com&lt;/a&gt;&lt;a href=&quot;https://stripe.com/blog/online-migrations&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以下是在讀完 Stripe 文章後的整理&lt;/p&gt;
+
+&lt;p&gt;線上付款為主要業務，如果你想要有海外收款能力，直接找 Stripe 比去和當地銀行快很多。而且要拓展不同國家的業務，大部分都可以在 Stripe 上完成。&lt;/p&gt;
+
+&lt;p&gt;誠實蜜蜂的線上收款方案之一，就是 Stripe。&lt;/p&gt;
+
+&lt;p&gt;為什麼是「之一」? 因為當時營運的七個亞洲國家中，有幾個不在 Stripe 業務範圍內，所以又引入了另一個收款第三方平台。&lt;/p&gt;
+
+&lt;h3 id=&quot;stripe-的使用者數量級&quot;&gt;Stripe 的使用者數量級&lt;/h3&gt;
+
+&lt;p&gt;文章中提到的是 Subscription object，有可能這些 object 為單一公司行號。數量為 hundred millions，所以在 2017 年的時候，在數億左右。&lt;/p&gt;
+
+&lt;p&gt;這些數億量級的資料，被放在 table 中，且在 code base 中數個地方大量使用。&lt;/p&gt;
+
+&lt;p&gt;且金流服務是不能斷的，所以 Stripe 使用的 migration 一定是 online 的。&lt;/p&gt;
+
+&lt;h3 id=&quot;online-migration-pattern四步驟&quot;&gt;Online migration pattern — 四步驟&lt;/h3&gt;
+
+&lt;p&gt;1: &lt;strong&gt;Dual writing&lt;/strong&gt; to the existing and new tables to keep them in sync.&lt;/p&gt;
+
+&lt;p&gt;要對現有 table 和新的 table 都寫入一樣的資料&lt;/p&gt;
+
+&lt;p&gt;2: &lt;strong&gt;Changing all read paths&lt;/strong&gt; in our codebase to read from the new table.&lt;/p&gt;
+
+&lt;p&gt;換掉所有的讀取路徑&lt;/p&gt;
+
+&lt;p&gt;3: &lt;strong&gt;Changing all write paths&lt;/strong&gt; in our codebase to only write to the new table.&lt;/p&gt;
+
+&lt;p&gt;換掉所有的寫入路徑&lt;/p&gt;
+
+&lt;p&gt;4: &lt;strong&gt;Removing old data&lt;/strong&gt; that relies on the outdated data model&lt;/p&gt;
+
+&lt;p&gt;移除掉舊的資料(應該是封存)&lt;/p&gt;
+
+&lt;h3 id=&quot;migration-example&quot;&gt;Migration example&lt;/h3&gt;
+
+&lt;h3 id=&quot;最初的商業邏輯&quot;&gt;最初的商業邏輯&lt;/h3&gt;
+
+&lt;p&gt;每個客戶都會有 Subscription，但最初只設計了一個&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Customer  Subscription subscriptionend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;但是，隨著業務愈做愈多，客戶需求愈來愈複雜。&lt;/p&gt;
+
+&lt;p&gt;折價券，折扣，invoice 等功能被加進來， subscription 就要變成 subscriptions&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Customer  array: Subscription subscriptionsend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;而當客戶成長到了一定程度，就要做資料庫的切分，可回頭看 CH6。&lt;/p&gt;
+
+&lt;p&gt;左邊是既有設計，右邊是要 migration 的架構&lt;/p&gt;
+
+&lt;p&gt;再回頭看一次，migration pattern 四步驟&lt;/p&gt;
+
+&lt;p&gt;1: &lt;strong&gt;Dual writing&lt;/strong&gt; to the existing and new tables to keep them in sync.&lt;/p&gt;
+
+&lt;p&gt;2: &lt;strong&gt;Changing all read paths&lt;/strong&gt; in our codebase to read from the new table.&lt;/p&gt;
+
+&lt;p&gt;3: &lt;strong&gt;Changing all write paths&lt;/strong&gt; in our codebase to only write to the new table.&lt;/p&gt;
+
+&lt;p&gt;4: &lt;strong&gt;Removing old data&lt;/strong&gt; that relies on the outdated data model&lt;/p&gt;
+
+&lt;h3 id=&quot;part1-dual-writing雙重寫入&quot;&gt;part1: Dual writing 雙重寫入&lt;/h3&gt;
+
+&lt;p&gt;只要有新的寫入，就會有一隻程式發動，把這個 subscription 的資料，移到新的 table&lt;/p&gt;
+
+&lt;p&gt;然後，再進行 backfilling，把以前的資料倒進新 table&lt;/p&gt;
+
+&lt;p&gt;Stripe 使用 Scalding 套件來進行 backfilling，看文章是建講在 Hadoop cluster 上，所以也有使用 MapReduce 進行。而且，只需要約十行程式碼。&lt;/p&gt;
+
+&lt;p&gt;Scalding is a useful library written in Scala that makes it easy to write MapReduce jobs (you can write a simple one in 10 lines of code).&lt;/p&gt;
+
+&lt;p&gt;Backfilling 的步驟如下&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Write a Scalding job that provides a list of all subscription IDs that need to be copied over. (找出所有要被 Copy 的 IDs)&lt;/li&gt;
+  &lt;li&gt;Run a large, multi-threaded migration to duplicate these subscriptions with a fleet of processes efficiently operating on our data in parallel. (使用多緒的程式開始處理 migration)&lt;/li&gt;
+  &lt;li&gt;Once the migration is complete, run the Scalding job once again to make sure there are no existing subscriptions missing from the Subscriptions table. (結束後，使用 Scalding 進行檢查，看有無缺漏)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;part2-changing-all-read-paths改掉所有讀取路徑&quot;&gt;part2: Changing all read paths — 改掉所有讀取路徑&lt;/h3&gt;
+
+&lt;p&gt;前一個動作，已經讓新舊的 table 同步了，現在要改掉讀取路徑，原來舊的讀取路徑都要換成新的路徑。&lt;/p&gt;
+
+&lt;p&gt;為了確保新的 subscriptions table 讀到的東西都是正確的(和舊 table 一樣)，stripe 使用了 Scientist 的套件來驗證這一行為。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/github/scientist&quot;&gt;https://github.com/github/scientist&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Scientist 是 Ruby library 中，拿來做實驗比對結果的，這個套件會讀新的表和舊的表，並把值交互比對，如果不同，他就發出 error alerting。&lt;/p&gt;
+
+&lt;p&gt;在確認新舊表完全相同之後，就會把讀取路徑切到新的 subscriptions table 中。&lt;/p&gt;
+
+&lt;h3 id=&quot;part3-changing-all-write-paths改掉所有寫入路徑&quot;&gt;part3: Changing all write paths — 改掉所有寫入路徑&lt;/h3&gt;
+
+&lt;p&gt;下面是 part1 的寫入路徑，那時候設定為 dual write&lt;/p&gt;
+
+&lt;p&gt;現在狀況， dual write 會將資料先寫進舊的 customers 表，然後再寫入 subscriptions 表。在 Changing all write paths 這一步，我們要將寫入順序倒轉，先寫入 Subscriptions 再寫入 customers. 注意這一步並不是直接拿掉 customers 表的寫入，而是倒轉。這樣我們才能在改動過程中，進行觀察，並防止重大錯誤在不知情的狀況下持續。&lt;/p&gt;
+
+&lt;p&gt;更換寫入路徑，是 migration 最大的挑戰。在 Stripe 裡面，已經有上千行的程式碼和 subscription 有關，這些程式碼也四散在各個 service 中。&lt;/p&gt;
+
+&lt;p&gt;為了逐步確認每個步驟都是正確的，在重構的過程中，Stripe 將程式的路徑儘可能切到最小的單位，一步一步的抽換，確保新舊的表是同步。&lt;/p&gt;
+
+&lt;p&gt;在抽換的時候，一定要非常，非常小心的應對。Stripe 是不可以直接將新 records 蓋掉舊 records。只要有 miss，就會造成 data inconsistency。而抽換前後的資料確認， Stripe 也是用了 Scientist 套件中提供的功能，進行實驗(experiments 應該是這個 lib 的功能)&lt;/p&gt;
+
+&lt;p&gt;最後，抽換的結果如下。&lt;/p&gt;
+
+&lt;p&gt;最後，在 Customer 物件中，寫上 raise error，只要有人呼叫原來的 subscriptions，就會 raising an error&lt;/p&gt;
+
+&lt;p&gt;最後，在 Customer 物件中，寫上 raise error，只要有人呼叫原來的 subscriptions，就會 raising an error&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Customer  def subscriptions    Opus::Error.hard(&quot;Accessing subscriptions array on customer&quot;)  endend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;part4: &lt;strong&gt;Removing old data — 將舊資料移除掉&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;最後一步，移除掉把寫進舊 table 的程式碼移除掉，最後最後，就會真的刪掉這些程式碼 (你有在用版本控制，不用怕刪程式碼)&lt;/p&gt;
+
+&lt;p&gt;等到確認所有的程式碼，都只從 subscriptions 的表拿資料，那就可以把送資料進舊表的程式碼拿掉了。&lt;/p&gt;
+
+&lt;p&gt;最後，就完成轉移， subscriptions 的資料，就會從新表拿。&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d2c7e73e298b&quot;&gt;December 18, 2021&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/stripe-%E7%B3%BB%E7%B5%B1%E6%BC%B8%E9%80%B2%E5%BC%8F%E5%8D%87%E7%B4%9A%E7%9A%84%E9%81%8E%E7%A8%8B-d2c7e73e298b&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><category term="migration" /><summary type="html">歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。</summary></entry><entry><title type="html">資料密集型應用系統設計-第六章筆記</title><link href="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html" rel="alternate" type="text/html" title="資料密集型應用系統設計-第六章筆記" /><published>2021-11-02T15:01:00+08:00</published><updated>2021-11-02T15:01:00+08:00</updated><id>http://localhost:4000/system%20design/2021/11/02/data-intensive-applications</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html">&lt;p&gt;這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -88,7 +228,7 @@ _The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap
 
 &lt;ul&gt;
   &lt;li&gt;可擴充性增加&lt;/li&gt;
-  &lt;li&gt;只要業務量增加，最終單一伺服務總會遇到上限，在需要擴增的狀況下，選擇適當的分區策略，對未來的業務會有更大的助益。&lt;/li&gt;
+  &lt;li&gt;只要業務量增加，最終單一伺服器總會遇到上限，在需要擴增的狀況下，選擇適當的分區策略，對未來的業務會有更大的助益。&lt;/li&gt;
   &lt;li&gt;增加效率&lt;/li&gt;
   &lt;li&gt;當分區策略做的好，在查找的效率會提高。&lt;/li&gt;
   &lt;li&gt;增加安全性&lt;/li&gt;
