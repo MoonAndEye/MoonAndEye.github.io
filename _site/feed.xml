@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T20:36:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html"></title><link href="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html" rel="alternate" type="text/html" title="" /><published>2023-03-14T20:36:14+08:00</published><updated>2023-03-14T20:36:14+08:00</updated><id>http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift</id><content type="html" xml:base="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html">&lt;h1 id=&quot;prototype-pattern-原型模式-in-swift-reference-type-vs-value-type-的不同&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T21:10:06+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html"></title><link href="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html" rel="alternate" type="text/html" title="" /><published>2023-03-14T21:10:06+08:00</published><updated>2023-03-14T21:10:06+08:00</updated><id>http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift</id><content type="html" xml:base="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html">&lt;h1 id=&quot;prototype-pattern-原型模式-in-swift-reference-type-vs-value-type-的不同&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同&lt;/h1&gt;
 
 &lt;p&gt;這一篇文章是看了 “Pro Design Patterns in Swift “ 後的心得，把原型模式整理後寫成中文的記錄。&lt;/p&gt;
 
@@ -166,7 +166,19 @@
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/bb47c13baecb&quot;&gt;June 9, 2018&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/prototype-pattern-%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F-in-swift-bb47c13baecb&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">最近用 ChatGPT 來做的事情</title><link href="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html" rel="alternate" type="text/html" title="最近用 ChatGPT 來做的事情" /><published>2022-12-19T15:25:00+08:00</published><updated>2022-12-19T15:25:00+08:00</updated><id>http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT</id><content type="html" xml:base="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html">&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/prototype-pattern-%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F-in-swift-bb47c13baecb&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</title><link href="http://localhost:4000/life/2023/03/14/future-article-will-post-on-page.html" rel="alternate" type="text/html" title="GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了" /><published>2023-03-14T21:09:00+08:00</published><updated>2023-03-14T21:09:00+08:00</updated><id>http://localhost:4000/life/2023/03/14/future-article-will-post-on-page</id><content type="html" xml:base="http://localhost:4000/life/2023/03/14/future-article-will-post-on-page.html">&lt;h1 id=&quot;github-page-部落格弄好了未來文章都會-po-在-github-page-上了&quot;&gt;GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了&lt;/h1&gt;
+
+&lt;p&gt;最近抽空花了點時間，使用了 ChatGPT 輔助，在 GitHub Page 上架了自己的部落格。使用的是 Ruby 的 Jekyll 框架，Jekyll 也是 GitHub Page 上直接推薦的框架。&lt;/p&gt;
+
+&lt;p&gt;除了 Jekyll 以外，ChatGPT 還推薦了 Hugo、Hexo、Pelican、Gatsby。但我看了 GitHub 官網都推薦 Jekyll 後，就決定先試試 Jekyll 了。&lt;/p&gt;
+
+&lt;p&gt;Github Page&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/&quot;&gt;https://moonandeye.github.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;現在已經搬移了部分文章，接下來都會繼續在 Page 上寫文章，短期還會在 medium 上貼相同文章，但再過一陣子，我就會停用 medium 了。&lt;/p&gt;
+
+&lt;p&gt;畢竟，我還是想要有一個不是控在別人手上的 blog。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Life" /><category term="Life" /><category term="blog" /><summary type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</summary></entry><entry><title type="html">最近用 ChatGPT 來做的事情</title><link href="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html" rel="alternate" type="text/html" title="最近用 ChatGPT 來做的事情" /><published>2022-12-19T15:25:00+08:00</published><updated>2022-12-19T15:25:00+08:00</updated><id>http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT</id><content type="html" xml:base="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html">&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1052,190 +1064,4 @@ _In the past few years, the use of machine learning approaches to solve problems
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/b3071ffde3af&quot;&gt;August 20, 2018&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Core ML" /><category term="MLKit" /><category term="Swift" /><summary type="html">使用 Turi Create 製作圖案辨識的 App - Core ML and Vision * { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section[data-field=subtitle], section[data-field=description] { display: none; }</summary></entry><entry><title type="html">WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事</title><link href="http://localhost:4000/swift/2018/08/12/WWDC18-session712-Turi-create.html" rel="alternate" type="text/html" title="WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事" /><published>2018-08-12T15:28:00+08:00</published><updated>2018-08-12T15:28:00+08:00</updated><id>http://localhost:4000/swift/2018/08/12/WWDC18-session712-Turi-create</id><content type="html" xml:base="http://localhost:4000/swift/2018/08/12/WWDC18-session712-Turi-create.html">&lt;h3 id=&quot;wwdc18-session-712-turi-create-重點整理--製作ml-model-不再是一個困難的事&quot;&gt;WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*V4Kohj_1SGVxoqQt&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@jens_johnsson?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Jens Johnsson&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;turi-create是什麼&quot;&gt;Turi Create 是什麼?&lt;/h3&gt;
-
-&lt;p&gt;在被 Apple 收購之前，他的名字是 Dato ，是 Graph Lab 裡面的一個開發項目，由華盛頓大學的 Prof. Carlos Guestrin 所資助。之後在 A 輪募了 6 百多萬美金， B 輪募了 1 千 8 百多萬美金，並在 2016 年中被 Apple 收購。在 WWDC17 的時候， 有一個 session 在介紹這個模組，當時的版本是 4.0。在 WWDC18 的時候， Session-712 有詳細介紹這個 Python package，除此之外， Turi Create 也在 `What’s new in Core ML` (Session-708, 709)中，講者直接 Demo 試範。(Ref1)&lt;/p&gt;
-
-&lt;h3 id=&quot;turi-create的用途&quot;&gt;Turi Create 的用途&lt;/h3&gt;
-
-&lt;p&gt;．他是一個 Python 的 Package，可以製作 Core ML models，而且有開源&lt;/p&gt;
-
-&lt;p&gt;．簡單易用，即使非 ML 專門也可以操作&lt;/p&gt;
-
-&lt;p&gt;．讓 iOS 開發者只需要專注在 APIs 上&lt;/p&gt;
-
-&lt;p&gt;．跨平台 (Mac, Linux)&lt;/p&gt;
-
-&lt;p&gt;．學習成本低，在 Mac 上因為 Python 2.7 已經內建了，你只需要 `pip install turicreate` 即可。要做出一個辨識物體 model 只要 20 行以內的程式碼。而 WWDC18 中使用的 Jupyter Notebook 並非必要package。如果你想裝，請看 (Ref2)。&lt;/p&gt;
-
-&lt;h3 id=&quot;辨識照片中的人是不是金城武&quot;&gt;辨識照片中的人是不是金城武&lt;/h3&gt;
-
-&lt;p&gt;下面這篇文章是用 Turi Create 做出一個簡單的金城武辨識 App，如果你想試著實作，可以參考這一篇。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot; title=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;strong&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/strong&gt;&lt;br /&gt;
-_Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;建立-machine-leaning-model前所需的五個步驟&quot;&gt;建立 Machine Leaning model 前所需的五個步驟&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*mywU7P1855THvlFe2WErtQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;進行 Machine Leaning 所需要的五個步驟&lt;/p&gt;
-
-&lt;p&gt;Step 1: 你需要清楚的定義你的任務，因為 Turi Create (或者說是 ML 領域) 會因為你的任務不同，而出現不同的最佳解算法。如果你沒有選到正確率高的那一種，那你最後產生出來的 model 會達不到你要的效果。&lt;/p&gt;
-
-&lt;p&gt;Step 2: 這個任務所需要的 data。不同的任務，需要不同的 data。如果是圖片識別，那你需要不同 folder 裡面裝入和 folder name 相同的圖片。但如果是目標探測，你就必需要有目標標籤和標籤座標的 JSON 檔。&lt;/p&gt;
-
-&lt;p&gt;Step 3: 使用 Turi Create 產出你的 model 檔，這只需要低於 20 行的程式碼&lt;/p&gt;
-
-&lt;p&gt;Step 4: 你需要驗證你的 model 是不是正確的，通常會把訓練資料切成 8:2 或是其他比例。然後讓 model 去辨識沒丟入訓練的 20%資料，如果你的準確率很低，建議你拉高 max_iterations 這個參數，或是做其他參數調整。&lt;/p&gt;
-
-&lt;p&gt;Step 5: 如果驗證後沒問題，那就把 model 放入App 裡面然後發佈。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;1定義任務&quot;&gt;1、定義任務&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*INdNWx4wC55KQh4Q51ExMw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Turi Create 內執行的Task種類有這麼多&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*x_bHxyElNQYb5OQHpnvmkQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;實際上常用的MLTask 有這四種&lt;/p&gt;
-
-&lt;p&gt;Turi Create 所有種類的任務就在上面那一張表格裡面，你可以依照你想做的事情選擇對應的 API。而上面這四張圖，表示的是 App 中最常用的四種。注意風格變換是在 5.0 beta 版以後才有的功能， 4.0 是沒有的。&lt;/p&gt;
-
-&lt;h3 id=&quot;2輸入資料訓練模型&quot;&gt;2、輸入資料訓練模型&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*6kzzIfc4KVf3N1pya6wMtQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;上排是image classification task，只需要圖片和 folder name 即可。下排是object detect task，除了照片以外還需要一個 label 、和 bounding box 資訊。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*qCVLHh7UM3o8zuGj_1sPJA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如果是 object detection ，你需要放入 annotation 的資料，他通常是一個 JSON檔，裡面的 Array 讓你可以塞複數個 objects。Array 內每個元素包含一個 label 和 bounding box 的座標資訊。&lt;/p&gt;
-
-&lt;p&gt;依照任務所需要的 data ，輸入對應資料，如果是 image classification 的 task ，你只需要在對應的 folder 裡面放入圖片。但如果是 object detection ，你會需要再加一欄資料，來表示圖片上該辨識出來的物體名字和 bounding box 的座標。而這個 annotation 資訊是一個 array ，Turi Create 是可以在一張圖片裡面進行多目標辨識的。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*JYJqIggoRQptI5HwKgj65g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;要特別注意的是，turi create裡面，X Y是 bounding box 的中心點&lt;/p&gt;
-
-&lt;p&gt;Turi Create 中的方框被叫做是 bounding box，要注意的一點是，在 UIKit 中， Frame 的 X 和 Y通常是指一個框的左上角，&lt;strong&gt;但 Turi Create 資料中的 X 和 Y 是指 bounding box 的中心點。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;在訓練資料、輸出框線的時候，請記得做轉換&lt;/strong&gt;。不然你的模型或是你的 View 一定看起來會怪怪的。&lt;/p&gt;
-
-&lt;h3 id=&quot;3產生-mlmodel&quot;&gt;3、產生 ML model&lt;/h3&gt;
-
-&lt;p&gt;WWDC18 就直接使用 Jupyter Notebook 進行 Demo，所需要的程式碼並不多，只需要 11 行即可，我們這邊用「辨識這張圖片是不是金城武」為例。&lt;/p&gt;
-
-&lt;p&gt;import turicreate as turi&lt;/p&gt;
-
-&lt;p&gt;url = “dataset/”&lt;/p&gt;
-
-&lt;p&gt;data = turi.image_analysis.load_images(url)&lt;/p&gt;
-
-&lt;p&gt;#如果他這張照片的不是放在 Kaneshiro 的 folder 內，他就是 Unknown&lt;br /&gt;
-data[“kaneshiroOrNot”] = data[“path”].apply(lambda path: “Kaneshiro” if “kaneshiro” in path else “Unknown”)&lt;/p&gt;
-
-&lt;p&gt;data.save(“kaneshiro_or_not.sframe”)&lt;/p&gt;
-
-&lt;p&gt;data.explore()&lt;/p&gt;
-
-&lt;p&gt;以上就是把 data 輸出成 SFrame 格式的程式碼，包含 url 那一行也才5行。&lt;/p&gt;
-
-&lt;p&gt;在下面的 #1 到 #3 步驟，就是把你的資料輸出成 CoreML 可以讀到的 Model. 以下分別解說 #1 ~ #3&lt;/p&gt;
-
-&lt;p&gt;#1: Load the data&lt;/p&gt;
-
-&lt;p&gt;把 SFrame 寫入 data 裡面&lt;/p&gt;
-
-&lt;p&gt;#2: Split to train and test data&lt;/p&gt;
-
-&lt;p&gt;把所有資料亂數切分成 8:2 (你也可以分成其他比例)，其中 8 成的資料是拿來訓練的，剩下的 2 成則是拿來驗證的。&lt;/p&gt;
-
-&lt;p&gt;#3 Create Model&lt;/p&gt;
-
-&lt;p&gt;turi 後面的第一個參數就是 task 的任務種類，這邊用 image classifier 當範例。&lt;/p&gt;
-
-&lt;p&gt;在 #3 的時候， max_iterations 並不是必要，如果你沒設定，那就會用那個 task 模組的預設值。如果是 image classifier ，max_iteration 的預設是 10。但因為效果不是很好，我這邊把他調成 100。而如果是 style transfer 的模組，預設是 5000。在我的 Mac Book Pro 上，一個 iteration 大約是 40 秒左右，依照網路上其他人的經驗，這大概是需要 2天左右才會跑出結果。&lt;/p&gt;
-
-&lt;p&gt;# 1. Load the data&lt;br /&gt;
-data = turi.SFrame(“kaneshiro_or_not.sframe”)&lt;/p&gt;
-
-&lt;p&gt;# 2. Split to train and test data&lt;br /&gt;
-train_data, test_data = data.random_split(0.8)&lt;/p&gt;
-
-&lt;p&gt;# 3. Create model&lt;br /&gt;
-model = turi.image_classifier.create(train_data, target=”kaneshiroOrNot”, max_iterations=100)&lt;/p&gt;
-
-&lt;p&gt;# 4. Predictions&lt;br /&gt;
-predictions = model.predict(test_data)&lt;/p&gt;
-
-&lt;p&gt;# 5. Evaluate the model and show metrics&lt;br /&gt;
-metrics = model.evaluate(test_data)&lt;br /&gt;
-print(metrics[“accuracy”])&lt;/p&gt;
-
-&lt;p&gt;# 6. Save the model&lt;br /&gt;
-model.save(“kaneshiro.model”)&lt;/p&gt;
-
-&lt;p&gt;# 7. Export to CoreML format&lt;br /&gt;
-model.export_coreml(“kaneshiro.mlmodel”)&lt;/p&gt;
-
-&lt;h3 id=&quot;4驗證-model&quot;&gt;4、驗證 Model&lt;/h3&gt;
-
-&lt;p&gt;#4 Predictions&lt;/p&gt;
-
-&lt;p&gt;用做出來的 model 對沒進入訓練資料進行預測。&lt;/p&gt;
-
-&lt;p&gt;#5 對 model 做驗證&lt;/p&gt;
-
-&lt;p&gt;Turi Create 會告訴你這個模型準確率，如果太低，他還會問你要不要調整 `max_iterations` 的參數。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Ntd4jyjkvF5IFc2PXc9hqw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;標記有兩點要驗證: 1 標記是正確的 2標記範圍要和正確範圍有50%以四的覆蓋率&lt;/p&gt;
-
-&lt;p&gt;#6 把訓練好的 model 存起來&lt;/p&gt;
-
-&lt;p&gt;#7 把訓練好的 model 轉成 Core ML 可以吃的 model&lt;/p&gt;
-
-&lt;h3 id=&quot;5-部署到-app裡&quot;&gt;5、 部署到 App 裡&lt;/h3&gt;
-
-&lt;p&gt;把輸出的 mlmodel 放到專案裡面。&lt;/p&gt;
-
-&lt;p&gt;這樣，就完成了你的 ML Model&lt;/p&gt;
-
-&lt;p&gt;Jupyter Notebook 的程式碼放在下面這個 GitHub 裡面，直接去 Jupyter Notebook 的 folder 就可以直接用了。那個 folder 裡面有三個範例，KaneshiroOrNot 是驗證是不是金城武。SoupOrRice 是驗證圖片是湯或飯。Adventure 則是分辨圖片是復仇者聯盟的哪個角色。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo/&quot; title=&quot;https://github.com/MoonAndEye/TuriCreateDemo/&quot;&gt;&lt;strong&gt;MoonAndEye/TuriCreateDemo&lt;/strong&gt;&lt;br /&gt;
-_GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over…_github.com&lt;/a&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Ref-1: &lt;a href=&quot;https://en.wikipedia.org/wiki/GraphLab&quot;&gt;Turi 公司被 Apple 收購, https://en.wikipedia.org/wiki/GraphLab&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ref-2: &lt;a href=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot;&gt;在 Mac 環境架設 Jupyter Notebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot; title=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot;&gt;&lt;strong&gt;在 Mac 上架設 Jupyter Notebook 環境&lt;/strong&gt;&lt;br /&gt;
-_目前，我本身的職務裡面並沒有需要用到 Python 的地方，所以這一篇主要的重點並不是用 Jupyter Notebook 來做一個專案的主軸，重點是放在讓 Python…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ref-3: &lt;a href=&quot;https://tinyurl.com/y93ey7ds&quot;&gt;範例程式碼&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://tinyurl.com/y93ey7ds&quot; title=&quot;https://tinyurl.com/y93ey7ds&quot;&gt;&lt;strong&gt;MoonAndEye/TuriCreateDemo&lt;/strong&gt;&lt;br /&gt;
-_GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over…_tinyurl.com&lt;/a&gt;&lt;a href=&quot;https://tinyurl.com/y93ey7ds&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ref-4: 實作金城武辨識器&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot; title=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;strong&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/strong&gt;&lt;br /&gt;
-_Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a46cb9420b34&quot;&gt;August 12, 2018&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="MLKit" /><category term="Machine Learning" /><category term="Turi Create" /><category term="Swift" /><summary type="html">WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Core ML" /><category term="MLKit" /><category term="Swift" /><summary type="html">使用 Turi Create 製作圖案辨識的 App - Core ML and Vision * { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section[data-field=subtitle], section[data-field=description] { display: none; }</summary></entry></feed>
