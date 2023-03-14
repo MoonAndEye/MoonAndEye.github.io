@@ -6,7 +6,7 @@ permalink: /about/
 
 # Marvin Lin
 
-我喜歡 Apple 相關產品，喜歡寫 Swift。apps.apple.com/app/backwards-clock/id1632935212
+我喜歡 Apple 相關產品，喜歡寫 Swift。
 除了 Swift 以外，我也喜歡寫 Python。
 我喜歡用程式去完成我喜歡做的事情，目前的 side projects 領域有 iOS apps/macOS apps/twitter bot。
 這個 blog 使用 jekyll 框架製作。
