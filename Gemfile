@@ -24,6 +24,12 @@ group :jekyll_plugins do
   # SEO 相關
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
+  # github-pages 遇到 ruby 版本問題，先跳過
+  # gem 'github-pages', '~> 228'
+
+  gem 'jekyll-include-cache'
+
+  gem 'kramdown-parser-gfm'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

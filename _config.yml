@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Marvin Lin's Blogger
+locale: "zh-TW"
 email: atimis19@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。
@@ -34,6 +35,11 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
+  # - jekyll-paginate
+  # - jekyll-sitemap
+  # - jekyll-gist
+  # - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
