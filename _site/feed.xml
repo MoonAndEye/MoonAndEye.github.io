@@ -1,17 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T09:13:09+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2023/03/13/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-03-13T22:33:38+08:00</published><updated>2023-03-13T22:33:38+08:00</updated><id>http://localhost:4000/jekyll/update/2023/03/13/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/03/13/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T10:40:31+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="http://localhost:4000/jekyll/update/2023/03/13/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2023-03-13T22:33:38+08:00</published><updated>2023-03-13T22:33:38+08:00</updated><id>http://localhost:4000/jekyll/update/2023/03/13/swiftui-and-compose</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/03/13/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;p&gt;詳細的文章我寫在另一篇，可以直接從下方連結過去&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/android-study-jam-%E4%BB%8B%E7%B4%B9-fc2c44dd2f64&quot; title=&quot;https://medium.com/@atimis19/android-study-jam-%E4%BB%8B%E7%B4%B9-fc2c44dd2f64&quot;&gt;&lt;strong&gt;Android Study Jam — 介紹&lt;/strong&gt;&lt;br /&gt;
+_Google 官方是很重視 Android 開發環境的，常常會推出不同區域的 Study Jam。這些練習會分成數個階段，當你完成每個階段，都可以拿到徽章，在 2022/06/23 內完成指定的題目後，還會有 Google…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/android-study-jam-%E4%BB%8B%E7%B4%B9-fc2c44dd2f64&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;在說明會中，我看到 Android 也有一個以宣告式方法，來進行 UI rendering 的框架 — Compose。這個框架可以和 iOS 開發環境中的 SwiftUI 可以進行類比。&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;在 Study Jam 說明會中，Tim Lin 示範了用 Compose 畫出一個 Text Label。&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*2CZhpAOPfHN_baUdGtkIIA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tim Lin 在 Study jam 中的案例&lt;/p&gt;
+
+&lt;p&gt;於是，我好奇的想，如果我在 SwiftUI 中，使用和 Compose 的排列方式一樣的時候，兩個平台畫出來的東西，會不會一樣呢? (如果會的話….事情就簡單多了)。所以下方就是一個和上面 Compose 一樣順序的 SwiftUI 程式碼。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*EZMuPTxtjvOyFYtkJMgXrg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;和上方 Compose 一樣順序的 SwiftUI 程式碼&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*rfx2jRCOGrcDpGyuxpaceA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;看渲染的 preview，就會知道，雙方的渲染邏輯不一樣。在 Compose 第一行的 background，會是整個元件的底色(紅色區域)，然後在下一個區域，加上圓角，保留 8 dp 的 padding 後，再畫出黃色區域。&lt;/p&gt;
+
+&lt;p&gt;而 SwiftUI 元件下方第一行的 background，是這個 Text 的 background，然後加上 8 pt 的 padding，再畫上黃色 background。而最後的 4 pt padding，就會產生了 SwiftUI 的白色區域。因為我現在並沒有多的硬碟空間裝 Android Studio 了，所以我目前無法確定 Compose 最外層，或是 Compose 元件套疊的狀況。但 SwiftUI 最後一行的 4pt padding，是有他的意義的，而在沒有多餘顏色下，他會是 default background。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;目前對於 SwiftUI / Compose 都沒有很明確的結論，仍然在研究中。&lt;/p&gt;
+
+&lt;p&gt;也歡迎大家回覆對於這兩個框架的想法。&lt;/p&gt;
+
+&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。</summary></entry></feed>
