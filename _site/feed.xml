@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T21:15:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html"></title><link href="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html" rel="alternate" type="text/html" title="" /><published>2023-03-14T21:15:02+08:00</published><updated>2023-03-14T21:15:02+08:00</updated><id>http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift</id><content type="html" xml:base="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html">&lt;h1 id=&quot;prototype-pattern-原型模式-in-swift-reference-type-vs-value-type-的不同&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T21:17:31+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html"></title><link href="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html" rel="alternate" type="text/html" title="" /><published>2023-03-14T21:17:31+08:00</published><updated>2023-03-14T21:17:31+08:00</updated><id>http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift</id><content type="html" xml:base="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html">&lt;h1 id=&quot;prototype-pattern-原型模式-in-swift-reference-type-vs-value-type-的不同&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同&lt;/h1&gt;
 
 &lt;p&gt;這一篇文章是看了 “Pro Design Patterns in Swift “ 後的心得，把原型模式整理後寫成中文的記錄。&lt;/p&gt;
 
@@ -252,7 +252,105 @@
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d3f2a789ca53&quot;&gt;December 29, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry><entry><title type="html">WWDC22 Keynote, Platform State of the Union</title><link href="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html" rel="alternate" type="text/html" title="WWDC22 Keynote, Platform State of the Union" /><published>2022-06-10T15:19:00+08:00</published><updated>2022-06-10T15:19:00+08:00</updated><id>http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html">&lt;p&gt;WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry><entry><title type="html">Flyweight Pattern — 蠅量級模式(享元模式)</title><link href="http://localhost:4000/swift/2022/08/10/flyweight-pattern.html" rel="alternate" type="text/html" title="Flyweight Pattern — 蠅量級模式(享元模式)" /><published>2022-08-10T21:16:00+08:00</published><updated>2022-08-10T21:16:00+08:00</updated><id>http://localhost:4000/swift/2022/08/10/flyweight-pattern</id><content type="html" xml:base="http://localhost:4000/swift/2022/08/10/flyweight-pattern.html">&lt;p&gt;本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;flyweight-pattern蠅量級模式享元模式&quot;&gt;Flyweight Pattern — 蠅量級模式(享元模式)&lt;/h3&gt;
+
+&lt;p&gt;本文在介紹 Flyweight Pattern 時採用 &lt;a href=&quot;https://medium.com/r?url=http%3A%2F%2Frefactoring.guru&quot;&gt;refactoring.guru&lt;/a&gt; 上的範例和情境。&lt;/p&gt;
+
+&lt;p&gt;出處: &lt;a href=&quot;https://refactoring.guru/design-patterns/flyweight&quot;&gt;https://refactoring.guru/design-patterns/flyweight&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;情境&quot;&gt;情境:&lt;/h4&gt;
+
+&lt;p&gt;你寫了一個遊戲，是 FPS 型的，裡面有飛彈、子彈等飛行道具。還有各種酷炫的特效，這些特效和爆炸的聲光效果，都卓越超群。你把這個遊戲 push 上去，讓你和你的朋友玩。&lt;/p&gt;
+
+&lt;h3 id=&quot;但是shi-ka-shibut-在你的電腦上是好的&quot;&gt;但是、Shi ka shi、but 「在你的電腦上是好的」&lt;/h3&gt;
+
+&lt;p&gt;在你朋友的電腦上，每玩幾分鐘，這個遊戲就閃退了! 遊戲體驗在你朋友的電腦上非常的差。你開始 debug，然後 de 了幾個小時，從 log 中翻找各種數據。你找到原因，是出在 RAM 上，error message 最後 trace 到 RAM 不足。因為你電腦的配置很強，但你的朋友電腦設備沒那麼好，所以 RAM 吃光了。&lt;/p&gt;
+
+&lt;p&gt;而 RAM 被吃光的原因，是在那個你寫出來的 particle system (專門處理粒子效果)。每個粒子，例如子彈、飛彈，還有各種會飛的物件，只要出現在玩家的螢幕，就會生出一個 particle 物件，最後，當 RAM 不足的時候，程式就崩潰了。&lt;/p&gt;
+
+&lt;p&gt;從下圖可見，每個粒子會佔掉 21 KB。當有 1,000,000 個粒子的時候，這時會需要 21 GB 的 RAM。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;from refactoring.guru&lt;/p&gt;
+
+&lt;p&gt;我們來看個 Overwatch 畫面。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*bZSGkmXGYofMadtii2wyGQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*UzKC0uTVHQXLaqTyZhmNNA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如何使用 Flyweight 模式，改善你的遊戲體驗?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;flyweight-如何減輕系統上的負擔&quot;&gt;Flyweight 如何減輕系統上的負擔&lt;/h3&gt;
+
+&lt;p&gt;再回頭看一下 ”Particle” 這個類別，然後思考一下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*4dPir95Ideb9wzMRjK9hbg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;你應該會發現，有兩個 property 可以設計成不變的 (也就是剛剛講的內部資料)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;color&lt;/li&gt;
+  &lt;li&gt;sprite&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;而其他屬性，是會變化的 (也就是剛剛講的外部資料)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;particle (粒子)&lt;/li&gt;
+  &lt;li&gt;coords (座標)&lt;/li&gt;
+  &lt;li&gt;vector (移動向量)&lt;/li&gt;
+  &lt;li&gt;speed (移動速度)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5r80IzFWvGH9MCL0Kgm8nA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;再回來看這個系統&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5yXJEnkUFcrlOgFIqbz86g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最吃資源的，仍然是 sprite，以上面同樣數量的粒子來看。1,000,000 個粒子，在不 init 新的內部資料狀況下，他需要的是 32MB RAM，對比沒有使用 design pattern 的狀況 — 21 GB，這樣的設計，讓你朋友的電腦上，也可以運作順利。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;結束了嗎?這樣已經發揮了 design pattern 最佳的結果了嗎?&lt;/p&gt;
+
+&lt;h3 id=&quot;設計模式是可以進行疊加的&quot;&gt;&lt;strong&gt;設計模式是可以進行疊加的!&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;再加上一個外部物件儲存池可以更優化&quot;&gt;再加上一個外部物件儲存池，可以更優化&lt;/h3&gt;
+
+&lt;p&gt;在實務上，通常會再加上一個「池」(pool)，把生出來的「內部資訊」放在池子 裡面。&lt;/p&gt;
+
+&lt;p&gt;在這個案例裡面，因為有一個最大的類別 Game，會在 Game 裡面用一個 property 去存 Particle，當螢幕需要 particle 的時候，系統 會先從池子裡面找有沒有沒用過的 particle，有的話，就拿出來塞「外部資訊」(也就是向量、速度、座標)。如果池子裡面沒有所需要的 partile，就會 init 一個，然後塞外部資訊。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9oTHsQUlMpuXtZcj47OviA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;當 particle 用完後，就會放入池子裡面，等待下一次被使用。&lt;/p&gt;
+
+&lt;p&gt;這可以想成是結合了 Object Pool 模式的蠅量級模式，當然，在 UIKit 中，有某個很重要的元件，使用了這兩個模式的綜合體。&lt;/p&gt;
+
+&lt;p&gt;當然還有人再優化，連外部資訊也再加上一套蠅量級模式。&lt;/p&gt;
+
+&lt;p&gt;蠅量級的蠅量級模式。沒有最細，只有更細。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;再深入一點當你剛入行在台灣你不一定進的去真正的遊戲公司你可能是個-ios-前端不論你是哪一領域的前端在-2022-年大家起手都是框架假如你是個-ios-前端我們來想想看在-ios-系統裡面哪個東西在應用蠅量級模式享元模式&quot;&gt;再深入一點，當你剛入行，在台灣，你不一定進的去「真正的」遊戲公司，你可能是個 iOS 前端。不論你是哪一領域的前端，在 2022 年，大家起手都是框架。假如你是個 iOS 前端，我們來想想看，在 iOS 系統裡面，哪個東西在應用「蠅量級模式(享元模式)」&lt;/h3&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a5ab3b6054f&quot;&gt;August 10, 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Design pattern" /><category term="Swift" /><summary type="html">本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。</summary></entry><entry><title type="html">WWDC22 Keynote, Platform State of the Union</title><link href="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html" rel="alternate" type="text/html" title="WWDC22 Keynote, Platform State of the Union" /><published>2022-06-10T15:19:00+08:00</published><updated>2022-06-10T15:19:00+08:00</updated><id>http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html">&lt;p&gt;WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -759,309 +857,4 @@ _Jacqueline Xu on February 2, 2017 in Engineering Engineering teams face a commo
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/c8b1ddc94554&quot;&gt;November 2, 2021&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><summary type="html">這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr</summary></entry><entry><title type="html">使用 Turi Create 製作圖案辨識的 App - Core ML and Vision</title><link href="http://localhost:4000/swift/2018/08/20/Using-Turi-create-make-an-app.html" rel="alternate" type="text/html" title="使用 Turi Create 製作圖案辨識的 App - Core ML and Vision" /><published>2018-08-20T15:32:00+08:00</published><updated>2018-08-20T15:32:00+08:00</updated><id>http://localhost:4000/swift/2018/08/20/Using-Turi-create-make-an-app</id><content type="html" xml:base="http://localhost:4000/swift/2018/08/20/Using-Turi-create-make-an-app.html">&lt;p&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision * { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section[data-field=subtitle], section[data-field=description] { display: none; }&lt;/p&gt;
-
-&lt;h1 id=&quot;使用-turi-create-製作圖案辨識的-app---core-ml-and-vision&quot;&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/h1&gt;
-
-&lt;p&gt;Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML 模組時，更專注在 APIs…&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;使用-turi-create-製作圖案辨識的-app---core-ml-andvision&quot;&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*azSEH7drAK07vjkT&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;“A person’s hand holding a camera lens over a mountain lake” by &lt;a href=&quot;https://unsplash.com/@pawelskor?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Paul Skorupskas&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML 模組時，更專注在 APIs 的行為上。除些之外，你如果有些初步的想法，你不用去找一個 ML 專家或是把自己變成 ML 專家，也能做出一個初步的 ML Model，讓這個 model 先做 prototype 再發揚光大。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;在 WWDC18 Session 712 中，整個 session 都在介紹 Turi Create，如果對那個 Session 有興趣，你可以看下面這一篇 Medium。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot; title=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot;&gt;&lt;strong&gt;WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事&lt;/strong&gt;&lt;br /&gt;
-_Turi Create 是什麼?_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;讓我們開始 Demo Turi Create 裡面會用到的 API，以及他怎麼實作吧。我們要實作的是判斷這張圖裡面是不是金城武。範例影片放在這個 Youtube 上，除了判斷是不是金城武以外，還加上了信心指數。&lt;/p&gt;
-
-&lt;p&gt;信心指數的意思，你的 model 對這個結果有多少的信心，這個數字會在 0~ 1.0 之間。如果他判斷這張圖不是金城武，然後信心指數是 0.97。就表示這個 data 對這個 model來說，「不是金城武」這結果有 0.97 的信心指數。&lt;/p&gt;
-
-&lt;p&gt;要做 image classification 前，你需要有 image data，然後針對該分類建立資料夾，並把對應的圖片放到資料夾內。當然資料是愈多愈好，但至少該放多少呢?蘋果的投影片中有提到，建議至少放個 40 張當做 data。&lt;/p&gt;
-
-&lt;p&gt;如下圖所示，我在網路上搜尋了 40 張金城武的照片，然後放進 kaneshiro 這個資料夾。不過比較困難的地方，是「非金城武」這邊的 data 應該放什麼呢? 就邏輯來說，就是放所有非金城武的照片，但這些照片到底該放哪些呢? 因為是範例，所以我這裡就先放數十張非金城武的人像照當做 demo ，真正在做這種專案的時候，還是建議詢問資料科學領域的人，你想處理的資料該怎麼訓練模型。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*VMSfkj3qJ7fyl2Eo4bGSLw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在 dataset 內放 kaneshiro的照片,unknown 則放不是目標的照片&lt;/p&gt;
-
-&lt;p&gt;當你的資料放好了，你就可以用下面這些程式碼進行 model 的訓練和 Core ML 的輸出。程式碼的數量相當的低，這邊只用了 12 行而已 (註解不算)。你可以在 (Ref-1) 上直接下載 Jupyter Notebook 的檔案&lt;/p&gt;
-
-&lt;p&gt;Turi Create 在讀取檔案的時候非常聰明，如果他讀的案是他不支援的，他會吐出 error message，但程式會繼續執行。下圖示範了這個結果，.DS_Store 是 mac 系統裡面存放空間資料用途，這是給 Mac OS 的 finder 程式使用的。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*t0JaxQccx312PWr5GRGLHQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;讀到不是JPEG和PNG 以外的檔案會跳過&lt;/p&gt;
-
-&lt;p&gt;如果你的 Jupyter Notebook 是第一次跑，程序會連到 Apple 的 model 網站去下載相關資料。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*6t9nmsXsDbavxS3lYYbpnQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Message 的 downloading 就是連到Apple網站去下載模型資料&lt;/p&gt;
-
-&lt;p&gt;下面就是模型訓練時， Turi Create 會吐出來的資訊&lt;/p&gt;
-
-&lt;p&gt;Analyzing and extracting image features.&lt;/p&gt;
-
-&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Images Processed&lt;/td&gt;
-      &lt;td&gt;Elapsed Time&lt;/td&gt;
-      &lt;td&gt;Percent Complete&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;64&lt;/td&gt;
-      &lt;td&gt;3.16s&lt;/td&gt;
-      &lt;td&gt;50%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;74&lt;/td&gt;
-      &lt;td&gt;11.34s&lt;/td&gt;
-      &lt;td&gt;100%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
-
-&lt;p&gt;Logistic regression:&lt;/p&gt;
-
-&lt;p&gt;-——————————————————-&lt;/p&gt;
-
-&lt;p&gt;Number of examples          : 74&lt;/p&gt;
-
-&lt;p&gt;Number of classes           : 2&lt;/p&gt;
-
-&lt;p&gt;Number of feature columns   : 1&lt;/p&gt;
-
-&lt;p&gt;Number of unpacked features : 2048&lt;/p&gt;
-
-&lt;p&gt;Number of coefficients      : 2049&lt;/p&gt;
-
-&lt;p&gt;Starting L-BFGS&lt;/p&gt;
-
-&lt;p&gt;-——————————————————-&lt;/p&gt;
-
-&lt;p&gt;+———–+———-+———–+————–+——————-+&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Iteration&lt;/td&gt;
-      &lt;td&gt;Passes&lt;/td&gt;
-      &lt;td&gt;Step size&lt;/td&gt;
-      &lt;td&gt;Elapsed Time&lt;/td&gt;
-      &lt;td&gt;Training Accuracy&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;+———–+———-+———–+————–+——————-&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;0&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;NaN&lt;/td&gt;
-      &lt;td&gt;0.017910&lt;/td&gt;
-      &lt;td&gt;0.540541&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;0.000083&lt;/td&gt;
-      &lt;td&gt;0.125282&lt;/td&gt;
-      &lt;td&gt;0.540541&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;5.000000&lt;/td&gt;
-      &lt;td&gt;0.181402&lt;/td&gt;
-      &lt;td&gt;0.918919&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;11&lt;/td&gt;
-      &lt;td&gt;5.000000&lt;/td&gt;
-      &lt;td&gt;0.207410&lt;/td&gt;
-      &lt;td&gt;0.945946&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;12&lt;/td&gt;
-      &lt;td&gt;5.000000&lt;/td&gt;
-      &lt;td&gt;0.242203&lt;/td&gt;
-      &lt;td&gt;0.459459&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;5&lt;/td&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td&gt;1.000000&lt;/td&gt;
-      &lt;td&gt;0.280374&lt;/td&gt;
-      &lt;td&gt;0.864865&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;20&lt;/td&gt;
-      &lt;td&gt;1.000000&lt;/td&gt;
-      &lt;td&gt;0.409511&lt;/td&gt;
-      &lt;td&gt;1.000000&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;+———–+———-+———–+————–+——————-+&lt;/p&gt;
-
-&lt;p&gt;Completed (Iteration limit reached).&lt;/p&gt;
-
-&lt;p&gt;This model may not be optimal. To improve it, consider increasing `max_iterations`.&lt;/p&gt;
-
-&lt;p&gt;Analyzing and extracting image features.&lt;/p&gt;
-
-&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Images Processed&lt;/td&gt;
-      &lt;td&gt;Elapsed Time&lt;/td&gt;
-      &lt;td&gt;Percent Complete&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;13&lt;/td&gt;
-      &lt;td&gt;2.53s&lt;/td&gt;
-      &lt;td&gt;100%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
-
-&lt;p&gt;1.0&lt;/p&gt;
-
-&lt;p&gt;我個人覺得這個模組很棒的地方，是他會提示你這個模型是不是需要再修正。像上面的 message 中可以看到一行: &lt;strong&gt;This model may not be optimal. To improve it, consider increasing `max_iterations`&lt;/strong&gt;. 這是因為我 max_iterations 只給預設值，結果他跑出來後覺得這個模型準確率太低，並直接建議你調高 max_iterations。&lt;/p&gt;
-
-&lt;p&gt;跑完後你就可以拿到 mlmodel 這個檔案，而且你還可以看到 model 細項。以本文為例，你可以看到他有說明這個是 mlmodel 是用於 image clasifier，而且是從 Resnet-50 訓練出來的， Turi Create 版本是 5.0 beta 3。&lt;/p&gt;
-
-&lt;p&gt;底下則是 input 和 output 訊息，你要輸入的是彩色 224 x 224 的圖片。然後他輸出有兩個，如果是 kaneshiroOrNot，則是這個 model 判出來的結果。因為當初我們只設定兩個 label，一個是 Kaneshiro，另一個是 Unknown。所以這一項一定是這兩個其一。&lt;/p&gt;
-
-&lt;p&gt;另一個輸出是 kaneshiroOrNotProbability 他是個 dictionary，key 是每個 label，value 是該 label 的信心指數，雖然這個範例只有兩個 label ，但實際上你能訓練出能辨試多種水果的 model，這時候你可能會想知道每個 label 的信心指數，去看有沒有可能有近似的結果，再去做處理。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*v4W8f-kJWTirPfbDiKU77g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*np33KUxG7F-Q6MA50KxbVQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;mlmodel 的細項，這包含用什麼模型做訓練，以及輸入的格式，輸出的格式。以本文為，輸出有兩項kaneshiroOrNot 輸出一個string,是指他判斷出來的 label。另一個則是每一項的信心值數字。&lt;/p&gt;
-
-&lt;p&gt;接下來，我們開始寫圖像辨識的專案吧。因為這個專案極有可能用到照相機和相簿功能，請記得在 info.plist 裡面做 Privacy 請求。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*XtZzzm2T_CwVxDkaw1iq9Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;請記得在 info.plist內做這兩個功能要求&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在這裡，我先使用 App Coda 的方法 (Ref-2)讓 ML Model 去讀取 UIImage 檔案。我也試用過 Vision 模組的 VNRequest，但辨識的結果差很多，而且該檔案和模組都是直接從 Apple 上下載下來的。我想，可能還有些參數我應該要調整才能讓辨識率提高。目前 App Coda 的這個方法，辨識率還不錯，就先用這種方式。&lt;/p&gt;
-
-&lt;p&gt;在 UIImage 裡面 extension buffer 這個 method。讓原來的 image data 專換成 VCPixelBuffer 格式， Core ML 模組才能辨識。&lt;/p&gt;
-
-&lt;p&gt;UIImage extension 後，讓 image 直接轉換成 CVPixelBuffer&lt;/p&gt;
-
-&lt;p&gt;接下來就是辨識的核心 method。因為我們的 MLModel 是基於 Resnet 所訓練出來的，所以他吃的是 224 x 224 的 image，這個資訊你可以在 MLModel file detail 看到。&lt;/p&gt;
-
-&lt;p&gt;接下來，只要在取得 image 物件後，去呼叫 judgeKaneshiro(:)，就完成了。舉例來說，像是鏡頭取得 image 後。&lt;/p&gt;
-
-&lt;p&gt;func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])&lt;/p&gt;
-
-&lt;p&gt;實際跑一遍，你會發現，這個範例並沒有那麼準，比如說，有幾張金城武的照片，因為髮型或者背景不一樣，他就認為這不是金城武。然後，我也試著把古天樂放進去判斷看看，結果他認為這個是金城武。這樣的問題並沒有辦法在這裡用程式碼解決，因為這是 mlmodel 判斷的結果。要處理的話，要從訓練 model 那邊開始下手。建議你可以試著換換 model，或是調整 dataset，或是調一下 max_iterations 參數試試看。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Ijy0jbkDKPJ7-V6uDpWZxg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;雖然大部分的照片都可以分得出來&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*VEGL3cEQmOwVsWH3Xu-6Gg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;但是仍然有判錯的情況，古天樂被當成金城武了，而且髮型改變比較大，就認不出來了&lt;/p&gt;
-
-&lt;p&gt;整個專案都放在下面這個 GitHub ，你可以在 Project_KaneshiroOrNot 中找到 XCode 的檔案。Turi Create 的程式碼則可以在 Jupyter Notebook 的 folder 中找到。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Ref-1: GitHub位址&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo&quot; title=&quot;https://github.com/MoonAndEye/TuriCreateDemo&quot;&gt;&lt;strong&gt;MoonAndEye/TuriCreateDemo&lt;/strong&gt;&lt;br /&gt;
-_GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over…_github.com&lt;/a&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ref-2: App Coda 的範例, 分辨照片是湯或是飯&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.appcoda.com/core-ml-model-with-python/&quot; title=&quot;https://www.appcoda.com/core-ml-model-with-python/&quot;&gt;&lt;strong&gt;Creating a Custom Core ML Model Using Python and Turi Create&lt;/strong&gt;&lt;br /&gt;
-_In the past few years, the use of machine learning approaches to solve problems and perform complex tasks have been…_www.appcoda.com&lt;/a&gt;&lt;a href=&quot;https://www.appcoda.com/core-ml-model-with-python/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/b3071ffde3af&quot;&gt;August 20, 2018&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Core ML" /><category term="MLKit" /><category term="Swift" /><summary type="html">使用 Turi Create 製作圖案辨識的 App - Core ML and Vision * { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section[data-field=subtitle], section[data-field=description] { display: none; }</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><summary type="html">這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr</summary></entry></feed>
