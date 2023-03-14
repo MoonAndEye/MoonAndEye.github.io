@@ -28,6 +28,8 @@ url: "https://moonandeye.github.io" # the base hostname & protocol for your site
 twitter_username: atimisMoon
 github_username:  MoonAndEye
 
+google_analytics: "G-VLY0RSDRM1"
+
 # Build settings
 theme: minima
 plugins:
