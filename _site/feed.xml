@@ -1,4 +1,394 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T15:05:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2022-06-03T22:33:38+08:00</published><updated>2022-06-03T22:33:38+08:00</updated><id>http://localhost:4000/swift/2022/06/03/swiftui-and-compose</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-14T15:37:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html"></title><link href="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html" rel="alternate" type="text/html" title="" /><published>2023-03-14T15:37:58+08:00</published><updated>2023-03-14T15:37:58+08:00</updated><id>http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift</id><content type="html" xml:base="http://localhost:4000/2023/03/14/2018-06-09-Prototype-pattern-in-swift.html">&lt;h1 id=&quot;prototype-pattern-原型模式-in-swift-reference-type-vs-value-type-的不同&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同&lt;/h1&gt;
+
+&lt;p&gt;這一篇文章是看了 “Pro Design Patterns in Swift “ 後的心得，把原型模式整理後寫成中文的記錄。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;prototype-pattern-原型模式-in-swift-reference-type-vs-value-type的不同&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*oSH09tpBPZt9tTyivxUxhg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;這一篇文章是看了 “Pro Design Patterns in Swift “ 後的心得，把原型模式整理後寫成中文的記錄。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;情境:忍者頭目&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*yGesVxbCpDZbw7gmPCClBQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;先假設你要寫一個遊戲，某一關的頭目是忍者。 這一關裡，Boss 有各種 nerf 狀態，像是中毒、減傷、破甲、緩速、拌筋，等共30種 nerf 狀態，而 buff 有另外 10 種狀態。&lt;/p&gt;
+
+&lt;p&gt;打到 1/2 血的時候， boss 會使用絕招 -「影分身」。&lt;/p&gt;
+
+&lt;p&gt;影分身會複製出 4 個和 boss 狀態一模一樣的分身，血量和各種 buff, nerf 狀態會同時複製。&lt;/p&gt;
+
+&lt;p&gt;影分身受傷的時候，本體不會有影響，但本體 hp 歸 0 的時候，才進行寶物結算。&lt;/p&gt;
+
+&lt;p&gt;如果這樣類型的場合，用 Prototype 就是一個不錯的選擇，但請記得還有一句話，「這世上沒有銀色子彈」，在使用前，請依照場景及條件，去選擇一個最適合當下情況的模式，而不是讓「非用 XX 模式才是正道」這種想法去寫 app。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;No Silver Bullet — Essence and Accidents of Software Engineering&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*VFfKvJ1VOTkkPaw2S3xGQw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Prototype pattern 的操作方式&lt;/p&gt;
+
+&lt;p&gt;使用原型模式大概可以分成兩個步驟:&lt;/p&gt;
+
+&lt;p&gt;Step 1: 先生出模板，最簡單的方式可以用 let aStruct = SomeStruct(propertyA:a, propertyB:b) 這樣的方式&lt;/p&gt;
+
+&lt;p&gt;Step 2:把模板複製出一份，再開始修改裡面的 property，改成你要的物件。&lt;/p&gt;
+
+&lt;p&gt;在書上有例舉出來使用原型模式的各個要點，我這邊整理在下面&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*U_RaBhdDQuXps5sEfMS7fg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以這模式的好處來說，就是他使用的是 Copy ，雖然書上有寫說他可以避免 init 所花的成本，但 Swift 下的 Copy，其本上還是會跑一次 init()，所以我並無法理解他所提到的「成本」到底是指哪邊的成本，但還是照著書上所寫的列出來。&lt;/p&gt;
+
+&lt;p&gt;我們先用聚會的提醒來做例子。&lt;/p&gt;
+
+&lt;p&gt;如上所寫的，一個 Appointment 最重要的就是「和誰」、「什麼時間」、「哪個地點」。一開始的 beerMeeting 先設定為「和大學同學」在「星期五」的「酒吧」聚會，然後再複製出一份指定為 workMeeting，然後把設定調整成「和老闆」在「星期一」的「第二會議室」。這樣的模式就是「原型模式」。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*XTf04r3akc_X4MaTafg7Cw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以上的方法在 struct 等value type 物件是沒有問題的，但如果用在 class 等 reference type 的物件的時候，會因為指向同一個物件，而產生奇怪的結果。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*dpVBVnLBol45bC0x6z-nXQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;你可以發現，你在 21~ 23 的行為，雖然都是針對 workMeeting 的 property 做操作，但同時也影響了 beerMeeting 這個物件。因為他在 reference type 的創建中，你並沒有真正的「複製」，你只是讓 workMeeting 去指向 beerMeeting 同樣指向的地方。所以當你一更改，beerMeeting 的 property 也會變，用下面這張圖就可以清楚看到指向同樣的東西的示意圖。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*A1bDJrel1mkaseu_BtiXdw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我在 Giphy 上找到這個神燈精靈的圖，算是可以解釋這種現象。下面這張圖的神燈精靈都只是原來的那一隻的分身。雖然看起來有很多隻，但如果他遭到神燈封印，那所有的分身照故事邏輯來說，都會同時被封印。這就是對一個物件改變，但所有指向的東西也一起改變。&lt;/p&gt;
+
+&lt;p&gt;看起來都是複製品，但其實都是那一個精靈&lt;/p&gt;
+
+&lt;p&gt;如果要對 class 做複製的行為，那你就要讓物件 confirm NSCopying 的 protocol。以下是範例，但因為是範例，所以直接使用了 force unwrap，在寫專案的時候，&lt;strong&gt;記得用其他方法去避免 as! 的產生&lt;/strong&gt;，因為你每放了一個驚嘆號，就是放了一顆地雷，你只是不知道什麼時候會引爆。&lt;/p&gt;
+
+&lt;p&gt;這邊在 confirm NSCopying 後，要實作 copy()，return 的值就是自已的類別，並把當下的值塞入進行 init()。這樣你就得到一個內部的值完全一樣的拷貝版。之後再對裡面的 property 做變更就行了。&lt;/p&gt;
+
+&lt;p&gt;不過拷貝可以講的，到這邊還沒結束。這個 Appointment 類別裡面的三個值，都是 String。 String 是 value type 所以當你複製了一份 Appointment 時，這三個值毫無懸念的也以 value type 的型式 copy 了一份。所以後來複製出來的 workMeeting 裡面的值當然不會引響 beerMeeting。那如果裡面的值也是一個 reference type 的話，Appointment 的 NSCopying 會對那個 reference type 也會產生 copy 效果嗎?&lt;/p&gt;
+
+&lt;p&gt;我們現在定義一個 Location 的類別並取代原來的 place: String 試試看。&lt;/p&gt;
+
+&lt;p&gt;class Location {&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; var name:String  
+ var address:String
+
+ init(name:String, address:String) {  
+     self.name = name; self.address = address  
+ }   }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;現在 beerMeeting 的 place 已經是一個 reference type，那在 copy 的時候， self.place 會不會也被 copy 一份呢?從下面這邊我們可以看到 place 的值。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*fmMQLtti93RjksF1EdVHOQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;beerMeeting 的place 在更改workMeeting時一起被更改了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;這樣的 copy 行為，有一種稱呼，叫做 “ shallow copy” (淺拷貝)。這是指拷貝的時候只拷貝了參照的行為，並沒有把實體真的拷貝一份。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;相反的，在拷貝的時候，把實體再複製一遍的這個行為，叫做 “deep copy” (深拷貝)。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*gzdxGTOSNFlkERalOdTxZQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;這張圖可以清楚的看到Location這個物件是怎麼被指向&lt;/p&gt;
+
+&lt;p&gt;如果你要讓 Location 也能被 copy ，那 Location 也要 confirm NSCopying 的 protocol ，並且在 Appointment 進行複製的時候使用 copy()。&lt;/p&gt;
+
+&lt;p&gt;下圖可以看到 clone 的 place 已經和 prototype 的 place 沒有關係了。這就是所謂的 “Deep copy” (深拷貝)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*2uWOyvT8x_VPu62t_U5cuQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;書中也提到，深拷貝與淺拷貝並沒有優劣之別，你應該就當下的情況來決定你的物件是要走深拷貝或是淺拷貝。考量的點依照重要性如下表列。&lt;/p&gt;
+
+&lt;p&gt;1、該物件是怎麼被使用的?&lt;/p&gt;
+
+&lt;p&gt;2、Copy 所需要的記憶體和成本&lt;/p&gt;
+
+&lt;p&gt;3、寫 Copy 所需要的工&lt;/p&gt;
+
+&lt;p&gt;我們從第一個要點來思考前一個 Appointment 的範例。如果這個 Appointment 只會給單一 user 使用，這樣的 Appointment 預設應該會是深拷貝比較好，因為 user 複製了一個長得差不多的行程，下一步一定是去修改他，這才是 user 複製的目的。&lt;/p&gt;
+
+&lt;p&gt;但如果這個 Appointment 是集體的行事曆，那依照各種場合不同，也有可能是淺拷貝比較好。比如說遇到了會議室滿了、客戶臨時來訪等情況。當有權限的人更改了會議的地點或是時間，其他人參與者應該要知道一樣的情報。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;所以在選擇使用深拷貝或是淺拷貝的時候，最重要的就是使用情境。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;下一段，要說的是 prototype 模式中，可以讓某個物件在複製另一個物件的時候，不用知道對方的 init 條件，來降低耦合性。&lt;/p&gt;
+
+&lt;p&gt;先來假設一個情境，你的客戶在需求中要求紀錄 Message 這個物件，而且在開案的時候和你說:「這個 Message 要求很簡單，因為發送方一定是持有手機的人，所以你只要包含傳送方和內容就好了。另外這些 message 要 cache 起來。」&lt;/p&gt;
+
+&lt;p&gt;所以，依照需求，你的 Message 和 Message Logger 只要這樣就好了。&lt;/p&gt;
+
+&lt;p&gt;然後在結案前二周，客戶突然跟你說，他要追加一個「簡單的」需求(客戶和工程師的日常)，就是某些 Message 會是另一個人發過來的，讓對話中的兩個人看到。同樣的，這個 Message 也要進同一份 Message Logger。&lt;/p&gt;
+
+&lt;p&gt;如上所視，這個作法「暫時的」解決了問題。你只要在 logMessage 前先判斷他是哪一種 Message ，然後再用 init 的方式生出複製品然後加入 array 。&lt;/p&gt;
+
+&lt;p&gt;而客戶的日常-「增加需求」會不時的發動，如果又過了一個禮拜(結案前一周)，客戶又加了一個「簡單的」需求，要求兩種新的 message 種類，你該用什麼心情面對? 這邊有一個圖可以表示。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*_bgv9PCoER5Z1iAtKRiSEg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;假的~~~趕快把客戶的聯絡方式關起來 (誤)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;或者，你可以在一開始的 Message 就讓這個類別可以自己拷貝一份出來，因為 MessageLogger 在使用拷貝的時候並不知道 Message init 的條件，所以不論你後面增加了幾十種 Message 的 sub class，Message Logger 這邊的程式碼都不需要改寫。&lt;/p&gt;
+
+&lt;p&gt;↓使用 Prototype Pattern 的程式碼&lt;/p&gt;
+
+&lt;p&gt;在看完這篇文章後，如果想測測看自己對 Deep copy, Shallow copy 的了解，你可以打開 Playground 寫段這樣的 code，然後先預測他的結果再按下執行。&lt;/p&gt;
+
+&lt;p&gt;1、創一個空 array&lt;/p&gt;
+
+&lt;p&gt;2、在這個 array 裡面塞一個 class，這個 class 要有可以變更的 store property，舉例 (忍者龜裡面的達文西)&lt;/p&gt;
+
+&lt;p&gt;3、複製這個 array (使用 var b = a 這種方式)&lt;/p&gt;
+
+&lt;p&gt;4、修改複製出來 array 裡面的class 裡面的 property ，舉例(修改成拉斐爾)&lt;/p&gt;
+
+&lt;p&gt;5、問題來了，請問原來 array 裡面的 class，會不會被改變呢?&lt;/p&gt;
+
+&lt;p&gt;這邊就不公佈答案了，你就自己試試看吧&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如果你己經理解了，那這邊公佈與否，結果都一樣。但如果你還沒理解，你可能只是把答案背起來而已，換個場合換個條件可能就爆炸了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/bb47c13baecb&quot;&gt;June 9, 2018&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/prototype-pattern-%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F-in-swift-bb47c13baecb&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">最近用 ChatGPT 來做的事情</title><link href="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html" rel="alternate" type="text/html" title="最近用 ChatGPT 來做的事情" /><published>2022-12-19T15:25:00+08:00</published><updated>2022-12-19T15:25:00+08:00</updated><id>http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT</id><content type="html" xml:base="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html">&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;最近用-chatgpt來做的事情&quot;&gt;最近用 ChatGPT 來做的事情&lt;/h3&gt;
+
+&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://chat.openai.com/chat&quot;&gt;https://chat.openai.com/chat&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;很多人都會分享他做的事情，這邊我也貼一篇我讓他做的事情。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;寫詩&quot;&gt;寫詩&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*TwtFtA3WfnLVXbfKdEh9WQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;詩是寫出來了，但…沒有五言，也不是絕句。然後我就問 AI 懂不懂什麼叫五言絕句。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9CsaTIzX767XTHDrQ7nYOQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;雖然知道五言絕句是什麼，但…寫不出正確的格式。&lt;/p&gt;
+
+&lt;p&gt;所以，你也可以請他寫個程式開發的詩。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*rIPENTQoE7eQ1oOxXMMSXA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然後也試了 Android 的版本，看來是把詞抽換掉而已。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9vmtLQ8BtpLwEws8QWUxIg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;寫文件企劃書得獎感言工作日誌&quot;&gt;寫文件，企劃書，得獎感言，工作日誌&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*6ieZPzpQDtRafQaLarnBnQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;嗯…這個 AI 活在朝九晚五的平行宇宙裡。&lt;/p&gt;
+
+&lt;p&gt;接下來試試得獎感言&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*2F8NBB42s8soIUkDKxYo5A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;還可以在得獎感言中加料&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*yemcnLV3Bvg4MTyHoBGSPg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;加料加到中樂透，也可以&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*fYKZapz3GtG2bxiY5eF88A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;程式解題還可以選語言但這個很多人玩過了&quot;&gt;程式解題，還可以選語言(但這個很多人玩過了)&lt;/h3&gt;
+
+&lt;p&gt;用 Go 寫一個數字是否質數&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*w29CcGSWeKIzGa6zO2ZCMA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用 perl 寫費布納西數列&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*x2tz0bUatid5h8u4FLR4zg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;寫一個登入網頁也能做到&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*ZUVOHz7Lio3DfQGSp6pUDg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;接下來這個世界，一定會因為這個產品，而開始不一樣的!&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d3f2a789ca53&quot;&gt;December 29, 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry><entry><title type="html">WWDC22 Keynote, Platform State of the Union</title><link href="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html" rel="alternate" type="text/html" title="WWDC22 Keynote, Platform State of the Union" /><published>2022-06-10T15:19:00+08:00</published><updated>2022-06-10T15:19:00+08:00</updated><id>http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html">&lt;p&gt;WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;wwdc22-keynote-platform-state-of-theunion&quot;&gt;WWDC22 Keynote, Platform State of the Union&lt;/h3&gt;
+
+&lt;p&gt;WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*qM1SdBh8j6F8kAPt9lKH7g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;WWDC22&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;保留字更多了，除了 actor 還可以再加上 distributed actor&lt;/li&gt;
+  &lt;li&gt;強化了正規表達，因為你玩 String.Index 會被玩到懷疑人生&lt;/li&gt;
+  &lt;li&gt;NavigationView 已死，有事燒紙。現在有 NavigationStackView, NavigationSplitView&lt;/li&gt;
+  &lt;li&gt;Swift Charts 出來了，2025 年後可以開始注意(iOS16 +)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*z0EBnr3tHCaVZErpC1FgoQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WidgetKit 再強化: Circular, Rectangular, Inline 三種，可以放在 lock screen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*DFOuoajMMW3MDf9fMASkJg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*ePpGTEk6iJqm9Cdqsqf5sA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*xuYZHHa3nggMtDDcgu51bg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Live Activity 是新的 feature，可以在 lock screen 上看到即時訊息。在影片中，用 Uber 叫車不斷更新距離，還有籃球的比賽分數更新為案例。&lt;/li&gt;
+  &lt;li&gt;沒看到 Lock screen 有沒有限制，但他用了叫車 widget 舉例，這應該是 socket 行為? (無法肯定)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*iccPyr1nNHeKvyRnwVto9g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*-PMOQRUkU50AuEHQ8mmbEw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SiriKit 也強化，Intent 的部分&lt;/li&gt;
+  &lt;li&gt;Apple 往「無密碼登入」前進了(Passkeys)，目前我還無法理解機制。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*ZpwryJGDkiv6vSiatuu4Wg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*q9_62GmLnF4LlBbwXWYrqA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MapKit 再強化，你現在可以看到 Map 上細緻到行道樹和人行道，還有多點路徑&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9mHLFW0Njaft0JPAdeQykw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*3xhgRq56ERGwoInK6iWNiw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WeatherKit。500k / 月 以下呼叫是免費的，接下來天氣 app 會進入血海。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*jAQD9GlhzXYWCNnNEFQZdw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*gJYgR4_XYJzlApHVplYolQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ML / VisionKit 再強化，直接做進 Apple 相機了，接下來貼圖 app 也會進入血海&lt;/li&gt;
+  &lt;li&gt;一鍵去背抓主題，已經是 iOS16 內建功能了&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*wcZtwyurXrOBVJUMtgUC5Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a9e361a10a5d&quot;&gt;June 10, 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/wwdc22-keynote-platform-state-of-the-union-a9e361a10a5d&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點</summary></entry><entry><title type="html">Meet WeatherKit in WWDC22</title><link href="http://localhost:4000/swift/2022/06/09/Meet-weatherKit-in-WWDC22.html" rel="alternate" type="text/html" title="Meet WeatherKit in WWDC22" /><published>2022-06-09T15:17:00+08:00</published><updated>2022-06-09T15:17:00+08:00</updated><id>http://localhost:4000/swift/2022/06/09/Meet-weatherKit-in-WWDC22</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/09/Meet-weatherKit-in-WWDC22.html">&lt;h1 id=&quot;meet-weatherkit-in-wwdc22&quot;&gt;Meet WeatherKit in WWDC22&lt;/h1&gt;
+
+&lt;p&gt;WWDC22: Meet WeatherKit 重點結錄&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;meet-weatherkit-inwwdc22&quot;&gt;Meet WeatherKit in WWDC22&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*US6DQ8qy70XLbCBAEnQ9sQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;WWDC22: Meet WeatherKit 重點結錄&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2022/10003/&quot; title=&quot;https://developer.apple.com/videos/play/wwdc2022/10003/&quot;&gt;&lt;strong&gt;Meet WeatherKit - WWDC22 - Videos - Apple Developer&lt;/strong&gt;&lt;br /&gt;
+_WeatherKit offers valuable weather data for your apps and services to help people stay up to date on the latest…_developer.apple.com&lt;/a&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2022/10003/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;提供的資料&quot;&gt;提供的資料&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;現在天氣&lt;/li&gt;
+  &lt;li&gt;天氣預報: 日/時/分 等級&lt;/li&gt;
+  &lt;li&gt;風向/風力&lt;/li&gt;
+  &lt;li&gt;日出/日落/月相&lt;/li&gt;
+  &lt;li&gt;歷史天氣資料&lt;/li&gt;
+  &lt;li&gt;有更多沒列出來的，都在文件上&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;收費標準-platform-state-of-theunion&quot;&gt;收費標準 (Platform State of the Union)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;500K calls/ month 以下是免費&lt;/li&gt;
+  &lt;li&gt;有更高需求的話，也有其他附費方案 1M calls/ Month 定價 $49.99&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Mqmsvyr6NmcWK-PjcimjYA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;500k 以下免費&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*QsIiuiTd5Abg9lkyr1GgHA.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;需要有更高流量，也有各種 plan 可選&lt;/p&gt;
+
+&lt;p&gt;可以想見，接下來的 weather app ，會像雨後春筍一般冒出來&lt;/p&gt;
+
+&lt;p&gt;呼叫 WeatherKit 的方法短短幾行就能做到&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import WeatherKitimport CoreLocation
+
+let weatherService = WeatherService()
+
+let syracuse = CLLocation(latitude: 43, longitude: -76)
+
+let weather = try! await weatherService.weather(for: syracuse)
+
+let temperature = weather.currentWeather.temperature
+
+let uvIndex = weather.currentWeather.uvIndex
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Apple 也提供了 RESTful API 的方法呼叫 WeatherKit&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/* Request a token */const tokenResponse = await fetch(&apos;&amp;lt;https://example.com/token&amp;gt;&apos;);const token = await tokenResponse.text();
+
+/* Get my weather object */const url = &quot;&amp;lt;https://weatherkit.apple.com/1/weather/en-US/41.029/-74.642?dataSets=weatherAlerts&amp;amp;country=US&amp;gt;&quot;
+
+const weatherResponse = await fetch(url, {headers: {&quot;Authorization&quot;: token}});const weather = await weatherResponse.json();
+
+/* Check for active weather alerts */const alerts = weather.weatherAlerts;const detailsUrl = weather.weatherAlerts.detailsUrl;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Apple WeatherKit document&lt;br /&gt;
+&lt;a href=&quot;https://developer.apple.com/documentation/weatherkit&quot;&gt;https://developer.apple.com/documentation/weatherkit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/b48aaf4589b2&quot;&gt;June 9, 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/meet-weatherkit-in-wwdc22-b48aaf4589b2&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">Meet WeatherKit in WWDC22</summary></entry><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2022-06-03T22:33:38+08:00</published><updated>2022-06-03T22:33:38+08:00</updated><id>http://localhost:4000/swift/2022/06/03/swiftui-and-compose</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
 
 &lt;p&gt;詳細的文章我寫在另一篇，可以直接從下方連結過去&lt;/p&gt;
 
@@ -74,7 +464,147 @@ _The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/60f673b3eda7&quot;&gt;February 4, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="[&quot;Kotlin&quot;, &quot;Cross platform&quot;]" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry><entry><title type="html">資料密集型應用系統設計-第六章筆記</title><link href="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html" rel="alternate" type="text/html" title="資料密集型應用系統設計-第六章筆記" /><published>2021-11-02T15:01:00+08:00</published><updated>2021-11-02T15:01:00+08:00</updated><id>http://localhost:4000/system%20design/2021/11/02/data-intensive-applications</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html">&lt;p&gt;這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="[&quot;Kotlin&quot;, &quot;Cross platform&quot;]" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry><entry><title type="html">Stripe 系統漸進式升級的過程</title><link href="http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate.html" rel="alternate" type="text/html" title="Stripe 系統漸進式升級的過程" /><published>2021-12-18T15:11:00+08:00</published><updated>2021-12-18T15:11:00+08:00</updated><id>http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate.html">&lt;p&gt;歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;stripe-系統漸進式升級的過程&quot;&gt;Stripe 系統漸進式升級的過程&lt;/h3&gt;
+
+&lt;p&gt;歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*kVy_4E7Jw81-keZ1SwVu1g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;stripe-進行過的-online-migrations&quot;&gt;Stripe 進行過的 online migrations&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stripe.com/blog/online-migrations&quot; title=&quot;https://stripe.com/blog/online-migrations&quot;&gt;&lt;strong&gt;Online migrations at scale&lt;/strong&gt;&lt;br /&gt;
+_Jacqueline Xu on February 2, 2017 in Engineering Engineering teams face a common challenge when building software: they…_stripe.com&lt;/a&gt;&lt;a href=&quot;https://stripe.com/blog/online-migrations&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以下是在讀完 Stripe 文章後的整理&lt;/p&gt;
+
+&lt;p&gt;線上付款為主要業務，如果你想要有海外收款能力，直接找 Stripe 比去和當地銀行快很多。而且要拓展不同國家的業務，大部分都可以在 Stripe 上完成。&lt;/p&gt;
+
+&lt;p&gt;誠實蜜蜂的線上收款方案之一，就是 Stripe。&lt;/p&gt;
+
+&lt;p&gt;為什麼是「之一」? 因為當時營運的七個亞洲國家中，有幾個不在 Stripe 業務範圍內，所以又引入了另一個收款第三方平台。&lt;/p&gt;
+
+&lt;h3 id=&quot;stripe-的使用者數量級&quot;&gt;Stripe 的使用者數量級&lt;/h3&gt;
+
+&lt;p&gt;文章中提到的是 Subscription object，有可能這些 object 為單一公司行號。數量為 hundred millions，所以在 2017 年的時候，在數億左右。&lt;/p&gt;
+
+&lt;p&gt;這些數億量級的資料，被放在 table 中，且在 code base 中數個地方大量使用。&lt;/p&gt;
+
+&lt;p&gt;且金流服務是不能斷的，所以 Stripe 使用的 migration 一定是 online 的。&lt;/p&gt;
+
+&lt;h3 id=&quot;online-migration-pattern四步驟&quot;&gt;Online migration pattern — 四步驟&lt;/h3&gt;
+
+&lt;p&gt;1: &lt;strong&gt;Dual writing&lt;/strong&gt; to the existing and new tables to keep them in sync.&lt;/p&gt;
+
+&lt;p&gt;要對現有 table 和新的 table 都寫入一樣的資料&lt;/p&gt;
+
+&lt;p&gt;2: &lt;strong&gt;Changing all read paths&lt;/strong&gt; in our codebase to read from the new table.&lt;/p&gt;
+
+&lt;p&gt;換掉所有的讀取路徑&lt;/p&gt;
+
+&lt;p&gt;3: &lt;strong&gt;Changing all write paths&lt;/strong&gt; in our codebase to only write to the new table.&lt;/p&gt;
+
+&lt;p&gt;換掉所有的寫入路徑&lt;/p&gt;
+
+&lt;p&gt;4: &lt;strong&gt;Removing old data&lt;/strong&gt; that relies on the outdated data model&lt;/p&gt;
+
+&lt;p&gt;移除掉舊的資料(應該是封存)&lt;/p&gt;
+
+&lt;h3 id=&quot;migration-example&quot;&gt;Migration example&lt;/h3&gt;
+
+&lt;h3 id=&quot;最初的商業邏輯&quot;&gt;最初的商業邏輯&lt;/h3&gt;
+
+&lt;p&gt;每個客戶都會有 Subscription，但最初只設計了一個&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Customer  Subscription subscriptionend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;但是，隨著業務愈做愈多，客戶需求愈來愈複雜。&lt;/p&gt;
+
+&lt;p&gt;折價券，折扣，invoice 等功能被加進來， subscription 就要變成 subscriptions&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Customer  array: Subscription subscriptionsend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;而當客戶成長到了一定程度，就要做資料庫的切分，可回頭看 CH6。&lt;/p&gt;
+
+&lt;p&gt;左邊是既有設計，右邊是要 migration 的架構&lt;/p&gt;
+
+&lt;p&gt;再回頭看一次，migration pattern 四步驟&lt;/p&gt;
+
+&lt;p&gt;1: &lt;strong&gt;Dual writing&lt;/strong&gt; to the existing and new tables to keep them in sync.&lt;/p&gt;
+
+&lt;p&gt;2: &lt;strong&gt;Changing all read paths&lt;/strong&gt; in our codebase to read from the new table.&lt;/p&gt;
+
+&lt;p&gt;3: &lt;strong&gt;Changing all write paths&lt;/strong&gt; in our codebase to only write to the new table.&lt;/p&gt;
+
+&lt;p&gt;4: &lt;strong&gt;Removing old data&lt;/strong&gt; that relies on the outdated data model&lt;/p&gt;
+
+&lt;h3 id=&quot;part1-dual-writing雙重寫入&quot;&gt;part1: Dual writing 雙重寫入&lt;/h3&gt;
+
+&lt;p&gt;只要有新的寫入，就會有一隻程式發動，把這個 subscription 的資料，移到新的 table&lt;/p&gt;
+
+&lt;p&gt;然後，再進行 backfilling，把以前的資料倒進新 table&lt;/p&gt;
+
+&lt;p&gt;Stripe 使用 Scalding 套件來進行 backfilling，看文章是建講在 Hadoop cluster 上，所以也有使用 MapReduce 進行。而且，只需要約十行程式碼。&lt;/p&gt;
+
+&lt;p&gt;Scalding is a useful library written in Scala that makes it easy to write MapReduce jobs (you can write a simple one in 10 lines of code).&lt;/p&gt;
+
+&lt;p&gt;Backfilling 的步驟如下&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Write a Scalding job that provides a list of all subscription IDs that need to be copied over. (找出所有要被 Copy 的 IDs)&lt;/li&gt;
+  &lt;li&gt;Run a large, multi-threaded migration to duplicate these subscriptions with a fleet of processes efficiently operating on our data in parallel. (使用多緒的程式開始處理 migration)&lt;/li&gt;
+  &lt;li&gt;Once the migration is complete, run the Scalding job once again to make sure there are no existing subscriptions missing from the Subscriptions table. (結束後，使用 Scalding 進行檢查，看有無缺漏)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;part2-changing-all-read-paths改掉所有讀取路徑&quot;&gt;part2: Changing all read paths — 改掉所有讀取路徑&lt;/h3&gt;
+
+&lt;p&gt;前一個動作，已經讓新舊的 table 同步了，現在要改掉讀取路徑，原來舊的讀取路徑都要換成新的路徑。&lt;/p&gt;
+
+&lt;p&gt;為了確保新的 subscriptions table 讀到的東西都是正確的(和舊 table 一樣)，stripe 使用了 Scientist 的套件來驗證這一行為。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/github/scientist&quot;&gt;https://github.com/github/scientist&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Scientist 是 Ruby library 中，拿來做實驗比對結果的，這個套件會讀新的表和舊的表，並把值交互比對，如果不同，他就發出 error alerting。&lt;/p&gt;
+
+&lt;p&gt;在確認新舊表完全相同之後，就會把讀取路徑切到新的 subscriptions table 中。&lt;/p&gt;
+
+&lt;h3 id=&quot;part3-changing-all-write-paths改掉所有寫入路徑&quot;&gt;part3: Changing all write paths — 改掉所有寫入路徑&lt;/h3&gt;
+
+&lt;p&gt;下面是 part1 的寫入路徑，那時候設定為 dual write&lt;/p&gt;
+
+&lt;p&gt;現在狀況， dual write 會將資料先寫進舊的 customers 表，然後再寫入 subscriptions 表。在 Changing all write paths 這一步，我們要將寫入順序倒轉，先寫入 Subscriptions 再寫入 customers. 注意這一步並不是直接拿掉 customers 表的寫入，而是倒轉。這樣我們才能在改動過程中，進行觀察，並防止重大錯誤在不知情的狀況下持續。&lt;/p&gt;
+
+&lt;p&gt;更換寫入路徑，是 migration 最大的挑戰。在 Stripe 裡面，已經有上千行的程式碼和 subscription 有關，這些程式碼也四散在各個 service 中。&lt;/p&gt;
+
+&lt;p&gt;為了逐步確認每個步驟都是正確的，在重構的過程中，Stripe 將程式的路徑儘可能切到最小的單位，一步一步的抽換，確保新舊的表是同步。&lt;/p&gt;
+
+&lt;p&gt;在抽換的時候，一定要非常，非常小心的應對。Stripe 是不可以直接將新 records 蓋掉舊 records。只要有 miss，就會造成 data inconsistency。而抽換前後的資料確認， Stripe 也是用了 Scientist 套件中提供的功能，進行實驗(experiments 應該是這個 lib 的功能)&lt;/p&gt;
+
+&lt;p&gt;最後，抽換的結果如下。&lt;/p&gt;
+
+&lt;p&gt;最後，在 Customer 物件中，寫上 raise error，只要有人呼叫原來的 subscriptions，就會 raising an error&lt;/p&gt;
+
+&lt;p&gt;最後，在 Customer 物件中，寫上 raise error，只要有人呼叫原來的 subscriptions，就會 raising an error&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Customer  def subscriptions    Opus::Error.hard(&quot;Accessing subscriptions array on customer&quot;)  endend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;part4: &lt;strong&gt;Removing old data — 將舊資料移除掉&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;最後一步，移除掉把寫進舊 table 的程式碼移除掉，最後最後，就會真的刪掉這些程式碼 (你有在用版本控制，不用怕刪程式碼)&lt;/p&gt;
+
+&lt;p&gt;等到確認所有的程式碼，都只從 subscriptions 的表拿資料，那就可以把送資料進舊表的程式碼拿掉了。&lt;/p&gt;
+
+&lt;p&gt;最後，就完成轉移， subscriptions 的資料，就會從新表拿。&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d2c7e73e298b&quot;&gt;December 18, 2021&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/stripe-%E7%B3%BB%E7%B5%B1%E6%BC%B8%E9%80%B2%E5%BC%8F%E5%8D%87%E7%B4%9A%E7%9A%84%E9%81%8E%E7%A8%8B-d2c7e73e298b&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><category term="migration" /><summary type="html">歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。</summary></entry><entry><title type="html">資料密集型應用系統設計-第六章筆記</title><link href="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html" rel="alternate" type="text/html" title="資料密集型應用系統設計-第六章筆記" /><published>2021-11-02T15:01:00+08:00</published><updated>2021-11-02T15:01:00+08:00</updated><id>http://localhost:4000/system%20design/2021/11/02/data-intensive-applications</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html">&lt;p&gt;這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -88,7 +618,7 @@ _The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap
 
 &lt;ul&gt;
   &lt;li&gt;可擴充性增加&lt;/li&gt;
-  &lt;li&gt;只要業務量增加，最終單一伺服務總會遇到上限，在需要擴增的狀況下，選擇適當的分區策略，對未來的業務會有更大的助益。&lt;/li&gt;
+  &lt;li&gt;只要業務量增加，最終單一伺服器總會遇到上限，在需要擴增的狀況下，選擇適當的分區策略，對未來的業務會有更大的助益。&lt;/li&gt;
   &lt;li&gt;增加效率&lt;/li&gt;
   &lt;li&gt;當分區策略做的好，在查找的效率會提高。&lt;/li&gt;
   &lt;li&gt;增加安全性&lt;/li&gt;
@@ -217,4 +747,495 @@ _The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/c8b1ddc94554&quot;&gt;November 2, 2021&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><summary type="html">這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><summary type="html">這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr</summary></entry><entry><title type="html">使用 Turi Create 製作圖案辨識的 App - Core ML and Vision</title><link href="http://localhost:4000/swift/2018/08/20/Using-Turi-create-make-an-app.html" rel="alternate" type="text/html" title="使用 Turi Create 製作圖案辨識的 App - Core ML and Vision" /><published>2018-08-20T15:32:00+08:00</published><updated>2018-08-20T15:32:00+08:00</updated><id>http://localhost:4000/swift/2018/08/20/Using-Turi-create-make-an-app</id><content type="html" xml:base="http://localhost:4000/swift/2018/08/20/Using-Turi-create-make-an-app.html">&lt;p&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision * { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section[data-field=subtitle], section[data-field=description] { display: none; }&lt;/p&gt;
+
+&lt;h1 id=&quot;使用-turi-create-製作圖案辨識的-app---core-ml-and-vision&quot;&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/h1&gt;
+
+&lt;p&gt;Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML 模組時，更專注在 APIs…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;使用-turi-create-製作圖案辨識的-app---core-ml-andvision&quot;&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*azSEH7drAK07vjkT&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“A person’s hand holding a camera lens over a mountain lake” by &lt;a href=&quot;https://unsplash.com/@pawelskor?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Paul Skorupskas&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML 模組時，更專注在 APIs 的行為上。除些之外，你如果有些初步的想法，你不用去找一個 ML 專家或是把自己變成 ML 專家，也能做出一個初步的 ML Model，讓這個 model 先做 prototype 再發揚光大。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在 WWDC18 Session 712 中，整個 session 都在介紹 Turi Create，如果對那個 Session 有興趣，你可以看下面這一篇 Medium。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot; title=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot;&gt;&lt;strong&gt;WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事&lt;/strong&gt;&lt;br /&gt;
+_Turi Create 是什麼?_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;讓我們開始 Demo Turi Create 裡面會用到的 API，以及他怎麼實作吧。我們要實作的是判斷這張圖裡面是不是金城武。範例影片放在這個 Youtube 上，除了判斷是不是金城武以外，還加上了信心指數。&lt;/p&gt;
+
+&lt;p&gt;信心指數的意思，你的 model 對這個結果有多少的信心，這個數字會在 0~ 1.0 之間。如果他判斷這張圖不是金城武，然後信心指數是 0.97。就表示這個 data 對這個 model來說，「不是金城武」這結果有 0.97 的信心指數。&lt;/p&gt;
+
+&lt;p&gt;要做 image classification 前，你需要有 image data，然後針對該分類建立資料夾，並把對應的圖片放到資料夾內。當然資料是愈多愈好，但至少該放多少呢?蘋果的投影片中有提到，建議至少放個 40 張當做 data。&lt;/p&gt;
+
+&lt;p&gt;如下圖所示，我在網路上搜尋了 40 張金城武的照片，然後放進 kaneshiro 這個資料夾。不過比較困難的地方，是「非金城武」這邊的 data 應該放什麼呢? 就邏輯來說，就是放所有非金城武的照片，但這些照片到底該放哪些呢? 因為是範例，所以我這裡就先放數十張非金城武的人像照當做 demo ，真正在做這種專案的時候，還是建議詢問資料科學領域的人，你想處理的資料該怎麼訓練模型。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*VMSfkj3qJ7fyl2Eo4bGSLw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在 dataset 內放 kaneshiro的照片,unknown 則放不是目標的照片&lt;/p&gt;
+
+&lt;p&gt;當你的資料放好了，你就可以用下面這些程式碼進行 model 的訓練和 Core ML 的輸出。程式碼的數量相當的低，這邊只用了 12 行而已 (註解不算)。你可以在 (Ref-1) 上直接下載 Jupyter Notebook 的檔案&lt;/p&gt;
+
+&lt;p&gt;Turi Create 在讀取檔案的時候非常聰明，如果他讀的案是他不支援的，他會吐出 error message，但程式會繼續執行。下圖示範了這個結果，.DS_Store 是 mac 系統裡面存放空間資料用途，這是給 Mac OS 的 finder 程式使用的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*t0JaxQccx312PWr5GRGLHQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;讀到不是JPEG和PNG 以外的檔案會跳過&lt;/p&gt;
+
+&lt;p&gt;如果你的 Jupyter Notebook 是第一次跑，程序會連到 Apple 的 model 網站去下載相關資料。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*6t9nmsXsDbavxS3lYYbpnQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Message 的 downloading 就是連到Apple網站去下載模型資料&lt;/p&gt;
+
+&lt;p&gt;下面就是模型訓練時， Turi Create 會吐出來的資訊&lt;/p&gt;
+
+&lt;p&gt;Analyzing and extracting image features.&lt;/p&gt;
+
+&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Images Processed&lt;/td&gt;
+      &lt;td&gt;Elapsed Time&lt;/td&gt;
+      &lt;td&gt;Percent Complete&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;64&lt;/td&gt;
+      &lt;td&gt;3.16s&lt;/td&gt;
+      &lt;td&gt;50%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;74&lt;/td&gt;
+      &lt;td&gt;11.34s&lt;/td&gt;
+      &lt;td&gt;100%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
+
+&lt;p&gt;Logistic regression:&lt;/p&gt;
+
+&lt;p&gt;-——————————————————-&lt;/p&gt;
+
+&lt;p&gt;Number of examples          : 74&lt;/p&gt;
+
+&lt;p&gt;Number of classes           : 2&lt;/p&gt;
+
+&lt;p&gt;Number of feature columns   : 1&lt;/p&gt;
+
+&lt;p&gt;Number of unpacked features : 2048&lt;/p&gt;
+
+&lt;p&gt;Number of coefficients      : 2049&lt;/p&gt;
+
+&lt;p&gt;Starting L-BFGS&lt;/p&gt;
+
+&lt;p&gt;-——————————————————-&lt;/p&gt;
+
+&lt;p&gt;+———–+———-+———–+————–+——————-+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Iteration&lt;/td&gt;
+      &lt;td&gt;Passes&lt;/td&gt;
+      &lt;td&gt;Step size&lt;/td&gt;
+      &lt;td&gt;Elapsed Time&lt;/td&gt;
+      &lt;td&gt;Training Accuracy&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;+———–+———-+———–+————–+——————-&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;0.017910&lt;/td&gt;
+      &lt;td&gt;0.540541&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;0.000083&lt;/td&gt;
+      &lt;td&gt;0.125282&lt;/td&gt;
+      &lt;td&gt;0.540541&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;5.000000&lt;/td&gt;
+      &lt;td&gt;0.181402&lt;/td&gt;
+      &lt;td&gt;0.918919&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+      &lt;td&gt;5.000000&lt;/td&gt;
+      &lt;td&gt;0.207410&lt;/td&gt;
+      &lt;td&gt;0.945946&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;12&lt;/td&gt;
+      &lt;td&gt;5.000000&lt;/td&gt;
+      &lt;td&gt;0.242203&lt;/td&gt;
+      &lt;td&gt;0.459459&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;1.000000&lt;/td&gt;
+      &lt;td&gt;0.280374&lt;/td&gt;
+      &lt;td&gt;0.864865&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;20&lt;/td&gt;
+      &lt;td&gt;1.000000&lt;/td&gt;
+      &lt;td&gt;0.409511&lt;/td&gt;
+      &lt;td&gt;1.000000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;+———–+———-+———–+————–+——————-+&lt;/p&gt;
+
+&lt;p&gt;Completed (Iteration limit reached).&lt;/p&gt;
+
+&lt;p&gt;This model may not be optimal. To improve it, consider increasing `max_iterations`.&lt;/p&gt;
+
+&lt;p&gt;Analyzing and extracting image features.&lt;/p&gt;
+
+&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Images Processed&lt;/td&gt;
+      &lt;td&gt;Elapsed Time&lt;/td&gt;
+      &lt;td&gt;Percent Complete&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;13&lt;/td&gt;
+      &lt;td&gt;2.53s&lt;/td&gt;
+      &lt;td&gt;100%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;+——————+————–+——————+&lt;/p&gt;
+
+&lt;p&gt;1.0&lt;/p&gt;
+
+&lt;p&gt;我個人覺得這個模組很棒的地方，是他會提示你這個模型是不是需要再修正。像上面的 message 中可以看到一行: &lt;strong&gt;This model may not be optimal. To improve it, consider increasing `max_iterations`&lt;/strong&gt;. 這是因為我 max_iterations 只給預設值，結果他跑出來後覺得這個模型準確率太低，並直接建議你調高 max_iterations。&lt;/p&gt;
+
+&lt;p&gt;跑完後你就可以拿到 mlmodel 這個檔案，而且你還可以看到 model 細項。以本文為例，你可以看到他有說明這個是 mlmodel 是用於 image clasifier，而且是從 Resnet-50 訓練出來的， Turi Create 版本是 5.0 beta 3。&lt;/p&gt;
+
+&lt;p&gt;底下則是 input 和 output 訊息，你要輸入的是彩色 224 x 224 的圖片。然後他輸出有兩個，如果是 kaneshiroOrNot，則是這個 model 判出來的結果。因為當初我們只設定兩個 label，一個是 Kaneshiro，另一個是 Unknown。所以這一項一定是這兩個其一。&lt;/p&gt;
+
+&lt;p&gt;另一個輸出是 kaneshiroOrNotProbability 他是個 dictionary，key 是每個 label，value 是該 label 的信心指數，雖然這個範例只有兩個 label ，但實際上你能訓練出能辨試多種水果的 model，這時候你可能會想知道每個 label 的信心指數，去看有沒有可能有近似的結果，再去做處理。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*v4W8f-kJWTirPfbDiKU77g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*np33KUxG7F-Q6MA50KxbVQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;mlmodel 的細項，這包含用什麼模型做訓練，以及輸入的格式，輸出的格式。以本文為，輸出有兩項kaneshiroOrNot 輸出一個string,是指他判斷出來的 label。另一個則是每一項的信心值數字。&lt;/p&gt;
+
+&lt;p&gt;接下來，我們開始寫圖像辨識的專案吧。因為這個專案極有可能用到照相機和相簿功能，請記得在 info.plist 裡面做 Privacy 請求。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*XtZzzm2T_CwVxDkaw1iq9Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;請記得在 info.plist內做這兩個功能要求&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在這裡，我先使用 App Coda 的方法 (Ref-2)讓 ML Model 去讀取 UIImage 檔案。我也試用過 Vision 模組的 VNRequest，但辨識的結果差很多，而且該檔案和模組都是直接從 Apple 上下載下來的。我想，可能還有些參數我應該要調整才能讓辨識率提高。目前 App Coda 的這個方法，辨識率還不錯，就先用這種方式。&lt;/p&gt;
+
+&lt;p&gt;在 UIImage 裡面 extension buffer 這個 method。讓原來的 image data 專換成 VCPixelBuffer 格式， Core ML 模組才能辨識。&lt;/p&gt;
+
+&lt;p&gt;UIImage extension 後，讓 image 直接轉換成 CVPixelBuffer&lt;/p&gt;
+
+&lt;p&gt;接下來就是辨識的核心 method。因為我們的 MLModel 是基於 Resnet 所訓練出來的，所以他吃的是 224 x 224 的 image，這個資訊你可以在 MLModel file detail 看到。&lt;/p&gt;
+
+&lt;p&gt;接下來，只要在取得 image 物件後，去呼叫 judgeKaneshiro(:)，就完成了。舉例來說，像是鏡頭取得 image 後。&lt;/p&gt;
+
+&lt;p&gt;func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])&lt;/p&gt;
+
+&lt;p&gt;實際跑一遍，你會發現，這個範例並沒有那麼準，比如說，有幾張金城武的照片，因為髮型或者背景不一樣，他就認為這不是金城武。然後，我也試著把古天樂放進去判斷看看，結果他認為這個是金城武。這樣的問題並沒有辦法在這裡用程式碼解決，因為這是 mlmodel 判斷的結果。要處理的話，要從訓練 model 那邊開始下手。建議你可以試著換換 model，或是調整 dataset，或是調一下 max_iterations 參數試試看。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Ijy0jbkDKPJ7-V6uDpWZxg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;雖然大部分的照片都可以分得出來&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*VEGL3cEQmOwVsWH3Xu-6Gg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;但是仍然有判錯的情況，古天樂被當成金城武了，而且髮型改變比較大，就認不出來了&lt;/p&gt;
+
+&lt;p&gt;整個專案都放在下面這個 GitHub ，你可以在 Project_KaneshiroOrNot 中找到 XCode 的檔案。Turi Create 的程式碼則可以在 Jupyter Notebook 的 folder 中找到。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Ref-1: GitHub位址&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo&quot; title=&quot;https://github.com/MoonAndEye/TuriCreateDemo&quot;&gt;&lt;strong&gt;MoonAndEye/TuriCreateDemo&lt;/strong&gt;&lt;br /&gt;
+_GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over…_github.com&lt;/a&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ref-2: App Coda 的範例, 分辨照片是湯或是飯&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.appcoda.com/core-ml-model-with-python/&quot; title=&quot;https://www.appcoda.com/core-ml-model-with-python/&quot;&gt;&lt;strong&gt;Creating a Custom Core ML Model Using Python and Turi Create&lt;/strong&gt;&lt;br /&gt;
+_In the past few years, the use of machine learning approaches to solve problems and perform complex tasks have been…_www.appcoda.com&lt;/a&gt;&lt;a href=&quot;https://www.appcoda.com/core-ml-model-with-python/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/b3071ffde3af&quot;&gt;August 20, 2018&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Core ML" /><category term="MLKit" /><category term="Swift" /><summary type="html">使用 Turi Create 製作圖案辨識的 App - Core ML and Vision * { font-family: Georgia, Cambria, “Times New Roman”, Times, serif; } html, body { margin: 0; padding: 0; } h1 { font-size: 50px; margin-bottom: 17px; color: #333; } h2 { font-size: 24px; line-height: 1.6; margin: 30px 0 0 0; margin-bottom: 18px; margin-top: 33px; color: #333; } h3 { font-size: 30px; margin: 10px 0 20px 0; color: #333; } header { width: 640px; margin: auto; } section { width: 640px; margin: auto; } section p { margin-bottom: 27px; font-size: 20px; line-height: 1.6; color: #333; } section img { max-width: 640px; } footer { padding: 0 20px; margin: 50px 0; text-align: center; font-size: 12px; } .aspectRatioPlaceholder { max-width: auto !important; max-height: auto !important; } .aspectRatioPlaceholder-fill { padding-bottom: 0 !important; } header, section[data-field=subtitle], section[data-field=description] { display: none; }</summary></entry><entry><title type="html">WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事</title><link href="http://localhost:4000/swift/2018/08/12/WWDC18-session712-Turi-create.html" rel="alternate" type="text/html" title="WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事" /><published>2018-08-12T15:28:00+08:00</published><updated>2018-08-12T15:28:00+08:00</updated><id>http://localhost:4000/swift/2018/08/12/WWDC18-session712-Turi-create</id><content type="html" xml:base="http://localhost:4000/swift/2018/08/12/WWDC18-session712-Turi-create.html">&lt;h3 id=&quot;wwdc18-session-712-turi-create-重點整理--製作ml-model-不再是一個困難的事&quot;&gt;WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*V4Kohj_1SGVxoqQt&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@jens_johnsson?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Jens Johnsson&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;turi-create是什麼&quot;&gt;Turi Create 是什麼?&lt;/h3&gt;
+
+&lt;p&gt;在被 Apple 收購之前，他的名字是 Dato ，是 Graph Lab 裡面的一個開發項目，由華盛頓大學的 Prof. Carlos Guestrin 所資助。之後在 A 輪募了 6 百多萬美金， B 輪募了 1 千 8 百多萬美金，並在 2016 年中被 Apple 收購。在 WWDC17 的時候， 有一個 session 在介紹這個模組，當時的版本是 4.0。在 WWDC18 的時候， Session-712 有詳細介紹這個 Python package，除此之外， Turi Create 也在 `What’s new in Core ML` (Session-708, 709)中，講者直接 Demo 試範。(Ref1)&lt;/p&gt;
+
+&lt;h3 id=&quot;turi-create的用途&quot;&gt;Turi Create 的用途&lt;/h3&gt;
+
+&lt;p&gt;．他是一個 Python 的 Package，可以製作 Core ML models，而且有開源&lt;/p&gt;
+
+&lt;p&gt;．簡單易用，即使非 ML 專門也可以操作&lt;/p&gt;
+
+&lt;p&gt;．讓 iOS 開發者只需要專注在 APIs 上&lt;/p&gt;
+
+&lt;p&gt;．跨平台 (Mac, Linux)&lt;/p&gt;
+
+&lt;p&gt;．學習成本低，在 Mac 上因為 Python 2.7 已經內建了，你只需要 `pip install turicreate` 即可。要做出一個辨識物體 model 只要 20 行以內的程式碼。而 WWDC18 中使用的 Jupyter Notebook 並非必要package。如果你想裝，請看 (Ref2)。&lt;/p&gt;
+
+&lt;h3 id=&quot;辨識照片中的人是不是金城武&quot;&gt;辨識照片中的人是不是金城武&lt;/h3&gt;
+
+&lt;p&gt;下面這篇文章是用 Turi Create 做出一個簡單的金城武辨識 App，如果你想試著實作，可以參考這一篇。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot; title=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;strong&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/strong&gt;&lt;br /&gt;
+_Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;建立-machine-leaning-model前所需的五個步驟&quot;&gt;建立 Machine Leaning model 前所需的五個步驟&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*mywU7P1855THvlFe2WErtQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;進行 Machine Leaning 所需要的五個步驟&lt;/p&gt;
+
+&lt;p&gt;Step 1: 你需要清楚的定義你的任務，因為 Turi Create (或者說是 ML 領域) 會因為你的任務不同，而出現不同的最佳解算法。如果你沒有選到正確率高的那一種，那你最後產生出來的 model 會達不到你要的效果。&lt;/p&gt;
+
+&lt;p&gt;Step 2: 這個任務所需要的 data。不同的任務，需要不同的 data。如果是圖片識別，那你需要不同 folder 裡面裝入和 folder name 相同的圖片。但如果是目標探測，你就必需要有目標標籤和標籤座標的 JSON 檔。&lt;/p&gt;
+
+&lt;p&gt;Step 3: 使用 Turi Create 產出你的 model 檔，這只需要低於 20 行的程式碼&lt;/p&gt;
+
+&lt;p&gt;Step 4: 你需要驗證你的 model 是不是正確的，通常會把訓練資料切成 8:2 或是其他比例。然後讓 model 去辨識沒丟入訓練的 20%資料，如果你的準確率很低，建議你拉高 max_iterations 這個參數，或是做其他參數調整。&lt;/p&gt;
+
+&lt;p&gt;Step 5: 如果驗證後沒問題，那就把 model 放入App 裡面然後發佈。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;1定義任務&quot;&gt;1、定義任務&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*INdNWx4wC55KQh4Q51ExMw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Turi Create 內執行的Task種類有這麼多&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*x_bHxyElNQYb5OQHpnvmkQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;實際上常用的MLTask 有這四種&lt;/p&gt;
+
+&lt;p&gt;Turi Create 所有種類的任務就在上面那一張表格裡面，你可以依照你想做的事情選擇對應的 API。而上面這四張圖，表示的是 App 中最常用的四種。注意風格變換是在 5.0 beta 版以後才有的功能， 4.0 是沒有的。&lt;/p&gt;
+
+&lt;h3 id=&quot;2輸入資料訓練模型&quot;&gt;2、輸入資料訓練模型&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*6kzzIfc4KVf3N1pya6wMtQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上排是image classification task，只需要圖片和 folder name 即可。下排是object detect task，除了照片以外還需要一個 label 、和 bounding box 資訊。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*qCVLHh7UM3o8zuGj_1sPJA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果是 object detection ，你需要放入 annotation 的資料，他通常是一個 JSON檔，裡面的 Array 讓你可以塞複數個 objects。Array 內每個元素包含一個 label 和 bounding box 的座標資訊。&lt;/p&gt;
+
+&lt;p&gt;依照任務所需要的 data ，輸入對應資料，如果是 image classification 的 task ，你只需要在對應的 folder 裡面放入圖片。但如果是 object detection ，你會需要再加一欄資料，來表示圖片上該辨識出來的物體名字和 bounding box 的座標。而這個 annotation 資訊是一個 array ，Turi Create 是可以在一張圖片裡面進行多目標辨識的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*JYJqIggoRQptI5HwKgj65g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;要特別注意的是，turi create裡面，X Y是 bounding box 的中心點&lt;/p&gt;
+
+&lt;p&gt;Turi Create 中的方框被叫做是 bounding box，要注意的一點是，在 UIKit 中， Frame 的 X 和 Y通常是指一個框的左上角，&lt;strong&gt;但 Turi Create 資料中的 X 和 Y 是指 bounding box 的中心點。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;在訓練資料、輸出框線的時候，請記得做轉換&lt;/strong&gt;。不然你的模型或是你的 View 一定看起來會怪怪的。&lt;/p&gt;
+
+&lt;h3 id=&quot;3產生-mlmodel&quot;&gt;3、產生 ML model&lt;/h3&gt;
+
+&lt;p&gt;WWDC18 就直接使用 Jupyter Notebook 進行 Demo，所需要的程式碼並不多，只需要 11 行即可，我們這邊用「辨識這張圖片是不是金城武」為例。&lt;/p&gt;
+
+&lt;p&gt;import turicreate as turi&lt;/p&gt;
+
+&lt;p&gt;url = “dataset/”&lt;/p&gt;
+
+&lt;p&gt;data = turi.image_analysis.load_images(url)&lt;/p&gt;
+
+&lt;p&gt;#如果他這張照片的不是放在 Kaneshiro 的 folder 內，他就是 Unknown&lt;br /&gt;
+data[“kaneshiroOrNot”] = data[“path”].apply(lambda path: “Kaneshiro” if “kaneshiro” in path else “Unknown”)&lt;/p&gt;
+
+&lt;p&gt;data.save(“kaneshiro_or_not.sframe”)&lt;/p&gt;
+
+&lt;p&gt;data.explore()&lt;/p&gt;
+
+&lt;p&gt;以上就是把 data 輸出成 SFrame 格式的程式碼，包含 url 那一行也才5行。&lt;/p&gt;
+
+&lt;p&gt;在下面的 #1 到 #3 步驟，就是把你的資料輸出成 CoreML 可以讀到的 Model. 以下分別解說 #1 ~ #3&lt;/p&gt;
+
+&lt;p&gt;#1: Load the data&lt;/p&gt;
+
+&lt;p&gt;把 SFrame 寫入 data 裡面&lt;/p&gt;
+
+&lt;p&gt;#2: Split to train and test data&lt;/p&gt;
+
+&lt;p&gt;把所有資料亂數切分成 8:2 (你也可以分成其他比例)，其中 8 成的資料是拿來訓練的，剩下的 2 成則是拿來驗證的。&lt;/p&gt;
+
+&lt;p&gt;#3 Create Model&lt;/p&gt;
+
+&lt;p&gt;turi 後面的第一個參數就是 task 的任務種類，這邊用 image classifier 當範例。&lt;/p&gt;
+
+&lt;p&gt;在 #3 的時候， max_iterations 並不是必要，如果你沒設定，那就會用那個 task 模組的預設值。如果是 image classifier ，max_iteration 的預設是 10。但因為效果不是很好，我這邊把他調成 100。而如果是 style transfer 的模組，預設是 5000。在我的 Mac Book Pro 上，一個 iteration 大約是 40 秒左右，依照網路上其他人的經驗，這大概是需要 2天左右才會跑出結果。&lt;/p&gt;
+
+&lt;p&gt;# 1. Load the data&lt;br /&gt;
+data = turi.SFrame(“kaneshiro_or_not.sframe”)&lt;/p&gt;
+
+&lt;p&gt;# 2. Split to train and test data&lt;br /&gt;
+train_data, test_data = data.random_split(0.8)&lt;/p&gt;
+
+&lt;p&gt;# 3. Create model&lt;br /&gt;
+model = turi.image_classifier.create(train_data, target=”kaneshiroOrNot”, max_iterations=100)&lt;/p&gt;
+
+&lt;p&gt;# 4. Predictions&lt;br /&gt;
+predictions = model.predict(test_data)&lt;/p&gt;
+
+&lt;p&gt;# 5. Evaluate the model and show metrics&lt;br /&gt;
+metrics = model.evaluate(test_data)&lt;br /&gt;
+print(metrics[“accuracy”])&lt;/p&gt;
+
+&lt;p&gt;# 6. Save the model&lt;br /&gt;
+model.save(“kaneshiro.model”)&lt;/p&gt;
+
+&lt;p&gt;# 7. Export to CoreML format&lt;br /&gt;
+model.export_coreml(“kaneshiro.mlmodel”)&lt;/p&gt;
+
+&lt;h3 id=&quot;4驗證-model&quot;&gt;4、驗證 Model&lt;/h3&gt;
+
+&lt;p&gt;#4 Predictions&lt;/p&gt;
+
+&lt;p&gt;用做出來的 model 對沒進入訓練資料進行預測。&lt;/p&gt;
+
+&lt;p&gt;#5 對 model 做驗證&lt;/p&gt;
+
+&lt;p&gt;Turi Create 會告訴你這個模型準確率，如果太低，他還會問你要不要調整 `max_iterations` 的參數。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Ntd4jyjkvF5IFc2PXc9hqw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;標記有兩點要驗證: 1 標記是正確的 2標記範圍要和正確範圍有50%以四的覆蓋率&lt;/p&gt;
+
+&lt;p&gt;#6 把訓練好的 model 存起來&lt;/p&gt;
+
+&lt;p&gt;#7 把訓練好的 model 轉成 Core ML 可以吃的 model&lt;/p&gt;
+
+&lt;h3 id=&quot;5-部署到-app裡&quot;&gt;5、 部署到 App 裡&lt;/h3&gt;
+
+&lt;p&gt;把輸出的 mlmodel 放到專案裡面。&lt;/p&gt;
+
+&lt;p&gt;這樣，就完成了你的 ML Model&lt;/p&gt;
+
+&lt;p&gt;Jupyter Notebook 的程式碼放在下面這個 GitHub 裡面，直接去 Jupyter Notebook 的 folder 就可以直接用了。那個 folder 裡面有三個範例，KaneshiroOrNot 是驗證是不是金城武。SoupOrRice 是驗證圖片是湯或飯。Adventure 則是分辨圖片是復仇者聯盟的哪個角色。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo/&quot; title=&quot;https://github.com/MoonAndEye/TuriCreateDemo/&quot;&gt;&lt;strong&gt;MoonAndEye/TuriCreateDemo&lt;/strong&gt;&lt;br /&gt;
+_GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over…_github.com&lt;/a&gt;&lt;a href=&quot;https://github.com/MoonAndEye/TuriCreateDemo/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Ref-1: &lt;a href=&quot;https://en.wikipedia.org/wiki/GraphLab&quot;&gt;Turi 公司被 Apple 收購, https://en.wikipedia.org/wiki/GraphLab&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ref-2: &lt;a href=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot;&gt;在 Mac 環境架設 Jupyter Notebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot; title=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot;&gt;&lt;strong&gt;在 Mac 上架設 Jupyter Notebook 環境&lt;/strong&gt;&lt;br /&gt;
+_目前，我本身的職務裡面並沒有需要用到 Python 的地方，所以這一篇主要的重點並不是用 Jupyter Notebook 來做一個專案的主軸，重點是放在讓 Python…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E5%9C%A8-mac-%E4%B8%8A%E6%9E%B6%E8%A8%AD-jupiter-notebook-%E7%92%B0%E5%A2%83-4a983b70af4&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ref-3: &lt;a href=&quot;https://tinyurl.com/y93ey7ds&quot;&gt;範例程式碼&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tinyurl.com/y93ey7ds&quot; title=&quot;https://tinyurl.com/y93ey7ds&quot;&gt;&lt;strong&gt;MoonAndEye/TuriCreateDemo&lt;/strong&gt;&lt;br /&gt;
+_GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over…_tinyurl.com&lt;/a&gt;&lt;a href=&quot;https://tinyurl.com/y93ey7ds&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ref-4: 實作金城武辨識器&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot; title=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;strong&gt;使用 Turi Create 製作圖案辨識的 App - Core ML and Vision&lt;/strong&gt;&lt;br /&gt;
+_Turi Create是一個拿來做 machine learning model 的 Python 模組，在 WWDC18 上，有多個 Session 直接在現場使用這個模組直接 Demo。他可以讓 iOS 開發者在使用 Core ML…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/using-turi-create-build-an-image-classification-app-core-ml-b3071ffde3af&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a46cb9420b34&quot;&gt;August 12, 2018&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/overview-of-wwdc18-session-712-turi-create-build-an-app-with-core-ml-is-not-that-difficult-a46cb9420b34&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="MLKit" /><category term="Machine Learning" /><category term="Turi Create" /><category term="Swift" /><summary type="html">WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事</summary></entry></feed>
