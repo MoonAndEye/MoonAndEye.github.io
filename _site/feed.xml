@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-15T10:02:46+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html">記錄:矽谷銀行(SVB)倒閉於2023-03-10</title><link href="http://localhost:4000/finance/2023/03/15/SVB-broken.html" rel="alternate" type="text/html" title="記錄:矽谷銀行(SVB)倒閉於2023-03-10" /><published>2023-03-15T09:01:00+08:00</published><updated>2023-03-15T09:01:00+08:00</updated><id>http://localhost:4000/finance/2023/03/15/SVB-broken</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/15/SVB-broken.html">&lt;h1 id=&quot;矽谷銀行svb倒閉於2023-03-10&quot;&gt;矽谷銀行(SVB)倒閉於2023-03-10&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://moonandeye.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moonandeye.github.io/" rel="alternate" type="text/html" /><updated>2023-03-15T10:15:31+08:00</updated><id>https://moonandeye.github.io/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><entry><title type="html">矽谷銀行(SVB)倒閉於2023年3月10日</title><link href="https://moonandeye.github.io/finance/2023/03/15/SVB-broken-v2.html" rel="alternate" type="text/html" title="矽谷銀行(SVB)倒閉於2023年3月10日" /><published>2023-03-15T10:13:00+08:00</published><updated>2023-03-15T10:13:00+08:00</updated><id>https://moonandeye.github.io/finance/2023/03/15/SVB-broken-v2</id><content type="html" xml:base="https://moonandeye.github.io/finance/2023/03/15/SVB-broken-v2.html">&lt;h1 id=&quot;矽谷銀行svb倒閉於2023-03-10&quot;&gt;矽谷銀行(SVB)倒閉於2023-03-10&lt;/h1&gt;
 
 &lt;p&gt;在美國時間2023年3月10日，美國矽谷銀行倒閉。根據 SVB 執行長 Greg Becker 的信，在拋售 210 億美元的債券組合後，稅後損失達到 18 億元。在宣告倒閉後，美國聯邦存款保險公司(FDIC)進行接管。SVB 是 FDIC 接管的銀行中，量體排名第二名的。&lt;/p&gt;
 
@@ -18,7 +18,27 @@
 
 &lt;h3 id=&quot;twitter-觀點&quot;&gt;Twitter 觀點&lt;/h3&gt;
 
-&lt;p&gt;大賣空主角原型 - 貝瑞在 Twitter 上則是說，這次的危機應該很快就會結束，事情會告一個段落。(不過他還是看空)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Finance" /><category term="finance" /><category term="investor" /><summary type="html">矽谷銀行(SVB)倒閉於2023-03-10</summary></entry><entry><title type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</title><link href="http://localhost:4000/life/2023/03/14/future-article-will-post-on-page.html" rel="alternate" type="text/html" title="GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了" /><published>2023-03-14T21:09:00+08:00</published><updated>2023-03-14T21:09:00+08:00</updated><id>http://localhost:4000/life/2023/03/14/future-article-will-post-on-page</id><content type="html" xml:base="http://localhost:4000/life/2023/03/14/future-article-will-post-on-page.html">&lt;h1 id=&quot;github-page-部落格弄好了未來文章都會-po-在-github-page-上了&quot;&gt;GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了&lt;/h1&gt;
+&lt;p&gt;大賣空主角原型 - 貝瑞在 Twitter 上則是說，這次的危機應該很快就會結束，事情會告一個段落。(不過他還是看空)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Finance" /><category term="finance" /><summary type="html">矽谷銀行(SVB)倒閉於2023-03-10</summary></entry><entry><title type="html">記錄:矽谷銀行(SVB)倒閉於2023-03-10</title><link href="https://moonandeye.github.io/finance/2023/03/15/SVB-broken.html" rel="alternate" type="text/html" title="記錄:矽谷銀行(SVB)倒閉於2023-03-10" /><published>2023-03-15T09:01:00+08:00</published><updated>2023-03-15T09:01:00+08:00</updated><id>https://moonandeye.github.io/finance/2023/03/15/SVB-broken</id><content type="html" xml:base="https://moonandeye.github.io/finance/2023/03/15/SVB-broken.html">&lt;h1 id=&quot;矽谷銀行svb倒閉於2023-03-10&quot;&gt;矽谷銀行(SVB)倒閉於2023-03-10&lt;/h1&gt;
+
+&lt;p&gt;在美國時間2023年3月10日，美國矽谷銀行倒閉。根據 SVB 執行長 Greg Becker 的信，在拋售 210 億美元的債券組合後，稅後損失達到 18 億元。在宣告倒閉後，美國聯邦存款保險公司(FDIC)進行接管。SVB 是 FDIC 接管的銀行中，量體排名第二名的。&lt;/p&gt;
+
+&lt;p&gt;在美國時間 13 日，Fed 和 FDIC 負責人表示。 SVB 儲戶可以順利拿回資產。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在收到 FDIC 和聯準會董事會的建議並與總統協商後，葉倫部長批准了使 FDIC 能夠完成的行動，它以充分保護所有儲戶的方式，對矽谷銀行進行決議。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;為什麼矽谷銀行會倒閉&quot;&gt;為什麼矽谷銀行會倒閉&lt;/h3&gt;
+
+&lt;p&gt;SVB 將資產配置在長期的國債，因為長期國債相對短期有比較好的利率。但在 2022 年開始，美國聯準會不斷的進行加息，這一年中加了八次息。市場利率上升，債券價格就會下跌。SVB 的客戶集中在科技業，在 2022 年底業界發現成長難以持續，不斷進行裁員，在業界景氣進入往下的趨勢中，眾多客戶進行資金轉移，導致了 SVB 需要先拋售持有的長期債券。一般來說，長期債券在長期持有的狀況下，很難賠到錢的，但短期價格是會被市場影響的。&lt;/p&gt;
+
+&lt;h3 id=&quot;後續&quot;&gt;後續&lt;/h3&gt;
+
+&lt;p&gt;美國時間 2023年3月12日，Signature Bank 被關閉，但所有存戶 13 日起可以領回所有存款。&lt;/p&gt;
+
+&lt;h3 id=&quot;twitter-觀點&quot;&gt;Twitter 觀點&lt;/h3&gt;
+
+&lt;p&gt;大賣空主角原型 - 貝瑞在 Twitter 上則是說，這次的危機應該很快就會結束，事情會告一個段落。(不過他還是看空)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Finance" /><category term="finance" /><category term="investor" /><summary type="html">矽谷銀行(SVB)倒閉於2023-03-10</summary></entry><entry><title type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</title><link href="https://moonandeye.github.io/life/2023/03/14/future-article-will-post-on-page.html" rel="alternate" type="text/html" title="GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了" /><published>2023-03-14T21:09:00+08:00</published><updated>2023-03-14T21:09:00+08:00</updated><id>https://moonandeye.github.io/life/2023/03/14/future-article-will-post-on-page</id><content type="html" xml:base="https://moonandeye.github.io/life/2023/03/14/future-article-will-post-on-page.html">&lt;h1 id=&quot;github-page-部落格弄好了未來文章都會-po-在-github-page-上了&quot;&gt;GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了&lt;/h1&gt;
 
 &lt;p&gt;最近抽空花了點時間，使用了 ChatGPT 輔助，在 GitHub Page 上架了自己的部落格。使用的是 Ruby 的 Jekyll 框架，Jekyll 也是 GitHub Page 上直接推薦的框架。&lt;/p&gt;
 
@@ -30,7 +50,7 @@
 
 &lt;p&gt;現在已經搬移了部分文章，接下來都會繼續在 Page 上寫文章，短期還會在 medium 上貼相同文章，但再過一陣子，我就會停用 medium 了。&lt;/p&gt;
 
-&lt;p&gt;畢竟，我還是想要有一個不是控在別人手上的 blog。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Life" /><category term="Life" /><category term="blog" /><summary type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</summary></entry><entry><title type="html">最近用 ChatGPT 來做的事情</title><link href="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html" rel="alternate" type="text/html" title="最近用 ChatGPT 來做的事情" /><published>2022-12-19T15:25:00+08:00</published><updated>2022-12-19T15:25:00+08:00</updated><id>http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT</id><content type="html" xml:base="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html">&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
+&lt;p&gt;畢竟，我還是想要有一個不是控在別人手上的 blog。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Life" /><category term="Life" /><category term="blog" /><summary type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</summary></entry><entry><title type="html">最近用 ChatGPT 來做的事情</title><link href="https://moonandeye.github.io/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html" rel="alternate" type="text/html" title="最近用 ChatGPT 來做的事情" /><published>2022-12-19T15:25:00+08:00</published><updated>2022-12-19T15:25:00+08:00</updated><id>https://moonandeye.github.io/programming/2022/12/19/the-things-I-delegate-to-chatGPT</id><content type="html" xml:base="https://moonandeye.github.io/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html">&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -104,7 +124,7 @@
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d3f2a789ca53&quot;&gt;December 29, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry><entry><title type="html">Flyweight Pattern — 蠅量級模式(享元模式)</title><link href="http://localhost:4000/swift/2022/08/10/flyweight-pattern.html" rel="alternate" type="text/html" title="Flyweight Pattern — 蠅量級模式(享元模式)" /><published>2022-08-10T21:16:00+08:00</published><updated>2022-08-10T21:16:00+08:00</updated><id>http://localhost:4000/swift/2022/08/10/flyweight-pattern</id><content type="html" xml:base="http://localhost:4000/swift/2022/08/10/flyweight-pattern.html">&lt;p&gt;本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry><entry><title type="html">Flyweight Pattern — 蠅量級模式(享元模式)</title><link href="https://moonandeye.github.io/swift/2022/08/10/flyweight-pattern.html" rel="alternate" type="text/html" title="Flyweight Pattern — 蠅量級模式(享元模式)" /><published>2022-08-10T21:16:00+08:00</published><updated>2022-08-10T21:16:00+08:00</updated><id>https://moonandeye.github.io/swift/2022/08/10/flyweight-pattern</id><content type="html" xml:base="https://moonandeye.github.io/swift/2022/08/10/flyweight-pattern.html">&lt;p&gt;本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -202,7 +222,7 @@
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a5ab3b6054f&quot;&gt;August 10, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Design pattern" /><category term="Swift" /><summary type="html">本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。</summary></entry><entry><title type="html">WWDC22 Keynote, Platform State of the Union</title><link href="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html" rel="alternate" type="text/html" title="WWDC22 Keynote, Platform State of the Union" /><published>2022-06-10T15:19:00+08:00</published><updated>2022-06-10T15:19:00+08:00</updated><id>http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html">&lt;p&gt;WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Design pattern" /><category term="Swift" /><summary type="html">本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。</summary></entry><entry><title type="html">WWDC22 Keynote, Platform State of the Union</title><link href="https://moonandeye.github.io/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html" rel="alternate" type="text/html" title="WWDC22 Keynote, Platform State of the Union" /><published>2022-06-10T15:19:00+08:00</published><updated>2022-06-10T15:19:00+08:00</updated><id>https://moonandeye.github.io/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union</id><content type="html" xml:base="https://moonandeye.github.io/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html">&lt;p&gt;WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -276,7 +296,7 @@
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a9e361a10a5d&quot;&gt;June 10, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/wwdc22-keynote-platform-state-of-the-union-a9e361a10a5d&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點</summary></entry><entry><title type="html">Meet WeatherKit in WWDC22</title><link href="http://localhost:4000/swift/2022/06/09/Meet-weatherKit-in-WWDC22.html" rel="alternate" type="text/html" title="Meet WeatherKit in WWDC22" /><published>2022-06-09T15:17:00+08:00</published><updated>2022-06-09T15:17:00+08:00</updated><id>http://localhost:4000/swift/2022/06/09/Meet-weatherKit-in-WWDC22</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/09/Meet-weatherKit-in-WWDC22.html">&lt;h1 id=&quot;meet-weatherkit-in-wwdc22&quot;&gt;Meet WeatherKit in WWDC22&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/wwdc22-keynote-platform-state-of-the-union-a9e361a10a5d&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點</summary></entry><entry><title type="html">Meet WeatherKit in WWDC22</title><link href="https://moonandeye.github.io/swift/2022/06/09/Meet-weatherKit-in-WWDC22.html" rel="alternate" type="text/html" title="Meet WeatherKit in WWDC22" /><published>2022-06-09T15:17:00+08:00</published><updated>2022-06-09T15:17:00+08:00</updated><id>https://moonandeye.github.io/swift/2022/06/09/Meet-weatherKit-in-WWDC22</id><content type="html" xml:base="https://moonandeye.github.io/swift/2022/06/09/Meet-weatherKit-in-WWDC22.html">&lt;h1 id=&quot;meet-weatherkit-in-wwdc22&quot;&gt;Meet WeatherKit in WWDC22&lt;/h1&gt;
 
 &lt;p&gt;WWDC22: Meet WeatherKit 重點結錄&lt;/p&gt;
 
@@ -349,7 +369,7 @@ const weatherResponse = await fetch(url, {headers: {&quot;Authorization&quot;: t
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/b48aaf4589b2&quot;&gt;June 9, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/meet-weatherkit-in-wwdc22-b48aaf4589b2&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">Meet WeatherKit in WWDC22</summary></entry><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2022-06-03T22:33:38+08:00</published><updated>2022-06-03T22:33:38+08:00</updated><id>http://localhost:4000/swift/2022/06/03/swiftui-and-compose</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/meet-weatherkit-in-wwdc22-b48aaf4589b2&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="Swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">Meet WeatherKit in WWDC22</summary></entry><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="https://moonandeye.github.io/swift/2022/06/03/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2022-06-03T22:33:38+08:00</published><updated>2022-06-03T22:33:38+08:00</updated><id>https://moonandeye.github.io/swift/2022/06/03/swiftui-and-compose</id><content type="html" xml:base="https://moonandeye.github.io/swift/2022/06/03/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
 
 &lt;p&gt;詳細的文章我寫在另一篇，可以直接從下方連結過去&lt;/p&gt;
 
@@ -384,7 +404,7 @@ _Google 官方是很重視 Android 開發環境的，常常會推出不同區域
 
 &lt;p&gt;也歡迎大家回覆對於這兩個框架的想法。&lt;/p&gt;
 
-&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name></name></author><category term="Swift" /><summary type="html">Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。</summary></entry><entry><title type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</title><link href="http://localhost:4000/kotlin/cross%20platform/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html" rel="alternate" type="text/html" title="Kotlin Multiplatform Mobile beta roadmap 重點節錄" /><published>2022-02-04T14:53:00+08:00</published><updated>2022-02-04T14:53:00+08:00</updated><id>http://localhost:4000/kotlin/cross%20platform/2022/02/04/Kotlin-Multiplatform-mobile-roadmap</id><content type="html" xml:base="http://localhost:4000/kotlin/cross%20platform/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html">&lt;h3 id=&quot;kotlin-multiplatform-mobile-beta-roadmap重點節錄&quot;&gt;Kotlin Multiplatform Mobile beta roadmap 重點節錄&lt;/h3&gt;
+&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name></name></author><category term="Swift" /><summary type="html">Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。</summary></entry><entry><title type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</title><link href="https://moonandeye.github.io/kotlin/cross%20platform/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html" rel="alternate" type="text/html" title="Kotlin Multiplatform Mobile beta roadmap 重點節錄" /><published>2022-02-04T14:53:00+08:00</published><updated>2022-02-04T14:53:00+08:00</updated><id>https://moonandeye.github.io/kotlin/cross%20platform/2022/02/04/Kotlin-Multiplatform-mobile-roadmap</id><content type="html" xml:base="https://moonandeye.github.io/kotlin/cross%20platform/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html">&lt;h3 id=&quot;kotlin-multiplatform-mobile-beta-roadmap重點節錄&quot;&gt;Kotlin Multiplatform Mobile beta roadmap 重點節錄&lt;/h3&gt;
 
 &lt;p&gt;在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容，主要為&lt;/p&gt;
 
@@ -425,7 +445,7 @@ _The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/60f673b3eda7&quot;&gt;February 4, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="[&quot;Kotlin&quot;, &quot;Cross platform&quot;]" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry><entry><title type="html">Stripe 系統漸進式升級的過程</title><link href="http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate.html" rel="alternate" type="text/html" title="Stripe 系統漸進式升級的過程" /><published>2021-12-18T15:11:00+08:00</published><updated>2021-12-18T15:11:00+08:00</updated><id>http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/12/18/Stripe-system-migrate.html">&lt;p&gt;歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="[&quot;Kotlin&quot;, &quot;Cross platform&quot;]" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry><entry><title type="html">Stripe 系統漸進式升級的過程</title><link href="https://moonandeye.github.io/system%20design/2021/12/18/Stripe-system-migrate.html" rel="alternate" type="text/html" title="Stripe 系統漸進式升級的過程" /><published>2021-12-18T15:11:00+08:00</published><updated>2021-12-18T15:11:00+08:00</updated><id>https://moonandeye.github.io/system%20design/2021/12/18/Stripe-system-migrate</id><content type="html" xml:base="https://moonandeye.github.io/system%20design/2021/12/18/Stripe-system-migrate.html">&lt;p&gt;歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -565,147 +585,4 @@ _Jacqueline Xu on February 2, 2017 in Engineering Engineering teams face a commo
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d2c7e73e298b&quot;&gt;December 18, 2021&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/stripe-%E7%B3%BB%E7%B5%B1%E6%BC%B8%E9%80%B2%E5%BC%8F%E5%8D%87%E7%B4%9A%E7%9A%84%E9%81%8E%E7%A8%8B-d2c7e73e298b&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><category term="migration" /><summary type="html">歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。</summary></entry><entry><title type="html">資料密集型應用系統設計-第六章筆記</title><link href="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html" rel="alternate" type="text/html" title="資料密集型應用系統設計-第六章筆記" /><published>2021-11-02T15:01:00+08:00</published><updated>2021-11-02T15:01:00+08:00</updated><id>http://localhost:4000/system%20design/2021/11/02/data-intensive-applications</id><content type="html" xml:base="http://localhost:4000/system%20design/2021/11/02/data-intensive-applications.html">&lt;p&gt;這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;資料密集型應用系統設計-第六章筆記&quot;&gt;資料密集型應用系統設計-第六章筆記&lt;/h3&gt;
-
-&lt;p&gt;這世界上沒有銀色子彈 &lt;a href=&quot;https://g.co/kgs/G7QbDr&quot;&gt;https://g.co/kgs/G7QbDr&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*ifN_ysbEQV3aPal21VYuXQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;為什麼需要分區&quot;&gt;為什麼需要分區?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;可擴充性增加&lt;/li&gt;
-  &lt;li&gt;只要業務量增加，最終單一伺服器總會遇到上限，在需要擴增的狀況下，選擇適當的分區策略，對未來的業務會有更大的助益。&lt;/li&gt;
-  &lt;li&gt;增加效率&lt;/li&gt;
-  &lt;li&gt;當分區策略做的好，在查找的效率會提高。&lt;/li&gt;
-  &lt;li&gt;增加安全性&lt;/li&gt;
-  &lt;li&gt;在特定狀況，可以將資料分成敏感性和非敏感性，分開存放。並在前面放上 security control，在不同&lt;/li&gt;
-  &lt;li&gt;增加操作的彈性&lt;/li&gt;
-  &lt;li&gt;因為不只一個儲存資料的地方，就可以有更多可優化的方法。像是 management, monitoring, backup and restore&lt;/li&gt;
-  &lt;li&gt;讓資料的本質更貼近儲存的型別&lt;/li&gt;
-  &lt;li&gt;分區是可以依照資料類型而分的。對於大的 binary data 的資料，放進對 blob storage 有優化的區，比放在 document database 更好。&lt;/li&gt;
-  &lt;li&gt;增加可靠性&lt;/li&gt;
-  &lt;li&gt;分區可以避免 single point of failure 等情形。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;分區的策略&quot;&gt;分區的策略&lt;/h3&gt;
-
-&lt;h3 id=&quot;水平分區-horizontal-partitioning&quot;&gt;水平分區 Horizontal partitioning&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*aLGFA24i3vdS5Fioh3SCKg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;每個分區分掉一部分的資料，這個策略中比較好的策略是讓每個分區對系統的負擔是差不多。每個分區擁有相同的 schema。每個分區也被稱之為 shard 。&lt;/p&gt;
-
-&lt;p&gt;水平分區的舉例，會將分區依照 key 的字母順序排列。這個策略最重要的是決定 sharding key 的範圍，因為策略一但執行並上線之後，就很難再度調整。&lt;/p&gt;
-
-&lt;p&gt;但這並不表示應該讓每個分區所擁有的「數量」一樣，在書本上的例子，是用百科全書為例。但是百科全書是個出版品，如果出版社想讓每本書的厚度相近，就會設計的讓頁數相近，所以排列的方法是讓字母順序的分區，能讓分區後的詞類和解釋的數量相近。&lt;/p&gt;
-
-&lt;p&gt;但是就資料庫而言，並不單純是「擁有的資料」，也有可能依照現實情境設計。可以設計成某個 shards 擁有的資料很大，但每個 item 的讀/寫頻率很低。而其他分區擁有的資料很小，但是讀/寫頻率很高。&lt;/p&gt;
-
-&lt;p&gt;要注意的點:&lt;/p&gt;
-
-&lt;p&gt;要確保每一個 shard 不會超過機器的物理上限。&lt;/p&gt;
-
-&lt;p&gt;需要避免製造出會影響效能或可靠近的「熱區」，舉例來說，如果設計讓顧客的首字字母當做分區的 Key 分類，就會造成某些分佈不均，因為人類的語言上會有常用習慣。可以替代的方案，就是先經過 hash 函數，再分散放入分區中。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;垂直分區-vertical-partitioning&quot;&gt;&lt;strong&gt;垂直分區 Vertical partitioning&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*XXjsPN9UtOCuhKUV9Bj7HA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;每個分區都擁是原始資料的子集合。舉例來說，將欄位分成常用和不常用的部分，常用的欄位放在某一分區，不常用的放另一分區。&lt;/p&gt;
-
-&lt;p&gt;縱向分區最常使用的場景，就是減少 I/O 和降低高頻率拉取資料的成本。&lt;/p&gt;
-
-&lt;p&gt;以上 Fig2 為例，一個分區存放高頻率被存取的資料，包含產品名稱，描述，價格。另一個分區存放的資料，是倉庫中的庫存和上次訂購的時間。在這個例子中，這個系統常常會因為 App 需要顯示，而要去 query 產品名稱、描述、價格。&lt;/p&gt;
-
-&lt;p&gt;而庫存數量和上次購買日期會放在一區，是因為這兩個 item 常常一起在同一個區段顯示。&lt;/p&gt;
-
-&lt;p&gt;其他優點&lt;/p&gt;
-
-&lt;p&gt;不常變更的項目，和常常變更的項目會切開。在這個例子中，產品名稱，描述，價格是不常變動項目。而庫存數目和上次購買日期是常常變動的項目。而不常變動項目的區間，是很容易被選到放在記憶體中的快取。&lt;/p&gt;
-
-&lt;p&gt;敏感型資料可以分區存放，並加上 additional security controls。&lt;/p&gt;
-
-&lt;p&gt;垂直分區可以減少所需的併發型 access。以上面的例子來說，如果當 client 真的發生訂購行為，會更動庫存和上次購買時間。垂直分區的策略，不會讓整條 row 鎖住。而這個策略，也因為只要特定欄位，在 MSSql 以 Page 為單位時，每個 Page 可包含的 row 數量會比使用水平分區策略的多。&lt;/p&gt;
-
-&lt;p&gt;功能分區 Functional partitioning (Microsoft 的文章)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*MUsz-zJi4R9v_hZRYzaacw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;功能分區。將資料依照「如何被使用」來分，舉例來說，如果架設電商系統的分區，會將產品庫存資料放在一個分區，而發票/收據資料，放在另一個分區。&lt;/p&gt;
-
-&lt;p&gt;如果商業邏輯的邊界是很明顯的，那依照功能切分是可以提升效率的。常用的場景是，將 read-write data 和 read-only data 放在不同區分。在 Fig 3 中的場景，是將庫存資料和客戶資料放在不同區分。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;key-or-hashed-basesharding&quot;&gt;Key or hashed base sharding&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Fac4H-wdk02et48Lm9thiw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;假設你有四台 database servers，每個 request 都有 application id。只要使用 hash 和 mod ，就能將資料分散到四台機器上。&lt;/p&gt;
-
-&lt;p&gt;這個方法的主要缺點是， elastic load balancing (dynamically adding/removing database servers) 會非常困難，而且成本很高。&lt;/p&gt;
-
-&lt;p&gt;假設，你想要多加六台機器，就必需進行 remapp 和 migration。除此之外，你還要調整你的 hash function，從 mod 4 變成 mod 10。&lt;/p&gt;
-
-&lt;p&gt;現在，是有不停機的轉換的方式，如 Consistant Hashing，參考資料如下。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.acodersjourney.com/system-design-interview-consistent-hashing/&quot;&gt;https://www.acodersjourney.com/system-design-interview-consistent-hashing/&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;directory-basedsharding&quot;&gt;Directory based sharding&lt;/h3&gt;
-
-&lt;p&gt;Directory based shard 分區會在分區前面加上 lookup service。lookup service 知道現在的分區 scheme，並在系統中留存一份 map 紀錄。&lt;/p&gt;
-
-&lt;p&gt;client 端會先去問 lookup service，去找出 entity 是被放在哪個 shard，然後才會進行查找的動作。&lt;/p&gt;
-
-&lt;p&gt;優點&lt;/p&gt;
-
-&lt;p&gt;可以解決 elastic scaling 問題，而且是在不使用 consistent hashing 的前提。先假設前面的擴張情況，四個 database service 配上 hashed based 區分策略。現在要加上六個 database servers 而且不想停機。&lt;/p&gt;
-
-&lt;p&gt;步驟如下&lt;/p&gt;
-
-&lt;p&gt;1&amp;gt; lookup service 仍然使用 mod 4 hash function&lt;/p&gt;
-
-&lt;p&gt;2&amp;gt; 先區分出，如果在 mod 10 的狀況下，資料該怎麼區分&lt;/p&gt;
-
-&lt;p&gt;3&amp;gt; 寫一段 script 把所有的資料 copy 到新的六台 shards 上，注意，此時並不會刪掉原來四台上的資料。&lt;/p&gt;
-
-&lt;p&gt;4&amp;gt; 當 copy 完成，換掉 lookup service 上的 hash function，從 mod 4 換成 mod 10。&lt;/p&gt;
-
-&lt;p&gt;5&amp;gt; 將 4 台舊資料上的資料清掉 (稱之為 purge 或 clean up)。&lt;/p&gt;
-
-&lt;p&gt;在實務上要注意的地方&lt;/p&gt;
-
-&lt;p&gt;migration 時，使用者還是有可能在更新資料。可能的解法，將系統轉為 read-only mode。或是先將這個時間的資料，放到另一個 service 上，等到 migration 結束再移回來。&lt;/p&gt;
-
-&lt;p&gt;copy 和 clean up 對效能會有很大影響。可能解法就是 cloning and elastic load balancing，但這兩個方法的成本都很高&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;參考文章&quot;&gt;參考文章&lt;/h3&gt;
-
-&lt;p&gt;分區的文章&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.acodersjourney.com/database-sharding/&quot;&gt;https://www.acodersjourney.com/database-sharding/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Consistent Hashing&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.acodersjourney.com/system-design-interview-consistent-hashing/&quot;&gt;https://www.acodersjourney.com/system-design-interview-consistent-hashing/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Microsoft 對工作負載和熱點降溫&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning&quot;&gt;https://docs.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/c8b1ddc94554&quot;&gt;November 2, 2021&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><summary type="html">這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/stripe-%E7%B3%BB%E7%B5%B1%E6%BC%B8%E9%80%B2%E5%BC%8F%E5%8D%87%E7%B4%9A%E7%9A%84%E9%81%8E%E7%A8%8B-d2c7e73e298b&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="system design" /><category term="system design" /><category term="migration" /><summary type="html">歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。</summary></entry></feed>
