@@ -2,12 +2,12 @@ main:
   - title: "Home"
     url: /
   - title: "Swift"
-    url: /swift/
+    url: /swift.html
   - title: "軟體開發"
     url: /programming/
   - title: "財經新聞"
-    url: /finance/
+    url: /finance.html
   - title: "生活"
-    url: /life/
+    url: /life.html
   - title: "About"
     url: /about/
