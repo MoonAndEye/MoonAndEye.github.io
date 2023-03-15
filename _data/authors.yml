@@ -1,0 +1,6 @@
+# Author details.
+marvin_lin:
+    name: Marvin Lin
+    avatar: "/assets/author/avatar.jpg"
+    bio: "喜歡 Swift 的開發者" # 側邊作者簡介
+    location: "Taiwan"
