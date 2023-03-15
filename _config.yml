@@ -40,9 +40,14 @@ analytics:
     tracking_id          : "G-VLY0RSDRM1"
     anonymize_ip         : # true, false (default)
 
+header_pages:
+  - about.md
+  - categories.md
+
 # Build settings
 # theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.18.1"
+
 plugins:
   - jekyll-feed
   - jemoji
@@ -52,6 +57,10 @@ plugins:
   # - jekyll-paginate
   # - jekyll-gist
   - jekyll-include-cache
+
+# 原來的設定，但為了改善 SEO 先改成 title
+# permalink: /:categories/:year/:month/:day/:title:output_ext
+permalink: /:categories/:title:output_ext
 
 # Site Author
 author:

@@ -2,7 +2,7 @@
 layout: post
 title: "最近用 ChatGPT 來做的事情"
 date: 2022-12-19 15:25 +0800
-category: Programming
+category: programming
 author: Marvin Lin
 tags: [ChatGPT, AI]
 summary: "分享一下最近用 ChatGPT 來做的事情"

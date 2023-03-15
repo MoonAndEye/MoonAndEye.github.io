@@ -2,9 +2,9 @@
 layout: post
 title: "資料密集型應用系統設計-第六章筆記"
 date: 2021-11-2 15:01:00 +0800
-category: system design
+category: programming
 author: Marvin Lin
-tags: [system design]
+tags: [system design, programming]
 summary: "資料密集型應用系統設計的讀書筆記，伺服器進行分區，討論不同的分區策略"
 ---
 
