@@ -37,9 +37,13 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-gist
+  # - jekyll-paginate
+  # - jekyll-gist
   - jekyll-include-cache
+
+sidebar:
+  title: "Sample Title"
+  nav: sidebar-sample
 
 # Exclude from processing.
 # The following items will not be processed, by default.
