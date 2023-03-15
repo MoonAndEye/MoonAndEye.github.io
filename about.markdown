@@ -13,9 +13,9 @@ I am fond of Apple-related products and enjoy writing in Swift. In addition to S
 我喜歡用程式去完成我喜歡做的事情，目前的 side projects 領域有 iOS apps/macOS apps/twitter bot。
 這個 blog 使用 jekyll 框架製作。
 
-### iOS apps
+---
 
-#### 歌曲知識王
+### iOS App: 歌曲知識王
 
 An entertaining music guessing app, in which each game allows players to guess five songs.
 
@@ -24,7 +24,7 @@ An entertaining music guessing app, in which each game allows players to guess f
 [![歌曲知識王 king of song quiz](/assets/about/icon_king_of_song_quiz.jpg){: width="150" }](https://apps.apple.com/tw/app/king-of-song-quiz/id1273605195)
 
 ---
-#### 逆走鐘
+### iOS App: 逆走鐘
 
 An app dedicated to honoring the computer programming queen, Grace Hopper
 

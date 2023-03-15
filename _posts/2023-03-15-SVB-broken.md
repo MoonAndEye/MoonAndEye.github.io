@@ -5,7 +5,7 @@ date: 2023-03-15 09:01
 category: Finance
 author: Marvin Lin
 tags: [finance, investor]
-summary: 
+summary: "矽谷銀行(SVB)倒閉於2023-03-10，紀錄事情的發生"
 ---
 
 # 矽谷銀行(SVB)倒閉於2023-03-10
