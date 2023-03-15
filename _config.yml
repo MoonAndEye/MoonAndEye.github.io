@@ -48,6 +48,7 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-remote-theme
   # - jekyll-paginate
   # - jekyll-gist
   - jekyll-include-cache
