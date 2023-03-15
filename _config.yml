@@ -29,7 +29,16 @@ url: "https://moonandeye.github.io" # the base hostname & protocol for your site
 twitter_username: atimisMoon
 github_username:  MoonAndEye
 
+search: true
+author_profile: true
+
 google_analytics: "G-VLY0RSDRM1"
+
+analytics:
+  provider               : "google" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "G-VLY0RSDRM1"
+    anonymize_ip         : # true, false (default)
 
 # Build settings
 # theme: minima
@@ -43,9 +52,32 @@ plugins:
   # - jekyll-gist
   - jekyll-include-cache
 
-sidebar:
-  title: "Sample Title"
-  nav: sidebar-sample
+# Site Author
+author:
+  name             : "Marvin Lin" # 側邊作者名稱
+  avatar           : "/assets/author/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "喜歡 Swift 的開發者" # 側邊作者簡介
+  location         : "Taipei, Taiwan"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: mailto:your.name@email.com
+    - label: "HomePage"
+      icon: "fas fa-fw fa-link"
+      url: "https://moonandeye.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/atimisMoon"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url:  "https://github.com/Moonandeye"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
