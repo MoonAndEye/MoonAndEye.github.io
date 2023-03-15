@@ -50,6 +50,7 @@ _WeatherKit offers valuable weather data for your apps and services to help peop
 
 呼叫 WeatherKit 的方法短短幾行就能做到
 
+{% highlight swift %}
     import WeatherKitimport CoreLocation
 
     let weatherService = WeatherService()
@@ -61,6 +62,7 @@ _WeatherKit offers valuable weather data for your apps and services to help peop
     let temperature = weather.currentWeather.temperature
 
     let uvIndex = weather.currentWeather.uvIndex
+{% endhighlight %}
 
 Apple 也提供了 RESTful API 的方法呼叫 WeatherKit
 

@@ -76,6 +76,7 @@ Step 2:把模板複製出一份，再開始修改裡面的 property，改成你�
 
 我們現在定義一個 Location 的類別並取代原來的 place: String 試試看。
 
+{% highlight swift %}
 class Location {
 
      var name:String  
@@ -85,6 +86,7 @@ class Location {
          self.name = name; self.address = address  
      }  
 }
+{% endhighlight %}
 
 現在 beerMeeting 的 place 已經是一個 reference type，那在 copy 的時候， self.place 會不會也被 copy 一份呢?從下面這邊我們可以看到 place 的值。
 
