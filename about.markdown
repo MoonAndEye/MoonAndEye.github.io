@@ -7,7 +7,7 @@ permalink: /about/
 
 # Marvin Lin
 
-I am fond of Apple-related products and enjoy writing in Swift. In addition to Swift, I also enjoy writing in Python. I like using programming to accomplish the things I love to do, and my current side project areas include iOS apps, macOS apps, and Twitter bots. This blog was built using the Jekyll framework.
+I love Apple's products and enjoy Swift development. I love using code to get things done. Currently, my side projects include iOS apps, macOS apps, and Twitter bots. This blog made by jekyll framework.
 
 我喜歡 Apple 相關產品，喜歡寫 Swift。
 除了 Swift 以外，我也喜歡寫 Python。
