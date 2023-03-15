@@ -2,7 +2,7 @@
 layout: post
 title: "Flyweight Pattern — 蠅量級模式(享元模式)"
 date: 2022-08-10 21:16 +0800
-category: Swift
+category: swift
 author: Marvin Lin
 tags: [Design pattern, Swift]
 summary: "Flyweight Pattern — 蠅量級模式(享元模式)，本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。"

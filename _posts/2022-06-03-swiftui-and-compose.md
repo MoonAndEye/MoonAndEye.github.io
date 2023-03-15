@@ -2,7 +2,8 @@
 layout: post
 title:  "SwiftUI & Compose"
 date:   2022-06-03 22:33:38 +0800
-categories: Swift
+categories: swift
+tags: [Swift]
 ---
 
 Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。

@@ -2,7 +2,7 @@
 layout: post
 title: "Meet WeatherKit in WWDC22"
 date: 2022-06-09 15:17 +0800
-category: Swift
+category: swift
 author: Marvin Lin
 tags: [Swift, WWDC]
 summary: "WWDC22 新 framework - Meet WeatherKit 重點結錄"

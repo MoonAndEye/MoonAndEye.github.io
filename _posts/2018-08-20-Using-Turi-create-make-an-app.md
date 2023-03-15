@@ -2,7 +2,7 @@
 layout: post
 title: "使用 Turi Create 製作圖案辨識的 App - Core ML and Vision"
 date: 2018-08-20 15:32 +0800
-category: Swift
+category: swift
 author: Marvin Lin
 tags: [Core ML, MLKit, Swift]
 summary: "使用 Turi Create 製作圖案辨識的 App - Core ML and Vision"
