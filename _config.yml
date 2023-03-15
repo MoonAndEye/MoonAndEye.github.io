@@ -17,6 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+github: [metadata]
 
 title: Marvin Lin's Blogger
 locale: "zh-TW"
@@ -31,7 +32,8 @@ github_username:  MoonAndEye
 google_analytics: "G-VLY0RSDRM1"
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.18.1"
 plugins:
   - jekyll-feed
   - jemoji
