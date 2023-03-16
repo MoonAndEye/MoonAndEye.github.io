@@ -48,3 +48,29 @@ permalink: /swift-community/
 [官網連結](https://iplayground.io)
 
 [Youtube Link](https://www.youtube.com/@iPlaygroundTaiwan)
+
+<!-- banner_AppWorks-School.png -->
+
+## AppWorks School
+
+[![AppWorks School](/assets/swift-community/banner_AppWorks-School.jpeg){: width="450", height="150" }](https://school.appworks.tw)
+
+[官網連結](https://school.appworks.tw)
+
+### 目標就業
+AppWorks School 的目標在幫助你投身網路業，除了紮實的技術力養成，我們也提供履歷健檢與模擬面試，協助你展現個人特質，並在畢業前安排就業媒合活動，協助你找到理想舞台，一展長才。
+
+### 實作導向學習
+AppWorks School 重視實戰經驗，將透過專案的階段性目標，引導你循序漸進地自學，從實作各種功能到獨立自主完成專案，累積大量開發經驗並建立個人作品集，從中培養出「解決問題」與「自主學習」的能力。
+
+### 全程免費
+AppWorks School 完全無需學費，也沒有任何隱含費用，你只需帶上一台筆電並全心投入，其他的交給我們。
+
+### 整合業界實務
+由活躍於業界第一線的 AppWorks Startups 技術長與資深工程師組成的業師群，直接與你分享網路公司的技術架構、組織文化、工作方法，讓你更快了解業界實務。
+
+### 同儕、助教、校友一起解惑
+與同儕共同學習摸索、相互討論，可以提升學習動力與效果，而 AppWorks School 助教提供的適時協助，更可以避免時間的浪費與不必要的挫折感。即使在結業之後，依然可以透過 AppWorks School 的強大學員網絡相互切磋、精進技能。
+
+### 你的職涯充電站
+AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如資訊安全與系統設計等課程資源，持續為你的職涯充電。
