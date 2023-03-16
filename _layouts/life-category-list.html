@@ -13,6 +13,7 @@ author_profile: true
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
+    <p class="entry-meta small-date">{{ post.date | date: "%b %-d, %Y" }}</p>
   {% endfor %}
 </div>
 
