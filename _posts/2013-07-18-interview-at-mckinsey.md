@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我遇過最有趣的面試，在麥肯錫 McKinsey
-date: 2023-03-16 10:41
+date: 2013-07-18 10:41
 category: life
 author: Marvin Lin
 tags: [life]

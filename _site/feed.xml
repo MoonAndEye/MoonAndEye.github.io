@@ -1,86 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-16T10:42:35+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">我遇過最有趣的面試，在麥肯錫 McKinsey</title><link href="http://localhost:4000/life/interview-at-mckinsey.html" rel="alternate" type="text/html" title="我遇過最有趣的面試，在麥肯錫 McKinsey" /><published>2023-03-16T10:41:00+08:00</published><updated>2023-03-16T10:41:00+08:00</updated><id>http://localhost:4000/life/interview-at-mckinsey</id><content type="html" xml:base="http://localhost:4000/life/interview-at-mckinsey.html">&lt;p&gt;2012年的春天，那時經過台大的活動中心，看到麥肯錫又要來二活做職涯介紹，決定再去聽一次。第一次聽麥肯錫是2010年的春天吧，那時候也是在社團活動時看到海報，而試著去聽一下顧問公司在幹什麼。&lt;/p&gt;
-
-&lt;p&gt;記得2010年的開場，是一個念法律的學姊。他簡單介紹了他的動機，來自於他學生生涯的交換過程。這位學姊交換結束，非常想要拿到一份可以一直去國外的工作。而他本身的出路不是律師、法宮，這種幾乎沒有出國出差需要的職位。於是他上google去找尋這類型的職缺，第一個出來的是「空姐」，而第二個出現的，就是McKinsey這一家公司。於是，這位學姊就這樣的以這個職業為目標，最後成功進入麥肯錫到這裡。學姊在說明會上得簡報也放上他的出差地圖，亞洲區是密密麻麻的一遍，美洲區也有幾個點，真的達成了他所希望的目標。&lt;/p&gt;
-
-&lt;p&gt;那一年的說明會，奇人滿堂，有一個瑞士人，他開場時介紹自己的專長是五國語言，而且其中一種是中文……，會後和他稍微聊一下，他只和我說中文呀。所以剩下的四個語言我猜是德、法、英、瑞士方言。&lt;/p&gt;
-
-&lt;p&gt;至於怎麼在面試McKinsey時得到面試官的關注呢？台上的人都提出，「你要讓你的面試官覺得你很有趣」這個觀點，也就是下面這兩個例子。&lt;/p&gt;
-
-&lt;p&gt;案例1：台大電資學群的學長，他說他自己的在校成績不好，大一的時候被當掉很多科目。不過，他那時候玩『星海爭霸』比賽，成積是全台灣前三，而且他還把這個寫在履歷上面。面試宮看到這個，覺得他很有趣，所以就錄取了！？&lt;/p&gt;
-
-&lt;p&gt;案例2：忘記哪個學群的學長，扛了一台腳踏車去法國，然後邊騎車邊遊法國，當然這一點也讓面試官覺得很有趣。&lt;/p&gt;
-
-&lt;p&gt;所以，看起來要讓面試官覺得你很有趣一定是重點。在2012年，McKinsey開了一個比較特別的職位，沒想到一投履歷就接到電話，約個面試時間去看看天才群聚的公司。&lt;/p&gt;
-
-&lt;p&gt;麥肯錫的面試真的很好玩，一般公司的工程師面試，都是把你請過來，然後問你會不會這，會不會那，再來主管可能會考你一些問題&lt;/p&gt;
-
-&lt;p&gt;但相比我遇過的面試，我覺得最有趣的就是這一家顧問公司，我應徵的不是B.A.，而是思考如何導入新製程或跨領域製程，讓現有產品(主要是3C產品)具有更競爭力的價格。不過目的歸目的，考試的方式真的是我從來沒有看過的，我進入小隔間後，就馬上有人拿了兩台刮鬍刀給我，一台是Panasonic牌，另一台是M牌的。指了指旁邊的工具箱，裡面有大大小小的螺絲起子、板手、捲尺。接下來的指令就是「儘你可能的把這兩個電動刮鬍全拆了，等下考官會進來問你改善方案」。當我速度很快的把所有的東西拿出來拆掉，一個一個比對的時候，考官就進來了！！&lt;/p&gt;
-
-&lt;p&gt;馬上就開始問我到底有哪些改善方案，我只想到一半，就儘可能的邊說邊想，十分的緊湊！我可能針對一個PC和PC+ABS的料件思考了一下下，面試官馬上就逼我想下一個改善方案，後來愈講愈急，我只要一停頓，他就立刻說「Next」！「Next」！第一回合我大概只被認同五個改善方案吧。考官大發慈悲，再給我十分鐘，讓我多想一點。&lt;/p&gt;
-
-&lt;p&gt;第一回合的第二階段，我再想了一些改善方案，最後被認可的只有七個吧。而第二階段，就是寫出管銷成本分析，限時10 min。聽到只有十分鐘，我趕快努力的寫，我記得才寫到BOM分析，時間就到了。&lt;/p&gt;
-
-&lt;p&gt;沒想到時間結束時，考官第一句話。&lt;/p&gt;
-
-&lt;p&gt;『這個東西沒有人10 min可以寫完的，為什麼你一開始不先協商呢？』&lt;/p&gt;
-
-&lt;p&gt;『既使我不同意，你也至少和我說一下你能把這個問題處理到什麼程度』&lt;/p&gt;
-
-&lt;p&gt;聽到這兩句話，我下巴真的是掉下來了。原來這裡的面試是可以協商的，我還以為每個人都可以在10 min把這個問題處理掉。原來這10min的限制也是一道問題，如果你可以判斷出10min不能做完，馬上就要和考官反應，或者想出一個備用方案。我想McKinsey想要的就是有這種瞬間決斷力和反應的人吧，所以……我出局了，沒有拿到offer。&lt;/p&gt;
-
-&lt;p&gt;但讓人感到溫馨的是，在結束後，考官也會分析你這次的考試情況，我想這有兩個目的，一個是改進面試者，另一個就是鍛練考官的分析能力。分析能力可以經由鍛練來增強，也可以縮短反應時間，據說大前研一也會在每天的通勤時間在自己的腦內鍛練。&lt;/p&gt;
-
-&lt;p&gt;我這次面試的評價是：觀察力很強，不過想像力和創造力太貧弱。這次面試有十幾個人，除了我以外，其他人都只是學生，沒有工作經驗。但我想出來的改善方案只有七個，第一名是十六個。依照改善方案的數量來看，我只有第一名的一半，他們想要的是創造力比較強的。&lt;/p&gt;
-
-&lt;p&gt;再來就是協商能力薄弱，顧問業是非常注重協商能力的，顧客永遠希望你花的時間愈短愈好，價格愈低愈好。所以如果沒有協商能力，去判斷專案所需要的時間及人力，不用等到顧客來玩死你，你就會被你的同事和上級玩死了。&lt;/p&gt;
-
-&lt;p&gt;而其中一點他並沒有講的很直，但我把塑料中的ABS和PE的價格講反了。這兩個刮鬍刀的外殼，一個是PE，另一個是ABS混PE。我之前雖然在採購部門底下，但實際上是在金屬採購部門，沒有任何的塑膠價格會流到我的部門來。所以我在判斷的時候，完全是用猜的。我猜ABS是比較便宜的材料，而PE是工程性質比較優的材料，混ABS是為了降低成本的工法。&lt;/p&gt;
-
-&lt;p&gt;結果和現實完全相反，ABS是比較優良，又比較貴的材料，混PE是為了降低成本而已，這個觀念當我看到他第二題附的材料單價表就知道我錯了 Orz。&lt;/p&gt;
-
-&lt;p&gt;我想對塑膠材料價格猜錯這一點，應該是大扣分，光是第一題的數量比不上別人，再加上材料價格講錯，我就出局了。&lt;/p&gt;
-
-&lt;p&gt;所以，接下來就分享怎麼進入 Taipei 101 辦公樓層的方法，你也可以用這個方法去35數層的Starbuck坐喔，是免費的！&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://4.bp.blogspot.com/-IgH9A16yK7U/UedSXfhzwtI/AAAAAAAABgM/RFcg4Qpdfb8/s1600/IMG_0315.JPG&quot;&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-IgH9A16yK7U/UedSXfhzwtI/AAAAAAAABgM/RFcg4Qpdfb8/s320/IMG_0315.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://2.bp.blogspot.com/-Xs2JqtLu70o/UedSYyzUOgI/AAAAAAAABgU/SPZgnfwQUOA/s1600/IMG_0316.JPG&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-Xs2JqtLu70o/UedSYyzUOgI/AAAAAAAABgU/SPZgnfwQUOA/s320/IMG_0316.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;從這個門進去&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-5nDC5svbASY/UedSWo4UQpI/AAAAAAAABgI/L7f1oJbtuQw/s1600/IMG_0318.JPG&quot;&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-5nDC5svbASY/UedSWo4UQpI/AAAAAAAABgI/L7f1oJbtuQw/s320/IMG_0318.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;要記得從這裡拿卡，不然進不去&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://3.bp.blogspot.com/-AUXUHw9i5Pc/UedSfHsyBqI/AAAAAAAABgc/XCcfAYwsIoY/s1600/IMG_0319.JPG&quot;&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-AUXUHw9i5Pc/UedSfHsyBqI/AAAAAAAABgc/XCcfAYwsIoY/s320/IMG_0319.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;要去喝咖啡選35樓&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://3.bp.blogspot.com/-nW5egjvRjDA/UedSih8z4iI/AAAAAAAABgk/mUovz3zZFxU/s1600/IMG_0321.JPG&quot;&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-nW5egjvRjDA/UedSih8z4iI/AAAAAAAABgk/mUovz3zZFxU/s320/IMG_0321.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;一卡在手通行無阻&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-hqLNZ6adDFI/UedSkUU9FPI/AAAAAAAABgs/hdWHqZCzlqA/s1600/IMG_0322.JPG&quot;&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-hqLNZ6adDFI/UedSkUU9FPI/AAAAAAAABgs/hdWHqZCzlqA/s320/IMG_0322.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;從警尉旁邊的門進去吧&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://3.bp.blogspot.com/-tWD6436IVr8/UedSl3bLjwI/AAAAAAAABg0/rS-bUoME7PQ/s1600/IMG_0324.JPG&quot;&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-tWD6436IVr8/UedSl3bLjwI/AAAAAAAABg0/rS-bUoME7PQ/s320/IMG_0324.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;可惜我只是過客，不是歸人&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://2.bp.blogspot.com/-3mvvYVPEd38/UedSrUjHrUI/AAAAAAAABhE/4GhhnVWBStU/s1600/IMG_0325.JPG&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-3mvvYVPEd38/UedSrUjHrUI/AAAAAAAABhE/4GhhnVWBStU/s320/IMG_0325.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;35樓，就是咖啡店&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://2.bp.blogspot.com/-5dvNfVwgCR0/UedSvgLaT9I/AAAAAAAABho/Y2ZqqcxbpKg/s1600/IMG_0330.JPG&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-5dvNfVwgCR0/UedSvgLaT9I/AAAAAAAABho/Y2ZqqcxbpKg/s320/IMG_0330.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;這邊賣的咖啡沒有比較貴&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://4.bp.blogspot.com/-oYJpy4sGRsQ/UedSvjiGqBI/AAAAAAAABhs/J0nluGPtvyI/s1600/IMG_0331.JPG&quot;&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-oYJpy4sGRsQ/UedSvjiGqBI/AAAAAAAABhs/J0nluGPtvyI/s320/IMG_0331.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;喝咖啡的話可以拿到上面那一張&lt;/p&gt;
-
-&lt;p&gt;Key Words: Recruit, interview, McKinsey, 麥肯錫, test&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><summary type="html">2012年的春天，那時經過台大的活動中心，看到麥肯錫又要來二活做職涯介紹，決定再去聽一次。第一次聽麥肯錫是2010年的春天吧，那時候也是在社團活動時看到海報，而試著去聽一下顧問公司在幹什麼。</summary></entry><entry><title type="html">紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日</title><link href="http://localhost:4000/finance/CSGN-issue-news.html" rel="alternate" type="text/html" title="紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日" /><published>2023-03-16T08:34:00+08:00</published><updated>2023-03-16T08:34:00+08:00</updated><id>http://localhost:4000/finance/CSGN-issue-news</id><content type="html" xml:base="http://localhost:4000/finance/CSGN-issue-news.html">&lt;p&gt;在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="news" /><summary type="html">在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。</summary></entry><entry><title type="html">紀錄：矽谷銀行(SVB)倒閉於2023年3月10日</title><link href="http://localhost:4000/finance/SVB-broken-v2.html" rel="alternate" type="text/html" title="紀錄：矽谷銀行(SVB)倒閉於2023年3月10日" /><published>2023-03-15T10:13:00+08:00</published><updated>2023-03-15T10:13:00+08:00</updated><id>http://localhost:4000/finance/SVB-broken-v2</id><content type="html" xml:base="http://localhost:4000/finance/SVB-broken-v2.html">&lt;h1 id=&quot;矽谷銀行svb倒閉於2023-03-10&quot;&gt;矽谷銀行(SVB)倒閉於2023-03-10&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-16T10:43:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日</title><link href="http://localhost:4000/finance/CSGN-issue-news.html" rel="alternate" type="text/html" title="紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日" /><published>2023-03-16T08:34:00+08:00</published><updated>2023-03-16T08:34:00+08:00</updated><id>http://localhost:4000/finance/CSGN-issue-news</id><content type="html" xml:base="http://localhost:4000/finance/CSGN-issue-news.html">&lt;p&gt;在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="news" /><summary type="html">在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。</summary></entry><entry><title type="html">紀錄：矽谷銀行(SVB)倒閉於2023年3月10日</title><link href="http://localhost:4000/finance/SVB-broken-v2.html" rel="alternate" type="text/html" title="紀錄：矽谷銀行(SVB)倒閉於2023年3月10日" /><published>2023-03-15T10:13:00+08:00</published><updated>2023-03-15T10:13:00+08:00</updated><id>http://localhost:4000/finance/SVB-broken-v2</id><content type="html" xml:base="http://localhost:4000/finance/SVB-broken-v2.html">&lt;h1 id=&quot;矽谷銀行svb倒閉於2023-03-10&quot;&gt;矽谷銀行(SVB)倒閉於2023-03-10&lt;/h1&gt;
 
 &lt;p&gt;在美國時間2023年3月10日，美國矽谷銀行倒閉。根據 SVB 執行長 Greg Becker 的信，在拋售 210 億美元的債券組合後，稅後損失達到 18 億元。在宣告倒閉後，美國聯邦存款保險公司(FDIC)進行接管。SVB 是 FDIC 接管的銀行中，量體排名第二名的。&lt;/p&gt;
 
@@ -507,4 +425,36 @@ _The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/60f673b3eda7&quot;&gt;February 4, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry><entry><title type="html">Apple Watch 開箱</title><link href="http://localhost:4000/life/Apple-Watch.html" rel="alternate" type="text/html" title="Apple Watch 開箱" /><published>2022-01-02T09:30:00+08:00</published><updated>2022-01-02T09:30:00+08:00</updated><id>http://localhost:4000/life/Apple-Watch</id><content type="html" xml:base="http://localhost:4000/life/Apple-Watch.html">&lt;hr /&gt;
+
+&lt;h3 id=&quot;appapple-watch開箱&quot;&gt;AppApple Watch 開箱&lt;/h3&gt;
+
+&lt;p&gt;訂了一隻 Apple Watch，把 Medium 當個開箱文來用&lt;/p&gt;
+
+&lt;p&gt;寄過來的時候，是個長盒子。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*afi7WwnUCJ6OXflv3gZ3_w.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;反面看起來，是有個扣環概念的折法&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*3lHzLU3UxSrscD-sjUcx7g.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;打開! 錶帶和錶殼是分開包裝的&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*nL2d2DO94TIlhnNjBoadCg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*ebYTb4b-v9cZHvw6zLQTkQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接下來，就是各個部件了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*UyI-WDOcyeFoyEcjuPuQGw.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*ynTjnb35Qp0SHZK5EzMmYQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*ZCEHRm3XtkIiEFId5Fbh2w.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*n9JTlD0k_EkuhurtppE49w.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/ab852b9a7e3e&quot;&gt;January 2, 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/apple-watch-%E9%96%8B%E7%AE%B1-ab852b9a7e3e&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Apple" /><category term="life" /><summary type="html"></summary></entry></feed>
