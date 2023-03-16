@@ -9,5 +9,7 @@ main:
     url: /finance/
   - title: "生活"
     url: /life/
+  - title: "Swift 社群資源"
+    url: /swift-community/
   - title: "About"
     url: /about/
