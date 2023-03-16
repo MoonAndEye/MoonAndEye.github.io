@@ -5,6 +5,8 @@ author_profile: true
 permalink: /swift-community/
 ---
 
+# 開發者社群
+
 ## [weak self] podcast
 
 [![weak self podcast](/assets/swift-community/icon_weak-self.jpeg){: width="150" }](https://weakself.dev)
@@ -74,3 +76,14 @@ AppWorks School 完全無需學費，也沒有任何隱含費用，你只需帶�
 
 ### 你的職涯充電站
 AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如資訊安全與系統設計等課程資源，持續為你的職涯充電。
+
+---
+
+# Swift 開發電子報
+
+[13 報](https://www.ethanhuang13.com)
+作者: 13
+
+[波報](https://pofat.substack.com)
+作者: Pofat
+
