@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-17T09:13:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Swiftformat 在設定 swiftversion 5.7，會把 T 改成 some Any</title><link href="http://localhost:4000/swift/2023/03/17/swiftformat-version.html" rel="alternate" type="text/html" title="Swiftformat 在設定 swiftversion 5.7，會把 T 改成 some Any" /><published>2023-03-17T09:12:00+08:00</published><updated>2023-03-17T09:12:00+08:00</updated><id>http://localhost:4000/swift/2023/03/17/swiftformat-version</id><content type="html" xml:base="http://localhost:4000/swift/2023/03/17/swiftformat-version.html">&lt;h2 id=&quot;swiftformat-可調整的各種參數&quot;&gt;Swiftformat 可調整的各種參數&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-17T15:43:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">微軟推出了名為「Microsoft 365 Copilot」的新生產力工具</title><link href="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html" rel="alternate" type="text/html" title="微軟推出了名為「Microsoft 365 Copilot」的新生產力工具" /><published>2023-03-17T15:41:00+08:00</published><updated>2023-03-17T15:41:00+08:00</updated><id>http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html">&lt;p&gt;微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Microsoft 365應用程序中的數據，可將使用者的語言轉化為最強大的生產力工具，幫助使用者更高效地工作。&lt;/p&gt;
+
+&lt;p&gt;Copilot系統可以在Microsoft 365的多種應用程序中使用，例如Word、Excel、PowerPoint、Outlook和Teams，以提高使用者的生產力、解放創造力和升級技能。Copilot還可以在Outlook中協助用戶節省審閱長電子郵件鏈和快速起草建議答覆的時間，而在Teams中，Copilot則可以實時總結關鍵討論點，包括誰說了什麼，人們在哪裡達成了共識，以及哪些地方存在分歧，同時提供建議性行動計劃。Copilot還可以在Excel中分析趨勢和快速創建專業的數據可視化效果。&lt;/p&gt;
+
+&lt;p&gt;除了加速個人生產力之外，Copilot還為每個組織創建了一個新的知識模型，利用現有的數據和見解，實現知識的自由流通，節省寶貴的時間。這使得組織內部的知識更容易被發現和應用，並且節省了大量搜尋答案的時間。Copilot還可以協助自動化重複性任務、創建聊天機器人並在幾分鐘內將想法轉化為實用應用程序。&lt;/p&gt;
+
+&lt;p&gt;微軟表示，Copilot系統的使用需要一定的學習曲線，但是那些採用這種新的工作方式的人將很快取得優勢。微軟聯席CEO Satya Nadella表示，Copilot將徹底改變人們與AI的互動方式，以及AI與人類之間的互動方式。&lt;/p&gt;
+
+&lt;p&gt;Copilot系統是企業級AI的最佳解決方案，不僅整合了OpenAI的ChatGPT，還包括一個複雜的處理和管控引擎，可在企業級應用場景下實現高效穩定的AI模型開發、部署、管理和維護。Copilot系統的開發者希望透過這個產品，幫助企業在應用AI技術方面更加順利，降低開發難度和成本，並且讓企業能夠更好地應對市場和用戶的需求。隨著人工智能技術的發展和應用越來越廣泛，Copilot系統的應用前景也非常看好。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/&quot;&gt;Microsoft blog&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="life" /><summary type="html">微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Microsoft 365應用程序中的數據，可將使用者的語言轉化為最強大的生產力工具，幫助使用者更高效地工作。</summary></entry><entry><title type="html">Swiftformat 在設定 swiftversion 5.7，會把 T 改成 some Any</title><link href="http://localhost:4000/swift/2023/03/17/swiftformat-version.html" rel="alternate" type="text/html" title="Swiftformat 在設定 swiftversion 5.7，會把 T 改成 some Any" /><published>2023-03-17T09:12:00+08:00</published><updated>2023-03-17T09:12:00+08:00</updated><id>http://localhost:4000/swift/2023/03/17/swiftformat-version</id><content type="html" xml:base="http://localhost:4000/swift/2023/03/17/swiftformat-version.html">&lt;h2 id=&quot;swiftformat-可調整的各種參數&quot;&gt;Swiftformat 可調整的各種參數&lt;/h2&gt;
 
 &lt;p&gt;swiftformat 在進行 formatting  的時候，有很多參數可以調整。詳細的參數如下。&lt;/p&gt;
 
@@ -440,45 +450,4 @@ _Google 官方是很重視 Android 開發環境的，常常會推出不同區域
 
 &lt;p&gt;也歡迎大家回覆對於這兩個框架的想法。&lt;/p&gt;
 
-&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><summary type="html">Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。</summary></entry><entry><title type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</title><link href="http://localhost:4000/programming/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html" rel="alternate" type="text/html" title="Kotlin Multiplatform Mobile beta roadmap 重點節錄" /><published>2022-02-04T14:53:00+08:00</published><updated>2022-02-04T14:53:00+08:00</updated><id>http://localhost:4000/programming/2022/02/04/Kotlin-Multiplatform-mobile-roadmap</id><content type="html" xml:base="http://localhost:4000/programming/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html">&lt;h3 id=&quot;kotlin-multiplatform-mobile-beta-roadmap重點節錄&quot;&gt;Kotlin Multiplatform Mobile beta roadmap 重點節錄&lt;/h3&gt;
-
-&lt;p&gt;在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容，主要為&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;新的記憶體管理機制&lt;/li&gt;
-  &lt;li&gt;與 Apple 開法者想關的整合工具&lt;/li&gt;
-  &lt;li&gt;Hierarchical Project 結構調整成預設&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;通常，你只需要針對不同平台的特性，去針對特定平台的 API 進行程式的撰寫。但當使用 KMM 進行共用程式碼開發時，有時候你仍然要對共用程式碼進行不同平台的特化。&lt;/p&gt;
-
-&lt;p&gt;其中一個例子，就是在併發情境下，Alpha 版的 KMM 在記憶體管理上，容易造成問題，且學習曲線陡峭。開發團隊在 2021 年中的時候，就表示未來的 Kotlin (Beta 版) 會在這個方面進行優化。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Apple Integration&lt;/p&gt;
-
-&lt;p&gt;KMM 在 Kotlin 專案的使用，「聽說」已經是相當友善了。而在 Apple 平台，用 embedAndSignAppleFrameworkForXcodeTest 取代以往手動的 packForXcodeTask，此外，還加強了 CocoaPods GradlePlugin DSL 的功能。但這邊有提到，這個 feature 應該會在 Beta release 後進行。&lt;/p&gt;
-
-&lt;p&gt;剩下的 Apple project 整合功能，因為還沒開始測試，所以這邊先不介紹剩下的部分&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;KMM stable for migration&lt;/p&gt;
-
-&lt;p&gt;會在 2022 春季進入 beta，講者說以後會兼顧兼容性，所以應該不用怕大的改動把你的 codebase 搞壞 （Swift 1.0 表示….）&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Kotlin Beta roadmap 的影片&lt;/p&gt;
-
-&lt;p&gt;在 jetbrains 的文章&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/&quot; title=&quot;https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/&quot;&gt;&lt;strong&gt;KMM Beta Roadmap Video Highlights | The Kotlin Blog&lt;/strong&gt;&lt;br /&gt;
-_The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap video is already available for you to…_blog.jetbrains.com&lt;/a&gt;&lt;a href=&quot;https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/60f673b3eda7&quot;&gt;February 4, 2022&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="KMM" /><category term="kotlin" /><category term="cross platform" /><summary type="html">Kotlin Multiplatform Mobile beta roadmap 重點節錄</summary></entry></feed>
+&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><summary type="html">Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。</summary></entry></feed>
