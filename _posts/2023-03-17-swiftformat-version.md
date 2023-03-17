@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Swiftformat 在設定 --swiftversion 5.7 時，會把 T 改成 some Any
-date: 2023-03-17 08:11
+title: Swiftformat 在設定 swiftversion 5.7，會把 T 改成 some Any
+date: 2023-03-17 09:12 +0800
 category: swift
 author: Marvin Lin
-tags: [swift, programming]
-summary: Swiftformat 在設定 --swiftversion 5.7 時，會把 T 改成 some Any
+tags: [swift]
+summary: 
 ---
 
 ## Swiftformat 可調整的各種參數
