@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-17T15:43:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">微軟推出了名為「Microsoft 365 Copilot」的新生產力工具</title><link href="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html" rel="alternate" type="text/html" title="微軟推出了名為「Microsoft 365 Copilot」的新生產力工具" /><published>2023-03-17T15:41:00+08:00</published><updated>2023-03-17T15:41:00+08:00</updated><id>http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html">&lt;p&gt;微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Microsoft 365應用程序中的數據，可將使用者的語言轉化為最強大的生產力工具，幫助使用者更高效地工作。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-18T14:27:50+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Swift 程式碼標準化工具 - swiftlint &amp;amp; swiftformat</title><link href="http://localhost:4000/swift/2023/03/18/swift-standard-tool.html" rel="alternate" type="text/html" title="Swift 程式碼標準化工具 - swiftlint &amp;amp; swiftformat" /><published>2023-03-18T14:26:00+08:00</published><updated>2023-03-18T14:26:00+08:00</updated><id>http://localhost:4000/swift/2023/03/18/swift-standard-tool</id><content type="html" xml:base="http://localhost:4000/swift/2023/03/18/swift-standard-tool.html">&lt;h1 id=&quot;swift-程式碼的標準化&quot;&gt;Swift 程式碼的標準化&lt;/h1&gt;
+
+&lt;p&gt;在多人共同協作的專案中，Swift 程式碼的標準化是一個重要的主題，如果你的專案只有一個人，那標準化只需要那一位開發者，但我在實務上是會有三、四個人同時在一個專案的，想憑著過去的經驗讓這群人有程式碼風格的共識，是不可能的。。使用 Swiftlint 和 Swiftformat 可以幫助所有成員檢視和自動修正程式碼風格。&lt;/p&gt;
+
+&lt;h2 id=&quot;swiftlint&quot;&gt;Swiftlint&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/realm/SwiftLint&quot;&gt;Swiftlint github link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Swiftlint 是一種靜態程式碼分析工具，可以檢查我們的程式碼是否符合 Swift 的標準風格和最佳實踐。它可以檢測和警告我們的程式碼中的一些常見錯誤和風格問題，例如缺少註釋、空格、括號和命名不一致等。使用 Swiftlint 可以使我們的程式碼更加一致和易於閱讀，從而提高程式碼品質和可維護性。&lt;/p&gt;
+
+&lt;p&gt;你可以使用 –fix 指令，讓 swiftformat 一次處理掉簡單的 format，像是空行等。但這個指令沒辦法處理太複雜的 lint，像是我實測後，他不會移動 trailing closure 中，參數不在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt; 同一行的狀況。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# swiftlint 自動更正指令
+swiftlint --fix
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;swiftformat&quot;&gt;Swiftformat&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nicklockwood/SwiftFormat&quot;&gt;Swiftformat github link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;和 swiftformat 是類似的工具，我平常會同時用這兩個工具，因為 lint 的能力不太一樣，這個工具可以調整到 indent 的規範，opaque 型別是不是該處理，甚致細緻到 import 的順序是不是依照英文字母排序。&lt;/p&gt;
+
+&lt;h2 id=&quot;好處&quot;&gt;好處&lt;/h2&gt;
+
+&lt;p&gt;程式碼標準化的好處在於提高程式碼質量和可讀性，從而使得我們的程式碼更加易於維護和擴展。通過使用 Swiftlint 和 Swiftformat，我們可以自動檢測和修正我們的程式碼風格問題，從而使得我們的程式碼更加一致和易於閱讀。此外，這些工具還可以提高我們的開發效率，從而使我們更加專注於開發高品質的應用程式。&lt;/p&gt;
+
+&lt;p&gt;總的來說，Swift 程式碼的標準化是一個重要的主題，它可以幫助我們提高程式碼品質和可讀性，從而使得我們的程式碼更加易於維護和擴展。通過使用 Swiftlint 和 Swiftformat，我們可以自動檢測和修正我們的程式碼風格問題，從而提高我們的開發效率和應用程式的品質。&lt;/p&gt;
+
+&lt;p&gt;繼續來看一下 Swift 程式碼的標準化所帶來的好處。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;透過使用 Swiftlint 和 Swiftformat 我們可以自動化檢測和修正我們的程式碼風格問題，這樣可以節省我們大量的時間和精力，提高我們的開發效率。&lt;/li&gt;
+  &lt;li&gt;程式碼標準化可以使得我們的程式碼更加一致和易於閱讀，這樣可以提高程式碼的質量和可維護性。&lt;/li&gt;
+  &lt;li&gt;透過程式碼標準化，我們可以使得我們的程式碼更加易於擴展和維護，這樣可以使得我們開發的應用程式更加穩定和可靠。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;總體來說，程式碼標準化是一個非常重要的主題，特別是在大型項目中，它可以使得我們的程式碼更加易於維護和擴展。透過使用 Swiftlint 和 Swiftformat，我們可以自動化檢測和修正我們的程式碼風格問題，提高我們的開發效率和應用程式的品質。如果你還沒有開始使用這些工具，我強烈建議你開始使用它們，這樣可以使得你專案的程式碼更加易於閱讀、維護和擴展。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="swift" /><category term="programming" /><summary type="html">Swift 程式碼的標準化</summary></entry><entry><title type="html">微軟推出了名為「Microsoft 365 Copilot」的新生產力工具</title><link href="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html" rel="alternate" type="text/html" title="微軟推出了名為「Microsoft 365 Copilot」的新生產力工具" /><published>2023-03-17T15:41:00+08:00</published><updated>2023-03-17T15:41:00+08:00</updated><id>http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html">&lt;p&gt;微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Microsoft 365應用程序中的數據，可將使用者的語言轉化為最強大的生產力工具，幫助使用者更高效地工作。&lt;/p&gt;
 
 &lt;p&gt;Copilot系統可以在Microsoft 365的多種應用程序中使用，例如Word、Excel、PowerPoint、Outlook和Teams，以提高使用者的生產力、解放創造力和升級技能。Copilot還可以在Outlook中協助用戶節省審閱長電子郵件鏈和快速起草建議答覆的時間，而在Teams中，Copilot則可以實時總結關鍵討論點，包括誰說了什麼，人們在哪裡達成了共識，以及哪些地方存在分歧，同時提供建議性行動計劃。Copilot還可以在Excel中分析趨勢和快速創建專業的數據可視化效果。&lt;/p&gt;
 
@@ -415,39 +450,4 @@ const weatherResponse = await fetch(url, {headers: {&quot;Authorization&quot;: t
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/b48aaf4589b2&quot;&gt;June 9, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/meet-weatherkit-in-wwdc22-b48aaf4589b2&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">Meet WeatherKit in WWDC22</summary></entry><entry><title type="html">SwiftUI &amp;amp; Compose</title><link href="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html" rel="alternate" type="text/html" title="SwiftUI &amp;amp; Compose" /><published>2022-06-03T22:33:38+08:00</published><updated>2022-06-03T22:33:38+08:00</updated><id>http://localhost:4000/swift/2022/06/03/swiftui-and-compose</id><content type="html" xml:base="http://localhost:4000/swift/2022/06/03/swiftui-and-compose.html">&lt;p&gt;Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。&lt;/p&gt;
-
-&lt;p&gt;詳細的文章我寫在另一篇，可以直接從下方連結過去&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/android-study-jam-%E4%BB%8B%E7%B4%B9-fc2c44dd2f64&quot; title=&quot;https://medium.com/@atimis19/android-study-jam-%E4%BB%8B%E7%B4%B9-fc2c44dd2f64&quot;&gt;&lt;strong&gt;Android Study Jam — 介紹&lt;/strong&gt;&lt;br /&gt;
-_Google 官方是很重視 Android 開發環境的，常常會推出不同區域的 Study Jam。這些練習會分成數個階段，當你完成每個階段，都可以拿到徽章，在 2022/06/23 內完成指定的題目後，還會有 Google…_medium.com&lt;/a&gt;&lt;a href=&quot;https://medium.com/@atimis19/android-study-jam-%E4%BB%8B%E7%B4%B9-fc2c44dd2f64&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在說明會中，我看到 Android 也有一個以宣告式方法，來進行 UI rendering 的框架 — Compose。這個框架可以和 iOS 開發環境中的 SwiftUI 可以進行類比。&lt;/p&gt;
-
-&lt;p&gt;在 Study Jam 說明會中，Tim Lin 示範了用 Compose 畫出一個 Text Label。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*2CZhpAOPfHN_baUdGtkIIA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Tim Lin 在 Study jam 中的案例&lt;/p&gt;
-
-&lt;p&gt;於是，我好奇的想，如果我在 SwiftUI 中，使用和 Compose 的排列方式一樣的時候，兩個平台畫出來的東西，會不會一樣呢? (如果會的話….事情就簡單多了)。所以下方就是一個和上面 Compose 一樣順序的 SwiftUI 程式碼。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*EZMuPTxtjvOyFYtkJMgXrg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;和上方 Compose 一樣順序的 SwiftUI 程式碼&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*rfx2jRCOGrcDpGyuxpaceA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;看渲染的 preview，就會知道，雙方的渲染邏輯不一樣。在 Compose 第一行的 background，會是整個元件的底色(紅色區域)，然後在下一個區域，加上圓角，保留 8 dp 的 padding 後，再畫出黃色區域。&lt;/p&gt;
-
-&lt;p&gt;而 SwiftUI 元件下方第一行的 background，是這個 Text 的 background，然後加上 8 pt 的 padding，再畫上黃色 background。而最後的 4 pt padding，就會產生了 SwiftUI 的白色區域。因為我現在並沒有多的硬碟空間裝 Android Studio 了，所以我目前無法確定 Compose 最外層，或是 Compose 元件套疊的狀況。但 SwiftUI 最後一行的 4pt padding，是有他的意義的，而在沒有多餘顏色下，他會是 default background。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;目前對於 SwiftUI / Compose 都沒有很明確的結論，仍然在研究中。&lt;/p&gt;
-
-&lt;p&gt;也歡迎大家回覆對於這兩個框架的想法。&lt;/p&gt;
-
-&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><summary type="html">Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/meet-weatherkit-in-wwdc22-b48aaf4589b2&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">Meet WeatherKit in WWDC22</summary></entry></feed>
