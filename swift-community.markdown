@@ -89,3 +89,5 @@ AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如�
 [Chao Code](https://www.youtube.com/@ChaoCode)
 
 作者: Jane
+
+[老司機週報](https://github.com/SwiftOldDriver/iOS-Weekly)
