@@ -54,13 +54,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-remote-theme
-  # - jekyll-paginate
-  # - jekyll-gist
+  - jekyll-paginate
+  - jekyll-gist
   - jekyll-include-cache
 
 # 原來的設定，但為了改善 SEO 先改成 title，但這又會卡 paginate，先改回來
 # permalink: /:categories/:year/:month/:day/:title:output_ext
 # permalink: /:categories/:title:output_ext
+
+paginate: 10
+paginate_path: "/page:num/"
 
 # Site Author
 author:
