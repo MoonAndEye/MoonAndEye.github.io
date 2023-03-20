@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-20T11:05:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">小吃推薦：楊家紅豆餅-新北板橋江子翠</title><link href="http://localhost:4000/life/2023/03/20/yang-red-been.html" rel="alternate" type="text/html" title="小吃推薦：楊家紅豆餅-新北板橋江子翠" /><published>2023-03-20T09:16:00+08:00</published><updated>2023-03-20T09:16:00+08:00</updated><id>http://localhost:4000/life/2023/03/20/yang-red-been</id><content type="html" xml:base="http://localhost:4000/life/2023/03/20/yang-red-been.html">&lt;p&gt;&lt;img src=&quot;/assets/life/food/yang_red_been.jpeg&quot; alt=&quot;楊家紅豆餅&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-20T11:57:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">台灣證交所網頁改版，RWD 網站設計</title><link href="http://localhost:4000/finance/2023/03/20/twse-website-rwd.html" rel="alternate" type="text/html" title="台灣證交所網頁改版，RWD 網站設計" /><published>2023-03-20T11:54:00+08:00</published><updated>2023-03-20T11:54:00+08:00</updated><id>http://localhost:4000/finance/2023/03/20/twse-website-rwd</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/20/twse-website-rwd.html">&lt;h2 id=&quot;證交所公告&quot;&gt;證交所公告&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.twse.com.tw/zh/about/news/news/content.html?ff80808186cea0de0186fce2babc0066&quot;&gt;證交所公告 link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;證交所新聞稿&quot;&gt;證交所新聞稿&lt;/h2&gt;
+
+&lt;p&gt;臺灣證券交易所股份有限公司 新聞稿
+中華民國112年3月20日
+資訊服務部
+臺灣證券交易所官網全面改版為響應式(RWD)網站設計，於3月19日推
+出
+臺灣證券交易所官網為提升行動裝置使用者之操作體驗，強化網站友善度及互
+動性，於今(2023)年3月19日將本公司官網全面改版為響應式(RWD)網站設計，取代
+與電腦版不同頁面、網址，且屬老舊技術的行動版網站。依據流量分析統計，越來
+越多人透過行動裝置來瀏覽本公司網頁，比例已超過50%。各類行動裝置的螢幕大
+小、比例、操作習慣與使用電腦有所不同，如用手機看電腦規格的網頁，常需操作
+放大縮小，以觀看內容。
+本次改版採用響應式網頁設計(Responsive Web Design)，同一個網址上看到的內
+容，在不同螢幕寬度(桌機、平版、手機)會自動適應產生不同的版面變化，圖像尺寸
+和字體將更加利於行動裝置上瀏覽，所設計的網站連接和按鈕將更容易觸發點擊，
+有著形象視覺一致、減少維護成本、集中網站流量、加高搜尋引擎結果排名與易於
+使用者分享網站等優點。
+以使用行動裝置瀏覽本公司官網報表為例：改版後，遇到較寬的報表時，會將
+重要欄位(如證券代號、日期等)固定住，使用者透過手指左右拖拉即可依序看到表
+格後面欄位的內容，同時亦可清楚知道目前瀏覽項目的證券代號或日期，充分落實
+以使用者為中心的設計。
+臺灣證券交易所透過優化網站使用者操作體驗(User Experience)，提升使用者網
+站操作便利性、友善度及互動性，為持續吸引及服務國內外投資人投資臺灣資本市
+場而努力。&lt;/p&gt;
+
+&lt;h2 id=&quot;rwd-參考資料&quot;&gt;RWD 參考資料&lt;/h2&gt;
+
+&lt;p&gt;RWD（Responsive Web Design）指的是設計能夠自動調整網站版面以適應不同的裝置大小和屏幕解析度的技術。現在越來越多的使用者通過移動設備上網，因此，RWD設計變得越來越重要。&lt;/p&gt;
+
+&lt;p&gt;首先，RWD設計可以提供更好的使用者體驗。如果一個網站不能自動適應裝置大小，使用者就必須不斷地放大和縮小網頁，以找到他們需要的內容，這樣的體驗是非常糟糕的。相反，RWD設計可以讓網站適應不同的屏幕大小和裝置，使使用者能夠更輕鬆地尋找他們所需要的信息，提供更好的瀏覽體驗。&lt;/p&gt;
+
+&lt;p&gt;其次，RWD設計可以提高網站的可用性。如果一個網站不能正確地顯示在移動設備上，那麼它就會失去一部分的受眾。這意味著使用者可能會因為網站不符合他們的期望而放棄訪問。而使用RWD設計可以確保網站可以適應不同的裝置和屏幕大小，讓更多的使用者能夠輕鬆訪問網站。&lt;/p&gt;
+
+&lt;p&gt;最後，RWD設計還可以提高網站的SEO排名。由於Google等搜索引擎優先顯示適應不同設備的網站，因此使用RWD設計可以讓您的網站更容易在搜索引擎中被發現，並且在搜索排名上取得更好的成績。&lt;/p&gt;
+
+&lt;p&gt;綜上所述，RWD設計是現代網站設計的重要組成部分，它可以提高網站的使用者體驗、可用性和SEO排名。如果您正在考慮重新設計您的網站，請務必考慮使用RWD設計，以提供最佳的網站體驗。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="證交所" /><category term="RWD" /><summary type="html">證交所公告</summary></entry><entry><title type="html">小吃推薦：楊家紅豆餅-新北板橋江子翠</title><link href="http://localhost:4000/life/2023/03/20/yang-red-been.html" rel="alternate" type="text/html" title="小吃推薦：楊家紅豆餅-新北板橋江子翠" /><published>2023-03-20T09:16:00+08:00</published><updated>2023-03-20T09:16:00+08:00</updated><id>http://localhost:4000/life/2023/03/20/yang-red-been</id><content type="html" xml:base="http://localhost:4000/life/2023/03/20/yang-red-been.html">&lt;p&gt;&lt;img src=&quot;/assets/life/food/yang_red_been.jpeg&quot; alt=&quot;楊家紅豆餅&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;楊家紅豆餅&quot;&gt;楊家紅豆餅&lt;/h2&gt;
 
@@ -408,78 +448,4 @@ _最近有個 AI 對話機器人，在短期內爆紅，連結如下。_medium.c
 
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/ai-%E5%AF%AB%E5%87%BA%E4%BE%86%E7%9A%84%E6%95%85%E4%BA%8B-647af47a0ca1&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ai" /><category term="chatgpt" /><summary type="html">AI 寫出來的故事</summary></entry><entry><title type="html">最近用 ChatGPT 來做的事情</title><link href="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html" rel="alternate" type="text/html" title="最近用 ChatGPT 來做的事情" /><published>2022-12-19T15:25:00+08:00</published><updated>2022-12-19T15:25:00+08:00</updated><id>http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT</id><content type="html" xml:base="http://localhost:4000/programming/2022/12/19/the-things-I-delegate-to-chatGPT.html">&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;最近用-chatgpt來做的事情&quot;&gt;最近用 ChatGPT 來做的事情&lt;/h3&gt;
-
-&lt;p&gt;最近有個 AI 對話機器人，在短期內爆紅，連結如下。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://chat.openai.com/chat&quot;&gt;https://chat.openai.com/chat&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;很多人都會分享他做的事情，這邊我也貼一篇我讓他做的事情。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;寫詩&quot;&gt;寫詩&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*TwtFtA3WfnLVXbfKdEh9WQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;詩是寫出來了，但…沒有五言，也不是絕句。然後我就問 AI 懂不懂什麼叫五言絕句。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9CsaTIzX767XTHDrQ7nYOQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;雖然知道五言絕句是什麼，但…寫不出正確的格式。&lt;/p&gt;
-
-&lt;p&gt;所以，你也可以請他寫個程式開發的詩。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*rIPENTQoE7eQ1oOxXMMSXA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;然後也試了 Android 的版本，看來是把詞抽換掉而已。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9vmtLQ8BtpLwEws8QWUxIg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;寫文件企劃書得獎感言工作日誌&quot;&gt;寫文件，企劃書，得獎感言，工作日誌&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*6ieZPzpQDtRafQaLarnBnQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;嗯…這個 AI 活在朝九晚五的平行宇宙裡。&lt;/p&gt;
-
-&lt;p&gt;接下來試試得獎感言&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*2F8NBB42s8soIUkDKxYo5A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;還可以在得獎感言中加料&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*yemcnLV3Bvg4MTyHoBGSPg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;加料加到中樂透，也可以&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*fYKZapz3GtG2bxiY5eF88A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;程式解題還可以選語言但這個很多人玩過了&quot;&gt;程式解題，還可以選語言(但這個很多人玩過了)&lt;/h3&gt;
-
-&lt;p&gt;用 Go 寫一個數字是否質數&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*w29CcGSWeKIzGa6zO2ZCMA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;用 perl 寫費布納西數列&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*x2tz0bUatid5h8u4FLR4zg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;寫一個登入網頁也能做到&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*ZUVOHz7Lio3DfQGSp6pUDg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;接下來這個世界，一定會因為這個產品，而開始不一樣的!&lt;/p&gt;
-
-&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d3f2a789ca53&quot;&gt;December 29, 2022&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry></feed>
+&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 14, 2023.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ai" /><category term="chatgpt" /><summary type="html">AI 寫出來的故事</summary></entry></feed>
