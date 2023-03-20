@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-20T15:21:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 ChatGPT 串接 ChatGPT：(2)</title><link href="http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2.html" rel="alternate" type="text/html" title="使用 ChatGPT 串接 ChatGPT：(2)" /><published>2023-03-20T13:03:00+08:00</published><updated>2023-03-20T13:03:00+08:00</updated><id>http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2</id><content type="html" xml:base="http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2.html">&lt;p&gt;在 &lt;a href=&quot;/chatgpt/using-chatgpt-connect-chatgpt1.html&quot;&gt;前一篇文章&lt;/a&gt;中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-20T17:09:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">瑞信將被收購，收購方為瑞銀集團</title><link href="http://localhost:4000/finance/2023/03/20/CSGN-acquired.html" rel="alternate" type="text/html" title="瑞信將被收購，收購方為瑞銀集團" /><published>2023-03-20T17:05:00+08:00</published><updated>2023-03-20T17:05:00+08:00</updated><id>http://localhost:4000/finance/2023/03/20/CSGN-acquired</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/20/CSGN-acquired.html">&lt;h2 id=&quot;瑞信將被收購收購方為瑞銀集團收購價為30億瑞士法郎&quot;&gt;瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎&lt;/h2&gt;
+
+&lt;p&gt;瑞士兩大銀行集團之一的瑞信集團（Credit Suisse Group）在遭受多起金融醜聞和巨額虧損後，終於在周日（3月19日）宣布被同業瑞銀集團（UBS Group）以30億瑞士法郎（32.5億美元）全股票交易的方式收購。這是一樁歷史性的併購交易，相當於每股只付出瑞信在2007年全盛時期1%的代價。這次收購將使瑞銀成為全球最大的財富管理公司之一，並結束了167年歷史的瑞信。&lt;/p&gt;
+
+&lt;p&gt;這次收購是在瑞士政府和央行的強力推動下完成的，目的是防止信心危機威脅到全球金融市場。據報道，美國、英國和歐盟等主要金融監管機構也對這次交易表示支持和歡迎，認為有助於保障金融穩定。&lt;/p&gt;
+
+&lt;p&gt;事實上，在宣布被收購之前，瑞信已陷入了深重的困境。自去年以來，該行就連續遭遇了多起重大風險事件，包括與美國專門投資失敗企業債券的基金Greensill Capital合作而造成數十億美元虧損；以及因投資美國家族辦公室Archegos Capital Management而爆發巨額爆倉事件。這些事件不僅使得該行股價暴跌近70%，還引發了客戶、員工、股東和監管部門的不滿和不信任。&lt;/p&gt;
+
+&lt;p&gt;面對如此危急的局面，該行曾試圖通過裁員、出售資產、削減風險、提高資本等措施來挽回局面，但效果甚微。同時，該行也曾拒絕了多次來自同業或其他投資者的收購或合併提議，認為價格太低或者條件不利。然而，在政府和央行的壓力下，該行最終不得不接受了來自競爭對手瑞銀的低價收購。&lt;/p&gt;
+
+&lt;p&gt;根據雙方公佈的交易細節，每22.48股瑞信股票可換1股瑞銀股票，相當於每股0.76瑞士法郎。此外，由於該行仍然面臨著巨額未清算債務和訴訟風險，因此交易還涉及到一系列複雜而昂貴的安排&lt;/p&gt;
+
+&lt;p&gt;首先，瑞銀將向瑞信的債權人支付54億美元的現金，以清算其與Greensill Capital和Archegos Capital Management相關的未結算債務；其次，瑞銀將承擔瑞信所有的訴訟風險，包括與美國司法部門和其他監管機構的調查和罰款；最後，瑞銀將接收瑞信約160億瑞郎（約合173億美元）的額外一級資本（AT1）債券，也稱為可轉換可持續債券（CoCo Bond），這些債券在交易完成後將失去價值 。&lt;/p&gt;
+
+&lt;p&gt;雙方表示，這次收購將創造出全球最大的財富管理公司之一，管理資產超過6萬億美元。此外，雙方還預計在未來三年內實現每年40億美元的成本節省。不過，這也意味著雙方將面臨大規模的裁員和重組。據估計，該交易可能影響到兩家公司共計10萬名員工中的2萬名。&lt;/p&gt;
+
+&lt;p&gt;這次收購引發了市場和業界的廣泛關注和評論。有分析師認為，這是一個「不得已而為之」的救命稻草，反映了瑞信在金融危機中失去了自主權和競爭力。有些人則認為，這是一個「天作之合」的良好契機，展現了兩家公司在財富管理、投資銀行、私人銀行等領域的互補性和協同效應。還有些人則表示擔心，這次收購會減少市場上的競爭選擇和多元化服務 。&lt;/p&gt;
+
+&lt;p&gt;無論如何，在全球金融市場動盪不安、風險事件頻發、監管壓力加大、科技變革加速等背景下，這次收購無疑是一個重要而具有代表性的案例。它不僅揭示了當前金融業面臨的挑戰和困境，也展示了金融業未來可能走向的發展趨勢和變革方向。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="acquisition" /><category term="bank" /><summary type="html">瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎</summary></entry><entry><title type="html">使用 ChatGPT 串接 ChatGPT：(2)</title><link href="http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2.html" rel="alternate" type="text/html" title="使用 ChatGPT 串接 ChatGPT：(2)" /><published>2023-03-20T13:03:00+08:00</published><updated>2023-03-20T13:03:00+08:00</updated><id>http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2</id><content type="html" xml:base="http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2.html">&lt;p&gt;在 &lt;a href=&quot;/chatgpt/using-chatgpt-connect-chatgpt1.html&quot;&gt;前一篇文章&lt;/a&gt;中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/chatgpt/using-chatgpt-connect-chatgpt1.html&quot;&gt;使用 ChatGPT 串接 ChatGPT：(1)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -586,16 +604,4 @@ func log(_ message: some Any) {
 
 &lt;h3 id=&quot;twitter-觀點&quot;&gt;Twitter 觀點&lt;/h3&gt;
 
-&lt;p&gt;大賣空主角原型 - 貝瑞在 Twitter 上則是說，這次的危機應該很快就會結束，事情會告一個段落。(不過他還是看空)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="Finance" /><summary type="html">矽谷銀行(SVB)倒閉於2023-03-10</summary></entry><entry><title type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</title><link href="http://localhost:4000/life/2023/03/14/future-article-will-post-on-page.html" rel="alternate" type="text/html" title="GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了" /><published>2023-03-14T21:09:00+08:00</published><updated>2023-03-14T21:09:00+08:00</updated><id>http://localhost:4000/life/2023/03/14/future-article-will-post-on-page</id><content type="html" xml:base="http://localhost:4000/life/2023/03/14/future-article-will-post-on-page.html">&lt;h1 id=&quot;github-page-部落格弄好了未來文章都會-po-在-github-page-上了&quot;&gt;GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了&lt;/h1&gt;
-
-&lt;p&gt;最近抽空花了點時間，使用了 ChatGPT 輔助，在 GitHub Page 上架了自己的部落格。使用的是 Ruby 的 Jekyll 框架，Jekyll 也是 GitHub Page 上直接推薦的框架。&lt;/p&gt;
-
-&lt;p&gt;除了 Jekyll 以外，ChatGPT 還推薦了 Hugo、Hexo、Pelican、Gatsby。但我看了 GitHub 官網都推薦 Jekyll 後，就決定先試試 Jekyll 了。&lt;/p&gt;
-
-&lt;p&gt;Github Page&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/&quot;&gt;https://moonandeye.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;現在已經搬移了部分文章，接下來都會繼續在 Page 上寫文章，短期還會在 medium 上貼相同文章，但再過一陣子，我就會停用 medium 了。&lt;/p&gt;
-
-&lt;p&gt;畢竟，我還是想要有一個不是控在別人手上的 blog。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Life" /><category term="blog" /><summary type="html">GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了</summary></entry></feed>
+&lt;p&gt;大賣空主角原型 - 貝瑞在 Twitter 上則是說，這次的危機應該很快就會結束，事情會告一個段落。(不過他還是看空)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="Finance" /><summary type="html">矽谷銀行(SVB)倒閉於2023-03-10</summary></entry></feed>
