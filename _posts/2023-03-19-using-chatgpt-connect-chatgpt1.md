@@ -6,7 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [swift, programming, ai, chatgpt, python]
 permalink: /chatgpt/using-chatgpt-connect-chatgpt1.html
-summary: 
+summary: Credit Suisse Group, one of Switzerland's two major banking groups, has announced that it will be acquired by rival UBS Group in an all-stock transaction worth CHF 30 billion ($32.5 billion). The acquisition, which was heavily supported by the Swiss government and central bank, aims to prevent a crisis of confidence from threatening the global financial market. Credit Suisse has been struggling with multiple financial scandals and losses, including losses from partnering with Greensill Capital and Archegos Capital Management. The deal will make UBS one of the largest wealth management companies in the world and ends Credit Suisse's 167-year history.
 ---
 
 ## 申請 ChatGPT api key

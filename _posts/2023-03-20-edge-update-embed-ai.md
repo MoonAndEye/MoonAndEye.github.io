@@ -5,7 +5,7 @@ date: 2023-03-20 20:25 +0800
 category: programming
 author: Marvin Lin
 tags: [programming, life]
-summary: 
+summary: Microsoft Edge's new feature, Edge Copilot, integrates AI-powered Bing Chat GPT technology in the sidebar to help users with tasks such as summarizing, comparing, explaining, translating, and writing. It offers default and customizable prompt templates and respects privacy by not collecting or storing any personal data. The feature is innovative, practical, and improves productivity and quality.
 ---
 
 新版的 Edge 在側邊欄整合了 ai 的功能，包含 bing chat, 文章/文字生成器。
