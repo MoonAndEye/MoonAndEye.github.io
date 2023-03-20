@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-20T17:09:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">瑞信將被收購，收購方為瑞銀集團</title><link href="http://localhost:4000/finance/2023/03/20/CSGN-acquired.html" rel="alternate" type="text/html" title="瑞信將被收購，收購方為瑞銀集團" /><published>2023-03-20T17:05:00+08:00</published><updated>2023-03-20T17:05:00+08:00</updated><id>http://localhost:4000/finance/2023/03/20/CSGN-acquired</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/20/CSGN-acquired.html">&lt;h2 id=&quot;瑞信將被收購收購方為瑞銀集團收購價為30億瑞士法郎&quot;&gt;瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-20T20:47:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄</title><link href="http://localhost:4000/programming/2023/03/20/edge-update-embed-ai.html" rel="alternate" type="text/html" title="Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄" /><published>2023-03-20T20:25:00+08:00</published><updated>2023-03-20T20:25:00+08:00</updated><id>http://localhost:4000/programming/2023/03/20/edge-update-embed-ai</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/20/edge-update-embed-ai.html">&lt;p&gt;新版的 Edge 在側邊欄整合了 ai 的功能，包含 bing chat, 文章/文字生成器。&lt;/p&gt;
+
+&lt;h1 id=&quot;microsoft-edge-新版瀏覽器將-ai-整合在側邊欄&quot;&gt;Microsoft Edge 新版瀏覽器將 AI 整合在側邊欄&lt;/h1&gt;
+
+&lt;p&gt;Microsoft Edge 是一款基於 Chromium 的瀏覽器，提供了許多實用的功能，例如集成式 PDF 閱讀器、垂直分頁、密碼管理器等。最近，Microsoft Edge 又推出了一項新功能，就是將 AI 整合在側邊欄中，讓使用者可以在瀏覽網頁的同時，享受 AI 的智慧協助。&lt;/p&gt;
+
+&lt;p&gt;這項新功能稱為 Edge Copilot，是由 Bing 提供的 ChatGPT 技術驅動的。ChatGPT 是一種基於深度學習的自然語言生成模型，可以根據使用者的輸入和上下文，產生流暢且有意義的文字回應。Edge Copilot 可以幫助使用者完成各種任務，例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;摘要：將長篇的網頁內容壓縮成幾句話，幫助使用者快速掌握重點。&lt;/li&gt;
+  &lt;li&gt;比較：將不同的產品或服務進行比較分析，幫助使用者做出選擇。&lt;/li&gt;
+  &lt;li&gt;解釋：對於任何不清楚的概念或術語，提供清楚且易懂的解釋。&lt;/li&gt;
+  &lt;li&gt;翻譯：將任何語言的文字轉換成使用者想要的語言。&lt;/li&gt;
+  &lt;li&gt;代碼：對於程式設計師來說，可以幫助他們理解或轉換不同語言的代碼。&lt;/li&gt;
+  &lt;li&gt;寫作：無論是撰寫筆記、郵件、報告還是文案，都可以幫助使用者改善文法、重新表達內容、擴充內容或生成內容。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Edge Copilot 的操作方式非常簡單。只要在工具列上點選 Bing 圖示，就可以打開側邊欄。在側邊欄中，使用者可以和 AI 進行聊天互動，並根據自己的需求輸入相關指令或問題。AI 會根據當前瀏覽的網頁和使用者的目標，提供智能建議和洞見。如果不需要使用 AI 功能，也可以隨時隱藏側邊欄。&lt;/p&gt;
+
+&lt;p&gt;Edge Copilot 不僅提供了多種預設的提示模板，讓使用者可以快速啟動常用功能；也支持自定義提示模板，在任何網頁上都能靈活運用 AI 功能。此外，在保護隱私方面也有所考量，在與 AI 聊天時不會收集或儲存任何個人資料。&lt;/p&gt;
+
+&lt;p&gt;Microsoft Edge 新版瀏覽器將 AI 整合在側邊欄中，是一項創新且實用的功能。它讓使用者可以在一個介面中完成多種任務，在提高效率和品質方面都有所幫助。&lt;/p&gt;
+
+&lt;h2 id=&quot;和-bing-聊天&quot;&gt;和 Bing 聊天&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/edge-update/edge_chat.jpeg&quot; alt=&quot;edge chat&quot; width=&quot;250&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;如果要產出一段文字除了可以調整-長-中-短以外還可以分用途&quot;&gt;如果要產出一段文字，除了可以調整 長 中 短，以外，還可以分用途&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/edge-update/edge_create_blog.jpeg&quot; alt=&quot;edge create blog&quot; width=&quot;250&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;我們來試著產一篇新聞&quot;&gt;我們來試著產一篇新聞&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/edge-update/edge_news.jpeg&quot; alt=&quot;edge news&quot; width=&quot;250&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;這邊，我們試著生產一篇 iPlayground 的新聞&lt;/p&gt;
+
+&lt;p&gt;prmopt: 今年 Swift 社群會舉辦 iPlayground，請給我一篇關於這個 Swift 的研究會的新聞&lt;/p&gt;
+
+&lt;h1 id=&quot;swift-社群-iplayground-將舉辦-2023-年度線上技術研討會&quot;&gt;Swift 社群 iPlayground 將舉辦 2023 年度線上技術研討會&lt;/h1&gt;
+
+&lt;p&gt;Swift 社群 iPlayground 是台灣首度聚焦 Apple 相關軟體開發之大型技術研討會，自 2017 年起每年舉辦一次，邀請國內外知名的 Swift 開發者分享他們的經驗和心得。今年，由於疫情的影響，iPlayground 將以線上的方式進行，並將於 3 月 27 日至 28 日舉行。&lt;/p&gt;
+
+&lt;p&gt;iPlayground 2023 的主題是「用你我都會的 Swift 語言寫出更多可能」，旨在展示 Swift 不僅是一種用於 iOS、macOS、watchOS 和 tvOS 的程式語言，也是一種通用、跨平台、高效能的程式語言，可以應用在各種領域，如後端開發、機器學習、物聯網等。本次研討會將有來自不同背景和領域的講者分享他們如何用 Swift 創造出令人驚豔的作品和解決方案。&lt;/p&gt;
+
+&lt;p&gt;本次研討會將分成兩天進行，第一天將有四場精彩的 keynote 演講，分別是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「Swift 的演進與未來」：由 Swift 原始碼貢獻者之一的 John Doe 分享 Swift 的最新動態和未來規劃。&lt;/li&gt;
+  &lt;li&gt;「用 Swift 寫出 LINE 聊天機器人」：由 LINE Taiwan 的 iOS 工程師鄭宇哲介紹如何利用 LINE Messaging API 和 Vapor 框架用 Swift 寫出一個可以回答問題和發送貼圖的聊天機器人。&lt;/li&gt;
+  &lt;li&gt;「手把手帶你用 Clean Swift 重構 MVC, 並替核心程式碼撰寫單元測試」：由知名部落客 ChiaoTeng 分享他如何使用 Clean Swift 架構來改善傳統 MVC 模式下程式碼的可讀性和可測試性。&lt;/li&gt;
+  &lt;li&gt;「用 SwiftUI 和 Combine 打造現代化 UI」：由 Apple Developer Academy 的學員陳昱廷展示如何使用 SwiftUI 和 Combine 兩個全新的框架來打造美觀且高效能的 UI。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第二天則將有六場深入淺出的 workshop ，讓參加者可以親自動手學習和實作各種 Swift 相關的技術和主題，例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「SwiftUI 入門教學」：由 iPlayground 主辦人之一的 Tim Lee 帶領參加者從零開始學習 SwiftUI 的基礎知識和操作方法。&lt;/li&gt;
+  &lt;li&gt;「使用 Core ML 和 Create ML 打造智慧型 App」：由 AI Taiwan 社群創辦人之一的王小明教授參加者如何使用 Core ML 和 Create ML 兩個 Apple 提供的框架來訓練和部署機器學習模型到 App 中。&lt;/li&gt;
+  &lt;li&gt;「使用 Kitura 框架建立&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;雖然中間被截斷了，但還真的「產生」了一個會議，並包含了題目和講者。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="life" /><summary type="html">新版的 Edge 在側邊欄整合了 ai 的功能，包含 bing chat, 文章/文字生成器。</summary></entry><entry><title type="html">瑞信將被收購，收購方為瑞銀集團</title><link href="http://localhost:4000/finance/2023/03/20/CSGN-acquired.html" rel="alternate" type="text/html" title="瑞信將被收購，收購方為瑞銀集團" /><published>2023-03-20T17:05:00+08:00</published><updated>2023-03-20T17:05:00+08:00</updated><id>http://localhost:4000/finance/2023/03/20/CSGN-acquired</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/20/CSGN-acquired.html">&lt;h2 id=&quot;瑞信將被收購收購方為瑞銀集團收購價為30億瑞士法郎&quot;&gt;瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎&lt;/h2&gt;
 
 &lt;p&gt;瑞士兩大銀行集團之一的瑞信集團（Credit Suisse Group）在遭受多起金融醜聞和巨額虧損後，終於在周日（3月19日）宣布被同業瑞銀集團（UBS Group）以30億瑞士法郎（32.5億美元）全股票交易的方式收購。這是一樁歷史性的併購交易，相當於每股只付出瑞信在2007年全盛時期1%的代價。這次收購將使瑞銀成為全球最大的財富管理公司之一，並結束了167年歷史的瑞信。&lt;/p&gt;
 
@@ -584,24 +650,4 @@ func log&amp;lt;T&amp;gt;(_ message: T) {
 func log(_ message: some Any) {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;如果仍然不希望 swiftformat 改動 T，那可以在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.swiftformat&lt;/code&gt; 中，加上 disable，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--disable opaqueGenericParameters&lt;/code&gt;。這樣就不會讓 T 改成 some Any 了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="swift" /><summary type="html">Swiftformat 可調整的各種參數</summary></entry><entry><title type="html">紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日</title><link href="http://localhost:4000/finance/2023/03/16/CSGN-issue-news.html" rel="alternate" type="text/html" title="紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日" /><published>2023-03-16T08:34:00+08:00</published><updated>2023-03-16T08:34:00+08:00</updated><id>http://localhost:4000/finance/2023/03/16/CSGN-issue-news</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/16/CSGN-issue-news.html">&lt;p&gt;在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="news" /><summary type="html">在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。</summary></entry><entry><title type="html">紀錄：矽谷銀行(SVB)倒閉於2023年3月10日</title><link href="http://localhost:4000/finance/2023/03/15/SVB-broken-v2.html" rel="alternate" type="text/html" title="紀錄：矽谷銀行(SVB)倒閉於2023年3月10日" /><published>2023-03-15T10:13:00+08:00</published><updated>2023-03-15T10:13:00+08:00</updated><id>http://localhost:4000/finance/2023/03/15/SVB-broken-v2</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/15/SVB-broken-v2.html">&lt;h1 id=&quot;矽谷銀行svb倒閉於2023-03-10&quot;&gt;矽谷銀行(SVB)倒閉於2023-03-10&lt;/h1&gt;
-
-&lt;p&gt;在美國時間2023年3月10日，美國矽谷銀行倒閉。根據 SVB 執行長 Greg Becker 的信，在拋售 210 億美元的債券組合後，稅後損失達到 18 億元。在宣告倒閉後，美國聯邦存款保險公司(FDIC)進行接管。SVB 是 FDIC 接管的銀行中，量體排名第二名的。&lt;/p&gt;
-
-&lt;p&gt;在美國時間 13 日，Fed 和 FDIC 負責人表示。 SVB 儲戶可以順利拿回資產。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;在收到 FDIC 和聯準會董事會的建議並與總統協商後，葉倫部長批准了使 FDIC 能夠完成的行動，它以充分保護所有儲戶的方式，對矽谷銀行進行決議。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;為什麼矽谷銀行會倒閉&quot;&gt;為什麼矽谷銀行會倒閉&lt;/h3&gt;
-
-&lt;p&gt;SVB 將資產配置在長期的國債，因為長期國債相對短期有比較好的利率。但在 2022 年開始，美國聯準會不斷的進行加息，這一年中加了八次息。市場利率上升，債券價格就會下跌。SVB 的客戶集中在科技業，在 2022 年底業界發現成長難以持續，不斷進行裁員，在業界景氣進入往下的趨勢中，眾多客戶進行資金轉移，導致了 SVB 需要先拋售持有的長期債券。一般來說，長期債券在長期持有的狀況下，很難賠到錢的，但短期價格是會被市場影響的。&lt;/p&gt;
-
-&lt;h3 id=&quot;後續&quot;&gt;後續&lt;/h3&gt;
-
-&lt;p&gt;美國時間 2023年3月12日，Signature Bank 被關閉，但所有存戶 13 日起可以領回所有存款。&lt;/p&gt;
-
-&lt;h3 id=&quot;twitter-觀點&quot;&gt;Twitter 觀點&lt;/h3&gt;
-
-&lt;p&gt;大賣空主角原型 - 貝瑞在 Twitter 上則是說，這次的危機應該很快就會結束，事情會告一個段落。(不過他還是看空)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="Finance" /><summary type="html">矽谷銀行(SVB)倒閉於2023-03-10</summary></entry></feed>
+&lt;p&gt;如果仍然不希望 swiftformat 改動 T，那可以在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.swiftformat&lt;/code&gt; 中，加上 disable，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--disable opaqueGenericParameters&lt;/code&gt;。這樣就不會讓 T 改成 some Any 了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="swift" /><summary type="html">Swiftformat 可調整的各種參數</summary></entry><entry><title type="html">紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日</title><link href="http://localhost:4000/finance/2023/03/16/CSGN-issue-news.html" rel="alternate" type="text/html" title="紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日" /><published>2023-03-16T08:34:00+08:00</published><updated>2023-03-16T08:34:00+08:00</updated><id>http://localhost:4000/finance/2023/03/16/CSGN-issue-news</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/16/CSGN-issue-news.html">&lt;p&gt;在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="news" /><summary type="html">在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。</summary></entry></feed>
