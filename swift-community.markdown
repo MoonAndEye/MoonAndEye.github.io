@@ -82,12 +82,22 @@ AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如�
 
 作者: Ethan Huang (13)
 
+<hr>
+
 [波報](https://pofat.substack.com)
 
 作者: Pofat
+
+<hr>
 
 [Chao Code](https://www.youtube.com/@ChaoCode)
 
 作者: Jane
 
+<hr>
+
 [老司機週報](https://github.com/SwiftOldDriver/iOS-Weekly)
+
+<hr>
+
+[摸魚週報](https://github.com/zhangferry/iOSWeeklyLearning)
