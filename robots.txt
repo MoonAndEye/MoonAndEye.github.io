@@ -1,2 +1,7 @@
 User-agent: Bingbot
 Allow: /BingSiteAuth.xml
+
+User-agent: Googlebot
+User-agent: AdsBot-Google
+Allow: /
+Sitemap: https://moonandeye.github.io/sitemap.xml
