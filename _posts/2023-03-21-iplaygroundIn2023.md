@@ -5,7 +5,7 @@ date: 2023-03-21 08:00 +0800
 category: swift
 author: Marvin Lin
 tags: [swift, programming, iPlayground]
-summary: iPlayground 活動準備開跑了，歡迎應徵工作人員
+summary: The article discusses the benefits of attending developer conferences, such as learning about the latest trends and technologies, receiving practical advice and feedback, building connections and collaborations, and gaining inspiration and motivation. The article also introduces iPlayground, a Taiwanese Swift community that holds an annual conference focused on Apple software development, and provides information about past and future events, as well as related resources. The article encourages interested individuals to sign up for iPlayground's newsletter in order to become a member of the community and attend future events.
 ---
 
 這個消息，有公佈在 [13 的電子報第 179 期](https://www.ethanhuang13.com/p/179)，如果想要當 iPlayground 工作人員的朋友，歡迎在 13 的電子報上，進行回覆，就可以報名囉。
