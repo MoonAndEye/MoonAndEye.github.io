@@ -5,6 +5,7 @@ date: 2023-03-19 12:36 +0800
 category: swift
 author: Marvin Lin
 tags: [swift, programming, ai, chatgpt, python]
+permalink: /chatgpt/using-chatgpt-connect-chatgpt1.html
 summary: 
 ---
 
