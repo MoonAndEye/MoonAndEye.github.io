@@ -8,12 +8,9 @@ tags: [Swift, Programming, AI, ChatGPT]
 permalink: /chatgpt/using-chatgpt-connect-chatgpt2.html
 summary: 使用 ChatGPT 串接 ChatGPT
 ---
-
-## 前情提要
+在 [前一篇文章](/chatgpt/using-chatgpt-connect-chatgpt1.html)中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。
 
 **[使用 ChatGPT 串接 ChatGPT：(1)](/chatgpt/using-chatgpt-connect-chatgpt1.html)**
-
-在 [前一篇文章](/chatgpt/using-chatgpt-connect-chatgpt1.html)中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。
 
 ## 開始用 ChatGPT 產生 iOS App 程式碼
 
