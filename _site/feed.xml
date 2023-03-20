@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-19T17:09:33+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 ChatGPT 串接 ChatGPT：(1)</title><link href="http://localhost:4000/swift/2023/03/19/using-chatgpt-connect-chatgpt1.html" rel="alternate" type="text/html" title="使用 ChatGPT 串接 ChatGPT：(1)" /><published>2023-03-19T12:36:00+08:00</published><updated>2023-03-19T12:36:00+08:00</updated><id>http://localhost:4000/swift/2023/03/19/using-chatgpt-connect-chatgpt1</id><content type="html" xml:base="http://localhost:4000/swift/2023/03/19/using-chatgpt-connect-chatgpt1.html">&lt;h2 id=&quot;申請-chatgpt-api-key&quot;&gt;申請 ChatGPT api key&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-20T09:29:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">小吃推薦：楊家紅豆餅-新北板橋江子翠</title><link href="http://localhost:4000/life/2023/03/20/yang-red-been.html" rel="alternate" type="text/html" title="小吃推薦：楊家紅豆餅-新北板橋江子翠" /><published>2023-03-20T09:16:00+08:00</published><updated>2023-03-20T09:16:00+08:00</updated><id>http://localhost:4000/life/2023/03/20/yang-red-been</id><content type="html" xml:base="http://localhost:4000/life/2023/03/20/yang-red-been.html">&lt;p&gt;&lt;img src=&quot;/assets/life/food/yang_red_been.jpeg&quot; alt=&quot;楊家紅豆餅&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;楊家紅豆餅&quot;&gt;楊家紅豆餅&lt;/h2&gt;
+
+&lt;h2 id=&quot;營業時間早上11點開始賣完為止&quot;&gt;營業時間：早上11點開始，賣完為止&lt;/h2&gt;
+
+&lt;p&gt;在江子翠附近，圖書館旁邊。在地十年以上的紅豆餅，如果有路過的話，真的歡迎試試。&lt;/p&gt;
+
+&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2511399399245!2d121.46905985062942!3d25.025549883897703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a83fa20267a7%3A0xa8542f3b1b1b8b!2z5qWK5a6257SF6LGG6aSF!5e0!3m2!1szh-TW!2stw!4v1679275706894!5m2!1szh-TW!2stw&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="food" /><category term="美食" /><summary type="html"></summary></entry><entry><title type="html">使用 ChatGPT 串接 ChatGPT：(1)</title><link href="http://localhost:4000/swift/2023/03/19/using-chatgpt-connect-chatgpt1.html" rel="alternate" type="text/html" title="使用 ChatGPT 串接 ChatGPT：(1)" /><published>2023-03-19T12:36:00+08:00</published><updated>2023-03-19T12:36:00+08:00</updated><id>http://localhost:4000/swift/2023/03/19/using-chatgpt-connect-chatgpt1</id><content type="html" xml:base="http://localhost:4000/swift/2023/03/19/using-chatgpt-connect-chatgpt1.html">&lt;h2 id=&quot;申請-chatgpt-api-key&quot;&gt;申請 ChatGPT api key&lt;/h2&gt;
 
 &lt;p&gt;ChatGPT 是有開放 API 讓使用者串接的，申請是免費的，但免費額度的用量是 18 USD，或是三個月到期，之後就需要升級成 plus 才能繼續使用。詳細情況，建議關注 open.ai 的網站，因為上面的資訊才是最新且最正確的。&lt;/p&gt;
 
@@ -468,102 +476,4 @@ _最近有個 AI 對話機器人，在短期內爆紅，連結如下。_medium.c
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/d3f2a789ca53&quot;&gt;December 29, 2022&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry><entry><title type="html">Flyweight Pattern — 蠅量級模式(享元模式)</title><link href="http://localhost:4000/swift/2022/08/10/flyweight-pattern.html" rel="alternate" type="text/html" title="Flyweight Pattern — 蠅量級模式(享元模式)" /><published>2022-08-10T21:16:00+08:00</published><updated>2022-08-10T21:16:00+08:00</updated><id>http://localhost:4000/swift/2022/08/10/flyweight-pattern</id><content type="html" xml:base="http://localhost:4000/swift/2022/08/10/flyweight-pattern.html">&lt;p&gt;本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;flyweight-pattern蠅量級模式享元模式&quot;&gt;Flyweight Pattern — 蠅量級模式(享元模式)&lt;/h3&gt;
-
-&lt;p&gt;本文在介紹 Flyweight Pattern 時採用 &lt;a href=&quot;https://medium.com/r?url=http%3A%2F%2Frefactoring.guru&quot;&gt;refactoring.guru&lt;/a&gt; 上的範例和情境。&lt;/p&gt;
-
-&lt;p&gt;出處: &lt;a href=&quot;https://refactoring.guru/design-patterns/flyweight&quot;&gt;https://refactoring.guru/design-patterns/flyweight&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;情境&quot;&gt;情境:&lt;/h4&gt;
-
-&lt;p&gt;你寫了一個遊戲，是 FPS 型的，裡面有飛彈、子彈等飛行道具。還有各種酷炫的特效，這些特效和爆炸的聲光效果，都卓越超群。你把這個遊戲 push 上去，讓你和你的朋友玩。&lt;/p&gt;
-
-&lt;h3 id=&quot;但是shi-ka-shibut-在你的電腦上是好的&quot;&gt;但是、Shi ka shi、but 「在你的電腦上是好的」&lt;/h3&gt;
-
-&lt;p&gt;在你朋友的電腦上，每玩幾分鐘，這個遊戲就閃退了! 遊戲體驗在你朋友的電腦上非常的差。你開始 debug，然後 de 了幾個小時，從 log 中翻找各種數據。你找到原因，是出在 RAM 上，error message 最後 trace 到 RAM 不足。因為你電腦的配置很強，但你的朋友電腦設備沒那麼好，所以 RAM 吃光了。&lt;/p&gt;
-
-&lt;p&gt;而 RAM 被吃光的原因，是在那個你寫出來的 particle system (專門處理粒子效果)。每個粒子，例如子彈、飛彈，還有各種會飛的物件，只要出現在玩家的螢幕，就會生出一個 particle 物件，最後，當 RAM 不足的時候，程式就崩潰了。&lt;/p&gt;
-
-&lt;p&gt;從下圖可見，每個粒子會佔掉 21 KB。當有 1,000,000 個粒子的時候，這時會需要 21 GB 的 RAM。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;from refactoring.guru&lt;/p&gt;
-
-&lt;p&gt;我們來看個 Overwatch 畫面。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*bZSGkmXGYofMadtii2wyGQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*UzKC0uTVHQXLaqTyZhmNNA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如何使用 Flyweight 模式，改善你的遊戲體驗?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;flyweight-如何減輕系統上的負擔&quot;&gt;Flyweight 如何減輕系統上的負擔&lt;/h3&gt;
-
-&lt;p&gt;再回頭看一下 ”Particle” 這個類別，然後思考一下。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*4dPir95Ideb9wzMRjK9hbg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;你應該會發現，有兩個 property 可以設計成不變的 (也就是剛剛講的內部資料)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;color&lt;/li&gt;
-  &lt;li&gt;sprite&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;而其他屬性，是會變化的 (也就是剛剛講的外部資料)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;particle (粒子)&lt;/li&gt;
-  &lt;li&gt;coords (座標)&lt;/li&gt;
-  &lt;li&gt;vector (移動向量)&lt;/li&gt;
-  &lt;li&gt;speed (移動速度)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5r80IzFWvGH9MCL0Kgm8nA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;再回來看這個系統&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5yXJEnkUFcrlOgFIqbz86g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;最吃資源的，仍然是 sprite，以上面同樣數量的粒子來看。1,000,000 個粒子，在不 init 新的內部資料狀況下，他需要的是 32MB RAM，對比沒有使用 design pattern 的狀況 — 21 GB，這樣的設計，讓你朋友的電腦上，也可以運作順利。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;結束了嗎?這樣已經發揮了 design pattern 最佳的結果了嗎?&lt;/p&gt;
-
-&lt;h3 id=&quot;設計模式是可以進行疊加的&quot;&gt;&lt;strong&gt;設計模式是可以進行疊加的!&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;再加上一個外部物件儲存池可以更優化&quot;&gt;再加上一個外部物件儲存池，可以更優化&lt;/h3&gt;
-
-&lt;p&gt;在實務上，通常會再加上一個「池」(pool)，把生出來的「內部資訊」放在池子 裡面。&lt;/p&gt;
-
-&lt;p&gt;在這個案例裡面，因為有一個最大的類別 Game，會在 Game 裡面用一個 property 去存 Particle，當螢幕需要 particle 的時候，系統 會先從池子裡面找有沒有沒用過的 particle，有的話，就拿出來塞「外部資訊」(也就是向量、速度、座標)。如果池子裡面沒有所需要的 partile，就會 init 一個，然後塞外部資訊。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9oTHsQUlMpuXtZcj47OviA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;當 particle 用完後，就會放入池子裡面，等待下一次被使用。&lt;/p&gt;
-
-&lt;p&gt;這可以想成是結合了 Object Pool 模式的蠅量級模式，當然，在 UIKit 中，有某個很重要的元件，使用了這兩個模式的綜合體。&lt;/p&gt;
-
-&lt;p&gt;當然還有人再優化，連外部資訊也再加上一套蠅量級模式。&lt;/p&gt;
-
-&lt;p&gt;蠅量級的蠅量級模式。沒有最細，只有更細。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;再深入一點當你剛入行在台灣你不一定進的去真正的遊戲公司你可能是個-ios-前端不論你是哪一領域的前端在-2022-年大家起手都是框架假如你是個-ios-前端我們來想想看在-ios-系統裡面哪個東西在應用蠅量級模式享元模式&quot;&gt;再深入一點，當你剛入行，在台灣，你不一定進的去「真正的」遊戲公司，你可能是個 iOS 前端。不論你是哪一領域的前端，在 2022 年，大家起手都是框架。假如你是個 iOS 前端，我們來想想看，在 iOS 系統裡面，哪個東西在應用「蠅量級模式(享元模式)」&lt;/h3&gt;
-
-&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a5ab3b6054f&quot;&gt;August 10, 2022&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Design pattern" /><category term="Swift" /><summary type="html">本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="AI" /><summary type="html">最近有個 AI 對話機器人，在短期內爆紅，連結如下。</summary></entry></feed>
