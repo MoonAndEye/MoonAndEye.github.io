@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [programming, AI, Open AI, ChatGPT, Codex]
 summary: OpenAI is discontinuing support for the Codex API on March 23rd and urging customers to switch to the GPT-3.5-Turbo model, which is the most cost-effective and efficient option. The affected models are code-cushman:001, code-cushman:002, code-davinci:001, and code-davinci:002.
+permalink: /programming/:title:output_ext
 ---
 
 ## Open AI 發信給客戶，停止 Codex 相關服務
