@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iPlayground 2023 開始跑啦，歡迎應徵工作人員
-date: 2023-03-21 08:00 +0800
+date: 2023-03-21 08:30 +0800
 category: swift
 author: Marvin Lin
 tags: [swift, programming, iPlayground]
