@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-21T09:12:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">台灣政府普發現金6000元</title><link href="http://localhost:4000/finance/2023/03/21/taiwan-government-returnsix-thounds.html" rel="alternate" type="text/html" title="台灣政府普發現金6000元" /><published>2023-03-21T09:01:00+08:00</published><updated>2023-03-21T09:01:00+08:00</updated><id>http://localhost:4000/finance/2023/03/21/taiwan-government-returnsix-thounds</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/21/taiwan-government-returnsix-thounds.html">&lt;p&gt;台灣政府最近要普發6000元現金，因為徵稅超過預算數4500億元。這項政策旨在讓全民共享經濟成果，並刺激消費和投資。領取對象包括國內戶籍國民、取得居留權的外籍人士、特定偏鄉地區居民等，不分年齡層。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-21T11:00:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Open AI 發信給客戶，停止 Codex 相關服務</title><link href="http://localhost:4000/programming/2023/03/21/openai-stop-codex-api.html" rel="alternate" type="text/html" title="Open AI 發信給客戶，停止 Codex 相關服務" /><published>2023-03-21T10:58:00+08:00</published><updated>2023-03-21T10:58:00+08:00</updated><id>http://localhost:4000/programming/2023/03/21/openai-stop-codex-api</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/21/openai-stop-codex-api.html">&lt;h2 id=&quot;open-ai-發信給客戶停止-codex-相關服務&quot;&gt;Open AI 發信給客戶，停止 Codex 相關服務&lt;/h2&gt;
+
+&lt;p&gt;在3月23日，我們將停止支援Codex API。所有客戶將需要轉換到其他模型。Codex最初在2021年以免費有限制的測試版推出，一直保持著該狀態。考慮到我們最新的GPT-3.5代碼任務模型的進展，我們將不再支援Codex，並鼓勵所有客戶轉換到GPT-3.5-Turbo。
+關於GPT-3.5-Turbo
+GPT-3.5-Turbo是GPT-3.5系列中性價比最高、性能最優的模型。它可以進行編程任務，同時還具備靈活的自然語言能力。&lt;/p&gt;
+
+&lt;p&gt;您可以通過以下方式了解更多：
+GPT-3.5模型概述
+聊天補全指南&lt;/p&gt;
+
+&lt;p&gt;受影響的模型
+以下模型將被停止支援：
+code-cushman:001
+code-cushman:002
+code-davinci:001
+code-davinci:002&lt;/p&gt;
+
+&lt;p&gt;我們了解這個轉變可能暫時有些不便，但我們相信這將使我們能夠增加對我們最新和最能力強的模型的投資。&lt;/p&gt;
+
+&lt;p&gt;OpenAI團隊&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;英文原文&quot;&gt;英文原文&lt;/h2&gt;
+
+&lt;p&gt;On March 23rd, we will discontinue support for the Codex API. All customers will have to transition to a different model. Codex was initially introduced as a free limited beta in 2021, and has maintained that status to date. Given the advancements of our newest GPT-3.5 models for coding tasks, we will no longer be supporting Codex and encourage all customers to transition to GPT-3.5-Turbo.
+About GPT-3.5-Turbo
+GPT-3.5-Turbo is the most cost effective and performant model in the GPT-3.5 family. It can both do coding tasks while also being complemented with flexible natural language capabilities.&lt;/p&gt;
+
+&lt;p&gt;You can learn more through:
+GPT-3.5 model overview
+Chat completions guide&lt;/p&gt;
+
+&lt;p&gt;Models affected
+The following models will be discontinued:
+code-cushman:001
+code-cushman:002
+code-davinci:001
+code-davinci:002&lt;/p&gt;
+
+&lt;p&gt;We understand this transition may be temporarily inconvenient, but we are confident it will allow us to increase our investment in our latest and most capable models.&lt;/p&gt;
+
+&lt;p&gt;—The OpenAI team&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="AI" /><category term="Open AI" /><category term="ChatGPT" /><category term="Codex" /><summary type="html">Open AI 發信給客戶，停止 Codex 相關服務</summary></entry><entry><title type="html">台灣政府普發現金6000元</title><link href="http://localhost:4000/finance/2023/03/21/taiwan-government-returnsix-thounds.html" rel="alternate" type="text/html" title="台灣政府普發現金6000元" /><published>2023-03-21T09:01:00+08:00</published><updated>2023-03-21T09:01:00+08:00</updated><id>http://localhost:4000/finance/2023/03/21/taiwan-government-returnsix-thounds</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/21/taiwan-government-returnsix-thounds.html">&lt;p&gt;台灣政府最近要普發6000元現金，因為徵稅超過預算數4500億元。這項政策旨在讓全民共享經濟成果，並刺激消費和投資。領取對象包括國內戶籍國民、取得居留權的外籍人士、特定偏鄉地區居民等，不分年齡層。&lt;/p&gt;
 
 &lt;p&gt;領取方式有三種：一是線上申請後直接匯入戶頭；二是持提款卡至指定銀行ATM領取；三是持健保卡至郵局臨櫃領取 。其中，線上申請系統將於2023年3月22日上午8點開放登記，登記網址為https://6000.gov.tw。ATM領取則可選擇12家金融機構（含郵局）的24922台ATM。&lt;/p&gt;
 
@@ -613,14 +655,4 @@ swiftlint --fix
   &lt;li&gt;透過程式碼標準化，我們可以使得我們的程式碼更加易於擴展和維護，這樣可以使得我們開發的應用程式更加穩定和可靠。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;總體來說，程式碼標準化是一個非常重要的主題，特別是在大型項目中，它可以使得我們的程式碼更加易於維護和擴展。透過使用 Swiftlint 和 Swiftformat，我們可以自動化檢測和修正我們的程式碼風格問題，提高我們的開發效率和應用程式的品質。如果你還沒有開始使用這些工具，我強烈建議你開始使用它們，這樣可以使得你專案的程式碼更加易於閱讀、維護和擴展。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="swift" /><category term="programming" /><summary type="html">Swift 程式碼的標準化</summary></entry><entry><title type="html">微軟推出了名為「Microsoft 365 Copilot」的新生產力工具</title><link href="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html" rel="alternate" type="text/html" title="微軟推出了名為「Microsoft 365 Copilot」的新生產力工具" /><published>2023-03-17T15:41:00+08:00</published><updated>2023-03-17T15:41:00+08:00</updated><id>http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/17/microsoft-office-copilot-launch.html">&lt;p&gt;微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Microsoft 365應用程序中的數據，可將使用者的語言轉化為最強大的生產力工具，幫助使用者更高效地工作。&lt;/p&gt;
-
-&lt;p&gt;Copilot系統可以在Microsoft 365的多種應用程序中使用，例如Word、Excel、PowerPoint、Outlook和Teams，以提高使用者的生產力、解放創造力和升級技能。Copilot還可以在Outlook中協助用戶節省審閱長電子郵件鏈和快速起草建議答覆的時間，而在Teams中，Copilot則可以實時總結關鍵討論點，包括誰說了什麼，人們在哪裡達成了共識，以及哪些地方存在分歧，同時提供建議性行動計劃。Copilot還可以在Excel中分析趨勢和快速創建專業的數據可視化效果。&lt;/p&gt;
-
-&lt;p&gt;除了加速個人生產力之外，Copilot還為每個組織創建了一個新的知識模型，利用現有的數據和見解，實現知識的自由流通，節省寶貴的時間。這使得組織內部的知識更容易被發現和應用，並且節省了大量搜尋答案的時間。Copilot還可以協助自動化重複性任務、創建聊天機器人並在幾分鐘內將想法轉化為實用應用程序。&lt;/p&gt;
-
-&lt;p&gt;微軟表示，Copilot系統的使用需要一定的學習曲線，但是那些採用這種新的工作方式的人將很快取得優勢。微軟聯席CEO Satya Nadella表示，Copilot將徹底改變人們與AI的互動方式，以及AI與人類之間的互動方式。&lt;/p&gt;
-
-&lt;p&gt;Copilot系統是企業級AI的最佳解決方案，不僅整合了OpenAI的ChatGPT，還包括一個複雜的處理和管控引擎，可在企業級應用場景下實現高效穩定的AI模型開發、部署、管理和維護。Copilot系統的開發者希望透過這個產品，幫助企業在應用AI技術方面更加順利，降低開發難度和成本，並且讓企業能夠更好地應對市場和用戶的需求。隨著人工智能技術的發展和應用越來越廣泛，Copilot系統的應用前景也非常看好。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/&quot;&gt;Microsoft blog&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="life" /><summary type="html">微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Microsoft 365應用程序中的數據，可將使用者的語言轉化為最強大的生產力工具，幫助使用者更高效地工作。</summary></entry></feed>
+&lt;p&gt;總體來說，程式碼標準化是一個非常重要的主題，特別是在大型項目中，它可以使得我們的程式碼更加易於維護和擴展。透過使用 Swiftlint 和 Swiftformat，我們可以自動化檢測和修正我們的程式碼風格問題，提高我們的開發效率和應用程式的品質。如果你還沒有開始使用這些工具，我強烈建議你開始使用它們，這樣可以使得你專案的程式碼更加易於閱讀、維護和擴展。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="swift" /><category term="programming" /><summary type="html">Swift 程式碼的標準化</summary></entry></feed>
