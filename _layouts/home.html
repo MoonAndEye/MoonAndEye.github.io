@@ -3,6 +3,12 @@ layout: archive
 author_profile: true
 ---
 
+<!-- include 沒有作用，先用 html -->
+<div class="coingeckoWidget">
+  <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
+  <coingecko-coin-list-widget  coin-ids="bitcoin,ethereum" currency="usd" locale="zh-tw"></coingecko-coin-list-widget>
+</div>
+
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
