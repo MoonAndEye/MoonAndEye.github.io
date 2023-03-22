@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-22T14:03:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。</title><link href="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html" rel="alternate" type="text/html" title="從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。" /><published>2023-03-22T13:59:00+08:00</published><updated>2023-03-22T13:59:00+08:00</updated><id>http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen</id><content type="html" xml:base="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html">&lt;p&gt;從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-22T18:42:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Bing 釋出了 AI 繪圖工具 bing.com/create</title><link href="http://localhost:4000/programming/2023/03/22/bing-create.html" rel="alternate" type="text/html" title="Bing 釋出了 AI 繪圖工具 bing.com/create" /><published>2023-03-22T18:34:00+08:00</published><updated>2023-03-22T18:34:00+08:00</updated><id>http://localhost:4000/programming/2023/03/22/bing-create</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/22/bing-create.html">&lt;p&gt;AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。&lt;/p&gt;
+
+&lt;p&gt;「影像建立者」的用法很簡單，只要在輸入欄位中輸入想要看到的影像內容，例如「一隻穿著西裝的貓」、「一個有三個眼睛的笑臉」、「台北101旁邊有一座金字塔」等等，就可以看到 AI 根據文字提示產生出四張不同風格或角度的影像。使用者可以選擇其中一張喜歡的影像，並下載到自己的電腦或手機上。&lt;/p&gt;
+
+&lt;p&gt;「影像建立者」的用途很廣泛，可以幫助使用者發揮創意、增加趣味、解決問題或傳達訊息。例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;創意：使用者可以利用「影像建立者」來創作自己想像中的角色、場景、物品等等，或是將現實中不存在或難以實現的畫面呈現出來，如「一隻會飛的大象」、「太陽系中所有行星排成一列」等等。&lt;/li&gt;
+  &lt;li&gt;趣味：使用者可以利用「影像建立者」來製作有趣或幽默的圖片，如「自己和明星合照」、「自己變成卡通人物」、「自己穿上奇怪的服裝」等等。&lt;/li&gt;
+  &lt;li&gt;解決問題：使用者可以利用「影像建立者」來幫助自己解決一些日常生活中遇到的問題，如「找到遺失物品的位置」、「比較不同商品或服務的優缺點」、「模擬不同情境下可能發生的事情」等等。&lt;/li&gt;
+  &lt;li&gt;傳達訊息：使用者可以利用「影像建立者」來幫助自己傳達某些訊息或想法給別人看，如「表達心情或感受」、「說明某個觀念或理念」、「展示某個計畫或目標」等等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;未來，AI 繪圖工具可能會有更多進步和發展。例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;支援更多語言：目前 Bing 的「影像建立者」只支援英文語言提示，未來可能會支援其他語言，讓更多不同語言背景和文化背景的使用者能夠享受 AI 繪圖工具帶來的好處。&lt;/li&gt;
+  &lt;li&gt;提供更多選項：目前 Bing 的「影像建立者」每次只能產生四張不同風格或角度的影像供&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;這個網站是 Bing Image Creator，它是一個 AI 繪圖工具，可以根據您的文字產生 AI 影像。它的核心技術來自於 OpenAI 的最新 DALL∙E 模型，用戶僅需用文字描述想要的圖片，AI 就能生成相應的視覺內容3。Bing Image Creator 是免費的，而且不必等待 Waiting List，現已可直接使用。&lt;/p&gt;
+
+&lt;h2 id=&quot;bingcomcreate&quot;&gt;&lt;a href=&quot;bing.com/create&quot;&gt;bing.com/create&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ai" /><category term="art" /><summary type="html">AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。</summary></entry><entry><title type="html">從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。</title><link href="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html" rel="alternate" type="text/html" title="從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。" /><published>2023-03-22T13:59:00+08:00</published><updated>2023-03-22T13:59:00+08:00</updated><id>http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen</id><content type="html" xml:base="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html">&lt;p&gt;從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。&lt;/p&gt;
 
 &lt;p&gt;出處：&lt;/p&gt;
 
@@ -183,213 +205,4 @@ code-davinci:002&lt;/p&gt;
 
 &lt;p&gt;這次收購引發了市場和業界的廣泛關注和評論。有分析師認為，這是一個「不得已而為之」的救命稻草，反映了瑞信在金融危機中失去了自主權和競爭力。有些人則認為，這是一個「天作之合」的良好契機，展現了兩家公司在財富管理、投資銀行、私人銀行等領域的互補性和協同效應。還有些人則表示擔心，這次收購會減少市場上的競爭選擇和多元化服務 。&lt;/p&gt;
 
-&lt;p&gt;無論如何，在全球金融市場動盪不安、風險事件頻發、監管壓力加大、科技變革加速等背景下，這次收購無疑是一個重要而具有代表性的案例。它不僅揭示了當前金融業面臨的挑戰和困境，也展示了金融業未來可能走向的發展趨勢和變革方向。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="acquisition" /><category term="bank" /><summary type="html">瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎</summary></entry><entry><title type="html">使用 ChatGPT 串接 ChatGPT：(2)</title><link href="http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2.html" rel="alternate" type="text/html" title="使用 ChatGPT 串接 ChatGPT：(2)" /><published>2023-03-20T13:03:00+08:00</published><updated>2023-03-20T13:03:00+08:00</updated><id>http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2</id><content type="html" xml:base="http://localhost:4000/chatgpt/using-chatgpt-connect-chatgpt2.html">&lt;p&gt;在 &lt;a href=&quot;/chatgpt/using-chatgpt-connect-chatgpt1.html&quot;&gt;前一篇文章&lt;/a&gt;中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/chatgpt/using-chatgpt-connect-chatgpt1.html&quot;&gt;使用 ChatGPT 串接 ChatGPT：(1)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;開始用-chatgpt-產生-ios-app-程式碼&quot;&gt;開始用 ChatGPT 產生 iOS App 程式碼&lt;/h2&gt;
-
-&lt;h2 id=&quot;先從-api-request-開始&quot;&gt;先從 api request 開始&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;問：
-我已經有 ChatGPT 的 api key 了，請問怎麼用 Swift 串接 ChatGPT
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答：
-要使用 Swift 串接 ChatGPT，您可以使用以下步驟：
-
-請確保您已經安裝了 Alamofire 套件，該套件可以讓您在 Swift 中輕鬆進行 HTTP 請求。
-
-準備一個 HTTP POST 請求，並傳遞以下參數：
-
-網址：https://api.openai.com/v1/engines/davinci-codex/completions
-標題：Authorization
-值：Bearer YOUR_API_KEY
-標題：Content-Type
-值：application/json
-請求正文：{&quot;prompt&quot;: &quot;YOUR_PROMPT&quot;}
-在這裡，YOUR_API_KEY 是您的 ChatGPT API 金鑰，YOUR_PROMPT 是您想要傳遞給 ChatGPT 的提示。
-
-使用 Alamofire 套件發送 HTTP POST 請求，並處理返回的 JSON 格式回應：
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import Alamofire
-
-let apiURL = &quot;https://api.openai.com/v1/engines/davinci-codex/completions&quot;
-let headers: HTTPHeaders = [
-    &quot;Authorization&quot;: &quot;Bearer YOUR_API_KEY&quot;,
-    &quot;Content-Type&quot;: &quot;application/json&quot;
-]
-let parameters: Parameters = [
-    &quot;prompt&quot;: &quot;YOUR_PROMPT&quot;
-]
-
-AF.request(apiURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
-    switch response.result {
-    case .success(let value):
-        // 處理返回的 JSON 格式回應
-        if let json = value as? [String: Any],
-            let choices = json[&quot;choices&quot;] as? [[String: Any]],
-            let text = choices.first?[&quot;text&quot;] as? String {
-            // 在這裡處理您收到的文本回應
-            print(text)
-        }
-    case .failure(let error):
-        // 在這裡處理 HTTP 請求失敗的錯誤
-        print(error)
-    }
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;這樣您就可以使用 Swift 串接 ChatGPT 了。請注意，這只是一個簡單的範例，您可能需要根據您的具體需求進行更多調整和擴展。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;接下來加上一個簡單的畫面包含-prompt-輸入api-request-buttonresponse-呈現&quot;&gt;接下來加上一個簡單的畫面，包含 prompt 輸入，api request button，response 呈現&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;問：
-幫我生成一個 iOS App 畫面，來串接 ChatGPT，畫面上要有個文字輸入框，這個輸入框的內容就是 ChatGPT API 的 prompt，下方有一個 button，按下去後會發送 api request。再下方要能顯示 ChatGPT回應的 response text。請使用 SwiftUI 來寫這個頁面
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答：
-
-import SwiftUI
-import Alamofire
-
-struct ContentView: View {
-    @State var promptText: String = &quot;&quot;
-    @State var responseText: String = &quot;&quot;
-    let apiURL = &quot;https://api.openai.com/v1/engines/davinci-codex/completions&quot;
-    let headers: HTTPHeaders = [
-        &quot;Authorization&quot;: &quot;Bearer YOUR_API_KEY&quot;,
-        &quot;Content-Type&quot;: &quot;application/json&quot;
-    ]
-    
-    var body: some View {
-        VStack {
-            TextField(&quot;Enter prompt here&quot;, text: $promptText)
-                .padding()
-                .border(Color.gray)
-            
-            Button(action: {
-                sendRequest()
-            }) {
-                Text(&quot;Send Request&quot;)
-            }
-            .padding()
-            
-            Text(responseText)
-                .padding()
-        }
-    }
-    
-    func sendRequest() {
-        let parameters: Parameters = [
-            &quot;prompt&quot;: promptText
-        ]
-        
-        AF.request(apiURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
-            switch response.result {
-            case .success(let value):
-                if let json = value as? [String: Any],
-                    let choices = json[&quot;choices&quot;] as? [[String: Any]],
-                    let text = choices.first?[&quot;text&quot;] as? String {
-                    DispatchQueue.main.async {
-                        responseText = text
-                    }
-                }
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;在這個程式碼中，我們使用了 @State 屬性來管理 promptText 和 responseText 的狀態。當使用者輸入提示文本後，我們可以從 promptText 中取得輸入的值。當使用者按下“Send Request”按鈕時，我們會使用 Alamofire 發送一個 HTTP POST 請求，並處理返回的 JSON 格式回應，將回應文本更新到 responseText 中。最後，我們在畫面上顯示了這個回應文本。
-
-請注意，此程式碼僅為示範，實際使用中可能需要添加更多的錯誤處理和用戶體驗。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;驗證-ai-寫出來的專案會不會動&quot;&gt;驗證 AI 寫出來的專案會不會動&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/chatgpt/chatgpt-connect-ios-app.jpeg&quot; alt=&quot;ChatGPT 生出來的畫面&quot; width=&quot;250px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;畫面上看起來不錯，那我們就來試試看會不會動吧。我試著輸入”tell me a joke”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/chatgpt/chatgpt-connect-codex-result.jpeg&quot; alt=&quot;原始 ChatGPT 的結果&quot; width=&quot;250px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;他出現了很奇怪的結果，所以我把原始 response print 出來看看&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;success({
-    choices =     (
-                {
-            &quot;finish_reason&quot; = length;
-            index = 0;
-            logprobs = &quot;&amp;lt;null&amp;gt;&quot;;
-            text = &quot;:\&quot;))\n            self.nw.append(utils.normalizeString&quot;;
-        }
-    );
-    created = 1679291111;
-    id = &quot;cmpl-6w2cRytpMNtkDeuiuH15Pl8qky62C&quot;;
-    model = &quot;davinci-codex&quot;;
-    object = &quot;text_completion&quot;;
-    usage =     {
-        &quot;completion_tokens&quot; = 16;
-        &quot;prompt_tokens&quot; = 3;
-        &quot;total_tokens&quot; = 19;
-    };
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;這時候，就需要開發者介入了，在他的 model 中，使用了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;davinci-codex&lt;/code&gt; model，這並不是網頁版那個大家覺得好用的 model，所以我們對 endpoint 進行置換。&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/// 置換前
-    let apiURL = &quot;https://api.openai.com/v1/engines/davinci-codex/completions&quot;
-
-/// 置換後
-    let apiURL = &quot;https://api.openai.com/v1/engines/text-davinci-003/completions&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/chatgpt/chatgpt-connect-davinci-result.jpeg&quot; alt=&quot;davinci 的結果&quot; width=&quot;250px&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;success({
-    choices =     (
-                {
-            &quot;finish_reason&quot; = stop;
-            index = 0;
-            logprobs = &quot;&amp;lt;null&amp;gt;&quot;;
-            text = &quot; feeling?\n\nI&apos;m feeling great thank you.&quot;;
-        }
-    );
-    created = 1679290920;
-    id = &quot;cmpl-6w2ZMgsKECySpi2OFONc9HX31FJm6&quot;;
-    model = &quot;text-davinci-003&quot;;
-    object = &quot;text_completion&quot;;
-    usage =     {
-        &quot;completion_tokens&quot; = 11;
-        &quot;prompt_tokens&quot; = 3;
-        &quot;total_tokens&quot; = 14;
-    };
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;結論---這個階段人類開發者還是需要去看-chatgpt-的程式碼並進行-debug&quot;&gt;結論 - 這個階段，人類開發者還是需要去看 ChatGPT 的程式碼，並進行 debug&lt;/h2&gt;
-
-&lt;p&gt;從上面的例子可以得到幾個結論&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;程式碼會動&lt;/li&gt;
-  &lt;li&gt;UI 看起來符合最低 demo 的標準&lt;/li&gt;
-  &lt;li&gt;但如果 prmopt 不夠精確，要經過調整才能得得人類預期的結果&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;第三點這邊，我並不認為是單純是現在的 ChatGPT 的問題，畢竟，人類在溝通上，是省略了很多「已知」，或是直接假設對方「已知」的前提下，進行交談。或許在接下來的時間，人類會開始學著和 ChatGPT 進行溝通，改變人類自己的交談習慣，讓 ChatGPT 可以更快的了解人類要的結果。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Programming" /><category term="AI" /><category term="ChatGPT" /><summary type="html">在 前一篇文章中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。</summary></entry></feed>
+&lt;p&gt;無論如何，在全球金融市場動盪不安、風險事件頻發、監管壓力加大、科技變革加速等背景下，這次收購無疑是一個重要而具有代表性的案例。它不僅揭示了當前金融業面臨的挑戰和困境，也展示了金融業未來可能走向的發展趨勢和變革方向。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="acquisition" /><category term="bank" /><summary type="html">瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎</summary></entry></feed>
