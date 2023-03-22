@@ -13,7 +13,7 @@ summary: Starting April 2023, all iOS and iPadOS apps must be built with Xcode 1
 
 出處：
 
-[App Store](https://developer.apple.com/news/?id=z1erkhzr)
+[Apple developer news](https://developer.apple.com/news/?id=z1erkhzr)
 
 原文：
 App Store submissions now open for iOS 16.1 and iPadOS 16.1
