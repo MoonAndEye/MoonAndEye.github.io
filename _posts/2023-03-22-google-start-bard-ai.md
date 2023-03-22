@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [ai, bard, chat, google]
 summary: Google has launched Bard, an AI chat website that generates text based on past data. It's faster than ChatGPT and offers three versions of responses, as well as a "Google it" button. Bard is only available in English, and users must join a waiting list. While it's not perfect, users can give feedback to improve its responses. Currently, Bard is not available in Taiwan, but Google aims to expand it globally.
+permalink: /programming/:title:output_ext
 ---
 
 [Google Bard AI](https://bard.google.com)
