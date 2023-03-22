@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-22T10:48:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心</title><link href="http://localhost:4000/finance/yellen-talk-about-bank-issue.html" rel="alternate" type="text/html" title="美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心" /><published>2023-03-22T08:30:00+08:00</published><updated>2023-03-22T08:30:00+08:00</updated><id>http://localhost:4000/finance/yellen-talk-about-bank-issue</id><content type="html" xml:base="http://localhost:4000/finance/yellen-talk-about-bank-issue.html">&lt;p&gt;美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，表示政府已準備好為銀行業提供進一步的擔保，以防止危機擴大。這番話提振了市場信心，美股三大指數全面上漲，其中道瓊工業指數漲316點，收32560點，創下歷史新高。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-22T13:16:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google 開始試用 Bard AI chat</title><link href="http://localhost:4000/programming/2023/03/22/google-start-bard-ai.html" rel="alternate" type="text/html" title="Google 開始試用 Bard AI chat" /><published>2023-03-22T13:14:00+08:00</published><updated>2023-03-22T13:14:00+08:00</updated><id>http://localhost:4000/programming/2023/03/22/google-start-bard-ai</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/22/google-start-bard-ai.html">&lt;p&gt;&lt;a href=&quot;https://bard.google.com&quot;&gt;Google Bard AI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Google 最近宣布了一項重大的消息，就是開始試用 Bard 這個 AI chat 網站。Bard 是 Google 的一項實驗性產品，旨在讓使用者與生成式 AI 進行合作。生成式 AI 是一種基於過去數據創造而非識別內容的技術。Bard 的競爭對手是去年推出的 ChatGPT，一個由微軟支持的創業公司 OpenAI 開發的 chatbot。&lt;/p&gt;
+
+&lt;p&gt;Bard 的特色是什麼呢？首先，它可以快速地產生一段或多段文字，不像 ChatGPT 那樣逐字逐句地輸出答案。使用者可以輸入或說出任何問題或指令，Bard 就會嘗試回答或執行。其次，它可以提供三種不同版本或「草稿」供使用者選擇，以便找到最合適的回應。第三，它還有一個「Google it」的按鈕，如果使用者想要查看網路上的結果，就可以點選。&lt;/p&gt;
+
+&lt;p&gt;Bard 目前只支援英文，並且需要加入等待名單才能使用。有興趣的使用者可以到 https://bard.google.com/ 點選「Join waitlist」按鈕報名。收到確認信後，就可以登入 Google 帳號開始使用 Bard 了。&lt;/p&gt;
+
+&lt;p&gt;不過要注意的是，Bard 並不是萬能的。它有時候會回答錯誤或不完整的內容，所以使用者要自己判斷和驗證資訊的正確性和可靠性。Google 也提供了一個反饋按鈕讓使用者對 Bard 的回應表示讚賞或批評，以幫助 Google 改善技術。&lt;/p&gt;
+
+&lt;p&gt;目前台灣地區還沒有支援 Bard 的計畫&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ai" /><category term="bard" /><category term="chat" /><category term="google" /><summary type="html">Google Bard AI</summary></entry><entry><title type="html">美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心</title><link href="http://localhost:4000/finance/yellen-talk-about-bank-issue.html" rel="alternate" type="text/html" title="美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心" /><published>2023-03-22T08:30:00+08:00</published><updated>2023-03-22T08:30:00+08:00</updated><id>http://localhost:4000/finance/yellen-talk-about-bank-issue</id><content type="html" xml:base="http://localhost:4000/finance/yellen-talk-about-bank-issue.html">&lt;p&gt;美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，表示政府已準備好為銀行業提供進一步的擔保，以防止危機擴大。這番話提振了市場信心，美股三大指數全面上漲，其中道瓊工業指數漲316點，收32560點，創下歷史新高。&lt;/p&gt;
 
 &lt;p&gt;葉倫的信心喊話是在美國聯準會（Fed）即將宣布利率決議的前夕發出的。市場普遍預期聯準會將升息一碼，以因應通膨壓力和經濟復甦。不過，有分析師認為，聯準會可能也會發出升息接近尾聲的信號，以安撫市場的憂慮。&lt;/p&gt;
 
@@ -410,18 +420,4 @@ struct ContentView_Previews: PreviewProvider {
 
 &lt;p&gt;最後，RWD設計還可以提高網站的SEO排名。由於Google等搜索引擎優先顯示適應不同設備的網站，因此使用RWD設計可以讓您的網站更容易在搜索引擎中被發現，並且在搜索排名上取得更好的成績。&lt;/p&gt;
 
-&lt;p&gt;綜上所述，RWD設計是現代網站設計的重要組成部分，它可以提高網站的使用者體驗、可用性和SEO排名。如果您正在考慮重新設計您的網站，請務必考慮使用RWD設計，以提供最佳的網站體驗。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="證交所" /><category term="RWD" /><summary type="html">證交所公告</summary></entry><entry><title type="html">小吃推薦：楊家紅豆餅-新北板橋江子翠</title><link href="http://localhost:4000/life/2023/03/20/yang-red-been.html" rel="alternate" type="text/html" title="小吃推薦：楊家紅豆餅-新北板橋江子翠" /><published>2023-03-20T09:16:00+08:00</published><updated>2023-03-20T09:16:00+08:00</updated><id>http://localhost:4000/life/2023/03/20/yang-red-been</id><content type="html" xml:base="http://localhost:4000/life/2023/03/20/yang-red-been.html">&lt;p&gt;&lt;img src=&quot;/assets/life/food/yang_red_been.jpeg&quot; alt=&quot;楊家紅豆餅&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;楊家紅豆餅&quot;&gt;楊家紅豆餅&lt;/h2&gt;
-
-&lt;h2 id=&quot;營業時間早上11點開始賣完為止&quot;&gt;營業時間：早上11點開始，賣完為止&lt;/h2&gt;
-
-&lt;p&gt;這家紅豆餅店位於江子翠地區，已經經營十年以上。這家店的特色是他們只賣兩種口味的餅點：紅豆餅和奶油餅。但是這兩種口味都被做到了極致，令人回味無窮。&lt;/p&gt;
-
-&lt;p&gt;紅豆餅的內餡香甜，且每一口都有紅豆的口感，而餅皮則是脆而不硬，口感非常好。奶油餅則是濃郁的奶油香氣和鬆軟的餅體融合在一起，給人一種非常獨特的口感。雖然店家只賣這兩種口味，但是每一種口味都非常優秀，是一種無法用言語形容的美味。&lt;/p&gt;
-
-&lt;p&gt;此外，這家店的餅點使用的是優質的食材，每天限量販售也保證了餅點的新鮮度，因此如果您想嚐試這家店的餅點，建議您早一點來，以免向隅。&lt;/p&gt;
-
-&lt;p&gt;總之，如果您對紅豆餅和奶油餅感興趣，不妨到這家店品嚐一下。我相信您一定不會失望。&lt;/p&gt;
-
-&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2511399399245!2d121.46905985062942!3d25.025549883897703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a83fa20267a7%3A0xa8542f3b1b1b8b!2z5qWK5a6257SF6LGG6aSF!5e0!3m2!1szh-TW!2stw!4v1679275706894!5m2!1szh-TW!2stw&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="food" /><category term="美食" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;綜上所述，RWD設計是現代網站設計的重要組成部分，它可以提高網站的使用者體驗、可用性和SEO排名。如果您正在考慮重新設計您的網站，請務必考慮使用RWD設計，以提供最佳的網站體驗。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="證交所" /><category term="RWD" /><summary type="html">證交所公告</summary></entry></feed>
