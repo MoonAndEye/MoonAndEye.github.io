@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [programming, ai, art]
 summary: The Bing Image Creator is an AI drawing tool that generates images based on user input text, using the latest DALL∙E model from OpenAI. It is a free service and does not require waiting on a waiting list, and can be accessed directly on bing.com/create. Users can provide prompts to the system, and the AI will begin drawing the requested image. The service is similar to other AI drawing tools such as Stable Diffusion and Midjourney. Additionally, Microsoft has integrated Bing Image Creator into chatbots, the web, and the Edge browser.
+permalink: /programming/:title:output_ext
 ---
 
 AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。
