@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-22T13:20:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google 開始試用 Bard AI chat</title><link href="http://localhost:4000/programming/google-start-bard-ai.html" rel="alternate" type="text/html" title="Google 開始試用 Bard AI chat" /><published>2023-03-22T13:14:00+08:00</published><updated>2023-03-22T13:14:00+08:00</updated><id>http://localhost:4000/programming/google-start-bard-ai</id><content type="html" xml:base="http://localhost:4000/programming/google-start-bard-ai.html">&lt;p&gt;&lt;a href=&quot;https://bard.google.com&quot;&gt;Google Bard AI&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-22T14:02:11+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。</title><link href="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html" rel="alternate" type="text/html" title="從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。" /><published>2023-03-22T13:59:00+08:00</published><updated>2023-03-22T13:59:00+08:00</updated><id>http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen</id><content type="html" xml:base="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html">&lt;p&gt;從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。&lt;/p&gt;
+
+&lt;p&gt;出處：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/news/?id=z1erkhzr&quot;&gt;App Store&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;原文：
+App Store submissions now open for iOS 16.1 and iPadOS 16.1
+October 18, 2022&lt;/p&gt;
+
+&lt;p&gt;iOS 16.1 and iPadOS 16.1, the world’s most advanced mobile operating systems, will soon be available to customers worldwide. Take advantage of Live Activities to help people stay on top of what’s happening live in your app, right from the Lock Screen and Dynamic Island on iPhone. Bring desktop-class features, such as an editor-style navigation bar and enhanced text editing menu to your iPad app, and get the most out of the latest advancements in MapKit, Metal, ARKit, Core ML, and more.&lt;/p&gt;
+
+&lt;p&gt;Build your app using Xcode 14.1 Release Candidate, then test and submit it for review. Please note, starting April 2023, all iOS and iPadOS apps submitted to the App Store must be built with Xcode 14.1 and the iOS 16.1 SDK.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="iOS" /><category term="App Store" /><summary type="html">從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。</summary></entry><entry><title type="html">Google 開始試用 Bard AI chat</title><link href="http://localhost:4000/programming/google-start-bard-ai.html" rel="alternate" type="text/html" title="Google 開始試用 Bard AI chat" /><published>2023-03-22T13:14:00+08:00</published><updated>2023-03-22T13:14:00+08:00</updated><id>http://localhost:4000/programming/google-start-bard-ai</id><content type="html" xml:base="http://localhost:4000/programming/google-start-bard-ai.html">&lt;p&gt;&lt;a href=&quot;https://bard.google.com&quot;&gt;Google Bard AI&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Google 最近宣布了一項重大的消息，就是開始試用 Bard 這個 AI chat 網站。Bard 是 Google 的一項實驗性產品，旨在讓使用者與生成式 AI 進行合作。生成式 AI 是一種基於過去數據創造而非識別內容的技術。Bard 的競爭對手是去年推出的 ChatGPT，一個由微軟支持的創業公司 OpenAI 開發的 chatbot。&lt;/p&gt;
 
@@ -380,44 +392,4 @@ struct ContentView_Previews: PreviewProvider {
   &lt;li&gt;但如果 prmopt 不夠精確，要經過調整才能得得人類預期的結果&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;第三點這邊，我並不認為是單純是現在的 ChatGPT 的問題，畢竟，人類在溝通上，是省略了很多「已知」，或是直接假設對方「已知」的前提下，進行交談。或許在接下來的時間，人類會開始學著和 ChatGPT 進行溝通，改變人類自己的交談習慣，讓 ChatGPT 可以更快的了解人類要的結果。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Programming" /><category term="AI" /><category term="ChatGPT" /><summary type="html">在 前一篇文章中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。</summary></entry><entry><title type="html">台灣證交所網頁改版，RWD 網站設計</title><link href="http://localhost:4000/finance/2023/03/20/twse-website-rwd.html" rel="alternate" type="text/html" title="台灣證交所網頁改版，RWD 網站設計" /><published>2023-03-20T11:54:00+08:00</published><updated>2023-03-20T11:54:00+08:00</updated><id>http://localhost:4000/finance/2023/03/20/twse-website-rwd</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/20/twse-website-rwd.html">&lt;h2 id=&quot;證交所公告&quot;&gt;證交所公告&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.twse.com.tw/zh/about/news/news/content.html?ff80808186cea0de0186fce2babc0066&quot;&gt;證交所公告 link&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;證交所新聞稿&quot;&gt;證交所新聞稿&lt;/h2&gt;
-
-&lt;p&gt;臺灣證券交易所股份有限公司 新聞稿
-中華民國112年3月20日
-資訊服務部
-臺灣證券交易所官網全面改版為響應式(RWD)網站設計，於3月19日推
-出
-臺灣證券交易所官網為提升行動裝置使用者之操作體驗，強化網站友善度及互
-動性，於今(2023)年3月19日將本公司官網全面改版為響應式(RWD)網站設計，取代
-與電腦版不同頁面、網址，且屬老舊技術的行動版網站。依據流量分析統計，越來
-越多人透過行動裝置來瀏覽本公司網頁，比例已超過50%。各類行動裝置的螢幕大
-小、比例、操作習慣與使用電腦有所不同，如用手機看電腦規格的網頁，常需操作
-放大縮小，以觀看內容。
-本次改版採用響應式網頁設計(Responsive Web Design)，同一個網址上看到的內
-容，在不同螢幕寬度(桌機、平版、手機)會自動適應產生不同的版面變化，圖像尺寸
-和字體將更加利於行動裝置上瀏覽，所設計的網站連接和按鈕將更容易觸發點擊，
-有著形象視覺一致、減少維護成本、集中網站流量、加高搜尋引擎結果排名與易於
-使用者分享網站等優點。
-以使用行動裝置瀏覽本公司官網報表為例：改版後，遇到較寬的報表時，會將
-重要欄位(如證券代號、日期等)固定住，使用者透過手指左右拖拉即可依序看到表
-格後面欄位的內容，同時亦可清楚知道目前瀏覽項目的證券代號或日期，充分落實
-以使用者為中心的設計。
-臺灣證券交易所透過優化網站使用者操作體驗(User Experience)，提升使用者網
-站操作便利性、友善度及互動性，為持續吸引及服務國內外投資人投資臺灣資本市
-場而努力。&lt;/p&gt;
-
-&lt;h2 id=&quot;rwd-參考資料&quot;&gt;RWD 參考資料&lt;/h2&gt;
-
-&lt;p&gt;RWD（Responsive Web Design）指的是設計能夠自動調整網站版面以適應不同的裝置大小和屏幕解析度的技術。現在越來越多的使用者通過移動設備上網，因此，RWD設計變得越來越重要。&lt;/p&gt;
-
-&lt;p&gt;首先，RWD設計可以提供更好的使用者體驗。如果一個網站不能自動適應裝置大小，使用者就必須不斷地放大和縮小網頁，以找到他們需要的內容，這樣的體驗是非常糟糕的。相反，RWD設計可以讓網站適應不同的屏幕大小和裝置，使使用者能夠更輕鬆地尋找他們所需要的信息，提供更好的瀏覽體驗。&lt;/p&gt;
-
-&lt;p&gt;其次，RWD設計可以提高網站的可用性。如果一個網站不能正確地顯示在移動設備上，那麼它就會失去一部分的受眾。這意味著使用者可能會因為網站不符合他們的期望而放棄訪問。而使用RWD設計可以確保網站可以適應不同的裝置和屏幕大小，讓更多的使用者能夠輕鬆訪問網站。&lt;/p&gt;
-
-&lt;p&gt;最後，RWD設計還可以提高網站的SEO排名。由於Google等搜索引擎優先顯示適應不同設備的網站，因此使用RWD設計可以讓您的網站更容易在搜索引擎中被發現，並且在搜索排名上取得更好的成績。&lt;/p&gt;
-
-&lt;p&gt;綜上所述，RWD設計是現代網站設計的重要組成部分，它可以提高網站的使用者體驗、可用性和SEO排名。如果您正在考慮重新設計您的網站，請務必考慮使用RWD設計，以提供最佳的網站體驗。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="證交所" /><category term="RWD" /><summary type="html">證交所公告</summary></entry></feed>
+&lt;p&gt;第三點這邊，我並不認為是單純是現在的 ChatGPT 的問題，畢竟，人類在溝通上，是省略了很多「已知」，或是直接假設對方「已知」的前提下，進行交談。或許在接下來的時間，人類會開始學著和 ChatGPT 進行溝通，改變人類自己的交談習慣，讓 ChatGPT 可以更快的了解人類要的結果。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Programming" /><category term="AI" /><category term="ChatGPT" /><summary type="html">在 前一篇文章中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。</summary></entry></feed>
