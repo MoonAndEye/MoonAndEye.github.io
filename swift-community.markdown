@@ -101,3 +101,14 @@ AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如�
 <hr>
 
 [摸魚週報](https://github.com/zhangferry/iOSWeeklyLearning)
+
+<hr>
+
+[彼得潘的 iOS App 程式設計入門](https://www.apppeterpan.com/)
+
+<hr>
+
+[好想工作室](https://goodideas-studio.com)
+
+[好想工作室 FB](https://www.facebook.com/GoodideasStudio/?locale=zh_TW)
+
