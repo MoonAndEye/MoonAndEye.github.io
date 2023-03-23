@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-23T09:06:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">聯準會升息1碼，市場失望重挫</title><link href="http://localhost:4000/finance/powell-speach-march-twenty-two.html" rel="alternate" type="text/html" title="聯準會升息1碼，市場失望重挫" /><published>2023-03-23T08:58:00+08:00</published><updated>2023-03-23T08:58:00+08:00</updated><id>http://localhost:4000/finance/powell-speach-march-twenty-two</id><content type="html" xml:base="http://localhost:4000/finance/powell-speach-march-twenty-two.html">&lt;p&gt;鮑爾 (Jerome Powell) 在 22 日發表的聲明中，宣布聯準會 (Fed) 決定升息 1 碼，將聯邦資金利率目標區間調高至 4.75% 至 5%，並暗示政策利率將在今年底達到終端水準。他表示，這是為了恢復物價穩定，並維持民眾對央行的信心。他也強調，美國銀行體系健全且堅韌，能夠應對近期多家銀行倒閉所引發的金融動盪。他說，央行官員不認為今年會降息，除非出現意外情況。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-23T10:20:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">GitHub Copilot X 推出</title><link href="http://localhost:4000/finance/copilot-x.html" rel="alternate" type="text/html" title="GitHub Copilot X 推出" /><published>2023-03-23T10:18:00+08:00</published><updated>2023-03-23T10:18:00+08:00</updated><id>http://localhost:4000/finance/copilot-x</id><content type="html" xml:base="http://localhost:4000/finance/copilot-x.html">&lt;p&gt;GitHub Copilot X 是 GitHub 在 2023 年 3 月推出的一項創新功能，旨在為開發者提供一個更智能、更友好的 AI 助手。GitHub Copilot X 不僅採用了 OpenAI 的最新 GPT-4 模型，還引入了聊天和語音界面，支持拉取請求、命令行和文檔，並能回答開發者對項目的各種問題 。&lt;/p&gt;
+
+&lt;p&gt;GitHub Copilot X 的核心功能之一是 GitHub Copilot Chat，它是一個類似於 ChatGPT 的聊天界面，可以與 VS Code 和 Visual Studio 緊密集成。開發者可以通過輸入文字或說出話語來與 GitHub Copilot Chat 進行交流，並獲得代碼建議、錯誤修復、單元測試、代碼分析等服務 。&lt;/p&gt;
+
+&lt;p&gt;GitHub Copilot X 還可以幫助開發者完成拉取請求的描述、生成缺失的單元測試、回答文檔中的常見問題、以及在命令行中執行各種操作。GitHub Copilot X 的目標是讓開發者能夠更快速、更高效地進行軟件開發，並專注於創造性和創新性的工作 。&lt;/p&gt;
+
+&lt;h2 id=&quot;加入-copilot-x-的-waitlist&quot;&gt;&lt;a href=&quot;https://github.com/features/preview/copilot-x&quot;&gt;加入 Copilot X 的 waitlist&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="copilot" /><category term="ai" /><summary type="html">GitHub Copilot X 是 GitHub 在 2023 年 3 月推出的一項創新功能，旨在為開發者提供一個更智能、更友好的 AI 助手。GitHub Copilot X 不僅採用了 OpenAI 的最新 GPT-4 模型，還引入了聊天和語音界面，支持拉取請求、命令行和文檔，並能回答開發者對項目的各種問題 。</summary></entry><entry><title type="html">聯準會升息1碼，市場失望重挫</title><link href="http://localhost:4000/finance/powell-speach-march-twenty-two.html" rel="alternate" type="text/html" title="聯準會升息1碼，市場失望重挫" /><published>2023-03-23T08:58:00+08:00</published><updated>2023-03-23T08:58:00+08:00</updated><id>http://localhost:4000/finance/powell-speach-march-twenty-two</id><content type="html" xml:base="http://localhost:4000/finance/powell-speach-march-twenty-two.html">&lt;p&gt;鮑爾 (Jerome Powell) 在 22 日發表的聲明中，宣布聯準會 (Fed) 決定升息 1 碼，將聯邦資金利率目標區間調高至 4.75% 至 5%，並暗示政策利率將在今年底達到終端水準。他表示，這是為了恢復物價穩定，並維持民眾對央行的信心。他也強調，美國銀行體系健全且堅韌，能夠應對近期多家銀行倒閉所引發的金融動盪。他說，央行官員不認為今年會降息，除非出現意外情況。&lt;/p&gt;
 
 &lt;p&gt;鮑爾的言論令市場失望，原本預期聯準會可能因應銀行業危機而放寬貨幣政策的投資人紛紛撤離美股市場。另一方面，財政部長葉倫 (Janet Yellen) 在參議院聽證會上表示，他無意擴大存款保險範圍，以保障問題銀行的客戶。她的言論也引發區域銀行股的崩跌，拖累整個金融板塊。道瓊指數終場重挫 530 點，收在 32,030.11 點；標普 500 指數跌近 1.7%，收在 3,936.97 點；那斯達克綜合指數跌逾 1.6%，收在 11,669.96 點。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">鮑爾 (Jerome Powell) 在 22 日發表的聲明中，宣布聯準會 (Fed) 決定升息 1 碼，將聯邦資金利率目標區間調高至 4.75% 至 5%，並暗示政策利率將在今年底達到終端水準。他表示，這是為了恢復物價穩定，並維持民眾對央行的信心。他也強調，美國銀行體系健全且堅韌，能夠應對近期多家銀行倒閉所引發的金融動盪。他說，央行官員不認為今年會降息，除非出現意外情況。</summary></entry><entry><title type="html">Bing 釋出了 AI 繪圖工具 bing.com/create</title><link href="http://localhost:4000/programming/bing-create.html" rel="alternate" type="text/html" title="Bing 釋出了 AI 繪圖工具 bing.com/create" /><published>2023-03-22T18:34:00+08:00</published><updated>2023-03-22T18:34:00+08:00</updated><id>http://localhost:4000/programming/bing-create</id><content type="html" xml:base="http://localhost:4000/programming/bing-create.html">&lt;p&gt;AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。&lt;/p&gt;
 
@@ -123,70 +129,4 @@ code-davinci:002&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://iplayground.io&quot;&gt;iPlayground 官網&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/@iPlaygroundTaiwan&quot;&gt;iPlayground Youtube 頻道&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="swift" /><category term="programming" /><category term="iPlayground" /><summary type="html">這個消息，有公佈在 13 的電子報第 179 期，如果想要當 iPlayground 工作人員的朋友，歡迎在 13 的電子報上，進行回覆，就可以報名囉。</summary></entry><entry><title type="html">Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄</title><link href="http://localhost:4000/programming/2023/03/20/edge-update-embed-ai.html" rel="alternate" type="text/html" title="Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄" /><published>2023-03-20T20:25:00+08:00</published><updated>2023-03-20T20:25:00+08:00</updated><id>http://localhost:4000/programming/2023/03/20/edge-update-embed-ai</id><content type="html" xml:base="http://localhost:4000/programming/2023/03/20/edge-update-embed-ai.html">&lt;p&gt;新版的 Edge 在側邊欄整合了 ai 的功能，包含 bing chat, 文章/文字生成器。&lt;/p&gt;
-
-&lt;h1 id=&quot;microsoft-edge-新版瀏覽器將-ai-整合在側邊欄&quot;&gt;Microsoft Edge 新版瀏覽器將 AI 整合在側邊欄&lt;/h1&gt;
-
-&lt;p&gt;Microsoft Edge 是一款基於 Chromium 的瀏覽器，提供了許多實用的功能，例如集成式 PDF 閱讀器、垂直分頁、密碼管理器等。最近，Microsoft Edge 又推出了一項新功能，就是將 AI 整合在側邊欄中，讓使用者可以在瀏覽網頁的同時，享受 AI 的智慧協助。&lt;/p&gt;
-
-&lt;p&gt;這項新功能稱為 Edge Copilot，是由 Bing 提供的 ChatGPT 技術驅動的。ChatGPT 是一種基於深度學習的自然語言生成模型，可以根據使用者的輸入和上下文，產生流暢且有意義的文字回應。Edge Copilot 可以幫助使用者完成各種任務，例如：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;摘要：將長篇的網頁內容壓縮成幾句話，幫助使用者快速掌握重點。&lt;/li&gt;
-  &lt;li&gt;比較：將不同的產品或服務進行比較分析，幫助使用者做出選擇。&lt;/li&gt;
-  &lt;li&gt;解釋：對於任何不清楚的概念或術語，提供清楚且易懂的解釋。&lt;/li&gt;
-  &lt;li&gt;翻譯：將任何語言的文字轉換成使用者想要的語言。&lt;/li&gt;
-  &lt;li&gt;代碼：對於程式設計師來說，可以幫助他們理解或轉換不同語言的代碼。&lt;/li&gt;
-  &lt;li&gt;寫作：無論是撰寫筆記、郵件、報告還是文案，都可以幫助使用者改善文法、重新表達內容、擴充內容或生成內容。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Edge Copilot 的操作方式非常簡單。只要在工具列上點選 Bing 圖示，就可以打開側邊欄。在側邊欄中，使用者可以和 AI 進行聊天互動，並根據自己的需求輸入相關指令或問題。AI 會根據當前瀏覽的網頁和使用者的目標，提供智能建議和洞見。如果不需要使用 AI 功能，也可以隨時隱藏側邊欄。&lt;/p&gt;
-
-&lt;p&gt;Edge Copilot 不僅提供了多種預設的提示模板，讓使用者可以快速啟動常用功能；也支持自定義提示模板，在任何網頁上都能靈活運用 AI 功能。此外，在保護隱私方面也有所考量，在與 AI 聊天時不會收集或儲存任何個人資料。&lt;/p&gt;
-
-&lt;p&gt;Microsoft Edge 新版瀏覽器將 AI 整合在側邊欄中，是一項創新且實用的功能。它讓使用者可以在一個介面中完成多種任務，在提高效率和品質方面都有所幫助。&lt;/p&gt;
-
-&lt;h2 id=&quot;和-bing-聊天&quot;&gt;和 Bing 聊天&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/edge-update/edge_chat.jpeg&quot; alt=&quot;edge chat&quot; width=&quot;250&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;如果要產出一段文字除了可以調整-長-中-短以外還可以分用途&quot;&gt;如果要產出一段文字，除了可以調整 長 中 短，以外，還可以分用途&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/edge-update/edge_create_blog.jpeg&quot; alt=&quot;edge create blog&quot; width=&quot;250&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;我們來試著產一篇新聞&quot;&gt;我們來試著產一篇新聞&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/edge-update/edge_news.jpeg&quot; alt=&quot;edge news&quot; width=&quot;250&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;這邊，我們試著生產一篇 iPlayground 的新聞&lt;/p&gt;
-
-&lt;p&gt;prmopt: 今年 Swift 社群會舉辦 iPlayground，請給我一篇關於這個 Swift 的研究會的新聞&lt;/p&gt;
-
-&lt;h1 id=&quot;swift-社群-iplayground-將舉辦-2023-年度線上技術研討會&quot;&gt;Swift 社群 iPlayground 將舉辦 2023 年度線上技術研討會&lt;/h1&gt;
-
-&lt;p&gt;Swift 社群 iPlayground 是台灣首度聚焦 Apple 相關軟體開發之大型技術研討會，自 2017 年起每年舉辦一次，邀請國內外知名的 Swift 開發者分享他們的經驗和心得。今年，由於疫情的影響，iPlayground 將以線上的方式進行，並將於 3 月 27 日至 28 日舉行。&lt;/p&gt;
-
-&lt;p&gt;iPlayground 2023 的主題是「用你我都會的 Swift 語言寫出更多可能」，旨在展示 Swift 不僅是一種用於 iOS、macOS、watchOS 和 tvOS 的程式語言，也是一種通用、跨平台、高效能的程式語言，可以應用在各種領域，如後端開發、機器學習、物聯網等。本次研討會將有來自不同背景和領域的講者分享他們如何用 Swift 創造出令人驚豔的作品和解決方案。&lt;/p&gt;
-
-&lt;p&gt;本次研討會將分成兩天進行，第一天將有四場精彩的 keynote 演講，分別是：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;「Swift 的演進與未來」：由 Swift 原始碼貢獻者之一的 John Doe 分享 Swift 的最新動態和未來規劃。&lt;/li&gt;
-  &lt;li&gt;「用 Swift 寫出 LINE 聊天機器人」：由 LINE Taiwan 的 iOS 工程師鄭宇哲介紹如何利用 LINE Messaging API 和 Vapor 框架用 Swift 寫出一個可以回答問題和發送貼圖的聊天機器人。&lt;/li&gt;
-  &lt;li&gt;「手把手帶你用 Clean Swift 重構 MVC, 並替核心程式碼撰寫單元測試」：由知名部落客 ChiaoTeng 分享他如何使用 Clean Swift 架構來改善傳統 MVC 模式下程式碼的可讀性和可測試性。&lt;/li&gt;
-  &lt;li&gt;「用 SwiftUI 和 Combine 打造現代化 UI」：由 Apple Developer Academy 的學員陳昱廷展示如何使用 SwiftUI 和 Combine 兩個全新的框架來打造美觀且高效能的 UI。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;第二天則將有六場深入淺出的 workshop ，讓參加者可以親自動手學習和實作各種 Swift 相關的技術和主題，例如：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;「SwiftUI 入門教學」：由 iPlayground 主辦人之一的 Tim Lee 帶領參加者從零開始學習 SwiftUI 的基礎知識和操作方法。&lt;/li&gt;
-  &lt;li&gt;「使用 Core ML 和 Create ML 打造智慧型 App」：由 AI Taiwan 社群創辦人之一的王小明教授參加者如何使用 Core ML 和 Create ML 兩個 Apple 提供的框架來訓練和部署機器學習模型到 App 中。&lt;/li&gt;
-  &lt;li&gt;「使用 Kitura 框架建立&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;雖然中間被截斷了，但還真的「產生」了一個會議，並包含了題目和講者。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="life" /><summary type="html">新版的 Edge 在側邊欄整合了 ai 的功能，包含 bing chat, 文章/文字生成器。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/@iPlaygroundTaiwan&quot;&gt;iPlayground Youtube 頻道&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="swift" /><category term="programming" /><category term="iPlayground" /><summary type="html">這個消息，有公佈在 13 的電子報第 179 期，如果想要當 iPlayground 工作人員的朋友，歡迎在 13 的電子報上，進行回覆，就可以報名囉。</summary></entry></feed>
