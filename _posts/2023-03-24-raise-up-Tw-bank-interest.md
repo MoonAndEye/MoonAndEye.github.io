@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 央行升息半碼
+title: 央行宣布升息半碼
 date: 2023-03-24 08:53 +0800
 category: finance
 author: Marvin Lin
