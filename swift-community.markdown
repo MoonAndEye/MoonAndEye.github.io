@@ -40,16 +40,25 @@ permalink: /swift-community/
 
 ## iPlayground
 
+[![iPlayground](/assets/swift-community/icon_iPlayground.jpeg){: width="150" }](https://www.facebook.com/groups/cocoaheads.taipei)
+
 簡介:
 2017年9月，一群到東京參加iOSDC 的工程師們，看到國外蓬勃活躍的程式力後，點燃了滿腔熱血，決心在台灣舉辦兼具廣深度與有趣的 iOS 研討會——iPlayground 自此誕生。
 在 2018、2019 連續兩年，有幸邀請到國內外知名講者帶來各種議題，從實戰技巧、初心者攻略到各式八卦政治學，都在 iPlaygrouond 中華麗登場。
 2020年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
 
-[![iPlayground](/assets/swift-community/icon_iPlayground.jpeg){: width="150" }](https://www.facebook.com/groups/cocoaheads.taipei)
-
 [官網連結](https://iplayground.io)
 
 [Youtube Link](https://www.youtube.com/@iPlaygroundTaiwan)
+
+## Mopcon
+
+[![Mopcon 官網連結](/assets/swift-community/banner_mopCon.jpeg){: widt="150" }](https://mopcon.org/)
+
+簡介:
+MOPCON (Mobile Open Platform Conference)行動科技年會，是南台灣最具有指標性的軟體科技研討會。 回顧過去十年，我們堅持在濁水溪以南，積極鼓勵探討前沿技術、實務歷程及在地產業經驗的分享，提供在地社群運作潛力，並打造企業與科技人的優質互動環境。
+
+[Mopcon FB Link](https://www.facebook.com/mopcon/)
 
 <!-- banner_AppWorks-School.png -->
 
