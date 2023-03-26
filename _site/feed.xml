@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-25T11:37:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?</title><link href="http://localhost:4000/finance/ChatGPT-plugins.html" rel="alternate" type="text/html" title="ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?" /><published>2023-03-25T09:01:00+08:00</published><updated>2023-03-25T09:01:00+08:00</updated><id>http://localhost:4000/finance/ChatGPT-plugins</id><content type="html" xml:base="http://localhost:4000/finance/ChatGPT-plugins.html">&lt;p&gt;ChatGPT plugins 是一種可以讓 ChatGPT 與網路上的各種服務和資源互動的工具，它們可以幫助 ChatGPT 取得最新的資訊，執行計算，或使用第三方服務。ChatGPT plugins 的設計原則是以安全性為核心，並且讓 ChatGPT 在使用 plugins 時能夠遵守相關的規則和道德。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-26T10:31:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin Lin’s Blogger</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」</title><link href="http://localhost:4000/finance/prompt-engineering.html" rel="alternate" type="text/html" title="Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」" /><published>2023-03-26T10:17:00+08:00</published><updated>2023-03-26T10:17:00+08:00</updated><id>http://localhost:4000/finance/prompt-engineering</id><content type="html" xml:base="http://localhost:4000/finance/prompt-engineering.html">&lt;p&gt;prompt engineering 是一種利用人工智慧 (AI) 生成文本的技術，它需要設計一個適當的輸入 (prompt) 來引導 AI 產生想要的輸出。prompt engineering 的目的是讓 AI 能夠理解人類的意圖和需求，並且生成高質量、有用和有趣的文本。prompt engineering 需要考慮多種因素，例如 AI 的能力、限制、語言、風格、目標、背景等，並且需要不斷地測試和改進 prompt 的效果。prompt engineering 是一門融合了語言學、心理學、邏輯學和創意的藝術和科學。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;will-保哥在-fb-上說已經將-dairai-的書用-chatgpt-翻譯成繁體中文&quot;&gt;Will 保哥在 FB 上說已經將 DAIR.AI 的書用 ChatGPT 翻譯成繁體中文&lt;/h2&gt;
+
+&lt;p&gt;我相信在讀完這個提示工程，對 ChatGPT 的使用，應該會更廣泛，更精確。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://promptingguide.azurewebsites.net/&quot;&gt;電子書網址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/will.fans&quot;&gt;Will 保哥的技術交流中心&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ai" /><category term="prompt" /><category term="ChatGPT" /><summary type="html">prompt engineering 是一種利用人工智慧 (AI) 生成文本的技術，它需要設計一個適當的輸入 (prompt) 來引導 AI 產生想要的輸出。prompt engineering 的目的是讓 AI 能夠理解人類的意圖和需求，並且生成高質量、有用和有趣的文本。prompt engineering 需要考慮多種因素，例如 AI 的能力、限制、語言、風格、目標、背景等，並且需要不斷地測試和改進 prompt 的效果。prompt engineering 是一門融合了語言學、心理學、邏輯學和創意的藝術和科學。</summary></entry><entry><title type="html">ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?</title><link href="http://localhost:4000/finance/ChatGPT-plugins.html" rel="alternate" type="text/html" title="ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?" /><published>2023-03-25T09:01:00+08:00</published><updated>2023-03-25T09:01:00+08:00</updated><id>http://localhost:4000/finance/ChatGPT-plugins</id><content type="html" xml:base="http://localhost:4000/finance/ChatGPT-plugins.html">&lt;p&gt;ChatGPT plugins 是一種可以讓 ChatGPT 與網路上的各種服務和資源互動的工具，它們可以幫助 ChatGPT 取得最新的資訊，執行計算，或使用第三方服務。ChatGPT plugins 的設計原則是以安全性為核心，並且讓 ChatGPT 在使用 plugins 時能夠遵守相關的規則和道德。&lt;/p&gt;
 
 &lt;p&gt;ChatGPT plugins 的功能非常多元，可以滿足不同的使用場景和需求。例如，有些 plugins 可以讓 ChatGPT 查詢和預訂旅行、餐廳、購物等服務，有些 plugins 可以讓 ChatGPT 學習和使用不同的語言，有些 plugins 可以讓 ChatGPT 存取和分析數據、知識和計算結果，有些 plugins 可以讓 ChatGPT 瀏覽網頁和執行程式碼等。&lt;/p&gt;
 
@@ -72,46 +82,4 @@ October 18, 2022&lt;/p&gt;
 
 &lt;p&gt;值得注意的是，在中國市場表現亮眼的特斯拉（TSLA.O），也在昨天暴漲約8%，成為那斯達克指數上漲的主要推手之一。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="葉倫" /><summary type="html">美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，表示政府已準備好為銀行業提供進一步的擔保，以防止危機擴大。這番話提振了市場信心，美股三大指數全面上漲，其中道瓊工業指數漲316點，收32560點，創下歷史新高。</summary></entry><entry><title type="html">玉山金控今年辦理現金增資案，預計現增8億股</title><link href="http://localhost:4000/finance/2023/03/21/ESun-news.html" rel="alternate" type="text/html" title="玉山金控今年辦理現金增資案，預計現增8億股" /><published>2023-03-21T18:11:00+08:00</published><updated>2023-03-21T18:11:00+08:00</updated><id>http://localhost:4000/finance/2023/03/21/ESun-news</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/21/ESun-news.html">&lt;p&gt;玉山金控今年辦理現金增資案，預計現增8億股。玉山金控/提供&lt;/p&gt;
 
-&lt;p&gt;玉山金控 （2884）今年辦理現金 增資 案，預計現增8億股，發行價格暫定每股20元。玉山金控此次增資資金，將用於轉投資子公司玉山銀行供拓展業務之用及充實營運資金。玉山金控在今年2月董事會決議，現增普通股8億股，發行價格暫定每股20元，依照玉山金控今日收盤價23.75元計算，約有15.79%的折價率。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="財經" /><category term="增資" /><category term="玉山金" /><summary type="html">玉山金控今年辦理現金增資案，預計現增8億股。玉山金控/提供</summary></entry><entry><title type="html">Open AI 發信給客戶，停止 Codex 相關服務</title><link href="http://localhost:4000/programming/openai-stop-codex-api.html" rel="alternate" type="text/html" title="Open AI 發信給客戶，停止 Codex 相關服務" /><published>2023-03-21T10:58:00+08:00</published><updated>2023-03-21T10:58:00+08:00</updated><id>http://localhost:4000/programming/openai-stop-codex-api</id><content type="html" xml:base="http://localhost:4000/programming/openai-stop-codex-api.html">&lt;h2 id=&quot;open-ai-發信給客戶停止-codex-相關服務&quot;&gt;Open AI 發信給客戶，停止 Codex 相關服務&lt;/h2&gt;
-
-&lt;p&gt;在3月23日，我們將停止支援Codex API。所有客戶將需要轉換到其他模型。Codex最初在2021年以免費有限制的測試版推出，一直保持著該狀態。考慮到我們最新的GPT-3.5代碼任務模型的進展，我們將不再支援Codex，並鼓勵所有客戶轉換到GPT-3.5-Turbo。
-關於GPT-3.5-Turbo
-GPT-3.5-Turbo是GPT-3.5系列中性價比最高、性能最優的模型。它可以進行編程任務，同時還具備靈活的自然語言能力。&lt;/p&gt;
-
-&lt;p&gt;您可以通過以下方式了解更多：
-GPT-3.5模型概述
-聊天補全指南&lt;/p&gt;
-
-&lt;p&gt;受影響的模型
-以下模型將被停止支援：
-code-cushman:001
-code-cushman:002
-code-davinci:001
-code-davinci:002&lt;/p&gt;
-
-&lt;p&gt;我們了解這個轉變可能暫時有些不便，但我們相信這將使我們能夠增加對我們最新和最能力強的模型的投資。&lt;/p&gt;
-
-&lt;p&gt;OpenAI團隊&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;英文原文&quot;&gt;英文原文&lt;/h2&gt;
-
-&lt;p&gt;On March 23rd, we will discontinue support for the Codex API. All customers will have to transition to a different model. Codex was initially introduced as a free limited beta in 2021, and has maintained that status to date. Given the advancements of our newest GPT-3.5 models for coding tasks, we will no longer be supporting Codex and encourage all customers to transition to GPT-3.5-Turbo.
-About GPT-3.5-Turbo
-GPT-3.5-Turbo is the most cost effective and performant model in the GPT-3.5 family. It can both do coding tasks while also being complemented with flexible natural language capabilities.&lt;/p&gt;
-
-&lt;p&gt;You can learn more through:
-GPT-3.5 model overview
-Chat completions guide&lt;/p&gt;
-
-&lt;p&gt;Models affected
-The following models will be discontinued:
-code-cushman:001
-code-cushman:002
-code-davinci:001
-code-davinci:002&lt;/p&gt;
-
-&lt;p&gt;We understand this transition may be temporarily inconvenient, but we are confident it will allow us to increase our investment in our latest and most capable models.&lt;/p&gt;
-
-&lt;p&gt;—The OpenAI team&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="AI" /><category term="Open AI" /><category term="ChatGPT" /><category term="Codex" /><summary type="html">Open AI 發信給客戶，停止 Codex 相關服務</summary></entry></feed>
+&lt;p&gt;玉山金控 （2884）今年辦理現金 增資 案，預計現增8億股，發行價格暫定每股20元。玉山金控此次增資資金，將用於轉投資子公司玉山銀行供拓展業務之用及充實營運資金。玉山金控在今年2月董事會決議，現增普通股8億股，發行價格暫定每股20元，依照玉山金控今日收盤價23.75元計算，約有15.79%的折價率。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="財經" /><category term="增資" /><category term="玉山金" /><summary type="html">玉山金控今年辦理現金增資案，預計現增8億股。玉山金控/提供</summary></entry></feed>
