@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-27T17:09:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">灣區日報重啟了</title><link href="http://localhost:4000/programming/wanqu-restart.html" rel="alternate" type="text/html" title="灣區日報重啟了" /><published>2023-03-27T14:42:00+08:00</published><updated>2023-03-27T14:42:00+08:00</updated><id>http://localhost:4000/programming/wanqu-restart</id><content type="html" xml:base="http://localhost:4000/programming/wanqu-restart.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-27T18:15:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">東芝被溢價收購，股票將下市</title><link href="http://localhost:4000/finance/toshiba-been-acquisitions.html" rel="alternate" type="text/html" title="東芝被溢價收購，股票將下市" /><published>2023-03-27T17:37:00+08:00</published><updated>2023-03-27T17:37:00+08:00</updated><id>http://localhost:4000/finance/toshiba-been-acquisitions</id><content type="html" xml:base="http://localhost:4000/finance/toshiba-been-acquisitions.html">&lt;p&gt;在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;東芝被收購&quot;&gt;東芝被收購&lt;/h2&gt;
+
+&lt;p&gt;根據多家媒體報導，日本東芝（Toshiba）可能面臨被私有化的命運，因為一個由日本產業合作夥伴公司（JIP）為首的投資者集團，已經提出了一份高達220億美元的收購要約，每股價格為7000日圓，遠高於東芝目前的市場價值。如果收購案成功，東芝將從證交所下市，結束其140多年的歷史。&lt;/p&gt;
+
+&lt;p&gt;東芝是日本最知名的科技企業之一，涉足核能、半導體、電子、家電等多個領域，但近年來卻陷入了一連串的醜聞和虧損，包括會計造假、核電廠建設失敗、記憶體事業出售等。這些事件讓東芝的股價大幅下跌，也引發了外資和股東的不滿和壓力。收購方表示，他們希望能夠幫助東芝重整旗鼓，專注於其核心的能源和基礎設施事業，並提升其競爭力和效率。&lt;/p&gt;
+
+&lt;p&gt;東芝董事會尚未正式回應收購要約，但有消息指出，部分董事對出價不滿意，認為低估了東芝的價值和潛力。此外，收購案還需要通過全球競爭法的審核，以及獲得日本政府的批准，因為東芝涉及國家安全和公共利益的敏感領域。&lt;/p&gt;
+
+&lt;h2 id=&quot;東芝-toshiba-股價&quot;&gt;東芝 Toshiba 股價&lt;/h2&gt;
+
+&lt;!-- TradingView Widget BEGIN --&gt;
+&lt;div class=&quot;tradingview-widget-container&quot;&gt;
+  &lt;div id=&quot;tradingview_17551&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tradingview-widget-copyright&quot;&gt;&lt;a href=&quot;https://www.tradingview.com/symbols/TSE-6502/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;blue-text&quot;&gt;6502 stock chart&lt;/span&gt;&lt;/a&gt; by TradingView&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.tradingview.com/tv.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  new TradingView.widget(
+  {
+  &quot;autosize&quot;: true,
+  &quot;symbol&quot;: &quot;TSE:6502&quot;,
+  &quot;interval&quot;: &quot;D&quot;,
+  &quot;timezone&quot;: &quot;Etc/UTC&quot;,
+  &quot;theme&quot;: &quot;light&quot;,
+  &quot;style&quot;: &quot;1&quot;,
+  &quot;locale&quot;: &quot;en&quot;,
+  &quot;toolbar_bg&quot;: &quot;#f1f3f6&quot;,
+  &quot;enable_publishing&quot;: false,
+  &quot;hide_top_toolbar&quot;: true,
+  &quot;hide_legend&quot;: true,
+  &quot;container_id&quot;: &quot;tradingview_17551&quot;
+}
+  );
+  &lt;/script&gt;
+&lt;/div&gt;
+&lt;!-- TradingView Widget END --&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="日本" /><category term="財經" /><category term="東芝" /><category term="Toshiba" /><category term="Japan" /><summary type="html">在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。</summary></entry><entry><title type="html">灣區日報重啟了</title><link href="http://localhost:4000/programming/wanqu-restart.html" rel="alternate" type="text/html" title="灣區日報重啟了" /><published>2023-03-27T14:42:00+08:00</published><updated>2023-03-27T14:42:00+08:00</updated><id>http://localhost:4000/programming/wanqu-restart</id><content type="html" xml:base="http://localhost:4000/programming/wanqu-restart.html">&lt;blockquote&gt;
   &lt;p&gt;关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -130,16 +168,4 @@ https://www.wanqu.co/
 
 &lt;p&gt;這個網站是 Bing Image Creator，它是一個 AI 繪圖工具，可以根據您的文字產生 AI 影像。它的核心技術來自於 OpenAI 的最新 DALL∙E 模型，用戶僅需用文字描述想要的圖片，AI 就能生成相應的視覺內容3。Bing Image Creator 是免費的，而且不必等待 Waiting List，現已可直接使用。&lt;/p&gt;
 
-&lt;h2 id=&quot;bingcomcreate&quot;&gt;&lt;a href=&quot;bing.com/create&quot;&gt;bing.com/create&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ai" /><category term="art" /><summary type="html">AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。</summary></entry><entry><title type="html">從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。</title><link href="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html" rel="alternate" type="text/html" title="從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。" /><published>2023-03-22T13:59:00+08:00</published><updated>2023-03-22T13:59:00+08:00</updated><id>http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen</id><content type="html" xml:base="http://localhost:4000/swift/submit-to-app-store-need-xcode-fourteen.html">&lt;p&gt;從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。&lt;/p&gt;
-
-&lt;p&gt;出處：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/news/?id=z1erkhzr&quot;&gt;Apple developer news&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;原文：
-App Store submissions now open for iOS 16.1 and iPadOS 16.1
-October 18, 2022&lt;/p&gt;
-
-&lt;p&gt;iOS 16.1 and iPadOS 16.1, the world’s most advanced mobile operating systems, will soon be available to customers worldwide. Take advantage of Live Activities to help people stay on top of what’s happening live in your app, right from the Lock Screen and Dynamic Island on iPhone. Bring desktop-class features, such as an editor-style navigation bar and enhanced text editing menu to your iPad app, and get the most out of the latest advancements in MapKit, Metal, ARKit, Core ML, and more.&lt;/p&gt;
-
-&lt;p&gt;Build your app using Xcode 14.1 Release Candidate, then test and submit it for review. Please note, starting April 2023, all iOS and iPadOS apps submitted to the App Store must be built with Xcode 14.1 and the iOS 16.1 SDK.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="iOS" /><category term="App Store" /><summary type="html">從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。</summary></entry></feed>
+&lt;h2 id=&quot;bingcomcreate&quot;&gt;&lt;a href=&quot;bing.com/create&quot;&gt;bing.com/create&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ai" /><category term="art" /><summary type="html">AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。</summary></entry></feed>
