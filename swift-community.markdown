@@ -13,12 +13,12 @@ permalink: /swift-community/
 
 [Podcast Link](https://weakself.dev/)
 
-簡介:
+> 簡介:
 集結弱弱的我，也可以組成強大的社群。在 iOS 開發圈打滾的台灣工程師，專為 Apple & iOS 開發者而製作的 Podcast。主持人一三、波肥。內容涵蓋了 iOS 與 Apple 開發圈的新知討論、踩坑經驗、人物採訪、社群活動、職場生活。
 
 ## CocoaHeads Taipei
 
-簡介:
+> 簡介:
 聚會時間為，每個月第二個星期四，地點在 PicCollage。詳細可以上 FB 連結看。
 
 [![CocoaHeads Taipei](/assets/swift-community/icon_cocoaheads-Taipei.jpeg){: width="150" }](https://www.facebook.com/groups/cocoaheads.taipei)
@@ -33,7 +33,7 @@ permalink: /swift-community/
 
 [![iOS Taipei](/assets/swift-community/banner_ios-taipei.jpeg){: width="450, height="150" }](https://www.facebook.com/groups/ios.taipei)
 
-簡介:
+> 簡介:
 通常每週二都會有活動，詳細可以上 FB 連結看。
 
 [FB 連結](https://www.facebook.com/groups/ios.taipei)
@@ -42,7 +42,7 @@ permalink: /swift-community/
 
 [![iPlayground](/assets/swift-community/icon_iPlayground.jpeg){: width="150" }](https://www.facebook.com/groups/cocoaheads.taipei)
 
-簡介:
+> 簡介:
 2017年9月，一群到東京參加iOSDC 的工程師們，看到國外蓬勃活躍的程式力後，點燃了滿腔熱血，決心在台灣舉辦兼具廣深度與有趣的 iOS 研討會——iPlayground 自此誕生。
 在 2018、2019 連續兩年，有幸邀請到國內外知名講者帶來各種議題，從實戰技巧、初心者攻略到各式八卦政治學，都在 iPlaygrouond 中華麗登場。
 2020年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
@@ -55,12 +55,10 @@ permalink: /swift-community/
 
 [![Mopcon 官網連結](/assets/swift-community/banner_mopCon.jpeg){: widt="150" }](https://mopcon.org/)
 
-簡介:
+> 簡介:
 MOPCON (Mobile Open Platform Conference)行動科技年會，是南台灣最具有指標性的軟體科技研討會。 回顧過去十年，我們堅持在濁水溪以南，積極鼓勵探討前沿技術、實務歷程及在地產業經驗的分享，提供在地社群運作潛力，並打造企業與科技人的優質互動環境。
 
 [Mopcon FB Link](https://www.facebook.com/mopcon/)
-
-<!-- banner_AppWorks-School.png -->
 
 ## AppWorks School
 
@@ -121,3 +119,10 @@ AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如�
 
 [好想工作室 FB](https://www.facebook.com/GoodideasStudio/?locale=zh_TW)
 
+<hr>
+
+# 開發相關資源
+
+[灣區日報](https://www.wanqu.co)
+
+> 关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco
