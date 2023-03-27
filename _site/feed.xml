@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-26T15:45:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">梗圖-ChatGPT</title><link href="http://localhost:4000/finance/chatGPT-meme1.html" rel="alternate" type="text/html" title="梗圖-ChatGPT" /><published>2023-03-26T15:08:00+08:00</published><updated>2023-03-26T15:08:00+08:00</updated><id>http://localhost:4000/finance/chatGPT-meme1</id><content type="html" xml:base="http://localhost:4000/finance/chatGPT-meme1.html">&lt;p&gt;在 ChatGPT 開始被大量應用之後，出現了各種梗圖，這邊列出我看到的兩個梗圖。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-27T13:54:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">美食-KY 董娘美數出脫持股</title><link href="http://localhost:4000/finance/food-ky-big-holder-sell-stocks.html" rel="alternate" type="text/html" title="美食-KY 董娘美數出脫持股" /><published>2023-03-27T13:43:00+08:00</published><updated>2023-03-27T13:43:00+08:00</updated><id>http://localhost:4000/finance/food-ky-big-holder-sell-stocks</id><content type="html" xml:base="http://localhost:4000/finance/food-ky-big-holder-sell-stocks.html">&lt;p&gt;美食-ky（2723），經營知名連鎖烘培品牌85度C的公司，今日傳出董事長吳政學的配偶將以鉅額逐筆交易的方式，出脫手中全部3463.1張持股，估計可獲利逾5億元。消息一出，引發市場擔憂公司未來營運前景，股價在今日開盤即遭賣壓重創，一路下滑至跌停價149元，成交量達到1.2萬張，創下近兩個月來的新高。&lt;/p&gt;
+
+&lt;p&gt;美食-ky去年受到中國和美國市場的疫情衝擊，全年營收和獲利均大幅下滑，每股盈餘僅有2.68元，為上市以來的新低。不過，公司仍擬配發現金股利2.5元，配發率超過9成，顯示對股東的友善。今年前兩個月，隨著中國和美國市場逐漸復甦，公司營收也呈現正成長，但仍低於同業水準。&lt;/p&gt;
+
+&lt;p&gt;分析師指出，美食-ky的大股東賣股可能有多種原因，例如個人財務規劃、減少持股比例、籌措資金等，但也可能反映出對公司未來發展的不看好。他們認為，美食-ky面臨的挑戰包括競爭激烈、成本上升、品牌形象衰退等，需要加強產品創新和差異化策略，才能提升競爭力和獲利能力。&lt;/p&gt;
+
+&lt;h2 id=&quot;美食-ky2723&quot;&gt;美食-KY(2723)&lt;/h2&gt;
+&lt;!-- TradingView Widget BEGIN --&gt;
+&lt;div class=&quot;tradingview-widget-container&quot;&gt;
+  &lt;div class=&quot;tradingview-widget-container__widget&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tradingview-widget-copyright&quot;&gt;&lt;a href=&quot;https://tw.tradingview.com/symbols/TWSE-2723/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;blue-text&quot;&gt;2723股票價格&lt;/span&gt;&lt;/a&gt;由TradingView提供&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js&quot; async=&quot;&quot;&gt;
+  {
+  &quot;symbol&quot;: &quot;TWSE:2723&quot;,
+  &quot;width&quot;: 350,
+  &quot;height&quot;: 220,
+  &quot;locale&quot;: &quot;zh_TW&quot;,
+  &quot;dateRange&quot;: &quot;12M&quot;,
+  &quot;colorTheme&quot;: &quot;light&quot;,
+  &quot;trendLineColor&quot;: &quot;rgba(41, 98, 255, 1)&quot;,
+  &quot;underLineColor&quot;: &quot;rgba(41, 98, 255, 0.3)&quot;,
+  &quot;underLineBottomColor&quot;: &quot;rgba(41, 98, 255, 0)&quot;,
+  &quot;isTransparent&quot;: false,
+  &quot;autosize&quot;: false,
+  &quot;largeChartUrl&quot;: &quot;&quot;
+}
+  &lt;/script&gt;
+&lt;/div&gt;
+&lt;!-- TradingView Widget END --&gt;
+
+&lt;h2 id=&quot;公司財報&quot;&gt;公司財報&lt;/h2&gt;
+
+&lt;!-- TradingView Widget BEGIN --&gt;
+&lt;div class=&quot;tradingview-widget-container&quot;&gt;
+  &lt;div class=&quot;tradingview-widget-container__widget&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tradingview-widget-copyright&quot;&gt;&lt;a href=&quot;https://tw.tradingview.com/symbols/TWSE-2723/financials-overview/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;blue-text&quot;&gt;2723基本面&lt;/span&gt;&lt;/a&gt;由TradingView提供&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.tradingview.com/external-embedding/embed-widget-financials.js&quot; async=&quot;&quot;&gt;
+  {
+  &quot;colorTheme&quot;: &quot;light&quot;,
+  &quot;isTransparent&quot;: false,
+  &quot;largeChartUrl&quot;: &quot;&quot;,
+  &quot;displayMode&quot;: &quot;regular&quot;,
+  &quot;width&quot;: 480,
+  &quot;height&quot;: 830,
+  &quot;symbol&quot;: &quot;TWSE:2723&quot;,
+  &quot;locale&quot;: &quot;zh_TW&quot;
+}
+  &lt;/script&gt;
+&lt;/div&gt;
+&lt;!-- TradingView Widget END --&gt;
+
+&lt;p&gt;##&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="財經" /><category term="新聞" /><summary type="html">美食-ky（2723），經營知名連鎖烘培品牌85度C的公司，今日傳出董事長吳政學的配偶將以鉅額逐筆交易的方式，出脫手中全部3463.1張持股，估計可獲利逾5億元。消息一出，引發市場擔憂公司未來營運前景，股價在今日開盤即遭賣壓重創，一路下滑至跌停價149元，成交量達到1.2萬張，創下近兩個月來的新高。</summary></entry><entry><title type="html">梗圖-ChatGPT</title><link href="http://localhost:4000/finance/chatGPT-meme1.html" rel="alternate" type="text/html" title="梗圖-ChatGPT" /><published>2023-03-26T15:08:00+08:00</published><updated>2023-03-26T15:08:00+08:00</updated><id>http://localhost:4000/finance/chatGPT-meme1</id><content type="html" xml:base="http://localhost:4000/finance/chatGPT-meme1.html">&lt;p&gt;在 ChatGPT 開始被大量應用之後，出現了各種梗圖，這邊列出我看到的兩個梗圖。&lt;/p&gt;
 
 &lt;h2 id=&quot;梗圖1&quot;&gt;梗圖1&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/posts/chatgpt-meme/meme1.jpeg&quot; alt=&quot;ChatGPT meme1&quot; /&gt;&lt;/p&gt;
@@ -82,10 +133,4 @@ October 18, 2022&lt;/p&gt;
 
 &lt;p&gt;不過要注意的是，Bard 並不是萬能的。它有時候會回答錯誤或不完整的內容，所以使用者要自己判斷和驗證資訊的正確性和可靠性。Google 也提供了一個反饋按鈕讓使用者對 Bard 的回應表示讚賞或批評，以幫助 Google 改善技術。&lt;/p&gt;
 
-&lt;p&gt;目前台灣地區還沒有支援 Bard 的計畫&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ai" /><category term="bard" /><category term="chat" /><category term="google" /><summary type="html">Google Bard AI</summary></entry><entry><title type="html">美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心</title><link href="http://localhost:4000/finance/yellen-talk-about-bank-issue.html" rel="alternate" type="text/html" title="美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心" /><published>2023-03-22T08:30:00+08:00</published><updated>2023-03-22T08:30:00+08:00</updated><id>http://localhost:4000/finance/yellen-talk-about-bank-issue</id><content type="html" xml:base="http://localhost:4000/finance/yellen-talk-about-bank-issue.html">&lt;p&gt;美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，表示政府已準備好為銀行業提供進一步的擔保，以防止危機擴大。這番話提振了市場信心，美股三大指數全面上漲，其中道瓊工業指數漲316點，收32560點，創下歷史新高。&lt;/p&gt;
-
-&lt;p&gt;葉倫的信心喊話是在美國聯準會（Fed）即將宣布利率決議的前夕發出的。市場普遍預期聯準會將升息一碼，以因應通膨壓力和經濟復甦。不過，有分析師認為，聯準會可能也會發出升息接近尾聲的信號，以安撫市場的憂慮。&lt;/p&gt;
-
-&lt;p&gt;在葉倫的鼓舞下，受到銀行危機衝擊最大的金融股表現強勁。第一共和銀行（FRC.N）股價大漲近30%，率領地區性銀行ETF（KRE.P）飆升6%。此外，能源、非必需消費品等板塊也有不錯的表現。&lt;/p&gt;
-
-&lt;p&gt;值得注意的是，在中國市場表現亮眼的特斯拉（TSLA.O），也在昨天暴漲約8%，成為那斯達克指數上漲的主要推手之一。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="葉倫" /><summary type="html">美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，表示政府已準備好為銀行業提供進一步的擔保，以防止危機擴大。這番話提振了市場信心，美股三大指數全面上漲，其中道瓊工業指數漲316點，收32560點，創下歷史新高。</summary></entry></feed>
+&lt;p&gt;目前台灣地區還沒有支援 Bard 的計畫&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ai" /><category term="bard" /><category term="chat" /><category term="google" /><summary type="html">Google Bard AI</summary></entry></feed>
