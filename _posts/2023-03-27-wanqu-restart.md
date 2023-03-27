@@ -6,7 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [程式開發, programming, 電子報]
 summary: 灣區日報重啟
-permalink: /finance/:title:output_ext
+permalink: /programming/:title:output_ext
 ---
 
 > 关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco
