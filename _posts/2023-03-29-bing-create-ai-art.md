@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: single
 title: 使用 Bing create AI 產出各種圖案吧
-date: 2023-03-29 20:17 +0800
+date: 2023-03-29 18:00 +0800
 category: life
 author: Marvin Lin
 tags: [AI, bing, create, art, openAI]
@@ -51,3 +51,5 @@ bing create 使用的 model 是 OpenAI 的 DALL．E，產出來的圖片，我�
 ## 參考網站
 
 [Bing Create](https://www.bing.com/create)
+
+[Bing create 介紹](/programming/bing-create.html)
