@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 好書推薦-約耳趣談軟體
 date: 2015-01-10 10:11
 category: programming

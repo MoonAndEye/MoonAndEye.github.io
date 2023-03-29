@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 傳奇的老闆娘
 date: 2013-07-17 14:44
 category: life

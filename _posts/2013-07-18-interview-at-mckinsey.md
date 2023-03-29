@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 我遇過最有趣的面試，在麥肯錫 McKinsey
 date: 2013-07-18 10:41
 category: life

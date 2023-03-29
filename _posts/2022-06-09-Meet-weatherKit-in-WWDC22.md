@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Meet WeatherKit in WWDC22"
 date: 2022-06-09 15:17 +0800
 category: swift

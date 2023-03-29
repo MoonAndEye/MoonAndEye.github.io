@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 中國各地方的方言觀察
 date: 2013-04-04 14:24 +0800
 category: life

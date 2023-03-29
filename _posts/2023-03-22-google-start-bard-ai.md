@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Google 開始試用 Bard AI chat
 date: 2023-03-22 13:14 +0800
 category: programming

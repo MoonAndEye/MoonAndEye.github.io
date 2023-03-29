@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 中國-成都 天府之國
 date: 2013-04-06 14:26
 category: life

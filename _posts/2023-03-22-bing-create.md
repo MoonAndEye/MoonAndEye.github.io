@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Bing 釋出了 AI 繪圖工具 bing.com/create
 date: 2023-03-22 18:34 +0800
 category: programming

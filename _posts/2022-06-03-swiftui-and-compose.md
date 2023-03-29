@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "SwiftUI & Compose"
 date:   2022-06-03 22:33:38 +0800
 categories: swift

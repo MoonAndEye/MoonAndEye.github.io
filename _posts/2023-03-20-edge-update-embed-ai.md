@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄
 date: 2023-03-20 20:25 +0800
 category: programming

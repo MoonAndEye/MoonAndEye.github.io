@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Charts 的 4049 & 4132 issue
 date: 2023-03-19 12:30 +0800
 category: swift

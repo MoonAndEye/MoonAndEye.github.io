@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日"
 date: 2023-03-16 08:34 +0800
 category: finance

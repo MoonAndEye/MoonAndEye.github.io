@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Austria- Hallstatt 哈爾施塔特
 date: 2013-06-12 16:22
 category: life

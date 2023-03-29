@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Kotlin Multiplatform Mobile beta roadmap 重點節錄"
 date: 2022-02-04 14:53:00 +0800
 category: programming

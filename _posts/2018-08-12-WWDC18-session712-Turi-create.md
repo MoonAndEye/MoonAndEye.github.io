@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事"
 date: 2018-08-12 15:28 +0800
 category: swift

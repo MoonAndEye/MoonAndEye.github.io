@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: PSV TV, Freedom Wars 自由戰爭
 date: 2014-07-11 16:37
 category: life

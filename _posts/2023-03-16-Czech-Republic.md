@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 人骨教堂-Czech Republic(裡面真的有人骨的照片，不能接受請不要點開)
 date: 2013-06-03 15:12
 category: life

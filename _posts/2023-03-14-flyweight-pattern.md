@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Flyweight Pattern — 蠅量級模式(享元模式)"
 date: 2022-08-10 21:16 +0800
 category: swift

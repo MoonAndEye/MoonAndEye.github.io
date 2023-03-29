@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 深圳風土地方誌  
 date: 2013-07-18 14:20 +0800
 category: life

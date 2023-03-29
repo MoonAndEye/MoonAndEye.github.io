@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 德國-柏林(二) 歷史遺跡 布蘭登堡門和猶太人被害紀念碑
 date: 2013-05-02 14:48
 category: life

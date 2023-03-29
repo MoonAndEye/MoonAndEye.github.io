@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Stripe 系統漸進式升級的過程"
 date: 2021-12-18 15:11 +0800
 category: programming

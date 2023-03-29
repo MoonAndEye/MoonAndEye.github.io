@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: iOS 遊戲 App - 猜歌之王 King of Song Quiz
 date: 2017-09-16 16:42
 category: life

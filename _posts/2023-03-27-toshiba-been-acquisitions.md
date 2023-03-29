@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 東芝被溢價收購，股票將下市
 date: 2023-03-27 17:37 +0800
 category: finance

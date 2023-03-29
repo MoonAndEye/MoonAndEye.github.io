@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 使用 ChatGPT 串接 ChatGPT：(1)
 date: 2023-03-19 12:36 +0800
 category: swift

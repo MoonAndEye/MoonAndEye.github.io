@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: iPhone 4S 維修
 date: 2014-06-08 16:21
 category: life

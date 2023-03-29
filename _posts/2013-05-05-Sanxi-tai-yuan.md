@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 中國-山西太原  
 date: 2013-05-05 15:03
 category: life

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 灣區日報重啟了
 date: 2023-03-27 14:42 +0800
 category: programming

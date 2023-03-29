@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "資料密集型應用系統設計-第六章筆記"
 date: 2021-11-2 15:01:00 +0800
 category: programming

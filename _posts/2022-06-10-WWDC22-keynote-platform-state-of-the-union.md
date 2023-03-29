@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "WWDC22 Keynote, Platform State of the Union"
 date: 2022-06-10 15:19 +0800
 category: swift

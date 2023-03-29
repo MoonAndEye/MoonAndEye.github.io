@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: NDS 擦身設計
 date: 2014-01-04 14:45
 category: life

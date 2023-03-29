@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 奧地利-Aurtria 海爾布倫宮 美泉宮
 date: 2013-06-23 16:25
 category: life

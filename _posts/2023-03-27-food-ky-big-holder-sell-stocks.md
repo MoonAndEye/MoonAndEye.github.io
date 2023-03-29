@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 美食-KY 董娘美數出脫持股
 date: 2023-03-27 13:43 +0800
 category: finance

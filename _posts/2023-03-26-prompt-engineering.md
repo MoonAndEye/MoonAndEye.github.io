@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Will 保哥翻譯自 DAIR.AI 的 "prompt engineering"「提示工程指南」
 date: 2023-03-26 10:17 +0800
 category: programming

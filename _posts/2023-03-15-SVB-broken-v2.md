@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "紀錄：矽谷銀行(SVB)倒閉於2023年3月10日"
 date: 2023-03-15 10:13 +0800
 category: finance

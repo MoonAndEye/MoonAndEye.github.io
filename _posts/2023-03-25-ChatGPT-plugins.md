@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?
 date: 2023-03-25 09:01 +0800
 category: programming

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了"
 date: 2023-03-14 21:09 +0800
 category: life

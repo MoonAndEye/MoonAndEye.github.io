@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 啤酒市場，啤酒也有時價 at Singapore
 date: 2013-04-02 10:37
 category: life

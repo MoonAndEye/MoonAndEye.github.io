@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 在新加坡看牙醫
 date: 2013-04-28 10:40
 category: life

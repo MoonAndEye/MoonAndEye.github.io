@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 奧地利-薩爾斯堡 Austria-Salzburg  
 date: 2013-06-15 16:24
 category: life

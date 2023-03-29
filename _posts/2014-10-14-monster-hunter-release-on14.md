@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 2014年10月11日 魔物獵人開始發售  
 date: 2014-10-11 10:28
 category: life

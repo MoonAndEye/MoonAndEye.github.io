@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 瑞信將被收購，收購方為瑞銀集團
 date: 2023-03-20 17:05 +0800
 category: finance

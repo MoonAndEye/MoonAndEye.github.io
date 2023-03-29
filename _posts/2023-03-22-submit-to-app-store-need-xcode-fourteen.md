@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。
 date: 2023-03-22 13:59 +0800
 category: swift

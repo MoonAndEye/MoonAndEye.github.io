@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同"
 date: 2018-06-09 21:14
 category: swift

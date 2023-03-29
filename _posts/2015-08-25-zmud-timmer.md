@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 使用zmud玩mud的第一步 定時器(timmer)和觸發(trigger)
 date: 2015-08-27 16:41
 category: life

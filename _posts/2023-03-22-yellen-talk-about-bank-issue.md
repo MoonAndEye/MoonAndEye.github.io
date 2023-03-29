@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心
 date: 2023-03-22 08:30 +0800
 category: finance

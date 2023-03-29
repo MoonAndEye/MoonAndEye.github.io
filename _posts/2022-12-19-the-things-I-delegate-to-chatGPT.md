@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "最近用 ChatGPT 來做的事情"
 date: 2022-12-19 15:25 +0800
 category: programming

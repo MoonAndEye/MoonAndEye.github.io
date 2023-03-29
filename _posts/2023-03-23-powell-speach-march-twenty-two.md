@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 聯準會升息1碼，市場失望重挫
 date: 2023-03-23 08:58 +0800
 category: finance

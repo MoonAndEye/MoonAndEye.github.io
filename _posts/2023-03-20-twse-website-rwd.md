@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 台灣證交所網頁改版，RWD 網站設計
 date: 2023-03-20 11:54 +0800
 category: finance

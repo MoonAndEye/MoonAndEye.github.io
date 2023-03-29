@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Open AI 發信給客戶，停止 Codex 相關服務
 date: 2023-03-21 10:58 +0800
 category: programming

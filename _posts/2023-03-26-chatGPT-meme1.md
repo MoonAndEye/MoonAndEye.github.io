@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 梗圖-ChatGPT
 date: 2023-03-26 15:08 +0800
 category: programming

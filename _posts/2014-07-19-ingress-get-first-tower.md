@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Ingress 佔領到第一座塔！ Google, iOS app 皆有喔
 date: 2014-07-19 16:31
 category: life

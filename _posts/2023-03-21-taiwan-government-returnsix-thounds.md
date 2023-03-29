@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 台灣政府普發現金6000元
 date: 2023-03-21 09:01 +0800
 category: finance

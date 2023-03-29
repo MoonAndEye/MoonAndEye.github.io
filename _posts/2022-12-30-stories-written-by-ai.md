@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: AI 寫出來的故事
 date: 2022-12-30 16:12
 category: programming

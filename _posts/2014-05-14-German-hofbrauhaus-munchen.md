@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 皇家啤酒屋 Hofbräuhaus München
 date: 2014-05-14 16:29
 category: life

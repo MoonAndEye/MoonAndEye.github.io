@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 3DS 逆轉裁判5
 date: 2014-05-25 15:11
 category: life

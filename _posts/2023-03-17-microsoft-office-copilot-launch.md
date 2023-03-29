@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 微軟推出了名為「Microsoft 365 Copilot」的新生產力工具
 date: 2023-03-17 15:41 +0800
 category: programming

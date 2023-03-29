@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 小吃推薦：楊家紅豆餅-新北板橋江子翠
 date: 2023-03-20 09:16 +0800
 category: life

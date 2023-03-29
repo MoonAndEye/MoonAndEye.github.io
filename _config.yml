@@ -111,3 +111,20 @@ author:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author: "Marvin Lin"
+      read_time: false
+      share: true
+      related: true
+      permalink: /programming/:title:output_ext
+      toc: true
+      toc_label: "概覽" # default: Content
+      toc_icon: "window"  # corresponding Font Awesome icon name without the "fa" prefix
+      toc_sticky: true   # enables sticky toc

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Apple Watch 開箱
 date: 2022-01-02 09:30 +0800
 category: life

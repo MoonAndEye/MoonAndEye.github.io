@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 奧地利-Aurtia Vienna (一)充滿曲線的建築-百水公寓
 date: 2013-06-30 16:27
 category: life

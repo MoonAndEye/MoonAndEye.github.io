@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 旅行，Google Map，Smart Phone
 date: 2014-05-13 16:28
 category: life

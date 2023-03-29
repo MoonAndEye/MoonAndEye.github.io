@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 德國-柏林(一) 看見冷戰的眼淚
 date: 2013-04-28 14:47
 category: life

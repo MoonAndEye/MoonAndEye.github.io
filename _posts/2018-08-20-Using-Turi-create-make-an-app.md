@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "使用 Turi Create 製作圖案辨識的 App - Core ML and Vision"
 date: 2018-08-20 15:32 +0800
 category: swift

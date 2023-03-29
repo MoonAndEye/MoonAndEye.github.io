@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩
 date: 2023-03-29 09:00 +0800
 category: life
