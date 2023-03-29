@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-29T22:11:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 Bing create AI 產出各種圖案吧</title><link href="http://localhost:4000/life/bing-create-ai-art.html" rel="alternate" type="text/html" title="使用 Bing create AI 產出各種圖案吧" /><published>2023-03-29T17:51:00+08:00</published><updated>2023-03-29T17:51:00+08:00</updated><id>http://localhost:4000/life/bing-create-ai-art</id><content type="html" xml:base="http://localhost:4000/life/bing-create-ai-art.html">&lt;h2 id=&quot;bing-create-ai-繪圖&quot;&gt;Bing Create AI 繪圖&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-29T22:19:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 Bing create AI 產出各種圖案吧</title><link href="http://localhost:4000/life/bing-create-ai-art.html" rel="alternate" type="text/html" title="使用 Bing create AI 產出各種圖案吧" /><published>2023-03-29T20:17:00+08:00</published><updated>2023-03-29T20:17:00+08:00</updated><id>http://localhost:4000/life/bing-create-ai-art</id><content type="html" xml:base="http://localhost:4000/life/bing-create-ai-art.html">&lt;h2 id=&quot;bing-create-ai-繪圖&quot;&gt;Bing Create AI 繪圖&lt;/h2&gt;
+
+&lt;p&gt;Bing Create 是一個由微軟推出的創意工具，它可以根據你的文字提示，利用人工智慧生成圖像。你可以在 Bing 搜尋應用程式或網站上使用 Bing Create，只要進入 More Creative 標籤，就可以開始創作。&lt;/p&gt;
+
+&lt;p&gt;Bing Create 的用途很廣泛，你可以用它來發揮你的想像力，創造出各種有趣、美麗、驚奇的圖像。你可以用它來設計 logo、海報、插畫、漫畫等等。你也可以用它來學習不同的藝術風格、探索不同的主題、表達不同的情感。&lt;/p&gt;
+
+&lt;p&gt;Bing Create 創造的限制，就是你想像力的限制。你可以用簡單的詞語或句子來描述你想要的圖像，例如「一隻穿著西裝的貓」、「一個太陽系的蛋糕」、「一幅抽象的水彩畫」等等。Bing Create 會根據你的提示，生成一個或多個符合的圖像，讓你選擇。你也可以修改或添加更多的細節，讓圖像更符合你的期望。&lt;/p&gt;
+
+&lt;p&gt;Bing Create 是一個讓人類發揮創意的好幫手，它可以幫助你實現你的想法，也可以啟發你的靈感。如果你想要嘗試 Bing Create，可以使用下面這個連結，登入 bing create，去體驗一下 AI 的畫技。&lt;/p&gt;
+
+&lt;h2 id=&quot;bing-create&quot;&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing Create&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;我用-bing-create-產生的圖片&quot;&gt;我用 Bing create 產生的圖片&lt;/h2&gt;
+
+&lt;h3 id=&quot;招財貓&quot;&gt;招財貓&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;prompt: The Maneki-neko, raise one hand while holding a gold coin in the other hand.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-normal.jpeg&quot; alt=&quot;lucky cat&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;賽博龐克風的招財貓&quot;&gt;賽博龐克風的招財貓&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;prompt: Japanese lucky cat. cyberpunk style&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk1.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;prompt: Japanese lucky cat, cyberpunk style&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk2.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;將詠唱詞再加多一點描述的賽博龐克招財貓&quot;&gt;將詠唱詞再加多一點描述的賽博龐克招財貓&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;prmopt: The lucky cat, raise one hand while holding a gold coin in the other hand.cyberpunk style. bright style. whole body can be seen&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk3.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;bing create 使用的 model 是 OpenAI 的 DALL．E，產出來的圖片，我覺得很有趣，有興趣的朋友，可以去試試看喔。&lt;/p&gt;
+
+&lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing Create&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Create AI 繪圖</summary></entry><entry><title type="html">使用 Bing create AI 產出各種圖案吧</title><link href="http://localhost:4000/life/bing-create-ai-art2.html" rel="alternate" type="text/html" title="使用 Bing create AI 產出各種圖案吧" /><published>2023-03-29T17:51:00+08:00</published><updated>2023-03-29T17:51:00+08:00</updated><id>http://localhost:4000/life/bing-create-ai-art2</id><content type="html" xml:base="http://localhost:4000/life/bing-create-ai-art2.html">&lt;h2 id=&quot;bing-create-ai-繪圖&quot;&gt;Bing Create AI 繪圖&lt;/h2&gt;
 
 &lt;p&gt;Bing Create 是一個由微軟推出的創意工具，它可以根據你的文字提示，利用人工智慧生成圖像。你可以在 Bing 搜尋應用程式或網站上使用 Bing Create，只要進入 More Creative 標籤，就可以開始創作。&lt;/p&gt;
 
@@ -230,10 +278,4 @@ https://www.wanqu.co/
 
 &lt;p&gt;楊金龍表示，此次升息是為了抑制國內通膨預期心理，並配合美國聯準會的貨幣政策調整。他預估，本年度台灣的GDP成長率將達到2.21%，CPI和核心CPI年增率則同為2.09%。他說，雖然國內外經濟前景仍有不確定性，但下半年隨著出口和消費的回升，以及政府的刺激措施，台灣經濟可望增溫。&lt;/p&gt;
 
-&lt;p&gt;央行的升息決策對其他產業也有影響。金融業者表示，存款利率可能隨之上揚，吸引更多儲戶存錢；貸款利率也可能跟進調高，增加借款人的還款壓力。房地產業者則擔心，升息會打壓房市需求和成交量，影響房價走勢。出口導向產業則看好升息帶來匯率穩定和競爭力提高的效果。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">台灣央行總裁楊金龍今天（23日）在理監事會議後宣布，政策利率調升0.125個百分點，重貼現率、擔保放款融通利率及短期融通利率分別調整為1.875%、2.25%及4.125%，自明日（24日）起實施。這是央行連續第五次升息，累計升息0.625個百分點。</summary></entry><entry><title type="html">GitHub Copilot X 推出</title><link href="http://localhost:4000/finance/copilot-x.html" rel="alternate" type="text/html" title="GitHub Copilot X 推出" /><published>2023-03-23T10:18:00+08:00</published><updated>2023-03-23T10:18:00+08:00</updated><id>http://localhost:4000/finance/copilot-x</id><content type="html" xml:base="http://localhost:4000/finance/copilot-x.html">&lt;p&gt;GitHub Copilot X 是 GitHub 在 2023 年 3 月推出的一項創新功能，旨在為開發者提供一個更智能、更友好的 AI 助手。GitHub Copilot X 不僅採用了 OpenAI 的最新 GPT-4 模型，還引入了聊天和語音界面，支持拉取請求、命令行和文檔，並能回答開發者對項目的各種問題 。&lt;/p&gt;
-
-&lt;p&gt;GitHub Copilot X 的核心功能之一是 GitHub Copilot Chat，它是一個類似於 ChatGPT 的聊天界面，可以與 VS Code 和 Visual Studio 緊密集成。開發者可以通過輸入文字或說出話語來與 GitHub Copilot Chat 進行交流，並獲得代碼建議、錯誤修復、單元測試、代碼分析等服務 。&lt;/p&gt;
-
-&lt;p&gt;GitHub Copilot X 還可以幫助開發者完成拉取請求的描述、生成缺失的單元測試、回答文檔中的常見問題、以及在命令行中執行各種操作。GitHub Copilot X 的目標是讓開發者能夠更快速、更高效地進行軟件開發，並專注於創造性和創新性的工作 。&lt;/p&gt;
-
-&lt;h2 id=&quot;加入-copilot-x-的-waitlist&quot;&gt;&lt;a href=&quot;https://github.com/features/preview/copilot-x&quot;&gt;加入 Copilot X 的 waitlist&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="copilot" /><category term="ai" /><summary type="html">GitHub Copilot X 是 GitHub 在 2023 年 3 月推出的一項創新功能，旨在為開發者提供一個更智能、更友好的 AI 助手。GitHub Copilot X 不僅採用了 OpenAI 的最新 GPT-4 模型，還引入了聊天和語音界面，支持拉取請求、命令行和文檔，並能回答開發者對項目的各種問題 。</summary></entry></feed>
+&lt;p&gt;央行的升息決策對其他產業也有影響。金融業者表示，存款利率可能隨之上揚，吸引更多儲戶存錢；貸款利率也可能跟進調高，增加借款人的還款壓力。房地產業者則擔心，升息會打壓房市需求和成交量，影響房價走勢。出口導向產業則看好升息帶來匯率穩定和競爭力提高的效果。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">台灣央行總裁楊金龍今天（23日）在理監事會議後宣布，政策利率調升0.125個百分點，重貼現率、擔保放款融通利率及短期融通利率分別調整為1.875%、2.25%及4.125%，自明日（24日）起實施。這是央行連續第五次升息，累計升息0.625個百分點。</summary></entry></feed>

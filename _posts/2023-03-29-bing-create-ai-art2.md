@@ -1,14 +1,12 @@
 ---
-layout: post
+layout: single
 title: 使用 Bing create AI 產出各種圖案吧
-date: 2023-03-29 20:17 +0800
+date: 2023-03-29 17:51 +0800
 category: life
-author: Marvin Lin
 tags: [AI, bing, create, art, openAI]
 summary: Bing release ai art. The name is create. This post shows different prompts to see the ai arts.
 permalink: /life/:title:output_ext
 ---
-
 
 ## Bing Create AI 繪圖
 
