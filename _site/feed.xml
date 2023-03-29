@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-27T18:15:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">東芝被溢價收購，股票將下市</title><link href="http://localhost:4000/finance/toshiba-been-acquisitions.html" rel="alternate" type="text/html" title="東芝被溢價收購，股票將下市" /><published>2023-03-27T17:37:00+08:00</published><updated>2023-03-27T17:37:00+08:00</updated><id>http://localhost:4000/finance/toshiba-been-acquisitions</id><content type="html" xml:base="http://localhost:4000/finance/toshiba-been-acquisitions.html">&lt;p&gt;在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-29T09:20:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩</title><link href="http://localhost:4000/programming/zelda-tears-of-the-kingdom.html" rel="alternate" type="text/html" title="薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩" /><published>2023-03-29T09:00:00+08:00</published><updated>2023-03-29T09:00:00+08:00</updated><id>http://localhost:4000/programming/zelda-tears-of-the-kingdom</id><content type="html" xml:base="http://localhost:4000/programming/zelda-tears-of-the-kingdom.html">&lt;p&gt;薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。&lt;/p&gt;
+
+&lt;p&gt;影片中，我們可以看到主角林克在不同的場景中使用不同的道具和技能，例如可以讓他穿透牆壁的魔法手套，可以讓他在空中暫停和瞄準的緩降傘，以及可以讓他控制時間和物體的時之力。這些機制不僅增加了遊戲的趣味性，也提高了遊戲的難度和策略性。青沼英二表示，這些機制都是為了讓玩家有更多的自由度和創造力，並且體驗到薩爾達世界的奧妙和神秘。&lt;/p&gt;
+
+&lt;p&gt;除了機制之外，影片也展示了遊戲的部分劇情和角色，例如林克和薩爾達公主的關係，以及邪惡的卡拉姆·加農的復活。遊戲的畫面也有明顯的提升，色彩更加鮮豔，細節更加豐富，光影效果也更加逼真。青沼英二表示，這款遊戲是他們對《曠野之息》的完美延伸，也是他們對薩爾達系列的最高傑作。&lt;/p&gt;
+
+&lt;p&gt;《薩爾達傳說 王國之淚》預定於 2023年5月12日 在 Nintendo Switch 平台上推出，目前已經開始接受預購。這款遊戲將會支持中文、英文、日文等多種語言，並且有多種版本可供選擇，包括標準版、豪華版和限量版。對於喜歡冒險和探索的玩家來說，這款遊戲絕對是一個不容錯過的大作。&lt;/p&gt;
+
+&lt;h2 id=&quot;任天堂-switch-同款機&quot;&gt;任天堂 Switch 同款機&lt;/h2&gt;
+
+&lt;p&gt;任天堂今日發佈了一款全新的Switch主機，以《薩爾達傳說 王國之淚》為主題，將於2023年5月12日與遊戲同步上市。這款主機採用了OLED螢幕，提供了更鮮豔的色彩和更高的對比度，並且擁有64GB的內建儲存空間，讓玩家可以下載更多的遊戲。主機的外觀也經過了特別的設計，以深藍色為基調，配上金色的細節，呼應了遊戲中的王國之淚。Joy-Con手把也採用了相同的配色，並在手把上印有薩爾達和碧姬的圖案。此外，主機底座也有著金色的王國之淚圖騰，讓玩家在連接電視時也能感受到遊戲的氛圍。&lt;/p&gt;
+
+&lt;p&gt;這款《薩爾達傳說 王國之淚》同款機是繼《薩爾達傳說 禦天之劍 HD》同款機後，任天堂為了紀念《薩爾達傳說》系列35週年而推出的另一項限定商品。根據任天堂的官方消息，這款同款機將在台灣地區以11,280元的價格發售，並附贈一張《薩爾達傳說 王國之淚》遊戲下載序號。不過，由於數量有限，任天堂建議有興趣的玩家要盡快預約購買，以免向隅。《薩爾達傳說 王國之淚》是《薩爾達傳說 曠野之息》的續作，延續了前作的開放世界和自由探索的特色，並加入了更多的新要素和驚喜。遊戲中，玩家將再次扮演薩爾達，與碧姬一起冒險，揭開海拉魯王國的秘密，並阻止一股邪惡的力量。遊戲將支援繁體中文介面和配音。&lt;/p&gt;
+
+&lt;h2 id=&quot;釋出的王國之淚-youtube-影片&quot;&gt;釋出的王國之淚 Youtube 影片&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=J1lDJFdYJkI&quot;&gt;製作人青沼英二遊玩《薩爾達傳說 王國之淚》影片（台灣）&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4NtoxFo8iPc&quot;&gt;Nintendo Switch（OLED款式） 薩爾達傳說 王國之淚版主機（台灣）&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;相關照片&quot;&gt;相關照片&lt;/h2&gt;
+
+&lt;h3 id=&quot;428-同款機要發售啦&quot;&gt;4/28 同款機要發售啦&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/banner.jpeg&quot; alt=&quot;王國之淚 4/28 發售&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch1.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch2.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch3.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch4.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game1.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game2.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game3.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="任天堂" /><category term="Switch" /><category term="薩爾達" /><summary type="html">薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。</summary></entry><entry><title type="html">東芝被溢價收購，股票將下市</title><link href="http://localhost:4000/finance/toshiba-been-acquisitions.html" rel="alternate" type="text/html" title="東芝被溢價收購，股票將下市" /><published>2023-03-27T17:37:00+08:00</published><updated>2023-03-27T17:37:00+08:00</updated><id>http://localhost:4000/finance/toshiba-been-acquisitions</id><content type="html" xml:base="http://localhost:4000/finance/toshiba-been-acquisitions.html">&lt;p&gt;在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -146,26 +190,4 @@ https://www.wanqu.co/
 
 &lt;h2 id=&quot;加入-copilot-x-的-waitlist&quot;&gt;&lt;a href=&quot;https://github.com/features/preview/copilot-x&quot;&gt;加入 Copilot X 的 waitlist&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="copilot" /><category term="ai" /><summary type="html">GitHub Copilot X 是 GitHub 在 2023 年 3 月推出的一項創新功能，旨在為開發者提供一個更智能、更友好的 AI 助手。GitHub Copilot X 不僅採用了 OpenAI 的最新 GPT-4 模型，還引入了聊天和語音界面，支持拉取請求、命令行和文檔，並能回答開發者對項目的各種問題 。</summary></entry><entry><title type="html">聯準會升息1碼，市場失望重挫</title><link href="http://localhost:4000/finance/powell-speach-march-twenty-two.html" rel="alternate" type="text/html" title="聯準會升息1碼，市場失望重挫" /><published>2023-03-23T08:58:00+08:00</published><updated>2023-03-23T08:58:00+08:00</updated><id>http://localhost:4000/finance/powell-speach-march-twenty-two</id><content type="html" xml:base="http://localhost:4000/finance/powell-speach-march-twenty-two.html">&lt;p&gt;鮑爾 (Jerome Powell) 在 22 日發表的聲明中，宣布聯準會 (Fed) 決定升息 1 碼，將聯邦資金利率目標區間調高至 4.75% 至 5%，並暗示政策利率將在今年底達到終端水準。他表示，這是為了恢復物價穩定，並維持民眾對央行的信心。他也強調，美國銀行體系健全且堅韌，能夠應對近期多家銀行倒閉所引發的金融動盪。他說，央行官員不認為今年會降息，除非出現意外情況。&lt;/p&gt;
 
-&lt;p&gt;鮑爾的言論令市場失望，原本預期聯準會可能因應銀行業危機而放寬貨幣政策的投資人紛紛撤離美股市場。另一方面，財政部長葉倫 (Janet Yellen) 在參議院聽證會上表示，他無意擴大存款保險範圍，以保障問題銀行的客戶。她的言論也引發區域銀行股的崩跌，拖累整個金融板塊。道瓊指數終場重挫 530 點，收在 32,030.11 點；標普 500 指數跌近 1.7%，收在 3,936.97 點；那斯達克綜合指數跌逾 1.6%，收在 11,669.96 點。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">鮑爾 (Jerome Powell) 在 22 日發表的聲明中，宣布聯準會 (Fed) 決定升息 1 碼，將聯邦資金利率目標區間調高至 4.75% 至 5%，並暗示政策利率將在今年底達到終端水準。他表示，這是為了恢復物價穩定，並維持民眾對央行的信心。他也強調，美國銀行體系健全且堅韌，能夠應對近期多家銀行倒閉所引發的金融動盪。他說，央行官員不認為今年會降息，除非出現意外情況。</summary></entry><entry><title type="html">Bing 釋出了 AI 繪圖工具 bing.com/create</title><link href="http://localhost:4000/programming/bing-create.html" rel="alternate" type="text/html" title="Bing 釋出了 AI 繪圖工具 bing.com/create" /><published>2023-03-22T18:34:00+08:00</published><updated>2023-03-22T18:34:00+08:00</updated><id>http://localhost:4000/programming/bing-create</id><content type="html" xml:base="http://localhost:4000/programming/bing-create.html">&lt;p&gt;AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。&lt;/p&gt;
-
-&lt;p&gt;「影像建立者」的用法很簡單，只要在輸入欄位中輸入想要看到的影像內容，例如「一隻穿著西裝的貓」、「一個有三個眼睛的笑臉」、「台北101旁邊有一座金字塔」等等，就可以看到 AI 根據文字提示產生出四張不同風格或角度的影像。使用者可以選擇其中一張喜歡的影像，並下載到自己的電腦或手機上。&lt;/p&gt;
-
-&lt;p&gt;「影像建立者」的用途很廣泛，可以幫助使用者發揮創意、增加趣味、解決問題或傳達訊息。例如：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;創意：使用者可以利用「影像建立者」來創作自己想像中的角色、場景、物品等等，或是將現實中不存在或難以實現的畫面呈現出來，如「一隻會飛的大象」、「太陽系中所有行星排成一列」等等。&lt;/li&gt;
-  &lt;li&gt;趣味：使用者可以利用「影像建立者」來製作有趣或幽默的圖片，如「自己和明星合照」、「自己變成卡通人物」、「自己穿上奇怪的服裝」等等。&lt;/li&gt;
-  &lt;li&gt;解決問題：使用者可以利用「影像建立者」來幫助自己解決一些日常生活中遇到的問題，如「找到遺失物品的位置」、「比較不同商品或服務的優缺點」、「模擬不同情境下可能發生的事情」等等。&lt;/li&gt;
-  &lt;li&gt;傳達訊息：使用者可以利用「影像建立者」來幫助自己傳達某些訊息或想法給別人看，如「表達心情或感受」、「說明某個觀念或理念」、「展示某個計畫或目標」等等。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;未來，AI 繪圖工具可能會有更多進步和發展。例如：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;支援更多語言：目前 Bing 的「影像建立者」只支援英文語言提示，未來可能會支援其他語言，讓更多不同語言背景和文化背景的使用者能夠享受 AI 繪圖工具帶來的好處。&lt;/li&gt;
-  &lt;li&gt;提供更多選項：目前 Bing 的「影像建立者」每次只能產生四張不同風格或角度的影像供&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;這個網站是 Bing Image Creator，它是一個 AI 繪圖工具，可以根據您的文字產生 AI 影像。它的核心技術來自於 OpenAI 的最新 DALL∙E 模型，用戶僅需用文字描述想要的圖片，AI 就能生成相應的視覺內容3。Bing Image Creator 是免費的，而且不必等待 Waiting List，現已可直接使用。&lt;/p&gt;
-
-&lt;h2 id=&quot;bingcomcreate&quot;&gt;&lt;a href=&quot;bing.com/create&quot;&gt;bing.com/create&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ai" /><category term="art" /><summary type="html">AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。</summary></entry></feed>
+&lt;p&gt;鮑爾的言論令市場失望，原本預期聯準會可能因應銀行業危機而放寬貨幣政策的投資人紛紛撤離美股市場。另一方面，財政部長葉倫 (Janet Yellen) 在參議院聽證會上表示，他無意擴大存款保險範圍，以保障問題銀行的客戶。她的言論也引發區域銀行股的崩跌，拖累整個金融板塊。道瓊指數終場重挫 530 點，收在 32,030.11 點；標普 500 指數跌近 1.7%，收在 3,936.97 點；那斯達克綜合指數跌逾 1.6%，收在 11,669.96 點。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">鮑爾 (Jerome Powell) 在 22 日發表的聲明中，宣布聯準會 (Fed) 決定升息 1 碼，將聯邦資金利率目標區間調高至 4.75% 至 5%，並暗示政策利率將在今年底達到終端水準。他表示，這是為了恢復物價穩定，並維持民眾對央行的信心。他也強調，美國銀行體系健全且堅韌，能夠應對近期多家銀行倒閉所引發的金融動盪。他說，央行官員不認為今年會降息，除非出現意外情況。</summary></entry></feed>
