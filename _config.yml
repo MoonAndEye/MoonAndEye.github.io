@@ -123,7 +123,7 @@ defaults:
       read_time: false
       share: true
       related: true
-      permalink: /programming/:title:output_ext
+      author_profile: true
       toc: true
       toc_label: "概覽" # default: Content
       toc_icon: "book"  # corresponding Font Awesome icon name without the "fa" prefix
