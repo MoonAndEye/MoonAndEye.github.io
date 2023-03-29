@@ -126,5 +126,5 @@ defaults:
       permalink: /programming/:title:output_ext
       toc: true
       toc_label: "概覽" # default: Content
-      toc_icon: "window"  # corresponding Font Awesome icon name without the "fa" prefix
+      toc_icon: "book"  # corresponding Font Awesome icon name without the "fa" prefix
       toc_sticky: true   # enables sticky toc
