@@ -91,6 +91,9 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
+# Disqus 評論
+disqus:
+  shortname: moonandeye
 
 # Exclude from processing.
 # The following items will not be processed, by default.
