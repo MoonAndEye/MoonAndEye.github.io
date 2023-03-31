@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-31T17:02:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">FTX 向客戶發 email，裡面有你的客戶代碼以及資產</title><link href="http://localhost:4000/finance/ftx-email-announce.html" rel="alternate" type="text/html" title="FTX 向客戶發 email，裡面有你的客戶代碼以及資產" /><published>2023-03-31T15:04:00+08:00</published><updated>2023-03-31T15:04:00+08:00</updated><id>http://localhost:4000/finance/ftx-email-announce</id><content type="html" xml:base="http://localhost:4000/finance/ftx-email-announce.html">&lt;p&gt;今天，收到了 FTX 破產後，列出客戶在 FTX 的資產。如果在 FTX 破產當下還有資產在裡面的，記得確認一下有沒有收到這幫信，如果這幫信在垃圾筒或被認為是廣告信，記得把他撈出來。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-31T18:11:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 Bing Chat 幫我發想一些 App 的 idea</title><link href="http://localhost:4000/programming/bing-chat-brain-storming.html" rel="alternate" type="text/html" title="使用 Bing Chat 幫我發想一些 App 的 idea" /><published>2023-03-31T17:24:00+08:00</published><updated>2023-03-31T17:24:00+08:00</updated><id>http://localhost:4000/programming/bing-chat-brain-storming</id><content type="html" xml:base="http://localhost:4000/programming/bing-chat-brain-storming.html">&lt;p&gt;把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。&lt;/p&gt;
+
+&lt;p&gt;上方有三個頁籤，[聊天] [撰寫] [深入解析]&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/edge-bing-chat/bing-tab.jpeg&quot; alt=&quot;bing edge chat&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;bing-chat-的回應&quot;&gt;Bing Chat 的回應&lt;/h2&gt;
+
+&lt;p&gt;這是一個有趣的挑戰，我會盡力給你一些有創意的 App idea，但我不能保證它們都是可行或有市場的。以下是我想到的十個 App idea：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一個可以讓你和陌生人共享夢境的 App，你可以在睡前選擇一個主題或情境，然後和其他選擇相同的用戶連接，並在早上分享你們的夢境。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和你的寵物互動的 App，你可以用語音或圖像來傳達你的情感或指令，然後 App 會用相應的聲音或動作來回應你的寵物，讓你們更加親密。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和你的偶像對話的 App，你可以選擇一個你喜歡的明星或名人，然後 App 會用人工智能來模擬他們的語音和風格，讓你感覺像是真的在和他們聊天。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和你的未來自己對話的 App，你可以設定一個未來的時間點，然後 App 會用人工智能來預測你未來的狀況和心態，讓你可以向你未來的自己提問或建議。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和其他用戶交換身份的 App，你可以選擇一個你想體驗的身份或角色，例如不同的國家、職業、性別等，然後 App 會隨機匹配一個符合條件的用戶，讓你們可以互相了解對方的生活- 和想法。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和其他用戶共享記憶的 App，你可以選擇一個你想分享的記憶，例如童年、旅行、愛情等，然後 App 會用虛擬實境技術來重現你的記憶場景，讓其他用戶可以觀看或參與。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和其他用戶共創故事的 App，你可以選擇一個故事類型或主題，例如恐怖、科幻、愛情等，然後 App 會隨機匹配一些有興趣的用戶，讓你們可以輪流添加故事情節或角色。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和其他用戶共享秘密的 App，你可以選擇一個秘密類型或主題，例如罪惡、恥辱、渴望等，然後 App 會隨機匹配一些有興趣的用戶，讓你們可以互相傾訴或聆聽對方的秘密。&lt;/li&gt;
+  &lt;li&gt;一個可以讓你和其他用戶共享才能的 App，你可以選擇一個才能類型或主題，例如音樂、繪畫、寫作等，然後 App 會隨機匹配一些有興趣的用戶，讓你們可以互相展示或欣賞對方的才能。&lt;/li&gt;
+  &lt;li&gt;一個可以&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/edge-bing-chat/bing-idea.jpeg&quot; alt=&quot;bing give me ideas&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;最後一個-idea-沒給&quot;&gt;最後一個 idea 沒給？&lt;/h2&gt;
+
+&lt;p&gt;最後一個，因為 timeout 了，所以講到一半，當然我就補問。而 Bing Chat 也回答了，而且答的很好「還沒有想到」&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/edge-bing-chat/last-idea.jpeg&quot; alt=&quot;last question&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;結論&quot;&gt;結論&lt;/h2&gt;
+
+&lt;p&gt;把上面他所提供的 app ideas 收集起來，還是有幾個不錯，而且可以做出來玩的 App。&lt;/p&gt;
+
+&lt;p&gt;在這個時代，當我心中沒有想法的時候，或許會大量的使用 GPT 型 AI，來進行一些發散的思考。我從「大腦喜歡這樣學」這本書中看到，發散思考的重要性。而且發散思考也是需要練習的。&lt;/p&gt;
+
+&lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/&quot;&gt;Microsoft blog, bing&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="bing chat" /><category term="AI" /><category term="programming" /><summary type="html">把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。</summary></entry><entry><title type="html">FTX 向客戶發 email，裡面有你的客戶代碼以及資產</title><link href="http://localhost:4000/finance/ftx-email-announce.html" rel="alternate" type="text/html" title="FTX 向客戶發 email，裡面有你的客戶代碼以及資產" /><published>2023-03-31T15:04:00+08:00</published><updated>2023-03-31T15:04:00+08:00</updated><id>http://localhost:4000/finance/ftx-email-announce</id><content type="html" xml:base="http://localhost:4000/finance/ftx-email-announce.html">&lt;p&gt;今天，收到了 FTX 破產後，列出客戶在 FTX 的資產。如果在 FTX 破產當下還有資產在裡面的，記得確認一下有沒有收到這幫信，如果這幫信在垃圾筒或被認為是廣告信，記得把他撈出來。&lt;/p&gt;
 
 &lt;p&gt;最下面會列出你的 Customer Code 還有資產，格式如下。&lt;/p&gt;
 
@@ -290,14 +329,4 @@ https://www.wanqu.co/
 &lt;h2 id=&quot;梗圖2&quot;&gt;梗圖2&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/posts/chatgpt-meme/meme2.jpeg&quot; alt=&quot;ChatGPT meme2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;或許這兩個迷因被大量使用的日子，不遠了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><summary type="html">在 ChatGPT 開始被大量應用之後，出現了各種梗圖，這邊列出我看到的兩個梗圖。</summary></entry><entry><title type="html">Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」</title><link href="http://localhost:4000/finance/prompt-engineering.html" rel="alternate" type="text/html" title="Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」" /><published>2023-03-26T10:17:00+08:00</published><updated>2023-03-26T10:17:00+08:00</updated><id>http://localhost:4000/finance/prompt-engineering</id><content type="html" xml:base="http://localhost:4000/finance/prompt-engineering.html">&lt;p&gt;prompt engineering 是一種利用人工智慧 (AI) 生成文本的技術，它需要設計一個適當的輸入 (prompt) 來引導 AI 產生想要的輸出。prompt engineering 的目的是讓 AI 能夠理解人類的意圖和需求，並且生成高質量、有用和有趣的文本。prompt engineering 需要考慮多種因素，例如 AI 的能力、限制、語言、風格、目標、背景等，並且需要不斷地測試和改進 prompt 的效果。prompt engineering 是一門融合了語言學、心理學、邏輯學和創意的藝術和科學。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;will-保哥在-fb-上說已經將-dairai-的書用-chatgpt-翻譯成繁體中文&quot;&gt;Will 保哥在 FB 上說已經將 DAIR.AI 的書用 ChatGPT 翻譯成繁體中文&lt;/h2&gt;
-
-&lt;p&gt;我相信在讀完這個提示工程，對 ChatGPT 的使用，應該會更廣泛，更精確。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://promptingguide.azurewebsites.net/&quot;&gt;電子書網址&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/will.fans&quot;&gt;Will 保哥的技術交流中心&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ai" /><category term="prompt" /><category term="ChatGPT" /><summary type="html">prompt engineering 是一種利用人工智慧 (AI) 生成文本的技術，它需要設計一個適當的輸入 (prompt) 來引導 AI 產生想要的輸出。prompt engineering 的目的是讓 AI 能夠理解人類的意圖和需求，並且生成高質量、有用和有趣的文本。prompt engineering 需要考慮多種因素，例如 AI 的能力、限制、語言、風格、目標、背景等，並且需要不斷地測試和改進 prompt 的效果。prompt engineering 是一門融合了語言學、心理學、邏輯學和創意的藝術和科學。</summary></entry></feed>
+&lt;p&gt;或許這兩個迷因被大量使用的日子，不遠了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><summary type="html">在 ChatGPT 開始被大量應用之後，出現了各種梗圖，這邊列出我看到的兩個梗圖。</summary></entry></feed>
