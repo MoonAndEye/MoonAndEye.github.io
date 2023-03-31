@@ -128,3 +128,4 @@ defaults:
       toc_label: "概覽" # default: Content
       toc_icon: "book"  # corresponding Font Awesome icon name without the "fa" prefix
       toc_sticky: true   # enables sticky toc
+      comments: true
