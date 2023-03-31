@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-31T18:11:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 Bing Chat 幫我發想一些 App 的 idea</title><link href="http://localhost:4000/programming/bing-chat-brain-storming.html" rel="alternate" type="text/html" title="使用 Bing Chat 幫我發想一些 App 的 idea" /><published>2023-03-31T17:24:00+08:00</published><updated>2023-03-31T17:24:00+08:00</updated><id>http://localhost:4000/programming/bing-chat-brain-storming</id><content type="html" xml:base="http://localhost:4000/programming/bing-chat-brain-storming.html">&lt;p&gt;把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-01T00:25:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">美2月核心PCE增速低於預期</title><link href="http://localhost:4000/finance/pce-index-febuary.html" rel="alternate" type="text/html" title="美2月核心PCE增速低於預期" /><published>2023-04-01T00:17:00+08:00</published><updated>2023-04-01T00:17:00+08:00</updated><id>http://localhost:4000/finance/pce-index-febuary</id><content type="html" xml:base="http://localhost:4000/finance/pce-index-febuary.html">&lt;p&gt;美2月核心PCE增速低於預期&lt;/p&gt;
+
+&lt;p&gt;美國商務部周五公布的數據顯示，2月份個人消費支出（PCE）物價指數按年增長5%，低於市場預期的5.1%和1月份修正後的5.3%。這是一項衡量美國通脹的關鍵指標，也是聯邦儲備局（Fed）制定貨幣政策時的首要參考。&lt;/p&gt;
+
+&lt;p&gt;除去食品和能源等波動性因素，核心PCE物價指數按年增長4.6%，也低於市場預期的4.7%和1月份的4.7%。按月計算，核心PCE物價指數增長0.3%，與市場預期和1月份一致。&lt;/p&gt;
+
+&lt;p&gt;數據公布後，美國公債收益率和美元指數均有所下跌，反映市場對美國通脹壓力有所緩和。美股主要指數則開盤上漲，投資者對Fed可能接近升息行動尾聲感到放心。&lt;/p&gt;
+
+&lt;p&gt;分析師指出，雖然PCE物價指數仍處於高位，但已經出現放緩跡象，這與Fed的預期相符。隨著供應鏈瓶頸逐步解除和能源價格回落，通脹水平有望在今年下半年進一步回落。不過，Fed仍需密切關注通脹的持續性和穩定性，以及其對經濟和金融市場的影響。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="財經數據" /><category term="finance" /><category term="stock" /><category term="投資" /><summary type="html">美2月核心PCE增速低於預期</summary></entry><entry><title type="html">使用 Bing Chat 幫我發想一些 App 的 idea</title><link href="http://localhost:4000/programming/bing-chat-brain-storming.html" rel="alternate" type="text/html" title="使用 Bing Chat 幫我發想一些 App 的 idea" /><published>2023-03-31T17:24:00+08:00</published><updated>2023-03-31T17:24:00+08:00</updated><id>http://localhost:4000/programming/bing-chat-brain-storming</id><content type="html" xml:base="http://localhost:4000/programming/bing-chat-brain-storming.html">&lt;p&gt;把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。&lt;/p&gt;
 
 &lt;p&gt;上方有三個頁籤，[聊天] [撰寫] [深入解析]&lt;/p&gt;
 
@@ -321,12 +329,4 @@ https://www.wanqu.co/
 }
   &lt;/script&gt;
 &lt;/div&gt;
-&lt;!-- TradingView Widget END --&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="財經" /><category term="新聞" /><summary type="html">美食-ky（2723），經營知名連鎖烘培品牌85度C的公司，今日傳出董事長吳政學的配偶將以鉅額逐筆交易的方式，出脫手中全部3463.1張持股，估計可獲利逾5億元。消息一出，引發市場擔憂公司未來營運前景，股價在今日開盤即遭賣壓重創，一路下滑至跌停價149元，成交量達到1.2萬張，創下近兩個月來的新高。</summary></entry><entry><title type="html">梗圖-ChatGPT</title><link href="http://localhost:4000/finance/chatGPT-meme1.html" rel="alternate" type="text/html" title="梗圖-ChatGPT" /><published>2023-03-26T15:08:00+08:00</published><updated>2023-03-26T15:08:00+08:00</updated><id>http://localhost:4000/finance/chatGPT-meme1</id><content type="html" xml:base="http://localhost:4000/finance/chatGPT-meme1.html">&lt;p&gt;在 ChatGPT 開始被大量應用之後，出現了各種梗圖，這邊列出我看到的兩個梗圖。&lt;/p&gt;
-
-&lt;h2 id=&quot;梗圖1&quot;&gt;梗圖1&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/chatgpt-meme/meme1.jpeg&quot; alt=&quot;ChatGPT meme1&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;梗圖2&quot;&gt;梗圖2&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/chatgpt-meme/meme2.jpeg&quot; alt=&quot;ChatGPT meme2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;或許這兩個迷因被大量使用的日子，不遠了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><summary type="html">在 ChatGPT 開始被大量應用之後，出現了各種梗圖，這邊列出我看到的兩個梗圖。</summary></entry></feed>
+&lt;!-- TradingView Widget END --&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="財經" /><category term="新聞" /><summary type="html">美食-ky（2723），經營知名連鎖烘培品牌85度C的公司，今日傳出董事長吳政學的配偶將以鉅額逐筆交易的方式，出脫手中全部3463.1張持股，估計可獲利逾5億元。消息一出，引發市場擔憂公司未來營運前景，股價在今日開盤即遭賣壓重創，一路下滑至跌停價149元，成交量達到1.2萬張，創下近兩個月來的新高。</summary></entry></feed>
