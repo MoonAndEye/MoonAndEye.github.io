@@ -1,48 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-29T22:33:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Foo</title><link href="http://localhost:4000/finance/2023/03/29/foo.html" rel="alternate" type="text/html" title="Foo" /><published>2023-03-29T22:30:00+08:00</published><updated>2023-03-29T22:30:00+08:00</updated><id>http://localhost:4000/finance/2023/03/29/foo</id><content type="html" xml:base="http://localhost:4000/finance/2023/03/29/foo.html">&lt;p&gt;薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-31T14:16:00+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Michael Burry 發推 - I was wrong to say sell</title><link href="http://localhost:4000/finance/michael-burry.html" rel="alternate" type="text/html" title="Michael Burry 發推 - I was wrong to say sell" /><published>2023-03-31T13:52:00+08:00</published><updated>2023-03-31T13:52:00+08:00</updated><id>http://localhost:4000/finance/michael-burry</id><content type="html" xml:base="http://localhost:4000/finance/michael-burry.html">&lt;p&gt;&lt;img src=&quot;/assets/posts/michael-burry/wrong_to_say_sell.jpeg&quot; alt=&quot;I was wrong to say sell&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;影片中，我們可以看到主角林克在不同的場景中使用不同的道具和技能，例如可以讓他穿透牆壁的魔法手套，可以讓他在空中暫停和瞄準的緩降傘，以及可以讓他控制時間和物體的時之力。這些機制不僅增加了遊戲的趣味性，也提高了遊戲的難度和策略性。青沼英二表示，這些機制都是為了讓玩家有更多的自由度和創造力，並且體驗到薩爾達世界的奧妙和神秘。&lt;/p&gt;
+&lt;p&gt;電影「大賣空」主角原型 - Michael Burry，在今天(2023/03/31)發了一則推「I was wrong to say sell」。&lt;/p&gt;
 
-&lt;p&gt;除了機制之外，影片也展示了遊戲的部分劇情和角色，例如林克和薩爾達公主的關係，以及邪惡的卡拉姆·加農的復活。遊戲的畫面也有明顯的提升，色彩更加鮮豔，細節更加豐富，光影效果也更加逼真。青沼英二表示，這款遊戲是他們對《曠野之息》的完美延伸，也是他們對薩爾達系列的最高傑作。&lt;/p&gt;
+&lt;p&gt;這表示未來的市場走向可能會…?&lt;/p&gt;
 
-&lt;p&gt;《薩爾達傳說 王國之淚》預定於 2023年5月12日 在 Nintendo Switch 平台上推出，目前已經開始接受預購。這款遊戲將會支持中文、英文、日文等多種語言，並且有多種版本可供選擇，包括標準版、豪華版和限量版。對於喜歡冒險和探索的玩家來說，這款遊戲絕對是一個不容錯過的大作。&lt;/p&gt;
+&lt;h2 id=&quot;大賣空-電影內容&quot;&gt;大賣空 電影內容&lt;/h2&gt;
 
-&lt;h2 id=&quot;任天堂-switch-同款機&quot;&gt;任天堂 Switch 同款機&lt;/h2&gt;
+&lt;p&gt;電影「大賣空」是一部根據真實事件改編的劇情片，講述了2008年金融危機前，一群投資者預見了美國房地產市場的崩潰，並利用信貸違約互換（credit default swap）這種金融衍生品，對抵押貸款證券（mortgage-backed security）進行大規模的賣空操作，從而獲得了巨大的利潤。電影通過四條故事線，展示了這些投資者的動機、策略、困難和成果，同時也揭露了金融體系的腐敗、貪婪和無能。電影以幽默、諷刺和直白的方式，向觀眾解釋了一些複雜的金融術語和概念，並讓觀眾思考金融危機對普通人的影響和意義。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="Finance" /><category term="Michael Burry" /><summary type="html"></summary></entry><entry><title type="html">WWDC2023 時間確定了! 6月6日登場</title><link href="http://localhost:4000/swift/wwdc23.html" rel="alternate" type="text/html" title="WWDC2023 時間確定了! 6月6日登場" /><published>2023-03-31T08:57:00+08:00</published><updated>2023-03-31T08:57:00+08:00</updated><id>http://localhost:4000/swift/wwdc23</id><content type="html" xml:base="http://localhost:4000/swift/wwdc23.html">&lt;h2 id=&quot;wwdc23-時間確定了-6月6日到6月10日&quot;&gt;WWDC23 時間確定了 6月6日到6月10日&lt;/h2&gt;
 
-&lt;p&gt;任天堂今日發佈了一款全新的Switch主機，以《薩爾達傳說 王國之淚》為主題，將於2023年5月12日與遊戲同步上市。這款主機採用了OLED螢幕，提供了更鮮豔的色彩和更高的對比度，並且擁有64GB的內建儲存空間，讓玩家可以下載更多的遊戲。主機的外觀也經過了特別的設計，以深藍色為基調，配上金色的細節，呼應了遊戲中的王國之淚。Joy-Con手把也採用了相同的配色，並在手把上印有薩爾達和碧姬的圖案。此外，主機底座也有著金色的王國之淚圖騰，讓玩家在連接電視時也能感受到遊戲的氛圍。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/wwdc23/wwdc23.jpeg&quot; alt=&quot;WWDC 23&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;這款《薩爾達傳說 王國之淚》同款機是繼《薩爾達傳說 禦天之劍 HD》同款機後，任天堂為了紀念《薩爾達傳說》系列35週年而推出的另一項限定商品。根據任天堂的官方消息，這款同款機將在台灣地區以11,280元的價格發售，並附贈一張《薩爾達傳說 王國之淚》遊戲下載序號。不過，由於數量有限，任天堂建議有興趣的玩家要盡快預約購買，以免向隅。《薩爾達傳說 王國之淚》是《薩爾達傳說 曠野之息》的續作，延續了前作的開放世界和自由探索的特色，並加入了更多的新要素和驚喜。遊戲中，玩家將再次扮演薩爾達，與碧姬一起冒險，揭開海拉魯王國的秘密，並阻止一股邪惡的力量。遊戲將支援繁體中文介面和配音。&lt;/p&gt;
+&lt;p&gt;每年的三月底四月初，Apple 都會宣佈 WWDC 的新聞，在昨天我們看到了今年的 WWDC 新聞啦，這次的日期在 6月6日 ~ 6月10日。&lt;/p&gt;
 
-&lt;h2 id=&quot;釋出的王國之淚-youtube-影片&quot;&gt;釋出的王國之淚 Youtube 影片&lt;/h2&gt;
+&lt;h2 id=&quot;關於-wwdc&quot;&gt;關於 WWDC&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=J1lDJFdYJkI&quot;&gt;製作人青沼英二遊玩《薩爾達傳說 王國之淚》影片（台灣）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今年的 WWDC 將於 6 月 5 日至 9 日在美國，這是蘋果公司每年一度的全球開發者大會，旨在展示其最新的軟體和技術。WWDC 是開發者和蘋果工程師交流的絕佳機會，也是了解蘋果未來發展方向的重要窗口。&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;今年的 WWDC 預計將發佈 iOS 15、macOS 12、watchOS 8 和 tvOS 15 等系統更新，以及可能的硬體產品，如新款 MacBook Pro、AirPods 3 和 AirTags 等。此外，WWDC 也將舉辦多場主題演講、工作坊、實驗室和獎項頒發等活動，讓開發者能夠深入學習蘋果的平台和工具，並與同行和專家分享經驗和創意。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4NtoxFo8iPc&quot;&gt;Nintendo Switch（OLED款式） 薩爾達傳說 王國之淚版主機（台灣）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;由於疫情的影響，今年的 WWDC 將採用線上形式進行，所有的活動都將通過蘋果開發者應用程式和網站免費提供給全球的開發者。開發者可以在現在起至 3 月 31 日之前申請免費的 WWDC 票券，並有機會參加一對一的指導會議。此外，學生和教育工作者也可以參加 Swift 學生挑戰賽，通過創作一個 Swift Playground 的互動場景來展示自己的編程技能，並有機會贏得獨家的 WWDC 外套和徽章。&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;WWDC 是蘋果公司與開發者社群的重要橋樑，也是推動創新和改善人們生活的強大動力。我們期待今年的 WWDC 能夠帶來更多令人驚艷的產品和服務，並讓我們更加了解蘋果公司的願景和使命。&lt;/p&gt;
 
-&lt;h2 id=&quot;相關照片&quot;&gt;相關照片&lt;/h2&gt;
+&lt;h2 id=&quot;special-event&quot;&gt;Special event&lt;/h2&gt;
 
-&lt;h3 id=&quot;428-同款機要發售啦&quot;&gt;4/28 同款機要發售啦&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/wwdc23/wwdc-special-event.jpeg&quot; alt=&quot;special event&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/banner.jpeg&quot; alt=&quot;王國之淚 4/28 發售&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;此外，蘋果公司還將於6月5日在蘋果園區為開發者和學生舉辦一個特別的全天活動。屆時，參與者將一起觀看主題演講和國情咨文視頻，與蘋果團隊的一些成員會面，參加蘋果設計獎頒獎典禮，並享受整個晚上的活動。與我們一起親身參加活動，觀看主題演講和國情咨文視頻，與 Apple 團隊的部分成員見面，慶祝 Apple 設計獎優秀應用程式，享受到深夜的活動。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch1.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;student-challenge---學生挑戰&quot;&gt;Student Challenge - 學生挑戰&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch2.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/wwdc23/swift-icon.jpeg&quot; alt=&quot;swift&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch3.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;呼喚所有有才華的學生！展示你們的創造力和對編程的熱情，有機會獲得獎項。申請截止日期為4月19日。通過提交一個關於你選擇的主題的令人難以置信的應用場景，向我們展示你對編程的熱情。獲勝者將獲得獨家的WWDC23外套、AirPods Pro、定制徽章組和一年的蘋果開發者計劃會員資格。此外，我們還將為選中的獲勝者舉辦一個特別的活動，而這些獲勝者是選擇參加這個機會的。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/switch4.jpeg&quot; alt=&quot;Switch 王國之淚同款機&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;apple-park&quot;&gt;Apple park&lt;/h2&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game1.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game2.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game3.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="foo" /><summary type="html">薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。</summary></entry><entry><title type="html">使用 Bing create AI 產出各種圖案吧</title><link href="http://localhost:4000/life/bing-create-ai-art.html" rel="alternate" type="text/html" title="使用 Bing create AI 產出各種圖案吧" /><published>2023-03-29T18:00:00+08:00</published><updated>2023-03-29T18:00:00+08:00</updated><id>http://localhost:4000/life/bing-create-ai-art</id><content type="html" xml:base="http://localhost:4000/life/bing-create-ai-art.html">&lt;h2 id=&quot;bing-create-ai-繪圖&quot;&gt;Bing Create AI 繪圖&lt;/h2&gt;
+&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3321782432827!2d-122.008972!3d37.33464379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1szh-TW!2stw!4v1680224743201!5m2!1szh-TW!2stw&quot; width=&quot;400&quot; height=&quot;300&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="Apple" /><category term="iOS" /><summary type="html">WWDC23 時間確定了 6月6日到6月10日</summary></entry><entry><title type="html">使用 Bing create AI 產出各種圖案吧</title><link href="http://localhost:4000/life/bing-create-ai-art.html" rel="alternate" type="text/html" title="使用 Bing create AI 產出各種圖案吧" /><published>2023-03-29T18:00:00+08:00</published><updated>2023-03-29T18:00:00+08:00</updated><id>http://localhost:4000/life/bing-create-ai-art</id><content type="html" xml:base="http://localhost:4000/life/bing-create-ai-art.html">&lt;h2 id=&quot;bing-create-ai-繪圖&quot;&gt;Bing Create AI 繪圖&lt;/h2&gt;
 
 &lt;p&gt;Bing Create 是一個由微軟推出的創意工具，它可以根據你的文字提示，利用人工智慧生成圖像。你可以在 Bing 搜尋應用程式或網站上使用 Bing Create，只要進入 More Creative 標籤，就可以開始創作。&lt;/p&gt;
 
@@ -92,55 +86,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing Create&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/programming/bing-create.html&quot;&gt;Bing create 介紹&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Create AI 繪圖</summary></entry><entry><title type="html">使用 Bing create AI 產出各種圖案吧</title><link href="http://localhost:4000/life/bing-create-ai-art2.html" rel="alternate" type="text/html" title="使用 Bing create AI 產出各種圖案吧" /><published>2023-03-29T17:51:00+08:00</published><updated>2023-03-29T17:51:00+08:00</updated><id>http://localhost:4000/life/bing-create-ai-art2</id><content type="html" xml:base="http://localhost:4000/life/bing-create-ai-art2.html">&lt;h2 id=&quot;bing-create-ai-繪圖&quot;&gt;Bing Create AI 繪圖&lt;/h2&gt;
-
-&lt;p&gt;Bing Create 是一個由微軟推出的創意工具，它可以根據你的文字提示，利用人工智慧生成圖像。你可以在 Bing 搜尋應用程式或網站上使用 Bing Create，只要進入 More Creative 標籤，就可以開始創作。&lt;/p&gt;
-
-&lt;p&gt;Bing Create 的用途很廣泛，你可以用它來發揮你的想像力，創造出各種有趣、美麗、驚奇的圖像。你可以用它來設計 logo、海報、插畫、漫畫等等。你也可以用它來學習不同的藝術風格、探索不同的主題、表達不同的情感。&lt;/p&gt;
-
-&lt;p&gt;Bing Create 創造的限制，就是你想像力的限制。你可以用簡單的詞語或句子來描述你想要的圖像，例如「一隻穿著西裝的貓」、「一個太陽系的蛋糕」、「一幅抽象的水彩畫」等等。Bing Create 會根據你的提示，生成一個或多個符合的圖像，讓你選擇。你也可以修改或添加更多的細節，讓圖像更符合你的期望。&lt;/p&gt;
-
-&lt;p&gt;Bing Create 是一個讓人類發揮創意的好幫手，它可以幫助你實現你的想法，也可以啟發你的靈感。如果你想要嘗試 Bing Create，可以使用下面這個連結，登入 bing create，去體驗一下 AI 的畫技。&lt;/p&gt;
-
-&lt;h2 id=&quot;bing-create&quot;&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing Create&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h2 id=&quot;我用-bing-create-產生的圖片&quot;&gt;我用 Bing create 產生的圖片&lt;/h2&gt;
-
-&lt;h3 id=&quot;招財貓&quot;&gt;招財貓&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prompt: The Maneki-neko, raise one hand while holding a gold coin in the other hand.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-normal.jpeg&quot; alt=&quot;lucky cat&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;賽博龐克風的招財貓&quot;&gt;賽博龐克風的招財貓&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prompt: Japanese lucky cat. cyberpunk style&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk1.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prompt: Japanese lucky cat, cyberpunk style&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk2.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;將詠唱詞再加多一點描述的賽博龐克招財貓&quot;&gt;將詠唱詞再加多一點描述的賽博龐克招財貓&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prmopt: The lucky cat, raise one hand while holding a gold coin in the other hand.cyberpunk style. bright style. whole body can be seen&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk3.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;bing create 使用的 model 是 OpenAI 的 DALL．E，產出來的圖片，我覺得很有趣，有興趣的朋友，可以去試試看喔。&lt;/p&gt;
-
-&lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing Create&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Create AI 繪圖</summary></entry><entry><title type="html">薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩</title><link href="http://localhost:4000/programming/zelda-tears-of-the-kingdom.html" rel="alternate" type="text/html" title="薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩" /><published>2023-03-29T09:00:00+08:00</published><updated>2023-03-29T09:00:00+08:00</updated><id>http://localhost:4000/programming/zelda-tears-of-the-kingdom</id><content type="html" xml:base="http://localhost:4000/programming/zelda-tears-of-the-kingdom.html">&lt;p&gt;薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/programming/bing-create.html&quot;&gt;Bing create 介紹&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Create AI 繪圖</summary></entry><entry><title type="html">薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩</title><link href="http://localhost:4000/programming/zelda-tears-of-the-kingdom.html" rel="alternate" type="text/html" title="薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩" /><published>2023-03-29T09:00:00+08:00</published><updated>2023-03-29T09:00:00+08:00</updated><id>http://localhost:4000/programming/zelda-tears-of-the-kingdom</id><content type="html" xml:base="http://localhost:4000/programming/zelda-tears-of-the-kingdom.html">&lt;p&gt;薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。&lt;/p&gt;
 
 &lt;p&gt;影片中，我們可以看到主角林克在不同的場景中使用不同的道具和技能，例如可以讓他穿透牆壁的魔法手套，可以讓他在空中暫停和瞄準的緩降傘，以及可以讓他控制時間和物體的時之力。這些機制不僅增加了遊戲的趣味性，也提高了遊戲的難度和策略性。青沼英二表示，這些機制都是為了讓玩家有更多的自由度和創造力，並且體驗到薩爾達世界的奧妙和神秘。&lt;/p&gt;
 
