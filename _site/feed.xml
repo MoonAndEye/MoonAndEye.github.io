@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-03T00:10:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)</title><link href="http://localhost:4000/programming/bing-chat-can-creat-art.html" rel="alternate" type="text/html" title="現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)" /><published>2023-04-02T23:09:00+08:00</published><updated>2023-04-02T23:09:00+08:00</updated><id>http://localhost:4000/programming/bing-chat-can-creat-art</id><content type="html" xml:base="http://localhost:4000/programming/bing-chat-can-creat-art.html">&lt;h2 id=&quot;bing-chat-的-更多創意-模式讓你可以使用-bing-來繪圖&quot;&gt;Bing Chat 的 &lt;strong&gt;更多創意&lt;/strong&gt; 模式，讓你可以使用 Bing 來繪圖&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-03T00:25:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Twitter 開源了推薦演算法</title><link href="http://localhost:4000/programming/new-post.html" rel="alternate" type="text/html" title="Twitter 開源了推薦演算法" /><published>2023-04-03T00:11:00+08:00</published><updated>2023-04-03T00:11:00+08:00</updated><id>http://localhost:4000/programming/new-post</id><content type="html" xml:base="http://localhost:4000/programming/new-post.html">&lt;h2 id=&quot;twitter-開源了使用在-twitter-上的推薦演算法&quot;&gt;Twitter 開源了使用在 Twitter 上的推薦演算法&lt;/h2&gt;
+
+&lt;p&gt;馬斯克實現了他在併購 Twitter 時講過的話，「要開源演算法」&lt;/p&gt;
+
+&lt;p&gt;現在，這個 repo 已經在 github 上公開了，任何人都可以 fork 了&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/twitter/the-algorithm&quot;&gt;Twitter algorithm link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;怎樣做你的-tweet-才會被演算法提高權重呢&quot;&gt;怎樣做你的 tweet 才會被演算法提高權重呢？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vocus.cc/article/6427f71ffd897800010fa4e6&quot;&gt;這篇文章有對演算法整理&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;以下有利觸及&quot;&gt;以下有利觸及&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;點擊推文愛心表示 favorite 喜歡 30X boost&lt;/li&gt;
+  &lt;li&gt;轉推 retweet 20X boost&lt;/li&gt;
+  &lt;li&gt;每個推文回覆只有 1X&lt;/li&gt;
+  &lt;li&gt;推文有圖 2X boost&lt;/li&gt;
+  &lt;li&gt;推文有影片 2X boost&lt;/li&gt;
+  &lt;li&gt;在信任圈 Trusted Circle 3X&lt;/li&gt;
+  &lt;li&gt;點擊進入推文，並在那停留至少2分鐘&lt;/li&gt;
+  &lt;li&gt;用戶打開推文作者個人資料頁面並互動喜歡或回覆推文&lt;/li&gt;
+  &lt;li&gt;回覆推文並被推文作者互動&lt;/li&gt;
+  &lt;li&gt;付費藍勾，如果是你關注又有藍勾的 4X boost，沒關注的藍勾 2X boost&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;以下不利觸及&quot;&gt;以下不利觸及&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;非新聞媒體的外連連結 URL 對觸及不佳，除非有高互動，如果沒有高互動會被視為spam降觸及權重&lt;/li&gt;
+  &lt;li&gt;有外連 URL 沒有文字，失敗中的失敗&lt;/li&gt;
+  &lt;li&gt;如果出現大量unfollowed，你會自然被算法隱形&lt;/li&gt;
+  &lt;li&gt;沒收功就罵髒話，講冒犯的話 0.1X&lt;/li&gt;
+  &lt;li&gt;負面回饋：顯示較少、屏蔽、靜音、濫用和Spam舉報&lt;/li&gt;
+  &lt;li&gt;用太多hashtag 0.6X&lt;/li&gt;
+  &lt;li&gt;寫錯字或是創造字電腦認不出來 0.01X&lt;/li&gt;
+  &lt;li&gt;推文是英文，但是UI語言不是英文 0.7X&lt;/li&gt;
+  &lt;li&gt;UI語言是英文，但推文不是 0.3X&lt;/li&gt;
+  &lt;li&gt;用戶語言和推文語言不同，兩者都不是英文 0.1X&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;參考連結&quot;&gt;參考連結&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://vocus.cc/article/6427f71ffd897800010fa4e6&quot;&gt;Twitter 開源推薦演算法，從中了解社群媒體推送邏輯&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://mobile.twitter.com/IEObserve&quot;&gt;Intl Econ Observe Twitter&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://mobile.twitter.com/IEObserve/status/1642148470944575488&quot;&gt;Intl Econ 的推&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="open source" /><category term="algorithm" /><summary type="html">Twitter 開源了使用在 Twitter 上的推薦演算法</summary></entry><entry><title type="html">現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)</title><link href="http://localhost:4000/programming/bing-chat-can-creat-art.html" rel="alternate" type="text/html" title="現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)" /><published>2023-04-02T23:09:00+08:00</published><updated>2023-04-02T23:09:00+08:00</updated><id>http://localhost:4000/programming/bing-chat-can-creat-art</id><content type="html" xml:base="http://localhost:4000/programming/bing-chat-can-creat-art.html">&lt;h2 id=&quot;bing-chat-的-更多創意-模式讓你可以使用-bing-來繪圖&quot;&gt;Bing Chat 的 &lt;strong&gt;更多創意&lt;/strong&gt; 模式，讓你可以使用 Bing 來繪圖&lt;/h2&gt;
 
 &lt;p&gt;在前面的文章有提到&lt;/p&gt;
 
@@ -312,25 +366,4 @@ BNB[xxx], NFT (xxxxx)[1]&lt;/p&gt;
   );
   &lt;/script&gt;
 &lt;/div&gt;
-&lt;!-- TradingView Widget END --&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="日本" /><category term="財經" /><category term="東芝" /><category term="Toshiba" /><category term="Japan" /><summary type="html">在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。</summary></entry><entry><title type="html">灣區日報重啟了</title><link href="http://localhost:4000/programming/wanqu-restart.html" rel="alternate" type="text/html" title="灣區日報重啟了" /><published>2023-03-27T14:42:00+08:00</published><updated>2023-03-27T14:42:00+08:00</updated><id>http://localhost:4000/programming/wanqu-restart</id><content type="html" xml:base="http://localhost:4000/programming/wanqu-restart.html">&lt;blockquote&gt;
-  &lt;p&gt;关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;之前一直都有訂灣區日報，不過這個電子報之後停了，我覺得非常可惜，下面有提到停的原因。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanqu.substack.com/p/2fc&quot;&gt;來源&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Hello，
-我打算重启湾区日报了：
-https://www.wanqu.co/
-与前几年的运营的不同之处：
-1）只在网站 wanqu.co 上更新，先不推送到其他渠道了
-2）只有中文标题，不写长一点的简评了
-3）滚动更新，看到有意思的文章就在网站上推荐，不像以前那样集中5篇一次推送
-上次从 2014 年做到了2018年，之后就没怎么更新了。这次简化一下发布的流程，节省时间，减少工作量，希望这次能做久一点：）&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我這邊有把 &lt;strong&gt;灣區日報&lt;/strong&gt; 的連結放在 &lt;a href=&quot;/swift-community/&quot;&gt;Swift社群資源&lt;/a&gt; 這一頁，除了灣區日報以外，還列出開發者相關的電子報，有興趣的朋友，歡迎到社群資源頁面瀏覽。&lt;/p&gt;
-
-&lt;h2 id=&quot;swift社群資源列表&quot;&gt;&lt;a href=&quot;/swift-community/&quot;&gt;Swift社群資源列表&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="程式開發" /><category term="programming" /><category term="電子報" /><summary type="html">关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco</summary></entry></feed>
+&lt;!-- TradingView Widget END --&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="日本" /><category term="財經" /><category term="東芝" /><category term="Toshiba" /><category term="Japan" /><summary type="html">在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。</summary></entry></feed>
