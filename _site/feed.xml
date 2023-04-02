@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-01T00:25:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">美2月核心PCE增速低於預期</title><link href="http://localhost:4000/finance/pce-index-febuary.html" rel="alternate" type="text/html" title="美2月核心PCE增速低於預期" /><published>2023-04-01T00:17:00+08:00</published><updated>2023-04-01T00:17:00+08:00</updated><id>http://localhost:4000/finance/pce-index-febuary</id><content type="html" xml:base="http://localhost:4000/finance/pce-index-febuary.html">&lt;p&gt;美2月核心PCE增速低於預期&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-02T23:55:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)</title><link href="http://localhost:4000/finance/bing-chat-can-creat-art.html" rel="alternate" type="text/html" title="現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)" /><published>2023-04-02T23:09:00+08:00</published><updated>2023-04-02T23:09:00+08:00</updated><id>http://localhost:4000/finance/bing-chat-can-creat-art</id><content type="html" xml:base="http://localhost:4000/finance/bing-chat-can-creat-art.html">&lt;h2 id=&quot;bing-chat-的-更多創意-模式讓你可以使用-bing-來繪圖&quot;&gt;Bing Chat 的 &lt;strong&gt;更多創意&lt;/strong&gt; 模式，讓你可以使用 Bing 來繪圖&lt;/h2&gt;
+
+&lt;p&gt;在前面的文章有提到&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html&quot;&gt;Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/life/:title:output_ext&quot;&gt;Bing 釋出了 AI 繪圖工具 bing.com/create&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;而最近，我發現可以直接在 Edge 的外掛功能中，使用 Bing Chat 也能讓 AI 進行繪圖。而 Bing Chat 好處是，每次回答他都會給你三個選項，好讓使用者可以和 Bing 的聊天更容易持續下去，所以可以不斷的對 AI 進行新的繪圖指令。&lt;/p&gt;
+
+&lt;p&gt;但使用上要注意，Bing Chat 模式中，我目前測試只有「更多富有創意」會幫你畫圖，其他模式他都只會回應「你的那個需求，要怎麼畫山來」。或是，「你的那個需求，有哪些網站有提供相關的技法」。&lt;/p&gt;
+
+&lt;p&gt;以下是和 bing chat 的聊天截圖&lt;/p&gt;
+
+&lt;h3 id=&quot;平衡模式---不能幫你畫圖&quot;&gt;平衡模式 - 不能幫你畫圖&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/bing-chat-balance-mode.jpeg&quot; alt=&quot;Bing chat creative mode - 不能幫你畫圖&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;創意模式---會輸出指令到-bing-create&quot;&gt;創意模式 - 會輸出指令到 bing create&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/bing-chat-creative-mode.jpeg&quot; alt=&quot;創意模式 - 會輸出指令到 bing create&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;但請注意，因為產圖在這個時代仍然要不短的時間，所以這個指令是會讓 bing chat 卡住的，也沒辦法在 bing create 完成後將圖案呈現。比較好的方法，是過一陣子後，再去 bing create 的網站，然後進入歷史紀錄去看圖案有沒有畫好。因為 bing create 和 edge 的帳號是有連動的，如果你在 bing create 網站上登入和 edge 一樣的帳號，你可以去看歷史紀錄。&lt;/p&gt;
+
+&lt;h2 id=&quot;bing-create-畫出來的圖&quot;&gt;Bing Create 畫出來的圖&lt;/h2&gt;
+
+&lt;h3 id=&quot;詠唱詞&quot;&gt;詠唱詞&lt;/h3&gt;
+&lt;p&gt;a knight and a dragon fighting in a realistic style, the knight’s shield facing the dragon, showing a brave confrontation
+&lt;img src=&quot;/assets/posts/bing-create/dragon-fight1.jpeg&quot; alt=&quot;dragon fight&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/dragon-fight2.jpeg&quot; alt=&quot;dragon fight&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;相關網址&quot;&gt;相關網址&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.bing.com/&quot;&gt;Bing chat&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing create&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.microsoft.com/edge/download&quot;&gt;Edge 下載&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html&quot;&gt;Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/life/:title:output_ext&quot;&gt;Bing 釋出了 AI 繪圖工具 bing.com/create&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖</summary></entry><entry><title type="html">美2月核心PCE增速低於預期</title><link href="http://localhost:4000/finance/pce-index-febuary.html" rel="alternate" type="text/html" title="美2月核心PCE增速低於預期" /><published>2023-04-01T00:17:00+08:00</published><updated>2023-04-01T00:17:00+08:00</updated><id>http://localhost:4000/finance/pce-index-febuary</id><content type="html" xml:base="http://localhost:4000/finance/pce-index-febuary.html">&lt;p&gt;美2月核心PCE增速低於預期&lt;/p&gt;
 
 &lt;p&gt;美國商務部周五公布的數據顯示，2月份個人消費支出（PCE）物價指數按年增長5%，低於市場預期的5.1%和1月份修正後的5.3%。這是一項衡量美國通脹的關鍵指標，也是聯邦儲備局（Fed）制定貨幣政策時的首要參考。&lt;/p&gt;
 
@@ -280,53 +333,4 @@ https://www.wanqu.co/
 
 &lt;p&gt;我這邊有把 &lt;strong&gt;灣區日報&lt;/strong&gt; 的連結放在 &lt;a href=&quot;/swift-community/&quot;&gt;Swift社群資源&lt;/a&gt; 這一頁，除了灣區日報以外，還列出開發者相關的電子報，有興趣的朋友，歡迎到社群資源頁面瀏覽。&lt;/p&gt;
 
-&lt;h2 id=&quot;swift社群資源列表&quot;&gt;&lt;a href=&quot;/swift-community/&quot;&gt;Swift社群資源列表&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="程式開發" /><category term="programming" /><category term="電子報" /><summary type="html">关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco</summary></entry><entry><title type="html">美食-KY 董娘美數出脫持股</title><link href="http://localhost:4000/finance/food-ky-big-holder-sell-stocks.html" rel="alternate" type="text/html" title="美食-KY 董娘美數出脫持股" /><published>2023-03-27T13:43:00+08:00</published><updated>2023-03-27T13:43:00+08:00</updated><id>http://localhost:4000/finance/food-ky-big-holder-sell-stocks</id><content type="html" xml:base="http://localhost:4000/finance/food-ky-big-holder-sell-stocks.html">&lt;p&gt;美食-ky（2723），經營知名連鎖烘培品牌85度C的公司，今日傳出董事長吳政學的配偶將以鉅額逐筆交易的方式，出脫手中全部3463.1張持股，估計可獲利逾5億元。消息一出，引發市場擔憂公司未來營運前景，股價在今日開盤即遭賣壓重創，一路下滑至跌停價149元，成交量達到1.2萬張，創下近兩個月來的新高。&lt;/p&gt;
-
-&lt;p&gt;美食-ky去年受到中國和美國市場的疫情衝擊，全年營收和獲利均大幅下滑，每股盈餘僅有2.68元，為上市以來的新低。不過，公司仍擬配發現金股利2.5元，配發率超過9成，顯示對股東的友善。今年前兩個月，隨著中國和美國市場逐漸復甦，公司營收也呈現正成長，但仍低於同業水準。&lt;/p&gt;
-
-&lt;p&gt;分析師指出，美食-ky的大股東賣股可能有多種原因，例如個人財務規劃、減少持股比例、籌措資金等，但也可能反映出對公司未來發展的不看好。他們認為，美食-ky面臨的挑戰包括競爭激烈、成本上升、品牌形象衰退等，需要加強產品創新和差異化策略，才能提升競爭力和獲利能力。&lt;/p&gt;
-
-&lt;h2 id=&quot;美食-ky2723&quot;&gt;美食-KY(2723)&lt;/h2&gt;
-&lt;!-- TradingView Widget BEGIN --&gt;
-&lt;div class=&quot;tradingview-widget-container&quot;&gt;
-  &lt;div class=&quot;tradingview-widget-container__widget&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;tradingview-widget-copyright&quot;&gt;&lt;a href=&quot;https://tw.tradingview.com/symbols/TWSE-2723/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;blue-text&quot;&gt;2723股票價格&lt;/span&gt;&lt;/a&gt;由TradingView提供&lt;/div&gt;
-  &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js&quot; async=&quot;&quot;&gt;
-  {
-  &quot;symbol&quot;: &quot;TWSE:2723&quot;,
-  &quot;width&quot;: 350,
-  &quot;height&quot;: 220,
-  &quot;locale&quot;: &quot;zh_TW&quot;,
-  &quot;dateRange&quot;: &quot;12M&quot;,
-  &quot;colorTheme&quot;: &quot;light&quot;,
-  &quot;trendLineColor&quot;: &quot;rgba(41, 98, 255, 1)&quot;,
-  &quot;underLineColor&quot;: &quot;rgba(41, 98, 255, 0.3)&quot;,
-  &quot;underLineBottomColor&quot;: &quot;rgba(41, 98, 255, 0)&quot;,
-  &quot;isTransparent&quot;: false,
-  &quot;autosize&quot;: false,
-  &quot;largeChartUrl&quot;: &quot;&quot;
-}
-  &lt;/script&gt;
-&lt;/div&gt;
-&lt;!-- TradingView Widget END --&gt;
-
-&lt;h2 id=&quot;公司財報&quot;&gt;公司財報&lt;/h2&gt;
-
-&lt;!-- TradingView Widget BEGIN --&gt;
-&lt;div class=&quot;tradingview-widget-container&quot;&gt;
-  &lt;div class=&quot;tradingview-widget-container__widget&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;tradingview-widget-copyright&quot;&gt;&lt;a href=&quot;https://tw.tradingview.com/symbols/TWSE-2723/financials-overview/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;blue-text&quot;&gt;2723基本面&lt;/span&gt;&lt;/a&gt;由TradingView提供&lt;/div&gt;
-  &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.tradingview.com/external-embedding/embed-widget-financials.js&quot; async=&quot;&quot;&gt;
-  {
-  &quot;colorTheme&quot;: &quot;light&quot;,
-  &quot;isTransparent&quot;: false,
-  &quot;largeChartUrl&quot;: &quot;&quot;,
-  &quot;displayMode&quot;: &quot;regular&quot;,
-  &quot;width&quot;: 480,
-  &quot;height&quot;: 830,
-  &quot;symbol&quot;: &quot;TWSE:2723&quot;,
-  &quot;locale&quot;: &quot;zh_TW&quot;
-}
-  &lt;/script&gt;
-&lt;/div&gt;
-&lt;!-- TradingView Widget END --&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="財經" /><category term="新聞" /><summary type="html">美食-ky（2723），經營知名連鎖烘培品牌85度C的公司，今日傳出董事長吳政學的配偶將以鉅額逐筆交易的方式，出脫手中全部3463.1張持股，估計可獲利逾5億元。消息一出，引發市場擔憂公司未來營運前景，股價在今日開盤即遭賣壓重創，一路下滑至跌停價149元，成交量達到1.2萬張，創下近兩個月來的新高。</summary></entry></feed>
+&lt;h2 id=&quot;swift社群資源列表&quot;&gt;&lt;a href=&quot;/swift-community/&quot;&gt;Swift社群資源列表&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="程式開發" /><category term="programming" /><category term="電子報" /><summary type="html">关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco</summary></entry></feed>
