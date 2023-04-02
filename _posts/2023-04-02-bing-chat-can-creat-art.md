@@ -6,7 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, bing, create, art, openAI]
 summary: using bing chat drawing
-permalink: /finance/:title:output_ext
+permalink: /programming/:title:output_ext
 ---
 
 ## Bing Chat 的 **更多創意** 模式，讓你可以使用 Bing 來繪圖
