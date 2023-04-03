@@ -10,7 +10,7 @@ summary: Microsoft Edge's new feature, Edge Copilot, integrates AI-powered Bing 
 
 新版的 Edge 在側邊欄整合了 ai 的功能，包含 bing chat, 文章/文字生成器。
 
-# Microsoft Edge 新版瀏覽器將 AI 整合在側邊欄
+## Microsoft Edge 新版瀏覽器將 AI 整合在側邊欄
 
 Microsoft Edge 是一款基於 Chromium 的瀏覽器，提供了許多實用的功能，例如集成式 PDF 閱讀器、垂直分頁、密碼管理器等。最近，Microsoft Edge 又推出了一項新功能，就是將 AI 整合在側邊欄中，讓使用者可以在瀏覽網頁的同時，享受 AI 的智慧協助。
 
@@ -47,7 +47,7 @@ Microsoft Edge 新版瀏覽器將 AI 整合在側邊欄中，是一項創新且�
 
 prmopt: 今年 Swift 社群會舉辦 iPlayground，請給我一篇關於這個 Swift 的研究會的新聞
 
-# Swift 社群 iPlayground 將舉辦 2023 年度線上技術研討會
+## Swift 社群 iPlayground 將舉辦 2023 年度線上技術研討會
 
 Swift 社群 iPlayground 是台灣首度聚焦 Apple 相關軟體開發之大型技術研討會，自 2017 年起每年舉辦一次，邀請國內外知名的 Swift 開發者分享他們的經驗和心得。今年，由於疫情的影響，iPlayground 將以線上的方式進行，並將於 3 月 27 日至 28 日舉行。
 
