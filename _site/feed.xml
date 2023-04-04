@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-04T10:01:46+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Twitter 開源了推薦演算法</title><link href="http://localhost:4000/programming/twitter-algorithm.html" rel="alternate" type="text/html" title="Twitter 開源了推薦演算法" /><published>2023-04-03T00:11:00+08:00</published><updated>2023-04-03T00:11:00+08:00</updated><id>http://localhost:4000/programming/twitter-algorithm</id><content type="html" xml:base="http://localhost:4000/programming/twitter-algorithm.html">&lt;h2 id=&quot;twitter-開源了使用在-twitter-上的推薦演算法&quot;&gt;Twitter 開源了使用在 Twitter 上的推薦演算法&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-05T00:30:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Twitter 將 icon 換成狗狗幣(Doge)了</title><link href="http://localhost:4000/programming/twitter-change-logo-to-doge.html" rel="alternate" type="text/html" title="Twitter 將 icon 換成狗狗幣(Doge)了" /><published>2023-04-04T10:04:00+08:00</published><updated>2023-04-04T10:04:00+08:00</updated><id>http://localhost:4000/programming/twitter-change-logo-to-doge</id><content type="html" xml:base="http://localhost:4000/programming/twitter-change-logo-to-doge.html">&lt;h2 id=&quot;twitter-將-icon-換成-doge&quot;&gt;Twitter 將 icon 換成 Doge&lt;/h2&gt;
+
+&lt;p&gt;Twitter 在最近，將 icon 藍色的鳥，換成了加密貨幣 Doge 的 icon。直到現在，我在網頁上看到的 icon 還是 doge。這一舉動，讓 Doge 瞬間爆漲了 30% 左右。這也印證了所謂的「Doge 首席執行官」- Elon Musk 真的有「執行官」的能力。在買下了 Twitter 後，他在迷因界、幣圈的影響力，升級到了和收購前的 Musk 完全不同檔次啊。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/twitter-change-icon.jpeg&quot; alt=&quot;Twitter change icon&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;doge-相關資訊&quot;&gt;Doge 相關資訊&lt;/h2&gt;
+
+&lt;h3 id=&quot;doge-瞬間爆漲的情況&quot;&gt;Doge 瞬間爆漲的情況&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/doge-trend-aft-change-icon.jpeg&quot; alt=&quot;Doge 走勢爆漲&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;doge-資料&quot;&gt;Doge 資料&lt;/h3&gt;
+
+&lt;script src=&quot;https://widgets.coingecko.com/coingecko-coin-ticker-widget.js&quot;&gt;&lt;/script&gt;
+
+&lt;coingecko-coin-ticker-widget coin-id=&quot;dogecoin&quot; currency=&quot;usd&quot; locale=&quot;zh-tw&quot;&gt;&lt;/coingecko-coin-ticker-widget&gt;
+
+&lt;h3 id=&quot;doge-走勢&quot;&gt;Doge 走勢&lt;/h3&gt;
+
+&lt;script src=&quot;https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js&quot;&gt;&lt;/script&gt;
+
+&lt;coingecko-coin-price-chart-widget coin-id=&quot;dogecoin&quot; currency=&quot;usd&quot; height=&quot;300&quot; locale=&quot;zh-tw&quot;&gt;&lt;/coingecko-coin-price-chart-widget&gt;
+
+&lt;h3 id=&quot;elon-musk-對-doge-的迷因&quot;&gt;Elon Musk 對 Doge 的迷因&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/elon-change-doge.jpeg&quot; alt=&quot;elon musk 對 doge 改的 meme&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;這個迷因，原則他之前對於多模態 AI 的梗圖&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/elon-origin.jpeg&quot; alt=&quot;elon musk meme 原圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="Doge" /><category term="crypto currency" /><summary type="html">Twitter 將 icon 換成 Doge</summary></entry><entry><title type="html">Twitter 開源了推薦演算法</title><link href="http://localhost:4000/programming/twitter-algorithm.html" rel="alternate" type="text/html" title="Twitter 開源了推薦演算法" /><published>2023-04-03T00:11:00+08:00</published><updated>2023-04-03T00:11:00+08:00</updated><id>http://localhost:4000/programming/twitter-algorithm</id><content type="html" xml:base="http://localhost:4000/programming/twitter-algorithm.html">&lt;h2 id=&quot;twitter-開源了使用在-twitter-上的推薦演算法&quot;&gt;Twitter 開源了使用在 Twitter 上的推薦演算法&lt;/h2&gt;
 
 &lt;p&gt;馬斯克實現了他在併購 Twitter 時講過的話，「要開源演算法」&lt;/p&gt;
 
@@ -328,42 +358,4 @@ BNB[xxx], NFT (xxxxx)[1]&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game2.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game3.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="任天堂" /><category term="Switch" /><category term="薩爾達" /><summary type="html">薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。</summary></entry><entry><title type="html">東芝被溢價收購，股票將下市</title><link href="http://localhost:4000/finance/toshiba-been-acquisitions.html" rel="alternate" type="text/html" title="東芝被溢價收購，股票將下市" /><published>2023-03-27T17:37:00+08:00</published><updated>2023-03-27T17:37:00+08:00</updated><id>http://localhost:4000/finance/toshiba-been-acquisitions</id><content type="html" xml:base="http://localhost:4000/finance/toshiba-been-acquisitions.html">&lt;p&gt;在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;東芝被收購&quot;&gt;東芝被收購&lt;/h2&gt;
-
-&lt;p&gt;根據多家媒體報導，日本東芝（Toshiba）可能面臨被私有化的命運，因為一個由日本產業合作夥伴公司（JIP）為首的投資者集團，已經提出了一份高達220億美元的收購要約，每股價格為7000日圓，遠高於東芝目前的市場價值。如果收購案成功，東芝將從證交所下市，結束其140多年的歷史。&lt;/p&gt;
-
-&lt;p&gt;東芝是日本最知名的科技企業之一，涉足核能、半導體、電子、家電等多個領域，但近年來卻陷入了一連串的醜聞和虧損，包括會計造假、核電廠建設失敗、記憶體事業出售等。這些事件讓東芝的股價大幅下跌，也引發了外資和股東的不滿和壓力。收購方表示，他們希望能夠幫助東芝重整旗鼓，專注於其核心的能源和基礎設施事業，並提升其競爭力和效率。&lt;/p&gt;
-
-&lt;p&gt;東芝董事會尚未正式回應收購要約，但有消息指出，部分董事對出價不滿意，認為低估了東芝的價值和潛力。此外，收購案還需要通過全球競爭法的審核，以及獲得日本政府的批准，因為東芝涉及國家安全和公共利益的敏感領域。&lt;/p&gt;
-
-&lt;h2 id=&quot;東芝-toshiba-股價&quot;&gt;東芝 Toshiba 股價&lt;/h2&gt;
-
-&lt;!-- TradingView Widget BEGIN --&gt;
-&lt;div class=&quot;tradingview-widget-container&quot;&gt;
-  &lt;div id=&quot;tradingview_17551&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;tradingview-widget-copyright&quot;&gt;&lt;a href=&quot;https://www.tradingview.com/symbols/TSE-6502/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;blue-text&quot;&gt;6502 stock chart&lt;/span&gt;&lt;/a&gt; by TradingView&lt;/div&gt;
-  &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3.tradingview.com/tv.js&quot;&gt;&lt;/script&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-  new TradingView.widget(
-  {
-  &quot;autosize&quot;: true,
-  &quot;symbol&quot;: &quot;TSE:6502&quot;,
-  &quot;interval&quot;: &quot;D&quot;,
-  &quot;timezone&quot;: &quot;Etc/UTC&quot;,
-  &quot;theme&quot;: &quot;light&quot;,
-  &quot;style&quot;: &quot;1&quot;,
-  &quot;locale&quot;: &quot;en&quot;,
-  &quot;toolbar_bg&quot;: &quot;#f1f3f6&quot;,
-  &quot;enable_publishing&quot;: false,
-  &quot;hide_top_toolbar&quot;: true,
-  &quot;hide_legend&quot;: true,
-  &quot;container_id&quot;: &quot;tradingview_17551&quot;
-}
-  );
-  &lt;/script&gt;
-&lt;/div&gt;
-&lt;!-- TradingView Widget END --&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="日本" /><category term="財經" /><category term="東芝" /><category term="Toshiba" /><category term="Japan" /><summary type="html">在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/game3.jpeg&quot; alt=&quot;王國之淚遊戲照&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="任天堂" /><category term="Switch" /><category term="薩爾達" /><summary type="html">薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。</summary></entry></feed>
