@@ -5,7 +5,7 @@ author_profile: true
 permalink: /about/
 ---
 
-# Marvin Lin
+## Marvin Lin
 
 I love Apple's products and enjoy Swift development. I love using code to get things done. Currently, my side projects include iOS apps, macOS apps, and Twitter bots. This blog made by jekyll framework.
 
