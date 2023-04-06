@@ -17,6 +17,9 @@ Xcode 不支援 Rosetta。有關更多信息，請參閱開發人員技術通告
 ### Swift 的 backDeployed
 現在可以使用 @backDeployed(before:) 屬性來將函數的可用性擴展到介紹該函數作為 ABI 之前的 OS 版本。
 
+### Swift6 之後的語言改動
+<a href="#swift6change">Swift 的語言改變</a>
+
 ## Xcode 14.3 release note
 
 Xcode 14.3 包括 Swift 5.8 和 iOS 16.4、iPadOS 16.4、tvOS 16.4、watchOS 9.4 和 macOS Ventura 13.3 的 SDK。Xcode 14.3 可支援 iOS 11 及以上、tvOS 11 及以上和 watchOS 4 及以上的設備調試。Xcode 14.3 需要在運行 macOS Ventura 13.0 或更高版本的 Mac 上運行。
@@ -320,7 +323,7 @@ b.update(repeating: 0)
 b[b.startIndex..<b.endIndex].update(repeating: 0)
 SE-0370 (105198642)
 
-隱式 self 現在允許在解開 self 之後弱引用捕獲，例如以下隱式 self 用法是被允許的：
+### 隱式 self 現在允許在解開 self 之後弱引用捕獲，例如以下隱式 self 用法是被允許的 <a name="swift6change"></a>
 
 ```
 class ViewController {

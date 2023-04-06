@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-06T09:52:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Xcode 14.3 release note，使用 ChatGPT 翻譯</title><link href="http://localhost:4000/swift/xcode143-released.html" rel="alternate" type="text/html" title="Xcode 14.3 release note，使用 ChatGPT 翻譯" /><published>2023-04-05T11:22:00+08:00</published><updated>2023-04-05T11:22:00+08:00</updated><id>http://localhost:4000/swift/xcode143-released</id><content type="html" xml:base="http://localhost:4000/swift/xcode143-released.html">&lt;h2 id=&quot;對-ios-開發者可能影響較大的方面&quot;&gt;對 iOS 開發者可能影響較大的方面&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-06T10:45:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Xcode 14.3 release note，使用 ChatGPT 翻譯</title><link href="http://localhost:4000/swift/xcode143-released.html" rel="alternate" type="text/html" title="Xcode 14.3 release note，使用 ChatGPT 翻譯" /><published>2023-04-05T11:22:00+08:00</published><updated>2023-04-05T11:22:00+08:00</updated><id>http://localhost:4000/swift/xcode143-released</id><content type="html" xml:base="http://localhost:4000/swift/xcode143-released.html">&lt;h2 id=&quot;對-ios-開發者可能影響較大的方面&quot;&gt;對 iOS 開發者可能影響較大的方面&lt;/h2&gt;
 
 &lt;h3 id=&quot;停用功能---rosetta&quot;&gt;停用功能 - Rosetta&lt;/h3&gt;
 &lt;p&gt;Xcode 不支援 Rosetta。有關更多信息，請參閱開發人員技術通告「解決 Apple Silicon 上的架構構建錯誤」。 (92772361)&lt;/p&gt;
 
 &lt;h3 id=&quot;swift-的-backdeployed&quot;&gt;Swift 的 backDeployed&lt;/h3&gt;
 &lt;p&gt;現在可以使用 @backDeployed(before:) 屬性來將函數的可用性擴展到介紹該函數作為 ABI 之前的 OS 版本。&lt;/p&gt;
+
+&lt;h3 id=&quot;swift6-之後的語言改動&quot;&gt;Swift6 之後的語言改動&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;#swift6change&quot;&gt;Swift 的語言改變&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;xcode-143-release-note&quot;&gt;Xcode 14.3 release note&lt;/h2&gt;
 
@@ -301,7 +304,7 @@ case is [Bool]:
 b[b.startIndex..&amp;lt;b.endIndex].update(repeating: 0)
 SE-0370 (105198642)&lt;/p&gt;
 
-&lt;p&gt;隱式 self 現在允許在解開 self 之後弱引用捕獲，例如以下隱式 self 用法是被允許的：&lt;/p&gt;
+&lt;h3 id=&quot;隱式-self-現在允許在解開-self-之後弱引用捕獲例如以下隱式-self-用法是被允許的-&quot;&gt;隱式 self 現在允許在解開 self 之後弱引用捕獲，例如以下隱式 self 用法是被允許的 &lt;a name=&quot;swift6change&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class ViewController {
 let button: Button
