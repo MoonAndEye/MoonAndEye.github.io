@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-06T10:45:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Xcode 14.3 release note，使用 ChatGPT 翻譯</title><link href="http://localhost:4000/swift/xcode143-released.html" rel="alternate" type="text/html" title="Xcode 14.3 release note，使用 ChatGPT 翻譯" /><published>2023-04-05T11:22:00+08:00</published><updated>2023-04-05T11:22:00+08:00</updated><id>http://localhost:4000/swift/xcode143-released</id><content type="html" xml:base="http://localhost:4000/swift/xcode143-released.html">&lt;h2 id=&quot;對-ios-開發者可能影響較大的方面&quot;&gt;對 iOS 開發者可能影響較大的方面&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-07T13:28:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">開始使用 Github Copilot 服務，來讓 side project 加速</title><link href="http://localhost:4000/programming/start-using-copilot.html" rel="alternate" type="text/html" title="開始使用 Github Copilot 服務，來讓 side project 加速" /><published>2023-04-07T11:53:00+08:00</published><updated>2023-04-07T11:53:00+08:00</updated><id>http://localhost:4000/programming/start-using-copilot</id><content type="html" xml:base="http://localhost:4000/programming/start-using-copilot.html">&lt;h2 id=&quot;開始使用-copilot&quot;&gt;開始使用 Copilot&lt;/h2&gt;
+
+&lt;p&gt;因為我主要工作是 iOS 開發，使用的 IDE 是 Xcode，目前在 Xcode 上並沒有整合 Copilot 很好的方法，所以我一直都沒有使用 Copilot。&lt;/p&gt;
+
+&lt;p&gt;不過現在有寫幾個 projects，會需要用到 Python 和 Ruby，現在開始試用 GitHub 的 Copilot，希望這個在我不熟的領域，可以加速我開發。&lt;/p&gt;
+
+&lt;h2 id=&quot;關於-copilot-服務&quot;&gt;關於 Copilot 服務&lt;/h2&gt;
+
+&lt;p&gt;GitHub Copilot 是一款 AI 程式碼工具，它可以在你寫程式的時候依照內文給予你相對應的建議。 GitHub Copilot 由 OpenAI Codex AI 系統提供支持，該系統在公共互聯網文本和數十億行程式碼上進行訓練 。GitHub Copilot 可以幫助你節省開發時間，提高程式碼品質，並學習新的語言或框架。&lt;/p&gt;
+
+&lt;p&gt;要使用 GitHub Copilot，你需要先申請試用，然後在 Visual Studio Code 中安裝 GitHub Copilot 擴充功能。你可以在任何語言或框架中使用 GitHub Copilot，但它尤其適用於 Python、JavaScript、TypeScript、Ruby、Java、Go 等主流語言。GitHub Copilot 會根據你的程式碼內容和註解，自動以灰色文本建議整行或整個函數。你可以按 Tab 接受建議，或按 Alt + \ 跳出建議。你也可以按 Ctrl + Enter 打開 GitHub Copilot 的建議視窗，查看更多的選項。&lt;/p&gt;
+
+&lt;p&gt;GitHub Copilot 是一個強大的工具，但它不是完美的。它可能會產生不正確、不安全或不符合版權的程式碼。你應該始終審查 GitHub Copilot 的建議，並對自己寫的程式碼負責。GitHub Copilot 也不會替你做出架構或商業邏輯的決定，你還是需要理解技術的架構，並把問題拆解成簡單的步驟。&lt;/p&gt;
+
+&lt;p&gt;Github Copilot 是一個基於人工智慧的程式碼生成工具，它可以幫助開發者快速編寫高品質的程式碼。Github Copilot 的主要特點有：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;它可以根據開發者的註釋、函數名稱、變數名稱等提示，自動生成符合邏輯和語法的程式碼片段。&lt;/li&gt;
+  &lt;li&gt;它可以從開源代碼庫中學習各種程式語言和框架的用法，並適應開發者的風格和偏好。&lt;/li&gt;
+  &lt;li&gt;它可以提供多個程式碼建議，讓開發者選擇最適合的一個，或者修改和組合成自己想要的程式碼。&lt;/li&gt;
+  &lt;li&gt;它可以在任何編輯器或環境中使用，只需安裝 Github Copilot 擴充套件，並與 Github 帳號連接。&lt;/li&gt;
+  &lt;li&gt;它是一個持續學習和改進的工具，隨著開發者的使用和回饋，它會變得更加智能和準確。&lt;/li&gt;
+  &lt;li&gt;當看到灰色文本的建議時，按 Tab 接受，或按 Esc 忽略。&lt;/li&gt;
+  &lt;li&gt;如果沒有看到建議，或想要更改建議，可以使用以下快捷鍵：
+    &lt;ul&gt;
+      &lt;li&gt;Alt + \ : 跳出建議&lt;/li&gt;
+      &lt;li&gt;Alt + [ , Alt + ] : 切換不同建議&lt;/li&gt;
+      &lt;li&gt;Ctrl + Enter : 打開建議視窗&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;開始使用-copilot-1&quot;&gt;開始使用 Copilot&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/copilot/quickstart&quot;&gt;Copilot quickstart&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在這個頁面，填進付款資訊，就可以開始使用了，如果你用的是 VSCode， Copilot 的 plugin 會聯動你的 github 帳號，接下來就可以在你的專案中，讓 copilot 來協助開發了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Copilot" /><category term="Github" /><summary type="html">開始使用 Copilot</summary></entry><entry><title type="html">Xcode 14.3 release note，使用 ChatGPT 翻譯</title><link href="http://localhost:4000/swift/xcode143-released.html" rel="alternate" type="text/html" title="Xcode 14.3 release note，使用 ChatGPT 翻譯" /><published>2023-04-05T11:22:00+08:00</published><updated>2023-04-05T11:22:00+08:00</updated><id>http://localhost:4000/swift/xcode143-released</id><content type="html" xml:base="http://localhost:4000/swift/xcode143-released.html">&lt;h2 id=&quot;對-ios-開發者可能影響較大的方面&quot;&gt;對 iOS 開發者可能影響較大的方面&lt;/h2&gt;
 
 &lt;h3 id=&quot;停用功能---rosetta&quot;&gt;停用功能 - Rosetta&lt;/h3&gt;
 &lt;p&gt;Xcode 不支援 Rosetta。有關更多信息，請參閱開發人員技術通告「解決 Apple Silicon 上的架構構建錯誤」。 (92772361)&lt;/p&gt;
@@ -747,54 +783,4 @@ BNB[xxx], NFT (xxxxx)[1]&lt;/p&gt;
 
 &lt;h2 id=&quot;apple-park&quot;&gt;Apple park&lt;/h2&gt;
 
-&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3321782432827!2d-122.008972!3d37.33464379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1szh-TW!2stw!4v1680224743201!5m2!1szh-TW!2stw&quot; width=&quot;400&quot; height=&quot;300&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="Apple" /><category term="iOS" /><summary type="html">WWDC23 時間確定了 6月6日到6月10日</summary></entry><entry><title type="html">使用 Bing create AI 產出各種圖案吧</title><link href="http://localhost:4000/life/bing-create-ai-art.html" rel="alternate" type="text/html" title="使用 Bing create AI 產出各種圖案吧" /><published>2023-03-29T18:00:00+08:00</published><updated>2023-03-29T18:00:00+08:00</updated><id>http://localhost:4000/life/bing-create-ai-art</id><content type="html" xml:base="http://localhost:4000/life/bing-create-ai-art.html">&lt;h2 id=&quot;bing-create-ai-繪圖&quot;&gt;Bing Create AI 繪圖&lt;/h2&gt;
-
-&lt;p&gt;Bing Create 是一個由微軟推出的創意工具，它可以根據你的文字提示，利用人工智慧生成圖像。你可以在 Bing 搜尋應用程式或網站上使用 Bing Create，只要進入 More Creative 標籤，就可以開始創作。&lt;/p&gt;
-
-&lt;p&gt;Bing Create 的用途很廣泛，你可以用它來發揮你的想像力，創造出各種有趣、美麗、驚奇的圖像。你可以用它來設計 logo、海報、插畫、漫畫等等。你也可以用它來學習不同的藝術風格、探索不同的主題、表達不同的情感。&lt;/p&gt;
-
-&lt;p&gt;Bing Create 創造的限制，就是你想像力的限制。你可以用簡單的詞語或句子來描述你想要的圖像，例如「一隻穿著西裝的貓」、「一個太陽系的蛋糕」、「一幅抽象的水彩畫」等等。Bing Create 會根據你的提示，生成一個或多個符合的圖像，讓你選擇。你也可以修改或添加更多的細節，讓圖像更符合你的期望。&lt;/p&gt;
-
-&lt;p&gt;Bing Create 是一個讓人類發揮創意的好幫手，它可以幫助你實現你的想法，也可以啟發你的靈感。如果你想要嘗試 Bing Create，可以使用下面這個連結，登入 bing create，去體驗一下 AI 的畫技。&lt;/p&gt;
-
-&lt;h2 id=&quot;bing-create&quot;&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing Create&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h2 id=&quot;我用-bing-create-產生的圖片&quot;&gt;我用 Bing create 產生的圖片&lt;/h2&gt;
-
-&lt;h3 id=&quot;招財貓&quot;&gt;招財貓&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prompt: The Maneki-neko, raise one hand while holding a gold coin in the other hand.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-normal.jpeg&quot; alt=&quot;lucky cat&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;賽博龐克風的招財貓&quot;&gt;賽博龐克風的招財貓&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prompt: Japanese lucky cat. cyberpunk style&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk1.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prompt: Japanese lucky cat, cyberpunk style&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk2.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;將詠唱詞再加多一點描述的賽博龐克招財貓&quot;&gt;將詠唱詞再加多一點描述的賽博龐克招財貓&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;prmopt: The lucky cat, raise one hand while holding a gold coin in the other hand.cyberpunk style. bright style. whole body can be seen&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/lucky-cat-cyber-punk3.jpeg&quot; alt=&quot;cyber punk cat&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;bing create 使用的 model 是 OpenAI 的 DALL．E，產出來的圖片，我覺得很有趣，有興趣的朋友，可以去試試看喔。&lt;/p&gt;
-
-&lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing Create&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/programming/bing-create.html&quot;&gt;Bing create 介紹&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Create AI 繪圖</summary></entry></feed>
+&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3321782432827!2d-122.008972!3d37.33464379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1szh-TW!2stw!4v1680224743201!5m2!1szh-TW!2stw&quot; width=&quot;400&quot; height=&quot;300&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="Apple" /><category term="iOS" /><summary type="html">WWDC23 時間確定了 6月6日到6月10日</summary></entry></feed>
