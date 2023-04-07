@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Google 要求未來 Play Store 的 Android 都要能刪除帳號
+title: Google 要求未來 Play Store 的 App 都要能刪除帳號
 date: 2023-04-07 15:51 +0800
 category: programming
 author: Marvin Lin
