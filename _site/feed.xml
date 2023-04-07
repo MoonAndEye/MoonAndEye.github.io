@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-07T13:28:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">開始使用 Github Copilot 服務，來讓 side project 加速</title><link href="http://localhost:4000/programming/start-using-copilot.html" rel="alternate" type="text/html" title="開始使用 Github Copilot 服務，來讓 side project 加速" /><published>2023-04-07T11:53:00+08:00</published><updated>2023-04-07T11:53:00+08:00</updated><id>http://localhost:4000/programming/start-using-copilot</id><content type="html" xml:base="http://localhost:4000/programming/start-using-copilot.html">&lt;h2 id=&quot;開始使用-copilot&quot;&gt;開始使用 Copilot&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-07T13:54:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Xuite 將會在 2023 年 6 月停止服務</title><link href="http://localhost:4000/programming/xuite-stop-website.html" rel="alternate" type="text/html" title="Xuite 將會在 2023 年 6 月停止服務" /><published>2023-04-07T13:40:00+08:00</published><updated>2023-04-07T13:40:00+08:00</updated><id>http://localhost:4000/programming/xuite-stop-website</id><content type="html" xml:base="http://localhost:4000/programming/xuite-stop-website.html">&lt;h2 id=&quot;xuite-停止服務&quot;&gt;Xuite 停止服務&lt;/h2&gt;
+
+&lt;p&gt;xuite 是台灣最早的網路服務平台之一，提供了部落格、相簿、影音、雲端硬碟等多元功能，曾經是許多網友的記憶和生活的一部分。然而，近日 xuite 官方宣布，將於 2023 年 6 月 30 日結束所有服務，並建議用戶儘快備份或轉移自己的資料，以免造成不必要的損失。&lt;/p&gt;
+
+&lt;h2 id=&quot;xuite-介紹&quot;&gt;Xuite 介紹&lt;/h2&gt;
+
+&lt;p&gt;xuite 的結束服務，引發了網友們的討論和感嘆。有人表示，xuite 是他們的青春回憶，記錄了他們的成長和心情，也是他們與親友分享生活點滴的平台。有人認為，xuite 是台灣網路文化的一個象徵，見證了台灣網路發展的歷史和變遷。有人則表示，xuite 的結束服務是一種無奈和遺憾，反映了台灣網路市場的競爭和變動，也提醒了用戶要珍惜和保護自己的數位資產。&lt;/p&gt;
+
+&lt;p&gt;xuite 的結束服務，無疑是台灣網路界的一個重大事件，也是一個時代的終結。xuite 曾經是台灣網友的共同記憶，也是台灣網路文化的一部分。雖然 xuite 要走入歷史，但它留下的印記和影響，仍然值得我們回顧和紀念。&lt;/p&gt;
+
+&lt;h2 id=&quot;多想兩分鐘你可以開始自己架你自己的-blog&quot;&gt;多想兩分鐘，你可以開始自己架你自己的 blog&lt;/h2&gt;
+
+&lt;p&gt;如前所述，如果使用某個公司的服務，最怕的就是終止服務。從以前的蕃薯藤、奇摩小站、無名小站，你用過幾個呢？在最熱門的時候，沒有人會覺得這些部落格服務會結束，但真的發生的時候，如果你想要保留你的文章，都會是不小的工程。而這個因素，也是&lt;/p&gt;
+
+&lt;h3 id=&quot;如果你不太熟悉架站&quot;&gt;如果你不太熟悉架站&lt;/h3&gt;
+
+&lt;p&gt;建議選個看起來會長久，或是當時人氣很高的 blog。如果是 2023 年，我會覺得 medium.com, WordPress, Blogger 都是可以選的部落格。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/&quot;&gt;medium&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.blogger.com/&quot;&gt;blogger&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wordpress.com/zh-tw/&quot;&gt;WordPress.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;如果你會架站或想架站&quot;&gt;如果你會架站/或想架站&lt;/h3&gt;
+
+&lt;p&gt;如果你想要在 github page 上架個人部落格，你可以使用 jekyll 這個靜態網站生成器。jekyll 可以讓你用 markdown 語法撰寫文章，並且提供多種主題和外掛程式，讓你可以客製化你的部落格風格和功能。要使用 jekyll，你需要先安裝 ruby 和 bundler，然後在你的 github 倉庫中建立一個名為 username.github.io 的分支，其中 username 是你的 github 使用者名稱。接著，你可以在本地端建立一個 jekyll 專案，並且使用 bundler 安裝相關的套件。最後，你可以將你的專案推送到 github 倉庫中，並且在瀏覽器中訪問 username.github.io 來查看你的部落格。&lt;/p&gt;
+
+&lt;p&gt;而細節，你可以使用 ChatGPT 或是 Copilot 或是 Bing Chat 得到答案。&lt;/p&gt;
+
+&lt;p&gt;這個時代，有 AI 真的太方便了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="blog" /><category term="programming" /><summary type="html">Xuite 停止服務</summary></entry><entry><title type="html">開始使用 Github Copilot 服務，來讓 side project 加速</title><link href="http://localhost:4000/programming/start-using-copilot.html" rel="alternate" type="text/html" title="開始使用 Github Copilot 服務，來讓 side project 加速" /><published>2023-04-07T11:53:00+08:00</published><updated>2023-04-07T11:53:00+08:00</updated><id>http://localhost:4000/programming/start-using-copilot</id><content type="html" xml:base="http://localhost:4000/programming/start-using-copilot.html">&lt;h2 id=&quot;開始使用-copilot&quot;&gt;開始使用 Copilot&lt;/h2&gt;
 
 &lt;p&gt;因為我主要工作是 iOS 開發，使用的 IDE 是 Xcode，目前在 Xcode 上並沒有整合 Copilot 很好的方法，所以我一直都沒有使用 Copilot。&lt;/p&gt;
 
@@ -753,34 +783,4 @@ BNB[xxx], NFT (xxxxx)[1]&lt;/p&gt;
 
 &lt;h2 id=&quot;大賣空-電影內容&quot;&gt;大賣空 電影內容&lt;/h2&gt;
 
-&lt;p&gt;電影「大賣空」是一部根據真實事件改編的劇情片，講述了2008年金融危機前，一群投資者預見了美國房地產市場的崩潰，並利用信貸違約互換（credit default swap）這種金融衍生品，對抵押貸款證券（mortgage-backed security）進行大規模的賣空操作，從而獲得了巨大的利潤。電影通過四條故事線，展示了這些投資者的動機、策略、困難和成果，同時也揭露了金融體系的腐敗、貪婪和無能。電影以幽默、諷刺和直白的方式，向觀眾解釋了一些複雜的金融術語和概念，並讓觀眾思考金融危機對普通人的影響和意義。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="Finance" /><category term="Michael Burry" /><summary type="html"></summary></entry><entry><title type="html">WWDC2023 時間確定了! 6月6日登場</title><link href="http://localhost:4000/swift/wwdc23.html" rel="alternate" type="text/html" title="WWDC2023 時間確定了! 6月6日登場" /><published>2023-03-31T08:57:00+08:00</published><updated>2023-03-31T08:57:00+08:00</updated><id>http://localhost:4000/swift/wwdc23</id><content type="html" xml:base="http://localhost:4000/swift/wwdc23.html">&lt;h2 id=&quot;wwdc23-時間確定了-6月6日到6月10日&quot;&gt;WWDC23 時間確定了 6月6日到6月10日&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/wwdc23/wwdc23.jpeg&quot; alt=&quot;WWDC 23&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;每年的三月底四月初，Apple 都會宣佈 WWDC 的新聞，在昨天我們看到了今年的 WWDC 新聞啦，這次的日期在 6月6日 ~ 6月10日。&lt;/p&gt;
-
-&lt;h2 id=&quot;關於-wwdc&quot;&gt;關於 WWDC&lt;/h2&gt;
-
-&lt;p&gt;今年的 WWDC 將於 6 月 5 日至 9 日在美國，這是蘋果公司每年一度的全球開發者大會，旨在展示其最新的軟體和技術。WWDC 是開發者和蘋果工程師交流的絕佳機會，也是了解蘋果未來發展方向的重要窗口。&lt;/p&gt;
-
-&lt;p&gt;今年的 WWDC 預計將發佈 iOS 15、macOS 12、watchOS 8 和 tvOS 15 等系統更新，以及可能的硬體產品，如新款 MacBook Pro、AirPods 3 和 AirTags 等。此外，WWDC 也將舉辦多場主題演講、工作坊、實驗室和獎項頒發等活動，讓開發者能夠深入學習蘋果的平台和工具，並與同行和專家分享經驗和創意。&lt;/p&gt;
-
-&lt;p&gt;由於疫情的影響，今年的 WWDC 將採用線上形式進行，所有的活動都將通過蘋果開發者應用程式和網站免費提供給全球的開發者。開發者可以在現在起至 3 月 31 日之前申請免費的 WWDC 票券，並有機會參加一對一的指導會議。此外，學生和教育工作者也可以參加 Swift 學生挑戰賽，通過創作一個 Swift Playground 的互動場景來展示自己的編程技能，並有機會贏得獨家的 WWDC 外套和徽章。&lt;/p&gt;
-
-&lt;p&gt;WWDC 是蘋果公司與開發者社群的重要橋樑，也是推動創新和改善人們生活的強大動力。我們期待今年的 WWDC 能夠帶來更多令人驚艷的產品和服務，並讓我們更加了解蘋果公司的願景和使命。&lt;/p&gt;
-
-&lt;h2 id=&quot;special-event&quot;&gt;Special event&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/wwdc23/wwdc-special-event.jpeg&quot; alt=&quot;special event&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;此外，蘋果公司還將於6月5日在蘋果園區為開發者和學生舉辦一個特別的全天活動。屆時，參與者將一起觀看主題演講和國情咨文視頻，與蘋果團隊的一些成員會面，參加蘋果設計獎頒獎典禮，並享受整個晚上的活動。與我們一起親身參加活動，觀看主題演講和國情咨文視頻，與 Apple 團隊的部分成員見面，慶祝 Apple 設計獎優秀應用程式，享受到深夜的活動。&lt;/p&gt;
-
-&lt;h2 id=&quot;student-challenge---學生挑戰&quot;&gt;Student Challenge - 學生挑戰&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/wwdc23/swift-icon.jpeg&quot; alt=&quot;swift&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;呼喚所有有才華的學生！展示你們的創造力和對編程的熱情，有機會獲得獎項。申請截止日期為4月19日。通過提交一個關於你選擇的主題的令人難以置信的應用場景，向我們展示你對編程的熱情。獲勝者將獲得獨家的WWDC23外套、AirPods Pro、定制徽章組和一年的蘋果開發者計劃會員資格。此外，我們還將為選中的獲勝者舉辦一個特別的活動，而這些獲勝者是選擇參加這個機會的。&lt;/p&gt;
-
-&lt;h2 id=&quot;apple-park&quot;&gt;Apple park&lt;/h2&gt;
-
-&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3321782432827!2d-122.008972!3d37.33464379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1szh-TW!2stw!4v1680224743201!5m2!1szh-TW!2stw&quot; width=&quot;400&quot; height=&quot;300&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="Apple" /><category term="iOS" /><summary type="html">WWDC23 時間確定了 6月6日到6月10日</summary></entry></feed>
+&lt;p&gt;電影「大賣空」是一部根據真實事件改編的劇情片，講述了2008年金融危機前，一群投資者預見了美國房地產市場的崩潰，並利用信貸違約互換（credit default swap）這種金融衍生品，對抵押貸款證券（mortgage-backed security）進行大規模的賣空操作，從而獲得了巨大的利潤。電影通過四條故事線，展示了這些投資者的動機、策略、困難和成果，同時也揭露了金融體系的腐敗、貪婪和無能。電影以幽默、諷刺和直白的方式，向觀眾解釋了一些複雜的金融術語和概念，並讓觀眾思考金融危機對普通人的影響和意義。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="Finance" /><category term="Michael Burry" /><summary type="html"></summary></entry></feed>
