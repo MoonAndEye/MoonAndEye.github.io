@@ -7,7 +7,11 @@ author: Marvin Lin
 tags: [Android, Apps]
 summary: Google has announced that from January 1, 2023, all Android apps on the Play Store must provide an option to delete user accounts and data through a website to protect user privacy and data security. Non-compliance by app developers will result in being removed from the store or fined.
 permalink: /programming/:title:output_ext
+header:
+  teaser: /assets/posts/android-request-delete-account/giant.jpg
 ---
+
+![Giant](/assets/posts/android-request-delete-account/giant.jpg)
 
 Google 宣佈了所有上架 Play Store 的 Android app 都要提供刪除帳號與資料的選項。這項新政策旨在保護用戶的隱私權，並提高對 Android 平台的信任度。Google 表示，用戶應該能夠輕鬆地管理自己的帳號和資料，不論是在 app 內還是在網站上。因此，Google 將要求開發者在明年 5 月 31 日前，為他們的 app 提供以下功能：
 
