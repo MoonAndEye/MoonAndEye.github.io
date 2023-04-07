@@ -9,7 +9,7 @@ summary: using bing chat drawing
 permalink: /programming/:title:output_ext
 ---
 
-## Bing Chat 的 **更多創意** 模式，讓你可以使用 Bing 來繪圖
+## Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖
 
 在前面的文章有提到 
 
