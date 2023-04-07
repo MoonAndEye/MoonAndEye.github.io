@@ -126,3 +126,19 @@ AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如�
 [灣區日報](https://www.wanqu.co)
 
 > 关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco
+
+## 英文開發資源
+
+[Kodeco (改名前為 raywenderlich)](https://www.kodeco.com/)
+
+> 講解 Swift, iOS 開發都很深入，也介紹了很多 iOS 第三方 lib 和各種開發技巧。
+
+[Hacking with swift](https://www.hackingwithswift.com/)
+
+[Paul Hudson 的 Youtube 頻道](https://www.youtube.com/@twostraws)
+
+[Stanford CS193P](https://www.youtube.com/watch?v=bqu6BquVi2M)
+
+> 史丹佛大學 CS193P，不只推薦 SwiftUI 的課程，即使是以前的 Swift 3 4 5 的課程，都很值得聽一聽
+
+[Point free 課程](https://www.pointfree.co/)
