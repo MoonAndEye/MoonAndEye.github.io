@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-07T17:51:35+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google 要求未來 Play Store 的 Android 都要能刪除帳號</title><link href="http://localhost:4000/programming/Android-app-need-add-delete-account.html" rel="alternate" type="text/html" title="Google 要求未來 Play Store 的 Android 都要能刪除帳號" /><published>2023-04-07T15:51:00+08:00</published><updated>2023-04-07T15:51:00+08:00</updated><id>http://localhost:4000/programming/Android-app-need-add-delete-account</id><content type="html" xml:base="http://localhost:4000/programming/Android-app-need-add-delete-account.html">&lt;p&gt;&lt;img src=&quot;/assets/posts/android-request-delete-account/giant.jpg&quot; alt=&quot;Giant&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-09T00:24:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">超級瑪莉歐電影片 上映了</title><link href="http://localhost:4000/programming/mario-movie.html" rel="alternate" type="text/html" title="超級瑪莉歐電影片 上映了" /><published>2023-04-09T00:03:00+08:00</published><updated>2023-04-09T00:03:00+08:00</updated><id>http://localhost:4000/programming/mario-movie</id><content type="html" xml:base="http://localhost:4000/programming/mario-movie.html">&lt;p&gt;超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。&lt;/p&gt;
+
+&lt;p&gt;在電影裡，有很多那些懷舊的場景，都會穿插出現，如果你是很喜歡任天堂的玩家，一定不要錯過。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/mario-movie/movie-ticket.jpg&quot; alt=&quot;Mario movie ticket&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;youtube-的預告片&quot;&gt;Youtube 的預告片&lt;/h2&gt;
+
+&lt;h3 id=&quot;預告片1&quot;&gt;預告片1&lt;/h3&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/iE-BqYVfA4I&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;預告片2&quot;&gt;預告片2&lt;/h3&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sov-IOMEYbY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;預告片3&quot;&gt;預告片3&lt;/h3&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vR5aIE7FOYk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Movie" /><summary type="html">超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。</summary></entry><entry><title type="html">Google 要求未來 Play Store 的 App 都要能刪除帳號</title><link href="http://localhost:4000/programming/Android-app-need-add-delete-account.html" rel="alternate" type="text/html" title="Google 要求未來 Play Store 的 App 都要能刪除帳號" /><published>2023-04-07T15:51:00+08:00</published><updated>2023-04-07T15:51:00+08:00</updated><id>http://localhost:4000/programming/Android-app-need-add-delete-account</id><content type="html" xml:base="http://localhost:4000/programming/Android-app-need-add-delete-account.html">&lt;p&gt;&lt;img src=&quot;/assets/posts/android-request-delete-account/giant.jpg&quot; alt=&quot;Giant&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Google 宣佈了所有上架 Play Store 的 Android app 都要提供刪除帳號與資料的選項。這項新政策旨在保護用戶的隱私權，並提高對 Android 平台的信任度。Google 表示，用戶應該能夠輕鬆地管理自己的帳號和資料，不論是在 app 內還是在網站上。因此，Google 將要求開發者在明年 5 月 31 日前，為他們的 app 提供以下功能：&lt;/p&gt;
 
@@ -20,7 +35,7 @@
 
 &lt;h2 id=&quot;多想兩分鐘你可以開始自己架你自己的-blog&quot;&gt;多想兩分鐘，你可以開始自己架你自己的 blog&lt;/h2&gt;
 
-&lt;p&gt;如前所述，如果使用某個公司的服務，最怕的就是終止服務。從以前的蕃薯藤、奇摩小站、無名小站，你用過幾個呢？在最熱門的時候，沒有人會覺得這些部落格服務會結束，但真的發生的時候，如果你想要保留你的文章，都會是不小的工程。而這個因素，也是&lt;/p&gt;
+&lt;p&gt;如前所述，如果使用某個公司的服務，最怕的就是終止服務。從以前的蕃薯藤、奇摩小站、無名小站，你用過幾個呢？在最熱門的時候，沒有人會覺得這些部落格服務會結束，但真的發生的時候，如果你想要保留你的文章，都會是不小的工程。而這個因素，也是我用 jekyll 架個人 blog 在 github page 的原因。如果真的有要搬網站/備份的需求，整個 git 就是我的備份。而所有的文章，都是用 md 檔，搬移備份都容易。&lt;/p&gt;
 
 &lt;h3 id=&quot;如果你不太熟悉架站&quot;&gt;如果你不太熟悉架站&lt;/h3&gt;
 
@@ -741,48 +756,4 @@ string + string
 
 &lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/&quot;&gt;Microsoft blog, bing&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="bing chat" /><category term="AI" /><category term="programming" /><summary type="html">把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。</summary></entry><entry><title type="html">FTX 向客戶發 email，裡面有你的客戶代碼以及資產</title><link href="http://localhost:4000/finance/ftx-email-announce.html" rel="alternate" type="text/html" title="FTX 向客戶發 email，裡面有你的客戶代碼以及資產" /><published>2023-03-31T15:04:00+08:00</published><updated>2023-03-31T15:04:00+08:00</updated><id>http://localhost:4000/finance/ftx-email-announce</id><content type="html" xml:base="http://localhost:4000/finance/ftx-email-announce.html">&lt;p&gt;今天，收到了 FTX 破產後，列出客戶在 FTX 的資產。如果在 FTX 破產當下還有資產在裡面的，記得確認一下有沒有收到這幫信，如果這幫信在垃圾筒或被認為是廣告信，記得把他撈出來。&lt;/p&gt;
-
-&lt;p&gt;最下面會列出你的 Customer Code 還有資產，格式如下。&lt;/p&gt;
-
-&lt;p&gt;Your Unique Customer Code is xxxxx
-Your claim(s) were scheduled on the Schedules and Statements of FTX Trading Ltd. as:&lt;/p&gt;
-
-&lt;p&gt;BNB[xxxxx], NFT (xxxxx)[1]
-BNB[xxx], NFT (xxxxx)[1]&lt;/p&gt;
-
-&lt;h2 id=&quot;用-chatgpt-翻譯成中文&quot;&gt;用 ChatGPT 翻譯成中文&lt;/h2&gt;
-
-&lt;p&gt;本郵件底部附有您的獨特客戶代碼及預定索賠資訊。&lt;/p&gt;
-
-&lt;p&gt;您收到此郵件是因為在FTX TRADING LTD.和其附屬債務人及債務人代表聯合提交的第11章破產案件中，您已被識別為截至2022年11月11日淨正帳戶餘額的客戶之一。這些案件正在美國特拉華州的聯邦破產法院進行，案件編號為22-11068，並由法院共同管理。您已被列入一個或多個債務人的清單和報告中。&lt;/p&gt;
-
-&lt;p&gt;2023年3月14日和15日，FTX Trading Ltd.及其附屬債務人和債務人代表（統稱「債務人」）提交了其資產和負債表及財務狀況報告（「清單和報告」）。&lt;/p&gt;
-
-&lt;p&gt;根據最終命令（I）授權債務人維護債權人合併名單，以代替提交每個債務人的單獨名冊，（II）授權債務人最終進行客戶機密信息和個人信息的隱去或保留，（III）授予相關救濟 [D.I. 545]，清單和報告中的客戶姓名和地址已被隱去。關於清單和報告中標識債務人具有非優先未擔保債權的債權人（包括截至2022年11月11日淨正帳戶餘額的客戶）的E/F清單 - 為了隱去客戶姓名和地址，債務人已通過一個獨特的客戶代碼（「獨特客戶代碼」）識別了截至2022年11月11日淨正帳戶餘額的每個客戶。您的獨特客戶代碼和您預定索賠的摘錄在本郵件底部。&lt;/p&gt;
-
-&lt;p&gt;請注意，法院尚未設定提交債務人索賠或權益證明的最終期限。當法院設定最終期限時，所有已知債權人，包括所有在清單和報告中識別出的客戶，都將收到最終期限通知以及提交債權或權益&lt;/p&gt;
-
-&lt;p&gt;下面會列出你的 custom code 和資產&lt;/p&gt;
-
-&lt;p&gt;Your Unique Customer Code is xxxxx
-Your claim(s) were scheduled on the Schedules and Statements of FTX Trading Ltd. as:&lt;/p&gt;
-
-&lt;p&gt;BNB[xxxxx], NFT (xxxxx)[1]
-BNB[xxx], NFT (xxxxx)[1]&lt;/p&gt;
-
-&lt;h2 id=&quot;ftx-發過來的原文&quot;&gt;FTX 發過來的原文&lt;/h2&gt;
-
-&lt;p&gt;YOUR UNIQUE CUSTOMER CODE(S) AND SCHEDULED CLAIM INFORMATION IS AT THE BOTTOM OF THIS EMAIL.&lt;/p&gt;
-
-&lt;p&gt;YOU ARE RECEIVING THIS EMAIL BECAUSE YOU HAVE BEEN IDENTIFIED AS A CUSTOMER WITH A NET POSITIVE ACCOUNT BALANCE AS OF NOVEMBER 11, 2022 OF ONE OR MORE OF THE DEBTORS IN THE CHAPTER 11 CASES OF FTX TRADING LTD. AND CERTAIN OF ITS AFFILIATED DEBTORS AND DEBTORS-IN-POSSESSION PENDING IN THE UNITED STATES BANKRUPTCY COURT FOR THE DISTRICT OF DELAWARE AND JOINTLY ADMINISTERED UNDER THE CASE NUMBER 22-11068.  YOU HAVE BEEN LISTED IN ONE OR MORE OF THE DEBTORS’ SCHEDULES AND STATEMENTS.&lt;/p&gt;
-
-&lt;p&gt;On March 14 and 15, 2023, the FTX Trading Ltd. and certain of its affiliated debtors and debtors-in-possession (collectively, the “Debtors”) filed their schedules of assets and liabilities and statements of financial affairs (the “Schedules and Statements”).&lt;/p&gt;
-
-&lt;p&gt;Pursuant to the Final Order (I) Authorizing the Debtors to Maintain a Consolidated List of Creditors in Lieu of Submitting a Separate Matrix for Each Debtor, (II) Authorizing the Debtors to Redact or Withhold Certain Confidential Information of Customers and Personal Information of Individuals on a Final Basis and (III) Granting Certain Related Relief [D.I. 545], customer names and addresses in the Schedules and Statements are redacted.  With respect to Schedules E/F – which identify creditors of the Debtors with non-priority unsecured claims (including customers with a net positive account balance as of November 11, 2022) – in an effort to redact customer names and addresses, the Debtors have identified each customer with a net positive account balance as of November 11, 2022 by a unique customer code (a “Unique Customer Code”).  Your Unique Customer Code and an excerpt of your scheduled claim(s) are at the bottom of this email.&lt;/p&gt;
-
-&lt;p&gt;PLEASE BE ADVISED THAT THE COURT HAS NOT YET SET A DEADLINE FOR SUBMITTING PROOFS OF CLAIMS OR INTERESTS AGAINST THE DEBTORS.  WHEN THE COURT SETS A DEADLINE, ALL KNOWN CREDITORS, INCLUDING ALL CUSTOMERS IDENTIFIED ON THE SCHEDULES AND STATEMENTS, WILL BE PROVIDED NOTICE OF THE DEADLINE AND INSTRUCTIONS ON HOW TO SUBMIT PROOFS OF CLAIM OR INTERESTS.&lt;/p&gt;
-
-&lt;p&gt;PLEASE BE FURTHER ADVISED THAT RECEIPT OF THIS EMAIL AND A UNIQUE CUSTOMER CODE ONLY INDICATES THAT YOU HAD ONE OR MORE CLAIM(S) LISTED ON ONE OR MORE OF THE DEBTORS’ SCHEDULES AND STATEMENTS.  PROVISION OF A UNIQUE CUSTOMER CODE IS NOT AN ADMISSION BY THE DEBTORS OF THE VALIDITY OF SUCH CLAIM(S) OR A WAIVER OF ANY DEFENSES THERETO.  THE DEBTORS HEREBY INCORPORATE BY REFERENCE THE GLOBAL NOTES ATTACHED TO EACH OF THE DEBTORS’ SCHEDULES AND STATEMENTS AND RESERVE ALL RIGHTS.&lt;/p&gt;
-
-&lt;p&gt;To view all of the Debtors’ Schedules and Statements, as well as the Global Notes, please visit https://restructuring.ra.kroll.com/FTX and navigate to the “Schedules &amp;amp; SOFA” page under “Quick Links.”  Standalone excerpts of the customer data can be found under “Customer Schedules.”&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="FTX" /><category term="crypto coin" /><category term="加密貨幣" /><summary type="html">今天，收到了 FTX 破產後，列出客戶在 FTX 的資產。如果在 FTX 破產當下還有資產在裡面的，記得確認一下有沒有收到這幫信，如果這幫信在垃圾筒或被認為是廣告信，記得把他撈出來。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/&quot;&gt;Microsoft blog, bing&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="bing chat" /><category term="AI" /><category term="programming" /><summary type="html">把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。</summary></entry></feed>
