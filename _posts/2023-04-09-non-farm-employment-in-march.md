@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 美國3月非農就業人數與失業率
 date: 2023-04-08 22:30 +0800
 category: finance
