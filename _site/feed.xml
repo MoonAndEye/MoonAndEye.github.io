@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-09T00:24:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">超級瑪莉歐電影片 上映了</title><link href="http://localhost:4000/programming/mario-movie.html" rel="alternate" type="text/html" title="超級瑪莉歐電影片 上映了" /><published>2023-04-09T00:03:00+08:00</published><updated>2023-04-09T00:03:00+08:00</updated><id>http://localhost:4000/programming/mario-movie</id><content type="html" xml:base="http://localhost:4000/programming/mario-movie.html">&lt;p&gt;超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-09T00:33:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">超級瑪莉歐電影片 上映了</title><link href="http://localhost:4000/programming/mario-movie.html" rel="alternate" type="text/html" title="超級瑪莉歐電影片 上映了" /><published>2023-04-09T00:03:00+08:00</published><updated>2023-04-09T00:03:00+08:00</updated><id>http://localhost:4000/programming/mario-movie</id><content type="html" xml:base="http://localhost:4000/programming/mario-movie.html">&lt;p&gt;超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。&lt;/p&gt;
 
 &lt;p&gt;在電影裡，有很多那些懷舊的場景，都會穿插出現，如果你是很喜歡任天堂的玩家，一定不要錯過。&lt;/p&gt;
 
@@ -13,7 +13,17 @@
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sov-IOMEYbY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;預告片3&quot;&gt;預告片3&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vR5aIE7FOYk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Movie" /><summary type="html">超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。</summary></entry><entry><title type="html">Google 要求未來 Play Store 的 App 都要能刪除帳號</title><link href="http://localhost:4000/programming/Android-app-need-add-delete-account.html" rel="alternate" type="text/html" title="Google 要求未來 Play Store 的 App 都要能刪除帳號" /><published>2023-04-07T15:51:00+08:00</published><updated>2023-04-07T15:51:00+08:00</updated><id>http://localhost:4000/programming/Android-app-need-add-delete-account</id><content type="html" xml:base="http://localhost:4000/programming/Android-app-need-add-delete-account.html">&lt;p&gt;&lt;img src=&quot;/assets/posts/android-request-delete-account/giant.jpg&quot; alt=&quot;Giant&quot; /&gt;&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vR5aIE7FOYk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Movie" /><summary type="html">超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。</summary></entry><entry><title type="html">美國3月非農就業人數與失業率</title><link href="http://localhost:4000/programming/non-farm-employment-in-march.html" rel="alternate" type="text/html" title="美國3月非農就業人數與失業率" /><published>2023-04-08T22:30:00+08:00</published><updated>2023-04-08T22:30:00+08:00</updated><id>http://localhost:4000/programming/non-farm-employment-in-march</id><content type="html" xml:base="http://localhost:4000/programming/non-farm-employment-in-march.html">&lt;h2 id=&quot;美國3月非農就業人數與失業率&quot;&gt;美國3月非農就業人數與失業率&lt;/h2&gt;
+
+&lt;h3 id=&quot;3月非農就業人數&quot;&gt;3月非農就業人數&lt;/h3&gt;
+&lt;p&gt;美國勞工部公佈的最新數據顯示，2023年3月，美國非農就業人數增加了23萬6000人，低於市場預期的24萬人，也低於2月份的31萬1000人。這是連續第二個月，美國非農就業增長放緩，反映出美國經濟在面臨通膨壓力和貿易摩擦的情況下，開始出現降溫的跡象。&lt;/p&gt;
+
+&lt;p&gt;根據報告，3月份的就業增長主要集中在服務業和建築業，而製造業則出現了1000人的減少。服務業增加了17萬9000個就業崗位，其中餐飲業、醫療保健和社會援助等領域表現較好。建築業增加了1萬8000個就業崗位，主要受到住宅建設需求的支撐。而製造業的就業減少則可能與全球供應鏈的中斷和關稅的影響有關。&lt;/p&gt;
+
+&lt;h3 id=&quot;3月失業率&quot;&gt;3月失業率&lt;/h3&gt;
+&lt;p&gt;報告還顯示，3月份的失業率微降至3.5%，創下近50年來的新低，並低於市場預期的3.6%。這意味著美國勞動市場仍然緊張，且缺乏合適的勞動力供給。此外，3月份的平均時薪按年增長4.2%，略低於市場預期的4.3%，但仍高於通膨率。這表明美國勞動者的收入水平有所提高，但也可能加劇通膨的風險。&lt;/p&gt;
+
+&lt;p&gt;綜上所述，美國3月份的非農就業數據反映出美國經濟在高速復甦後，開始出現一些減速的跡象。雖然失業率和時薪增長都表現不錯，但就業增長的放緩和製造業的衰退都暗示著美國經濟面臨著一些內外部的挑戰。這可能會影響聯準會（Fed）未來的貨幣政策決策，使其在平衡經濟增長和通膨控制之間更加困難。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">美國3月非農就業人數與失業率</summary></entry><entry><title type="html">Google 要求未來 Play Store 的 App 都要能刪除帳號</title><link href="http://localhost:4000/programming/Android-app-need-add-delete-account.html" rel="alternate" type="text/html" title="Google 要求未來 Play Store 的 App 都要能刪除帳號" /><published>2023-04-07T15:51:00+08:00</published><updated>2023-04-07T15:51:00+08:00</updated><id>http://localhost:4000/programming/Android-app-need-add-delete-account</id><content type="html" xml:base="http://localhost:4000/programming/Android-app-need-add-delete-account.html">&lt;p&gt;&lt;img src=&quot;/assets/posts/android-request-delete-account/giant.jpg&quot; alt=&quot;Giant&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Google 宣佈了所有上架 Play Store 的 Android app 都要提供刪除帳號與資料的選項。這項新政策旨在保護用戶的隱私權，並提高對 Android 平台的信任度。Google 表示，用戶應該能夠輕鬆地管理自己的帳號和資料，不論是在 app 內還是在網站上。因此，Google 將要求開發者在明年 5 月 31 日前，為他們的 app 提供以下功能：&lt;/p&gt;
 
@@ -717,43 +727,4 @@ string + string
 
 &lt;p&gt;數據公布後，美國公債收益率和美元指數均有所下跌，反映市場對美國通脹壓力有所緩和。美股主要指數則開盤上漲，投資者對Fed可能接近升息行動尾聲感到放心。&lt;/p&gt;
 
-&lt;p&gt;分析師指出，雖然PCE物價指數仍處於高位，但已經出現放緩跡象，這與Fed的預期相符。隨著供應鏈瓶頸逐步解除和能源價格回落，通脹水平有望在今年下半年進一步回落。不過，Fed仍需密切關注通脹的持續性和穩定性，以及其對經濟和金融市場的影響。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="財經數據" /><category term="finance" /><category term="stock" /><category term="投資" /><summary type="html">美2月核心PCE增速低於預期</summary></entry><entry><title type="html">使用 Bing Chat 幫我發想一些 App 的 idea</title><link href="http://localhost:4000/programming/bing-chat-brain-storming.html" rel="alternate" type="text/html" title="使用 Bing Chat 幫我發想一些 App 的 idea" /><published>2023-03-31T17:24:00+08:00</published><updated>2023-03-31T17:24:00+08:00</updated><id>http://localhost:4000/programming/bing-chat-brain-storming</id><content type="html" xml:base="http://localhost:4000/programming/bing-chat-brain-storming.html">&lt;p&gt;把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。&lt;/p&gt;
-
-&lt;p&gt;上方有三個頁籤，[聊天] [撰寫] [深入解析]&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/edge-bing-chat/bing-tab.jpeg&quot; alt=&quot;bing edge chat&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;bing-chat-的回應&quot;&gt;Bing Chat 的回應&lt;/h2&gt;
-
-&lt;p&gt;這是一個有趣的挑戰，我會盡力給你一些有創意的 App idea，但我不能保證它們都是可行或有市場的。以下是我想到的十個 App idea：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;一個可以讓你和陌生人共享夢境的 App，你可以在睡前選擇一個主題或情境，然後和其他選擇相同的用戶連接，並在早上分享你們的夢境。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和你的寵物互動的 App，你可以用語音或圖像來傳達你的情感或指令，然後 App 會用相應的聲音或動作來回應你的寵物，讓你們更加親密。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和你的偶像對話的 App，你可以選擇一個你喜歡的明星或名人，然後 App 會用人工智能來模擬他們的語音和風格，讓你感覺像是真的在和他們聊天。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和你的未來自己對話的 App，你可以設定一個未來的時間點，然後 App 會用人工智能來預測你未來的狀況和心態，讓你可以向你未來的自己提問或建議。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和其他用戶交換身份的 App，你可以選擇一個你想體驗的身份或角色，例如不同的國家、職業、性別等，然後 App 會隨機匹配一個符合條件的用戶，讓你們可以互相了解對方的生活- 和想法。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和其他用戶共享記憶的 App，你可以選擇一個你想分享的記憶，例如童年、旅行、愛情等，然後 App 會用虛擬實境技術來重現你的記憶場景，讓其他用戶可以觀看或參與。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和其他用戶共創故事的 App，你可以選擇一個故事類型或主題，例如恐怖、科幻、愛情等，然後 App 會隨機匹配一些有興趣的用戶，讓你們可以輪流添加故事情節或角色。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和其他用戶共享秘密的 App，你可以選擇一個秘密類型或主題，例如罪惡、恥辱、渴望等，然後 App 會隨機匹配一些有興趣的用戶，讓你們可以互相傾訴或聆聽對方的秘密。&lt;/li&gt;
-  &lt;li&gt;一個可以讓你和其他用戶共享才能的 App，你可以選擇一個才能類型或主題，例如音樂、繪畫、寫作等，然後 App 會隨機匹配一些有興趣的用戶，讓你們可以互相展示或欣賞對方的才能。&lt;/li&gt;
-  &lt;li&gt;一個可以&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/edge-bing-chat/bing-idea.jpeg&quot; alt=&quot;bing give me ideas&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;最後一個-idea-沒給&quot;&gt;最後一個 idea 沒給？&lt;/h2&gt;
-
-&lt;p&gt;最後一個，因為 timeout 了，所以講到一半，當然我就補問。而 Bing Chat 也回答了，而且答的很好「還沒有想到」&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/edge-bing-chat/last-idea.jpeg&quot; alt=&quot;last question&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;結論&quot;&gt;結論&lt;/h2&gt;
-
-&lt;p&gt;把上面他所提供的 app ideas 收集起來，還是有幾個不錯，而且可以做出來玩的 App。&lt;/p&gt;
-
-&lt;p&gt;在這個時代，當我心中沒有想法的時候，或許會大量的使用 GPT 型 AI，來進行一些發散的思考。我從「大腦喜歡這樣學」這本書中看到，發散思考的重要性。而且發散思考也是需要練習的。&lt;/p&gt;
-
-&lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/&quot;&gt;Microsoft blog, bing&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="bing chat" /><category term="AI" /><category term="programming" /><summary type="html">把 Edge 升級之後，右上方會多一個 Bing Chat 的 icon，按下去後會彈出一個直接和 Bing Chat 溝通的 Widget。</summary></entry></feed>
+&lt;p&gt;分析師指出，雖然PCE物價指數仍處於高位，但已經出現放緩跡象，這與Fed的預期相符。隨著供應鏈瓶頸逐步解除和能源價格回落，通脹水平有望在今年下半年進一步回落。不過，Fed仍需密切關注通脹的持續性和穩定性，以及其對經濟和金融市場的影響。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="財經數據" /><category term="finance" /><category term="stock" /><category term="投資" /><summary type="html">美2月核心PCE增速低於預期</summary></entry></feed>
