@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-09T00:33:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">超級瑪莉歐電影片 上映了</title><link href="http://localhost:4000/programming/mario-movie.html" rel="alternate" type="text/html" title="超級瑪莉歐電影片 上映了" /><published>2023-04-09T00:03:00+08:00</published><updated>2023-04-09T00:03:00+08:00</updated><id>http://localhost:4000/programming/mario-movie</id><content type="html" xml:base="http://localhost:4000/programming/mario-movie.html">&lt;p&gt;超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-11T01:30:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">台積電的3月營收狀況</title><link href="http://localhost:4000/finance/tsmc-march-income.html" rel="alternate" type="text/html" title="台積電的3月營收狀況" /><published>2023-04-11T01:25:00+08:00</published><updated>2023-04-11T01:25:00+08:00</updated><id>http://localhost:4000/finance/tsmc-march-income</id><content type="html" xml:base="http://localhost:4000/finance/tsmc-march-income.html">&lt;h2 id=&quot;台積電-3-月營收狀況&quot;&gt;台積電 3 月營收狀況&lt;/h2&gt;
+
+&lt;p&gt;台灣積體電路製造股份有限公司（TSMC）是全球最大的專業積體電路（IC）製造服務商，為客戶提供先進的製程技術和高品質的晶圓產品。TSMC在2023年3月的營收表現不如預期，主要受到全球晶片短缺的影響，以及新型冠狀病毒（COVID-19）疫情對市場需求的不確定性。&lt;/p&gt;
+
+&lt;p&gt;根據TSMC今日公佈的2023年3月營收報告，2023年3月合併營收約為新台幣1,454億800萬元，較上月減少了10.9%，較去年同期減少了15.4%。累計2023年1至3月營收約為新台幣5,086億3,300萬元，較去年同期增加了3.6%。TSMC表示，2023年第一季的營收符合先前預測的範圍，但低於季節性水準，主要因為智慧型手機和高階計算產品的需求下降。&lt;/p&gt;
+
+&lt;p&gt;TSMC預期2023年第二季的營收將有所回升，主要受惠於5奈米和7奈米製程的強勁需求，以及汽車和物聯網產品的持續復甦。TSMC表示，將持續投資擴充產能，以滿足客戶的長期需求，並提升競爭力。TSMC也表示，將積極應對COVID-19疫情帶來的挑戰，並確保員工和供應鏈夥伴的健康和安全。&lt;/p&gt;
+
+&lt;h2 id=&quot;參考連結&quot;&gt;參考連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pr.tsmc.com/chinese/news/3010&quot;&gt;台積公司報告&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://technews.tw/2021/04/09/tsmc-2330-202103-financial-report/&quot;&gt;科技新報新聞&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="台積電" /><category term="財經" /><summary type="html">台積電 3 月營收狀況</summary></entry><entry><title type="html">超級瑪莉歐電影片 上映了</title><link href="http://localhost:4000/programming/mario-movie.html" rel="alternate" type="text/html" title="超級瑪莉歐電影片 上映了" /><published>2023-04-09T00:03:00+08:00</published><updated>2023-04-09T00:03:00+08:00</updated><id>http://localhost:4000/programming/mario-movie</id><content type="html" xml:base="http://localhost:4000/programming/mario-movie.html">&lt;p&gt;超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。&lt;/p&gt;
 
 &lt;p&gt;在電影裡，有很多那些懷舊的場景，都會穿插出現，如果你是很喜歡任天堂的玩家，一定不要錯過。&lt;/p&gt;
 
@@ -719,12 +731,4 @@ string + string
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;/life/:title:output_ext&quot;&gt;Bing 釋出了 AI 繪圖工具 bing.com/create&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖</summary></entry><entry><title type="html">美2月核心PCE增速低於預期</title><link href="http://localhost:4000/finance/pce-index-febuary.html" rel="alternate" type="text/html" title="美2月核心PCE增速低於預期" /><published>2023-04-01T00:17:00+08:00</published><updated>2023-04-01T00:17:00+08:00</updated><id>http://localhost:4000/finance/pce-index-febuary</id><content type="html" xml:base="http://localhost:4000/finance/pce-index-febuary.html">&lt;p&gt;美2月核心PCE增速低於預期&lt;/p&gt;
-
-&lt;p&gt;美國商務部周五公布的數據顯示，2月份個人消費支出（PCE）物價指數按年增長5%，低於市場預期的5.1%和1月份修正後的5.3%。這是一項衡量美國通脹的關鍵指標，也是聯邦儲備局（Fed）制定貨幣政策時的首要參考。&lt;/p&gt;
-
-&lt;p&gt;除去食品和能源等波動性因素，核心PCE物價指數按年增長4.6%，也低於市場預期的4.7%和1月份的4.7%。按月計算，核心PCE物價指數增長0.3%，與市場預期和1月份一致。&lt;/p&gt;
-
-&lt;p&gt;數據公布後，美國公債收益率和美元指數均有所下跌，反映市場對美國通脹壓力有所緩和。美股主要指數則開盤上漲，投資者對Fed可能接近升息行動尾聲感到放心。&lt;/p&gt;
-
-&lt;p&gt;分析師指出，雖然PCE物價指數仍處於高位，但已經出現放緩跡象，這與Fed的預期相符。隨著供應鏈瓶頸逐步解除和能源價格回落，通脹水平有望在今年下半年進一步回落。不過，Fed仍需密切關注通脹的持續性和穩定性，以及其對經濟和金融市場的影響。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="財經數據" /><category term="finance" /><category term="stock" /><category term="投資" /><summary type="html">美2月核心PCE增速低於預期</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖</summary></entry></feed>
