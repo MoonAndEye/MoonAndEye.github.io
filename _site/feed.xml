@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-11T01:30:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">台積電的3月營收狀況</title><link href="http://localhost:4000/finance/tsmc-march-income.html" rel="alternate" type="text/html" title="台積電的3月營收狀況" /><published>2023-04-11T01:25:00+08:00</published><updated>2023-04-11T01:25:00+08:00</updated><id>http://localhost:4000/finance/tsmc-march-income</id><content type="html" xml:base="http://localhost:4000/finance/tsmc-march-income.html">&lt;h2 id=&quot;台積電-3-月營收狀況&quot;&gt;台積電 3 月營收狀況&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-11T08:58:52+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰</title><link href="http://localhost:4000/finance/professor-article-about-ai.html" rel="alternate" type="text/html" title="大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰" /><published>2023-04-11T08:17:00+08:00</published><updated>2023-04-11T08:17:00+08:00</updated><id>http://localhost:4000/finance/professor-article-about-ai</id><content type="html" xml:base="http://localhost:4000/finance/professor-article-about-ai.html">&lt;h2 id=&quot;大學教授在各自的臉書上對於-chatgpt-的討論&quot;&gt;大學教授在各自的臉書上對於 ChatGPT 的「討論」&lt;/h2&gt;
+
+&lt;p&gt;昨天晚上我個人的 FB 動態牆上，對於 ChatGPT 的討論突然變得非常多，好奇看了一下發生了什麼事。原來是蘇文鈺教授回了個「被罵了」的文章，再看前面所敘述的文字。因為蘇教授之前寫了一篇讓學生使用 ChatGPT 進行作業的文章。而李家同教授在 4/10 的聯合報寫了一篇關於 ChatGPT 的文章，標題如下。&lt;/p&gt;
+
+&lt;h4 id=&quot;我們要創造不會思考的下一代&quot;&gt;[我們要創造不會思考的下一代？]&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://udn.com/news/story/7339/7086778&quot;&gt;新聞連結&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;很多人對ChatGPT極為推崇，甚至有大學資工系資深教授要求學生用ChatGPT寫程式。這則新聞令我膽戰心驚，嚇出一身冷汗，因為這樣做會害死學生。學生寫程式有兩個步驟，第一個步驟是畫出流程圖，第二個步驟是利用程式語言寫出程式來。流程圖有如造房子時的設計圖，畫流程圖是需要邏輯思考的，培養好的程式工程師，就是在培養他的邏輯思考能力。一旦流程圖畫對了，程式也就很容易寫出來了。反過來說，一個學生如果不會畫出流程圖，他是絕對不可能寫程式的…..&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;然後，接下來就有一堆人跳出來，對這些文章進行不同的論述。&lt;/p&gt;
+
+&lt;h2 id=&quot;贊成派&quot;&gt;贊成派&lt;/h2&gt;
+&lt;h3 id=&quot;蘇文鈺教授讓學生直接使用-chatgpt-寫程式的-fb-貼文&quot;&gt;蘇文鈺教授讓學生直接使用 ChatGPT 寫程式的 FB 貼文&lt;/h3&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0fyzvxLmk4cEra2RHMgcxBcHYvF8F6fjsFLPn5wwE2koh2AbGEjh77YcFvbkRo4iyl&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;824&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;楊智傑副教授的看法&quot;&gt;楊智傑副教授的看法&lt;/h2&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;李家同教授對-chatgpt-的立場&quot;&gt;李家同教授對 ChatGPT 的立場&lt;/h2&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;蘇文鈺教授似乎是某篇文章進行回應的文章&quot;&gt;蘇文鈺教授「似乎」是某篇文章進行回應的文章&lt;/h2&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;生成式-ai-對未來軟體的影響有無前例可循&quot;&gt;生成式 AI 對未來軟體的影響，有無前例可循？&lt;/h2&gt;
+
+&lt;p&gt;曾經，人類使用獸力來當移動工具，所以有個職業是「馬伕」和「人力車」。&lt;/p&gt;
+
+&lt;p&gt;1886 年德國工程師 卡爾．賓士 製造了三輪汽車。而後 載姆勒 製造出四輪汽車。&lt;/p&gt;
+
+&lt;p&gt;接下來，人類在汽車上嚐試了各種動力源，在數十年前，主流為石油。&lt;/p&gt;
+
+&lt;p&gt;而在近十年，自動駕駛的汽車配上電力源，變成大家注目的焦點。&lt;/p&gt;
+
+&lt;p&gt;在汽車這個「概念」還沒有被發明之前，如果去問正在使用交通工具的人，大家都會回應「我想要更快的馬、吃更少的馬、休息更少的馬」。&lt;/p&gt;
+
+&lt;p&gt;目前看 ChatGPT 發展的方向，我無法就此斷定 ChatGPT 這個產品真的可以一直贏到最後，但這個「概念」出現時，我可以保證，我們下一代的工作方式，不會和這個時代一樣&lt;/p&gt;
+
+&lt;h2 id=&quot;其他連結&quot;&gt;其他連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/2023/03/17/microsoft-office-copilot-launch.html&quot;&gt;微軟推出了名為「Microsoft 365 Copilot」的新生產力工具&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/start-using-copilot.html&quot;&gt;開始使用 Github Copilot 服務，來讓 side project 加速&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/bing-chat-brain-storming.html&quot;&gt;使用 Bing Chat 幫我發想一些 App 的 idea&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/finance/prompt-engineering.html&quot;&gt;Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/finance/ChatGPT-plugins.html&quot;&gt;ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="ChatGPT" /><summary type="html">大學教授在各自的臉書上對於 ChatGPT 的「討論」</summary></entry><entry><title type="html">台積電的3月營收狀況</title><link href="http://localhost:4000/finance/tsmc-march-income.html" rel="alternate" type="text/html" title="台積電的3月營收狀況" /><published>2023-04-11T01:25:00+08:00</published><updated>2023-04-11T01:25:00+08:00</updated><id>http://localhost:4000/finance/tsmc-march-income</id><content type="html" xml:base="http://localhost:4000/finance/tsmc-march-income.html">&lt;h2 id=&quot;台積電-3-月營收狀況&quot;&gt;台積電 3 月營收狀況&lt;/h2&gt;
 
 &lt;p&gt;台灣積體電路製造股份有限公司（TSMC）是全球最大的專業積體電路（IC）製造服務商，為客戶提供先進的製程技術和高品質的晶圓產品。TSMC在2023年3月的營收表現不如預期，主要受到全球晶片短缺的影響，以及新型冠狀病毒（COVID-19）疫情對市場需求的不確定性。&lt;/p&gt;
 
@@ -678,57 +733,4 @@ string + string
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://mobile.twitter.com/IEObserve/status/1642148470944575488&quot;&gt;Intl Econ 的推&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="open source" /><category term="algorithm" /><summary type="html">Twitter 開源了使用在 Twitter 上的推薦演算法</summary></entry><entry><title type="html">現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)</title><link href="http://localhost:4000/programming/bing-chat-can-creat-art.html" rel="alternate" type="text/html" title="現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)" /><published>2023-04-02T23:09:00+08:00</published><updated>2023-04-02T23:09:00+08:00</updated><id>http://localhost:4000/programming/bing-chat-can-creat-art</id><content type="html" xml:base="http://localhost:4000/programming/bing-chat-can-creat-art.html">&lt;h2 id=&quot;bing-chat-的-更多創意-模式讓你可以使用-bing-來繪圖&quot;&gt;Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖&lt;/h2&gt;
-
-&lt;p&gt;在前面的文章有提到&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html&quot;&gt;Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/life/:title:output_ext&quot;&gt;Bing 釋出了 AI 繪圖工具 bing.com/create&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;而最近，我發現可以直接在 Edge 的外掛功能中，使用 Bing Chat 也能讓 AI 進行繪圖。而 Bing Chat 好處是，每次回答他都會給你三個選項，好讓使用者可以和 Bing 的聊天更容易持續下去，所以可以不斷的對 AI 進行新的繪圖指令。&lt;/p&gt;
-
-&lt;p&gt;但使用上要注意，Bing Chat 模式中，我目前測試只有「更多富有創意」會幫你畫圖，其他模式他都只會回應「你的那個需求，要怎麼畫山來」。或是，「你的那個需求，有哪些網站有提供相關的技法」。&lt;/p&gt;
-
-&lt;p&gt;以下是和 bing chat 的聊天截圖&lt;/p&gt;
-
-&lt;h3 id=&quot;平衡模式---不能幫你畫圖&quot;&gt;平衡模式 - 不能幫你畫圖&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/bing-chat-balance-mode.jpeg&quot; alt=&quot;Bing chat creative mode - 不能幫你畫圖&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;創意模式---會輸出指令到-bing-create&quot;&gt;創意模式 - 會輸出指令到 bing create&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/bing-chat-creative-mode.jpeg&quot; alt=&quot;創意模式 - 會輸出指令到 bing create&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;但請注意，因為產圖在這個時代仍然要不短的時間，所以這個指令是會讓 bing chat 卡住的，也沒辦法在 bing create 完成後將圖案呈現。比較好的方法，是過一陣子後，再去 bing create 的網站，然後進入歷史紀錄去看圖案有沒有畫好。因為 bing create 和 edge 的帳號是有連動的，如果你在 bing create 網站上登入和 edge 一樣的帳號，你可以去看歷史紀錄。&lt;/p&gt;
-
-&lt;h2 id=&quot;bing-create-畫出來的圖&quot;&gt;Bing Create 畫出來的圖&lt;/h2&gt;
-
-&lt;h3 id=&quot;詠唱詞&quot;&gt;詠唱詞&lt;/h3&gt;
-&lt;p&gt;a knight and a dragon fighting in a realistic style, the knight’s shield facing the dragon, showing a brave confrontation
-&lt;img src=&quot;/assets/posts/bing-create/dragon-fight1.jpeg&quot; alt=&quot;dragon fight&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/bing-create/dragon-fight2.jpeg&quot; alt=&quot;dragon fight&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;相關網址&quot;&gt;相關網址&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.bing.com/&quot;&gt;Bing chat&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.bing.com/create&quot;&gt;Bing create&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.microsoft.com/edge/download&quot;&gt;Edge 下載&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html&quot;&gt;Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/life/:title:output_ext&quot;&gt;Bing 釋出了 AI 繪圖工具 bing.com/create&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="bing" /><category term="create" /><category term="art" /><category term="openAI" /><summary type="html">Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="open source" /><category term="algorithm" /><summary type="html">Twitter 開源了使用在 Twitter 上的推薦演算法</summary></entry></feed>
