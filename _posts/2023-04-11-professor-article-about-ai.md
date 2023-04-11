@@ -6,7 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, ChatGPT]
 summary: University professors has different opinions about ChatGPT in Computer Sciense students homework.
-permalink: /finance/:title:output_ext
+permalink: /programming/:title:output_ext
 ---
 
 ## 大學教授在各自的臉書上對於 ChatGPT 的「討論」
