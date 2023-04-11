@@ -32,11 +32,11 @@ permalink: /programming/:title:output_ext
 
 ## 李家同教授對 ChatGPT 的立場
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&show_text=true&width=500" width="500" height="460" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02umxnXfJiwTvgNQuMyMc5Xuh4tiw4yyevrkFeRmb7KjHyaXCtmPWhqiaBxMoghMDxl%26id%3D100007748738834&show_text=true&width=500" width="500" height="266" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 ## 蘇文鈺教授「似乎」是某篇文章進行回應的文章
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&show_text=true&width=500" width="500" height="460" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0bZMbN59NPqa9WoSfa2Duw4s3iEaYJk17ikJSamJD96LXuMZRKvkpkjGmDvCJ6dXQl&show_text=true&width=500" width="500" height="307" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 ## 生成式 AI 對未來軟體的影響，有無前例可循？
 
