@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-11T14:33:22+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰</title><link href="http://localhost:4000/programming/professor-article-about-ai.html" rel="alternate" type="text/html" title="大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰" /><published>2023-04-11T08:17:00+08:00</published><updated>2023-04-11T08:17:00+08:00</updated><id>http://localhost:4000/programming/professor-article-about-ai</id><content type="html" xml:base="http://localhost:4000/programming/professor-article-about-ai.html">&lt;h2 id=&quot;大學教授在各自的臉書上對於-chatgpt-的討論&quot;&gt;大學教授在各自的臉書上對於 ChatGPT 的「討論」&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-12T00:27:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始</title><link href="http://localhost:4000/programming/google-code-jam.html" rel="alternate" type="text/html" title="Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始" /><published>2023-04-12T00:23:00+08:00</published><updated>2023-04-12T00:23:00+08:00</updated><id>http://localhost:4000/programming/google-code-jam</id><content type="html" xml:base="http://localhost:4000/programming/google-code-jam.html">&lt;h2 id=&quot;round-a-比賽時間&quot;&gt;Round A 比賽時間&lt;/h2&gt;
+
+&lt;p&gt;Round A
+Apr 15 2023, 14:00 UTC 開始&lt;/p&gt;
+
+&lt;p&gt;Apr 15 2023, 18:00 UTC 結束&lt;/p&gt;
+
+&lt;h2 id=&quot;code-jam&quot;&gt;Code Jam&lt;/h2&gt;
+
+&lt;p&gt;如果你是一位熱愛編程的人，那麼你一定不會錯過 Google 的 coding 比賽 Code Jam。Code Jam 是一項由 Google 主辦的國際程序設計競賽，旨在幫助 Google 發掘潛在的工程領域頂級人才。Code Jam 每年只舉行一次，但每次要進行好幾輪，通過層層篩選，最終從近 10 萬名報名者中選出 25 個人參加最後的全球總決賽。&lt;/p&gt;
+
+&lt;p&gt;Code Jam 的比賽題目涵蓋了各種算法和數學問題，需要參賽者在有限的時間內寫出正確、高效、可讀的代碼。Code Jam 的難度很高，不僅考驗參賽者的基礎知識和邏輯思維，還考驗他們的創造力和應變能力。Code Jam 的魅力在於它能夠讓參賽者體驗到編程的樂趣和挑戰，同時也能夠讓他們學習到新的技術和知識。&lt;/p&gt;
+
+&lt;h2 id=&quot;code-jam-的比賽流程&quot;&gt;Code Jam 的比賽流程&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;資格賽（Qualification Round）：所有報名的參賽者都可以參加這一輪，共有 4 個題目，時間為 30 小時。只要在時間內解出至少一個題目，就可以晉級到下一輪。&lt;/li&gt;
+  &lt;li&gt;第一輪（Round 1）：分為 A、B、C 三個子輪，每個子輪有 4 個題目，時間為 2.5 小時。每個子輪的前 1500 名參賽者可以晉級到下一輪。&lt;/li&gt;
+  &lt;li&gt;第二輪（Round 2）：有 4 個題目，時間為 3 小時。前 1000 名參賽者可以晉級到下一輪。&lt;/li&gt;
+  &lt;li&gt;第三輪（Round 3）：有 4 個題目，時間為 3 小時。前 25 名參賽者可以晉級到決賽。&lt;/li&gt;
+  &lt;li&gt;決賽（Finals）：在 Google 總部舉行，有 4 個題目，時間為 4 小時。最終的冠軍將獲得 15,000 美元的獎金和 Code Jam Champ 的稱號。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;比賽前的準備&quot;&gt;比賽前的準備&lt;/h2&gt;
+
+&lt;p&gt;如果你想要參加 Code Jam，你需要具備以下條件：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;熟悉至少一種支持的程式語言（C++、C#、Go、Java、JavaScript、Kotlin、Python 或 Swift）。&lt;/li&gt;
+  &lt;li&gt;能夠使用 Google 提供的平台提交代碼和測試結果。&lt;/li&gt;
+  &lt;li&gt;能夠閱讀和理解英文題目和規則。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果你想要了解更多關於 Code Jam 的信息，你可以訪問官方網站或關注官方社交媒體。&lt;/p&gt;
+
+&lt;h2 id=&quot;連結&quot;&gt;連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codingcompetitions.withgoogle.com/codejam&quot;&gt;Code Jam&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google" /><category term="Code Jam" /><summary type="html">Round A 比賽時間</summary></entry><entry><title type="html">大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰</title><link href="http://localhost:4000/programming/professor-article-about-ai.html" rel="alternate" type="text/html" title="大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰" /><published>2023-04-11T08:17:00+08:00</published><updated>2023-04-11T08:17:00+08:00</updated><id>http://localhost:4000/programming/professor-article-about-ai</id><content type="html" xml:base="http://localhost:4000/programming/professor-article-about-ai.html">&lt;h2 id=&quot;大學教授在各自的臉書上對於-chatgpt-的討論&quot;&gt;大學教授在各自的臉書上對於 ChatGPT 的「討論」&lt;/h2&gt;
 
 &lt;p&gt;昨天晚上我個人的 FB 動態牆上，對於 ChatGPT 的討論突然變得非常多，好奇看了一下發生了什麼事。原來是蘇文鈺教授回了個「被罵了」的文章，再看前面所敘述的文字。因為蘇教授之前寫了一篇讓學生使用 ChatGPT 進行作業的文章。而李家同教授在 4/10 的聯合報寫了一篇關於 ChatGPT 的文章，標題如下。&lt;/p&gt;
 
@@ -679,58 +716,4 @@ string + string
 
 &lt;p&gt;這個迷因，原則他之前對於多模態 AI 的梗圖&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/elon-origin.jpeg&quot; alt=&quot;elon musk meme 原圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="Doge" /><category term="crypto currency" /><summary type="html">Twitter 將 icon 換成 Doge</summary></entry><entry><title type="html">Twitter 開源了推薦演算法</title><link href="http://localhost:4000/programming/twitter-algorithm.html" rel="alternate" type="text/html" title="Twitter 開源了推薦演算法" /><published>2023-04-03T00:11:00+08:00</published><updated>2023-04-03T00:11:00+08:00</updated><id>http://localhost:4000/programming/twitter-algorithm</id><content type="html" xml:base="http://localhost:4000/programming/twitter-algorithm.html">&lt;h2 id=&quot;twitter-開源了使用在-twitter-上的推薦演算法&quot;&gt;Twitter 開源了使用在 Twitter 上的推薦演算法&lt;/h2&gt;
-
-&lt;p&gt;馬斯克實現了他在併購 Twitter 時講過的話，「要開源演算法」&lt;/p&gt;
-
-&lt;p&gt;現在，這個 repo 已經在 github 上公開了，任何人都可以 fork 了&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/twitter/the-algorithm&quot;&gt;Twitter algorithm link&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;怎樣做你的-tweet-才會被演算法提高權重呢&quot;&gt;怎樣做你的 tweet 才會被演算法提高權重呢？&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://vocus.cc/article/6427f71ffd897800010fa4e6&quot;&gt;這篇文章有對演算法整理&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;以下有利觸及&quot;&gt;以下有利觸及&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;點擊推文愛心表示 favorite 喜歡 30X boost&lt;/li&gt;
-  &lt;li&gt;轉推 retweet 20X boost&lt;/li&gt;
-  &lt;li&gt;每個推文回覆只有 1X&lt;/li&gt;
-  &lt;li&gt;推文有圖 2X boost&lt;/li&gt;
-  &lt;li&gt;推文有影片 2X boost&lt;/li&gt;
-  &lt;li&gt;在信任圈 Trusted Circle 3X&lt;/li&gt;
-  &lt;li&gt;點擊進入推文，並在那停留至少2分鐘&lt;/li&gt;
-  &lt;li&gt;用戶打開推文作者個人資料頁面並互動喜歡或回覆推文&lt;/li&gt;
-  &lt;li&gt;回覆推文並被推文作者互動&lt;/li&gt;
-  &lt;li&gt;付費藍勾，如果是你關注又有藍勾的 4X boost，沒關注的藍勾 2X boost&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;以下不利觸及&quot;&gt;以下不利觸及&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;非新聞媒體的外連連結 URL 對觸及不佳，除非有高互動，如果沒有高互動會被視為spam降觸及權重&lt;/li&gt;
-  &lt;li&gt;有外連 URL 沒有文字，失敗中的失敗&lt;/li&gt;
-  &lt;li&gt;如果出現大量unfollowed，你會自然被算法隱形&lt;/li&gt;
-  &lt;li&gt;沒收功就罵髒話，講冒犯的話 0.1X&lt;/li&gt;
-  &lt;li&gt;負面回饋：顯示較少、屏蔽、靜音、濫用和Spam舉報&lt;/li&gt;
-  &lt;li&gt;用太多hashtag 0.6X&lt;/li&gt;
-  &lt;li&gt;寫錯字或是創造字電腦認不出來 0.01X&lt;/li&gt;
-  &lt;li&gt;推文是英文，但是UI語言不是英文 0.7X&lt;/li&gt;
-  &lt;li&gt;UI語言是英文，但推文不是 0.3X&lt;/li&gt;
-  &lt;li&gt;用戶語言和推文語言不同，兩者都不是英文 0.1X&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;參考連結&quot;&gt;參考連結&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://vocus.cc/article/6427f71ffd897800010fa4e6&quot;&gt;Twitter 開源推薦演算法，從中了解社群媒體推送邏輯&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://mobile.twitter.com/IEObserve&quot;&gt;Intl Econ Observe Twitter&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://mobile.twitter.com/IEObserve/status/1642148470944575488&quot;&gt;Intl Econ 的推&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="open source" /><category term="algorithm" /><summary type="html">Twitter 開源了使用在 Twitter 上的推薦演算法</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/elon-origin.jpeg&quot; alt=&quot;elon musk meme 原圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="Doge" /><category term="crypto currency" /><summary type="html">Twitter 將 icon 換成 Doge</summary></entry></feed>
