@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-12T00:27:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始</title><link href="http://localhost:4000/programming/google-code-jam.html" rel="alternate" type="text/html" title="Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始" /><published>2023-04-12T00:23:00+08:00</published><updated>2023-04-12T00:23:00+08:00</updated><id>http://localhost:4000/programming/google-code-jam</id><content type="html" xml:base="http://localhost:4000/programming/google-code-jam.html">&lt;h2 id=&quot;round-a-比賽時間&quot;&gt;Round A 比賽時間&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-13T10:50:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">美3月CPI年增5%低於預期</title><link href="http://localhost:4000/finance/us-cpi-index.html" rel="alternate" type="text/html" title="美3月CPI年增5%低於預期" /><published>2023-04-13T10:48:00+08:00</published><updated>2023-04-13T10:48:00+08:00</updated><id>http://localhost:4000/finance/us-cpi-index</id><content type="html" xml:base="http://localhost:4000/finance/us-cpi-index.html">&lt;h2 id=&quot;美3月cpi年增5低於預期&quot;&gt;美3月CPI年增5%低於預期&lt;/h2&gt;
+
+&lt;p&gt;美國勞工部周四公布，3月份消費者物價指數（CPI）同比上漲5%，低於市場預期的5.2%。這是自2008年9月以來最高的年增率，但仍反映出通脹壓力相對溫和。&lt;/p&gt;
+
+&lt;p&gt;CPI的核心指數，剔除食品和能源等波動性項目，3月份同比上漲3.8%，也低於市場預期的4%。這是自1992年5月以來最高的年增率，主要受到汽車、服裝和航空票價等項目的上漲影響。&lt;/p&gt;
+
+&lt;p&gt;美國勞工部表示，CPI的上漲部分是由於去年同期的低基數效應，當時疫情導致物價大幅下跌。如果將去年3月和4月的數據排除，CPI的年增率將分別降至2.6%和2.5%。&lt;/p&gt;
+
+&lt;p&gt;美國聯邦儲備委員會（Fed）一直堅持認為，目前的通脹上升是暫時性的，並不會改變其寬鬆的貨幣政策立場。Fed主席鮑威爾周三在國會作證時表示，通脹壓力將在未來幾個月達到高峰，但隨著供需平衡恢復正常，通脹將回落至Fed的2%目標附近。&lt;/p&gt;
+
+&lt;p&gt;市場分析師認為，美國CPI數據低於預期，有利於緩解市場對通脹過熱和利率上升的擔憂，並支撐股市和債市的表現。美元指數在數據公布後下跌，金價和原油價格上漲。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="CPI" /><summary type="html">美3月CPI年增5%低於預期</summary></entry><entry><title type="html">Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始</title><link href="http://localhost:4000/programming/google-code-jam.html" rel="alternate" type="text/html" title="Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始" /><published>2023-04-12T00:23:00+08:00</published><updated>2023-04-12T00:23:00+08:00</updated><id>http://localhost:4000/programming/google-code-jam</id><content type="html" xml:base="http://localhost:4000/programming/google-code-jam.html">&lt;h2 id=&quot;round-a-比賽時間&quot;&gt;Round A 比賽時間&lt;/h2&gt;
 
 &lt;p&gt;Round A
 Apr 15 2023, 14:00 UTC 開始&lt;/p&gt;
@@ -686,34 +696,4 @@ string + string
 &lt;h2 id=&quot;xcode-預覽&quot;&gt;Xcode 預覽&lt;/h2&gt;
 
 &lt;p&gt;新功能
-使用 Xcode 預覽時，任何 print() 輸出都會記錄到調試控制台中。(71080261)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><category term="release note" /><summary type="html">對 iOS 開發者可能影響較大的方面</summary></entry><entry><title type="html">Twitter 將 icon 換成狗狗幣(Doge)了</title><link href="http://localhost:4000/programming/twitter-change-logo-to-doge.html" rel="alternate" type="text/html" title="Twitter 將 icon 換成狗狗幣(Doge)了" /><published>2023-04-04T10:04:00+08:00</published><updated>2023-04-04T10:04:00+08:00</updated><id>http://localhost:4000/programming/twitter-change-logo-to-doge</id><content type="html" xml:base="http://localhost:4000/programming/twitter-change-logo-to-doge.html">&lt;h2 id=&quot;twitter-將-icon-換成-doge&quot;&gt;Twitter 將 icon 換成 Doge&lt;/h2&gt;
-
-&lt;p&gt;Twitter 在最近，將 icon 藍色的鳥，換成了加密貨幣 Doge 的 icon。直到現在，我在網頁上看到的 icon 還是 doge。這一舉動，讓 Doge 瞬間爆漲了 30% 左右。這也印證了所謂的「Doge 首席執行官」- Elon Musk 真的有「執行官」的能力。在買下了 Twitter 後，他在迷因界、幣圈的影響力，升級到了和收購前的 Musk 完全不同檔次啊。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/twitter-change-icon.jpeg&quot; alt=&quot;Twitter change icon&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;doge-相關資訊&quot;&gt;Doge 相關資訊&lt;/h2&gt;
-
-&lt;h3 id=&quot;doge-瞬間爆漲的情況&quot;&gt;Doge 瞬間爆漲的情況&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/doge-trend-aft-change-icon.jpeg&quot; alt=&quot;Doge 走勢爆漲&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;doge-資料&quot;&gt;Doge 資料&lt;/h3&gt;
-
-&lt;script src=&quot;https://widgets.coingecko.com/coingecko-coin-ticker-widget.js&quot;&gt;&lt;/script&gt;
-
-&lt;coingecko-coin-ticker-widget coin-id=&quot;dogecoin&quot; currency=&quot;usd&quot; locale=&quot;zh-tw&quot;&gt;&lt;/coingecko-coin-ticker-widget&gt;
-
-&lt;h3 id=&quot;doge-走勢&quot;&gt;Doge 走勢&lt;/h3&gt;
-
-&lt;script src=&quot;https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js&quot;&gt;&lt;/script&gt;
-
-&lt;coingecko-coin-price-chart-widget coin-id=&quot;dogecoin&quot; currency=&quot;usd&quot; height=&quot;300&quot; locale=&quot;zh-tw&quot;&gt;&lt;/coingecko-coin-price-chart-widget&gt;
-
-&lt;h3 id=&quot;elon-musk-對-doge-的迷因&quot;&gt;Elon Musk 對 Doge 的迷因&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/elon-change-doge.jpeg&quot; alt=&quot;elon musk 對 doge 改的 meme&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;這個迷因，原則他之前對於多模態 AI 的梗圖&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/twitter-change-icon/elon-origin.jpeg&quot; alt=&quot;elon musk meme 原圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Twitter" /><category term="Doge" /><category term="crypto currency" /><summary type="html">Twitter 將 icon 換成 Doge</summary></entry></feed>
+使用 Xcode 預覽時，任何 print() 輸出都會記錄到調試控制台中。(71080261)&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><category term="release note" /><summary type="html">對 iOS 開發者可能影響較大的方面</summary></entry></feed>
