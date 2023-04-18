@@ -9,7 +9,7 @@ summary: After Swift 5.5, swift introduced async/await. This article have an exa
 permalink: /swift/:title:output_ext
 ---
 
-## 使用 swift combine 串接 closure 的方法
+## 使用 swift async/await 串接 closure 的方法
 
 如果一個專案是從 Swift 還沒有 combine 的時代就開始進行，那專案中會有大量的 @escaping closure 在做非同步的資料傳遞。在 Swift 5.5 之後，Swift 加進了 async/await 的語法，讓需要進行非同步的任務，不再需要在撰寫的時候有一堆的大括號。
 
