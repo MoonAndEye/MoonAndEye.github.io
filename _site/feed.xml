@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-18T13:20:39+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">玉山金股票4/18開始申購，目前價差約在 5000 元</title><link href="http://localhost:4000/finance/esun-subscription-stock.html" rel="alternate" type="text/html" title="玉山金股票4/18開始申購，目前價差約在 5000 元" /><published>2023-04-18T11:51:00+08:00</published><updated>2023-04-18T11:51:00+08:00</updated><id>http://localhost:4000/finance/esun-subscription-stock</id><content type="html" xml:base="http://localhost:4000/finance/esun-subscription-stock.html">&lt;p&gt;玉山金股票4/18開始申購，4/20截止，這是一個值得關注的投資機會。玉山金是台灣最大的金融控股公司之一，旗下有玉山銀行、玉山證券、玉山保險等子公司，涵蓋了銀行、證券、保險、信託等多元金融業務。玉山金在2022年的營收和淨利都創下了歷史新高，並且發放了高達8元的現金股利，股息率達到了5.3%。玉山金的財務表現得到了市場的認可，股價在今年上漲了近30%。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-18T17:21:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 async/await 串接 escaping closure</title><link href="http://localhost:4000/swift/async-await-connect-closure.html" rel="alternate" type="text/html" title="使用 async/await 串接 escaping closure" /><published>2023-04-18T13:22:00+08:00</published><updated>2023-04-18T13:22:00+08:00</updated><id>http://localhost:4000/swift/async-await-connect-closure</id><content type="html" xml:base="http://localhost:4000/swift/async-await-connect-closure.html">&lt;h2 id=&quot;使用-swift-combine-串接-closure-的方法&quot;&gt;使用 swift combine 串接 closure 的方法&lt;/h2&gt;
+
+&lt;p&gt;如果一個專案是從 Swift 還沒有 combine 的時代就開始進行，那專案中會有大量的 @escaping closure 在做非同步的資料傳遞。在 Swift 5.5 之後，Swift 加進了 async/await 的語法，讓需要進行非同步的任務，不再需要在撰寫的時候有一堆的大括號。&lt;/p&gt;
+
+&lt;p&gt;所以&lt;/p&gt;
+
+&lt;p&gt;現在會有一個新的情境，以前的 lib 已經寫好 URLRequest 的方法，並使用 closure 進行傳值。把已經寫好的 escaping closure 全部改寫意義可能不大，而且也伴隨著一定程度的風險。因此，能另外寫一個 func 進行 async/await 轉接，並保留原來的 closure，是一個風險較低的選項。&lt;/p&gt;
+
+&lt;h2 id=&quot;包一層-async-func-的方法&quot;&gt;包一層 async func 的方法&lt;/h2&gt;
+
+&lt;h3 id=&quot;原來發送-request-的類別&quot;&gt;原來發送 request 的類別&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;// 將 Alamofire 包起來的 Adapter，每個 func 只是使用 Alamofire 發送 URL Request&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;// 原來的 closure func&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 省略實作 implement code omitted&lt;/span&gt;
+        
+        &lt;span class=&quot;c1&quot;&gt;// implemented code omitted&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;擴充-request-到-asyncawait&quot;&gt;擴充 request 到 async/await&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 對 AlamofireAdapter 進行擴充&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;extension&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 開出能使用 await 的 func，但實際上是呼叫原來的 getCoinMarketsInfo&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;c1&quot;&gt;// 進行轉接&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;withCheckedContinuation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+            
+            &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;returning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;withCheckedContinuation()&lt;/code&gt; 就可以將以前的 closure 資料，使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;continuation&lt;/code&gt; 進行 async return。&lt;/p&gt;
+
+&lt;h3 id=&quot;contentview-使用-getcoinlist&quot;&gt;ContentView 使用 getCoinList()&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fechList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                    
+                    &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;updateLastFetchTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;you got list, count: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, first: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;describing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;使用在-swiftui-的-view-時&quot;&gt;使用在 SwiftUI 的 View 時&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# 在 SwiftUI 上使用時&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cryptoList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;kt&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;this is test&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                
+                &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;結尾&quot;&gt;結尾&lt;/h2&gt;
+
+&lt;p&gt;請注意 async/await 還是需要專案最低支援在 iOS 13 以上，如果你的專案沒辦法低於 iOS 13，那還是沒辦法使用 async/await。&lt;/p&gt;
+
+&lt;p&gt;在我個人的 side project 上，我已經試著使用 SwiftUI 寫一些小專案，在使用 async/await 後，很多非同步的 feature 處理的程式碼，在人類眼中非常好讀。或許在 Apple 不斷的推進 Xcdoe 最低上架版本後，我會不斷的增加 async/await 程式碼的比重。目前，在專案上我仍然有很多 closure 在進行傳值。&lt;/p&gt;
+
+&lt;h2 id=&quot;相關資料&quot;&gt;相關資料&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/apple/swift-evolution/blob/main/proposals/0300-continuation.md&quot;&gt;Swift evolution on continuation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2021/10132/&quot;&gt;WWDC21: - Meet async/await in Swift&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/&quot;&gt;swift.org - Concurrency&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.hackingwithswift.com/swift/5.5/continuations&quot;&gt;Hacking With Swift 的文章&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/forums/thread/681980&quot;&gt;Apple 開發者論壇的討論&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://forums.swift.org/t/will-swift-concurrency-deploy-back-to-older-oss/49370&quot;&gt;在 Swift 論壇上對向前支援非常激烈的討論&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.swiftbysundell.com/special/swift-concurrency-backward-compatibility/&quot;&gt;Swift Concurrency 向下支援的文章&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Combine" /><category term="非同步" /><summary type="html">使用 swift combine 串接 closure 的方法</summary></entry><entry><title type="html">玉山金股票4/18開始申購，目前價差約在 5000 元</title><link href="http://localhost:4000/finance/esun-subscription-stock.html" rel="alternate" type="text/html" title="玉山金股票4/18開始申購，目前價差約在 5000 元" /><published>2023-04-18T11:51:00+08:00</published><updated>2023-04-18T11:51:00+08:00</updated><id>http://localhost:4000/finance/esun-subscription-stock</id><content type="html" xml:base="http://localhost:4000/finance/esun-subscription-stock.html">&lt;p&gt;玉山金股票4/18開始申購，4/20截止，這是一個值得關注的投資機會。玉山金是台灣最大的金融控股公司之一，旗下有玉山銀行、玉山證券、玉山保險等子公司，涵蓋了銀行、證券、保險、信託等多元金融業務。玉山金在2022年的營收和淨利都創下了歷史新高，並且發放了高達8元的現金股利，股息率達到了5.3%。玉山金的財務表現得到了市場的認可，股價在今年上漲了近30%。&lt;/p&gt;
 
 &lt;p&gt;玉山金此次申購的目的是為了籌措資金，擴大業務規模，提升競爭力。玉山金計劃發行1.5億股新股，每股面額10元，發行價格為152元，折價率為9.5%。申購者需要有玉山金的原股權利證，每張原股權利證可以申購1.5股新股。原股權利證的市價目前約為23元，加上新股發行價格，申購者實際支付的成本約為230元，相當於目前市價的9折。&lt;/p&gt;
 
@@ -12,7 +135,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.businesstoday.com.tw/article/category/183012/post/202304160003/&quot;&gt;今周刊&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://ctee.com.tw/news/stocks/845545.html&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="台股" /><category term="申購" /><summary type="html">玉山金股票4/18開始申購，4/20截止，這是一個值得關注的投資機會。玉山金是台灣最大的金融控股公司之一，旗下有玉山銀行、玉山證券、玉山保險等子公司，涵蓋了銀行、證券、保險、信託等多元金融業務。玉山金在2022年的營收和淨利都創下了歷史新高，並且發放了高達8元的現金股利，股息率達到了5.3%。玉山金的財務表現得到了市場的認可，股價在今年上漲了近30%。</summary></entry><entry><title type="html">薩爾達王國之淚影片釋出</title><link href="http://localhost:4000/life/zelda-trail-3rd.html" rel="alternate" type="text/html" title="薩爾達王國之淚影片釋出" /><published>2023-04-14T09:54:00+08:00</published><updated>2023-04-14T09:54:00+08:00</updated><id>http://localhost:4000/life/zelda-trail-3rd</id><content type="html" xml:base="http://localhost:4000/life/zelda-trail-3rd.html">&lt;h2 id=&quot;薩艾達傳說-王國之淚-的第三部影片釋出了之前有寫過青沼英二親自實機試玩的文章&quot;&gt;薩艾達傳說 王國之淚 的第三部影片釋出了，之前有寫過青沼英二親自實機試玩的文章。&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ctee.com.tw/news/stocks/845545.html&quot;&gt;工商時報&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="台股" /><category term="申購" /><summary type="html">玉山金股票4/18開始申購，4/20截止，這是一個值得關注的投資機會。玉山金是台灣最大的金融控股公司之一，旗下有玉山銀行、玉山證券、玉山保險等子公司，涵蓋了銀行、證券、保險、信託等多元金融業務。玉山金在2022年的營收和淨利都創下了歷史新高，並且發放了高達8元的現金股利，股息率達到了5.3%。玉山金的財務表現得到了市場的認可，股價在今年上漲了近30%。</summary></entry><entry><title type="html">薩爾達王國之淚影片釋出</title><link href="http://localhost:4000/life/zelda-trail-3rd.html" rel="alternate" type="text/html" title="薩爾達王國之淚影片釋出" /><published>2023-04-14T09:54:00+08:00</published><updated>2023-04-14T09:54:00+08:00</updated><id>http://localhost:4000/life/zelda-trail-3rd</id><content type="html" xml:base="http://localhost:4000/life/zelda-trail-3rd.html">&lt;h2 id=&quot;薩艾達傳說-王國之淚-的第三部影片釋出了之前有寫過青沼英二親自實機試玩的文章&quot;&gt;薩艾達傳說 王國之淚 的第三部影片釋出了，之前有寫過青沼英二親自實機試玩的文章。&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html&quot;&gt;王國之淚試玩影片文章&lt;/a&gt;&lt;/p&gt;
 
@@ -206,14 +329,4 @@ Apr 15 2023, 14:00 UTC 開始&lt;/p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sov-IOMEYbY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;預告片3&quot;&gt;預告片3&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vR5aIE7FOYk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Movie" /><summary type="html">超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。</summary></entry><entry><title type="html">美國3月非農就業人數與失業率</title><link href="http://localhost:4000/programming/non-farm-employment-in-march.html" rel="alternate" type="text/html" title="美國3月非農就業人數與失業率" /><published>2023-04-08T22:30:00+08:00</published><updated>2023-04-08T22:30:00+08:00</updated><id>http://localhost:4000/programming/non-farm-employment-in-march</id><content type="html" xml:base="http://localhost:4000/programming/non-farm-employment-in-march.html">&lt;h2 id=&quot;美國3月非農就業人數與失業率&quot;&gt;美國3月非農就業人數與失業率&lt;/h2&gt;
-
-&lt;h3 id=&quot;3月非農就業人數&quot;&gt;3月非農就業人數&lt;/h3&gt;
-&lt;p&gt;美國勞工部公佈的最新數據顯示，2023年3月，美國非農就業人數增加了23萬6000人，低於市場預期的24萬人，也低於2月份的31萬1000人。這是連續第二個月，美國非農就業增長放緩，反映出美國經濟在面臨通膨壓力和貿易摩擦的情況下，開始出現降溫的跡象。&lt;/p&gt;
-
-&lt;p&gt;根據報告，3月份的就業增長主要集中在服務業和建築業，而製造業則出現了1000人的減少。服務業增加了17萬9000個就業崗位，其中餐飲業、醫療保健和社會援助等領域表現較好。建築業增加了1萬8000個就業崗位，主要受到住宅建設需求的支撐。而製造業的就業減少則可能與全球供應鏈的中斷和關稅的影響有關。&lt;/p&gt;
-
-&lt;h3 id=&quot;3月失業率&quot;&gt;3月失業率&lt;/h3&gt;
-&lt;p&gt;報告還顯示，3月份的失業率微降至3.5%，創下近50年來的新低，並低於市場預期的3.6%。這意味著美國勞動市場仍然緊張，且缺乏合適的勞動力供給。此外，3月份的平均時薪按年增長4.2%，略低於市場預期的4.3%，但仍高於通膨率。這表明美國勞動者的收入水平有所提高，但也可能加劇通膨的風險。&lt;/p&gt;
-
-&lt;p&gt;綜上所述，美國3月份的非農就業數據反映出美國經濟在高速復甦後，開始出現一些減速的跡象。雖然失業率和時薪增長都表現不錯，但就業增長的放緩和製造業的衰退都暗示著美國經濟面臨著一些內外部的挑戰。這可能會影響聯準會（Fed）未來的貨幣政策決策，使其在平衡經濟增長和通膨控制之間更加困難。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">美國3月非農就業人數與失業率</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vR5aIE7FOYk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Movie" /><summary type="html">超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。</summary></entry></feed>
