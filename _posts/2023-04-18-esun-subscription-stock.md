@@ -20,3 +20,7 @@ permalink: /finance/:title:output_ext
 ## 相關網站
 
 [玉山金申購](https://tw.stock.yahoo.com/news//%E7%8E%89%E5%B1%B1%E9%87%914-18%E9%96%8B%E5%A7%8B%E7%94%B3%E8%B3%BC-%E6%AC%A1%E5%8F%AF%E6%8A%BD2%E5%BC%B5-%E6%8A%BD%E4%B8%AD%E7%8F%BE%E8%B3%BA1-1%E8%90%AC-041138807.html)
+
+[今周刊](https://www.businesstoday.com.tw/article/category/183012/post/202304160003/)
+
+[工商時報](https://ctee.com.tw/news/stocks/845545.html)
