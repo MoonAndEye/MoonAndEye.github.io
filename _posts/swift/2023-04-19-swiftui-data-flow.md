@@ -5,7 +5,7 @@ date: 2023-04-19 20:41 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, SwiftUI]
-summary: 
+summary: Apple have SwiftUI recommend data flow. It's follow one data flow.
 permalink: /swift/:title:output_ext
 ---
 
