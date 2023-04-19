@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-18T17:24:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 async/await 串接 escaping closure</title><link href="http://localhost:4000/swift/async-await-connect-closure.html" rel="alternate" type="text/html" title="使用 async/await 串接 escaping closure" /><published>2023-04-18T13:22:00+08:00</published><updated>2023-04-18T13:22:00+08:00</updated><id>http://localhost:4000/swift/async-await-connect-closure</id><content type="html" xml:base="http://localhost:4000/swift/async-await-connect-closure.html">&lt;h2 id=&quot;使用-swift-asyncawait-串接-closure-的方法&quot;&gt;使用 swift async/await 串接 closure 的方法&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-19T08:37:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">在 SwiftUI 專案中，加上 AppDelegate</title><link href="http://localhost:4000/swift/appdelegate-in-swiftui.html" rel="alternate" type="text/html" title="在 SwiftUI 專案中，加上 AppDelegate" /><published>2023-04-18T22:43:00+08:00</published><updated>2023-04-18T22:43:00+08:00</updated><id>http://localhost:4000/swift/appdelegate-in-swiftui</id><content type="html" xml:base="http://localhost:4000/swift/appdelegate-in-swiftui.html">&lt;p&gt;在 SwiftUI 發表之後，開啟一個專案的方式，多了 SwiftUI 的設定。如果你選擇使用 SwiftUI 開啟專案，原來的 AppDelegate 還有 SceneDelegate 檔案不會出現。而檔案的進入點，會是一個和專案同樣名稱的 SwiftUI 檔，裡面有個 Scene 並把 WindowGroup 包住。&lt;/p&gt;
+
+&lt;p&gt;雖然 AppDelegate 不見了，但有些原來在 AppDelegate 裡面要做的事情，你仍然要做。舉例來說，一個專案基本上還是需要有 Crashlytics 來紀錄程式的崩潰和 Analytics來紀錄基本的使用者日活/週活/月活。而這些紀錄程式的發動點，仍要放在 AppDelegate 相關的生命週期中。&lt;/p&gt;
+
+&lt;h3 id=&quot;使用-swiftui-建置專案啟動點沒有-appdelegate&quot;&gt;使用 SwiftUI 建置專案，啟動點沒有 AppDelegate&lt;/h3&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;@main&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FooApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Scene&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;WindowGroup&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;ContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;新增-appdelegateswift-檔案&quot;&gt;新增 AppDelegate.swift 檔案&lt;/h3&gt;
+
+&lt;p&gt;先新增一個 AppDelegate.swift 檔案，並加上 AppDelegate 的類別&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIKit&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AppDelegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIApplicationDelegate&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;didFinishLaunchingWithOptions&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;launchOptions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;LaunchOptionsKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Any&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]?)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 去做原來在 App 啟動時就會進行的動作&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 像是 Crashlytics 啟動，Firebase 啟動，Analytics 啟動&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;在-swiftui-中加上-appdelegate&quot;&gt;在 SwiftUI 中加上 AppDelegate&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;@main&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FooApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;@UIApplicationDelegateAdaptor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;AppDelegate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;appDelegate&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Scene&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;WindowGroup&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;CryptoCoinListView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;如果你是寫-watch-app-or-macos-app-你的-appdelegate-conform-的-protocol-會有一點不一樣&quot;&gt;如果你是寫 Watch App or macOS App 你的 AppDelegate conform 的 protocol 會有一點不一樣&lt;/h2&gt;
+
+&lt;h3 id=&quot;watch-app&quot;&gt;Watch App&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;WatchKit&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AppDelegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;WKApplicationDelegate&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;applicationDidFinishLaunching&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 去做原來在 App 啟動時就會進行的動作&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 像是 Crashlytics 啟動，Firebase 啟動，Analytics 啟動&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;@main&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FooWatchApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;@WKApplicationDelegateAdaptor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;AppDelegate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;appDelegate&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Scene&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;WindowGroup&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;WatchContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;macos-app&quot;&gt;macOS App&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AppKit&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AppDelegate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSApplicationDelegate&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;didRegisterForRemoteNotificationsWithDeviceToken&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;deviceToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 去做原來在 App 啟動時就會進行的動作&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 像是 Crashlytics 啟動，Firebase 啟動，Analytics 啟動&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;@main&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FooMacAppApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+    &lt;span class=&quot;kd&quot;&gt;@NSApplicationDelegateAdaptor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;AppDelegate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;delegate&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Scene&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;WindowGroup&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;MacContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://firebase.google.com/docs/ios/setup#swiftui&quot;&gt;Firebase iOS 專案 Tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">在 SwiftUI 發表之後，開啟一個專案的方式，多了 SwiftUI 的設定。如果你選擇使用 SwiftUI 開啟專案，原來的 AppDelegate 還有 SceneDelegate 檔案不會出現。而檔案的進入點，會是一個和專案同樣名稱的 SwiftUI 檔，裡面有個 Scene 並把 WindowGroup 包住。</summary></entry><entry><title type="html">使用 async/await 串接 escaping closure</title><link href="http://localhost:4000/swift/async-await-connect-closure.html" rel="alternate" type="text/html" title="使用 async/await 串接 escaping closure" /><published>2023-04-18T13:22:00+08:00</published><updated>2023-04-18T13:22:00+08:00</updated><id>http://localhost:4000/swift/async-await-connect-closure</id><content type="html" xml:base="http://localhost:4000/swift/async-await-connect-closure.html">&lt;h2 id=&quot;使用-swift-asyncawait-串接-closure-的方法&quot;&gt;使用 swift async/await 串接 closure 的方法&lt;/h2&gt;
 
 &lt;p&gt;如果一個專案是從 Swift 還沒有 combine 的時代就開始進行，那專案中會有大量的 @escaping closure 在做非同步的資料傳遞。在 Swift 5.5 之後，Swift 加進了 async/await 的語法，讓需要進行非同步的任務，不再需要在撰寫的時候有一堆的大括號。&lt;/p&gt;
 
@@ -314,19 +427,4 @@ Apr 15 2023, 14:00 UTC 開始&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://pr.tsmc.com/chinese/news/3010&quot;&gt;台積公司報告&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://technews.tw/2021/04/09/tsmc-2330-202103-financial-report/&quot;&gt;科技新報新聞&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="台積電" /><category term="財經" /><summary type="html">台積電 3 月營收狀況</summary></entry><entry><title type="html">超級瑪莉歐電影片 上映了</title><link href="http://localhost:4000/programming/mario-movie.html" rel="alternate" type="text/html" title="超級瑪莉歐電影片 上映了" /><published>2023-04-09T00:03:00+08:00</published><updated>2023-04-09T00:03:00+08:00</updated><id>http://localhost:4000/programming/mario-movie</id><content type="html" xml:base="http://localhost:4000/programming/mario-movie.html">&lt;p&gt;超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。&lt;/p&gt;
-
-&lt;p&gt;在電影裡，有很多那些懷舊的場景，都會穿插出現，如果你是很喜歡任天堂的玩家，一定不要錯過。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/mario-movie/movie-ticket.jpg&quot; alt=&quot;Mario movie ticket&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;youtube-的預告片&quot;&gt;Youtube 的預告片&lt;/h2&gt;
-
-&lt;h3 id=&quot;預告片1&quot;&gt;預告片1&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/iE-BqYVfA4I&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;預告片2&quot;&gt;預告片2&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sov-IOMEYbY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;預告片3&quot;&gt;預告片3&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vR5aIE7FOYk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Movie" /><summary type="html">超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://technews.tw/2021/04/09/tsmc-2330-202103-financial-report/&quot;&gt;科技新報新聞&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="台積電" /><category term="財經" /><summary type="html">台積電 3 月營收狀況</summary></entry></feed>
