@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-19T15:48:39+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Swift 中的 Value type 和 Reference type</title><link href="http://localhost:4000/swift/ref-type-val-type-in-swift.html" rel="alternate" type="text/html" title="Swift 中的 Value type 和 Reference type" /><published>2023-04-19T11:42:00+08:00</published><updated>2023-04-19T11:42:00+08:00</updated><id>http://localhost:4000/swift/ref-type-val-type-in-swift</id><content type="html" xml:base="http://localhost:4000/swift/ref-type-val-type-in-swift.html">&lt;p&gt;在我以前的文章 &lt;a href=&quot;https://moonandeye.github.io/swift/2018/06/09/prototype-patter.html&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type 的不同)&lt;/a&gt; 中，已經有提到 Referce type 和 value type 在修改上的差別。但那一篇是來自於 Swift 的 Design Pattern 一書中，Prototype pattern 的延伸。這邊想再寫一篇 Value type 和 Reference type 的文章。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-19T20:55:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">SwiftUI 資料流</title><link href="http://localhost:4000/swift/swiftui-data-flow.html" rel="alternate" type="text/html" title="SwiftUI 資料流" /><published>2023-04-19T20:41:00+08:00</published><updated>2023-04-19T20:41:00+08:00</updated><id>http://localhost:4000/swift/swiftui-data-flow</id><content type="html" xml:base="http://localhost:4000/swift/swiftui-data-flow.html">&lt;p&gt;SwiftUI 以宣告式的方法進行 UI 設計。整個資料的傳遞是 Action →State → View 的方向，而這個方向是固定的，不會有逆向的可能。你也可以查 one way data flow 這個名詞，不只是 mobile 端，現在在其他端也有很多這樣的 data flow 設計。&lt;/p&gt;
+
+&lt;h2 id=&quot;action-是起點&quot;&gt;Action 是起點&lt;/h2&gt;
+
+&lt;p&gt;Action 的啟動，可能來自於 User，也有可能來自於 external event。當 action 發動之後，會改變程式中的 State，接下來 SwiftUI 會自動去更新需要變化的 View。&lt;/p&gt;
+
+&lt;p&gt;比對以前的畫面渲染，這個職責在以前的 UIKit 是由 UIViewController 負責的&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/state-change/one-way-data-flow.jpeg&quot; alt=&quot;SwiftUI Data flow&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;view-的狀態管理---single-source-of-truth&quot;&gt;View 的狀態管理 - Single source of truth&lt;/h2&gt;
+
+&lt;p&gt;最好要記得單一資訊來源的原則，Apple 推薦的方式是，讓資料設計為 read-only 的 Swift Property，或是提供雙向的 State 綁定，SwiftUI 會觀察資料的變化，SwiftUI 會變化那些只需要變化的 View。&lt;/p&gt;
+
+&lt;p&gt;Apple 不建直接讓 persistent storage 成為 State properties，persistent storage 比較好的適用場景，是過場狀態的管理，比如說，highlight 狀態，filter settings。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/state-change/ui-state.jpeg&quot; alt=&quot;UI Stae 狀態管理&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/model-data&quot;&gt;SwiftUI Model data - Apple 文件&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/managing-user-interface-state&quot;&gt;SwiftUI 管理 UI 狀態 - Apple 文件&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">SwiftUI 以宣告式的方法進行 UI 設計。整個資料的傳遞是 Action →State → View 的方向，而這個方向是固定的，不會有逆向的可能。你也可以查 one way data flow 這個名詞，不只是 mobile 端，現在在其他端也有很多這樣的 data flow 設計。</summary></entry><entry><title type="html">Swift 中的 Value type 和 Reference type</title><link href="http://localhost:4000/swift/ref-type-val-type-in-swift.html" rel="alternate" type="text/html" title="Swift 中的 Value type 和 Reference type" /><published>2023-04-19T11:42:00+08:00</published><updated>2023-04-19T11:42:00+08:00</updated><id>http://localhost:4000/swift/ref-type-val-type-in-swift</id><content type="html" xml:base="http://localhost:4000/swift/ref-type-val-type-in-swift.html">&lt;p&gt;在我以前的文章 &lt;a href=&quot;https://moonandeye.github.io/swift/2018/06/09/prototype-patter.html&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type 的不同)&lt;/a&gt; 中，已經有提到 Referce type 和 value type 在修改上的差別。但那一篇是來自於 Swift 的 Design Pattern 一書中，Prototype pattern 的延伸。這邊想再寫一篇 Value type 和 Reference type 的文章。&lt;/p&gt;
 
 &lt;h3 id=&quot;reference-type&quot;&gt;Reference Type&lt;/h3&gt;
 
@@ -447,59 +469,4 @@ Apr 15 2023, 14:00 UTC 開始&lt;/p&gt;
 
 &lt;h2 id=&quot;連結&quot;&gt;連結&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://codingcompetitions.withgoogle.com/codejam&quot;&gt;Code Jam&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google" /><category term="Code Jam" /><summary type="html">Round A 比賽時間</summary></entry><entry><title type="html">大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰</title><link href="http://localhost:4000/programming/professor-article-about-ai.html" rel="alternate" type="text/html" title="大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰" /><published>2023-04-11T08:17:00+08:00</published><updated>2023-04-11T08:17:00+08:00</updated><id>http://localhost:4000/programming/professor-article-about-ai</id><content type="html" xml:base="http://localhost:4000/programming/professor-article-about-ai.html">&lt;h2 id=&quot;大學教授在各自的臉書上對於-chatgpt-的討論&quot;&gt;大學教授在各自的臉書上對於 ChatGPT 的「討論」&lt;/h2&gt;
-
-&lt;p&gt;昨天晚上我個人的 FB 動態牆上，對於 ChatGPT 的討論突然變得非常多，好奇看了一下發生了什麼事。原來是蘇文鈺教授回了個「被罵了」的文章，再看前面所敘述的文字。因為蘇教授之前寫了一篇讓學生使用 ChatGPT 進行作業的文章。而李家同教授在 4/10 的聯合報寫了一篇關於 ChatGPT 的文章，標題如下。&lt;/p&gt;
-
-&lt;h4 id=&quot;我們要創造不會思考的下一代&quot;&gt;[我們要創造不會思考的下一代？]&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://udn.com/news/story/7339/7086778&quot;&gt;新聞連結&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;很多人對ChatGPT極為推崇，甚至有大學資工系資深教授要求學生用ChatGPT寫程式。這則新聞令我膽戰心驚，嚇出一身冷汗，因為這樣做會害死學生。學生寫程式有兩個步驟，第一個步驟是畫出流程圖，第二個步驟是利用程式語言寫出程式來。流程圖有如造房子時的設計圖，畫流程圖是需要邏輯思考的，培養好的程式工程師，就是在培養他的邏輯思考能力。一旦流程圖畫對了，程式也就很容易寫出來了。反過來說，一個學生如果不會畫出流程圖，他是絕對不可能寫程式的…..&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;然後，接下來就有一堆人跳出來，對這些文章進行不同的論述。&lt;/p&gt;
-
-&lt;h2 id=&quot;贊成派&quot;&gt;贊成派&lt;/h2&gt;
-&lt;h3 id=&quot;蘇文鈺教授讓學生直接使用-chatgpt-寫程式的-fb-貼文&quot;&gt;蘇文鈺教授讓學生直接使用 ChatGPT 寫程式的 FB 貼文&lt;/h3&gt;
-
-&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0fyzvxLmk4cEra2RHMgcxBcHYvF8F6fjsFLPn5wwE2koh2AbGEjh77YcFvbkRo4iyl&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;824&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;楊智傑副教授的看法&quot;&gt;楊智傑副教授的看法&lt;/h2&gt;
-
-&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;460&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;李家同教授對-chatgpt-的立場&quot;&gt;李家同教授對 ChatGPT 的立場&lt;/h2&gt;
-
-&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02umxnXfJiwTvgNQuMyMc5Xuh4tiw4yyevrkFeRmb7KjHyaXCtmPWhqiaBxMoghMDxl%26id%3D100007748738834&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;266&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;蘇文鈺教授似乎是某篇文章進行回應的文章&quot;&gt;蘇文鈺教授「似乎」是某篇文章進行回應的文章&lt;/h2&gt;
-
-&lt;iframe src=&quot;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0bZMbN59NPqa9WoSfa2Duw4s3iEaYJk17ikJSamJD96LXuMZRKvkpkjGmDvCJ6dXQl&amp;amp;show_text=true&amp;amp;width=500&quot; width=&quot;500&quot; height=&quot;307&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;生成式-ai-對未來軟體的影響有無前例可循&quot;&gt;生成式 AI 對未來軟體的影響，有無前例可循？&lt;/h2&gt;
-
-&lt;p&gt;曾經，人類使用獸力來當移動工具，所以有個職業是「馬伕」和「人力車」。&lt;/p&gt;
-
-&lt;p&gt;1886 年德國工程師 卡爾．賓士 製造了三輪汽車。而後 載姆勒 製造出四輪汽車。&lt;/p&gt;
-
-&lt;p&gt;接下來，人類在汽車上嚐試了各種動力源，在數十年前，主流為石油。&lt;/p&gt;
-
-&lt;p&gt;而在近十年，自動駕駛的汽車配上電力源，變成大家注目的焦點。&lt;/p&gt;
-
-&lt;p&gt;在汽車這個「概念」還沒有被發明之前，如果去問正在使用交通工具的人，大家都會回應「我想要更快的馬、吃更少的馬、休息更少的馬」。&lt;/p&gt;
-
-&lt;p&gt;目前看 ChatGPT 發展的方向，我無法就此斷定 ChatGPT 這個產品真的可以一直贏到最後，但這個「概念」出現時，我可以保證，我們下一代的工作方式，不會和這個時代一樣&lt;/p&gt;
-
-&lt;h2 id=&quot;其他連結&quot;&gt;其他連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/2023/03/17/microsoft-office-copilot-launch.html&quot;&gt;微軟推出了名為「Microsoft 365 Copilot」的新生產力工具&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/start-using-copilot.html&quot;&gt;開始使用 Github Copilot 服務，來讓 side project 加速&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/bing-chat-brain-storming.html&quot;&gt;使用 Bing Chat 幫我發想一些 App 的 idea&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/finance/prompt-engineering.html&quot;&gt;Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/finance/ChatGPT-plugins.html&quot;&gt;ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="ChatGPT" /><summary type="html">大學教授在各自的臉書上對於 ChatGPT 的「討論」</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://codingcompetitions.withgoogle.com/codejam&quot;&gt;Code Jam&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google" /><category term="Code Jam" /><summary type="html">Round A 比賽時間</summary></entry></feed>
