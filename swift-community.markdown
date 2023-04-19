@@ -137,6 +137,9 @@ AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如�
 
 [Paul Hudson 的 Youtube 頻道](https://www.youtube.com/@twostraws)
 
+[Sean Allen 頻道](https://www.youtube.com/@seanallen)
+> 留著很顯眼的鬍子，在 icon 上也看得出鬍子是他的主視覺設計
+
 [Stanford CS193P](https://www.youtube.com/watch?v=bqu6BquVi2M)
 
 > 史丹佛大學 CS193P，不只推薦 SwiftUI 的課程，即使是以前的 Swift 3 4 5 的課程，都很值得聽一聽
