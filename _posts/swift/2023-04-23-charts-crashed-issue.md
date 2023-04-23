@@ -64,4 +64,8 @@ issue 4049 裡面描述的情景，和我專案遇到的情景比較像。而開
 
 [使用 Adapter 將第三方 lib 包起來](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html)
 
+[Charts repo - iOS](https://github.com/danielgindi/Charts)
+
+[MPCharts repo - Android](https://github.com/PhilJay/MPAndroidChart)
+
 [語意化版本](https://semver.org/lang/zh-TW/)
