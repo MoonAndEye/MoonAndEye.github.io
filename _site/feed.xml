@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-23T10:18:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">將第三方 lib 包起來，減少升級 lib 的痛苦</title><link href="http://localhost:4000/swift/using-adapter-pattern-to-libs.html" rel="alternate" type="text/html" title="將第三方 lib 包起來，減少升級 lib 的痛苦" /><published>2023-04-22T00:01:00+08:00</published><updated>2023-04-22T00:01:00+08:00</updated><id>http://localhost:4000/swift/using-adapter-pattern-to-libs</id><content type="html" xml:base="http://localhost:4000/swift/using-adapter-pattern-to-libs.html">&lt;p&gt;現在的 iOS 開發，通常會用到第三方 libs。而隨著每年的 Swift 改版, Xcode 改版, 語法改變，libs 也會升版。下方是 Alamofire 和 Charts 進一年來的版號升級趨勢，libs 是會升級的。依照 &lt;a href=&quot;https://semver.org/lang/zh-TW/&quot;&gt;語意化版本的說明&lt;/a&gt; 如果動到大版號，是不太可能一行都不改，然後專案可以 build 成功的。有時候升級到中版號的 libs，也會出現意料之外的情形。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-23T15:47:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Charts 的 4049 &amp;amp; 4132 issue，造成閃退的原因</title><link href="http://localhost:4000/swift/charts-crashed-issue.html" rel="alternate" type="text/html" title="Charts 的 4049 &amp;amp; 4132 issue，造成閃退的原因" /><published>2023-04-23T15:30:00+08:00</published><updated>2023-04-23T15:30:00+08:00</updated><id>http://localhost:4000/swift/charts-crashed-issue</id><content type="html" xml:base="http://localhost:4000/swift/charts-crashed-issue.html">&lt;h2 id=&quot;要寫一篇-charts-套件遇到的-issue主要是-iteration-遇到問題最大和最小在-debug-mode-下正常但一切到-release-mode-就會發生閃退&quot;&gt;要寫一篇 Charts 套件，遇到的 issue，主要是 iteration 遇到問題，最大和最小在 debug mode 下正常，但一切到 release mode ，就會發生閃退&lt;/h2&gt;
+
+&lt;p&gt;Charts 是 iOS 專案開發中很常使用的圖表繪制套件，不過今年，我在專案上遇到了很奇怪的狀況，在 Firebase Crashlytics 的 Dashboard 上，一直有零星的閃退，這閃退是發生在使用 Charts 套件的 renderer 裡面。而且在 release 給 QA 時，也會在 iPhone 關電源的狀況下，經過長時間後再開啟，就會閃退的狀況。但是去年，在 Crashlytics 上並沒有相同的 crash 發生，而這之間的差異，就是將 Charts 套件升級到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.4.1&lt;/code&gt; 以及發現這個閃退的情況之後，再繼續往 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.5.0&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.6.0&lt;/code&gt; 升級。&lt;/p&gt;
+
+&lt;p&gt;但如果把有問題的版本，裝在模擬器或是我手上的實機上，卻無法用相同步驟重現，驗證了軟體界的一句話「在我的機器上是好的」。在把 scheme 調到 release 後，這個閃退能重現。然後問題大概就鎖定在下列幾個點。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;這個閃退和 Charts 有關，而且是在 Charts 渲染過程中發生的。閃退點會在 Charts 準備更新圖的時候&lt;/li&gt;
+  &lt;li&gt;Debug mode 中這個閃退不會發生，但改成 Release mode 後，就會發生，而且能夠一直重現 (最可怕就這點，Release 才出事)&lt;/li&gt;
+  &lt;li&gt;在我的專案中，發動點是在資料重新拉取後，要求 charts 進行更新後發生&lt;/li&gt;
+  &lt;li&gt;真正的閃退原因，是在上一點的資料更新後，Charts 進行重繪時，在跑 init() 時會有個 iterator，但輸入的參數 min 和 max 會倒過來，然後就會出現 crash，而這一點是 release mode 才會出現，但 debug 不會出現。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;在-github-上的-issues-中找是否有類似的問題&quot;&gt;在 github 上的 issues 中找是否有類似的問題&lt;/h2&gt;
+
+&lt;p&gt;在查詢後，發現 issue 4049 和 4132 這兩個 issue 有關。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/danielgindi/Charts/issues/4049&quot;&gt;Charts Issue - 4049&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/danielgindi/Charts/issues/4132&quot;&gt;Charts Issue - 4132&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;關於-issue-4049&quot;&gt;關於 issue 4049&lt;/h3&gt;
+
+&lt;p&gt;issue 4049 裡面描述的情景，和我專案遇到的情景比較像。而開發者 bweavgolfanatic 有將他閃退的情形說明，發生的閃退點和我一樣。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/danielgindi/Charts/issues/4049#issuecomment-550577869&quot;&gt;開發者 bweavgolfanatic 對閃退的描述&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/swift/charts-crash/charts-crash-in-iterator.jpeg&quot;&gt;Charts 閃退在 iterator&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;從上面的 debug console 可以看到，max 是 1，min 是 98，這在 run time 呼叫 min…max 時閃退。而這個現像，我也能在專案中重現。然後繼續將 issue 的討論串看完，有看到 開發者 gordondove 提出一個解法。&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downloadDataSet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newThroughtputPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downloadDataSet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calcMinMax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;chartView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calcMinMax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chartView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;notifyDataSetChanged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/swift/charts-crash/crash-solution.jpeg&quot;&gt;gordondove 解法&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;關於-issue-4132&quot;&gt;關於 issue 4132&lt;/h3&gt;
+
+&lt;p&gt;4132 則是關於這個 issue 的 PR，以及將多篇 issues 的文章整合起來，主要的資訊我還是從 issue 4049 找到的。&lt;/p&gt;
+
+&lt;h2 id=&quot;解決方案的選擇&quot;&gt;解決方案的選擇&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;將 Charts 升級，因為後續的 4132 PR 有說他修正了，但合進去後的大版號在 4.0.0 以後&lt;/li&gt;
+  &lt;li&gt;找出 4132 issue 相關的 PR，並把這個改動合併到另外自己 folk 的 Charts repo 上，並打一個 tag。&lt;/li&gt;
+  &lt;li&gt;將 Charts 退回 3.2.0 (iterator 被改動之前)&lt;/li&gt;
+  &lt;li&gt;使用 bweavgolfanatic 的解法，重新呼叫 dataset 的 calMinMax()&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;最後選擇 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;方案 4&lt;/code&gt;，因為當時的版號一升到大版號4，整個專案就無法 build 起來。這時就體認到 Adapter 的重要性，有興趣的朋友可以參考 &lt;a href=&quot;https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html&quot;&gt;將第三方 lib 包起來，減少升級的痛苦&lt;/a&gt; 一文。沒有使用 方案2/方案3 的原因，就是這個專案使用的，是 folk 後再被修改的版本，如果要選擇回溯，是有呵能帶來其他風險的，所以最終選擇方案4。&lt;/p&gt;
+
+&lt;h2 id=&quot;參考文章&quot;&gt;參考文章&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html&quot;&gt;使用 Adapter 將第三方 lib 包起來&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://semver.org/lang/zh-TW/&quot;&gt;語意化版本&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Charts" /><summary type="html">要寫一篇 Charts 套件，遇到的 issue，主要是 iteration 遇到問題，最大和最小在 debug mode 下正常，但一切到 release mode ，就會發生閃退</summary></entry><entry><title type="html">將第三方 lib 包起來，減少升級 lib 的痛苦</title><link href="http://localhost:4000/swift/using-adapter-pattern-to-libs.html" rel="alternate" type="text/html" title="將第三方 lib 包起來，減少升級 lib 的痛苦" /><published>2023-04-22T00:01:00+08:00</published><updated>2023-04-22T00:01:00+08:00</updated><id>http://localhost:4000/swift/using-adapter-pattern-to-libs</id><content type="html" xml:base="http://localhost:4000/swift/using-adapter-pattern-to-libs.html">&lt;p&gt;現在的 iOS 開發，通常會用到第三方 libs。而隨著每年的 Swift 改版, Xcode 改版, 語法改變，libs 也會升版。下方是 Alamofire 和 Charts 進一年來的版號升級趨勢，libs 是會升級的。依照 &lt;a href=&quot;https://semver.org/lang/zh-TW/&quot;&gt;語意化版本的說明&lt;/a&gt; 如果動到大版號，是不太可能一行都不改，然後專案可以 build 成功的。有時候升級到中版號的 libs，也會出現意料之外的情形。&lt;/p&gt;
 
 &lt;p&gt;假設你使用的第三方 lib 會散落在專案裡面幾十個地方，那升級時要改動處就會在幾十處。隨著版號跳的愈大，或是散落的數量不斷的上升，會不斷的增加 lib 升級的風險。&lt;/p&gt;
 
@@ -622,14 +680,4 @@
 
 &lt;h2 id=&quot;fed-的目標&quot;&gt;FED 的目標&lt;/h2&gt;
 
-&lt;p&gt;根據最新的數據，美國的生產者物價指數（PPI）在 2023 年 3 月份同比上漲了 2.7%，低於前一個月的 3.1%。這一數字反映了美國經濟的復蘇步伐放緩，以及通脹壓力的減輕。美聯儲（Fed）對此可能持一種審慎的態度，並繼續觀察 PPI 的變化趨勢，以及其他經濟指標，如消費者物價指數（CPI）、勞動力市場、經濟增長等。Fed 的目標是實現最大化就業和穩定物價，因此它可能不會過早地調整其貨幣政策，而是保持低利率和資產購買計劃，直到經濟完全復蘇並達到其目標為止。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">美國勞動市場和通膨狀況的最新數據</summary></entry><entry><title type="html">美3月CPI年增5%低於預期</title><link href="http://localhost:4000/finance/us-cpi-index.html" rel="alternate" type="text/html" title="美3月CPI年增5%低於預期" /><published>2023-04-13T10:48:00+08:00</published><updated>2023-04-13T10:48:00+08:00</updated><id>http://localhost:4000/finance/us-cpi-index</id><content type="html" xml:base="http://localhost:4000/finance/us-cpi-index.html">&lt;h2 id=&quot;美3月cpi年增5低於預期&quot;&gt;美3月CPI年增5%低於預期&lt;/h2&gt;
-
-&lt;p&gt;美國勞工部周四公布，3月份消費者物價指數（CPI）同比上漲5%，低於市場預期的5.2%。這是自2008年9月以來最高的年增率，但仍反映出通脹壓力相對溫和。&lt;/p&gt;
-
-&lt;p&gt;CPI的核心指數，剔除食品和能源等波動性項目，3月份同比上漲3.8%，也低於市場預期的4%。這是自1992年5月以來最高的年增率，主要受到汽車、服裝和航空票價等項目的上漲影響。&lt;/p&gt;
-
-&lt;p&gt;美國勞工部表示，CPI的上漲部分是由於去年同期的低基數效應，當時疫情導致物價大幅下跌。如果將去年3月和4月的數據排除，CPI的年增率將分別降至2.6%和2.5%。&lt;/p&gt;
-
-&lt;p&gt;美國聯邦儲備委員會（Fed）一直堅持認為，目前的通脹上升是暫時性的，並不會改變其寬鬆的貨幣政策立場。Fed主席鮑威爾周三在國會作證時表示，通脹壓力將在未來幾個月達到高峰，但隨著供需平衡恢復正常，通脹將回落至Fed的2%目標附近。&lt;/p&gt;
-
-&lt;p&gt;市場分析師認為，美國CPI數據低於預期，有利於緩解市場對通脹過熱和利率上升的擔憂，並支撐股市和債市的表現。美元指數在數據公布後下跌，金價和原油價格上漲。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="CPI" /><summary type="html">美3月CPI年增5%低於預期</summary></entry></feed>
+&lt;p&gt;根據最新的數據，美國的生產者物價指數（PPI）在 2023 年 3 月份同比上漲了 2.7%，低於前一個月的 3.1%。這一數字反映了美國經濟的復蘇步伐放緩，以及通脹壓力的減輕。美聯儲（Fed）對此可能持一種審慎的態度，並繼續觀察 PPI 的變化趨勢，以及其他經濟指標，如消費者物價指數（CPI）、勞動力市場、經濟增長等。Fed 的目標是實現最大化就業和穩定物價，因此它可能不會過早地調整其貨幣政策，而是保持低利率和資產購買計劃，直到經濟完全復蘇並達到其目標為止。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><summary type="html">美國勞動市場和通膨狀況的最新數據</summary></entry></feed>
