@@ -9,8 +9,6 @@ summary: When using Charts 3.4.1, I got crashed when dataSet updated then charts
 permalink: /swift/:title:output_ext
 ---
 
-## 要寫一篇 Charts 套件，遇到的 issue，主要是 iteration 遇到問題，最大和最小在 debug mode 下正常，但一切到 release mode ，就會發生閃退
-
 Charts 是 iOS 專案開發中很常使用的圖表繪制套件，不過今年，我在專案上遇到了很奇怪的狀況，在 Firebase Crashlytics 的 Dashboard 上，一直有零星的閃退，這閃退是發生在使用 Charts 套件的 renderer 裡面。而且在 release 給 QA 時，也會在 iPhone 關電源的狀況下，經過長時間後再開啟，就會閃退的狀況。但是去年，在 Crashlytics 上並沒有相同的 crash 發生，而這之間的差異，就是將 Charts 套件升級到 `3.4.1` 以及發現這個閃退的情況之後，再繼續往 `3.5.0`, `3.6.0` 升級。
 
 但如果把有問題的版本，裝在模擬器或是我手上的實機上，卻無法用相同步驟重現，驗證了軟體界的一句話「在我的機器上是好的」。在把 scheme 調到 release 後，這個閃退能重現。然後問題大概就鎖定在下列幾個點。
