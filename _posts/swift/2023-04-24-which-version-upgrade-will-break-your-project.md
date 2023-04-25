@@ -82,22 +82,18 @@ func move(toward direction: Direction, path: Int) {
 }
 ```
 
-但增加了需求，要讓 Direction 出現斜向，那 Direction 就要擴增另外四個方向。
+但增加了需求，如果增加了物件在移動完後，過三秒要回到原位的需求。
 
 ```swift
-/// 1.1.1 版，
-enum Direction {
-    case east
-    case west
-    case south
-    case north
-    case northWest /// 以下是新增的方向
-    case northEast
-    case southWest
-    case southEast
+/// 1.1.0 版，加上
+func move(toward direction: Direction, path: Int) {
+    /// 1.0.1 的實作
+    /// 實作省略
 }
 
-func move(toward direction: Direction, path: Int) {
+/// 1.1.0 新需求 - 物件在移動完後，過三秒要回到原位的需求。
+func backToStartPointAfter3Sec(toward direction: Direction, path: Int) {
+    /// 1.1.0 的實作
     /// 實作省略
 }
 ```
