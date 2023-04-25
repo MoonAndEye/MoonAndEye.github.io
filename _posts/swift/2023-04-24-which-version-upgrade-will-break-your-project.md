@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 當升級第三方版本時，什麼樣的版號會讓專案 build 失數?
+title: 當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?
 date: 2023-04-24 20:58 +0800
 category: swift
 author: Marvin Lin
