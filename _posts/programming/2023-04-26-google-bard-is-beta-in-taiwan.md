@@ -5,7 +5,7 @@ date: 2023-04-26 16:03 +0800
 category: programming
 author: Marvin Lin
 tags: [AI, Google]
-summary: 
+summary: Google Bard AI can apply beta in Taiwan, this article contains the testing results. I tried asking about stock, invest, TSMC facotry address. Also for the trip advise, it's shows real world info on response.
 permalink: /programming/:title:output_ext
 ---
 
