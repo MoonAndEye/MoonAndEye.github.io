@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-26T09:01:28+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)</title><link href="http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods.html" rel="alternate" type="text/html" title="為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)" /><published>2023-04-25T23:29:00+08:00</published><updated>2023-04-25T23:29:00+08:00</updated><id>http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods</id><content type="html" xml:base="http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods.html">&lt;p&gt;Apple 新的套件管理 spm (swift package manager) 是一個用來建立、測試和分發 Swift 程式碼的工具。spm 可以讓開發者輕鬆地管理 Swift 專案的依賴關係，並且支援多平台的開發環境。spm 的優點有以下幾點：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-26T17:23:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google Bard AI 開放台灣申請了</title><link href="http://localhost:4000/programming/google-bard-is-beta-in-taiwan.html" rel="alternate" type="text/html" title="Google Bard AI 開放台灣申請了" /><published>2023-04-26T16:03:00+08:00</published><updated>2023-04-26T16:03:00+08:00</updated><id>http://localhost:4000/programming/google-bard-is-beta-in-taiwan</id><content type="html" xml:base="http://localhost:4000/programming/google-bard-is-beta-in-taiwan.html">&lt;p&gt;Google Bard AI 開放申請了，只要點選下面的連結按同意，就可以了。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bard.google.com/?hl=en&quot;&gt;申請測試連結&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;申請過程&quot;&gt;申請過程&lt;/h2&gt;
+
+&lt;h3 id=&quot;bard-的測試信&quot;&gt;Bard 的測試信&lt;/h3&gt;
+
+&lt;p&gt;在申請完後，會有一封信寄到你的信箱，打開來會看到他附上了用 Bard 寫出來的一首詩給你。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/bard-white-list.png&quot; alt=&quot;bard white list message with poem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;等待時間並不長，我只等了八分鐘，就可以用了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/email-list.png&quot; alt=&quot;bard second email&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;開始使用-bard&quot;&gt;開始使用 Bard&lt;/h2&gt;
+
+&lt;p&gt;bard 現在只能接受英文，所以我這邊的問題都是用英文問的。&lt;/p&gt;
+
+&lt;h3 id=&quot;問新聞&quot;&gt;問新聞&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-news.png&quot; alt=&quot;Ask bard news&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;問股價&quot;&gt;問股價&lt;/h3&gt;
+
+&lt;p&gt;問了 Bard 能不能預測今晚 AAPL 的股價。回應是不行。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-predict-stock-price.png&quot; alt=&quot;Ask bard Apple&apos;s stock price in next day&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;改問-aapl-財報資料&quot;&gt;改問 AAPL 財報資料&lt;/h3&gt;
+
+&lt;p&gt;改問已經發生的歷史資料，他可以回答出財報，包含數字。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-aaple-report.png&quot; alt=&quot;問財報&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;問一下台積電工廠的地址&quot;&gt;問一下台積電工廠的地址&lt;/h3&gt;
+
+&lt;p&gt;非常詳細啊，連廠房的名字都列上來了，看名字大概也知道哪個地址上的工廠是做哪一段半導體製程的。(不過，這應該是新聞都有報的)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-tsmc-address.png&quot; alt=&quot;台積電地址&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;問-android-和-iphone-誰賣得比較好&quot;&gt;問 Android 和 iPhone 誰賣得比較好&lt;/h3&gt;
+
+&lt;p&gt;這邊也給的出數字，而且數字也的確來自另一份報告。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-iphone-android-selling.png&quot; alt=&quot;問 Android 和 iPhone 誰賣得比較好&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;問投資標的&quot;&gt;問投資標的&lt;/h3&gt;
+
+&lt;p&gt;給出很穩健的標的， AAPL, MSFT, AMZN, GOOGL, TSLA&lt;/p&gt;
+
+&lt;p&gt;Apple (AAPL): Apple is one of the most valuable companies in the world, and it is a leader in the technology industry. The company is known for its innovative products, such as the iPhone, iPad, and Mac. Apple is also a major player in the services industry, with its App Store, Apple Music, and Apple Pay.
+Microsoft (MSFT): Microsoft is another tech giant that is a good investment target. The company is a leader in the software industry, and it also has a strong presence in the cloud computing market. Microsoft is a well-established company with a long history of innovation.
+Amazon (AMZN): Amazon is a leading e-commerce company, and it is also a major player in the cloud computing market. The company is known for its low prices and its wide selection of products. Amazon is also a growing force in the advertising market.
+Alphabet (GOOGL): Alphabet is the parent company of Google, which is one of the most popular search engines in the world. Google also has a strong presence in the advertising market, and it is a leader in the development of artificial intelligence.
+Tesla (TSLA): Tesla is a leading electric vehicle manufacturer, and it is also a player in the solar energy market. The company is known for its innovative products and its ambitious goals. Tesla is a high-growth company, but it is also a risky investment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-invest-target.png&quot; alt=&quot;問投資標的&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;如何用-api-的方法串接-bard&quot;&gt;如何用 API 的方法串接 Bard&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-connect-bard-api.png&quot; alt=&quot;如何用 API 的方法串接 Bard&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;試用心得&quot;&gt;試用心得&lt;/h2&gt;
+
+&lt;p&gt;Bard 在問像是餐廳等資訊時，我查起來是有這些餐廳的。然後在數字的表現上，不會有很大的誤差。&lt;/p&gt;
+
+&lt;h2 id=&quot;參考網址&quot;&gt;參考網址&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bard.google.com/u/1/faq?hl=en&quot;&gt;Bard AI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.googlecloudcommunity.com/gc/AI-ML/Google-Bard-API/m-p/538517&quot;&gt;Using Bard API&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Google" /><summary type="html">Google Bard AI 開放申請了，只要點選下面的連結按同意，就可以了。</summary></entry><entry><title type="html">為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)</title><link href="http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods.html" rel="alternate" type="text/html" title="為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)" /><published>2023-04-25T23:29:00+08:00</published><updated>2023-04-25T23:29:00+08:00</updated><id>http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods</id><content type="html" xml:base="http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods.html">&lt;p&gt;Apple 新的套件管理 spm (swift package manager) 是一個用來建立、測試和分發 Swift 程式碼的工具。spm 可以讓開發者輕鬆地管理 Swift 專案的依賴關係，並且支援多平台的開發環境。spm 的優點有以下幾點：&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;spm 使用 Swift 語言本身來定義套件的配置，這樣可以減少學習成本和錯誤的可能性。&lt;/li&gt;
@@ -814,38 +886,4 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.businesstoday.com.tw/article/category/183012/post/202304160003/&quot;&gt;今周刊&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://ctee.com.tw/news/stocks/845545.html&quot;&gt;工商時報&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="台股" /><category term="申購" /><summary type="html">玉山金股票4/18開始申購，4/20截止，這是一個值得關注的投資機會。玉山金是台灣最大的金融控股公司之一，旗下有玉山銀行、玉山證券、玉山保險等子公司，涵蓋了銀行、證券、保險、信託等多元金融業務。玉山金在2022年的營收和淨利都創下了歷史新高，並且發放了高達8元的現金股利，股息率達到了5.3%。玉山金的財務表現得到了市場的認可，股價在今年上漲了近30%。</summary></entry><entry><title type="html">薩爾達王國之淚影片釋出</title><link href="http://localhost:4000/life/zelda-trail-3rd.html" rel="alternate" type="text/html" title="薩爾達王國之淚影片釋出" /><published>2023-04-14T09:54:00+08:00</published><updated>2023-04-14T09:54:00+08:00</updated><id>http://localhost:4000/life/zelda-trail-3rd</id><content type="html" xml:base="http://localhost:4000/life/zelda-trail-3rd.html">&lt;h2 id=&quot;薩艾達傳說-王國之淚-的第三部影片釋出了之前有寫過青沼英二親自實機試玩的文章&quot;&gt;薩艾達傳說 王國之淚 的第三部影片釋出了，之前有寫過青沼英二親自實機試玩的文章。&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html&quot;&gt;王國之淚試玩影片文章&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;而今天早上起來，又看到新的影片了，裡面有更多的元素。&lt;/p&gt;
-
-&lt;h3 id=&quot;火箭升空&quot;&gt;火箭升空&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/link_rocket.jpeg&quot; alt=&quot;rocket launch&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;雷射機關&quot;&gt;雷射機關&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/link_laser.jpeg&quot; alt=&quot;laser&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;戰爭用載具&quot;&gt;戰爭用載具？&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/zelda-tears-of-the-kingdom/link_tank.jpeg&quot; alt=&quot;war tank&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;薩爾達傳說-王國之淚第3部介紹影片台灣&quot;&gt;《薩爾達傳說 王國之淚》第3部介紹影片（台灣）&lt;/h2&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/omOOGfivXQs&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;王國之淚&quot;&gt;王國之淚&lt;/h2&gt;
-
-&lt;p&gt;《薩艾達傳說 王國之淚》是任天堂開發的一款開放世界動作冒險遊戲，是2017年發售的《薩艾達傳說 曠野之息》的續作，預定於2023年5月12日在任天堂Switch上發售。這款遊戲延續了前作的開放式探索和自由度，同時加入了新的故事和遊戲元素，例如可以在海拉魯大陸的上空飛行。&lt;/p&gt;
-
-&lt;p&gt;第三部影片是在2022年9月13日的任天堂直面會中公開的，同時也揭露了遊戲的正式名稱《王國之淚》。影片中展示了主角薩艾達和茲爾達在地下和空中的冒險，以及一些新的敵人和道具。影片還透露了遊戲的一些劇情設定，例如茲爾達被一股黑暗力量吞噬，而薩艾達則要找出拯救她和王國的方法。&lt;/p&gt;
-
-&lt;p&gt;影片的最後還出現了一個神秘的角色，他似乎是遊戲的反派，也可能是海拉魯王國的創造者或守護者。他有著金色的眼睛和長髮，身穿黑色的長袍，手持一把劍。他的身份和目的都是未知數，引發了許多玩家和粉絲的猜測和討論。&lt;/p&gt;
-
-&lt;p&gt;《薩艾達傳說 王國之淚》是我最期待的遊戲之一，我非常喜歡前作《曠野之息》的自由度和創意，也很好奇這次的故事會如何發展。我相信任天堂會帶給我們一個精彩而深刻的冒險體驗。如果您也對這款遊戲感興趣，可以在以下網址觀看第三部影片。&lt;/p&gt;
-
-&lt;h2 id=&quot;參考連結&quot;&gt;參考連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html&quot;&gt;薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="薩爾達" /><category term="Switch" /><category term="Nintendo" /><summary type="html">薩艾達傳說 王國之淚 的第三部影片釋出了，之前有寫過青沼英二親自實機試玩的文章。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://ctee.com.tw/news/stocks/845545.html&quot;&gt;工商時報&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="finance" /><category term="finance" /><category term="台股" /><category term="申購" /><summary type="html">玉山金股票4/18開始申購，4/20截止，這是一個值得關注的投資機會。玉山金是台灣最大的金融控股公司之一，旗下有玉山銀行、玉山證券、玉山保險等子公司，涵蓋了銀行、證券、保險、信託等多元金融業務。玉山金在2022年的營收和淨利都創下了歷史新高，並且發放了高達8元的現金股利，股息率達到了5.3%。玉山金的財務表現得到了市場的認可，股價在今年上漲了近30%。</summary></entry></feed>

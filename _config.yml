@@ -48,6 +48,8 @@ header_pages:
 # theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.18.1"
 
+image_extensions: ['jpg', 'jpeg', 'png']
+
 plugins:
   - jekyll-feed
   - jemoji
