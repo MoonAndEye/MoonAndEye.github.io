@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-25T17:09:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?</title><link href="http://localhost:4000/swift/which-version-upgrade-will-break-your-project.html" rel="alternate" type="text/html" title="當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?" /><published>2023-04-24T20:58:00+08:00</published><updated>2023-04-24T20:58:00+08:00</updated><id>http://localhost:4000/swift/which-version-upgrade-will-break-your-project</id><content type="html" xml:base="http://localhost:4000/swift/which-version-upgrade-will-break-your-project.html">&lt;p&gt;在 iOS 開發中，我們常常會使用第三方套件來增加功能或減少工作量。但是，如果我們直接下載套件的原始碼，或者使用 git submodule 的方式，我們可能會遇到一些問題，例如版本不一致、相依性不清楚、更新不方便等等。為了解決這些問題，我們可以使用 cocoapods 這個工具來協助管理第三方套件。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-26T09:01:28+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)</title><link href="http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods.html" rel="alternate" type="text/html" title="為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)" /><published>2023-04-25T23:29:00+08:00</published><updated>2023-04-25T23:29:00+08:00</updated><id>http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods</id><content type="html" xml:base="http://localhost:4000/swift/why-I-dont-use-spm-in-company-private-pods.html">&lt;p&gt;Apple 新的套件管理 spm (swift package manager) 是一個用來建立、測試和分發 Swift 程式碼的工具。spm 可以讓開發者輕鬆地管理 Swift 專案的依賴關係，並且支援多平台的開發環境。spm 的優點有以下幾點：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;spm 使用 Swift 語言本身來定義套件的配置，這樣可以減少學習成本和錯誤的可能性。&lt;/li&gt;
+  &lt;li&gt;spm 採用模組化的設計，可以讓開發者自由地組合不同的套件，並且避免重複的程式碼。&lt;/li&gt;
+  &lt;li&gt;spm 與 Xcode 緊密整合，可以讓開發者在 Xcode 中直接使用 spm 建立和管理套件，並且享受 Xcode 的各種功能和優化。&lt;/li&gt;
+  &lt;li&gt;spm 支援跨平台的開發，可以讓開發者使用相同的程式碼在不同的平台上執行，例如 iOS、macOS、Linux 等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;那我的模組已經導入-spm-了嗎&quot;&gt;那…我的模組，已經導入 spm 了嗎？&lt;/h2&gt;
+
+&lt;p&gt;在 spm 出現了之後，我有沒有導入呢?&lt;/p&gt;
+
+&lt;p&gt;答案是：&lt;strong&gt;沒有&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;原因是，cocoapods 的依賴關係，和 spm 的依賴關係不同。而我所需要管理和開發的模組，有兩層關係以上。是會出現 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a 模組&lt;/code&gt; 依賴 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x 模組&lt;/code&gt;，然後還有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bcd 模組&lt;/code&gt; 都依賴 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a 模組的狀況&lt;/code&gt;。整個依賴關係如下所示。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/cocoapods/pods-dependency.jpeg&quot; alt=&quot;模組間的依賴關係&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;因為我負責的模組有依賴關係，如果也要能支援 spm 的話，我就必須讓所有模組都支援 spm。然後也可能導致最下面那一層的 app 層，讓 app 專案有可能使用 spm 也有可能用 pod，導致開發環境管理的複雜度提升。所以「目前的方針」，是模組們並不支援 spm。&lt;/p&gt;
+
+&lt;h2 id=&quot;未來呢&quot;&gt;未來呢?&lt;/h2&gt;
+
+&lt;p&gt;以上所述，只是我模組開發到 &lt;strong&gt;2023年&lt;/strong&gt; 的現況，因為每年的 Xcode, spm, Swift, iOS 開發工具 都會變化，我並不認為我「只」會讓模組一直支援 pod，如果未來 spm 在 Xcode 的整合上，比 pod 更方便，能讓開發者省下更多時間，到時候就會增加模組支援 spm 的功能。這篇並不表示未來的我只會讓模組使用 pod，這只是目前現狀而已。&lt;/p&gt;
+
+&lt;h2 id=&quot;參考文件&quot;&gt;參考文件&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/apple/swift-package-manager&quot;&gt;Apple SPM 文件&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/70855053/swift-package-manager-spm-and-cocoapod-dependency-conflict&quot;&gt;Stackoverflow 上對於 SPM 和 pod 依賴的問題&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html&quot;&gt;將第三方 lib 包起來，減少升級 lib 的痛苦&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="cocoapods" /><category term="spm" /><summary type="html">Apple 新的套件管理 spm (swift package manager) 是一個用來建立、測試和分發 Swift 程式碼的工具。spm 可以讓開發者輕鬆地管理 Swift 專案的依賴關係，並且支援多平台的開發環境。spm 的優點有以下幾點：</summary></entry><entry><title type="html">當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?</title><link href="http://localhost:4000/swift/which-version-upgrade-will-break-your-project.html" rel="alternate" type="text/html" title="當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?" /><published>2023-04-24T20:58:00+08:00</published><updated>2023-04-24T20:58:00+08:00</updated><id>http://localhost:4000/swift/which-version-upgrade-will-break-your-project</id><content type="html" xml:base="http://localhost:4000/swift/which-version-upgrade-will-break-your-project.html">&lt;p&gt;在 iOS 開發中，我們常常會使用第三方套件來增加功能或減少工作量。但是，如果我們直接下載套件的原始碼，或者使用 git submodule 的方式，我們可能會遇到一些問題，例如版本不一致、相依性不清楚、更新不方便等等。為了解決這些問題，我們可以使用 cocoapods 這個工具來協助管理第三方套件。&lt;/p&gt;
 
 &lt;p&gt;cocoapods 是一個用 Ruby 寫的開源專案，它可以幫助我們自動化安裝和更新第三方套件，並且處理好相依性的問題。使用 cocoapods 的好處有以下幾點：&lt;/p&gt;
 
@@ -817,25 +848,4 @@
 
 &lt;h2 id=&quot;參考連結&quot;&gt;參考連結&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html&quot;&gt;薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="薩爾達" /><category term="Switch" /><category term="Nintendo" /><summary type="html">薩艾達傳說 王國之淚 的第三部影片釋出了，之前有寫過青沼英二親自實機試玩的文章。</summary></entry><entry><title type="html">台股國安基金退場，護盤275天</title><link href="http://localhost:4000/finance/tw-national-security-fund.html" rel="alternate" type="text/html" title="台股國安基金退場，護盤275天" /><published>2023-04-14T09:27:00+08:00</published><updated>2023-04-14T09:27:00+08:00</updated><id>http://localhost:4000/finance/tw-national-security-fund</id><content type="html" xml:base="http://localhost:4000/finance/tw-national-security-fund.html">&lt;h2 id=&quot;outlines&quot;&gt;Outlines&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;國安基金自去年7月13日起執行安定市場任務，為穩定台股信心，投入545.08億元買進股票。&lt;/li&gt;
-  &lt;li&gt;進場期間，台股累計上漲1854.14點，累積漲幅13.29%，優於多數主要股市，國安基金也累計獲利83億元，投資報酬率15%。&lt;/li&gt;
-  &lt;li&gt;今日董事會決議，國安基金自明日起停止執行安定市場任務，回歸證券交易市場機制，結束275天史上最長護盤。&lt;/li&gt;
-  &lt;li&gt;國安基金執秘表示，退場動作會很小心、時程可能拉長，不會影響到市場；未來仍會密切關注國內外政經情勢變動，必要時再授權執行安定市場任務。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;目前最長護盤任務結束&quot;&gt;目前最長護盤任務結束&lt;/h2&gt;
-
-&lt;p&gt;台股國安基金退場，護盤275天&lt;/p&gt;
-
-&lt;p&gt;台股國安基金在史上最長的護盤任務結束了。自去年7月13日起，國安基金為了穩定台股信心，投入545.08億元買進股票，進場期間，台股累計上漲1854.14點，累積漲幅13.29%，優於多數主要股市，國安基金也累計獲利83億元，投資報酬率15%。今日董事會決議，國安基金自明日起停止執行安定市場任務，回歸證券交易市場機制。&lt;/p&gt;
-
-&lt;p&gt;國安基金的護盤任務是在去年7月13日開始的，當時台股受到美中貿易戰、新冠疫情、美伊衝突等多重因素影響，出現大幅波動，市場信心不足。為了維持市場穩定，行政院授權國安基金執行安定市場任務，並設立專案小組，由財政部長蘇建榮擔任召集人，負責決策與監督。&lt;/p&gt;
-
-&lt;p&gt;國安基金的進場策略是以買進大盤股為主，尤其是具有代表性的電子股、金融股、傳產股等。根據財政部的統計，國安基金在進場期間共買進了545.08億元的股票，其中電子股占了62.8%，金融股占了17.9%，傳產股占了10.5%。國安基金的買進行為不僅提振了市場氣氛，也帶動了外資與法人的跟進買盤。&lt;/p&gt;
-
-&lt;p&gt;國安基金的護盤成果也相當亮眼。在進場期間，台股從去年7月13日的11677.41點上漲到今日的13531.55點，累計上漲1854.14點，累積漲幅13.29%，優於多數主要股市。例如，在同期間內，美國道瓊工業指數累計漲幅為11.26%，日本日經225指數累計漲幅為9.76%，中國上證綜合指數累計漲幅為6.81%。此外，國安基金也累計獲利83億元，投資報酬率15%，創下歷史新高。&lt;/p&gt;
-
-&lt;p&gt;今日董事會決議，國安基金自明日起停止執行安定市場任務，回歸證券交易市場機制。國安基金執秘表示，退場動作會很小心、時程可能拉長，不會影響到市場；未來仍會密切關注國內外政經情勢變動，必要時再授權執行安定市場任務。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="台股國安基金退場，護盤275天" /><category term="台股" /><summary type="html">Outlines</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html&quot;&gt;薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="薩爾達" /><category term="Switch" /><category term="Nintendo" /><summary type="html">薩艾達傳說 王國之淚 的第三部影片釋出了，之前有寫過青沼英二親自實機試玩的文章。</summary></entry></feed>
