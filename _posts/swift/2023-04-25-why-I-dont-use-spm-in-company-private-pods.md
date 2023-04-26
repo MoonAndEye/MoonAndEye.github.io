@@ -39,3 +39,5 @@ Apple 新的套件管理 spm (swift package manager) 是一個用來建立、測
 [Stackoverflow 上對於 SPM 和 pod 依賴的問題](https://stackoverflow.com/questions/70855053/swift-package-manager-spm-and-cocoapod-dependency-conflict)
 
 [將第三方 lib 包起來，減少升級 lib 的痛苦](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html)
+
+[當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?](https://moonandeye.github.io/swift/which-version-upgrade-will-break-your-project.html)
