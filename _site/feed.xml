@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-30T00:54:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">微軟新服務 Microsoft designer 現在不用排隊等白名單了，可以直接使用</title><link href="http://localhost:4000/programming/microsoft-designer.html" rel="alternate" type="text/html" title="微軟新服務 Microsoft designer 現在不用排隊等白名單了，可以直接使用" /><published>2023-04-30T00:48:00+08:00</published><updated>2023-04-30T00:48:00+08:00</updated><id>http://localhost:4000/programming/microsoft-designer</id><content type="html" xml:base="http://localhost:4000/programming/microsoft-designer.html">&lt;p&gt;如果你想要創造出專業品質的社交媒體貼文、邀請函、數位明信片、圖像等，你一定要試試 &lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt;。這是一款圖像設計應用程式，可以幫助你從你的想法開始，創造出獨一無二的東西。&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 的亮點是它利用了人工智慧的技術，讓你只要輸入文字，就可以快速生成原創和可編輯的設計。你還可以獲得寫作協助和自動佈局建議，讓你的內容更加吸引人。&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 甚至可以根據你的目標，為你提供社交媒體分享的標題和標籤。&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 是微軟365的一部分，只要你是微軟365的訂閱者，就可以免費使用這個強大的工具。而且現在不用排隊了，你可以直接在網站上註冊並開始使用Microsoft Designer。不要錯過這個機會，快來體驗 &lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 吧！&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-01T09:37:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">iOS 的 MVC 架構</title><link href="http://localhost:4000/swift/cocoa-framework-mvc.html" rel="alternate" type="text/html" title="iOS 的 MVC 架構" /><published>2023-05-01T08:48:00+08:00</published><updated>2023-05-01T08:48:00+08:00</updated><id>http://localhost:4000/swift/cocoa-framework-mvc</id><content type="html" xml:base="http://localhost:4000/swift/cocoa-framework-mvc.html">&lt;p&gt;MVC 是 Apple 範例框架，在 UIKit 的時代，這是個很重要的 pattern。最近有空的時間，都會花一點時間去看一本很久以前的書&lt;strong&gt;Cocoa 設計模式&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/books-cover.jpeg&quot; alt=&quot;Cocoa design pattern&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;書本第二章mvc-分析與應用&quot;&gt;書本第二章：MVC 分析與應用&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/mvc-chapter.jpeg&quot; alt=&quot;第二章：MVC 分析與應用&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Apple cocoa design pattern 的 MVC 架構是一種軟體開發的方法，它將應用程式分成三個部分：模型（Model）、視圖（View）和控制器（Controller）。這樣可以讓程式碼更容易維護和重用，也可以提高應用程式的效能和可測試性。&lt;/p&gt;
+
+&lt;p&gt;Model 是負責管理應用程式的資料和邏輯的部分，它不直接與使用者介面互動，而是通過控制器來更新或取得資料。模型可以是任何類型的物件，例如陣列、字典、檔案或網路服務。&lt;/p&gt;
+
+&lt;p&gt;View 是負責顯示應用程式的使用者介面的部分，它接收使用者的輸入和事件，並將其傳遞給控制器。視圖可以是任何類型的使用者介面元件，例如按鈕、標籤、圖片或表格。&lt;/p&gt;
+
+&lt;p&gt;Controller 是負責協調模型和視圖的部分，它是應用程式的主要邏輯層。控制器可以接收來自視圖的輸入和事件，並根據其執行相應的動作，例如更新模型或改變視圖。控制器也可以與其他控制器溝通，以實現更複雜的功能。&lt;/p&gt;
+
+&lt;h3 id=&quot;書中以薪水計算器為例&quot;&gt;書中以薪水計算器為例&lt;/h3&gt;
+
+&lt;p&gt;在一個薪水計算器中，Model 是 Employee。calculator，在發動 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calculatePayAmount(:)&lt;/code&gt; 後，要將員工的薪水算出來。如果一個程式沒有依 MVC 的功能切開，那呼叫關係就像下面這張圖。注意的是，即使一個程式沒有 MVC，仍然能夠運作正常，第一版也可以正常運作，但問題會是在之後的擴充。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/non-mvc.jpeg&quot; alt=&quot;project not follow mvc design&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果要讓 Model 和 View 切開，中間就會有個 Controller 的角色，讓 View 不會和 Model 耦合。在一個不斷增加 features 的專案上，常常會有這樣的情形。&lt;/p&gt;
+
+&lt;h3 id=&quot;v11-非真實情況但有可能發生&quot;&gt;V1.1 (非真實情況，但有可能發生)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;UI 要加圓角、加漸層、加陰影&lt;/li&gt;
+  &lt;li&gt;UX 希望如果輸入框為空值時，自動&lt;/li&gt;
+  &lt;li&gt;搜尋欄希望有自動完成提示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;v12-非真實情況但有可能發生&quot;&gt;V1.2 (非真實情況，但有可能發生)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;每個分公司所在地的假日是不一樣的，希望擴增員工聘僱合約是依哪一地區的欄位&lt;/li&gt;
+  &lt;li&gt;擴增 intern 這個職位，計薪方式和正職不同，且每個地區的 intern 計薪也可能不同&lt;/li&gt;
+  &lt;li&gt;匯率換算，並希望設定一更改，欄位的 UI 也顯示對應的匯率符號 (當然貨幣的換算也要正確的數字，精確到小數點第3位)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上面兩個追加的 features 追加時，只要動到 view ，就會有可能動到 model，反向時，動到 model 也會動到 view。這樣的設計很容易會在開發時出現很難察覺的 bug。Apple 建議，在開發的時候，導入 mvc pattern，在 model 和 view 中間上一個 controller 的角色，就像下面這張圖一樣。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/mvc.jpeg&quot; alt=&quot;project follow mvc pattern&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;因為 cocoa design patterns 是很久以前就出版的書，書中並沒有 iOS 的範例，不過 iOS 的 UIKit 是 macOS 的子集，這一點在另一本書 &lt;strong&gt;創意競澤&lt;/strong&gt; 中有提到。所以 iOS 開發當然也適用這個 pattern。以下使用 Stanford 193 p 中的圖案，來表示 iOS 的 MVC。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/mvc-ios.jpg&quot; alt=&quot;mvc pattern in iOS&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;在-ios-app-中view-接觸到-model-的狀況&quot;&gt;在 iOS App 中，View 接觸到 Model 的狀況&lt;/h2&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// 在 UI 上呈現 Employee 資料 UI 的 tableViewCell，是 MVC 的 View&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FooTableViewCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UITableViewCell&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;/// Employee 是裝載資料的物件，是 MVC 的 Model&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;/// 在 View 物件裡面處理 Model，程式的確會運作，也可能運作正常，但這並不符合 MVC pattern&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 省略實作&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;建議不要在專案中，讓 View 和 Model 耦合在一起，儘可能讓 View 單純呈現資料，讓 Model 描述資料，然後透過 Controller (或是其他不是 View 的物件)進行組裝。除了 MVC pattern 之外，MV(X) 家族已經開枝散葉，在 Githup 上可以找到很多的範例，來完成你的需求。&lt;/p&gt;
+
+&lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://chiahsien.github.io/post/common-ios-architecture-from-mvc-to-viper-with-redux/&quot;&gt;Nelson 對 iOS 架構的說明&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kodeco.com/1000705-model-view-controller-mvc-in-ios-a-modern-approach&quot;&gt;Kodeco 對 MVC 的介紹&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@iamirzhan/the-only-viable-ios-architecture-c42f7b4c845d&quot;&gt;唯一可行的 iOS 架構(MVC)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52&quot;&gt;iOS 的架構(MVC, MVP, MVVM, Viper)&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="MVC" /><category term="Cocoa framework" /><summary type="html">MVC 是 Apple 範例框架，在 UIKit 的時代，這是個很重要的 pattern。最近有空的時間，都會花一點時間去看一本很久以前的書Cocoa 設計模式。</summary></entry><entry><title type="html">微軟新服務 Microsoft designer 現在不用排隊等白名單了，可以直接使用</title><link href="http://localhost:4000/programming/microsoft-designer.html" rel="alternate" type="text/html" title="微軟新服務 Microsoft designer 現在不用排隊等白名單了，可以直接使用" /><published>2023-04-30T00:48:00+08:00</published><updated>2023-04-30T00:48:00+08:00</updated><id>http://localhost:4000/programming/microsoft-designer</id><content type="html" xml:base="http://localhost:4000/programming/microsoft-designer.html">&lt;p&gt;如果你想要創造出專業品質的社交媒體貼文、邀請函、數位明信片、圖像等，你一定要試試 &lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt;。這是一款圖像設計應用程式，可以幫助你從你的想法開始，創造出獨一無二的東西。&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 的亮點是它利用了人工智慧的技術，讓你只要輸入文字，就可以快速生成原創和可編輯的設計。你還可以獲得寫作協助和自動佈局建議，讓你的內容更加吸引人。&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 甚至可以根據你的目標，為你提供社交媒體分享的標題和標籤。&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 是微軟365的一部分，只要你是微軟365的訂閱者，就可以免費使用這個強大的工具。而且現在不用排隊了，你可以直接在網站上註冊並開始使用Microsoft Designer。不要錯過這個機會，快來體驗 &lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt; 吧！&lt;/p&gt;
 
 &lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
 
@@ -755,127 +823,4 @@ Tesla (TSLA): Tesla is a leading electric vehicle manufacturer, and it is also a
 
 &lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://firebase.google.com/docs/ios/setup#swiftui&quot;&gt;Firebase iOS 專案 Tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">在 SwiftUI 發表之後，開啟一個專案的方式，多了 SwiftUI 的設定。如果你選擇使用 SwiftUI 開啟專案，原來的 AppDelegate 還有 SceneDelegate 檔案不會出現。而檔案的進入點，會是一個和專案同樣名稱的 SwiftUI 檔，裡面有個 Scene 並把 WindowGroup 包住。</summary></entry><entry><title type="html">使用 async/await 串接 escaping closure</title><link href="http://localhost:4000/swift/async-await-connect-closure.html" rel="alternate" type="text/html" title="使用 async/await 串接 escaping closure" /><published>2023-04-18T13:22:00+08:00</published><updated>2023-04-18T13:22:00+08:00</updated><id>http://localhost:4000/swift/async-await-connect-closure</id><content type="html" xml:base="http://localhost:4000/swift/async-await-connect-closure.html">&lt;h2 id=&quot;使用-swift-asyncawait-串接-closure-的方法&quot;&gt;使用 swift async/await 串接 closure 的方法&lt;/h2&gt;
-
-&lt;p&gt;如果一個專案是從 Swift 還沒有 combine 的時代就開始進行，那專案中會有大量的 @escaping closure 在做非同步的資料傳遞。在 Swift 5.5 之後，Swift 加進了 async/await 的語法，讓需要進行非同步的任務，不再需要在撰寫的時候有一堆的大括號。&lt;/p&gt;
-
-&lt;p&gt;所以&lt;/p&gt;
-
-&lt;p&gt;現在會有一個新的情境，以前的 lib 已經寫好 URLRequest 的方法，並使用 closure 進行傳值。把已經寫好的 escaping closure 全部改寫意義可能不大，而且也伴隨著一定程度的風險。因此，能另外寫一個 func 進行 async/await 轉接，並保留原來的 closure，是一個風險較低的選項。&lt;/p&gt;
-
-&lt;h2 id=&quot;包一層-async-func-的方法&quot;&gt;包一層 async func 的方法&lt;/h2&gt;
-
-&lt;h3 id=&quot;原來發送-request-的類別&quot;&gt;原來發送 request 的類別&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;c1&quot;&gt;// 將 Alamofire 包起來的 Adapter，每個 func 只是使用 Alamofire 發送 URL Request&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;// 原來的 closure func&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// 省略實作 implement code omitted&lt;/span&gt;
-        
-        &lt;span class=&quot;c1&quot;&gt;// implemented code omitted&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;擴充-request-到-asyncawait&quot;&gt;擴充 request 到 async/await&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 對 AlamofireAdapter 進行擴充&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;extension&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// 開出能使用 await 的 func，但實際上是呼叫原來的 getCoinMarketsInfo&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;c1&quot;&gt;// 進行轉接&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;withCheckedContinuation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-            
-            &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;returning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;withCheckedContinuation()&lt;/code&gt; 就可以將以前的 closure 資料，使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;continuation&lt;/code&gt; 進行 async return。&lt;/p&gt;
-
-&lt;h3 id=&quot;contentview-使用-getcoinlist&quot;&gt;ContentView 使用 getCoinList()&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fechList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                    
-                    &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;updateLastFetchTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
-                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;you got list, count: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, first: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;describing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;使用在-swiftui-的-view-時&quot;&gt;使用在 SwiftUI 的 View 時&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# 在 SwiftUI 上使用時&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    
-    &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cryptoList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;kt&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;this is test&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                
-                &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;結尾&quot;&gt;結尾&lt;/h2&gt;
-
-&lt;p&gt;請注意 async/await 還是需要專案最低支援在 iOS 13 以上，如果你的專案沒辦法低於 iOS 13，那還是沒辦法使用 async/await。&lt;/p&gt;
-
-&lt;p&gt;在我個人的 side project 上，我已經試著使用 SwiftUI 寫一些小專案，在使用 async/await 後，很多非同步的 feature 處理的程式碼，在人類眼中非常好讀。或許在 Apple 不斷的推進 Xcdoe 最低上架版本後，我會不斷的增加 async/await 程式碼的比重。目前，在專案上我仍然有很多 closure 在進行傳值。&lt;/p&gt;
-
-&lt;h2 id=&quot;相關資料&quot;&gt;相關資料&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/apple/swift-evolution/blob/main/proposals/0300-continuation.md&quot;&gt;Swift evolution on continuation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2021/10132/&quot;&gt;WWDC21: - Meet async/await in Swift&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/&quot;&gt;swift.org - Concurrency&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.hackingwithswift.com/swift/5.5/continuations&quot;&gt;Hacking With Swift 的文章&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/forums/thread/681980&quot;&gt;Apple 開發者論壇的討論&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://forums.swift.org/t/will-swift-concurrency-deploy-back-to-older-oss/49370&quot;&gt;在 Swift 論壇上對向前支援非常激烈的討論&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.swiftbysundell.com/special/swift-concurrency-backward-compatibility/&quot;&gt;Swift Concurrency 向下支援的文章&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Combine" /><category term="非同步" /><summary type="html">使用 swift async/await 串接 closure 的方法</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://firebase.google.com/docs/ios/setup#swiftui&quot;&gt;Firebase iOS 專案 Tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">在 SwiftUI 發表之後，開啟一個專案的方式，多了 SwiftUI 的設定。如果你選擇使用 SwiftUI 開啟專案，原來的 AppDelegate 還有 SceneDelegate 檔案不會出現。而檔案的進入點，會是一個和專案同樣名稱的 SwiftUI 檔，裡面有個 Scene 並把 WindowGroup 包住。</summary></entry></feed>
