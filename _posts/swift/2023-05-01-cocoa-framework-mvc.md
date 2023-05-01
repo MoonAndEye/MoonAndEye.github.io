@@ -65,7 +65,7 @@ class FooTableViewCell: UITableViewCell {
 }
 ```
 
-建議不要在專案中，讓 View 和 Model 耦合在一起，儘可能讓 View 單純呈現資料，讓 Model 描述資料，然後透過 Controller (或是其他不是 View 的物件)進行組裝。除了 MVC pattern 之外，MV(X) 家族已經開枝散葉，在 Githup 上可以找到很多的範例，來完成你的需求。
+建議不要在專案中，讓 View 和 Model 耦合在一起，儘可能讓 View 單純呈現資料，讓 Model 描述資料，然後透過 Controller (或是其他不是 View 的物件)進行組裝。除了 MVC pattern 之外，MV(X) 家族已經開枝散葉，在 Github 上可以找到很多的範例，來完成你的需求。
 
 ## 參考網站
 
