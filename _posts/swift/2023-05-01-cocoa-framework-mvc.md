@@ -36,7 +36,7 @@ Controller 是負責協調模型和視圖的部分，它是應用程式的主要
 
 ### V1.1 (非真實情況，但有可能發生)
 - UI 要加圓角、加漸層、加陰影
-- UX 希望如果輸入框為空值時，自動
+- UX 希望如果輸入框為空值時，加上 placeholder text
 - 搜尋欄希望有自動完成提示
 
 ### V1.2 (非真實情況，但有可能發生)
@@ -48,7 +48,7 @@ Controller 是負責協調模型和視圖的部分，它是應用程式的主要
 
 ![project follow mvc pattern](/assets/swift/mvc-pattern/mvc.jpeg)
 
-因為 cocoa design patterns 是很久以前就出版的書，書中並沒有 iOS 的範例，不過 iOS 的 UIKit 是 macOS 的子集，這一點在另一本書 **創意競澤** 中有提到。所以 iOS 開發當然也適用這個 pattern。以下使用 Stanford 193 p 中的圖案，來表示 iOS 的 MVC。
+因為 cocoa design patterns 是很久以前就出版的書，書中並沒有 iOS 的範例，不過 iOS 的 UIKit 是 macOS 的子集(UIKit 剛出來的時候)，這一點在另一本書 **創意競澤** 中有提到。所以 iOS 開發當然也適用這個 pattern。以下使用 Stanford 193 p 中的圖案，來表示 iOS 的 MVC。
 
 ![mvc pattern in iOS](/assets/swift/mvc-pattern/mvc-ios.jpg)
 

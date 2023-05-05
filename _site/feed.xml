@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-04T10:08:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Delegate Pattern (委派模式)in Swift</title><link href="http://localhost:4000/swift/delegate-pattern-in-swift.html" rel="alternate" type="text/html" title="Delegate Pattern (委派模式)in Swift" /><published>2023-05-03T08:47:00+08:00</published><updated>2023-05-03T08:47:00+08:00</updated><id>http://localhost:4000/swift/delegate-pattern-in-swift</id><content type="html" xml:base="http://localhost:4000/swift/delegate-pattern-in-swift.html">&lt;p&gt;Delegate Pattern 是 iOS 開發常用的設計模式，它可以讓一個物件將某些職責或行為委託給另一個物件，從而實現解耦和靈活性。在 Swift 中，我們通常使用 protocol 來定義 delegate 的介面，並讓 delegate 物件遵循該 protocol。在這篇文章中，我們將介紹如何在 Swift 中使用 delegate pattern，並給出一個實際的範例。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-04T13:54:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Delegate In Table View Button Tapped</title><link href="http://localhost:4000/2023/05/04/delegate-in-table-view-button-tapped.html" rel="alternate" type="text/html" title="Delegate In Table View Button Tapped" /><published>2023-05-04T13:47:00+08:00</published><updated>2023-05-04T13:47:00+08:00</updated><id>http://localhost:4000/2023/05/04/delegate-in-table-view-button-tapped</id><content type="html" xml:base="http://localhost:4000/2023/05/04/delegate-in-table-view-button-tapped.html">&lt;h2 id=&quot;草稿&quot;&gt;草稿&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><summary type="html">草稿</summary></entry><entry><title type="html">Delegate Pattern (委派模式)in Swift</title><link href="http://localhost:4000/swift/delegate-pattern-in-swift.html" rel="alternate" type="text/html" title="Delegate Pattern (委派模式)in Swift" /><published>2023-05-03T08:47:00+08:00</published><updated>2023-05-03T08:47:00+08:00</updated><id>http://localhost:4000/swift/delegate-pattern-in-swift</id><content type="html" xml:base="http://localhost:4000/swift/delegate-pattern-in-swift.html">&lt;p&gt;Delegate Pattern 是 iOS 開發常用的設計模式，它可以讓一個物件將某些職責或行為委託給另一個物件，從而實現解耦和靈活性。在 Swift 中，我們通常使用 protocol 來定義 delegate 的介面，並讓 delegate 物件遵循該 protocol。在這篇文章中，我們將介紹如何在 Swift 中使用 delegate pattern，並給出一個實際的範例。&lt;/p&gt;
 
 &lt;p&gt;下面是一個會將搬箱子任務派發的範例，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JobDispatcher&lt;/code&gt;會收到 Box 箱子，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JobDispatcher&lt;/code&gt;並不會實際去搬箱子，他會將搬箱子的任務委派給他的 delegate。這個 delegate 並不限定用什麼工具來搬，可以是徒手來搬，像是搬運工(Porter)，也可能是用機器來搬，像是叉車(Forklift)。雖然 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Porter&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Forklift&lt;/code&gt; 都可以搬箱子，但因為使用的工具不一樣，所以搬的方法會不一樣，這會反應到程式的實作上。但不論哪種方法去搬，箱子都會被搬走&lt;/p&gt;
 
@@ -856,91 +856,4 @@ Tesla (TSLA): Tesla is a leading electric vehicle manufacturer, and it is also a
 
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/model-data&quot;&gt;SwiftUI Model data - Apple 文件&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/managing-user-interface-state&quot;&gt;SwiftUI 管理 UI 狀態 - Apple 文件&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">SwiftUI 以宣告式的方法進行 UI 設計。整個資料的傳遞是 Action →State → View 的方向，而這個方向是固定的，不會有逆向的可能。你也可以查 one way data flow 這個名詞，不只是 mobile 端，現在在其他端也有很多這樣的 data flow 設計。</summary></entry><entry><title type="html">Swift 中的 Value type 和 Reference type</title><link href="http://localhost:4000/swift/ref-type-val-type-in-swift.html" rel="alternate" type="text/html" title="Swift 中的 Value type 和 Reference type" /><published>2023-04-19T11:42:00+08:00</published><updated>2023-04-19T11:42:00+08:00</updated><id>http://localhost:4000/swift/ref-type-val-type-in-swift</id><content type="html" xml:base="http://localhost:4000/swift/ref-type-val-type-in-swift.html">&lt;p&gt;在我以前的文章 &lt;a href=&quot;https://moonandeye.github.io/swift/2018/06/09/prototype-patter.html&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type 的不同)&lt;/a&gt; 中，已經有提到 Referce type 和 value type 在修改上的差別。但那一篇是來自於 Swift 的 Design Pattern 一書中，Prototype pattern 的延伸。這邊想再寫一篇 Value type 和 Reference type 的文章。&lt;/p&gt;
-
-&lt;h3 id=&quot;reference-type&quot;&gt;Reference Type&lt;/h3&gt;
-
-&lt;p&gt;class 是 reference types。Swift 5.5 以後的 actor 也是 reference type。&lt;/p&gt;
-
-&lt;h3 id=&quot;value-type&quot;&gt;Value Type&lt;/h3&gt;
-
-&lt;p&gt;struct 宣告的物件, enum, tuple, Dict, Array 都是 value types。&lt;/p&gt;
-
-&lt;h2 id=&quot;在-swift-語言中將-value-type-設計為主要結構的原因&quot;&gt;在 Swift 語言中，將 value type 設計為主要結構的原因&lt;/h2&gt;
-
-&lt;p&gt;我目前查到最早的文章，是在 Swift 還在發展的時候寫的 blog。文章連結在下面，發文日期為 2014 年 8 月 15 日。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/swift/blog/?id=10&quot;&gt;Value and Reference Types - Swift 部落格&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;在後面幾段中有提到 &lt;strong&gt;The Role of Mutation in Safety「變異在安全性中的作用」&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;選擇值類型而不是引用類型的主要原因之一是能夠更輕鬆地理解程式碼。如果您始終獲得獨立的複製實例，您可以信任應用程序的其他部分不會在幕後更改數據。這在多線程環境中特別有用，其中不同的線程可能會在您之下更改數據。這可能會產生非常難以調試的嚴重錯誤。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;由於差異是以修改數據時發生的情況來定義的，因此有一種情況是值型和引用型重疊的：當實例沒有可寫數據時。在沒有變異的情況下，值和引用的行為完全相同。你可能會想到一種情況，即完全不可變的類別可能是有價值的。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;在 Swift 中，Array、String 和 Dictionary 都是值類型。它們的行為非常像 C 中的簡單 int 值，作為該數據的唯一實例。你不需要做任何特殊的事情——比如進行顯式複製——來防止其他代碼在背後修改該數據。重要的是，你可以安全地在線程之間傳遞值的副本而不需要同步。為了提高安全性，這種模型將幫助你在 Swift 中編寫更可預測的代碼。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;swift-的-array-是-value-type那這些操作會更改什麼&quot;&gt;Swift 的 Array 是 value type，那這些操作，會更改什麼？&lt;/h2&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// 忍者龜的宣告，注意! 這邊用 reference type class&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NinjaTurtle&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 先初始化一隻忍者龜，並命名為達文西&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;turtle1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NinjaTurtle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;turtle1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;達文西&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 再初始化一隻忍者龜，並命名為米開朗基羅&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;turtle2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NinjaTurtle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;turtle1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;米開朗基羅&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// 兩隻忍者龜裝進同一個 array 裡面&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;turtles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;turtle1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;turtle2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// 因為 array 是 value type，所以這個賦值是 copy&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;copiedTurtles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;turtles&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// 我們把原來 array 的烏龜拿出來，並命名為 拉斐爾&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;turtles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;拉斐爾&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// 請問，複製的 array 裡面，第 0 隻烏龜的名字，是 拉斐爾 還是 達文西&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copiedTurtles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;上面這段程式碼，建議自己跑過一遍，然後去驗證自己的想法。&lt;/p&gt;
-
-&lt;p&gt;如果會碰到其他語言的話，也可以把相同的邏輯，試著去跑在 Kotlin, Python, Java, C#, Rust 上，看看是一樣？還是不一樣？&lt;/p&gt;
-
-&lt;h2 id=&quot;在什麼場景下要選擇哪個-type&quot;&gt;在什麼場景下，要選擇哪個 type？&lt;/h2&gt;
-
-&lt;h3 id=&quot;以下場景適合用-value-type&quot;&gt;以下場景，適合用 value type&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;比較兩個物件時，用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt; 比較合理&lt;/li&gt;
-  &lt;li&gt;當你在複製時，複製後的物件和複製前的物件彼此狀態應該是獨立時&lt;/li&gt;
-  &lt;li&gt;data 會在多個執行緒下被操作時&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;以下場景適合用-reference-type-class&quot;&gt;以下場景，適合用 reference type (class)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;比較兩個物件時，用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;===&lt;/code&gt; 比較合理&lt;/li&gt;
-  &lt;li&gt;需求使用會被共享且變更的狀態時&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/2018/06/09/prototype-patter.html&quot;&gt;Prototype Pattern (原型模式) in Swift (Reference type vs. Value type 的不同)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/swift/blog/?id=10&quot;&gt;Value and Reference Types - Swift 部落格&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/&quot;&gt;Structures and Clases - swif.org&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><summary type="html">在我以前的文章 Prototype Pattern (原型模式) in Swift (Reference type vs. Value type 的不同) 中，已經有提到 Referce type 和 value type 在修改上的差別。但那一篇是來自於 Swift 的 Design Pattern 一書中，Prototype pattern 的延伸。這邊想再寫一篇 Value type 和 Reference type 的文章。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/managing-user-interface-state&quot;&gt;SwiftUI 管理 UI 狀態 - Apple 文件&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">SwiftUI 以宣告式的方法進行 UI 設計。整個資料的傳遞是 Action →State → View 的方向，而這個方向是固定的，不會有逆向的可能。你也可以查 one way data flow 這個名詞，不只是 mobile 端，現在在其他端也有很多這樣的 data flow 設計。</summary></entry></feed>

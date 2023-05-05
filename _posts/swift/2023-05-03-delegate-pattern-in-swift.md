@@ -246,6 +246,8 @@ extension NorthDetectViewController: NorthDetectorDelegate {
 
 注意上面的範例使用了 CoreLocation 框架，但這個框架在使用前需要取得使用者權限，而這個權限在不同的 iOS 時代有不一樣的 response。建議參考 [Apple 官方文件](https://developer.apple.com/documentation/corelocation/clauthorizationstatus/1423640-authorized) 進行權限的實作。
 
+## 不該使用
+
 ### 參考網站
 
 [iOS 位置權限文件](https://developer.apple.com/documentation/corelocation/clauthorizationstatus/1423640-authorized)
