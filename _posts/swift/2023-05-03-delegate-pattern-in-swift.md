@@ -246,7 +246,15 @@ extension NorthDetectViewController: NorthDetectorDelegate {
 
 注意上面的範例使用了 CoreLocation 框架，但這個框架在使用前需要取得使用者權限，而這個權限在不同的 iOS 時代有不一樣的 response。建議參考 [Apple 官方文件](https://developer.apple.com/documentation/corelocation/clauthorizationstatus/1423640-authorized) 進行權限的實作。
 
-## 不該使用
+## delegate func 命名習慣
+
+在 Cocoa framework 裡面，你可以看到很多 delegate func 前面有 did, will。可以這樣思考
+- 在 delegate 發動的時候，是指「某件事」準備要開始 -> 用 `will`。例：tableView delegate 中有 cell willDisplay，表示 cell 在出現「之前」會發動此 func
+- 在某件事做完後 -> 用 `did`， cell didEndDisplaying ，就表示 cell 在 display 「結束」了後，才會發動此 func
+
+## 不該使用的場合
+
+delegate 適用於 1 對 1 傳值，如果你的情境要 1 對多傳值，或是多對多傳值，請不要使用 delegate pattern。在 Swift 裡面，你可以用 closure 或 NotificationCenter 進行不是 1 對 1 的傳值。
 
 ### 參考網站
 
