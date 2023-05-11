@@ -10,3 +10,6 @@ permalink: /swift/:title:output_ext
 ---
 
 ## Using combine, there are two different result, one is current value, another is 
+
+<!-- 參考網址 -->
+<!-- https://www.avanderlee.com/combine/passthroughsubject-currentvaluesubject-explained/ -->
