@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-11T16:15:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Alerts 出現選項時，主要動作要放哪一邊？左？右？(Apple 的 OS 請放右邊(也就是最後面))</title><link href="http://localhost:4000/swift/primary-action-in-alerts.html" rel="alternate" type="text/html" title="Alerts 出現選項時，主要動作要放哪一邊？左？右？(Apple 的 OS 請放右邊(也就是最後面))" /><published>2023-05-10T13:13:00+08:00</published><updated>2023-05-10T13:13:00+08:00</updated><id>http://localhost:4000/swift/primary-action-in-alerts</id><content type="html" xml:base="http://localhost:4000/swift/primary-action-in-alerts.html">&lt;p&gt;Alerts 出現選項時，主要動作要放哪一邊？左？右？
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-15T13:47:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">開箱薩爾達傳說 王國之淚版 Switch 主機</title><link href="http://localhost:4000/life/open-box-zelda-ver-switch.html" rel="alternate" type="text/html" title="開箱薩爾達傳說 王國之淚版 Switch 主機" /><published>2023-05-15T13:07:00+08:00</published><updated>2023-05-15T13:07:00+08:00</updated><id>http://localhost:4000/life/open-box-zelda-ver-switch</id><content type="html" xml:base="http://localhost:4000/life/open-box-zelda-ver-switch.html">&lt;p&gt;和其他人相比，已經晚了許多天，不過這邊還是紀錄一下開箱。&lt;/p&gt;
+
+&lt;p&gt;我是和 momo 下定的，Switch 是和王國之淚一起寄出，所以主機拿到的時間，比市面上還晚，但王國之淚是一起到的。&lt;/p&gt;
+
+&lt;h3 id=&quot;開箱&quot;&gt;開箱&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/inbox.jpeg&quot; alt=&quot;Zelda in box&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;switch-正反面照&quot;&gt;Switch 正反面照&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/box-front.jpeg&quot; alt=&quot;Switch 正面照&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/box-rear.jpeg&quot; alt=&quot;Switch 反面照&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;switch-在箱子中&quot;&gt;Switch 在箱子中&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/box-inner.jpeg&quot; alt=&quot;在箱子中的 Switch&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;switch-deck&quot;&gt;Switch deck&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/case-front.jpeg&quot; alt=&quot;deck 正面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/case-rear.jpeg&quot; alt=&quot;deck 反面&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;switch&quot;&gt;Switch&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/switch.jpeg&quot; alt=&quot;Switch&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;附送特典&quot;&gt;附送特典&lt;/h3&gt;
+
+&lt;p&gt;附了鑰匙圈和貼紙，在其他通路上，也有附的是卡片套子，還聽說普雷伊可以選墊子。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/addition.jpeg&quot; alt=&quot;特典&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;朋友的特典---墊子&quot;&gt;朋友的特典 - 墊子&lt;/h3&gt;
+
+&lt;p&gt;這個墊子非常有質感啊! 真的推薦&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/sheet.jpeg&quot; alt=&quot;墊子&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;這次主打---創造&quot;&gt;這次主打 - 創造&lt;/h2&gt;
+
+&lt;p&gt;Youtube 上已經有各種創造物了，比如說下面這個就很有趣。使用「轟炸機」來炸小波。&lt;/p&gt;
+
+&lt;h3 id=&quot;時代變了大人&quot;&gt;時代變了，大人&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tKuoTrW6tDc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/life/zelda-trail-3rd.html&quot;&gt;薩爾達王國之淚影片釋出&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html&quot;&gt;薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Switch" /><category term="Nintendo" /><category term="任天堂" /><summary type="html">和其他人相比，已經晚了許多天，不過這邊還是紀錄一下開箱。</summary></entry><entry><title type="html">Alerts 出現選項時，主要動作要放哪一邊？左？右？(Apple 的 OS 請放右邊(也就是最後面))</title><link href="http://localhost:4000/swift/primary-action-in-alerts.html" rel="alternate" type="text/html" title="Alerts 出現選項時，主要動作要放哪一邊？左？右？(Apple 的 OS 請放右邊(也就是最後面))" /><published>2023-05-10T13:13:00+08:00</published><updated>2023-05-10T13:13:00+08:00</updated><id>http://localhost:4000/swift/primary-action-in-alerts</id><content type="html" xml:base="http://localhost:4000/swift/primary-action-in-alerts.html">&lt;p&gt;Alerts 出現選項時，主要動作要放哪一邊？左？右？
 Alerts 是一種常見的用戶反饋機制，它可以提醒用戶發生了什麼事情，或者需要用戶做出一些決定。Alerts 通常會有一個或多個選項按鈕，讓用戶可以選擇接受、取消、確認、忽略等不同的動作。那麼，這些選項按鈕應該放在 Alerts 的哪一邊呢？左邊還是右邊？&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/left-or-right/left_right.jpeg&quot; alt=&quot;left or right&quot; /&gt;&lt;/p&gt;
@@ -939,70 +990,4 @@ Tesla (TSLA): Tesla is a leading electric vehicle manufacturer, and it is also a
 
 &lt;p&gt;&lt;a href=&quot;https://semver.org/lang/zh-TW/&quot;&gt;語意化版本&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/Alamofire/Alamofire/blob/master/Documentation/Alamofire%205.0%20Migration%20Guide.md&quot;&gt;Alamofire 5 migration 守則&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="third party" /><category term="cocoapods" /><summary type="html">在 iOS 開發中，我們常常會使用第三方套件來增加功能或減少工作量。但是，如果我們直接下載套件的原始碼，或者使用 git submodule 的方式，我們可能會遇到一些問題，例如版本不一致、相依性不清楚、更新不方便等等。為了解決這些問題，我們可以使用 cocoapods 這個工具來協助管理第三方套件。</summary></entry><entry><title type="html">Charts 的 4049 &amp;amp; 4132 issue，造成閃退的原因</title><link href="http://localhost:4000/swift/charts-crashed-issue.html" rel="alternate" type="text/html" title="Charts 的 4049 &amp;amp; 4132 issue，造成閃退的原因" /><published>2023-04-23T15:30:00+08:00</published><updated>2023-04-23T15:30:00+08:00</updated><id>http://localhost:4000/swift/charts-crashed-issue</id><content type="html" xml:base="http://localhost:4000/swift/charts-crashed-issue.html">&lt;p&gt;Charts 是 iOS 專案開發中很常使用的圖表繪制套件，不過今年，我在專案上遇到了很奇怪的狀況，在 Firebase Crashlytics 的 Dashboard 上，一直有零星的閃退，這閃退是發生在使用 Charts 套件的 renderer 裡面。而且在 release 給 QA 時，也會在 iPhone 關電源的狀況下，經過長時間後再開啟，就會閃退的狀況。但是去年，在 Crashlytics 上並沒有相同的 crash 發生，而這之間的差異，就是將 Charts 套件升級到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.4.1&lt;/code&gt; 以及發現這個閃退的情況之後，再繼續往 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.5.0&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.6.0&lt;/code&gt; 升級。&lt;/p&gt;
-
-&lt;p&gt;但如果把有問題的版本，裝在模擬器或是我手上的實機上，卻無法用相同步驟重現，驗證了軟體界的一句話「在我的機器上是好的」。在把 scheme 調到 release 後，這個閃退能重現。然後問題大概就鎖定在下列幾個點。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;這個閃退和 Charts 有關，而且是在 Charts 渲染過程中發生的。閃退點會在 Charts 準備更新圖的時候&lt;/li&gt;
-  &lt;li&gt;Debug mode 中這個閃退不會發生，但改成 Release mode 後，就會發生，而且能夠一直重現 (最可怕就這點，Release 才出事)&lt;/li&gt;
-  &lt;li&gt;在我的專案中，發動點是在資料重新拉取後，要求 charts 進行更新後發生&lt;/li&gt;
-  &lt;li&gt;真正的閃退原因，是在上一點的資料更新後，Charts 進行重繪時，在跑 init() 時會有個 iterator，但輸入的參數 min 和 max 會倒過來，然後就會出現 crash，而這一點是 release mode 才會出現，但 debug 不會出現。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;在-github-上的-issues-中找是否有類似的問題&quot;&gt;在 github 上的 issues 中找是否有類似的問題&lt;/h2&gt;
-
-&lt;h3 id=&quot;其他開發者也反應有這個問題&quot;&gt;其他開發者也反應有這個問題&lt;/h3&gt;
-
-&lt;p&gt;caloon 也反應他的專案遇到類似的問題，但 crash 也不是 100% 會發生，具 caloon 的描述，大概佔 5% 左右&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/charts-crash/developer-found-stable-321.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在查詢後，發現 issue 4049 和 4132 這兩個 issue 有關。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/danielgindi/Charts/issues/4049&quot;&gt;Charts Issue - 4049&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/danielgindi/Charts/issues/4132&quot;&gt;Charts Issue - 4132&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;關於-issue-4049&quot;&gt;關於 issue 4049&lt;/h3&gt;
-
-&lt;p&gt;issue 4049 裡面描述的情景，和我專案遇到的情景比較像。而開發者 bweavgolfanatic 有將他閃退的情形說明，發生的閃退點和我一樣。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/danielgindi/Charts/issues/4049#issuecomment-550577869&quot;&gt;開發者 bweavgolfanatic 對閃退的描述&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/swift/charts-crash/charts-crash-in-iterator.jpeg&quot;&gt;Charts 閃退在 iterator&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;從上面的 debug console 可以看到，max 是 1，min 是 98，這在 run time 呼叫 min…max 時閃退。而這個現像，我也能在專案中重現。然後繼續將 issue 的討論串看完，有看到 開發者 gordondove 提出一個解法。&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downloadDataSet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newThroughtputPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downloadDataSet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calcMinMax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;chartView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calcMinMax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chartView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;notifyDataSetChanged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/swift/charts-crash/crash-solution.jpeg&quot;&gt;gordondove 解法&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;關於-issue-4132&quot;&gt;關於 issue 4132&lt;/h3&gt;
-
-&lt;p&gt;4132 則是關於這個 issue 的 PR，以及將多篇 issues 的文章整合起來，主要的資訊我還是從 issue 4049 找到的。&lt;/p&gt;
-
-&lt;h2 id=&quot;解決方案的選擇&quot;&gt;解決方案的選擇&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;將 Charts 升級，因為後續的 4132 PR 有說他修正了，但合進去後的大版號在 4.0.0 以後&lt;/li&gt;
-  &lt;li&gt;找出 4132 issue 相關的 PR，並把這個改動合併到另外自己 folk 的 Charts repo 上，並打一個 tag。&lt;/li&gt;
-  &lt;li&gt;將 Charts 退回 3.2.0 (iterator 被改動之前)&lt;/li&gt;
-  &lt;li&gt;使用 bweavgolfanatic 的解法，重新呼叫 dataset 的 calMinMax()&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;最後選擇 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;方案 4&lt;/code&gt;，因為當時的版號一升到大版號4，整個專案就無法 build 起來。這時就體認到 Adapter 的重要性，有興趣的朋友可以參考 &lt;a href=&quot;https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html&quot;&gt;將第三方 lib 包起來，減少升級的痛苦&lt;/a&gt; 一文。沒有使用 方案2/方案3 的原因，就是這個專案使用的，是 folk 後再被修改的版本，如果要選擇回溯，是有呵能帶來其他風險的，所以最終選擇方案4。&lt;/p&gt;
-
-&lt;h2 id=&quot;參考文章&quot;&gt;參考文章&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html&quot;&gt;使用 Adapter 將第三方 lib 包起來&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/danielgindi/Charts&quot;&gt;Charts repo - iOS&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/PhilJay/MPAndroidChart&quot;&gt;MPCharts repo - Android&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://semver.org/lang/zh-TW/&quot;&gt;語意化版本&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Charts" /><summary type="html">Charts 是 iOS 專案開發中很常使用的圖表繪制套件，不過今年，我在專案上遇到了很奇怪的狀況，在 Firebase Crashlytics 的 Dashboard 上，一直有零星的閃退，這閃退是發生在使用 Charts 套件的 renderer 裡面。而且在 release 給 QA 時，也會在 iPhone 關電源的狀況下，經過長時間後再開啟，就會閃退的狀況。但是去年，在 Crashlytics 上並沒有相同的 crash 發生，而這之間的差異，就是將 Charts 套件升級到 3.4.1 以及發現這個閃退的情況之後，再繼續往 3.5.0, 3.6.0 升級。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://github.com/Alamofire/Alamofire/blob/master/Documentation/Alamofire%205.0%20Migration%20Guide.md&quot;&gt;Alamofire 5 migration 守則&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="third party" /><category term="cocoapods" /><summary type="html">在 iOS 開發中，我們常常會使用第三方套件來增加功能或減少工作量。但是，如果我們直接下載套件的原始碼，或者使用 git submodule 的方式，我們可能會遇到一些問題，例如版本不一致、相依性不清楚、更新不方便等等。為了解決這些問題，我們可以使用 cocoapods 這個工具來協助管理第三方套件。</summary></entry></feed>
