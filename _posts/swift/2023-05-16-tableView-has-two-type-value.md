@@ -383,7 +383,7 @@ class PostListModel {
         /// 如果超過 4 則，就插在 index = 2 的位置
         ///
         guard ads.indices.contains(1) else {
-            return items
+            return posts
         }
         items = posts
         items.insert(ads[0], at: 2)
