@@ -380,8 +380,7 @@ class PostListModel {
             return items
         }
         
-        /// 如果超過 4 則，就插在 index = 2 的位置
-        ///
+        /// 如果超過 4 則且有兩個廣告，就插在 index = 2 的位置
         guard ads.indices.contains(1) else {
             return posts
         }
