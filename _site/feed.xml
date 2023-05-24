@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-19T13:41:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">如果 table view 中有兩種以上的資料型態，你可以這樣處理程式碼</title><link href="http://localhost:4000/swift/tableView-has-two-type-value.html" rel="alternate" type="text/html" title="如果 table view 中有兩種以上的資料型態，你可以這樣處理程式碼" /><published>2023-05-18T21:37:00+08:00</published><updated>2023-05-18T21:37:00+08:00</updated><id>http://localhost:4000/swift/tableView-has-two-type-value</id><content type="html" xml:base="http://localhost:4000/swift/tableView-has-two-type-value.html">&lt;p&gt;清單型的 UI 在 iOS App 上是非常常見的設計，從內建 App 的「聯絡人」、「通話紀錄」、「設定」都是用 Table(在另一個平台叫 list) 清單型的 UI 做出來的。TableView 在手機上有個很大的優點，他可以在有限的螢幕上，呈現超過螢幕的資訊，使用者只需要往一個方向滑，就會看到更多的資訊。在 iOS 的設計上， UITableView 預設是帶有 bounce 的，當你滑到最後一個資料的時候，Table 還會維持著一定的慣性滑動，之後再彈回到頂部。這個 bounce 的行為，在「創意競擇」中也有提到，是很早就做進 iOS 系統裡面的設計。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-24T11:46:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Xcode 上使用 GitHub Copilot 的體驗 (結論：不是很理想，現在在使用 Xcode 時候都是關掉 copilot 的)</title><link href="http://localhost:4000/swift/copilot-with-xcode.html" rel="alternate" type="text/html" title="Xcode 上使用 GitHub Copilot 的體驗 (結論：不是很理想，現在在使用 Xcode 時候都是關掉 copilot 的)" /><published>2023-05-24T11:03:00+08:00</published><updated>2023-05-24T11:03:00+08:00</updated><id>http://localhost:4000/swift/copilot-with-xcode</id><content type="html" xml:base="http://localhost:4000/swift/copilot-with-xcode.html">&lt;p&gt;在 &lt;a href=&quot;https://moonandeye.github.io/programming/start-using-copilot.html&quot;&gt;前一篇文章中&lt;/a&gt; 提到，我已經購買了 github copilot 服務，並嘗試在 side project 中使用。我主要工作是 iOS app 開發，而且使用 Native 開發，也嘗試了在 Xcode 中使用 copilot。在 &lt;a href=&quot;#relative-article&quot;&gt;相關文章&lt;/a&gt; 中，有放 Xcode 整合 copilot 的教學，如果想要在 Xcode 中使用，可以參考。&lt;/p&gt;
+
+&lt;h2 id=&quot;但我現在不在-xcode-中使用-copilot-了&quot;&gt;但，我現在不在 Xcode 中使用 copilot 了&lt;/h2&gt;
+
+&lt;p&gt;copilot 在 Xcode 的開發體驗上，並沒有 VScode 那麼流暢。在我打字的過程中，Xcode 的 copilot 插件在運作過程中，會干擾 Xcode 本身的自動完成反應時間，在我的「體感」上，我會「感覺到」我在等 Xcode 的自動完成跳出來，我才能選那些自動完成的建議。&lt;/p&gt;
+
+&lt;p&gt;另一方面，現在 Xcode copilot 建議的程式碼，可能因為和我的機器/帳號磨合還不夠，建議的程式碼常常有上下文對不起來的問題。在一個 VC 或 class 或 struct 中，我們一定會有 property 宣告在 func 外面，但 copilot 的程式碼一遇到要和這些變數交互作用的場景，給的建議程式碼就沒什麼作用(但這種全域變數，即使是人類開發者，也不一定好理解，所以才有 design patterns 各種流派的出現)。&lt;/p&gt;
+
+&lt;p&gt;在我把他關掉後，我開發的心情有比較好，不過速度上的差異沒辦法很客觀的比較，就我的理解，Copilot 會愈用愈好，但目前在 Xcode 上的體驗，還不夠好。&lt;/p&gt;
+
+&lt;h2 id=&quot;在-xcode-中你可以使用-code-snippet-來做到類似的程式建議功能&quot;&gt;在 Xcode 中，你可以使用 Code Snippet 來做到類似的程式建議功能&lt;/h2&gt;
+
+&lt;p&gt;Snippet 是大多數 IDE 具備的功能，你可以把常用的程式碼先建個模版，並在中間挖出要填空的區域和字，在呼叫 snippet 時，只需要填入剩下的地方就好了，下面是一個我常用的讓其他 Queue 回到 main Quque 的 snippet。在 iOS 13 以後，如果在非 main queue 中使用 UI 的元件，會閃退。&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        &lt;span class=&quot;c1&quot;&gt;// 這是一個我常用的 snippet&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;相關文章&quot;&gt;&lt;a name=&quot;relative-article&quot;&gt;相關文章&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/start-using-copilot.html&quot;&gt;開始使用 Github Copilot 服務，來讓 side project 加速&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/intitni/CopilotForXcode&quot;&gt;Xcode copilot - 作者 Intini&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/%E5%9C%A8-xcode-%E4%BD%BF%E7%94%A8-copilot-%E5%B9%AB%E5%BF%99%E5%AF%AB%E7%A8%8B%E5%BC%8F-7e8761a206f4&quot;&gt;在 Xcode 使用 Copilot 幫忙寫程式 - 作者 彼得潘&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Xcode" /><category term="copilot" /><summary type="html">在 前一篇文章中 提到，我已經購買了 github copilot 服務，並嘗試在 side project 中使用。我主要工作是 iOS app 開發，而且使用 Native 開發，也嘗試了在 Xcode 中使用 copilot。在 相關文章 中，有放 Xcode 整合 copilot 的教學，如果想要在 Xcode 中使用，可以參考。</summary></entry><entry><title type="html">如果 table view 中有兩種以上的資料型態，你可以這樣處理程式碼</title><link href="http://localhost:4000/swift/tableView-has-two-type-value.html" rel="alternate" type="text/html" title="如果 table view 中有兩種以上的資料型態，你可以這樣處理程式碼" /><published>2023-05-18T21:37:00+08:00</published><updated>2023-05-18T21:37:00+08:00</updated><id>http://localhost:4000/swift/tableView-has-two-type-value</id><content type="html" xml:base="http://localhost:4000/swift/tableView-has-two-type-value.html">&lt;p&gt;清單型的 UI 在 iOS App 上是非常常見的設計，從內建 App 的「聯絡人」、「通話紀錄」、「設定」都是用 Table(在另一個平台叫 list) 清單型的 UI 做出來的。TableView 在手機上有個很大的優點，他可以在有限的螢幕上，呈現超過螢幕的資訊，使用者只需要往一個方向滑，就會看到更多的資訊。在 iOS 的設計上， UITableView 預設是帶有 bounce 的，當你滑到最後一個資料的時候，Table 還會維持著一定的慣性滑動，之後再彈回到頂部。這個 bounce 的行為，在「創意競擇」中也有提到，是很早就做進 iOS 系統裡面的設計。&lt;/p&gt;
 
 &lt;p&gt;如果列表中的資料量很多，使用者很難一次找到目標，通常還會加上搜尋框等功能，進行 filter。像是 電話 app 中的聯絡人，如果你的聯絡人有 500 個，但要找的聯絡人是 Marvin，就可以透過搜尋來進行。&lt;/p&gt;
 
@@ -1252,76 +1278,4 @@ Alerts 是一種常見的用戶反饋機制，它可以提醒用戶發生了什�
 
 &lt;h2 id=&quot;參考網站&quot;&gt;參考網站&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="design" /><category term="Microsoft" /><summary type="html">如果你想要創造出專業品質的社交媒體貼文、邀請函、數位明信片、圖像等，你一定要試試 Microsoft Designer。這是一款圖像設計應用程式，可以幫助你從你的想法開始，創造出獨一無二的東西。Microsoft Designer 的亮點是它利用了人工智慧的技術，讓你只要輸入文字，就可以快速生成原創和可編輯的設計。你還可以獲得寫作協助和自動佈局建議，讓你的內容更加吸引人。Microsoft Designer 甚至可以根據你的目標，為你提供社交媒體分享的標題和標籤。Microsoft Designer 是微軟365的一部分，只要你是微軟365的訂閱者，就可以免費使用這個強大的工具。而且現在不用排隊了，你可以直接在網站上註冊並開始使用Microsoft Designer。不要錯過這個機會，快來體驗 Microsoft Designer 吧！</summary></entry><entry><title type="html">Google Bard AI 開放台灣申請了</title><link href="http://localhost:4000/programming/google-bard-is-beta-in-taiwan.html" rel="alternate" type="text/html" title="Google Bard AI 開放台灣申請了" /><published>2023-04-26T16:03:00+08:00</published><updated>2023-04-26T16:03:00+08:00</updated><id>http://localhost:4000/programming/google-bard-is-beta-in-taiwan</id><content type="html" xml:base="http://localhost:4000/programming/google-bard-is-beta-in-taiwan.html">&lt;p&gt;Google Bard AI 開放申請了，只要點選下面的連結按同意，就可以了。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://bard.google.com/?hl=en&quot;&gt;申請測試連結&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;申請過程&quot;&gt;申請過程&lt;/h2&gt;
-
-&lt;h3 id=&quot;bard-的測試信&quot;&gt;Bard 的測試信&lt;/h3&gt;
-
-&lt;p&gt;在申請完後，會有一封信寄到你的信箱，打開來會看到他附上了用 Bard 寫出來的一首詩給你。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/bard-white-list.png&quot; alt=&quot;bard white list message with poem&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;等待時間並不長，我只等了八分鐘，就可以用了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/email-list.png&quot; alt=&quot;bard second email&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;開始使用-bard&quot;&gt;開始使用 Bard&lt;/h2&gt;
-
-&lt;p&gt;bard 現在只能接受英文，所以我這邊的問題都是用英文問的。&lt;/p&gt;
-
-&lt;h3 id=&quot;問新聞&quot;&gt;問新聞&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-news.png&quot; alt=&quot;Ask bard news&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;問股價&quot;&gt;問股價&lt;/h3&gt;
-
-&lt;p&gt;問了 Bard 能不能預測今晚 AAPL 的股價。回應是不行。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-predict-stock-price.png&quot; alt=&quot;Ask bard Apple&apos;s stock price in next day&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;改問-aapl-財報資料&quot;&gt;改問 AAPL 財報資料&lt;/h3&gt;
-
-&lt;p&gt;改問已經發生的歷史資料，他可以回答出財報，包含數字。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-aaple-report.png&quot; alt=&quot;問財報&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;問一下台積電工廠的地址&quot;&gt;問一下台積電工廠的地址&lt;/h3&gt;
-
-&lt;p&gt;非常詳細啊，連廠房的名字都列上來了，看名字大概也知道哪個地址上的工廠是做哪一段半導體製程的。(不過，這應該是新聞都有報的)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-tsmc-address.png&quot; alt=&quot;台積電地址&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;問-android-和-iphone-誰賣得比較好&quot;&gt;問 Android 和 iPhone 誰賣得比較好&lt;/h3&gt;
-
-&lt;p&gt;這邊也給的出數字，而且數字也的確來自另一份報告。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-iphone-android-selling.png&quot; alt=&quot;問 Android 和 iPhone 誰賣得比較好&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;問投資標的&quot;&gt;問投資標的&lt;/h3&gt;
-
-&lt;p&gt;給出很穩健的標的， AAPL, MSFT, AMZN, GOOGL, TSLA&lt;/p&gt;
-
-&lt;p&gt;Apple (AAPL): Apple is one of the most valuable companies in the world, and it is a leader in the technology industry. The company is known for its innovative products, such as the iPhone, iPad, and Mac. Apple is also a major player in the services industry, with its App Store, Apple Music, and Apple Pay.
-Microsoft (MSFT): Microsoft is another tech giant that is a good investment target. The company is a leader in the software industry, and it also has a strong presence in the cloud computing market. Microsoft is a well-established company with a long history of innovation.
-Amazon (AMZN): Amazon is a leading e-commerce company, and it is also a major player in the cloud computing market. The company is known for its low prices and its wide selection of products. Amazon is also a growing force in the advertising market.
-Alphabet (GOOGL): Alphabet is the parent company of Google, which is one of the most popular search engines in the world. Google also has a strong presence in the advertising market, and it is a leader in the development of artificial intelligence.
-Tesla (TSLA): Tesla is a leading electric vehicle manufacturer, and it is also a player in the solar energy market. The company is known for its innovative products and its ambitious goals. Tesla is a high-growth company, but it is also a risky investment.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-invest-target.png&quot; alt=&quot;問投資標的&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;如何用-api-的方法串接-bard&quot;&gt;如何用 API 的方法串接 Bard&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-beta/ask-connect-bard-api.png&quot; alt=&quot;如何用 API 的方法串接 Bard&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;試用心得&quot;&gt;試用心得&lt;/h2&gt;
-
-&lt;p&gt;Bard 在問像是餐廳等資訊時，我查起來是有這些餐廳的。然後在數字的表現上，不會有很大的誤差。&lt;/p&gt;
-
-&lt;h2 id=&quot;參考網址&quot;&gt;參考網址&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://bard.google.com/u/1/faq?hl=en&quot;&gt;Bard AI&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.googlecloudcommunity.com/gc/AI-ML/Google-Bard-API/m-p/538517&quot;&gt;Using Bard API&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Google" /><summary type="html">Google Bard AI 開放申請了，只要點選下面的連結按同意，就可以了。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://designer.microsoft.com/&quot;&gt;Microsoft Designer&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="design" /><category term="Microsoft" /><summary type="html">如果你想要創造出專業品質的社交媒體貼文、邀請函、數位明信片、圖像等，你一定要試試 Microsoft Designer。這是一款圖像設計應用程式，可以幫助你從你的想法開始，創造出獨一無二的東西。Microsoft Designer 的亮點是它利用了人工智慧的技術，讓你只要輸入文字，就可以快速生成原創和可編輯的設計。你還可以獲得寫作協助和自動佈局建議，讓你的內容更加吸引人。Microsoft Designer 甚至可以根據你的目標，為你提供社交媒體分享的標題和標籤。Microsoft Designer 是微軟365的一部分，只要你是微軟365的訂閱者，就可以免費使用這個強大的工具。而且現在不用排隊了，你可以直接在網站上註冊並開始使用Microsoft Designer。不要錯過這個機會，快來體驗 Microsoft Designer 吧！</summary></entry></feed>
