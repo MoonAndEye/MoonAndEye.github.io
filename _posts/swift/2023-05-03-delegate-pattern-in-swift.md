@@ -12,41 +12,50 @@ classes: wide
 
 Delegate Pattern 是 iOS 開發常用的設計模式，它可以讓一個物件將某些職責或行為委託給另一個物件，從而實現解耦和靈活性。在 Swift 中，我們通常使用 protocol 來定義 delegate 的介面，並讓 delegate 物件遵循該 protocol。在這篇文章中，我們將介紹如何在 Swift 中使用 delegate pattern，並給出一個實際的範例。
 
-下面是一個會將搬箱子任務派發的範例，`JobDispatcher`會收到 Box 箱子，`JobDispatcher`並不會實際去搬箱子，他會將搬箱子的任務委派給他的 delegate。這個 delegate 並不限定用什麼工具來搬，可以是徒手來搬，像是搬運工(Porter)，也可能是用機器來搬，像是叉車(Forklift)。雖然 `Porter` 和 `Forklift` 都可以搬箱子，但因為使用的工具不一樣，所以搬的方法會不一樣，這會反應到程式的實作上。但不論哪種方法去搬，箱子都會被搬走
+下面是一個搬箱子的任務，有一個搬箱子的任務，但並沒有限定用什麼工具來搬。可以是徒手來搬，像是搬運工(Porter)，也可能是用機器來搬，像是叉車(Forklift)。雖然 `Porter` 和 `Forklift` 都可以搬箱子，但因為使用的工具不一樣，所以搬的方法會不一樣，這會反應到程式的實作上。但不論哪種方法去搬，箱子都會被搬走。在搬走後，搬運工要將訊息告訴工頭/監工，讓監工知道某個任務完成，以利派發下個任務。
+
 
 ```swift
-/// 能成為工作派發者的 delegate 都要 conform 這個 delegate
+/// 能成為監工的類都要 conform 這個 protocol
 /// 在 Swift 中，delegate protocol 要被 AnyObject conform 才能下 weak
-protocol JobDispatcherDelegate: AnyObject {
-    func move(box: Box, to location: (Int, Int))
+protocol SupervisorDelegate: AnyObject {
+    func didMoveBox(box: Box, to location: (Int, Int))
 }
 
 /// 工作派發者，在接收到工作後，將工作派發給 delegate
-class JobDispatcher {
-    /// delegate 為了防止 retain cycle 發生，要設定成 delegate，如果你觀察 iOS 元件，大部分的元件 delegate 都會設定成 optional
-    /// 在 JobDispatcher init() 後，再將 delegate 指派給某個物件(這個物件也可能是 self)
-    /// 因為是 optional 在操作的時候，可以用 optional chain 處理
-    weak var delegate: JobDispatcherDelegate?
-    
-    /// 接收到搬箱子的任務，但這個類別不搬，會把搬箱子的任務委派給 delegate (但有可能是搬運工，也可能是叉車)
-    func move(box: Box, to location: (Int, Int)) {
-        delegate?.move(box: box, to: location)
+class Supervisor: SupervisorDelegate {
+
+    func didMoveBox(box: Box, to location: (Int, Int)) {
+        /// record box did moved and dispatch next task or idle
+        /// 紀錄箱子已經搬走了，並派發下個任務或是閒置
     }
 }
 
 /// 搬運工，可以移動 box，用手搬 Box
-class Porter: JobDispatcherDelegate {
+class Porter {
+
+    /// delegate 為了防止 retain cycle 發生，要設定成 delegate，如果你觀察 iOS 元件，大部分的元件 delegate 都會設定成 optional
+    /// 在 Porter init() 後，再將 delegate 指派給某個物件(這個物件也可能是 self)
+    /// 因為是 optional 在操作的時候，可以用 optional chain 處理
+    weak var delegate: SupervisorDelegate?
     
+    /// 接收到搬箱子的任務，但這個類別不搬，會把搬箱子的任務委派給 delegate (但有可能是搬運工，也可能是叉車)
     func move(box: Box, to location: (Int, Int)) {
-        // 用手搬運 box 到 location(Int, Int)
+        /// 用手搬運 box 到 location(Int, Int)
+        /// 在箱子移動後，要告訴監工，箱子已經搬走了
+        delegate?.didMoveBox(box: box, to: location)
     }
 }
 
 /// 叉車，可以移動 box，用叉車搬 Box
-class Forklift: JobDispatcherDelegate {
+class Forklift {
+
+        weak var delegate: SupervisorDelegate?
     
     func move(box: Box, to location: (Int, Int)) {
-        // 用叉車搬運 box 到 location(Int, Int)
+        /// 用叉車搬運 box 到 location(Int, Int)
+        /// 在箱子移動後，要告訴監工，箱子已經搬走了
+        delegate?.didMoveBox(box: box, to: location)
     }
 }
 ```
