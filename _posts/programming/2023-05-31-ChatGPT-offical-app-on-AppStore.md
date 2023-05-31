@@ -1,5 +1,5 @@
 ---
-layout: Single
+layout: single
 title: ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用
 date: 2023-05-31 13:09 +0800
 category: programming
