@@ -18,3 +18,9 @@ permalink: /programming/:title:output_ext
 ## ChatGPT 下載連結
 
 [ChatGPT 官方 App](https://apps.apple.com/us/app/chatgpt/id6448311069)
+
+## 相關連結
+
+[ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?](https://moonandeye.github.io/finance/ChatGPT-plugins.html)
+
+[大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰](https://moonandeye.github.io/programming/professor-article-about-ai.html)

@@ -18,3 +18,7 @@ permalink: /finance/:title:output_ext
 ![ChatGPT meme2](/assets/posts/chatgpt-meme/meme2.jpeg)
 
 或許這兩個迷因被大量使用的日子，不遠了。
+
+## 相關文章
+
+[ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用](https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html)

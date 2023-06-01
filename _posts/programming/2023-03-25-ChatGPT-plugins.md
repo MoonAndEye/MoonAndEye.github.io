@@ -20,3 +20,7 @@ ChatGPT plugins 帶來的影響是深遠的，它們不僅提升了 ChatGPT 的�
 現在，你可以透過下列這個網址，加入 ChatGPT plugins 的 waitlist
 
 [ChatGPT plugins join waitlist link](https://openai.com/blog/chatgpt-plugins)
+
+## 相關文章
+
+[ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用](https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html)

@@ -63,3 +63,5 @@ permalink: /programming/:title:output_ext
 [Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」](https://moonandeye.github.io/finance/prompt-engineering.html)
 
 [ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?](https://moonandeye.github.io/finance/ChatGPT-plugins.html)
+
+[ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用](https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html)
