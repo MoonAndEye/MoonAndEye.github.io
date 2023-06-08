@@ -13,11 +13,11 @@ permalink: /swift/:title:output_ext
 
 ### 這是原來你寫的 fetch content，使用 completion handler
 
-[completion handler](/assets/swift/wwdc23/origin.png)
+![completion handler](/assets/swift/wwdc23/origin.png)
 
 ### 這是使用了 @AddAsync Macros 後 (@AddAsync 應該不是 Swift 原生的 annotation，應該要自己寫)
 
-[using macros](/assets/swift/wwdc23/using_macros.png)
+![using macros](/assets/swift/wwdc23/using_macros.png)
 
 ## Macros 還用在哪？大量的用在 SwiftUI 上
 
@@ -25,15 +25,15 @@ permalink: /swift/:title:output_ext
 
 ### 以前寫 `ObservableObject` 都要在要曝露出的 property 前面加上 `@Published`
 
-[origin observable](/assets/swift/wwdc23/origin_observable.png)
+![origin observable](/assets/swift/wwdc23/origin_observable.png)
 
 ### 現在只要使用 @Observable Macros 就可以了
 
-[Macros observable](/assets/swift/wwdc23/macros_observable.png)
+![Macros observable](/assets/swift/wwdc23/macros_observable.png)
 
 ### 在 WWDC23 中對 Observable 的解釋
 
-[behind observable](/assets/swift/wwdc23/behind_observable.png)
+![behind observable](/assets/swift/wwdc23/behind_observable.png)
 
 相信 SwiftUI 會愈來愈好寫
 
