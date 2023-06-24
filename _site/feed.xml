@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-09T15:17:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">WWDC23 - What’s new in UIKit - 重點整理</title><link href="http://localhost:4000/swift/wwdc23-whats-new-in-uikit.html" rel="alternate" type="text/html" title="WWDC23 - What’s new in UIKit - 重點整理" /><published>2023-06-09T13:48:00+08:00</published><updated>2023-06-09T13:48:00+08:00</updated><id>http://localhost:4000/swift/wwdc23-whats-new-in-uikit</id><content type="html" xml:base="http://localhost:4000/swift/wwdc23-whats-new-in-uikit.html">&lt;h2 id=&quot;重點1-uiviewcontroller-可以用-preview-了&quot;&gt;重點1： UIViewController 可以用 Preview 了&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-24T22:45:57+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">王國之淚破關 - 開始真正的體驗海拉魯大地的時刻(內有部分破關畫面)</title><link href="http://localhost:4000/life/zelda-kingdom-tear-ending.html" rel="alternate" type="text/html" title="王國之淚破關 - 開始真正的體驗海拉魯大地的時刻(內有部分破關畫面)" /><published>2023-06-24T21:56:00+08:00</published><updated>2023-06-24T21:56:00+08:00</updated><id>http://localhost:4000/life/zelda-kingdom-tear-ending</id><content type="html" xml:base="http://localhost:4000/life/zelda-kingdom-tear-ending.html">&lt;h2 id=&quot;第一次破關所花時間大概用了-120-小時左右&quot;&gt;第一次破關所花時間，大概用了 120 小時左右&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/playing_time_record.JPG&quot; alt=&quot;遊玩時間&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;趁著台灣 2023 年的端午連假，我將王國之淚破了第一次。以下會有破關的圖片，如果你還沒破關，但會在意看到破關的相關資訊，建議先行離開。&lt;/p&gt;
+
+&lt;h2 id=&quot;接下來的海拉魯大地&quot;&gt;接下來的海拉魯大地&lt;/h2&gt;
+
+&lt;p&gt;在這系列作品，並沒有所謂的「二週目」這個概念，在打完最終 Boss 之後，會給你一個在打 Boss 前狀態的存檔，玩家可以使用那個存檔開始暢遊海拉魯大地。&lt;/p&gt;
+
+&lt;h3 id=&quot;所以說破關後接下來要做什麼&quot;&gt;所以說破關後接下來要做什麼？&lt;/h3&gt;
+
+&lt;h3 id=&quot;當然是更仔細的去玩遊戲啊沒有要打-boss-的壓力你可以更好的體驗這個箱庭世界&quot;&gt;當然是更仔細的去玩遊戲啊！沒有要打 Boss 的壓力，你可以更好的體驗這個「箱庭」世界&lt;/h3&gt;
+
+&lt;h2 id=&quot;以下是-switch-畫面&quot;&gt;以下是 Switch 畫面&lt;/h2&gt;
+
+&lt;h3 id=&quot;打完-boss-後的城堡&quot;&gt;打完 Boss 後的城堡&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/castle.JPG&quot; alt=&quot;打完 Boss 後的城堡&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;薩爾達我回來了&quot;&gt;薩爾達：「我回來了」&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/zelda.JPG&quot; alt=&quot;薩爾達公主:我回來了&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;和林克站在一起的薩爾達&quot;&gt;和林克站在一起的薩爾達&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/link_and_zelda.JPG&quot; alt=&quot;和林克站在一起的薩爾達&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;魂之使者的道別&quot;&gt;魂之使者的道別&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/soul-is-gone.JPG&quot; alt=&quot;道別&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;大家的老婆---露珠&quot;&gt;大家的老婆 - 露珠&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/girl.JPG&quot; alt=&quot;露珠&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;相關網站&quot;&gt;相關網站&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/life/zelda-kingdom-tear-wall-papers.html&quot;&gt;王國之淚桌布下載&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">第一次破關所花時間，大概用了 120 小時左右</summary></entry><entry><title type="html">WWDC23 - What’s new in UIKit - 重點整理</title><link href="http://localhost:4000/swift/wwdc23-whats-new-in-uikit.html" rel="alternate" type="text/html" title="WWDC23 - What’s new in UIKit - 重點整理" /><published>2023-06-09T13:48:00+08:00</published><updated>2023-06-09T13:48:00+08:00</updated><id>http://localhost:4000/swift/wwdc23-whats-new-in-uikit</id><content type="html" xml:base="http://localhost:4000/swift/wwdc23-whats-new-in-uikit.html">&lt;h2 id=&quot;重點1-uiviewcontroller-可以用-preview-了&quot;&gt;重點1： UIViewController 可以用 Preview 了&lt;/h2&gt;
 
 &lt;p&gt;在 WWDC23 中，我們可以看到 UIKit 中的 UIViewController 可以用 Preview 了，這個功能在 SwiftUI 中已經有了，但在 UIKit 中，我們可以看到在 storyboard 中的 UIViewController 可以用 Preview 了。使用上也和 SwiftUI 新的 Macro preview 方式一樣，在下面那一段加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#Preview&lt;/code&gt;，就可以在右邊看到 UI 元件 Preview 的畫面了。&lt;/p&gt;
 
@@ -777,7 +815,4 @@ Alerts 是一種常見的用戶反饋機制，它可以提醒用戶發生了什�
 
 &lt;p&gt;&lt;a href=&quot;https://m3.material.io/components/dialogs/specs&quot;&gt;Google 對於 Dialog 的文件&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.nngroup.com/articles/ok-cancel-or-cancel-ok/&quot;&gt;Nielsen Norman Group 的文章&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UI" /><summary type="html">Alerts 出現選項時，主要動作要放哪一邊？左？右？ Alerts 是一種常見的用戶反饋機制，它可以提醒用戶發生了什麼事情，或者需要用戶做出一些決定。Alerts 通常會有一個或多個選項按鈕，讓用戶可以選擇接受、取消、確認、忽略等不同的動作。那麼，這些選項按鈕應該放在 Alerts 的哪一邊呢？左邊還是右邊？</summary></entry><entry><title type="html">還有三天 - 薩爾達傳說 王國之淚 就要上市了</title><link href="http://localhost:4000/life/zelda-release-before-3days.html" rel="alternate" type="text/html" title="還有三天 - 薩爾達傳說 王國之淚 就要上市了" /><published>2023-05-09T15:26:00+08:00</published><updated>2023-05-09T15:26:00+08:00</updated><id>http://localhost:4000/life/zelda-release-before-3days</id><content type="html" xml:base="http://localhost:4000/life/zelda-release-before-3days.html">&lt;p&gt;還有三天，薩爾達傳說 - 王國之淚 就要上市啦，在官方 Twitter 上，有一篇 po 文寫上 &lt;strong&gt;3 Days&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;【あと3日】&lt;a href=&quot;https://twitter.com/hashtag/%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#ゼルダの伝説&lt;/a&gt;　&lt;a href=&quot;https://twitter.com/hashtag/TearsOfTheKingdom?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#TearsOfTheKingdom&lt;/a&gt; &lt;a href=&quot;https://t.co/t1fyFD33Kx&quot;&gt;pic.twitter.com/t1fyFD33Kx&lt;/a&gt;&lt;/p&gt;&amp;mdash; ゼルダの伝説 (@ZeldaOfficialJP) &lt;a href=&quot;https://twitter.com/ZeldaOfficialJP/status/1655754461623762946?ref_src=twsrc%5Etfw&quot;&gt;May 9, 2023&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">還有三天，薩爾達傳說 - 王國之淚 就要上市啦，在官方 Twitter 上，有一篇 po 文寫上 3 Days</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.nngroup.com/articles/ok-cancel-or-cancel-ok/&quot;&gt;Nielsen Norman Group 的文章&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UI" /><summary type="html">Alerts 出現選項時，主要動作要放哪一邊？左？右？ Alerts 是一種常見的用戶反饋機制，它可以提醒用戶發生了什麼事情，或者需要用戶做出一些決定。Alerts 通常會有一個或多個選項按鈕，讓用戶可以選擇接受、取消、確認、忽略等不同的動作。那麼，這些選項按鈕應該放在 Alerts 的哪一邊呢？左邊還是右邊？</summary></entry></feed>
