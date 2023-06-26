@@ -14,11 +14,11 @@ permalink: /swift/:title:output_ext
 ### 概觀
 Xcode 15 beta 2 包括 iOS 17、iPadOS 17、tvOS 17、watchOS 10、macOS Sonoma 和 visionOS 的 SDK。Xcode 15 beta 2 版本支援在 iOS 12 及更高版本、tvOS 12 及更高版本、watchOS 4 及更高版本上進行設備上的調試。Xcode 15 beta 2 需要在運行 macOS Ventura 13.4 或更高版本的 Mac 上使用。
 
-一般
+### 一般
 Xcode 15 Beta 2 中已解決的問題
 修復：Catalyst 應用程式連結 GameKit 框架的單元測試在啟動時會因 dyld 的「找不到符號」錯誤而崩潰。 (109730080)
 
-已知問題
+### 已知問題
 如果任何圖層小於 1024x1024 像素，visionOS 應用程式圖示在主畫面中不會顯示視覺效果（深度、動畫、邊緣紋理）。Xcode 對此行為不提供警告或錯誤訊息。 (107568059)
 
 解決方法：使 visionOS 應用程式圖示的所有圖層都為 1024x1024 像素 (@2x)，並在每個圖層的 Asset Catalog 檢視器中啟用「置中於畫布」和「匹配內容圖像」選項。
@@ -49,7 +49,7 @@ sudo touch /Library/Developer/CommandLineTools/.beta
 
 ---
 
-應用程式捷徑預覽
+### 應用程式捷徑預覽
 已知問題
 如果一個應用程式新增了一個與相應的 AppShortcuts.strings 或 AppShortcuts.xcstrings 檔案中已存在的 App 捷徑觸發片語相同的字串，重新編譯後，應用程式捷徑預覽可能不會更新。 (109494636)
 
@@ -61,7 +61,7 @@ sudo touch /Library/Developer/CommandLineTools/.beta
 
 ---
 
-Console
+### Console
 已知問題
 在 macOS Ventura 13.3 上運行時，從 Xcode 啟動時禁用「除錯執行檔」的可執行文件會將 NSLog 調用的輸出在 Xcode 調試控制台中重複顯示兩次。 (106648026)
 
@@ -71,17 +71,17 @@ Console
 
 解決方法：在項目中配置運行方案操作，將環境變數 IDELogRedirectionPolicy 的值設為 oslogToStdio，以通過標準輸入輸出流進行日誌流式傳輸，並增加大小限制。該策略禁用 os 日誌的結構化元數據。
 
-Debugging
+### Debugging
 已知問題
 無法從 LLDB 表達式求值器中調用外部 Swift 宏。 (109854291)
 
 ---
 
-DeviceDiscoveryUI
+### DeviceDiscoveryUI
 已知問題
 在構建 tvOS 模擬器時，DeviceDiscoveryUI 不可用。 (109224355)
 
-設備
+### 設備
 已知問題
 運行 iOS 17 的設備不支援從 Xcode 15 啟動的應用程式指定「Routing App Coverage File」。(80105713)
 
@@ -99,13 +99,13 @@ Xcode 的「設備和模擬器」視窗不會顯示安裝在運行 iOS 17、watc
 
 ---
 
-Instruments
+### Instruments
 Xcode 15 Beta 2 的新功能
 Instruments 15 包含了一個新的 RealityKit Trace 模板。此模板包含了幾個新的工具，用於在 visionOS 上進行應用程式和遊戲的性能分析。RealityKit Frames 工具將視覺化渲染一個幀的不同階段。RealityKit Metrics 偵測渲染堆疊中的瓶頸，並提供建議和關鍵指標以診斷和消除渲染瓶頸。這些關鍵指標包括 CoreAnimation 統計數據、3D 渲染統計數據、RealityKit 系統 CPU 時間、系統功耗影響等等。(104091516)
 
 ---
 
-Metal
+### Metal
 已知問題
 Xcode 的 GPU 調試服務會自動嘗試連接到所有運行 iOS 17、watchOS 10 和 tvOS 17 的設備，這些設備已在本地區域網路中被發現。如果設備信任 Mac，它將接受連接，並可能比一般待機設備更快地耗盡電池電量。(108682066)
 
@@ -113,7 +113,7 @@ Xcode 的 GPU 調試服務會自動嘗試連接到所有運行 iOS 17、watchOS 
 
 ---
 
-Organizer
+### Organizer
 已知問題
 從 TestFlight 在 visionOS 上安裝的 iOS 應用程式崩潰可能不會出現在 Organizer 的崩潰部分中。(107965403)
 
@@ -121,13 +121,13 @@ Organizer
 
 ---
 
-Particle Emitters
+### Particle Emitters
 已知問題
 在 Reality Composer Pro 中添加粒子發射器或載入粒子發射器可能會導致在基於 Intel 的 Mac 上崩潰。(110794948)
 
 ---
 
-Previews
+### Previews
 Xcode 15 Beta 2 中已解決的問題
 修正：在 Seed 2 上編譯並在 macOS 15.0 Seed 1 上運行，或反之亦然時，預覽將崩潰。(110649872)
 
@@ -164,7 +164,7 @@ Xcode 15 Beta 2 中已解決的問題
 
 ---
 
-Reality Composer Pro
+### Reality Composer Pro
 已知問題
 底部面板顯示的統計數據在展開的動畫部分中不顯示具有動畫的物件。(103162531)
 
@@ -204,7 +204,7 @@ SHManagedSession 在模擬器上不起作用。(109672477)
 
 ---
 
-簽名和分發
+### 簽名和分發
 已知問題
 Xcode Organizer 窗口中的 TestFlight 內部測試分發支持目前不可用。(106239462)
 
@@ -214,7 +214,7 @@ Xcode Organizer 窗口中的簡化分發方法不支持與使用自定義工作�
 
 ---
 
-Simulator
+### Simulator
 Known Issues
 在使用 iOS 14 或更高版本的模擬器運行時，狀態欄覆蓋可能被設置錯誤。(101511614)
 
@@ -224,13 +224,13 @@ Known Issues
 
 ---
 
-Source Control
+### Source Control
 已知問題
 上游更改可能會在 Xcode 編輯器中顯示為暫存更改。(109285038)
 
 ---
 
-Source Editor
+### Source Editor
 已知問題
 在某些情況下，從其他宏擴展中展開的宏可能無法完全顯示。(107718413)
 
@@ -242,19 +242,19 @@ Source Editor
 
 ---
 
-StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 Known Issues
 在事務管理器中通過“訂閱選項”對話框編輯自動續訂訂閱時，會創建一個新的事務，但續訂被禁用。這導致新選擇的訂閱到期並且不會續訂。(109403724)
 
 ---
 
-StoreKitTest
+### StoreKitTest
 已知問題
 新的 StoreKitTest API 在 SDK 中不可用。受影響的 API 包括：setSimulatedError(_:forAPI:)、simulatedError(forAPI:) 和 buyProduct(identifier:options:)。(110547289)
 
 ---
 
-## Swift
+### Swift
 
 已知問題
 非可拷貝（Noncopyable）類型目前無法在元組中使用，也無法作為泛型類型使用。特別是，這意味著它們無法存儲在陣列（Arrays）、字典（Dictionaries）或集合（Sets）中，也無法形成非可拷貝類型的選擇性（Optionals）或打印它們。(104669935)
@@ -325,7 +325,7 @@ func method(parameter _: borrowing Type) {
 
 ---
 
-## Swift 和 C++ 互操作性
+### Swift 和 C++ 互操作性
 已知問題
 從 Swift 中調用 std::string 值的 append 函數可能會導致編譯器崩潰。(107018724)
 
@@ -347,7 +347,7 @@ Xcode 在 Swift 中不會為 C++ 命名空間成員提供程式碼補全結果�
 
 ---
 
-Swift Packages
+### Swift Packages
 已解決的問題（在 Xcode 15 Beta 2 中）
 修復：在項目編輯器中查看套件依賴時，任何具有 Exact Version 規則的套件的版本號都會重置為 1.0.0。(110303613)
 
@@ -356,19 +356,19 @@ Swift Packages
 
 解決方法：選擇 macOS 目的地進行構建，或從 package.swift 中刪除 .testTarget。
 
-SwiftData
+### SwiftData
 已知問題
 在刪除項目後，SwiftUI 在動畫期間可能嘗試引用已刪除的內容，導致崩潰。(109838173)
 
 解決方法：在刪除後明確保存。
 
-Test Navigator
+### Test Navigator
 已知問題
 測試套件偶爾顯示為“(Missing Suite)”。(109423329)
 
 解決方法：打開其他導航器，然後重新打開測試導航器。
 
-TestFlight
+### TestFlight
 已知問題
 具有低於 6.0 的最小部署目標的 watchOS 應用可能無法正確安裝 TestFlight。(109797881)
 
@@ -400,7 +400,7 @@ canImport(VideoToolbox) 在 watchOS 上不返回 false。(109324910)
 
 ---
 
-## visionOS 模擬器
+### visionOS 模擬器
 已知問題
 沒有用於模擬 Apple Vision Pro 的沉浸式皇冠的用戶界面。(109429267)
 
@@ -414,7 +414,7 @@ canImport(VideoToolbox) 在 watchOS 上不返回 false。(109324910)
 
 ---
 
-## Xcode
+### Xcode
 已知問題
 在將任何設備從「一般 > 支援的目標」中添加或刪除後，「Apple Vision (Designed for iPad)」運行目標將從可用目標中消失。「顯示 Apple Vision (Designed for iPhone & iPad) 目標」建構設置將自動設置為 No，但 Apple Vision (Designed for iPhone & iPad) 仍然保留在支援的目標清單中。在添加或刪除其他設備類型時，可能會自動添加「Designed for iPad」目標。(110810619)
 
@@ -422,7 +422,7 @@ canImport(VideoToolbox) 在 watchOS 上不返回 false。(109324910)
 
 ---
 
-## Xcode Cloud
+### Xcode Cloud
 已知問題
 在為 Xcode Cloud 上的新產品進行設置後，可能會立即顯示「無法打開編輯器」對話框。(109781276)
 
@@ -432,7 +432,7 @@ Xcode Cloud 目前不支援 visionOS 的測試操作。(110793833)
 
 ---
 
-## Updates in Xcode 15 Beta
+### Updates in Xcode 15 Beta
 
 ### General
 已解決的問題 (Xcode 15 Beta)
@@ -483,7 +483,7 @@ x86 矢量化器使用飽和算術指令，可以獲得更短且更快的代碼�
 
 ---
 
-## Xcode 15 Beta 中已解決的問題：
+Xcode 15 Beta 中已解決的問題：
 
 修正：ARC 優化器的改進使得 Objective-C 和 Swift 對象可以更早地被銷毀。這導致依賴於弱引用或無主引用而保持有效的代碼在沒有對目標對象進行強引用的情況下出現問題或崩潰。例如，在一次性異步塊回調中不必要地使用了"weak self"捕獲的代碼可能會發生這種情況。 (108386578)
 
@@ -503,8 +503,8 @@ Xcode 15 Beta 中已解決的問題：
 
 ---
 
-## Build System：
-### Xcode 15 Beta 的新功能：
+### Build System：
+Xcode 15 Beta 的新功能：
 
 存檔構建現在支持與其他構建操作相同的一組積極編譯優化，提高構建性能。 (98526053)
 Xcode 現在會自動為項目中的動態庫和框架生成中間的基於文本的動態庫 (TBD) 文件。這些存根允許更準確地跟踪鏈接器依賴關係，這意味著不會改變導出符號集的更改不再需要重新鏈接所有的傳遞依賴關係，從而加快增量構建的速度。 (99972271)
@@ -522,7 +522,7 @@ Xcode 15 Beta 中的棄用功能：
 
 ---
 
-## C++標準庫：
+### C++標準庫：
 Xcode 15 Beta 的新功能：
 
 實現了以下新功能：
@@ -554,9 +554,9 @@ copy、move、copy_backward 和 move_backward 的 std 和 ranges 版本現在也
 
 ---
 
-## Xcode 15 Beta 中的棄用功能：
+Xcode 15 Beta 中的棄用功能：
 
-### 以下項目已被棄用或移除：
+#### 以下項目已被棄用或移除：
 
 在 C++17 和更新的標準模式中不再提供 unary_function 和 binary_function。可以通過 _LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION 重新啟用它們。
 
@@ -584,7 +584,7 @@ Xcode 15 Beta 中已解决的问题：
 
 ---
 
-## Create ML
+### Create ML
 Xcode 15 Beta 中已解决的问题：
 修复：在新的 macOS Seed 1 构建中，使用 Xcode 内的开发人员工具中的 CreateML 应用程序无法使用手势动作分类器和手势姿势分类器训练机器学习模型。特定的错误消息是在单击“训练”按钮时出现的“意外错误”。 (108227967)
 
@@ -682,7 +682,7 @@ SlothCreator 包含一些您可以喂给虚拟树懒的不同树懒食物。
 
 ---
 
-## Instruments
+### Instruments
 Xcode 15 Beta中的新功能
 儀器現在可以在分配、洩漏和VM Tracker儀器中打開.memgraph文件，如果為進程啟用了Malloc Stack Logging，則可以可視化活動分配的時間軸。 Xcode Memory Graph調試器功能中增加了一個新的共享按鈕，可以在儀器中查看捕獲的.memgraph文件。（53014738）
 
@@ -695,7 +695,7 @@ Xcode 15 Beta中解決的問題
 
 修復了在HTTP Traffic儀器中選擇包含大型請求或響應主體的HTTP事務時應用程序卡死的問題。（87893253）
 
-## Interface Builder
+### Interface Builder
 Xcode 15 Beta中的新功能
 Cocoa故事板Popover演示跳躍支持全尺寸內容檢查器屬性，允許呈現的內容超出安全區域插入並超過氣泡窗的箭頭區域。（102107829）
 
@@ -703,11 +703,11 @@ NSView支持Clips Bounds屬性檢查器，更精細地控制視圖的內容是�
 
 ---
 
-## 鏈接
+### 鏈接
 Xcode 15 Beta中的新功能
 為了顯著提高靜態鏈接的速度，編寫了一個新的鏈接器。它是所有iOS二進制文件的默認鏈接器，以及使用“可合併庫”功能的任何人。可以通過使用-ld64明確要求使用經典鏈接器，但該經典鏈接器將在未來版本中被刪除。（108915312）
 
-## 本地化
+### 本地化
 Xcode 15 Beta中的新功能
 String Catalogs（.xcstrings）是Xcode中的一種新文件類型，可通過管理字符串並跟踪翻譯進度，輕鬆實現應用程序的本地化。Xcode會自動從源代碼中提取可本地化字符串，以使任何String Catalogs保持同步。可以在本地編輯器中查看和編輯String Catalogs，以預覽和管理項目中的本地化字符串。要開始使用，可以通過文件選擇器添加新的String Catalog，或者在菜單欄中選擇編輯>轉換>為String Catalog...，從而遷移現有的.strings和.stringsdict文件。（67254382）
 
@@ -724,7 +724,7 @@ Xcode 15 Beta中解決的問題
 
 ---
 
-## Metal調試器
+### Metal調試器
 Xcode 15 Beta中的新功能
 幾何查看器和Shader調試器現在支持Mesh和Object渲染階段。綁定資源現在支持按照Mesh管線的Shader訪問進行過濾。（81698727）
 
@@ -753,7 +753,7 @@ Xcode 15 Beta中解決的問題
 
 ---
 
-## 預覽
+### 預覽
 Xcode 15 Beta中的新功能
 預覽畫布新增了一個控制項，用於選擇預覽時使用的設備。默認情況下，它跟踪所選運行目的地的設備系列，但可以選擇特定的設備。這應優先使用previewDevice修飾符。（100562366）
 
@@ -768,7 +768,7 @@ Xcode 15 Beta中解決的問題
 
 修復：在導航文件時保留畫布設置，例如畫布模式、設備設置和所選的預覽設備。（100999447）
 
-## 簽署和分發
+### 簽署和分發
 Xcode 15 Beta中的新功能
 選擇模擬器運行目的地時，現在可用於存檔操作。使用模擬器進行存檔操作將生成適用於所選平台上所有設備的CPU架構的應用程式。（13094592）
 
@@ -780,7 +780,7 @@ Xcode現在向上傳到App Store Connect的人員發送應用程式上傳狀態�
 
 Xcode組織器窗口現在支持簡化的存檔分發。現在可以通過點擊一次來上傳或導出存檔。簡化的分發方法使用建議的設置。自定義方法允許選擇其他選項。（103967573）
 
-## Xcode 15 Beta中解決的問題
+Xcode 15 Beta中解決的問題
 修復：如果您的應用程式與Game Center集成，請確保Entitlements.plist文件中存在com.apple.developer.game-center權限。之前的Xcode版本會自動將該權限注入到您的應用程式簽名中，如果它在您的設置文件中存在。這種行為與大多數其他權限不一致，已在Xcode 15中刪除。（106596235）
 
 修復：解決了在Xcode和Xcode Cloud中“管理版本和構建號”分發選項覆蓋應用程式中框架依賴項的版本和構建號的問題。分發應用程式時，框架依賴項將保留其原始版本和構建號。（106869375）
@@ -807,8 +807,8 @@ Xcode 15不再包括Xcode Server。Xcode Cloud是獲取代碼更改的自動構�
 
 ---
 
-## Source Editor
-### Xcode 15 Beta中的新功能
+### Source Editor
+Xcode 15 Beta中的新功能
 #if...#endif區塊中的非活動代碼現在會變暗。可以在「文本編輯」>「顯示」偏好設定中關閉此功能。（2450148）
 
 Quick Help現在支援在文件註解中包含的圖像呈現。支援通過URL引用的外部圖像以及項目的文件目錄中的本地圖像。（45258339）
@@ -831,7 +831,7 @@ Xcode現在支援通過在模塊名稱的引用上調用Quick Help來訪問SDK�
 
 代碼完成現在在聲明Swift類型時建議名稱。（106005529）
 
-## Xcode 15 Beta中解決的問題
+Xcode 15 Beta中解決的問題
 修復：快速說明彈出窗口中使用的字體大小現在會自動調整以匹配編輯器當前主題的大小。（6955736）
 
 修復：在右括號之前按回車鍵時，源編輯器不應該添加額外的一行。（64872737）
@@ -856,8 +856,8 @@ Xcode現在支援通過在模塊名稱的引用上調用Quick Help來訪問SDK�
 
 ---
 
-## StoreKit Testing in Xcode
-### Xcode 15 Beta中的新功能
+### StoreKit Testing in Xcode
+Xcode 15 Beta中的新功能
 您現在可以在Xcode的StoreKit事務管理器中創建新的應用內購買事務。只需在事務管理器中點擊“+”按鈕，然後使用菜單配置您的新事務。只有在macOS 14.0、iOS 17.0、watchOS 10.0或tvOS 17.0上測試應用時才能使用部分功能。
 
 您可以在SKTestSession上使用新的buyProduct(identifier:options:) API，根據產品識別符在自動化測試中編程地創建應用內購買事務。當您在自動化測試中使用StoreKitTest框架時，可以使用額外的新的Product.PurchaseOption值來配置測試事務的屬性，例如購買日期。（101591947）
@@ -869,7 +869,7 @@ StoreKit配置編輯器有一個新的“應用配置”菜單，允許您配置
 ---
 
 ## Swift
-### Xcode 15 Beta中的新功能
+Xcode 15 Beta中的新功能
 Swift 5.9引入了參數包(parameter packs)的概念，允許您編寫接受任意數量的類型參數的通用代碼。使用each關鍵字聲明參數包，使用repeat關鍵字遍歷參數包中的類型：
 
 ```swift
@@ -1068,7 +1068,7 @@ func inspectData(data: inout Data) {
 ---
 
 ## Swift和C++互操作性
-### Xcode 15 Beta中的新功能
+Xcode 15 Beta中的新功能
 Swift支持與C++ / Objective-C++的雙向互操作性。現在您可以在Swift中使用C++ API的子集，並從C++中使用Swift API。通過在“C++和Objective-C互操作性”構建設置中選擇“C++ / Objective-C++”來啟用C++互操作性。
 
 有關C++互操作性的更多信息，請參閱https://swift.org/documentation/cxx-interop。（100830806）
@@ -1093,7 +1093,7 @@ Xcode 15 Beta中的新功能
 ---
 
 ## 測試
-### Xcode 15 Beta中的新功能
+Xcode 15 Beta中的新功能
 xcodebuild現在支持列舉測試套件，該測試套件本來會由測試或測試無需構建的調用執行。測試列舉將以人類可讀或JSON格式列出套件中包含的每個目標、類和方法。此外，列舉的測試可以按層次分組或作為標識符的扁平列表（適用於將來的xcodebuild調用）。示例：
 
 構建並列舉項目和方案中的測試：
@@ -1123,9 +1123,9 @@ Xcode 15 Beta中已解決的問題
 ---
 
 ## UI Testing
-### Xcode 15 Beta中的新功能
+Xcode 15 Beta中的新功能
 無障礙審核支持：無障礙審核是對給定視圖進行的自動檢查，用於檢測多種無障礙問題。這些問題包括缺少標籤、文字不隨動態類型縮放以及低對比度等。參見XCUIApplication().performAccessibilityAudit()（100732814）
 
 ## Xcode Cloud
-### Xcode 15 Beta中的新功能
+Xcode 15 Beta中的新功能
 Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置操作。（64009778）
