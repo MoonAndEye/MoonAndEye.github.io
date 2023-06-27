@@ -1,4 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-26T17:26:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Xcode 15 beta 2 Release notes ChatGPT 繁中翻譯</title><link href="http://localhost:4000/swift/xcode15-beta2-release-notes.html" rel="alternate" type="text/html" title="Xcode 15 beta 2 Release notes ChatGPT 繁中翻譯" /><published>2023-06-26T16:30:00+08:00</published><updated>2023-06-26T16:30:00+08:00</updated><id>http://localhost:4000/swift/xcode15-beta2-release-notes</id><content type="html" xml:base="http://localhost:4000/swift/xcode15-beta2-release-notes.html">&lt;p&gt;以下是 Xcode 15 beta 2 的 Release notes，將將整個文字丟入 ChatGPT 後翻譯出來的繁體中文結果。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-27T14:36:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">17 件 WWDC23 的大小事</title><link href="http://localhost:4000/swift/new-post.html" rel="alternate" type="text/html" title="17 件 WWDC23 的大小事" /><published>2023-06-27T14:28:00+08:00</published><updated>2023-06-27T14:28:00+08:00</updated><id>http://localhost:4000/swift/new-post</id><content type="html" xml:base="http://localhost:4000/swift/new-post.html">&lt;h2 id=&quot;下方影片連結整理了-wwdc23-的-17-件大小事我特別喜歡影片開頭的那個-picker-效果&quot;&gt;下方影片連結，整理了 WWDC23 的 17 件大小事，我特別喜歡影片開頭的那個 picker 效果&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111486/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/things17_in_wwdc23.png&quot; alt=&quot;17 件 WWDC23 的大小事&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;影片文字檔&quot;&gt;影片文字檔&lt;/h2&gt;
+
+&lt;p&gt;Seventeen big and little things from Apple WWDC23.&lt;/p&gt;
+
+&lt;p&gt;Meet a new friend? Swap info, like that, with NameDrop.&lt;/p&gt;
+
+&lt;p&gt;And your contact poster that you’ll design and redesign will show up when you call or FaceTime.&lt;/p&gt;
+
+&lt;p&gt;They missed it? Leave a FaceTime message.&lt;/p&gt;
+
+&lt;p&gt;And when you do connect, easily switch from iPhone to Apple TV.&lt;/p&gt;
+
+&lt;p&gt;Wait, where’s the Siri remote?  Now iPhone will find that too.&lt;/p&gt;
+
+&lt;p&gt;And you’ll find the perfect reaction with stickers from your own photos.&lt;/p&gt;
+
+&lt;p&gt;Ooh, shiny.&lt;/p&gt;
+
+&lt;p&gt;Reflect on your day with suggestions from your photos, music, locations, even workouts, or just get some stuff off your chest.&lt;/p&gt;
+
+&lt;p&gt;Then clear your head with a long ride.&lt;/p&gt;
+
+&lt;p&gt;Get lost for a little while, but not like lost, lost, because you can take topographic and offline maps with you.&lt;/p&gt;
+
+&lt;p&gt;And Snoopy too! Check In automatically lets a friend know when you get home.&lt;/p&gt;
+
+&lt;p&gt;And while you’re out, Adaptive Audio keeps your attention on the important sounds around you.&lt;/p&gt;
+
+&lt;p&gt;Speaking of, multiple timers and widgets are now on all your devices, including the world’s thinnest 15-inch laptop, the new MacBook Air.&lt;/p&gt;
+
+&lt;p&gt;Put in some serious work with Game Mode on Mac.&lt;/p&gt;
+
+&lt;p&gt;When you’re charging iPhone, Standby will turn it into a simple clock, a music player, or even a live scoreboard.&lt;/p&gt;
+
+&lt;p&gt;Ugh, I might have to take this.&lt;/p&gt;
+
+&lt;p&gt;♪ Elevator music ♪ Nope! Screen your calls with Live Voicemail.&lt;/p&gt;
+
+&lt;p&gt;That’s so  cool! A-ha! New and improved Autocorrect.&lt;/p&gt;
+
+&lt;p&gt;And you can log your moods and emotions right on iPhone, iPad, and watch.&lt;/p&gt;
+
+&lt;p&gt;Hold on.&lt;/p&gt;
+
+&lt;p&gt;There was something else – something really big.&lt;/p&gt;
+
+&lt;p&gt;♪ Piano music bridge ♪ This.&lt;/p&gt;
+
+&lt;p&gt;♪  ♪ Yeah. It was a big day.&lt;/p&gt;
+
+&lt;p&gt;Get all the updates on apple.com.&lt;/p&gt;
+
+&lt;h2 id=&quot;影片文字檔中文&quot;&gt;影片文字檔中文&lt;/h2&gt;
+
+&lt;p&gt;蘋果WWDC23大大小小的十七項新功能。&lt;/p&gt;
+
+&lt;p&gt;遇到新朋友了嗎？使用NameDrop交換資訊就像這樣。&lt;/p&gt;
+
+&lt;p&gt;當你打電話或FaceTime時，你所設計和重新設計的聯絡人海報將會顯示出來。&lt;/p&gt;
+
+&lt;p&gt;他們沒有接電話嗎？留下一個FaceTime訊息。&lt;/p&gt;
+
+&lt;p&gt;當你連接時，可以輕鬆地從iPhone切換到Apple TV。&lt;/p&gt;
+
+&lt;p&gt;等等，Siri遙控器在哪裡？現在iPhone也能找到它。&lt;/p&gt;
+
+&lt;p&gt;你可以從自己的照片中找到完美的反應，使用貼紙。&lt;/p&gt;
+
+&lt;p&gt;噢，閃閃發亮。&lt;/p&gt;
+
+&lt;p&gt;從你的照片、音樂、位置甚至是運動建議中反思你的一天，或者只是把一些東西從你的胸口拿出來。&lt;/p&gt;
+
+&lt;p&gt;然後騎著長途旅行，清空你的頭腦。&lt;/p&gt;
+
+&lt;p&gt;迷路一陣子，但不是真的迷路，因為你可以帶著地形圖和離線地圖。&lt;/p&gt;
+
+&lt;p&gt;還有史努比！Check In功能可以在你到家時自動通知朋友。&lt;/p&gt;
+
+&lt;p&gt;而當你外出時，自適應音效功能將讓你注意到周圍重要的聲音。&lt;/p&gt;
+
+&lt;p&gt;說到這個，多個計時器和小工具現在可以在你的所有設備上使用，包括世界上最薄的15英寸筆記型電腦——新款MacBook Air。&lt;/p&gt;
+
+&lt;p&gt;在Mac上使用遊戲模式進行嚴肅的工作。&lt;/p&gt;
+
+&lt;p&gt;當你充電iPhone時，待機模式可以將其變成一個簡單的時鐘、音樂播放器，甚至是一個實時比分板。&lt;/p&gt;
+
+&lt;p&gt;唉，我可能得接這個電話。&lt;/p&gt;
+
+&lt;p&gt;♪ 電梯音樂 ♪ 不！使用實時語音郵件篩選你的來電。&lt;/p&gt;
+
+&lt;p&gt;這太酷了！啊哈！新版且改進的自動更正功能。&lt;/p&gt;
+
+&lt;p&gt;你可以在iPhone、iPad和手錶上記錄你的心情和情緒。&lt;/p&gt;
+
+&lt;p&gt;等等。&lt;/p&gt;
+
+&lt;p&gt;還有其他的東西——非常重要的東西。&lt;/p&gt;
+
+&lt;p&gt;♪ 鋼琴樂橋段 ♪ 就是這個。&lt;/p&gt;
+
+&lt;p&gt;♪ ♪ 是的。這是一個重要的一天。&lt;/p&gt;
+
+&lt;p&gt;了解所有的更新，請前往apple.com。&lt;/p&gt;
+
+&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111486/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/things17_in_wwdc23.png&quot; alt=&quot;17 件 WWDC23 的大小事&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">下方影片連結，整理了 WWDC23 的 17 件大小事，我特別喜歡影片開頭的那個 picker 效果</summary></entry><entry><title type="html">Xcode 15 beta 2 Release notes ChatGPT 繁中翻譯</title><link href="http://localhost:4000/swift/xcode15-beta2-release-notes.html" rel="alternate" type="text/html" title="Xcode 15 beta 2 Release notes ChatGPT 繁中翻譯" /><published>2023-06-26T16:30:00+08:00</published><updated>2023-06-26T16:30:00+08:00</updated><id>http://localhost:4000/swift/xcode15-beta2-release-notes</id><content type="html" xml:base="http://localhost:4000/swift/xcode15-beta2-release-notes.html">&lt;p&gt;以下是 Xcode 15 beta 2 的 Release notes，將將整個文字丟入 ChatGPT 後翻譯出來的繁體中文結果。&lt;/p&gt;
 
 &lt;h3 id=&quot;概觀&quot;&gt;概觀&lt;/h3&gt;
 &lt;p&gt;Xcode 15 beta 2 包括 iOS 17、iPadOS 17、tvOS 17、watchOS 10、macOS Sonoma 和 visionOS 的 SDK。Xcode 15 beta 2 版本支援在 iOS 12 及更高版本、tvOS 12 及更高版本、watchOS 4 及更高版本上進行設備上的調試。Xcode 15 beta 2 需要在運行 macOS Ventura 13.4 或更高版本的 Mac 上使用。&lt;/p&gt;
@@ -1816,55 +1926,4 @@ Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置
 
 &lt;p&gt;&lt;a href=&quot;https://www.nintendo.com/jp/wallpaper/zelda-totk/index.html&quot;&gt;任天堂壁紙下載點&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.nintendo.com/&quot;&gt;任天堂網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">任天堂桌布可以下載囉，這邊列出現在能下載的桌布</summary></entry><entry><title type="html">開箱薩爾達傳說 王國之淚版 Switch 主機</title><link href="http://localhost:4000/life/open-box-zelda-ver-switch.html" rel="alternate" type="text/html" title="開箱薩爾達傳說 王國之淚版 Switch 主機" /><published>2023-05-15T13:07:00+08:00</published><updated>2023-05-15T13:07:00+08:00</updated><id>http://localhost:4000/life/open-box-zelda-ver-switch</id><content type="html" xml:base="http://localhost:4000/life/open-box-zelda-ver-switch.html">&lt;p&gt;和其他人相比，已經晚了許多天，不過這邊還是紀錄一下開箱。&lt;/p&gt;
-
-&lt;p&gt;我是和 momo 下定的，Switch 是和王國之淚一起寄出，所以主機拿到的時間，比市面上還晚，但王國之淚是一起到的。&lt;/p&gt;
-
-&lt;h3 id=&quot;開箱&quot;&gt;開箱&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/inbox.jpeg&quot; alt=&quot;Zelda in box&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;switch-正反面照&quot;&gt;Switch 正反面照&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/box-front.jpeg&quot; alt=&quot;Switch 正面照&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/box-rear.jpeg&quot; alt=&quot;Switch 反面照&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;switch-在箱子中&quot;&gt;Switch 在箱子中&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/box-inner.jpeg&quot; alt=&quot;在箱子中的 Switch&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;switch-deck&quot;&gt;Switch deck&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/case-front.jpeg&quot; alt=&quot;deck 正面&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/case-rear.jpeg&quot; alt=&quot;deck 反面&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;switch&quot;&gt;Switch&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/switch.jpeg&quot; alt=&quot;Switch&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;附送特典&quot;&gt;附送特典&lt;/h3&gt;
-
-&lt;p&gt;附了鑰匙圈和貼紙，在其他通路上，也有附的是卡片套子，還聽說普雷伊可以選墊子。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/addition.jpeg&quot; alt=&quot;特典&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;朋友的特典---墊子&quot;&gt;朋友的特典 - 墊子&lt;/h3&gt;
-
-&lt;p&gt;這個墊子非常有質感啊! 真的推薦&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-switch/sheet.jpeg&quot; alt=&quot;墊子&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;這次主打---創造&quot;&gt;這次主打 - 創造&lt;/h2&gt;
-
-&lt;p&gt;Youtube 上已經有各種創造物了，比如說下面這個就很有趣。使用「轟炸機」來炸小波。&lt;/p&gt;
-
-&lt;h3 id=&quot;時代變了大人&quot;&gt;時代變了，大人&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tKuoTrW6tDc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/life/zelda-trail-3rd.html&quot;&gt;薩爾達王國之淚影片釋出&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html&quot;&gt;薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Switch" /><category term="Nintendo" /><category term="任天堂" /><summary type="html">和其他人相比，已經晚了許多天，不過這邊還是紀錄一下開箱。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.nintendo.com/&quot;&gt;任天堂網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">任天堂桌布可以下載囉，這邊列出現在能下載的桌布</summary></entry></feed>
