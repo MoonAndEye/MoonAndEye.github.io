@@ -1,6 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-27T14:36:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">17 件 WWDC23 的大小事</title><link href="http://localhost:4000/swift/new-post.html" rel="alternate" type="text/html" title="17 件 WWDC23 的大小事" /><published>2023-06-27T14:28:00+08:00</published><updated>2023-06-27T14:28:00+08:00</updated><id>http://localhost:4000/swift/new-post</id><content type="html" xml:base="http://localhost:4000/swift/new-post.html">&lt;h2 id=&quot;下方影片連結整理了-wwdc23-的-17-件大小事我特別喜歡影片開頭的那個-picker-效果&quot;&gt;下方影片連結，整理了 WWDC23 的 17 件大小事，我特別喜歡影片開頭的那個 picker 效果&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-27T14:58:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Apple 開發者需要知道的 WWDC23 大小事</title><link href="http://localhost:4000/swift/what-apple-developers-need-to-know-at-wwdc23.html" rel="alternate" type="text/html" title="Apple 開發者需要知道的 WWDC23 大小事" /><published>2023-06-27T14:46:00+08:00</published><updated>2023-06-27T14:46:00+08:00</updated><id>http://localhost:4000/swift/what-apple-developers-need-to-know-at-wwdc23</id><content type="html" xml:base="http://localhost:4000/swift/what-apple-developers-need-to-know-at-wwdc23.html">&lt;h2 id=&quot;下方圖片連結到-apple-的-wwdc23-sessions-頁面---what-apple-developers-need-to-know-at-wwdc23&quot;&gt;下方圖片連結到 Apple 的 WWDC23 sessions 頁面 - What Apple developers need to know at WWDC23&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111488/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/developer_needs_to_know_wwdc23.png&quot; alt=&quot;What Apple developers need to know at WWDC23&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;這個敏捷燕子飛行的下方有個-platformsappend-加的就是-vision-pro&quot;&gt;這個敏捷燕子飛行的下方，有個 platforms.append() 加的就是 vision pro&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;(https://developer.apple.com/videos/play/wwdc2023/111488/)&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/platform_append.png&quot; alt=&quot;Platform append vision pro&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;影片文字檔&quot;&gt;影片文字檔&lt;/h2&gt;
+
+&lt;p&gt;Hey, developers, it’s Dub Dub ‘23, where we’re talking infinite possibilities.&lt;/p&gt;
+
+&lt;p&gt;175 new sessions helping you bring your ideas onto two billion Apple devices, from hundreds of Apple engineers and designers.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hello, everyone. - Hey, Allen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to catch up on Swift data…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’m excited to see what you will build.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…take widgets to new places, or design for watchOS 10, there’s a session for that.&lt;/p&gt;
+
+&lt;p&gt;SwiftUI custom animations, Xcode’s enhanced test navigator, and Xcode previews, there’s a session for that.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Let’s jump right in.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Swift-DocC documentation, anyone? - Yeah.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can unleash your AAA game with Apple silicon now on Mac Pro and Mac Studio with M2.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Boom! And of course, immerse yourself in visionOS and Reality Composer Pro.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;It looks like we’re up and running.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There’s a bunch of sessions for that.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;♪ Upbeat electronic music ♪ Get all of this and the platform State of the Union at developer.apple.com.&lt;/p&gt;
+
+&lt;p&gt;And if you find yourself dreaming about the future, there’s a session for that.&lt;/p&gt;
+
+&lt;p&gt;♪&lt;/p&gt;
+
+&lt;h2 id=&quot;影片文字檔中文翻譯&quot;&gt;影片文字檔中文翻譯&lt;/h2&gt;
+
+&lt;p&gt;嘿，開發者們，這是Dub Dub ‘23，我們將談論無限的可能性。&lt;/p&gt;
+
+&lt;p&gt;有175個新的研討會，幫助你將你的想法帶到20億台蘋果設備上，由數百名蘋果工程師和設計師提供支持。&lt;/p&gt;
+
+&lt;p&gt;大家好。- 嘿，艾倫。
+如果你想了解Swift數據…&lt;/p&gt;
+
+&lt;p&gt;我很期待看到你們的建設成果。
+…將小工具應用到新的領域，或者為watchOS 10設計，都有相關的研討會。&lt;/p&gt;
+
+&lt;p&gt;SwiftUI自定義動畫、Xcode增強版測試導航器和Xcode預覽，都有相應的研討會。&lt;/p&gt;
+
+&lt;p&gt;讓我們開始吧。&lt;/p&gt;
+
+&lt;p&gt;Swift-DocC文檔，有人有興趣嗎？- 是的。&lt;/p&gt;
+
+&lt;p&gt;現在你可以在Mac Pro和Mac Studio上利用Apple silicon打造出AAA級遊戲。&lt;/p&gt;
+
+&lt;p&gt;轟隆隆！當然，還有著陶醉於visionOS和Reality Composer Pro。&lt;/p&gt;
+
+&lt;p&gt;看起來我們已經準備好了。&lt;/p&gt;
+
+&lt;p&gt;還有很多相關的研討會。&lt;/p&gt;
+
+&lt;p&gt;♪ 歡快的電子音樂 ♪ 在developer.apple.com上了解所有這些內容，以及平台的年度報告。&lt;/p&gt;
+
+&lt;p&gt;如果你發現自己對未來充滿夢想，也有相應的研討會供你參加。&lt;/p&gt;
+
+&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111488/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/developer_needs_to_know_wwdc23.png&quot; alt=&quot;What Apple developers need to know at WWDC23&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">下方圖片連結到 Apple 的 WWDC23 sessions 頁面 - What Apple developers need to know at WWDC23</summary></entry><entry><title type="html">17 件 WWDC23 的大小事</title><link href="http://localhost:4000/swift/things17-wwdc23.html" rel="alternate" type="text/html" title="17 件 WWDC23 的大小事" /><published>2023-06-27T14:28:00+08:00</published><updated>2023-06-27T14:28:00+08:00</updated><id>http://localhost:4000/swift/things17-wwdc23</id><content type="html" xml:base="http://localhost:4000/swift/things17-wwdc23.html">&lt;h2 id=&quot;下方影片連結整理了-wwdc23-的-17-件大小事我特別喜歡影片開頭的那個-picker-效果&quot;&gt;下方影片連結，整理了 WWDC23 的 17 件大小事，我特別喜歡影片開頭的那個 picker 效果&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111486/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/things17_in_wwdc23.png&quot; alt=&quot;17 件 WWDC23 的大小事&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;重點當然是-vision-pro&quot;&gt;重點，當然是 vision pro&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111486/&quot;&gt;&lt;img src=&quot;/assets//swift/wwdc23/things17_visionPro.png&quot; alt=&quot;vision pro&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;影片文字檔&quot;&gt;影片文字檔&lt;/h2&gt;
 
@@ -54,7 +147,7 @@
 
 &lt;p&gt;Get all the updates on apple.com.&lt;/p&gt;
 
-&lt;h2 id=&quot;影片文字檔中文&quot;&gt;影片文字檔中文&lt;/h2&gt;
+&lt;h2 id=&quot;影片文字檔中文翻譯&quot;&gt;影片文字檔中文翻譯&lt;/h2&gt;
 
 &lt;p&gt;蘋果WWDC23大大小小的十七項新功能。&lt;/p&gt;
 
@@ -1894,36 +1987,4 @@ Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置
 
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit/uitableview&quot;&gt;Apple 的 UITableView 文件&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://firebase.google.com/docs/admob?hl=zh-tw&quot;&gt;Firebase AdMob 文件&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UI" /><category term="TableView" /><summary type="html">清單型的 UI 在 iOS App 上是非常常見的設計，從內建 App 的「聯絡人」、「通話紀錄」、「設定」都是用 Table(在另一個平台叫 list) 清單型的 UI 做出來的。TableView 在手機上有個很大的優點，他可以在有限的螢幕上，呈現超過螢幕的資訊，使用者只需要往一個方向滑，就會看到更多的資訊。在 iOS 的設計上， UITableView 預設是帶有 bounce 的，當你滑到最後一個資料的時候，Table 還會維持著一定的慣性滑動，之後再彈回到頂部。這個 bounce 的行為，在「創意競擇」中也有提到，是很早就做進 iOS 系統裡面的設計。</summary></entry><entry><title type="html">薩爾達傳說 - 王國之淚 桌布可以在任天堂網站下載</title><link href="http://localhost:4000/life/zelda-kingdom-tear-wall-papers.html" rel="alternate" type="text/html" title="薩爾達傳說 - 王國之淚 桌布可以在任天堂網站下載" /><published>2023-05-16T10:07:00+08:00</published><updated>2023-05-16T10:07:00+08:00</updated><id>http://localhost:4000/life/zelda-kingdom-tear-wall-papers</id><content type="html" xml:base="http://localhost:4000/life/zelda-kingdom-tear-wall-papers.html">&lt;p&gt;任天堂桌布可以下載囉，這邊列出現在能下載的桌布&lt;/p&gt;
-
-&lt;h3 id=&quot;電腦桌布&quot;&gt;電腦桌布&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-wall-paper/wallpaper_1920_A.jpg&quot; alt=&quot;桌布&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;手機版&quot;&gt;手機版&lt;/h3&gt;
-
-&lt;h3 id=&quot;1080&quot;&gt;1080&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-wall-paper/wallpaper_1080_A.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1200&quot;&gt;1200&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-wall-paper/wallpaper_1200_A.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1242&quot;&gt;1242&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-wall-paper/wallpaper_1242_A.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1242-1&quot;&gt;1242&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-wall-paper/wallpaper_1242_B.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1536&quot;&gt;1536&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-wall-paper/wallpaper_1536_A.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;相關網站&quot;&gt;相關網站&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.nintendo.com/jp/wallpaper/zelda-totk/index.html&quot;&gt;任天堂壁紙下載點&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.nintendo.com/&quot;&gt;任天堂網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">任天堂桌布可以下載囉，這邊列出現在能下載的桌布</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://firebase.google.com/docs/admob?hl=zh-tw&quot;&gt;Firebase AdMob 文件&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UI" /><category term="TableView" /><summary type="html">清單型的 UI 在 iOS App 上是非常常見的設計，從內建 App 的「聯絡人」、「通話紀錄」、「設定」都是用 Table(在另一個平台叫 list) 清單型的 UI 做出來的。TableView 在手機上有個很大的優點，他可以在有限的螢幕上，呈現超過螢幕的資訊，使用者只需要往一個方向滑，就會看到更多的資訊。在 iOS 的設計上， UITableView 預設是帶有 bounce 的，當你滑到最後一個資料的時候，Table 還會維持著一定的慣性滑動，之後再彈回到頂部。這個 bounce 的行為，在「創意競擇」中也有提到，是很早就做進 iOS 系統裡面的設計。</summary></entry></feed>
