@@ -39,7 +39,7 @@ permalink: /swift/:title:output_ext
 
 ![layout in uniform layout](/assets/swift/wwdc23/uniform_layout.png)
 
-請注意這個投影片的第二點，Use onlyl with small numbers of sibling items。可以看出這並沒辦法保證在很複雜元件下，他也能良好的自適應。
+請注意這個投影片的第二點，Use only with small numbers of sibling items。可以看出這並沒辦法保證在很複雜元件下，他也能良好的自適應。
 
 簡報的原文如下
 

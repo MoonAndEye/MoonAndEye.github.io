@@ -5,12 +5,12 @@ date: 2023-06-30 13:41 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, SwiftUI, WebView]
-summary: 
+summary: This article talks about how to add a WebView in SwiftUI project.
 permalink: /swift/:title:output_ext
 ---
 
 
-現代的 app，基本都會有和網路進行溝通的 feature。這一章讓我們的 app 加上一頁 WebView，去連到葛麗絲．霍普的 wiki 頁面。這樣可以保證大家在讀取資料的時候，資訊是和 wiki 上的一樣，而不用在每次資訊有更新的時候，需要進行 client 端的更新
+現代的 app，基本都會有和網路進行溝通的 feature。這一篇文章會讓 app 加上一頁 WebView，去連到葛麗絲．霍普的 wiki 頁面。這樣可以保證大家在讀取資料的時候，資訊是和 wiki 上的一樣，而不用在每次資訊有更新的時候，需要進行 client 端的更新
 
 > 葛麗絲．霍普的 wiki [https://en.wikipedia.org/wiki/Grace_Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
 > 
