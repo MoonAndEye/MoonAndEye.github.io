@@ -21,7 +21,7 @@ Color Picker 是我很喜歡的一個 SwiftUI 元件，這個元件如果是用 
 
 ![color picker](/assets/swift/color-picker/color_picker_1.png)
 
-![color picker](/assets/swift/color-picker/color_picker_2.png)
+![color picker](/assets/swift/color-picker/color_picker_2.jpeg)
 
 ![color picker](/assets/swift/color-picker/color_picker_3.png)
 
@@ -54,7 +54,7 @@ struct ColorPickerContainerView_Previews: PreviewProvider {
 
 ![color picker 4](/assets/swift/color-picker/color_picker_4.png)
 
-![color picker 5](/assets/swift/color-picker/color_picker_5.png)
+![color picker 5](/assets/swift/color-picker/color_picker5.png)
 
 即使是 preview，按下 action 後，也可以把顏色盤叫起來。
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-05T15:49:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Swiftui Color Picker</title><link href="http://localhost:4000/swift/swiftui-color-picker.html" rel="alternate" type="text/html" title="Swiftui Color Picker" /><published>2023-07-05T15:10:00+08:00</published><updated>2023-07-05T15:10:00+08:00</updated><id>http://localhost:4000/swift/swiftui-color-picker</id><content type="html" xml:base="http://localhost:4000/swift/swiftui-color-picker.html">&lt;h2 id=&quot;此文章曾發於-2022-年-it-鐵人賽---使用-swiftui-讓有趣的點子變成-apps&quot;&gt;此文章曾發於 2022 年 IT 鐵人賽 - 使用 SwiftUI 讓有趣的點子變成 Apps&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-05T15:54:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Swiftui Color Picker</title><link href="http://localhost:4000/swift/swiftui-color-picker.html" rel="alternate" type="text/html" title="Swiftui Color Picker" /><published>2023-07-05T15:10:00+08:00</published><updated>2023-07-05T15:10:00+08:00</updated><id>http://localhost:4000/swift/swiftui-color-picker</id><content type="html" xml:base="http://localhost:4000/swift/swiftui-color-picker.html">&lt;h2 id=&quot;此文章曾發於-2022-年-it-鐵人賽---使用-swiftui-讓有趣的點子變成-apps&quot;&gt;此文章曾發於 2022 年 IT 鐵人賽 - 使用 SwiftUI 讓有趣的點子變成 Apps&lt;/h2&gt;
 
 &lt;h2 id=&quot;apple-對-color-picker-的文件&quot;&gt;Apple 對 Color Picker 的文件&lt;/h2&gt;
 
@@ -10,7 +10,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_1.png&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_2.png&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_2.jpeg&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_3.png&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_4.png&quot; alt=&quot;color picker 4&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_5.png&quot; alt=&quot;color picker 5&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker5.png&quot; alt=&quot;color picker 5&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;即使是 preview，按下 action 後，也可以把顏色盤叫起來。&lt;/p&gt;
 
