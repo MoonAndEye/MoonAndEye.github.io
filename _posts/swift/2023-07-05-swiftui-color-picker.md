@@ -17,7 +17,7 @@ permalink: /swift/:title:output_ext
 
 Color Picker 是我很喜歡的一個 SwiftUI 元件，這個元件如果是用 UIKit 手刻，雖然是刻的出來，但非常耗時，如果遇到這樣的需求，以前通常都是找別人寫好的第三方套件。在 SwiftUI，現在直接做好了這個元件，只要 iOS 14+ 的版本，都可以使用。在顏色的選擇上，可以使用 格線/光譜/滑桿 來調，真的是美觀又方便。
 
-我們現在來讓錶盤帶一點顏色
+我們現在來讓測試專案: 逆走鐘的錶盤帶一點顏色
 
 ![color picker](/assets/swift/color-picker/color_picker_1.png)
 
