@@ -1,11 +1,11 @@
 ---
 layout: single
-title: 
+title: Color Picker 元件，很漂亮的顏色選擇器
 date: 2023-07-05 15:10 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, SwiftUI, Apple, iOS]
-summary: 
+summary: This article talks about how to use Color Picker in SwiftUI.
 permalink: /swift/:title:output_ext
 ---
 
