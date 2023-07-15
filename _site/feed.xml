@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-05T15:54:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Swiftui Color Picker</title><link href="http://localhost:4000/swift/swiftui-color-picker.html" rel="alternate" type="text/html" title="Swiftui Color Picker" /><published>2023-07-05T15:10:00+08:00</published><updated>2023-07-05T15:10:00+08:00</updated><id>http://localhost:4000/swift/swiftui-color-picker</id><content type="html" xml:base="http://localhost:4000/swift/swiftui-color-picker.html">&lt;h2 id=&quot;此文章曾發於-2022-年-it-鐵人賽---使用-swiftui-讓有趣的點子變成-apps&quot;&gt;此文章曾發於 2022 年 IT 鐵人賽 - 使用 SwiftUI 讓有趣的點子變成 Apps&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-15T15:49:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google Bard 可以輸入中文</title><link href="http://localhost:4000/swift/bard-ai-can-using-chinese.html" rel="alternate" type="text/html" title="Google Bard 可以輸入中文" /><published>2023-07-14T14:37:00+08:00</published><updated>2023-07-14T14:37:00+08:00</updated><id>http://localhost:4000/swift/bard-ai-can-using-chinese</id><content type="html" xml:base="http://localhost:4000/swift/bard-ai-can-using-chinese.html">&lt;p&gt;Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣在免費版的狀況下，Bard 可以取到真實世界的資料。所以如果你問他台股收盤的資料，真的可以回答出前一天台股開盤的數字。&lt;/p&gt;
+
+&lt;h3 id=&quot;不過實測後發現收盤和最低的數字是對的但開盤的數字是不正確的&quot;&gt;不過實測後，發現收盤和最低的數字是對的，但開盤的數字是不正確的&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-can-using-chinese.png&quot; alt=&quot;bard can using chinese&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;除了第一個回答以外，還多了了三個 draft 的選項可以參考，點開來看，開盤的數字也都不正確，2023/7/15 正確的開盤是 17283 點。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-draft.png&quot; alt=&quot;bard answer has draft&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;向-bard-問了幾個問題&quot;&gt;向 Bard 問了幾個問題&lt;/h2&gt;
+
+&lt;h3 id=&quot;先從算命開始&quot;&gt;先從算命開始&lt;/h3&gt;
+
+&lt;p&gt;先從算命開始，因為在 ChatGPT 的時候，只要輸入出生年月日時辰，ChatGPT 就會用四柱八字幫你算命，我想測測看 Bard 能不能也做到一樣的事情&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-fortune-teller.png&quot; alt=&quot;bard fortune teller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;結論：不行&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;他回答他沒辦法算命&lt;/p&gt;
+
+&lt;h3 id=&quot;讓-bard-抽塔羅牌試試&quot;&gt;讓 Bard 抽塔羅牌試試&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-tarrot.png&quot; alt=&quot;bard draw a tarrot card&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;結論：可以抽牌&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;而且還可以解牌意&lt;/p&gt;
+
+&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/google-start-bard-ai.html&quot;&gt;Google 開始測試 Bard&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="AI" /><category term="ChatGPT" /><category term="Google" /><category term="Bard" /><summary type="html">Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣在免費版的狀況下，Bard 可以取到真實世界的資料。所以如果你問他台股收盤的資料，真的可以回答出前一天台股開盤的數字。</summary></entry><entry><title type="html">Color Picker 元件，很漂亮的顏色選擇器</title><link href="http://localhost:4000/swift/swiftui-color-picker.html" rel="alternate" type="text/html" title="Color Picker 元件，很漂亮的顏色選擇器" /><published>2023-07-05T15:10:00+08:00</published><updated>2023-07-05T15:10:00+08:00</updated><id>http://localhost:4000/swift/swiftui-color-picker</id><content type="html" xml:base="http://localhost:4000/swift/swiftui-color-picker.html">&lt;h2 id=&quot;此文章曾發於-2022-年-it-鐵人賽---使用-swiftui-讓有趣的點子變成-apps&quot;&gt;此文章曾發於 2022 年 IT 鐵人賽 - 使用 SwiftUI 讓有趣的點子變成 Apps&lt;/h2&gt;
 
 &lt;h2 id=&quot;apple-對-color-picker-的文件&quot;&gt;Apple 對 Color Picker 的文件&lt;/h2&gt;
 
@@ -6,7 +40,7 @@
 
 &lt;p&gt;Color Picker 是我很喜歡的一個 SwiftUI 元件，這個元件如果是用 UIKit 手刻，雖然是刻的出來，但非常耗時，如果遇到這樣的需求，以前通常都是找別人寫好的第三方套件。在 SwiftUI，現在直接做好了這個元件，只要 iOS 14+ 的版本，都可以使用。在顏色的選擇上，可以使用 格線/光譜/滑桿 來調，真的是美觀又方便。&lt;/p&gt;
 
-&lt;p&gt;我們現在來讓錶盤帶一點顏色&lt;/p&gt;
+&lt;p&gt;我們現在來讓測試專案: 逆走鐘的錶盤帶一點顏色&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_1.png&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
 
@@ -301,7 +335,7 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;不過， preview 是沒辦法看到網頁的，所以我們在進入點，把 View 換成 BCWebView，看一下結果。&lt;/p&gt;
+&lt;p&gt;不過， preview 是沒辦法看到網頁的，所以我們在進入點，把 View 換成 MyWebView，看一下結果。&lt;/p&gt;
 
 &lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
 
@@ -1771,20 +1805,4 @@ Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置
 
 &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/finance/ChatGPT-plugins.html&quot;&gt;ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="OpenAI" /><summary type="html">今天開始，台灣區 App Store 可以下載 ChatGPT 官方 App 了。連結在下方，之前在 iPhone 手機上，只能透過 Safari 將 ChatGPT 網頁存放在桌面。相信未來，ChatGPT 上的新 feature 也可以在這個 iPhone 上直接使用了。</summary></entry><entry><title type="html">從 Podfile.lock 確認專案使用的第三方套件的版本</title><link href="http://localhost:4000/swift/check-third-party-pod-version-from-podfilelock.html" rel="alternate" type="text/html" title="從 Podfile.lock 確認專案使用的第三方套件的版本" /><published>2023-05-30T14:29:00+08:00</published><updated>2023-05-30T14:29:00+08:00</updated><id>http://localhost:4000/swift/check-third-party-pod-version-from-podfilelock</id><content type="html" xml:base="http://localhost:4000/swift/check-third-party-pod-version-from-podfilelock.html">&lt;p&gt;iOS App 開發中，通常會用到第三方 libs，本篇文章主要是要介紹如何從 Podfile.lock 確認專案使用的第三方套件的版本。在 iOS 專案中，紀錄所有第三方 libs 和相依關係的檔案，是 Pofile.lock，當協同的開發者進行開發時，我們只要在 terminal 的同層目錄下，下指令 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt; ，pod 就會依照 Podfile.lock 的內容，安裝 Podfile 上符合版本修件的第三方套件。接下來會說明 Podfile.lock 的結構。&lt;/p&gt;
-
-&lt;h2 id=&quot;podfilelock-的結構&quot;&gt;Podfile.lock 的結構&lt;/h2&gt;
-
-&lt;p&gt;使用的第三方 lib 版本，和每個第三方依賴的 lib 會在第一段，就是下方圖片 Pods: 的下方。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/podfile-lock/podfile-lock-sample.png&quot; alt=&quot;Podfile lock sample&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在 Podfile.lock 裡面，空兩格接一個短線，表示專案安裝的第三方 lib 與對應的版本號。在範例圖片中，你可以看到紅色框起來的地方，下兩行都是空四個空格再接一個短線。這表示你安裝的這個第三方有另外依賴第三方。以這個例子為，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firebase/CoreOnly&lt;/code&gt; 與  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics (= 7.6.0)&lt;/code&gt;。而其中依賴的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt; 的第三方是固定版本 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7.6.0&lt;/code&gt;。因為有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt; 的依賴，所以你會在 Podfile.lock 裡面也看到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firebase/CoreOnly&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt; 的版本號。&lt;/p&gt;
-
-&lt;h2 id=&quot;提醒不要將-podfilelock-加入-gitignore&quot;&gt;提醒：不要將 Podfile.lock 加入 gitignore&lt;/h2&gt;
-
-&lt;p&gt;這個檔案明確的紀錄這個專案所使用的第三方與版本號，在接手專案時，只要下 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt;，就可以在專案上安裝對應的程式碼，所以請不要將 Podfile.lock 加入 gitignore，這會造成大家的困擾。&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://cocoapods.org/&quot;&gt;Cocoapods.org 的文件&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="第三方" /><category term="CocoaPods" /><summary type="html">iOS App 開發中，通常會用到第三方 libs，本篇文章主要是要介紹如何從 Podfile.lock 確認專案使用的第三方套件的版本。在 iOS 專案中，紀錄所有第三方 libs 和相依關係的檔案，是 Pofile.lock，當協同的開發者進行開發時，我們只要在 terminal 的同層目錄下，下指令 pod install ，pod 就會依照 Podfile.lock 的內容，安裝 Podfile 上符合版本修件的第三方套件。接下來會說明 Podfile.lock 的結構。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="OpenAI" /><summary type="html">今天開始，台灣區 App Store 可以下載 ChatGPT 官方 App 了。連結在下方，之前在 iPhone 手機上，只能透過 Safari 將 ChatGPT 網頁存放在桌面。相信未來，ChatGPT 上的新 feature 也可以在這個 iPhone 上直接使用了。</summary></entry></feed>

@@ -105,7 +105,7 @@ struct MyWebView: View {
 }
 ```
 
-不過， preview 是沒辦法看到網頁的，所以我們在進入點，把 View 換成 BCWebView，看一下結果。
+不過， preview 是沒辦法看到網頁的，所以我們在進入點，把 View 換成 MyWebView，看一下結果。
 
 ```swift
 import SwiftUI
