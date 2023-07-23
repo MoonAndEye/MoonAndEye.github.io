@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-21T15:23:11+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google Bard 可以輸入中文</title><link href="http://localhost:4000/swift/bard-ai-can-using-chinese.html" rel="alternate" type="text/html" title="Google Bard 可以輸入中文" /><published>2023-07-14T14:37:00+08:00</published><updated>2023-07-14T14:37:00+08:00</updated><id>http://localhost:4000/swift/bard-ai-can-using-chinese</id><content type="html" xml:base="http://localhost:4000/swift/bard-ai-can-using-chinese.html">&lt;p&gt;Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣在免費版的狀況下，Bard 可以取到真實世界的資料。所以如果你問他台股收盤的資料，真的可以回答出前一天台股開盤的數字。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-23T12:35:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了</title><link href="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html" rel="alternate" type="text/html" title="OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了" /><published>2023-07-23T12:19:00+08:00</published><updated>2023-07-23T12:19:00+08:00</updated><id>http://localhost:4000/programming/openai-launch-chatgpt-in-android</id><content type="html" xml:base="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html">&lt;p&gt;Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。&lt;/p&gt;
+
+&lt;div&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We’re rolling out ChatGPT for Android users next week &lt;a href=&quot;https://t.co/3tNLNcG5Kw&quot;&gt;https://t.co/3tNLNcG5Kw&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mira Murati (@miramurati) &lt;a href=&quot;https://twitter.com/miramurati/status/1682488760905367552?ref_src=twsrc%5Etfw&quot;&gt;July 21, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而 OpenAI 的 twitter 也可以看到一樣的內容。&lt;/p&gt;
+
+&lt;div&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Announcing ChatGPT for Android! The app will be rolling out to users next week, and you can pre-order in the Google Play Store starting today: &lt;a href=&quot;https://t.co/NfBDYZR5GI&quot;&gt;https://t.co/NfBDYZR5GI&lt;/a&gt;&lt;/p&gt;&amp;mdash; OpenAI (@OpenAI) &lt;a href=&quot;https://twitter.com/OpenAI/status/1682480558545461249?ref_src=twsrc%5Etfw&quot;&gt;July 21, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;p&gt;目前，仍然看不出在 mobile app 上和網頁應用上，哪邊有很大的差別。就 GPT 功能來說，現在還沒有太大的差別在 web/mobile app 上。而 mobile app 的優勢，通常會是在推播，mobile log，local 快取，Widget，相機與 app 的溝通上的應用。雖然劣勢是碰到付款的狀況下，會被抽大約 30% 的費用給 Google/Apple。但付款流程的體驗在 mobile 上是比較好的。&lt;/p&gt;
+
+&lt;p&gt;未來，很期待 mobile apps 上的 GPT 應用，能帶給我們更多的不一樣，舉例來說，圖片的輸入，GPS 相關資料的處理，加工/修圖的要求。這些都是在 mobile app 可能可以和 ChatGPT 進行結合的地方。&lt;/p&gt;
+
+&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html&quot;&gt;ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="Android" /><summary type="html">Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。</summary></entry><entry><title type="html">Google Bard 可以輸入中文</title><link href="http://localhost:4000/swift/bard-ai-can-using-chinese.html" rel="alternate" type="text/html" title="Google Bard 可以輸入中文" /><published>2023-07-14T14:37:00+08:00</published><updated>2023-07-14T14:37:00+08:00</updated><id>http://localhost:4000/swift/bard-ai-can-using-chinese</id><content type="html" xml:base="http://localhost:4000/swift/bard-ai-can-using-chinese.html">&lt;p&gt;Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣在免費版的狀況下，Bard 可以取到真實世界的資料。所以如果你問他台股收盤的資料，真的可以回答出前一天台股開盤的數字。&lt;/p&gt;
 
 &lt;h3 id=&quot;不過實測後發現收盤和最低的數字是對的但開盤的數字是不正確的&quot;&gt;不過實測後，發現收盤和最低的數字是對的，但開盤的數字是不正確的&lt;/h3&gt;
 
@@ -1791,18 +1811,4 @@ Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置
 
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10164/&quot;&gt;WWDC23 - What’s new in Swift&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.hackingwithswift.com/articles/258/whats-new-in-swift-5-9&quot;&gt;Hacking with Swift 對 Macros 的介紹&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">在前面的文章，寫過了 使用 swift async/await 串接 closure 的方法，但在 WWDC23 的 State of the union 影片上，我看到了 macros 可以只使用一個 anootation 達到，還可以泛用到以前每個寫的 escaping closure，這一篇的作法，會需要在每個 escaping closure 包上 async func 才能運用，這之間的程式碼數量差距真的是太多了，讓我對 Swift 5.9 有了更多的期待。</summary></entry><entry><title type="html">ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用</title><link href="http://localhost:4000/programming/ChatGPT-offical-app-on-AppStore.html" rel="alternate" type="text/html" title="ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用" /><published>2023-05-31T13:09:00+08:00</published><updated>2023-05-31T13:09:00+08:00</updated><id>http://localhost:4000/programming/ChatGPT-offical-app-on-AppStore</id><content type="html" xml:base="http://localhost:4000/programming/ChatGPT-offical-app-on-AppStore.html">&lt;p&gt;今天開始，台灣區 App Store 可以下載 ChatGPT 官方 App 了。連結在下方，之前在 iPhone 手機上，只能透過 Safari 將 ChatGPT 網頁存放在桌面。相信未來，ChatGPT 上的新 feature 也可以在這個 iPhone 上直接使用了。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/us/app/chatgpt/id6448311069&quot;&gt;ChatGPT 官方 App&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/chatgpt/chatgpt.png&quot; alt=&quot;ChatGPT App 頁面&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;chatgpt-下載連結&quot;&gt;ChatGPT 下載連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/us/app/chatgpt/id6448311069&quot;&gt;ChatGPT 官方 App&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/finance/ChatGPT-plugins.html&quot;&gt;ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="OpenAI" /><summary type="html">今天開始，台灣區 App Store 可以下載 ChatGPT 官方 App 了。連結在下方，之前在 iPhone 手機上，只能透過 Safari 將 ChatGPT 網頁存放在桌面。相信未來，ChatGPT 上的新 feature 也可以在這個 iPhone 上直接使用了。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.hackingwithswift.com/articles/258/whats-new-in-swift-5-9&quot;&gt;Hacking with Swift 對 Macros 的介紹&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">在前面的文章，寫過了 使用 swift async/await 串接 closure 的方法，但在 WWDC23 的 State of the union 影片上，我看到了 macros 可以只使用一個 anootation 達到，還可以泛用到以前每個寫的 escaping closure，這一篇的作法，會需要在每個 escaping closure 包上 async func 才能運用，這之間的程式碼數量差距真的是太多了，讓我對 Swift 5.9 有了更多的期待。</summary></entry></feed>
