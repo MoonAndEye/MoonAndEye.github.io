@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-23T12:35:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了</title><link href="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html" rel="alternate" type="text/html" title="OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了" /><published>2023-07-23T12:19:00+08:00</published><updated>2023-07-23T12:19:00+08:00</updated><id>http://localhost:4000/programming/openai-launch-chatgpt-in-android</id><content type="html" xml:base="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html">&lt;p&gt;Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-25T10:49:10+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">從7月25日開始，Apple VisionPro 可以申請開發者套件了</title><link href="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html" rel="alternate" type="text/html" title="從7月25日開始，Apple VisionPro 可以申請開發者套件了" /><published>2023-07-25T08:50:00+08:00</published><updated>2023-07-25T08:50:00+08:00</updated><id>http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now</id><content type="html" xml:base="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html">&lt;p&gt;7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。&lt;/p&gt;
+
+&lt;h3 id=&quot;email-內容&quot;&gt;email 內容&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-can-applly-visionpro-developerkit/apple-email.png&quot; alt=&quot;apple email visionPro&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;visionpro-申請頁面&quot;&gt;visionPro 申請頁面&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-can-applly-visionpro-developerkit/developerkit-apply.png&quot; alt=&quot;visionPro developer kit apply&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/what-apple-developers-need-to-know-at-wwdc23.html&quot;&gt;Apple 開發者需要知道的 WWDC23 大小事&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/things17-wwdc23.html&quot;&gt;17 件 WWDC23 的大小事&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Apple" /><category term="visionPro" /><category term="developer kit" /><summary type="html">7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。</summary></entry><entry><title type="html">OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了</title><link href="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html" rel="alternate" type="text/html" title="OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了" /><published>2023-07-23T12:19:00+08:00</published><updated>2023-07-23T12:19:00+08:00</updated><id>http://localhost:4000/programming/openai-launch-chatgpt-in-android</id><content type="html" xml:base="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html">&lt;p&gt;Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。&lt;/p&gt;
 
 &lt;div&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We’re rolling out ChatGPT for Android users next week &lt;a href=&quot;https://t.co/3tNLNcG5Kw&quot;&gt;https://t.co/3tNLNcG5Kw&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mira Murati (@miramurati) &lt;a href=&quot;https://twitter.com/miramurati/status/1682488760905367552?ref_src=twsrc%5Etfw&quot;&gt;July 21, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
@@ -1775,40 +1789,4 @@ Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置
 
 &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/wwdc23-state-union.html&quot;&gt;WWDC23 - State of the union&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10055/&quot;&gt;What’s new in UIKit&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">重點1： UIViewController 可以用 Preview 了</summary></entry><entry><title type="html">WWDC23 - Swift 加入了 Macros 特性 - State of the union</title><link href="http://localhost:4000/swift/wwdc23-state-union.html" rel="alternate" type="text/html" title="WWDC23 - Swift 加入了 Macros 特性 - State of the union" /><published>2023-06-08T18:21:00+08:00</published><updated>2023-06-08T18:21:00+08:00</updated><id>http://localhost:4000/swift/wwdc23-state-union</id><content type="html" xml:base="http://localhost:4000/swift/wwdc23-state-union.html">&lt;p&gt;在前面的文章，寫過了 &lt;a href=&quot;https://moonandeye.github.io/swift/async-await-connect-closure.html&quot;&gt;使用 swift async/await 串接 closure 的方法&lt;/a&gt;，但在 WWDC23 的 State of the union 影片上，我看到了 macros 可以只使用一個 anootation 達到，還可以泛用到以前每個寫的 escaping closure，這一篇的作法，會需要在每個 escaping closure 包上 async func 才能運用，這之間的程式碼數量差距真的是太多了，讓我對 Swift 5.9 有了更多的期待。&lt;/p&gt;
-
-&lt;h3 id=&quot;這是原來你寫的-fetch-content使用-completion-handler&quot;&gt;這是原來你寫的 fetch content，使用 completion handler&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/origin.png&quot; alt=&quot;completion handler&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;這是使用了-addasync-macros-後-addasync-應該不是-swift-原生的-annotation應該要自己寫&quot;&gt;這是使用了 @AddAsync Macros 後 (@AddAsync 應該不是 Swift 原生的 annotation，應該要自己寫)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/using_macros.png&quot; alt=&quot;using macros&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;macros-還用在哪大量的用在-swiftui-上&quot;&gt;Macros 還用在哪？大量的用在 SwiftUI 上&lt;/h2&gt;
-
-&lt;p&gt;從 &lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10164/&quot;&gt;What’s new in Swift 的影片中&lt;/a&gt;，我們可以看到 SwiftUI 中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObservableObject&lt;/code&gt; 未來可以用 Macros 大量的簡化，讓你少寫很多 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Published&lt;/code&gt; 在 property 前面。&lt;/p&gt;
-
-&lt;h3 id=&quot;以前寫-observableobject-都要在要曝露出的-property-前面加上-published&quot;&gt;以前寫 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObservableObject&lt;/code&gt; 都要在要曝露出的 property 前面加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Published&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/origin_observable.png&quot; alt=&quot;origin observable&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;現在只要使用-observable-macros-就可以了&quot;&gt;現在只要使用 @Observable Macros 就可以了&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/macros_observable.png&quot; alt=&quot;Macros observable&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;在-wwdc23-中對-observable-的解釋&quot;&gt;在 WWDC23 中對 Observable 的解釋&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/behind_observable.png&quot; alt=&quot;behind observable&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;相信 SwiftUI 會愈來愈好寫&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/async-await-connect-closure.html&quot;&gt;使用 swift async/await 串接 closure 的方法&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/102/&quot;&gt;WWDC23 - Platforms State of the Union&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10164/&quot;&gt;WWDC23 - What’s new in Swift&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.hackingwithswift.com/articles/258/whats-new-in-swift-5-9&quot;&gt;Hacking with Swift 對 Macros 的介紹&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">在前面的文章，寫過了 使用 swift async/await 串接 closure 的方法，但在 WWDC23 的 State of the union 影片上，我看到了 macros 可以只使用一個 anootation 達到，還可以泛用到以前每個寫的 escaping closure，這一篇的作法，會需要在每個 escaping closure 包上 async func 才能運用，這之間的程式碼數量差距真的是太多了，讓我對 Swift 5.9 有了更多的期待。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10055/&quot;&gt;What’s new in UIKit&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">重點1： UIViewController 可以用 Preview 了</summary></entry></feed>
