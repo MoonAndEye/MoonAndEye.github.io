@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-25T10:49:10+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">從7月25日開始，Apple VisionPro 可以申請開發者套件了</title><link href="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html" rel="alternate" type="text/html" title="從7月25日開始，Apple VisionPro 可以申請開發者套件了" /><published>2023-07-25T08:50:00+08:00</published><updated>2023-07-25T08:50:00+08:00</updated><id>http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now</id><content type="html" xml:base="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html">&lt;p&gt;7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-04T16:47:51+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽</title><link href="http://localhost:4000/programming/itironman2023.html" rel="alternate" type="text/html" title="IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽" /><published>2023-08-04T09:29:00+08:00</published><updated>2023-08-04T09:29:00+08:00</updated><id>http://localhost:4000/programming/itironman2023</id><content type="html" xml:base="http://localhost:4000/programming/itironman2023.html">&lt;p&gt;2023 年 IT 鐵人賽，現在可以報名了。&lt;/p&gt;
+
+&lt;h2 id=&quot;2023-it-鐵人賽報名網址&quot;&gt;2023 IT 鐵人賽報名網址&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ithelp.ithome.com.tw/2023ironman/event&quot;&gt;2023 年 IT 鐵人賽報名網站&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;關於-it-鐵人賽&quot;&gt;關於 IT 鐵人賽&lt;/h2&gt;
+
+&lt;h3 id=&quot;2023-ithome-鐵人賽賽季預告&quot;&gt;2023 iThome 鐵人賽賽季預告&lt;/h3&gt;
+&lt;p&gt;。受理報名：08/01(一) 10:00 AM ~ 09/15(四) 23:59:59 截止
+。撰文開賽：09/01(四) ~ 09/16(五) 之間自行擇期開賽
+　　　　　　一旦開賽即啟動 30 天發文不中斷，完成連續發文 30 天即鍊成鐵人&lt;/p&gt;
+
+&lt;h3 id=&quot;2023開賽主題可以先準備了&quot;&gt;2023開賽主題（可以先準備了）：&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;AI &amp;amp; Data&lt;/li&gt;
+  &lt;li&gt;DevOps&lt;/li&gt;
+  &lt;li&gt;IT 管理&lt;/li&gt;
+  &lt;li&gt;Modern Web&lt;/li&gt;
+  &lt;li&gt;Mobile Development&lt;/li&gt;
+  &lt;li&gt;Security&lt;/li&gt;
+  &lt;li&gt;Software Development&lt;/li&gt;
+  &lt;li&gt;Web 3&lt;/li&gt;
+  &lt;li&gt;影片教學&lt;/li&gt;
+  &lt;li&gt;神秘主題即將揭曉（關於開源 CRM 與 ERP）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;我今年報名的題目&quot;&gt;我今年報名的題目&lt;/h2&gt;
+
+&lt;p&gt;我已經參加了三年，今年也報名了，題目分別如下&lt;/p&gt;
+
+&lt;h3 id=&quot;以下是-mobile-development-組&quot;&gt;以下是 Mobile Development 組&lt;/h3&gt;
+
+&lt;h3 id=&quot;在-ios-專案上加上-unit-testing---因為-you-need-testing&quot;&gt;在 iOS 專案上加上 Unit testing - 因為 You need testing&lt;/h3&gt;
+
+&lt;h3 id=&quot;以下是自我挑戰組&quot;&gt;以下是自我挑戰組&lt;/h3&gt;
+
+&lt;h3 id=&quot;每天買一檔權證&quot;&gt;每天買一檔權證&lt;/h3&gt;
+&lt;p&gt;每天買一檔權證，因權證具有時間價值，所以在操作上，可能會在 30 天內進行賣出。投資方式使用模擬投資&lt;/p&gt;
+
+&lt;h3 id=&quot;每天買一檔美股&quot;&gt;每天買一檔美股&lt;/h3&gt;
+&lt;p&gt;每天買一檔美股，最後 30 天結算，使用的方法是模擬投資&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Programming" /><summary type="html">2023 年 IT 鐵人賽，現在可以報名了。</summary></entry><entry><title type="html">從7月25日開始，Apple VisionPro 可以申請開發者套件了</title><link href="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html" rel="alternate" type="text/html" title="從7月25日開始，Apple VisionPro 可以申請開發者套件了" /><published>2023-07-25T08:50:00+08:00</published><updated>2023-07-25T08:50:00+08:00</updated><id>http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now</id><content type="html" xml:base="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html">&lt;p&gt;7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。&lt;/p&gt;
 
 &lt;h3 id=&quot;email-內容&quot;&gt;email 內容&lt;/h3&gt;
 
@@ -1735,58 +1776,4 @@ Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置
 
 &lt;h2 id=&quot;相關網站&quot;&gt;相關網站&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/life/zelda-kingdom-tear-wall-papers.html&quot;&gt;王國之淚桌布下載&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">第一次破關所花時間，大概用了 120 小時左右</summary></entry><entry><title type="html">WWDC23 - What’s new in UIKit - 重點整理</title><link href="http://localhost:4000/swift/wwdc23-whats-new-in-uikit.html" rel="alternate" type="text/html" title="WWDC23 - What’s new in UIKit - 重點整理" /><published>2023-06-09T13:48:00+08:00</published><updated>2023-06-09T13:48:00+08:00</updated><id>http://localhost:4000/swift/wwdc23-whats-new-in-uikit</id><content type="html" xml:base="http://localhost:4000/swift/wwdc23-whats-new-in-uikit.html">&lt;h2 id=&quot;重點1-uiviewcontroller-可以用-preview-了&quot;&gt;重點1： UIViewController 可以用 Preview 了&lt;/h2&gt;
-
-&lt;p&gt;在 WWDC23 中，我們可以看到 UIKit 中的 UIViewController 可以用 Preview 了，這個功能在 SwiftUI 中已經有了，但在 UIKit 中，我們可以看到在 storyboard 中的 UIViewController 可以用 Preview 了。使用上也和 SwiftUI 新的 Macro preview 方式一樣，在下面那一段加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#Preview&lt;/code&gt;，就可以在右邊看到 UI 元件 Preview 的畫面了。&lt;/p&gt;
-
-&lt;h3 id=&quot;preview-in-uiviewcontroller&quot;&gt;Preview in UIViewController&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/uikit_preview_uiviewcontroller.png&quot; alt=&quot;Preview in UIVC&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;preview-in-uiview&quot;&gt;Preview in UIView&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/uikit_preview_uiview.png&quot; alt=&quot;Preview in UIVC&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;重點2-uiviewcontroller-加了一個-call-back-viewisappearing_且這個生命週期有-back-deploys-到-ios-130&quot;&gt;重點2： UIViewController 加了一個 call back &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewIsAppearing(_:)&lt;/code&gt;，且這個生命週期有 back-deploys 到 iOS 13.0&lt;/h2&gt;
-
-&lt;p&gt;在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewWillAppear(_:)&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewDidAppear(_:)&lt;/code&gt; 之間，多了一個 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewIsAppearing(_:)&lt;/code&gt; 的生命週期 call back。這個 call back 是為了解決 view 在過場時，尺寸正確性的問題。在 WWDC23 - What’s new in UIKit 中，也附上了生命週期 call back 順序。在以前會使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewWillLayoutSubviews()&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewDidLayoutSubviews()&lt;/code&gt; 進行 animation 的變化，但在未來，如果使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewIsAppearing&lt;/code&gt; 照 WWDC 的介紹，他只會被呼叫一次，而不是像 layoutSubviews 的 call back 會被呼叫多次。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/view_is_appearing.png&quot; alt=&quot;view is appearing&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;重點3uicollectionview-效能優化&quot;&gt;重點3：UICollectionView 效能優化&lt;/h2&gt;
-
-&lt;p&gt;在效能比較上，以 10k item 為例，在新的 iOS 上，collection view 的效能快了將近1倍，bench mark 在下圖&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/collection_view_performance.png&quot; alt=&quot;collection view performance&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;重點4-nscollectionlayout-多了-uniformacrosssiblingsestimate-讓-uicollectionviewcell-可以自適應&quot;&gt;重點4: NSCollectionLayout 多了 uniformAcrossSiblings(estimate:) ，讓 UICollectionViewCell 可以自適應&lt;/h2&gt;
-
-&lt;h3 id=&quot;新的-nscollectionlayoudimension---uniform-layout&quot;&gt;新的 NSCollectionLayouDimension - Uniform layout&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/uniform_layout.png&quot; alt=&quot;layout in uniform layout&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;請注意這個投影片的第二點，Use only with small numbers of sibling items。可以看出這並沒辦法保證在很複雜元件下，他也能良好的自適應。&lt;/p&gt;
-
-&lt;p&gt;簡報的原文如下&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Keep in mind, when you use this feature, it requires all sibling items to be created and sized to determine the size of the largest item; so avoid using it when you have large numbers of items in a group.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;uniform-across-siblings-demo&quot;&gt;Uniform Across Siblings Demo&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc23/uniform_layout_demo.png&quot; alt=&quot;layout in uniform demo&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;感想&quot;&gt;感想&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;UIKit 可以做到 preview 讓我覺得驚豔，因為很多時候我們還是需要將整個專案建置起來，再開始進行 UI 的細節調整。有了 preview (如果 preview 不會影響效能)，這個時間應該會大輻縮減。&lt;/li&gt;
-  &lt;li&gt;以前會在 SwiftUI 中使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UIViewControllerRepresentable&lt;/code&gt; 包一個 VC 來看 UIKit 的 UI，但如果已經有很多 UI 元件，這個 SwiftUI 的 target 也需要 import 相關元件，最後也會很肥大。不過，現在只要 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#Preview&lt;/code&gt; 即可。要猜的話，UIKit 的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#Preview&lt;/code&gt; 可能也是用 SwiftUI 的 preview 用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UIViewControllerRepresentable&lt;/code&gt; 來包 UIKit 的 VC 吧。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewIsAppearing(_:)&lt;/code&gt; 這個生命週期的 call back 的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Is&lt;/code&gt; 是以前不常見的，常常都是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;will&lt;/code&gt; 表示這個動作開始之前，用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;did&lt;/code&gt; 表示這個動作結束之後。這個 call back name 讓我想到 SwiftUI 中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onAppear&lt;/code&gt; 。是不是後面還有其他招式會在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewIsAppearing&lt;/code&gt; 呢？讓我拭目以待。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/wwdc23-state-union.html&quot;&gt;WWDC23 - State of the union&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10055/&quot;&gt;What’s new in UIKit&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">重點1： UIViewController 可以用 Preview 了</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/life/zelda-kingdom-tear-wall-papers.html&quot;&gt;王國之淚桌布下載&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">第一次破關所花時間，大概用了 120 小時左右</summary></entry></feed>
