@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-07T16:16:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽</title><link href="http://localhost:4000/programming/itironman2023.html" rel="alternate" type="text/html" title="IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽" /><published>2023-08-04T09:29:00+08:00</published><updated>2023-08-04T09:29:00+08:00</updated><id>http://localhost:4000/programming/itironman2023</id><content type="html" xml:base="http://localhost:4000/programming/itironman2023.html">&lt;p&gt;2023 年 IT 鐵人賽，現在可以報名了。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-30T15:56:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">蘋果發表會 2023 日期確定了</title><link href="http://localhost:4000/programming/apple-event2023.html" rel="alternate" type="text/html" title="蘋果發表會 2023 日期確定了" /><published>2023-08-30T15:41:00+08:00</published><updated>2023-08-30T15:41:00+08:00</updated><id>http://localhost:4000/programming/apple-event2023</id><content type="html" xml:base="http://localhost:4000/programming/apple-event2023.html">&lt;h2 id=&quot;2023-的-apple-event-日期確定了-美西時間-912-早上-1000&quot;&gt;2023 的 Apple Event 日期確定了 美西時間 9/12 早上 10:00&lt;/h2&gt;
+
+&lt;p&gt;今年的 Apple Event 日期確定了。如果想要直播觀看，往年都是用 Safari 和 AppleTV 看。通常台灣的社群，也會在 Discord 上邊看邊用文字進行討論。Discord 相關訊息，可以從 &lt;a href=&quot;/swift-community/&quot;&gt;Swift 社群資源&lt;/a&gt; 找到相關訊息。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/apple-event2023/apple_event.jpeg&quot; alt=&quot;Apple event logo&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Apple" /><category term="Apple Event" /><category term="iPhone" /><summary type="html">2023 的 Apple Event 日期確定了 美西時間 9/12 早上 10:00</summary></entry><entry><title type="html">IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽</title><link href="http://localhost:4000/programming/itironman2023.html" rel="alternate" type="text/html" title="IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽" /><published>2023-08-04T09:29:00+08:00</published><updated>2023-08-04T09:29:00+08:00</updated><id>http://localhost:4000/programming/itironman2023</id><content type="html" xml:base="http://localhost:4000/programming/itironman2023.html">&lt;p&gt;2023 年 IT 鐵人賽，現在可以報名了。&lt;/p&gt;
 
 &lt;h2 id=&quot;2023-it-鐵人賽報名網址&quot;&gt;2023 IT 鐵人賽報名網址&lt;/h2&gt;
 
@@ -1738,42 +1742,4 @@ xcodebuild現在支持列舉測試套件，該測試套件本來會由測試或�
 
 &lt;h2 id=&quot;xcode-cloud-1&quot;&gt;Xcode Cloud&lt;/h2&gt;
 &lt;p&gt;Xcode 15 Beta中的新功能
-Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置操作。（64009778）&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Xcode" /><category term="release notes" /><summary type="html">以下是 Xcode 15 beta 2 的 Release notes，將將整個文字丟入 ChatGPT 後翻譯出來的繁體中文結果。</summary></entry><entry><title type="html">王國之淚破關 - 開始真正的體驗海拉魯大地的時刻(內有部分破關畫面)</title><link href="http://localhost:4000/life/zelda-kingdom-tear-ending.html" rel="alternate" type="text/html" title="王國之淚破關 - 開始真正的體驗海拉魯大地的時刻(內有部分破關畫面)" /><published>2023-06-24T21:56:00+08:00</published><updated>2023-06-24T21:56:00+08:00</updated><id>http://localhost:4000/life/zelda-kingdom-tear-ending</id><content type="html" xml:base="http://localhost:4000/life/zelda-kingdom-tear-ending.html">&lt;h2 id=&quot;第一次破關所花時間大概用了-120-小時左右&quot;&gt;第一次破關所花時間，大概用了 120 小時左右&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/playing_time_record.JPG&quot; alt=&quot;遊玩時間&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;趁著台灣 2023 年的端午連假，我將王國之淚破了第一次。以下會有破關的圖片，如果你還沒破關，但會在意看到破關的相關資訊，建議先行離開。&lt;/p&gt;
-
-&lt;h2 id=&quot;接下來的海拉魯大地&quot;&gt;接下來的海拉魯大地&lt;/h2&gt;
-
-&lt;p&gt;在這系列作品，並沒有所謂的「二週目」這個概念，在打完最終 Boss 之後，會給你一個在打 Boss 前狀態的存檔，玩家可以使用那個存檔開始暢遊海拉魯大地。&lt;/p&gt;
-
-&lt;h3 id=&quot;所以說破關後接下來要做什麼&quot;&gt;所以說破關後接下來要做什麼？&lt;/h3&gt;
-
-&lt;h3 id=&quot;當然是更仔細的去玩遊戲啊沒有要打-boss-的壓力你可以更好的體驗這個箱庭世界&quot;&gt;當然是更仔細的去玩遊戲啊！沒有要打 Boss 的壓力，你可以更好的體驗這個「箱庭」世界&lt;/h3&gt;
-
-&lt;h2 id=&quot;以下是-switch-畫面&quot;&gt;以下是 Switch 畫面&lt;/h2&gt;
-
-&lt;h3 id=&quot;打完-boss-後的城堡&quot;&gt;打完 Boss 後的城堡&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/castle.JPG&quot; alt=&quot;打完 Boss 後的城堡&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;薩爾達我回來了&quot;&gt;薩爾達：「我回來了」&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/zelda.JPG&quot; alt=&quot;薩爾達公主:我回來了&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;和林克站在一起的薩爾達&quot;&gt;和林克站在一起的薩爾達&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/link_and_zelda.JPG&quot; alt=&quot;和林克站在一起的薩爾達&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;魂之使者的道別&quot;&gt;魂之使者的道別&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/soul-is-gone.JPG&quot; alt=&quot;道別&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;大家的老婆---露珠&quot;&gt;大家的老婆 - 露珠&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/zelda-kingdom-tear-ending/girl.JPG&quot; alt=&quot;露珠&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;相關網站&quot;&gt;相關網站&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/life/zelda-kingdom-tear-wall-papers.html&quot;&gt;王國之淚桌布下載&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Zelda" /><category term="Nintendo" /><category term="Switch" /><summary type="html">第一次破關所花時間，大概用了 120 小時左右</summary></entry></feed>
+Xcode現在在Xcode Cloud工作流程中支持macOS產品的新的Notarize後置操作。（64009778）&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Xcode" /><category term="release notes" /><summary type="html">以下是 Xcode 15 beta 2 的 Release notes，將將整個文字丟入 ChatGPT 後翻譯出來的繁體中文結果。</summary></entry></feed>
