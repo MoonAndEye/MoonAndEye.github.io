@@ -3,4 +3,4 @@ Allow: /BingSiteAuth.xml
 
 User-agent: *
 Allow: /
-Sitemap: https://moonandeye.github.io/sitemap.xml
+Sitemap: /sitemap.xml
