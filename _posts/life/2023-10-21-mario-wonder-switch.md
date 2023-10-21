@@ -25,7 +25,7 @@ permalink: /life/:title:output_ext
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fHitqFuxisY?si=8aNEOxe8xDTbAh4R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### 官方 CM2
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fHitqFuxisY?si=8aNEOxe8xDTbAh4R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R9-TkZOQujI?si=3OL7gSH1FNkcQ-J6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### 羅卡 Rocca 的介紹
 
