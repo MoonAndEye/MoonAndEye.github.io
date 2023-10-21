@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-12T00:57:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">鐵人賽完賽 - 在 iOS 專案上加上 Unit testing - 因為 You need testing</title><link href="http://localhost:4000/programming/itironman-finished-in2023.html" rel="alternate" type="text/html" title="鐵人賽完賽 - 在 iOS 專案上加上 Unit testing - 因為 You need testing" /><published>2023-10-12T00:43:00+08:00</published><updated>2023-10-12T00:43:00+08:00</updated><id>http://localhost:4000/programming/itironman-finished-in2023</id><content type="html" xml:base="http://localhost:4000/programming/itironman-finished-in2023.html">&lt;h2 id=&quot;鐵人賽完賽&quot;&gt;鐵人賽完賽!!&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-21T23:13:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Switch 新作馬力歐驚奇 - 好久不見的 2D 馬力歐平面作品</title><link href="http://localhost:4000/life/mario-wonder-switch.html" rel="alternate" type="text/html" title="Switch 新作馬力歐驚奇 - 好久不見的 2D 馬力歐平面作品" /><published>2023-10-21T22:29:00+08:00</published><updated>2023-10-21T22:29:00+08:00</updated><id>http://localhost:4000/life/mario-wonder-switch</id><content type="html" xml:base="http://localhost:4000/life/mario-wonder-switch.html">&lt;p&gt;任天堂最近幾次的馬力歐都是出 3D 作品，像是奧德賽、狂怒。在 2023/10/20 馬力歐驚奇發售，在凌晨我馬上用 MOMO 下定。快速發售的商品，在當天晚上六點左右，就送到了，這次下定的是「馬力歐驚奇」還附上了飲料袋和一個可伸縮的購物袋。&lt;/p&gt;
+
+&lt;p&gt;下面這邊附上照片&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/switch-mario-wonder/switch_mario_wonder1.jpeg&quot; alt=&quot;mario wonder&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/switch-mario-wonder/switch_mario_wonder2.jpeg&quot; alt=&quot;mario wonder&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/switch-mario-wonder/switch_mario_wonder3.jpeg&quot; alt=&quot;mario wonder&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;youtube-上關於馬力歐驚奇的影片&quot;&gt;Youtube 上關於馬力歐驚奇的影片&lt;/h2&gt;
+
+&lt;h3 id=&quot;官方-cm1&quot;&gt;官方 CM1&lt;/h3&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/fHitqFuxisY?si=8aNEOxe8xDTbAh4R&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;官方-cm2&quot;&gt;官方 CM2&lt;/h3&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/fHitqFuxisY?si=8aNEOxe8xDTbAh4R&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;羅卡-rocca-的介紹&quot;&gt;羅卡 Rocca 的介紹&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cy6amjyhJgM?si=StWsrmEjYzJNQe4N&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Nintendo" /><category term="Switch" /><category term="馬力歐" /><category term="任天堂" /><summary type="html">任天堂最近幾次的馬力歐都是出 3D 作品，像是奧德賽、狂怒。在 2023/10/20 馬力歐驚奇發售，在凌晨我馬上用 MOMO 下定。快速發售的商品，在當天晚上六點左右，就送到了，這次下定的是「馬力歐驚奇」還附上了飲料袋和一個可伸縮的購物袋。</summary></entry><entry><title type="html">鐵人賽完賽 - 在 iOS 專案上加上 Unit testing - 因為 You need testing</title><link href="http://localhost:4000/programming/itironman-finished-in2023.html" rel="alternate" type="text/html" title="鐵人賽完賽 - 在 iOS 專案上加上 Unit testing - 因為 You need testing" /><published>2023-10-12T00:43:00+08:00</published><updated>2023-10-12T00:43:00+08:00</updated><id>http://localhost:4000/programming/itironman-finished-in2023</id><content type="html" xml:base="http://localhost:4000/programming/itironman-finished-in2023.html">&lt;h2 id=&quot;鐵人賽完賽&quot;&gt;鐵人賽完賽!!&lt;/h2&gt;
 
 &lt;p&gt;今年的鐵人賽完成了，連結在下面&lt;/p&gt;
 
@@ -545,118 +565,4 @@
 
 &lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111488/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/developer_needs_to_know_wwdc23.png&quot; alt=&quot;What Apple developers need to know at WWDC23&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">下方圖片連結到 Apple 的 WWDC23 sessions 頁面 - What Apple developers need to know at WWDC23</summary></entry><entry><title type="html">17 件 WWDC23 的大小事</title><link href="http://localhost:4000/swift/things17-wwdc23.html" rel="alternate" type="text/html" title="17 件 WWDC23 的大小事" /><published>2023-06-27T14:28:00+08:00</published><updated>2023-06-27T14:28:00+08:00</updated><id>http://localhost:4000/swift/things17-wwdc23</id><content type="html" xml:base="http://localhost:4000/swift/things17-wwdc23.html">&lt;h2 id=&quot;下方影片連結整理了-wwdc23-的-17-件大小事我特別喜歡影片開頭的那個-picker-效果&quot;&gt;下方影片連結，整理了 WWDC23 的 17 件大小事，我特別喜歡影片開頭的那個 picker 效果&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111486/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/things17_in_wwdc23.png&quot; alt=&quot;17 件 WWDC23 的大小事&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;重點當然是-vision-pro&quot;&gt;重點，當然是 vision pro&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111486/&quot;&gt;&lt;img src=&quot;/assets//swift/wwdc23/things17_visionPro.png&quot; alt=&quot;vision pro&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;影片文字檔&quot;&gt;影片文字檔&lt;/h2&gt;
-
-&lt;p&gt;Seventeen big and little things from Apple WWDC23.&lt;/p&gt;
-
-&lt;p&gt;Meet a new friend? Swap info, like that, with NameDrop.&lt;/p&gt;
-
-&lt;p&gt;And your contact poster that you’ll design and redesign will show up when you call or FaceTime.&lt;/p&gt;
-
-&lt;p&gt;They missed it? Leave a FaceTime message.&lt;/p&gt;
-
-&lt;p&gt;And when you do connect, easily switch from iPhone to Apple TV.&lt;/p&gt;
-
-&lt;p&gt;Wait, where’s the Siri remote?  Now iPhone will find that too.&lt;/p&gt;
-
-&lt;p&gt;And you’ll find the perfect reaction with stickers from your own photos.&lt;/p&gt;
-
-&lt;p&gt;Ooh, shiny.&lt;/p&gt;
-
-&lt;p&gt;Reflect on your day with suggestions from your photos, music, locations, even workouts, or just get some stuff off your chest.&lt;/p&gt;
-
-&lt;p&gt;Then clear your head with a long ride.&lt;/p&gt;
-
-&lt;p&gt;Get lost for a little while, but not like lost, lost, because you can take topographic and offline maps with you.&lt;/p&gt;
-
-&lt;p&gt;And Snoopy too! Check In automatically lets a friend know when you get home.&lt;/p&gt;
-
-&lt;p&gt;And while you’re out, Adaptive Audio keeps your attention on the important sounds around you.&lt;/p&gt;
-
-&lt;p&gt;Speaking of, multiple timers and widgets are now on all your devices, including the world’s thinnest 15-inch laptop, the new MacBook Air.&lt;/p&gt;
-
-&lt;p&gt;Put in some serious work with Game Mode on Mac.&lt;/p&gt;
-
-&lt;p&gt;When you’re charging iPhone, Standby will turn it into a simple clock, a music player, or even a live scoreboard.&lt;/p&gt;
-
-&lt;p&gt;Ugh, I might have to take this.&lt;/p&gt;
-
-&lt;p&gt;♪ Elevator music ♪ Nope! Screen your calls with Live Voicemail.&lt;/p&gt;
-
-&lt;p&gt;That’s so  cool! A-ha! New and improved Autocorrect.&lt;/p&gt;
-
-&lt;p&gt;And you can log your moods and emotions right on iPhone, iPad, and watch.&lt;/p&gt;
-
-&lt;p&gt;Hold on.&lt;/p&gt;
-
-&lt;p&gt;There was something else – something really big.&lt;/p&gt;
-
-&lt;p&gt;♪ Piano music bridge ♪ This.&lt;/p&gt;
-
-&lt;p&gt;♪  ♪ Yeah. It was a big day.&lt;/p&gt;
-
-&lt;p&gt;Get all the updates on apple.com.&lt;/p&gt;
-
-&lt;h2 id=&quot;影片文字檔中文翻譯&quot;&gt;影片文字檔中文翻譯&lt;/h2&gt;
-
-&lt;p&gt;蘋果WWDC23大大小小的十七項新功能。&lt;/p&gt;
-
-&lt;p&gt;遇到新朋友了嗎？使用NameDrop交換資訊就像這樣。&lt;/p&gt;
-
-&lt;p&gt;當你打電話或FaceTime時，你所設計和重新設計的聯絡人海報將會顯示出來。&lt;/p&gt;
-
-&lt;p&gt;他們沒有接電話嗎？留下一個FaceTime訊息。&lt;/p&gt;
-
-&lt;p&gt;當你連接時，可以輕鬆地從iPhone切換到Apple TV。&lt;/p&gt;
-
-&lt;p&gt;等等，Siri遙控器在哪裡？現在iPhone也能找到它。&lt;/p&gt;
-
-&lt;p&gt;你可以從自己的照片中找到完美的反應，使用貼紙。&lt;/p&gt;
-
-&lt;p&gt;噢，閃閃發亮。&lt;/p&gt;
-
-&lt;p&gt;從你的照片、音樂、位置甚至是運動建議中反思你的一天，或者只是把一些東西從你的胸口拿出來。&lt;/p&gt;
-
-&lt;p&gt;然後騎著長途旅行，清空你的頭腦。&lt;/p&gt;
-
-&lt;p&gt;迷路一陣子，但不是真的迷路，因為你可以帶著地形圖和離線地圖。&lt;/p&gt;
-
-&lt;p&gt;還有史努比！Check In功能可以在你到家時自動通知朋友。&lt;/p&gt;
-
-&lt;p&gt;而當你外出時，自適應音效功能將讓你注意到周圍重要的聲音。&lt;/p&gt;
-
-&lt;p&gt;說到這個，多個計時器和小工具現在可以在你的所有設備上使用，包括世界上最薄的15英寸筆記型電腦——新款MacBook Air。&lt;/p&gt;
-
-&lt;p&gt;在Mac上使用遊戲模式進行嚴肅的工作。&lt;/p&gt;
-
-&lt;p&gt;當你充電iPhone時，待機模式可以將其變成一個簡單的時鐘、音樂播放器，甚至是一個實時比分板。&lt;/p&gt;
-
-&lt;p&gt;唉，我可能得接這個電話。&lt;/p&gt;
-
-&lt;p&gt;♪ 電梯音樂 ♪ 不！使用實時語音郵件篩選你的來電。&lt;/p&gt;
-
-&lt;p&gt;這太酷了！啊哈！新版且改進的自動更正功能。&lt;/p&gt;
-
-&lt;p&gt;你可以在iPhone、iPad和手錶上記錄你的心情和情緒。&lt;/p&gt;
-
-&lt;p&gt;等等。&lt;/p&gt;
-
-&lt;p&gt;還有其他的東西——非常重要的東西。&lt;/p&gt;
-
-&lt;p&gt;♪ 鋼琴樂橋段 ♪ 就是這個。&lt;/p&gt;
-
-&lt;p&gt;♪ ♪ 是的。這是一個重要的一天。&lt;/p&gt;
-
-&lt;p&gt;了解所有的更新，請前往apple.com。&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111486/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/things17_in_wwdc23.png&quot; alt=&quot;17 件 WWDC23 的大小事&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">下方影片連結，整理了 WWDC23 的 17 件大小事，我特別喜歡影片開頭的那個 picker 效果</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111488/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/developer_needs_to_know_wwdc23.png&quot; alt=&quot;What Apple developers need to know at WWDC23&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">下方圖片連結到 Apple 的 WWDC23 sessions 頁面 - What Apple developers need to know at WWDC23</summary></entry></feed>
