@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-21T23:15:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Switch 新作馬力歐驚奇 - 好久不見的 2D 馬力歐平面作品</title><link href="http://localhost:4000/life/mario-wonder-switch.html" rel="alternate" type="text/html" title="Switch 新作馬力歐驚奇 - 好久不見的 2D 馬力歐平面作品" /><published>2023-10-21T22:29:00+08:00</published><updated>2023-10-21T22:29:00+08:00</updated><id>http://localhost:4000/life/mario-wonder-switch</id><content type="html" xml:base="http://localhost:4000/life/mario-wonder-switch.html">&lt;p&gt;任天堂最近幾次的馬力歐都是出 3D 作品，像是奧德賽、狂怒。在 2023/10/20 馬力歐驚奇發售，在凌晨我馬上用 MOMO 下定。快速發售的商品，在當天晚上六點左右，就送到了，這次下定的是「馬力歐驚奇」還附上了飲料袋和一個可伸縮的購物袋。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-22T13:47:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Apple 推出了 push notification console 推播通知控制台</title><link href="http://localhost:4000/swift/apple-build-push-notification-console.html" rel="alternate" type="text/html" title="Apple 推出了 push notification console 推播通知控制台" /><published>2023-10-22T11:03:00+08:00</published><updated>2023-10-22T11:03:00+08:00</updated><id>http://localhost:4000/swift/apple-build-push-notification-console</id><content type="html" xml:base="http://localhost:4000/swift/apple-build-push-notification-console.html">&lt;p&gt;最近在 X (前身為 Twitter) 上看到推文，說 Apple 推出了一個新的推播通知控制台，可以讓開發者們更方便的管理推播通知。我馬上就去看了一下，發現這個功能真的很方便，可以讓開發者們更方便的管理推播通知。現在的推播通知，通常都是透過 Firebase 來發動，在我個人的 app 上，Firebase 是很夠用的。但如果在公司的產品，就會想知道各種推播推發出去後，在客戶端的狀況。目前我還沒使用 Apple push notification console ，但之後會去試試看。&lt;/p&gt;
+
+&lt;h2 id=&quot;apple-push-notification-console-截圖&quot;&gt;Apple Push Notification Console 截圖&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-push-notification-console/apple-console1.png&quot; alt=&quot;Apple Push Notification Console&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;除了使用後台以外也有提供-curl-的方式除了-token也可以用-certificate-的方式&quot;&gt;除了使用後台以外，也有提供 cURL 的方式，除了 token，也可以用 certificate 的方式&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-push-notification-console/apple-console2.png&quot; alt=&quot;Apple Push Notification Console&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;payload-的客製化在這邊調整&quot;&gt;payload 的客製化在這邊調整&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-push-notification-console/apple-console3.png&quot; alt=&quot;Apple Push Notification Console&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;也可以直接使用-json-format&quot;&gt;也可以直接使用 json format&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-push-notification-console/apple-console4.png&quot; alt=&quot;Apple Push Notification Console&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Apple" /><category term="Swift" /><category term="push notification" /><category term="console" /><summary type="html">最近在 X (前身為 Twitter) 上看到推文，說 Apple 推出了一個新的推播通知控制台，可以讓開發者們更方便的管理推播通知。我馬上就去看了一下，發現這個功能真的很方便，可以讓開發者們更方便的管理推播通知。現在的推播通知，通常都是透過 Firebase 來發動，在我個人的 app 上，Firebase 是很夠用的。但如果在公司的產品，就會想知道各種推播推發出去後，在客戶端的狀況。目前我還沒使用 Apple push notification console ，但之後會去試試看。</summary></entry><entry><title type="html">Switch 新作馬力歐驚奇 - 好久不見的 2D 馬力歐平面作品</title><link href="http://localhost:4000/life/mario-wonder-switch.html" rel="alternate" type="text/html" title="Switch 新作馬力歐驚奇 - 好久不見的 2D 馬力歐平面作品" /><published>2023-10-21T22:29:00+08:00</published><updated>2023-10-21T22:29:00+08:00</updated><id>http://localhost:4000/life/mario-wonder-switch</id><content type="html" xml:base="http://localhost:4000/life/mario-wonder-switch.html">&lt;p&gt;任天堂最近幾次的馬力歐都是出 3D 作品，像是奧德賽、狂怒。在 2023/10/20 馬力歐驚奇發售，在凌晨我馬上用 MOMO 下定。快速發售的商品，在當天晚上六點左右，就送到了，這次下定的是「馬力歐驚奇」還附上了飲料袋和一個可伸縮的購物袋。&lt;/p&gt;
 
 &lt;p&gt;下面這邊附上照片&lt;/p&gt;
 
@@ -476,93 +489,4 @@
 
 &lt;h3 id=&quot;展示-grace-hopper-的-wiki&quot;&gt;展示 Grace Hopper 的 wiki&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/swift/webview-in-swiftui/grace_hopper_wiki.png&quot; alt=&quot;Wiki of Grace Hopper&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><category term="WebView" /><summary type="html">此文章曾發於 2022 年 IT 鐵人賽 - 使用 SwiftUI 讓有趣的點子變成 Apps</summary></entry><entry><title type="html">Apple 開發者需要知道的 WWDC23 大小事</title><link href="http://localhost:4000/swift/what-apple-developers-need-to-know-at-wwdc23.html" rel="alternate" type="text/html" title="Apple 開發者需要知道的 WWDC23 大小事" /><published>2023-06-27T14:46:00+08:00</published><updated>2023-06-27T14:46:00+08:00</updated><id>http://localhost:4000/swift/what-apple-developers-need-to-know-at-wwdc23</id><content type="html" xml:base="http://localhost:4000/swift/what-apple-developers-need-to-know-at-wwdc23.html">&lt;h2 id=&quot;下方圖片連結到-apple-的-wwdc23-sessions-頁面---what-apple-developers-need-to-know-at-wwdc23&quot;&gt;下方圖片連結到 Apple 的 WWDC23 sessions 頁面 - What Apple developers need to know at WWDC23&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111488/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/developer_needs_to_know_wwdc23.png&quot; alt=&quot;What Apple developers need to know at WWDC23&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;這個敏捷燕子飛行的下方有個-platformsappend-加的就是-vision-pro&quot;&gt;這個敏捷燕子飛行的下方，有個 platforms.append() 加的就是 vision pro&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;(https://developer.apple.com/videos/play/wwdc2023/111488/)&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/platform_append.png&quot; alt=&quot;Platform append vision pro&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;影片文字檔&quot;&gt;影片文字檔&lt;/h2&gt;
-
-&lt;p&gt;Hey, developers, it’s Dub Dub ‘23, where we’re talking infinite possibilities.&lt;/p&gt;
-
-&lt;p&gt;175 new sessions helping you bring your ideas onto two billion Apple devices, from hundreds of Apple engineers and designers.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Hello, everyone. - Hey, Allen.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you want to catch up on Swift data…&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I’m excited to see what you will build.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;…take widgets to new places, or design for watchOS 10, there’s a session for that.&lt;/p&gt;
-
-&lt;p&gt;SwiftUI custom animations, Xcode’s enhanced test navigator, and Xcode previews, there’s a session for that.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Let’s jump right in.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Swift-DocC documentation, anyone? - Yeah.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;You can unleash your AAA game with Apple silicon now on Mac Pro and Mac Studio with M2.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Boom! And of course, immerse yourself in visionOS and Reality Composer Pro.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;It looks like we’re up and running.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;There’s a bunch of sessions for that.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;♪ Upbeat electronic music ♪ Get all of this and the platform State of the Union at developer.apple.com.&lt;/p&gt;
-
-&lt;p&gt;And if you find yourself dreaming about the future, there’s a session for that.&lt;/p&gt;
-
-&lt;p&gt;♪&lt;/p&gt;
-
-&lt;h2 id=&quot;影片文字檔中文翻譯&quot;&gt;影片文字檔中文翻譯&lt;/h2&gt;
-
-&lt;p&gt;嘿，開發者們，這是Dub Dub ‘23，我們將談論無限的可能性。&lt;/p&gt;
-
-&lt;p&gt;有175個新的研討會，幫助你將你的想法帶到20億台蘋果設備上，由數百名蘋果工程師和設計師提供支持。&lt;/p&gt;
-
-&lt;p&gt;大家好。- 嘿，艾倫。
-如果你想了解Swift數據…&lt;/p&gt;
-
-&lt;p&gt;我很期待看到你們的建設成果。
-…將小工具應用到新的領域，或者為watchOS 10設計，都有相關的研討會。&lt;/p&gt;
-
-&lt;p&gt;SwiftUI自定義動畫、Xcode增強版測試導航器和Xcode預覽，都有相應的研討會。&lt;/p&gt;
-
-&lt;p&gt;讓我們開始吧。&lt;/p&gt;
-
-&lt;p&gt;Swift-DocC文檔，有人有興趣嗎？- 是的。&lt;/p&gt;
-
-&lt;p&gt;現在你可以在Mac Pro和Mac Studio上利用Apple silicon打造出AAA級遊戲。&lt;/p&gt;
-
-&lt;p&gt;轟隆隆！當然，還有著陶醉於visionOS和Reality Composer Pro。&lt;/p&gt;
-
-&lt;p&gt;看起來我們已經準備好了。&lt;/p&gt;
-
-&lt;p&gt;還有很多相關的研討會。&lt;/p&gt;
-
-&lt;p&gt;♪ 歡快的電子音樂 ♪ 在developer.apple.com上了解所有這些內容，以及平台的年度報告。&lt;/p&gt;
-
-&lt;p&gt;如果你發現自己對未來充滿夢想，也有相應的研討會供你參加。&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/111488/&quot;&gt;&lt;img src=&quot;/assets/swift/wwdc23/developer_needs_to_know_wwdc23.png&quot; alt=&quot;What Apple developers need to know at WWDC23&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><summary type="html">下方圖片連結到 Apple 的 WWDC23 sessions 頁面 - What Apple developers need to know at WWDC23</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/swift/webview-in-swiftui/grace_hopper_wiki.png&quot; alt=&quot;Wiki of Grace Hopper&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><category term="WebView" /><summary type="html">此文章曾發於 2022 年 IT 鐵人賽 - 使用 SwiftUI 讓有趣的點子變成 Apps</summary></entry></feed>
