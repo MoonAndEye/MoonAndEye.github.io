@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-25T17:59:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">馬力歐驚奇 - 桌布可以在任天堂官網下載</title><link href="http://localhost:4000/life/mario-desktop-screen.html" rel="alternate" type="text/html" title="馬力歐驚奇 - 桌布可以在任天堂官網下載" /><published>2023-10-25T17:42:00+08:00</published><updated>2023-10-25T17:42:00+08:00</updated><id>http://localhost:4000/life/mario-desktop-screen</id><content type="html" xml:base="http://localhost:4000/life/mario-desktop-screen.html">&lt;p&gt;任天堂桌布可以下載囉，這邊列出現在能下載的桌布&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-03T10:30:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">在 App Store 上，按下「發佈」前，還可以編輯的事</title><link href="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html" rel="alternate" type="text/html" title="在 App Store 上，按下「發佈」前，還可以編輯的事" /><published>2023-11-02T08:54:00+08:00</published><updated>2023-11-02T08:54:00+08:00</updated><id>http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution</id><content type="html" xml:base="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html">&lt;p&gt;新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。&lt;/p&gt;
+
+&lt;h3 id=&quot;發佈的方式可以從手動改成某個日期後自動發佈&quot;&gt;發佈的方式，可以從手動改成某個日期後自動發佈&lt;/h3&gt;
+
+&lt;p&gt;送審的時候選擇為手動的狀態下，還可以改。如果一開始就調成自動發佈，就會直接 release
+&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/distribution_set.png&quot; alt=&quot;發佈方法&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;重置評分&quot;&gt;重置評分&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/reset_rank.png&quot; alt=&quot;重置評分&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;更改階段性發佈&quot;&gt;更改階段性發佈&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.png&quot; alt=&quot;改階段性發佈&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><summary type="html">新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。</summary></entry><entry><title type="html">馬力歐驚奇 - 桌布可以在任天堂官網下載</title><link href="http://localhost:4000/life/mario-desktop-screen.html" rel="alternate" type="text/html" title="馬力歐驚奇 - 桌布可以在任天堂官網下載" /><published>2023-10-25T17:42:00+08:00</published><updated>2023-10-25T17:42:00+08:00</updated><id>http://localhost:4000/life/mario-desktop-screen</id><content type="html" xml:base="http://localhost:4000/life/mario-desktop-screen.html">&lt;p&gt;任天堂桌布可以下載囉，這邊列出現在能下載的桌布&lt;/p&gt;
 
 &lt;p&gt;這一期的桌布是馬力歐驚奇，還放了個大象馬力歐塞入水管的圖案&lt;/p&gt;
 
@@ -172,38 +183,4 @@
 
 &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html&quot;&gt;ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="Android" /><summary type="html">Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。</summary></entry><entry><title type="html">Google Bard 可以輸入中文</title><link href="http://localhost:4000/swift/bard-ai-can-using-chinese.html" rel="alternate" type="text/html" title="Google Bard 可以輸入中文" /><published>2023-07-14T14:37:00+08:00</published><updated>2023-07-14T14:37:00+08:00</updated><id>http://localhost:4000/swift/bard-ai-can-using-chinese</id><content type="html" xml:base="http://localhost:4000/swift/bard-ai-can-using-chinese.html">&lt;p&gt;Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣在免費版的狀況下，Bard 可以取到真實世界的資料。所以如果你問他台股收盤的資料，真的可以回答出前一天台股開盤的數字。&lt;/p&gt;
-
-&lt;h3 id=&quot;不過實測後發現收盤和最低的數字是對的但開盤的數字是不正確的&quot;&gt;不過實測後，發現收盤和最低的數字是對的，但開盤的數字是不正確的&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-can-using-chinese.png&quot; alt=&quot;bard can using chinese&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;除了第一個回答以外，還多了了三個 draft 的選項可以參考，點開來看，開盤的數字也都不正確，2023/7/15 正確的開盤是 17283 點。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-draft.png&quot; alt=&quot;bard answer has draft&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;向-bard-問了幾個問題&quot;&gt;向 Bard 問了幾個問題&lt;/h2&gt;
-
-&lt;h3 id=&quot;先從算命開始&quot;&gt;先從算命開始&lt;/h3&gt;
-
-&lt;p&gt;先從算命開始，因為在 ChatGPT 的時候，只要輸入出生年月日時辰，ChatGPT 就會用四柱八字幫你算命，我想測測看 Bard 能不能也做到一樣的事情&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-fortune-teller.png&quot; alt=&quot;bard fortune teller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;結論：不行&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;他回答他沒辦法算命&lt;/p&gt;
-
-&lt;h3 id=&quot;讓-bard-抽塔羅牌試試&quot;&gt;讓 Bard 抽塔羅牌試試&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/bard-can-using-chinese/bard-tarrot.png&quot; alt=&quot;bard draw a tarrot card&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;結論：可以抽牌&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;而且還可以解牌意&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/google-start-bard-ai.html&quot;&gt;Google 開始測試 Bard&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="AI" /><category term="ChatGPT" /><category term="Google" /><category term="Bard" /><summary type="html">Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣在免費版的狀況下，Bard 可以取到真實世界的資料。所以如果你問他台股收盤的資料，真的可以回答出前一天台股開盤的數字。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html&quot;&gt;ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="Android" /><summary type="html">Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。</summary></entry></feed>
