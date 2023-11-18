@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-06T18:21:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">在 App Store 上，按下「發佈」前，還可以編輯的事</title><link href="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html" rel="alternate" type="text/html" title="在 App Store 上，按下「發佈」前，還可以編輯的事" /><published>2023-11-02T08:54:00+08:00</published><updated>2023-11-02T08:54:00+08:00</updated><id>http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution</id><content type="html" xml:base="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html">&lt;p&gt;新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-18T20:35:39+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer</title><link href="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html" rel="alternate" type="text/html" title="UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer" /><published>2023-11-18T19:14:00+08:00</published><updated>2023-11-18T19:14:00+08:00</updated><id>http://localhost:4000/swift/iOS17-refresh-control-breaking-change</id><content type="html" xml:base="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html">&lt;p&gt;今天早上(2023/11/18)，今天發生了幾件大事&lt;/p&gt;
+
+&lt;h2 id=&quot;sam-altman-被-openai-解僱了幾小時後-greg-brockman-也提辭職了&quot;&gt;Sam Altman 被 OpenAI 解僱了，幾小時後 Greg Brockman 也提辭職了&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://edition.cnn.com/2023/11/17/tech/sam-altman-departs-open-ai/index.html&quot;&gt;解僱新聞 - CNN&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.businessweekly.com.tw/international/blog/3013921&quot;&gt;商周 - Sam Altman遭OpenAI解僱，代表什麼？程世嘉：OpenAI遇到極大經營問題&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;嗯…因為寫文的當下，是週末，目前還不確定會對 OpenAI、ChatGPT 有什麼影響，但在新聞中，董事會解僱的理由是「Altman 沒有誠實的對董事會」，如果後續有新的報導或發展，請以最新的新聞為主。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;第二個跟-ios-相關的事uirefreshcontrol-在-ios17-設定的生命週期要改這是我從-essential-developer-發的-email-電子報上看到的&quot;&gt;第二個跟 iOS 相關的事，UIRefreshControl 在 iOS17 設定的生命週期要改，這是我從 Essential Developer 發的 email 電子報上看到的&lt;/h2&gt;
+
+&lt;h3 id=&quot;essential-developer-的-youtube-連結&quot;&gt;Essential Developer 的 YouTube 連結&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n9ObNkPP5GY?si=q8WjL7qejsfAWVeB&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;email 提到，UIRefreshControl 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer&lt;/p&gt;
+
+&lt;p&gt;以下是 Essential Developer 在 Youtube 中 live 示範&lt;/p&gt;
+
+&lt;p&gt;在 iOS 17 以前，在 viewDidLoad() 將 UIRefreshControl 設定好，並執行 refresh() 是沒問題的。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;但是在 iOS 17&lt;/strong&gt; 同樣的程式碼，並不會看到 UIRefreshControl 的 animation，而且 console 下方也會有 warning message&lt;/p&gt;
+
+&lt;h3 id=&quot;改到-viewwillappear-或-viewdidappear-生命週期有用嗎&quot;&gt;改到 viewWillAppear(:) 或 viewDidAppear(:) 生命週期有用嗎？&lt;/h3&gt;
+
+&lt;p&gt;答： 如果移到 viewWillAppear(:) 時機太早，UIRefreshControl 不會渲染。移到 viewDidAppear(:) 太晚，會需要拉動一下畫面才會看到 UIRefreshControl 的動畫。&lt;/p&gt;
+
+&lt;h3 id=&quot;改到-viewisappearing-有用嗎&quot;&gt;改到 viewIsAppearing(:) 有用嗎？&lt;/h3&gt;
+
+&lt;p&gt;答： 有用。但請注意 viewIsAppearing(:) 需在 iOS 13 以上。&lt;/p&gt;
+
+&lt;p&gt;Essential Developer 是品質很好的 iOS 開發資源，有興趣的朋友，歡迎給 Essential Developer 支持。不僅僅是買課程，按讚/留言/分享 都是某種形式的支持&lt;/p&gt;
+
+&lt;h3 id=&quot;雖然只要看完前半段就可以知道解決這個問題的方法但真心推薦將這隻影片看到最後&quot;&gt;雖然只要看完前半段，就可以知道解決這個問題的方法，但真心推薦將這隻影片看到最後。&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n9ObNkPP5GY?si=Fhhgpy6pvVsvSx91&amp;amp;start=398&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;從這個時間點開始，Caio 和 Mike 不斷的優化程式碼，即使現在的程式碼已經在 production 上正常運作了。而修改的起點是 “Unit Testing”。這邊只節錄步驟，因為真的有料的東西都在影片裡面一段一段發生。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sut 的 vc 沒有真的在 window hiearchy 上，所以創了一個 Window 讓 vc 可以掛上去&lt;/li&gt;
+  &lt;li&gt;但掛上去到渲染又需要「一點」時間，所以用了個 delay 1 秒&lt;/li&gt;
+  &lt;li&gt;delay 1 秒在 Unit Testing 是很不好的事情，如果你測試愈寫愈多，就會愈來愈慢，而且測試通常只可以接受 0.01 秒的等級。這已經不是把 1 秒調到 0.3 或更低的差別，而是這個 delay 在 unit testing 中不應該存在&lt;/li&gt;
+  &lt;li&gt;為了不動到在產品中的 UIRefreshControl，寫了個 FakeRefreshControl 加上內部參數，可以在測試的時候拿來進行 assert&lt;/li&gt;
+  &lt;li&gt;接下來「只」在 Unit Testing 中擴充一個抽換 UIRefreshControl 的方法，這在測試 target 進行 private 宣告，所以正式的環境不會有&lt;/li&gt;
+  &lt;li&gt;接下來解決 viewIsAppearing(:) 有可能被第二次呼叫的狀況。在 Unit testing 中「強迫」讓 sut vc 進行第二次渲染，然後 Unit testing 就會 fail&lt;/li&gt;
+  &lt;li&gt;解法1: 在 vc 裡面加個狀態，此狀態表示是否已經過了第一次 viewIsAppearing(:)&lt;/li&gt;
+  &lt;li&gt;但還有更好的解法，解法2: 將這個狀態改成 optional closure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;參考文獻&quot;&gt;參考文獻&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit/uiviewcontroller/4195485-viewisappearing&quot;&gt;Apple 的 viewIsAppearing 文件&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=n9ObNkPP5GY&quot;&gt;Essential Developer 的 Youtube&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.essentialdeveloper.com/articles/fixing-ios-17-breaking-changes-uirefreshcontrol-viewisappearing-testability-ios-dev-mentoring&quot;&gt;Essential Developer 的網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UIRefreshControl" /><summary type="html">今天早上(2023/11/18)，今天發生了幾件大事</summary></entry><entry><title type="html">在 App Store 上，按下「發佈」前，還可以編輯的事</title><link href="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html" rel="alternate" type="text/html" title="在 App Store 上，按下「發佈」前，還可以編輯的事" /><published>2023-11-02T08:54:00+08:00</published><updated>2023-11-02T08:54:00+08:00</updated><id>http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution</id><content type="html" xml:base="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html">&lt;p&gt;新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。&lt;/p&gt;
 
 &lt;h3 id=&quot;發佈的方式可以從手動改成某個日期後自動發佈&quot;&gt;發佈的方式，可以從手動改成某個日期後自動發佈&lt;/h3&gt;
 
@@ -163,24 +224,4 @@
 
 &lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/what-apple-developers-need-to-know-at-wwdc23.html&quot;&gt;Apple 開發者需要知道的 WWDC23 大小事&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/things17-wwdc23.html&quot;&gt;17 件 WWDC23 的大小事&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Apple" /><category term="visionPro" /><category term="developer kit" /><summary type="html">7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。</summary></entry><entry><title type="html">OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了</title><link href="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html" rel="alternate" type="text/html" title="OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了" /><published>2023-07-23T12:19:00+08:00</published><updated>2023-07-23T12:19:00+08:00</updated><id>http://localhost:4000/programming/openai-launch-chatgpt-in-android</id><content type="html" xml:base="http://localhost:4000/programming/openai-launch-chatgpt-in-android.html">&lt;p&gt;Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。&lt;/p&gt;
-
-&lt;div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We’re rolling out ChatGPT for Android users next week &lt;a href=&quot;https://t.co/3tNLNcG5Kw&quot;&gt;https://t.co/3tNLNcG5Kw&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mira Murati (@miramurati) &lt;a href=&quot;https://twitter.com/miramurati/status/1682488760905367552?ref_src=twsrc%5Etfw&quot;&gt;July 21, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而 OpenAI 的 twitter 也可以看到一樣的內容。&lt;/p&gt;
-
-&lt;div&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Announcing ChatGPT for Android! The app will be rolling out to users next week, and you can pre-order in the Google Play Store starting today: &lt;a href=&quot;https://t.co/NfBDYZR5GI&quot;&gt;https://t.co/NfBDYZR5GI&lt;/a&gt;&lt;/p&gt;&amp;mdash; OpenAI (@OpenAI) &lt;a href=&quot;https://twitter.com/OpenAI/status/1682480558545461249?ref_src=twsrc%5Etfw&quot;&gt;July 21, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;p&gt;目前，仍然看不出在 mobile app 上和網頁應用上，哪邊有很大的差別。就 GPT 功能來說，現在還沒有太大的差別在 web/mobile app 上。而 mobile app 的優勢，通常會是在推播，mobile log，local 快取，Widget，相機與 app 的溝通上的應用。雖然劣勢是碰到付款的狀況下，會被抽大約 30% 的費用給 Google/Apple。但付款流程的體驗在 mobile 上是比較好的。&lt;/p&gt;
-
-&lt;p&gt;未來，很期待 mobile apps 上的 GPT 應用，能帶給我們更多的不一樣，舉例來說，圖片的輸入，GPS 相關資料的處理，加工/修圖的要求。這些都是在 mobile app 可能可以和 ChatGPT 進行結合的地方。&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/professor-article-about-ai.html&quot;&gt;大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html&quot;&gt;ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="Android" /><summary type="html">Mira Murati 表示，未來要在 Android 上發佈 ChatGPT App 了，Twitter 發文如下。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/things17-wwdc23.html&quot;&gt;17 件 WWDC23 的大小事&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Apple" /><category term="visionPro" /><category term="developer kit" /><summary type="html">7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。</summary></entry></feed>
