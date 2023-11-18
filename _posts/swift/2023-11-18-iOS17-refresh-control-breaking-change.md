@@ -5,7 +5,7 @@ date: 2023-11-18 19:14 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, iOS, UIRefreshControl]
-summary: 
+summary: Sam Altman was fired by OpenAI, and a few hours later, Greg Brockman also resigned.Hmm... as of the time of writing, it's the weekend, and currently, it's uncertain what impact this will have on OpenAI and ChatGPT. However, according to the news, the reason for Altman's dismissal is "Altman was not honest with the board." For the latest updates or developments, please refer to the most recent news.The second thing related to iOS is that the lifecycle of UIRefreshControl set in iOS 17 needs to be changed. I learned this from an email newsletter sent by Essential Developer.The email mentions that UIRefreshControl has a destructive update in iOS 17, and the lifecycle needs to be moved to viewIsAppearing, as per Essential Developer.Essential Developer is a high-quality iOS development resource. If you're interested, feel free to support Essential Developer. Supporting can be not only through purchasing courses but also by liking, commenting, and sharing – all forms of support.
 permalink: /swift/:title:output_ext
 ---
 
@@ -34,11 +34,14 @@ email 提到，UIRefreshControl 在 iOS 17 有破壞性更新，生命周期要�
 
 以下是 Essential Developer 在 Youtube 中 live 示範
 
+![consoleGotWarning](/assets/swift/refresh-breaking-on-ios17/configUIRefreshControl.png)
 
 在 iOS 17 以前，在 viewDidLoad() 將 UIRefreshControl 設定好，並執行 refresh() 是沒問題的。
 
 
 **但是在 iOS 17** 同樣的程式碼，並不會看到 UIRefreshControl 的 animation，而且 console 下方也會有 warning message
+
+![consoleGotWarning](/assets/swift/refresh-breaking-on-ios17/consoleGotWarning.png)
 
 ### 改到 viewWillAppear(:) 或 viewDidAppear(:) 生命週期有用嗎？
 

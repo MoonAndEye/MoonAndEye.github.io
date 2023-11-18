@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-18T20:35:39+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer</title><link href="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html" rel="alternate" type="text/html" title="UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer" /><published>2023-11-18T19:14:00+08:00</published><updated>2023-11-18T19:14:00+08:00</updated><id>http://localhost:4000/swift/iOS17-refresh-control-breaking-change</id><content type="html" xml:base="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html">&lt;p&gt;今天早上(2023/11/18)，今天發生了幾件大事&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-18T21:00:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer</title><link href="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html" rel="alternate" type="text/html" title="UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer" /><published>2023-11-18T19:14:00+08:00</published><updated>2023-11-18T19:14:00+08:00</updated><id>http://localhost:4000/swift/iOS17-refresh-control-breaking-change</id><content type="html" xml:base="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html">&lt;p&gt;今天早上(2023/11/18)，今天發生了幾件大事&lt;/p&gt;
 
 &lt;h2 id=&quot;sam-altman-被-openai-解僱了幾小時後-greg-brockman-也提辭職了&quot;&gt;Sam Altman 被 OpenAI 解僱了，幾小時後 Greg Brockman 也提辭職了&lt;/h2&gt;
 
@@ -22,9 +22,13 @@
 
 &lt;p&gt;以下是 Essential Developer 在 Youtube 中 live 示範&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/swift/refresh-breaking-on-ios17/configUIRefreshControl.png&quot; alt=&quot;consoleGotWarning&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;在 iOS 17 以前，在 viewDidLoad() 將 UIRefreshControl 設定好，並執行 refresh() 是沒問題的。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;但是在 iOS 17&lt;/strong&gt; 同樣的程式碼，並不會看到 UIRefreshControl 的 animation，而且 console 下方也會有 warning message&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/refresh-breaking-on-ios17/consoleGotWarning.png&quot; alt=&quot;consoleGotWarning&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;改到-viewwillappear-或-viewdidappear-生命週期有用嗎&quot;&gt;改到 viewWillAppear(:) 或 viewDidAppear(:) 生命週期有用嗎？&lt;/h3&gt;
 
