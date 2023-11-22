@@ -72,6 +72,8 @@ Essential Developer 是品質很好的 iOS 開發資源，有興趣的朋友，�
 
 ## 參考文獻
 
+[WWDC23 - What’s new in UIKit 重點整理](https://www.marvinswift.com/swift/wwdc23-whats-new-in-uikit.html)
+
 [Apple 的 viewIsAppearing 文件](https://developer.apple.com/documentation/uikit/uiviewcontroller/4195485-viewisappearing)
 
 [Essential Developer 的 Youtube](https://www.youtube.com/watch?v=n9ObNkPP5GY)

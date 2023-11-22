@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-18T21:00:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer</title><link href="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html" rel="alternate" type="text/html" title="UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer" /><published>2023-11-18T19:14:00+08:00</published><updated>2023-11-18T19:14:00+08:00</updated><id>http://localhost:4000/swift/iOS17-refresh-control-breaking-change</id><content type="html" xml:base="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html">&lt;p&gt;今天早上(2023/11/18)，今天發生了幾件大事&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-22T18:42:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">買了一個比特幣樂透礦機，算力 55kH/s 左右</title><link href="http://localhost:4000/life/btc-lottery-iner.html" rel="alternate" type="text/html" title="買了一個比特幣樂透礦機，算力 55kH/s 左右" /><published>2023-11-21T16:49:00+08:00</published><updated>2023-11-21T16:49:00+08:00</updated><id>http://localhost:4000/life/btc-lottery-iner</id><content type="html" xml:base="http://localhost:4000/life/btc-lottery-iner.html">&lt;p&gt;有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。&lt;/p&gt;
+
+&lt;p&gt;這種礦機大小比較像是一個 USB 隨身碟，但是比較厚，一插上去後，設定好 wifi 和錢包，就可以開始挖礦了。&lt;/p&gt;
+
+&lt;p&gt;沒什麼噪音，也不會散熱，因為算力不高，所以也不會發燙，一個月的電費大概在 5 塊以內。&lt;/p&gt;
+
+&lt;h2 id=&quot;產品實拍照&quot;&gt;產品實拍照&lt;/h2&gt;
+
+&lt;h3 id=&quot;產品到貨圖-with-包裝盒&quot;&gt;產品到貨圖 with 包裝盒&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image1.jpeg&quot; alt=&quot;產品到貨圖 with 包裝盒&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;頁面1---有-global-hash-rate-medium-fee-等資訊&quot;&gt;頁面1 - 有 Global hash rate, medium fee 等資訊&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image2.jpeg&quot; alt=&quot;頁面1 - 有 Global hash rate, medium fee 等資訊&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;頁面2---時鐘功能平常放在桌子上也不會讓人覺得很奇怪&quot;&gt;頁面2 - 時鐘功能，平常放在桌子上，也不會讓人覺得很奇怪&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image3.jpeg&quot; alt=&quot;頁面2 - 時鐘功能，平常放在桌子上，也不會讓人覺得很奇怪&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;頁面3---挖礦資訊也有算力資訊當-valid-blocks-出現-1就是挖到啦&quot;&gt;頁面3 - 挖礦資訊，也有算力資訊，當 Valid blocks 出現 1！就是挖到啦！&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image4.jpeg&quot; alt=&quot;頁面3 - 挖礦資訊，也有算力資訊&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;購買連結&quot;&gt;購買連結&lt;/h2&gt;
+
+&lt;h3 id=&quot;比特幣樂透礦機&quot;&gt;&lt;a href=&quot;https://shope.ee/2VRGeYrz0O&quot;&gt;比特幣樂透礦機&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://shope.ee/2VRGeYrz0O&quot;&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/shopee.png&quot; alt=&quot;蝦皮賣場照片&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="比特幣" /><category term="樂透" /><category term="礦機" /><category term="bitcoin" /><category term="miner" /><category term="crypto currency" /><category term="satoshi" /><category term="shopee" /><category term="蝦皮" /><summary type="html">有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。</summary></entry><entry><title type="html">UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer</title><link href="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html" rel="alternate" type="text/html" title="UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer" /><published>2023-11-18T19:14:00+08:00</published><updated>2023-11-18T19:14:00+08:00</updated><id>http://localhost:4000/swift/iOS17-refresh-control-breaking-change</id><content type="html" xml:base="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html">&lt;p&gt;今天早上(2023/11/18)，今天發生了幾件大事&lt;/p&gt;
 
 &lt;h2 id=&quot;sam-altman-被-openai-解僱了幾小時後-greg-brockman-也提辭職了&quot;&gt;Sam Altman 被 OpenAI 解僱了，幾小時後 Greg Brockman 也提辭職了&lt;/h2&gt;
 
@@ -58,6 +82,8 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;參考文獻&quot;&gt;參考文獻&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/swift/wwdc23-whats-new-in-uikit.html&quot;&gt;WWDC23 - What’s new in UIKit 重點整理&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit/uiviewcontroller/4195485-viewisappearing&quot;&gt;Apple 的 viewIsAppearing 文件&lt;/a&gt;&lt;/p&gt;
 
@@ -214,18 +240,4 @@
 &lt;del&gt;每天買一檔權證，因權證具有時間價值，所以在操作上，可能會在 30 天內進行賣出。投資方式使用模擬投資&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;### 每天買一檔美股&lt;/del&gt;
-&lt;del&gt;每天買一檔美股，最後 30 天結算，使用的方法是模擬投資&lt;/del&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Programming" /><summary type="html">2023 年 IT 鐵人賽，現在可以報名了。</summary></entry><entry><title type="html">從7月25日開始，Apple VisionPro 可以申請開發者套件了</title><link href="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html" rel="alternate" type="text/html" title="從7月25日開始，Apple VisionPro 可以申請開發者套件了" /><published>2023-07-25T08:50:00+08:00</published><updated>2023-07-25T08:50:00+08:00</updated><id>http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now</id><content type="html" xml:base="http://localhost:4000/swift/apple-visionPro-can-apply-developer-kit-now.html">&lt;p&gt;7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。&lt;/p&gt;
-
-&lt;h3 id=&quot;email-內容&quot;&gt;email 內容&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-can-applly-visionpro-developerkit/apple-email.png&quot; alt=&quot;apple email visionPro&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;visionpro-申請頁面&quot;&gt;visionPro 申請頁面&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/apple-can-applly-visionpro-developerkit/developerkit-apply.png&quot; alt=&quot;visionPro developer kit apply&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;相關連結&quot;&gt;相關連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/what-apple-developers-need-to-know-at-wwdc23.html&quot;&gt;Apple 開發者需要知道的 WWDC23 大小事&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/things17-wwdc23.html&quot;&gt;17 件 WWDC23 的大小事&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Apple" /><category term="visionPro" /><category term="developer kit" /><summary type="html">7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。</summary></entry></feed>
+&lt;del&gt;每天買一檔美股，最後 30 天結算，使用的方法是模擬投資&lt;/del&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Programming" /><summary type="html">2023 年 IT 鐵人賽，現在可以報名了。</summary></entry></feed>
