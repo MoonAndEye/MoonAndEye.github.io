@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 github: [metadata]
 
-title: Marvin 的 Swift 與程式開發筆記
+title: Marvin 的程式開發筆記
 locale: "zh-TW"
 email: atimis19@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -64,7 +64,7 @@ plugins:
 # permalink: /:categories/:year/:month/:day/:title:output_ext
 # permalink: /:categories/:title:output_ext
 
-paginate: 10
+paginate: 15
 paginate_path: "/page:num/"
 
 # Site Author

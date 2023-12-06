@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-06T16:48:09+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">買了一個比特幣樂透礦機，算力 55kH/s 左右</title><link href="http://localhost:4000/life/btc-lottery-iner.html" rel="alternate" type="text/html" title="買了一個比特幣樂透礦機，算力 55kH/s 左右" /><published>2023-11-21T16:49:00+08:00</published><updated>2023-11-21T16:49:00+08:00</updated><id>http://localhost:4000/life/btc-lottery-iner</id><content type="html" xml:base="http://localhost:4000/life/btc-lottery-iner.html">&lt;p&gt;有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-06T17:21:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">在 iOS 專案加上測試-You need testing</title><link href="http://localhost:4000/swift/add-unit-testing-on-project.html" rel="alternate" type="text/html" title="在 iOS 專案加上測試-You need testing" /><published>2023-12-06T17:15:00+08:00</published><updated>2023-12-06T17:15:00+08:00</updated><id>http://localhost:4000/swift/add-unit-testing-on-project</id><content type="html" xml:base="http://localhost:4000/swift/add-unit-testing-on-project.html">&lt;blockquote&gt;
+  &lt;p&gt;「寫程式就像蓋教堂- 當完成之後，
+我們就開始祈禱。」&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Software and cathedrals are much the same – first we build them, then we pray.Sam Redwine&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/add-test-target-on-xcode/you-need-testing.png&quot; alt=&quot;You need testing&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;在-ios-專案加上測試-you-need-testing&quot;&gt;在 iOS 專案加上測試 You need testing&lt;/h2&gt;
+
+&lt;p&gt;你是不是覺得 Unit testing 很麻煩，很浪費時間，很沒必要？如果你這麼想，那你就錯了！Unit testing 對 iOS 專案的好處可不少。&lt;/p&gt;
+
+&lt;p&gt;首先，Unit testing 可以幫你提高程式碼的品質和可讀性。你可以透過 Unit testing 來檢查你的程式邏輯是否正確，是否符合需求，是否有 bug 或錯誤。你也可以透過 Unit testing 來重構你的程式碼，讓它更簡潔，更清晰，更容易維護。你不用擔心重構後會影響到其他功能，因為你有 Unit testing 來保證你的程式還是能正常運作。&lt;/p&gt;
+
+&lt;p&gt;其次，Unit testing 可以幫你節省時間和成本。你可能覺得寫 Unit testing 很花時間，但是你有沒有想過，如果你不寫 Unit testing，你可能會花更多時間在 debug 和修復 bug 上。而且，如果你的 bug 在上線後才被發現，那麼後果可能更嚴重，不僅會影響到用戶的體驗和信任，也會增加你的維護成本和風險。相比之下，如果你有 Unit testing，在開發階段就能及時發現和解決問題，那麼你就能提高你的開發效率和產品質量。&lt;/p&gt;
+
+&lt;p&gt;最後，Unit testing 可以幫你提升自信和專業度。當你有 Unit testing 來支持你的程式碼時，你就能更有信心地面對需求的反饋和需求。你也能更有信心地與其他開發者合作和分享你的程式碼。而且，Unit testing 也是一種展示你的專業態度和技能的方式。當別人看到你的程式碼有完善的 Unit test 時，他們就會對你的水平和責任感有更高的評價。&lt;/p&gt;
+
+&lt;p&gt;總之，Unit testing 對 iOS 專案的好處是多多益善的。如果你還沒有開始寫 Unit test，那就趕快行動吧！相信我，Unit test 會讓你的開發生活更美好！&lt;/p&gt;
+
+&lt;h2 id=&quot;測試金字塔&quot;&gt;測試金字塔&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/add-test-target-on-xcode/ui-integrate-unit-testing.png&quot; alt=&quot;測試金字塔&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;這是網路上常見的關於測試金字塔的圖案。它將不同類型的測試分為三層：單元測試、整合測試和 UI 測試。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;單元測試（Unit Test）：位於金字塔的底層，是最基本和最快速的測試類型，主要針對軟體的最小可測單元（如函數、方法或類別）進行驗證，確保代碼的邏輯正確性和健壯性。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試應該佔據金字塔的最大比例，因為它們可以及時發現和修復代碼中的錯誤，提高代碼質量和可維護性。&lt;/li&gt;
+  &lt;li&gt;整合測試（Integration Test）：位於金字塔的中層，是在單元測試之後進行的測試類型，主要針對軟體的不同模組或組件之間的交互和協作進行驗證，確保整合後的系統能夠正常運作。整合測試通常由開發人員或測試人員負責，並使用 Mock 或 Stub 等技術來隔離外部依賴和影響。整合測試應該佔據金字塔的中等比例，因為它們可以檢查系統的內部結構和邏輯是否符合設計規範和需求。&lt;/li&gt;
+  &lt;li&gt;UI Test：位於金字塔的頂層，是最接近真實使用場景和用戶體驗的測試類型，主要針對軟體的完整功能和流程進行驗證，確保系統能夠按照預期提供服務。端對端測試通常由測試人員或用戶代表負責，並使用自動化或手動的方式來模擬用戶操作和行為。端對端測試應該佔據金字塔的最小比例，因為它們通常比較耗時和昂貴，且難以涵蓋所有可能的情況和變數。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;單元測試的-first-原則&quot;&gt;單元測試的 F.I.R.S.T 原則&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fast：Unit test 應該快速執行，不要花費太多時間或資源。&lt;/li&gt;
+  &lt;li&gt;Independent：Unit test 應該獨立於其他測試，不要互相影響或依賴。&lt;/li&gt;
+  &lt;li&gt;Repeatable：Unit test 應該可以在任何環境或情況下重複執行，並得到一致的結果。&lt;/li&gt;
+  &lt;li&gt;Self-validating：Unit test 應該有明確的通過或失敗的標準，不要需要人工檢查或驗證。&lt;/li&gt;
+  &lt;li&gt;Timely：Unit test 應該及時編寫，最好在開發程式碼之前或同時進行，以驅動設計和重構。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;希望這一系列的文章，能讓你能體會 Unit Testing 的好處。Unit Testing是一項實用的技能，它具有廣泛的應用範疇，無論是應用程式的規模大小，都能受惠於它。持之以恆地精進這項技能，並積極將其運用於您的iOS專案中，是一個不斷學習和成長的過程。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">「寫程式就像蓋教堂- 當完成之後， 我們就開始祈禱。」</summary></entry><entry><title type="html">買了一個比特幣樂透礦機，算力 55kH/s 左右</title><link href="http://localhost:4000/life/btc-lottery-iner.html" rel="alternate" type="text/html" title="買了一個比特幣樂透礦機，算力 55kH/s 左右" /><published>2023-11-21T16:49:00+08:00</published><updated>2023-11-21T16:49:00+08:00</updated><id>http://localhost:4000/life/btc-lottery-iner</id><content type="html" xml:base="http://localhost:4000/life/btc-lottery-iner.html">&lt;p&gt;有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。&lt;/p&gt;
 
 &lt;p&gt;這種礦機大小比較像是一個 USB 隨身碟，但是比較厚，一插上去後，設定好 wifi 和錢包，就可以開始挖礦了。&lt;/p&gt;
 
@@ -199,45 +246,4 @@
 
 &lt;p&gt;今年的 Apple Event 日期確定了。如果想要直播觀看，往年都是用 Safari 和 AppleTV 看。通常台灣的社群，也會在 Discord 上邊看邊用文字進行討論。Discord 相關訊息，可以從 &lt;a href=&quot;/swift-community/&quot;&gt;Swift 社群資源&lt;/a&gt; 找到相關訊息。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/programming/apple-event2023/apple_event.jpeg&quot; alt=&quot;Apple event logo&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Apple" /><category term="Apple Event" /><category term="iPhone" /><summary type="html">2023 的 Apple Event 日期確定了 美西時間 9/12 早上 10:00</summary></entry><entry><title type="html">IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽</title><link href="http://localhost:4000/programming/itironman2023.html" rel="alternate" type="text/html" title="IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽" /><published>2023-08-04T09:29:00+08:00</published><updated>2023-08-04T09:29:00+08:00</updated><id>http://localhost:4000/programming/itironman2023</id><content type="html" xml:base="http://localhost:4000/programming/itironman2023.html">&lt;p&gt;2023 年 IT 鐵人賽，現在可以報名了。&lt;/p&gt;
-
-&lt;h2 id=&quot;2023-it-鐵人賽報名網址&quot;&gt;2023 IT 鐵人賽報名網址&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ithelp.ithome.com.tw/2023ironman/event&quot;&gt;2023 年 IT 鐵人賽報名網站&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;關於-it-鐵人賽&quot;&gt;關於 IT 鐵人賽&lt;/h2&gt;
-
-&lt;h3 id=&quot;2023-ithome-鐵人賽賽季預告&quot;&gt;2023 iThome 鐵人賽賽季預告&lt;/h3&gt;
-&lt;p&gt;。受理報名：08/01(一) 10:00 AM ~ 09/15(四) 23:59:59 截止
-。撰文開賽：09/01(四) ~ 09/16(五) 之間自行擇期開賽
-　　　　　　一旦開賽即啟動 30 天發文不中斷，完成連續發文 30 天即鍊成鐵人&lt;/p&gt;
-
-&lt;h3 id=&quot;2023開賽主題可以先準備了&quot;&gt;2023開賽主題（可以先準備了）：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;AI &amp;amp; Data&lt;/li&gt;
-  &lt;li&gt;DevOps&lt;/li&gt;
-  &lt;li&gt;IT 管理&lt;/li&gt;
-  &lt;li&gt;Modern Web&lt;/li&gt;
-  &lt;li&gt;Mobile Development&lt;/li&gt;
-  &lt;li&gt;Security&lt;/li&gt;
-  &lt;li&gt;Software Development&lt;/li&gt;
-  &lt;li&gt;Web 3&lt;/li&gt;
-  &lt;li&gt;影片教學&lt;/li&gt;
-  &lt;li&gt;神秘主題即將揭曉（關於開源 CRM 與 ERP）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;我今年報名的題目&quot;&gt;我今年報名的題目&lt;/h2&gt;
-
-&lt;p&gt;我已經參加了三年，今年也報名了，題目分別如下&lt;/p&gt;
-
-&lt;h3 id=&quot;以下是-mobile-development-組&quot;&gt;以下是 Mobile Development 組&lt;/h3&gt;
-
-&lt;h3 id=&quot;在-ios-專案上加上-unit-testing---因為-you-need-testing&quot;&gt;在 iOS 專案上加上 Unit testing - 因為 You need testing&lt;/h3&gt;
-
-&lt;h2 id=&quot;更新自我挑戰組失敗只完成了-mobile-組的文章&quot;&gt;更新，自我挑戰組失敗，只完成了 Mobile 組的文章&lt;/h2&gt;
-
-&lt;p&gt;&lt;del&gt;### 每天買一檔權證&lt;/del&gt;
-&lt;del&gt;每天買一檔權證，因權證具有時間價值，所以在操作上，可能會在 30 天內進行賣出。投資方式使用模擬投資&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;del&gt;### 每天買一檔美股&lt;/del&gt;
-&lt;del&gt;每天買一檔美股，最後 30 天結算，使用的方法是模擬投資&lt;/del&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Programming" /><summary type="html">2023 年 IT 鐵人賽，現在可以報名了。</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/programming/apple-event2023/apple_event.jpeg&quot; alt=&quot;Apple event logo&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Apple" /><category term="Apple Event" /><category term="iPhone" /><summary type="html">2023 的 Apple Event 日期確定了 美西時間 9/12 早上 10:00</summary></entry></feed>
