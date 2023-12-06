@@ -91,6 +91,13 @@ AppWorks School 不斷因應業界所需的實務技術，提供結訓學員如�
 
 <hr>
 
+[13 的 Youtube 頻道](https://www.youtube.com/@ethanhuang13)
+
+作者: Ethan Huang (13)
+
+現在有一系列的 **iOS 開發配飯吃** 專門講 SwiftUI + TCA 的影片
+<hr>
+
 [波報](https://pofat.substack.com)
 
 作者: Pofat
