@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-06T17:21:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的 Swift 與程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">在 iOS 專案加上測試-You need testing</title><link href="http://localhost:4000/swift/add-unit-testing-on-project.html" rel="alternate" type="text/html" title="在 iOS 專案加上測試-You need testing" /><published>2023-12-06T17:15:00+08:00</published><updated>2023-12-06T17:15:00+08:00</updated><id>http://localhost:4000/swift/add-unit-testing-on-project</id><content type="html" xml:base="http://localhost:4000/swift/add-unit-testing-on-project.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-07T22:29:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</title><link href="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html" rel="alternate" type="text/html" title="Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步" /><published>2023-12-07T22:06:00+08:00</published><updated>2023-12-07T22:06:00+08:00</updated><id>http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT</id><content type="html" xml:base="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html">&lt;p&gt;2023 真的是讓人感受到 AI 軍備競賽的一年，OpenAI 推出了 ChatGPT，Google 推出了 Gemini，Facebook 推出了 Blender，而 Gemini 的能力，從 Pichai 在 X (前身為 Twitter) 上的推文中，可以看出驚人的進步。&lt;/p&gt;
+
+&lt;h2 id=&quot;sundar-pichai-在-x-前身為-twitter上的推文&quot;&gt;Sundar Pichai 在 X (前身為 Twitter)上的推文&lt;/h2&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Seeing some qs on what Gemini *is* (beyond the zodiac :). Best way to understand Gemini’s underlying amazing capabilities is to see them in action, take a look ⬇️ &lt;a href=&quot;https://t.co/OiCZSsOnCc&quot;&gt;pic.twitter.com/OiCZSsOnCc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sundar Pichai (@sundarpichai) &lt;a href=&quot;https://twitter.com/sundarpichai/status/1732433036929589301?ref_src=twsrc%5Etfw&quot;&gt;December 6, 2023&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;多模態的-gemini&quot;&gt;多模態的 Gemini&lt;/h2&gt;
+
+&lt;p&gt;從上面這段影片中，可以看到 Gemini 在辨視紙上的圖案的過程。&lt;/p&gt;
+
+&lt;h3 id=&quot;第-1-part&quot;&gt;第 1 part&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;開始是白紙&lt;/li&gt;
+  &lt;li&gt;然後看到各種圓滑的曲線&lt;/li&gt;
+  &lt;li&gt;然後看出是在畫鴨子&lt;/li&gt;
+  &lt;li&gt;當鴨子被塗上藍色後，能辨認出顏色，而且說出「這並不常見」&lt;/li&gt;
+  &lt;li&gt;然後拍攝者就拿了一個藍色的玩具鴨子出來，就改口說，原來常見，看來我之前是錯的&lt;/li&gt;
+  &lt;li&gt;Gemini 推測出鴨子的材料&lt;/li&gt;
+  &lt;li&gt;拍攝者請 Gemini 說出其他語音鴨子的念法，並選了中文&lt;/li&gt;
+  &lt;li&gt;Gemini 補充了中文的四聲音調&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;第-2-part&quot;&gt;第 2 part&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;放上地圖，請 Gemini 設計一個遊戲&lt;/li&gt;
+  &lt;li&gt;Gemini 設計出，給三個提示，請拍攝者指出該國家&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;第-3-part&quot;&gt;第 3 part&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;將地圖揉成一團，放入其中一個杯子下，桌上共有三個杯子。 Gemini 猜出拍攝者要玩猜目標。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;第-4-part&quot;&gt;第 4 part&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;這一 part 以手勢為主&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;剩下的部分，可以看完整部影片。或許 2024 的一整年，AI 會比我們想像中更快的速度，存在於我們的生活中。&lt;/p&gt;
+
+&lt;h2 id=&quot;openai-的-chatgpt&quot;&gt;OpenAI 的 ChatGPT&lt;/h2&gt;
+
+&lt;p&gt;在這篇文章發佈之前，還沒有看到 ChatGPT 或 Altman 有其他回應。而且這個禮拜，我一直想要升級 ChatGPT 4.0，但 OpenAI 升級的按鈕一直沒有開發，我也沒辦法升級。即使我已經寫信給 OpenAI，也只是得到了一個自動回信， noting!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/chatgpt/chatGPT-can-not-upgrade-now.png&quot; alt=&quot;沒辦法升級 ChatGPT 4.0&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;youtube-影片&quot;&gt;Youtube 影片&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UIZAiXYceBI?si=Pdl8qkVYBBz6uZ0O&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">2023 真的是讓人感受到 AI 軍備競賽的一年，OpenAI 推出了 ChatGPT，Google 推出了 Gemini，Facebook 推出了 Blender，而 Gemini 的能力，從 Pichai 在 X (前身為 Twitter) 上的推文中，可以看出驚人的進步。</summary></entry><entry><title type="html">在 iOS 專案加上測試-You need testing</title><link href="http://localhost:4000/swift/add-unit-testing-on-project.html" rel="alternate" type="text/html" title="在 iOS 專案加上測試-You need testing" /><published>2023-12-06T17:15:00+08:00</published><updated>2023-12-06T17:15:00+08:00</updated><id>http://localhost:4000/swift/add-unit-testing-on-project</id><content type="html" xml:base="http://localhost:4000/swift/add-unit-testing-on-project.html">&lt;blockquote&gt;
   &lt;p&gt;「寫程式就像蓋教堂- 當完成之後，
 我們就開始祈禱。」&lt;/p&gt;
 
@@ -242,8 +291,4 @@
 
 &lt;p&gt;那麼，你要不要給 Unit testing 一個機會，來證明寫測試沒有用？&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://ithelp.ithome.com.tw/articles/10317088&quot;&gt;&lt;img src=&quot;/assets/programming/itironman2023/YouNeedTesting.jpeg&quot; alt=&quot;YouNeedTesting&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="IT鐵人賽" /><category term="Unit Testing" /><summary type="html">鐵人賽完賽!!</summary></entry><entry><title type="html">蘋果發表會 2023 日期確定了</title><link href="http://localhost:4000/programming/apple-event2023.html" rel="alternate" type="text/html" title="蘋果發表會 2023 日期確定了" /><published>2023-08-30T15:41:00+08:00</published><updated>2023-08-30T15:41:00+08:00</updated><id>http://localhost:4000/programming/apple-event2023</id><content type="html" xml:base="http://localhost:4000/programming/apple-event2023.html">&lt;h2 id=&quot;2023-的-apple-event-日期確定了-美西時間-912-早上-1000&quot;&gt;2023 的 Apple Event 日期確定了 美西時間 9/12 早上 10:00&lt;/h2&gt;
-
-&lt;p&gt;今年的 Apple Event 日期確定了。如果想要直播觀看，往年都是用 Safari 和 AppleTV 看。通常台灣的社群，也會在 Discord 上邊看邊用文字進行討論。Discord 相關訊息，可以從 &lt;a href=&quot;/swift-community/&quot;&gt;Swift 社群資源&lt;/a&gt; 找到相關訊息。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/apple-event2023/apple_event.jpeg&quot; alt=&quot;Apple event logo&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Apple" /><category term="Apple Event" /><category term="iPhone" /><summary type="html">2023 的 Apple Event 日期確定了 美西時間 9/12 早上 10:00</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://ithelp.ithome.com.tw/articles/10317088&quot;&gt;&lt;img src=&quot;/assets/programming/itironman2023/YouNeedTesting.jpeg&quot; alt=&quot;YouNeedTesting&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="IT鐵人賽" /><category term="Unit Testing" /><summary type="html">鐵人賽完賽!!</summary></entry></feed>
