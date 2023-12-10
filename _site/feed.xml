@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-07T22:29:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</title><link href="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html" rel="alternate" type="text/html" title="Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步" /><published>2023-12-07T22:06:00+08:00</published><updated>2023-12-07T22:06:00+08:00</updated><id>http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT</id><content type="html" xml:base="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html">&lt;p&gt;2023 真的是讓人感受到 AI 軍備競賽的一年，OpenAI 推出了 ChatGPT，Google 推出了 Gemini，Facebook 推出了 Blender，而 Gemini 的能力，從 Pichai 在 X (前身為 Twitter) 上的推文中，可以看出驚人的進步。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-10T21:57:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</title><link href="http://localhost:4000/programming/gemini-video-is-fake.html" rel="alternate" type="text/html" title="Google 的 Gemini AI Demo 影片是經過編輯的，不是真實" /><published>2023-12-10T21:48:00+08:00</published><updated>2023-12-10T21:48:00+08:00</updated><id>http://localhost:4000/programming/gemini-video-is-fake</id><content type="html" xml:base="http://localhost:4000/programming/gemini-video-is-fake.html">&lt;p&gt;上一篇講了 Google 發佈了 Gemini demo video: &lt;a href=&quot;https://www.marvinswift.com/programming/google-release-gemini-ai-to-compete-ChatGPT.html&quot;&gt;Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;google-gemini-的-demo-video-並不是真實的狀態是經過編輯的&quot;&gt;Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的&lt;/h2&gt;
+
+&lt;p&gt;這個週末，一堆文章已經說明了 Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的。&lt;/p&gt;
+
+&lt;h2 id=&quot;各大網站對於-gemini-影片是經過編輯的報導&quot;&gt;各大網站對於 Gemini 影片是經過編輯的報導&lt;/h2&gt;
+&lt;h3 id=&quot;inside-google-坦承gemini-影片經過編輯不是口頭提示&quot;&gt;Inside: Google 坦承：Gemini 影片「經過編輯」，不是口頭提示&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.inside.com.tw/article/33558-google-gemini-not-real&quot;&gt;Google 坦承：Gemini 影片「經過編輯」，不是口頭提示&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tech-news-gemini-示範影片造假google-deepmind-澄清影片都是真的&quot;&gt;Tech News: Gemini 示範影片造假？Google DeepMind 澄清：影片都是真的&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://technews.tw/2023/12/08/google-gemini-demo/&quot;&gt;Gemini 示範影片造假？Google DeepMind 澄清：影片都是真的&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tech-crunch-googles-best-gemini-demo-was-faked&quot;&gt;Tech Crunch: Google’s best Gemini demo was faked&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://techcrunch.com/2023/12/07/googles-best-gemini-demo-was-faked/&quot;&gt;Google’s best Gemini demo was faked&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;indian-express-google-gemini-is-no-match-for-gpt-4-fake-demo-video-shaky-mmlu-benchmark-draw-backlash&quot;&gt;Indian Express: Google Gemini is no match for GPT-4: Fake demo video, shaky MMLU benchmark draw backlash&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://indianexpress.com/article/technology/artificial-intelligence/google-gemini-fake-video-gpt4-mmlu-benchmark-9061082/&quot;&gt;Google Gemini is no match for GPT-4: Fake demo video, shaky MMLU benchmark draw backlash&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;結論&quot;&gt;結論&lt;/h2&gt;
+
+&lt;p&gt;Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的。但社群看起來，並不滿意 Google 的做法，很多英文的文章都使用了「Fake」這個字來形容了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">上一篇講了 Google 發佈了 Gemini demo video: Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</summary></entry><entry><title type="html">Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</title><link href="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html" rel="alternate" type="text/html" title="Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步" /><published>2023-12-07T22:06:00+08:00</published><updated>2023-12-07T22:06:00+08:00</updated><id>http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT</id><content type="html" xml:base="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html">&lt;p&gt;2023 真的是讓人感受到 AI 軍備競賽的一年，OpenAI 推出了 ChatGPT，Google 推出了 Gemini，Facebook 推出了 Blender，而 Gemini 的能力，從 Pichai 在 X (前身為 Twitter) 上的推文中，可以看出驚人的進步。&lt;/p&gt;
 
 &lt;h2 id=&quot;sundar-pichai-在-x-前身為-twitter上的推文&quot;&gt;Sundar Pichai 在 X (前身為 Twitter)上的推文&lt;/h2&gt;
 
@@ -267,28 +289,4 @@
 
 &lt;h3 id=&quot;羅卡-rocca-的介紹&quot;&gt;羅卡 Rocca 的介紹&lt;/h3&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cy6amjyhJgM?si=StWsrmEjYzJNQe4N&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Nintendo" /><category term="Switch" /><category term="馬力歐" /><category term="任天堂" /><summary type="html">任天堂最近幾次的馬力歐都是出 3D 作品，像是奧德賽、狂怒。在 2023/10/20 馬力歐驚奇發售，在凌晨我馬上用 MOMO 下定。快速發售的商品，在當天晚上六點左右，就送到了，這次下定的是「馬力歐驚奇」還附上了飲料袋和一個可伸縮的購物袋。</summary></entry><entry><title type="html">鐵人賽完賽 - 在 iOS 專案上加上 Unit testing - 因為 You need testing</title><link href="http://localhost:4000/programming/itironman-finished-in2023.html" rel="alternate" type="text/html" title="鐵人賽完賽 - 在 iOS 專案上加上 Unit testing - 因為 You need testing" /><published>2023-10-12T00:43:00+08:00</published><updated>2023-10-12T00:43:00+08:00</updated><id>http://localhost:4000/programming/itironman-finished-in2023</id><content type="html" xml:base="http://localhost:4000/programming/itironman-finished-in2023.html">&lt;h2 id=&quot;鐵人賽完賽&quot;&gt;鐵人賽完賽!!&lt;/h2&gt;
-
-&lt;p&gt;今年的鐵人賽完成了，連結在下面&lt;/p&gt;
-
-&lt;h2 id=&quot;d1---在-ios-專案上加上-unit-testing---因為-you-need-testing&quot;&gt;&lt;a href=&quot;https://ithelp.ithome.com.tw/articles/10317088&quot;&gt;D1 - 在 iOS 專案上加上 Unit testing - 因為 You need testing&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;從 D1 開始，每篇文章的下方，都可以連結到下一篇，接下來，我會把一些比較重要的 Swift Unit Testing 文章再另外寫成文章。&lt;/p&gt;
-
-&lt;p&gt;像是&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Swift 的 Combine 測試&lt;/li&gt;
-  &lt;li&gt;SwiftUI 的測試&lt;/li&gt;
-  &lt;li&gt;UIKit 的測試&lt;/li&gt;
-  &lt;li&gt;UserDefaults 的測試&lt;/li&gt;
-  &lt;li&gt;Singleton 的測試&lt;/li&gt;
-  &lt;li&gt;UITableView DataSource 的測試&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;測試在我的開發中，救過我很多&lt;/p&gt;
-
-&lt;h3 id=&quot;但是-我也聽過很多人說-寫測試沒有用&quot;&gt;但是 我也聽過很多人說 寫測試沒有用&lt;/h3&gt;
-
-&lt;p&gt;那麼，你要不要給 Unit testing 一個機會，來證明寫測試沒有用？&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ithelp.ithome.com.tw/articles/10317088&quot;&gt;&lt;img src=&quot;/assets/programming/itironman2023/YouNeedTesting.jpeg&quot; alt=&quot;YouNeedTesting&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="IT鐵人賽" /><category term="Unit Testing" /><summary type="html">鐵人賽完賽!!</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cy6amjyhJgM?si=StWsrmEjYzJNQe4N&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Nintendo" /><category term="Switch" /><category term="馬力歐" /><category term="任天堂" /><summary type="html">任天堂最近幾次的馬力歐都是出 3D 作品，像是奧德賽、狂怒。在 2023/10/20 馬力歐驚奇發售，在凌晨我馬上用 MOMO 下定。快速發售的商品，在當天晚上六點左右，就送到了，這次下定的是「馬力歐驚奇」還附上了飲料袋和一個可伸縮的購物袋。</summary></entry></feed>
