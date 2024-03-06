@@ -9,6 +9,12 @@ summary: Google released Gemini, and from Pichai's X (formerly known as Twitter)
 permalink: /programming/:title:output_ext
 ---
 
+## 2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實
+
+### 在經過數天之後，已經有很多文章說明了 Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的
+
+[Google 的 Gemini AI Demo 影片是經過編輯的，不是真實](https://www.marvinswift.com/programming/gemini-video-is-fake.html)
+
 2023 真的是讓人感受到 AI 軍備競賽的一年，OpenAI 推出了 ChatGPT，Google 推出了 Gemini，Facebook 推出了 Blender，而 Gemini 的能力，從 Pichai 在 X (前身為 Twitter) 上的推文中，可以看出驚人的進步。
 
 ## Sundar Pichai 在 X (前身為 Twitter)上的推文
