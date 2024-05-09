@@ -27,6 +27,7 @@
     {% include head/custom.html %}
     <!-- MicroSoft Bing 的搜尋引擎 -->
     <meta name="msvalidate.01" content="F80EB704A6140CCB6EB7E9E0654EC58F" />
+    <link rel="icon" href="{{ site.favicon }}">
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
