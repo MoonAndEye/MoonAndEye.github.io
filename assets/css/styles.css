@@ -20,6 +20,7 @@
 .join-membership-button {
     background-color: rgb(255, 95, 95);
     height: 60px !important;
+    max-width: 217px;
     width: 100% !important;
     border-width: 0;
     border-color: transparent;
