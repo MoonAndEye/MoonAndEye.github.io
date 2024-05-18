@@ -1,0 +1,28 @@
+@media (max-width: 480px) {
+    .buy-me-coffee {
+        display: none;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .join-membership {
+        display: none;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.join-membership-button::before {
+    content: "☕️";
+    margin-right: 10px;
+}
+
+.join-membership-button {
+    background-color: rgb(255, 95, 95);
+    height: 60px !important;
+    width: 100% !important;
+    border-width: 0;
+    border-color: transparent;
+    border-radius: 12px;
+    font-family: Arial;
+}

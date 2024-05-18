@@ -16,6 +16,10 @@ I love Apple's products and enjoy Swift development. I love using code to get th
 
 ---
 
+{% include support-for-unit-testing.html %}
+{% include coffee-button.html %}
+---
+
 ### [黃財神網站](https://jambhalayellow.com/){:target="_blank"}
 
 一個接案做的網站，主要是用來介紹黃財神的相關資訊。
