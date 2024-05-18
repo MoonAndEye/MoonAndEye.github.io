@@ -3,9 +3,10 @@ layout: archive
 author_profile: true
 ---
 
-{{ content }}
+{% include support-for-unit-testing.html %}
+{% include coffee-button.html %}
 
-<h3 class="archive__subtitle">You Need Testing</h3>
+{{ content }}
 
 {% assign posts = site.posts | where: "categories", "unitTesting" | sort: "date" | reverse %}
 
