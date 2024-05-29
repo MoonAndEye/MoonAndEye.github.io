@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-20T00:24:28+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</title><link href="http://localhost:4000/programming/chat-gpt4o-trans-linear.html" rel="alternate" type="text/html" title="使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點" /><published>2024-05-17T08:57:00+08:00</published><updated>2024-05-17T08:57:00+08:00</updated><id>http://localhost:4000/programming/chat-gpt4o-trans-linear</id><content type="html" xml:base="http://localhost:4000/programming/chat-gpt4o-trans-linear.html">&lt;h2 id=&quot;chatgpt-4o-已發佈使用-chatgpt-4o-重新翻譯-linear-執行長在-stripe-上分享關於程式回質的觀點&quot;&gt;ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-29T22:56:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行</title><link href="http://localhost:4000/swift/wwdc24-post.html" rel="alternate" type="text/html" title="WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行" /><published>2024-05-29T22:39:00+08:00</published><updated>2024-05-29T22:39:00+08:00</updated><id>http://localhost:4000/swift/wwdc24-post</id><content type="html" xml:base="http://localhost:4000/swift/wwdc24-post.html">&lt;h2 id=&quot;wwdc24-將在台北時間-2024-年-6-月-11-日至-6-月-15-日舉行&quot;&gt;WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc24/wwdcpaper.jpg&quot; alt=&quot;WWDC24 image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;今天收到了 Apple 的廣告信，看到信才意識到現在又是一年一度的 WWDC 大會。今年的 WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行，雖然我最近 side project 的時間都在做和 Apple 裝置沒有關係的事情，但每一年的 WWDC 會前，心裡還是有種，對未來蘋果裝置的期待，也害怕受傷害。&lt;/p&gt;
+
+&lt;p&gt;從肘子的電子報，我讀到這一篇 - &lt;a href=&quot;https://www.david-smith.org/blog/2024/05/15/craftsmanship-and-consideration/?issue=031&amp;amp;utm_source=FatbobmanWeekly&amp;amp;utm_medium=email&amp;amp;utm_campaign=FatbobmanWeekly031&quot;&gt;Craftsmanship &amp;amp; Consideration (工藝與考量)&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;最近自己比較沒像疫情前那樣，花比較多的時間在社群上，這篇文章提到的「社區價值觀」，希望台灣的開發者社群，可以在後 ChatGPT 時代，有更多的討論和交流。&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="iOS" /><category term="Apple" /><summary type="html">WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行</summary></entry><entry><title type="html">使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</title><link href="http://localhost:4000/programming/chat-gpt4o-trans-linear.html" rel="alternate" type="text/html" title="使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點" /><published>2024-05-17T08:57:00+08:00</published><updated>2024-05-17T08:57:00+08:00</updated><id>http://localhost:4000/programming/chat-gpt4o-trans-linear</id><content type="html" xml:base="http://localhost:4000/programming/chat-gpt4o-trans-linear.html">&lt;h2 id=&quot;chatgpt-4o-已發佈使用-chatgpt-4o-重新翻譯-linear-執行長在-stripe-上分享關於程式回質的觀點&quot;&gt;ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點&lt;/h2&gt;
 
 &lt;h3 id=&quot;chatgpt-4o-demo&quot;&gt;ChatGPT-4o demo&lt;/h3&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DQacCB9tDaw?si=W--6apbOvVjGG8GB&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -472,32 +482,4 @@ SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Li
 &lt;p&gt;&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/reset_rank.png&quot; alt=&quot;重置評分&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;更改階段性發佈&quot;&gt;更改階段性發佈&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.png&quot; alt=&quot;改階段性發佈&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><summary type="html">新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。</summary></entry><entry><title type="html">馬力歐驚奇 - 桌布可以在任天堂官網下載</title><link href="http://localhost:4000/life/mario-desktop-screen.html" rel="alternate" type="text/html" title="馬力歐驚奇 - 桌布可以在任天堂官網下載" /><published>2023-10-25T17:42:00+08:00</published><updated>2023-10-25T17:42:00+08:00</updated><id>http://localhost:4000/life/mario-desktop-screen</id><content type="html" xml:base="http://localhost:4000/life/mario-desktop-screen.html">&lt;p&gt;任天堂桌布可以下載囉，這邊列出現在能下載的桌布&lt;/p&gt;
-
-&lt;p&gt;這一期的桌布是馬力歐驚奇，還放了個大象馬力歐塞入水管的圖案&lt;/p&gt;
-
-&lt;h3 id=&quot;電腦桌布&quot;&gt;電腦桌布&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-wall-paper/wallpaper_desktop_A.jpg&quot; alt=&quot;桌布&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-wall-paper/wallpaper_desktop_B.jpg&quot; alt=&quot;桌布&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;手機版&quot;&gt;手機版&lt;/h3&gt;
-
-&lt;h3 id=&quot;1080&quot;&gt;1080&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-wall-paper/wallpaper_1080_A.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-wall-paper/wallpaper_1080_B.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1242&quot;&gt;1242&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-wall-paper/wallpaper_1242_A.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-wall-paper/wallpaper_1242_B.jpg&quot; alt=&quot;手機版&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;相關網站&quot;&gt;相關網站&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.nintendo.com/jp/download/mario_wonder/index.html&quot;&gt;任天堂壁紙下載點&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.nintendo.com/&quot;&gt;任天堂網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="Mario" /><category term="Wonder" /><category term="Nintendo" /><category term="Switch" /><summary type="html">任天堂桌布可以下載囉，這邊列出現在能下載的桌布</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.png&quot; alt=&quot;改階段性發佈&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><summary type="html">新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。</summary></entry></feed>
