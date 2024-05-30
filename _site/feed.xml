@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-29T22:56:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行</title><link href="http://localhost:4000/swift/wwdc24-post.html" rel="alternate" type="text/html" title="WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行" /><published>2024-05-29T22:39:00+08:00</published><updated>2024-05-29T22:39:00+08:00</updated><id>http://localhost:4000/swift/wwdc24-post</id><content type="html" xml:base="http://localhost:4000/swift/wwdc24-post.html">&lt;h2 id=&quot;wwdc24-將在台北時間-2024-年-6-月-11-日至-6-月-15-日舉行&quot;&gt;WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-30T22:29:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">輪到我可以下載 ChatGPT macOS 應用程式</title><link href="http://localhost:4000/programming/you-can-download-chatgpt.html" rel="alternate" type="text/html" title="輪到我可以下載 ChatGPT macOS 應用程式" /><published>2024-05-30T22:09:00+08:00</published><updated>2024-05-30T22:09:00+08:00</updated><id>http://localhost:4000/programming/you-can-download-chatgpt</id><content type="html" xml:base="http://localhost:4000/programming/you-can-download-chatgpt.html">&lt;h2 id=&quot;如果你有交-chatgpt-月費去看看-chatgpt-的網頁界面如果你看到下載按鈕恭喜你你可以下載-macos-應用程式了&quot;&gt;如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。&lt;/h2&gt;
+
+&lt;p&gt;總算輪到我下載 ChatGPT macOS App，大家如果有看到下載按鈕，就可以下載 macOS 應用程式了。我在 twitter 上看到很多人試著去看這個 app 是哪個框架做的。看別人的分析，這個 ChatGPT App 是純 SwiftUI 寫的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/openai/can-download-chatgpt-on-macos.png&quot; alt=&quot;ChatGPT macOS App&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;桌面 App 除了保有/同步 ChatGPT 的歷史紀錄，還可以直接在 App 內使用 GPTs&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/openai/gpts.png&quot; alt=&quot;App 內可以使用 GPTs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;這邊嘗試用 ChatGPT 4o 產生幾張圖&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/openai/try-create-image.png&quot; alt=&quot;ChatGPT 4o 產生的圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><summary type="html">如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。</summary></entry><entry><title type="html">WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行</title><link href="http://localhost:4000/swift/wwdc24-post.html" rel="alternate" type="text/html" title="WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行" /><published>2024-05-29T22:39:00+08:00</published><updated>2024-05-29T22:39:00+08:00</updated><id>http://localhost:4000/swift/wwdc24-post</id><content type="html" xml:base="http://localhost:4000/swift/wwdc24-post.html">&lt;h2 id=&quot;wwdc24-將在台北時間-2024-年-6-月-11-日至-6-月-15-日舉行&quot;&gt;WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc24/wwdcpaper.jpg&quot; alt=&quot;WWDC24 image&quot; /&gt;&lt;/p&gt;
 
@@ -471,15 +483,4 @@ SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Li
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=n9ObNkPP5GY&quot;&gt;Essential Developer 的 Youtube&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.essentialdeveloper.com/articles/fixing-ios-17-breaking-changes-uirefreshcontrol-viewisappearing-testability-ios-dev-mentoring&quot;&gt;Essential Developer 的網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UIRefreshControl" /><summary type="html">今天早上(2023/11/18)，今天發生了幾件大事</summary></entry><entry><title type="html">在 App Store 上，按下「發佈」前，還可以編輯的事</title><link href="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html" rel="alternate" type="text/html" title="在 App Store 上，按下「發佈」前，還可以編輯的事" /><published>2023-11-02T08:54:00+08:00</published><updated>2023-11-02T08:54:00+08:00</updated><id>http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution</id><content type="html" xml:base="http://localhost:4000/swift/items-you-can-edit-before-your-app-distribution.html">&lt;p&gt;新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。&lt;/p&gt;
-
-&lt;h3 id=&quot;發佈的方式可以從手動改成某個日期後自動發佈&quot;&gt;發佈的方式，可以從手動改成某個日期後自動發佈&lt;/h3&gt;
-
-&lt;p&gt;送審的時候選擇為手動的狀態下，還可以改。如果一開始就調成自動發佈，就會直接 release
-&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/distribution_set.png&quot; alt=&quot;發佈方法&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;重置評分&quot;&gt;重置評分&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/reset_rank.png&quot; alt=&quot;重置評分&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;更改階段性發佈&quot;&gt;更改階段性發佈&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.png&quot; alt=&quot;改階段性發佈&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><summary type="html">新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.essentialdeveloper.com/articles/fixing-ios-17-breaking-changes-uirefreshcontrol-viewisappearing-testability-ios-dev-mentoring&quot;&gt;Essential Developer 的網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UIRefreshControl" /><summary type="html">今天早上(2023/11/18)，今天發生了幾件大事</summary></entry></feed>
