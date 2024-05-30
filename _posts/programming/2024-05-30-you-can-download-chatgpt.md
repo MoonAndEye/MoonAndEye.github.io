@@ -5,7 +5,7 @@ date: 2024-05-30 22:09 +0800
 category: programming
 author: Marvin Lin
 tags: [ChatGPT, OpenAI]
-summary: 
+summary: If you have a ChatGPT subscription, check the ChatGPT web interface for a download button; if it’s available, you can download the macOS app. The app, built entirely with SwiftUI, syncs ChatGPT’s history and allows the use of GPTs directly within the app. The author also tried generating images using ChatGPT 4.0.
 permalink: /programming/:title:output_ext
 ---
 
