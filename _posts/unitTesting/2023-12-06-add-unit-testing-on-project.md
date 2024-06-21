@@ -6,7 +6,7 @@ category: unitTesting
 author: Marvin Lin
 tags: [Unit Testing, Swift, Xcode]
 summary: The article emphasizes the significance of incorporating unit testing into iOS projects. It begins with a quote comparing writing code to building cathedrals, highlighting the need for a prayer-like phase after completion. The author argues that unit testing is crucial for improving code quality, readability, and maintenance. Unit testing aids in verifying program logic, meeting requirements, and identifying bugs, allowing for code refactoring without affecting other functionalities. Additionally, the article asserts that unit testing saves time and costs by preventing post-release bug issues, ultimately enhancing development efficiency and product quality. The concept of the testing pyramid is introduced, categorizing tests into unit tests, integration tests, and UI tests. The principles of F.I.R.S.T. for unit testing (Fast, Independent, Repeatable, Self-validating, Timely) are outlined to guide developers in effective testing practices. The article concludes by encouraging readers to embrace unit testing as a practical skill with broad applications, applicable to iOS projects of any scale.
-permalink: /swift/:title:output_ext
+permalink: /unit-testing/:title:output_ext
 ---
 
 > 「寫程式就像蓋教堂- 當完成之後，

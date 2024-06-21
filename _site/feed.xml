@@ -1,4 +1,233 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-30T22:31:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">輪到我可以下載 ChatGPT macOS 應用程式</title><link href="http://localhost:4000/programming/you-can-download-chatgpt.html" rel="alternate" type="text/html" title="輪到我可以下載 ChatGPT macOS 應用程式" /><published>2024-05-30T22:09:00+08:00</published><updated>2024-05-30T22:09:00+08:00</updated><id>http://localhost:4000/programming/you-can-download-chatgpt</id><content type="html" xml:base="http://localhost:4000/programming/you-can-download-chatgpt.html">&lt;h2 id=&quot;如果你有交-chatgpt-月費去看看-chatgpt-的網頁界面如果你看到下載按鈕恭喜你你可以下載-macos-應用程式了&quot;&gt;如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-21T22:44:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">單元測試從0到1 - 讓專案開始有測試</title><link href="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html" rel="alternate" type="text/html" title="單元測試從0到1 - 讓專案開始有測試" /><published>2024-06-20T13:20:00+08:00</published><updated>2024-06-20T13:20:00+08:00</updated><id>http://localhost:4000/unit-testing/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html">&lt;p&gt;在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;這篇文章要感謝 Hanyu Chen, 陳涵宇請我喝咖啡&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/buyMeCoffee/buy_me_a_coffe_hanyu.png&quot; alt=&quot;buy me a coffee from Hanyu&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;測試從哪裡開始加建議從沒有依賴其他物件的物件開始&quot;&gt;測試從哪裡開始加？建議從沒有依賴其他物件的物件開始&lt;/h2&gt;
+
+&lt;p&gt;下面的圖是專案物件依賴的示意圖，如果要寫測試，建議從沒有依賴其他物件的物件開始。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/dependency_graph.png&quot; alt=&quot;專案物件依賴示意圖&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;而最常被其他物件傳來傳去的，通常是 json response 相關的 dto，我們先假設有一道登入的 api，這道 API 會回傳你兩個 token，一個是 refresh token，另一個是 access token。&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;refresh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODg4ODU1OSwiaWF0IjoxNzE4ODAyMTU5LCJqdGkiOiIzMDQyZDhlMGIzOTc0MjQyYTI0MDFhZDU0ZjRhMjAxOCIsInVzZXJfaWQiOjh9.45URkd4iyBx7mjeyB9yzQp5x3gICLYxo3laqtCNjyLE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;access&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODg4NTU5LCJpYXQiOjE3MTg4MDIxNTksImp0aSI6IjJjYzM2ZDFkZTMzYjQ3OTliNWE3MzQ1Njc5NzFkMWE1IiwidXNlcl9pZCI6OH0.j7CLMRL0EUknJ_HxRLeWS0vCD1QMfcrSL9kYDCTug1o&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;在現有的專案加上-unit-testing-的步驟&quot;&gt;在現有的專案加上 Unit Testing 的步驟&lt;/h2&gt;
+
+&lt;p&gt;在 Project targets 的頁籤，按下 + 號，選擇 Unit Testing Bundle，就可以讓專案開始有測試。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/add_test_bundle.png&quot; alt=&quot;add test bundle&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;預設的測試模板&quot;&gt;預設的測試模板&lt;/h3&gt;
+
+&lt;p&gt;加上檔案後，這預設的模版，你會看到兩個測試，以及 setup 和 tear down。
+&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/unit_testing_template.png&quot; alt=&quot;Unit testing template&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;第一步加上-testable-import&quot;&gt;第一步，加上 @testable import&lt;/h3&gt;
+
+&lt;p&gt;import XCTest 的上方，記得要 import 自已的專案，這樣才能讓 Unit testing target 來操作專案中的物件。&lt;/p&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;@testable&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;YourProjectName&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;測試-token-model&quot;&gt;測試 token model&lt;/h2&gt;
+
+&lt;h3 id=&quot;model-的實作&quot;&gt;model 的實作&lt;/h3&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// 這是拿來接 json response 的 model&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;TokenResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Codable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;refresh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;access&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;unit-testing-實作&quot;&gt;Unit testing 實作&lt;/h3&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;@testable&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;StartUnitTesting&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;XCTest&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CocoaTests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;XCTestCase&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;/// 將 json response 轉成 data, Unit testing 不會真的去 call api&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAPIRespnose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#&quot;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;refresh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODg4ODU1OSwiaWF0IjoxNzE4ODAyMTU5LCJqdGkiOiIzMDQyZDhlMGIzOTc0MjQyYTI0MDFhZDU0ZjRhMjAxOCIsInVzZXJfaWQiOjh9.45URkd4iyBx7mjeyB9yzQp5x3gICLYxo3laqtCNjyLE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;access&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODg4NTU5LCJpYXQiOjE3MTg4MDIxNTksImp0aSI6IjJjYzM2ZDFkZTMzYjQ3OTliNWE3MzQ1Njc5NzFkMWE1IiwidXNlcl9pZCI6OH0.j7CLMRL0EUknJ_HxRLeWS0vCD1QMfcrSL9kYDCTug1o&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;#
+        
+        return string.data(using: .utf8) ?? Data()
+    }
+}
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第一步，先測試這段 unit testing 能不能在程式有錯的時候，提醒你，所以 XCTAssertEqual 的 equal 為空字串&lt;/p&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c1&quot;&gt;/// 測試 token response&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;testTokenResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAPIRespnose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;JSONDecoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;TokenResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;refresh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;access&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;這時候你會得到-failed-test-result你會看到-unit-testing-告訴你哪個-model-的值是不對&quot;&gt;這時候，你會得到 failed test result，你會看到 Unit testing 告訴你哪個 model 的值是不對&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/first_fail_test.png&quot; alt=&quot;first test, you got error&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;第二步，再將固定的 access token , refresh token 設為 equal 的值&lt;/p&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;testTokenResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAPIRespnose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;JSONDecoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;TokenResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;refresh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODg4ODU1OSwiaWF0IjoxNzE4ODAyMTU5LCJqdGkiOiIzMDQyZDhlMGIzOTc0MjQyYTI0MDFhZDU0ZjRhMjAxOCIsInVzZXJfaWQiOjh9.45URkd4iyBx7mjeyB9yzQp5x3gICLYxo3laqtCNjyLE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;access&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODg4NTU5LCJpYXQiOjE3MTg4MDIxNTksImp0aSI6IjJjYzM2ZDFkZTMzYjQ3OTliNWE3MzQ1Njc5NzFkMWE1IiwidXNlcl9pZCI6OH0.j7CLMRL0EUknJ_HxRLeWS0vCD1QMfcrSL9kYDCTug1o&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;再跑一次-testing讓-test-通過&quot;&gt;再跑一次 testing，讓 test 通過&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/second_test_pass.png&quot; alt=&quot;pass test&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;另一個場景需求變更-or-需求疊加&quot;&gt;另一個場景：需求變更 or 需求疊加&lt;/h2&gt;
+
+&lt;p&gt;以下是某種情境假設，在「app 迭代的過程中，Unit testing 可以怎麼幫你」&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;你寫一個 app，裡面有個類別-使用者。&lt;/li&gt;
+  &lt;li&gt;需要在某一個頁面，呈現後端儲存的資料，其中有 first name &amp;amp; last name&lt;/li&gt;
+  &lt;li&gt;但前端顯示的時候，要組合起來，變成 firstName lastName&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;customer-model&quot;&gt;Customer model&lt;/h3&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Customer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;/// UI 顯示用的&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastName&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;需求開始疊加&quot;&gt;需求開始疊加&lt;/h2&gt;
+
+&lt;p&gt;App 推出後大賣，不過！歐美 sales 反應，他們的客戶有些有 middle name，而且被強烈要求在 UI 上呈現出 middle name。所以需要在 user 顯示名稱那邊，顯示 middle name。因為有一個成員剛進來&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Customer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;middleName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;/// 因為這任務交給一個剛來的人寫，所以那個人就這樣寫了&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;middleName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastName&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;沒有意外的話就要發生意外了&quot;&gt;沒有意外的話，就要發生意外了&lt;/h2&gt;
+
+&lt;p&gt;新的使用者，可能都沒問題，但如果是舊版本的使用者升級到新版，原來的程式並沒有存下 middleName，因為那個時期這個 property 不存在，所以每個升級的使用者都遇到了 app 閃退的問題。
+修復後，這個物件宣告長這樣。&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Customer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;middleName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;/// 如果是有中間名的 user，就呈現中間名&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;middleName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;middleName&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;middleName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastName&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;/// 如果是沒有中間名的，就不處理 middle name&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastName&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;你可以讓-unit-testing-來幫你&quot;&gt;你可以讓 Unit testing 來幫你&lt;/h2&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;testCustomerDisplayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;customer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Customer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Foo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Bar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;FooBar&quot;&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;/// 第一次跑 unit testing，會讓 testing failed，來確保 unit testing 是正確運作的&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;customer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;testCustomerDisplayNameHasMiddleName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;customer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Customer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Foo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Bar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;middleName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;MMM&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;FooMMMBar&quot;&lt;/span&gt;
+        
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;customer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;如果-app-成長的話需求就會不斷疊加但如果不成長的話&quot;&gt;如果 App 成長的話，需求就會不斷疊加，但如果不成長的話….&lt;/h2&gt;
+
+&lt;p&gt;然後再經過幾次行銷活動，這個 app 更紅了。某天你被叫進需求會議，接到了亞洲區 Sales 的需求。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;App 修改完後更大賣，但亞洲區 sales 反應，姓要在名字前面。且中間不要空格
+這邊就省略程式碼，不斷的進行時間快轉。
+下一個需求&lt;/li&gt;
+  &lt;li&gt;日本 sales 反應。日本 UI 如果呈現姓加名字黏在一起，會讓特殊姓氏不知道怎麼念，而且日本人習慣姓和名中間空一格
+下一個需求&lt;/li&gt;
+  &lt;li&gt;馬來西亞 sales 反應，他們的中間名可能有五個起跳，但習慣上可能用不同於其他國家的方式進行呈現。所以需要先判斷 x 條件，然後符合 y 條件時，呈現 z UI。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上面所述的這個狀況，是會不斷的發生的。改需求，改文案，增加銷售地區，因為增加銷售地區所以增加了新的需求。當你手上的程式碼註定會碰到這樣的變化，Unit testing 真的可以幫你。&lt;/p&gt;
+
+&lt;h2 id=&quot;unit-testing-是銀色子彈嗎&quot;&gt;Unit testing 是銀色子彈嗎？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Q: Unit Test 可以幫助你設計嗎?
+    &lt;ul&gt;
+      &lt;li&gt;不會, 因為你的程式碼並不會因為有 Test Case 就自己變得符合設計模式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Q: Unit Tes 可以幫助提高程式碼品質嗎?
+    &lt;ul&gt;
+      &lt;li&gt;不能，因為測試和品質也沒絕對關係，你在 test case 中沒有寫的東西，如果有可能導致 crash，他就會 crash&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Q: Unit Tes 可以改善使用者體驗嗎?
+    &lt;ul&gt;
+      &lt;li&gt;不能，因為使用者體驗無法用程式測試&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Q: Unit Tes 可以做出酷炫的 App 嗎?
+    &lt;ul&gt;
+      &lt;li&gt;不能，因為是否酷炫沒辦法用程式測試&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cocoaheads-taipei-youtube-影片&quot;&gt;Cocoaheads Taipei Youtube 影片&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/KeQ0OkJnktk?si=hEhkbHM7hi60FaCT&amp;amp;start=1283&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。</summary></entry><entry><title type="html">輪到我可以下載 ChatGPT macOS 應用程式</title><link href="http://localhost:4000/programming/you-can-download-chatgpt.html" rel="alternate" type="text/html" title="輪到我可以下載 ChatGPT macOS 應用程式" /><published>2024-05-30T22:09:00+08:00</published><updated>2024-05-30T22:09:00+08:00</updated><id>http://localhost:4000/programming/you-can-download-chatgpt</id><content type="html" xml:base="http://localhost:4000/programming/you-can-download-chatgpt.html">&lt;h2 id=&quot;如果你有交-chatgpt-月費去看看-chatgpt-的網頁界面如果你看到下載按鈕恭喜你你可以下載-macos-應用程式了&quot;&gt;如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。&lt;/h2&gt;
 
 &lt;p&gt;總算輪到我下載 ChatGPT macOS App，大家如果有看到下載按鈕，就可以下載 macOS 應用程式了。我在 twitter 上看到很多人試著去看這個 app 是哪個框架做的。看別人的分析，這個 ChatGPT App 是純 SwiftUI 寫的。&lt;/p&gt;
 
@@ -345,7 +574,7 @@ SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Li
 
 &lt;h2 id=&quot;youtube-影片&quot;&gt;Youtube 影片&lt;/h2&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UIZAiXYceBI?si=Pdl8qkVYBBz6uZ0O&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</summary></entry><entry><title type="html">在 iOS 專案加上測試-You need testing</title><link href="http://localhost:4000/swift/add-unit-testing-on-project.html" rel="alternate" type="text/html" title="在 iOS 專案加上測試-You need testing" /><published>2023-12-06T17:15:00+08:00</published><updated>2023-12-06T17:15:00+08:00</updated><id>http://localhost:4000/swift/add-unit-testing-on-project</id><content type="html" xml:base="http://localhost:4000/swift/add-unit-testing-on-project.html">&lt;blockquote&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UIZAiXYceBI?si=Pdl8qkVYBBz6uZ0O&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</summary></entry><entry><title type="html">在 iOS 專案加上測試-You need testing</title><link href="http://localhost:4000/unit-testing/add-unit-testing-on-project.html" rel="alternate" type="text/html" title="在 iOS 專案加上測試-You need testing" /><published>2023-12-06T17:15:00+08:00</published><updated>2023-12-06T17:15:00+08:00</updated><id>http://localhost:4000/unit-testing/add-unit-testing-on-project</id><content type="html" xml:base="http://localhost:4000/unit-testing/add-unit-testing-on-project.html">&lt;blockquote&gt;
   &lt;p&gt;「寫程式就像蓋教堂- 當完成之後，
 我們就開始祈禱。」&lt;/p&gt;
 
@@ -416,71 +645,4 @@ SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Li
 
 &lt;h3 id=&quot;比特幣樂透礦機&quot;&gt;&lt;a href=&quot;https://shope.ee/2VRGeYrz0O&quot;&gt;比特幣樂透礦機&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://shope.ee/2VRGeYrz0O&quot;&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/shopee.png&quot; alt=&quot;蝦皮賣場照片&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="比特幣" /><category term="樂透" /><category term="礦機" /><category term="bitcoin" /><category term="miner" /><category term="crypto currency" /><category term="satoshi" /><category term="shopee" /><category term="蝦皮" /><summary type="html">有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。</summary></entry><entry><title type="html">UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer</title><link href="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html" rel="alternate" type="text/html" title="UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer" /><published>2023-11-18T19:14:00+08:00</published><updated>2023-11-18T19:14:00+08:00</updated><id>http://localhost:4000/swift/iOS17-refresh-control-breaking-change</id><content type="html" xml:base="http://localhost:4000/swift/iOS17-refresh-control-breaking-change.html">&lt;p&gt;今天早上(2023/11/18)，今天發生了幾件大事&lt;/p&gt;
-
-&lt;h2 id=&quot;sam-altman-被-openai-解僱了幾小時後-greg-brockman-也提辭職了&quot;&gt;Sam Altman 被 OpenAI 解僱了，幾小時後 Greg Brockman 也提辭職了&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://edition.cnn.com/2023/11/17/tech/sam-altman-departs-open-ai/index.html&quot;&gt;解僱新聞 - CNN&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.businessweekly.com.tw/international/blog/3013921&quot;&gt;商周 - Sam Altman遭OpenAI解僱，代表什麼？程世嘉：OpenAI遇到極大經營問題&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;嗯…因為寫文的當下，是週末，目前還不確定會對 OpenAI、ChatGPT 有什麼影響，但在新聞中，董事會解僱的理由是「Altman 沒有誠實的對董事會」，如果後續有新的報導或發展，請以最新的新聞為主。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;第二個跟-ios-相關的事uirefreshcontrol-在-ios17-設定的生命週期要改這是我從-essential-developer-發的-email-電子報上看到的&quot;&gt;第二個跟 iOS 相關的事，UIRefreshControl 在 iOS17 設定的生命週期要改，這是我從 Essential Developer 發的 email 電子報上看到的&lt;/h2&gt;
-
-&lt;h3 id=&quot;essential-developer-的-youtube-連結&quot;&gt;Essential Developer 的 YouTube 連結&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n9ObNkPP5GY?si=q8WjL7qejsfAWVeB&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;email 提到，UIRefreshControl 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer&lt;/p&gt;
-
-&lt;p&gt;以下是 Essential Developer 在 Youtube 中 live 示範&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/refresh-breaking-on-ios17/configUIRefreshControl.png&quot; alt=&quot;consoleGotWarning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在 iOS 17 以前，在 viewDidLoad() 將 UIRefreshControl 設定好，並執行 refresh() 是沒問題的。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;但是在 iOS 17&lt;/strong&gt; 同樣的程式碼，並不會看到 UIRefreshControl 的 animation，而且 console 下方也會有 warning message&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/refresh-breaking-on-ios17/consoleGotWarning.png&quot; alt=&quot;consoleGotWarning&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;改到-viewwillappear-或-viewdidappear-生命週期有用嗎&quot;&gt;改到 viewWillAppear(:) 或 viewDidAppear(:) 生命週期有用嗎？&lt;/h3&gt;
-
-&lt;p&gt;答： 如果移到 viewWillAppear(:) 時機太早，UIRefreshControl 不會渲染。移到 viewDidAppear(:) 太晚，會需要拉動一下畫面才會看到 UIRefreshControl 的動畫。&lt;/p&gt;
-
-&lt;h3 id=&quot;改到-viewisappearing-有用嗎&quot;&gt;改到 viewIsAppearing(:) 有用嗎？&lt;/h3&gt;
-
-&lt;p&gt;答： 有用。但請注意 viewIsAppearing(:) 需在 iOS 13 以上。&lt;/p&gt;
-
-&lt;p&gt;Essential Developer 是品質很好的 iOS 開發資源，有興趣的朋友，歡迎給 Essential Developer 支持。不僅僅是買課程，按讚/留言/分享 都是某種形式的支持&lt;/p&gt;
-
-&lt;h3 id=&quot;雖然只要看完前半段就可以知道解決這個問題的方法但真心推薦將這隻影片看到最後&quot;&gt;雖然只要看完前半段，就可以知道解決這個問題的方法，但真心推薦將這隻影片看到最後。&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n9ObNkPP5GY?si=Fhhgpy6pvVsvSx91&amp;amp;start=398&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;從這個時間點開始，Caio 和 Mike 不斷的優化程式碼，即使現在的程式碼已經在 production 上正常運作了。而修改的起點是 “Unit Testing”。這邊只節錄步驟，因為真的有料的東西都在影片裡面一段一段發生。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sut 的 vc 沒有真的在 window hiearchy 上，所以創了一個 Window 讓 vc 可以掛上去&lt;/li&gt;
-  &lt;li&gt;但掛上去到渲染又需要「一點」時間，所以用了個 delay 1 秒&lt;/li&gt;
-  &lt;li&gt;delay 1 秒在 Unit Testing 是很不好的事情，如果你測試愈寫愈多，就會愈來愈慢，而且測試通常只可以接受 0.01 秒的等級。這已經不是把 1 秒調到 0.3 或更低的差別，而是這個 delay 在 unit testing 中不應該存在&lt;/li&gt;
-  &lt;li&gt;為了不動到在產品中的 UIRefreshControl，寫了個 FakeRefreshControl 加上內部參數，可以在測試的時候拿來進行 assert&lt;/li&gt;
-  &lt;li&gt;接下來「只」在 Unit Testing 中擴充一個抽換 UIRefreshControl 的方法，這在測試 target 進行 private 宣告，所以正式的環境不會有&lt;/li&gt;
-  &lt;li&gt;接下來解決 viewIsAppearing(:) 有可能被第二次呼叫的狀況。在 Unit testing 中「強迫」讓 sut vc 進行第二次渲染，然後 Unit testing 就會 fail&lt;/li&gt;
-  &lt;li&gt;解法1: 在 vc 裡面加個狀態，此狀態表示是否已經過了第一次 viewIsAppearing(:)&lt;/li&gt;
-  &lt;li&gt;但還有更好的解法，解法2: 將這個狀態改成 optional closure&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;參考文獻&quot;&gt;參考文獻&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/swift/wwdc23-whats-new-in-uikit.html&quot;&gt;WWDC23 - What’s new in UIKit 重點整理&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit/uiviewcontroller/4195485-viewisappearing&quot;&gt;Apple 的 viewIsAppearing 文件&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=n9ObNkPP5GY&quot;&gt;Essential Developer 的 Youtube&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.essentialdeveloper.com/articles/fixing-ios-17-breaking-changes-uirefreshcontrol-viewisappearing-testability-ios-dev-mentoring&quot;&gt;Essential Developer 的網站&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="UIRefreshControl" /><summary type="html">今天早上(2023/11/18)，今天發生了幾件大事</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://shope.ee/2VRGeYrz0O&quot;&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/shopee.png&quot; alt=&quot;蝦皮賣場照片&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="比特幣" /><category term="樂透" /><category term="礦機" /><category term="bitcoin" /><category term="miner" /><category term="crypto currency" /><category term="satoshi" /><category term="shopee" /><category term="蝦皮" /><summary type="html">有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。</summary></entry></feed>
