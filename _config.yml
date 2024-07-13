@@ -71,7 +71,7 @@ paginate_path: "/page:num/"
 author:
   name             : "Marvin Lin" # 側邊作者名稱
   avatar           : "/assets/author/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "喜歡 Swift 的開發者" # 側邊作者簡介
+  bio              : "Developers who enjoy Swift" # 側邊作者簡介
   location         : "Taipei, Taiwan"
   links:
     - label: "Email"
@@ -136,3 +136,15 @@ defaults:
       toc_icon: "book"  # corresponding Font Awesome icon name without the "fa" prefix
       toc_sticky: true   # enables sticky toc
       comments: true
+  - scope:
+      path: "_includes/en"
+      type: includes
+    values:
+      locale: en
+
+  # _includes/zh files
+  - scope:
+      path: "_includes/zh"
+      type: includes
+    values:
+      locale: zh

@@ -1,9 +1,9 @@
 ---
 layout: archive
-title: About
+title: 關於我
 author_profile: true
-permalink: /about/
 ---
 
 <!-- 統一使用 about-content.md -->
+
 {% include zh/about-content.md %}
