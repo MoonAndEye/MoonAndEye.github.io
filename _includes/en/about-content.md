@@ -42,4 +42,4 @@ An app written in tribute to the "Queen of Computer Programming" - **Grace Hoppe
 
 If you want to quickly check Taiwan stock prices at work without others noticing, you can download this app. It features an input box in the top right toolbar of your Mac, where you can enter the stock code to get the current stock price.。
 
-[![Stock toolbar](./assets/about/screenshot_stockTools.png)](https://apps.apple.com/tw/app/id6455497589){:target="_blank"}
+[![Stock toolbar](/assets/about/screenshot_stockTools.png)](https://apps.apple.com/tw/app/id6455497589){:target="_blank"}

@@ -47,4 +47,4 @@ An app dedicated to honoring the computer programming queen, Grace Hopper
 
 如果你上班想快速查一下台股股價，但又不想讓別人看到。你可以下載這款 app，他會在 mac 右上方的工具列中，有一個輸入框，你可以輸入股票代碼，就可以查到股價了。
 
-[![股票工具列](./assets/about/screenshot_stockTools.png)](https://apps.apple.com/tw/app/id6455497589){:target="_blank"}
+[![股票工具列](/assets/about/screenshot_stockTools.png)](https://apps.apple.com/tw/app/id6455497589){:target="_blank"}
