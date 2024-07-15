@@ -27,3 +27,37 @@
     border-radius: 12px;
     font-family: Arial;
 }
+
+/* 語言切按鈕 */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+  
+    #languageBtn {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  
+    .popup {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  
+      .lang-option {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        border: none;
+        background: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
