@@ -1,35 +1,4 @@
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/marvinStyle.css">
+<link rel="stylesheet" href="/assets/css/styles.css">
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const languageBtn = document.getElementById('languageBtn');
-  const languagePopup = document.getElementById('languagePopup');
-  const langOptions = document.querySelectorAll('.lang-option');
 
-  // 切換彈出窗口的顯示/隱藏
-  languageBtn.addEventListener('click', function(event) {
-    event.stopPropagation();
-    languagePopup.style.display = languagePopup.style.display === 'block' ? 'none' : 'block';
-  });
-
-  // 點擊彈出窗口外部時關閉彈出窗口
-  document.addEventListener('click', function() {
-    languagePopup.style.display = 'none';
-  });
-
-  // 防止點擊彈出窗口內部時關閉彈出窗口
-  languagePopup.addEventListener('click', function(event) {
-    event.stopPropagation();
-  });
-
-  // 處理語言選擇
-  langOptions.forEach(function(option) {
-    option.addEventListener('click', function() {
-      const selectedLang = this.getAttribute('data-lang');
-      console.log('Selected language:', selectedLang);
-      // 這裡可以添加切換語言的邏輯
-      languageBtn.textContent = this.textContent;
-      languagePopup.style.display = 'none';
-    });
-  });
-});
 </script>

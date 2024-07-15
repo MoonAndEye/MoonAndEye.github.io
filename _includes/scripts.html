@@ -49,6 +49,7 @@
 
   function changeLanguage(lang) {
     console.log('切換語言至：' + lang);
+    document.documentElement.lang = lang;
     // 這裡可以添加切換語言的實際功能
     var baseUrl = window.location.origin; // 获取当前网站的根URL
     window.location.href = baseUrl + '/' + lang; // 跳转到指定语言版本的页面

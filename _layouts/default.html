@@ -9,51 +9,57 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    <!-- SEO 套件 -->
-    {% seo %}
-    {% if jekyll.environment == "production" %}
-      <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLY0RSDRM1"></script>
-    <script>
+
+<head>
+  <!-- SEO 套件 -->
+  {% seo %}
+  {% if jekyll.environment == "production" %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLY0RSDRM1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-VLY0RSDRM1');
+  </script>
+  {% endif %}
+  {% include head.html %}
+  {% include head/custom.html %}
+  <!-- MicroSoft Bing 的搜尋引擎 -->
+  <meta name="msvalidate.01" content="F80EB704A6140CCB6EB7E9E0654EC58F" />
+  <link rel="icon" href="{{ site.favicon }}">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="atimis19" data-description="Support me on Buy me a coffee!" data-message="將咖啡因轉換成單元測試文章"
+    data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18">
     </script>
-    {% endif %}
-    {% include head.html %}
-    {% include head/custom.html %}
-    <!-- MicroSoft Bing 的搜尋引擎 -->
-    <meta name="msvalidate.01" content="F80EB704A6140CCB6EB7E9E0654EC58F" />
-    <link rel="icon" href="{{ site.favicon }}">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="atimis19" data-description="Support me on Buy me a coffee!"   data-message="將咖啡因轉換成單元測試文章" data-color="#FF5F5F" data-position="Right"   data-x_margin="18" data-y_margin="18">
-    </script>
-  </head>
+</head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+<body
+  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include masthead.html %}
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
+  <div class="initial-content">
+    {{ content }}
+  </div>
 
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
+  {% if site.search == true %}
+  <div class="search-content">
+    {% include_cached search/search_form.html %}
+  </div>
+  {% endif %}
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
+  <div id="footer" class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include_cached footer.html %}
+    </footer>
+  </div>
 
-    {% include scripts.html %}
-  </body>
+  {% include scripts.html %}
+</body>
+
 </html>
