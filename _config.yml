@@ -155,8 +155,10 @@ defaults:
       types: posts
     values:
       lang: zh
+      permalink: /:categories/zh/:title/
   - scope:
       path: "_posts/**/en"
       types: posts
     values:
       lang: en
+      permalink: /:categories/en/:title/
