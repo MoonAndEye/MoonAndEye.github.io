@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T22:41:44+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Adding a WebView to a SwiftUI Project</title><link href="http://localhost:4000/en/swift/add-webview-in-swiftui/" rel="alternate" type="text/html" title="Adding a WebView to a SwiftUI Project" /><published>2024-07-16T18:20:00+08:00</published><updated>2024-07-16T18:20:00+08:00</updated><id>http://localhost:4000/en/swift/add-webview-in-swiftui</id><content type="html" xml:base="http://localhost:4000/en/swift/add-webview-in-swiftui/">&lt;h2 id=&quot;this-article-was-previously-published-in-the-2022-it-ironman-competition---using-swiftui-to-turn-interesting-ideas-into-apps&quot;&gt;This article was previously published in the 2022 IT Ironman Competition - Using SwiftUI to Turn Interesting Ideas into Apps&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T22:48:45+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Integrating Escaping Closure with async/await in SwiftUI Projects</title><link href="http://localhost:4000/en/swift/async-await-connect-closure/" rel="alternate" type="text/html" title="Integrating Escaping Closure with async/await in SwiftUI Projects" /><published>2024-07-16T21:42:00+08:00</published><updated>2024-07-16T21:42:00+08:00</updated><id>http://localhost:4000/en/swift/async-await-connect-closure</id><content type="html" xml:base="http://localhost:4000/en/swift/async-await-connect-closure/">&lt;h2 id=&quot;method-of-integrating-closure-with-swift-asyncawait&quot;&gt;Method of Integrating Closure with swift async/await&lt;/h2&gt;
+
+&lt;p&gt;If a project started before Swift had Combine, it would have a lot of @escaping closures for asynchronous data transfer. After Swift 5.5, Swift added the async/await syntax, making it unnecessary to have numerous curly braces when writing asynchronous tasks.&lt;/p&gt;
+
+&lt;p&gt;However, there’s a new scenario where the previous libraries were already written with URLRequest methods using closures. Rewriting all existing escaping closures might not be significant and could also involve some risks. Therefore, writing an additional function to bridge async/await while retaining the original closures is a less risky option.&lt;/p&gt;
+
+&lt;h2 id=&quot;wrapping-an-async-function&quot;&gt;Wrapping an async function&lt;/h2&gt;
+
+&lt;h3 id=&quot;original-class-for-sending-requests&quot;&gt;Original class for sending requests&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Adapter that wraps Alamofire, each function simply uses Alamofire to send URL Request&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;// The original closure function&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Implementation code omitted&lt;/span&gt;
+        
+        &lt;span class=&quot;c1&quot;&gt;// implemented code omitted&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;extending-request-to-asyncawait&quot;&gt;Extending request to async/await&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Extending AlamofireAdapter&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;extension&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Creating a function that can use await, but actually calls the original getCoinMarketsInfo&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;c1&quot;&gt;// Performing the bridge&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;withCheckedContinuation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+            
+            &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;returning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;withCheckedContinuation()&lt;/code&gt; allows previous closure data to be returned asynchronously using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;continuation&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;using-getcoinlist-in-contentview&quot;&gt;Using getCoinList() in ContentView&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                    
+                    &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;updateLastFetchTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;you got list, count: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, first: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;describing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;when-used-in-a-swiftui-view&quot;&gt;When used in a SwiftUI View&lt;/h3&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# When used in SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cryptoList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;kt&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;this is test&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                
+                &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Please note that async/await still requires the project to support at least iOS 13. If your project can’t support below iOS 13, then you won’t be able to use async/await.&lt;/p&gt;
+
+&lt;p&gt;In my personal side projects, I’ve been trying to write small projects using SwiftUI, and after using async/await, the code for handling many asynchronous features is very readable to humans. Perhaps as Apple continues to push the minimum Xcode version, I will gradually increase the proportion of async/await code. Currently, I still have many closures performing data transfer in the project.&lt;/p&gt;
+
+&lt;h2 id=&quot;related-information&quot;&gt;Related Information&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/apple/swift-evolution/blob/main/proposals/0300-continuation.md&quot;&gt;Swift evolution on continuation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2021/10132/&quot;&gt;WWDC21: - Meet async/await in Swift&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/&quot;&gt;swift.org - Concurrency&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.hackingwithswift.com/swift/5.5/continuations&quot;&gt;Article from Hacking With Swift&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/forums/thread/681980&quot;&gt;Discussion on Apple Developer Forums&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://forums.swift.org/t/will-swift-concurrency-deploy-back-to-older-oss/49370&quot;&gt;Intense discussion on Swift Forums about backward support&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.swiftbysundell.com/special/swift-concurrency-backward-compatibility/&quot;&gt;Article on backward support for Swift Concurrency&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Combine" /><category term="Asynchronous" /><summary type="html">Method of Integrating Closure with swift async/await</summary></entry><entry xml:lang="en"><title type="html">Adding a WebView to a SwiftUI Project</title><link href="http://localhost:4000/en/swift/add-webview-in-swiftui/" rel="alternate" type="text/html" title="Adding a WebView to a SwiftUI Project" /><published>2024-07-16T18:20:00+08:00</published><updated>2024-07-16T18:20:00+08:00</updated><id>http://localhost:4000/en/swift/add-webview-in-swiftui</id><content type="html" xml:base="http://localhost:4000/en/swift/add-webview-in-swiftui/">&lt;h2 id=&quot;this-article-was-previously-published-in-the-2022-it-ironman-competition---using-swiftui-to-turn-interesting-ideas-into-apps&quot;&gt;This article was previously published in the 2022 IT Ironman Competition - Using SwiftUI to Turn Interesting Ideas into Apps&lt;/h2&gt;
 
 &lt;p&gt;In today’s apps, features that communicate with the web are fundamental. This article will add a WebView page to the app that links to Grace Hopper’s Wikipedia page. This ensures that the information accessed is consistent with what’s on Wikipedia, without needing to update the client side every time there’s new information.&lt;/p&gt;
 
@@ -767,94 +885,4 @@ func testTokenResponse() throws {&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://x.com/karrisaarinen/status/1783976321854717985&quot;&gt;Karri Saarinen 原文發表在 X (Twitter) 上&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.marvinswift.com/programming/linear.html&quot;&gt;使用 ChatGPT4 翻譯的版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry><entry xml:lang="zh"><title type="html">Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻</title><link href="http://localhost:4000/programming/linear.html" rel="alternate" type="text/html" title="Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻" /><published>2024-05-13T00:12:00+08:00</published><updated>2024-05-13T00:12:00+08:00</updated><id>http://localhost:4000/programming/linear</id><content type="html" xml:base="http://localhost:4000/programming/linear.html">&lt;h2 id=&quot;緣由-linear-執行長-karri-saarinen-在-stripe-上分享了關於程式回質的觀點&quot;&gt;緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點&lt;/h2&gt;
-
-&lt;p&gt;在電子報 &lt;a href=&quot;https://explainthis.substack.com/p/explainthis-27&quot;&gt;全端雙週報 Explain This 27期&lt;/a&gt;中，有提到 Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點，看完後，使用 ChatGPT 翻譯成中文，並且分享給大家。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://x.com/karrisaarinen/status/1783976321854717985&quot;&gt;Karri Saarinen 原文發表在 X (Twitter) 上&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;karri-的原文&quot;&gt;Karri 的原文&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/craft-and-quality/post-on-x.jpeg&quot; alt=&quot;post on tweets&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Craft and Quality, and professional grade software.&lt;/p&gt;
-
-&lt;p&gt;To me craft is mindset, and quality is the output.&lt;/p&gt;
-
-&lt;p&gt;If you think of anything that was built or created, and well done, it’s probably because they cared
-and they knew their craft. They designed it well. They iterated and prototyped. They chose the
-right materials. They built it well. It’s very easy to see when the person doesn’t care. The work is&lt;/p&gt;
-
-&lt;p&gt;sloppy. There are mistakes. It works and likely breaks down very quickly.&lt;/p&gt;
-
-&lt;p&gt;And | think as a software industry the past decade we kind of forgot the craft. More stuff look
-like something where people didn’t care about the craft. We focused on building larger teams.
-We then made them run like factories churning out new things at a consistent pace. We validated&lt;/p&gt;
-
-&lt;p&gt;“quality” by A/B testing and looking at metrics. Lot of software today borderline works.&lt;/p&gt;
-
-&lt;p&gt;But we are supposed to be professionals and real companies. We’re selling products to people
-to buy. | think our responsibility is to deliver good products and quality products, not something&lt;/p&gt;
-
-&lt;p&gt;that is sloppy.&lt;/p&gt;
-
-&lt;p&gt;Craft is the mindset that creates quality. But it’s not enough. You need to have the right skills and
-ideas. You need individuals who take their profession and craft seriously, then build teams that
-work this way together, and have a company that creates for it. Not only incentivizing with&lt;/p&gt;
-
-&lt;p&gt;deadlines and metrics, but also caring if the experience is good enough.&lt;/p&gt;
-
-&lt;p&gt;Especially professional software should be “professional grade”. Professional grade tools and
-appliances are often more durable, more powerful, more precise and focused. Professional grade
-software should be that way too. It should be more or less bug free. It should be fast. It should
-meet the needs of the customers.&lt;/p&gt;
-
-&lt;p&gt;The pushback is always “well how do you measure quality”. There isn’t an easy answer or a single
-measurement, it’s going to be hard, but it is possible. You first have to believe in it, then
-encourage teams to do it, and the way you validate is by listening to what the market and&lt;/p&gt;
-
-&lt;p&gt;customers say. Depending on the business there can be measurements.&lt;/p&gt;
-
-&lt;p&gt;For us @linear it’s always been anecdotal. Linear is used daily in the companies and we hear a lot
-of feedback. They send notes how great the product or a new feature is. People tweet about it.
-CEO/founders sometimes tell me that they picked Linear because the product experience is so
-good that they use it to inspire their teams to do the same. VCs tell me how their portfolio&lt;/p&gt;
-
-&lt;p&gt;companies rave about Linear and bring it up in the conversations.&lt;/p&gt;
-
-&lt;p&gt;As you listen to these signals, you start to see if the quality is there or not. But even when you
-hear the signals, you can’t stop. Great products require consistent, daily effort keeping the&lt;/p&gt;
-
-&lt;p&gt;quality.
-In short, people aren’t organically raving about your product, you probably don’t have a great
-product yet. Maybe you have just an OK product. If you have a great product, people will talk&lt;/p&gt;
-
-&lt;p&gt;about it.&lt;/p&gt;
-
-&lt;p&gt;Great products create fans and champions. In my mind product quality is the ultimate moat.&lt;/p&gt;
-
-&lt;h2 id=&quot;機翻中文&quot;&gt;機翻中文&lt;/h2&gt;
-
-&lt;p&gt;手藝與品質，以及專業級軟體。&lt;/p&gt;
-
-&lt;p&gt;對我來說，手藝是一種心態，品質是其產出。&lt;/p&gt;
-
-&lt;p&gt;如果你想到任何被建造或創造出來且做得很好的事物，那很可能是因為他們在乎他們的手藝。他們設計得很好。他們進行反覆的迭代和原型製作。他們選擇了合適的材料。他們建造得很好。當一個人不在乎時，這是非常容易看出的。工作做得馬虎，有錯誤。它能運作但很可能很快就會故障。&lt;/p&gt;
-
-&lt;p&gt;我認為，在過去十年的軟體產業中，我們有點忘記了手藝。更多的產品看起來像是人們不在乎手藝的產物。我們專注於擴建更大的團隊。然後讓他們像工廠一樣持續不斷地生產新事物。我們通過A/B測試和看指標來驗證「品質」。今天很多軟體僅僅是勉強能用。&lt;/p&gt;
-
-&lt;p&gt;但我們應該是專業人士和真正的公司。我們銷售的是讓人們購買的產品。我認為我們的責任是提供好的產品和高品質的產品，而不是那些做工粗糙的產品。&lt;/p&gt;
-
-&lt;p&gt;手藝是創造品質的心態。但這還不夠。你需要擁有正確的技能和想法。你需要那些認真對待自己的職業和手藝的人，然後建立這樣合作的團隊，並擁有一個為此創造的公司。不僅僅是用期限和指標作為激勵，還要關心體驗是否足夠好。&lt;/p&gt;
-
-&lt;p&gt;尤其是專業軟體應該是「專業級」的。專業級工具和設備通常更耐用、更強大、更精確且更專注。專業級軟體也應該如此。它應該基本無錯、運行快速、能滿足客戶的需求。&lt;/p&gt;
-
-&lt;p&gt;對於品質的反饋總是「你如何衡量品質」。沒有簡單的答案或單一的衡量方式，這將是困難的，但這是可能的。你首先必須相信它，然後鼓勵團隊去做，而你驗證的方式是聽取市場和客戶的說法。根據業務的不同，可以有相應的衡量標準。&lt;/p&gt;
-
-&lt;p&gt;對我們 @linear 來說，它總是一種軼事。Linear 在公司中每天都被使用，我們收到很多反饋。他們發送說明產品或新功能有多好的筆記。人們在推特上談論它。首席執行官/創始人有時告訴我，他們之所以選擇 Linear，是因為產品體驗非常好，他們用它來激勵他們的團隊做同樣的事情。風險投資者告訴我，他們的投資組合公司如何熱衷於 Linear 並在談話中提起它。&lt;/p&gt;
-
-&lt;p&gt;當你聽到這些信號時，你開始看到品質是否存在。但即使你聽到了這些信號，你也不能停止。優秀的產品需要持續的、日常的努力來維持品質。&lt;/p&gt;
-
-&lt;p&gt;總之，如果人們不是自然地狂熱於你的產品，你可能還沒有一個偉大的產品。也許你只有一個還可以的產品。如果你有一個偉大的產品，人們會談論它。&lt;/p&gt;
-
-&lt;p&gt;偉大的產品創造粉絲和冠軍。在我看來，產品品質是最終的護城河。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Linear" /><category term="Programming" /><summary type="html">緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry></feed>
