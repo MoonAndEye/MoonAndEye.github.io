@@ -4,17 +4,6 @@
 
 layout: home
 lang: en
-paginate: 15
 ---
 
-{% if page.lang == "zh" %}
-<h2>這不是英文界面 是中文界面 = zh</h2>
-{% elsif page.lang == "en" %}
-<h2>這是英文界面 lang = en</h2>
-{% else %}
-<h2>這個 lang 沒設定</h2>
-{% endif %}
-
-{% include en/support-for-unit-testing.html %}
-{% include en/coffee-button.html %}
 {% include paginator.html %}
