@@ -3,11 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+lang: zh
+paginate: 15
 ---
 
-{% if page.locale == "zh" %}
+{% if page.lang == "zh" %}
 <h2>這不是英文界面 是中文界面 = zh</h2>
-{% elsif page.locale == "en" %}
+{% elsif page.lang == "en" %}
 <h2>這是英文界面 locale = en</h2>
 {% else %}
 <h2>這個 locale 沒設定</h2>

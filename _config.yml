@@ -19,11 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 github: [metadata]
 
-title: Marvin 的程式開發筆記
-locale: "zh"
+title: Marv[in]sight
+locale: "en"
 email: atimis19@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。
+  Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://moonandeye.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: atimisMoon
@@ -61,10 +61,6 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-include-cache
-
-# 原來的設定，但為了改善 SEO 先改成 title，但這又會卡 paginate，先改回來
-# permalink: /:categories/:year/:month/:day/:title:output_ext
-# permalink: /:categories/:title:output_ext
 
 paginate: 15
 paginate_path: "/page:num/"
@@ -139,26 +135,26 @@ defaults:
       toc_sticky: true   # enables sticky toc
       comments: true
   - scope:
-      path: "en"
+      path: "/en"
     values:
-      lang: en
-      language: en
       locale: en
+      lang: en
   - scope:
-      path: "zh"
+      path: "/zh"
     values:
-      lang: zh
-      language: zh
       locale: zh
+      lang: zh
   - scope:
       path: "_posts/**/zh"
       types: posts
     values:
+      locale: zh
       lang: zh
-      permalink: /:categories/zh/:title/
+      permalink: /zh/:categories/:title/
   - scope:
       path: "_posts/**/en"
       types: posts
     values:
+      locale: en
       lang: en
-      permalink: /:categories/en/:title/
+      permalink: /en/:categories/:title/

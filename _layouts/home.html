@@ -36,12 +36,16 @@ author_profile: true
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[page.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% assign lang = page.lang %}
 
 {% if paginator %}
-  {% assign posts = paginator.posts %}
+  {% assign paginator_posts = paginator.posts %}
+  {% assign posts = paginator_posts | where: "lang", lang %}
 {% else %}
-  {% assign posts = site.posts %}
+  {% assign filtered_posts = site.posts | where: "lang", lang %}
+  {% assign posts = filtered_posts %}
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}

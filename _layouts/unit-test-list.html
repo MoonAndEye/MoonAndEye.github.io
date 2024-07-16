@@ -2,13 +2,14 @@
 layout: archive
 author_profile: true
 ---
+{% include custom/language-switch-button.html %}
 
-{% include support-for-unit-testing.html %}
-{% include coffee-button.html %}
+{% include {{ page.lang }}/support-for-unit-testing.html %}
+{% include {{ page.lang }}/coffee-button.html %}
 
 {{ content }}
 
-{% assign posts = site.posts | where: "categories", "unitTesting" | sort: "date" | reverse %}
+{% assign posts = site.posts | where: "categories", "unitTesting" | where: "lang", page.lang | sort: "date" | reverse %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
