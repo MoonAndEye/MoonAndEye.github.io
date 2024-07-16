@@ -1,4 +1,342 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T18:00:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Unit Testing from Zero to One - Getting Started with Tests in Your Project</title><link href="http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one/" rel="alternate" type="text/html" title="Unit Testing from Zero to One - Getting Started with Tests in Your Project" /><published>2024-07-16T15:00:00+08:00</published><updated>2024-07-16T15:00:00+08:00</updated><id>http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one/">&lt;p&gt;In this article, we will introduce how to integrate unit testing into iOS projects. Unit tests are used to verify that the smallest testable units of code (such as functions, methods, or classes) are correct. They are typically written and executed by developers using various tools and frameworks to automate and simplify the testing process. The purpose of unit testing is to ensure the correctness and robustness of the program’s logic, enhancing the quality and maintainability of the code.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T18:35:11+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html"></title><link href="http://localhost:4000/en/2023-05-24-copilot-with-xcode/" rel="alternate" type="text/html" title="" /><published>2024-07-16T18:35:11+08:00</published><updated>2024-07-16T18:35:11+08:00</updated><id>http://localhost:4000/en/2023-05-24-copilot-with-xcode</id><content type="html" xml:base="http://localhost:4000/en/2023-05-24-copilot-with-xcode/">&lt;p&gt;In a previous discussion, I shared my experience with purchasing and trying GitHub Copilot in a side project. My primary work involves iOS app development with native development tools, and I have also experimented with Copilot in Xcode. For those interested in similar integrations, there are various resources available that provide tutorials on how to integrate tools like Copilot with Xcode.&lt;/p&gt;
+
+&lt;h2 id=&quot;but-i-no-longer-use-copilot-in-xcode&quot;&gt;But, I No Longer Use Copilot in Xcode&lt;/h2&gt;
+
+&lt;p&gt;The experience of using Copilot in Xcode isn’t as smooth as in VScode. While I’m typing, the Copilot plugin in Xcode interferes with the auto-complete response time of Xcode itself. My “sensation” is that I’m waiting for Xcode’s auto-complete to pop up so I can select one of the auto-completion suggestions.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, the code suggestions provided by Xcode Copilot often don’t quite fit the context, possibly because it hasn’t sufficiently adapted to my machine/account yet. In a VC or class or struct, we always have property declarations outside functions, but when Copilot encounters scenarios that interact with these variables, the suggested code isn’t very useful (and such global variables aren’t always easy to understand, which is why design patterns exist).&lt;/p&gt;
+
+&lt;p&gt;After turning it off, I felt better about my development experience, although it’s hard to objectively compare the difference in speed. From my understanding, Copilot should improve with use, but currently, the experience in Xcode isn’t good enough.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-xcode-you-can-use-code-snippets-for-similar-code-suggestion-features&quot;&gt;In Xcode, You Can Use Code Snippets for Similar Code Suggestion Features&lt;/h2&gt;
+
+&lt;p&gt;Snippets are a feature available in most IDEs. You can create a template for commonly used code, and leave placeholders for the parts to be filled in. When calling a snippet, you only need to fill in the remaining parts. Below is a snippet I frequently use to return to the main queue. After iOS 13, using UI components off the main queue can cause crashes.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        &lt;span class=&quot;c1&quot;&gt;// This is a snippet I often use&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author></entry><entry xml:lang="en"><title type="html">Adding a WebView to a SwiftUI Project</title><link href="http://localhost:4000/en/swift/add-webview-in-swiftui/" rel="alternate" type="text/html" title="Adding a WebView to a SwiftUI Project" /><published>2024-07-16T18:20:00+08:00</published><updated>2024-07-16T18:20:00+08:00</updated><id>http://localhost:4000/en/swift/add-webview-in-swiftui</id><content type="html" xml:base="http://localhost:4000/en/swift/add-webview-in-swiftui/">&lt;h2 id=&quot;this-article-was-previously-published-in-the-2022-it-ironman-competition---using-swiftui-to-turn-interesting-ideas-into-apps&quot;&gt;This article was previously published in the 2022 IT Ironman Competition - Using SwiftUI to Turn Interesting Ideas into Apps&lt;/h2&gt;
+
+&lt;p&gt;In today’s apps, features that communicate with the web are fundamental. This article will add a WebView page to the app that links to Grace Hopper’s Wikipedia page. This ensures that the information accessed is consistent with what’s on Wikipedia, without needing to update the client side every time there’s new information.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Grace Hopper’s wiki &lt;a href=&quot;https://en.wikipedia.org/wiki/Grace_Hopper&quot;&gt;https://en.wikipedia.org/wiki/Grace_Hopper&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;how-to-use-webview-in-swiftui&quot;&gt;How to Use WebView in SwiftUI&lt;/h3&gt;
+
+&lt;p&gt;Currently, SwiftUI does not have a WebView component, so we need to use WebKit’s WKWebView. Bridging SwiftUI with UIKit is straightforward: make the component conform to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UIViewRepresentable&lt;/code&gt;, then implement &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;makeUIView(:)&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;updateUIView(:,:)&lt;/code&gt;. This allows the use of UIKit components.&lt;/p&gt;
+
+&lt;p&gt;Inside this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WKWebViewContainer&lt;/code&gt;, we will place a URL that the WKWebView will use to load the URLRequest.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;WebKit&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;WKWebViewContainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIViewRepresentable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeUIView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;WKWebView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;WKWebView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;updateUIView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;webView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;WKWebView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;webView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wrap the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WKWebViewContainer&lt;/code&gt; so that other SwiftUI components can be added around it.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;MyWebView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;urlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;WKWebViewContainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;not a url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hmm…🤔🤔🤔🤔🤔 If the URL can’t be parsed, the current code will display a Text, which seems odd. Let’s add an Error View then.&lt;/p&gt;
+
+&lt;p&gt;For the image, you can directly use the SF Symbol &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wifi.exclamationmark&lt;/code&gt;, no need to search for additional assets.&lt;/p&gt;
+
+&lt;p&gt;SF Symbols website, where you can download the SF Symbols app.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/sf-symbols/&quot;&gt;https://developer.apple.com/sf-symbols/&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// If the URLString is incorrect, an Error view will appear&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLNotCorrectView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kt&quot;&gt;VStack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;systemName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;wifi.exclamationmark&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Oops! Internet got error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;multilineTextAlignment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;44&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/webview-in-swiftui/no_internet.png&quot; alt=&quot;no internet view&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyWebView&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;MyWebView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;urlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;WKWebViewContainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;URLNotCorrectView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;However, you can’t see the webpage in the preview, so at the entry point, we change the View to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyWebView&lt;/code&gt; to see the result.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;@main&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;DemoApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Scene&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;WindowGroup&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kt&quot;&gt;MyWebView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;urlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://en.wikipedia.org/wiki/Grace_Hopper&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also intentionally insert a string that is not a URL; if it cannot be converted into a URL, the previously written network error View will appear.&lt;/p&gt;
+
+&lt;h3 id=&quot;displaying-grace-hoppers-wiki&quot;&gt;Displaying Grace Hopper’s Wiki&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/webview-in-swiftui/grace_hopper_wiki.png&quot; alt=&quot;Wiki of Grace Hopper&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><category term="WebView" /><summary type="html">This article was previously published in the 2022 IT Ironman Competition - Using SwiftUI to Turn Interesting Ideas into Apps</summary></entry><entry xml:lang="en"><title type="html">Color Picker Component, A Beautiful Color Selector</title><link href="http://localhost:4000/en/swift/swiftui-color-picker/" rel="alternate" type="text/html" title="Color Picker Component, A Beautiful Color Selector" /><published>2024-07-16T18:00:00+08:00</published><updated>2024-07-16T18:00:00+08:00</updated><id>http://localhost:4000/en/swift/swiftui-color-picker</id><content type="html" xml:base="http://localhost:4000/en/swift/swiftui-color-picker/">&lt;h2 id=&quot;this-article-was-previously-published-in-the-2022-it-ironman-competition---turning-interesting-ideas-into-apps-with-swiftui&quot;&gt;This article was previously published in the 2022 IT Ironman Competition - Turning Interesting Ideas into Apps with SwiftUI&lt;/h2&gt;
+
+&lt;h2 id=&quot;apples-documentation-on-color-picker&quot;&gt;Apple’s Documentation on Color Picker&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/colorpicker&quot;&gt;https://developer.apple.com/documentation/swiftui/colorpicker&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Color Picker is one of my favorite SwiftUI components. If you were to manually create this component using UIKit, it would be time-consuming. Previously, if such a requirement arose, we generally resorted to third-party libraries. Now, with SwiftUI, this component is readily available, and it can be used on iOS 14+ versions. For selecting colors, you can use gridlines, a spectrum, or sliders, making it both beautiful and convenient.&lt;/p&gt;
+
+&lt;p&gt;Let’s now make a test project: a backwards clock dial with a splash of color.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_1.png&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_2.jpeg&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_3.png&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;introducing-colorpickercontainerview&quot;&gt;Introducing ColorPickerContainerView&lt;/h3&gt;
+
+&lt;p&gt;The ColorPicker requires a Binding parameter, designed to let the outer part (the page with the clock) pass in the color, which then updates the color of the dial externally.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ColorPickerContainerView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@Binding&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kt&quot;&gt;ColorPicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Dial Color&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;selection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ColorPickerContainerView_Previews&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;PreviewProvider&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;previewDialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;white&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;previews&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;ColorPickerContainerView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;previewDialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_4.png&quot; alt=&quot;color picker 4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker5.png&quot; alt=&quot;color picker 5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even in the preview, pressing the action button brings up the color palette.&lt;/p&gt;
+
+&lt;h3 id=&quot;modifying-the-dial-allowing-the-dial-color-to-change&quot;&gt;Modifying the Dial, Allowing the Dial Color to Change&lt;/h3&gt;
+
+&lt;p&gt;Add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dialColor&lt;/code&gt; to allow the color to be changed. Below the original &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle().stroke()&lt;/code&gt;, add another dial layer, which is the part that actually changes color.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ClockDialView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@Binding&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tickLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CGFloat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kt&quot;&gt;ZStack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;/// The part that actually changes color&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;/// The outer frame&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;stroke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      
+      &lt;span class=&quot;n&quot;&gt;ticks&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      
+      &lt;span class=&quot;kt&quot;&gt;HStack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;Spacer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;BackwardsClockNumberView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;Spacer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isLongTick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+ 
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ticks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;kt&quot;&gt;ForEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;longerTick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tickLength&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.8&lt;/span&gt;
+
+      &lt;span class=&quot;kt&quot;&gt;Tick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tickLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isLongTick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;longerTick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tickLength&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;stroke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lineWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rotationEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;radians&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Double&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ClockDialView_Previews&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;PreviewProvider&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;green&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;previews&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;ClockDialView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tickLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;bringing-up-the-color-selector-on-the-clock-page&quot;&gt;Bringing Up the Color Selector on the Clock Page&lt;/h3&gt;
+
+&lt;p&gt;First, add a file named ColorPickerContainer.&lt;/p&gt;
+
+&lt;p&gt;Next to the original wiki page button, place a settings button.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ClockContainerView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CGFloat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CGFloat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@StateObject&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;clockwork&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Clockwork&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;white&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;isShowingGraceWikiSheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;isShowingColorPicker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;graceWikiPageURL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://en.wikipedia.org/wiki/Grace_Hopper&quot;&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;angleUtility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AngleUtility&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;ZStack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      
+      &lt;span class=&quot;kt&quot;&gt;VStack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;HStack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kt&quot;&gt;Spacer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;wikiProfileButton&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;settingButton&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trailing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;Spacer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      
+      &lt;span class=&quot;kt&quot;&gt;Group&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;ClockDialView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;HandShape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;handLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rotationEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Angle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;degrees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clockwork&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hourAngle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;HandShape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;handLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cyan&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rotationEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Angle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;degrees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clockwork&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minuteAngle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;HandShape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;handLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rotationEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Angle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;degrees&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clockwork&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;secondAngle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;/// Extract the wiki profile button&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;wikiProfileButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      
+      &lt;span class=&quot;n&quot;&gt;isShowingGraceWikiSheet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;toggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;systemName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;person.crop.circle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;foregroundColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;isPresented&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isShowingGraceWikiSheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;BCWebView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;urlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;graceWikiPageURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;/// Extract the settings button&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;settingButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;kt&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      
+      &lt;span class=&quot;n&quot;&gt;isShowingColorPicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;toggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;systemName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;gearshape.circle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;foregroundColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;isPresented&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isShowingColorPicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;ColorPickerContainerView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dialColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The dial color change functionality is complete.&lt;/p&gt;
+
+&lt;p&gt;If you want to change the color of the hands, the process is similar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_6.png&quot; alt=&quot;color picker&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;deployed-app-on-app-store&quot;&gt;Deployed App on App Store&lt;/h2&gt;
+
+&lt;p&gt;This clock app was later developed into a version that was published on the App Store, integrating Firebase and RevenueCat. The total size is only 5.1 MB. SwiftUI really impressed me!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/backwards-clock/id1632935212&quot;&gt;https://apps.apple.com/backwards-clock/id1632935212&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/color-picker/color_picker_7.png&quot; alt=&quot;backward clock&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;related-documentation&quot;&gt;Related Documentation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/colorpicker&quot;&gt;https://developer.apple.com/documentation/swiftui/colorpicker&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><category term="Apple" /><category term="iOS" /><summary type="html">This article was previously published in the 2022 IT Ironman Competition - Turning Interesting Ideas into Apps with SwiftUI</summary></entry><entry xml:lang="en"><title type="html">Unit Testing from Zero to One - Getting Started with Tests in Your Project</title><link href="http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one/" rel="alternate" type="text/html" title="Unit Testing from Zero to One - Getting Started with Tests in Your Project" /><published>2024-07-16T15:00:00+08:00</published><updated>2024-07-16T15:00:00+08:00</updated><id>http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one/">&lt;p&gt;In this article, we will introduce how to integrate unit testing into iOS projects. Unit tests are used to verify that the smallest testable units of code (such as functions, methods, or classes) are correct. They are typically written and executed by developers using various tools and frameworks to automate and simplify the testing process. The purpose of unit testing is to ensure the correctness and robustness of the program’s logic, enhancing the quality and maintainability of the code.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Special thanks to Hanyu Chen for the coffee!&lt;/strong&gt;&lt;/p&gt;
 
@@ -132,7 +470,23 @@ func testTokenResponse() throws {&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: Unit tests should be repeatable in any environment or under any circumstances, providing consistent results.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: Unit tests should have clear standards for passing or failing without the need for manual checks or validation.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: Unit tests should be written in a timely manner, ideally before or concurrently with code development, to drive design and refactoring.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">“Writing software is like building a cathedral - when we finish, we start praying.” Software and cathedrals are much the same – first we build them, then we pray. - Sam Redwine</summary></entry><entry xml:lang="zh"><title type="html">單元測試從0到1 - 讓專案開始有測試</title><link href="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html" rel="alternate" type="text/html" title="單元測試從0到1 - 讓專案開始有測試" /><published>2024-06-20T13:20:00+08:00</published><updated>2024-06-20T13:20:00+08:00</updated><id>http://localhost:4000/unit-testing/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html">&lt;p&gt;在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">“Writing software is like building a cathedral - when we finish, we start praying.” Software and cathedrals are much the same – first we build them, then we pray. - Sam Redwine</summary></entry><entry xml:lang="en"><title type="html">Checking Third-Party Package Versions from Podfile.lock</title><link href="http://localhost:4000/en/swift/check-third-party-pod-version-from-podfilelock/" rel="alternate" type="text/html" title="Checking Third-Party Package Versions from Podfile.lock" /><published>2024-07-15T14:29:00+08:00</published><updated>2024-07-15T14:29:00+08:00</updated><id>http://localhost:4000/en/swift/check-third-party-pod-version-from-podfilelock</id><content type="html" xml:base="http://localhost:4000/en/swift/check-third-party-pod-version-from-podfilelock/">&lt;p&gt;In iOS app development, third-party libraries are commonly used. This article primarily focuses on how to verify the versions of third-party packages used in a project by examining Podfile.lock. In iOS projects, the file that records all third-party libraries and their dependencies is Podfile.lock. When collaborating developers work on the project, they simply need to run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt; command in the terminal directory level where Podfile.lock is located, and CocoaPods will install the third-party packages as specified in Podfile.lock according to the versions listed in the Podfile. Next, we will explain the structure of Podfile.lock.&lt;/p&gt;
+
+&lt;h2 id=&quot;structure-of-podfilelock&quot;&gt;Structure of Podfile.lock&lt;/h2&gt;
+
+&lt;p&gt;The versions of the third-party libraries used and each library’s dependencies are listed in the first section under the heading “PODS:”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/podfile-lock/podfile-lock-sample.png&quot; alt=&quot;Podfile lock sample&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In Podfile.lock, a hyphen preceded by two spaces indicates the third-party library installed and its corresponding version number. In the sample image, you can see the areas marked in red; the following two lines both start with four spaces followed by a hyphen. This indicates that the installed third-party library depends on another third-party library. In this example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firebase/CoreOnly&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics (= 7.6.0)&lt;/code&gt;. The dependent &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt; is pinned to a specific version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7.6.0&lt;/code&gt;. Because of the dependency on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt;, you will also see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firebase/CoreOnly&lt;/code&gt; and the version number of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt; in the Podfile.lock.&lt;/p&gt;
+
+&lt;h2 id=&quot;reminder-do-not-add-podfilelock-to-gitignore&quot;&gt;Reminder: Do Not Add Podfile.lock to .gitignore&lt;/h2&gt;
+
+&lt;p&gt;This file precisely records the third-party libraries and their versions used in the project. When taking over a project, simply running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt; will install the corresponding code on the project. Therefore, please do not add Podfile.lock to .gitignore, as it can lead to complications for everyone involved.&lt;/p&gt;
+
+&lt;h2 id=&quot;related-links&quot;&gt;Related Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cocoapods.org/&quot;&gt;Documentation from Cocoapods.org&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Third-Party" /><category term="CocoaPods" /><summary type="html">In iOS app development, third-party libraries are commonly used. This article primarily focuses on how to verify the versions of third-party packages used in a project by examining Podfile.lock. In iOS projects, the file that records all third-party libraries and their dependencies is Podfile.lock. When collaborating developers work on the project, they simply need to run the pod install command in the terminal directory level where Podfile.lock is located, and CocoaPods will install the third-party packages as specified in Podfile.lock according to the versions listed in the Podfile. Next, we will explain the structure of Podfile.lock.</summary></entry><entry xml:lang="zh"><title type="html">單元測試從0到1 - 讓專案開始有測試</title><link href="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html" rel="alternate" type="text/html" title="單元測試從0到1 - 讓專案開始有測試" /><published>2024-06-20T13:20:00+08:00</published><updated>2024-06-20T13:20:00+08:00</updated><id>http://localhost:4000/unit-testing/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html">&lt;p&gt;在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;這篇文章要感謝 Hanyu Chen, 陳涵宇請我喝咖啡&lt;/strong&gt;&lt;/p&gt;
 
@@ -431,281 +785,4 @@ func testTokenResponse() throws {&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://x.com/karrisaarinen/status/1783976321854717985&quot;&gt;Karri Saarinen 原文發表在 X (Twitter) 上&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.marvinswift.com/programming/linear.html&quot;&gt;使用 ChatGPT4 翻譯的版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry><entry xml:lang="zh"><title type="html">Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻</title><link href="http://localhost:4000/programming/linear.html" rel="alternate" type="text/html" title="Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻" /><published>2024-05-13T00:12:00+08:00</published><updated>2024-05-13T00:12:00+08:00</updated><id>http://localhost:4000/programming/linear</id><content type="html" xml:base="http://localhost:4000/programming/linear.html">&lt;h2 id=&quot;緣由-linear-執行長-karri-saarinen-在-stripe-上分享了關於程式回質的觀點&quot;&gt;緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點&lt;/h2&gt;
-
-&lt;p&gt;在電子報 &lt;a href=&quot;https://explainthis.substack.com/p/explainthis-27&quot;&gt;全端雙週報 Explain This 27期&lt;/a&gt;中，有提到 Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點，看完後，使用 ChatGPT 翻譯成中文，並且分享給大家。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://x.com/karrisaarinen/status/1783976321854717985&quot;&gt;Karri Saarinen 原文發表在 X (Twitter) 上&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;karri-的原文&quot;&gt;Karri 的原文&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/craft-and-quality/post-on-x.jpeg&quot; alt=&quot;post on tweets&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Craft and Quality, and professional grade software.&lt;/p&gt;
-
-&lt;p&gt;To me craft is mindset, and quality is the output.&lt;/p&gt;
-
-&lt;p&gt;If you think of anything that was built or created, and well done, it’s probably because they cared
-and they knew their craft. They designed it well. They iterated and prototyped. They chose the
-right materials. They built it well. It’s very easy to see when the person doesn’t care. The work is&lt;/p&gt;
-
-&lt;p&gt;sloppy. There are mistakes. It works and likely breaks down very quickly.&lt;/p&gt;
-
-&lt;p&gt;And | think as a software industry the past decade we kind of forgot the craft. More stuff look
-like something where people didn’t care about the craft. We focused on building larger teams.
-We then made them run like factories churning out new things at a consistent pace. We validated&lt;/p&gt;
-
-&lt;p&gt;“quality” by A/B testing and looking at metrics. Lot of software today borderline works.&lt;/p&gt;
-
-&lt;p&gt;But we are supposed to be professionals and real companies. We’re selling products to people
-to buy. | think our responsibility is to deliver good products and quality products, not something&lt;/p&gt;
-
-&lt;p&gt;that is sloppy.&lt;/p&gt;
-
-&lt;p&gt;Craft is the mindset that creates quality. But it’s not enough. You need to have the right skills and
-ideas. You need individuals who take their profession and craft seriously, then build teams that
-work this way together, and have a company that creates for it. Not only incentivizing with&lt;/p&gt;
-
-&lt;p&gt;deadlines and metrics, but also caring if the experience is good enough.&lt;/p&gt;
-
-&lt;p&gt;Especially professional software should be “professional grade”. Professional grade tools and
-appliances are often more durable, more powerful, more precise and focused. Professional grade
-software should be that way too. It should be more or less bug free. It should be fast. It should
-meet the needs of the customers.&lt;/p&gt;
-
-&lt;p&gt;The pushback is always “well how do you measure quality”. There isn’t an easy answer or a single
-measurement, it’s going to be hard, but it is possible. You first have to believe in it, then
-encourage teams to do it, and the way you validate is by listening to what the market and&lt;/p&gt;
-
-&lt;p&gt;customers say. Depending on the business there can be measurements.&lt;/p&gt;
-
-&lt;p&gt;For us @linear it’s always been anecdotal. Linear is used daily in the companies and we hear a lot
-of feedback. They send notes how great the product or a new feature is. People tweet about it.
-CEO/founders sometimes tell me that they picked Linear because the product experience is so
-good that they use it to inspire their teams to do the same. VCs tell me how their portfolio&lt;/p&gt;
-
-&lt;p&gt;companies rave about Linear and bring it up in the conversations.&lt;/p&gt;
-
-&lt;p&gt;As you listen to these signals, you start to see if the quality is there or not. But even when you
-hear the signals, you can’t stop. Great products require consistent, daily effort keeping the&lt;/p&gt;
-
-&lt;p&gt;quality.
-In short, people aren’t organically raving about your product, you probably don’t have a great
-product yet. Maybe you have just an OK product. If you have a great product, people will talk&lt;/p&gt;
-
-&lt;p&gt;about it.&lt;/p&gt;
-
-&lt;p&gt;Great products create fans and champions. In my mind product quality is the ultimate moat.&lt;/p&gt;
-
-&lt;h2 id=&quot;機翻中文&quot;&gt;機翻中文&lt;/h2&gt;
-
-&lt;p&gt;手藝與品質，以及專業級軟體。&lt;/p&gt;
-
-&lt;p&gt;對我來說，手藝是一種心態，品質是其產出。&lt;/p&gt;
-
-&lt;p&gt;如果你想到任何被建造或創造出來且做得很好的事物，那很可能是因為他們在乎他們的手藝。他們設計得很好。他們進行反覆的迭代和原型製作。他們選擇了合適的材料。他們建造得很好。當一個人不在乎時，這是非常容易看出的。工作做得馬虎，有錯誤。它能運作但很可能很快就會故障。&lt;/p&gt;
-
-&lt;p&gt;我認為，在過去十年的軟體產業中，我們有點忘記了手藝。更多的產品看起來像是人們不在乎手藝的產物。我們專注於擴建更大的團隊。然後讓他們像工廠一樣持續不斷地生產新事物。我們通過A/B測試和看指標來驗證「品質」。今天很多軟體僅僅是勉強能用。&lt;/p&gt;
-
-&lt;p&gt;但我們應該是專業人士和真正的公司。我們銷售的是讓人們購買的產品。我認為我們的責任是提供好的產品和高品質的產品，而不是那些做工粗糙的產品。&lt;/p&gt;
-
-&lt;p&gt;手藝是創造品質的心態。但這還不夠。你需要擁有正確的技能和想法。你需要那些認真對待自己的職業和手藝的人，然後建立這樣合作的團隊，並擁有一個為此創造的公司。不僅僅是用期限和指標作為激勵，還要關心體驗是否足夠好。&lt;/p&gt;
-
-&lt;p&gt;尤其是專業軟體應該是「專業級」的。專業級工具和設備通常更耐用、更強大、更精確且更專注。專業級軟體也應該如此。它應該基本無錯、運行快速、能滿足客戶的需求。&lt;/p&gt;
-
-&lt;p&gt;對於品質的反饋總是「你如何衡量品質」。沒有簡單的答案或單一的衡量方式，這將是困難的，但這是可能的。你首先必須相信它，然後鼓勵團隊去做，而你驗證的方式是聽取市場和客戶的說法。根據業務的不同，可以有相應的衡量標準。&lt;/p&gt;
-
-&lt;p&gt;對我們 @linear 來說，它總是一種軼事。Linear 在公司中每天都被使用，我們收到很多反饋。他們發送說明產品或新功能有多好的筆記。人們在推特上談論它。首席執行官/創始人有時告訴我，他們之所以選擇 Linear，是因為產品體驗非常好，他們用它來激勵他們的團隊做同樣的事情。風險投資者告訴我，他們的投資組合公司如何熱衷於 Linear 並在談話中提起它。&lt;/p&gt;
-
-&lt;p&gt;當你聽到這些信號時，你開始看到品質是否存在。但即使你聽到了這些信號，你也不能停止。優秀的產品需要持續的、日常的努力來維持品質。&lt;/p&gt;
-
-&lt;p&gt;總之，如果人們不是自然地狂熱於你的產品，你可能還沒有一個偉大的產品。也許你只有一個還可以的產品。如果你有一個偉大的產品，人們會談論它。&lt;/p&gt;
-
-&lt;p&gt;偉大的產品創造粉絲和冠軍。在我看來，產品品質是最終的護城河。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Linear" /><category term="Programming" /><summary type="html">緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點</summary></entry><entry xml:lang="zh"><title type="html">Swift 5.10 Released</title><link href="http://localhost:4000/swift/swift_5_10_released.html" rel="alternate" type="text/html" title="Swift 5.10 Released" /><published>2024-03-06T11:54:00+08:00</published><updated>2024-03-06T11:54:00+08:00</updated><id>http://localhost:4000/swift/swift_5_10_released</id><content type="html" xml:base="http://localhost:4000/swift/swift_5_10_released.html">&lt;h2 id=&quot;swift-510-released---下一個版本就是-swift-6&quot;&gt;Swift 5.10 Released - 下一個版本就是 Swift 6&lt;/h2&gt;
-
-&lt;p&gt;以下文章內容，來自 Swift.org 的 &lt;a href=&quot;https://www.swift.org/blog/swift-5.10-released/&quot;&gt;Swift 5.10 Released&lt;/a&gt;，由 Holly Borla 撰寫。&lt;/p&gt;
-
-&lt;p&gt;Holly BorlaHolly Borla
-Holly Borla 是 Apple Swift 團隊的一名工程師，同時也是 Swift 核心團隊、語言指導小組和 Swift 多元化工作組的成員。
-Swift 被設計為默認安全，能在編譯時防止整個類別的編程錯誤。在基於 C 的語言中未定義行為的來源，如在初始化之前使用變量或使用後釋放，都在 Swift 中被定義掉了。&lt;/p&gt;
-
-&lt;p&gt;一個越來越重要的未定義行為來源是並行代碼不經意地從一個線程訪問內存，而另一個線程同時寫入同一內存。這種不安全被稱為資料競爭，資料競爭使得編寫正確的並行程序變得異常困難。Swift 通過提供由演員和任務提供的數據隔離來解決這個問題，這保證了對共享可變狀態的互斥訪問。數據隔離執行自2020年Swift並行性路線圖發布以來一直在積極開發中。&lt;/p&gt;
-
-&lt;p&gt;Swift 5.10 在並發語言模型中實現了完全的數據隔離。這一重要的里程碑歷經多次發布的多年積極開發。並行模型於 Swift 5.5 引入，包括 async/await、演員和結構化並行。Swift 5.7 引入了 Sendable 作為基本概念，用於線程安全類型，其值可以在任意並行上下文中共享而不引入數據競爭的風險。現在，在 Swift 5.10 中，當啟用完整的並發檢查選項時，將在語言的所有領域強制實施完全數據隔離。&lt;/p&gt;
-
-&lt;p&gt;Swift 5.10 中的完全數據隔離為下一個主要發布版本，Swift 6，奠定了基礎。Swift 6.0 編譯器將提供一種新的，可選的 Swift 6 語言模式，默認強制完全數據隔離，我們將開始過渡以消除所有用 Swift 編寫的軟件中的數據競爭。&lt;/p&gt;
-
-&lt;p&gt;在某些情況下，Swift 5.10 將在代碼可以通過額外的編譯器分析證明為安全的情況下產生數據競爭警告。Swift 6 發布的語言開發的一個主要焦點是通過減輕在常見代碼模式中被證明為安全的虛假正面並發錯誤來改善嚴格並發檢查的可用性。&lt;/p&gt;
-
-&lt;p&gt;閱讀下去以了解 Swift 5.10 中的完全數據隔離，演員隔離檢查的新的不安全選擇，以及 Swift 6 之前剩餘的並發進化。&lt;/p&gt;
-
-&lt;p&gt;Swift 5.10 中的數據競爭安全
-完全數據隔離
-Swift 5.10 在語言的所有角落完善了數據競爭安全語義，並修復了 Sendable 和演員隔離檢查中的許多錯誤，以加強完整並發檢查的保證。當使用編譯器標誌 -strict-concurrency=complete 構建代碼時，Swift 5.10 將除非使用顯式不安全選擇，如 nonisolated(unsafe) 或 @unchecked Sendable，否則將在編譯時診斷出數據競爭的潛在性。&lt;/p&gt;
-
-&lt;p&gt;例如，在 Swift 5.9 中，以下代碼由於在演員之外評估了一個 @MainActor-隔離的初始化器而在運行時失敗了一個隔離斷言，但在 -strict-concurrency=complete 下沒有被診斷：&lt;/p&gt;
-
-&lt;p&gt;@MainActor
-class MyModel {
-private init() {
-MainActor.assertIsolated()
-}&lt;/p&gt;
-
-&lt;p&gt;static let shared = MyModel()
-}&lt;/p&gt;
-
-&lt;p&gt;func useShared() async {
-let model = MyModel.shared
-}&lt;/p&gt;
-
-&lt;p&gt;await useShared()
-上述代碼允許數據競爭。MyModel.shared 是一個 @MainActor-隔離的靜態變量，它在首次訪問時評估一個 @MainActor-隔離的初始值。MyModel.shared 從 useShared() 函數內的一個非隔離上下文同步訪問，因此初始值在主演員外計算。在 Swift 5.10 中，使用 -strict-concurrency=complete 編譯代碼會產生一個警告，即訪問必須異步進行：&lt;/p&gt;
-
-&lt;p&gt;警告：表達式是 ‘async’ 的，但沒有標記為 ‘await’
-let model = MyModel.shared
-^~~~~~~~~~~~~~
-await
-解決數據競爭的可能修復是 1) 使用 await 異步訪問 MyModel.shared，2) 使 MyModel.init 和 MyModel.shared 都是 nonisolated 並將需要主演員的代碼移到一個單獨的隔離方法中，或 3) 將 useShared() 隔離到 @MainActor。&lt;/p&gt;
-
-&lt;p&gt;您可以在 Swift 5.10 發布說明中找到更多關於完全數據隔離編程模型的變化和添加的詳細信息。&lt;/p&gt;
-
-&lt;p&gt;不安全選擇
-像 @unchecked Sendable 一樣的不安全選擇對於當編譯器無法自動證明代碼免於數據競爭時表明代碼安全非常重要。在編譯器無法理解的同步方式實現的情況下，例如通過操作系統特定的原語或與 C/C++/Objective-C 中實現的線程安全類型工作時，這些工具是必需的。然而，@unchecked Sendable 一致性難以正確使用，因為它們使整個類型選擇退出數據競爭安全檢查。在許多情況下，只有類型中的一個特定屬性需要選擇退出，而其餘的實現遵循靜態並發安全。&lt;/p&gt;
-
-&lt;p&gt;Swift 5.10 引入了一個新的 nonisolated(unsafe) 關鍵字，用於退出存儲屬性和變量的演員隔離檢查。nonisolated(unsafe) 可以用於任何形式的存儲，包括存儲屬性、局部變量和全局/靜態變量。&lt;/p&gt;
-
-&lt;p&gt;例如，全局和靜態變量可以從代碼的任何地方訪問，因此它們要麼是不可變且 Sendable 的，要麼是隔離到一個全局演員的：&lt;/p&gt;
-
-&lt;p&gt;import Dispatch&lt;/p&gt;
-
-&lt;p&gt;struct MyData {
-static let cacheQueue = DispatchQueue(…)
-// 所有對 ‘globalCache’ 的訪問都由 ‘cacheQueue’ 保護
-static var globalCache: [MyData] = []
-}
-當使用 -strict-concurrency=complete 構建上述代碼時，編譯器發出警告：&lt;/p&gt;
-
-&lt;p&gt;警告：靜態屬性 ‘globalCache’ 不是並發安全的，因為它是非隔離的全局共享可變狀態
-static var globalCache: [MyData] = []&lt;/p&gt;
-&lt;p&gt;注意：將 ‘globalCache’ 隔離到一個全球演員，或將其轉換為 ‘let’ 常量並使其符合 ‘Sendable’
-所有對 globalCache 的使用都由 cacheQueue.async { … } 保護，因此這段代碼在實踐中免於數據競爭。在這種情況下，可以將 nonisolated(unsafe) 應用於靜態變量以消除並發警告：&lt;/p&gt;
-
-&lt;p&gt;import Dispatch&lt;/p&gt;
-
-&lt;p&gt;struct MyData {
-static let cacheQueue = DispatchQueue(…)
-// 所有對 ‘globalCache’ 的訪問都由 ‘cacheQueue’ 保護
-nonisolated(unsafe) static var globalCache: [MyData] = []
-}
-nonisolated(unsafe) 還消除了使用 @unchecked Sendable 包裝類型的需求，這些包裝類型僅用於在沒有並發訪問可能性時將特定非 Sendable 值的實例跨隔離邊界傳遞：&lt;/p&gt;
-
-&lt;p&gt;// ‘MutableData’ 不是 ‘Sendable’
-class MutableData { … }&lt;/p&gt;
-
-&lt;p&gt;func processData(_: MutableData) async { … }&lt;/p&gt;
-
-&lt;p&gt;@MainActor func send() async {
-nonisolated(unsafe) let data = MutableData()
-await processData(data)
-}
-請注意，如果沒有正確實現同步機制以實現數據隔離，從獨占性強制或如 Thread Sanitizer 這樣的工具的動態分析可能仍然識別出失敗。&lt;/p&gt;
-
-&lt;p&gt;Swift 6 之前的語言進化
-下一次 Swift 發布將是 Swift 6。Swift 5.10 中的完整並行模型過於嚴格，幾個 Swift Evolution 提案正在積極開發中，以通過移除虛假的數據競爭錯誤來改善完全數據隔離的可用性。這項工作包括當編譯器確定沒有並發訪問的潛在性時，解除在隔離邊界之間傳遞 non-Sendable 值的限制，為函數和關鍵路徑更有效地推斷 Sendable，等等。您可以在 Swift.org/swift-evolution 上找到將完善 Swift 6 的一套提案。&lt;/p&gt;
-
-&lt;p&gt;下一步
-嘗試完整的並發檢查
-您可以通過在您的項目中嘗試完整的並發檢查並提供您的體驗反饋來幫助塑造過渡到 Swift 6 語言模式。&lt;/p&gt;
-
-&lt;p&gt;如果您發現任何剩餘的編譯器錯誤，其中完整的並發檢查未在編譯時診斷出數據競爭，請報告一個問題。&lt;/p&gt;
-
-&lt;p&gt;您還可以提供反饋以幫助改進並發文檔、編譯器錯誤消息和即將到來的 Swift 6 遷移指南。如果您遇到編譯器診斷出您不理解的數據競爭警告，或者您不確定如何解決給定的數據競爭警告，請在 Swift 論壇上使用並發標籤開始討論帖。&lt;/p&gt;
-
-&lt;p&gt;下載
-官方的 Swift 5.10 二進制文件可從 Swift.org 為 macOS、Windows 和 Linux 下載。&lt;/p&gt;
-
-&lt;p&gt;Swift Evolution 附錄
-以下語言提案通過 Swift Evolution 過程被接受並在 Swift 5.10 中實現：&lt;/p&gt;
-
-&lt;p&gt;SE-0327：關於演員和初始化
-SE-0383：廢除 @UIApplicationMain 和 @NSApplicationMain
-SE-0404：允許在非泛型上下文中嵌套協議
-SE-0411：隔離的默認值表達式
-SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="Swift 5.10" /><summary type="html">Swift 5.10 Released - 下一個版本就是 Swift 6</summary></entry><entry xml:lang="zh"><title type="html">Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</title><link href="http://localhost:4000/programming/gemini-video-is-fake.html" rel="alternate" type="text/html" title="Google 的 Gemini AI Demo 影片是經過編輯的，不是真實" /><published>2023-12-10T21:48:00+08:00</published><updated>2023-12-10T21:48:00+08:00</updated><id>http://localhost:4000/programming/gemini-video-is-fake</id><content type="html" xml:base="http://localhost:4000/programming/gemini-video-is-fake.html">&lt;p&gt;上一篇講了 Google 發佈了 Gemini demo video: &lt;a href=&quot;https://www.marvinswift.com/programming/google-release-gemini-ai-to-compete-ChatGPT.html&quot;&gt;Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;google-gemini-的-demo-video-並不是真實的狀態是經過編輯的&quot;&gt;Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的&lt;/h2&gt;
-
-&lt;p&gt;這個週末，一堆文章已經說明了 Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的。&lt;/p&gt;
-
-&lt;h2 id=&quot;各大網站對於-gemini-影片是經過編輯的報導&quot;&gt;各大網站對於 Gemini 影片是經過編輯的報導&lt;/h2&gt;
-&lt;h3 id=&quot;inside-google-坦承gemini-影片經過編輯不是口頭提示&quot;&gt;Inside: Google 坦承：Gemini 影片「經過編輯」，不是口頭提示&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.inside.com.tw/article/33558-google-gemini-not-real&quot;&gt;Google 坦承：Gemini 影片「經過編輯」，不是口頭提示&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;tech-news-gemini-示範影片造假google-deepmind-澄清影片都是真的&quot;&gt;Tech News: Gemini 示範影片造假？Google DeepMind 澄清：影片都是真的&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://technews.tw/2023/12/08/google-gemini-demo/&quot;&gt;Gemini 示範影片造假？Google DeepMind 澄清：影片都是真的&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;tech-crunch-googles-best-gemini-demo-was-faked&quot;&gt;Tech Crunch: Google’s best Gemini demo was faked&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://techcrunch.com/2023/12/07/googles-best-gemini-demo-was-faked/&quot;&gt;Google’s best Gemini demo was faked&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;indian-express-google-gemini-is-no-match-for-gpt-4-fake-demo-video-shaky-mmlu-benchmark-draw-backlash&quot;&gt;Indian Express: Google Gemini is no match for GPT-4: Fake demo video, shaky MMLU benchmark draw backlash&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://indianexpress.com/article/technology/artificial-intelligence/google-gemini-fake-video-gpt4-mmlu-benchmark-9061082/&quot;&gt;Google Gemini is no match for GPT-4: Fake demo video, shaky MMLU benchmark draw backlash&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;結論&quot;&gt;結論&lt;/h2&gt;
-
-&lt;p&gt;Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的。但社群看起來，並不滿意 Google 的做法，很多英文的文章都使用了「Fake」這個字來形容了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">上一篇講了 Google 發佈了 Gemini demo video: Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</summary></entry><entry xml:lang="zh"><title type="html">Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</title><link href="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html" rel="alternate" type="text/html" title="Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步" /><published>2023-12-07T22:06:00+08:00</published><updated>2023-12-07T22:06:00+08:00</updated><id>http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT</id><content type="html" xml:base="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html">&lt;h2 id=&quot;20231210-更新-google-的-gemini-ai-demo-影片是經過編輯的不是真實&quot;&gt;2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實&lt;/h2&gt;
-
-&lt;h3 id=&quot;在經過數天之後已經有很多文章說明了-google-gemini-的-demo-video-並不是真實的狀態是經過編輯的&quot;&gt;在經過數天之後，已經有很多文章說明了 Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/programming/gemini-video-is-fake.html&quot;&gt;Google 的 Gemini AI Demo 影片是經過編輯的，不是真實&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;2023 真的是讓人感受到 AI 軍備競賽的一年，OpenAI 推出了 ChatGPT，Google 推出了 Gemini，Facebook 推出了 Blender，而 Gemini 的能力，從 Pichai 在 X (前身為 Twitter) 上的推文中，可以看出驚人的進步。&lt;/p&gt;
-
-&lt;h2 id=&quot;sundar-pichai-在-x-前身為-twitter上的推文&quot;&gt;Sundar Pichai 在 X (前身為 Twitter)上的推文&lt;/h2&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Seeing some qs on what Gemini *is* (beyond the zodiac :). Best way to understand Gemini’s underlying amazing capabilities is to see them in action, take a look ⬇️ &lt;a href=&quot;https://t.co/OiCZSsOnCc&quot;&gt;pic.twitter.com/OiCZSsOnCc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sundar Pichai (@sundarpichai) &lt;a href=&quot;https://twitter.com/sundarpichai/status/1732433036929589301?ref_src=twsrc%5Etfw&quot;&gt;December 6, 2023&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;多模態的-gemini&quot;&gt;多模態的 Gemini&lt;/h2&gt;
-
-&lt;p&gt;從上面這段影片中，可以看到 Gemini 在辨視紙上的圖案的過程。&lt;/p&gt;
-
-&lt;h3 id=&quot;第-1-part&quot;&gt;第 1 part&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;開始是白紙&lt;/li&gt;
-  &lt;li&gt;然後看到各種圓滑的曲線&lt;/li&gt;
-  &lt;li&gt;然後看出是在畫鴨子&lt;/li&gt;
-  &lt;li&gt;當鴨子被塗上藍色後，能辨認出顏色，而且說出「這並不常見」&lt;/li&gt;
-  &lt;li&gt;然後拍攝者就拿了一個藍色的玩具鴨子出來，就改口說，原來常見，看來我之前是錯的&lt;/li&gt;
-  &lt;li&gt;Gemini 推測出鴨子的材料&lt;/li&gt;
-  &lt;li&gt;拍攝者請 Gemini 說出其他語音鴨子的念法，並選了中文&lt;/li&gt;
-  &lt;li&gt;Gemini 補充了中文的四聲音調&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;第-2-part&quot;&gt;第 2 part&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;放上地圖，請 Gemini 設計一個遊戲&lt;/li&gt;
-  &lt;li&gt;Gemini 設計出，給三個提示，請拍攝者指出該國家&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;第-3-part&quot;&gt;第 3 part&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;將地圖揉成一團，放入其中一個杯子下，桌上共有三個杯子。 Gemini 猜出拍攝者要玩猜目標。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;第-4-part&quot;&gt;第 4 part&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;這一 part 以手勢為主&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;剩下的部分，可以看完整部影片。或許 2024 的一整年，AI 會比我們想像中更快的速度，存在於我們的生活中。&lt;/p&gt;
-
-&lt;h2 id=&quot;openai-的-chatgpt&quot;&gt;OpenAI 的 ChatGPT&lt;/h2&gt;
-
-&lt;p&gt;在這篇文章發佈之前，還沒有看到 ChatGPT 或 Altman 有其他回應。而且這個禮拜，我一直想要升級 ChatGPT 4.0，但 OpenAI 升級的按鈕一直沒有開發，我也沒辦法升級。即使我已經寫信給 OpenAI，也只是得到了一個自動回信， noting!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/chatgpt/chatGPT-can-not-upgrade-now.png&quot; alt=&quot;沒辦法升級 ChatGPT 4.0&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;youtube-影片&quot;&gt;Youtube 影片&lt;/h2&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UIZAiXYceBI?si=Pdl8qkVYBBz6uZ0O&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry></feed>
