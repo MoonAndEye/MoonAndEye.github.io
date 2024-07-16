@@ -27,3 +27,43 @@
     border-radius: 12px;
     font-family: Arial;
 }
+
+/* 语言切换按钮 */
+.language-switch-btn, 
+.language-switch-btn:visited {
+    color: #fff;
+    background: #005899;
+    box-shadow: 0px 3px 0px 0px #01192e4c;
+    padding: 8px 22px;
+    font-size: 18px;
+    line-height: 100%;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background 0.1s ease-in-out;
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    -ms-transition: background 0.1s ease-in-out;
+    -o-transition: background 0.1s ease-in-out;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.language-switch-btn:hover, 
+.language-switch-btn:visited:hover,
+.language-switch-btn:focus, 
+.language-switch-btn:visited:focus {
+    background: #00467b;
+}
+
+.language-switch-btn:active, 
+.language-switch-btn:visited:active {
+    box-shadow: 0px 1px 0px 0px #01192e4C;
+}

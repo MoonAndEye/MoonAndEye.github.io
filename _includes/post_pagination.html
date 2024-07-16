@@ -2,12 +2,12 @@
 
 <div class="PageNavigation">
   {% if page.previous.url %}
-    上一篇：<a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
+  {{ site.data.localized.[page.lang].prev-post | default: "Previous Post" }}：<a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
   {% endif %}
 </div>
 <div class="PageNavigation">
   {% if page.next.url %}
-    下一篇：<a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
+    {{ site.data.localized.[page.lang].next-post | default: "Next Post" }}：<a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
   {% endif %}
 </div>
 

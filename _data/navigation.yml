@@ -1,15 +1,29 @@
-main:
-  - title: "Home"
-    url: /
-  - title: "軟體開發"
-    url: /programming/
-  - title: "Swift"
-    url: /swift/
-  - title: "You need testing"
-    url: /unitTesting/
-  - title: "生活"
-    url: /life/
-  - title: "Swift 社群資源"
-    url: /swift-community/
-  - title: "About"
-    url: /about/
+en:
+  main:
+    - title: "Home"
+      url: /en/
+    # Programming 還沒有適合直接翻譯成英文的文章，先隱藏
+    # - title: "Programming"
+    #   url: /en/programming/
+    - title: "Swift"
+      url: /en/swift/
+    - title: "You need testing"
+      url: /en/unitTesting/
+    - title: "About"
+      url: /en/about/
+zh:
+  main:
+    - title: "Home"
+      url: /zh/
+    - title: "軟體開發"
+      url: /zh/programming/
+    - title: "Swift"
+      url: /zh/swift/
+    - title: "You need testing"
+      url: /zh/unitTesting/
+    - title: "生活"
+      url: /zh/life/
+    - title: "Swift 社群資源"
+      url: /zh/swift-community/
+    - title: "About"
+      url: /zh/about/

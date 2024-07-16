@@ -5,6 +5,7 @@ date: 2024-06-20 13:20 +0800
 category: unitTesting
 author: Marvin Lin
 tags: [Unit Testing, Swift, Xcode]
+lang: zh
 summary: This article provides an introduction to integrating unit testing into iOS projects, emphasizing its role in validating individual components like functions and classes for correctness. Marvin Lin, the author, advocates starting tests with independent components and utilizes a dependency graph to illustrate where to begin in a project. The guide includes steps for setting up a unit testing environment in Xcode and discusses practical examples, such as handling JSON responses for authentication. It further explores how unit testing can help manage evolving project requirements, highlighting its benefits and limitations. The article ultimately stresses that while unit testing is crucial for functionality verification, it does not inherently solve all aspects of software quality or design.
 permalink: /unit-testing/:title:output_ext
 ---

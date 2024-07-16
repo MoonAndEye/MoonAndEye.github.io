@@ -22,6 +22,7 @@
 
   {% endif %}
   {% include buyMeCoffee.html %}
-  {% include joinMembership.html %}
+  {% assign lang = page.lang | default: 'en' %}
+  {% include {{lang}}/joinMembership.html %}
   </div>
 {% endif %}

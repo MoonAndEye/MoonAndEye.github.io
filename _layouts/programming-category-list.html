@@ -5,9 +5,11 @@ author_profile: true
 
 {{ content }}
 
-<h3 class="archive__subtitle">軟體開發/程式開發</h3>
+{% include custom/language-switch-button.html %}
 
-{% assign posts = site.posts | where: "categories", "programming" | sort: "date" | reverse %}
+<h3 class="archive__subtitle">{{ site.data.localized[page.lang].subtitle-programming | default: "Programming" }}</h3>
+
+{% assign posts = site.posts | where: "categories", "programming" | where: "lang", page.lang | sort: "date" | reverse %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
