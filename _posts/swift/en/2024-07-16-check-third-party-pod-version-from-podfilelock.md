@@ -5,6 +5,7 @@ date: 2024-07-15 14:29 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, Third-Party, CocoaPods]
+lang: en
 summary: This article explains how to check the version of third-party pods used in a project from Podfile.lock.
 ---
 

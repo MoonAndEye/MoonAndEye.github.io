@@ -5,6 +5,7 @@ date: 2023-05-24 12:00 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, Xcode, Copilot]
+lang: en
 summary: This post details my experience using GitHub Copilot in Xcode. Conclusion - it's not very effective, and I prefer to turn it off while using Xcode.
 ---
 

@@ -98,17 +98,17 @@ print(generated_text)
 # 結果
 
 Traceback (most recent call last):
-  File "/Users/cm0679/5python/foo.py", line 14, in <module>
+  File "/Users/xyz/5python/foo.py", line 14, in <module>
     response = openai.Completion.create(
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_resources/completion.py", line 25, in create
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_resources/completion.py", line 25, in create
     return super().create(*args, **kwargs)
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 149, in create
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 149, in create
     ) = cls.__prepare_create_request(
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 106, in __prepare_create_request
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 106, in __prepare_create_request
     requestor = api_requestor.APIRequestor(
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 130, in __init__
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 130, in __init__
     self.api_key = key or util.default_api_key()
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/util.py", line 186, in default_api_key
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/util.py", line 186, in default_api_key
     raise openai.error.AuthenticationError(
 openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
 ```
@@ -121,17 +121,17 @@ openai.error.AuthenticationError: No API key provided. You can set your API key 
 # 問：
 error message 如下
 Traceback (most recent call last):
-  File "/Users/cm0679/5python/foo.py", line 14, in <module>
+  File "/Users/xyz/5python/foo.py", line 14, in <module>
     response = openai.Completion.create(
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_resources/completion.py", line 25, in create
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_resources/completion.py", line 25, in create
     return super().create(*args, **kwargs)
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 149, in create
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 149, in create
     ) = cls.__prepare_create_request(
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 106, in __prepare_create_request
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 106, in __prepare_create_request
     requestor = api_requestor.APIRequestor(
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 130, in __init__
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 130, in __init__
     self.api_key = key or util.default_api_key()
-  File "/Users/cm0679/anaconda3/lib/python3.8/site-packages/openai/util.py", line 186, in default_api_key
+  File "/Users/xyz/anaconda3/lib/python3.8/site-packages/openai/util.py", line 186, in default_api_key
     raise openai.error.AuthenticationError(
 openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
 ```

@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T18:35:11+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html"></title><link href="http://localhost:4000/en/2023-05-24-copilot-with-xcode/" rel="alternate" type="text/html" title="" /><published>2024-07-16T18:35:11+08:00</published><updated>2024-07-16T18:35:11+08:00</updated><id>http://localhost:4000/en/2023-05-24-copilot-with-xcode</id><content type="html" xml:base="http://localhost:4000/en/2023-05-24-copilot-with-xcode/">&lt;p&gt;In a previous discussion, I shared my experience with purchasing and trying GitHub Copilot in a side project. My primary work involves iOS app development with native development tools, and I have also experimented with Copilot in Xcode. For those interested in similar integrations, there are various resources available that provide tutorials on how to integrate tools like Copilot with Xcode.&lt;/p&gt;
-
-&lt;h2 id=&quot;but-i-no-longer-use-copilot-in-xcode&quot;&gt;But, I No Longer Use Copilot in Xcode&lt;/h2&gt;
-
-&lt;p&gt;The experience of using Copilot in Xcode isn’t as smooth as in VScode. While I’m typing, the Copilot plugin in Xcode interferes with the auto-complete response time of Xcode itself. My “sensation” is that I’m waiting for Xcode’s auto-complete to pop up so I can select one of the auto-completion suggestions.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, the code suggestions provided by Xcode Copilot often don’t quite fit the context, possibly because it hasn’t sufficiently adapted to my machine/account yet. In a VC or class or struct, we always have property declarations outside functions, but when Copilot encounters scenarios that interact with these variables, the suggested code isn’t very useful (and such global variables aren’t always easy to understand, which is why design patterns exist).&lt;/p&gt;
-
-&lt;p&gt;After turning it off, I felt better about my development experience, although it’s hard to objectively compare the difference in speed. From my understanding, Copilot should improve with use, but currently, the experience in Xcode isn’t good enough.&lt;/p&gt;
-
-&lt;h2 id=&quot;in-xcode-you-can-use-code-snippets-for-similar-code-suggestion-features&quot;&gt;In Xcode, You Can Use Code Snippets for Similar Code Suggestion Features&lt;/h2&gt;
-
-&lt;p&gt;Snippets are a feature available in most IDEs. You can create a template for commonly used code, and leave placeholders for the parts to be filled in. When calling a snippet, you only need to fill in the remaining parts. Below is a snippet I frequently use to return to the main queue. After iOS 13, using UI components off the main queue can cause crashes.&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        &lt;span class=&quot;c1&quot;&gt;// This is a snippet I often use&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author></entry><entry xml:lang="en"><title type="html">Adding a WebView to a SwiftUI Project</title><link href="http://localhost:4000/en/swift/add-webview-in-swiftui/" rel="alternate" type="text/html" title="Adding a WebView to a SwiftUI Project" /><published>2024-07-16T18:20:00+08:00</published><updated>2024-07-16T18:20:00+08:00</updated><id>http://localhost:4000/en/swift/add-webview-in-swiftui</id><content type="html" xml:base="http://localhost:4000/en/swift/add-webview-in-swiftui/">&lt;h2 id=&quot;this-article-was-previously-published-in-the-2022-it-ironman-competition---using-swiftui-to-turn-interesting-ideas-into-apps&quot;&gt;This article was previously published in the 2022 IT Ironman Competition - Using SwiftUI to Turn Interesting Ideas into Apps&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T22:20:33+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Adding a WebView to a SwiftUI Project</title><link href="http://localhost:4000/en/swift/add-webview-in-swiftui/" rel="alternate" type="text/html" title="Adding a WebView to a SwiftUI Project" /><published>2024-07-16T18:20:00+08:00</published><updated>2024-07-16T18:20:00+08:00</updated><id>http://localhost:4000/en/swift/add-webview-in-swiftui</id><content type="html" xml:base="http://localhost:4000/en/swift/add-webview-in-swiftui/">&lt;h2 id=&quot;this-article-was-previously-published-in-the-2022-it-ironman-competition---using-swiftui-to-turn-interesting-ideas-into-apps&quot;&gt;This article was previously published in the 2022 IT Ironman Competition - Using SwiftUI to Turn Interesting Ideas into Apps&lt;/h2&gt;
 
 &lt;p&gt;In today’s apps, features that communicate with the web are fundamental. This article will add a WebView page to the app that links to Grace Hopper’s Wikipedia page. This ensures that the information accessed is consistent with what’s on Wikipedia, without needing to update the client side every time there’s new information.&lt;/p&gt;
 
@@ -785,4 +767,94 @@ func testTokenResponse() throws {&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://x.com/karrisaarinen/status/1783976321854717985&quot;&gt;Karri Saarinen 原文發表在 X (Twitter) 上&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.marvinswift.com/programming/linear.html&quot;&gt;使用 ChatGPT4 翻譯的版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry><entry xml:lang="zh"><title type="html">Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻</title><link href="http://localhost:4000/programming/linear.html" rel="alternate" type="text/html" title="Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻" /><published>2024-05-13T00:12:00+08:00</published><updated>2024-05-13T00:12:00+08:00</updated><id>http://localhost:4000/programming/linear</id><content type="html" xml:base="http://localhost:4000/programming/linear.html">&lt;h2 id=&quot;緣由-linear-執行長-karri-saarinen-在-stripe-上分享了關於程式回質的觀點&quot;&gt;緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點&lt;/h2&gt;
+
+&lt;p&gt;在電子報 &lt;a href=&quot;https://explainthis.substack.com/p/explainthis-27&quot;&gt;全端雙週報 Explain This 27期&lt;/a&gt;中，有提到 Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點，看完後，使用 ChatGPT 翻譯成中文，並且分享給大家。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x.com/karrisaarinen/status/1783976321854717985&quot;&gt;Karri Saarinen 原文發表在 X (Twitter) 上&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;karri-的原文&quot;&gt;Karri 的原文&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/craft-and-quality/post-on-x.jpeg&quot; alt=&quot;post on tweets&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Craft and Quality, and professional grade software.&lt;/p&gt;
+
+&lt;p&gt;To me craft is mindset, and quality is the output.&lt;/p&gt;
+
+&lt;p&gt;If you think of anything that was built or created, and well done, it’s probably because they cared
+and they knew their craft. They designed it well. They iterated and prototyped. They chose the
+right materials. They built it well. It’s very easy to see when the person doesn’t care. The work is&lt;/p&gt;
+
+&lt;p&gt;sloppy. There are mistakes. It works and likely breaks down very quickly.&lt;/p&gt;
+
+&lt;p&gt;And | think as a software industry the past decade we kind of forgot the craft. More stuff look
+like something where people didn’t care about the craft. We focused on building larger teams.
+We then made them run like factories churning out new things at a consistent pace. We validated&lt;/p&gt;
+
+&lt;p&gt;“quality” by A/B testing and looking at metrics. Lot of software today borderline works.&lt;/p&gt;
+
+&lt;p&gt;But we are supposed to be professionals and real companies. We’re selling products to people
+to buy. | think our responsibility is to deliver good products and quality products, not something&lt;/p&gt;
+
+&lt;p&gt;that is sloppy.&lt;/p&gt;
+
+&lt;p&gt;Craft is the mindset that creates quality. But it’s not enough. You need to have the right skills and
+ideas. You need individuals who take their profession and craft seriously, then build teams that
+work this way together, and have a company that creates for it. Not only incentivizing with&lt;/p&gt;
+
+&lt;p&gt;deadlines and metrics, but also caring if the experience is good enough.&lt;/p&gt;
+
+&lt;p&gt;Especially professional software should be “professional grade”. Professional grade tools and
+appliances are often more durable, more powerful, more precise and focused. Professional grade
+software should be that way too. It should be more or less bug free. It should be fast. It should
+meet the needs of the customers.&lt;/p&gt;
+
+&lt;p&gt;The pushback is always “well how do you measure quality”. There isn’t an easy answer or a single
+measurement, it’s going to be hard, but it is possible. You first have to believe in it, then
+encourage teams to do it, and the way you validate is by listening to what the market and&lt;/p&gt;
+
+&lt;p&gt;customers say. Depending on the business there can be measurements.&lt;/p&gt;
+
+&lt;p&gt;For us @linear it’s always been anecdotal. Linear is used daily in the companies and we hear a lot
+of feedback. They send notes how great the product or a new feature is. People tweet about it.
+CEO/founders sometimes tell me that they picked Linear because the product experience is so
+good that they use it to inspire their teams to do the same. VCs tell me how their portfolio&lt;/p&gt;
+
+&lt;p&gt;companies rave about Linear and bring it up in the conversations.&lt;/p&gt;
+
+&lt;p&gt;As you listen to these signals, you start to see if the quality is there or not. But even when you
+hear the signals, you can’t stop. Great products require consistent, daily effort keeping the&lt;/p&gt;
+
+&lt;p&gt;quality.
+In short, people aren’t organically raving about your product, you probably don’t have a great
+product yet. Maybe you have just an OK product. If you have a great product, people will talk&lt;/p&gt;
+
+&lt;p&gt;about it.&lt;/p&gt;
+
+&lt;p&gt;Great products create fans and champions. In my mind product quality is the ultimate moat.&lt;/p&gt;
+
+&lt;h2 id=&quot;機翻中文&quot;&gt;機翻中文&lt;/h2&gt;
+
+&lt;p&gt;手藝與品質，以及專業級軟體。&lt;/p&gt;
+
+&lt;p&gt;對我來說，手藝是一種心態，品質是其產出。&lt;/p&gt;
+
+&lt;p&gt;如果你想到任何被建造或創造出來且做得很好的事物，那很可能是因為他們在乎他們的手藝。他們設計得很好。他們進行反覆的迭代和原型製作。他們選擇了合適的材料。他們建造得很好。當一個人不在乎時，這是非常容易看出的。工作做得馬虎，有錯誤。它能運作但很可能很快就會故障。&lt;/p&gt;
+
+&lt;p&gt;我認為，在過去十年的軟體產業中，我們有點忘記了手藝。更多的產品看起來像是人們不在乎手藝的產物。我們專注於擴建更大的團隊。然後讓他們像工廠一樣持續不斷地生產新事物。我們通過A/B測試和看指標來驗證「品質」。今天很多軟體僅僅是勉強能用。&lt;/p&gt;
+
+&lt;p&gt;但我們應該是專業人士和真正的公司。我們銷售的是讓人們購買的產品。我認為我們的責任是提供好的產品和高品質的產品，而不是那些做工粗糙的產品。&lt;/p&gt;
+
+&lt;p&gt;手藝是創造品質的心態。但這還不夠。你需要擁有正確的技能和想法。你需要那些認真對待自己的職業和手藝的人，然後建立這樣合作的團隊，並擁有一個為此創造的公司。不僅僅是用期限和指標作為激勵，還要關心體驗是否足夠好。&lt;/p&gt;
+
+&lt;p&gt;尤其是專業軟體應該是「專業級」的。專業級工具和設備通常更耐用、更強大、更精確且更專注。專業級軟體也應該如此。它應該基本無錯、運行快速、能滿足客戶的需求。&lt;/p&gt;
+
+&lt;p&gt;對於品質的反饋總是「你如何衡量品質」。沒有簡單的答案或單一的衡量方式，這將是困難的，但這是可能的。你首先必須相信它，然後鼓勵團隊去做，而你驗證的方式是聽取市場和客戶的說法。根據業務的不同，可以有相應的衡量標準。&lt;/p&gt;
+
+&lt;p&gt;對我們 @linear 來說，它總是一種軼事。Linear 在公司中每天都被使用，我們收到很多反饋。他們發送說明產品或新功能有多好的筆記。人們在推特上談論它。首席執行官/創始人有時告訴我，他們之所以選擇 Linear，是因為產品體驗非常好，他們用它來激勵他們的團隊做同樣的事情。風險投資者告訴我，他們的投資組合公司如何熱衷於 Linear 並在談話中提起它。&lt;/p&gt;
+
+&lt;p&gt;當你聽到這些信號時，你開始看到品質是否存在。但即使你聽到了這些信號，你也不能停止。優秀的產品需要持續的、日常的努力來維持品質。&lt;/p&gt;
+
+&lt;p&gt;總之，如果人們不是自然地狂熱於你的產品，你可能還沒有一個偉大的產品。也許你只有一個還可以的產品。如果你有一個偉大的產品，人們會談論它。&lt;/p&gt;
+
+&lt;p&gt;偉大的產品創造粉絲和冠軍。在我看來，產品品質是最終的護城河。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Linear" /><category term="Programming" /><summary type="html">緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點</summary></entry></feed>
