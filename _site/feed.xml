@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-14T22:18:11+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marvin 的程式開發筆記</title><subtitle>這個 blog 是包含了的軟體開發、投資、經驗和生活故事。透過這個 blog，我希望分享自己的生活和見聞，同時也透過這個平台與讀者交流互動，建立起彼此的社群。</subtitle><author><name>Marvin Lin</name></author><entry><title type="html">單元測試從0到1 - 讓專案開始有測試</title><link href="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html" rel="alternate" type="text/html" title="單元測試從0到1 - 讓專案開始有測試" /><published>2024-06-20T13:20:00+08:00</published><updated>2024-06-20T13:20:00+08:00</updated><id>http://localhost:4000/unit-testing/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html">&lt;p&gt;在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T18:00:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Unit Testing from Zero to One - Getting Started with Tests in Your Project</title><link href="http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one/" rel="alternate" type="text/html" title="Unit Testing from Zero to One - Getting Started with Tests in Your Project" /><published>2024-07-16T15:00:00+08:00</published><updated>2024-07-16T15:00:00+08:00</updated><id>http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/en/unittesting/unit-testing-from-zero-to-one/">&lt;p&gt;In this article, we will introduce how to integrate unit testing into iOS projects. Unit tests are used to verify that the smallest testable units of code (such as functions, methods, or classes) are correct. They are typically written and executed by developers using various tools and frameworks to automate and simplify the testing process. The purpose of unit testing is to ensure the correctness and robustness of the program’s logic, enhancing the quality and maintainability of the code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Special thanks to Hanyu Chen for the coffee!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/buyMeCoffee/buy_me_a_coffe_hanyu.png&quot; alt=&quot;buy me a coffee from Hanyu&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;where-to-start-testing-its-best-to-start-with-objects-that-do-not-depend-on-others&quot;&gt;Where to Start Testing? It’s Best to Start with Objects That Do Not Depend on Others&lt;/h2&gt;
+
+&lt;p&gt;The following diagram shows the dependency graph of project objects. It is recommended to start testing with objects that do not depend on others.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/dependency_graph.png&quot; alt=&quot;Project Object Dependency Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Commonly passed around objects are usually DTOs related to JSON responses. Let’s assume there is a login API that returns two tokens, a refresh token, and an access token.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;refresh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODg4ODU1OSwiaWF0IjoxNzE4ODAyMTU5LCJqdGkiOiIzMDQyZDhlMGIzOTc0MjQyYTI0MDFhZDU0ZjRhMjAxOCIsInVzZXJfaWQiOjh9.45URkd4iyBx7mjeyB9yzQp5x3gICLYxo3laqtCNjyLE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;access&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODg4NTU5LCJpYXQiOjE3MTg4MDIxNTksImp0aSI6IjJjYzM2ZDFkZTMzYjQ3OTliNWE3MzQ1Njc5NzFkMWE1IiwidXNlcl9pZCI6OH0.j7CLMRL0EUknJ_HxRLeWS0vCD1QMfcrSL9kYDCTug1o&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;steps-to-add-unit-testing-to-an-existing-project&quot;&gt;Steps to Add Unit Testing to an Existing Project&lt;/h2&gt;
+
+&lt;p&gt;In the Project targets tab, click the + sign, select Unit Testing Bundle, and you can start having tests in your project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/add_test_bundle.png&quot; alt=&quot;add test bundle&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;default-test-template&quot;&gt;Default Test Template&lt;/h3&gt;
+
+&lt;p&gt;After adding the file, you will see two tests, along with setup and teardown.
+&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/unit_testing_template.png&quot; alt=&quot;Unit testing template&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;first-step-add-testable-import&quot;&gt;First Step, Add @testable Import&lt;/h3&gt;
+
+&lt;p&gt;Above &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;import XCTest&lt;/code&gt;, remember to import your own project, so the Unit Testing target can interact with objects within your project.&lt;/p&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;@testable&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;YourProjectName&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;testing-the-token-model&quot;&gt;Testing the Token Model&lt;/h2&gt;
+
+&lt;h3 id=&quot;model-implementation&quot;&gt;Model Implementation&lt;/h3&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// This model is for receiving JSON responses&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;TokenResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Codable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;refresh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;access&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;unit-testing-implementation&quot;&gt;Unit Testing Implementation&lt;/h3&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;@testable&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;StartUnitTesting&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;XCTest&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CocoaTests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;XCTestCase&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;/// Convert JSON response into data, unit testing won&apos;t actually call the API&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAPIResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#&quot;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;refresh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODg4ODU1OSwiaWF0IjoxNzE4ODAyMTU5LCJqdGkiOiIzMDQyZDhlMGIzOTc0MjQyYTI0MDFhZDU0ZjRhMjAxOCIsInVzZXJfaWQiOjh9.45URkd4iyBx7mjeyB9yzQp5x3gICLYxo3laqtCNjyLE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;access&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODg4NTU5LCJpYXQiOjE3MTg4MDIxNTksImp0aSI6IjJjYzM2ZDFkZTMzYjQ3OTliNWE3MzQ1Njc5NzFkMWE1IiwidXNlcl9pZCI6OH0.j7CLMRL0EUknJ_HxRLeWS0vCD1QMfcrSL9kYDCTug1o&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;#
+        
+        return string.data(using: .utf8) ?? Data()
+    }
+}
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The first step is to test if this unit testing can alert you when there is an error in the program, so the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XCTAssertEqual&lt;/code&gt; equals an empty string.&lt;/p&gt;
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c1&quot;&gt;/// Test the token response&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;testTokenResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAPIRespnose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;JSONDecoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;TokenResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;refresh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;XCTAssertEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;access&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;at-this-point-you-will-receive-a-failed-test-result-which-will-tell-you-which-models-value-is-incorrect&quot;&gt;At this point, you will receive a failed test result, which will tell you which model’s value is incorrect.&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/from-zero-to-one/first_fail_test.png&quot; alt=&quot;first test, you got error&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second step is to set the fixed access token and refresh token as the equal values.
+```swift
+func testTokenResponse() throws {&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    let data = getAPIRespnose()
+    
+    let model = try JSONDecoder().decode(TokenResponse.self, from: data)
+    XCTAssertEqual(model.refresh, &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODg4ODU1OSwiaWF0IjoxNzE4ODAyMTU5LCJqdGkiOiIzMDQyZDhlMGIzOTc0MjQyYTI0MDFhZDU0ZjRhMjAxOCIsInVzZXJfaWQiOjh9.45URkd4iyBx7mjeyB9yzQp5x3gICLYxo3laqtCNjyLE&quot;)
+    XCTAssertEqual(model.access, &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODg4NTU5LCJpYXQiOjE3MTg4MDIxNTksImp0aSI6IjJjYzM2ZDFkZTMzYjQ3OTliNWE3MzQ1Njc5NzFkMWE1IiwidXNl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">In this article, we will introduce how to integrate unit testing into iOS projects. Unit tests are used to verify that the smallest testable units of code (such as functions, methods, or classes) are correct. They are typically written and executed by developers using various tools and frameworks to automate and simplify the testing process. The purpose of unit testing is to ensure the correctness and robustness of the program’s logic, enhancing the quality and maintainability of the code.</summary></entry><entry xml:lang="en"><title type="html">Adding Testing to Your iOS Project - You Need Testing</title><link href="http://localhost:4000/en/unittesting/add-unit-testing-on-project/" rel="alternate" type="text/html" title="Adding Testing to Your iOS Project - You Need Testing" /><published>2024-07-16T10:00:00+08:00</published><updated>2024-07-16T10:00:00+08:00</updated><id>http://localhost:4000/en/unittesting/add-unit-testing-on-project</id><content type="html" xml:base="http://localhost:4000/en/unittesting/add-unit-testing-on-project/">&lt;blockquote&gt;
+  &lt;p&gt;“Writing software is like building a cathedral - when we finish, we start praying.”&lt;/p&gt;
+
+  &lt;p&gt;Software and cathedrals are much the same – first we build them, then we pray. - Sam Redwine&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/add-test-target-on-xcode/you-need-testing.png&quot; alt=&quot;You need testing&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-testing-to-your-ios-project---you-need-testing&quot;&gt;Adding Testing to Your iOS Project - You Need Testing&lt;/h2&gt;
+
+&lt;p&gt;Do you think unit testing is troublesome, time-consuming, and unnecessary? If so, you’re mistaken! Unit testing brings numerous benefits to iOS projects.&lt;/p&gt;
+
+&lt;p&gt;Firstly, unit testing enhances the quality and readability of your code. You can verify whether your program logic is correct, meets requirements, and is free of bugs or errors through unit testing. It also allows you to refactor your code to make it cleaner, clearer, and easier to maintain. You don’t have to worry about refactoring affecting other functionalities because unit testing ensures that your programs still function properly.&lt;/p&gt;
+
+&lt;p&gt;Secondly, unit testing saves you time and costs. You might think writing unit tests is time-consuming, but consider the time you would spend debugging and fixing bugs without them. Furthermore, if bugs are only discovered after deployment, the consequences can be severe, affecting user experience and trust, and increasing your maintenance costs and risks. In contrast, with unit testing, you can identify and resolve issues during the development phase, thus enhancing your development efficiency and product quality.&lt;/p&gt;
+
+&lt;p&gt;Lastly, unit testing boosts your confidence and professionalism. When you have unit tests backing your code, you can confidently address feedback and requirements. You’ll also feel more confident collaborating with other developers and sharing your code. Moreover, unit testing is a way to demonstrate your professional attitude and skills. When others see that your code is well-tested, they’ll have a higher regard for your level of responsibility and skill.&lt;/p&gt;
+
+&lt;p&gt;In conclusion, the benefits of unit testing for iOS projects are numerous. If you haven’t started writing unit tests, now is the time to act! Trust me, unit testing will make your development life better!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-testing-pyramid&quot;&gt;The Testing Pyramid&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/add-test-target-on-xcode/ui-integrate-unit-testing.png&quot; alt=&quot;Testing Pyramid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a common diagram of the testing pyramid found online. It categorizes different types of tests into three levels: unit tests, integration tests, and UI tests.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Unit Tests&lt;/strong&gt;: Located at the base of the pyramid, these are the most fundamental and quickest tests, aimed at verifying the smallest testable units of software (like functions, methods, or classes) to ensure code logic correctness and robustness. Unit tests are typically written and executed by developers themselves using various tools and frameworks to automate and simplify the testing process. They should occupy the largest proportion of the pyramid, as they can promptly detect and fix errors in the code, enhancing quality and maintainability.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Integration Tests&lt;/strong&gt;: Positioned in the middle of the pyramid, these tests follow unit tests and are aimed at verifying the interaction and collaboration between different modules or components of the software, ensuring the integrated system functions correctly. Integration tests are usually handled by developers or testers and use techniques like Mocks or Stubs to isolate external dependencies and impacts. They should occupy a medium proportion of the pyramid, as they check whether the system’s internal structure and logic meet design specifications and requirements.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;UI Tests&lt;/strong&gt;: At the top of the pyramid, these are tests that are closest to real usage scenarios and user experiences, aimed at verifying the complete functionality and process of the software to ensure the system provides services as expected. End-to-end tests are usually managed by testers or user representatives and employ automated or manual methods to simulate user operations and behaviors. They should occupy the smallest proportion of the pyramid, as they are generally time-consuming and costly, and challenging to cover all possible situations and variables.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-first-principles-of-unit-testing&quot;&gt;The F.I.R.S.T Principles of Unit Testing&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: Unit tests should execute quickly without taking up too much time or resources.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Independent&lt;/strong&gt;: Unit tests should be independent of other tests, not affecting or relying on each other.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: Unit tests should be repeatable in any environment or under any circumstances, providing consistent results.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: Unit tests should have clear standards for passing or failing without the need for manual checks or validation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: Unit tests should be written in a timely manner, ideally before or concurrently with code development, to drive design and refactoring.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">“Writing software is like building a cathedral - when we finish, we start praying.” Software and cathedrals are much the same – first we build them, then we pray. - Sam Redwine</summary></entry><entry xml:lang="zh"><title type="html">單元測試從0到1 - 讓專案開始有測試</title><link href="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html" rel="alternate" type="text/html" title="單元測試從0到1 - 讓專案開始有測試" /><published>2024-06-20T13:20:00+08:00</published><updated>2024-06-20T13:20:00+08:00</updated><id>http://localhost:4000/unit-testing/unit-testing-from-zero-to-one</id><content type="html" xml:base="http://localhost:4000/unit-testing/unit-testing-from-zero-to-one.html">&lt;p&gt;在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;這篇文章要感謝 Hanyu Chen, 陳涵宇請我喝咖啡&lt;/strong&gt;&lt;/p&gt;
 
@@ -227,7 +361,7 @@
 
 &lt;h2 id=&quot;cocoaheads-taipei-youtube-影片&quot;&gt;Cocoaheads Taipei Youtube 影片&lt;/h2&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/KeQ0OkJnktk?si=hEhkbHM7hi60FaCT&amp;amp;start=1283&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。</summary></entry><entry><title type="html">輪到我可以下載 ChatGPT macOS 應用程式</title><link href="http://localhost:4000/programming/you-can-download-chatgpt.html" rel="alternate" type="text/html" title="輪到我可以下載 ChatGPT macOS 應用程式" /><published>2024-05-30T22:09:00+08:00</published><updated>2024-05-30T22:09:00+08:00</updated><id>http://localhost:4000/programming/you-can-download-chatgpt</id><content type="html" xml:base="http://localhost:4000/programming/you-can-download-chatgpt.html">&lt;h2 id=&quot;如果你有交-chatgpt-月費去看看-chatgpt-的網頁界面如果你看到下載按鈕恭喜你你可以下載-macos-應用程式了&quot;&gt;如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。&lt;/h2&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/KeQ0OkJnktk?si=hEhkbHM7hi60FaCT&amp;amp;start=1283&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">在這篇文章中，我們將介紹如何在 iOS 專案中加入單元測試。單元測試用於驗證程式碼的最小可測單元（如函數、方法或類別）是否正確。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試的目的是確保程式的邏輯正確性和健壯性，提高程式質量和可維護性。</summary></entry><entry xml:lang="zh"><title type="html">輪到我可以下載 ChatGPT macOS 應用程式</title><link href="http://localhost:4000/programming/you-can-download-chatgpt.html" rel="alternate" type="text/html" title="輪到我可以下載 ChatGPT macOS 應用程式" /><published>2024-05-30T22:09:00+08:00</published><updated>2024-05-30T22:09:00+08:00</updated><id>http://localhost:4000/programming/you-can-download-chatgpt</id><content type="html" xml:base="http://localhost:4000/programming/you-can-download-chatgpt.html">&lt;h2 id=&quot;如果你有交-chatgpt-月費去看看-chatgpt-的網頁界面如果你看到下載按鈕恭喜你你可以下載-macos-應用程式了&quot;&gt;如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。&lt;/h2&gt;
 
 &lt;p&gt;總算輪到我下載 ChatGPT macOS App，大家如果有看到下載按鈕，就可以下載 macOS 應用程式了。我在 twitter 上看到很多人試著去看這個 app 是哪個框架做的。看別人的分析，這個 ChatGPT App 是純 SwiftUI 寫的。&lt;/p&gt;
 
@@ -239,7 +373,7 @@
 
 &lt;p&gt;這邊嘗試用 ChatGPT 4o 產生幾張圖&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/programming/openai/try-create-image.png&quot; alt=&quot;ChatGPT 4o 產生的圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><summary type="html">如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。</summary></entry><entry><title type="html">WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行</title><link href="http://localhost:4000/swift/wwdc24-post.html" rel="alternate" type="text/html" title="WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行" /><published>2024-05-29T22:39:00+08:00</published><updated>2024-05-29T22:39:00+08:00</updated><id>http://localhost:4000/swift/wwdc24-post</id><content type="html" xml:base="http://localhost:4000/swift/wwdc24-post.html">&lt;h2 id=&quot;wwdc24-將在台北時間-2024-年-6-月-11-日至-6-月-15-日舉行&quot;&gt;WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/openai/try-create-image.png&quot; alt=&quot;ChatGPT 4o 產生的圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><summary type="html">如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。</summary></entry><entry xml:lang="zh"><title type="html">WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行</title><link href="http://localhost:4000/swift/wwdc24-post.html" rel="alternate" type="text/html" title="WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行" /><published>2024-05-29T22:39:00+08:00</published><updated>2024-05-29T22:39:00+08:00</updated><id>http://localhost:4000/swift/wwdc24-post</id><content type="html" xml:base="http://localhost:4000/swift/wwdc24-post.html">&lt;h2 id=&quot;wwdc24-將在台北時間-2024-年-6-月-11-日至-6-月-15-日舉行&quot;&gt;WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc24/wwdcpaper.jpg&quot; alt=&quot;WWDC24 image&quot; /&gt;&lt;/p&gt;
 
@@ -249,7 +383,7 @@
 
 &lt;p&gt;最近自己比較沒像疫情前那樣，花比較多的時間在社群上，這篇文章提到的「社區價值觀」，希望台灣的開發者社群，可以在後 ChatGPT 時代，有更多的討論和交流。&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="iOS" /><category term="Apple" /><summary type="html">WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行</summary></entry><entry><title type="html">使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</title><link href="http://localhost:4000/programming/chat-gpt4o-trans-linear.html" rel="alternate" type="text/html" title="使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點" /><published>2024-05-17T08:57:00+08:00</published><updated>2024-05-17T08:57:00+08:00</updated><id>http://localhost:4000/programming/chat-gpt4o-trans-linear</id><content type="html" xml:base="http://localhost:4000/programming/chat-gpt4o-trans-linear.html">&lt;h2 id=&quot;chatgpt-4o-已發佈使用-chatgpt-4o-重新翻譯-linear-執行長在-stripe-上分享關於程式回質的觀點&quot;&gt;ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點&lt;/h2&gt;
+&lt;hr /&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="iOS" /><category term="Apple" /><summary type="html">WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行</summary></entry><entry xml:lang="zh"><title type="html">使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</title><link href="http://localhost:4000/programming/chat-gpt4o-trans-linear.html" rel="alternate" type="text/html" title="使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點" /><published>2024-05-17T08:57:00+08:00</published><updated>2024-05-17T08:57:00+08:00</updated><id>http://localhost:4000/programming/chat-gpt4o-trans-linear</id><content type="html" xml:base="http://localhost:4000/programming/chat-gpt4o-trans-linear.html">&lt;h2 id=&quot;chatgpt-4o-已發佈使用-chatgpt-4o-重新翻譯-linear-執行長在-stripe-上分享關於程式回質的觀點&quot;&gt;ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點&lt;/h2&gt;
 
 &lt;h3 id=&quot;chatgpt-4o-demo&quot;&gt;ChatGPT-4o demo&lt;/h3&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DQacCB9tDaw?si=W--6apbOvVjGG8GB&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -297,7 +431,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://x.com/karrisaarinen/status/1783976321854717985&quot;&gt;Karri Saarinen 原文發表在 X (Twitter) 上&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.marvinswift.com/programming/linear.html&quot;&gt;使用 ChatGPT4 翻譯的版本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry><entry><title type="html">Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻</title><link href="http://localhost:4000/programming/linear.html" rel="alternate" type="text/html" title="Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻" /><published>2024-05-13T00:12:00+08:00</published><updated>2024-05-13T00:12:00+08:00</updated><id>http://localhost:4000/programming/linear</id><content type="html" xml:base="http://localhost:4000/programming/linear.html">&lt;h2 id=&quot;緣由-linear-執行長-karri-saarinen-在-stripe-上分享了關於程式回質的觀點&quot;&gt;緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><category term="linear" /><summary type="html">ChatGPT-4o 已發佈，使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點</summary></entry><entry xml:lang="zh"><title type="html">Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻</title><link href="http://localhost:4000/programming/linear.html" rel="alternate" type="text/html" title="Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻" /><published>2024-05-13T00:12:00+08:00</published><updated>2024-05-13T00:12:00+08:00</updated><id>http://localhost:4000/programming/linear</id><content type="html" xml:base="http://localhost:4000/programming/linear.html">&lt;h2 id=&quot;緣由-linear-執行長-karri-saarinen-在-stripe-上分享了關於程式回質的觀點&quot;&gt;緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點&lt;/h2&gt;
 
 &lt;p&gt;在電子報 &lt;a href=&quot;https://explainthis.substack.com/p/explainthis-27&quot;&gt;全端雙週報 Explain This 27期&lt;/a&gt;中，有提到 Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點，看完後，使用 ChatGPT 翻譯成中文，並且分享給大家。&lt;/p&gt;
 
@@ -387,7 +521,7 @@ product yet. Maybe you have just an OK product. If you have a great product, peo
 
 &lt;p&gt;總之，如果人們不是自然地狂熱於你的產品，你可能還沒有一個偉大的產品。也許你只有一個還可以的產品。如果你有一個偉大的產品，人們會談論它。&lt;/p&gt;
 
-&lt;p&gt;偉大的產品創造粉絲和冠軍。在我看來，產品品質是最終的護城河。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Linear" /><category term="Programming" /><summary type="html">緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點</summary></entry><entry><title type="html">Swift 5.10 Released</title><link href="http://localhost:4000/swift/swift_5_10_released.html" rel="alternate" type="text/html" title="Swift 5.10 Released" /><published>2024-03-06T11:54:00+08:00</published><updated>2024-03-06T11:54:00+08:00</updated><id>http://localhost:4000/swift/swift_5_10_released</id><content type="html" xml:base="http://localhost:4000/swift/swift_5_10_released.html">&lt;h2 id=&quot;swift-510-released---下一個版本就是-swift-6&quot;&gt;Swift 5.10 Released - 下一個版本就是 Swift 6&lt;/h2&gt;
+&lt;p&gt;偉大的產品創造粉絲和冠軍。在我看來，產品品質是最終的護城河。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Linear" /><category term="Programming" /><summary type="html">緣由: Linear 執行長 Karri Saarinen 在 Stripe 上分享了關於程式回質的觀點</summary></entry><entry xml:lang="zh"><title type="html">Swift 5.10 Released</title><link href="http://localhost:4000/swift/swift_5_10_released.html" rel="alternate" type="text/html" title="Swift 5.10 Released" /><published>2024-03-06T11:54:00+08:00</published><updated>2024-03-06T11:54:00+08:00</updated><id>http://localhost:4000/swift/swift_5_10_released</id><content type="html" xml:base="http://localhost:4000/swift/swift_5_10_released.html">&lt;h2 id=&quot;swift-510-released---下一個版本就是-swift-6&quot;&gt;Swift 5.10 Released - 下一個版本就是 Swift 6&lt;/h2&gt;
 
 &lt;p&gt;以下文章內容，來自 Swift.org 的 &lt;a href=&quot;https://www.swift.org/blog/swift-5.10-released/&quot;&gt;Swift 5.10 Released&lt;/a&gt;，由 Holly Borla 撰寫。&lt;/p&gt;
 
@@ -497,7 +631,7 @@ await processData(data)
 SE-0383：廢除 @UIApplicationMain 和 @NSApplicationMain
 SE-0404：允許在非泛型上下文中嵌套協議
 SE-0411：隔離的默認值表達式
-SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="Swift 5.10" /><summary type="html">Swift 5.10 Released - 下一個版本就是 Swift 6</summary></entry><entry><title type="html">Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</title><link href="http://localhost:4000/programming/gemini-video-is-fake.html" rel="alternate" type="text/html" title="Google 的 Gemini AI Demo 影片是經過編輯的，不是真實" /><published>2023-12-10T21:48:00+08:00</published><updated>2023-12-10T21:48:00+08:00</updated><id>http://localhost:4000/programming/gemini-video-is-fake</id><content type="html" xml:base="http://localhost:4000/programming/gemini-video-is-fake.html">&lt;p&gt;上一篇講了 Google 發佈了 Gemini demo video: &lt;a href=&quot;https://www.marvinswift.com/programming/google-release-gemini-ai-to-compete-ChatGPT.html&quot;&gt;Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步&lt;/a&gt;&lt;/p&gt;
+SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="iOS" /><category term="Swift 5.10" /><summary type="html">Swift 5.10 Released - 下一個版本就是 Swift 6</summary></entry><entry xml:lang="zh"><title type="html">Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</title><link href="http://localhost:4000/programming/gemini-video-is-fake.html" rel="alternate" type="text/html" title="Google 的 Gemini AI Demo 影片是經過編輯的，不是真實" /><published>2023-12-10T21:48:00+08:00</published><updated>2023-12-10T21:48:00+08:00</updated><id>http://localhost:4000/programming/gemini-video-is-fake</id><content type="html" xml:base="http://localhost:4000/programming/gemini-video-is-fake.html">&lt;p&gt;上一篇講了 Google 發佈了 Gemini demo video: &lt;a href=&quot;https://www.marvinswift.com/programming/google-release-gemini-ai-to-compete-ChatGPT.html&quot;&gt;Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;google-gemini-的-demo-video-並不是真實的狀態是經過編輯的&quot;&gt;Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的&lt;/h2&gt;
 
@@ -519,7 +653,7 @@ SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Li
 
 &lt;h2 id=&quot;結論&quot;&gt;結論&lt;/h2&gt;
 
-&lt;p&gt;Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的。但社群看起來，並不滿意 Google 的做法，很多英文的文章都使用了「Fake」這個字來形容了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">上一篇講了 Google 發佈了 Gemini demo video: Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</summary></entry><entry><title type="html">Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</title><link href="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html" rel="alternate" type="text/html" title="Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步" /><published>2023-12-07T22:06:00+08:00</published><updated>2023-12-07T22:06:00+08:00</updated><id>http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT</id><content type="html" xml:base="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html">&lt;h2 id=&quot;20231210-更新-google-的-gemini-ai-demo-影片是經過編輯的不是真實&quot;&gt;2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實&lt;/h2&gt;
+&lt;p&gt;Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的。但社群看起來，並不滿意 Google 的做法，很多英文的文章都使用了「Fake」這個字來形容了。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">上一篇講了 Google 發佈了 Gemini demo video: Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</summary></entry><entry xml:lang="zh"><title type="html">Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步</title><link href="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html" rel="alternate" type="text/html" title="Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步" /><published>2023-12-07T22:06:00+08:00</published><updated>2023-12-07T22:06:00+08:00</updated><id>http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT</id><content type="html" xml:base="http://localhost:4000/programming/google-release-gemini-ai-to-compete-ChatGPT.html">&lt;h2 id=&quot;20231210-更新-google-的-gemini-ai-demo-影片是經過編輯的不是真實&quot;&gt;2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實&lt;/h2&gt;
 
 &lt;h3 id=&quot;在經過數天之後已經有很多文章說明了-google-gemini-的-demo-video-並不是真實的狀態是經過編輯的&quot;&gt;在經過數天之後，已經有很多文章說明了 Google Gemini 的 Demo video 並不是真實的狀態，是經過編輯的&lt;/h3&gt;
 
@@ -574,75 +708,4 @@ SE-0412：全局變量的嚴格並發&lt;/p&gt;</content><author><name>Marvin Li
 
 &lt;h2 id=&quot;youtube-影片&quot;&gt;Youtube 影片&lt;/h2&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UIZAiXYceBI?si=Pdl8qkVYBBz6uZ0O&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</summary></entry><entry><title type="html">在 iOS 專案加上測試-You need testing</title><link href="http://localhost:4000/unit-testing/add-unit-testing-on-project.html" rel="alternate" type="text/html" title="在 iOS 專案加上測試-You need testing" /><published>2023-12-06T17:15:00+08:00</published><updated>2023-12-06T17:15:00+08:00</updated><id>http://localhost:4000/unit-testing/add-unit-testing-on-project</id><content type="html" xml:base="http://localhost:4000/unit-testing/add-unit-testing-on-project.html">&lt;blockquote&gt;
-  &lt;p&gt;「寫程式就像蓋教堂- 當完成之後，
-我們就開始祈禱。」&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Software and cathedrals are much the same – first we build them, then we pray.Sam Redwine&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/add-test-target-on-xcode/you-need-testing.png&quot; alt=&quot;You need testing&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;在-ios-專案加上測試-you-need-testing&quot;&gt;在 iOS 專案加上測試 You need testing&lt;/h2&gt;
-
-&lt;p&gt;你是不是覺得 Unit testing 很麻煩，很浪費時間，很沒必要？如果你這麼想，那你就錯了！Unit testing 對 iOS 專案的好處可不少。&lt;/p&gt;
-
-&lt;p&gt;首先，Unit testing 可以幫你提高程式碼的品質和可讀性。你可以透過 Unit testing 來檢查你的程式邏輯是否正確，是否符合需求，是否有 bug 或錯誤。你也可以透過 Unit testing 來重構你的程式碼，讓它更簡潔，更清晰，更容易維護。你不用擔心重構後會影響到其他功能，因為你有 Unit testing 來保證你的程式還是能正常運作。&lt;/p&gt;
-
-&lt;p&gt;其次，Unit testing 可以幫你節省時間和成本。你可能覺得寫 Unit testing 很花時間，但是你有沒有想過，如果你不寫 Unit testing，你可能會花更多時間在 debug 和修復 bug 上。而且，如果你的 bug 在上線後才被發現，那麼後果可能更嚴重，不僅會影響到用戶的體驗和信任，也會增加你的維護成本和風險。相比之下，如果你有 Unit testing，在開發階段就能及時發現和解決問題，那麼你就能提高你的開發效率和產品質量。&lt;/p&gt;
-
-&lt;p&gt;最後，Unit testing 可以幫你提升自信和專業度。當你有 Unit testing 來支持你的程式碼時，你就能更有信心地面對需求的反饋和需求。你也能更有信心地與其他開發者合作和分享你的程式碼。而且，Unit testing 也是一種展示你的專業態度和技能的方式。當別人看到你的程式碼有完善的 Unit test 時，他們就會對你的水平和責任感有更高的評價。&lt;/p&gt;
-
-&lt;p&gt;總之，Unit testing 對 iOS 專案的好處是多多益善的。如果你還沒有開始寫 Unit test，那就趕快行動吧！相信我，Unit test 會讓你的開發生活更美好！&lt;/p&gt;
-
-&lt;h2 id=&quot;測試金字塔&quot;&gt;測試金字塔&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/unitTesting/add-test-target-on-xcode/ui-integrate-unit-testing.png&quot; alt=&quot;測試金字塔&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;這是網路上常見的關於測試金字塔的圖案。它將不同類型的測試分為三層：單元測試、整合測試和 UI 測試。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;單元測試（Unit Test）：位於金字塔的底層，是最基本和最快速的測試類型，主要針對軟體的最小可測單元（如函數、方法或類別）進行驗證，確保代碼的邏輯正確性和健壯性。單元測試通常由開發人員自行編寫和執行，並使用各種工具和框架來自動化和簡化測試過程。單元測試應該佔據金字塔的最大比例，因為它們可以及時發現和修復代碼中的錯誤，提高代碼質量和可維護性。&lt;/li&gt;
-  &lt;li&gt;整合測試（Integration Test）：位於金字塔的中層，是在單元測試之後進行的測試類型，主要針對軟體的不同模組或組件之間的交互和協作進行驗證，確保整合後的系統能夠正常運作。整合測試通常由開發人員或測試人員負責，並使用 Mock 或 Stub 等技術來隔離外部依賴和影響。整合測試應該佔據金字塔的中等比例，因為它們可以檢查系統的內部結構和邏輯是否符合設計規範和需求。&lt;/li&gt;
-  &lt;li&gt;UI Test：位於金字塔的頂層，是最接近真實使用場景和用戶體驗的測試類型，主要針對軟體的完整功能和流程進行驗證，確保系統能夠按照預期提供服務。端對端測試通常由測試人員或用戶代表負責，並使用自動化或手動的方式來模擬用戶操作和行為。端對端測試應該佔據金字塔的最小比例，因為它們通常比較耗時和昂貴，且難以涵蓋所有可能的情況和變數。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;單元測試的-first-原則&quot;&gt;單元測試的 F.I.R.S.T 原則&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fast：Unit test 應該快速執行，不要花費太多時間或資源。&lt;/li&gt;
-  &lt;li&gt;Independent：Unit test 應該獨立於其他測試，不要互相影響或依賴。&lt;/li&gt;
-  &lt;li&gt;Repeatable：Unit test 應該可以在任何環境或情況下重複執行，並得到一致的結果。&lt;/li&gt;
-  &lt;li&gt;Self-validating：Unit test 應該有明確的通過或失敗的標準，不要需要人工檢查或驗證。&lt;/li&gt;
-  &lt;li&gt;Timely：Unit test 應該及時編寫，最好在開發程式碼之前或同時進行，以驅動設計和重構。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;希望這一系列的文章，能讓你能體會 Unit Testing 的好處。Unit Testing是一項實用的技能，它具有廣泛的應用範疇，無論是應用程式的規模大小，都能受惠於它。持之以恆地精進這項技能，並積極將其運用於您的iOS專案中，是一個不斷學習和成長的過程。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">「寫程式就像蓋教堂- 當完成之後， 我們就開始祈禱。」</summary></entry><entry><title type="html">買了一個比特幣樂透礦機，算力 55kH/s 左右</title><link href="http://localhost:4000/life/btc-lottery-iner.html" rel="alternate" type="text/html" title="買了一個比特幣樂透礦機，算力 55kH/s 左右" /><published>2023-11-21T16:49:00+08:00</published><updated>2023-11-21T16:49:00+08:00</updated><id>http://localhost:4000/life/btc-lottery-iner</id><content type="html" xml:base="http://localhost:4000/life/btc-lottery-iner.html">&lt;p&gt;有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。&lt;/p&gt;
-
-&lt;p&gt;這種礦機大小比較像是一個 USB 隨身碟，但是比較厚，一插上去後，設定好 wifi 和錢包，就可以開始挖礦了。&lt;/p&gt;
-
-&lt;p&gt;沒什麼噪音，也不會散熱，因為算力不高，所以也不會發燙，一個月的電費大概在 5 塊以內。&lt;/p&gt;
-
-&lt;h2 id=&quot;產品實拍照&quot;&gt;產品實拍照&lt;/h2&gt;
-
-&lt;h3 id=&quot;產品到貨圖-with-包裝盒&quot;&gt;產品到貨圖 with 包裝盒&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image1.jpeg&quot; alt=&quot;產品到貨圖 with 包裝盒&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;頁面1---有-global-hash-rate-medium-fee-等資訊&quot;&gt;頁面1 - 有 Global hash rate, medium fee 等資訊&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image2.jpeg&quot; alt=&quot;頁面1 - 有 Global hash rate, medium fee 等資訊&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;頁面2---時鐘功能平常放在桌子上也不會讓人覺得很奇怪&quot;&gt;頁面2 - 時鐘功能，平常放在桌子上，也不會讓人覺得很奇怪&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image3.jpeg&quot; alt=&quot;頁面2 - 時鐘功能，平常放在桌子上，也不會讓人覺得很奇怪&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;頁面3---挖礦資訊也有算力資訊當-valid-blocks-出現-1就是挖到啦&quot;&gt;頁面3 - 挖礦資訊，也有算力資訊，當 Valid blocks 出現 1！就是挖到啦！&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/image4.jpeg&quot; alt=&quot;頁面3 - 挖礦資訊，也有算力資訊&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;購買連結&quot;&gt;購買連結&lt;/h2&gt;
-
-&lt;h3 id=&quot;比特幣樂透礦機&quot;&gt;&lt;a href=&quot;https://shope.ee/2VRGeYrz0O&quot;&gt;比特幣樂透礦機&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://shope.ee/2VRGeYrz0O&quot;&gt;&lt;img src=&quot;/assets/life/btc-lottery-miner/shopee.png&quot; alt=&quot;蝦皮賣場照片&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="比特幣" /><category term="樂透" /><category term="礦機" /><category term="bitcoin" /><category term="miner" /><category term="crypto currency" /><category term="satoshi" /><category term="shopee" /><category term="蝦皮" /><summary type="html">有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UIZAiXYceBI?si=Pdl8qkVYBBz6uZ0O&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Google Gemini" /><category term="ChatGPT" /><category term="AI" /><category term="LLM" /><summary type="html">2023/12/10 更新: Google 的 Gemini AI Demo 影片是經過編輯的，不是真實</summary></entry></feed>

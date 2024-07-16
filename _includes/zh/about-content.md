@@ -1,6 +1,8 @@
 
 ## Marvin Lin
 
+{% include custom/language-switch-button.html %}
+
 我喜歡 Apple 相關產品，喜歡寫 Swift。
 除了 Swift 以外，我也喜歡寫 Python。
 我喜歡用程式去完成我喜歡做的事情，目前的 side projects 領域有 iOS apps/macOS apps/twitter bot。

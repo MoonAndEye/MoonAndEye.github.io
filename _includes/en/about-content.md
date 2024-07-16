@@ -1,5 +1,7 @@
 ## Marvin Lin
 
+{% include custom/language-switch-button.html %}
+
 I like Apple-related products and enjoy writing in Swift. Besides Swift, I also like to write in Python. I enjoy using programming to accomplish things I love to do; my current side projects include iOS apps, macOS apps, and a Twitter bot. 
 
 ---

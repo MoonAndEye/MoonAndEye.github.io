@@ -1,9 +1,10 @@
 en:
   main:
     - title: "Home"
-      url: /en
-    - title: "Programming"
-      url: /en/programming/
+      url: /en/
+    # Programming 還沒有適合直接翻譯成英文的文章，先隱藏
+    # - title: "Programming"
+    #   url: /en/programming/
     - title: "Swift"
       url: /en/swift/
     - title: "You need testing"
@@ -13,16 +14,16 @@ en:
 zh:
   main:
     - title: "Home"
-      url: /zh
+      url: /zh/
     - title: "軟體開發"
-      url: /programming/
+      url: /zh/programming/
     - title: "Swift"
-      url: /swift/
+      url: /zh/swift/
     - title: "You need testing"
-      url: /unitTesting/
+      url: /zh/unitTesting/
     - title: "生活"
-      url: /life/
+      url: /zh/life/
     - title: "Swift 社群資源"
-      url: /swift-community/
+      url: /zh/swift-community/
     - title: "About"
-      url: /about/
+      url: /zh/about/
