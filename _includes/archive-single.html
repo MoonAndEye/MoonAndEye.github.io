@@ -26,6 +26,13 @@
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 70 }}</p>{% endif %}
+    {% comment %}Set a default value for truncate_count{% endcomment %}
+    {% assign truncate_count = 70 %}
+    
+    {% comment %}Adjust truncate_count based on page.lang{% endcomment %}
+    {% if page.lang == "en" %}
+      {% assign truncate_count = 150 %}
+    {% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: truncate_count }}</p>{% endif %}
   </article>
 </div>
