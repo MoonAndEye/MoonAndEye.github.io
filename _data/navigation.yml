@@ -2,7 +2,7 @@ en:
   main:
     - title: "Home"
       url: /en
-    - title: "programming"
+    - title: "Programming"
       url: /en/programming/
     - title: "Swift"
       url: /en/swift/

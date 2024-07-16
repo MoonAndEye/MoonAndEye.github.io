@@ -2,6 +2,7 @@
 layout: archive
 title: About
 author_profile: true
+lang: zh
 permalink: /about/
 ---
 

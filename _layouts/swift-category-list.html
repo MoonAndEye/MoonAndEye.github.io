@@ -5,14 +5,11 @@ author_profile: true
 
 {% include custom/language-switch-button.html %}
 
-{% include {{ page.lang }}/support-for-unit-testing.html %}
-{% include {{ page.lang }}/coffee-button.html %}
-
 {{ content }}
 
 <h3 class="archive__subtitle">Swift 相關</h3>
 
-{% assign posts = site.posts | where: "categories", "swift" | sort: "date" | reverse %}
+{% assign posts = site.posts | where: "categories", "swift" | where: "lang", page.lang | sort: "date" | reverse %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">

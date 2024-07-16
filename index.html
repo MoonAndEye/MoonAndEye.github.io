@@ -4,17 +4,7 @@
 
 layout: home
 lang: en #先設定為中文
-locale: en-US #先設定為中文
+locale: en #先設定為中文
 ---
 
-{% if page.lang == "zh" %}
-<h2>這不是英文界面 是中文界面 = zh</h2>
-{% elsif page.lang == "en" %}
-<h2>這是英文界面 lang = en</h2>
-{% else %}
-<h2>沒設定 lang</h2>
-{% endif %}
-
-{% include support-for-unit-testing.html %}
-{% include coffee-button.html %}
 {% include paginator.html %}

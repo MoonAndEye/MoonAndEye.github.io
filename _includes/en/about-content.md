@@ -4,11 +4,6 @@ I like Apple-related products and enjoy writing in Swift. Besides Swift, I also 
 
 ---
 
-{% include en/support-for-unit-testing.html %}
-{% include en/coffee-button.html %}
----
-
-
 ### [Jambhala website](https://jambhalayellow.com/){:target="_blank"}
 
 A website created for a contract project, mainly used to introduce information related to the Yellow God of Wealth.
