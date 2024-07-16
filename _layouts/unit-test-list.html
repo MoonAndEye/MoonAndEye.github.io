@@ -6,6 +6,9 @@ author_profile: true
 
 {{ content }}
 
+{% include {{ page.lang }}/support-for-unit-testing.html %}
+{% include {{ page.lang }}/coffee-button.html %}
+
 {% assign posts = site.posts | where: "categories", "unitTesting" | where: "lang", page.lang | sort: "date" | reverse %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
