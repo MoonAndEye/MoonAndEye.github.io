@@ -5,6 +5,7 @@ date: 2024-07-16 18:20 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, SwiftUI, WebView]
+lang: en
 summary: This article discusses how to add a WebView to a SwiftUI project.
 ---
 
