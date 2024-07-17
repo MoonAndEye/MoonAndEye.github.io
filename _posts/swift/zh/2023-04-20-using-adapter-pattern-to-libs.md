@@ -6,9 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, 設計模式]
 summary: Using adapter pattern to wrap third party library in swift. When you are in iOS development, it's quite common to use third party libs. When lib upgrade, sometimes break the build or crash in run time. Using adapter pattern can help you develop more stable and save your time.
-permalink: /swift/:title:output_ext
 classes: wide
-author_profile: false
 ---
 
 現在的 iOS 開發，通常會用到第三方 libs。而隨著每年的 Swift 改版, Xcode 改版, 語法改變，libs 也會升版。下方是 Alamofire 和 Charts 進一年來的版號升級趨勢，libs 是會升級的。依照 [語意化版本的說明](https://semver.org/lang/zh-TW/) 如果動到大版號，是不太可能一行都不改，然後專案可以 build 成功的。有時候升級到中版號的 libs，也會出現意料之外的情形。
