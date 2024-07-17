@@ -40,5 +40,3 @@ Tim Lin 在 Study jam 中的案例
 目前對於 SwiftUI / Compose 都沒有很明確的結論，仍然在研究中。
 
 也歡迎大家回覆對於這兩個框架的想法。
-
-Exported from [Medium](https://medium.com) on March 14, 2023.
