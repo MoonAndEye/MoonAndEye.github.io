@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-16T23:32:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Value Types and Reference Types in Swift</title><link href="http://localhost:4000/en/swift/ref-type-val-type-in-swift/" rel="alternate" type="text/html" title="Value Types and Reference Types in Swift" /><published>2024-07-16T23:11:00+08:00</published><updated>2024-07-16T23:11:00+08:00</updated><id>http://localhost:4000/en/swift/ref-type-val-type-in-swift</id><content type="html" xml:base="http://localhost:4000/en/swift/ref-type-val-type-in-swift/">&lt;p&gt;This discussion was an extension of the Prototype pattern from a book on Swift’s Design Patterns. Now, I aim to delve deeper into the nuances of value types and reference types.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-17T08:32:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">SwiftUI Data Flow</title><link href="http://localhost:4000/en/swift/swiftui-data-flow/" rel="alternate" type="text/html" title="SwiftUI Data Flow" /><published>2024-07-17T06:00:00+08:00</published><updated>2024-07-17T06:00:00+08:00</updated><id>http://localhost:4000/en/swift/swiftui-data-flow</id><content type="html" xml:base="http://localhost:4000/en/swift/swiftui-data-flow/">&lt;p&gt;SwiftUI employs a declarative approach for UI design. The data transmission follows the sequence of Action → State → View, which is a fixed direction with no possibility of reversal. You can also research the term “one-way data flow,” which is prevalent not only on mobile platforms but also on other platforms due to its data flow design.&lt;/p&gt;
+
+&lt;h2 id=&quot;action-as-the-starting-point&quot;&gt;Action as the Starting Point&lt;/h2&gt;
+
+&lt;p&gt;An action may be triggered by a user or an external event. Once an action is initiated, it changes the state within the program, and subsequently, SwiftUI automatically updates the necessary views.&lt;/p&gt;
+
+&lt;p&gt;Compared to previous screen rendering responsibilities, which were handled by UIViewController in the older UIKit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/state-change/one-way-data-flow.jpeg&quot; alt=&quot;SwiftUI Data flow&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;view-state-management---single-source-of-truth&quot;&gt;View State Management - Single Source of Truth&lt;/h2&gt;
+
+&lt;p&gt;It’s important to remember the principle of a single source of truth. Apple’s recommended approach is to design data as read-only Swift properties or provide bidirectional state bindings. SwiftUI observes data changes and updates only the views that need to change.&lt;/p&gt;
+
+&lt;p&gt;Apple advises against using persistent storage directly as state properties. Instead, persistent storage is more suitably used for managing transitional states, such as highlight statuses or filter settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/state-change/ui-state.jpeg&quot; alt=&quot;UI State Management&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/model-data&quot;&gt;SwiftUI Model Data - Apple Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/managing-user-interface-state&quot;&gt;Managing UI State in SwiftUI - Apple Documentation&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">SwiftUI employs a declarative approach for UI design. The data transmission follows the sequence of Action → State → View, which is a fixed direction with no possibility of reversal. You can also research the term “one-way data flow,” which is prevalent not only on mobile platforms but also on other platforms due to its data flow design.</summary></entry><entry xml:lang="en"><title type="html">Value Types and Reference Types in Swift</title><link href="http://localhost:4000/en/swift/ref-type-val-type-in-swift/" rel="alternate" type="text/html" title="Value Types and Reference Types in Swift" /><published>2024-07-16T23:11:00+08:00</published><updated>2024-07-16T23:11:00+08:00</updated><id>http://localhost:4000/en/swift/ref-type-val-type-in-swift</id><content type="html" xml:base="http://localhost:4000/en/swift/ref-type-val-type-in-swift/">&lt;p&gt;This discussion was an extension of the Prototype pattern from a book on Swift’s Design Patterns. Now, I aim to delve deeper into the nuances of value types and reference types.&lt;/p&gt;
 
 &lt;h3 id=&quot;reference-type&quot;&gt;Reference Type&lt;/h3&gt;
 
@@ -914,14 +936,4 @@ func testTokenResponse() throws {&lt;/p&gt;
 
 &lt;p&gt;這邊嘗試用 ChatGPT 4o 產生幾張圖&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/programming/openai/try-create-image.png&quot; alt=&quot;ChatGPT 4o 產生的圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><summary type="html">如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。</summary></entry><entry xml:lang="zh"><title type="html">WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行</title><link href="http://localhost:4000/swift/wwdc24-post.html" rel="alternate" type="text/html" title="WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行" /><published>2024-05-29T22:39:00+08:00</published><updated>2024-05-29T22:39:00+08:00</updated><id>http://localhost:4000/swift/wwdc24-post</id><content type="html" xml:base="http://localhost:4000/swift/wwdc24-post.html">&lt;h2 id=&quot;wwdc24-將在台北時間-2024-年-6-月-11-日至-6-月-15-日舉行&quot;&gt;WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/wwdc24/wwdcpaper.jpg&quot; alt=&quot;WWDC24 image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;今天收到了 Apple 的廣告信，看到信才意識到現在又是一年一度的 WWDC 大會。今年的 WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行，雖然我最近 side project 的時間都在做和 Apple 裝置沒有關係的事情，但每一年的 WWDC 會前，心裡還是有種，對未來蘋果裝置的期待，也害怕受傷害。&lt;/p&gt;
-
-&lt;p&gt;從肘子的電子報，我讀到這一篇 - &lt;a href=&quot;https://www.david-smith.org/blog/2024/05/15/craftsmanship-and-consideration/?issue=031&amp;amp;utm_source=FatbobmanWeekly&amp;amp;utm_medium=email&amp;amp;utm_campaign=FatbobmanWeekly031&quot;&gt;Craftsmanship &amp;amp; Consideration (工藝與考量)&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;最近自己比較沒像疫情前那樣，花比較多的時間在社群上，這篇文章提到的「社區價值觀」，希望台灣的開發者社群，可以在後 ChatGPT 時代，有更多的討論和交流。&lt;/p&gt;
-
-&lt;hr /&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="WWDC" /><category term="iOS" /><category term="Apple" /><summary type="html">WWDC24 將在台北時間 2024 年 6 月 11 日至 6 月 15 日舉行</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/programming/openai/try-create-image.png&quot; alt=&quot;ChatGPT 4o 產生的圖&quot; /&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="ChatGPT" /><category term="OpenAI" /><summary type="html">如果你有交 ChatGPT 月費，去看看 ChatGPT 的網頁界面，如果你看到下載按鈕，恭喜你，你可以下載 macOS 應用程式了。</summary></entry></feed>
