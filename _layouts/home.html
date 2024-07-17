@@ -41,8 +41,8 @@ author_profile: true
 {% assign lang = page.lang %}
 
 {% if paginator %}
-  {% assign paginator_posts = paginator.posts %}
-  {% assign posts = paginator_posts | where: "lang", lang %}
+<!-- paginator 不 filter lang，這會造成空 page -->
+  {% assign posts = paginator.posts %}
 {% else %}
   {% assign filtered_posts = site.posts | where: "lang", lang %}
   {% assign posts = filtered_posts %}
