@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Create - Core ML and Vision"
+title: "Turi Create - Core ML and Vision"
 date: 2018-08-20 15:33 +0800
 category: swift
 author: Marvin Lin
