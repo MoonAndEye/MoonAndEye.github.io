@@ -5,6 +5,7 @@ date: 2024-07-17 13:50:00 +0800
 category: programming
 author: Marvin Lin
 tags: [system design, programming]
+lang: en
 summary: "Notes on Designing Data-Intensive Applications, discussing partitioning strategies for servers."
 ---
 
