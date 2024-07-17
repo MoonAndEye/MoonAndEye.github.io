@@ -11,7 +11,7 @@ classes: wide
 author_profile: false
 ---
 
-In modern iOS development, third-party libraries are commonly used. With yearly updates to Swift and Xcode, as well as changes in syntax, libraries often undergo version upgrades. Below are the version upgrade trends for Alamofire and Charts over the past year, illustrating that libraries do get updated. According to [Semantic Versioning](https://semver.org/lang/zh-TW/), major version changes almost certainly require code modifications to build successfully. Sometimes, even minor version upgrades can introduce unexpected issues.
+In modern iOS development, third-party libraries are commonly used. With yearly updates to Swift and Xcode, as well as changes in syntax, libraries often undergo version upgrades. Below are the version upgrade trends for Alamofire and Charts over the past year, illustrating that libraries do get updated. According to [Semantic Versioning](https://semver.org), major version changes almost certainly require code modifications to build successfully. Sometimes, even minor version upgrades can introduce unexpected issues.
 
 If the third-party library you're using is scattered across dozens of places in your project, then you'll need to make changes in as many places when upgrading. As the version jumps become larger or the number of scattered instances increases, the risk of library upgrade issues also rises.
 
