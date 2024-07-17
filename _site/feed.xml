@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-17T13:15:31+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">When Upgrading Third-Party Versions, What Kind of Version Number Causes a Project Build to Fail?</title><link href="http://localhost:4000/en/swift/which-version-upgrade-will-break-your-project/" rel="alternate" type="text/html" title="When Upgrading Third-Party Versions, What Kind of Version Number Causes a Project Build to Fail?" /><published>2024-07-17T08:50:00+08:00</published><updated>2024-07-17T08:50:00+08:00</updated><id>http://localhost:4000/en/swift/which-version-upgrade-will-break-your-project</id><content type="html" xml:base="http://localhost:4000/en/swift/which-version-upgrade-will-break-your-project/">&lt;p&gt;In iOS development, we often use third-party packages to add functionality or reduce workload. However, if we download the source code of the packages directly or use git submodules, we might encounter issues such as version inconsistencies, unclear dependencies, and inconvenient updates. To solve these problems, we can use cocoapods, a tool that helps manage third-party packages.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-17T13:18:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv_in_sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">iOS MVC Architecture</title><link href="http://localhost:4000/en/swift/cocoa-framework-mvc/" rel="alternate" type="text/html" title="iOS MVC Architecture" /><published>2024-07-17T12:00:00+08:00</published><updated>2024-07-17T12:00:00+08:00</updated><id>http://localhost:4000/en/swift/cocoa-framework-mvc</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoa-framework-mvc/">&lt;p&gt;MVC is Apple’s exemplary framework; in the era of UIKit, it was an important pattern. Recently, whenever I find some free time, I spend it reading an old book, &lt;strong&gt;Cocoa Design Patterns&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/books-cover.jpeg&quot; alt=&quot;Cocoa design pattern&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chapter-two-analysis-and-application-of-mvc&quot;&gt;Chapter Two: Analysis and Application of MVC&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/mvc-chapter.jpeg&quot; alt=&quot;Chapter Two: Analysis and Application of MVC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Apple’s Cocoa design pattern of MVC is a software development approach that divides an application into three parts: Model, View, and Controller. This separation makes the code easier to maintain and reuse, enhancing the application’s performance and testability.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Model&lt;/strong&gt; is responsible for managing the application’s data and logic. It does not interact directly with the user interface but updates or retrieves data through the controller. The model can be any type of object, such as arrays, dictionaries, files, or web services.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;View&lt;/strong&gt; is responsible for displaying the user interface of the application. It receives user input and events and passes them to the controller. Views can be any type of user interface component, such as buttons, labels, images, or tables.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Controller&lt;/strong&gt; coordinates the model and view. It is the main logic layer of the application. The controller can receive input and events from the view and act accordingly, such as updating the model or changing the view. Controllers can also communicate with other controllers to implement more complex functionalities.&lt;/p&gt;
+
+&lt;h3 id=&quot;book-example-payroll-calculator&quot;&gt;Book Example: Payroll Calculator&lt;/h3&gt;
+
+&lt;p&gt;In a payroll calculator, the Model is the Employee class. After triggering &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calculatePayAmount(:)&lt;/code&gt;, the employee’s salary is calculated. If a program is not divided according to the MVC functionality, the call relationships would look like the diagram below. Note that even without MVC, a program can still function correctly; the first version may work well, but problems arise during subsequent expansions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/non-mvc.jpeg&quot; alt=&quot;Project not following MVC design&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If we were to separate the Model and View, a Controller would act as a mediator to prevent tight coupling between the View and Model. In a project that continuously adds features, it’s common to encounter such situations.&lt;/p&gt;
+
+&lt;h3 id=&quot;v11-hypothetical-but-possible-scenarios&quot;&gt;V1.1 (Hypothetical but possible scenarios)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;UI needs rounded corners, gradients, and shadows&lt;/li&gt;
+  &lt;li&gt;UX requires placeholder text if input fields are empty&lt;/li&gt;
+  &lt;li&gt;Search bars should have autocomplete suggestions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;v12-hypothetical-but-possible-scenarios&quot;&gt;V1.2 (Hypothetical but possible scenarios)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Each branch’s holidays differ based on location, requiring an expansion of the fields in the employment contracts to include regional specifics&lt;/li&gt;
+  &lt;li&gt;Introducing an intern position with different payroll calculations than regular employees, varying by region&lt;/li&gt;
+  &lt;li&gt;Currency conversion with UI fields displaying corresponding currency symbols (accurate to three decimal places)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With these feature additions, any modifications to the view could potentially affect the model, and vice versa. This design is prone to subtle bugs during development. Apple recommends adopting the MVC pattern in development, inserting a controller between the model and view, as shown in the diagram below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/mvc.jpeg&quot; alt=&quot;Project following MVC pattern&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the Cocoa design patterns book was published a long time ago and does not include iOS examples, it’s worth noting that iOS’s UIKit is a subset of macOS’s (as of UIKit’s release). This is mentioned in another book, &lt;strong&gt;Creative Competition&lt;/strong&gt;. Therefore, iOS development certainly applies this pattern. Below is a diagram from Stanford 193 p, representing MVC in iOS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/mvc-pattern/mvc-ios.jpg&quot; alt=&quot;MVC pattern in iOS&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;in-ios-apps-when-views-touch-models&quot;&gt;In iOS Apps, When Views Touch Models&lt;/h2&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// FooTableViewCell, representing MVC&apos;s View in the UI displaying Employee data&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FooTableViewCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UITableViewCell&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;/// Employee is the data-carrying object, MVC&apos;s Model&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;/// Handling Model inside a View object; the program might function but it doesn&apos;t adhere to the MVC pattern&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Implementation omitted&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is recommended not to couple the View and Model together in projects. Keep Views purely for presenting data, let Models describe data, and use Controllers (or other non-View objects) for assembly. Besides the MVC pattern, the MV(X) family has branched out extensively, and many examples on GitHub can meet your needs.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference-websites&quot;&gt;Reference Websites&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kodeco.com/1000705-model-view-controller-mvc-in-ios-a-modern-approach&quot;&gt;Kodeco’s Introduction to MVC&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@iamirzhan/the-only-viable-ios-architecture-c42f7b4c845d&quot;&gt;The Only Viable iOS Architecture (MVC)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52&quot;&gt;iOS Architectures (MVC, MVP, MVVM, Viper)&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="MVC" /><category term="Cocoa framework" /><summary type="html">MVC is Apple’s exemplary framework; in the era of UIKit, it was an important pattern. Recently, whenever I find some free time, I spend it reading an old book, Cocoa Design Patterns.</summary></entry><entry xml:lang="en"><title type="html">When Upgrading Third-Party Versions, What Kind of Version Number Causes a Project Build to Fail?</title><link href="http://localhost:4000/en/swift/which-version-upgrade-will-break-your-project/" rel="alternate" type="text/html" title="When Upgrading Third-Party Versions, What Kind of Version Number Causes a Project Build to Fail?" /><published>2024-07-17T08:50:00+08:00</published><updated>2024-07-17T08:50:00+08:00</updated><id>http://localhost:4000/en/swift/which-version-upgrade-will-break-your-project</id><content type="html" xml:base="http://localhost:4000/en/swift/which-version-upgrade-will-break-your-project/">&lt;p&gt;In iOS development, we often use third-party packages to add functionality or reduce workload. However, if we download the source code of the packages directly or use git submodules, we might encounter issues such as version inconsistencies, unclear dependencies, and inconvenient updates. To solve these problems, we can use cocoapods, a tool that helps manage third-party packages.&lt;/p&gt;
 
 &lt;p&gt;Cocoapods is an open-source project written in Ruby that automates the installation and updating of third-party packages while handling dependencies effectively. The benefits of using cocoapods include:&lt;/p&gt;
 
@@ -1036,20 +1102,4 @@ func testTokenResponse() throws {&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: Unit tests should be repeatable in any environment or under any circumstances, providing consistent results.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: Unit tests should have clear standards for passing or failing without the need for manual checks or validation.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: Unit tests should be written in a timely manner, ideally before or concurrently with code development, to drive design and refactoring.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">“Writing software is like building a cathedral - when we finish, we start praying.” Software and cathedrals are much the same – first we build them, then we pray. - Sam Redwine</summary></entry><entry xml:lang="en"><title type="html">Checking Third-Party Package Versions from Podfile.lock</title><link href="http://localhost:4000/en/swift/check-third-party-pod-version-from-podfilelock/" rel="alternate" type="text/html" title="Checking Third-Party Package Versions from Podfile.lock" /><published>2024-07-15T14:29:00+08:00</published><updated>2024-07-15T14:29:00+08:00</updated><id>http://localhost:4000/en/swift/check-third-party-pod-version-from-podfilelock</id><content type="html" xml:base="http://localhost:4000/en/swift/check-third-party-pod-version-from-podfilelock/">&lt;p&gt;In iOS app development, third-party libraries are commonly used. This article primarily focuses on how to verify the versions of third-party packages used in a project by examining Podfile.lock. In iOS projects, the file that records all third-party libraries and their dependencies is Podfile.lock. When collaborating developers work on the project, they simply need to run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt; command in the terminal directory level where Podfile.lock is located, and CocoaPods will install the third-party packages as specified in Podfile.lock according to the versions listed in the Podfile. Next, we will explain the structure of Podfile.lock.&lt;/p&gt;
-
-&lt;h2 id=&quot;structure-of-podfilelock&quot;&gt;Structure of Podfile.lock&lt;/h2&gt;
-
-&lt;p&gt;The versions of the third-party libraries used and each library’s dependencies are listed in the first section under the heading “PODS:”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/podfile-lock/podfile-lock-sample.png&quot; alt=&quot;Podfile lock sample&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In Podfile.lock, a hyphen preceded by two spaces indicates the third-party library installed and its corresponding version number. In the sample image, you can see the areas marked in red; the following two lines both start with four spaces followed by a hyphen. This indicates that the installed third-party library depends on another third-party library. In this example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firebase/CoreOnly&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics (= 7.6.0)&lt;/code&gt;. The dependent &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt; is pinned to a specific version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;7.6.0&lt;/code&gt;. Because of the dependency on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt;, you will also see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firebase/CoreOnly&lt;/code&gt; and the version number of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseAnalytics&lt;/code&gt; in the Podfile.lock.&lt;/p&gt;
-
-&lt;h2 id=&quot;reminder-do-not-add-podfilelock-to-gitignore&quot;&gt;Reminder: Do Not Add Podfile.lock to .gitignore&lt;/h2&gt;
-
-&lt;p&gt;This file precisely records the third-party libraries and their versions used in the project. When taking over a project, simply running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt; will install the corresponding code on the project. Therefore, please do not add Podfile.lock to .gitignore, as it can lead to complications for everyone involved.&lt;/p&gt;
-
-&lt;h2 id=&quot;related-links&quot;&gt;Related Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://cocoapods.org/&quot;&gt;Documentation from Cocoapods.org&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Third-Party" /><category term="CocoaPods" /><summary type="html">In iOS app development, third-party libraries are commonly used. This article primarily focuses on how to verify the versions of third-party packages used in a project by examining Podfile.lock. In iOS projects, the file that records all third-party libraries and their dependencies is Podfile.lock. When collaborating developers work on the project, they simply need to run the pod install command in the terminal directory level where Podfile.lock is located, and CocoaPods will install the third-party packages as specified in Podfile.lock according to the versions listed in the Podfile. Next, we will explain the structure of Podfile.lock.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="unitTesting" /><category term="Unit Testing" /><category term="Swift" /><category term="Xcode" /><summary type="html">“Writing software is like building a cathedral - when we finish, we start praying.” Software and cathedrals are much the same – first we build them, then we pray. - Sam Redwine</summary></entry></feed>

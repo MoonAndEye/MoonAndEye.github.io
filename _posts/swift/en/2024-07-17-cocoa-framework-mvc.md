@@ -1,12 +1,12 @@
 ---
 layout: single
 title: iOS MVC Architecture
-date: 2023-05-01 08:48 +0800
+date: 2024-07-17 12:00 +0800
 category: swift
 author: Marvin Lin
 tags: [Swift, MVC, Cocoa framework]
+lang: en
 summary: Analyzing the iOS MVC design pattern. MVC stands for Model-View-Controller. The main point is that the model should be isolated from the view, applicable to both macOS and iOS apps. This article uses the book "Cocoa Design Patterns" as an example.
-permalink: /swift/:title:output_ext
 classes: wide
 ---
 
