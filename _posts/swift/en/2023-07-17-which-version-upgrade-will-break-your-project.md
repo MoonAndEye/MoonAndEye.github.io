@@ -143,7 +143,7 @@ AF.request(URL(string: url)!, method: .post, parameters: parameters, encoding: J
     }
 ```
 
-From the above code, it is clear that moving from Alamofire 4 to 5 would require code changes. To lessen the pain of upgrading versions, you can refer to [Wrapping Third-Party Libraries to Ease Upgrade Pains](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html).
+From the above code, it is clear that moving from Alamofire 4 to 5 would require code changes. To lessen the pain of upgrading versions, you can refer to [Wrapping Third-Party Libraries to Ease Upgrade Pains](/en/swift/using-adapter-pattern-to-libs/).
 
 ## Differences in versioning in Podfile
 
