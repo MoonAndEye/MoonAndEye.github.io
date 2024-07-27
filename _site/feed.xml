@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-17T19:36:31+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Designing Data-Intensive Applications - Chapter 6 Notes</title><link href="http://localhost:4000/en/programming/data-intensive-applications.md/" rel="alternate" type="text/html" title="Designing Data-Intensive Applications - Chapter 6 Notes" /><published>2024-07-17T13:50:00+08:00</published><updated>2024-07-17T13:50:00+08:00</updated><id>http://localhost:4000/en/programming/data-intensive-applications.md</id><content type="html" xml:base="http://localhost:4000/en/programming/data-intensive-applications.md/">&lt;p&gt;There is no silver bullet: https://g.co/kgs/G7QbDr&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-27T13:34:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退</title><link href="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crashlytics.png&quot; alt=&quot;Crashlytics report on xcode15.4 vs. firebase 10.10.0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;7月初，團隊講好一起把 Xcode 升到 15.4 以上，其他的 pods 都是固定的，然後一線，閃退率就起來了，上面的圖就是上線後的結果。&lt;/p&gt;
+
+&lt;p&gt;看了 Crashlytics，發生閃退的地方是 AppDelegate 而且是 Compiler generated code。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crash_on_AppDelegate.png&quot; alt=&quot;Crash starts from AppDelegate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;看了一下 stack overflow 的資訊，有提到的是這篇。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/78122992/3764854&quot;&gt;Stack overflow 查到可能閃退的點，並且建議升級到 Firebase 10.22.0 以上&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/firebase/firebase-ios-sdk/issues/11403&quot;&gt;Firebase github issues - 11403 有提到一系列原因&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;原因和我專案上的類似，和 nanopb 有關。&lt;/p&gt;
+
+&lt;h2 id=&quot;如果升到-xcode-153-以上的版本&quot;&gt;如果升到 Xcode 15.3 以上的版本&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;請一定要檢查 Firebase 的版本是不是在 10.22.0 以上&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;crash-log&quot;&gt;Crash log&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Crashed: com.apple.main-thread
+EXC_BAD_ACCESS KERN_INVALID_ADDRESS 0x000000017338126c
+0
+nanopb
+encode_field + 100
+24
+UIKitCore
+keypath_get_selector_hoverStyle + 11024
+25
+ForumApp
+&amp;lt;compiler-generated&amp;gt; - Line 4337149088
+static AppDelegate.$main() + 4337149088
+26
+ForumApp
+&amp;lt;compiler-generated&amp;gt; - Line 4337152352
+type metadata accessor for AppDelegate + 4337152352
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。</summary></entry><entry xml:lang="en"><title type="html">For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release</title><link href="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crashlytics.png&quot; alt=&quot;Crashlytics report on xcode15.4 vs. firebase 10.10.0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In early July, our team agreed to upgrade to Xcode 15.4. While other pods were kept stable, we noticed an increase in crash rates post-launch, as depicted in the image above.&lt;/p&gt;
+
+&lt;p&gt;Crashlytics analysis revealed that the crashes originated from the AppDelegate and were associated with compiler-generated code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crash_on_AppDelegate.png&quot; alt=&quot;Crash starts from AppDelegate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Further insights were gained from a Stack Overflow post, which recommended upgrading to Firebase version 10.22.0 or higher.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/78122992/3764854&quot;&gt;Stack Overflow discussion on potential crash issues and the recommendation to upgrade Firebase to 10.22.0 or higher&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/firebase/firebase-ios-sdk/issues/11403&quot;&gt;Firebase GitHub issues - 11403 discusses a series of related problems&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The reasons are similar to those in my project, relating to nanopb.&lt;/p&gt;
+
+&lt;h2 id=&quot;if-upgrading-to-xcode-153-or-higher&quot;&gt;If Upgrading to Xcode 15.3 or Higher&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Make sure that the Firebase version is at least 10.22.0&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;crash-log&quot;&gt;Crash log&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Crashed: com.apple.main-thread
+EXC_BAD_ACCESS KERN_INVALID_ADDRESS 0x000000017338126c
+0
+nanopb
+encode_field + 100
+24
+UIKitCore
+keypath_get_selector_hoverStyle + 11024
+25
+ForumApp
+&amp;lt;compiler-generated&amp;gt; - Line 4337149088
+static AppDelegate.$main() + 4337149088
+26
+ForumApp
+&amp;lt;compiler-generated&amp;gt; - Line 4337152352
+type metadata accessor for AppDelegate + 4337152352
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.</summary></entry><entry xml:lang="en"><title type="html">Designing Data-Intensive Applications - Chapter 6 Notes</title><link href="http://localhost:4000/en/programming/data-intensive-applications.md/" rel="alternate" type="text/html" title="Designing Data-Intensive Applications - Chapter 6 Notes" /><published>2024-07-17T13:50:00+08:00</published><updated>2024-07-17T13:50:00+08:00</updated><id>http://localhost:4000/en/programming/data-intensive-applications.md</id><content type="html" xml:base="http://localhost:4000/en/programming/data-intensive-applications.md/">&lt;p&gt;There is no silver bullet: https://g.co/kgs/G7QbDr&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1083,209 +1163,4 @@
 
 &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/model-data&quot;&gt;SwiftUI Model Data - Apple Documentation&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/managing-user-interface-state&quot;&gt;Managing UI State in SwiftUI - Apple Documentation&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">SwiftUI employs a declarative approach for UI design. The data transmission follows the sequence of Action → State → View, which is a fixed direction with no possibility of reversal. You can also research the term “one-way data flow,” which is prevalent not only on mobile platforms but also on other platforms due to its data flow design.</summary></entry><entry xml:lang="en"><title type="html">Value Types and Reference Types in Swift</title><link href="http://localhost:4000/en/swift/ref-type-val-type-in-swift/" rel="alternate" type="text/html" title="Value Types and Reference Types in Swift" /><published>2024-07-16T23:11:00+08:00</published><updated>2024-07-16T23:11:00+08:00</updated><id>http://localhost:4000/en/swift/ref-type-val-type-in-swift</id><content type="html" xml:base="http://localhost:4000/en/swift/ref-type-val-type-in-swift/">&lt;p&gt;This discussion was an extension of the Prototype pattern from a book on Swift’s Design Patterns. Now, I aim to delve deeper into the nuances of value types and reference types.&lt;/p&gt;
-
-&lt;h3 id=&quot;reference-type&quot;&gt;Reference Type&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt; is a reference type. Since Swift 5.5, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;actor&lt;/code&gt; is also a reference type.&lt;/p&gt;
-
-&lt;h3 id=&quot;value-type&quot;&gt;Value Type&lt;/h3&gt;
-
-&lt;p&gt;Objects declared with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt;, as well as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enum&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tuple&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dict&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Array&lt;/code&gt;, are value types.&lt;/p&gt;
-
-&lt;h2 id=&quot;reasons-for-designing-value-type-as-the-main-structure-in-swift&quot;&gt;Reasons for Designing Value Type as the Main Structure in Swift&lt;/h2&gt;
-
-&lt;p&gt;The earliest article I found was written when Swift was still in development. The article link is below, with the publication date of August 15, 2014.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/swift/blog/?id=10&quot;&gt;Value and Reference Types - Swift Blog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The following paragraphs discuss &lt;strong&gt;The Role of Mutation in Safety&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;One of the main reasons for choosing value types over reference types is that they are easier to understand. If you always receive independent copy instances, you can trust that other parts of the application will not change the data behind the scenes. This is particularly useful in a multi-threaded environment where different threads might change the data beneath you. This can lead to serious errors that are very difficult to debug.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Since the difference is defined by what happens when the data is modified, there is a situation where value and reference types overlap: when the instance has no writable data. Without mutation, the behavior of values and references is exactly the same. You might consider a situation where a completely immutable class could be valuable.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;In Swift, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Array&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dictionary&lt;/code&gt; are all value types. They behave much like simple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; values in C, as the sole instances of that data. You do not need to do anything special—like making an explicit copy—to prevent other code from modifying the data in the background. Importantly, you can safely pass copies of values between threads without needing synchronization. This model will help you write more predictable code in Swift.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;what-changes-when-arrays-in-swift-are-value-types&quot;&gt;What Changes When Arrays in Swift are Value Types?&lt;/h2&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// Declaration of NinjaTurtle, note: this uses the reference type class&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NinjaTurtle&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Initialize a Ninja Turtle and name it Da Vinci&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;turtle1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NinjaTurtle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;turtle1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Da Vinci&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Initialize another Ninja Turtle and name it Michelangelo&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;turtle2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NinjaTurtle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;turtle1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Michelangelo&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// Both Ninja Turtles are placed in the same array&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;turtles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;turtle1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;turtle2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// Since the array is a value type, this assignment is a copy&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;copiedTurtles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;turtles&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// We take out the original turtle from the array and rename it Raphael&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;turtles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Raphael&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// What is the name of the turtle at index 0 in the copied array? Raphael or Da Vinci?&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copiedTurtles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It is recommended to run the above code yourself and verify your thoughts.&lt;/p&gt;
-
-&lt;p&gt;If you encounter other languages, try running the same logic in Kotlin, Python, Java, C#, or Rust to see if it behaves the same or differently.&lt;/p&gt;
-
-&lt;h2 id=&quot;in-what-scenarios-should-you-choose-which-type&quot;&gt;In What Scenarios Should You Choose Which Type?&lt;/h2&gt;
-
-&lt;h3 id=&quot;scenarios-suitable-for-value-type&quot;&gt;Scenarios Suitable for Value Type&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;When comparing two objects, using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt; is more reasonable.&lt;/li&gt;
-  &lt;li&gt;When copying, the copied object and the original object should be independent in state.&lt;/li&gt;
-  &lt;li&gt;When data will be operated on across multiple threads.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;scenarios-suitable-for-reference-type-class&quot;&gt;Scenarios Suitable for Reference Type (class)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;When comparing two objects, using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;===&lt;/code&gt; is more reasonable.&lt;/li&gt;
-  &lt;li&gt;When the need arises for a state that is shared and can be changed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;related-links&quot;&gt;Related Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://moonandeye.github.io/swift/2018/06/09/prototype-patter.html&quot;&gt;Prototype Pattern in Swift (Differences Between Reference Type and Value Type)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/swift/blog/?id=10&quot;&gt;Value and Reference Types - Swift Blog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/&quot;&gt;Structures and Classes - swift.org&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><summary type="html">This discussion was an extension of the Prototype pattern from a book on Swift’s Design Patterns. Now, I aim to delve deeper into the nuances of value types and reference types.</summary></entry><entry xml:lang="en"><title type="html">Integrating Escaping Closure with async/await in SwiftUI Projects</title><link href="http://localhost:4000/en/swift/async-await-connect-closure/" rel="alternate" type="text/html" title="Integrating Escaping Closure with async/await in SwiftUI Projects" /><published>2024-07-16T21:42:00+08:00</published><updated>2024-07-16T21:42:00+08:00</updated><id>http://localhost:4000/en/swift/async-await-connect-closure</id><content type="html" xml:base="http://localhost:4000/en/swift/async-await-connect-closure/">&lt;h2 id=&quot;method-of-integrating-closure-with-swift-asyncawait&quot;&gt;Method of Integrating Closure with swift async/await&lt;/h2&gt;
-
-&lt;p&gt;If a project started before Swift had Combine, it would have a lot of @escaping closures for asynchronous data transfer. After Swift 5.5, Swift added the async/await syntax, making it unnecessary to have numerous curly braces when writing asynchronous tasks.&lt;/p&gt;
-
-&lt;p&gt;However, there’s a new scenario where the previous libraries were already written with URLRequest methods using closures. Rewriting all existing escaping closures might not be significant and could also involve some risks. Therefore, writing an additional function to bridge async/await while retaining the original closures is a less risky option.&lt;/p&gt;
-
-&lt;h2 id=&quot;wrapping-an-async-function&quot;&gt;Wrapping an async function&lt;/h2&gt;
-
-&lt;h3 id=&quot;original-class-for-sending-requests&quot;&gt;Original class for sending requests&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Adapter that wraps Alamofire, each function simply uses Alamofire to send URL Request&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;// The original closure function&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// Implementation code omitted&lt;/span&gt;
-        
-        &lt;span class=&quot;c1&quot;&gt;// implemented code omitted&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;extending-request-to-asyncawait&quot;&gt;Extending request to async/await&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Extending AlamofireAdapter&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;extension&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Creating a function that can use await, but actually calls the original getCoinMarketsInfo&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;c1&quot;&gt;// Performing the bridge&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;withCheckedContinuation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-            
-            &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinMarketsInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coutPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;countPerPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sparkLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;continuation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;returning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;withCheckedContinuation()&lt;/code&gt; allows previous closure data to be returned asynchronously using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;continuation&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;using-getcoinlist-in-contentview&quot;&gt;Using getCoinList() in ContentView&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                    
-                    &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;updateLastFetchTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-                        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
-                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;you got list, count: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, first: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;describing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                    &lt;span class=&quot;kt&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;when-used-in-a-swiftui-view&quot;&gt;When used in a SwiftUI View&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# When used in SwiftUI&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SwiftUI&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    
-    &lt;span class=&quot;kd&quot;&gt;@State&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cryptoList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;CoinMarketInfoElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;kt&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;this is test&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alamofireAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getCoinList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                
-                &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cryptoList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetch market got error: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, description: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Please note that async/await still requires the project to support at least iOS 13. If your project can’t support below iOS 13, then you won’t be able to use async/await.&lt;/p&gt;
-
-&lt;p&gt;In my personal side projects, I’ve been trying to write small projects using SwiftUI, and after using async/await, the code for handling many asynchronous features is very readable to humans. Perhaps as Apple continues to push the minimum Xcode version, I will gradually increase the proportion of async/await code. Currently, I still have many closures performing data transfer in the project.&lt;/p&gt;
-
-&lt;h2 id=&quot;related-information&quot;&gt;Related Information&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/apple/swift-evolution/blob/main/proposals/0300-continuation.md&quot;&gt;Swift evolution on continuation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2021/10132/&quot;&gt;WWDC21: - Meet async/await in Swift&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/&quot;&gt;swift.org - Concurrency&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.hackingwithswift.com/swift/5.5/continuations&quot;&gt;Article from Hacking With Swift&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/forums/thread/681980&quot;&gt;Discussion on Apple Developer Forums&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://forums.swift.org/t/will-swift-concurrency-deploy-back-to-older-oss/49370&quot;&gt;Intense discussion on Swift Forums about backward support&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.swiftbysundell.com/special/swift-concurrency-backward-compatibility/&quot;&gt;Article on backward support for Swift Concurrency&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Combine" /><category term="Asynchronous" /><summary type="html">Method of Integrating Closure with swift async/await</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/managing-user-interface-state&quot;&gt;Managing UI State in SwiftUI - Apple Documentation&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">SwiftUI employs a declarative approach for UI design. The data transmission follows the sequence of Action → State → View, which is a fixed direction with no possibility of reversal. You can also research the term “one-way data flow,” which is prevalent not only on mobile platforms but also on other platforms due to its data flow design.</summary></entry></feed>
