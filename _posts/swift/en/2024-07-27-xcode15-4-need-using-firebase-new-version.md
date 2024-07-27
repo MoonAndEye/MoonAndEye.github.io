@@ -43,11 +43,9 @@ encode_field + 100
 UIKitCore
 keypath_get_selector_hoverStyle + 11024
 25
-ForumApp
 <compiler-generated> - Line 4337149088
 static AppDelegate.$main() + 4337149088
 26
-ForumApp
 <compiler-generated> - Line 4337152352
 type metadata accessor for AppDelegate + 4337152352
 ```
