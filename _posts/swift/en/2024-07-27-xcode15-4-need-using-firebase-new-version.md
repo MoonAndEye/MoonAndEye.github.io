@@ -1,7 +1,7 @@
 ---
 layout: single
 title: For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release
-date: 2024-07-27 11:32
+date: 2024-07-27 11:32 +0800
 category: swift
 author: Marvin
 lang: en

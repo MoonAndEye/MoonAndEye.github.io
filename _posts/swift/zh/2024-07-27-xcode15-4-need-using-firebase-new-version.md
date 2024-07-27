@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退
-date: 2024-07-27 11:32
+date: 2024-07-27 11:32 +0800
 category: swift
 author: Marvin
 tags: [swift, firebase, xcode]
