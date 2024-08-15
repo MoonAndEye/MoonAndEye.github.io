@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-27T13:34:34+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退</title><link href="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-15T23:36:11+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
+
+&lt;p&gt;One evening, while scrolling through x (formerly Twitter), I stumbled upon a post retweeted by &lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox&lt;/a&gt; announcing that Cocoapods, after 13 years, has entered maintain mode.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/cocoapods-enter-maintain-mode/pods_enter_maintain_mode.png&quot; alt=&quot;cocoapods announcement: enter maintain mode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;key-points&quot;&gt;Key Points&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ensure security issues in the mainline are addressed.&lt;/li&gt;
+  &lt;li&gt;Release at least twice a year to keep up with Xcode updates.&lt;/li&gt;
+  &lt;li&gt;Review support requests every six months.&lt;/li&gt;
+  &lt;li&gt;Maintain website infrastructure operations.&lt;/li&gt;
+  &lt;li&gt;Support limitations: Will not actively follow up on GitHub issues as a support channel, nor commit to handling PRs for new features or application layer errors.&lt;/li&gt;
+  &lt;li&gt;Consider turning the Specs repository to read-only to simplify security management and maintain existing builds in the long run.&lt;/li&gt;
+  &lt;li&gt;For projects like React Native, which primarily acquire libraries via npm and not Trunk, such changes may be sufficient.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reasoning&quot;&gt;Reasoning&lt;/h2&gt;
+&lt;p&gt;Since Apple introduced the Swift Package Manager (SPM), Cocoapods has faced significant competitive pressure, impacting its development momentum. With SPM being officially supported by Apple and integrated directly into its development environment, competing with Apple in the core area of package management tools is disadvantageous. Apple’s widespread influence and deep integration with its products have made developers lean towards choosing SPM as their dependency management tool, directly affecting Cocoapods’ market share and related development investments. Therefore, facing competition from Apple, Cocoapods needs to adjust its strategy to adapt to the evolving development ecosystem.&lt;/p&gt;
+
+&lt;h2 id=&quot;impact-on-pods&quot;&gt;Impact on Pods&lt;/h2&gt;
+&lt;p&gt;Since I have several older iOS projects underway and numerous interdependent modules using pods for management at work, it’s inevitable to start supporting SPM. Considering the upcoming changes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Xcode 16 is expected to release in September 2024.&lt;/li&gt;
+  &lt;li&gt;iOS 18 is likely to release in September 2024.&lt;/li&gt;
+  &lt;li&gt;Swift 6, although optional, will appear with Xcode 16, with Swift 5.10 being the last of the version 5 series.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I anticipate that the development community will adapt to these changes by around early 2025. Therefore, I plan to initiate support for SPM starting in 2025.&lt;/p&gt;
+
+&lt;h2 id=&quot;orta-theroxs-article-on-cocoapods-entering-maintain-mode&quot;&gt;&lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox’s Article on Cocoapods Entering Maintain Mode&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates</summary></entry><entry xml:lang="zh"><title type="html">Cocoapods 進入 maintain mode</title><link href="http://localhost:4000/zh/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods 進入 maintain mode" /><published>2024-08-15T22:10:00+08:00</published><updated>2024-08-15T22:10:00+08:00</updated><id>http://localhost:4000/zh/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/zh/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-進入-maintain-mode但一年還會發佈兩次以上讓-pod-可以跟上-xcode-的更新&quot;&gt;Cocoapods 進入 maintain mode，但一年還會發佈兩次以上，讓 pod 可以跟上 Xcode 的更新&lt;/h2&gt;
+
+&lt;p&gt;有一天晚上，我滑了 x (前身為推特)，突然滑到了，有人轉推了 &lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox&lt;/a&gt; 的文章，有 13 年歷史的 Cocoapods 開始進入 maintain mode 了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/cocoapods-enter-maintain-mode/pods_enter_maintain_mode.png&quot; alt=&quot;cocoapods announcement: enter maintain mode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;重點整理&quot;&gt;重點整理&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;確保處理幹線的系統安全問題。&lt;/li&gt;
+  &lt;li&gt;每年至少發布兩次版本以跟上 Xcode 更新。&lt;/li&gt;
+  &lt;li&gt;每六個月檢查一次支持請求。&lt;/li&gt;
+  &lt;li&gt;保持網站基礎設施運行。&lt;/li&gt;
+  &lt;li&gt;支持限制: 不會積極跟進 GitHub 問題作為支持渠道，也不會承諾處理新增功能的 PR 或應用層錯誤。&lt;/li&gt;
+  &lt;li&gt;考慮將 Specs 倉庫轉為只讀，以簡化安全管理，長遠保持現有構建運行。&lt;/li&gt;
+  &lt;li&gt;對於如 React Native 等項目，這樣的變動可能足夠，因為它們的庫主要通過 npm 獲得而不是通過 Trunk。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;原因&quot;&gt;原因&lt;/h2&gt;
+&lt;p&gt;自從 Apple 推出了 Swift Package Manager (SPM) 以後，CocoaPods 面臨了顯著的競爭壓力，這對其發展動力造成了影響。由於 SPM 是由 Apple 官方支持，直接整合在其開發環境中，這使得與 Apple 在包管理工具這一核心領域內進行競爭變得不太有利。Apple 的廣泛影響力和對其產品的深度整合，使得開發者傾向於選擇 SPM 作為依賴管理工具，這直接影響了 CocoaPods 的市場份額與相關的開發投入。因此，面對來自 Apple 的競爭，CocoaPods 在策略上需要做出調整，以適應不斷變化的開發生態。&lt;/p&gt;
+
+&lt;h2 id=&quot;針對-pods-的這項變化&quot;&gt;針對 pods 的這項變化&lt;/h2&gt;
+&lt;p&gt;因為我手上還有很早就啟動的 iOS 專案，工作上也有一堆互相依賴的模組在使用 pod 來管理，這個狀況必然要開始進行支援 SPM 的動作。考量到接下來會有這些動作&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Xcode 16 應該會在 2024 9 月 release&lt;/li&gt;
+  &lt;li&gt;iOS 18 應該會在 2024 9 月 release&lt;/li&gt;
+  &lt;li&gt;Swift 6 雖然可選，但會在 Xcode 16 時一起出現，Swift 5.10 會是最後的版 5 開頭版本&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;預估開發社群對於環境的變化，應該會在 2025 年新年前後吧。所以我心中啟動 SPM 的支援，應該會在 2025 開始進行。&lt;/p&gt;
+
+&lt;h2 id=&quot;orta-therox-聲明-cocoapods-進入-maintain-mode-的文章&quot;&gt;&lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox 聲明 Cocoapods 進入 maintain mode 的文章&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;以下是機翻&quot;&gt;以下是機翻&lt;/h2&gt;
+
+&lt;p&gt;TLDR: 我們依然在維護 CocoaPods，但我們會更明確地表達現在 CocoaPods 已進入維護模式。&lt;/p&gt;
+
+&lt;p&gt;CocoaPods 已有約 13 年的歷史，這段時間內 iOS 開發的格局發生了巨大變化。我還記得那些小型共享庫的碎片化島嶼（例如：ASIHTTPRequest、Three20、SBJson、SSToolkit、iCarousel），它們升級說明複雜且構建設置困難。CocoaPods 簡化了這一過程，讓它成為 iOS 和 Mac 社區分享代碼的事實標準方法。&lt;/p&gt;
+
+&lt;p&gt;2015 年，蘋果宣布 CocoaPods 項目已被 Sherlock，因為他們將創建自己的包管理器：Swift Package Manager。這一舉措有效地使 CocoaPods 失去了前進的動力，因為在自己的領域與蘋果競爭很少是值得志願者花時間的戰鬥。&lt;/p&gt;
+
+&lt;p&gt;自從 9 年前 Swift Package Manager 宣布以來，核心團隊的成員各自有持續維護的原因：一種責任感、被雇佣來維護使用 CocoaPods 的庫或應用、在大型項目的構建基礎設施工作中 CocoaPods 是關鍵部分，或只是對社區的熱愛。&lt;/p&gt;
+
+&lt;p&gt;然而，隨著時間的推移 - 這些聯繫也變得越來越脆弱，工作變動，人們轉移到新的生態系統，我們慢慢地將 CocoaPods 轉移到一個只有在外部因素促使時才會進行工作的地方。這可能是我在博客上過去幾年報告的安全問題，或者 Xcode 的重大更改，這需要我們調整一些設置並創建一個新版本。&lt;/p&gt;
+
+&lt;p&gt;如果 CocoaPods 的唯一受眾是原生 Cocoa 開發者，CocoaPods 的使用應該在下降，然而，情況並非如此。React Native 和 Flutter 的流行確保了大多數使用量/流量指標隨著時間穩步上升。&lt;/p&gt;
+
+&lt;p&gt;這使 CocoaPods 身處一個奇怪的位置，許多維護者不使用它，蘋果已經維護了一個替代品 9 年，而項目的新用戶幾乎不知道 CocoaPods 存在或它的作用。&lt;/p&gt;
+
+&lt;p&gt;所以，我們得出結論，我們需要弄清楚項目的狀況以及過去幾年我們作為維護者如何對待它。&lt;/p&gt;
+
+&lt;h3 id=&quot;cocoapods-是如何維護的&quot;&gt;CocoaPods 是如何維護的&lt;/h3&gt;
+&lt;p&gt;嚴格來說，我們不打算改變我們維護 CocoaPods 的方式。我們只是要開始清楚地表明 CocoaPods 是如何被維護的：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我們將確保處理幹線的系統安全問題&lt;/li&gt;
+  &lt;li&gt;我們將目標是每年至少發布 2 次版本以跟上 Xcode 更新&lt;/li&gt;
+  &lt;li&gt;我們將目標是每 6 個月查看一次幹線的支持請求&lt;/li&gt;
+  &lt;li&gt;我們將保持網站基礎設施不完全崩潰&lt;/li&gt;
+  &lt;li&gt;我們對讓 CocoaPods 更加未來友好的 PR 持開放態度&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;我們不會做的事&quot;&gt;我們不會做的事：&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;我們不會積極跟蹤 GitHub 問題作為個人支持渠道&lt;/li&gt;
+  &lt;li&gt;我們不打算在新功能方面進行積極的 CocoaPods 開發&lt;/li&gt;
+  &lt;li&gt;我們不會保證處理添加新功能的人的 PR 或應用層面的錯誤&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;長期計劃&quot;&gt;長期計劃&lt;/h3&gt;
+&lt;h4 id=&quot;只讀規格&quot;&gt;只讀規格&lt;/h4&gt;
+&lt;p&gt;我們正在討論在非常長的、多年的基礎上，我們可以通過將 Specs 倉庫轉換為只讀來大幅簡化 CocoaPods 幹線的安全性。像 Specs 倉庫和 CDN 這樣的基礎設施仍將運行，只要 GitHub 和 jsDelivr 繼續存在，這很可能是很長一段時間。這將保持所有現有構建的運行。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods 進入 maintain mode，但一年還會發佈兩次以上，讓 pod 可以跟上 Xcode 的更新</summary></entry><entry xml:lang="zh"><title type="html">要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退</title><link href="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crashlytics.png&quot; alt=&quot;Crashlytics report on xcode15.4 vs. firebase 10.10.0&quot; /&gt;&lt;/p&gt;
 
@@ -31,11 +131,9 @@ encode_field + 100
 UIKitCore
 keypath_get_selector_hoverStyle + 11024
 25
-ForumApp
 &amp;lt;compiler-generated&amp;gt; - Line 4337149088
 static AppDelegate.$main() + 4337149088
 26
-ForumApp
 &amp;lt;compiler-generated&amp;gt; - Line 4337152352
 type metadata accessor for AppDelegate + 4337152352
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。</summary></entry><entry xml:lang="en"><title type="html">For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release</title><link href="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.&lt;/p&gt;
@@ -71,11 +169,9 @@ encode_field + 100
 UIKitCore
 keypath_get_selector_hoverStyle + 11024
 25
-ForumApp
 &amp;lt;compiler-generated&amp;gt; - Line 4337149088
 static AppDelegate.$main() + 4337149088
 26
-ForumApp
 &amp;lt;compiler-generated&amp;gt; - Line 4337152352
 type metadata accessor for AppDelegate + 4337152352
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.</summary></entry><entry xml:lang="en"><title type="html">Designing Data-Intensive Applications - Chapter 6 Notes</title><link href="http://localhost:4000/en/programming/data-intensive-applications.md/" rel="alternate" type="text/html" title="Designing Data-Intensive Applications - Chapter 6 Notes" /><published>2024-07-17T13:50:00+08:00</published><updated>2024-07-17T13:50:00+08:00</updated><id>http://localhost:4000/en/programming/data-intensive-applications.md</id><content type="html" xml:base="http://localhost:4000/en/programming/data-intensive-applications.md/">&lt;p&gt;There is no silver bullet: https://g.co/kgs/G7QbDr&lt;/p&gt;
@@ -941,226 +1037,4 @@ type metadata accessor for AppDelegate + 4337152352
 
 &lt;p&gt;&lt;a href=&quot;https://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/Alamofire/Alamofire/blob/master/Documentation/Alamofire%205.0%20Migration%20Guide.md&quot;&gt;Alamofire 5 Migration Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="third party" /><category term="cocoapods" /><summary type="html">In iOS development, we often use third-party packages to add functionality or reduce workload. However, if we download the source code of the packages directly or use git submodules, we might encounter issues such as version inconsistencies, unclear dependencies, and inconvenient updates. To solve these problems, we can use cocoapods, a tool that helps manage third-party packages.</summary></entry><entry xml:lang="en"><title type="html">Wrapping Third-Party Libraries to Ease the Pain of Upgrades</title><link href="http://localhost:4000/en/swift/using-adapter-pattern-to-libs/" rel="alternate" type="text/html" title="Wrapping Third-Party Libraries to Ease the Pain of Upgrades" /><published>2024-07-17T08:30:00+08:00</published><updated>2024-07-17T08:30:00+08:00</updated><id>http://localhost:4000/en/swift/using-adapter-pattern-to-libs</id><content type="html" xml:base="http://localhost:4000/en/swift/using-adapter-pattern-to-libs/">&lt;p&gt;In modern iOS development, third-party libraries are commonly used. With yearly updates to Swift and Xcode, as well as changes in syntax, libraries often undergo version upgrades. Below are the version upgrade trends for Alamofire and Charts over the past year, illustrating that libraries do get updated. According to &lt;a href=&quot;https://semver.org&quot;&gt;Semantic Versioning&lt;/a&gt;, major version changes almost certainly require code modifications to build successfully. Sometimes, even minor version upgrades can introduce unexpected issues.&lt;/p&gt;
-
-&lt;p&gt;If the third-party library you’re using is scattered across dozens of places in your project, then you’ll need to make changes in as many places when upgrading. As the version jumps become larger or the number of scattered instances increases, the risk of library upgrade issues also rises.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/adapter-pattern/Alamofire-tags.jpeg&quot; alt=&quot;Alamofire tags list&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/adapter-pattern/Charts-tags.jpeg&quot; alt=&quot;Charts tags list&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;reducing-dependency-pain-due-to-upgrades---wrapping-libraries&quot;&gt;Reducing Dependency Pain Due to Upgrades - Wrapping Libraries&lt;/h2&gt;
-
-&lt;p&gt;When using libraries, consider the parameters your interfaces will use. Take the most common event logging library as an example. Google Firebase’s FirebaseAnalytics requires these two parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Parameter Name: String&lt;/li&gt;
-  &lt;li&gt;Parameter Dictionary: [String: Any]?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These parameters are typically set as arguments in the adapter function.&lt;/p&gt;
-
-&lt;h3 id=&quot;first-version-using-only-firebaseanalytics&quot;&gt;First Version, Using Only FirebaseAnalytics&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Foundation&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FirebaseAnalytics&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// Object that wraps the analytics module; only this file imports the analytics module&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AnalyticsAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;/// Function to log analytics events, triggers this function when recording, interface parameters reflect those of the wrapped lib&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;logEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Any&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;kt&quot;&gt;Analytics&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;logEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;second-version-including-google-analytics-and-flurry&quot;&gt;Second Version, Including Google Analytics and Flurry&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// Object that wraps the analytics module; only this file imports the analytics module&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AnalyticsAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;/// Function to log analytics events, triggers this function when recording, interface parameters reflect those of the wrapped lib&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;logEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Any&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;/// Google Analytics existing from the first version&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;Analytics&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;logEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;/// Tracking lib added in the second version&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;Flurry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;eventName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;diagram-of-adapter-usage-in-a-project&quot;&gt;Diagram of Adapter Usage in a Project&lt;/h3&gt;
-
-&lt;p&gt;In the project, if VCs or Models need to utilize third-party lib functions, they would call through the adapter class. VCs won’t touch the third-party lib directly; only the adapter objects interact with the third-party lib. The usage appears as in the diagram below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/adapter-pattern/AdaptersDiagram.jpeg&quot; alt=&quot;Diagram of Adapter Usage in a Project&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;example---using-alamofire&quot;&gt;Example - Using Alamofire&lt;/h2&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Foundation&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Alamofire&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// Adapter object for Alamofire, handles URLRequest&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;/// Sends out requests and defines a decodable object to return upon completion (Result&amp;lt;T: Decodable, Error&amp;gt;)&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendRequestDecodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Decodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;c1&quot;&gt;/// If Alamofire upgrades to major version 6, the implementation here would change&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;AF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;statusCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseDecodable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dataResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;DataResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AFError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                
-                &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;decodableObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                        &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decodableObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                        &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;example---using-an-image-caching-package&quot;&gt;Example - Using an Image Caching Package&lt;/h2&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ImageCacheAdapter.swift&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ChatGPT&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Created by cm0679 on 2023/04/22.&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIKit&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Kingfisher&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// Specialized object for interacting between ImageView and web image resources&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;ImageCacheAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;/// Interface: UIImageView, URL, and placeholder. The placeholder is optional by default&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;/// When an imageView in a tableViewCell needs an image during cellForRowAt&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;downloadAndCache&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;imageView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIImageView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;placeHolder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        
-        &lt;span class=&quot;c1&quot;&gt;/// To switch from Kingfisher to sd_webImage, replace the following implementation&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;imageView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;nv&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;nv&quot;&gt;placeholder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;placeHolder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-                
-            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Task done for: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;absoluteString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;??&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Job failed: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localizedDescription&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;using-protocols-for-adapters&quot;&gt;Using Protocols for Adapters&lt;/h2&gt;
-
-&lt;p&gt;If you search online for the Adapter pattern, you’ll find examples that begin with defining a protocol, setting up functions within it. Then, the previously mentioned Alamofire Adapter object conforms to the URLRequest protocol and implements its functions.&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Foundation&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Alamofire&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;protocol&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequestAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;/// Sends out requests and defines a decodable object to return upon completion (Result&amp;lt;T: Decodable, Error&amp;gt;)&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendRequestDecodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Decodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// Adapter object for Alamofire, handles URLRequest&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequestAdapter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;/// Sends out requests and defines a decodable object to return upon completion (Result&amp;lt;T: Decodable, Error&amp;gt;)&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendRequestDecodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Decodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;swift&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;/// If Alamofire upgrades to major version 6, the implementation here would change&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;AF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;statusCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseDecodable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dataResponse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;DataResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AFError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-
-                &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;decodableObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                    &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decodableObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                    &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In application, for instance, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FooModel&lt;/code&gt; would only interact with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;URLRequestAdapter&lt;/code&gt; protocol, but during initialization, it uses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AlamofireAdapter&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;FooModel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;urlRequestAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequestAdapter&lt;/span&gt;
-
-    &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;urlRequestAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequestAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlRequestAdapter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;AlamofireAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;requestSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;foo_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;someRequest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;urlRequestAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sendRequestDecodable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;someRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-
-            &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;response: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;While this approach requires declaring an extra protocol, which may seem like an unnecessary addition if the same functionality can be achieved without it, there is a story behind this method. Writing a “interface” in code first, and then creating an object to inherit this interface, is a common practice in many languages. Given Swift’s relatively young age compared to other languages, adopting established patterns is both logical and practical. Furthermore, if your codebase isn’t just for releasing apps but involves SDKs that might need switching, such as switching payment SDKs from credit card payments to Apple Pay or third-party logins from Facebook to GitHub, this pattern can be very useful.&lt;/p&gt;
-
-&lt;h3 id=&quot;but-what-about-mobile-app-development&quot;&gt;But what about mobile app development?&lt;/h3&gt;
-
-&lt;p&gt;If you are certain that your project is an iOS app and that the libraries used are the most popular ones, with the highest number of stars and the most forks, is there a need to write a protocol before implementing objects that conform to it?&lt;/p&gt;
-
-&lt;p&gt;I don’t have an answer.&lt;/p&gt;
-
-&lt;p&gt;But you can start your thinking from these points:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Is this project a personal side project, a major company project, or a company experimental project?&lt;/li&gt;
-  &lt;li&gt;Is the feature’s library one of a few dominant ones?&lt;/li&gt;
-  &lt;li&gt;How does the project decide the policy for using third-party libraries?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Of course, the most important thing is the consensus of the “project team.” If the project team consists of just one person, then that person decides alone. But when the team consists of multiple members, what should be prioritized is how the project decides on third-party libraries. Above the consensus on “how to use libraries,” there is another layer of “team development communication” that needs consideration.&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://semver.org&quot;&gt;Semantic Versioning&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://refactoring.guru/design-patterns/adapter/swift/example#example-1&quot;&gt;Refactoring Guru’s Adapter Pattern Swift Sample&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Design Patterns" /><summary type="html">In modern iOS development, third-party libraries are commonly used. With yearly updates to Swift and Xcode, as well as changes in syntax, libraries often undergo version upgrades. Below are the version upgrade trends for Alamofire and Charts over the past year, illustrating that libraries do get updated. According to Semantic Versioning, major version changes almost certainly require code modifications to build successfully. Sometimes, even minor version upgrades can introduce unexpected issues.</summary></entry><entry xml:lang="en"><title type="html">SwiftUI Data Flow</title><link href="http://localhost:4000/en/swift/swiftui-data-flow/" rel="alternate" type="text/html" title="SwiftUI Data Flow" /><published>2024-07-17T06:00:00+08:00</published><updated>2024-07-17T06:00:00+08:00</updated><id>http://localhost:4000/en/swift/swiftui-data-flow</id><content type="html" xml:base="http://localhost:4000/en/swift/swiftui-data-flow/">&lt;p&gt;SwiftUI employs a declarative approach for UI design. The data transmission follows the sequence of Action → State → View, which is a fixed direction with no possibility of reversal. You can also research the term “one-way data flow,” which is prevalent not only on mobile platforms but also on other platforms due to its data flow design.&lt;/p&gt;
-
-&lt;h2 id=&quot;action-as-the-starting-point&quot;&gt;Action as the Starting Point&lt;/h2&gt;
-
-&lt;p&gt;An action may be triggered by a user or an external event. Once an action is initiated, it changes the state within the program, and subsequently, SwiftUI automatically updates the necessary views.&lt;/p&gt;
-
-&lt;p&gt;Compared to previous screen rendering responsibilities, which were handled by UIViewController in the older UIKit.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/state-change/one-way-data-flow.jpeg&quot; alt=&quot;SwiftUI Data flow&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;view-state-management---single-source-of-truth&quot;&gt;View State Management - Single Source of Truth&lt;/h2&gt;
-
-&lt;p&gt;It’s important to remember the principle of a single source of truth. Apple’s recommended approach is to design data as read-only Swift properties or provide bidirectional state bindings. SwiftUI observes data changes and updates only the views that need to change.&lt;/p&gt;
-
-&lt;p&gt;Apple advises against using persistent storage directly as state properties. Instead, persistent storage is more suitably used for managing transitional states, such as highlight statuses or filter settings.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/state-change/ui-state.jpeg&quot; alt=&quot;UI State Management&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/model-data&quot;&gt;SwiftUI Model Data - Apple Documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swiftui/managing-user-interface-state&quot;&gt;Managing UI State in SwiftUI - Apple Documentation&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="SwiftUI" /><summary type="html">SwiftUI employs a declarative approach for UI design. The data transmission follows the sequence of Action → State → View, which is a fixed direction with no possibility of reversal. You can also research the term “one-way data flow,” which is prevalent not only on mobile platforms but also on other platforms due to its data flow design.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://github.com/Alamofire/Alamofire/blob/master/Documentation/Alamofire%205.0%20Migration%20Guide.md&quot;&gt;Alamofire 5 Migration Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="third party" /><category term="cocoapods" /><summary type="html">In iOS development, we often use third-party packages to add functionality or reduce workload. However, if we download the source code of the packages directly or use git submodules, we might encounter issues such as version inconsistencies, unclear dependencies, and inconvenient updates. To solve these problems, we can use cocoapods, a tool that helps manage third-party packages.</summary></entry></feed>
