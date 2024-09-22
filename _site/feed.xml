@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-22T16:08:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">Xcode16 Release Notes Whats New</title><link href="http://localhost:4000/zh/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode16 Release Notes Whats New" /><published>2024-09-22T00:00:00+08:00</published><updated>2024-09-22T00:00:00+08:00</updated><id>http://localhost:4000/zh/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/zh/xcode16-release-notes-whats-new/"></content><author><name>Marvin Lin</name></author><summary type="html"></summary></entry><entry xml:lang="en"><title type="html">Xcode16 Release Notes Whats New</title><link href="http://localhost:4000/en/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode16 Release Notes Whats New" /><published>2024-09-22T00:00:00+08:00</published><updated>2024-09-22T00:00:00+08:00</updated><id>http://localhost:4000/en/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/en/xcode16-release-notes-whats-new/"></content><author><name>Marvin Lin</name></author><summary type="html"></summary></entry><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-22T16:13:35+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">Xcode 16 Release Notes 新功能 機翻</title><link href="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes 新功能 機翻" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/">&lt;p&gt;這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：&lt;/p&gt;
+
+&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;預測代碼完成&lt;/strong&gt;（Predictive Code Completion）：Xcode 16 現在支援在所有 Apple silicon Mac 上進行預測代碼完成。這功能透過專為 Swift 和 Apple SDK 訓練的機器學習模型驅動，需在 macOS 15 或更新的系統上運行。（116310768）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;build-settings&quot;&gt;Build Settings&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;從構建設置編輯器複製和貼上&lt;/strong&gt;：現在使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.xcconfig&lt;/code&gt; 檔案語法。（14333348）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;項目導航的“以…方式開啟”上下文菜單&lt;/strong&gt;：現在支援為每個檔案類型選擇預設編輯器。（24666459）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;xcodebuild&quot;&gt;xcodebuild&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;匯入和匯出下載的平台&lt;/strong&gt;：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xcodebuild&lt;/code&gt; 現在支援匯入和匯出下載的平臺到磁碟。這可用於將模擬器磁碟映像匯出到其他需要該模擬器運行時的機器上，無需重新下載。（129189162）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;reality-composer-pro&quot;&gt;Reality Composer Pro&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;時間軸&lt;/strong&gt;：可以序列化執行動作，並根據觸發條件啟動時間軸。（75589529）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;虛擬環境探測元件&lt;/strong&gt;：可以控制虛擬環境的照明效果。（117770245）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;碼位支持&lt;/strong&gt;：支持控制音頻屬性及擴展至8個紋理座標。（123364636）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;previews&quot;&gt;Previews&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;共享構建產物&lt;/strong&gt;：新的預覽引擎支持在 Build and Run 與 Previews 之間共享構建產物。（37353090）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Previewable&lt;/code&gt; 宏&lt;/strong&gt;：允許在預覽中直接使用 SwiftUI 的 property wrapper，無需定義中介包裝視圖。（110570957）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;storekit&quot;&gt;StoreKit&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;隱私協議&lt;/strong&gt;：可以在 StoreKit 配置中設置測試用的隱私政策及訂閱協議。（114228169）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Swift 支持非複製的 C++ 類型&lt;/strong&gt;：允許在 Swift 中使用不需要複製的 C++ 類型。（83358475）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~Copyable&lt;/code&gt; 修飾符&lt;/strong&gt;：可用於 protocols 和泛型參數來禁止複製。（101653009）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;函數型別中的錯誤類型&lt;/strong&gt;：可以在函數簽名中指定錯誤類型，支援更精確的錯誤傳播。（125992062）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;測試報告中支持 Swift Testing 框架&lt;/strong&gt;：測試報告現在顯示 Swift Testing 框架的元數據標籤，以及按測試執行狀態進行篩選的功能。（127015832）&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：</summary></entry><entry xml:lang="en"><title type="html">Xcode 16 Release Notes, new features</title><link href="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes, new features" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/en/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/">&lt;p&gt;Here are the &lt;strong&gt;New Features&lt;/strong&gt; from the Xcode 16 release notes:&lt;/p&gt;
+
+&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Predictive Code Completion&lt;/strong&gt; is now supported on all Apple silicon Macs. It uses a machine learning model specifically trained for Swift and Apple SDKs. (116310768)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;build-settings&quot;&gt;Build Settings&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Copy and paste from the build settings editor&lt;/strong&gt; now uses xcconfig file syntax. (14333348)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Project Navigator’s “Open As” context menu&lt;/strong&gt; now supports choosing default editors per file type. (24666459)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;xcodebuild&quot;&gt;xcodebuild&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;xcodebuild supports importing and exporting a downloaded platform&lt;/strong&gt; to disk. This allows simulator disk images to be exported and applied to other Xcode installations without redownloading. (129189162)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;reality-composer-pro&quot;&gt;Reality Composer Pro&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Timelines&lt;/strong&gt; allow you to sequence actions to be executed in a particular order or time. (75589529)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;VirtualEnvironmentProbeComponent&lt;/strong&gt; enables control of the lighting of virtual environments. (117770245)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extended texcoords&lt;/strong&gt; from 2 to 8 buffers, allowing for more complex data types. (123364636)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;previews&quot;&gt;Previews&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;New Preview Execution Engine&lt;/strong&gt; supports shared build products between Build and Run and Previews for faster switching. (37353090)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@Previewable macro&lt;/strong&gt; allows direct use of property wrappers like @State in Previews without needing an intermediate wrapper view. (110570957)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;storekit&quot;&gt;StoreKit&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Privacy manifests&lt;/strong&gt; can now be included as copied resources in StoreKit configurations for testing privacy policies and terms of service in SubscriptionStoreView. (114228169)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Swift now supports non-copyable C++ types&lt;/strong&gt; when interacting with C++ code from Swift. (83358475)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;~Copyable modifier&lt;/strong&gt; can now be used to suppress copyability on protocols and generic parameters. (101653009)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Typed throws&lt;/strong&gt; allows functions to specify the exact type of error they throw. (125992062)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Test reports now support Swift Testing framework&lt;/strong&gt; metadata and the ability to filter by test run status. (127015832)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">Here are the New Features from the Xcode 16 release notes:</summary></entry><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
 
 &lt;p&gt;One evening, while scrolling through x (formerly Twitter), I stumbled upon a post retweeted by &lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox&lt;/a&gt; announcing that Cocoapods, after 13 years, has entered maintain mode.&lt;/p&gt;
 
