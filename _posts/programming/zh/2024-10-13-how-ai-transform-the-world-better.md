@@ -1,7 +1,7 @@
 ---
 layout: single
 title: AI如何讓世界變得更美好 - Dario Amodei (Claude 創辦人) 機翻
-date: 2024-10-13 16:20
+date: 2024-10-13 16:20 +0800
 category: programming
 author: Marvin 
 tags: [AI, Claude]
