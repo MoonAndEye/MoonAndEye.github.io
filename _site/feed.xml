@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-13T16:32:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">AI如何讓世界變得更美好 - Dario Amodei (Claude 創辦人) 機翻</title><link href="http://localhost:4000/zh/programming/how-ai-transform-the-world-better/" rel="alternate" type="text/html" title="AI如何讓世界變得更美好 - Dario Amodei (Claude 創辦人) 機翻" /><published>2024-10-13T16:20:00+08:00</published><updated>2024-10-13T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/how-ai-transform-the-world-better</id><content type="html" xml:base="http://localhost:4000/zh/programming/how-ai-transform-the-world-better/">&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-13T16:36:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">AI如何讓世界變得更美好 - Dario Amodei (Claude 創辦人) 機翻</title><link href="http://localhost:4000/zh/programming/how-ai-transform-the-world-better/" rel="alternate" type="text/html" title="AI如何讓世界變得更美好 - Dario Amodei (Claude 創辦人) 機翻" /><published>2024-10-13T16:20:00+08:00</published><updated>2024-10-13T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/how-ai-transform-the-world-better</id><content type="html" xml:base="http://localhost:4000/zh/programming/how-ai-transform-the-world-better/">&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
 &lt;h3 id=&quot;強大ai-如何讓世界變得更美好五大領域的潛在益處&quot;&gt;強大AI 如何讓世界變得更美好：五大領域的潛在益處&lt;/h3&gt;
 
 &lt;h4 id=&quot;notebooklm-整理出來的摘要但建議有空的話還是把原文看完會更有感覺&quot;&gt;NotebookLM 整理出來的摘要，但建議有空的話，還是把原文看完，會更有感覺。&lt;/h4&gt;
@@ -483,131 +483,7 @@
 
 &lt;p&gt;然而，這是一件超越尋常的美妙之事。我們有機會在實現這個願景的過程中扮演一個小小的角色。&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>Marvin</name></author><category term="programming" /><category term="AI" /><category term="Claude" /><summary type="html">TL;DR 強大AI 如何讓世界變得更美好：五大領域的潛在益處</summary></entry><entry xml:lang="en"><title type="html">Using DispatchWorkItem to Set Specific Time Limits for API Tasks</title><link href="http://localhost:4000/en/swift/using-DispatchWorkItem-set-specific-timeout-api-task.md/" rel="alternate" type="text/html" title="Using DispatchWorkItem to Set Specific Time Limits for API Tasks" /><published>2024-09-22T17:00:00+08:00</published><updated>2024-09-22T17:00:00+08:00</updated><id>http://localhost:4000/en/swift/using-DispatchWorkItem-set-specific-timeout-api-task.md</id><content type="html" xml:base="http://localhost:4000/en/swift/using-DispatchWorkItem-set-specific-timeout-api-task.md/">&lt;p&gt;Scenario - You are developing an e-commerce iOS app. This app has multiple functionalities, including browsing products, adding items to the cart, checking inventory, and placing orders. Among these, the real-time inventory checking feature is particularly crucial as it directly impacts user purchasing decisions and experience.&lt;/p&gt;
-
-&lt;h2 id=&quot;special-requirements&quot;&gt;Special Requirements:&lt;/h2&gt;
-&lt;p&gt;In this app, most API requests use standard network timeout settings (e.g., 30 seconds or 60 seconds). However, the inventory checking API has a unique requirement:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Strict Timeout Limit&lt;/strong&gt;: If the inventory check API does not return results within 5 seconds, the app must treat it as an error.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;User Experience Consideration&lt;/strong&gt;: This strict timeout limit ensures that users receive inventory information quickly. If the query takes too long, users may perceive the app as unresponsive or abandon their purchase.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;System Load Consideration&lt;/strong&gt;: During peak periods, a large number of concurrent, long-running inventory checks could put a strain on the backend system. Limiting the query time can reduce the load on the servers.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Special Error Handling&lt;/strong&gt;: When a 5-second timeout occurs, the app needs to display a specific error message to the user, such as “Inventory information is temporarily unavailable, please try again later,” rather than a generic network error message.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The first and fourth points are related to the iOS front-end, but this requirement only applies to this one API. We do not want to modify the implementation of all APIs just for this requirement.&lt;/p&gt;
-
-&lt;p&gt;We can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchWorkItem&lt;/code&gt; to set a specific time limit for API tasks and execute our code using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchQueue.main.async&lt;/code&gt; after the task is completed.&lt;/p&gt;
-
-&lt;h2 id=&quot;comparison-of-solutions-using-dispatchworkitem-vs-using-a-simple-truefalse-flag&quot;&gt;Comparison of Solutions: Using DispatchWorkItem vs. Using a Simple True/False Flag&lt;/h2&gt;
-
-&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchWorkItem&lt;/code&gt; has some advantages over using a flag to control timeout behavior. Let’s compare these two methods:&lt;/p&gt;
-
-&lt;h3 id=&quot;advantages-of-using-dispatchworkitem&quot;&gt;Advantages of Using DispatchWorkItem:&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Clear Code Structure&lt;/strong&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchWorkItem&lt;/code&gt; provides a clear way to encapsulate tasks, making the code easier to read and maintain.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Built-in Cancellation Mechanism&lt;/strong&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchWorkItem&lt;/code&gt; comes with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cancel()&lt;/code&gt; method, making it easy to cancel tasks that have not yet been executed.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;More Precise Time Control&lt;/strong&gt;: By using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchQueue.asyncAfter&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchWorkItem&lt;/code&gt;, you can more accurately control the timeout duration.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Better Resource Management&lt;/strong&gt;: When &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DispatchWorkItem&lt;/code&gt; is canceled or completed, the system automatically handles the release of related resources.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;using-dispatchworkitem-to-set-specific-time-limits-for-api-tasks&quot;&gt;Using DispatchWorkItem to Set Specific Time Limits for API Tasks&lt;/h2&gt;
-
-&lt;p&gt;Here is the implementation of an API task without the 5-second timeout limit:&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;postData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Encodable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Decodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;httpMethod&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;POST&quot;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;forHTTPHeaderField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;httpBody&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;JSONEncoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;kt&quot;&gt;URLSession&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shared&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            
-            &lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;APIManager&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSLocalizedDescriptionKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No data received&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            
-            &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;decodedData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;JSONDecoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decodedData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;adding-the-5-second-timeout-limit&quot;&gt;Adding the 5-Second Timeout Limit&lt;/h3&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;postData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Encodable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Decodable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;@escaping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;httpMethod&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;POST&quot;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;forHTTPHeaderField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;httpBody&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;JSONEncoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;// Set the 5-second timeout limit using DispatchWorkItem&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;timeoutWorkItem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;DispatchWorkItem&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;timeout&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSLocalizedDescriptionKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;timed out&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;// Set the timeout after 5 seconds&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;asyncAfter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;deadline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timeoutWorkItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLSession&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shared&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dataTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// If the request completes within 5 seconds, cancel the timeoutWorkItem&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;timeoutWorkItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cancel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        
-        &lt;span class=&quot;kt&quot;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            
-            &lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;APIManager&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NSLocalizedDescriptionKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No data received&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            
-            &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;decodedData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;JSONDecoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decodedData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nf&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;failure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;With this implementation, if the API request does not complete within 5 seconds, the timeout mechanism will trigger and return a timeout error to the user. This approach is both efficient and maintains a clean code structure.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">Scenario - You are developing an e-commerce iOS app. This app has multiple functionalities, including browsing products, adding items to the cart, checking inventory, and placing orders. Among these, the real-time inventory checking feature is particularly crucial as it directly impacts user purchasing decisions and experience.</summary></entry><entry xml:lang="zh"><title type="html">使用 DispatchWorkItem 設定特定時間的 API 任務</title><link href="http://localhost:4000/zh/swift/using-DispatchWorkItem-set-specific-timeout-api-task/" rel="alternate" type="text/html" title="使用 DispatchWorkItem 設定特定時間的 API 任務" /><published>2024-09-22T17:00:00+08:00</published><updated>2024-09-22T17:00:00+08:00</updated><id>http://localhost:4000/zh/swift/using-DispatchWorkItem-set-specific-timeout-api-task</id><content type="html" xml:base="http://localhost:4000/zh/swift/using-DispatchWorkItem-set-specific-timeout-api-task/">&lt;p&gt;情境假設: 你正在開發一個電子商務的 iOS 應用。這個應用有多個功能，包括瀏覽商品、添加到購物車、查看庫存、下單等。其中，實時庫存查詢功能特別關鍵，因為它直接影響用戶的購買決策和體驗。&lt;/p&gt;
+&lt;hr /&gt;</content><author><name>Marvin</name></author><category term="programming" /><category term="AI" /><category term="Claude" /><summary type="html">TL;DR 強大AI 如何讓世界變得更美好：五大領域的潛在益處</summary></entry><entry xml:lang="zh"><title type="html">使用 DispatchWorkItem 設定特定時間的 API 任務</title><link href="http://localhost:4000/zh/swift/using-DispatchWorkItem-set-specific-timeout-api-task/" rel="alternate" type="text/html" title="使用 DispatchWorkItem 設定特定時間的 API 任務" /><published>2024-09-22T17:00:00+08:00</published><updated>2024-09-22T17:00:00+08:00</updated><id>http://localhost:4000/zh/swift/using-DispatchWorkItem-set-specific-timeout-api-task</id><content type="html" xml:base="http://localhost:4000/zh/swift/using-DispatchWorkItem-set-specific-timeout-api-task/">&lt;p&gt;情境假設: 你正在開發一個電子商務的 iOS 應用。這個應用有多個功能，包括瀏覽商品、添加到購物車、查看庫存、下單等。其中，實時庫存查詢功能特別關鍵，因為它直接影響用戶的購買決策和體驗。&lt;/p&gt;
 
 &lt;h2 id=&quot;特殊需求&quot;&gt;特殊需求：&lt;/h2&gt;
 &lt;p&gt;在這個應用中，大多數 API 請求都使用標準的網絡超時設置（比如 30 秒或 60 秒）。但是，庫存查詢 API 有一個特殊要求：&lt;/p&gt;
@@ -948,45 +824,7 @@
 
 &lt;h3 id=&quot;長期計劃&quot;&gt;長期計劃&lt;/h3&gt;
 &lt;h4 id=&quot;只讀規格&quot;&gt;只讀規格&lt;/h4&gt;
-&lt;p&gt;我們正在討論在非常長的、多年的基礎上，我們可以通過將 Specs 倉庫轉換為只讀來大幅簡化 CocoaPods 幹線的安全性。像 Specs 倉庫和 CDN 這樣的基礎設施仍將運行，只要 GitHub 和 jsDelivr 繼續存在，這很可能是很長一段時間。這將保持所有現有構建的運行。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods 進入 maintain mode，但一年還會發佈兩次以上，讓 pod 可以跟上 Xcode 的更新</summary></entry><entry xml:lang="zh"><title type="html">要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退</title><link href="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crashlytics.png&quot; alt=&quot;Crashlytics report on xcode15.4 vs. firebase 10.10.0&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;7月初，團隊講好一起把 Xcode 升到 15.4 以上，其他的 pods 都是固定的，然後一線，閃退率就起來了，上面的圖就是上線後的結果。&lt;/p&gt;
-
-&lt;p&gt;看了 Crashlytics，發生閃退的地方是 AppDelegate 而且是 Compiler generated code。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crash_on_AppDelegate.png&quot; alt=&quot;Crash starts from AppDelegate&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;看了一下 stack overflow 的資訊，有提到的是這篇。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/78122992/3764854&quot;&gt;Stack overflow 查到可能閃退的點，並且建議升級到 Firebase 10.22.0 以上&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/firebase/firebase-ios-sdk/issues/11403&quot;&gt;Firebase github issues - 11403 有提到一系列原因&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;原因和我專案上的類似，和 nanopb 有關。&lt;/p&gt;
-
-&lt;h2 id=&quot;如果升到-xcode-153-以上的版本&quot;&gt;如果升到 Xcode 15.3 以上的版本&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;請一定要檢查 Firebase 的版本是不是在 10.22.0 以上&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;crash-log&quot;&gt;Crash log&lt;/h3&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Crashed: com.apple.main-thread
-EXC_BAD_ACCESS KERN_INVALID_ADDRESS 0x000000017338126c
-0
-nanopb
-encode_field + 100
-24
-UIKitCore
-keypath_get_selector_hoverStyle + 11024
-25
-&amp;lt;compiler-generated&amp;gt; - Line 4337149088
-static AppDelegate.$main() + 4337149088
-26
-&amp;lt;compiler-generated&amp;gt; - Line 4337152352
-type metadata accessor for AppDelegate + 4337152352
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。</summary></entry><entry xml:lang="en"><title type="html">For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release</title><link href="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.&lt;/p&gt;
+&lt;p&gt;我們正在討論在非常長的、多年的基礎上，我們可以通過將 Specs 倉庫轉換為只讀來大幅簡化 CocoaPods 幹線的安全性。像 Specs 倉庫和 CDN 這樣的基礎設施仍將運行，只要 GitHub 和 jsDelivr 繼續存在，這很可能是很長一段時間。這將保持所有現有構建的運行。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods 進入 maintain mode，但一年還會發佈兩次以上，讓 pod 可以跟上 Xcode 的更新</summary></entry><entry xml:lang="en"><title type="html">For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release</title><link href="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crashlytics.png&quot; alt=&quot;Crashlytics report on xcode15.4 vs. firebase 10.10.0&quot; /&gt;&lt;/p&gt;
 
@@ -1024,7 +862,45 @@ static AppDelegate.$main() + 4337149088
 26
 &amp;lt;compiler-generated&amp;gt; - Line 4337152352
 type metadata accessor for AppDelegate + 4337152352
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.</summary></entry><entry xml:lang="en"><title type="html">Designing Data-Intensive Applications - Chapter 6 Notes</title><link href="http://localhost:4000/en/programming/data-intensive-applications.md/" rel="alternate" type="text/html" title="Designing Data-Intensive Applications - Chapter 6 Notes" /><published>2024-07-17T13:50:00+08:00</published><updated>2024-07-17T13:50:00+08:00</updated><id>http://localhost:4000/en/programming/data-intensive-applications.md</id><content type="html" xml:base="http://localhost:4000/en/programming/data-intensive-applications.md/">&lt;p&gt;There is no silver bullet: https://g.co/kgs/G7QbDr&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.</summary></entry><entry xml:lang="zh"><title type="html">要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退</title><link href="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crashlytics.png&quot; alt=&quot;Crashlytics report on xcode15.4 vs. firebase 10.10.0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;7月初，團隊講好一起把 Xcode 升到 15.4 以上，其他的 pods 都是固定的，然後一線，閃退率就起來了，上面的圖就是上線後的結果。&lt;/p&gt;
+
+&lt;p&gt;看了 Crashlytics，發生閃退的地方是 AppDelegate 而且是 Compiler generated code。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crash_on_AppDelegate.png&quot; alt=&quot;Crash starts from AppDelegate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;看了一下 stack overflow 的資訊，有提到的是這篇。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/78122992/3764854&quot;&gt;Stack overflow 查到可能閃退的點，並且建議升級到 Firebase 10.22.0 以上&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/firebase/firebase-ios-sdk/issues/11403&quot;&gt;Firebase github issues - 11403 有提到一系列原因&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;原因和我專案上的類似，和 nanopb 有關。&lt;/p&gt;
+
+&lt;h2 id=&quot;如果升到-xcode-153-以上的版本&quot;&gt;如果升到 Xcode 15.3 以上的版本&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;請一定要檢查 Firebase 的版本是不是在 10.22.0 以上&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;crash-log&quot;&gt;Crash log&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Crashed: com.apple.main-thread
+EXC_BAD_ACCESS KERN_INVALID_ADDRESS 0x000000017338126c
+0
+nanopb
+encode_field + 100
+24
+UIKitCore
+keypath_get_selector_hoverStyle + 11024
+25
+&amp;lt;compiler-generated&amp;gt; - Line 4337149088
+static AppDelegate.$main() + 4337149088
+26
+&amp;lt;compiler-generated&amp;gt; - Line 4337152352
+type metadata accessor for AppDelegate + 4337152352
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。</summary></entry><entry xml:lang="en"><title type="html">Designing Data-Intensive Applications - Chapter 6 Notes</title><link href="http://localhost:4000/en/programming/data-intensive-applications.md/" rel="alternate" type="text/html" title="Designing Data-Intensive Applications - Chapter 6 Notes" /><published>2024-07-17T13:50:00+08:00</published><updated>2024-07-17T13:50:00+08:00</updated><id>http://localhost:4000/en/programming/data-intensive-applications.md</id><content type="html" xml:base="http://localhost:4000/en/programming/data-intensive-applications.md/">&lt;p&gt;There is no silver bullet: https://g.co/kgs/G7QbDr&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1178,4 +1054,98 @@ type metadata accessor for AppDelegate + 4337152352
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/c8b1ddc94554&quot;&gt;November 2, 2021&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="system design" /><category term="programming" /><summary type="html">There is no silver bullet: https://g.co/kgs/G7QbDr</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="system design" /><category term="programming" /><summary type="html">There is no silver bullet: https://g.co/kgs/G7QbDr</summary></entry><entry xml:lang="en"><title type="html">Flyweight Pattern - Lightweight Mode (Flyweight Pattern)</title><link href="http://localhost:4000/en/swift/flyweight-pattern/" rel="alternate" type="text/html" title="Flyweight Pattern - Lightweight Mode (Flyweight Pattern)" /><published>2024-07-17T13:35:00+08:00</published><updated>2024-07-17T13:35:00+08:00</updated><id>http://localhost:4000/en/swift/flyweight-pattern</id><content type="html" xml:base="http://localhost:4000/en/swift/flyweight-pattern/">&lt;h3 id=&quot;flyweight-pattern---lightweight-mode-flyweight-pattern&quot;&gt;Flyweight Pattern - Lightweight Mode (Flyweight Pattern)&lt;/h3&gt;
+
+&lt;p&gt;This article introduces the Flyweight Pattern using examples and scenarios from &lt;a href=&quot;https://refactoring.guru/design-patterns/flyweight&quot;&gt;refactoring.guru&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://refactoring.guru/design-patterns/flyweight&quot;&gt;https://refactoring.guru/design-patterns/flyweight&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;scenario&quot;&gt;Scenario:&lt;/h4&gt;
+
+&lt;p&gt;You’ve developed an FPS game featuring missiles, bullets, and various cool effects, which you and your friends have started to play.&lt;/p&gt;
+
+&lt;h3 id=&quot;but-however-it-works-on-your-machine&quot;&gt;But, However, “It works on your machine”&lt;/h3&gt;
+
+&lt;p&gt;On your friend’s computer, the game crashes after a few minutes! The gaming experience on your friend’s system is terrible. After debugging for several hours and sifting through the logs, you pinpoint the issue to RAM insufficiency. Your computer has superior specs, but your friend’s doesn’t, leading to RAM depletion.&lt;/p&gt;
+
+&lt;p&gt;The RAM consumption issues stem from the particle system you developed. Each particle, like bullets or missiles, spawns a particle object whenever it appears on the screen, eventually crashing the system due to RAM overload.&lt;/p&gt;
+
+&lt;p&gt;As shown in the image below, each particle takes up 21 KB. With 1,000,000 particles, that would require 21 GB of RAM.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;from refactoring.guru&lt;/p&gt;
+
+&lt;p&gt;Here’s a scene from Overwatch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*bZSGkmXGYofMadtii2wyGQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*UzKC0uTVHQXLaqTyZhmNNA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;How can the Flyweight pattern improve your game’s performance?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;how-flyweight-reduces-system-load&quot;&gt;How Flyweight Reduces System Load&lt;/h3&gt;
+
+&lt;p&gt;Revisiting the “Particle” class, consider the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*4dPir95Ideb9wzMRjK9hbg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll notice two properties that can be made immutable (internal data):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;color&lt;/li&gt;
+  &lt;li&gt;sprite&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other attributes that vary (external data) include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;particle&lt;/li&gt;
+  &lt;li&gt;coordinates&lt;/li&gt;
+  &lt;li&gt;vector&lt;/li&gt;
+  &lt;li&gt;speed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5r80IzFWvGH9MCL0Kgm8nA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking back at the system:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5yXJEnkUFcrlOgFIqbz86g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most resource-intensive element remains the sprite. With the same number of particles and without initializing new internal data, the requirement is 32MB of RAM. In contrast to the non-design pattern scenario requiring 21 GB, this design allows the game to run smoothly even on your friend’s computer.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Is it over? Have we fully utilized the design pattern?&lt;/p&gt;
+
+&lt;h3 id=&quot;design-patterns-can-be-layered&quot;&gt;&lt;strong&gt;Design patterns can be layered!&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;adding-an-external-object-pool-for-further-optimization&quot;&gt;Adding an External Object Pool for Further Optimization&lt;/h3&gt;
+
+&lt;p&gt;In practice, an “object pool” is often added to store the “internal information.”&lt;/p&gt;
+
+&lt;p&gt;In this case, since there is a main class, Game, that stores Particles, the system first checks the pool for unused particles to reuse them by injecting “external information” (vector, speed, coordinates). If no suitable particles are in the pool, a new one is initialized.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9oTHsQUlMpuXtZcj47OviA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once a particle is no longer needed, it is returned to the pool for future use.&lt;/p&gt;
+
+&lt;p&gt;This can be seen as a combination of the Object Pool and Flyweight patterns. In UIKit, an essential component uses this hybrid approach.&lt;/p&gt;
+
+&lt;p&gt;Further optimizations are made even to the external information using another layer of the Flyweight pattern.&lt;/p&gt;
+
+&lt;p&gt;Flyweight of a Flyweight. There’s always room for finer detail.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Further into your career, you might not start in a “real” game company in Taiwan; you could be an iOS frontend developer. No matter your field, everyone starts with frameworks in 2022. If you are an iOS frontend developer, consider which system components in iOS might be applying the “Flyweight Pattern (Flyweight Pattern).”&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a5ab3b6054f&quot;&gt;August 10, 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Design Pattern" /><category term="Flyweight Pattern" /><summary type="html">Flyweight Pattern - Lightweight Mode (Flyweight Pattern)</summary></entry></feed>
