@@ -35,3 +35,5 @@ Introducing **CodePan** — the perfect place for aspiring frontend developers t
 
 I find it crucial to continuously learn from others, and CodePan makes that easy. Exploring others' projects on CodePan quickly gives me inspiration, keeps me updated on the latest techniques and trends, and helps me discover unique solutions to complex challenges.
 
+## Resources
+### [CodePan](https://codepen.io/trending)
