@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-13T23:08:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">AI如何讓世界變得更美好 Dario Amodei by Claude 創辦人 機翻</title><link href="http://localhost:4000/zh/programming/how-ai-transform-the-world-better.html" rel="alternate" type="text/html" title="AI如何讓世界變得更美好 Dario Amodei by Claude 創辦人 機翻" /><published>2024-10-13T16:20:00+08:00</published><updated>2024-10-13T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/how-ai-transform-the-world-better</id><content type="html" xml:base="http://localhost:4000/zh/programming/how-ai-transform-the-world-better.html">&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-22T22:04:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Introducing CodePan - A Platform for Aspiring Frontend Developers</title><link href="http://localhost:4000/en/programming/introducing-codepan/" rel="alternate" type="text/html" title="Introducing CodePan - A Platform for Aspiring Frontend Developers" /><published>2024-10-22T22:01:00+08:00</published><updated>2024-10-22T22:01:00+08:00</updated><id>http://localhost:4000/en/programming/introducing-codepan</id><content type="html" xml:base="http://localhost:4000/en/programming/introducing-codepan/">&lt;p&gt;Introducing &lt;strong&gt;CodePan&lt;/strong&gt; — the perfect place for aspiring frontend developers to kickstart their journey, showcase their work, share ideas, and explore creative coding projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CodePan&lt;/strong&gt; is your digital canvas for front-end magic. Whether you’re experimenting with new frameworks, crafting delightful CSS animations, or building interactive JavaScript experiences, CodePan gives you the perfect platform to bring your visions to life:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Showcase Your Code&lt;/strong&gt;: Share your creations with a community that appreciates stunning front-end work. Whether it’s a small utility script, a beautiful UI component, or a full-fledged web application, CodePan lets you present your work in the best possible way. Embed your live demos, highlight key features, and let your project shine. You’ll be able to inspire others and get the recognition your work deserves.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Collaborate and Improve&lt;/strong&gt;: CodePan makes collaboration easy. Get feedback from others, learn from their suggestions, and join forces to build even more amazing projects. Frontend development is constantly evolving, and collaborating with others is a great way to sharpen your skills. CodePan’s community is passionate about learning and growing together, and there’s nothing better than refining your projects with collective knowledge.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Explore and Learn&lt;/strong&gt;: Browsing CodePan is like diving into a library of creativity and technical wizardry. See how fellow developers are using the latest CSS techniques, JavaScript frameworks, and web APIs. Learn from real-world projects, find inspiration for your own work, and stay up-to-date with the latest trends in web development. It’s a perfect way to discover new ideas, frameworks, and design patterns that you might not have considered before.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Why Explore CodePan?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Discover Innovative Projects&lt;/strong&gt;: Find cutting-edge front-end projects from developers across the globe. From interactive animations to dynamic, responsive web tools, CodePan is full of projects that showcase the best in front-end creativity. You’ll encounter work that pushes the boundaries of what’s possible in the browser, giving you plenty of ideas to take your own projects to the next level.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Learn New Techniques&lt;/strong&gt;: Gain insights into how different developers solve common (and uncommon) front-end challenges. See how they structure their code, utilize CSS and JavaScript, and implement best practices. You’ll find examples of elegant, efficient solutions to typical front-end problems, as well as experimental projects that can teach you something completely new. CodePan helps you keep refining your own skill set by learning directly from the community.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Get Inspired&lt;/strong&gt;: Nothing sparks creativity quite like seeing what others are building. On CodePan, you’ll see how developers bring ideas to life — from gorgeous animations and transitions to seamless, interactive UI components. Inspiration often comes from seeing something awesome and thinking, “How did they do that?” CodePan gives you that constant spark to push your own creative boundaries.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Connect with a Community&lt;/strong&gt;: Front-end development is more than just writing code — it’s about building experiences. CodePan is home to a thriving community of developers who understand this. Connect with other front-end enthusiasts who share your love of elegant UIs and snappy interactions. Exchange ideas, find collaborators, and make friends who appreciate the joy of building things for the web.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Stay Updated with Trends&lt;/strong&gt;: The front-end landscape changes fast. Keeping up with new JavaScript frameworks, CSS methodologies, and browser APIs can be a challenge. CodePan allows you to see what’s popular, what’s gaining traction, and what tools other developers are excited about. By staying active on CodePan, you can keep your skills current and be ready for whatever comes next in the ever-evolving world of front-end development.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Build Your Portfolio&lt;/strong&gt;: CodePan is an excellent place to build and curate your portfolio. Whether you’re just getting started or are a seasoned front-end developer, showcasing your projects professionally can open doors to new opportunities. Your CodePan profile not only highlights your coding skills but also demonstrates your passion, creativity, and growth as a developer. Make an impression by letting potential employers or collaborators see what you’re capable of.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I find it crucial to continuously learn from others, and CodePan makes that easy. Exploring others’ projects on CodePan quickly gives me inspiration, keeps me updated on the latest techniques and trends, and helps me discover unique solutions to complex challenges.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="frontend" /><category term="web development" /><category term="portfolio" /><summary type="html">Introducing CodePan — the perfect place for aspiring frontend developers to kickstart their journey, showcase their work, share ideas, and explore creative coding projects.</summary></entry><entry xml:lang="zh"><title type="html">AI如何讓世界變得更美好 Dario Amodei by Claude 創辦人 機翻</title><link href="http://localhost:4000/zh/programming/how-ai-transform-the-world-better.html" rel="alternate" type="text/html" title="AI如何讓世界變得更美好 Dario Amodei by Claude 創辦人 機翻" /><published>2024-10-13T16:20:00+08:00</published><updated>2024-10-13T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/how-ai-transform-the-world-better</id><content type="html" xml:base="http://localhost:4000/zh/programming/how-ai-transform-the-world-better.html">&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
 &lt;h3 id=&quot;強大ai-如何讓世界變得更美好五大領域的潛在益處&quot;&gt;強大AI 如何讓世界變得更美好：五大領域的潛在益處&lt;/h3&gt;
 
 &lt;h4 id=&quot;notebooklm-整理出來的摘要但建議有空的話還是把原文看完會更有感覺&quot;&gt;NotebookLM 整理出來的摘要，但建議有空的話，還是把原文看完，會更有感覺。&lt;/h4&gt;
@@ -612,7 +651,53 @@
     
     &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">情境假設: 你正在開發一個電子商務的 iOS 應用。這個應用有多個功能，包括瀏覽商品、添加到購物車、查看庫存、下單等。其中，實時庫存查詢功能特別關鍵，因為它直接影響用戶的購買決策和體驗。</summary></entry><entry xml:lang="zh"><title type="html">Xcode 16 Release Notes 新功能 機翻</title><link href="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes 新功能 機翻" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/">&lt;p&gt;這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">情境假設: 你正在開發一個電子商務的 iOS 應用。這個應用有多個功能，包括瀏覽商品、添加到購物車、查看庫存、下單等。其中，實時庫存查詢功能特別關鍵，因為它直接影響用戶的購買決策和體驗。</summary></entry><entry xml:lang="en"><title type="html">Xcode 16 Release Notes, new features</title><link href="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes, new features" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/en/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/">&lt;p&gt;Here are the &lt;strong&gt;New Features&lt;/strong&gt; from the Xcode 16 release notes:&lt;/p&gt;
+
+&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Predictive Code Completion&lt;/strong&gt; is now supported on all Apple silicon Macs. It uses a machine learning model specifically trained for Swift and Apple SDKs. (116310768)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;build-settings&quot;&gt;Build Settings&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Copy and paste from the build settings editor&lt;/strong&gt; now uses xcconfig file syntax. (14333348)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Project Navigator’s “Open As” context menu&lt;/strong&gt; now supports choosing default editors per file type. (24666459)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;xcodebuild&quot;&gt;xcodebuild&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;xcodebuild supports importing and exporting a downloaded platform&lt;/strong&gt; to disk. This allows simulator disk images to be exported and applied to other Xcode installations without redownloading. (129189162)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;reality-composer-pro&quot;&gt;Reality Composer Pro&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Timelines&lt;/strong&gt; allow you to sequence actions to be executed in a particular order or time. (75589529)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;VirtualEnvironmentProbeComponent&lt;/strong&gt; enables control of the lighting of virtual environments. (117770245)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extended texcoords&lt;/strong&gt; from 2 to 8 buffers, allowing for more complex data types. (123364636)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;previews&quot;&gt;Previews&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;New Preview Execution Engine&lt;/strong&gt; supports shared build products between Build and Run and Previews for faster switching. (37353090)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@Previewable macro&lt;/strong&gt; allows direct use of property wrappers like @State in Previews without needing an intermediate wrapper view. (110570957)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;storekit&quot;&gt;StoreKit&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Privacy manifests&lt;/strong&gt; can now be included as copied resources in StoreKit configurations for testing privacy policies and terms of service in SubscriptionStoreView. (114228169)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Swift now supports non-copyable C++ types&lt;/strong&gt; when interacting with C++ code from Swift. (83358475)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;~Copyable modifier&lt;/strong&gt; can now be used to suppress copyability on protocols and generic parameters. (101653009)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Typed throws&lt;/strong&gt; allows functions to specify the exact type of error they throw. (125992062)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Test reports now support Swift Testing framework&lt;/strong&gt; metadata and the ability to filter by test run status. (127015832)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">Here are the New Features from the Xcode 16 release notes:</summary></entry><entry xml:lang="zh"><title type="html">Xcode 16 Release Notes 新功能 機翻</title><link href="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes 新功能 機翻" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/">&lt;p&gt;這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：&lt;/p&gt;
 
 &lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
 &lt;ol&gt;
@@ -678,53 +763,7 @@
 &lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;測試報告中支持 Swift Testing 框架&lt;/strong&gt;：測試報告現在顯示 Swift Testing 框架的元數據標籤，以及按測試執行狀態進行篩選的功能。（127015832）&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：</summary></entry><entry xml:lang="en"><title type="html">Xcode 16 Release Notes, new features</title><link href="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes, new features" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/en/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/">&lt;p&gt;Here are the &lt;strong&gt;New Features&lt;/strong&gt; from the Xcode 16 release notes:&lt;/p&gt;
-
-&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Predictive Code Completion&lt;/strong&gt; is now supported on all Apple silicon Macs. It uses a machine learning model specifically trained for Swift and Apple SDKs. (116310768)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;build-settings&quot;&gt;Build Settings&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Copy and paste from the build settings editor&lt;/strong&gt; now uses xcconfig file syntax. (14333348)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The Project Navigator’s “Open As” context menu&lt;/strong&gt; now supports choosing default editors per file type. (24666459)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;xcodebuild&quot;&gt;xcodebuild&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;xcodebuild supports importing and exporting a downloaded platform&lt;/strong&gt; to disk. This allows simulator disk images to be exported and applied to other Xcode installations without redownloading. (129189162)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;reality-composer-pro&quot;&gt;Reality Composer Pro&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Timelines&lt;/strong&gt; allow you to sequence actions to be executed in a particular order or time. (75589529)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;VirtualEnvironmentProbeComponent&lt;/strong&gt; enables control of the lighting of virtual environments. (117770245)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extended texcoords&lt;/strong&gt; from 2 to 8 buffers, allowing for more complex data types. (123364636)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;previews&quot;&gt;Previews&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;New Preview Execution Engine&lt;/strong&gt; supports shared build products between Build and Run and Previews for faster switching. (37353090)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;@Previewable macro&lt;/strong&gt; allows direct use of property wrappers like @State in Previews without needing an intermediate wrapper view. (110570957)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;storekit&quot;&gt;StoreKit&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Privacy manifests&lt;/strong&gt; can now be included as copied resources in StoreKit configurations for testing privacy policies and terms of service in SubscriptionStoreView. (114228169)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Swift now supports non-copyable C++ types&lt;/strong&gt; when interacting with C++ code from Swift. (83358475)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;~Copyable modifier&lt;/strong&gt; can now be used to suppress copyability on protocols and generic parameters. (101653009)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Typed throws&lt;/strong&gt; allows functions to specify the exact type of error they throw. (125992062)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Test reports now support Swift Testing framework&lt;/strong&gt; metadata and the ability to filter by test run status. (127015832)&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">Here are the New Features from the Xcode 16 release notes:</summary></entry><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：</summary></entry><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
 
 &lt;p&gt;One evening, while scrolling through x (formerly Twitter), I stumbled upon a post retweeted by &lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox&lt;/a&gt; announcing that Cocoapods, after 13 years, has entered maintain mode.&lt;/p&gt;
 
@@ -1054,98 +1093,4 @@ type metadata accessor for AppDelegate + 4337152352
 
 &lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/c8b1ddc94554&quot;&gt;November 2, 2021&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="system design" /><category term="programming" /><summary type="html">There is no silver bullet: https://g.co/kgs/G7QbDr</summary></entry><entry xml:lang="en"><title type="html">Flyweight Pattern - Lightweight Mode (Flyweight Pattern)</title><link href="http://localhost:4000/en/swift/flyweight-pattern/" rel="alternate" type="text/html" title="Flyweight Pattern - Lightweight Mode (Flyweight Pattern)" /><published>2024-07-17T13:35:00+08:00</published><updated>2024-07-17T13:35:00+08:00</updated><id>http://localhost:4000/en/swift/flyweight-pattern</id><content type="html" xml:base="http://localhost:4000/en/swift/flyweight-pattern/">&lt;h3 id=&quot;flyweight-pattern---lightweight-mode-flyweight-pattern&quot;&gt;Flyweight Pattern - Lightweight Mode (Flyweight Pattern)&lt;/h3&gt;
-
-&lt;p&gt;This article introduces the Flyweight Pattern using examples and scenarios from &lt;a href=&quot;https://refactoring.guru/design-patterns/flyweight&quot;&gt;refactoring.guru&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Source: &lt;a href=&quot;https://refactoring.guru/design-patterns/flyweight&quot;&gt;https://refactoring.guru/design-patterns/flyweight&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;scenario&quot;&gt;Scenario:&lt;/h4&gt;
-
-&lt;p&gt;You’ve developed an FPS game featuring missiles, bullets, and various cool effects, which you and your friends have started to play.&lt;/p&gt;
-
-&lt;h3 id=&quot;but-however-it-works-on-your-machine&quot;&gt;But, However, “It works on your machine”&lt;/h3&gt;
-
-&lt;p&gt;On your friend’s computer, the game crashes after a few minutes! The gaming experience on your friend’s system is terrible. After debugging for several hours and sifting through the logs, you pinpoint the issue to RAM insufficiency. Your computer has superior specs, but your friend’s doesn’t, leading to RAM depletion.&lt;/p&gt;
-
-&lt;p&gt;The RAM consumption issues stem from the particle system you developed. Each particle, like bullets or missiles, spawns a particle object whenever it appears on the screen, eventually crashing the system due to RAM overload.&lt;/p&gt;
-
-&lt;p&gt;As shown in the image below, each particle takes up 21 KB. With 1,000,000 particles, that would require 21 GB of RAM.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;from refactoring.guru&lt;/p&gt;
-
-&lt;p&gt;Here’s a scene from Overwatch.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*bZSGkmXGYofMadtii2wyGQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*UzKC0uTVHQXLaqTyZhmNNA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;How can the Flyweight pattern improve your game’s performance?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;how-flyweight-reduces-system-load&quot;&gt;How Flyweight Reduces System Load&lt;/h3&gt;
-
-&lt;p&gt;Revisiting the “Particle” class, consider the following:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*4dPir95Ideb9wzMRjK9hbg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You’ll notice two properties that can be made immutable (internal data):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;color&lt;/li&gt;
-  &lt;li&gt;sprite&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Other attributes that vary (external data) include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;particle&lt;/li&gt;
-  &lt;li&gt;coordinates&lt;/li&gt;
-  &lt;li&gt;vector&lt;/li&gt;
-  &lt;li&gt;speed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5r80IzFWvGH9MCL0Kgm8nA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Looking back at the system:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*5yXJEnkUFcrlOgFIqbz86g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The most resource-intensive element remains the sprite. With the same number of particles and without initializing new internal data, the requirement is 32MB of RAM. In contrast to the non-design pattern scenario requiring 21 GB, this design allows the game to run smoothly even on your friend’s computer.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Is it over? Have we fully utilized the design pattern?&lt;/p&gt;
-
-&lt;h3 id=&quot;design-patterns-can-be-layered&quot;&gt;&lt;strong&gt;Design patterns can be layered!&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;adding-an-external-object-pool-for-further-optimization&quot;&gt;Adding an External Object Pool for Further Optimization&lt;/h3&gt;
-
-&lt;p&gt;In practice, an “object pool” is often added to store the “internal information.”&lt;/p&gt;
-
-&lt;p&gt;In this case, since there is a main class, Game, that stores Particles, the system first checks the pool for unused particles to reuse them by injecting “external information” (vector, speed, coordinates). If no suitable particles are in the pool, a new one is initialized.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*9oTHsQUlMpuXtZcj47OviA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once a particle is no longer needed, it is returned to the pool for future use.&lt;/p&gt;
-
-&lt;p&gt;This can be seen as a combination of the Object Pool and Flyweight patterns. In UIKit, an essential component uses this hybrid approach.&lt;/p&gt;
-
-&lt;p&gt;Further optimizations are made even to the external information using another layer of the Flyweight pattern.&lt;/p&gt;
-
-&lt;p&gt;Flyweight of a Flyweight. There’s always room for finer detail.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Further into your career, you might not start in a “real” game company in Taiwan; you could be an iOS frontend developer. No matter your field, everyone starts with frameworks in 2022. If you are an iOS frontend developer, consider which system components in iOS might be applying the “Flyweight Pattern (Flyweight Pattern).”&lt;/p&gt;
-
-&lt;p&gt;By &lt;a href=&quot;https://medium.com/@atimis19&quot;&gt;Marvin Lin&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/a5ab3b6054f&quot;&gt;August 10, 2022&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Design Pattern" /><category term="Flyweight Pattern" /><summary type="html">Flyweight Pattern - Lightweight Mode (Flyweight Pattern)</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@atimis19/designing-data-intensive-applications-notes-c8b1ddc94554&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="system design" /><category term="programming" /><summary type="html">There is no silver bullet: https://g.co/kgs/G7QbDr</summary></entry></feed>
