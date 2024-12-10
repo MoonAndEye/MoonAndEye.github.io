@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-06T23:24:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">UITableView, UICollectionView 的 DataSource 可以獨立一個物件</title><link href="http://localhost:4000/zh/swift/separate-data-source-to-table/" rel="alternate" type="text/html" title="UITableView, UICollectionView 的 DataSource 可以獨立一個物件" /><published>2024-12-06T15:03:00+08:00</published><updated>2024-12-06T15:03:00+08:00</updated><id>http://localhost:4000/zh/swift/separate-data-source-to-table</id><content type="html" xml:base="http://localhost:4000/zh/swift/separate-data-source-to-table/">&lt;h2 id=&quot;uitableviewdatasource-是可以實作一個獨立物件的範例用-skeleton-效果為例子&quot;&gt;UITableViewDataSource 是可以實作一個獨立物件的，範例用 Skeleton 效果為例子&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-10T18:15:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">If You Need to Dynamically Change the App Icon, This Article Covers Everything You Need to Know</title><link href="http://localhost:4000/en/swift/app-icon-dynamic-change/" rel="alternate" type="text/html" title="If You Need to Dynamically Change the App Icon, This Article Covers Everything You Need to Know" /><published>2024-12-10T14:45:00+08:00</published><updated>2024-12-10T14:45:00+08:00</updated><id>http://localhost:4000/en/swift/app-icon-dynamic-change</id><content type="html" xml:base="http://localhost:4000/en/swift/app-icon-dynamic-change/">&lt;p&gt;A couple of years ago, someone asked me whether it was possible to change an app icon dynamically based on certain conditions. A few days ago, I got asked the same question again. Unfortunately, I had forgotten the details I found previously. To avoid having to search for this information yet again, I’ve decided to document everything you need to know about implementing the dynamic app icon feature.&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;The implementation is simple and involves just one API:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// The iconName must correspond to the app icon name in your project. The icon must already exist in the project. &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;/// If the file name doesn&apos;t exist, the app won&apos;t crash, but the app icon will remain unchanged.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shared&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setAlternateIconName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iconName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Failed request to update the app’s icon: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/xcode/configuring_your_app_to_use_alternate_app_icons&quot;&gt;Apple Official Documentation on App Icon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs-assets.developer.apple.com/published/ba6fbde5c8/ConfiguringYourAppToUseAlternateAppIcons.zip&quot;&gt;Apple App Icon Demo Project&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;practical-considerations-for-real-apps&quot;&gt;Practical Considerations for Real Apps&lt;/h2&gt;
+
+&lt;p&gt;Pre-packaged Icons: The app icons must be included in the app project beforehand. You cannot dynamically download an icon from the internet to replace it. Also, the icon format must be a 1024x1024 image; otherwise, it won’t work.
+Triggering Logic: The icon change can be triggered either by user action or programmatically based on certain conditions. In Apple’s demo project, the app icon is changed after the user taps on the app icon trigger.
+Foreground Requirement: The app must be in the foreground to change the app icon. If you attempt to change the icon while the app is in the background, you’ll encounter a 3072 error.
+System Alert After Change: After changing the app icon, the system will display an alert. This alert is system-level, similar to privacy prompts, and cannot be bypassed. The user will need to tap “OK” before any further UI interaction in the app can proceed.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">A couple of years ago, someone asked me whether it was possible to change an app icon dynamically based on certain conditions. A few days ago, I got asked the same question again. Unfortunately, I had forgotten the details I found previously. To avoid having to search for this information yet again, I’ve decided to document everything you need to know about implementing the dynamic app icon feature.</summary></entry><entry xml:lang="zh"><title type="html">如果你遇到需要動態改變 App Icon 的需求，這篇文章大概涵蓋了你所需要的知識</title><link href="http://localhost:4000/zh/swift/app-icon-dynamic-change/" rel="alternate" type="text/html" title="如果你遇到需要動態改變 App Icon 的需求，這篇文章大概涵蓋了你所需要的知識" /><published>2024-12-10T13:30:00+08:00</published><updated>2024-12-10T13:30:00+08:00</updated><id>http://localhost:4000/zh/swift/app-icon-dynamic-change</id><content type="html" xml:base="http://localhost:4000/zh/swift/app-icon-dynamic-change/">&lt;p&gt;這兩、三年前，曾經有需求方提問，如果想要依某個條件更改 app icon，是做得到的嗎？然後再前幾天，我又被問了一次。只是這一次，我已經忘記我之前找到的資料了。如果不把這個結果紀錄起來，大概過一陣子，我又要重新找一次。這邊紀錄一下動態 app icon 這個 feature，要考慮的東西。&lt;/p&gt;
+
+&lt;h2 id=&quot;實作方法&quot;&gt;實作方法&lt;/h2&gt;
+&lt;p&gt;實作很簡單，只有一道 api&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/// iconName 一定要能對應到 app icon name, 而且 app icon 的 iconName 一定要存在，如果 file name 不存在，不會閃退，app icon 會保持原樣
+UIApplication.shared.setAlternateIconName(iconName) { (error) in
+    if let error = error {
+        print(&quot;Failed request to update the app’s icon: \(error)&quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/xcode/configuring_your_app_to_use_alternate_app_icons&quot;&gt;Apple 關於 App Icon 官方文件&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs-assets.developer.apple.com/published/ba6fbde5c8/ConfiguringYourAppToUseAlternateAppIcons.zip&quot;&gt;Apple 關於 App Icon Demo project&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;但如果要用在實際的-app-上還需要考慮以下幾點&quot;&gt;但如果要用在實際的 app 上，還需要考慮以下幾點&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;app icon 的 image 必需要先包在 app project 裡面，app icon 沒辦法即時從網路上下載後替換。且 icon 格式固定 1024 * 1024，尺寸不符合會包不起來。&lt;/li&gt;
+  &lt;li&gt;app icon 觸發的邏輯，可以是使用者點擊，也可以是程式滿足某個條件後，用程式觸發。Apple 的 Demo project 是這樣實作，點擊了 app icon 後，就會將 app icon 更換成這個圖案。&lt;/li&gt;
+  &lt;li&gt;app 一定要在前景，才能更換 app icon，試過 app 活著進入後景然後發動更換 app icon，會跳 3072 error&lt;/li&gt;
+  &lt;li&gt;app 在「更換完 app icon 後」，會強制跳一個系統 alert。這個 alert 是系統級的，和隱私權彈窗一樣，一定會觸發。使用者只有一個 OK 可以選，選完後你 app 其他的 UI 觸控才可以繼續。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這兩、三年前，曾經有需求方提問，如果想要依某個條件更改 app icon，是做得到的嗎？然後再前幾天，我又被問了一次。只是這一次，我已經忘記我之前找到的資料了。如果不把這個結果紀錄起來，大概過一陣子，我又要重新找一次。這邊紀錄一下動態 app icon 這個 feature，要考慮的東西。</summary></entry><entry xml:lang="zh"><title type="html">UITableView, UICollectionView 的 DataSource 可以獨立一個物件</title><link href="http://localhost:4000/zh/swift/separate-data-source-to-table/" rel="alternate" type="text/html" title="UITableView, UICollectionView 的 DataSource 可以獨立一個物件" /><published>2024-12-06T15:03:00+08:00</published><updated>2024-12-06T15:03:00+08:00</updated><id>http://localhost:4000/zh/swift/separate-data-source-to-table</id><content type="html" xml:base="http://localhost:4000/zh/swift/separate-data-source-to-table/">&lt;h2 id=&quot;uitableviewdatasource-是可以實作一個獨立物件的範例用-skeleton-效果為例子&quot;&gt;UITableViewDataSource 是可以實作一個獨立物件的，範例用 Skeleton 效果為例子&lt;/h2&gt;
 
 &lt;p&gt;通常我們會在 ViewController 中設定 UITableView 的 Delegate 和 DataSource，並把 DataSource 的實作寫在 ViewController 中。範例如下&lt;/p&gt;
 
@@ -971,53 +1018,7 @@
     
     &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">情境假設: 你正在開發一個電子商務的 iOS 應用。這個應用有多個功能，包括瀏覽商品、添加到購物車、查看庫存、下單等。其中，實時庫存查詢功能特別關鍵，因為它直接影響用戶的購買決策和體驗。</summary></entry><entry xml:lang="en"><title type="html">Xcode 16 Release Notes, new features</title><link href="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes, new features" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/en/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/">&lt;p&gt;Here are the &lt;strong&gt;New Features&lt;/strong&gt; from the Xcode 16 release notes:&lt;/p&gt;
-
-&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Predictive Code Completion&lt;/strong&gt; is now supported on all Apple silicon Macs. It uses a machine learning model specifically trained for Swift and Apple SDKs. (116310768)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;build-settings&quot;&gt;Build Settings&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Copy and paste from the build settings editor&lt;/strong&gt; now uses xcconfig file syntax. (14333348)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The Project Navigator’s “Open As” context menu&lt;/strong&gt; now supports choosing default editors per file type. (24666459)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;xcodebuild&quot;&gt;xcodebuild&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;xcodebuild supports importing and exporting a downloaded platform&lt;/strong&gt; to disk. This allows simulator disk images to be exported and applied to other Xcode installations without redownloading. (129189162)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;reality-composer-pro&quot;&gt;Reality Composer Pro&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Timelines&lt;/strong&gt; allow you to sequence actions to be executed in a particular order or time. (75589529)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;VirtualEnvironmentProbeComponent&lt;/strong&gt; enables control of the lighting of virtual environments. (117770245)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extended texcoords&lt;/strong&gt; from 2 to 8 buffers, allowing for more complex data types. (123364636)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;previews&quot;&gt;Previews&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;New Preview Execution Engine&lt;/strong&gt; supports shared build products between Build and Run and Previews for faster switching. (37353090)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;@Previewable macro&lt;/strong&gt; allows direct use of property wrappers like @State in Previews without needing an intermediate wrapper view. (110570957)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;storekit&quot;&gt;StoreKit&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Privacy manifests&lt;/strong&gt; can now be included as copied resources in StoreKit configurations for testing privacy policies and terms of service in SubscriptionStoreView. (114228169)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Swift now supports non-copyable C++ types&lt;/strong&gt; when interacting with C++ code from Swift. (83358475)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;~Copyable modifier&lt;/strong&gt; can now be used to suppress copyability on protocols and generic parameters. (101653009)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Typed throws&lt;/strong&gt; allows functions to specify the exact type of error they throw. (125992062)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Test reports now support Swift Testing framework&lt;/strong&gt; metadata and the ability to filter by test run status. (127015832)&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">Here are the New Features from the Xcode 16 release notes:</summary></entry><entry xml:lang="zh"><title type="html">Xcode 16 Release Notes 新功能 機翻</title><link href="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes 新功能 機翻" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/">&lt;p&gt;這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">情境假設: 你正在開發一個電子商務的 iOS 應用。這個應用有多個功能，包括瀏覽商品、添加到購物車、查看庫存、下單等。其中，實時庫存查詢功能特別關鍵，因為它直接影響用戶的購買決策和體驗。</summary></entry><entry xml:lang="zh"><title type="html">Xcode 16 Release Notes 新功能 機翻</title><link href="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes 新功能 機翻" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode16-release-notes-whats-new/">&lt;p&gt;這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：&lt;/p&gt;
 
 &lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
 &lt;ol&gt;
@@ -1083,7 +1084,53 @@
 &lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;測試報告中支持 Swift Testing 框架&lt;/strong&gt;：測試報告現在顯示 Swift Testing 框架的元數據標籤，以及按測試執行狀態進行篩選的功能。（127015832）&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：</summary></entry><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：</summary></entry><entry xml:lang="en"><title type="html">Xcode 16 Release Notes, new features</title><link href="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes, new features" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/en/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/">&lt;p&gt;Here are the &lt;strong&gt;New Features&lt;/strong&gt; from the Xcode 16 release notes:&lt;/p&gt;
+
+&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Predictive Code Completion&lt;/strong&gt; is now supported on all Apple silicon Macs. It uses a machine learning model specifically trained for Swift and Apple SDKs. (116310768)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;build-settings&quot;&gt;Build Settings&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Copy and paste from the build settings editor&lt;/strong&gt; now uses xcconfig file syntax. (14333348)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Project Navigator’s “Open As” context menu&lt;/strong&gt; now supports choosing default editors per file type. (24666459)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;xcodebuild&quot;&gt;xcodebuild&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;xcodebuild supports importing and exporting a downloaded platform&lt;/strong&gt; to disk. This allows simulator disk images to be exported and applied to other Xcode installations without redownloading. (129189162)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;reality-composer-pro&quot;&gt;Reality Composer Pro&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Timelines&lt;/strong&gt; allow you to sequence actions to be executed in a particular order or time. (75589529)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;VirtualEnvironmentProbeComponent&lt;/strong&gt; enables control of the lighting of virtual environments. (117770245)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extended texcoords&lt;/strong&gt; from 2 to 8 buffers, allowing for more complex data types. (123364636)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;previews&quot;&gt;Previews&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;New Preview Execution Engine&lt;/strong&gt; supports shared build products between Build and Run and Previews for faster switching. (37353090)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@Previewable macro&lt;/strong&gt; allows direct use of property wrappers like @State in Previews without needing an intermediate wrapper view. (110570957)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;storekit&quot;&gt;StoreKit&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Privacy manifests&lt;/strong&gt; can now be included as copied resources in StoreKit configurations for testing privacy policies and terms of service in SubscriptionStoreView. (114228169)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Swift now supports non-copyable C++ types&lt;/strong&gt; when interacting with C++ code from Swift. (83358475)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;~Copyable modifier&lt;/strong&gt; can now be used to suppress copyability on protocols and generic parameters. (101653009)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Typed throws&lt;/strong&gt; allows functions to specify the exact type of error they throw. (125992062)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Test reports now support Swift Testing framework&lt;/strong&gt; metadata and the ability to filter by test run status. (127015832)&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">Here are the New Features from the Xcode 16 release notes:</summary></entry><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
 
 &lt;p&gt;One evening, while scrolling through x (formerly Twitter), I stumbled upon a post retweeted by &lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox&lt;/a&gt; announcing that Cocoapods, after 13 years, has entered maintain mode.&lt;/p&gt;
 
@@ -1113,112 +1160,4 @@
 
 &lt;p&gt;I anticipate that the development community will adapt to these changes by around early 2025. Therefore, I plan to initiate support for SPM starting in 2025.&lt;/p&gt;
 
-&lt;h2 id=&quot;orta-theroxs-article-on-cocoapods-entering-maintain-mode&quot;&gt;&lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox’s Article on Cocoapods Entering Maintain Mode&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates</summary></entry><entry xml:lang="zh"><title type="html">Cocoapods 進入 maintain mode</title><link href="http://localhost:4000/zh/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods 進入 maintain mode" /><published>2024-08-15T22:10:00+08:00</published><updated>2024-08-15T22:10:00+08:00</updated><id>http://localhost:4000/zh/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/zh/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-進入-maintain-mode但一年還會發佈兩次以上讓-pod-可以跟上-xcode-的更新&quot;&gt;Cocoapods 進入 maintain mode，但一年還會發佈兩次以上，讓 pod 可以跟上 Xcode 的更新&lt;/h2&gt;
-
-&lt;p&gt;有一天晚上，我滑了 x (前身為推特)，突然滑到了，有人轉推了 &lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox&lt;/a&gt; 的文章，有 13 年歷史的 Cocoapods 開始進入 maintain mode 了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/cocoapods-enter-maintain-mode/pods_enter_maintain_mode.png&quot; alt=&quot;cocoapods announcement: enter maintain mode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;重點整理&quot;&gt;重點整理&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;確保處理幹線的系統安全問題。&lt;/li&gt;
-  &lt;li&gt;每年至少發布兩次版本以跟上 Xcode 更新。&lt;/li&gt;
-  &lt;li&gt;每六個月檢查一次支持請求。&lt;/li&gt;
-  &lt;li&gt;保持網站基礎設施運行。&lt;/li&gt;
-  &lt;li&gt;支持限制: 不會積極跟進 GitHub 問題作為支持渠道，也不會承諾處理新增功能的 PR 或應用層錯誤。&lt;/li&gt;
-  &lt;li&gt;考慮將 Specs 倉庫轉為只讀，以簡化安全管理，長遠保持現有構建運行。&lt;/li&gt;
-  &lt;li&gt;對於如 React Native 等項目，這樣的變動可能足夠，因為它們的庫主要通過 npm 獲得而不是通過 Trunk。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;原因&quot;&gt;原因&lt;/h2&gt;
-&lt;p&gt;自從 Apple 推出了 Swift Package Manager (SPM) 以後，CocoaPods 面臨了顯著的競爭壓力，這對其發展動力造成了影響。由於 SPM 是由 Apple 官方支持，直接整合在其開發環境中，這使得與 Apple 在包管理工具這一核心領域內進行競爭變得不太有利。Apple 的廣泛影響力和對其產品的深度整合，使得開發者傾向於選擇 SPM 作為依賴管理工具，這直接影響了 CocoaPods 的市場份額與相關的開發投入。因此，面對來自 Apple 的競爭，CocoaPods 在策略上需要做出調整，以適應不斷變化的開發生態。&lt;/p&gt;
-
-&lt;h2 id=&quot;針對-pods-的這項變化&quot;&gt;針對 pods 的這項變化&lt;/h2&gt;
-&lt;p&gt;因為我手上還有很早就啟動的 iOS 專案，工作上也有一堆互相依賴的模組在使用 pod 來管理，這個狀況必然要開始進行支援 SPM 的動作。考量到接下來會有這些動作&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Xcode 16 應該會在 2024 9 月 release&lt;/li&gt;
-  &lt;li&gt;iOS 18 應該會在 2024 9 月 release&lt;/li&gt;
-  &lt;li&gt;Swift 6 雖然可選，但會在 Xcode 16 時一起出現，Swift 5.10 會是最後的版 5 開頭版本&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;預估開發社群對於環境的變化，應該會在 2025 年新年前後吧。所以我心中啟動 SPM 的支援，應該會在 2025 開始進行。&lt;/p&gt;
-
-&lt;h2 id=&quot;orta-therox-聲明-cocoapods-進入-maintain-mode-的文章&quot;&gt;&lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox 聲明 Cocoapods 進入 maintain mode 的文章&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h2 id=&quot;以下是機翻&quot;&gt;以下是機翻&lt;/h2&gt;
-
-&lt;p&gt;TLDR: 我們依然在維護 CocoaPods，但我們會更明確地表達現在 CocoaPods 已進入維護模式。&lt;/p&gt;
-
-&lt;p&gt;CocoaPods 已有約 13 年的歷史，這段時間內 iOS 開發的格局發生了巨大變化。我還記得那些小型共享庫的碎片化島嶼（例如：ASIHTTPRequest、Three20、SBJson、SSToolkit、iCarousel），它們升級說明複雜且構建設置困難。CocoaPods 簡化了這一過程，讓它成為 iOS 和 Mac 社區分享代碼的事實標準方法。&lt;/p&gt;
-
-&lt;p&gt;2015 年，蘋果宣布 CocoaPods 項目已被 Sherlock，因為他們將創建自己的包管理器：Swift Package Manager。這一舉措有效地使 CocoaPods 失去了前進的動力，因為在自己的領域與蘋果競爭很少是值得志願者花時間的戰鬥。&lt;/p&gt;
-
-&lt;p&gt;自從 9 年前 Swift Package Manager 宣布以來，核心團隊的成員各自有持續維護的原因：一種責任感、被雇佣來維護使用 CocoaPods 的庫或應用、在大型項目的構建基礎設施工作中 CocoaPods 是關鍵部分，或只是對社區的熱愛。&lt;/p&gt;
-
-&lt;p&gt;然而，隨著時間的推移 - 這些聯繫也變得越來越脆弱，工作變動，人們轉移到新的生態系統，我們慢慢地將 CocoaPods 轉移到一個只有在外部因素促使時才會進行工作的地方。這可能是我在博客上過去幾年報告的安全問題，或者 Xcode 的重大更改，這需要我們調整一些設置並創建一個新版本。&lt;/p&gt;
-
-&lt;p&gt;如果 CocoaPods 的唯一受眾是原生 Cocoa 開發者，CocoaPods 的使用應該在下降，然而，情況並非如此。React Native 和 Flutter 的流行確保了大多數使用量/流量指標隨著時間穩步上升。&lt;/p&gt;
-
-&lt;p&gt;這使 CocoaPods 身處一個奇怪的位置，許多維護者不使用它，蘋果已經維護了一個替代品 9 年，而項目的新用戶幾乎不知道 CocoaPods 存在或它的作用。&lt;/p&gt;
-
-&lt;p&gt;所以，我們得出結論，我們需要弄清楚項目的狀況以及過去幾年我們作為維護者如何對待它。&lt;/p&gt;
-
-&lt;h3 id=&quot;cocoapods-是如何維護的&quot;&gt;CocoaPods 是如何維護的&lt;/h3&gt;
-&lt;p&gt;嚴格來說，我們不打算改變我們維護 CocoaPods 的方式。我們只是要開始清楚地表明 CocoaPods 是如何被維護的：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;我們將確保處理幹線的系統安全問題&lt;/li&gt;
-  &lt;li&gt;我們將目標是每年至少發布 2 次版本以跟上 Xcode 更新&lt;/li&gt;
-  &lt;li&gt;我們將目標是每 6 個月查看一次幹線的支持請求&lt;/li&gt;
-  &lt;li&gt;我們將保持網站基礎設施不完全崩潰&lt;/li&gt;
-  &lt;li&gt;我們對讓 CocoaPods 更加未來友好的 PR 持開放態度&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;我們不會做的事&quot;&gt;我們不會做的事：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;我們不會積極跟蹤 GitHub 問題作為個人支持渠道&lt;/li&gt;
-  &lt;li&gt;我們不打算在新功能方面進行積極的 CocoaPods 開發&lt;/li&gt;
-  &lt;li&gt;我們不會保證處理添加新功能的人的 PR 或應用層面的錯誤&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;長期計劃&quot;&gt;長期計劃&lt;/h3&gt;
-&lt;h4 id=&quot;只讀規格&quot;&gt;只讀規格&lt;/h4&gt;
-&lt;p&gt;我們正在討論在非常長的、多年的基礎上，我們可以通過將 Specs 倉庫轉換為只讀來大幅簡化 CocoaPods 幹線的安全性。像 Specs 倉庫和 CDN 這樣的基礎設施仍將運行，只要 GitHub 和 jsDelivr 繼續存在，這很可能是很長一段時間。這將保持所有現有構建的運行。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods 進入 maintain mode，但一年還會發佈兩次以上，讓 pod 可以跟上 Xcode 的更新</summary></entry><entry xml:lang="zh"><title type="html">要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退</title><link href="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/" rel="alternate" type="text/html" title="要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退" /><published>2024-07-27T11:32:00+08:00</published><updated>2024-07-27T11:32:00+08:00</updated><id>http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version</id><content type="html" xml:base="http://localhost:4000/zh/swift/xcode15-4-need-using-firebase-new-version/">&lt;p&gt;如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crashlytics.png&quot; alt=&quot;Crashlytics report on xcode15.4 vs. firebase 10.10.0&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;7月初，團隊講好一起把 Xcode 升到 15.4 以上，其他的 pods 都是固定的，然後一線，閃退率就起來了，上面的圖就是上線後的結果。&lt;/p&gt;
-
-&lt;p&gt;看了 Crashlytics，發生閃退的地方是 AppDelegate 而且是 Compiler generated code。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/crash-on-firebase10-10-0/crash_on_AppDelegate.png&quot; alt=&quot;Crash starts from AppDelegate&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;看了一下 stack overflow 的資訊，有提到的是這篇。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/78122992/3764854&quot;&gt;Stack overflow 查到可能閃退的點，並且建議升級到 Firebase 10.22.0 以上&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/firebase/firebase-ios-sdk/issues/11403&quot;&gt;Firebase github issues - 11403 有提到一系列原因&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;原因和我專案上的類似，和 nanopb 有關。&lt;/p&gt;
-
-&lt;h2 id=&quot;如果升到-xcode-153-以上的版本&quot;&gt;如果升到 Xcode 15.3 以上的版本&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;請一定要檢查 Firebase 的版本是不是在 10.22.0 以上&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;crash-log&quot;&gt;Crash log&lt;/h3&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Crashed: com.apple.main-thread
-EXC_BAD_ACCESS KERN_INVALID_ADDRESS 0x000000017338126c
-0
-nanopb
-encode_field + 100
-24
-UIKitCore
-keypath_get_selector_hoverStyle + 11024
-25
-&amp;lt;compiler-generated&amp;gt; - Line 4337149088
-static AppDelegate.$main() + 4337149088
-26
-&amp;lt;compiler-generated&amp;gt; - Line 4337152352
-type metadata accessor for AppDelegate + 4337152352
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin</name></author><category term="swift" /><category term="swift" /><category term="firebase" /><category term="xcode" /><summary type="html">如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。</summary></entry></feed>
+&lt;h2 id=&quot;orta-theroxs-article-on-cocoapods-entering-maintain-mode&quot;&gt;&lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox’s Article on Cocoapods Entering Maintain Mode&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates</summary></entry></feed>
