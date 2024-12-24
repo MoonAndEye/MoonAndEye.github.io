@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-10T18:15:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">If You Need to Dynamically Change the App Icon, This Article Covers Everything You Need to Know</title><link href="http://localhost:4000/en/swift/app-icon-dynamic-change/" rel="alternate" type="text/html" title="If You Need to Dynamically Change the App Icon, This Article Covers Everything You Need to Know" /><published>2024-12-10T14:45:00+08:00</published><updated>2024-12-10T14:45:00+08:00</updated><id>http://localhost:4000/en/swift/app-icon-dynamic-change</id><content type="html" xml:base="http://localhost:4000/en/swift/app-icon-dynamic-change/">&lt;p&gt;A couple of years ago, someone asked me whether it was possible to change an app icon dynamically based on certain conditions. A few days ago, I got asked the same question again. Unfortunately, I had forgotten the details I found previously. To avoid having to search for this information yet again, I’ve decided to document everything you need to know about implementing the dynamic app icon feature.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-25T07:21:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">If You Want to Implement i18n on iOS and Dynamically Switch Languages in the App, This is a Great Library</title><link href="http://localhost:4000/en/swift/i18n-in-ios-app-en/" rel="alternate" type="text/html" title="If You Want to Implement i18n on iOS and Dynamically Switch Languages in the App, This is a Great Library" /><published>2024-12-24T23:05:00+08:00</published><updated>2024-12-24T23:05:00+08:00</updated><id>http://localhost:4000/en/swift/i18n-in-ios-app-en</id><content type="html" xml:base="http://localhost:4000/en/swift/i18n-in-ios-app-en/">&lt;p&gt;If you’re working on i18n for iOS and need to dynamically switch languages within the app, you can use this package: &lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;. Recently, I worked on an i18n feature and compiled some related resources here.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;h3 id=&quot;using-cocoapods&quot;&gt;Using CocoaPods&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod &apos;Localize-Swift&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;using-swift-package-manager&quot;&gt;Using Swift Package Manager&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dependencies: [
+    .package(url: &quot;https://github.com/marmelroy/Localize-Swift.git&quot;, .upToNextMajor(from: &quot;3.2.0&quot;))
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// Import the library wherever you need multilingual support&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Localize_Swift&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.localized()&lt;/code&gt; to any string object you want to translate:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;textLabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Get an array of available languages:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;availableLanguages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Change the current language:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setCurrentLanguage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fr&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you need to update the UI in a view controller to handle language changes, observe &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LCLLanguageChangeNotification&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;NotificationCenter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;#selector(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSNotification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;LCLLanguageChangeNotification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reset the language back to the app’s default:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resetCurrentLanguageToDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;beyond-localizablestrings-now-you-can-use-xcstrings&quot;&gt;Beyond Localizable.strings: Now You Can Use xcstrings&lt;/h2&gt;
+
+&lt;p&gt;While working on development, I noticed that when adding a new strings file, there was a “deprecated” label, along with a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xcstrings&lt;/code&gt; option. After doing some research, I discovered this was introduced at WWDC 2023. The format looks quite similar to Android’s multilingual GUI interface. Below is the related video. Once I get to use this in a real project, I’ll write another blog post about it.&lt;/p&gt;
+
+&lt;h2 id=&quot;wwdc-2023---discover-string-catalogs--apple&quot;&gt;WWDC 2023 - Discover String Catalogs | Apple&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7xxUopPqjyI?si=_ZDwqEMXWkIJD5_X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10155/&quot;&gt;Discover String Catalogs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="i18n" /><category term="Swift" /><summary type="html">If you’re working on i18n for iOS and need to dynamically switch languages within the app, you can use this package: Localize-Swift. Recently, I worked on an i18n feature and compiled some related resources here.</summary></entry><entry xml:lang="zh"><title type="html">如果你想要在 iOS 上做 i18n，而且還要在 App 內動態切換語言，這是好用的 library</title><link href="http://localhost:4000/zh/swift/i18n-in-ios-app/" rel="alternate" type="text/html" title="如果你想要在 iOS 上做 i18n，而且還要在 App 內動態切換語言，這是好用的 library" /><published>2024-12-24T23:03:00+08:00</published><updated>2024-12-24T23:03:00+08:00</updated><id>http://localhost:4000/zh/swift/i18n-in-ios-app</id><content type="html" xml:base="http://localhost:4000/zh/swift/i18n-in-ios-app/">&lt;p&gt;如果你要進行 iOS 的 i18n，而且還要在 App 內動態切換語言，你可以使用這個套件 &lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;。前陣子正在進行 i18n 的 feature，這邊整理了一下相關的資料。&lt;/p&gt;
+
+&lt;h2 id=&quot;安裝方法&quot;&gt;安裝方法&lt;/h2&gt;
+
+&lt;h3 id=&quot;使用-cocoapods&quot;&gt;使用 CocoaPods&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod &apos;Localize-Swift&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;使用-swift-package-manager&quot;&gt;使用 Swift Package Manager&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dependencies: [
+    .package(url: &quot;https://github.com/marmelroy/Localize-Swift.git&quot;, .upToNextMajor(from: &quot;3.2.0&quot;))
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;使用方法&quot;&gt;使用方法&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/// 在需要多國語系的地方先引入套件
+import Localize_Swift
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;新增 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.localized()&lt;/code&gt; 到你想要翻譯的任何字串對象後面：&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;textLabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;取得可用語言的陣列：&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;availableLanguages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;更改當前語言：&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setCurrentLanguage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fr&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果需要在視圖控制器中更新 UI 以應對語言變更，請監聽 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LCLLanguageChangeNotification&lt;/code&gt;：&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;NotificationCenter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;#selector(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSNotification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;LCLLanguageChangeNotification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;將語言重設為應用的預設語言：&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resetCurrentLanguageToDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;除了-localizablestrings-之外現在還有-xcstrings-可以使用&quot;&gt;除了 Localizable.strings 之外，現在還有 xcstrings 可以使用&lt;/h2&gt;
+
+&lt;p&gt;在開發的過程中，有看到新增 strings 檔時，旁邊多了一個 deprecated 的字樣，旁邊則是多了個 xcstrings 的選項。一查之後，才看到 WWDC 2023 時，有推出 xcstrings 的功能，個格式看起來和 Android 開發的多國語系很像，我指的是 GUI 界面的長相。相關影片我列在下面，之後在真的用上專案後，會再寫一篇 blog。&lt;/p&gt;
+
+&lt;h2 id=&quot;wwdc-2023---discover-string-catalogs--apple&quot;&gt;WWDC 2023 - Discover String Catalogs | Apple&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7xxUopPqjyI?si=_ZDwqEMXWkIJD5_X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10155/&quot;&gt;Discover String Catalogs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="i18n" /><category term="Swift" /><summary type="html">如果你要進行 iOS 的 i18n，而且還要在 App 內動態切換語言，你可以使用這個套件 Localize-Swift。前陣子正在進行 i18n 的 feature，這邊整理了一下相關的資料。</summary></entry><entry xml:lang="en"><title type="html">If You Need to Dynamically Change the App Icon, This Article Covers Everything You Need to Know</title><link href="http://localhost:4000/en/swift/app-icon-dynamic-change/" rel="alternate" type="text/html" title="If You Need to Dynamically Change the App Icon, This Article Covers Everything You Need to Know" /><published>2024-12-10T14:45:00+08:00</published><updated>2024-12-10T14:45:00+08:00</updated><id>http://localhost:4000/en/swift/app-icon-dynamic-change</id><content type="html" xml:base="http://localhost:4000/en/swift/app-icon-dynamic-change/">&lt;p&gt;A couple of years ago, someone asked me whether it was possible to change an app icon dynamically based on certain conditions. A few days ago, I got asked the same question again. Unfortunately, I had forgotten the details I found previously. To avoid having to search for this information yet again, I’ve decided to document everything you need to know about implementing the dynamic app icon feature.&lt;/p&gt;
 
 &lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
 &lt;p&gt;The implementation is simple and involves just one API:&lt;/p&gt;
@@ -1084,80 +1200,4 @@ UIApplication.shared.setAlternateIconName(iconName) { (error) in
 &lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;測試報告中支持 Swift Testing 框架&lt;/strong&gt;：測試報告現在顯示 Swift Testing 框架的元數據標籤，以及按測試執行狀態進行篩選的功能。（127015832）&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：</summary></entry><entry xml:lang="en"><title type="html">Xcode 16 Release Notes, new features</title><link href="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/" rel="alternate" type="text/html" title="Xcode 16 Release Notes, new features" /><published>2024-09-22T16:03:00+08:00</published><updated>2024-09-22T16:03:00+08:00</updated><id>http://localhost:4000/en/swift/xcode16-release-notes-whats-new</id><content type="html" xml:base="http://localhost:4000/en/swift/xcode16-release-notes-whats-new/">&lt;p&gt;Here are the &lt;strong&gt;New Features&lt;/strong&gt; from the Xcode 16 release notes:&lt;/p&gt;
-
-&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Predictive Code Completion&lt;/strong&gt; is now supported on all Apple silicon Macs. It uses a machine learning model specifically trained for Swift and Apple SDKs. (116310768)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;build-settings&quot;&gt;Build Settings&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Copy and paste from the build settings editor&lt;/strong&gt; now uses xcconfig file syntax. (14333348)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The Project Navigator’s “Open As” context menu&lt;/strong&gt; now supports choosing default editors per file type. (24666459)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;xcodebuild&quot;&gt;xcodebuild&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;xcodebuild supports importing and exporting a downloaded platform&lt;/strong&gt; to disk. This allows simulator disk images to be exported and applied to other Xcode installations without redownloading. (129189162)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;reality-composer-pro&quot;&gt;Reality Composer Pro&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Timelines&lt;/strong&gt; allow you to sequence actions to be executed in a particular order or time. (75589529)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;VirtualEnvironmentProbeComponent&lt;/strong&gt; enables control of the lighting of virtual environments. (117770245)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extended texcoords&lt;/strong&gt; from 2 to 8 buffers, allowing for more complex data types. (123364636)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;previews&quot;&gt;Previews&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;New Preview Execution Engine&lt;/strong&gt; supports shared build products between Build and Run and Previews for faster switching. (37353090)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;@Previewable macro&lt;/strong&gt; allows direct use of property wrappers like @State in Previews without needing an intermediate wrapper view. (110570957)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;storekit&quot;&gt;StoreKit&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Privacy manifests&lt;/strong&gt; can now be included as copied resources in StoreKit configurations for testing privacy policies and terms of service in SubscriptionStoreView. (114228169)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Swift now supports non-copyable C++ types&lt;/strong&gt; when interacting with C++ code from Swift. (83358475)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;~Copyable modifier&lt;/strong&gt; can now be used to suppress copyability on protocols and generic parameters. (101653009)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Typed throws&lt;/strong&gt; allows functions to specify the exact type of error they throw. (125992062)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;test-plans&quot;&gt;Test Plans&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Test reports now support Swift Testing framework&lt;/strong&gt; metadata and the ability to filter by test run status. (127015832)&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">Here are the New Features from the Xcode 16 release notes:</summary></entry><entry xml:lang="en"><title type="html">Cocoapods Enters Maintain Mode</title><link href="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/" rel="alternate" type="text/html" title="Cocoapods Enters Maintain Mode" /><published>2024-08-15T23:33:00+08:00</published><updated>2024-08-15T23:33:00+08:00</updated><id>http://localhost:4000/en/swift/cocoapods-enter-maintain-mode</id><content type="html" xml:base="http://localhost:4000/en/swift/cocoapods-enter-maintain-mode/">&lt;h2 id=&quot;cocoapods-enters-maintain-mode-but-will-still-release-more-than-twice-a-year-to-keep-up-with-xcode-updates&quot;&gt;Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates&lt;/h2&gt;
-
-&lt;p&gt;One evening, while scrolling through x (formerly Twitter), I stumbled upon a post retweeted by &lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox&lt;/a&gt; announcing that Cocoapods, after 13 years, has entered maintain mode.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/swift/cocoapods-enter-maintain-mode/pods_enter_maintain_mode.png&quot; alt=&quot;cocoapods announcement: enter maintain mode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;key-points&quot;&gt;Key Points&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ensure security issues in the mainline are addressed.&lt;/li&gt;
-  &lt;li&gt;Release at least twice a year to keep up with Xcode updates.&lt;/li&gt;
-  &lt;li&gt;Review support requests every six months.&lt;/li&gt;
-  &lt;li&gt;Maintain website infrastructure operations.&lt;/li&gt;
-  &lt;li&gt;Support limitations: Will not actively follow up on GitHub issues as a support channel, nor commit to handling PRs for new features or application layer errors.&lt;/li&gt;
-  &lt;li&gt;Consider turning the Specs repository to read-only to simplify security management and maintain existing builds in the long run.&lt;/li&gt;
-  &lt;li&gt;For projects like React Native, which primarily acquire libraries via npm and not Trunk, such changes may be sufficient.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;reasoning&quot;&gt;Reasoning&lt;/h2&gt;
-&lt;p&gt;Since Apple introduced the Swift Package Manager (SPM), Cocoapods has faced significant competitive pressure, impacting its development momentum. With SPM being officially supported by Apple and integrated directly into its development environment, competing with Apple in the core area of package management tools is disadvantageous. Apple’s widespread influence and deep integration with its products have made developers lean towards choosing SPM as their dependency management tool, directly affecting Cocoapods’ market share and related development investments. Therefore, facing competition from Apple, Cocoapods needs to adjust its strategy to adapt to the evolving development ecosystem.&lt;/p&gt;
-
-&lt;h2 id=&quot;impact-on-pods&quot;&gt;Impact on Pods&lt;/h2&gt;
-&lt;p&gt;Since I have several older iOS projects underway and numerous interdependent modules using pods for management at work, it’s inevitable to start supporting SPM. Considering the upcoming changes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Xcode 16 is expected to release in September 2024.&lt;/li&gt;
-  &lt;li&gt;iOS 18 is likely to release in September 2024.&lt;/li&gt;
-  &lt;li&gt;Swift 6, although optional, will appear with Xcode 16, with Swift 5.10 being the last of the version 5 series.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I anticipate that the development community will adapt to these changes by around early 2025. Therefore, I plan to initiate support for SPM starting in 2025.&lt;/p&gt;
-
-&lt;h2 id=&quot;orta-theroxs-article-on-cocoapods-entering-maintain-mode&quot;&gt;&lt;a href=&quot;https://blog.cocoapods.org/CocoaPods-Support-Plans/&quot;&gt;Orta Therox’s Article on Cocoapods Entering Maintain Mode&lt;/a&gt;&lt;/h2&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Swift" /><category term="Cocoapods" /><category term="Xcode" /><summary type="html">Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Xcode" /><category term="Swift" /><summary type="html">這份 Xcode 16 的 Release Notes 中有以下新增功能（New Features）：</summary></entry></feed>
