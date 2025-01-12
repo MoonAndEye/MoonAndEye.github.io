@@ -87,3 +87,4 @@ yahoo.com, 59189, RESELLER
 aniview.com, 621cca388ba47d78a102e506, RESELLER, 78b21b97965ec3f8
 beachfront.com, 13749, RESELLER, e2541279e8e2ca4d
 emxdgt.com, 1643, RESELLER, 1e1d41537f7cad7f
+google.com, pub-8823334702749737, DIRECT, f08c47fec0942fa0
