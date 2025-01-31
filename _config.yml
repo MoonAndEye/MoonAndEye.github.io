@@ -75,9 +75,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "HomePage"
-      icon: "fas fa-fw fa-link"
-      url: "https://moonandeye.github.io/"
+    # - label: "HomePage"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://moonandeye.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/atimisMoon"
