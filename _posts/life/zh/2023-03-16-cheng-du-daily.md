@@ -4,7 +4,7 @@ title: 中國-成都 天府之國
 date: 2013-04-06 14:26
 category: life
 author: Marvin Lin
-tags: [life]
+tags: [life, chengdu]
 summary: 
 ---
 
