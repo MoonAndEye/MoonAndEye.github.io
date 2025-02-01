@@ -8,6 +8,8 @@ en:
       url: /en/swift/
     - title: "You need testing"
       url: /en/unitTesting/
+    - title: "Life"
+      url: /en/life/
     - title: "About"
       url: /en/about/
 zh:
