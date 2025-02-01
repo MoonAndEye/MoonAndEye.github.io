@@ -6,7 +6,6 @@ category: life
 author: Marvin Lin
 tags: [bitcoin, lottery, miner, crypto currency, satoshi, shopee]
 summary: A compact Bitcoin lottery miner with a 55kH/s hashrate, low power consumption, and a simple setup process. It functions quietly and even doubles as a desk clock. Check out product details and purchase link below.
-permalink: /life/:title:output_ext
 ---
 
 One day, on a whim, I wanted to see if I could find a cheap Bitcoin miner. I searched on Shopee and found a Bitcoin lottery miner, which perfectly met my needs.
