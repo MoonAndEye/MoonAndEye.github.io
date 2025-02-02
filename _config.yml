@@ -137,6 +137,7 @@ defaults:
   - scope:
       path: "/en"
     values:
+      toc_label: "On this page"
       locale: en
       lang: en
   - scope:
@@ -155,6 +156,7 @@ defaults:
       path: "_posts/**/en"
       types: posts
     values:
+      toc_label: "On this page"
       locale: en
       lang: en
       permalink: /en/:categories/:title/
