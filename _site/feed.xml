@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-15T15:37:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="zh"><title type="html">在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單</title><link href="http://localhost:4000/zh/programming/using-cursor-in-jira/" rel="alternate" type="text/html" title="在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單" /><published>2025-03-15T11:39:00+08:00</published><updated>2025-03-15T11:39:00+08:00</updated><id>http://localhost:4000/zh/programming/using-cursor-in-jira</id><content type="html" xml:base="http://localhost:4000/zh/programming/using-cursor-in-jira/">&lt;p&gt;2025 年開始，我已經在開發的日常中，大量的使用 Cursor。但如果想法打開，Cursor 輸出的「文字」本來就可以超過「程式」的範圍。如果團隊中一起合作的 PM，使用 Cursor 開單，是不是開發者可以快速的跨越自然語言和程式語言的隔閤，然後快速的進入程式開發呢？首先，先從 Cursor IDE 下載開始。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-27T00:56:17+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Prompt to Make AI Agents Present Design First Without Implementation</title><link href="http://localhost:4000/en/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="Prompt to Make AI Agents Present Design First Without Implementation" /><published>2025-04-26T11:50:00+08:00</published><updated>2025-04-26T11:50:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-prompt/">&lt;p&gt;This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.&lt;/p&gt;
+
+&lt;p&gt;If you’re using Cursor, you can write the rules in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.cursor/rules/think-mode.mdc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re using VSCode Insiders, you can press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd + shift + P&lt;/code&gt;, then choose “create prompt”, which will open up the user settings. When giving commands, pressing the “add context” shortcut will add this prompt to the context, saving you typing time.&lt;/p&gt;
+
+&lt;h2 id=&quot;think-mode-prompt&quot;&gt;Think-mode prompt&lt;/h2&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# Thinking Mode Only: Ideas and Proposals Without Implementation&lt;/span&gt;
+
+Act as a consultant for this conversation only. Help me think through problems without implementing code.
+
+&lt;span class=&quot;gu&quot;&gt;## Guidelines:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Analyze the problem or request I present
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explore possible implementation approaches and architectures
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Provide high-level solutions or design considerations
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explain pros and cons of different approaches
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Suggest technology choices and potential concerns
+
+&lt;span class=&quot;gu&quot;&gt;## Do NOT:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not write complete implementation code
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not modify my existing code
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not provide code blocks that can be directly copied and pasted
+
+Help me clarify my thinking and provide direction for my implementation. If I need specific code assistance later, I will explicitly request it.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><category term="AI Agent" /><summary type="html">This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.</summary></entry><entry xml:lang="zh"><title type="html">讓 AI Agent 不要動手，先呈現設計結果的 prompt</title><link href="http://localhost:4000/zh/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="讓 AI Agent 不要動手，先呈現設計結果的 prompt" /><published>2025-04-26T11:39:00+08:00</published><updated>2025-04-26T11:39:00+08:00</updated><id>http://localhost:4000/zh/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/zh/programming/ai-agent-coding-prompt/">&lt;p&gt;今年開始，我大量的使用 AI Agent 在程式開發。除了一般 debug 以外，Agent 也會參與我的程式設計過程。但是，AI Agent 如果沒有特別提到「不要動手，我要先 review 你的設計」時，AI Agent 會直接開始寫程式碼。而依這幾個月的經驗，AI Agent 很難一次就設計到我想要的結果。但如果我不斷的 review Agent 提出來的方案，在討論的過程中，AI Agent 會越來越接近我想要的結果。&lt;/p&gt;
+
+&lt;p&gt;如果你用的是 cursor，你可以把 rules 寫在 .cursor/rules/think-mode.mdc&lt;/p&gt;
+
+&lt;p&gt;如果你是用 VSCode insiders，你可以先按 cmd + shift + P，然後選擇 create prompt，接著他就會開到 user setting 下。在下指令時，你按下 add context 的 short cut 時，就會把這段 prompt 加在 context 裡面了，可以結省你打字的時間。&lt;/p&gt;
+
+&lt;h2 id=&quot;think-mode-prompt&quot;&gt;Think-mode prompt&lt;/h2&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# Thinking Mode Only: Ideas and Proposals Without Implementation&lt;/span&gt;
+
+Act as a consultant for this conversation only. Help me think through problems without implementing code.
+
+&lt;span class=&quot;gu&quot;&gt;## Guidelines:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Analyze the problem or request I present
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explore possible implementation approaches and architectures
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Provide high-level solutions or design considerations
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explain pros and cons of different approaches
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Suggest technology choices and potential concerns
+
+&lt;span class=&quot;gu&quot;&gt;## Do NOT:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not write complete implementation code
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not modify my existing code
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not provide code blocks that can be directly copied and pasted
+
+Help me clarify my thinking and provide direction for my implementation. If I need specific code assistance later, I will explicitly request it.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><category term="AI Agent" /><summary type="html">今年開始，我大量的使用 AI Agent 在程式開發。除了一般 debug 以外，Agent 也會參與我的程式設計過程。但是，AI Agent 如果沒有特別提到「不要動手，我要先 review 你的設計」時，AI Agent 會直接開始寫程式碼。而依這幾個月的經驗，AI Agent 很難一次就設計到我想要的結果。但如果我不斷的 review Agent 提出來的方案，在討論的過程中，AI Agent 會越來越接近我想要的結果。</summary></entry><entry xml:lang="zh"><title type="html">在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單</title><link href="http://localhost:4000/zh/programming/using-cursor-in-jira/" rel="alternate" type="text/html" title="在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單" /><published>2025-03-15T11:39:00+08:00</published><updated>2025-03-15T11:39:00+08:00</updated><id>http://localhost:4000/zh/programming/using-cursor-in-jira</id><content type="html" xml:base="http://localhost:4000/zh/programming/using-cursor-in-jira/">&lt;p&gt;2025 年開始，我已經在開發的日常中，大量的使用 Cursor。但如果想法打開，Cursor 輸出的「文字」本來就可以超過「程式」的範圍。如果團隊中一起合作的 PM，使用 Cursor 開單，是不是開發者可以快速的跨越自然語言和程式語言的隔閤，然後快速的進入程式開發呢？首先，先從 Cursor IDE 下載開始。&lt;/p&gt;
 
 &lt;h2 id=&quot;cursor-ide-下載&quot;&gt;&lt;a href=&quot;https://www.cursor.com/&quot;&gt;Cursor IDE 下載&lt;/a&gt;&lt;/h2&gt;
 
@@ -708,120 +758,4 @@ let userView = factory.createUserView(user: user)
 
 &lt;h3 id=&quot;大賢者&quot;&gt;大賢者&lt;/h3&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GFfdOq9iptM?si=octI4Th6kYbN3Jbt&amp;amp;start=110&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="nintendo" /><category term="switch" /><summary type="html">任天堂 Switch 2 已準備好要上市了 - 正式名稱為 Nintendo Switch 2</summary></entry><entry xml:lang="en"><title type="html">If You Want to Implement i18n on iOS and Dynamically Switch Languages in the App, This is a Great Library</title><link href="http://localhost:4000/en/swift/i18n-in-ios-app-en/" rel="alternate" type="text/html" title="If You Want to Implement i18n on iOS and Dynamically Switch Languages in the App, This is a Great Library" /><published>2024-12-24T23:05:00+08:00</published><updated>2024-12-24T23:05:00+08:00</updated><id>http://localhost:4000/en/swift/i18n-in-ios-app-en</id><content type="html" xml:base="http://localhost:4000/en/swift/i18n-in-ios-app-en/">&lt;p&gt;If you’re working on i18n for iOS and need to dynamically switch languages within the app, you can use this package: &lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;. Recently, I worked on an i18n feature and compiled some related resources here.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;h3 id=&quot;using-cocoapods&quot;&gt;Using CocoaPods&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod &apos;Localize-Swift&apos;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;using-swift-package-manager&quot;&gt;Using Swift Package Manager&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dependencies: [
-    .package(url: &quot;https://github.com/marmelroy/Localize-Swift.git&quot;, .upToNextMajor(from: &quot;3.2.0&quot;))
-]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;/// Import the library wherever you need multilingual support&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Localize_Swift&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.localized()&lt;/code&gt; to any string object you want to translate:&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;textLabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Get an array of available languages:&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;availableLanguages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Change the current language:&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setCurrentLanguage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fr&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you need to update the UI in a view controller to handle language changes, observe &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LCLLanguageChangeNotification&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;NotificationCenter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;#selector(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSNotification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;LCLLanguageChangeNotification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Reset the language back to the app’s default:&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resetCurrentLanguageToDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;beyond-localizablestrings-now-you-can-use-xcstrings&quot;&gt;Beyond Localizable.strings: Now You Can Use xcstrings&lt;/h2&gt;
-
-&lt;p&gt;While working on development, I noticed that when adding a new strings file, there was a “deprecated” label, along with a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xcstrings&lt;/code&gt; option. After doing some research, I discovered this was introduced at WWDC 2023. The format looks quite similar to Android’s multilingual GUI interface. Below is the related video. Once I get to use this in a real project, I’ll write another blog post about it.&lt;/p&gt;
-
-&lt;h2 id=&quot;wwdc-2023---discover-string-catalogs--apple&quot;&gt;WWDC 2023 - Discover String Catalogs | Apple&lt;/h2&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7xxUopPqjyI?si=_ZDwqEMXWkIJD5_X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10155/&quot;&gt;Discover String Catalogs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="i18n" /><category term="Swift" /><summary type="html">If you’re working on i18n for iOS and need to dynamically switch languages within the app, you can use this package: Localize-Swift. Recently, I worked on an i18n feature and compiled some related resources here.</summary></entry><entry xml:lang="zh"><title type="html">如果你想要在 iOS 上做 i18n，而且還要在 App 內動態切換語言，這是好用的 library</title><link href="http://localhost:4000/zh/swift/i18n-in-ios-app/" rel="alternate" type="text/html" title="如果你想要在 iOS 上做 i18n，而且還要在 App 內動態切換語言，這是好用的 library" /><published>2024-12-24T23:03:00+08:00</published><updated>2024-12-24T23:03:00+08:00</updated><id>http://localhost:4000/zh/swift/i18n-in-ios-app</id><content type="html" xml:base="http://localhost:4000/zh/swift/i18n-in-ios-app/">&lt;p&gt;如果你要進行 iOS 的 i18n，而且還要在 App 內動態切換語言，你可以使用這個套件 &lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;。前陣子正在進行 i18n 的 feature，這邊整理了一下相關的資料。&lt;/p&gt;
-
-&lt;h2 id=&quot;安裝方法&quot;&gt;安裝方法&lt;/h2&gt;
-
-&lt;h3 id=&quot;使用-cocoapods&quot;&gt;使用 CocoaPods&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod &apos;Localize-Swift&apos;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;使用-swift-package-manager&quot;&gt;使用 Swift Package Manager&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dependencies: [
-    .package(url: &quot;https://github.com/marmelroy/Localize-Swift.git&quot;, .upToNextMajor(from: &quot;3.2.0&quot;))
-]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;使用方法&quot;&gt;使用方法&lt;/h2&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/// 在需要多國語系的地方先引入套件
-import Localize_Swift
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;新增 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.localized()&lt;/code&gt; 到你想要翻譯的任何字串對象後面：&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;textLabel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;取得可用語言的陣列：&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;availableLanguages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;更改當前語言：&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setCurrentLanguage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fr&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;如果需要在視圖控制器中更新 UI 以應對語言變更，請監聽 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LCLLanguageChangeNotification&lt;/code&gt;：&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;NotificationCenter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addObserver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;#selector(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSNotification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;LCLLanguageChangeNotification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;將語言重設為應用的預設語言：&lt;/p&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Localize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resetCurrentLanguageToDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;除了-localizablestrings-之外現在還有-xcstrings-可以使用&quot;&gt;除了 Localizable.strings 之外，現在還有 xcstrings 可以使用&lt;/h2&gt;
-
-&lt;p&gt;在開發的過程中，有看到新增 strings 檔時，旁邊多了一個 deprecated 的字樣，旁邊則是多了個 xcstrings 的選項。一查之後，才看到 WWDC 2023 時，有推出 xcstrings 的功能，個格式看起來和 Android 開發的多國語系很像，我指的是 GUI 界面的長相。相關影片我列在下面，之後在真的用上專案後，會再寫一篇 blog。&lt;/p&gt;
-
-&lt;h2 id=&quot;wwdc-2023---discover-string-catalogs--apple&quot;&gt;WWDC 2023 - Discover String Catalogs | Apple&lt;/h2&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7xxUopPqjyI?si=_ZDwqEMXWkIJD5_X&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/marmelroy/Localize-Swift&quot;&gt;Localize-Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2023/10155/&quot;&gt;Discover String Catalogs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="i18n" /><category term="Swift" /><summary type="html">如果你要進行 iOS 的 i18n，而且還要在 App 內動態切換語言，你可以使用這個套件 Localize-Swift。前陣子正在進行 i18n 的 feature，這邊整理了一下相關的資料。</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GFfdOq9iptM?si=octI4Th6kYbN3Jbt&amp;amp;start=110&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="nintendo" /><category term="switch" /><summary type="html">任天堂 Switch 2 已準備好要上市了 - 正式名稱為 Nintendo Switch 2</summary></entry></feed>
