@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-27T00:56:17+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Prompt to Make AI Agents Present Design First Without Implementation</title><link href="http://localhost:4000/en/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="Prompt to Make AI Agents Present Design First Without Implementation" /><published>2025-04-26T11:50:00+08:00</published><updated>2025-04-26T11:50:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-prompt/">&lt;p&gt;This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-14T17:14:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">How to Paste Screen Captures to Claude Code Editor on macOS</title><link href="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="How to Paste Screen Captures to Claude Code Editor on macOS" /><published>2025-07-14T16:25:00+08:00</published><updated>2025-07-14T16:25:00+08:00</updated><id>http://localhost:4000/en/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/">&lt;p&gt;Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.&lt;/p&gt;
+
+&lt;h2 id=&quot;cmd--ctrl--k---you-can-send-highlighted-code-from-another-file-to-claude-code&quot;&gt;Cmd + ctrl + K - You can send highlighted code from another file to Claude code&lt;/h2&gt;
+
+&lt;p&gt;As shown in the image, you’ll see “1 line selected” in the bottom right of the terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-select-lines.png&quot; alt=&quot;claude-code-select-lines&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-about-images-theres-definitely-a-way-to-send-them-to-claude-code-too&quot;&gt;What about images? There’s definitely a way to send them to Claude code too&lt;/h2&gt;
+
+&lt;p&gt;On macOS, you can use the following method to paste screen captures to Claude’s code editor:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Press ctrl + cmd + shift + 4, then select the area you want to capture.&lt;/li&gt;
+  &lt;li&gt;After taking the screenshot, switch to Claude code’s editor.&lt;/li&gt;
+  &lt;li&gt;Press cmd + v to paste the screenshot.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point, you’ll see the text “image” pasted into the input box. You can use this technique to have Claude make modifications based on colors/layout.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.</summary></entry><entry xml:lang="zh"><title type="html">將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用</title><link href="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用" /><published>2025-07-14T16:20:00+08:00</published><updated>2025-07-14T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/">&lt;p&gt;現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。&lt;/p&gt;
+
+&lt;h2 id=&quot;cmd--ctrl--k---就可以把另一個檔案框起來的程式碼傳給-claude-code&quot;&gt;Cmd + ctrl + K - 就可以把另一個檔案框起來的程式碼，傳給 claude code&lt;/h2&gt;
+
+&lt;p&gt;如圖，在 terminal 的右下方，就會看到 1 line selected&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-select-lines.png&quot; alt=&quot;claude-code-select-lines&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;那圖案呢當然也有方法傳給-claude-code&quot;&gt;那圖案呢？當然也有方法傳給 claude code&lt;/h2&gt;
+
+&lt;p&gt;在 macOS 上，你可以使用以下方法將螢幕截圖貼上到 Claude 的程式碼編輯器中：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;按下 ctrl + cmd + shift + 4，然後選擇你想要截圖的區域。&lt;/li&gt;
+  &lt;li&gt;截圖完成後，切換到 claude code 的程式碼編輯器。&lt;/li&gt;
+  &lt;li&gt;按下 cmd + v，將截圖貼上。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;這時候，你會看到 image 的文字被貼上輸入框，你可以使用這個技巧，讓 claude 針對顏色/排版，進行修改。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。</summary></entry><entry xml:lang="en"><title type="html">Prompt to Make AI Agents Present Design First Without Implementation</title><link href="http://localhost:4000/en/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="Prompt to Make AI Agents Present Design First Without Implementation" /><published>2025-04-26T11:50:00+08:00</published><updated>2025-04-26T11:50:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-prompt/">&lt;p&gt;This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.&lt;/p&gt;
 
 &lt;p&gt;If you’re using Cursor, you can write the rules in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.cursor/rules/think-mode.mdc&lt;/code&gt;&lt;/p&gt;
 
@@ -707,55 +747,4 @@ let userView = factory.createUserView(user: user)
   &lt;li&gt;Budapest: Hungarian Forint (HUF)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Although these countries use different currencies, euros are generally accepted, though at less favorable exchange rates. Apple Pay and Google Pay are widely accepted for transportation payments. However, some restaurants only accept cash, often due to temporary POS machine issues.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="travel" /><category term="Europe" /><summary type="html">This guide covers transportation options in Austria, Hungary, and the Czech Republic, starting from Taipei (TPE). If your trip is longer than a week, this guide will help plan your travel between these three countries. Sightseeing recommendations will be in a separate post.</summary></entry><entry xml:lang="en"><title type="html">Nintendo Switch 2 is Ready for Release</title><link href="http://localhost:4000/en/life/nintendo-switch-2-is-ready-for-sale/" rel="alternate" type="text/html" title="Nintendo Switch 2 is Ready for Release" /><published>2025-01-20T22:14:00+08:00</published><updated>2025-01-20T22:14:00+08:00</updated><id>http://localhost:4000/en/life/nintendo-switch-2-is-ready-for-sale</id><content type="html" xml:base="http://localhost:4000/en/life/nintendo-switch-2-is-ready-for-sale/">&lt;h2 id=&quot;nintendo-switch-2-is-ready-for-release---officially-named-nintendo-switch-2&quot;&gt;Nintendo Switch 2 is Ready for Release - Officially Named Nintendo Switch 2&lt;/h2&gt;
-
-&lt;h3 id=&quot;official-trailer&quot;&gt;Official Trailer&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/itpcsQQvgAQ?si=NPNiTmAJJTd8AQq7&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;highlight-1---mario-kart&quot;&gt;Highlight 1 - Mario Kart&lt;/h2&gt;
-
-&lt;p&gt;The demo game featured in the video is “Mario Kart.”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/nintendo-switch2/mario-kart.jpeg&quot; alt=&quot;mario kart in nintendo switch 2&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;highlight-2---joycon-may-function-as-a-mouse-on-a-flat-surface&quot;&gt;Highlight 2 - Joycon May Function as a Mouse on a Flat Surface&lt;/h2&gt;
-
-&lt;p&gt;In the promotional video, there is a scene where the Joycon is used as a mouse rolling on a flat surface. This feature has also been mentioned in reviews by YouTubers such as Rocca and Grand Sage.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/nintendo-switch2/joycon-as-mouse.jpeg&quot; alt=&quot;joycon as mouse&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;other-youtubers-reviews-on-switch-2&quot;&gt;Other YouTubers’ Reviews on Switch 2&lt;/h2&gt;
-
-&lt;h3 id=&quot;videogamedunkey&quot;&gt;videogamedunkey&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/CD8uUWIhgNA?si=SWcuEtXhbkBidBBD&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;beatemups&quot;&gt;BeatEmUps&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/z9uinQCDqeI?si=cFNxfK7iWrICKSrW&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="nintendo" /><category term="switch" /><summary type="html">Nintendo Switch 2 is Ready for Release - Officially Named Nintendo Switch 2</summary></entry><entry xml:lang="zh"><title type="html">任天堂 Switch 2 已準備好要上市了</title><link href="http://localhost:4000/zh/life/nintendo-switch-2-is-ready-for-sale/" rel="alternate" type="text/html" title="任天堂 Switch 2 已準備好要上市了" /><published>2025-01-19T22:14:00+08:00</published><updated>2025-01-19T22:14:00+08:00</updated><id>http://localhost:4000/zh/life/nintendo-switch-2-is-ready-for-sale</id><content type="html" xml:base="http://localhost:4000/zh/life/nintendo-switch-2-is-ready-for-sale/">&lt;h2 id=&quot;任天堂-switch-2-已準備好要上市了---正式名稱為-nintendo-switch-2&quot;&gt;任天堂 Switch 2 已準備好要上市了 - 正式名稱為 Nintendo Switch 2&lt;/h2&gt;
-
-&lt;h3 id=&quot;先上官方推出的正式影片&quot;&gt;先上官方推出的正式影片&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/MlH3EWPhX48?si=IUpP4Zcq-e-cwmUs&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;switch-2-的亮點1---瑪莉歐賽車&quot;&gt;Switch 2 的亮點1 - 瑪莉歐賽車&lt;/h2&gt;
-
-&lt;p&gt;Demo 的遊戲是「瑪莉歐賽車」&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/nintendo-switch2/mario-kart.jpeg&quot; alt=&quot;mario kart in nintendo switch 2&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;switch-2-的亮點2---joycon-可能可以當成滑鼠在平面上滾動&quot;&gt;Switch 2 的亮點2 - Joycon 可能可以當成滑鼠在平面上滾動&lt;/h2&gt;
-&lt;p&gt;在宣傳影片中有一段是 Joycon 可以當成滑鼠在平面上滾動，這在其他 Youtuber 像是 Rocca 和大賢者的介紹中都有提到&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/nintendo-switch2/joycon-as-mouse.jpeg&quot; alt=&quot;joycon as mouse&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;其他-youtuber-介紹-switch-2-的影片&quot;&gt;其他 Youtuber 介紹 Switch 2 的影片&lt;/h2&gt;
-
-&lt;h3 id=&quot;羅卡-rocca&quot;&gt;羅卡 Rocca&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/4Sj_nSaOD-Y?si=44eiTqLbLAWlEEAY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;大賢者&quot;&gt;大賢者&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GFfdOq9iptM?si=octI4Th6kYbN3Jbt&amp;amp;start=110&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="nintendo" /><category term="switch" /><summary type="html">任天堂 Switch 2 已準備好要上市了 - 正式名稱為 Nintendo Switch 2</summary></entry></feed>
+&lt;p&gt;Although these countries use different currencies, euros are generally accepted, though at less favorable exchange rates. Apple Pay and Google Pay are widely accepted for transportation payments. However, some restaurants only accept cash, often due to temporary POS machine issues.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="travel" /><category term="Europe" /><summary type="html">This guide covers transportation options in Austria, Hungary, and the Czech Republic, starting from Taipei (TPE). If your trip is longer than a week, this guide will help plan your travel between these three countries. Sightseeing recommendations will be in a separate post.</summary></entry></feed>
