@@ -22,7 +22,7 @@ On macOS, you can use the following method to paste screen captures to Claude's 
 
 - Press ctrl + cmd + shift + 4, then select the area you want to capture.
 - After taking the screenshot, switch to Claude code's editor.
-- Press cmd + v to paste the screenshot.
+- Press ctrl + v to paste the screenshot.
 
 ![claude-code-paste-image](/assets/programming/claude-code/claude-code-screen-capture.png)
 

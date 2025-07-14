@@ -22,7 +22,7 @@ summary: 本文將介紹如何在 macOS 上將螢幕截圖貼上到 Claude 的�
 
 - 按下 ctrl + cmd + shift + 4，然後選擇你想要截圖的區域。
 - 截圖完成後，切換到 claude code 的程式碼編輯器。
-- 按下 cmd + v，將截圖貼上。
+- 按下 ctrl + v (注意，是 ctrl)，將截圖貼上。
 
 ![claude-code-paste-image](/assets/programming/claude-code/claude-code-screen-capture.png)
 
