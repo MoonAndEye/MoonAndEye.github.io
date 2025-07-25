@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-14T17:14:12+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">How to Paste Screen Captures to Claude Code Editor on macOS</title><link href="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="How to Paste Screen Captures to Claude Code Editor on macOS" /><published>2025-07-14T16:25:00+08:00</published><updated>2025-07-14T16:25:00+08:00</updated><id>http://localhost:4000/en/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/">&lt;p&gt;Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-25T22:15:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Mario Kart World - Wallpaper Downloads</title><link href="http://localhost:4000/en/life/mario-kart-world/" rel="alternate" type="text/html" title="Mario Kart World - Wallpaper Downloads" /><published>2025-07-25T21:10:00+08:00</published><updated>2025-07-25T21:10:00+08:00</updated><id>http://localhost:4000/en/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/en/life/mario-kart-world/">&lt;p&gt;Nintendo’s website now has Mario Kart World wallpapers available for download.&lt;/p&gt;
+
+&lt;h2 id=&quot;nintendo-mario-kart-download-link&quot;&gt;&lt;a href=&quot;https://www.nintendo.com/jp/download/mario_kart_world/index.html&quot;&gt;Nintendo Mario Kart Download Link&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;wallpaper-1&quot;&gt;Wallpaper 1&lt;/h2&gt;
+
+&lt;h3 id=&quot;mobile---1320-x-2868&quot;&gt;Mobile - 1320 x 2868&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart1.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart1&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mobile---1440-x-2560&quot;&gt;Mobile - 1440 x 2560&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart2.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;desktop&quot;&gt;Desktop&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-pc.jpg&quot; alt=&quot;Mario kart - pic 1 - pc&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;wallpaper-2&quot;&gt;Wallpaper 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;mobile---1320-x-2868-1&quot;&gt;Mobile - 1320 x 2868&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart1.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart1&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mobile---1440-x-2560-1&quot;&gt;Mobile - 1440 x 2560&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart2.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;desktop-1&quot;&gt;Desktop&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-pc.jpg&quot; alt=&quot;Mario kart - pic 2 - pc&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;other-wallpaper-links&quot;&gt;Other Wallpaper Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/en/life/mario-desktop-screen/&quot;&gt;Mario Wonder - Wallpapers Available for Download on Nintendo’s Official Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/en/life/zelda-kingdom-tear-wall-papers/&quot;&gt;The Legend of Zelda - Tears of the Kingdom Wallpapers Available on Nintendo’s Website&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="Mario Kart World" /><summary type="html">Nintendo’s website now has Mario Kart World wallpapers available for download.</summary></entry><entry xml:lang="zh"><title type="html">馬力歐賽車世界 - Mario Kart 世界 桌布下載</title><link href="http://localhost:4000/zh/life/mario-kart-world/" rel="alternate" type="text/html" title="馬力歐賽車世界 - Mario Kart 世界 桌布下載" /><published>2025-07-25T21:03:00+08:00</published><updated>2025-07-25T21:03:00+08:00</updated><id>http://localhost:4000/zh/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/zh/life/mario-kart-world/">&lt;p&gt;任天堂的網站，現在有 Mario Kart 世界的桌布下載。&lt;/p&gt;
+
+&lt;h2 id=&quot;任天堂的馬力歐賽車下載連結&quot;&gt;&lt;a href=&quot;https://www.nintendo.com/jp/download/mario_kart_world/index.html&quot;&gt;任天堂的馬力歐賽車下載連結&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;桌布一&quot;&gt;桌布一&lt;/h2&gt;
+
+&lt;h3 id=&quot;手機用---1320-x-2868&quot;&gt;手機用 - 1320 x 2868&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart1.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart1&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;手機用---1440-x-2560&quot;&gt;手機用 - 1440 x 2560&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart2.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;電腦用&quot;&gt;電腦用&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-pc.jpg&quot; alt=&quot;Mario kart - pic 1 - pc&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;桌布二&quot;&gt;桌布二&lt;/h2&gt;
+
+&lt;h3 id=&quot;手機用---1320-x-2868-1&quot;&gt;手機用 - 1320 x 2868&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart1.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart1&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;手機用---1440-x-2560-1&quot;&gt;手機用 - 1440 x 2560&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart2.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;電腦用-1&quot;&gt;電腦用&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-pc.jpg&quot; alt=&quot;Mario kart - pic 2 - pc&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;其他的桌布連結&quot;&gt;其他的桌布連結&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/life/mario-desktop-screen.html&quot;&gt;馬力歐驚奇 桌布下載&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/life/zelda-kingdom-tear-wall-papers.html&quot;&gt;薩爾達傳說 桌布下載&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="Mario Kart World" /><summary type="html">任天堂的網站，現在有 Mario Kart 世界的桌布下載。</summary></entry><entry xml:lang="en"><title type="html">How to Paste Screen Captures to Claude Code Editor on macOS</title><link href="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="How to Paste Screen Captures to Claude Code Editor on macOS" /><published>2025-07-14T16:25:00+08:00</published><updated>2025-07-14T16:25:00+08:00</updated><id>http://localhost:4000/en/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/">&lt;p&gt;Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.&lt;/p&gt;
 
 &lt;h2 id=&quot;cmd--ctrl--k---you-can-send-highlighted-code-from-another-file-to-claude-code&quot;&gt;Cmd + ctrl + K - You can send highlighted code from another file to Claude code&lt;/h2&gt;
 
@@ -13,7 +83,7 @@
 &lt;ul&gt;
   &lt;li&gt;Press ctrl + cmd + shift + 4, then select the area you want to capture.&lt;/li&gt;
   &lt;li&gt;After taking the screenshot, switch to Claude code’s editor.&lt;/li&gt;
-  &lt;li&gt;Press cmd + v to paste the screenshot.&lt;/li&gt;
+  &lt;li&gt;Press ctrl + v to paste the screenshot.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
@@ -33,7 +103,7 @@
 &lt;ul&gt;
   &lt;li&gt;按下 ctrl + cmd + shift + 4，然後選擇你想要截圖的區域。&lt;/li&gt;
   &lt;li&gt;截圖完成後，切換到 claude code 的程式碼編輯器。&lt;/li&gt;
-  &lt;li&gt;按下 cmd + v，將截圖貼上。&lt;/li&gt;
+  &lt;li&gt;按下 ctrl + v (注意，是 ctrl)，將截圖貼上。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
@@ -642,109 +712,4 @@ let userView = factory.createUserView(user: user)
 │   │       ├── ViewModel  
 │   │       
 │   │       
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Cursor" /><category term="AI" /><category term="Swift" /><summary type="html">Since Cursor introduced the Agent mode, I have been extensively using cursorrules for development. Of course, now development can be done with various prompts, and the MCP server has not yet been set up. But let’s start with cursorrules first. Currently, there are some great awesome cursorrules available online.</summary></entry><entry xml:lang="zh"><title type="html">歐洲 奧地利-匈牙利-捷克 奧匈捷之旅，交通方式</title><link href="http://localhost:4000/zh/life/eu-travel-cz-au/" rel="alternate" type="text/html" title="歐洲 奧地利-匈牙利-捷克 奧匈捷之旅，交通方式" /><published>2025-02-01T21:23:00+08:00</published><updated>2025-02-01T21:23:00+08:00</updated><id>http://localhost:4000/zh/life/eu-travel-cz-au</id><content type="html" xml:base="http://localhost:4000/zh/life/eu-travel-cz-au/">&lt;p&gt;這篇介紹在捷克、奧地利、匈牙利三個國家的交通方式，出發地設定在台北(TPE)出發。如果行程有在一個禮拜以上，可以這樣來安排這三個國家的行程。景點的 post 會寫在另一篇。&lt;/p&gt;
-
-&lt;h2 id=&quot;飛機&quot;&gt;飛機&lt;/h2&gt;
-
-&lt;p&gt;台灣飛捷克 - 布拉格，是直飛，每週的二、六都有航班。然後回程可以選擇從 奧地利 - 維也納機場飛回台北，也有直飛。目前查下來，只有 China Airline 有從台北直飛布拉格。這樣的安排，就可以不用轉機。如果想中轉其他城市，那變化就很多，這邊就不再綴述。&lt;/p&gt;
-
-&lt;h2 id=&quot;火車&quot;&gt;火車&lt;/h2&gt;
-
-&lt;h3 id=&quot;長途移動的火車---regiojet&quot;&gt;長途移動的火車 - &lt;a href=&quot;https://regiojet.com/&quot;&gt;RegioJet&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;先上圖，這是 RegioJet 火車路線網，如果你要去的地方在這個圖案的路徑上，你可以用便宜的價格達成你的旅程。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/travel-eu-czech-aus/regio_jet_map.jpeg&quot; alt=&quot;RegioJet 路線圖&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;適合使用的行程&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;布拉格 - 維也納 (約 4.5 小時)&lt;/li&gt;
-  &lt;li&gt;布拉格 - 布爾諾 (約 2.5 小時)&lt;/li&gt;
-  &lt;li&gt;維也納 - 布達佩斯 (約 2.5 小時)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;RegioJet 的車廂有分等級，如果你有帶小孩，你還可以選親子車廂的親子包廂，整個包廂只有一間，所以被訂走了，就沒有了。車廂內有小孩沙發，而且空間比較大，小孩可以一直對著電視看。&lt;/p&gt;
-
-&lt;p&gt;在布拉格車站，RegioJet 還設有 Launge，如果發車時間還沒到，可以先在這邊休息。&lt;/p&gt;
-
-&lt;p&gt;RegioJet 布拉格車站 Lounge
-&lt;img src=&quot;/assets/life/travel-eu-czech-aus/regio_jet_2.jpeg&quot; alt=&quot;RegioJet 布拉格車站 Lounge&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;RegioJet 布拉格車站 Lounge 2
-&lt;img src=&quot;/assets/life/travel-eu-czech-aus/regio_jet_1.jpeg&quot; alt=&quot;RegioJet 布拉格車站 Lounge 2&quot; /&gt;
-用機器買票，比櫃台便宜喔
-&lt;img src=&quot;/assets/life/travel-eu-czech-aus/using_machine_buy_is_better.jpeg&quot; alt=&quot;用機器買票&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;布拉格市內交通&quot;&gt;布拉格市內交通&lt;/h2&gt;
-
-&lt;p&gt;在機場一出來就有售票機，然後就可以搭車到市區。&lt;/p&gt;
-
-&lt;h3 id=&quot;布拉格交通票券&quot;&gt;布拉格交通票券&lt;/h3&gt;
-&lt;p&gt;布拉格交通票券是用「時間」來計算的。基本是 30 min, 也可以買 24 h 或 72 h 的票。但計算上，如果當天會用到三次的路面電車或是 bus，就可以買 24h 的票。&lt;/p&gt;
-
-&lt;h2 id=&quot;維也納市內交通&quot;&gt;維也納市內交通&lt;/h2&gt;
-&lt;p&gt;如果在市區內，可以買 24 h 或 72 h 的票，建議是用 mobile app 買，因為這樣出示票券很方便。但要注意的是，在購買完後，就開始計算使用時間，所以建議在使用的前一刻再買下去。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=at.wienerlinien.wienmobillab&amp;amp;pli=1&quot;&gt;Google App Wien Mobile App&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/us/app/wienmobil/id1107918142&quot;&gt;iOS App Wien Mobile App&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;貨幣&quot;&gt;貨幣&lt;/h2&gt;
-&lt;p&gt;布拉格用克朗，維也納用歐元，布達佩斯用福林。雖然使用的貨幣不同，但都可以接受歐元，當然匯率會稍微的差一點。如果你使用智慧型手機的 Apple Pay 或 Google Pay，直接刷手機也是很方便，這次的旅程，在交通方面，機器都可以接受信用卡付費。但，真的有些餐館只收現金，原因是 POS 機當下壞了，除了現金以外，沒辦法刷卡。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="travel" /><category term="Europe" /><summary type="html">這篇介紹在捷克、奧地利、匈牙利三個國家的交通方式，出發地設定在台北(TPE)出發。如果行程有在一個禮拜以上，可以這樣來安排這三個國家的行程。景點的 post 會寫在另一篇。</summary></entry><entry xml:lang="en"><title type="html">Transportation Guide for Austria, Hungary, and Czech Republic</title><link href="http://localhost:4000/en/life/eu-travel-cz-au/" rel="alternate" type="text/html" title="Transportation Guide for Austria, Hungary, and Czech Republic" /><published>2025-02-01T21:22:00+08:00</published><updated>2025-02-01T21:22:00+08:00</updated><id>http://localhost:4000/en/life/eu-travel-cz-au</id><content type="html" xml:base="http://localhost:4000/en/life/eu-travel-cz-au/">&lt;p&gt;This guide covers transportation options in Austria, Hungary, and the Czech Republic, starting from Taipei (TPE). If your trip is longer than a week, this guide will help plan your travel between these three countries. Sightseeing recommendations will be in a separate post.&lt;/p&gt;
-
-&lt;h2 id=&quot;flights&quot;&gt;Flights&lt;/h2&gt;
-
-&lt;p&gt;Flights from Taiwan to Prague operate directly on Tuesdays and Saturdays. The return journey can be from Vienna, which also offers a direct flight to Taipei. Currently, only China Airlines offers direct flights between Taipei and Prague. If you prefer layovers, there are many alternatives.&lt;/p&gt;
-
-&lt;h2 id=&quot;trains&quot;&gt;Trains&lt;/h2&gt;
-
-&lt;h3 id=&quot;long-distance-train---regiojet&quot;&gt;Long-Distance Train - &lt;a href=&quot;https://regiojet.com/&quot;&gt;RegioJet&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Below is the RegioJet train network map. If your destination is on this route, you can travel affordably.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/travel-eu-czech-aus/regio_jet_map.jpeg&quot; alt=&quot;RegioJet Route Map&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Recommended routes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Prague - Vienna (Approx. 4.5 hours)&lt;/li&gt;
-  &lt;li&gt;Prague - Brno (Approx. 2.5 hours)&lt;/li&gt;
-  &lt;li&gt;Vienna - Budapest (Approx. 2.5 hours)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;RegioJet offers different class levels, and if traveling with children, a family compartment is available, though limited in number. These family cabins include a child-friendly sofa and extra space with onboard entertainment.&lt;/p&gt;
-
-&lt;p&gt;At Prague Station, RegioJet provides a lounge where passengers can relax before departure.&lt;/p&gt;
-
-&lt;p&gt;RegioJet Lounge at Prague Station:
-&lt;img src=&quot;/assets/life/travel-eu-czech-aus/regio_jet_2.jpeg&quot; alt=&quot;RegioJet Lounge&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/travel-eu-czech-aus/regio_jet_1.jpeg&quot; alt=&quot;RegioJet Lounge 2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Buying tickets from machines is cheaper than purchasing at the counter.
-&lt;img src=&quot;/assets/life/travel-eu-czech-aus/using_machine_buy_is_better.jpeg&quot; alt=&quot;Ticket Machine Purchase&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;public-transport-in-prague&quot;&gt;Public Transport in Prague&lt;/h2&gt;
-
-&lt;p&gt;Tickets are available at vending machines at the airport, allowing easy access to the city center.&lt;/p&gt;
-
-&lt;h3 id=&quot;prague-transport-tickets&quot;&gt;Prague Transport Tickets&lt;/h3&gt;
-
-&lt;p&gt;Prague’s public transport system uses time-based tickets. Options include 30-minute, 24-hour, and 72-hour tickets. If you plan to take three or more trips in a day, a 24-hour ticket is more economical.&lt;/p&gt;
-
-&lt;h2 id=&quot;public-transport-in-vienna&quot;&gt;Public Transport in Vienna&lt;/h2&gt;
-
-&lt;p&gt;For city travel, 24-hour and 72-hour tickets are available. It is recommended to buy them via mobile apps for convenience. However, note that ticket validity starts immediately upon purchase, so buy it just before your first use.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=at.wienerlinien.wienmobillab&amp;amp;pli=1&quot;&gt;Google Play Wien Mobile App&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/us/app/wienmobil/id1107918142&quot;&gt;iOS Wien Mobile App&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;currency&quot;&gt;Currency&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Prague: Czech Koruna (CZK)&lt;/li&gt;
-  &lt;li&gt;Vienna: Euro (EUR)&lt;/li&gt;
-  &lt;li&gt;Budapest: Hungarian Forint (HUF)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Although these countries use different currencies, euros are generally accepted, though at less favorable exchange rates. Apple Pay and Google Pay are widely accepted for transportation payments. However, some restaurants only accept cash, often due to temporary POS machine issues.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="travel" /><category term="Europe" /><summary type="html">This guide covers transportation options in Austria, Hungary, and the Czech Republic, starting from Taipei (TPE). If your trip is longer than a week, this guide will help plan your travel between these three countries. Sightseeing recommendations will be in a separate post.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Cursor" /><category term="AI" /><category term="Swift" /><summary type="html">Since Cursor introduced the Agent mode, I have been extensively using cursorrules for development. Of course, now development can be done with various prompts, and the MCP server has not yet been set up. But let’s start with cursorrules first. Currently, there are some great awesome cursorrules available online.</summary></entry></feed>
