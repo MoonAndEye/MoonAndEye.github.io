@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-25T22:15:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Mario Kart World - Wallpaper Downloads</title><link href="http://localhost:4000/en/life/mario-kart-world/" rel="alternate" type="text/html" title="Mario Kart World - Wallpaper Downloads" /><published>2025-07-25T21:10:00+08:00</published><updated>2025-07-25T21:10:00+08:00</updated><id>http://localhost:4000/en/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/en/life/mario-kart-world/">&lt;p&gt;Nintendo’s website now has Mario Kart World wallpapers available for download.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-07T13:55:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Using Think Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Think Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable think mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-switch-to-think-mode---shift--tab&quot;&gt;How to Switch to Think Mode - Shift + Tab&lt;/h2&gt;
+
+&lt;p&gt;In Claude Code, you can use the shortcut Shift + Tab to switch modes. The first switch is to auto accept mode. You can see the prompt at the bottom of the terminal to know which mode you’re currently in. Press Shift + Tab a second time to enter think mode. When you enable think mode, Claude enters a state focused on thinking and planning. At this time, Claude Code will not modify your code but will list the steps it will take and the implementation blueprint. So you can safely conduct various confirmations and divergent thinking.&lt;/p&gt;
+
+&lt;h3 id=&quot;first-press-of-shift--tab---enter-auto-accept-mode&quot;&gt;First Press of Shift + Tab - Enter Auto Accept Mode&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-accept-mode.png&quot; alt=&quot;auto accept mode&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;use-shift--tab-to-enter-think-mode&quot;&gt;Use Shift + Tab to Enter Think Mode&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-think-mode.png&quot; alt=&quot;claude code think mode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;advantages-of-think-mode&quot;&gt;Advantages of Think Mode&lt;/h2&gt;
+
+&lt;h3 id=&quot;plan-first-then-execute&quot;&gt;Plan First, Then Execute&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/think-mode-request-prompt.png&quot; alt=&quot;think mode request prompt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you make a request to Claude in think mode, Claude will first analyze and think about your requirements, then provide a detailed plan blueprint.&lt;/p&gt;
+
+&lt;h3 id=&quot;view-implementation-blueprint&quot;&gt;View Implementation Blueprint&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/plan-mode-blueprint.png&quot; alt=&quot;plan mode blueprint&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In think mode, Claude will display a complete implementation plan, allowing you to understand the entire implementation process before actual execution.&lt;/p&gt;
+
+&lt;h3 id=&quot;execute-after-confirmation&quot;&gt;Execute After Confirmation&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/action-after-planing.png&quot; alt=&quot;action after planning&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you confirm the plan, Claude will start executing actual code modifications based on the previous planning.&lt;/p&gt;
+
+&lt;h3 id=&quot;personal-thoughts&quot;&gt;Personal Thoughts&lt;/h3&gt;
+&lt;p&gt;Before knowing about think mode, I used prompts to prevent Claude Code from directly modifying code, instead asking it to give me a general direction and steps first. However, when using prompts alone, sometimes Claude Code would still directly initiate modifications. Moreover, since I mostly develop iOS apps, it would often directly execute Xcode build or other Xcode CLI commands.&lt;/p&gt;
+
+&lt;p&gt;In think mode, I feel the quality of modification context has improved, and the solutions it proposes in think mode have preserved the concept of Canvas or artifacts in the UI, allowing for minor modifications to the same file without affecting the overall structure and logic.&lt;/p&gt;
+
+&lt;p&gt;This is what I like most about it. After all, I need to get things done right first before I can start asking AI to do things well.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">When using Claude Code, you can first enable think mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.</summary></entry><entry xml:lang="zh"><title type="html">使用 think mode 先讓 claude code 規畫，再開始實作</title><link href="http://localhost:4000/zh/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="使用 think mode 先讓 claude code 規畫，再開始實作" /><published>2025-08-07T12:02:00+08:00</published><updated>2025-08-07T12:02:00+08:00</updated><id>http://localhost:4000/zh/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/think-mode-on-claude-code/">&lt;p&gt;在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。&lt;/p&gt;
+
+&lt;h2 id=&quot;切換-think-mode-的方法---shift--tab&quot;&gt;切換 think mode 的方法 - shift + tab&lt;/h2&gt;
+
+&lt;p&gt;在 Claude code 中，你可以使用快捷鍵 shift + tab 來切換 mode。第一次的切換是 auto accept mode，你可以看 terminal 下方的提示，來知道現在的 mode 是哪一種。按第二次 shift + tab 就會進入 think mode。當你啟用 think mode 後，Claude 會進入一種專注於思考和規劃的狀態，這時候 claude code 並不會去更動你的程式碼，而是列出他會進行的步驟，以及如何實作的藍圖 (blueprint)。所以你可以放心的進行各種確認和發散的思考。&lt;/p&gt;
+
+&lt;h3 id=&quot;第一次按-shift--tab---進入-auto-accept-mode&quot;&gt;第一次按 shift + tab - 進入 auto accept mode&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-accept-mode.png&quot; alt=&quot;auto accept mode&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;用-shift--tab-進入-think-mode&quot;&gt;用 shift + tab 進入 think mode&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-think-mode.png&quot; alt=&quot;claude code think mode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;think-mode-的優點&quot;&gt;think mode 的優點&lt;/h2&gt;
+
+&lt;h3 id=&quot;先規劃再執行&quot;&gt;先規劃再執行&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/think-mode-request-prompt.png&quot; alt=&quot;think mode request prompt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;當你在 think mode 中向 Claude 提出請求時，Claude 會先分析和思考你的需求，然後提供一個詳細的計劃藍圖。&lt;/p&gt;
+
+&lt;h3 id=&quot;查看實作藍圖&quot;&gt;查看實作藍圖&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/plan-mode-blueprint.png&quot; alt=&quot;plan mode blueprint&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在 think mode 中，Claude 會展示完整的實作計劃，讓你可以在實際執行之前就了解整個實作流程。&lt;/p&gt;
+
+&lt;h3 id=&quot;確認後執行&quot;&gt;確認後執行&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/action-after-planing.png&quot; alt=&quot;action after planning&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;當你確認計劃後，Claude 會根據之前的規劃開始執行實際的程式碼修改。&lt;/p&gt;
+
+&lt;h3 id=&quot;心得&quot;&gt;心得&lt;/h3&gt;
+&lt;p&gt;在不知道 think mode 之前的我，是使用 prompt 讓 Claude code 不要直接修改程式碼，而是先給我一個大概的方向和步驟。只是，單純用 prompt 時，有時候 claude code 還是會直接發動修改。而且因為我大多時間是開發 iOS，常常會直接執行到 xcode build or 其他 xcode cli 指令。&lt;/p&gt;
+
+&lt;p&gt;在 think mode 下，我覺得修改的上下文品質有提高，而且他在 think mode 提出的方案， UI 有保留 Canvas or artifacts 的概念，可以做到同一份檔案做小幅度的修改，而不會影響到整體的結構和邏輯。&lt;/p&gt;
+
+&lt;p&gt;這是我最喜歡的地方，畢竟，要先把事情做對，我才可以開始要求 AI 把事情做好。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。</summary></entry><entry xml:lang="en"><title type="html">Mario Kart World - Wallpaper Downloads</title><link href="http://localhost:4000/en/life/mario-kart-world/" rel="alternate" type="text/html" title="Mario Kart World - Wallpaper Downloads" /><published>2025-07-25T21:10:00+08:00</published><updated>2025-07-25T21:10:00+08:00</updated><id>http://localhost:4000/en/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/en/life/mario-kart-world/">&lt;p&gt;Nintendo’s website now has Mario Kart World wallpapers available for download.&lt;/p&gt;
 
 &lt;h2 id=&quot;nintendo-mario-kart-download-link&quot;&gt;&lt;a href=&quot;https://www.nintendo.com/jp/download/mario_kart_world/index.html&quot;&gt;Nintendo Mario Kart Download Link&lt;/a&gt;&lt;/h2&gt;
 
@@ -501,215 +569,4 @@ reset password
   &lt;li&gt;Expected system responses (Then)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;If you need more detailed scenarios or other special cases, I can help you further supplement them.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><summary type="html">Since 2025, I have been extensively using Cursor in my daily development work. However, if we think broadly, Cursor’s text output capabilities can extend beyond just “programming”. If Project Managers in the team use Cursor for creating tickets, could developers quickly bridge the gap between natural language and programming language, leading to faster development? Let’s start with downloading Cursor IDE.</summary></entry><entry xml:lang="zh"><title type="html">在 iOS 開發上，現在使用的 cursorrules (2025.Mar.10th)</title><link href="http://localhost:4000/zh/swift/swift-cursorrules/" rel="alternate" type="text/html" title="在 iOS 開發上，現在使用的 cursorrules (2025.Mar.10th)" /><published>2025-03-10T15:28:00+08:00</published><updated>2025-03-10T15:28:00+08:00</updated><id>http://localhost:4000/zh/swift/swift-cursorrules</id><content type="html" xml:base="http://localhost:4000/zh/swift/swift-cursorrules/">&lt;p&gt;在 Cursor 有 Agent 模式後，我已經大量的在使用 cursorrules 開發。當然現在開發可以下各種 prompt 進行，也還沒架出 MCP server。但先從 cursorrules 開始。現在網路上不錯 awesome cursorrules.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/PatrickJS/awesome-cursorrules&quot;&gt;Awesome CursorRules&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/swiftui-guidelines-cursorrules-prompt-file/.cursorrules&quot;&gt;SwiftUI CursorRules&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;但是現在的-repo-沒有-ios-uikit-的-cursorrules這邊先試寫一本&quot;&gt;但是，現在的 repo 沒有 iOS UIKit 的 cursorrules，這邊先試寫一本&lt;/h3&gt;
-&lt;p&gt;我已經提交了 PR 給 repo 的擁有者，這邊可以看後續的狀況，等到 PR 合併了，那就會有 iOS UIKit 的 cursorrules。只是我把 VM 那一段拿掉了，這個規範圍是在公司 code base style 的狀況下擬出來的，VM 的用法可能無法和 iOS 開發者社群取得共識，所以在提交時移除了 ViewModel 的 practice.&lt;/p&gt;
-
-&lt;h4 id=&quot;ios---uikit-cursorrules&quot;&gt;iOS - UIKit cursorrules&lt;/h4&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Start of Selection
-
-you are an expert in coding with swift, iOS, UIKit. you always write maintainable code and clean code.
-focus on latest documentation and features.
-your descriptions should be short and concise.
-don&apos;t remove any comments.
-
-
-UIKit UI Design Principles:
-1. Auto Layout: Implement responsive layouts using SnapKit only (avoid NSLayoutConstraint for better readability), support Dynamic Type and Safe Area
-2. Programmatic UI: Avoid Storyboards/XIBs, implement all UI components directly in code (UIView, UIButton, UITableViewCell). Use view composition and custom view subclasses for reusability
-3. UI Components must not directly access models or DTOs. Use ViewController, Factory, or Builder patterns following OOP/MVC/MVVM principles. Below are good and bad practice examples:
-
-good practice:
-```swift
-let user = User(name: &quot;Alice&quot;, email: &quot;john@example.com&quot;)
-let factory = UserFactory()
-/// This way UserView doesn&apos;t access User model directly, following Apple&apos;s MVC principles
-let userView = factory.createUserView(user: user)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;bad practice:&lt;/p&gt;
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Alice&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;john@example.com&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;/// This exposes UserView to User model, violating MVC principles&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;Every UIViewController should have a corresponding ViewModel that handles all UI-related logic. Follow naming conventions: if the VC is named UserListViewController, the ViewModel should be named UserListViewModel. Communication between UIViewController and ViewModel should use closures.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewModel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;didFetchUsers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)?&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchUsers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// fetch users from network&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;didFetchUsers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIViewController&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;lazy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;viewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;viewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;viewModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;didFetchUsers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reloadData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;viewModel&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tableView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UITableView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;UI components should pass events using closures, and the closure must pass ‘self’ as a parameter to allow external objects to identify the source component&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SampleView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;didTapButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;SampleView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)?&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CGRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;setupUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addTarget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;#selector(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;buttonTapped&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;touchUpInside&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setupUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// setup UI&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;@objc&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;buttonTapped&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;didTapButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;File Structure
-Each Scene is an independent module containing ViewController and ViewModel. UITableViewCell should be placed under UI/Elements. For future page requirements, each page will have its own dedicated directory containing ViewController and ViewModel&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Project
-├── UI
-│   ├── MainTabBar
-│   │   ├── ViewControllers
-│   │   ├── ViewModels
-│   │   └── Views
-│   ├── Scenes
-│   │   ├── ArticleFeed
-│   │   │   ├── ViewController
-│   │   │   ├── ViewModel
-│   │   │   
-│   │   │   
-│   │   └── UserProfile
-│   │       ├── ViewController
-│   │       ├── ViewModel
-│   │       
-│   │       
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Cursor" /><category term="AI" /><category term="Swift" /><summary type="html">在 Cursor 有 Agent 模式後，我已經大量的在使用 cursorrules 開發。當然現在開發可以下各種 prompt 進行，也還沒架出 MCP server。但先從 cursorrules 開始。現在網路上不錯 awesome cursorrules.</summary></entry><entry xml:lang="en"><title type="html">Current Usage of cursorrules in iOS Development (2025.Mar.10th)</title><link href="http://localhost:4000/en/swift/swift-cursorrules-en/" rel="alternate" type="text/html" title="Current Usage of cursorrules in iOS Development (2025.Mar.10th)" /><published>2025-03-10T15:27:00+08:00</published><updated>2025-03-10T15:27:00+08:00</updated><id>http://localhost:4000/en/swift/swift-cursorrules-en</id><content type="html" xml:base="http://localhost:4000/en/swift/swift-cursorrules-en/">&lt;p&gt;Since Cursor introduced the Agent mode, I have been extensively using cursorrules for development. Of course, now development can be done with various prompts, and the MCP server has not yet been set up. But let’s start with cursorrules first. Currently, there are some great awesome cursorrules available online.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/PatrickJS/awesome-cursorrules&quot;&gt;Awesome CursorRules&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/swiftui-guidelines-cursorrules-prompt-file/.cursorrules&quot;&gt;SwiftUI CursorRules&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;however-there-are-no-ios-uikit-cursorrules-in-the-current-repository-so-i-am-drafting-one-here&quot;&gt;However, there are no iOS UIKit cursorrules in the current repository, so I am drafting one here&lt;/h3&gt;
-&lt;p&gt;I have submitted a PR to the repository owner, and we can observe the progress. Once the PR is merged, there will be iOS UIKit cursorrules available. However, I have removed the VM section from it. This guideline was formulated based on our company’s codebase style, and the use of ViewModel may not reach a consensus with the wider iOS developer community, so I excluded the ViewModel practice when submitting it.&lt;/p&gt;
-
-&lt;h4 id=&quot;ios---uikit-cursorrules&quot;&gt;iOS - UIKit cursorrules&lt;/h4&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Start of Selection  
-  
-you are an expert in coding with swift, iOS, UIKit. you always write maintainable code and clean code.  
-focus on latest documentation and features.  
-your descriptions should be short and concise.  
-don&apos;t remove any comments.  
-
-UIKit UI Design Principles:  
-1. **Auto Layout:** Implement responsive layouts using SnapKit only (avoid NSLayoutConstraint for better readability), support Dynamic Type and Safe Area.  
-2. **Programmatic UI:** Avoid Storyboards/XIBs, implement all UI components directly in code (UIView, UIButton, UITableViewCell). Use view composition and custom view subclasses for reusability.  
-3. **UI Components must not directly access models or DTOs.** Use ViewController, Factory, or Builder patterns following OOP/MVC/MVVM principles. Below are good and bad practice examples:  
-
-**Good Practice:**  
-```swift  
-let user = User(name: &quot;Alice&quot;, email: &quot;john@example.com&quot;)  
-let factory = UserFactory()  
-/// This way UserView doesn&apos;t access User model directly, following Apple&apos;s MVC principles  
-let userView = factory.createUserView(user: user)  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Bad Practice:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Alice&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;john@example.com&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-&lt;span class=&quot;c1&quot;&gt;/// This exposes UserView to User model, violating MVC principles  &lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Every UIViewController should have a corresponding ViewModel&lt;/strong&gt; that handles all UI-related logic. Follow naming conventions: if the VC is named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UserListViewController&lt;/code&gt;, the ViewModel should be named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UserListViewModel&lt;/code&gt;. Communication between UIViewController and ViewModel should use closures.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewModel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;  
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;didFetchUsers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)?&lt;/span&gt;  
-    &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchUsers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-        &lt;span class=&quot;c1&quot;&gt;// fetch users from network  &lt;/span&gt;
-        &lt;span class=&quot;nf&quot;&gt;didFetchUsers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?()&lt;/span&gt;  
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIViewController&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;lazy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;viewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;viewModel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UserListViewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  
-        &lt;span class=&quot;n&quot;&gt;viewModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;didFetchUsers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;weak&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;  
-            &lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-            &lt;span class=&quot;n&quot;&gt;tableView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reloadData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;viewModel&lt;/span&gt;  
-    &lt;span class=&quot;p&quot;&gt;}()&lt;/span&gt;  
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tableView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UITableView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;UI components should pass events using closures, and the closure must pass &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;self&lt;/code&gt; as a parameter&lt;/strong&gt; to allow external objects to identify the source component.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;SampleView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;didTapButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;SampleView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)?&lt;/span&gt;  
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UIButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  
-    &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CGRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-        &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-        &lt;span class=&quot;nf&quot;&gt;setupUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  
-        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addTarget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;#selector(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;buttonTapped&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;touchUpInside&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setupUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-        &lt;span class=&quot;c1&quot;&gt;// setup UI  &lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-
-    &lt;span class=&quot;kd&quot;&gt;@objc&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;buttonTapped&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
-        &lt;span class=&quot;nf&quot;&gt;didTapButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;file-structure&quot;&gt;File Structure&lt;/h3&gt;
-&lt;p&gt;Each Scene is an independent module containing ViewController and ViewModel. UITableViewCell should be placed under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UI/Elements&lt;/code&gt;. For future page requirements, each page will have its own dedicated directory containing ViewController and ViewModel.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Project  
-├── UI  
-│   ├── MainTabBar  
-│   │   ├── ViewControllers  
-│   │   ├── ViewModels  
-│   │   └── Views  
-│   ├── Scenes  
-│   │   ├── ArticleFeed  
-│   │   │   ├── ViewController  
-│   │   │   ├── ViewModel  
-│   │   │   
-│   │   │   
-│   │   └── UserProfile  
-│   │       ├── ViewController  
-│   │       ├── ViewModel  
-│   │       
-│   │       
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="swift" /><category term="Cursor" /><category term="AI" /><category term="Swift" /><summary type="html">Since Cursor introduced the Agent mode, I have been extensively using cursorrules for development. Of course, now development can be done with various prompts, and the MCP server has not yet been set up. But let’s start with cursorrules first. Currently, there are some great awesome cursorrules available online.</summary></entry></feed>
+&lt;p&gt;If you need more detailed scenarios or other special cases, I can help you further supplement them.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><summary type="html">Since 2025, I have been extensively using Cursor in my daily development work. However, if we think broadly, Cursor’s text output capabilities can extend beyond just “programming”. If Project Managers in the team use Cursor for creating tickets, could developers quickly bridge the gap between natural language and programming language, leading to faster development? Let’s start with downloading Cursor IDE.</summary></entry></feed>
