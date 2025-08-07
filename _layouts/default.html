@@ -57,6 +57,9 @@
 
   <div id="footer" class="page__footer">
     <footer>
+      {% if jekyll.environment == "production" %}
+        {% include googleAdsenseFooter.html %}
+      {% endif %}
       {% include footer/custom.html %}
       {% include_cached footer.html %}
     </footer>

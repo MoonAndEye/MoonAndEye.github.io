@@ -11,7 +11,22 @@
         margin-bottom: 16px;
     }
 
-    .ads-container {
+    /* Hide sidebar ads on mobile */
+    .sidebar .ads-container {
+        display: none;
+    }
+    
+    /* Show footer ads on mobile */
+    .ads-container-footer {
+        display: block;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+}
+
+/* PC version: Hide footer ads, show sidebar ads */
+@media (min-width: 481px) {
+    .ads-container-footer {
         display: none;
     }
 }
