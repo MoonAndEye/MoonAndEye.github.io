@@ -1,11 +1,11 @@
 ---
 layout: single
-title: 使用 think mode 先讓 claude code 規畫，再開始實作
+title: 使用 plan mode 先讓 claude code 規畫，再開始實作
 date: 2025-08-07 12:02 +0800
 category: programming
 author: Marvin Lin
 tags: [Claude, AI, AI Agent]
-summary: 本文將介紹如何在 macOS 上使用 think mode 進行程式碼編輯，並提供詳細的步驟說明。
+summary: 本文將介紹如何在 macOS 上使用 plan mode 進行程式碼編輯，並提供詳細的步驟說明。
 ---
 
 在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。
