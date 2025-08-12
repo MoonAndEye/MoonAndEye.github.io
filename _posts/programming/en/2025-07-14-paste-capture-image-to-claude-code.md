@@ -30,6 +30,6 @@ At this point, you'll see the text "image" pasted into the input box. You can us
 
 ## Related Articles
 
-- [Using Plan Mode to Let Claude Code Plan Before Implementation](/programming/en/2025-08-07-think-mode-on-claude-code/) (English)
+- [Using Plan Mode to Let Claude Code Plan Before Implementation](/en/programming/think-mode-on-claude-code/) (English)
 
-- [使用計劃模式讓 Claude Code 在實作前先規劃](/programming/zh/2025-08-07-think-mode-on-claude-code/) (Chinese)
+- [使用 plan mode 先讓 claude code 規畫，再開始實作](/zh/programming/think-mode-on-claude-code/) (Chinese)

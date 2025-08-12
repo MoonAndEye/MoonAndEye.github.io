@@ -46,7 +46,6 @@ This is what I like most about it. After all, I need to get things done right fi
 
 ## Related Articles
 
-- [How to Paste Screen Captures to Claude Code Editor on macOS](/programming/en/2025-07-14-paste-capture-image-to-claude-code/) (English)
+- [How to Paste Screen Captures to Claude Code Editor on macOS](/en/programming/paste-capture-image-to-claude-code/) (English)
 
-- [將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用](/programming/zh/2025-07-14-paste-capture-image-to-claude-code/) (Chinese)
-
+- [將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用](/zh/programming/paste-capture-image-to-claude-code/) (Chinese)
