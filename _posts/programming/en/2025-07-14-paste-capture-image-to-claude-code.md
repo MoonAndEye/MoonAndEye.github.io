@@ -27,3 +27,9 @@ On macOS, you can use the following method to paste screen captures to Claude's 
 ![claude-code-paste-image](/assets/programming/claude-code/claude-code-screen-capture.png)
 
 At this point, you'll see the text "image" pasted into the input box. You can use this technique to have Claude make modifications based on colors/layout.
+
+## Related Articles
+
+- [Using Plan Mode to Let Claude Code Plan Before Implementation](/programming/en/2025-08-07-think-mode-on-claude-code/) (English)
+
+- [使用計劃模式讓 Claude Code 在實作前先規劃](/programming/zh/2025-08-07-think-mode-on-claude-code/) (Chinese)

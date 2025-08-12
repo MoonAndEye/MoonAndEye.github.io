@@ -27,3 +27,9 @@ summary: 本文將介紹如何在 macOS 上將螢幕截圖貼上到 Claude 的�
 ![claude-code-paste-image](/assets/programming/claude-code/claude-code-screen-capture.png)
 
 這時候，你會看到 image 的文字被貼上輸入框，你可以使用這個技巧，讓 claude 針對顏色/排版，進行修改。
+
+## 相關文章
+
+- [Using Plan Mode to Let Claude Code Plan Before Implementation](/programming/en/2025-08-07-think-mode-on-claude-code/) (English)
+
+- [使用計劃模式讓 Claude Code 在實作前先規劃](/programming/zh/2025-08-07-think-mode-on-claude-code/) (Chinese)

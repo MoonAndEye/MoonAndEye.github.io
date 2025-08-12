@@ -43,3 +43,10 @@ Before knowing about plan mode, I used prompts to prevent Claude Code from direc
 In plan mode, I feel the quality of modification context has improved, and the solutions it proposes in plan mode have preserved the concept of Canvas or artifacts in the UI, allowing for minor modifications to the same file without affecting the overall structure and logic.
 
 This is what I like most about it. After all, I need to get things done right first before I can start asking AI to do things well.
+
+## Related Articles
+
+- [How to Paste Screen Captures to Claude Code Editor on macOS](/programming/en/2025-07-14-paste-capture-image-to-claude-code/) (English)
+
+- [將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用](/programming/zh/2025-07-14-paste-capture-image-to-claude-code/) (Chinese)
+

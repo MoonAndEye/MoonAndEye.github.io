@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-07T17:58:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Using Think Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Think Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable think mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-12T08:33:22+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Using Plan Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Plan Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-to-switch-to-think-mode---shift--tab&quot;&gt;How to Switch to Think Mode - Shift + Tab&lt;/h2&gt;
+&lt;h2 id=&quot;how-to-switch-to-plan-mode---shift--tab&quot;&gt;How to Switch to Plan Mode - Shift + Tab&lt;/h2&gt;
 
-&lt;p&gt;In Claude Code, you can use the shortcut Shift + Tab to switch modes. The first switch is to auto accept mode. You can see the prompt at the bottom of the terminal to know which mode you’re currently in. Press Shift + Tab a second time to enter think mode. When you enable think mode, Claude enters a state focused on thinking and planning. At this time, Claude Code will not modify your code but will list the steps it will take and the implementation blueprint. So you can safely conduct various confirmations and divergent thinking.&lt;/p&gt;
+&lt;p&gt;In Claude Code, you can use the shortcut Shift + Tab to switch modes. The first switch is to auto accept mode. You can see the prompt at the bottom of the terminal to know which mode you’re currently in. Press Shift + Tab a second time to enter plan mode. When you enable plan mode, Claude enters a state focused on thinking and planning. At this time, Claude Code will not modify your code but will list the steps it will take and the implementation blueprint. So you can safely conduct various confirmations and divergent thinking.&lt;/p&gt;
 
 &lt;h3 id=&quot;first-press-of-shift--tab---enter-auto-accept-mode&quot;&gt;First Press of Shift + Tab - Enter Auto Accept Mode&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-accept-mode.png&quot; alt=&quot;auto accept mode&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;use-shift--tab-to-enter-think-mode&quot;&gt;Use Shift + Tab to Enter Think Mode&lt;/h3&gt;
+&lt;h3 id=&quot;use-shift--tab-to-enter-plan-mode&quot;&gt;Use Shift + Tab to Enter Plan Mode&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-think-mode.png&quot; alt=&quot;claude code think mode&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;advantages-of-think-mode&quot;&gt;Advantages of Think Mode&lt;/h2&gt;
@@ -20,7 +20,7 @@
 &lt;h3 id=&quot;view-implementation-blueprint&quot;&gt;View Implementation Blueprint&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/plan-mode-blueprint.png&quot; alt=&quot;plan mode blueprint&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In think mode, Claude will display a complete implementation plan, allowing you to understand the entire implementation process before actual execution.&lt;/p&gt;
+&lt;p&gt;In plan mode, Claude will display a complete implementation plan, allowing you to understand the entire implementation process before actual execution.&lt;/p&gt;
 
 &lt;h3 id=&quot;execute-after-confirmation&quot;&gt;Execute After Confirmation&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/action-after-planing.png&quot; alt=&quot;action after planning&quot; /&gt;&lt;/p&gt;
@@ -28,11 +28,22 @@
 &lt;p&gt;When you confirm the plan, Claude will start executing actual code modifications based on the previous planning.&lt;/p&gt;
 
 &lt;h3 id=&quot;personal-thoughts&quot;&gt;Personal Thoughts&lt;/h3&gt;
-&lt;p&gt;Before knowing about think mode, I used prompts to prevent Claude Code from directly modifying code, instead asking it to give me a general direction and steps first. However, when using prompts alone, sometimes Claude Code would still directly initiate modifications. Moreover, since I mostly develop iOS apps, it would often directly execute Xcode build or other Xcode CLI commands.&lt;/p&gt;
+&lt;p&gt;Before knowing about plan mode, I used prompts to prevent Claude Code from directly modifying code, instead asking it to give me a general direction and steps first. However, when using prompts alone, sometimes Claude Code would still directly initiate modifications. Moreover, since I mostly develop iOS apps, it would often directly execute Xcode build or other Xcode CLI commands.&lt;/p&gt;
 
-&lt;p&gt;In think mode, I feel the quality of modification context has improved, and the solutions it proposes in think mode have preserved the concept of Canvas or artifacts in the UI, allowing for minor modifications to the same file without affecting the overall structure and logic.&lt;/p&gt;
+&lt;p&gt;In plan mode, I feel the quality of modification context has improved, and the solutions it proposes in plan mode have preserved the concept of Canvas or artifacts in the UI, allowing for minor modifications to the same file without affecting the overall structure and logic.&lt;/p&gt;
 
-&lt;p&gt;This is what I like most about it. After all, I need to get things done right first before I can start asking AI to do things well.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">When using Claude Code, you can first enable think mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.</summary></entry><entry xml:lang="zh"><title type="html">使用 think mode 先讓 claude code 規畫，再開始實作</title><link href="http://localhost:4000/zh/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="使用 think mode 先讓 claude code 規畫，再開始實作" /><published>2025-08-07T12:02:00+08:00</published><updated>2025-08-07T12:02:00+08:00</updated><id>http://localhost:4000/zh/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/think-mode-on-claude-code/">&lt;p&gt;在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。&lt;/p&gt;
+&lt;p&gt;This is what I like most about it. After all, I need to get things done right first before I can start asking AI to do things well.&lt;/p&gt;
+
+&lt;h2 id=&quot;related-articles&quot;&gt;Related Articles&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/en/2025-07-14-paste-capture-image-to-claude-code/&quot;&gt;How to Paste Screen Captures to Claude Code Editor on macOS&lt;/a&gt; (English)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/zh/2025-07-14-paste-capture-image-to-claude-code/&quot;&gt;將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用&lt;/a&gt; (Chinese)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.</summary></entry><entry xml:lang="zh"><title type="html">使用 plan mode 先讓 claude code 規畫，再開始實作</title><link href="http://localhost:4000/zh/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="使用 plan mode 先讓 claude code 規畫，再開始實作" /><published>2025-08-07T12:02:00+08:00</published><updated>2025-08-07T12:02:00+08:00</updated><id>http://localhost:4000/zh/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/think-mode-on-claude-code/">&lt;p&gt;在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。&lt;/p&gt;
 
 &lt;h2 id=&quot;切換-think-mode-的方法---shift--tab&quot;&gt;切換 think mode 的方法 - shift + tab&lt;/h2&gt;
 
@@ -66,7 +77,18 @@
 
 &lt;p&gt;在 think mode 下，我覺得修改的上下文品質有提高，而且他在 think mode 提出的方案， UI 有保留 Canvas or artifacts 的概念，可以做到同一份檔案做小幅度的修改，而不會影響到整體的結構和邏輯。&lt;/p&gt;
 
-&lt;p&gt;這是我最喜歡的地方，畢竟，要先把事情做對，我才可以開始要求 AI 把事情做好。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。</summary></entry><entry xml:lang="en"><title type="html">Mario Kart World - Wallpaper Downloads</title><link href="http://localhost:4000/en/life/mario-kart-world/" rel="alternate" type="text/html" title="Mario Kart World - Wallpaper Downloads" /><published>2025-07-25T21:10:00+08:00</published><updated>2025-07-25T21:10:00+08:00</updated><id>http://localhost:4000/en/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/en/life/mario-kart-world/">&lt;p&gt;Nintendo’s website now has Mario Kart World wallpapers available for download.&lt;/p&gt;
+&lt;p&gt;這是我最喜歡的地方，畢竟，要先把事情做對，我才可以開始要求 AI 把事情做好。&lt;/p&gt;
+
+&lt;h2 id=&quot;相關文章&quot;&gt;相關文章&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/en/2025-07-14-paste-capture-image-to-claude-code/&quot;&gt;How to Paste Screen Captures to Claude Code Editor on macOS&lt;/a&gt; (English)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/zh/2025-07-14-paste-capture-image-to-claude-code/&quot;&gt;將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用&lt;/a&gt; (Chinese)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。</summary></entry><entry xml:lang="en"><title type="html">Mario Kart World - Wallpaper Downloads</title><link href="http://localhost:4000/en/life/mario-kart-world/" rel="alternate" type="text/html" title="Mario Kart World - Wallpaper Downloads" /><published>2025-07-25T21:10:00+08:00</published><updated>2025-07-25T21:10:00+08:00</updated><id>http://localhost:4000/en/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/en/life/mario-kart-world/">&lt;p&gt;Nintendo’s website now has Mario Kart World wallpapers available for download.&lt;/p&gt;
 
 &lt;h2 id=&quot;nintendo-mario-kart-download-link&quot;&gt;&lt;a href=&quot;https://www.nintendo.com/jp/download/mario_kart_world/index.html&quot;&gt;Nintendo Mario Kart Download Link&lt;/a&gt;&lt;/h2&gt;
 
@@ -156,7 +178,18 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;At this point, you’ll see the text “image” pasted into the input box. You can use this technique to have Claude make modifications based on colors/layout.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.</summary></entry><entry xml:lang="zh"><title type="html">將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用</title><link href="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用" /><published>2025-07-14T16:20:00+08:00</published><updated>2025-07-14T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/">&lt;p&gt;現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。&lt;/p&gt;
+&lt;p&gt;At this point, you’ll see the text “image” pasted into the input box. You can use this technique to have Claude make modifications based on colors/layout.&lt;/p&gt;
+
+&lt;h2 id=&quot;related-articles&quot;&gt;Related Articles&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/en/2025-08-07-think-mode-on-claude-code/&quot;&gt;Using Plan Mode to Let Claude Code Plan Before Implementation&lt;/a&gt; (English)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/zh/2025-08-07-think-mode-on-claude-code/&quot;&gt;使用計劃模式讓 Claude Code 在實作前先規劃&lt;/a&gt; (Chinese)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.</summary></entry><entry xml:lang="zh"><title type="html">將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用</title><link href="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用" /><published>2025-07-14T16:20:00+08:00</published><updated>2025-07-14T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/">&lt;p&gt;現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。&lt;/p&gt;
 
 &lt;h2 id=&quot;cmd--ctrl--k---就可以把另一個檔案框起來的程式碼傳給-claude-code&quot;&gt;Cmd + ctrl + K - 就可以把另一個檔案框起來的程式碼，傳給 claude code&lt;/h2&gt;
 
@@ -176,7 +209,18 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;這時候，你會看到 image 的文字被貼上輸入框，你可以使用這個技巧，讓 claude 針對顏色/排版，進行修改。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。</summary></entry><entry xml:lang="en"><title type="html">Prompt to Make AI Agents Present Design First Without Implementation</title><link href="http://localhost:4000/en/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="Prompt to Make AI Agents Present Design First Without Implementation" /><published>2025-04-26T11:50:00+08:00</published><updated>2025-04-26T11:50:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-prompt/">&lt;p&gt;This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.&lt;/p&gt;
+&lt;p&gt;這時候，你會看到 image 的文字被貼上輸入框，你可以使用這個技巧，讓 claude 針對顏色/排版，進行修改。&lt;/p&gt;
+
+&lt;h2 id=&quot;相關文章&quot;&gt;相關文章&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/en/2025-08-07-think-mode-on-claude-code/&quot;&gt;Using Plan Mode to Let Claude Code Plan Before Implementation&lt;/a&gt; (English)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/programming/zh/2025-08-07-think-mode-on-claude-code/&quot;&gt;使用計劃模式讓 Claude Code 在實作前先規劃&lt;/a&gt; (Chinese)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。</summary></entry><entry xml:lang="en"><title type="html">Prompt to Make AI Agents Present Design First Without Implementation</title><link href="http://localhost:4000/en/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="Prompt to Make AI Agents Present Design First Without Implementation" /><published>2025-04-26T11:50:00+08:00</published><updated>2025-04-26T11:50:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-prompt/">&lt;p&gt;This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.&lt;/p&gt;
 
 &lt;p&gt;If you’re using Cursor, you can write the rules in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.cursor/rules/think-mode.mdc&lt;/code&gt;&lt;/p&gt;
 

@@ -43,3 +43,9 @@ summary: 本文將介紹如何在 macOS 上使用 plan mode 進行程式碼編�
 在 think mode 下，我覺得修改的上下文品質有提高，而且他在 think mode 提出的方案， UI 有保留 Canvas or artifacts 的概念，可以做到同一份檔案做小幅度的修改，而不會影響到整體的結構和邏輯。
 
 這是我最喜歡的地方，畢竟，要先把事情做對，我才可以開始要求 AI 把事情做好。
+
+## 相關文章
+
+- [How to Paste Screen Captures to Claude Code Editor on macOS](/programming/en/2025-07-14-paste-capture-image-to-claude-code/) (English)
+
+- [將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用](/programming/zh/2025-07-14-paste-capture-image-to-claude-code/) (Chinese)
