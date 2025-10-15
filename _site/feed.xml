@@ -1,4 +1,119 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-12T10:47:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Using Plan Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Plan Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-15T08:44:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)</title><link href="http://localhost:4000/en/programming/comet/" rel="alternate" type="text/html" title="Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/comet</id><content type="html" xml:base="http://localhost:4000/en/programming/comet/">&lt;h1 id=&quot;comet-the-ai-browser-that-makes-web-surfing-feel-like-a-power-up&quot;&gt;Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up&lt;/h1&gt;
+
+&lt;p&gt;Have you ever thought that a browser could do more than just open websites?&lt;br /&gt;
+Now there’s an AI browser called &lt;strong&gt;Comet&lt;/strong&gt;, designed to make “researching online” smarter and more efficient.&lt;br /&gt;
+Let’s dive right in — here’s what this trending AI tool is, what it can do, and what you should pay attention to.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-what-is-comet&quot;&gt;1. What Is Comet?&lt;/h2&gt;
+
+&lt;p&gt;Comet is an AI browser created by &lt;strong&gt;Perplexity&lt;/strong&gt;, built around the concept of “thinking while browsing.”&lt;br /&gt;
+In short, it doesn’t just open pages — it helps you summarize, organize, and compare information, so finding what you need no longer feels like searching for a needle in a haystack.&lt;br /&gt;
+It’s built on the Chromium framework, meaning it supports Chrome extensions and requires almost no learning curve.&lt;br /&gt;
+Originally limited to paid users, Comet is now available for everyone to download for free.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-what-can-it-do&quot;&gt;2. What Can It Do?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;AI Search Summaries&lt;/strong&gt;: Instead of giving you a list of links, Comet provides concise summaries with cited sources.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AI Assistant Sidebar&lt;/strong&gt;: Ask questions, compare data, translate content, or explore related topics right from the page.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Automation Tools&lt;/strong&gt;: With your permission, it can help you compare prices, organize schedules, or send emails.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cross-Tab Organization&lt;/strong&gt;: Even with multiple tabs open, Comet can automatically summarize and connect their content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-why-people-use-it&quot;&gt;3. Why People Use It&lt;/h2&gt;
+
+&lt;p&gt;Comet feels incredibly smooth to use.&lt;br /&gt;
+You no longer need to juggle ten tabs for research, note-taking, and fact-checking — the AI connects everything for you.&lt;br /&gt;
+Most impressively, it’s not just a search tool; it’s like a &lt;strong&gt;shared brain&lt;/strong&gt; that thinks and makes decisions alongside you.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-a-note-on-security-and-privacy&quot;&gt;4. A Note on Security and Privacy&lt;/h2&gt;
+
+&lt;p&gt;While AI tools are convenient, always stay alert about &lt;strong&gt;privacy and data security&lt;/strong&gt;.&lt;br /&gt;
+Comet analyzes your browsing activity to generate suggestions.&lt;br /&gt;
+In short: &lt;strong&gt;don’t let AI handle sensitive or confidential operations&lt;/strong&gt; — keeping human judgment in the loop is always the safest choice.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;5-final-reminder&quot;&gt;5. Final Reminder&lt;/h2&gt;
+
+&lt;p&gt;If you’d like to try this AI browser, you can download it directly from the official website.&lt;br /&gt;
+Even better, I have a &lt;strong&gt;personal referral code&lt;/strong&gt; — use my link &lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://pplx.ai/atimis193889&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; to unlock early access or get extra usage credits.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;&lt;img src=&quot;/assets/programming/commet/commet-image.png&quot; alt=&quot;Comet AI Browser&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/assets/programming/commet/commet-image.png&quot; alt=&quot;Comet AI Browser&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;Referral Link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Want to see how powerful “AI-assisted browsing” can be?&lt;br /&gt;
+Try it now — next time you’re doing research, you might just feel like you’ve turned on a cheat code.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up</summary></entry><entry xml:lang="zh"><title type="html">Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)</title><link href="http://localhost:4000/zh/programming/comet/" rel="alternate" type="text/html" title="Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/comet</id><content type="html" xml:base="http://localhost:4000/zh/programming/comet/">&lt;h1 id=&quot;ai-瀏覽器-comet讓你上網像開外掛一樣快&quot;&gt;AI 瀏覽器 Comet：讓你上網像開外掛一樣快&lt;/h1&gt;
+
+&lt;p&gt;你有沒有想過，瀏覽器不只是開網頁那麼簡單？現在有一款叫 &lt;strong&gt;Comet&lt;/strong&gt; 的 AI 瀏覽器，正在讓「上網查資料」這件事變得更聰明、更有效率。&lt;br /&gt;
+話不多說，我幫你快速介紹這個最近爆紅的 AI 工具是什麼、能幹嘛、要注意什麼。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;一什麼是-comet&quot;&gt;一、什麼是 Comet？&lt;/h2&gt;
+
+&lt;p&gt;Comet 是由 &lt;strong&gt;Perplexity&lt;/strong&gt; 推出的 AI 瀏覽器，主打「邊瀏覽邊思考」。&lt;br /&gt;
+簡單說，它不只幫你開網站，還會幫你整理、摘要、比較，讓查資料不再像是在深海裡撈針。&lt;br /&gt;
+它基於 Chromium 架構，所以能支援 Chrome 擴充功能，也不會有學習門檻。&lt;br /&gt;
+一開始 Comet 只給付費用戶試用，現在已經開放給所有人免費下載。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;二它能幫你做什麼&quot;&gt;二、它能幫你做什麼？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;AI 搜尋摘要&lt;/strong&gt;：輸入關鍵字後，它不只丟連結，而是直接幫你整合重點、附上來源。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AI 助手側邊欄&lt;/strong&gt;：可以即時問問題、幫你對比資料、翻譯或延伸查詢。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;自動化操作&lt;/strong&gt;：授權後，它甚至能幫你比價、整理日程、寄信。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;跨分頁整理&lt;/strong&gt;：開太多分頁也不怕，Comet 會自動幫你總結不同頁面的重點。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;三為什麼大家在用&quot;&gt;三、為什麼大家在用？&lt;/h2&gt;
+
+&lt;p&gt;Comet 的體驗很「順」。&lt;br /&gt;
+你不用再開十幾個分頁查資料、記筆記、找答案，AI 幫你串起整個流程。&lt;br /&gt;
+最特別的是，它不只是搜尋器，而像是一個「共用大腦」—— 跟你一起思考、決策。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;四請注意資安風險&quot;&gt;四、請注意資安風險&lt;/h2&gt;
+
+&lt;p&gt;AI 雖然方便，但也要注意 &lt;strong&gt;資安與隱私&lt;/strong&gt;。&lt;br /&gt;
+Comet 會分析你瀏覽的內容來提供建議
+簡單說：&lt;strong&gt;機敏性高的操作不要交給 AI 處理&lt;/strong&gt;，保持人腦在場最安全。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;五最後小提醒&quot;&gt;五、最後小提醒&lt;/h2&gt;
+
+&lt;p&gt;如果你想試試這款 AI 瀏覽器，可以直接去官方網站下載。&lt;br /&gt;
+更棒的是，我有一個 &lt;strong&gt;專屬邀請碼&lt;/strong&gt; —— 使用我的推薦碼 &lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://pplx.ai/atimis193889&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;，就能提前體驗新功能或拿額外的使用額度。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;&lt;img src=&quot;/assets/programming/commet/commet-image.png&quot; alt=&quot;Comet AI Browser&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/assets/programming/commet/commet-image.png&quot; alt=&quot;Comet AI Browser&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;推薦碼連結&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;想感受「AI 幫你上網」的威力？趁現在就試試看。&lt;br /&gt;
+說不定下次查資料，你會懷疑自己是不是開了外掛。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">AI 瀏覽器 Comet：讓你上網像開外掛一樣快</summary></entry><entry xml:lang="en"><title type="html">Using Plan Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Plan Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
 
 &lt;h2 id=&quot;how-to-switch-to-plan-mode---shift--tab&quot;&gt;How to Switch to Plan Mode - Shift + Tab&lt;/h2&gt;
 
@@ -270,347 +385,4 @@ Act as a consultant for this conversation only. Help me think through problems w
 &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not provide code blocks that can be directly copied and pasted
 
 Help me clarify my thinking and provide direction for my implementation. If I need specific code assistance later, I will explicitly request it.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><category term="AI Agent" /><summary type="html">今年開始，我大量的使用 AI Agent 在程式開發。除了一般 debug 以外，Agent 也會參與我的程式設計過程。但是，AI Agent 如果沒有特別提到「不要動手，我要先 review 你的設計」時，AI Agent 會直接開始寫程式碼。而依這幾個月的經驗，AI Agent 很難一次就設計到我想要的結果。但如果我不斷的 review Agent 提出來的方案，在討論的過程中，AI Agent 會越來越接近我想要的結果。</summary></entry><entry xml:lang="zh"><title type="html">在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單</title><link href="http://localhost:4000/zh/programming/using-cursor-in-jira/" rel="alternate" type="text/html" title="在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單" /><published>2025-03-15T11:39:00+08:00</published><updated>2025-03-15T11:39:00+08:00</updated><id>http://localhost:4000/zh/programming/using-cursor-in-jira</id><content type="html" xml:base="http://localhost:4000/zh/programming/using-cursor-in-jira/">&lt;p&gt;2025 年開始，我已經在開發的日常中，大量的使用 Cursor。但如果想法打開，Cursor 輸出的「文字」本來就可以超過「程式」的範圍。如果團隊中一起合作的 PM，使用 Cursor 開單，是不是開發者可以快速的跨越自然語言和程式語言的隔閤，然後快速的進入程式開發呢？首先，先從 Cursor IDE 下載開始。&lt;/p&gt;
-
-&lt;h2 id=&quot;cursor-ide-下載&quot;&gt;&lt;a href=&quot;https://www.cursor.com/&quot;&gt;Cursor IDE 下載&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cursor.com/&quot;&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_landing.png&quot; alt=&quot;Cursor IDE Landing Page&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;cursor-model-選擇的擴充&quot;&gt;Cursor Model 選擇的擴充&lt;/h2&gt;
-
-&lt;p&gt;Model 的擴充，預設是 claude 系和 ChatGPT4o-mini, cursor-small, 預設不會打開 Gemini 2.0 或 ChatGPT o1，所以要打開才能使用其他模型。在這邊選擇 cursor setting。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_setting_touch.png&quot; alt=&quot;Cursor settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;這邊可以選擇在使用不同的 models，只要把想使用的 models 勾選起來，就可以選擇更多的 models。每一個 model 都有特性，像是 deepseek-v3 速度就很快，但選到 deepseek-r1 或 calude-sonnet 3.7 with think 就具備思考的特性。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_models_choose.png&quot; alt=&quot;Cursor models choose&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;右側欄---開始使用-ai-開始輔助-cmd---shift--b&quot;&gt;右側欄 - 開始使用 AI 開始輔助 (cmd  + shift + B)&lt;/h2&gt;
-
-&lt;p&gt;你可以在右邊這一欄，寫上你想要問的，要求任務，問架構，所以在管理專案的職能上，當然可以寫出 GWT (Give - When - Then) 的 jira 單&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_right_bar.png&quot; alt=&quot;Cursor right bar&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;左側欄---folder-navigation-search-裝載的外掛-cmd--b&quot;&gt;左側欄 - folder navigation, search, 裝載的外掛 (cmd + B)&lt;/h2&gt;
-
-&lt;p&gt;檔案導覽 (Folder Navigation)**&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;顯示專案目錄樹狀結構&lt;/li&gt;
-  &lt;li&gt;支援快速檔案/資料夾建立 (右鍵 &amp;gt; New File/Folder)&lt;/li&gt;
-  &lt;li&gt;拖曳檔案即可移動位置&lt;/li&gt;
-  &lt;li&gt;快捷鍵: Cmd + 1 聚焦檔案導覽&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;全域搜尋 (Global Search)**&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;跨檔案內容搜尋 (支援正規表示式)&lt;/li&gt;
-  &lt;li&gt;過濾搜尋範圍: 檔案類型/符號類型(類別/方法/屬性)&lt;/li&gt;
-  &lt;li&gt;快捷鍵: Cmd + Shift + F&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;外掛管理 (Plugin Management)**&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;顯示已安裝擴充套件列表&lt;/li&gt;
-  &lt;li&gt;一鍵連結至 &lt;a href=&quot;https://www.cursor.com/marketplace&quot;&gt;Cursor Marketplace&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;快捷鍵: Cmd + Shift + X 開啟擴充管理&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_left_bar.png&quot; alt=&quot;Cursor left bar&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;其他你裝的外掛太多，無法顯示，都會列在後面，長度如果太長的話，要按一個下拉式選單，就可以展開&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_left_drop_list.png&quot; alt=&quot;Cursor left drop list&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;jira-專案管理外掛的安裝---jira-atlassian&quot;&gt;Jira 專案管理外掛的安裝 - &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode&quot;&gt;Jira Atlassian&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;如果能不切換視窗，對工作者的效率當然是好的，在這個 marketplace 裡面，是有 Jira 的外掛套件的，先選擇 marketplace，然後打上 Jira 開始找 Jira 套件，然後選擇 install。就可以開始在 VSCode or Cursor 中開始 編輯/修改 Jira 的票了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_jira_plug_in.png&quot; alt=&quot;Jira plug in&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;開一個-folder-開始寫-jira-ticket-或是任何你要產生的文件&quot;&gt;開一個 Folder 開始寫 Jira ticket 或是任何你要產生的文件&lt;/h2&gt;
-&lt;p&gt;基本用法 - 用 folder (資料夾) 來管理你的文件，不論那是什麼文件，git 版控有學習門檻，因為 git 有學習曲線高的狀況，非開發者實際上可以用 fileName_yyyyMMdd_version 來當版本控制也可以。因為在文案的撰寫和程式不一樣，文案可能要複數時間版本比較內容，但程式只需要發佈時，就出去一份&lt;/p&gt;
-
-&lt;p&gt;先開一個資料夾&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/create_demo_folder.png&quot; alt=&quot;create folder image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;打開 cursor ，選擇那個資料夾&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/open_by_cursor.png&quot; alt=&quot;choose folder by folder&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;可以用這個 icon 直接開 file
-&lt;img src=&quot;/assets/programming/cursor-in-jira/create_files.png&quot; alt=&quot;create files&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;接下來，就可以用 AI 來寫作了
-&lt;img src=&quot;/assets/programming/cursor-in-jira/start_with_ai.png&quot; alt=&quot;Using AI create&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;agent-ask-edit-mode-解釋&quot;&gt;Agent, Ask, Edit mode 解釋&lt;/h2&gt;
-
-&lt;p&gt;Cursor 這邊可以選不同的 models 進行你的任務。&lt;/p&gt;
-
-&lt;p&gt;Ask: 就像 ChatGPT 的那個界面一樣，他會告訴你 prompt 指示的回應，然後出現在側邊欄。&lt;/p&gt;
-
-&lt;p&gt;Edit: 這時候 AI 具備可以修改檔案的能力，他在指令中進行檔案的修改。修改完後你如果滿意，可以按 Accept 接受修改，可以按 Reject 不接受修改&lt;/p&gt;
-
-&lt;p&gt;Agent: 可以接受更抽象化的指令，且具備開新檔案能力/改檔案名能力/操控 terminal 能力，但因為指令抽象化 + 可操控能力變強，在搭配 YOLO mode 時，建議最好一直盯著他的 respnose，要停手都還有機會。舉例: 你可以下，將這份檔案翻譯成 英文/德文/俄文/日文，並且把每種不同的翻譯都另存一份，並加上後綴 lang_code。「如果順利」，Agent 會在翻譯完成後，直接把檔案生出來，並完成 my_text_en.txt, my_text_ge.txt, my_text_ru.txt, my_text_jp.txt 。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/chat_with_diff_models.png&quot; alt=&quot;Chat with diff models&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;接下來，你就可以用 AI 來輔助開 jira ticket 了。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;試產-gwt&quot;&gt;試產 GWT&lt;/h2&gt;
-
-&lt;p&gt;接下來，你可以試這一段，在 Agent mode 中產出文件。&lt;/p&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;請依 Give - When - Then (GWT) 的格式，將下列需求寫成 GWT 文件。
-login
-logout
-reset password
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;試產的結果&quot;&gt;試產的結果&lt;/h2&gt;
-
-&lt;p&gt;我會幫你將登入、登出和重設密碼的功能需求，用 Given-When-Then 的格式撰寫：&lt;/p&gt;
-
-&lt;h3 id=&quot;登入功能&quot;&gt;登入功能&lt;/h3&gt;
-
-&lt;div class=&quot;language-gherkin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 使用者登入
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 成功登入
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;使用者在登入頁面
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;使用者輸入正確的帳號和密碼
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;點擊登入按鈕
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;系統應該成功登入
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;導向到首頁
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;顯示登入成功訊息
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 登入失敗 - 錯誤的認證資訊
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;使用者在登入頁面
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;使用者輸入錯誤的帳號或密碼
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;點擊登入按鈕
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;系統應該顯示錯誤訊息
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;使用者停留在登入頁面
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;登出功能&quot;&gt;登出功能&lt;/h3&gt;
-
-&lt;div class=&quot;language-gherkin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 使用者登出
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 成功登出
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;使用者已經登入系統
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;使用者點擊登出按鈕
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;系統應該登出使用者
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;清除使用者的登入狀態
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;導向到登入頁面
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;顯示登出成功訊息
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;重設密碼功能&quot;&gt;重設密碼功能&lt;/h3&gt;
-
-&lt;div class=&quot;language-gherkin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 重設密碼
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 申請重設密碼
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;使用者在忘記密碼頁面
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;使用者輸入註冊的電子郵件
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;點擊重設密碼按鈕
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;系統應該發送重設密碼連結到該電子郵件
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;顯示確認訊息
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 使用重設密碼連結
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;使用者點擊重設密碼電子郵件中的連結
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;使用者輸入新密碼
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;確認新密碼
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;點擊確認按鈕
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;系統應該更新使用者密碼
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;顯示密碼重設成功訊息
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;導向到登入頁面
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 重設密碼失敗 - 密碼不符合規則
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;使用者在重設密碼頁面
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;使用者輸入不符合規則的新密碼
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;點擊確認按鈕
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;系統應該顯示密碼規則錯誤訊息
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;使用者停留在重設密碼頁面
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;這些 GWT 格式的需求描述涵蓋了主要的使用情境和預期結果。每個功能都包含了成功和失敗的情況，並且清楚說明了：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;初始狀態（Given）&lt;/li&gt;
-  &lt;li&gt;使用者的操作（When）&lt;/li&gt;
-  &lt;li&gt;預期的系統回應（Then）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;如果需要更詳細的情境或是其他特殊案例，我可以協助您進一步補充。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><summary type="html">2025 年開始，我已經在開發的日常中，大量的使用 Cursor。但如果想法打開，Cursor 輸出的「文字」本來就可以超過「程式」的範圍。如果團隊中一起合作的 PM，使用 Cursor 開單，是不是開發者可以快速的跨越自然語言和程式語言的隔閤，然後快速的進入程式開發呢？首先，先從 Cursor IDE 下載開始。</summary></entry><entry xml:lang="en"><title type="html">Using Cursor for Writing GWT (Given-When-Then) Requirements in Jira for Non-Development Roles</title><link href="http://localhost:4000/en/programming/using-cursor-in-jira.md/" rel="alternate" type="text/html" title="Using Cursor for Writing GWT (Given-When-Then) Requirements in Jira for Non-Development Roles" /><published>2025-03-15T11:37:00+08:00</published><updated>2025-03-15T11:37:00+08:00</updated><id>http://localhost:4000/en/programming/using-cursor-in-jira.md</id><content type="html" xml:base="http://localhost:4000/en/programming/using-cursor-in-jira.md/">&lt;p&gt;Since 2025, I have been extensively using Cursor in my daily development work. However, if we think broadly, Cursor’s text output capabilities can extend beyond just “programming”. If Project Managers in the team use Cursor for creating tickets, could developers quickly bridge the gap between natural language and programming language, leading to faster development? Let’s start with downloading Cursor IDE.&lt;/p&gt;
-
-&lt;h2 id=&quot;cursor-ide-download&quot;&gt;&lt;a href=&quot;https://www.cursor.com/&quot;&gt;Cursor IDE Download&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cursor.com/&quot;&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_landing.png&quot; alt=&quot;Cursor IDE Landing Page&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;expanding-model-selection-in-cursor&quot;&gt;Expanding Model Selection in Cursor&lt;/h2&gt;
-
-&lt;p&gt;By default, model expansion includes Claude series and ChatGPT4o-mini, cursor-small, but Gemini 2.0 or ChatGPT o1 are not enabled by default. To use other models, you need to enable them in Cursor settings.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_setting_touch.png&quot; alt=&quot;Cursor settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here you can choose different models by selecting the ones you want to use. Each model has its characteristics - for example, deepseek-v3 is very fast, while deepseek-r1 or claude-sonnet 3.7 with think have thinking capabilities.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_models_choose.png&quot; alt=&quot;Cursor models choose&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;right-sidebar---start-using-ai-assistance-cmd--shift--b&quot;&gt;Right Sidebar - Start Using AI Assistance (cmd + shift + B)&lt;/h2&gt;
-
-&lt;p&gt;In this sidebar, you can write your questions, task requirements, or ask about architecture. For project management roles, you can certainly write GWT (Given-When-Then) Jira tickets.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_right_bar.png&quot; alt=&quot;Cursor right bar&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;left-sidebar---folder-navigation-search-installed-plugins-cmd--b&quot;&gt;Left Sidebar - Folder Navigation, Search, Installed Plugins (cmd + B)&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;File Navigation (Folder Navigation)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Displays project directory tree structure&lt;/li&gt;
-  &lt;li&gt;Supports quick file/folder creation (right-click &amp;gt; New File/Folder)&lt;/li&gt;
-  &lt;li&gt;Drag and drop files to move them&lt;/li&gt;
-  &lt;li&gt;Shortcut: Cmd + 1 to focus on file navigation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Global Search&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Cross-file content search (supports regex)&lt;/li&gt;
-  &lt;li&gt;Filter search scope: file types/symbol types (classes/methods/properties)&lt;/li&gt;
-  &lt;li&gt;Shortcut: Cmd + Shift + F&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Plugin Management&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Shows list of installed extensions&lt;/li&gt;
-  &lt;li&gt;One-click access to &lt;a href=&quot;https://www.cursor.com/marketplace&quot;&gt;Cursor Marketplace&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Shortcut: Cmd + Shift + X to open extension management&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_left_bar.png&quot; alt=&quot;Cursor left bar&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have too many installed plugins to display, they will be listed in a dropdown menu that you can expand&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_left_drop_list.png&quot; alt=&quot;Cursor left drop list&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;installing-jira-project-management-plugin---jira-atlassian&quot;&gt;Installing Jira Project Management Plugin - &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode&quot;&gt;Jira Atlassian&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Working without switching windows naturally improves efficiency. In this marketplace, there’s a Jira plugin available. First select marketplace, then search for Jira, and click install. You can then start editing/modifying Jira tickets directly in VSCode or Cursor.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/cursor_jira_plug_in.png&quot; alt=&quot;Jira plug in&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;create-a-folder-to-start-writing-jira-tickets-or-any-documents&quot;&gt;Create a Folder to Start Writing Jira Tickets or Any Documents&lt;/h2&gt;
-&lt;p&gt;Basic usage - use folders to manage your documents, regardless of their type. While git version control has a learning curve, non-developers can use fileName_yyyyMMdd_version for version control. This is because document writing differs from programming - documents might need multiple versions for comparison, while code only needs one version for release.&lt;/p&gt;
-
-&lt;p&gt;First, create a folder&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/create_demo_folder.png&quot; alt=&quot;create folder image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Open Cursor and select that folder&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/open_by_cursor.png&quot; alt=&quot;choose folder by folder&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can use this icon to create files directly
-&lt;img src=&quot;/assets/programming/cursor-in-jira/create_files.png&quot; alt=&quot;create files&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you can start writing with AI
-&lt;img src=&quot;/assets/programming/cursor-in-jira/start_with_ai.png&quot; alt=&quot;Using AI create&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;explanation-of-agent-ask-and-edit-modes&quot;&gt;Explanation of Agent, Ask, and Edit Modes&lt;/h2&gt;
-
-&lt;p&gt;Cursor allows you to select different models for your tasks.&lt;/p&gt;
-
-&lt;p&gt;Ask: Similar to ChatGPT’s interface, it responds to your prompts and displays responses in the sidebar.&lt;/p&gt;
-
-&lt;p&gt;Edit: AI gains the ability to modify files based on instructions. After modifications, you can Accept or Reject the changes.&lt;/p&gt;
-
-&lt;p&gt;Agent: Can handle more abstract commands and has the ability to create new files, rename files, and control the terminal. Due to its abstract nature and increased control capabilities, when using YOLO mode, it’s recommended to monitor its responses closely. For example: you can request to translate a file into English/German/Russian/Japanese, saving each translation with different language codes. “If successful,” Agent will complete the translations and create my_text_en.txt, my_text_ge.txt, my_text_ru.txt, my_text_jp.txt.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/cursor-in-jira/chat_with_diff_models.png&quot; alt=&quot;Chat with diff models&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you can start using AI to assist in creating Jira tickets.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Next, you can try this section to generate documents in Agent mode.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Please write the following requirements in GWT (Given-When-Then) format:
-login
-logout
-reset password
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I’ll help you write the login, logout, and reset password requirements using the Given-When-Then format:&lt;/p&gt;
-
-&lt;h3 id=&quot;login-function&quot;&gt;Login Function&lt;/h3&gt;
-
-&lt;div class=&quot;language-gherkin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; User Login
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; Successful Login
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;user is on the login page
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;user enters correct username and password
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;clicks the login button
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;system should successfully log in
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;redirect to homepage
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;display login success message
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; Login Failure - Invalid Credentials
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;user is on the login page
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;user enters incorrect username or password
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;clicks the login button
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;system should display error message
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;user remains on login page
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;logout-function&quot;&gt;Logout Function&lt;/h3&gt;
-
-&lt;div class=&quot;language-gherkin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; User Logout
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; Successful Logout
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;user is logged into the system
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;user clicks the logout button
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;system should log out the user
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;clear user&apos;s login status
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;redirect to login page
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;display logout success message
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;reset-password-function&quot;&gt;Reset Password Function&lt;/h3&gt;
-
-&lt;div class=&quot;language-gherkin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;Feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; Reset Password
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; Request Password Reset
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;user is on the forgot password page
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;user enters their registered email
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;clicks the reset password button
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;system should send a password reset link to the email
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;display confirmation message
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; Use Password Reset Link
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;user clicks the reset password link from email
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;user enters new password
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;confirms new password
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;clicks confirm button
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;system should update user&apos;s password
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;display password reset success message
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;redirect to login page
-
-&lt;span class=&quot;kn&quot;&gt;Scenario&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; Reset Password Failure - Invalid Password Rules
-&lt;span class=&quot;nf&quot;&gt;Given &lt;/span&gt;user is on the reset password page
-&lt;span class=&quot;nf&quot;&gt;When &lt;/span&gt;user enters a password that doesn&apos;t meet requirements
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;clicks confirm button
-&lt;span class=&quot;nf&quot;&gt;Then &lt;/span&gt;system should display password rule error message
-&lt;span class=&quot;nf&quot;&gt;And &lt;/span&gt;user remains on reset password page
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;These GWT format requirement descriptions cover the main use cases and expected results. Each function includes both success and failure scenarios, and clearly states:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Initial state (Given)&lt;/li&gt;
-  &lt;li&gt;User actions (When)&lt;/li&gt;
-  &lt;li&gt;Expected system responses (Then)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If you need more detailed scenarios or other special cases, I can help you further supplement them.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><summary type="html">Since 2025, I have been extensively using Cursor in my daily development work. However, if we think broadly, Cursor’s text output capabilities can extend beyond just “programming”. If Project Managers in the team use Cursor for creating tickets, could developers quickly bridge the gap between natural language and programming language, leading to faster development? Let’s start with downloading Cursor IDE.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><category term="AI Agent" /><summary type="html">今年開始，我大量的使用 AI Agent 在程式開發。除了一般 debug 以外，Agent 也會參與我的程式設計過程。但是，AI Agent 如果沒有特別提到「不要動手，我要先 review 你的設計」時，AI Agent 會直接開始寫程式碼。而依這幾個月的經驗，AI Agent 很難一次就設計到我想要的結果。但如果我不斷的 review Agent 提出來的方案，在討論的過程中，AI Agent 會越來越接近我想要的結果。</summary></entry></feed>
