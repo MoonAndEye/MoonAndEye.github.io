@@ -6,6 +6,12 @@ I like Apple-related products and enjoy writing in Swift. Besides Swift, I also 
 
 ---
 
+### [Earnings Rosetta](https://earningsrosetta.com/en){:target="_blank"}
+
+Earnings Rosetta is a platform focused on U.S. stock market earnings calls. The site collects verbatim transcripts from earnings calls of U.S. companies and uses AI to automatically generate key summaries, enabling users to quickly grasp the latest updates and highlights from earnings calls and make more informed investment decisions.
+
+[![Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot](/assets/about/website-earnings-rosetta-calendar-view.png){: width="750" alt="Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot" }](https://earningsrosetta.com/en){:target="_blank"}
+
 ### [Jambhala website](https://jambhalayellow.com/){:target="_blank"}
 
 A website created for a contract project, mainly used to introduce information related to the Yellow God of Wealth.
