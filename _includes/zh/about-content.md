@@ -10,7 +10,7 @@
 
 ---
 
-### [黃財神網站](https://jambhalayellow.com/){:target="_blank"}
+### 黃財神網站 (已下架)
 
 一個接案做的網站，主要是用來介紹黃財神的相關資訊。
 
@@ -27,7 +27,7 @@
 [![歌曲知識王 king of song quiz](/assets/about/icon_king_of_song_quiz.jpg){: width="150" }](https://apps.apple.com/tw/app/king-of-song-quiz/id1273605195){:target="_blank"}
 
 ---
-### [iOS App: 逆走鐘](https://apps.apple.com/tw/app/backwards-clock/id1632935212){:target="_blank"}
+### iOS App: 逆走鐘 (已下架)
 
 An app dedicated to honoring the computer programming queen, Grace Hopper
 

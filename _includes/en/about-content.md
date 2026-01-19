@@ -6,13 +6,17 @@ I like Apple-related products and enjoy writing in Swift. Besides Swift, I also 
 
 ---
 
-### [Earnings Rosetta](https://earningsrosetta.com/en){:target="_blank"}
+### [Earnings Rosetta](https://earningsrosetta.com?utm_source=blog){:target="_blank"}
 
 Earnings Rosetta is a platform focused on U.S. stock market earnings calls. The site collects verbatim transcripts from earnings calls of U.S. companies and uses AI to automatically generate key summaries, enabling users to quickly grasp the latest updates and highlights from earnings calls and make more informed investment decisions.
 
-[![Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot](/assets/about/website-earnings-rosetta-calendar-view.png){: width="750" alt="Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot" }](https://earningsrosetta.com/en){:target="_blank"}
+[![Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot](/assets/about/website-earnings-rosetta-calendar-view.png){: width="750" alt="Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot" }](https://earningsrosetta.com/en?utm_source=blog){:target="_blank"}
 
-### [Jambhala website](https://jambhalayellow.com/){:target="_blank"}
+#### [Earnings Rosetta iOS & Android Download Page](https://earningsrosetta.com/en/download?utm_source=blog){:target="_blank"}
+
+[![Earnings Rosetta DownloadView](/assets/about/earnings-rosetta-download.png){: width="750" alt="Earnings Rosetta DownloadView" }](https://earningsrosetta.com/en/download?utm_source=blog){:target="_blank"}
+
+### Jambhala website (Discontinued)
 
 A website created for a contract project, mainly used to introduce information related to the Yellow God of Wealth.
 
@@ -24,14 +28,14 @@ A website created for a contract project, mainly used to introduce information r
 
 ---
 
-### [iOS App: Song quc](https://apps.apple.com/tw/app/king-of-song-quiz/id1273605195){:target="_blank"}
+### [iOS App: Song quiz](https://apps.apple.com/tw/app/king-of-song-quiz/id1273605195){:target="_blank"}
 
 A fun song guessing app, it's the first game app I've personally launched. The gameplay is simple: each round selects five songs, and the game plays a short clip from one of them. The faster a player correctly guesses the song, the higher their score will be.
 
 [![king of song quiz](/assets/about/icon_king_of_song_quiz.jpg){: width="150" }](https://apps.apple.com/tw/app/king-of-song-quiz/id1273605195){:target="_blank"}
 
 ---
-### [iOS App: Reverse clock](https://apps.apple.com/tw/app/backwards-clock/id1632935212){:target="_blank"}
+### iOS App: Reverse clock (Removed from App Store)
 
 An app written in tribute to the "Queen of Computer Programming" - **Grace Hopper**. Grace had a clock that ran backwards hanging on her office wall.
 

@@ -48,7 +48,10 @@ header_pages:
 
 # Build settings
 # theme: minima
-remote_theme: "mmistakes/minimal-mistakes@4.18.1"
+# For local development, use the gem-based theme:
+theme: minimal-mistakes-jekyll
+# For GitHub Pages deployment, use remote_theme instead:
+# remote_theme: "mmistakes/minimal-mistakes@4.18.1"
 
 image_extensions: ['jpg', 'jpeg', 'png']
 
@@ -57,7 +60,7 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme
+  # - jekyll-remote-theme  # Not needed for local development with gem-based theme
   - jekyll-paginate
   - jekyll-gist
   - jekyll-include-cache
