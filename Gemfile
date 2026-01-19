@@ -4,7 +4,6 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 
 gem "github-pages", '228', group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
-gem "minimal-mistakes-jekyll", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
