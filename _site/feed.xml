@@ -1,4 +1,847 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-19T20:41:00+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)</title><link href="http://localhost:4000/en/programming/comet/" rel="alternate" type="text/html" title="Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/comet</id><content type="html" xml:base="http://localhost:4000/en/programming/comet/">&lt;h1 id=&quot;comet-the-ai-browser-that-makes-web-surfing-feel-like-a-power-up&quot;&gt;Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-23T21:48:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">AI Agent Coding - Why I Recommend Cloudflare</title><link href="http://localhost:4000/en/programming/ai-agent-coding-cloudflare/" rel="alternate" type="text/html" title="AI Agent Coding - Why I Recommend Cloudflare" /><published>2026-04-23T21:01:00+08:00</published><updated>2026-04-23T21:01:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-cloudflare</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-cloudflare/">&lt;p&gt;In this era (2026), if you want to build an app quickly, you have many tools to choose from: Claude, Codex, and now many GitHub-based services that let you write code directly in the browser. There will only be more of them.&lt;/p&gt;
+
+&lt;p&gt;But if you actually want other people to try the product you built, you still need somewhere to deploy it.&lt;/p&gt;
+
+&lt;p&gt;You can start by choosing your tech stack, then look for free or low-cost places to deploy your app.&lt;/p&gt;
+
+&lt;p&gt;But I would recommend thinking from a different direction first: &lt;strong&gt;where is the lowest-cost place to deploy?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;think-about-deployment-first-so-it-does-not-stay-a-demo&quot;&gt;Think About Deployment First, So It Does Not Stay a Demo&lt;/h2&gt;
+
+&lt;p&gt;When people first start using AI agent coding, they usually focus on one question: “Can it help me write code?”&lt;/p&gt;
+
+&lt;p&gt;But once you really start building a product, you quickly hit another question: where should this thing live so other people can open it, try it, and maybe actually use it?&lt;/p&gt;
+
+&lt;p&gt;At that point, you are no longer dealing with just code. You are dealing with the whole path to getting a product online: domain, frontend deployment, API, database, cache, and how to maintain all of those settings.&lt;/p&gt;
+
+&lt;p&gt;That is why I strongly recommend Cloudflare.&lt;/p&gt;
+
+&lt;p&gt;It puts the basic infrastructure a small product needs into one platform: buying a domain, managing DNS, deploying a static site, creating APIs, storing data, and caching. For AI agent coding, that means the deployment boundary of the product is much clearer.&lt;/p&gt;
+
+&lt;p&gt;You do not need to design a complex cloud architecture from day one, and you do not need to decide what kind of server you want to maintain. You can build the product first, then use Cloudflare services to ship it.&lt;/p&gt;
+
+&lt;p&gt;That is why Cloudflare fits AI agent coding so well: it shortens the distance between “the code is written” and “the product is actually online.”&lt;/p&gt;
+
+&lt;h2 id=&quot;domain-start-with-the-domain&quot;&gt;Domain: Start With the Domain&lt;/h2&gt;
+
+&lt;p&gt;If a product is going to be used, the first step is having a domain.&lt;/p&gt;
+
+&lt;p&gt;Cloudflare Registrar lets you buy and manage domains directly, and once the domain is there, DNS is already inside Cloudflare. This sounds small, but it matters in an AI agent coding workflow.&lt;/p&gt;
+
+&lt;p&gt;Domain, DNS, deployment verification, and HTTPS are naturally connected when a product goes online. If they all live in Cloudflare, the flow is more straightforward and less likely to be scattered across settings.&lt;/p&gt;
+
+&lt;p&gt;When the domain and deployment environment are on the same platform, the whole mental model becomes much simpler.&lt;/p&gt;
+
+&lt;h2 id=&quot;pages-static-sites-and-frontend-deployment&quot;&gt;Pages: Static Sites and Frontend Deployment&lt;/h2&gt;
+
+&lt;p&gt;If your product starts as a landing page, docs site, blog, or frontend app, Cloudflare Pages is a good fit.&lt;/p&gt;
+
+&lt;p&gt;It can deploy from a Git repo, or you can upload prebuilt static files. For AI agent coding, this means one thing:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The AI can understand the frontend project, build command, and deployment setup from the same repo.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;That is easier to maintain than having code in the repo while deployment rules live somewhere else in a UI.&lt;/p&gt;
+
+&lt;p&gt;Many AI agents already read &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt;, framework config, README, and deployment settings. If you write those rules clearly, the agent is more likely to help you fix build errors and adjust the deployment flow.&lt;/p&gt;
+
+&lt;h2 id=&quot;workers-d1-and-kv-backend-capability-that-is-good-enough-to-start&quot;&gt;Workers, D1, and KV: Backend Capability That Is Good Enough to Start&lt;/h2&gt;
+
+&lt;p&gt;Many products do not need a heavy backend at the beginning. You might only need an API, a webhook, a proxy for a third-party service, or a small scheduled job. Cloudflare Workers is a good fit here because you do not need to start by running a server or handling server maintenance.&lt;/p&gt;
+
+&lt;p&gt;Once the product starts to have data, you can add D1. D1 is Cloudflare’s serverless SQL database, and its syntax is close to SQLite, which also makes it easy for an AI agent to understand. If the data is shaped like users, posts, orders, or settings, starting with SQL is very natural.&lt;/p&gt;
+
+&lt;p&gt;KV is a better place for cache, feature flags, user preferences, and routing config: data shaped as key-value pairs. If the data needs relationships and queries, use D1. If the data is just “get value by key,” use KV.&lt;/p&gt;
+
+&lt;p&gt;So the biggest value of Cloudflare for AI agent coding is that it connects the common parts of a small product: Pages for the frontend, Workers for the backend, D1 for data, and KV for cache. When an AI agent reads the project, it sees a clearer product boundary.&lt;/p&gt;
+
+&lt;p&gt;The next step for AI agent coding is not only letting AI write the code. It is making sure the thing it writes can actually go online. From that perspective, Cloudflare is the deployment base I would recommend first.&lt;/p&gt;
+
+&lt;p&gt;Cloudflare also has another feature that fits the AI agent coding era very well: Workers AI.&lt;/p&gt;
+
+&lt;p&gt;If you want to build an AI feature, you do not necessarily need to start by wiring together many model providers, API keys, deployment details, and backend integrations. You can first use Cloudflare’s AI worker capability to quickly test your idea on the same platform.&lt;/p&gt;
+
+&lt;p&gt;More importantly, it comes with a certain amount of free usage. For a side project, MVP, or just validating an AI feature, that makes the starting cost very low.&lt;/p&gt;
+
+&lt;p&gt;In the next post, I will write about Cloudflare’s AI worker feature. It lets you quickly test the AI feature you want to build, with relatively low cost.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Cloudflare" /><category term="Workers" /><category term="Pages" /><category term="D1" /><category term="KV" /><category term="Deployment" /><summary type="html">In this era (2026), if you want to build an app quickly, you have many tools to choose from: Claude, Codex, and now many GitHub-based services that let you write code directly in the browser. There will only be more of them.</summary></entry><entry xml:lang="zh"><title type="html">AI Agent Coding - 為什麼我會推薦 Cloudflare</title><link href="http://localhost:4000/zh/programming/ai-agent-coding-cloudflare/" rel="alternate" type="text/html" title="AI Agent Coding - 為什麼我會推薦 Cloudflare" /><published>2026-04-23T21:00:00+08:00</published><updated>2026-04-23T21:00:00+08:00</updated><id>http://localhost:4000/zh/programming/ai-agent-coding-cloudflare</id><content type="html" xml:base="http://localhost:4000/zh/programming/ai-agent-coding-cloudflare/">&lt;p&gt;這個時代 (2026)，要快速的做出一款 app 應用，你有很多工具可以用， claude 系列， codex 系列，現在 github 也有很多直接在網頁上就可以寫程式的服務，未來只會愈來愈多。&lt;/p&gt;
+
+&lt;p&gt;但如果真的想要讓別人可以試試看寫出來的產品，你還是要找個地方部署。&lt;/p&gt;
+
+&lt;p&gt;你可以先決定你的 tech stack，然後再去找哪些 免費 or 成本低的地方，可以讓你部署 app。&lt;/p&gt;
+
+&lt;p&gt;但我更建議你，從「哪裡部署成本最低」開始想。&lt;/p&gt;
+
+&lt;h2 id=&quot;先想部署才不會只停在-demo&quot;&gt;先想部署，才不會只停在 Demo&lt;/h2&gt;
+
+&lt;p&gt;一開始使用 AI agent coding 時，大家通常會專注在「它能不能幫我寫程式」。&lt;/p&gt;
+
+&lt;p&gt;但當你真的開始做產品，你很快會遇到另一個問題：寫出來的東西要放在哪裡，才可以被別人打開、試用，甚至真的開始運作。&lt;/p&gt;
+
+&lt;p&gt;這時候你要處理的就不只是程式碼，而是一整條產品上線的路徑：domain、前端部署、API、資料庫、快取，還有這些設定要怎麼維護。&lt;/p&gt;
+
+&lt;p&gt;所以我非常推薦 Cloudflare。&lt;/p&gt;
+
+&lt;p&gt;它可以把一個小型產品需要的基礎設施放在同一個平台裡：買 domain、管理 DNS、部署靜態網站、建立 API、存資料、做快取。對 AI agent coding 來說，這代表整個產品的部署邊界很清楚。&lt;/p&gt;
+
+&lt;p&gt;你不用一開始就規劃很複雜的 cloud architecture，也不用先決定要維護哪一種 server。你可以先把產品做出來，然後用 Cloudflare 的服務把它推出去。&lt;/p&gt;
+
+&lt;p&gt;這就是 Cloudflare 很適合 AI agent coding 的原因：它讓「寫出程式」到「真的上線」中間的距離變短。&lt;/p&gt;
+
+&lt;h2 id=&quot;domain先從網域開始&quot;&gt;Domain：先從網域開始&lt;/h2&gt;
+
+&lt;p&gt;一個產品如果要被使用，第一步就是要有 domain。&lt;/p&gt;
+
+&lt;p&gt;Cloudflare Registrar 可以直接購買和管理網域，而且網域買完後，DNS 本來就在 Cloudflare 裡面。這件事看起來很小，但在 AI agent coding 的工作流裡很重要。&lt;/p&gt;
+
+&lt;p&gt;因為 domain、DNS、部署驗證、HTTPS 這些事情，本來就是產品上線時會連在一起處理的事情。如果它們都在 Cloudflare 裡，整個流程會比較直覺，也比較不容易在設定時分散掉。&lt;/p&gt;
+
+&lt;p&gt;當 domain 和部署環境在同一個平台，整個 mental model 會簡單很多。&lt;/p&gt;
+
+&lt;h2 id=&quot;pages靜態網站和前端部署&quot;&gt;Pages：靜態網站和前端部署&lt;/h2&gt;
+
+&lt;p&gt;如果你的產品一開始只是 landing page、文件站、blog、前端 app，Cloudflare Pages 就很適合。&lt;/p&gt;
+
+&lt;p&gt;它可以從 Git repo 部署，也可以上傳 build 好的靜態檔案。對 AI agent coding 來說，這代表一件事：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AI 可以把前端專案、build 指令、部署設定放在同一個 repo 裡理解。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;這會比「程式碼在 repo，部署設定在另一個平台的 UI 裡」更容易維護。&lt;/p&gt;
+
+&lt;p&gt;尤其是現在很多 AI agent 都會讀 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt;、framework config、README、部署設定。如果你把這些規則寫清楚，agent 比較容易幫你修 build error，也比較容易幫你調整部署流程。&lt;/p&gt;
+
+&lt;h2 id=&quot;workersd1kv後端能力先夠用就好&quot;&gt;Workers、D1、KV：後端能力先夠用就好&lt;/h2&gt;
+
+&lt;p&gt;很多產品一開始不需要很重的後端。你可能只是需要一個 API、webhook、第三方服務的 proxy，或是一點點排程工作。這時候 Cloudflare Workers 就很適合，因為你不用先開一台 server，也不用先處理 server 維護問題。&lt;/p&gt;
+
+&lt;p&gt;只要產品開始有資料，就可以接 D1。D1 是 Cloudflare 的 serverless SQL database，語法接近 SQLite，對 AI agent 來說也很容易理解。資料如果是 users、posts、orders、settings 這種結構，用 SQL 先定下來就很直覺。&lt;/p&gt;
+
+&lt;p&gt;KV 則適合放快取、feature flags、user preference、routing config 這種 key-value 型態的資料。資料如果需要查詢和關聯，就放 D1；資料如果只是用 key 拿 value，就放 KV。&lt;/p&gt;
+
+&lt;p&gt;所以 Cloudflare 對 AI agent coding 最大的價值，是它把小產品常用的幾個部分接在一起：Pages 放前端，Workers 做後端，D1 存資料，KV 做快取。這樣 AI agent 在理解專案時，會看到一個比較清楚的產品邊界。&lt;/p&gt;
+
+&lt;p&gt;AI agent coding 的下一步，不只是讓 AI 幫你把程式寫出來，而是讓寫出來的東西可以真的上線。以這個方向來看，Cloudflare 是我現在會優先推薦的部署底座。&lt;/p&gt;
+
+&lt;p&gt;而且 Cloudflare 還有一個很適合 AI agent coding 時代的功能：Workers AI。&lt;/p&gt;
+
+&lt;p&gt;如果你想做 AI feature，不一定要一開始就自己接一堆模型供應商、處理 API key、處理部署和後端串接。你可以先用 Cloudflare 的 AI worker 能力，在同一個平台上快速測試你的想法。&lt;/p&gt;
+
+&lt;p&gt;更重要的是，它有一定的免費額度，對 side project、MVP、或只是想驗證某個 AI 功能的人來說，這個起步成本很低。&lt;/p&gt;
+
+&lt;p&gt;下一篇，我會寫 Cloudflare 的 AI worker 功能。這個功能可以讓你快速，而且用相對低的成本，去測試你想做的 AI feature。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Cloudflare" /><category term="Workers" /><category term="Pages" /><category term="D1" /><category term="KV" /><category term="Deployment" /><summary type="html">這個時代 (2026)，要快速的做出一款 app 應用，你有很多工具可以用， claude 系列， codex 系列，現在 github 也有很多直接在網頁上就可以寫程式的服務，未來只會愈來愈多。</summary></entry><entry xml:lang="zh"><title type="html">Vibe Coding 的第一步：把前後端放在同一個資料夾</title><link href="http://localhost:4000/zh/programming/mono-repo-vibe-coding/" rel="alternate" type="text/html" title="Vibe Coding 的第一步：把前後端放在同一個資料夾" /><published>2026-04-12T08:00:00+08:00</published><updated>2026-04-12T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/mono-repo-vibe-coding</id><content type="html" xml:base="http://localhost:4000/zh/programming/mono-repo-vibe-coding/">&lt;p&gt;在開始大量使用 Codex, Claude Code 後，我現在幾乎都使用這個架構。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;把前端和後端放在同一個資料夾裡。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;這不是什麼新概念，mono repo 已經存在很久了。但在 Vibe Coding 的時代，它的價值被放大了好幾倍。&lt;/p&gt;
+
+&lt;h2 id=&quot;為什麼-mono-repo-對-ai-agent-coding-很重要&quot;&gt;為什麼 Mono Repo 對 AI Agent Coding 很重要？&lt;/h2&gt;
+
+&lt;p&gt;當你用 AI agent 來寫程式，它的理解範圍就是你給它的 context。&lt;/p&gt;
+
+&lt;p&gt;如果你的前端和後端分成兩個 repo：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AI 只看得到其中一邊&lt;/li&gt;
+  &lt;li&gt;它不知道另一邊的 API 長什麼樣&lt;/li&gt;
+  &lt;li&gt;你得自己當翻譯，把另一邊的資訊手動餵給它&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;但如果它們在同一個 repo 裡：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AI 可以同時讀到前端的呼叫邏輯和後端的 API 定義&lt;/li&gt;
+  &lt;li&gt;改了後端的 response format，它能自動幫你更新前端的對應欄位&lt;/li&gt;
+  &lt;li&gt;共用的 type、schema、config 放在一起，不會出現兩邊不同步的問題&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;簡單來說，&lt;strong&gt;mono repo 讓 AI 的 context 變完整了&lt;/strong&gt;。Context 完整，生成的程式碼就更準確。&lt;/p&gt;
+
+&lt;h2 id=&quot;推薦的資料夾結構&quot;&gt;推薦的資料夾結構&lt;/h2&gt;
+
+&lt;p&gt;不需要太複雜，這樣就夠了：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;my-project/
+├── frontend/          ← React / Next.js
+├── backend/           ← Node.js / Express / FastAPI
+├── package.json
+└── README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果你有共用的型別定義或工具函式，可以再加一層：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;my-project/
+├── frontend/          ← React / Next.js
+├── backend/           ← Node.js / Express / FastAPI
+├── shared/            ← 共用型別、常數、工具函式
+├── package.json
+└── README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;重點不是結構多完美，而是&lt;strong&gt;前後端在同一個根目錄下&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;分開-vs-合在一起的差別&quot;&gt;分開 vs 合在一起的差別&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;分開兩個 Repo&lt;/th&gt;
+      &lt;th&gt;Mono Repo&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AI 能看到的範圍&lt;/td&gt;
+      &lt;td&gt;只有一邊&lt;/td&gt;
+      &lt;td&gt;前後端都能看到&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;改 API 後更新前端&lt;/td&gt;
+      &lt;td&gt;手動同步&lt;/td&gt;
+      &lt;td&gt;AI 可以一起改&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;共用型別 / Schema&lt;/td&gt;
+      &lt;td&gt;容易不同步&lt;/td&gt;
+      &lt;td&gt;同一份檔案，不會分歧&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;開發體驗&lt;/td&gt;
+      &lt;td&gt;要開兩個視窗、兩個 terminal&lt;/td&gt;
+      &lt;td&gt;一個專案搞定&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;當你在 Vibe Coding 的時候，這些差異會被放大。因為你依賴 AI 的程度越高，它能掌握的 context 就越重要。&lt;/p&gt;
+
+&lt;h2 id=&quot;怎麼開始&quot;&gt;怎麼開始？&lt;/h2&gt;
+
+&lt;p&gt;如果你現在的專案已經是前後端分開的，不用急著大改。可以：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;開一個新資料夾，把兩個 repo 用 submodule 或直接搬進來&lt;/li&gt;
+  &lt;li&gt;下一個新專案，直接用 mono repo 結構開始&lt;/li&gt;
+  &lt;li&gt;試著讓 AI agent 在 mono repo 裡同時修改前後端，感受一下差異&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;結語&quot;&gt;結語&lt;/h2&gt;
+
+&lt;p&gt;Vibe Coding 的關鍵不只是用哪個 AI 工具，更是你怎麼組織你的專案讓 AI 能發揮最大效果。&lt;/p&gt;
+
+&lt;p&gt;Mono repo 就是最低成本、最高回報的一步。&lt;/p&gt;
+
+&lt;p&gt;試試看，你會發現這個效率很高&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Vibe Coding" /><category term="Mono Repo" /><category term="Frontend" /><category term="Backend" /><category term="Workflow" /><summary type="html">在開始大量使用 Codex, Claude Code 後，我現在幾乎都使用這個架構。</summary></entry><entry xml:lang="en"><title type="html">The First Step to Better Vibe Coding: Keep Frontend &amp;amp; Backend in One Folder</title><link href="http://localhost:4000/en/programming/mono-repo-vibe-coding/" rel="alternate" type="text/html" title="The First Step to Better Vibe Coding: Keep Frontend &amp;amp; Backend in One Folder" /><published>2026-04-12T08:00:00+08:00</published><updated>2026-04-12T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/mono-repo-vibe-coding</id><content type="html" xml:base="http://localhost:4000/en/programming/mono-repo-vibe-coding/">&lt;p&gt;After heavily using Codex and Claude Code, I now almost always use this structure.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep your frontend and backend in the same folder.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This isn’t a new concept. Mono repos have been around forever. But in the age of Vibe Coding, their value multiplies.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-mono-repo-matters-for-ai-agent-coding&quot;&gt;Why Mono Repo Matters for AI Agent Coding&lt;/h2&gt;
+
+&lt;p&gt;When you use an AI agent to write code, its understanding is limited to the context you give it.&lt;/p&gt;
+
+&lt;p&gt;If your frontend and backend live in two separate repos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The AI can only see one side at a time&lt;/li&gt;
+  &lt;li&gt;It doesn’t know what the other side’s API looks like&lt;/li&gt;
+  &lt;li&gt;You become the translator, manually feeding information back and forth&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But if they’re in the same repo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The AI can read your frontend’s call logic and your backend’s API definition at the same time&lt;/li&gt;
+  &lt;li&gt;When you change a backend response format, it can automatically update the corresponding frontend fields&lt;/li&gt;
+  &lt;li&gt;Shared types, schemas, and configs stay in sync — no more drift between two repos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In short, &lt;strong&gt;a mono repo gives the AI complete context&lt;/strong&gt;. Complete context means more accurate code generation.&lt;/p&gt;
+
+&lt;h2 id=&quot;recommended-folder-structure&quot;&gt;Recommended Folder Structure&lt;/h2&gt;
+
+&lt;p&gt;It doesn’t need to be complicated. This is enough:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;my-project/
+├── frontend/          ← React / Next.js
+├── backend/           ← Node.js / Express / FastAPI
+├── package.json
+└── README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you have shared type definitions or utility functions, add another layer:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;my-project/
+├── frontend/          ← React / Next.js
+├── backend/           ← Node.js / Express / FastAPI
+├── shared/            ← Shared types, constants, utilities
+├── package.json
+└── README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The point isn’t a perfect structure — it’s that &lt;strong&gt;frontend and backend live under the same root directory&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;separate-repos-vs-mono-repo&quot;&gt;Separate Repos vs Mono Repo&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Separate Repos&lt;/th&gt;
+      &lt;th&gt;Mono Repo&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;What AI can see&lt;/td&gt;
+      &lt;td&gt;Only one side&lt;/td&gt;
+      &lt;td&gt;Both frontend &amp;amp; backend&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Updating frontend after API changes&lt;/td&gt;
+      &lt;td&gt;Manual sync&lt;/td&gt;
+      &lt;td&gt;AI can update both at once&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shared types / schemas&lt;/td&gt;
+      &lt;td&gt;Easily out of sync&lt;/td&gt;
+      &lt;td&gt;Single source of truth&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dev experience&lt;/td&gt;
+      &lt;td&gt;Two windows, two terminals&lt;/td&gt;
+      &lt;td&gt;One project, one workspace&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;When you’re Vibe Coding, these differences get amplified. The more you rely on AI, the more its context window matters.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-get-started&quot;&gt;How to Get Started&lt;/h2&gt;
+
+&lt;p&gt;If your current project already has separate repos, no need for a big migration. You can:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a new folder and pull both repos in (via submodules or just move them)&lt;/li&gt;
+  &lt;li&gt;Start your next project with a mono repo structure from day one&lt;/li&gt;
+  &lt;li&gt;Try letting an AI agent modify both frontend and backend in a mono repo — feel the difference&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;wrap-up&quot;&gt;Wrap Up&lt;/h2&gt;
+
+&lt;p&gt;The key to Vibe Coding isn’t just which AI tool you use — it’s how you organize your project so the AI can do its best work.&lt;/p&gt;
+
+&lt;p&gt;A mono repo is the lowest-cost, highest-return move you can make.&lt;/p&gt;
+
+&lt;p&gt;Try it. You’ll find it surprisingly efficient.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Vibe Coding" /><category term="Mono Repo" /><category term="Frontend" /><category term="Backend" /><category term="Workflow" /><summary type="html">After heavily using Codex and Claude Code, I now almost always use this structure.</summary></entry><entry xml:lang="en"><title type="html">Starting a Series of Compact Source Prompts</title><link href="http://localhost:4000/en/programming/llm-knowledge-base-source-prompt/" rel="alternate" type="text/html" title="Starting a Series of Compact Source Prompts" /><published>2026-04-06T09:50:00+08:00</published><updated>2026-04-06T09:50:00+08:00</updated><id>http://localhost:4000/en/programming/llm-knowledge-base-source-prompt</id><content type="html" xml:base="http://localhost:4000/en/programming/llm-knowledge-base-source-prompt/">&lt;p&gt;I’ve been thinking about a product format that sits somewhere between a gist, a spec, and a starter kit.&lt;/p&gt;
+
+&lt;p&gt;Not a full SaaS.
+Not a long course.
+Not a bloated template bundle.&lt;/p&gt;
+
+&lt;p&gt;Just a &lt;strong&gt;small, focused prompt artifact&lt;/strong&gt; that does one job clearly.&lt;/p&gt;
+
+&lt;p&gt;That is the format I want to explore more deliberately.&lt;/p&gt;
+
+&lt;p&gt;So I’m starting a small series of &lt;strong&gt;compact source prompts&lt;/strong&gt;: one-shot prompt products designed around specific workflows, with each one acting as a reusable technical artifact rather than a piece of content dressed up as a product.&lt;/p&gt;
+
+&lt;p&gt;The first one is:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LLM Knowledge Base Source Prompt&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://marvinsight.gumroad.com/l/llm-knowledge-base-source-prompt&quot;&gt;https://marvinsight.gumroad.com/l/llm-knowledge-base-source-prompt&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-idea-behind-this-product-line&quot;&gt;The idea behind this product line&lt;/h2&gt;
+
+&lt;p&gt;There are already plenty of large products for AI builders:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;full frameworks&lt;/li&gt;
+  &lt;li&gt;heavy starter kits&lt;/li&gt;
+  &lt;li&gt;video courses&lt;/li&gt;
+  &lt;li&gt;giant prompt packs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those can be useful.&lt;/p&gt;
+
+&lt;p&gt;But I think there is also room for something smaller and sharper: artifacts that are compact enough to study in one sitting, specific enough to be immediately useful, and structured enough to be reused or adapted in real work.&lt;/p&gt;
+
+&lt;p&gt;That is the bet behind this series.&lt;/p&gt;
+
+&lt;p&gt;I’m interested in making &lt;strong&gt;tiny, high-leverage prompt products&lt;/strong&gt; that behave more like source artifacts than marketing assets.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-start-with-a-knowledge-base-prompt&quot;&gt;Why start with a knowledge base prompt&lt;/h2&gt;
+
+&lt;p&gt;A lot of AI work eventually runs into the same problem:&lt;/p&gt;
+
+&lt;p&gt;How do you turn raw notes, scattered decisions, working files, and project context into something durable?&lt;/p&gt;
+
+&lt;p&gt;Not just searchable.&lt;/p&gt;
+
+&lt;p&gt;Not just pretty.&lt;/p&gt;
+
+&lt;p&gt;Actually durable.&lt;/p&gt;
+
+&lt;p&gt;For me, that usually means:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;markdown-first structure&lt;/li&gt;
+  &lt;li&gt;Git-friendly organization&lt;/li&gt;
+  &lt;li&gt;content that humans can maintain&lt;/li&gt;
+  &lt;li&gt;content that agents can also read and extend&lt;/li&gt;
+  &lt;li&gt;a system that does not collapse into a thin docs UI with weak information architecture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That is why the first product in this series is centered on a knowledge base.&lt;/p&gt;
+
+&lt;h2 id=&quot;karpathy-x-and-the-gist-like-artifact&quot;&gt;Karpathy, X, and the gist-like artifact&lt;/h2&gt;
+
+&lt;p&gt;A key part of the inspiration came from &lt;strong&gt;Andrej Karpathy&lt;/strong&gt;, and I want to be explicit about that.&lt;/p&gt;
+
+&lt;p&gt;This product direction was not something I came up with in isolation. It was shaped in part by seeing Karpathy frame markdown, text files, and compact source artifacts as serious interfaces for LLM workflows.&lt;/p&gt;
+
+&lt;p&gt;In particular, these references mattered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Karpathy’s gist: &lt;a href=&quot;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f&quot;&gt;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Karpathy’s X post: &lt;a href=&quot;https://x.com/karpathy/status/2039805659525644595?ref=anduril.tw&quot;&gt;https://x.com/karpathy/status/2039805659525644595?ref=anduril.tw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What I found compelling there was not just the specific content, but the format itself: a compact, portable artifact that carries a lot of implementation direction without pretending to be an entire product by itself.&lt;/p&gt;
+
+&lt;p&gt;That framing mattered to me.&lt;/p&gt;
+
+&lt;p&gt;I did not want to sell “AI vibes.”&lt;/p&gt;
+
+&lt;p&gt;I wanted to package a &lt;strong&gt;source specification&lt;/strong&gt; that someone could actually use, inspect, adapt, and build from.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-this-first-prompt-is-for&quot;&gt;What this first prompt is for&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;LLM Knowledge Base Source Prompt&lt;/strong&gt; is designed to generate a markdown-first internal wiki and LLM-friendly knowledge base starter.&lt;/p&gt;
+
+&lt;p&gt;The target output includes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Next.js App Router&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fumadocs&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MDX-based content&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;static export compatibility&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;a &lt;strong&gt;dashboard-style homepage&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;structured content for &lt;strong&gt;Tasks / Repos / Topics / Decisions / People / Daily&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;English-first&lt;/strong&gt; content with &lt;strong&gt;Traditional Chinese&lt;/strong&gt; as an alternate locale&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The point is not to create a generic docs shell.&lt;/p&gt;
+
+&lt;p&gt;The point is to give builders a stronger starting structure for long-term knowledge capture.&lt;/p&gt;
+
+&lt;p&gt;In other words, this is less about “generate me a docs site” and more about:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;generate me a usable knowledge system from a compact source artifact.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;what-you-are-buying&quot;&gt;What you are buying&lt;/h2&gt;
+
+&lt;p&gt;You are buying the &lt;strong&gt;prompt itself&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;More specifically, you are buying a focused source prompt that you can:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;paste into Claude&lt;/li&gt;
+  &lt;li&gt;adapt for other coding models&lt;/li&gt;
+  &lt;li&gt;fork into your own internal wiki workflow&lt;/li&gt;
+  &lt;li&gt;use as a starting point for agent memory or team knowledge infrastructure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So the product is not the finished website.&lt;/p&gt;
+
+&lt;p&gt;It is the &lt;strong&gt;source-level artifact&lt;/strong&gt; that helps produce one.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-this-format-matters-to-me&quot;&gt;Why this format matters to me&lt;/h2&gt;
+
+&lt;p&gt;I like products that are small enough to understand.&lt;/p&gt;
+
+&lt;p&gt;A compact prompt artifact can still contain:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;product thinking&lt;/li&gt;
+  &lt;li&gt;information architecture&lt;/li&gt;
+  &lt;li&gt;implementation direction&lt;/li&gt;
+  &lt;li&gt;editorial judgment about what belongs in the system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That makes it a surprisingly good product form.&lt;/p&gt;
+
+&lt;p&gt;It is easy to ship, easy to revise, easy to remix, and easy for other builders to evaluate quickly.&lt;/p&gt;
+
+&lt;p&gt;That is exactly why I think this format is worth exploring as a series, not just as a one-off experiment.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-first-entry-in-a-broader-series&quot;&gt;The first entry in a broader series&lt;/h2&gt;
+
+&lt;p&gt;This knowledge base prompt is the first entry.&lt;/p&gt;
+
+&lt;p&gt;It will not be the last.&lt;/p&gt;
+
+&lt;p&gt;My goal is to build a line of one-shot prompt products where each one has:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a clear use case&lt;/li&gt;
+  &lt;li&gt;a concrete output shape&lt;/li&gt;
+  &lt;li&gt;a compact but serious source artifact behind it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This first release happens to be about markdown-first knowledge systems.&lt;/p&gt;
+
+&lt;p&gt;Future ones may target other focused workflows with the same philosophy.&lt;/p&gt;
+
+&lt;h2 id=&quot;product-link&quot;&gt;Product link&lt;/h2&gt;
+
+&lt;p&gt;If this specific workflow is relevant to you, you can check it out here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://marvinsight.gumroad.com/l/llm-knowledge-base-source-prompt&quot;&gt;https://marvinsight.gumroad.com/l/llm-knowledge-base-source-prompt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m less interested in making prompt products that feel disposable.&lt;/p&gt;
+
+&lt;p&gt;I’m more interested in making small technical artifacts that people can actually build with.&lt;/p&gt;
+
+&lt;p&gt;This is the first one.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Prompt Engineering" /><category term="Knowledge Base" /><category term="Gumroad" /><category term="Claude" /><summary type="html">I’ve been thinking about a product format that sits somewhere between a gist, a spec, and a starter kit.</summary></entry><entry xml:lang="en"><title type="html">If You Don’t Give the AI Direction, It Can’t Drive You to the Destination</title><link href="http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine/" rel="alternate" type="text/html" title="If You Don’t Give the AI Direction, It Can’t Drive You to the Destination" /><published>2026-03-16T08:00:00+08:00</published><updated>2026-03-16T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine/">&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
+
+&lt;p&gt;If you don’t give the AI direction, it can’t drive you to the destination.&lt;/p&gt;
+
+&lt;p&gt;I hit a surprisingly common trap while building an app demo with Figma Make.&lt;/p&gt;
+
+&lt;p&gt;My instruction to the agent was simple:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Please implement based on what’s in my Figma Make share link.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sounds reasonable.&lt;/p&gt;
+
+&lt;p&gt;But here’s the problem: &lt;strong&gt;a share link is usually a demo, not a behavioral spec&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-got-wrong&quot;&gt;What I got wrong&lt;/h3&gt;
+
+&lt;p&gt;To move fast, I made the &lt;em&gt;starting screen&lt;/em&gt; the main tab bar in my Figma Make project.&lt;/p&gt;
+
+&lt;p&gt;The agent did exactly what it saw:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;it treated the demo as the requirement&lt;/li&gt;
+  &lt;li&gt;it implemented “launch → main tab”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a demo, that can be fine.&lt;/p&gt;
+
+&lt;p&gt;For a real product, it’s usually wrong.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-real-mobile-app-launch-is-a-state-machine&quot;&gt;A real mobile app launch is a state machine&lt;/h3&gt;
+
+&lt;p&gt;On mobile, a standard launch flow is not “whatever the first UI looks like.”&lt;/p&gt;
+
+&lt;p&gt;Typically, after app launch you enter a dedicated launch activity/view controller and run a state machine, for example:&lt;/p&gt;
+
+&lt;p&gt;1) Force update / soft update / OK&lt;/p&gt;
+
+&lt;p&gt;2) Only if OK → check whether we can auto-login&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if yes → go to main tab&lt;/li&gt;
+  &lt;li&gt;if not → go to login&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those conditions and branches are the &lt;em&gt;direction&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The UI is just the outcome.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-i-thought-the-agent-was-overwriting-my-work&quot;&gt;Why I thought the agent was “overwriting” my work&lt;/h3&gt;
+
+&lt;p&gt;At first, I kept thinking the agent wasn’t following my instructions and kept changing my implementation.&lt;/p&gt;
+
+&lt;p&gt;Then I checked the React site Figma Make actually built.&lt;/p&gt;
+
+&lt;p&gt;The flow was already “locked in” by my demo.&lt;/p&gt;
+
+&lt;p&gt;In other words:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the demo defined the world I gave the agent&lt;/li&gt;
+  &lt;li&gt;the agent simply inferred behavior from visible states&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The agent didn’t fail.&lt;/p&gt;
+
+&lt;p&gt;My direction did.&lt;/p&gt;
+
+&lt;h3 id=&quot;takeaway-define-behavior-before-ui&quot;&gt;Takeaway: define behavior before UI&lt;/h3&gt;
+
+&lt;p&gt;If you want AI to build the right UI, define behavior first:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;entry states&lt;/li&gt;
+  &lt;li&gt;branching conditions&lt;/li&gt;
+  &lt;li&gt;success criteria&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;UI is the outcome.&lt;/p&gt;
+
+&lt;p&gt;The flow is the direction.&lt;/p&gt;
+
+&lt;h2 id=&quot;editor&quot;&gt;Editor&lt;/h2&gt;
+
+&lt;p&gt;Strengths:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Strong hook and clear single point.&lt;/li&gt;
+  &lt;li&gt;Concrete details (Figma Make, React build verification, update/auth branches) make it credible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Edits for the final:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Move “demo ≠ spec” earlier so the main contrast shows up faster.&lt;/li&gt;
+  &lt;li&gt;End with a tight checklist readers can reuse.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;final&quot;&gt;Final&lt;/h2&gt;
+
+&lt;p&gt;If you don’t give the AI direction, it can’t drive you to the destination.&lt;/p&gt;
+
+&lt;p&gt;I hit a common trap while building an app demo with Figma Make.&lt;/p&gt;
+
+&lt;p&gt;My instruction to the agent was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Please implement based on what’s in my Figma Make share link.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sounds reasonable—until you realize &lt;strong&gt;the link is a demo, not a behavioral spec&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;To move fast, I made the starting screen the main tab bar.&lt;/p&gt;
+
+&lt;p&gt;So the agent did exactly what it saw:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;it treated the demo as the requirement&lt;/li&gt;
+  &lt;li&gt;it implemented “launch → main tab”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But real mobile app launch is a state machine.&lt;/p&gt;
+
+&lt;p&gt;Typically, after app launch you enter a dedicated launch activity/view controller and run checks like:&lt;/p&gt;
+
+&lt;p&gt;1) Force update / soft update / OK&lt;/p&gt;
+
+&lt;p&gt;2) Only if OK → check whether we can auto-login&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if yes → main tab&lt;/li&gt;
+  &lt;li&gt;if not → login&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At first, I thought the agent was ignoring instructions and “overwriting” my work.&lt;/p&gt;
+
+&lt;p&gt;Then I checked the React site Figma Make actually built—the flow was already locked in by my demo.&lt;/p&gt;
+
+&lt;p&gt;The agent didn’t fail.&lt;/p&gt;
+
+&lt;p&gt;My direction did.&lt;/p&gt;
+
+&lt;p&gt;Takeaway: &lt;strong&gt;define behavior before UI.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A minimal checklist:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;entry states&lt;/li&gt;
+  &lt;li&gt;branching conditions&lt;/li&gt;
+  &lt;li&gt;success criteria&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;UI is the outcome.&lt;/p&gt;
+
+&lt;p&gt;The flow is the direction.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Product" /><category term="Mobile" /><category term="Workflow" /><summary type="html">Writer</summary></entry><entry xml:lang="zh"><title type="html">你沒給 AI 正確方向，它就載不到你要去的地方</title><link href="http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine/" rel="alternate" type="text/html" title="你沒給 AI 正確方向，它就載不到你要去的地方" /><published>2026-03-16T08:00:00+08:00</published><updated>2026-03-16T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine</id><content type="html" xml:base="http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine/">&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
+
+&lt;p&gt;你沒給 AI 正確方向，它就載不到你要去的地方。&lt;/p&gt;
+
+&lt;p&gt;我今天踩了一個很典型、也很容易被忽略的坑：&lt;/p&gt;
+
+&lt;p&gt;我叫 AI agent：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;請參考 Figma Make share link 中的內容，進行實作。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;聽起來很合理對吧？&lt;/p&gt;
+
+&lt;p&gt;但問題是：&lt;strong&gt;share link 裡的內容，其實是 demo，不是產品的行為規格（behavior spec）&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;我到底給錯了什麼&quot;&gt;我到底給錯了什麼？&lt;/h3&gt;
+
+&lt;p&gt;為了 demo 快，我在 Figma Make 裡把 app 的起始畫面直接做成 main tab bar。&lt;/p&gt;
+
+&lt;p&gt;於是 AI 真的超級「聽話」：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;它把 demo 當成真需求&lt;/li&gt;
+  &lt;li&gt;直接實作成「一進 app 就進主頁」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;這在 demo 上看起來沒問題。&lt;/p&gt;
+
+&lt;p&gt;但在 mobile app 上，這通常不是你想要的真實行為。&lt;/p&gt;
+
+&lt;h3 id=&quot;標準的-mobile-app-launch-其實是一個-state-machine&quot;&gt;標準的 mobile app launch 其實是一個 state machine&lt;/h3&gt;
+
+&lt;p&gt;在 mobile app 上，標準手法通常是：app launch 後先進入一個 Launch Screen 的 activity / view controller，然後在這個實例物件中做判斷。&lt;/p&gt;
+
+&lt;p&gt;例如一個常見流程會是：&lt;/p&gt;
+
+&lt;p&gt;1) 強迫更新 / 建議更新 / 可正常使用&lt;/p&gt;
+
+&lt;p&gt;2) 在「可正常使用」之後，才檢查是否可以 auto login&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if yes → go to main tab bar&lt;/li&gt;
+  &lt;li&gt;if not → go to login page&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;這些條件與分支，才是「方向」。&lt;/p&gt;
+
+&lt;p&gt;UI 長什麼樣，是結果。&lt;/p&gt;
+
+&lt;h3 id=&quot;我為什麼會一直以為-ai-在亂改&quot;&gt;我為什麼會一直以為 AI 在亂改？&lt;/h3&gt;
+
+&lt;p&gt;我一開始一直以為：AI 沒有照我的指令做、一直改掉我的實作。&lt;/p&gt;
+
+&lt;p&gt;最後我去檢查 Figma Make build 起來的 React 網站，才發現網站的流程就是如此設計。&lt;/p&gt;
+
+&lt;p&gt;換句話說：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;我給 AI 的「世界」就是那個 demo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;AI 只能照我給的可見狀態去估&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;它沒錯。&lt;/p&gt;
+
+&lt;p&gt;錯的是我一開始給的方向：我給的是 demo，不是行為規格。&lt;/p&gt;
+
+&lt;h3 id=&quot;結論要-ai-做對-ui先把行為規格寫清楚&quot;&gt;結論：要 AI 做對 UI，先把「行為規格」寫清楚&lt;/h3&gt;
+
+&lt;p&gt;你要 AI 做對 UI，先定義「行為」：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;入口狀態（entry states）&lt;/li&gt;
+  &lt;li&gt;分支條件（branching conditions）&lt;/li&gt;
+  &lt;li&gt;成功條件（success criteria）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;UI 是結果；流程才是方向。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;editor&quot;&gt;Editor&lt;/h2&gt;
+
+&lt;p&gt;這篇要傳達的核心很清楚，也符合 builder 角度：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;不是模型問題，是 workflow/spec 的問題&lt;/li&gt;
+  &lt;li&gt;有具體工具（Figma Make）與具體流程（update → auth → main/login）支撐可信度&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我在 final 只做兩個「不改意思」的微調：
+1) 讓「demo vs spec」對比更快出現（更像文章的主線）
+2) 結尾再強化一次可複用的 checklist&lt;/p&gt;
+
+&lt;h2 id=&quot;final&quot;&gt;Final&lt;/h2&gt;
+
+&lt;p&gt;你沒給 AI 正確方向，它就載不到你要去的地方。&lt;/p&gt;
+
+&lt;p&gt;我今天踩了一個很典型、也很容易被忽略的坑。&lt;/p&gt;
+
+&lt;p&gt;我叫 AI agent：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;請參考 Figma Make share link 中的內容，進行實作。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;聽起來很合理。&lt;/p&gt;
+
+&lt;p&gt;但我後來才發現：&lt;strong&gt;share link 裡的內容，其實是 demo，不是產品的行為規格（behavior spec）&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;為了 demo 快，我在 Figma Make 裡把 app 的起始畫面直接做成 main tab bar。&lt;/p&gt;
+
+&lt;p&gt;於是 AI 真的超級「聽話」：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;它把 demo 當成真需求&lt;/li&gt;
+  &lt;li&gt;直接實作成「一進 app 就進主頁」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;但在 mobile app 上，標準的啟動流程通常不是「看 UI 長什麼樣」，而是先跑一個 state machine。&lt;/p&gt;
+
+&lt;p&gt;一般做法是：app launch 後先進入 Launch Screen 的 activity / view controller，然後在這個實例物件中做判斷，例如：&lt;/p&gt;
+
+&lt;p&gt;1) 強迫更新 / 建議更新 / 可正常使用&lt;/p&gt;
+
+&lt;p&gt;2) 在「可正常使用」之後，才檢查是否可以 auto login&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if yes → go to main tab bar&lt;/li&gt;
+  &lt;li&gt;if not → go to login page&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我一開始一直以為：AI 沒有照我的指令做、一直改掉我的實作。&lt;/p&gt;
+
+&lt;p&gt;最後我去檢查 Figma Make build 起來的 React 網站，才發現網站的流程就是如此設計。&lt;/p&gt;
+
+&lt;p&gt;換句話說：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;我給 AI 的「世界」就是那個 demo&lt;/li&gt;
+  &lt;li&gt;AI 只能照我給的可見狀態去估&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;它沒錯。&lt;/p&gt;
+
+&lt;p&gt;錯的是我一開始給的方向：我給的是 demo，不是行為規格。&lt;/p&gt;
+
+&lt;p&gt;結論很簡單：&lt;strong&gt;要 AI 做對 UI，先把行為規格寫清楚。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;一個最小 checklist：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;入口狀態（entry states）&lt;/li&gt;
+  &lt;li&gt;分支條件（branching conditions）&lt;/li&gt;
+  &lt;li&gt;成功條件（success criteria）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;UI 是結果；流程才是方向。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Product" /><category term="Mobile" /><category term="Workflow" /><summary type="html">Writer</summary></entry><entry xml:lang="zh"><title type="html">Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)</title><link href="http://localhost:4000/zh/programming/comet/" rel="alternate" type="text/html" title="Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/comet</id><content type="html" xml:base="http://localhost:4000/zh/programming/comet/">&lt;h1 id=&quot;ai-瀏覽器-comet讓你上網像開外掛一樣快&quot;&gt;AI 瀏覽器 Comet：讓你上網像開外掛一樣快&lt;/h1&gt;
+
+&lt;p&gt;你有沒有想過，瀏覽器不只是開網頁那麼簡單？現在有一款叫 &lt;strong&gt;Comet&lt;/strong&gt; 的 AI 瀏覽器，正在讓「上網查資料」這件事變得更聰明、更有效率。&lt;br /&gt;
+話不多說，我幫你快速介紹這個最近爆紅的 AI 工具是什麼、能幹嘛、要注意什麼。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;一什麼是-comet&quot;&gt;一、什麼是 Comet？&lt;/h2&gt;
+
+&lt;p&gt;Comet 是由 &lt;strong&gt;Perplexity&lt;/strong&gt; 推出的 AI 瀏覽器，主打「邊瀏覽邊思考」。&lt;br /&gt;
+簡單說，它不只幫你開網站，還會幫你整理、摘要、比較，讓查資料不再像是在深海裡撈針。&lt;br /&gt;
+它基於 Chromium 架構，所以能支援 Chrome 擴充功能，也不會有學習門檻。&lt;br /&gt;
+一開始 Comet 只給付費用戶試用，現在已經開放給所有人免費下載。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;二它能幫你做什麼&quot;&gt;二、它能幫你做什麼？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;AI 搜尋摘要&lt;/strong&gt;：輸入關鍵字後，它不只丟連結，而是直接幫你整合重點、附上來源。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AI 助手側邊欄&lt;/strong&gt;：可以即時問問題、幫你對比資料、翻譯或延伸查詢。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;自動化操作&lt;/strong&gt;：授權後，它甚至能幫你比價、整理日程、寄信。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;跨分頁整理&lt;/strong&gt;：開太多分頁也不怕，Comet 會自動幫你總結不同頁面的重點。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;三為什麼大家在用&quot;&gt;三、為什麼大家在用？&lt;/h2&gt;
+
+&lt;p&gt;Comet 的體驗很「順」。&lt;br /&gt;
+你不用再開十幾個分頁查資料、記筆記、找答案，AI 幫你串起整個流程。&lt;br /&gt;
+最特別的是，它不只是搜尋器，而像是一個「共用大腦」—— 跟你一起思考、決策。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;四請注意資安風險&quot;&gt;四、請注意資安風險&lt;/h2&gt;
+
+&lt;p&gt;AI 雖然方便，但也要注意 &lt;strong&gt;資安與隱私&lt;/strong&gt;。&lt;br /&gt;
+Comet 會分析你瀏覽的內容來提供建議
+簡單說：&lt;strong&gt;機敏性高的操作不要交給 AI 處理&lt;/strong&gt;，保持人腦在場最安全。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;五最後小提醒&quot;&gt;五、最後小提醒&lt;/h2&gt;
+
+&lt;p&gt;如果你想試試這款 AI 瀏覽器，可以直接去官方網站下載。&lt;br /&gt;
+更棒的是，我有一個 &lt;strong&gt;專屬邀請碼&lt;/strong&gt; —— 使用我的推薦碼 &lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://pplx.ai/atimis193889&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;，就能提前體驗新功能或拿額外的使用額度。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/assets/programming/commet/commet-image.png&quot; alt=&quot;Comet AI Browser&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;推薦碼連結&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;想感受「AI 幫你上網」的威力？趁現在就試試看。&lt;br /&gt;
+說不定下次查資料，你會懷疑自己是不是開了外掛。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">AI 瀏覽器 Comet：讓你上網像開外掛一樣快</summary></entry><entry xml:lang="en"><title type="html">Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)</title><link href="http://localhost:4000/en/programming/comet/" rel="alternate" type="text/html" title="Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/comet</id><content type="html" xml:base="http://localhost:4000/en/programming/comet/">&lt;h1 id=&quot;comet-the-ai-browser-that-makes-web-surfing-feel-like-a-power-up&quot;&gt;Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up&lt;/h1&gt;
 
 &lt;p&gt;Have you ever thought that a browser could do more than just open websites?&lt;br /&gt;
 Now there’s an AI browser called &lt;strong&gt;Comet&lt;/strong&gt;, designed to make “researching online” smarter and more efficient.&lt;br /&gt;
@@ -54,62 +897,7 @@ Even better, I have a &lt;strong&gt;personal referral code&lt;/strong&gt; — us
 &lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;Referral Link&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Want to see how powerful “AI-assisted browsing” can be?&lt;br /&gt;
-Try it now — next time you’re doing research, you might just feel like you’ve turned on a cheat code.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up</summary></entry><entry xml:lang="zh"><title type="html">Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)</title><link href="http://localhost:4000/zh/programming/comet/" rel="alternate" type="text/html" title="Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/comet</id><content type="html" xml:base="http://localhost:4000/zh/programming/comet/">&lt;h1 id=&quot;ai-瀏覽器-comet讓你上網像開外掛一樣快&quot;&gt;AI 瀏覽器 Comet：讓你上網像開外掛一樣快&lt;/h1&gt;
-
-&lt;p&gt;你有沒有想過，瀏覽器不只是開網頁那麼簡單？現在有一款叫 &lt;strong&gt;Comet&lt;/strong&gt; 的 AI 瀏覽器，正在讓「上網查資料」這件事變得更聰明、更有效率。&lt;br /&gt;
-話不多說，我幫你快速介紹這個最近爆紅的 AI 工具是什麼、能幹嘛、要注意什麼。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;一什麼是-comet&quot;&gt;一、什麼是 Comet？&lt;/h2&gt;
-
-&lt;p&gt;Comet 是由 &lt;strong&gt;Perplexity&lt;/strong&gt; 推出的 AI 瀏覽器，主打「邊瀏覽邊思考」。&lt;br /&gt;
-簡單說，它不只幫你開網站，還會幫你整理、摘要、比較，讓查資料不再像是在深海裡撈針。&lt;br /&gt;
-它基於 Chromium 架構，所以能支援 Chrome 擴充功能，也不會有學習門檻。&lt;br /&gt;
-一開始 Comet 只給付費用戶試用，現在已經開放給所有人免費下載。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;二它能幫你做什麼&quot;&gt;二、它能幫你做什麼？&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;AI 搜尋摘要&lt;/strong&gt;：輸入關鍵字後，它不只丟連結，而是直接幫你整合重點、附上來源。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;AI 助手側邊欄&lt;/strong&gt;：可以即時問問題、幫你對比資料、翻譯或延伸查詢。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;自動化操作&lt;/strong&gt;：授權後，它甚至能幫你比價、整理日程、寄信。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;跨分頁整理&lt;/strong&gt;：開太多分頁也不怕，Comet 會自動幫你總結不同頁面的重點。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;三為什麼大家在用&quot;&gt;三、為什麼大家在用？&lt;/h2&gt;
-
-&lt;p&gt;Comet 的體驗很「順」。&lt;br /&gt;
-你不用再開十幾個分頁查資料、記筆記、找答案，AI 幫你串起整個流程。&lt;br /&gt;
-最特別的是，它不只是搜尋器，而像是一個「共用大腦」—— 跟你一起思考、決策。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;四請注意資安風險&quot;&gt;四、請注意資安風險&lt;/h2&gt;
-
-&lt;p&gt;AI 雖然方便，但也要注意 &lt;strong&gt;資安與隱私&lt;/strong&gt;。&lt;br /&gt;
-Comet 會分析你瀏覽的內容來提供建議
-簡單說：&lt;strong&gt;機敏性高的操作不要交給 AI 處理&lt;/strong&gt;，保持人腦在場最安全。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;五最後小提醒&quot;&gt;五、最後小提醒&lt;/h2&gt;
-
-&lt;p&gt;如果你想試試這款 AI 瀏覽器，可以直接去官方網站下載。&lt;br /&gt;
-更棒的是，我有一個 &lt;strong&gt;專屬邀請碼&lt;/strong&gt; —— 使用我的推薦碼 &lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://pplx.ai/atimis193889&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;，就能提前體驗新功能或拿額外的使用額度。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;/assets/programming/commet/commet-image.png&quot; alt=&quot;Comet AI Browser&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;推薦碼連結&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;想感受「AI 幫你上網」的威力？趁現在就試試看。&lt;br /&gt;
-說不定下次查資料，你會懷疑自己是不是開了外掛。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">AI 瀏覽器 Comet：讓你上網像開外掛一樣快</summary></entry><entry xml:lang="en"><title type="html">Using Plan Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Plan Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
+Try it now — next time you’re doing research, you might just feel like you’ve turned on a cheat code.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up</summary></entry><entry xml:lang="en"><title type="html">Using Plan Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Plan Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
 
 &lt;h2 id=&quot;how-to-switch-to-plan-mode---shift--tab&quot;&gt;How to Switch to Plan Mode - Shift + Tab&lt;/h2&gt;
 
@@ -154,231 +942,4 @@ Comet 會分析你瀏覽的內容來提供建議
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;/zh/programming/paste-capture-image-to-claude-code/&quot;&gt;將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用&lt;/a&gt; (Chinese)&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.</summary></entry><entry xml:lang="zh"><title type="html">使用 plan mode 先讓 claude code 規畫，再開始實作</title><link href="http://localhost:4000/zh/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="使用 plan mode 先讓 claude code 規畫，再開始實作" /><published>2025-08-07T12:02:00+08:00</published><updated>2025-08-07T12:02:00+08:00</updated><id>http://localhost:4000/zh/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/think-mode-on-claude-code/">&lt;p&gt;在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。&lt;/p&gt;
-
-&lt;h2 id=&quot;切換-think-mode-的方法---shift--tab&quot;&gt;切換 think mode 的方法 - shift + tab&lt;/h2&gt;
-
-&lt;p&gt;在 Claude code 中，你可以使用快捷鍵 shift + tab 來切換 mode。第一次的切換是 auto accept mode，你可以看 terminal 下方的提示，來知道現在的 mode 是哪一種。按第二次 shift + tab 就會進入 think mode。當你啟用 think mode 後，Claude 會進入一種專注於思考和規劃的狀態，這時候 claude code 並不會去更動你的程式碼，而是列出他會進行的步驟，以及如何實作的藍圖 (blueprint)。所以你可以放心的進行各種確認和發散的思考。&lt;/p&gt;
-
-&lt;h3 id=&quot;第一次按-shift--tab---進入-auto-accept-mode&quot;&gt;第一次按 shift + tab - 進入 auto accept mode&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-accept-mode.png&quot; alt=&quot;auto accept mode&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;用-shift--tab-進入-think-mode&quot;&gt;用 shift + tab 進入 think mode&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-think-mode.png&quot; alt=&quot;claude code think mode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;think-mode-的優點&quot;&gt;think mode 的優點&lt;/h2&gt;
-
-&lt;h3 id=&quot;先規劃再執行&quot;&gt;先規劃再執行&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/think-mode-request-prompt.png&quot; alt=&quot;think mode request prompt&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;當你在 think mode 中向 Claude 提出請求時，Claude 會先分析和思考你的需求，然後提供一個詳細的計劃藍圖。&lt;/p&gt;
-
-&lt;h3 id=&quot;查看實作藍圖&quot;&gt;查看實作藍圖&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/plan-mode-blueprint.png&quot; alt=&quot;plan mode blueprint&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在 think mode 中，Claude 會展示完整的實作計劃，讓你可以在實際執行之前就了解整個實作流程。&lt;/p&gt;
-
-&lt;h3 id=&quot;確認後執行&quot;&gt;確認後執行&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/action-after-planing.png&quot; alt=&quot;action after planning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;當你確認計劃後，Claude 會根據之前的規劃開始執行實際的程式碼修改。&lt;/p&gt;
-
-&lt;h3 id=&quot;心得&quot;&gt;心得&lt;/h3&gt;
-&lt;p&gt;在不知道 think mode 之前的我，是使用 prompt 讓 Claude code 不要直接修改程式碼，而是先給我一個大概的方向和步驟。只是，單純用 prompt 時，有時候 claude code 還是會直接發動修改。而且因為我大多時間是開發 iOS，常常會直接執行到 xcode build or 其他 xcode cli 指令。&lt;/p&gt;
-
-&lt;p&gt;在 think mode 下，我覺得修改的上下文品質有提高，而且他在 think mode 提出的方案， UI 有保留 Canvas or artifacts 的概念，可以做到同一份檔案做小幅度的修改，而不會影響到整體的結構和邏輯。&lt;/p&gt;
-
-&lt;p&gt;這是我最喜歡的地方，畢竟，要先把事情做對，我才可以開始要求 AI 把事情做好。&lt;/p&gt;
-
-&lt;h2 id=&quot;相關文章&quot;&gt;相關文章&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/programming/paste-capture-image-to-claude-code/&quot;&gt;How to Paste Screen Captures to Claude Code Editor on macOS&lt;/a&gt; (English)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/zh/programming/paste-capture-image-to-claude-code/&quot;&gt;將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用&lt;/a&gt; (Chinese)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">在使用 claude code 時，你可以先啟用 think mode，讓 AI 幫助你規劃程式碼的架構和邏輯，然後再開始實作。直到你認可和確認 Claude code 的規畫，再開始讓 claude code 執行。</summary></entry><entry xml:lang="en"><title type="html">Mario Kart World - Wallpaper Downloads</title><link href="http://localhost:4000/en/life/mario-kart-world/" rel="alternate" type="text/html" title="Mario Kart World - Wallpaper Downloads" /><published>2025-07-25T21:10:00+08:00</published><updated>2025-07-25T21:10:00+08:00</updated><id>http://localhost:4000/en/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/en/life/mario-kart-world/">&lt;p&gt;Nintendo’s website now has Mario Kart World wallpapers available for download.&lt;/p&gt;
-
-&lt;h2 id=&quot;nintendo-mario-kart-download-link&quot;&gt;&lt;a href=&quot;https://www.nintendo.com/jp/download/mario_kart_world/index.html&quot;&gt;Nintendo Mario Kart Download Link&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h2 id=&quot;wallpaper-1&quot;&gt;Wallpaper 1&lt;/h2&gt;
-
-&lt;h3 id=&quot;mobile---1320-x-2868&quot;&gt;Mobile - 1320 x 2868&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart1.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart1&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;mobile---1440-x-2560&quot;&gt;Mobile - 1440 x 2560&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart2.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart2&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;desktop&quot;&gt;Desktop&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-pc.jpg&quot; alt=&quot;Mario kart - pic 1 - pc&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;wallpaper-2&quot;&gt;Wallpaper 2&lt;/h2&gt;
-
-&lt;h3 id=&quot;mobile---1320-x-2868-1&quot;&gt;Mobile - 1320 x 2868&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart1.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart1&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;mobile---1440-x-2560-1&quot;&gt;Mobile - 1440 x 2560&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart2.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart2&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;desktop-1&quot;&gt;Desktop&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-pc.jpg&quot; alt=&quot;Mario kart - pic 2 - pc&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;other-wallpaper-links&quot;&gt;Other Wallpaper Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/en/life/mario-desktop-screen/&quot;&gt;Mario Wonder - Wallpapers Available for Download on Nintendo’s Official Website&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/en/life/zelda-kingdom-tear-wall-papers/&quot;&gt;The Legend of Zelda - Tears of the Kingdom Wallpapers Available on Nintendo’s Website&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="Mario Kart World" /><summary type="html">Nintendo’s website now has Mario Kart World wallpapers available for download.</summary></entry><entry xml:lang="zh"><title type="html">馬力歐賽車世界 - Mario Kart 世界 桌布下載</title><link href="http://localhost:4000/zh/life/mario-kart-world/" rel="alternate" type="text/html" title="馬力歐賽車世界 - Mario Kart 世界 桌布下載" /><published>2025-07-25T21:03:00+08:00</published><updated>2025-07-25T21:03:00+08:00</updated><id>http://localhost:4000/zh/life/mario-kart-world</id><content type="html" xml:base="http://localhost:4000/zh/life/mario-kart-world/">&lt;p&gt;任天堂的網站，現在有 Mario Kart 世界的桌布下載。&lt;/p&gt;
-
-&lt;h2 id=&quot;任天堂的馬力歐賽車下載連結&quot;&gt;&lt;a href=&quot;https://www.nintendo.com/jp/download/mario_kart_world/index.html&quot;&gt;任天堂的馬力歐賽車下載連結&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h2 id=&quot;桌布一&quot;&gt;桌布一&lt;/h2&gt;
-
-&lt;h3 id=&quot;手機用---1320-x-2868&quot;&gt;手機用 - 1320 x 2868&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart1.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart1&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;手機用---1440-x-2560&quot;&gt;手機用 - 1440 x 2560&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-smart2.jpg&quot; alt=&quot;Mario kart - Pic 1 - Smart2&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;電腦用&quot;&gt;電腦用&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic1-pc.jpg&quot; alt=&quot;Mario kart - pic 1 - pc&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;桌布二&quot;&gt;桌布二&lt;/h2&gt;
-
-&lt;h3 id=&quot;手機用---1320-x-2868-1&quot;&gt;手機用 - 1320 x 2868&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart1.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart1&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;手機用---1440-x-2560-1&quot;&gt;手機用 - 1440 x 2560&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-smart2.jpg&quot; alt=&quot;Mario kart - Pic 2 - Smart2&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;電腦用-1&quot;&gt;電腦用&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/life/mario-kart/pic2-pc.jpg&quot; alt=&quot;Mario kart - pic 2 - pc&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;其他的桌布連結&quot;&gt;其他的桌布連結&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/life/mario-desktop-screen.html&quot;&gt;馬力歐驚奇 桌布下載&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.marvinswift.com/life/zelda-kingdom-tear-wall-papers.html&quot;&gt;薩爾達傳說 桌布下載&lt;/a&gt;&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="life" /><category term="life" /><category term="Mario Kart World" /><summary type="html">任天堂的網站，現在有 Mario Kart 世界的桌布下載。</summary></entry><entry xml:lang="en"><title type="html">How to Paste Screen Captures to Claude Code Editor on macOS</title><link href="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="How to Paste Screen Captures to Claude Code Editor on macOS" /><published>2025-07-14T16:25:00+08:00</published><updated>2025-07-14T16:25:00+08:00</updated><id>http://localhost:4000/en/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/paste-capture-image-to-claude-code/">&lt;p&gt;Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.&lt;/p&gt;
-
-&lt;h2 id=&quot;cmd--ctrl--k---you-can-send-highlighted-code-from-another-file-to-claude-code&quot;&gt;Cmd + ctrl + K - You can send highlighted code from another file to Claude code&lt;/h2&gt;
-
-&lt;p&gt;As shown in the image, you’ll see “1 line selected” in the bottom right of the terminal&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-select-lines.png&quot; alt=&quot;claude-code-select-lines&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;what-about-images-theres-definitely-a-way-to-send-them-to-claude-code-too&quot;&gt;What about images? There’s definitely a way to send them to Claude code too&lt;/h2&gt;
-
-&lt;p&gt;On macOS, you can use the following method to paste screen captures to Claude’s code editor:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Press ctrl + cmd + shift + 4, then select the area you want to capture.&lt;/li&gt;
-  &lt;li&gt;After taking the screenshot, switch to Claude code’s editor.&lt;/li&gt;
-  &lt;li&gt;Press ctrl + v to paste the screenshot.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;At this point, you’ll see the text “image” pasted into the input box. You can use this technique to have Claude make modifications based on colors/layout.&lt;/p&gt;
-
-&lt;h2 id=&quot;related-articles&quot;&gt;Related Articles&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/programming/think-mode-on-claude-code/&quot;&gt;Using Plan Mode to Let Claude Code Plan Before Implementation&lt;/a&gt; (English)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/zh/programming/think-mode-on-claude-code/&quot;&gt;使用 plan mode 先讓 claude code 規畫，再開始實作&lt;/a&gt; (Chinese)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">Currently, I’m extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.</summary></entry><entry xml:lang="zh"><title type="html">將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用</title><link href="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/" rel="alternate" type="text/html" title="將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用" /><published>2025-07-14T16:20:00+08:00</published><updated>2025-07-14T16:20:00+08:00</updated><id>http://localhost:4000/zh/programming/paste-capture-image-to-claude-code</id><content type="html" xml:base="http://localhost:4000/zh/programming/paste-capture-image-to-claude-code/">&lt;p&gt;現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。&lt;/p&gt;
-
-&lt;h2 id=&quot;cmd--ctrl--k---就可以把另一個檔案框起來的程式碼傳給-claude-code&quot;&gt;Cmd + ctrl + K - 就可以把另一個檔案框起來的程式碼，傳給 claude code&lt;/h2&gt;
-
-&lt;p&gt;如圖，在 terminal 的右下方，就會看到 1 line selected&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-select-lines.png&quot; alt=&quot;claude-code-select-lines&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;那圖案呢當然也有方法傳給-claude-code&quot;&gt;那圖案呢？當然也有方法傳給 claude code&lt;/h2&gt;
-
-&lt;p&gt;在 macOS 上，你可以使用以下方法將螢幕截圖貼上到 Claude 的程式碼編輯器中：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;按下 ctrl + cmd + shift + 4，然後選擇你想要截圖的區域。&lt;/li&gt;
-  &lt;li&gt;截圖完成後，切換到 claude code 的程式碼編輯器。&lt;/li&gt;
-  &lt;li&gt;按下 ctrl + v (注意，是 ctrl)，將截圖貼上。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code/claude-code-screen-capture.png&quot; alt=&quot;claude-code-paste-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;這時候，你會看到 image 的文字被貼上輸入框，你可以使用這個技巧，讓 claude 針對顏色/排版，進行修改。&lt;/p&gt;
-
-&lt;h2 id=&quot;相關文章&quot;&gt;相關文章&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/programming/think-mode-on-claude-code/&quot;&gt;Using Plan Mode to Let Claude Code Plan Before Implementation&lt;/a&gt; (English)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/zh/programming/think-mode-on-claude-code/&quot;&gt;使用 plan mode 先讓 claude code 規畫，再開始實作&lt;/a&gt; (Chinese)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。</summary></entry><entry xml:lang="en"><title type="html">Prompt to Make AI Agents Present Design First Without Implementation</title><link href="http://localhost:4000/en/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="Prompt to Make AI Agents Present Design First Without Implementation" /><published>2025-04-26T11:50:00+08:00</published><updated>2025-04-26T11:50:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-prompt/">&lt;p&gt;This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.&lt;/p&gt;
-
-&lt;p&gt;If you’re using Cursor, you can write the rules in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.cursor/rules/think-mode.mdc&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’re using VSCode Insiders, you can press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd + shift + P&lt;/code&gt;, then choose “create prompt”, which will open up the user settings. When giving commands, pressing the “add context” shortcut will add this prompt to the context, saving you typing time.&lt;/p&gt;
-
-&lt;h2 id=&quot;think-mode-prompt&quot;&gt;Think-mode prompt&lt;/h2&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# Thinking Mode Only: Ideas and Proposals Without Implementation&lt;/span&gt;
-
-Act as a consultant for this conversation only. Help me think through problems without implementing code.
-
-&lt;span class=&quot;gu&quot;&gt;## Guidelines:&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Analyze the problem or request I present
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explore possible implementation approaches and architectures
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Provide high-level solutions or design considerations
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explain pros and cons of different approaches
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Suggest technology choices and potential concerns
-
-&lt;span class=&quot;gu&quot;&gt;## Do NOT:&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not write complete implementation code
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not modify my existing code
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not provide code blocks that can be directly copied and pasted
-
-Help me clarify my thinking and provide direction for my implementation. If I need specific code assistance later, I will explicitly request it.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><category term="AI Agent" /><summary type="html">This year, I’ve been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don’t specifically mention “don’t start coding, I want to review your design first,” the AI Agent will immediately start writing code. Based on my experience over the past few months, it’s rare for an AI Agent to design exactly what I want on the first try. But if I continuously review the solutions proposed by the Agent and discuss them, the AI Agent gradually gets closer to the results I’m looking for.</summary></entry><entry xml:lang="zh"><title type="html">讓 AI Agent 不要動手，先呈現設計結果的 prompt</title><link href="http://localhost:4000/zh/programming/ai-agent-coding-prompt/" rel="alternate" type="text/html" title="讓 AI Agent 不要動手，先呈現設計結果的 prompt" /><published>2025-04-26T11:39:00+08:00</published><updated>2025-04-26T11:39:00+08:00</updated><id>http://localhost:4000/zh/programming/ai-agent-coding-prompt</id><content type="html" xml:base="http://localhost:4000/zh/programming/ai-agent-coding-prompt/">&lt;p&gt;今年開始，我大量的使用 AI Agent 在程式開發。除了一般 debug 以外，Agent 也會參與我的程式設計過程。但是，AI Agent 如果沒有特別提到「不要動手，我要先 review 你的設計」時，AI Agent 會直接開始寫程式碼。而依這幾個月的經驗，AI Agent 很難一次就設計到我想要的結果。但如果我不斷的 review Agent 提出來的方案，在討論的過程中，AI Agent 會越來越接近我想要的結果。&lt;/p&gt;
-
-&lt;p&gt;如果你用的是 cursor，你可以把 rules 寫在 .cursor/rules/think-mode.mdc&lt;/p&gt;
-
-&lt;p&gt;如果你是用 VSCode insiders，你可以先按 cmd + shift + P，然後選擇 create prompt，接著他就會開到 user setting 下。在下指令時，你按下 add context 的 short cut 時，就會把這段 prompt 加在 context 裡面了，可以結省你打字的時間。&lt;/p&gt;
-
-&lt;h2 id=&quot;think-mode-prompt&quot;&gt;Think-mode prompt&lt;/h2&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# Thinking Mode Only: Ideas and Proposals Without Implementation&lt;/span&gt;
-
-Act as a consultant for this conversation only. Help me think through problems without implementing code.
-
-&lt;span class=&quot;gu&quot;&gt;## Guidelines:&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Analyze the problem or request I present
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explore possible implementation approaches and architectures
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Provide high-level solutions or design considerations
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Explain pros and cons of different approaches
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Suggest technology choices and potential concerns
-
-&lt;span class=&quot;gu&quot;&gt;## Do NOT:&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not write complete implementation code
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not modify my existing code
-&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; Do not provide code blocks that can be directly copied and pasted
-
-Help me clarify my thinking and provide direction for my implementation. If I need specific code assistance later, I will explicitly request it.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cursor" /><category term="AI" /><category term="AI Agent" /><summary type="html">今年開始，我大量的使用 AI Agent 在程式開發。除了一般 debug 以外，Agent 也會參與我的程式設計過程。但是，AI Agent 如果沒有特別提到「不要動手，我要先 review 你的設計」時，AI Agent 會直接開始寫程式碼。而依這幾個月的經驗，AI Agent 很難一次就設計到我想要的結果。但如果我不斷的 review Agent 提出來的方案，在討論的過程中，AI Agent 會越來越接近我想要的結果。</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.</summary></entry></feed>
