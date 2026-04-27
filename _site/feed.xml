@@ -1,4 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-23T21:48:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">AI Agent Coding - Why I Recommend Cloudflare</title><link href="http://localhost:4000/en/programming/ai-agent-coding-cloudflare/" rel="alternate" type="text/html" title="AI Agent Coding - Why I Recommend Cloudflare" /><published>2026-04-23T21:01:00+08:00</published><updated>2026-04-23T21:01:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-cloudflare</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-cloudflare/">&lt;p&gt;In this era (2026), if you want to build an app quickly, you have many tools to choose from: Claude, Codex, and now many GitHub-based services that let you write code directly in the browser. There will only be more of them.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-27T21:32:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marv[in]sight</title><subtitle>Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.</subtitle><author><name>Marvin Lin</name></author><entry xml:lang="en"><title type="html">Cloudflare Tunnel: Why I Now Use It Instead of ngrok</title><link href="http://localhost:4000/en/programming/cloudflare-tunnel-vs-ngrok/" rel="alternate" type="text/html" title="Cloudflare Tunnel: Why I Now Use It Instead of ngrok" /><published>2026-04-27T10:05:00+08:00</published><updated>2026-04-27T10:05:00+08:00</updated><id>http://localhost:4000/en/programming/cloudflare-tunnel-vs-ngrok</id><content type="html" xml:base="http://localhost:4000/en/programming/cloudflare-tunnel-vs-ngrok/">&lt;p&gt;AI agent coding helps you build features quickly, but once you move into integration testing, you run into a very practical question: how can an external service reach your local environment?&lt;/p&gt;
+
+&lt;p&gt;Maybe you need to receive a webhook. Maybe you want a friend to try a version that is not deployed yet. Maybe a third-party service needs to call back into your development environment.&lt;/p&gt;
+
+&lt;p&gt;I used to use ngrok for this. It is well known, and it is genuinely convenient. Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ngrok http 3000&lt;/code&gt;, and you get a public URL that can reach your local service.&lt;/p&gt;
+
+&lt;p&gt;ngrok is still very good for temporary testing.&lt;/p&gt;
+
+&lt;p&gt;But if this is not a one-time thing, I now more often use Cloudflare Tunnel (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudflared&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;The reason is not that ngrok is bad. It is that I now put my domain, Pages, and Workers on Cloudflare. If the production entry point already lives on Cloudflare, putting the development entry point there too makes the whole flow more straightforward.&lt;/p&gt;
+
+&lt;p&gt;If you already followed my previous post, &lt;a href=&quot;/en/programming/ai-agent-coding-cloudflare/&quot;&gt;AI Agent Coding - Why I Recommend Cloudflare&lt;/a&gt;, and moved your domain to Cloudflare, then Cloudflare Tunnel is almost the next natural tool to use.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-advantage-is-keeping-domain-deployment-and-dev-entry-points-together&quot;&gt;The Advantage Is Keeping Domain, Deployment, and Dev Entry Points Together&lt;/h2&gt;
+
+&lt;p&gt;ngrok and Cloudflare Tunnel solve the same type of problem: you have a local service running on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:3000&lt;/code&gt;, but an external service needs a public HTTPS URL to reach it.&lt;/p&gt;
+
+&lt;p&gt;ngrok can do this. Cloudflare Tunnel can do this too.&lt;/p&gt;
+
+&lt;p&gt;I choose Cloudflare Tunnel because it fits directly into my existing Cloudflare flow.&lt;/p&gt;
+
+&lt;p&gt;The domain is on Cloudflare. The frontend may be on Pages. The backend may be on Workers. Now the public entry point for local development can also be managed in the same place as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev.example.com&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Development and deployment start to feel like the same path, instead of one setup for code, another setup for production, and a separate temporary URL for testing.&lt;/p&gt;
+
+&lt;h2 id=&quot;ngrok-is-good-for-temporary-testing-cloudflare-tunnel-fits-the-workflow&quot;&gt;ngrok Is Good for Temporary Testing, Cloudflare Tunnel Fits the Workflow&lt;/h2&gt;
+
+&lt;p&gt;ngrok’s biggest advantage is speed.&lt;/p&gt;
+
+&lt;p&gt;You do not need to buy a domain, set up DNS, or care about Cloudflare. If your local service is running on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3000&lt;/code&gt;, one command gives you a public URL.&lt;/p&gt;
+
+&lt;p&gt;For a one-time demo, or quickly letting a friend take a look, ngrok is a good fit.&lt;/p&gt;
+
+&lt;p&gt;But if this development entry point keeps coming back, I want it tied to my own domain.&lt;/p&gt;
+
+&lt;p&gt;For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev.example.com&lt;/code&gt; points to the local service, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.example.com&lt;/code&gt; is production, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;api.example.com&lt;/code&gt; is the Workers API. These entry points all live under Cloudflare, and DNS, HTTPS, and routing are managed in the same place.&lt;/p&gt;
+
+&lt;p&gt;That is why Cloudflare Tunnel feels smooth to me. It is not just another temporary tool. It brings local development into the same product infrastructure.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup-is-not-hard-but-point-localhost-clearly&quot;&gt;Setup Is Not Hard, but Point localhost Clearly&lt;/h2&gt;
+
+&lt;p&gt;If you create the tunnel from the Cloudflare dashboard, the flow is roughly: create a tunnel, install and run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudflared&lt;/code&gt; command Cloudflare gives you, then add a published application that points &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev.example.com&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:3000&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you manage it with a local config, the concept looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cloudflared
+cloudflared tunnel login
+cloudflared tunnel create my-dev
+cloudflared tunnel route dns my-dev dev.example.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then connect the hostname to your local service in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.cloudflared/config.yml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;tunnel&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;TUNNEL_ID&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;credentials-file&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/Users/you/.cloudflared/&amp;lt;TUNNEL_ID&amp;gt;.json&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;ingress&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dev.example.com&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:3000&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http_status:404&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, run the tunnel:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cloudflared tunnel run my-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After that, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://dev.example.com&lt;/code&gt; reaches the service running on your machine, and HTTPS is handled by Cloudflare.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-difference-for-ai-agent-coding&quot;&gt;The Difference for AI Agent Coding&lt;/h2&gt;
+
+&lt;p&gt;AI agent coding makes it faster to build something testable.&lt;/p&gt;
+
+&lt;p&gt;In the past, it might take days before you reached webhooks, OAuth callbacks, or third-party integrations. Now an AI agent can help you get the feature working earlier, which means you also need a way for external services to reach local development earlier.&lt;/p&gt;
+
+&lt;p&gt;The value of Cloudflare Tunnel here is not that it helps AI understand your context better. The value is that your development, testing, and deployment paths become more consistent.&lt;/p&gt;
+
+&lt;p&gt;You can naturally treat &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://dev.example.com&lt;/code&gt; as the development entry point and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://app.example.com&lt;/code&gt; as the production entry point. Both live under the same domain and the same Cloudflare account.&lt;/p&gt;
+
+&lt;p&gt;The benefit is that when you test a webhook, test a callback, or let someone try the product, you do not need to switch to another service just to think about the public URL.&lt;/p&gt;
+
+&lt;p&gt;The development entry point is part of the product architecture too. When it lives together with your domain, Pages, and Workers, the path from side project to deployment becomes clearer.&lt;/p&gt;
+
+&lt;p&gt;In the next post, I want to write about Cloudflare Workers AI. It lets you test AI inference on the same platform. Combined with Tunnel, Pages, and Workers, the path from development to deployment for an AI side project becomes much shorter.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cloudflare" /><category term="Cloudflare Tunnel" /><category term="ngrok" /><category term="Webhook" /><category term="AI Agent" /><summary type="html">AI agent coding helps you build features quickly, but once you move into integration testing, you run into a very practical question: how can an external service reach your local environment?</summary></entry><entry xml:lang="zh"><title type="html">Cloudflare Tunnel：我現在會用它取代 ngrok</title><link href="http://localhost:4000/zh/programming/cloudflare-tunnel-vs-ngrok/" rel="alternate" type="text/html" title="Cloudflare Tunnel：我現在會用它取代 ngrok" /><published>2026-04-27T10:00:00+08:00</published><updated>2026-04-27T10:00:00+08:00</updated><id>http://localhost:4000/zh/programming/cloudflare-tunnel-vs-ngrok</id><content type="html" xml:base="http://localhost:4000/zh/programming/cloudflare-tunnel-vs-ngrok/">&lt;p&gt;AI agent coding 讓你很快把功能做出來，但進到整合測試時，會遇到一個很實際的問題：外部服務要怎麼打進你的 local 環境。&lt;/p&gt;
+
+&lt;p&gt;可能是要接 webhook、可能是要讓朋友先試一下還沒部署的版本、也可能是要讓某個第三方服務 callback 回你的開發環境。&lt;/p&gt;
+
+&lt;p&gt;以前我都用 ngrok。它很有名，也真的很方便。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ngrok http 3000&lt;/code&gt; 打下去，就會給你一個可以從外面連進來的 URL。&lt;/p&gt;
+
+&lt;p&gt;ngrok 到現在也還是很適合臨時測試。&lt;/p&gt;
+
+&lt;p&gt;只是如果這件事不是只做一次，我現在會比較常改用 Cloudflare Tunnel（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudflared&lt;/code&gt;）。&lt;/p&gt;
+
+&lt;p&gt;原因不是 ngrok 不好，而是我現在會把 domain、Pages、Workers 這些東西都放在 Cloudflare 上。既然正式部署的入口在 Cloudflare，開發時用的入口也放在 Cloudflare，整個流程會更直覺。&lt;/p&gt;
+
+&lt;p&gt;如果你已經跟著我前一篇 &lt;a href=&quot;/zh/programming/ai-agent-coding-cloudflare/&quot;&gt;AI Agent Coding - 為什麼我會推薦 Cloudflare&lt;/a&gt; 把 domain 放在 Cloudflare 上，那 Cloudflare Tunnel 幾乎是下一個自然會用到的工具。&lt;/p&gt;
+
+&lt;h2 id=&quot;優點是把-domain部署和開發入口放在一起&quot;&gt;優點是把 domain、部署和開發入口放在一起&lt;/h2&gt;
+
+&lt;p&gt;ngrok 和 Cloudflare Tunnel 解決的是同一類問題：你 local 跑了一個服務在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:3000&lt;/code&gt;，但外部服務需要一個公開的 HTTPS URL 才能打進來。&lt;/p&gt;
+
+&lt;p&gt;這件事 ngrok 可以，Cloudflare Tunnel 也可以。&lt;/p&gt;
+
+&lt;p&gt;我會選 Cloudflare Tunnel，是因為它可以直接接在我原本的 Cloudflare 流程裡。&lt;/p&gt;
+
+&lt;p&gt;domain 在 Cloudflare，前端可能用 Pages，後端可能用 Workers。現在連 local dev 的公開入口也可以用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev.example.com&lt;/code&gt; 放在同一個地方管理。&lt;/p&gt;
+
+&lt;p&gt;這樣開發和部署就會比較像同一條路，而不是程式碼一套、正式部署一套、臨時測試網址又是另一套。&lt;/p&gt;
+
+&lt;h2 id=&quot;ngrok-適合臨時測試cloudflare-tunnel-適合放進流程&quot;&gt;ngrok 適合臨時測試，Cloudflare Tunnel 適合放進流程&lt;/h2&gt;
+
+&lt;p&gt;ngrok 最大的優點就是快。&lt;/p&gt;
+
+&lt;p&gt;你不用先買 domain，不用先設定 DNS，也不用管 Cloudflare。只要本機服務跑在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3000&lt;/code&gt;，打一行指令就可以拿到公開網址。&lt;/p&gt;
+
+&lt;p&gt;如果只是 demo 一次，或是臨時讓朋友看一下，ngrok 很適合。&lt;/p&gt;
+
+&lt;p&gt;但如果這個開發入口會反覆出現，我會希望它跟自己的 domain 綁在一起。&lt;/p&gt;
+
+&lt;p&gt;例如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev.example.com&lt;/code&gt; 打到 local service，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.example.com&lt;/code&gt; 是正式環境，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;api.example.com&lt;/code&gt; 是 Workers API。這些入口都在 Cloudflare 底下，DNS、HTTPS、routing 的設定都在同一個地方。&lt;/p&gt;
+
+&lt;p&gt;這就是我覺得 Cloudflare Tunnel 順的地方。它不是多一個臨時工具，而是把 local dev 也接進同一套產品基礎設施。&lt;/p&gt;
+
+&lt;h2 id=&quot;設定不難但要把-localhost-指清楚&quot;&gt;設定不難，但要把 localhost 指清楚&lt;/h2&gt;
+
+&lt;p&gt;如果你用 Cloudflare dashboard 建 tunnel，流程大概是：建立 tunnel、安裝並執行 Cloudflare 給你的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudflared&lt;/code&gt; command，然後新增一個 published application，把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev.example.com&lt;/code&gt; 指到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:3000&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果用本機 config 管理，概念會像這樣：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cloudflared
+cloudflared tunnel login
+cloudflared tunnel create my-dev
+cloudflared tunnel route dns my-dev dev.example.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;接著在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.cloudflared/config.yml&lt;/code&gt; 裡把 hostname 和 local service 接起來：&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;tunnel&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;TUNNEL_ID&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;credentials-file&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/Users/you/.cloudflared/&amp;lt;TUNNEL_ID&amp;gt;.json&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;ingress&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dev.example.com&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:3000&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http_status:404&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最後跑起 tunnel：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cloudflared tunnel run my-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;之後 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://dev.example.com&lt;/code&gt; 就會打到你本機的 service，HTTPS 也會由 Cloudflare 處理。&lt;/p&gt;
+
+&lt;h2 id=&quot;對-ai-agent-coding-的差別&quot;&gt;對 AI agent coding 的差別&lt;/h2&gt;
+
+&lt;p&gt;AI agent coding 會讓你更快做出可以測的東西。&lt;/p&gt;
+
+&lt;p&gt;以前可能要花幾天才會碰到 webhook、OAuth callback、第三方服務串接。現在 AI agent 幫你把功能先做出來，你很快就會需要一個可以從外面打進 local 的入口。&lt;/p&gt;
+
+&lt;p&gt;這時候 Cloudflare Tunnel 的價值，不是讓 AI 比較懂你的 context，而是讓你的開發、測試、部署路徑更一致。&lt;/p&gt;
+
+&lt;p&gt;你可以很自然地把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://dev.example.com&lt;/code&gt; 當成開發入口，把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://app.example.com&lt;/code&gt; 當成正式入口。兩者都在同一個 domain 和同一個 Cloudflare 帳號底下。&lt;/p&gt;
+
+&lt;p&gt;這樣做的好處是，你在測 webhook、測 callback、給別人試用時，不需要額外切到另一個服務去想公開 URL 的事情。&lt;/p&gt;
+
+&lt;p&gt;開發入口也是產品架構的一部分。當它跟 domain、Pages、Workers 放在一起，整個 side project 的路徑會比較清楚。&lt;/p&gt;
+
+&lt;p&gt;下一篇，我想寫 Cloudflare Workers AI。它可以讓你在同一個平台上測 AI 推論，搭配 Tunnel、Pages 和 Workers，整個 AI side project 的開發到部署路徑會變得更短。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Cloudflare" /><category term="Cloudflare Tunnel" /><category term="ngrok" /><category term="Webhook" /><category term="AI Agent" /><summary type="html">AI agent coding 讓你很快把功能做出來，但進到整合測試時，會遇到一個很實際的問題：外部服務要怎麼打進你的 local 環境。</summary></entry><entry xml:lang="en"><title type="html">AI Agent Coding - Why I Recommend Cloudflare</title><link href="http://localhost:4000/en/programming/ai-agent-coding-cloudflare/" rel="alternate" type="text/html" title="AI Agent Coding - Why I Recommend Cloudflare" /><published>2026-04-23T21:01:00+08:00</published><updated>2026-04-23T21:01:00+08:00</updated><id>http://localhost:4000/en/programming/ai-agent-coding-cloudflare</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-agent-coding-cloudflare/">&lt;p&gt;In this era (2026), if you want to build an app quickly, you have many tools to choose from: Claude, Codex, and now many GitHub-based services that let you write code directly in the browser. There will only be more of them.&lt;/p&gt;
 
 &lt;p&gt;But if you actually want other people to try the product you built, you still need somewhere to deploy it.&lt;/p&gt;
 
@@ -496,7 +664,151 @@ Not a bloated template bundle.&lt;/p&gt;
 
 &lt;p&gt;I’m more interested in making small technical artifacts that people can actually build with.&lt;/p&gt;
 
-&lt;p&gt;This is the first one.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Prompt Engineering" /><category term="Knowledge Base" /><category term="Gumroad" /><category term="Claude" /><summary type="html">I’ve been thinking about a product format that sits somewhere between a gist, a spec, and a starter kit.</summary></entry><entry xml:lang="en"><title type="html">If You Don’t Give the AI Direction, It Can’t Drive You to the Destination</title><link href="http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine/" rel="alternate" type="text/html" title="If You Don’t Give the AI Direction, It Can’t Drive You to the Destination" /><published>2026-03-16T08:00:00+08:00</published><updated>2026-03-16T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine/">&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
+&lt;p&gt;This is the first one.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="Prompt Engineering" /><category term="Knowledge Base" /><category term="Gumroad" /><category term="Claude" /><summary type="html">I’ve been thinking about a product format that sits somewhere between a gist, a spec, and a starter kit.</summary></entry><entry xml:lang="zh"><title type="html">你沒給 AI 正確方向，它就載不到你要去的地方</title><link href="http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine/" rel="alternate" type="text/html" title="你沒給 AI 正確方向，它就載不到你要去的地方" /><published>2026-03-16T08:00:00+08:00</published><updated>2026-03-16T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine</id><content type="html" xml:base="http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine/">&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
+
+&lt;p&gt;你沒給 AI 正確方向，它就載不到你要去的地方。&lt;/p&gt;
+
+&lt;p&gt;我今天踩了一個很典型、也很容易被忽略的坑：&lt;/p&gt;
+
+&lt;p&gt;我叫 AI agent：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;請參考 Figma Make share link 中的內容，進行實作。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;聽起來很合理對吧？&lt;/p&gt;
+
+&lt;p&gt;但問題是：&lt;strong&gt;share link 裡的內容，其實是 demo，不是產品的行為規格（behavior spec）&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;我到底給錯了什麼&quot;&gt;我到底給錯了什麼？&lt;/h3&gt;
+
+&lt;p&gt;為了 demo 快，我在 Figma Make 裡把 app 的起始畫面直接做成 main tab bar。&lt;/p&gt;
+
+&lt;p&gt;於是 AI 真的超級「聽話」：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;它把 demo 當成真需求&lt;/li&gt;
+  &lt;li&gt;直接實作成「一進 app 就進主頁」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;這在 demo 上看起來沒問題。&lt;/p&gt;
+
+&lt;p&gt;但在 mobile app 上，這通常不是你想要的真實行為。&lt;/p&gt;
+
+&lt;h3 id=&quot;標準的-mobile-app-launch-其實是一個-state-machine&quot;&gt;標準的 mobile app launch 其實是一個 state machine&lt;/h3&gt;
+
+&lt;p&gt;在 mobile app 上，標準手法通常是：app launch 後先進入一個 Launch Screen 的 activity / view controller，然後在這個實例物件中做判斷。&lt;/p&gt;
+
+&lt;p&gt;例如一個常見流程會是：&lt;/p&gt;
+
+&lt;p&gt;1) 強迫更新 / 建議更新 / 可正常使用&lt;/p&gt;
+
+&lt;p&gt;2) 在「可正常使用」之後，才檢查是否可以 auto login&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if yes → go to main tab bar&lt;/li&gt;
+  &lt;li&gt;if not → go to login page&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;這些條件與分支，才是「方向」。&lt;/p&gt;
+
+&lt;p&gt;UI 長什麼樣，是結果。&lt;/p&gt;
+
+&lt;h3 id=&quot;我為什麼會一直以為-ai-在亂改&quot;&gt;我為什麼會一直以為 AI 在亂改？&lt;/h3&gt;
+
+&lt;p&gt;我一開始一直以為：AI 沒有照我的指令做、一直改掉我的實作。&lt;/p&gt;
+
+&lt;p&gt;最後我去檢查 Figma Make build 起來的 React 網站，才發現網站的流程就是如此設計。&lt;/p&gt;
+
+&lt;p&gt;換句話說：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;我給 AI 的「世界」就是那個 demo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;AI 只能照我給的可見狀態去估&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;它沒錯。&lt;/p&gt;
+
+&lt;p&gt;錯的是我一開始給的方向：我給的是 demo，不是行為規格。&lt;/p&gt;
+
+&lt;h3 id=&quot;結論要-ai-做對-ui先把行為規格寫清楚&quot;&gt;結論：要 AI 做對 UI，先把「行為規格」寫清楚&lt;/h3&gt;
+
+&lt;p&gt;你要 AI 做對 UI，先定義「行為」：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;入口狀態（entry states）&lt;/li&gt;
+  &lt;li&gt;分支條件（branching conditions）&lt;/li&gt;
+  &lt;li&gt;成功條件（success criteria）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;UI 是結果；流程才是方向。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;editor&quot;&gt;Editor&lt;/h2&gt;
+
+&lt;p&gt;這篇要傳達的核心很清楚，也符合 builder 角度：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;不是模型問題，是 workflow/spec 的問題&lt;/li&gt;
+  &lt;li&gt;有具體工具（Figma Make）與具體流程（update → auth → main/login）支撐可信度&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我在 final 只做兩個「不改意思」的微調：
+1) 讓「demo vs spec」對比更快出現（更像文章的主線）
+2) 結尾再強化一次可複用的 checklist&lt;/p&gt;
+
+&lt;h2 id=&quot;final&quot;&gt;Final&lt;/h2&gt;
+
+&lt;p&gt;你沒給 AI 正確方向，它就載不到你要去的地方。&lt;/p&gt;
+
+&lt;p&gt;我今天踩了一個很典型、也很容易被忽略的坑。&lt;/p&gt;
+
+&lt;p&gt;我叫 AI agent：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;請參考 Figma Make share link 中的內容，進行實作。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;聽起來很合理。&lt;/p&gt;
+
+&lt;p&gt;但我後來才發現：&lt;strong&gt;share link 裡的內容，其實是 demo，不是產品的行為規格（behavior spec）&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;為了 demo 快，我在 Figma Make 裡把 app 的起始畫面直接做成 main tab bar。&lt;/p&gt;
+
+&lt;p&gt;於是 AI 真的超級「聽話」：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;它把 demo 當成真需求&lt;/li&gt;
+  &lt;li&gt;直接實作成「一進 app 就進主頁」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;但在 mobile app 上，標準的啟動流程通常不是「看 UI 長什麼樣」，而是先跑一個 state machine。&lt;/p&gt;
+
+&lt;p&gt;一般做法是：app launch 後先進入 Launch Screen 的 activity / view controller，然後在這個實例物件中做判斷，例如：&lt;/p&gt;
+
+&lt;p&gt;1) 強迫更新 / 建議更新 / 可正常使用&lt;/p&gt;
+
+&lt;p&gt;2) 在「可正常使用」之後，才檢查是否可以 auto login&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if yes → go to main tab bar&lt;/li&gt;
+  &lt;li&gt;if not → go to login page&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我一開始一直以為：AI 沒有照我的指令做、一直改掉我的實作。&lt;/p&gt;
+
+&lt;p&gt;最後我去檢查 Figma Make build 起來的 React 網站，才發現網站的流程就是如此設計。&lt;/p&gt;
+
+&lt;p&gt;換句話說：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;我給 AI 的「世界」就是那個 demo&lt;/li&gt;
+  &lt;li&gt;AI 只能照我給的可見狀態去估&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;它沒錯。&lt;/p&gt;
+
+&lt;p&gt;錯的是我一開始給的方向：我給的是 demo，不是行為規格。&lt;/p&gt;
+
+&lt;p&gt;結論很簡單：&lt;strong&gt;要 AI 做對 UI，先把行為規格寫清楚。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;一個最小 checklist：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;入口狀態（entry states）&lt;/li&gt;
+  &lt;li&gt;分支條件（branching conditions）&lt;/li&gt;
+  &lt;li&gt;成功條件（success criteria）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;UI 是結果；流程才是方向。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Product" /><category term="Mobile" /><category term="Workflow" /><summary type="html">Writer</summary></entry><entry xml:lang="en"><title type="html">If You Don’t Give the AI Direction, It Can’t Drive You to the Destination</title><link href="http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine/" rel="alternate" type="text/html" title="If You Don’t Give the AI Direction, It Can’t Drive You to the Destination" /><published>2026-03-16T08:00:00+08:00</published><updated>2026-03-16T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine</id><content type="html" xml:base="http://localhost:4000/en/programming/ai-direction-demo-spec-state-machine/">&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
 
 &lt;p&gt;If you don’t give the AI direction, it can’t drive you to the destination.&lt;/p&gt;
 
@@ -642,151 +954,7 @@ Not a bloated template bundle.&lt;/p&gt;
 
 &lt;p&gt;UI is the outcome.&lt;/p&gt;
 
-&lt;p&gt;The flow is the direction.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Product" /><category term="Mobile" /><category term="Workflow" /><summary type="html">Writer</summary></entry><entry xml:lang="zh"><title type="html">你沒給 AI 正確方向，它就載不到你要去的地方</title><link href="http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine/" rel="alternate" type="text/html" title="你沒給 AI 正確方向，它就載不到你要去的地方" /><published>2026-03-16T08:00:00+08:00</published><updated>2026-03-16T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine</id><content type="html" xml:base="http://localhost:4000/zh/programming/ai-direction-demo-spec-state-machine/">&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
-
-&lt;p&gt;你沒給 AI 正確方向，它就載不到你要去的地方。&lt;/p&gt;
-
-&lt;p&gt;我今天踩了一個很典型、也很容易被忽略的坑：&lt;/p&gt;
-
-&lt;p&gt;我叫 AI agent：&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;請參考 Figma Make share link 中的內容，進行實作。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;聽起來很合理對吧？&lt;/p&gt;
-
-&lt;p&gt;但問題是：&lt;strong&gt;share link 裡的內容，其實是 demo，不是產品的行為規格（behavior spec）&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;h3 id=&quot;我到底給錯了什麼&quot;&gt;我到底給錯了什麼？&lt;/h3&gt;
-
-&lt;p&gt;為了 demo 快，我在 Figma Make 裡把 app 的起始畫面直接做成 main tab bar。&lt;/p&gt;
-
-&lt;p&gt;於是 AI 真的超級「聽話」：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;它把 demo 當成真需求&lt;/li&gt;
-  &lt;li&gt;直接實作成「一進 app 就進主頁」&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;這在 demo 上看起來沒問題。&lt;/p&gt;
-
-&lt;p&gt;但在 mobile app 上，這通常不是你想要的真實行為。&lt;/p&gt;
-
-&lt;h3 id=&quot;標準的-mobile-app-launch-其實是一個-state-machine&quot;&gt;標準的 mobile app launch 其實是一個 state machine&lt;/h3&gt;
-
-&lt;p&gt;在 mobile app 上，標準手法通常是：app launch 後先進入一個 Launch Screen 的 activity / view controller，然後在這個實例物件中做判斷。&lt;/p&gt;
-
-&lt;p&gt;例如一個常見流程會是：&lt;/p&gt;
-
-&lt;p&gt;1) 強迫更新 / 建議更新 / 可正常使用&lt;/p&gt;
-
-&lt;p&gt;2) 在「可正常使用」之後，才檢查是否可以 auto login&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;if yes → go to main tab bar&lt;/li&gt;
-  &lt;li&gt;if not → go to login page&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;這些條件與分支，才是「方向」。&lt;/p&gt;
-
-&lt;p&gt;UI 長什麼樣，是結果。&lt;/p&gt;
-
-&lt;h3 id=&quot;我為什麼會一直以為-ai-在亂改&quot;&gt;我為什麼會一直以為 AI 在亂改？&lt;/h3&gt;
-
-&lt;p&gt;我一開始一直以為：AI 沒有照我的指令做、一直改掉我的實作。&lt;/p&gt;
-
-&lt;p&gt;最後我去檢查 Figma Make build 起來的 React 網站，才發現網站的流程就是如此設計。&lt;/p&gt;
-
-&lt;p&gt;換句話說：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;我給 AI 的「世界」就是那個 demo&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;AI 只能照我給的可見狀態去估&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;它沒錯。&lt;/p&gt;
-
-&lt;p&gt;錯的是我一開始給的方向：我給的是 demo，不是行為規格。&lt;/p&gt;
-
-&lt;h3 id=&quot;結論要-ai-做對-ui先把行為規格寫清楚&quot;&gt;結論：要 AI 做對 UI，先把「行為規格」寫清楚&lt;/h3&gt;
-
-&lt;p&gt;你要 AI 做對 UI，先定義「行為」：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;入口狀態（entry states）&lt;/li&gt;
-  &lt;li&gt;分支條件（branching conditions）&lt;/li&gt;
-  &lt;li&gt;成功條件（success criteria）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;UI 是結果；流程才是方向。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;editor&quot;&gt;Editor&lt;/h2&gt;
-
-&lt;p&gt;這篇要傳達的核心很清楚，也符合 builder 角度：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;不是模型問題，是 workflow/spec 的問題&lt;/li&gt;
-  &lt;li&gt;有具體工具（Figma Make）與具體流程（update → auth → main/login）支撐可信度&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我在 final 只做兩個「不改意思」的微調：
-1) 讓「demo vs spec」對比更快出現（更像文章的主線）
-2) 結尾再強化一次可複用的 checklist&lt;/p&gt;
-
-&lt;h2 id=&quot;final&quot;&gt;Final&lt;/h2&gt;
-
-&lt;p&gt;你沒給 AI 正確方向，它就載不到你要去的地方。&lt;/p&gt;
-
-&lt;p&gt;我今天踩了一個很典型、也很容易被忽略的坑。&lt;/p&gt;
-
-&lt;p&gt;我叫 AI agent：&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;請參考 Figma Make share link 中的內容，進行實作。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;聽起來很合理。&lt;/p&gt;
-
-&lt;p&gt;但我後來才發現：&lt;strong&gt;share link 裡的內容，其實是 demo，不是產品的行為規格（behavior spec）&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;為了 demo 快，我在 Figma Make 裡把 app 的起始畫面直接做成 main tab bar。&lt;/p&gt;
-
-&lt;p&gt;於是 AI 真的超級「聽話」：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;它把 demo 當成真需求&lt;/li&gt;
-  &lt;li&gt;直接實作成「一進 app 就進主頁」&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;但在 mobile app 上，標準的啟動流程通常不是「看 UI 長什麼樣」，而是先跑一個 state machine。&lt;/p&gt;
-
-&lt;p&gt;一般做法是：app launch 後先進入 Launch Screen 的 activity / view controller，然後在這個實例物件中做判斷，例如：&lt;/p&gt;
-
-&lt;p&gt;1) 強迫更新 / 建議更新 / 可正常使用&lt;/p&gt;
-
-&lt;p&gt;2) 在「可正常使用」之後，才檢查是否可以 auto login&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;if yes → go to main tab bar&lt;/li&gt;
-  &lt;li&gt;if not → go to login page&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我一開始一直以為：AI 沒有照我的指令做、一直改掉我的實作。&lt;/p&gt;
-
-&lt;p&gt;最後我去檢查 Figma Make build 起來的 React 網站，才發現網站的流程就是如此設計。&lt;/p&gt;
-
-&lt;p&gt;換句話說：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;我給 AI 的「世界」就是那個 demo&lt;/li&gt;
-  &lt;li&gt;AI 只能照我給的可見狀態去估&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;它沒錯。&lt;/p&gt;
-
-&lt;p&gt;錯的是我一開始給的方向：我給的是 demo，不是行為規格。&lt;/p&gt;
-
-&lt;p&gt;結論很簡單：&lt;strong&gt;要 AI 做對 UI，先把行為規格寫清楚。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;一個最小 checklist：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;入口狀態（entry states）&lt;/li&gt;
-  &lt;li&gt;分支條件（branching conditions）&lt;/li&gt;
-  &lt;li&gt;成功條件（success criteria）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;UI 是結果；流程才是方向。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Product" /><category term="Mobile" /><category term="Workflow" /><summary type="html">Writer</summary></entry><entry xml:lang="zh"><title type="html">Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)</title><link href="http://localhost:4000/zh/programming/comet/" rel="alternate" type="text/html" title="Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/comet</id><content type="html" xml:base="http://localhost:4000/zh/programming/comet/">&lt;h1 id=&quot;ai-瀏覽器-comet讓你上網像開外掛一樣快&quot;&gt;AI 瀏覽器 Comet：讓你上網像開外掛一樣快&lt;/h1&gt;
+&lt;p&gt;The flow is the direction.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><category term="Product" /><category term="Mobile" /><category term="Workflow" /><summary type="html">Writer</summary></entry><entry xml:lang="zh"><title type="html">Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)</title><link href="http://localhost:4000/zh/programming/comet/" rel="alternate" type="text/html" title="Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/zh/programming/comet</id><content type="html" xml:base="http://localhost:4000/zh/programming/comet/">&lt;h1 id=&quot;ai-瀏覽器-comet讓你上網像開外掛一樣快&quot;&gt;AI 瀏覽器 Comet：讓你上網像開外掛一樣快&lt;/h1&gt;
 
 &lt;p&gt;你有沒有想過，瀏覽器不只是開網頁那麼簡單？現在有一款叫 &lt;strong&gt;Comet&lt;/strong&gt; 的 AI 瀏覽器，正在讓「上網查資料」這件事變得更聰明、更有效率。&lt;br /&gt;
 話不多說，我幫你快速介紹這個最近爆紅的 AI 工具是什麼、能幹嘛、要注意什麼。&lt;/p&gt;
@@ -841,105 +1009,4 @@ Comet 會分析你瀏覽的內容來提供建議
 &lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;推薦碼連結&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;想感受「AI 幫你上網」的威力？趁現在就試試看。&lt;br /&gt;
-說不定下次查資料，你會懷疑自己是不是開了外掛。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">AI 瀏覽器 Comet：讓你上網像開外掛一樣快</summary></entry><entry xml:lang="en"><title type="html">Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)</title><link href="http://localhost:4000/en/programming/comet/" rel="alternate" type="text/html" title="Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)" /><published>2025-10-15T08:00:00+08:00</published><updated>2025-10-15T08:00:00+08:00</updated><id>http://localhost:4000/en/programming/comet</id><content type="html" xml:base="http://localhost:4000/en/programming/comet/">&lt;h1 id=&quot;comet-the-ai-browser-that-makes-web-surfing-feel-like-a-power-up&quot;&gt;Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up&lt;/h1&gt;
-
-&lt;p&gt;Have you ever thought that a browser could do more than just open websites?&lt;br /&gt;
-Now there’s an AI browser called &lt;strong&gt;Comet&lt;/strong&gt;, designed to make “researching online” smarter and more efficient.&lt;br /&gt;
-Let’s dive right in — here’s what this trending AI tool is, what it can do, and what you should pay attention to.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;1-what-is-comet&quot;&gt;1. What Is Comet?&lt;/h2&gt;
-
-&lt;p&gt;Comet is an AI browser created by &lt;strong&gt;Perplexity&lt;/strong&gt;, built around the concept of “thinking while browsing.”&lt;br /&gt;
-In short, it doesn’t just open pages — it helps you summarize, organize, and compare information, so finding what you need no longer feels like searching for a needle in a haystack.&lt;br /&gt;
-It’s built on the Chromium framework, meaning it supports Chrome extensions and requires almost no learning curve.&lt;br /&gt;
-Originally limited to paid users, Comet is now available for everyone to download for free.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;2-what-can-it-do&quot;&gt;2. What Can It Do?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;AI Search Summaries&lt;/strong&gt;: Instead of giving you a list of links, Comet provides concise summaries with cited sources.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;AI Assistant Sidebar&lt;/strong&gt;: Ask questions, compare data, translate content, or explore related topics right from the page.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Automation Tools&lt;/strong&gt;: With your permission, it can help you compare prices, organize schedules, or send emails.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cross-Tab Organization&lt;/strong&gt;: Even with multiple tabs open, Comet can automatically summarize and connect their content.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;3-why-people-use-it&quot;&gt;3. Why People Use It&lt;/h2&gt;
-
-&lt;p&gt;Comet feels incredibly smooth to use.&lt;br /&gt;
-You no longer need to juggle ten tabs for research, note-taking, and fact-checking — the AI connects everything for you.&lt;br /&gt;
-Most impressively, it’s not just a search tool; it’s like a &lt;strong&gt;shared brain&lt;/strong&gt; that thinks and makes decisions alongside you.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;4-a-note-on-security-and-privacy&quot;&gt;4. A Note on Security and Privacy&lt;/h2&gt;
-
-&lt;p&gt;While AI tools are convenient, always stay alert about &lt;strong&gt;privacy and data security&lt;/strong&gt;.&lt;br /&gt;
-Comet analyzes your browsing activity to generate suggestions.&lt;br /&gt;
-In short: &lt;strong&gt;don’t let AI handle sensitive or confidential operations&lt;/strong&gt; — keeping human judgment in the loop is always the safest choice.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;5-final-reminder&quot;&gt;5. Final Reminder&lt;/h2&gt;
-
-&lt;p&gt;If you’d like to try this AI browser, you can download it directly from the official website.&lt;br /&gt;
-Even better, I have a &lt;strong&gt;personal referral code&lt;/strong&gt; — use my link &lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://pplx.ai/atimis193889&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; to unlock early access or get extra usage credits.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;/assets/programming/commet/commet-image.png&quot; alt=&quot;Comet AI Browser&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://pplx.ai/atimis193889&quot;&gt;Referral Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Want to see how powerful “AI-assisted browsing” can be?&lt;br /&gt;
-Try it now — next time you’re doing research, you might just feel like you’ve turned on a cheat code.&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">Comet: The AI Browser That Makes Web Surfing Feel Like a Power-Up</summary></entry><entry xml:lang="en"><title type="html">Using Plan Mode to Let Claude Code Plan Before Implementation</title><link href="http://localhost:4000/en/programming/think-mode-on-claude-code/" rel="alternate" type="text/html" title="Using Plan Mode to Let Claude Code Plan Before Implementation" /><published>2025-08-07T12:05:00+08:00</published><updated>2025-08-07T12:05:00+08:00</updated><id>http://localhost:4000/en/programming/think-mode-on-claude-code</id><content type="html" xml:base="http://localhost:4000/en/programming/think-mode-on-claude-code/">&lt;p&gt;When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-switch-to-plan-mode---shift--tab&quot;&gt;How to Switch to Plan Mode - Shift + Tab&lt;/h2&gt;
-
-&lt;p&gt;In Claude Code, you can use the shortcut Shift + Tab to switch modes. The first switch is to auto accept mode. You can see the prompt at the bottom of the terminal to know which mode you’re currently in. Press Shift + Tab a second time to enter plan mode. When you enable plan mode, Claude enters a state focused on thinking and planning. At this time, Claude Code will not modify your code but will list the steps it will take and the implementation blueprint. So you can safely conduct various confirmations and divergent thinking.&lt;/p&gt;
-
-&lt;h3 id=&quot;first-press-of-shift--tab---enter-auto-accept-mode&quot;&gt;First Press of Shift + Tab - Enter Auto Accept Mode&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-accept-mode.png&quot; alt=&quot;auto accept mode&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;use-shift--tab-to-enter-plan-mode&quot;&gt;Use Shift + Tab to Enter Plan Mode&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/claude-code-think-mode.png&quot; alt=&quot;claude code think mode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;advantages-of-think-mode&quot;&gt;Advantages of Think Mode&lt;/h2&gt;
-
-&lt;h3 id=&quot;plan-first-then-execute&quot;&gt;Plan First, Then Execute&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/think-mode-request-prompt.png&quot; alt=&quot;think mode request prompt&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When you make a request to Claude in think mode, Claude will first analyze and think about your requirements, then provide a detailed plan blueprint.&lt;/p&gt;
-
-&lt;h3 id=&quot;view-implementation-blueprint&quot;&gt;View Implementation Blueprint&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/plan-mode-blueprint.png&quot; alt=&quot;plan mode blueprint&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In plan mode, Claude will display a complete implementation plan, allowing you to understand the entire implementation process before actual execution.&lt;/p&gt;
-
-&lt;h3 id=&quot;execute-after-confirmation&quot;&gt;Execute After Confirmation&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/programming/claude-code-think-mode/action-after-planing.png&quot; alt=&quot;action after planning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When you confirm the plan, Claude will start executing actual code modifications based on the previous planning.&lt;/p&gt;
-
-&lt;h3 id=&quot;personal-thoughts&quot;&gt;Personal Thoughts&lt;/h3&gt;
-&lt;p&gt;Before knowing about plan mode, I used prompts to prevent Claude Code from directly modifying code, instead asking it to give me a general direction and steps first. However, when using prompts alone, sometimes Claude Code would still directly initiate modifications. Moreover, since I mostly develop iOS apps, it would often directly execute Xcode build or other Xcode CLI commands.&lt;/p&gt;
-
-&lt;p&gt;In plan mode, I feel the quality of modification context has improved, and the solutions it proposes in plan mode have preserved the concept of Canvas or artifacts in the UI, allowing for minor modifications to the same file without affecting the overall structure and logic.&lt;/p&gt;
-
-&lt;p&gt;This is what I like most about it. After all, I need to get things done right first before I can start asking AI to do things well.&lt;/p&gt;
-
-&lt;h2 id=&quot;related-articles&quot;&gt;Related Articles&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/programming/paste-capture-image-to-claude-code/&quot;&gt;How to Paste Screen Captures to Claude Code Editor on macOS&lt;/a&gt; (English)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/zh/programming/paste-capture-image-to-claude-code/&quot;&gt;將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用&lt;/a&gt; (Chinese)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="Claude" /><category term="AI" /><category term="AI Agent" /><summary type="html">When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code’s plan before letting Claude Code execute.</summary></entry></feed>
+說不定下次查資料，你會懷疑自己是不是開了外掛。&lt;/p&gt;</content><author><name>Marvin Lin</name></author><category term="programming" /><category term="AI" /><category term="AI Agent" /><summary type="html">AI 瀏覽器 Comet：讓你上網像開外掛一樣快</summary></entry></feed>

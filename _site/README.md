@@ -4,6 +4,26 @@
 
 [![網站的圖片](./assets/landing.png)](https://moonandeye.github.io/)
 
+## 在 localhost 啟動
+
+依賴 Ruby + Bundler + Jekyll（鎖在 `github-pages` 228）。
+
+```bash
+# 1. 安裝依賴（第一次 clone 後或更新 Gemfile 時跑）
+bundle install
+
+# 2. 啟動本地 server，預設網址 http://localhost:4000
+bundle exec jekyll serve
+
+# 草稿一起預覽
+bundle exec jekyll serve --drafts
+
+# 想換 port
+bundle exec jekyll serve --port 4001
+```
+
+熱更新已內建，改 `_posts/`、`_layouts/`、`_includes/` 後重新整理瀏覽器即可；改到 `_config.yml` 要重啟 server。
+
 ## 客制化 Jekyll 加上去的 script
 ### 每月贊助的 banner，現在放在左邊 side bar
 檔名: joinMembership.html
