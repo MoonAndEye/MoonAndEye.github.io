@@ -21,30 +21,3 @@ permalink: /finance/:title:output_ext
 
 東芝董事會尚未正式回應收購要約，但有消息指出，部分董事對出價不滿意，認為低估了東芝的價值和潛力。此外，收購案還需要通過全球競爭法的審核，以及獲得日本政府的批准，因為東芝涉及國家安全和公共利益的敏感領域。
 
-## 東芝 Toshiba 股價
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_17551"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/TSE-6502/" rel="noopener" target="_blank"><span class="blue-text">6502 stock chart</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "autosize": true,
-  "symbol": "TSE:6502",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "light",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "container_id": "tradingview_17551"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
