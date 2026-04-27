@@ -1,81 +1,98 @@
 ---
 layout: single
 title: Cloudflare Tunnel：我現在會用它取代 ngrok
-date: 2026-04-27 21:00 +0800
+date: 2026-04-27 10:00 +0800
 category: programming
 author: Marvin Lin
-tags: [Cloudflare, Cloudflare Tunnel, ngrok, Reverse Proxy, AI Agent, Webhook]
-summary: 如果你已經在用 Cloudflare 做 domain 和部署，把 localhost 暴露到外網這件事，Cloudflare Tunnel 會比 ngrok 更順手。
+tags: [Cloudflare, Cloudflare Tunnel, ngrok, Webhook, AI Agent]
+summary: 如果 domain 已經放在 Cloudflare，當你需要把 localhost 穩定暴露到外網時，Cloudflare Tunnel 會比 ngrok 更像開發流程的一部分。
 ---
 
-在做 AI agent coding 的時候，有一件事比想像中還常發生：你需要把 local 跑的服務暴露到外網。
+AI agent coding 讓你很快把功能做出來，但進到整合測試時，會遇到一個很實際的問題：外部服務要怎麼打進你的 local 環境。
 
-可能是要接 webhook、可能是要讓朋友先試一下你還沒部署的版本、可能是要讓某個第三方服務 callback 進來。
+可能是要接 webhook、可能是要讓朋友先試一下還沒部署的版本、也可能是要讓某個第三方服務 callback 回你的開發環境。
 
-以前我都用 ngrok。它很有名、很方便、`ngrok http 3000` 就跑起來了。
+以前我都用 ngrok。它很有名，也真的很方便。`ngrok http 3000` 打下去，就會給你一個可以從外面連進來的 URL。
 
-但這幾年我幾乎都改用 Cloudflare Tunnel（`cloudflared`）。
+ngrok 到現在也還是很適合臨時測試。
 
-如果你已經跟著我前一篇 [AI Agent Coding - 為什麼我會推薦 Cloudflare]({% post_url /programming/zh/2026-04-23-ai-agent-coding-cloudflare %}) 把 domain 放在 Cloudflare 上，那 Cloudflare Tunnel 幾乎是順理成章的下一步。
+只是如果這件事不是只做一次，我現在會比較常改用 Cloudflare Tunnel（`cloudflared`）。
 
-## 反向代理是什麼，為什麼你會用到
+原因不是 ngrok 不好，而是我現在會把 domain、Pages、Workers 這些東西都放在 Cloudflare 上。既然正式部署的入口在 Cloudflare，開發時用的入口也放在 Cloudflare，整個流程會更直覺。
 
-簡單講：你 local 跑了一個服務在 `localhost:3000`，你希望外面的人可以透過一個公開網址打進來。
+如果你已經跟著我前一篇 [AI Agent Coding - 為什麼我會推薦 Cloudflare]({% post_url /programming/zh/2026-04-23-ai-agent-coding-cloudflare %}) 把 domain 放在 Cloudflare 上，那 Cloudflare Tunnel 幾乎是下一個自然會用到的工具。
 
-中間需要一個東西，把外網的 request 轉到你的 local。這就是反向代理在做的事。
+## 優點是把 domain、部署和開發入口放在一起
 
-ngrok 和 Cloudflare Tunnel 都是這個角色，差別在背後接的是誰。
+ngrok 和 Cloudflare Tunnel 解決的是同一類問題：你 local 跑了一個服務在 `localhost:3000`，但外部服務需要一個公開的 HTTPS URL 才能打進來。
 
-ngrok 接的是 ngrok 自己的網域和服務。Cloudflare Tunnel 接的是 Cloudflare 的整張全球網路，還有你自己在 Cloudflare 上的 domain。
+這件事 ngrok 可以，Cloudflare Tunnel 也可以。
 
-## ngrok 的問題
+我會選 Cloudflare Tunnel，是因為它可以直接接在我原本的 Cloudflare 流程裡。
 
-ngrok 真的方便，但用久了會遇到幾個痛點。
+domain 在 Cloudflare，前端可能用 Pages，後端可能用 Workers。現在連 local dev 的公開入口也可以用 `dev.example.com` 放在同一個地方管理。
 
-免費版每次重開，URL 都會換。你要拿這個 URL 去設定 webhook、貼給朋友、寫進 `.env`，重啟之後又要重來一次。
+這樣開發和部署就會比較像同一條路，而不是程式碼一套、正式部署一套、臨時測試網址又是另一套。
 
-要綁自己的 domain，要付錢。要讓多個人同時跑 tunnel，要付錢。要保留固定 URL，也要付錢。
+## ngrok 適合臨時測試，Cloudflare Tunnel 適合放進流程
 
-而且 ngrok 的免費版有連線數和流量限制。你做 AI agent 相關的 demo，常常會打很多 request，很容易撞到限制。
+ngrok 最大的優點就是快。
 
-這些都不是大問題，但會讓你每次都覺得「為什麼我又要處理一次這件事」。
+你不用先買 domain，不用先設定 DNS，也不用管 Cloudflare。只要本機服務跑在 `3000`，打一行指令就可以拿到公開網址。
 
-## Cloudflare Tunnel 為什麼順
+如果只是 demo 一次，或是臨時讓朋友看一下，ngrok 很適合。
 
-如果你的 domain 已經在 Cloudflare，`cloudflared` 可以做兩件 ngrok 免費版做不到的事：
+但如果這個開發入口會反覆出現，我會希望它跟自己的 domain 綁在一起。
 
-**第一，URL 是你自己的 domain。** 你可以指定 `dev.yourdomain.com` 直接打進你的 localhost。這個 URL 重開不會變，webhook 設定一次就好。
+例如 `dev.example.com` 打到 local service，`app.example.com` 是正式環境，`api.example.com` 是 Workers API。這些入口都在 Cloudflare 底下，DNS、HTTPS、routing 的設定都在同一個地方。
 
-**第二，沒有那種「免費版限制」的感覺。** Cloudflare Tunnel 對個人和小型使用基本上是免費的，沒有 ngrok 那種強迫你升級的牆。
+這就是我覺得 Cloudflare Tunnel 順的地方。它不是多一個臨時工具，而是把 local dev 也接進同一套產品基礎設施。
 
-設定也不複雜。裝 `cloudflared`，登入一次，建立一個 tunnel，把它指到 `localhost:3000`，最後在 Cloudflare DNS 上加一筆 CNAME。下次你只要 `cloudflared tunnel run` 就會跑起來。
+## 設定不難，但要把 localhost 指清楚
+
+如果你用 Cloudflare dashboard 建 tunnel，流程大概是：建立 tunnel、安裝並執行 Cloudflare 給你的 `cloudflared` command，然後新增一個 published application，把 `dev.example.com` 指到 `http://localhost:3000`。
+
+如果用本機 config 管理，概念會像這樣：
 
 ```bash
 brew install cloudflared
 cloudflared tunnel login
 cloudflared tunnel create my-dev
-cloudflared tunnel route dns my-dev dev.yourdomain.com
+cloudflared tunnel route dns my-dev dev.example.com
+```
+
+接著在 `~/.cloudflared/config.yml` 裡把 hostname 和 local service 接起來：
+
+```yaml
+tunnel: <TUNNEL_ID>
+credentials-file: /Users/you/.cloudflared/<TUNNEL_ID>.json
+
+ingress:
+  - hostname: dev.example.com
+    service: http://localhost:3000
+  - service: http_status:404
+```
+
+最後跑起 tunnel：
+
+```bash
 cloudflared tunnel run my-dev
 ```
 
-跑起來之後，`https://dev.yourdomain.com` 就會直接打到你 local 的 service，HTTPS 也已經幫你處理好了。
+之後 `https://dev.example.com` 就會打到你本機的 service，HTTPS 也會由 Cloudflare 處理。
 
 ## 對 AI agent coding 的差別
 
-當你在跑 AI agent 開發的流程，你常常需要快速驗證某個外部 callback、某個 webhook、某個第三方 API 的串接。
+AI agent coding 會讓你更快做出可以測的東西。
 
-如果你的 tunnel URL 一直在換，AI agent 幫你寫的設定就要一直改。`.env` 改、webhook 後台改、測試 script 改。
+以前可能要花幾天才會碰到 webhook、OAuth callback、第三方服務串接。現在 AI agent 幫你把功能先做出來，你很快就會需要一個可以從外面打進 local 的入口。
 
-如果你的 tunnel URL 固定是 `dev.yourdomain.com`，這些設定寫一次就成立。AI agent 也不用每次重新理解現在的 URL 是什麼。
+這時候 Cloudflare Tunnel 的價值，不是讓 AI 比較懂你的 context，而是讓你的開發、測試、部署路徑更一致。
 
-整個 dev loop 會比較安靜，你可以專心在功能本身上。
+你可以很自然地把 `https://dev.example.com` 當成開發入口，把 `https://app.example.com` 當成正式入口。兩者都在同一個 domain 和同一個 Cloudflare 帳號底下。
 
-## 什麼時候我還是會用 ngrok
+這樣做的好處是，你在測 webhook、測 callback、給別人試用時，不需要額外切到另一個服務去想公開 URL 的事情。
 
-如果只是要快速 demo 一次、或是你完全沒有 Cloudflare 帳號，ngrok 還是最快的選擇。打一個指令就有 URL，這件事 Cloudflare Tunnel 沒辦法贏。
+開發入口也是產品架構的一部分。當它跟 domain、Pages、Workers 放在一起，整個 side project 的路徑會比較清楚。
 
-但只要你會做超過一次的事情，或者你已經有 Cloudflare 上的 domain，我會直接推薦 Cloudflare Tunnel。
-
----
-
-下一篇，我想寫 Cloudflare Workers AI。它可以讓你在同一個平台上跑 AI 推論，搭配 Tunnel 和 Workers，整個 AI side project 的部署成本會低到很有趣。
+下一篇，我想寫 Cloudflare Workers AI。它可以讓你在同一個平台上測 AI 推論，搭配 Tunnel、Pages 和 Workers，整個 AI side project 的開發到部署路徑會變得更短。
