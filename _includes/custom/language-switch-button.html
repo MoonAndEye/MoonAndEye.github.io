@@ -1,12 +1,17 @@
-<!-- <button id="languageButton">
-    <i class="bi bi-translate"></i>
-</button>
-<div id="languagePopup" style="display: none;">
-    <ul>
-        <li><button onclick="changeLanguage('zh')">中文 (zh)</button></li>
-        <li><button onclick="changeLanguage('en')">English (en)</button></li>
-    </ul>
-</div> -->
-
-<button for="english" class="language-switch-btn" onclick="changeLanguage('en')">English</button>
-<button for="zh" class="language-switch-btn" onclick="changeLanguage('zh')">繁體中文</button>
+{% assign current_lang = page.lang | default: 'en' %}
+<nav class="language-switch" aria-label="Language switcher">
+    <button
+        type="button"
+        class="language-switch-btn{% if current_lang == 'en' %} is-active{% endif %}"
+        aria-pressed="{% if current_lang == 'en' %}true{% else %}false{% endif %}"
+        onclick="changeLanguage('en')">
+        English
+    </button>
+    <button
+        type="button"
+        class="language-switch-btn{% if current_lang == 'zh' %} is-active{% endif %}"
+        aria-pressed="{% if current_lang == 'zh' %}true{% else %}false{% endif %}"
+        onclick="changeLanguage('zh')">
+        繁體中文
+    </button>
+</nav>

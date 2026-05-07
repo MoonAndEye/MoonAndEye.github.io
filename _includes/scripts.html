@@ -32,26 +32,9 @@
 <!-- 以下是 Marvin 加上去的 -->
 <!-- i18n -->
 <script>
-  document.getElementById('languageButton').addEventListener('click', function () {
-    var button = this; // 獲取按鈕本身
-    var popup = document.getElementById('languagePopup');
-
-    // 獲取按鈕的位置和尺寸
-    var rect = button.getBoundingClientRect();
-
-    // 設置彈窗的位置：按鈕的右下方
-    popup.style.position = 'absolute';
-    popup.style.left = rect.left + 'px'; // 按鈕右側
-    popup.style.top = rect.bottom + 'px'; // 按鈕下方
-
-    popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
-  });
-
   function changeLanguage(lang) {
-    console.log('切換語言至：' + lang);
     document.documentElement.lang = lang;
-    // 這裡可以添加切換語言的實際功能
-    var baseUrl = window.location.origin; // 获取当前网站的根URL
-    window.location.href = baseUrl + '/' + lang; // 跳转到指定语言版本的页面
+    var baseUrl = window.location.origin;
+    window.location.href = baseUrl + '/' + lang;
   }
 </script>
