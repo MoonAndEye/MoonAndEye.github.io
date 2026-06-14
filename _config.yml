@@ -69,7 +69,7 @@ paginate_path: "/page:num/"
 author:
   name             : "Marvin Lin" # 側邊作者名稱
   avatar           : "/assets/author/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Developers who enjoy Swift" # 側邊作者簡介
+  bio              : "Swift developer. AI-agent workflow builder." # 側邊作者簡介
   location         : "Taipei, Taiwan"
   links:
     - label: "Email"

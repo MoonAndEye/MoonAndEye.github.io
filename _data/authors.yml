@@ -2,5 +2,5 @@
 marvin_lin:
     name: Marvin Lin
     avatar: "/assets/author/avatar.jpg"
-    bio: "Developers who like Swift" # 側邊作者簡介
+    bio: "Swift developer. AI-agent workflow builder." # 側邊作者簡介
     location: "Taiwan"

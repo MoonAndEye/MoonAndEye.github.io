@@ -18,8 +18,9 @@ I like Apple-related products and enjoy writing in Swift. Besides Swift, I also 
 
     <div>
       <h3 id="marvin-builds-channel-heading"><a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Marvin Builds</a></h3>
-      <p>Marvin Builds is my YouTube channel about AI-agent workflows: how agents read, run, fix, and verify real tasks, and how builders can stay in control while delegating the messy parts. The channel focuses on practical experiments with AI tools, coding agents, automation, and the details that turn demos into workflows people can actually use.</p>
-      <p><a class="btn btn--danger" href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Watch Marvin Builds on YouTube</a></p>
+      <p>Marvin Builds is my YouTube channel about real AI-agent workflows. I hand agents real tasks, watch how they read requirements, run code, fix mistakes, deploy, and verify the results.</p>
+      <p>It is not just about showing demos. I use the channel to document how AI tools, coding agents, and automation can become repeatable workflows that builders can actually control and reuse.</p>
+      <p><a class="btn btn--danger" href="https://www.youtube.com/@MarvinBuildsAI/videos" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Watch the latest Marvin Builds videos</a></p>
     </div>
   </div>
 </section>
