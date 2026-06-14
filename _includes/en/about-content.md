@@ -6,6 +6,26 @@ I like Apple-related products and enjoy writing in Swift. Besides Swift, I also 
 
 ---
 
+<section class="marvin-builds-channel" aria-labelledby="marvin-builds-channel-heading">
+  <a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">
+    <img class="marvin-builds-channel__banner" src="/assets/about/marvin-builds-ai-channel-banner.jpg" alt="Marvin Builds YouTube channel banner: AI tools. Agent workflows. Practical experiments.">
+  </a>
+
+  <div class="marvin-builds-channel__summary">
+    <a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" aria-label="Open Marvin Builds on YouTube" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">
+      <img class="marvin-builds-channel__avatar" src="/assets/about/marvin-builds-ai-avatar.png" alt="Marvin Builds channel avatar">
+    </a>
+
+    <div>
+      <h3 id="marvin-builds-channel-heading"><a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Marvin Builds</a></h3>
+      <p>Marvin Builds is my YouTube channel about AI-agent workflows: how agents read, run, fix, and verify real tasks, and how builders can stay in control while delegating the messy parts. The channel focuses on practical experiments with AI tools, coding agents, automation, and the details that turn demos into workflows people can actually use.</p>
+      <p><a class="btn btn--danger" href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Watch Marvin Builds on YouTube</a></p>
+    </div>
+  </div>
+</section>
+
+---
+
 ### [Earnings Rosetta](https://earningsrosetta.com?utm_source=blog){:target="_blank"}
 
 Earnings Rosetta is a platform focused on U.S. stock market earnings calls. The site collects verbatim transcripts from earnings calls of U.S. companies and uses AI to automatically generate key summaries, enabling users to quickly grasp the latest updates and highlights from earnings calls and make more informed investment decisions.

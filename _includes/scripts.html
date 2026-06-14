@@ -34,7 +34,17 @@
 <script>
   function changeLanguage(lang) {
     document.documentElement.lang = lang;
-    var baseUrl = window.location.origin;
-    window.location.href = baseUrl + '/' + lang;
+    var currentPath = window.location.pathname;
+    var targetPath;
+
+    if (currentPath === '/' || currentPath === '') {
+      targetPath = '/' + lang + '/';
+    } else if (currentPath.match(/^\/(en|zh)(\/|$)/)) {
+      targetPath = currentPath.replace(/^\/(en|zh)(?=\/|$)/, '/' + lang);
+    } else {
+      targetPath = '/' + lang + currentPath;
+    }
+
+    window.location.href = window.location.origin + targetPath + window.location.search + window.location.hash;
   }
 </script>

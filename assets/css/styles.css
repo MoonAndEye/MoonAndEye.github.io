@@ -111,6 +111,51 @@
     color: #fff;
 }
 
+.marvin-builds-channel {
+    margin: 2rem 0;
+}
+
+.marvin-builds-channel__banner {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(31, 35, 40, 0.12);
+}
+
+.marvin-builds-channel__summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 750px;
+    margin-top: 1rem;
+}
+
+.marvin-builds-channel__avatar {
+    display: block;
+    flex: 0 0 auto;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #d0d7de;
+}
+
+.marvin-builds-channel__summary > a {
+    flex: 0 0 auto;
+}
+
+.marvin-builds-channel__summary h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.marvin-builds-channel__summary p {
+    margin-bottom: 0.75rem;
+}
+
 @media (max-width: 480px) {
     .language-switch {
         width: 100%;
@@ -122,6 +167,15 @@
         flex: 1 1 0;
         min-width: 0;
         padding: 0 0.75rem;
+    }
+
+    .marvin-builds-channel__summary {
+        gap: 0.75rem;
+    }
+
+    .marvin-builds-channel__avatar {
+        width: 64px;
+        height: 64px;
     }
 }
 

@@ -10,6 +10,26 @@
 
 ---
 
+<section class="marvin-builds-channel" aria-labelledby="marvin-builds-channel-heading">
+  <a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">
+    <img class="marvin-builds-channel__banner" src="/assets/about/marvin-builds-ai-channel-banner.jpg" alt="Marvin Builds YouTube 頻道橫幅：AI tools. Agent workflows. Practical experiments.">
+  </a>
+
+  <div class="marvin-builds-channel__summary">
+    <a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" aria-label="開啟 Marvin Builds YouTube 頻道" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">
+      <img class="marvin-builds-channel__avatar" src="/assets/about/marvin-builds-ai-avatar.png" alt="Marvin Builds 頻道頭像">
+    </a>
+
+    <div>
+      <h3 id="marvin-builds-channel-heading"><a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Marvin Builds</a></h3>
+      <p>Marvin Builds 是我的 YouTube 頻道，聚焦 AI agent workflows：我會把真實任務交給 agent，觀察它如何閱讀需求、執行、修正錯誤，最後驗證結果。這不是只展示 demo，而是記錄我如何用 AI 工具、coding agents 和自動化，把看起來會動的東西整理成可以重複使用、也能由人掌控的工作流程。</p>
+      <p><a class="btn btn--danger" href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">前往 Marvin Builds YouTube 頻道</a></p>
+    </div>
+  </div>
+</section>
+
+---
+
 ### 黃財神網站 (已下架)
 
 一個接案做的網站，主要是用來介紹黃財神的相關資訊。
