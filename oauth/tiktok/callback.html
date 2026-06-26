@@ -1,0 +1,167 @@
+---
+permalink: /oauth/tiktok/callback
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>TikTok Authorization Complete | Marvin Builds AI</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --ink: #17202a;
+      --muted: #617083;
+      --line: #dbe2ea;
+      --accent: #00d4ff;
+      --accent-2: #ff4f67;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(0, 212, 255, 0.16), transparent 28rem),
+        radial-gradient(circle at 80% 10%, rgba(255, 79, 103, 0.12), transparent 24rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+    }
+
+    main {
+      width: min(680px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+      padding: clamp(28px, 6vw, 48px);
+    }
+
+    .mark {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: #071017;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: 0;
+      box-shadow: 0 10px 26px rgba(0, 212, 255, 0.24);
+    }
+
+    h1 {
+      margin: 24px 0 12px;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .status {
+      margin: 26px 0;
+      padding: 16px 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(0, 212, 255, 0.32);
+      background: rgba(0, 212, 255, 0.08);
+      color: #0f3f4a;
+      font-weight: 650;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.primary {
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+    }
+
+    small {
+      display: block;
+      margin-top: 24px;
+      color: #7a8797;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">MB</div>
+    <h1>TikTok authorization complete</h1>
+    <p>
+      Marvin Builds AI has received the TikTok authorization response.
+      You can close this tab and return to Codex.
+    </p>
+    <div class="status" id="status">Checking authorization response...</div>
+    <p>
+      This page does not exchange, store, or display your authorization code.
+      The local setup tool handles token exchange on Marvin's machine.
+    </p>
+    <div class="actions">
+      <a class="button primary" href="/">Back to Marv[in]sight</a>
+      <a class="button" href="/privacy/">Privacy Policy</a>
+    </div>
+    <small>
+      For safety, this callback page removes the authorization parameters from the address bar after loading.
+    </small>
+  </main>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var status = document.getElementById("status");
+
+      if (params.has("error")) {
+        status.textContent = "TikTok returned an authorization error. Return to Codex for the next step.";
+      } else if (params.has("code")) {
+        status.textContent = "Authorization code received. Return to Codex to finish token setup.";
+      } else {
+        status.textContent = "Ready for TikTok authorization callbacks.";
+      }
+
+      if (window.history && window.history.replaceState && window.location.search) {
+        window.history.replaceState({}, document.title, "/oauth/tiktok/callback");
+      }
+    })();
+  </script>
+</body>
+</html>
