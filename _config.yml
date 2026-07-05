@@ -20,27 +20,37 @@
 github: [metadata]
 
 title: Marv[in]sight
-locale: "en"
+locale: "en-US"
 email: atimis19@gmail.com
+tagline: "Swift、AI agent 工作流程與投資筆記" # SEO：首頁 title 會是「站名 | tagline」
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my blog, a vibrant space dedicated to software development, investment insights, personal experiences, and life stories. Join me as we explore a diverse array of topics. I aim to share my journey and insights, fostering a community where we can interact, learn from each other, and grow together.
+  Marvin Lin 的中英雙語部落格：Swift 與 iOS 開發、AI coding agents 工作流程、單元測試與投資筆記，從台北出發的開發者觀點。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://moonandeye.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: atimisMoon
+url: "https://www.marvinswift.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  MoonAndEye
+
+# SEO：Twitter card（jekyll-seo-tag 讀 twitter.username 產生 twitter:site）
+twitter:
+  username: atimisMoon
+
+# SEO：首頁 Person 結構化資料（jekyll-seo-tag 產生 sameAs）
+social:
+  type: Person
+  name: Marvin Lin
+  links:
+    - "https://x.com/atimisMoon"
+    - "https://github.com/MoonAndEye"
+    - "https://www.youtube.com/@MarvinBuildsAI"
 
 search: true
 author_profile: true
 
-google_analytics: "G-VLY0RSDRM1"
-
 languages: ["zh", "en"]
 
+# GA4 由 _layouts/default.html 內建的 gtag 片段處理；
+# theme 的 analytics provider 關閉，避免注入吃不下 GA4 ID 的舊版 analytics.js
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "G-VLY0RSDRM1"
-    anonymize_ip         : # true, false (default)
+  provider               : false
 
 header_pages:
   - about.md
@@ -71,6 +81,7 @@ author:
   avatar           : "/assets/author/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Swift developer. AI-agent workflow builder." # 側邊作者簡介
   location         : "Taipei, Taiwan"
+  twitter          : "atimisMoon" # SEO：jekyll-seo-tag 的 twitter:creator；也會在側邊欄顯示 X 連結
   links:
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
@@ -82,9 +93,6 @@ author:
     # - label: "HomePage"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://moonandeye.github.io/"
-    - label: "X"
-      icon: "fab fa-fw fa-x-twitter"
-      url: "https://x.com/atimisMoon"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -109,19 +117,22 @@ favicon: /assets/author/avatar.jpg
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - README.md
+  - draft-skills/
+  - notes/
+  - env/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
 # Defaults
 defaults:
+  # SEO：全站預設分享圖（jekyll-seo-tag 讀 page.image 產生 og:image）
+  - scope:
+      path: ""
+    values:
+      image: /assets/author/avatar.jpg
   # _posts
   - scope:
       path: ""
@@ -138,29 +149,30 @@ defaults:
       toc_icon: "book"  # corresponding Font Awesome icon name without the "fa" prefix
       toc_sticky: true   # enables sticky toc
       comments: true
+  # 注意：path 不能以斜線開頭，否則永遠匹配不到（SEO audit 發現的 bug）
   - scope:
-      path: "/en"
+      path: "en"
     values:
       toc_label: "On this page"
-      locale: en
+      locale: en-US
       lang: en
   - scope:
-      path: "/zh"
+      path: "zh"
     values:
-      locale: zh
+      locale: zh-TW
       lang: zh
   - scope:
       path: "_posts/**/zh"
-      types: posts
+      type: posts
     values:
-      locale: zh
+      locale: zh-TW
       lang: zh
       permalink: /zh/:categories/:title/
   - scope:
       path: "_posts/**/en"
-      types: posts
+      type: posts
     values:
       toc_label: "On this page"
-      locale: en
+      locale: en-US
       lang: en
       permalink: /en/:categories/:title/

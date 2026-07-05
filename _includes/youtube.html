@@ -1,0 +1,20 @@
+{%- comment -%}
+  YouTube 內嵌播放器。
+  參數：
+    id     — 單一影片的 video ID
+    list   — 播放清單 ID（與 id 擇一，list 優先）
+    shorts — true 時使用 9:16 直式外框
+    title  — iframe 的無障礙標題
+{%- endcomment -%}
+{%- if include.list -%}
+  {%- assign yt_embed_path = 'videoseries?list=' | append: include.list -%}
+{%- else -%}
+  {%- assign yt_embed_path = include.id -%}
+{%- endif -%}
+<div class="videos-embed {% if include.shorts %}videos-embed--shorts{% else %}videos-embed--wide{% endif %}">
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ yt_embed_path }}"
+          title="{{ include.title | default: 'YouTube video player' }}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>

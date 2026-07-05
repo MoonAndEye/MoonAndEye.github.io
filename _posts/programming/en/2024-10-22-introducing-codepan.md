@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [frontend, web development, portfolio]
 lang: en
 summary: Introducing CodePan, a platform for aspiring frontend developers to showcase their work, share ideas, and explore creative coding projects.
+description: Introducing CodePan, a platform for aspiring frontend developers to showcase their work, share ideas, and explore creative coding projects.
 ---
 
 Introducing **CodePan** — the perfect place for aspiring frontend developers to kickstart their journey, showcase their work, share ideas, and explore creative coding projects.

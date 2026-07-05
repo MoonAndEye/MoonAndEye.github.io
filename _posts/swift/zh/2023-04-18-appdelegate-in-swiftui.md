@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, SwiftUI]
 summary: Using SwiftUI init project, but you still need AppDelegate life cycle. This article helps you init AppDelegate in correct way.
+description: Using SwiftUI init project, but you still need AppDelegate life cycle. This article helps you init AppDelegate in correct way.
 permalink: /swift/:title:output_ext
 ---
 

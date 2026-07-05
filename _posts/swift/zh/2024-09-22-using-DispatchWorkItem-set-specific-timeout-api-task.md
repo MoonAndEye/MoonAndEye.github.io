@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Xcode, Swift]
 summary: how to use DispatchWorkItem to implement a 5-second timeout for an API task in Swift. By using DispatchWorkItem alongside DispatchQueue.asyncAfter, it ensures a clean and efficient timeout mechanism, avoiding the need to modify other API calls. The article highlights the advantages of DispatchWorkItem over using simple flags, such as better code structure, built-in cancellation, precise time control, and efficient resource management. A Swift code example is provided to implement this feature for a real-time inventory check API in an e-commerce app.
+description: how to use DispatchWorkItem to implement a 5-second timeout for an API task in Swift. By using DispatchWorkItem alongside DispatchQueue.asyncAfter, it…
 ---
 
 情境假設: 你正在開發一個電子商務的 iOS 應用。這個應用有多個功能，包括瀏覽商品、添加到購物車、查看庫存、下單等。其中，實時庫存查詢功能特別關鍵，因為它直接影響用戶的購買決策和體驗。

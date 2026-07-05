@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Twitter, Doge, crypto currency]
 summary: Twitter change icon to Doge. Elon Musk is playing new idea.
+description: Twitter change icon to Doge. Elon Musk is playing new idea.
 permalink: /programming/:title:output_ext
 ---
 

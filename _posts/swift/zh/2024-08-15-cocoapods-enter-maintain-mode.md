@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, Cocoapods, Xcode]
 summary: 自從 Apple 推出了 Swift Package Manager (SPM) 以後，CocoaPods 面臨了顯著的競爭壓力，這對其發展動力造成了影響。由於 SPM 是由 Apple 官方支持，直接整合在其開發環境中，這使得與 Apple 在包管理工具這一核心領域內進行競爭變得不太有利。Apple 的廣泛影響力和對其產品的深度整合，使得開發者傾向於選擇 SPM 作為依賴管理工具，這直接影響了 CocoaPods 的市場份額與相關的開發投入。因此，面對來自 Apple 的競爭，CocoaPods 在策略上需要做出調整，以適應不斷變化的開發生態。
+description: 自從 Apple 推出了 Swift Package Manager (SPM) 以後，CocoaPods 面臨了顯著的競爭壓力，這對其發展動力造成了影響。由於 SPM 是由 Apple 官方支持，直接整合在其開發環境中，這使得與 Apple 在包管理工具這一核心領域內進行競爭變得不太有利。Apple…
 ---
 
 ## Cocoapods 進入 maintain mode，但一年還會發佈兩次以上，讓 pod 可以跟上 Xcode 的更新

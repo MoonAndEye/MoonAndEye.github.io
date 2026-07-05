@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, design, Microsoft]
 summary: If you want to create professional-quality social media posts, invitations, digital postcards, images, and more, you must try Microsoft Designer. It is a graphic design application that can help you create unique things from your ideas. The highlight of Microsoft Designer is that it utilizes artificial intelligence technology to quickly generate original and editable designs with just your input of text. You can even get writing assistance and automatic layout suggestions to make your content more appealing. Microsoft Designer can even provide you with social media sharing titles and tags based on your goals. Microsoft Designer is part of Microsoft 365, so if you're a subscriber to Microsoft 365, you can use this powerful tool for free. And now, there's no need to wait in line. You can register directly on the website and start using Microsoft Designer. Don't miss this opportunity and experience the charm of Microsoft Designer!
+description: If you want to create professional-quality social media posts, invitations, digital postcards, images, and more, you must try Microsoft Designer. It is a…
 permalink: /programming/:title:output_ext
 ---
 

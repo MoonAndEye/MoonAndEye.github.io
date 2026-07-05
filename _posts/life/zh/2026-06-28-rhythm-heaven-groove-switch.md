@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [life, game, Nintendo, Switch, 節奏天國]
 summary: 任天堂的節奏天國系列終於要在 Nintendo Switch 上推出新作，節奏天國 奇蹟之星 於 2026 年 7 月 2 日發售。這篇先整理體驗版畫面與正式版前的期待。
+description: 任天堂的節奏天國系列終於要在 Nintendo Switch 上推出新作，節奏天國 奇蹟之星 於 2026 年 7 月 2 日發售。這篇先整理體驗版畫面與正式版前的期待。
 permalink: /life/:title:output_ext
 ---
 

@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [程式開發, programming, 電子報]
 summary: 灣區日報重啟
+description: 灣區日報重啟
 permalink: /programming/:title:output_ext
 ---
 

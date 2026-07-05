@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [programming]
 summary: ChatGPT meme
+description: ChatGPT meme
 permalink: /finance/:title:output_ext
 ---
 

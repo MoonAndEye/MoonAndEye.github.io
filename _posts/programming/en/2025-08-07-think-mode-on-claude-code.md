@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Claude, AI, AI Agent]
 summary: This article introduces how to use think mode for code editing on macOS and provides detailed step-by-step instructions.
+description: This article introduces how to use think mode for code editing on macOS and provides detailed step-by-step instructions.
 ---
 
 When using Claude Code, you can first enable plan mode to let AI help you plan the code architecture and logic before starting implementation. You can wait until you approve and confirm Claude Code's plan before letting Claude Code execute.

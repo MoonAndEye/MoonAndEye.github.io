@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, OpenAI]
 summary: ChatGPT offical app on App Store, Taiwan can use it now.
+description: ChatGPT offical app on App Store, Taiwan can use it now.
 permalink: /programming/:title:output_ext
 ---
 

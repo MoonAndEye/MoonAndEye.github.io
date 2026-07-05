@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [life, travel, Europe]
 summary: A guide on transportation options for traveling between Austria, Hungary, and the Czech Republic. Covers flights, trains, and city transit options for an efficient travel plan.
+description: A guide on transportation options for traveling between Austria, Hungary, and the Czech Republic. Covers flights, trains, and city transit options for an…
 ---
 
 This guide covers transportation options in Austria, Hungary, and the Czech Republic, starting from Taipei (TPE). If your trip is longer than a week, this guide will help plan your travel between these three countries. Sightseeing recommendations will be in a separate post.

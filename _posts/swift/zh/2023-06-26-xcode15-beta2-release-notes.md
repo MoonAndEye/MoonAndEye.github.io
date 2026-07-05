@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, Xcode, release notes]
 summary: This article talking about Xcode 15 beta 2 release notes. Marvin Lin use ChatGPT to translate the release notes to traditional Chinese.
+description: This article talking about Xcode 15 beta 2 release notes. Marvin Lin use ChatGPT to translate the release notes to traditional Chinese.
 permalink: /swift/:title:output_ext
 ---
 

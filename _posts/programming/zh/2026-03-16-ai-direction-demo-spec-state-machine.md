@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, AI Agent, Product, Mobile, Workflow]
 summary: 用 Figma Make 做 demo 時，我把「可見畫面」當成規格，結果 AI 也把 demo 當成 spec。真正要給的是行為規格：launch state machine。
+description: 用 Figma Make 做 demo 時，我把「可見畫面」當成規格，結果 AI 也把 demo 當成 spec。真正要給的是行為規格：launch state machine。
 ---
 
 ## Writer

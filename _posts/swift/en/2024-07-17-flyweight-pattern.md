@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Design Pattern, Flyweight Pattern]
 lang: en
 summary: This article introduces the Flyweight Pattern using examples and scenarios from refactoring.guru.
+description: This article introduces the Flyweight Pattern using examples and scenarios from refactoring.guru.
 classes: wide
 ---
 

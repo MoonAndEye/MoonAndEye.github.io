@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, WWDC]
 summary: In WWDC 23, what's new in UIKit has some big improvement. UIViewController has preview feature. UIViewController has a new life cycle call back viewIsAppearing(_:). UICollectionView performance is improved in iOS 17, NSCollectionLayout has self sizing features.
+description: In WWDC 23, what's new in UIKit has some big improvement. UIViewController has preview feature. UIViewController has a new life cycle call back…
 permalink: /swift/:title:output_ext
 ---
 

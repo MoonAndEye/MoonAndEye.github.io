@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Apple, Swift, push notification, console]
 summary: 使用 Apple 推播通知控制台，可以更方便的管理推播通知
+description: 使用 Apple 推播通知控制台，可以更方便的管理推播通知
 permalink: /swift/:title:output_ext
 ---
 

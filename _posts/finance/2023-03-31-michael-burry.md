@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [Finance, Michael Burry]
 summary: The movie "The Big Short" is a drama film based on a true story. It tells the story of a group of investors who foresaw the collapse of the US real estate market before the 2008 financial crisis. They used a financial derivative called credit default swap to conduct massive short selling operations on mortgage-backed securities, thereby gaining huge profits. The movie presents four storylines, showcasing the investors' motivations, strategies, challenges, and achievements, while also exposing the corruption, greed, and incompetence of the financial system. Through humor, satire, and frankness, the film explains some complex financial terms and concepts to the audience, and encourages them to reflect on the impact and significance of the financial crisis on ordinary people.
+description: The movie "The Big Short" is a drama film based on a true story. It tells the story of a group of investors who foresaw the collapse of the US real estate…
 permalink: /finance/:title:output_ext
 ---
 

@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [任天堂, Switch, 薩爾達]
 summary: Nintendo released a gameplay video of "The Legend of Zelda- Breath of the Wild 2" with all-new mechanics. The game is a sequel to "Breath of the Wild" and takes place in the same world but with new elements and challenges. The video showcases Link using different tools and abilities in various scenes, with the mechanics adding to the game's fun, difficulty and strategic elements. The game's graphics have also improved, and it's set to release on May 12, 2023, with multiple language and version options.
+description: Nintendo released a gameplay video of "The Legend of Zelda- Breath of the Wild 2" with all-new mechanics. The game is a sequel to "Breath of the Wild" and…
 permalink: /programming/:title:output_ext
 ---
 

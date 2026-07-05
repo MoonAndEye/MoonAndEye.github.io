@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin  
 tags: [Cursor, AI, Swift]  
 summary:  With the introduction of Agent mode in Cursor, I have been actively using cursorrules for iOS development. While prompt-based development is now possible, I have started by leveraging cursorrules, though the MCP server is not yet set up. Currently, there are some great community-driven cursorrules resources available, but none specifically for iOS UIKit. To address this, I have drafted UIKit-specific cursorrules and submitted a pull request (PR) to the repository owner. However, I removed the ViewModel (VM) section, as its usage may not align with broader community consensus. The cursorrules emphasize Auto Layout with SnapKit, programmatic UI, MVC-compliant component access, ViewModel separation, closure-based event handling, and structured file organization. Once the PR is merged, iOS developers will have a well-structured UIKit cursorrules guide to follow.
+description: With the introduction of Agent mode in Cursor, I have been actively using cursorrules for iOS development. While prompt-based development is now possible, I…
 ---
 
 Since Cursor introduced the Agent mode, I have been extensively using cursorrules for development. Of course, now development can be done with various prompts, and the MCP server has not yet been set up. But let's start with cursorrules first. Currently, there are some great awesome cursorrules available online.

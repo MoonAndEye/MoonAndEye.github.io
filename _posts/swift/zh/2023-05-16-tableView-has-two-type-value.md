@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, iOS, UI, TableView]
 summary: When your table view has two or more type of data, you can do this. This article make an example of if you have two type of data, post and ad, you can use this way to handle it.
+description: When your table view has two or more type of data, you can do this. This article make an example of if you have two type of data, post and ad, you can use…
 permalink: /swift/:title:output_ext
 classes: wide
 ---

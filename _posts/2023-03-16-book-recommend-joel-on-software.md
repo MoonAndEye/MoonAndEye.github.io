@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [life, programming]
 summary: 和大家推薦這本書「約耳趣談軟體」。
+description: 和大家推薦這本書「約耳趣談軟體」。
 ---
 
 和大家推薦這本書「約耳趣談軟體」。

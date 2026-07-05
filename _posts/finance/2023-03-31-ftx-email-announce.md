@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [FTX, crypto coin, 加密貨幣]
 summary: FTX send email for detail
+description: FTX send email for detail
 permalink: /finance/:title:output_ext
 ---
 

@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Xcode, Swift]
 summary: Change App icon feature
+description: Change App icon feature
 ---
 
 A couple of years ago, someone asked me whether it was possible to change an app icon dynamically based on certain conditions. A few days ago, I got asked the same question again. Unfortunately, I had forgotten the details I found previously. To avoid having to search for this information yet again, I’ve decided to document everything you need to know about implementing the dynamic app icon feature.

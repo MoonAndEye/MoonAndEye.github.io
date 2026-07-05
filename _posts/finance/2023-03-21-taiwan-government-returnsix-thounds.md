@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance]
 summary: The Taiwanese government will distribute NT$6,000 in cash to all citizens, including foreigners with residency permits and residents of specific rural areas, as a result of exceeding the tax revenue budget by NT$450 billion. The policy aims to share the benefits of the economy with the public and boost consumption and investment. There are three ways to receive the cash - online registration for direct deposit, withdrawing it at designated bank ATMs with a card, or collecting it at post offices with a health insurance card. The distribution date is pending the legislative review of a special budget, which has passed its third reading in February 2023. In addition to distributing the cash, the government plans to allocate the excess tax revenue to local governments, labor and health insurance subsidies, and electricity price subsidies.
+description: The Taiwanese government will distribute NT$6,000 in cash to all citizens, including foreigners with residency permits and residents of specific rural areas…
 ---
 
 台灣政府最近要普發6000元現金，因為徵稅超過預算數4500億元。這項政策旨在讓全民共享經濟成果，並刺激消費和投資。領取對象包括國內戶籍國民、取得居留權的外籍人士、特定偏鄉地區居民等，不分年齡層。

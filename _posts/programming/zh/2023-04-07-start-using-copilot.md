@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, Copilot, Github]
 summary: Using Github Copilot to speed up my coding. Make side projects easier.
+description: Using Github Copilot to speed up my coding. Make side projects easier.
 permalink: /programming/:title:output_ext
 ---
 

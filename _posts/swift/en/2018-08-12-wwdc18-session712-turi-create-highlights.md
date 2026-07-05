@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [MLKit, Machine Learning, Turi Create, Swift]
 lang: en
 summary: "This article summarizes the highlights from WWDC18, Session-712, focusing on Turi Create, a powerful tool for building machine learning models. Originally known as Dato and part of the Graph Lab project from the University of Washington, Turi Create was acquired by Apple in 2016. The session detailed the capabilities of this Python package, emphasizing its ease of use for non-specialists and its ability to generate Core ML models efficiently. Turi Create supports multiple platforms like Mac and Linux and simplifies the machine learning model development process. It requires minimal coding, often less than 20 lines to create a functional object recognition model. The tool is particularly beneficial for iOS developers, allowing them to focus on APIs rather than the complexities of machine learning algorithms. The article also walks through the process of building a machine learning model using Turi Create, from defining the task and preparing data to training the model and deploying it in an app. The session demonstrated the accessibility of machine learning, making it approachable for a broader audience and integrating it seamlessly into app development."
+description: "This article summarizes the highlights from WWDC18, Session-712, focusing on Turi Create, a powerful tool for building machine learning models. Originally…
 ---
 
 ### WWDC18, Session-712 Turi Create Highlights - Making ML Models Is No Longer Difficult

@@ -7,6 +7,7 @@ lang: en
 author: Marvin Lin
 tags: [Swift, iOS]
 summary: This article details the editable options available for iOS apps in the App Store even after Apple’s review but before pressing the ‘Publish’ button. It covers how to switch the release method from manual to automatic on a specific date, reset ratings, and modify the phased release settings.
+description: This article details the editable options available for iOS apps in the App Store even after Apple’s review but before pressing the ‘Publish’ button. It…
 ---
 
 Before a new version of an iOS app can be launched on the App Store, it must undergo Apple's review process. After the review, but before pressing the 'Publish' button, there are still some items that can be edited. Here are a few:

@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, WWDC]
 summary: In WWDC23, Swift got a new feature - Macros. This article talks about how to use Macros in Swift.
+description: In WWDC23, Swift got a new feature - Macros. This article talks about how to use Macros in Swift.
 permalink: /swift/:title:output_ext
 ---
 

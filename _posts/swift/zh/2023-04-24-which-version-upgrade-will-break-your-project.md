@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, third party, cocoapods]
 summary: Explain semantic version in development. In semantic version control, we have major, minor, patch version. Each change has their own meaning. Patch is for bug fix, minor is compatibal update. Major weill break your code. This article also give your example.
+description: Explain semantic version in development. In semantic version control, we have major, minor, patch version. Each change has their own meaning. Patch is for…
 permalink: /swift/:title:output_ext
 ---
 

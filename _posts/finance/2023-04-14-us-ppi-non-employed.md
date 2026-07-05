@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance]
 summary: The US Department of Labor has released data for March 2023 on unemployment insurance claims and the Producer Price Index (PPI). The number of new unemployment claims has exceeded 200,000 for three consecutive weeks, indicating that the labor market is still in a crisis state higher than historical averages. However, PPI fell by 0.5% due to the significant drop in energy prices, which may ease overall inflation pressure in the coming months.
+description: The US Department of Labor has released data for March 2023 on unemployment insurance claims and the Producer Price Index (PPI). The number of new…
 permalink: /finance/:title:output_ext
 ---
 

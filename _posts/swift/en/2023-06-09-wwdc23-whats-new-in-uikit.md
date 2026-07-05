@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, WWDC]
 lang: en
 summary: At WWDC 23, significant improvements were announced for UIKit, including a preview feature for UIViewController, a new lifecycle callback `viewIsAppearing(_:)`, and enhanced UICollectionView performance in iOS 17 with self-sizing features in NSCollectionLayout.
+description: At WWDC 23, significant improvements were announced for UIKit, including a preview feature for UIViewController, a new lifecycle callback…
 ---
 
 ## Highlight 1: UIViewController Now Supports Preview

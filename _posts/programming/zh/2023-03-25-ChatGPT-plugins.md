@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [ChatGPT, AI]
 summary: ChatGPT plugins enable ChatGPT to interact with various internet resources, enhancing its performance and expanding its application scope. Plugins offer diverse functionalities and prioritize security and ethics. Developers can create limitless plugins that meet OpenAI's standards and objectives, collaborate with other developers, and use ChatGPT's ability to coordinate and manage development teams.
+description: ChatGPT plugins enable ChatGPT to interact with various internet resources, enhancing its performance and expanding its application scope. Plugins offer…
 permalink: /finance/:title:output_ext
 ---
 

@@ -1,6 +1,10 @@
 <meta charset="utf-8">
 
-{% include seo.html %}
+{%- comment -%}
+  SEO 標籤（含分頁 prev/next）統一由 _layouts/default.html 的 {% seo %}
+  （jekyll-seo-tag）輸出，這裡不再 include theme 的 seo.html，
+  避免重複的 title/canonical/og 標籤。
+{%- endcomment -%}
 
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">

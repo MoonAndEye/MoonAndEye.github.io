@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Zelda, Nintendo, Switch]
 summary: This article talking about Zelda - kingdom tear. Marvin Lin finish the game first time. Then he will share some experience about continuing the game.
+description: This article talking about Zelda - kingdom tear. Marvin Lin finish the game first time. Then he will share some experience about continuing the game.
 permalink: /life/:title:output_ext
 ---
 

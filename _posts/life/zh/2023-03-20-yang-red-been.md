@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [food, 美食]
 summary: Yang Family Red Bean Cake is a bakery in the Jiangzicui area that has been operating for over 10 years, selling only two flavors of cakes - red bean and butter. Both flavors are excellent and made with high-quality ingredients, and the limited daily quantity ensures freshness.
+description: Yang Family Red Bean Cake is a bakery in the Jiangzicui area that has been operating for over 10 years, selling only two flavors of cakes - red bean and…
 ---
 
 ![楊家紅豆餅](/assets/life/food/yang_red_been.jpeg)

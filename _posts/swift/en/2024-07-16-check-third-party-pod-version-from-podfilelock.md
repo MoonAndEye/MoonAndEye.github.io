@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Third-Party, CocoaPods]
 lang: en
 summary: This article explains how to check the version of third-party pods used in a project from Podfile.lock.
+description: This article explains how to check the version of third-party pods used in a project from Podfile.lock.
 ---
 
 In iOS app development, third-party libraries are commonly used. This article primarily focuses on how to verify the versions of third-party packages used in a project by examining Podfile.lock. In iOS projects, the file that records all third-party libraries and their dependencies is Podfile.lock. When collaborating developers work on the project, they simply need to run the `pod install` command in the terminal directory level where Podfile.lock is located, and CocoaPods will install the third-party packages as specified in Podfile.lock according to the versions listed in the Podfile. Next, we will explain the structure of Podfile.lock.

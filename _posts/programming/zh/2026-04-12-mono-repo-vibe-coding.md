@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, Vibe Coding, Mono Repo, Frontend, Backend, Workflow]
 summary: 想讓 AI agent 幫你寫出更好的全端程式碼？第一步就是用 mono repo，把前後端放在同一個資料夾裡。
+description: 想讓 AI agent 幫你寫出更好的全端程式碼？第一步就是用 mono repo，把前後端放在同一個資料夾裡。
 ---
 
 在開始大量使用 Codex, Claude Code 後，我現在幾乎都使用這個架構。

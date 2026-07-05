@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Zelda, Nintendo, Switch]
 summary: Nintendo wall paper can be download on Nintendo website.
+description: Nintendo wall paper can be download on Nintendo website.
 permalink: /life/:title:output_ext
 ---
 

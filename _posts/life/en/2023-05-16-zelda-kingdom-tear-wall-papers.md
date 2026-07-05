@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Zelda, Nintendo, Switch]
 summary: Nintendo has released The Legend of Zelda Tears of the Kingdom wallpapers for download. Available for both desktop and mobile devices, check out the available resolutions and download links below.
+description: Nintendo has released The Legend of Zelda Tears of the Kingdom wallpapers for download. Available for both desktop and mobile devices, check out the…
 ---
 
 Nintendo wallpapers are now available for download! Here are the wallpapers currently available.

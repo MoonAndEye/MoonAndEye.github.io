@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance]
 summary: About US non-farm employment and unemployment rate
+description: About US non-farm employment and unemployment rate
 permalink: /programming/:title:output_ext
 ---
 

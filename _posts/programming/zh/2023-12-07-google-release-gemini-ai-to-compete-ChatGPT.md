@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin 
 tags: [Google Gemini, ChatGPT, AI, LLM]
 summary: Google released Gemini, and from Pichai's X (formerly known as Twitter), we can see the amazing progress. ChatGPT currently don't have any response. And I can not upgrade ChatGPT 4.0. I have written to OpenAI, but I only got an automatic reply
+description: Google released Gemini, and from Pichai's X (formerly known as Twitter), we can see the amazing progress. ChatGPT currently don't have any response. And I…
 permalink: /programming/:title:output_ext
 ---
 

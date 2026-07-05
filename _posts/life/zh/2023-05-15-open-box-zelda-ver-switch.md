@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Switch, Nintendo, 任天堂]
 summary: open trailer of Switch, this is Zelda legend 
+description: open trailer of Switch, this is Zelda legend
 permalink: /life/:title:output_ext
 ---
 

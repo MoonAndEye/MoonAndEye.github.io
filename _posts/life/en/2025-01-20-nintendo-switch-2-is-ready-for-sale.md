@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [nintendo, switch]
 summary: Nintendo has officially announced the Switch 2, featuring enhanced gameplay with Mario Kart and a potential new Joycon mouse function. Check out the official trailer and reviews from YouTubers
+description: Nintendo has officially announced the Switch 2, featuring enhanced gameplay with Mario Kart and a potential new Joycon mouse function. Check out the…
 ---
 
 ## Nintendo Switch 2 is Ready for Release - Officially Named Nintendo Switch 2

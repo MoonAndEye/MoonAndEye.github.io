@@ -2,6 +2,9 @@ en:
   main:
     - title: "Home"
       url: /en/
+    - title: "Videos"
+      url: /en/videos/
+      description: "Marvin Builds — AI agent videos and Shorts"
     - title: "Programming"
       url: /en/programming/
     - title: "Swift"
@@ -16,6 +19,9 @@ zh:
   main:
     - title: "Home"
       url: /zh/
+    - title: "影片"
+      url: /zh/videos/
+      description: "Marvin Builds — AI agent 實戰影片與 Shorts"
     - title: "軟體開發"
       url: /zh/programming/
     - title: "Swift"

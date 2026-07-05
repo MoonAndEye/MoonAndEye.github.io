@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, SwiftUI]
 lang: en
 summary: Using SwiftUI to initiate a project, but still needing AppDelegate lifecycle. This article helps you correctly initialize AppDelegate.
+description: Using SwiftUI to initiate a project, but still needing AppDelegate lifecycle. This article helps you correctly initialize AppDelegate.
 ---
 
 After SwiftUI was introduced, the way to start a project changed to include a SwiftUI setup. If you choose to start a project using SwiftUI, the original AppDelegate and SceneDelegate files will not appear. Instead, the entry point will be a SwiftUI file named after the project, containing a Scene that wraps a WindowGroup.

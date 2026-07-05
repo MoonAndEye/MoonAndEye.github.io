@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Mario, Wonder, Nintendo, Switch]
 summary: Nintendo has released new Mario Wonder wallpapers featuring Elephant Mario. Available for both desktop and mobile devices, these can be downloaded from Nintendo's official website. Check out the available resolutions and links below.
+description: Nintendo has released new Mario Wonder wallpapers featuring Elephant Mario. Available for both desktop and mobile devices, these can be downloaded from…
 ---
 
 Nintendo wallpapers are now available for download! Here are the wallpapers currently available.

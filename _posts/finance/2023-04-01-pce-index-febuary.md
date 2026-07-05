@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [財經數據, finance, stock, 投資]
 summary: PCE is lower than predict
+description: PCE is lower than predict
 permalink: /finance/:title:output_ext
 ---
 美2月核心PCE增速低於預期

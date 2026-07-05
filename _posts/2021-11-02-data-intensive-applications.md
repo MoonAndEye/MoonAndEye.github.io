@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [system design, programming]
 summary: "資料密集型應用系統設計的讀書筆記，伺服器進行分區，討論不同的分區策略"
+description: "資料密集型應用系統設計的讀書筆記，伺服器進行分區，討論不同的分區策略"
 ---
 
 這世界上沒有銀色子彈 https://g.co/kgs/G7QbDr

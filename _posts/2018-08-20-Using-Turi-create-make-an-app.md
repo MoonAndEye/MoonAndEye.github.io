@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Core ML, MLKit, Swift]
 summary: "使用 Turi Create 製作圖案辨識的 App - Core ML and Vision"
+description: "使用 Turi Create 製作圖案辨識的 App - Core ML and Vision"
 ---
 
 使用 Turi Create 製作圖案辨識的 App - Core ML and Vision

@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Xcode, Swift, release note]
 summary: Xcode 14.3 release note summary. The important thing is Xcode no longer support Rosetta. Swift has backDeplooyed attribute
+description: Xcode 14.3 release note summary. The important thing is Xcode no longer support Rosetta. Swift has backDeplooyed attribute
 permalink: /swift/:title:output_ext
 ---
 

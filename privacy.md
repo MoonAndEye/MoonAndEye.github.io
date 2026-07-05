@@ -1,7 +1,9 @@
 ---
 layout: single
 title: Privacy Policy
+description: "Privacy policy for Marvin Builds tools on marvinswift.com, covering the TikTok publishing workflow, OAuth tokens, analytics, and contact details."
 permalink: /privacy/
+lang: en
 author_profile: true
 share: false
 comments: false

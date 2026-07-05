@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, WWDC]
 summary: "WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點"
+description: "WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點"
 ---
 
 

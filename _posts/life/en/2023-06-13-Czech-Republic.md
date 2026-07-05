@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [life, Czech-Republic, travel]
 summary: A visit to the famous Sedlec Ossuary in Kutná Hora, a church decorated with human bones. The article explores its history, artistic arrangements, and the legacy of those laid to rest there.
+description: A visit to the famous Sedlec Ossuary in Kutná Hora, a church decorated with human bones. The article explores its history, artistic arrangements, and the…
 ---
 
 # The Bone Church - Czech Republic (This Post Contains Real Human Bone Photos, View with Caution)

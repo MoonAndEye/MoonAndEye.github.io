@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [system design, migration]
 lang: en
 summary: "Stripe is a well-known payment service. This article discusses the process of Stripe's incremental system upgrades."
+description: "Stripe is a well-known payment service. This article discusses the process of Stripe's incremental system upgrades."
 ---
 
 Historically, if a railway track's width needed to be upgraded, they wouldn't just add two more tracks over the existing ones. Instead, they would build a new track alongside the old, allowing trains of different gauges to run simultaneously. Only when all the trains of one gauge were phased out would the unused track be removed.

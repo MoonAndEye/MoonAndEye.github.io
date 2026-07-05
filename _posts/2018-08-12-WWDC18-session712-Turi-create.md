@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [MLKit, Machine Learning, Turi Create, Swift]
 summary: "WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事"
+description: "WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事"
 ---
 
 ### WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事

@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [AI, Prompt Engineering, Knowledge Base, Gumroad, Claude]
 lang: en
 summary: I’m starting a small product line of compact, one-shot prompt artifacts. The first is LLM Knowledge Base Source Prompt, a source spec for generating a markdown-first internal wiki and LLM-friendly knowledge base starter.
+description: I’m starting a small product line of compact, one-shot prompt artifacts. The first is LLM Knowledge Base Source Prompt, a source spec for generating a…
 ---
 
 I’ve been thinking about a product format that sits somewhere between a gist, a spec, and a starter kit.

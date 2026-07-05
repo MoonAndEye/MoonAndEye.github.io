@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Design Pattern]
 lang: en
 summary: The Delegate Pattern is extensively used in iOS development to delegate responsibilities or behaviors to other objects, thereby achieving decoupling and flexibility. In Swift, we usually use protocols to define the interface for the delegate, and the delegate object conforms to this protocol. This article will explain how to use the delegate pattern in Swift and provide a practical example.
+description: The Delegate Pattern is extensively used in iOS development to delegate responsibilities or behaviors to other objects, thereby achieving decoupling and…
 classes: wide
 ---
 

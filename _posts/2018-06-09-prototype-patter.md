@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, design pattern]
 summary: "Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同"
+description: "Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同"
 ---
 
 這一篇文章是看了 "Pro Design Patterns in Swift " 後的心得，把原型模式整理後寫成中文的記錄。

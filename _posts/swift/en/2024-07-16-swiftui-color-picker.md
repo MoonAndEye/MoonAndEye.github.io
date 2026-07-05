@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, SwiftUI, Apple, iOS]
 lang: en
 summary: This article discusses how to use the Color Picker in SwiftUI.
+description: This article discusses how to use the Color Picker in SwiftUI.
 ---
 
 ## This article was previously published in the 2022 IT Ironman Competition - Turning Interesting Ideas into Apps with SwiftUI

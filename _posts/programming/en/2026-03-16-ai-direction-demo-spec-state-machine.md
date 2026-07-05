@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [AI, AI Agent, Product, Mobile, Workflow]
 lang: en
 summary: "A real-world Figma Make trap: I gave the agent a demo link, so it treated the demo as the spec. The real fix is defining behavior first—your launch state machine."
+description: "A real-world Figma Make trap: I gave the agent a demo link, so it treated the demo as the spec. The real fix is defining behavior first—your launch state machine."
 ---
 
 ## Writer

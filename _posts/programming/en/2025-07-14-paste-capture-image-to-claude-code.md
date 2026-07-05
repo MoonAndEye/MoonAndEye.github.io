@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Claude, AI, AI Agent]
 summary: This article introduces how to paste screen captures to Claude's code editor on macOS, with detailed step-by-step instructions.
+description: This article introduces how to paste screen captures to Claude's code editor on macOS, with detailed step-by-step instructions.
 ---
 
 Currently, I'm extensively using Claude code for development. Claude code is a terminal-based AI coding interface that primarily works with text. So when developing, the collaboration feels like I mark files or highlight certain code sections, and Claude code in the VSCode terminal knows which code I want to discuss, and it also highlights them in the Claude code interface.

@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance]
 summary: Taiwan's central bank raised its policy interest rate by 0.125 percentage points to curb domestic inflation expectations and align with the US Federal Reserve's monetary policy adjustments. This is the fifth consecutive rate hike, with a total increase of 0.625 percentage points. The rate hike will affect deposit and loan rates, and the housing market, but export-oriented industries expect currency stability and increased competitiveness.
+description: Taiwan's central bank raised its policy interest rate by 0.125 percentage points to curb domestic inflation expectations and align with the US Federal…
 permalink: /finance/:title:output_ext
 ---
 

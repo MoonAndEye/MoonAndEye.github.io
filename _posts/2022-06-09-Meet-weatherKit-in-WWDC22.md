@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, WWDC]
 summary: "WWDC22 新 framework - Meet WeatherKit 重點結錄"
+description: "WWDC22 新 framework - Meet WeatherKit 重點結錄"
 ---
 
 Meet WeatherKit in WWDC22

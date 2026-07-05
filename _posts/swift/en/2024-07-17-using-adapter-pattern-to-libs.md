@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Design Patterns]
 lang: en
 summary: Using the adapter pattern to wrap third-party libraries in Swift. It's common in iOS development to rely on third-party libraries. When libraries are upgraded, they sometimes break the build or cause runtime crashes. Using the adapter pattern can help develop a more stable environment and save time.
+description: Using the adapter pattern to wrap third-party libraries in Swift. It's common in iOS development to rely on third-party libraries. When libraries are…
 classes: wide
 author_profile: false
 ---

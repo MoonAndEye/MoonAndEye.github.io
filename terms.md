@@ -1,7 +1,9 @@
 ---
 layout: single
 title: Terms of Service
+description: "Terms of service for Marvin Builds tools on marvinswift.com, including acceptable use of the TikTok publishing workflow and content responsibility."
 permalink: /terms/
+lang: en
 author_profile: true
 share: false
 comments: false

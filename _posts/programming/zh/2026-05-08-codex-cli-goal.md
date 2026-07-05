@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Codex CLI, OpenAI, AI Agent, AI Agent Coding]
 summary: /goal 是 Codex CLI 新增的實驗功能，它可以把一個長線任務變成可持續追蹤、暫停和恢復的工作目標，但目前需要新版 CLI 並手動打開 feature flag。
+description: /goal 是 Codex CLI 新增的實驗功能，它可以把一個長線任務變成可持續追蹤、暫停和恢復的工作目標，但目前需要新版 CLI 並手動打開 feature flag。
 ---
 
 Codex CLI 最近多了一個我覺得很值得注意的新功能：`/goal`。

@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance, 台股, 申購]
 summary: Yuanta Financial Holding's stock is available for subscription from 4/18 to 4/20, offering a promising investment opportunity. Yuanta is one of Taiwan's largest financial holding companies, operating multiple subsidiaries, including Yuanta Bank, Yuanta Securities, and Yuanta Insurance, offering diversified financial services. Its excellent financial performance in 2022, with record high revenue and net profits and a 5.3% dividend yield, has been recognized by the market, leading to a 30% increase in its stock price. Yuanta aims to raise funds to expand its business by issuing 150 million new shares at a 9.5% discount. The subscription is worthwhile for investors with a long-term holding perspective and risk tolerance, considering Yuanta's solid fundamentals, reasonable valuation, and attractive subscription discount.
+description: Yuanta Financial Holding's stock is available for subscription from 4/18 to 4/20, offering a promising investment opportunity. Yuanta is one of Taiwan's…
 permalink: /finance/:title:output_ext
 ---
 

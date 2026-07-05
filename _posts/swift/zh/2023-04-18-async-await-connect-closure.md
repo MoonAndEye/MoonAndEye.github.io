@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, Combine, 非同步]
 summary: After Swift 5.5, swift introduced async/await. This article have an example to connect previous escaping closure func.
+description: After Swift 5.5, swift introduced async/await. This article have an example to connect previous escaping closure func.
 permalink: /swift/:title:output_ext
 ---
 

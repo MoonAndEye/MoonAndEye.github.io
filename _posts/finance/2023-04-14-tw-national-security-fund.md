@@ -6,6 +6,7 @@ category: 台股國安基金退場，護盤275天
 author: Marvin Lin
 tags: [台股]
 summary: The National Stabilization Fund (NSF) in Taiwan entered the stock market on July 13th, 2020 and invested NT$545.08 billion to stabilize the market. During this period, the Taiwan stock market rose by 13.29% with an accumulated profit of NT$8.3 billion for the NSF. The board of directors has decided to end the 275-day long intervention and return to the free market. The exit will be conducted carefully without market impact, and the NSF will continue to monitor the domestic and international economic and political situations and may intervene again if necessary.
+description: The National Stabilization Fund (NSF) in Taiwan entered the stock market on July 13th, 2020 and invested NT$545.08 billion to stabilize the market. During…
 permalink: /finance/:title:output_ext
 ---
 

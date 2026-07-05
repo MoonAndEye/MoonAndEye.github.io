@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, SwiftUI]
 lang: en
 summary: Apple recommends a specific data flow for SwiftUI. It adheres to a unidirectional data flow.
+description: Apple recommends a specific data flow for SwiftUI. It adheres to a unidirectional data flow.
 ---
 
 SwiftUI employs a declarative approach for UI design. The data transmission follows the sequence of Action → State → View, which is a fixed direction with no possibility of reversal. You can also research the term "one-way data flow," which is prevalent not only on mobile platforms but also on other platforms due to its data flow design.

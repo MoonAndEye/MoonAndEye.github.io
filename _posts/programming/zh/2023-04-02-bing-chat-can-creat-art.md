@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, bing, create, art, openAI]
 summary: using bing chat drawing
+description: using bing chat drawing
 permalink: /programming/:title:output_ext
 ---
 

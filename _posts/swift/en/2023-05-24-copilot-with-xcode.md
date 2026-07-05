@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Xcode, Copilot]
 lang: en
 summary: This post details my experience using GitHub Copilot in Xcode. Conclusion - it's not very effective, and I prefer to turn it off while using Xcode.
+description: This post details my experience using GitHub Copilot in Xcode. Conclusion - it's not very effective, and I prefer to turn it off while using Xcode.
 ---
 
 In a previous discussion, I shared my experience with purchasing and trying GitHub Copilot in a side project. My primary work involves iOS app development with native development tools, and I have also experimented with Copilot in Xcode. For those interested in similar integrations, there are various resources available that provide tutorials on how to integrate tools like Copilot with Xcode.

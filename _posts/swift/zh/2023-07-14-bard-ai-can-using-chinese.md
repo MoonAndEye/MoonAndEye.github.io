@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [programming, AI, ChatGPT, Google, Bard]
 summary: This article talks about Google Bard can using chinese. Tried fortune teller, draw a tarrot card.
+description: This article talks about Google Bard can using chinese. Tried fortune teller, draw a tarrot card.
 permalink: /swift/:title:output_ext
 ---
 

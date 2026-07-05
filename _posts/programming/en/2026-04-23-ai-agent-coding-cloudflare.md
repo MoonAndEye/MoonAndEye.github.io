@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [AI, AI Agent, Cloudflare, Workers, Pages, D1, KV, Deployment]
 lang: en
 summary: "If AI agent coding should move beyond demos, Cloudflare is the deployment base I recommend first: domain, Pages, Workers, D1, and KV live on the same platform."
+description: "If AI agent coding should move beyond demos, Cloudflare is the deployment base I recommend first: domain, Pages, Workers, D1, and KV live on the same platform."
 ---
 
 In this era (2026), if you want to build an app quickly, you have many tools to choose from: Claude, Codex, and now many GitHub-based services that let you write code directly in the browser. There will only be more of them.

@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Xcode, Swift]
 summary: Xcode 16 的 Release Notes 中有以下新增功能（New Features)
+description: Xcode 16 的 Release Notes 中有以下新增功能（New Features)
 ---
 
 Here are the **New Features** from the Xcode 16 release notes:

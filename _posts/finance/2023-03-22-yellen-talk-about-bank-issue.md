@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance, 葉倫]
 summary: US Treasury Secretary Janet Yellen announced that the government is ready to provide further guarantees to the banking industry to prevent crisis expansion. Her statement boosted market confidence and led to a surge in US stock indices, including the Dow Jones, which closed at a new high. Financial stocks, including First Republic Bank and regional bank ETF, performed strongly. Tesla also rose by about 8% and became a main driver of the Nasdaq index's rise.
+description: US Treasury Secretary Janet Yellen announced that the government is ready to provide further guarantees to the banking industry to prevent crisis expansion.…
 permalink: /finance/:title:output_ext
 ---
 

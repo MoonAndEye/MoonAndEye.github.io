@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, Cocoapods, Xcode]
 summary: Since Apple introduced the Swift Package Manager (SPM), CocoaPods has faced significant competitive pressures that have impacted its developmental momentum. As SPM is officially supported and seamlessly integrated into Apple's development environment, competing with Apple in the core domain of package management is often not advantageous. This integration gives Apple a distinct edge, as developers tend to prefer using SPM for dependency management due to its robust support and deep integration with their tools. Consequently, CocoaPods has seen a decline in market share and development investment, necessitating a strategic adjustment to adapt to the evolving development ecosystem.
+description: Since Apple introduced the Swift Package Manager (SPM), CocoaPods has faced significant competitive pressures that have impacted its developmental momentum.…
 ---
 
 ## Cocoapods Enters Maintain Mode, But Will Still Release More Than Twice a Year to Keep Up with Xcode Updates

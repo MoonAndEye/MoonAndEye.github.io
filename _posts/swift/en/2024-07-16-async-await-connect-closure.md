@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Combine, Asynchronous]
 lang: en
 summary: After Swift 5.5 introduced async/await, this article provides an example of connecting previous escaping closure functions.
+description: After Swift 5.5 introduced async/await, this article provides an example of connecting previous escaping closure functions.
 ---
 
 ## Method of Integrating Closure with swift async/await

@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [blog, programming]
 summary: Xuite, one of Taiwan's earliest internet service platforms, will end all services on June 30, 2023, and users are advised to backup or transfer their data. The termination has sparked discussions among netizens as Xuite is seen as a part of their memories and daily lives, and a symbol of Taiwan's internet culture. The end of Xuite marks the end of an era, but its impact is worth remembering.
+description: Xuite, one of Taiwan's earliest internet service platforms, will end all services on June 30, 2023, and users are advised to backup or transfer their data.…
 permalink: /programming/:title:output_ext
 ---
 

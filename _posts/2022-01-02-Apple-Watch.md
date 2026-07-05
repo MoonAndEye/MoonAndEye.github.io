@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Apple, life]
 summary: Apple Watch 開箱文
+description: Apple Watch 開箱文
 ---
 
 * * *

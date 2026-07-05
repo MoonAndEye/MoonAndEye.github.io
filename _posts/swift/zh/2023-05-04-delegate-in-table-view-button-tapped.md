@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [swift, design pattern, iOS]
 summary: This article make an example of cell has an button, when user tapped the button, vc will response to the relative action. This article explained using delegate pattern to finish this feature.
+description: This article make an example of cell has an button, when user tapped the button, vc will response to the relative action. This article explained using…
 permalink: /swift/:title:output_ext
 classes: wide
 ---

@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [薩爾達, Switch, Nintendo]
 summary: Nintendo Switch Zelda trail video is out.
+description: Nintendo Switch Zelda trail video is out.
 permalink: /life/:title:output_ext
 ---
 

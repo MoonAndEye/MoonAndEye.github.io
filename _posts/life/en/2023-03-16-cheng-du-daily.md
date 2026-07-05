@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [life, travel, chengdu]
 summary: A travel journal about Chengdu, written in 2011, covering its culture, food, local customs, and unique lifestyle. The post highlights its bustling train stations, beautiful bamboo paths, spicy cuisine, and traditional tea houses.
+description: A travel journal about Chengdu, written in 2011, covering its culture, food, local customs, and unique lifestyle. The post highlights its bustling train…
 ---
 
 # Chengdu, China - The Land of Abundance

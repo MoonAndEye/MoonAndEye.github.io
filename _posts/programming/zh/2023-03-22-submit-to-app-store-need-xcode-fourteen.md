@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [iOS, App Store]
 permalink: /swift/:title:output_ext
 summary: Starting April 2023, all iOS and iPadOS apps must be built with Xcode 14.1 and the iOS 16.1 SDK.
+description: Starting April 2023, all iOS and iPadOS apps must be built with Xcode 14.1 and the iOS 16.1 SDK.
 ---
 
 從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。

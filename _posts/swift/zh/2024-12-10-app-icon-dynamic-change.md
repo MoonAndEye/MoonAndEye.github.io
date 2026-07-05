@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Xcode, Swift]
 summary: Change App icon feature
+description: Change App icon feature
 ---
 
 這兩、三年前，曾經有需求方提問，如果想要依某個條件更改 app icon，是做得到的嗎？然後再前幾天，我又被問了一次。只是這一次，我已經忘記我之前找到的資料了。如果不把這個結果紀錄起來，大概過一陣子，我又要重新找一次。這邊紀錄一下動態 app icon 這個 feature，要考慮的東西。

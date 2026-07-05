@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [life, game, Nintendo, Switch, Rhythm Heaven]
 summary: Nintendo's Rhythm Heaven Groove is coming to Nintendo Switch on July 2, 2026, and I am really looking forward to it.
+description: Nintendo's Rhythm Heaven Groove is coming to Nintendo Switch on July 2, 2026, and I am really looking forward to it.
 ---
 
 Nintendo's Rhythm Heaven Groove is coming out on July 2, and I am really looking forward to it.

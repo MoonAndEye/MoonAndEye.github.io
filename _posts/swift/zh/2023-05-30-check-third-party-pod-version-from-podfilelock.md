@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, 第三方, CocoaPods]
 summary: This article talks about how to check the third-party pod version from Podfile.lock.
+description: This article talks about how to check the third-party pod version from Podfile.lock.
 permalink: /swift/:title:output_ext
 ---
 

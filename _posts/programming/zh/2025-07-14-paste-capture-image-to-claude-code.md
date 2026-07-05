@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Claude, AI, AI Agent]
 summary: 本文將介紹如何在 macOS 上將螢幕截圖貼上到 Claude 的程式碼編輯器中，並提供詳細的步驟說明。
+description: 本文將介紹如何在 macOS 上將螢幕截圖貼上到 Claude 的程式碼編輯器中，並提供詳細的步驟說明。
 ---
 
 現在的我，已大量使用 Claude code 進行開發，Claude code 是個 terminal 型的 AI coding 界面，以文字為主。所以在開發的時候，合作起來的感覺就是，我標記檔案，或是框起某些程式碼，在 VSCode terminal 中的 claude code 會知道我現在想要討論的程碼是哪些，在執行 Calude code 的界面也會標記出來。

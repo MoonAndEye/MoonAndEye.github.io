@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, WWDC]
 summary: What Apple developers need to know at WWDC23, link to Apples WWDC23 sessions page
+description: What Apple developers need to know at WWDC23, link to Apples WWDC23 sessions page
 permalink: /swift/:title:output_ext
 ---
 

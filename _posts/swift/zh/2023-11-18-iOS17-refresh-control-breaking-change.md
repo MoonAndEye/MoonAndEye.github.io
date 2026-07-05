@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, iOS, UIRefreshControl]
 summary: Sam Altman was fired by OpenAI, and a few hours later, Greg Brockman also resigned.Hmm... as of the time of writing, it's the weekend, and currently, it's uncertain what impact this will have on OpenAI and ChatGPT. However, according to the news, the reason for Altman's dismissal is "Altman was not honest with the board." For the latest updates or developments, please refer to the most recent news.The second thing related to iOS is that the lifecycle of UIRefreshControl set in iOS 17 needs to be changed. I learned this from an email newsletter sent by Essential Developer.The email mentions that UIRefreshControl has a destructive update in iOS 17, and the lifecycle needs to be moved to viewIsAppearing, as per Essential Developer.Essential Developer is a high-quality iOS development resource. If you're interested, feel free to support Essential Developer. Supporting can be not only through purchasing courses but also by liking, commenting, and sharing – all forms of support.
+description: Sam Altman was fired by OpenAI, and a few hours later, Greg Brockman also resigned.Hmm... as of the time of writing, it's the weekend, and currently, it's…
 permalink: /swift/:title:output_ext
 ---
 

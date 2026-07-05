@@ -7,6 +7,7 @@ author: Marvin
 lang: en
 tags: [swift, firebase, xcode]
 summary: If you’re using Xcode version 15.3 or higher for your projects that incorporate Firebase, it is crucial to upgrade Firebase to version 10.22.0 or higher to avoid crashes upon release. After our team upgraded to Xcode 15.4, we experienced an increase in crash rates, primarily originating from the AppDelegate and compiler-generated code. Investigations into the crashes, supported by insights from Stack Overflow and Firebase GitHub issues, pinpointed the issue to nanopb. Always ensure that Firebase is updated to at least version 10.22.0 when working with newer versions of Xcode to prevent these issues.
+description: If you’re using Xcode version 15.3 or higher for your projects that incorporate Firebase, it is crucial to upgrade Firebase to version 10.22.0 or higher to…
 ---
 
 If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.

@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Cloudflare, Cloudflare Tunnel, ngrok, Webhook, AI Agent]
 lang: en
 summary: "If your domain already lives on Cloudflare, Cloudflare Tunnel makes your localhost entry point feel like part of the same development and deployment flow."
+description: "If your domain already lives on Cloudflare, Cloudflare Tunnel makes your localhost entry point feel like part of the same development and deployment flow."
 ---
 
 AI agent coding helps you build features quickly, but once you move into integration testing, you run into a very practical question: how can an external service reach your local environment?

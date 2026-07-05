@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, AI Agent, Coding, App, Web App, Mobile App]
 summary: AI agent coding 正在把 app 開發的複製成本降下來，就像古騰堡印刷術讓書本從手抄本市場走向更大的讀者市場。
+description: AI agent coding 正在把 app 開發的複製成本降下來，就像古騰堡印刷術讓書本從手抄本市場走向更大的讀者市場。
 ---
 
 這幾年 AI agent coding 的速度愈來愈快。

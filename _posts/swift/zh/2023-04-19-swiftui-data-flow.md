@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, SwiftUI]
 summary: Apple have SwiftUI recommend data flow. It's follow one data flow.
+description: Apple have SwiftUI recommend data flow. It's follow one data flow.
 permalink: /swift/:title:output_ext
 ---
 

@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Life, blog]
 summary: "GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了"
+description: "GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了"
 ---
 
 # GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了

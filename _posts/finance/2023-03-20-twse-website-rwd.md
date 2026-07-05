@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance, 證交所, RWD]
 summary: 台灣證交所網頁改版，RWD 網站設計
+description: 台灣證交所網頁改版，RWD 網站設計
 ---
 
 ## 證交所公告

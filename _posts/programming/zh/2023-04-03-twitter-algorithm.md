@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Twitter, open source, algorithm]
 summary: Twitter opened algorithm of recommend
+description: Twitter opened algorithm of recommend
 permalink: /programming/:title:output_ext
 ---
 

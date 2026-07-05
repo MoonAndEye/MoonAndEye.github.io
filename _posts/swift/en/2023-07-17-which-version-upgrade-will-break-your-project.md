@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, third party, cocoapods]
 lang: en
 summary: Explaining semantic versioning in development. In semantic version control, we have major, minor, and patch versions, each signifying different types of changes. Patches are for bug fixes, minor updates are compatible, and major updates can break your code. This article also provides examples.
+description: Explaining semantic versioning in development. In semantic version control, we have major, minor, and patch versions, each signifying different types of…
 ---
 
 In iOS development, we often use third-party packages to add functionality or reduce workload. However, if we download the source code of the packages directly or use git submodules, we might encounter issues such as version inconsistencies, unclear dependencies, and inconvenient updates. To solve these problems, we can use cocoapods, a tool that helps manage third-party packages.

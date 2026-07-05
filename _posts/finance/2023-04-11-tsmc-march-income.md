@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [台積電, 財經]
 summary: TSMC March income is out, lower than previous month 10.9%
+description: TSMC March income is out, lower than previous month 10.9%
 permalink: /finance/:title:output_ext
 ---
 

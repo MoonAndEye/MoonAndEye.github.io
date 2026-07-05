@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Google, Code Jam]
 summary: Google announce code jam competition
+description: Google announce code jam competition
 permalink: /programming/:title:output_ext
 ---
 

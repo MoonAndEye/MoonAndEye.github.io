@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [CPI]
 summary: US cpi is out, 5%, lower than expect.
+description: US cpi is out, 5%, lower than expect.
 permalink: /finance/:title:output_ext
 ---
 

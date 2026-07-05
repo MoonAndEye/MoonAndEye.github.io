@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [AI, AI Agent, Cloudflare, Workers, Pages, D1, KV, Deployment]
 summary: 如果要讓 AI agent coding 不只停在 demo，我會把 Cloudflare 當作最推薦的部署底座：domain、Pages、Workers、D1、KV 都在同一個平台。
+description: 如果要讓 AI agent coding 不只停在 demo，我會把 Cloudflare 當作最推薦的部署底座：domain、Pages、Workers、D1、KV 都在同一個平台。
 ---
 
 這個時代 (2026)，要快速的做出一款 app 應用，你有很多工具可以用， claude 系列， codex 系列，現在 github 也有很多直接在網頁上就可以寫程式的服務，未來只會愈來愈多。

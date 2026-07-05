@@ -6,6 +6,7 @@ category: finance
 author: Marvin Lin
 tags: [finance, 財經, 新聞]
 summary: Gourmet Master (2723), the parent company of 85°C Bakery Cafe, saw its stock price drop after reports emerged that the Chairman's spouse would sell all her shares in a block trade for over NT$ 500 million. The company's revenue and profits have declined due to the pandemic, but it plans to distribute a cash dividend of NT$2.5 with a payout ratio of over 90%. Analysts believe the share sale could affect investor confidence and the company's future business strategy, while its Chinese market performance has fallen short of expectations. Investors should wait for more information before making any decisions.
+description: Gourmet Master (2723), the parent company of 85°C Bakery Cafe, saw its stock price drop after reports emerged that the Chairman's spouse would sell all her…
 permalink: /finance/:title:output_ext
 ---
 

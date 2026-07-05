@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [AI, Vibe Coding, Mono Repo, Frontend, Backend, Workflow]
 lang: en
 summary: Want your AI agent to write better full-stack code? Step one is using a mono repo — keep your frontend and backend in the same folder.
+description: Want your AI agent to write better full-stack code? Step one is using a mono repo — keep your frontend and backend in the same folder.
 ---
 
 After heavily using Codex and Claude Code, I now almost always use this structure.

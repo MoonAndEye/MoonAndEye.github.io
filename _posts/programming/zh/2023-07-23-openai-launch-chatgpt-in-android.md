@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [ChatGPT, OpenAI, Android]
 summary: This article is about OpenAI CTO Mira Murati said ChatGPT will launch in Android.
+description: This article is about OpenAI CTO Mira Murati said ChatGPT will launch in Android.
 permalink: /programming/:title:output_ext
 ---
 

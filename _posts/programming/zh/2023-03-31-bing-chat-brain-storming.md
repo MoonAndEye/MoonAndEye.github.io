@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [bing chat, AI, programming]
 summary: Using Microsoft bing chat to brain storming
+description: Using Microsoft bing chat to brain storming
 permalink: /programming/:title:output_ext
 ---
 

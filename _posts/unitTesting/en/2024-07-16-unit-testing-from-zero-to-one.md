@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Unit Testing, Swift, Xcode]
 lang: en
 summary: This article introduces how to integrate unit testing into iOS projects. It highlights the role of unit tests in verifying the correctness of the smallest testable units of code, such as functions, methods, or classes. The author suggests starting with components that do not depend on others and uses a dependency graph to illustrate this point. The article includes practical steps for setting up a unit testing environment in Xcode and discusses examples such as handling JSON responses for authentication. It also explores how unit testing can help manage changing project requirements, noting both its benefits and limitations.
+description: This article introduces how to integrate unit testing into iOS projects. It highlights the role of unit tests in verifying the correctness of the smallest…
 ---
 
 In this article, we will introduce how to integrate unit testing into iOS projects. Unit tests are used to verify that the smallest testable units of code (such as functions, methods, or classes) are correct. They are typically written and executed by developers using various tools and frameworks to automate and simplify the testing process. The purpose of unit testing is to ensure the correctness and robustness of the program's logic, enhancing the quality and maintainability of the code.

@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [life, game]
 summary: 2014年10月11日 魔物獵人開始發售  
+description: 2014年10月11日 魔物獵人開始發售
 ---
 
 2014年10月11日 魔物獵人開始發售  

@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Programming, AI, ChatGPT]
 lang: en
 summary: The article describes how to generate iOS app code by integrating ChatGPT. It starts with how to make an API request using Swift and then moves to adding a basic UI to the app that includes a prompt input text field, an API request button, and a response text display field. Finally, it provides SwiftUI code to make the UI.
+description: The article describes how to generate iOS app code by integrating ChatGPT. It starts with how to make an API request using Swift and then moves to adding a…
 ---
 
 In the [previous article](/chatgpt/using-chatgpt-connect-chatgpt1.html), we used Python to connect to the ChatGPT API. However, as an iOS developer, I am interested in trying to directly use ChatGPT to save time and effort by helping me complete a ChatGPT integration app.

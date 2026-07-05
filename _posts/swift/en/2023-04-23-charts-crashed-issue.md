@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, Charts]
 lang: en
 summary: While using Charts version 3.4.1, I experienced crashes when updating datasets and then rendering charts, as referenced in issues 4049 and 4132. This article summarizes these issues and explores solutions to the chart crashes.
+description: While using Charts version 3.4.1, I experienced crashes when updating datasets and then rendering charts, as referenced in issues 4049 and 4132. This…
 ---
 
 Charts is a widely used charting package in iOS project development. However, this year, I encountered an unusual situation in my project. Sporadic crashes kept occurring, which were visible on the Firebase Crashlytics Dashboard and happened within the renderer of the Charts package. Moreover, during releases to QA, crashes occurred after the iPhone was powered off for an extended period and then turned back on. There were no similar crashes reported on Crashlytics last year, and the difference now is that I had upgraded the Charts package to `3.4.1` and continued to upgrade to `3.5.0` and `3.6.0` after discovering the crash issue.

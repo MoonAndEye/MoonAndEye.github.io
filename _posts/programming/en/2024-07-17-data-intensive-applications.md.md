@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [system design, programming]
 lang: en
 summary: "Notes on Designing Data-Intensive Applications, discussing partitioning strategies for servers."
+description: "Notes on Designing Data-Intensive Applications, discussing partitioning strategies for servers."
 ---
 
 There is no silver bullet: https://g.co/kgs/G7QbDr

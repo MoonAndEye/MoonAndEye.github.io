@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Cloudflare, Cloudflare Tunnel, ngrok, Webhook, AI Agent]
 summary: 如果 domain 已經放在 Cloudflare，當你需要把 localhost 穩定暴露到外網時，Cloudflare Tunnel 會比 ngrok 更像開發流程的一部分。
+description: 如果 domain 已經放在 Cloudflare，當你需要把 localhost 穩定暴露到外網時，Cloudflare Tunnel 會比 ngrok 更像開發流程的一部分。
 ---
 
 AI agent coding 讓你很快把功能做出來，但進到整合測試時，會遇到一個很實際的問題：外部服務要怎麼打進你的 local 環境。

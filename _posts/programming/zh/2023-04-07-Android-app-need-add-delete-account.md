@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Android, Apps]
 summary: Google has announced that from January 1, 2023, all Android apps on the Play Store must provide an option to delete user accounts and data through a website to protect user privacy and data security. Non-compliance by app developers will result in being removed from the store or fined.
+description: Google has announced that from January 1, 2023, all Android apps on the Play Store must provide an option to delete user accounts and data through a website…
 permalink: /programming/:title:output_ext
 ---
 

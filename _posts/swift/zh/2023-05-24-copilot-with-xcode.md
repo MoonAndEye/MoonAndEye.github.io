@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, Xcode, copilot]
 summary: This is a post about my experience using GitHub Copilot on Xcode. Conclusion - not very good, I turn it off when I use Xcode.
+description: This is a post about my experience using GitHub Copilot on Xcode. Conclusion - not very good, I turn it off when I use Xcode.
 permalink: /swift/:title:output_ext
 ---
 

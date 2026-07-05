@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [system design, migration]
 summary: "Stripe 是很知名的支付服務，這篇文章是讀完 Stripe 系統漸進式升級的過程"
+description: "Stripe 是很知名的支付服務，這篇文章是讀完 Stripe 系統漸進式升級的過程"
 ---
 
 歷史上，如果火車的軌道寬度要升級，並不會在原來的鐵道上多鋪上兩條鐵軌，而是多蓋一條鐵軌，讓不同軌距的火車，都可以同時行駛在軌道上。等到其中一種軌距的火車全數被汰換掉，這時才會把不用的軌道拆掉。

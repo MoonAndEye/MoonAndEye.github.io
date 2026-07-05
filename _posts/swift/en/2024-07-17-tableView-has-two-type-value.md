@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift, iOS, UI, TableView]
 lang: en
 summary: When your table view contains more than one type of data, you can manage it using this approach. This article provides an example of handling two types of data—posts and ads—within a table view.
+description: When your table view contains more than one type of data, you can manage it using this approach. This article provides an example of handling two types of…
 classes: wide
 ---
 

@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, Charts]
 summary: When using Charts 3.4.1, I got crashed when dataSet updated then charts rendering. The issue 4049 and 4132 mentioned about this. This article summarized these issues and find the solution on charts crash.
+description: When using Charts 3.4.1, I got crashed when dataSet updated then charts rendering. The issue 4049 and 4132 mentioned about this. This article summarized…
 permalink: /swift/:title:output_ext
 ---
 

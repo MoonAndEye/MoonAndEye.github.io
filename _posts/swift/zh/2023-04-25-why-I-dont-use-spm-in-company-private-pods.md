@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, cocoapods, spm]
 summary: Compare iOS development third party system. One is cocoapods, another is spm. Currently, I only used cocoapods and using pod to manage my libs. This mainly because dependency relation between libs. For future, if spm let developers more convinient on iOS development, we will change on that time. 
+description: Compare iOS development third party system. One is cocoapods, another is spm. Currently, I only used cocoapods and using pod to manage my libs. This mainly…
 permalink: /swift/:title:output_ext
 ---
 

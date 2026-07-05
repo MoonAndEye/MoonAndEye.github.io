@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [AI, bing, create, art, openAI]
 summary: Bing release ai art. The name is create. This post shows different prompts to see the ai arts.
+description: Bing release ai art. The name is create. This post shows different prompts to see the ai arts.
 permalink: /life/:title:output_ext
 ---
 

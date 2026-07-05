@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, MVC, Cocoa framework]
 summary: Analyze iOS MVC design pattern. MVC is model-view-controller pattern. The main point is model should isolate with view. Nomatter is macOS app or iOS app. This article using books example - Cocoa design patterns as example.
+description: Analyze iOS MVC design pattern. MVC is model-view-controller pattern. The main point is model should isolate with view. Nomatter is macOS app or iOS app.…
 permalink: /swift/:title:output_ext
 classes: wide
 ---

@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [Google Gemini, ChatGPT, AI, LLM]
 summary: Google Gemini AI Demo is fake, not real. It's edited
+description: Google Gemini AI Demo is fake, not real. It's edited
 permalink: /programming/:title:output_ext
 ---
 

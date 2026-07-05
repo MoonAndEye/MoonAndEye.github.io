@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [programming, ChatGPT, OpenAI, linear]
 summary: Dbundle exec jekyll serveiscusses the release of OpenAI's ChatGPT-4o and its capabilities, as demonstrated in a live demo and on YouTube. The author uses ChatGPT-4o to retranslate a previously published article, originally shared by Linear's CEO on Stripe about the quality of programming. The author cautions that even with ChatGPT-4o, translations may vary over time due to model updates, so direct comparisons between versions may not be accurate. The article also explores the concepts of Craft and Quality in the context of professional-grade software.
+description: Dbundle exec jekyll serveiscusses the release of OpenAI's ChatGPT-4o and its capabilities, as demonstrated in a live demo and on YouTube. The author uses…
 permalink: /programming/:title:output_ext
 ---
 

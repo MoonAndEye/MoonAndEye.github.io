@@ -1,4 +1,73 @@
 <link rel="stylesheet" href="/assets/css/styles.css">
-<script>
 
-</script>
+{%- comment -%}
+  SEO：zh/en 對應頁面的 hreflang 標籤。
+  規則：
+  - 首頁三兄弟（/、/zh/、/en/）互相宣告，x-default 給 /。
+  - 有 canonical_url 的頁面（/zh/ 底下與根目錄重複的分類頁）不輸出 hreflang。
+  - /en/X 先找根目錄的中文對應（/X，canonical 版本），找不到再找 /zh/X。
+  - 根目錄中文頁（/about/ 等）配對 /en + 同路徑。
+  - 文章依 /zh/、/en/ 前綴互換，只在對應文章存在時輸出。
+{%- endcomment -%}
+{%- unless page.canonical_url -%}
+{%- if page.url == '/' or page.url == '/zh/' or page.url == '/en/' -%}
+<link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
+<link rel="alternate" hreflang="zh-Hant" href="{{ '/zh/' | absolute_url }}">
+{%- else -%}
+  {%- assign hreflang_docs = site.pages | concat: site.posts -%}
+  {%- assign hreflang_zh_url = nil -%}
+  {%- assign hreflang_en_url = nil -%}
+  {%- if page.url contains '/zh/' -%}
+    {%- assign hreflang_cand = page.url | replace_first: '/zh/', '/en/' -%}
+    {%- assign hreflang_alt_page = hreflang_docs | where: 'url', hreflang_cand | first -%}
+    {%- if hreflang_alt_page -%}
+      {%- assign hreflang_zh_url = page.url -%}
+      {%- assign hreflang_en_url = hreflang_cand -%}
+    {%- endif -%}
+  {%- elsif page.url contains '/en/' -%}
+    {%- assign hreflang_root_cand = page.url | replace_first: '/en/', '/' -%}
+    {%- assign hreflang_root_page = hreflang_docs | where: 'url', hreflang_root_cand | first -%}
+    {%- if hreflang_root_page == nil -%}
+      {%- comment -%} 舊的根目錄中文文章用 /path/title.html 形式的 permalink {%- endcomment -%}
+      {%- assign hreflang_len = hreflang_root_cand | size | minus: 1 -%}
+      {%- assign hreflang_root_html = hreflang_root_cand | slice: 0, hreflang_len | append: '.html' -%}
+      {%- assign hreflang_root_page = hreflang_docs | where: 'url', hreflang_root_html | first -%}
+      {%- if hreflang_root_page -%}
+        {%- assign hreflang_root_cand = hreflang_root_html -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if hreflang_root_page -%}
+      {%- assign hreflang_en_url = page.url -%}
+      {%- assign hreflang_zh_url = hreflang_root_cand -%}
+    {%- else -%}
+      {%- assign hreflang_cand = page.url | replace_first: '/en/', '/zh/' -%}
+      {%- assign hreflang_alt_page = hreflang_docs | where: 'url', hreflang_cand | first -%}
+      {%- if hreflang_alt_page -%}
+        {%- assign hreflang_en_url = page.url -%}
+        {%- assign hreflang_zh_url = hreflang_cand -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- elsif page.lang == 'zh' -%}
+    {%- assign hreflang_cand = page.url | prepend: '/en' -%}
+    {%- assign hreflang_alt_page = hreflang_docs | where: 'url', hreflang_cand | first -%}
+    {%- if hreflang_alt_page == nil -%}
+      {%- comment -%} .html 形式的中文文章對應到 /en/.../title/ 的英文文章 {%- endcomment -%}
+      {%- assign hreflang_tail = page.url | slice: -5, 5 -%}
+      {%- if hreflang_tail == '.html' -%}
+        {%- assign hreflang_len = page.url | size | minus: 5 -%}
+        {%- assign hreflang_cand = page.url | slice: 0, hreflang_len | append: '/' | prepend: '/en' -%}
+        {%- assign hreflang_alt_page = hreflang_docs | where: 'url', hreflang_cand | first -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if hreflang_alt_page -%}
+      {%- assign hreflang_zh_url = page.url -%}
+      {%- assign hreflang_en_url = hreflang_cand -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if hreflang_zh_url and hreflang_en_url -%}
+<link rel="alternate" hreflang="zh-Hant" href="{{ hreflang_zh_url | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ hreflang_en_url | absolute_url }}">
+  {%- endif -%}
+{%- endif -%}
+{%- endunless -%}

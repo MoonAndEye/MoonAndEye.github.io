@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Movie]
 summary: Suprer Mario Bro movie is on. This post has trailers
+description: Suprer Mario Bro movie is on. This post has trailers
 permalink: /programming/:title:output_ext
 ---
 

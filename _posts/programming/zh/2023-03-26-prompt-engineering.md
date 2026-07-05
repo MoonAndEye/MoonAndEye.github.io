@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [ai, prompt, ChatGPT]
 summary: Prompt engineering is a technique that uses artificial intelligence (AI) to generate text, and involves designing an appropriate input (prompt) to guide the AI in producing desired outputs. The goal of prompt engineering is to enable AI to understand human intentions and needs, and generate high-quality, useful, and interesting text. Prompt engineering requires consideration of various factors such as the capabilities, limitations, language, style, goals, and background of the AI, and requires continuous testing and improvement of prompt effectiveness. Prompt engineering is both an art and a science that integrates linguistics, psychology, logic, and creativity.
+description: Prompt engineering is a technique that uses artificial intelligence (AI) to generate text, and involves designing an appropriate input (prompt) to guide the…
 permalink: /finance/:title:output_ext
 ---
 

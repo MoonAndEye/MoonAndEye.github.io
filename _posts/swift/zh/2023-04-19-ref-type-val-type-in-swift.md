@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift]
 summary: Swift designed array, dict is value types. When you using array and copied it, it might have different behavior than you think. This article also include the swift.org and swift blog.
+description: Swift designed array, dict is value types. When you using array and copied it, it might have different behavior than you think. This article also include…
 permalink: /swift/:title:output_ext
 ---
 

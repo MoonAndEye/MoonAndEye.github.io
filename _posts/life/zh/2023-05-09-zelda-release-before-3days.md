@@ -6,6 +6,7 @@ category: life
 author: Marvin Lin
 tags: [Zelda, Nintendo, Switch]
 summary: Zelda - tears of the kindon release will be released in 3 days. Nintendo posted on twitter.
+description: Zelda - tears of the kindon release will be released in 3 days. Nintendo posted on twitter.
 permalink: /life/:title:output_ext
 ---
 

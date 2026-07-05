@@ -6,6 +6,7 @@ category: swift
 author: Marvin Lin
 tags: [Swift, iOS, UI]
 summary: When you design an alert, ok/cancel button should put ok on right? or left? Each platform has there guideline on this design, please follow the documents. If you are developing iOS or Android Apps, you should put your primary action button on trail (right).
+description: When you design an alert, ok/cancel button should put ok on right? or left? Each platform has there guideline on this design, please follow the documents.…
 permalink: /swift/:title:output_ext
 ---
 

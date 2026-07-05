@@ -7,6 +7,7 @@ author: Marvin Lin
 tags: [Swift]
 lang: en
 summary: Swift designed arrays and dictionaries as value types. When you use an array and copy it, it might behave differently than you expect. This article also includes references to swift.org and the Swift blog.
+description: Swift designed arrays and dictionaries as value types. When you use an array and copy it, it might behave differently than you expect. This article also…
 ---
 
 This discussion was an extension of the Prototype pattern from a book on Swift’s Design Patterns. Now, I aim to delve deeper into the nuances of value types and reference types.

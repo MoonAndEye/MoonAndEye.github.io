@@ -6,6 +6,7 @@ category: programming
 author: Marvin Lin
 tags: [KMM, kotlin, cross platform]
 summary: "Kotlin Multiplatform Mobile beta roadmap 重點節錄，在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容"
+description: "Kotlin Multiplatform Mobile beta roadmap 重點節錄，在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容"
 ---
 
 ### Kotlin Multiplatform Mobile beta roadmap 重點節錄
