@@ -9,8 +9,6 @@ en:
       url: /en/programming/
     - title: "Swift"
       url: /en/swift/
-    - title: "You need testing"
-      url: /en/unitTesting/
     - title: "Life"
       url: /en/life/
     - title: "About"
@@ -26,8 +24,6 @@ zh:
       url: /zh/programming/
     - title: "Swift"
       url: /zh/swift/
-    - title: "You need testing"
-      url: /zh/unitTesting/
     - title: "生活"
       url: /zh/life/
     - title: "Swift 社群資源"

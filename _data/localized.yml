@@ -3,9 +3,15 @@ en:
   subtitle-programming: "Software Development"
   prev-post: "Previous Post"
   next-post: "Next Post"
+  unit-testing-entry-title: "Unit Testing Series"
+  unit-testing-entry-desc: "From zero to production-grade tests — the complete iOS unit testing series."
+  unit-testing-entry-url: "/en/unitTesting/"
 
 zh:
   title: "Marvin 的程式開發筆記"
   subtitle-programming: "軟體開發/程式開發"
   prev-post: "上一篇"
   next-post: "下一篇"
+  unit-testing-entry-title: "單元測試 Unit Testing 系列文章"
+  unit-testing-entry-desc: "從零開始學 Unit Testing 的完整系列，含既有專案導入測試的實戰經驗。"
+  unit-testing-entry-url: "/unitTesting/"

@@ -7,6 +7,13 @@ author_profile: true
 
 {% include custom/language-switch-button.html %}
 
+{% assign ut = site.data.localized[page.lang] %}
+<div class="notice--info unit-testing-entry">
+  <i class="fas fa-vial" aria-hidden="true"></i>
+  <strong><a href="{{ ut.unit-testing-entry-url | relative_url }}">{{ ut.unit-testing-entry-title }}</a></strong>
+  — {{ ut.unit-testing-entry-desc }}
+</div>
+
 <h3 class="archive__subtitle">{{ site.data.localized[page.lang].subtitle-programming | default: "Programming" }}</h3>
 
 {% assign posts = site.posts | where: "categories", "programming" | where: "lang", page.lang | sort: "date" | reverse %}
