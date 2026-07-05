@@ -236,6 +236,17 @@
     flex-basis: 180px;
 }
 
+/* 滑鼠點擊不顯示焦點框；鍵盤操作（Tab）仍保留焦點提示 */
+.videos-strip__card:focus {
+    outline: none;
+}
+
+.videos-strip__card:focus-visible {
+    outline: 2px solid #78909c;
+    outline-offset: 2px;
+    border-radius: 8px;
+}
+
 .videos-strip__thumb {
     position: relative;
     display: block;
