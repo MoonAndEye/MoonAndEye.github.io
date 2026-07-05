@@ -72,6 +72,10 @@ author:
   bio              : "Swift developer. AI-agent workflow builder." # 側邊作者簡介
   location         : "Taipei, Taiwan"
   links:
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@MarvinBuildsAI"
+      target: "_blank"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
