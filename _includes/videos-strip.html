@@ -1,0 +1,37 @@
+{%- comment -%}
+  水平捲動的 YouTube 影片卡片列。點卡片後原地換成播放器（站內播放）。
+  參數：
+    items       — site.data.youtube.videos 或 .shorts 的陣列
+    shorts      — true 時用 9:16 直式卡片
+    skip_script — 同一頁第二次 include 時設 true，避免重複輸出 script
+{%- endcomment -%}
+<div class="videos-strip{% if include.shorts %} videos-strip--shorts{% endif %}">
+  {%- for v in include.items -%}
+  <button class="videos-strip__card" type="button" data-video-id="{{ v.id }}" title="{{ v.title | escape }}" aria-label="{{ include.play_label | default: '播放：' }}{{ v.title | escape }}">
+    <span class="videos-strip__thumb"><img src="{{ v.thumbnail }}" alt="" loading="lazy"><span class="videos-strip__play" aria-hidden="true"><i class="fas fa-play"></i></span></span>
+    <span class="videos-strip__title">{{ v.title | escape }}</span>
+    <span class="videos-strip__date">{{ v.published | escape }}</span>
+  </button>
+  {%- endfor -%}
+</div>
+{%- unless include.skip_script -%}
+<script>
+(function () {
+  if (window.__videosStripInit) { return; }
+  window.__videosStripInit = true;
+  document.addEventListener('click', function (ev) {
+    var card = ev.target.closest ? ev.target.closest('.videos-strip__card') : null;
+    if (!card || card.dataset.playing) { return; }
+    var thumb = card.querySelector('.videos-strip__thumb');
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + card.getAttribute('data-video-id') + '?autoplay=1';
+    iframe.title = card.title;
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.setAttribute('allowfullscreen', '');
+    thumb.textContent = '';
+    thumb.appendChild(iframe);
+    card.dataset.playing = '1';
+  });
+})();
+</script>
+{%- endunless -%}

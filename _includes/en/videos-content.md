@@ -1,8 +1,8 @@
 <p>
   Marvin Builds is my YouTube channel about real AI-agent workflows: I hand actual tasks to agents
   like Claude Code and Codex, then record — unedited — how they read requirements, write code, run
-  tests, fix mistakes, and deploy. The videos and Shorts on this page stay in sync with the channel
-  automatically, so new uploads show up here right away.
+  tests, fix mistakes, and deploy. This page stays in sync with the channel automatically, and every
+  thumbnail plays right here.
 </p>
 
 <p>
@@ -11,19 +11,26 @@
   </a>
 </p>
 
-## Latest videos
+<div class="videos-section__head">
+  <h2 id="latest-videos">Latest videos</h2>
+  <a class="videos-section__more" href="https://www.youtube.com/@MarvinBuildsAI/videos" target="_blank" rel="noopener noreferrer">More videos <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</div>
 
-Full-length builds — the whole journey from requirements to deployment.
-
+{% if site.data.youtube.videos %}
+{% include videos-strip.html items=site.data.youtube.videos play_label="Play: " %}
+{% else %}
 {% include youtube.html list="UULFh3pnlNkGStSGikqGJG64Qw" title="Marvin Builds latest videos playlist" %}
+{% endif %}
 
-Use the playlist button in the top-right corner of the player to browse other videos.
+<div class="videos-section__head">
+  <h2 id="shorts">Shorts</h2>
+  <a class="videos-section__more" href="https://www.youtube.com/@MarvinBuildsAI/shorts" target="_blank" rel="noopener noreferrer">More Shorts <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</div>
 
-## Shorts
-
-One AI development tip or discovery per minute.
-
+{% if site.data.youtube.shorts %}
+{% include videos-strip.html items=site.data.youtube.shorts shorts=true skip_script=site.data.youtube.videos play_label="Play: " %}
+{% else %}
 {% include youtube.html list="UUSHh3pnlNkGStSGikqGJG64Qw" shorts=true title="Marvin Builds Shorts playlist" %}
+{% endif %}
 
-For the full catalog, visit the
-<a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer">Marvin Builds channel on YouTube</a>.
+{% include videos-jsonld.html %}

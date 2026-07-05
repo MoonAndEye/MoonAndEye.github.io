@@ -7,7 +7,7 @@ author: Marvin Lin
 tags: [Codex CLI, OpenAI, AI Agent, AI Agent Coding]
 lang: en
 summary: "/goal is a new experimental feature in Codex CLI. It turns a long-running task into a goal that can be tracked, paused, and resumed, but it currently requires a newer CLI version and a manually enabled feature flag."
-description: "/goal is a new experimental feature in Codex CLI. It turns a long-running task into a goal that can be tracked, paused, and resumed, but it currently…
+description: "/goal is a new experimental feature in Codex CLI. It turns a long-running task into a goal that can be tracked, paused, and resumed, but it currently…"
 ---
 
 Codex CLI recently added a new feature that I think is worth paying attention to: `/goal`.

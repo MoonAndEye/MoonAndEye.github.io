@@ -7,7 +7,7 @@ author: Marvin Lin
 tags: [AI, AI Agent, Coding, App, Web App, Mobile App]
 lang: en
 summary: "AI agent coding is lowering the cost of reproducing app development, much like Gutenberg's printing press moved books from the manuscript market into a larger reader market."
-description: "AI agent coding is lowering the cost of reproducing app development, much like Gutenberg's printing press moved books from the manuscript market into a…
+description: "AI agent coding is lowering the cost of reproducing app development, much like Gutenberg's printing press moved books from the manuscript market into a…"
 ---
 
 The speed of AI agent coding is getting faster and faster.

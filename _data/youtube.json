@@ -1,0 +1,132 @@
+{
+ "videos": [
+  {
+   "id": "5YAfCv0Cy3E",
+   "title": "I Gave Codex One Image to Build a Web Game Demo",
+   "published": "2026-06-22",
+   "thumbnail": "https://i2.ytimg.com/vi/5YAfCv0Cy3E/hqdefault.jpg",
+   "description": "In the Codex era, building a demo should start with image generation.\n\nNot because the image is final art. Because a strong image gives an agent a clearer target than a long, flat spec. It shows layou…"
+  },
+  {
+   "id": "CcRcaeP1mw8",
+   "title": "Move AI Memory Between Agents: Codex to Claude",
+   "published": "2026-06-06",
+   "thumbnail": "https://i4.ytimg.com/vi/CcRcaeP1mw8/hqdefault.jpg",
+   "description": "In this Marvin Builds video, I demo a simple but useful AI-agent workflow:\ntake reviewed memory/context from one AI agent, bring it into another agent, and verify what the receiving agent learned.\n\nTh…"
+  },
+  {
+   "id": "WVxG1Ekkf_I",
+   "title": "Codex Automations for Baseball Research",
+   "published": "2026-05-30",
+   "thumbnail": "https://i4.ytimg.com/vi/WVxG1Ekkf_I/hqdefault.jpg",
+   "description": "Codex Automations can prepare recurring research context before you start working.\n\nIn this Marvin Builds demo, baseball research is the example: public Major League and Minor League sources, candidat…"
+  },
+  {
+   "id": "ooqKjlHq0TA",
+   "title": "I did not build a scouting app. I scheduled Codex Automations.",
+   "published": "2026-05-25",
+   "thumbnail": "https://i4.ytimg.com/vi/ooqKjlHq0TA/hqdefault.jpg",
+   "description": "Prompt from the video:\n\nPrepare a daily football scouting brief that can be run as a recurring Codex Automation for an independent football scout.\n\nThis is a Codex Automations demo, but the report sho…"
+  },
+  {
+   "id": "EqDgXWrr2us",
+   "title": "I asked Codex agent to install OpenClaw",
+   "published": "2026-05-19",
+   "thumbnail": "https://i2.ytimg.com/vi/EqDgXWrr2us/hqdefault.jpg",
+   "description": "If you tried to install OpenClaw before and got stuck, this video is for you.\n\nIn this first Marvin Builds episode, I use Codex on a Mac as a setup operator: it installs OpenClaw, verifies that the lo…"
+  }
+ ],
+ "shorts": [
+  {
+   "id": "oVEtlueD2FE",
+   "title": "Apple Just Made AI Costs Visible #Shorts",
+   "published": "2026-06-27",
+   "thumbnail": "https://i4.ytimg.com/vi/oVEtlueD2FE/hqdefault.jpg",
+   "description": "As of 2026-06-27: Apple raised prices on Macs and iPads, and the reason is bigger than Apple.\n\nApple points to AI data centers pushing up memory and storage chip costs. Micron is saying the other side…"
+  },
+  {
+   "id": "uTehpid3tRM",
+   "title": "Claude Tag: AI Agents Join Team Chat #Shorts",
+   "published": "2026-06-24",
+   "thumbnail": "https://i2.ytimg.com/vi/uTehpid3tRM/hqdefault.jpg",
+   "description": "Anthropic introduced Claude Tag, a Slack beta that lets teams mention @Claude inside a channel.\n\nMy takeaway: the real shift is not Claude inside Slack. It is AI agents moving from private chat window…"
+  },
+  {
+   "id": "9JTs6EvMyBQ",
+   "title": "claude -p Still Works With Your Subscription #Shorts",
+   "published": "2026-06-16",
+   "thumbnail": "https://i2.ytimg.com/vi/9JTs6EvMyBQ/hqdefault.jpg",
+   "description": "Anthropic paused its planned Claude Agent SDK credit change. For now, Agent SDK usage, claude -p, and third-party apps built on the Agent SDK continue to work with Claude subscriptions the same way as…"
+  },
+  {
+   "id": "BOxwiCBtd9w",
+   "title": "Claude Fable 5 Access Changed Overnight #Shorts",
+   "published": "2026-06-14",
+   "thumbnail": "https://i3.ytimg.com/vi/BOxwiCBtd9w/hqdefault.jpg",
+   "description": "Anthropic says access to Claude Fable 5 and Mythos 5 was paused after a broad U.S. government order. The block affected the Claude website, API, Claude Code, and Claude Cowork, while other Claude mode…"
+  },
+  {
+   "id": "Xc-K0AjcyH0",
+   "title": "Claude Fable 5 Access Was Turned Off #Shorts",
+   "published": "2026-06-13",
+   "thumbnail": "https://i1.ytimg.com/vi/Xc-K0AjcyH0/hqdefault.jpg",
+   "description": "Anthropic says access to Claude Fable 5 and Mythos 5 was turned off after a broad U.S. government order. The block affected the Claude website, API, Claude Code, and Claude Cowork, while other Claude …"
+  },
+  {
+   "id": "EA-z_MSRIAw",
+   "title": "Claude Fable 5 and Mythos 5: The June 22 Window #Shorts",
+   "published": "2026-06-10",
+   "thumbnail": "https://i2.ytimg.com/vi/EA-z_MSRIAw/hqdefault.jpg",
+   "description": "Anthropic launched Claude Fable 5 and Claude Mythos 5.\n\nFable 5 is included on Pro, Max, Team, and seat-based Enterprise through June 22. On June 23, usage credits are required.\n\nSource: https://www.a…"
+  },
+  {
+   "id": "Cj8D5jgf1zc",
+   "title": "Google cut engineering education? #Shorts",
+   "published": "2026-06-06",
+   "thumbnail": "https://i4.ytimg.com/vi/Cj8D5jgf1zc/hqdefault.jpg",
+   "description": "One X post started this thread: Gergely Orosz said everyone on Google's Engineering Education team was laid off, and that he checked with people inside Google.\n\nThis is not a Google announcement, and …"
+  },
+  {
+   "id": "4sES7QNYuPc",
+   "title": "Google cut engineering education? #Shorts",
+   "published": "2026-06-06",
+   "thumbnail": "https://i1.ytimg.com/vi/4sES7QNYuPc/hqdefault.jpg",
+   "description": "A careful read of Gergely Orosz's single-source report about Google's Engineering Education team, the first visible spread on X and Hacker News, and why the signal matters.\n\nNot a Google official anno…"
+  },
+  {
+   "id": "StjQL2zM_ug",
+   "title": "Claude Code /effort: Max to Ultracode #Shorts",
+   "published": "2026-06-02",
+   "thumbnail": "https://i4.ytimg.com/vi/StjQL2zM_ug/hqdefault.jpg",
+   "description": "Claude Code has a small but useful control: type /effort and you can tune the balance between faster responses and deeper thinking.\n\nIn this Marvin Builds Short, I show the newer /effort UI moving fro…"
+  },
+  {
+   "id": "oiXZbYk_mUc",
+   "title": "Codex Automations for Baseball Research #Shorts",
+   "published": "2026-05-31",
+   "thumbnail": "https://i4.ytimg.com/vi/oiXZbYk_mUc/hqdefault.jpg",
+   "description": "Codex Automations can prepare recurring research context before you start working.\n\nIn this Marvin Builds Short, baseball research is the example: public Major League and Minor League sources, candida…"
+  },
+  {
+   "id": "CjFdGYU4xGE",
+   "title": "Codex Automations: Mega7 morning brief #Shorts",
+   "published": "2026-05-23",
+   "thumbnail": "https://i4.ytimg.com/vi/CjFdGYU4xGE/hqdefault.jpg",
+   "description": "Codex Automations can prepare recurring context before work starts. In this Short, I use a Mega7 US market morning brief as one example.\n\nThis is a workflow demo, not investment advice.\n\nCopy/paste pr…"
+  },
+  {
+   "id": "2HORbGbVhPc",
+   "title": "Codex installed OpenClaw for me #Shorts",
+   "published": "2026-05-21",
+   "thumbnail": "https://i3.ytimg.com/vi/2HORbGbVhPc/hqdefault.jpg",
+   "description": "If OpenClaw setup got stuck, this is the workflow I would use now: give the setup task to Codex, watch the process, and verify the result.\n\nFull workflow: https://youtu.be/EqDgXWrr2us\n\nMarvin Builds: …"
+  },
+  {
+   "id": "EI3m0HcLV1Y",
+   "title": "Karpathy joins Anthropic: my hope for AI agents #Shorts",
+   "published": "2026-05-20",
+   "thumbnail": "https://i2.ytimg.com/vi/EI3m0HcLV1Y/hqdefault.jpg",
+   "description": "Andrej Karpathy joined Anthropic. My quick reaction as someone learning and building AI agents: I hope this pushes agents toward better human collaboration.\n\nSource: https://x.com/karpathy/status/2056…"
+  }
+ ]
+}

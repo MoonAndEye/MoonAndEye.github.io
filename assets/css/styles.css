@@ -185,6 +185,112 @@
     margin-right: 2rem;
 }
 
+/* YouTube 影片頁：區段標題 + more 連結 */
+.videos-section__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.6em 0 0.8em;
+    border-bottom: 1px solid #f2f3f3;
+    padding-bottom: 0.4em;
+}
+
+.videos-section__head h2 {
+    margin: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.videos-section__more {
+    white-space: nowrap;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+/* YouTube 影片頁：水平捲動卡片列 */
+.videos-strip {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 4px 4px 12px;
+    margin: 0 0 2rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+}
+
+.videos-strip__card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.videos-strip--shorts .videos-strip__card {
+    flex-basis: 180px;
+}
+
+.videos-strip__thumb {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.videos-strip--shorts .videos-strip__thumb {
+    aspect-ratio: 9 / 16;
+}
+
+.videos-strip__thumb img,
+.videos-strip__thumb iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    display: block;
+}
+
+.videos-strip__play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.75rem;
+    background: rgba(0, 0, 0, 0.18);
+    transition: background 0.15s;
+}
+
+.videos-strip__card:hover .videos-strip__play {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.videos-strip__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 8px;
+    font-size: 0.75em;
+    line-height: 1.4;
+}
+
+.videos-strip__date {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.65em;
+    color: #7a8288;
+}
+
 /* YouTube 影片頁 embed 播放器 */
 .videos-embed {
     width: 100%;

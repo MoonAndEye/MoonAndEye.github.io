@@ -1,0 +1,39 @@
+name: Update YouTube data
+
+on:
+  schedule:
+    - cron: "0 22 * * *" # 每天 06:00 台北時間
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch playlist data
+        env:
+          # 選配：設定 repo secret YOUTUBE_API_KEY 可從 RSS（最新 15 部）升級為
+          # YouTube Data API（每清單最多 MAX_ITEMS=50 部）
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python3 .github/scripts/fetch_youtube.py
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- _data/youtube.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/youtube.json
+          git commit -m "Update YouTube data"
+          git pull --rebase origin main
+          git push origin main

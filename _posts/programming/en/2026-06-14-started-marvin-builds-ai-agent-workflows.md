@@ -7,7 +7,7 @@ author: Marvin Lin
 tags: [AI, AI Agent, Coding Agents, Workflow, YouTube, Marvin Builds]
 lang: en
 summary: "I started Marvin Builds, a YouTube channel about real AI-agent workflows: giving agents real tasks, watching them run, fixing mistakes, deploying, and verifying the result."
-description: "I started Marvin Builds, a YouTube channel about real AI-agent workflows: giving agents real tasks, watching them run, fixing mistakes, deploying, and…
+description: "I started Marvin Builds, a YouTube channel about real AI-agent workflows: giving agents real tasks, watching them run, fixing mistakes, deploying, and…"
 image: /assets/programming/marvin-builds-ai-agent-workflows/marvin-builds-channel-banner.jpg
 ---
 

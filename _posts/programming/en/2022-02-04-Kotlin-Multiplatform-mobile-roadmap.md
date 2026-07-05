@@ -7,7 +7,7 @@ author: Marvin Lin
 tags: [KMM, kotlin, cross platform]
 lang: en
 summary: "Key excerpts from the Kotlin Multiplatform Mobile beta roadmap, where the relevant team released a video of the KMM beta version roadmap in 2021. The speaker, Ekaterina Petrova, mentioned several improvements from the Alpha to Beta versions."
-description: "Key excerpts from the Kotlin Multiplatform Mobile beta roadmap, where the relevant team released a video of the KMM beta version roadmap in 2021. The…
+description: "Key excerpts from the Kotlin Multiplatform Mobile beta roadmap, where the relevant team released a video of the KMM beta version roadmap in 2021. The…"
 ---
 
 ### Excerpts from the Kotlin Multiplatform Mobile Beta Roadmap

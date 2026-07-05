@@ -7,7 +7,7 @@ author: Marvin Lin
 lang: en
 tags: [Swift, WWDC]
 summary: "The article provides an overview of WeatherKit, a new framework introduced at WWDC22, designed to supply comprehensive weather data for applications and services. Here are the key points covered in the article"
-description: "The article provides an overview of WeatherKit, a new framework introduced at WWDC22, designed to supply comprehensive weather data for applications and…
+description: "The article provides an overview of WeatherKit, a new framework introduced at WWDC22, designed to supply comprehensive weather data for applications and…"
 ---
 
 ### Meet WeatherKit at WWDC22

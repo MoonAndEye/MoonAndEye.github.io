@@ -7,7 +7,7 @@ author: Marvin Lin
 tags: [Core ML, MLKit, Swift]
 lang: en
 summary: "The article discusses how to create an image recognition app using Turi Create, a Python module for developing machine learning models. Presented during WWDC18, Turi Create facilitates the creation of Core ML models, allowing iOS developers to focus more on API functionalities. The process involves preparing and categorizing image data into specific folders, training the model with this data, and ultimately producing a Core ML model file that can be integrated into iOS applications.The demonstration included in the article explains how to train a model to recognize images of Takeshi Kaneshiro, a famous actor. It covers setting up the dataset, training the model with Turi Create, and adjusting parameters like `max_iterations` to enhance model accuracy. The model’s performance is evaluated by its ability to accurately identify and classify new images based on the training it received. The article also touches on the need for sufficient and relevant training data to improve the accuracy and reliability of the machine learning model."
-description: "The article discusses how to create an image recognition app using Turi Create, a Python module for developing machine learning models. Presented during…
+description: "The article discusses how to create an image recognition app using Turi Create, a Python module for developing machine learning models. Presented during…"
 ---
 
 Creating an Image Recognition App with Turi Create - Core ML and Vision

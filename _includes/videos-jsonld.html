@@ -1,0 +1,33 @@
+{%- comment -%}
+  影片頁的 ItemList + VideoObject 結構化資料（長片在前、Shorts 在後）。
+  所有值都經過 jsonify，避免引號、換行破壞 JSON。
+{%- endcomment -%}
+{%- assign yt_empty = "" | split: "," -%}
+{%- assign yt_videos = site.data.youtube.videos | default: yt_empty -%}
+{%- assign yt_shorts = site.data.youtube.shorts | default: yt_empty -%}
+{%- assign yt_all = yt_videos | concat: yt_shorts -%}
+{%- if yt_all.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {%- for v in yt_all -%}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "VideoObject",
+        "name": {{ v.title | jsonify }},
+        "description": {{ v.description | default: v.title | jsonify }},
+        "thumbnailUrl": {{ v.thumbnail | jsonify }},
+        "uploadDate": {{ v.published | jsonify }},
+        "url": {{ v.id | prepend: "https://www.youtube.com/watch?v=" | jsonify }},
+        "embedUrl": {{ v.id | prepend: "https://www.youtube-nocookie.com/embed/" | jsonify }}
+      }
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
