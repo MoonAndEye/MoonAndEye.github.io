@@ -13,6 +13,10 @@
   "@type": "ItemList",
   "itemListElement": [
     {%- for v in yt_all -%}
+    {%- assign upload_date = v.published -%}
+    {%- if upload_date.size == 10 -%}
+      {%- assign upload_date = upload_date | append: "T00:00:00Z" -%}
+    {%- endif -%}
     {
       "@type": "ListItem",
       "position": {{ forloop.index }},
@@ -21,7 +25,7 @@
         "name": {{ v.title | jsonify }},
         "description": {{ v.description | default: v.title | jsonify }},
         "thumbnailUrl": {{ v.thumbnail | jsonify }},
-        "uploadDate": {{ v.published | jsonify }},
+        "uploadDate": {{ upload_date | jsonify }},
         "url": {{ v.id | prepend: "https://www.youtube.com/watch?v=" | jsonify }},
         "embedUrl": {{ v.id | prepend: "https://www.youtube-nocookie.com/embed/" | jsonify }}
       }

@@ -53,7 +53,7 @@ def fetch_rss(playlist_id):
         items.append({
             "id": vid,
             "title": entry.findtext("atom:title", default="", namespaces=ATOM_NS),
-            "published": (entry.findtext("atom:published", default="", namespaces=ATOM_NS))[:10],
+            "published": entry.findtext("atom:published", default="", namespaces=ATOM_NS).strip(),
             "thumbnail": thumb.get("url") if thumb is not None else f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
             "description": clip(entry.findtext(".//media:description", default="", namespaces=ATOM_NS)),
         })
@@ -79,7 +79,7 @@ def fetch_api(playlist_id, key):
             items.append({
                 "id": vid,
                 "title": sn.get("title", ""),
-                "published": (sn.get("publishedAt") or "")[:10],
+                "published": (sn.get("publishedAt") or "").strip(),
                 "thumbnail": thumb,
                 "description": clip(sn.get("description")),
             })
