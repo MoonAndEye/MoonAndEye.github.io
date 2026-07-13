@@ -43,4 +43,59 @@
 .small-date {
     font-size: 0.6em;
     margin-top: 0pt;
-  }  
+  }
+
+/* Article lists keep their text edge stable and show the first post image as a compact cover. */
+.list__item .archive__item--with-thumbnail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 6.5rem;
+  gap: 1rem;
+  align-items: start;
+  min-height: 6.5rem;
+  margin-top: 2em;
+}
+
+.archive__subtitle + .list__item .archive__item--with-thumbnail {
+  margin-top: 0.5em;
+}
+
+.archive__item--with-thumbnail .archive__item-body {
+  min-width: 0;
+}
+
+.archive__item--with-thumbnail .archive__item-title {
+  margin-top: 0;
+}
+
+.archive__item-thumbnail {
+  grid-column: 2;
+  grid-row: 1;
+  width: 6.5rem;
+  height: 6.5rem;
+  margin: 0;
+  overflow: hidden;
+  background: $background-color;
+  border: 1px solid mix(#000, $background-color, 10%);
+  border-radius: 4px;
+}
+
+.archive__item-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 37.5em) {
+  .list__item .archive__item--with-thumbnail {
+    grid-template-columns: minmax(0, 1fr) 4.75rem;
+    gap: 0.75rem;
+    min-height: 4.75rem;
+  }
+
+  .archive__item-thumbnail {
+    width: 4.75rem;
+    height: 4.75rem;
+  }
+}

@@ -8,9 +8,12 @@ tags: [agent]
 lang: en
 summary: "I officially started documenting the development of my custom AI agent, using Pi Agent and OpenCode as architectural references and beginning with a Developer Knowledge Service MCP."
 description: "I officially started documenting the development of my custom AI agent, using Pi Agent and OpenCode as architectural references and beginning with a Developer Knowledge Service MCP."
+image: /assets/programming/agent-build-log/agent-build-log-episode-001.png
 ---
 
 Today, I officially started documenting the development of my custom AI agent.
+
+![Agent Build Log Episode 001: the journey from Pi Agent and OpenCode to my own agent](/assets/programming/agent-build-log/agent-build-log-episode-001.png)
 
 ## What I completed
 
