@@ -1,6 +1,13 @@
 {
  "videos": [
   {
+   "id": "qualBRg758I",
+   "title": "I Used Codex to Search Flights From Multiple Starting Cities",
+   "published": "2026-07-13T17:00:09+00:00",
+   "thumbnail": "https://i2.ytimg.com/vi/qualBRg758I/hqdefault.jpg",
+   "description": "I found lower fares by changing where the trip started.\n\nI used Codex with SerpApi to compare the same London trip from Taipei, Hong Kong, Singapore, and Kuala Lumpur. Codex organized the results into…"
+  },
+  {
    "id": "5YAfCv0Cy3E",
    "title": "I Gave Codex One Image to Build a Web Game Demo",
    "published": "2026-06-22T15:39:04+00:00",
