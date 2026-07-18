@@ -6,6 +6,7 @@ author_profile: true
 lang: zh
 permalink: /zh/about/
 canonical_url: "https://www.marvinswift.com/about/"
+redirect_to: "https://www.marvinswift.com/about/"
 sitemap: false
 ---
 

@@ -6,6 +6,7 @@ author_profile: true
 lang: zh
 permalink: /zh/swift-community/
 canonical_url: "https://www.marvinswift.com/swift-community/"
+redirect_to: "https://www.marvinswift.com/swift-community/"
 sitemap: false
 ---
 

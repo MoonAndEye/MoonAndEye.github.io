@@ -6,6 +6,6 @@ category: life
 lang: zh
 permalink: /zh/life/
 canonical_url: "https://www.marvinswift.com/life/"
+redirect_to: "https://www.marvinswift.com/life/"
 sitemap: false
 ---
-

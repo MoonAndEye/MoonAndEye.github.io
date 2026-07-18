@@ -6,6 +6,6 @@ category: swift
 lang: zh
 permalink: /zh/swift/
 canonical_url: "https://www.marvinswift.com/swift/"
+redirect_to: "https://www.marvinswift.com/swift/"
 sitemap: false
 ---
-

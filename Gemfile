@@ -14,6 +14,7 @@ group :jekyll_plugins do
   # SEO 相關
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
+  gem 'jekyll-redirect-from'
 
   gem 'kramdown-parser-gfm'
 

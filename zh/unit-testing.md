@@ -6,6 +6,6 @@ category: unitTesting
 lang: zh
 permalink: /zh/unitTesting/
 canonical_url: "https://www.marvinswift.com/unitTesting/"
+redirect_to: "https://www.marvinswift.com/unitTesting/"
 sitemap: false
 ---
-

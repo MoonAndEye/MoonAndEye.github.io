@@ -67,10 +67,15 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
   - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-gist
   - jekyll-include-cache
+
+# 舊的 /zh/ 重複入口只保留轉址，不另外產生 redirects.json。
+redirect_from:
+  json: false
 
 paginate: 15
 paginate_path: "/page:num/"
