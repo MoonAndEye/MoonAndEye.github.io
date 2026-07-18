@@ -10,7 +10,7 @@
   <button class="videos-strip__card" type="button" data-video-id="{{ v.id }}" title="{{ v.title | escape }}" aria-label="{{ include.play_label | default: '播放：' }}{{ v.title | escape }}">
     <span class="videos-strip__thumb"><img src="{{ v.thumbnail }}" alt="" loading="lazy"><span class="videos-strip__play" aria-hidden="true"><i class="fas fa-play"></i></span></span>
     <span class="videos-strip__title">{{ v.title | escape }}</span>
-    <span class="videos-strip__date">{{ v.published | escape }}</span>
+    <span class="videos-strip__date">{{ v.published | date: "%Y-%m-%d" }}</span>
   </button>
   {%- endfor -%}
 </div>
