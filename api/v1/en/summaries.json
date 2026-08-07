@@ -475,7 +475,7 @@
   ],
   "summary": "I started Marvin Builds, a YouTube channel about real AI-agent workflows: giving agents real tasks, watching them run, fixing mistakes, deploying, and verifying the result.",
   "url": "https://www.marvinswift.com/en/programming/started-marvin-builds-ai-agent-workflows/",
-  "hero_image": "https://www.youtube.com/@MarvinBuildsAI",
+  "hero_image": "https://www.marvinswift.com/assets/programming/marvin-builds-ai-agent-workflows/marvin-builds-channel-banner.jpg",
   "content_format": "markdown+html",
   "inline_html_tags": [
    "a",
@@ -774,7 +774,7 @@
   ],
   "summary": "Since 2025, I have been extensively using Cursor in my daily development work. However, if we think broadly, Cursor's text output capabilities can extend beyond just \"programming\". If Project Managers in the team use Cur…",
   "url": "https://www.marvinswift.com/en/programming/using-cursor-in-jira.md/",
-  "hero_image": "https://www.cursor.com/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/cursor-in-jira/cursor_landing.png",
   "content_format": "markdown",
   "inline_html_tags": [],
   "has_insecure_images": false,

@@ -355,6 +355,16 @@ def compute_url_path(fm: dict, rel_path: str, categories_raw: list[str], slug: s
 # ---------------------------------------------------------------------------
 
 _NESTED_IMG_RE = re.compile(r"\[!\[([^\]]*)\]\(([^)]+)\)\]\(([^)]+)\)")
+# 判斷 URL 是否為圖片用。副檔名清單之外再列幾個「不帶副檔名但確定回傳
+# 圖片」的 CDN——老文章從 Medium 搬過來的圖片全是這種沒有副檔名的網址。
+_IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".bmp", ".heic", ".avif")
+_IMAGE_CDN_HOSTS = (
+    "cdn-images-1.medium.com",
+    "miro.medium.com",
+    "bp.blogspot.com",
+    "blogger.googleusercontent.com",
+    "ytimg.com",
+)
 _HR_LINE_RE = re.compile(r"^[ \t]*<hr[ \t]*/?>[ \t]*$", re.I | re.M)
 _BR_RE = re.compile(r"<br[ \t]*/?>", re.I)
 _STRONG_B_RE = re.compile(r"<(strong|b)>(.*?)</\1>", re.I | re.S)
@@ -367,18 +377,38 @@ _TILDE_FENCE_RE = re.compile(r"~~~.*?~~~", re.S)
 _INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
 
 
-def _flatten_nested_images(text: str) -> str:
-    """把 `[![](thumb)](full)` 這種巢狀縮圖連結攤平成 `![alt](full)`。
+def _looks_like_image_url(url: str) -> bool:
+    """判斷一個 URL 是否真的指向圖片檔。
 
-    老文章從 Blogspot 搬過來的圖片幾乎都是這個格式：內層 `![]()`是縮圖、
-    外層連結才是原始大圖。Flutter 端的 markdown renderer 對「連結包圖片」
-    這種巢狀語法支援度不一，攤平之後兩邊都能正常吃。alt text（如果內層
-    有寫）會被保留下來。
+    先看副檔名，再比對「不帶副檔名但確定回傳圖片」的已知 CDN。這個判斷
+    只用來決定巢狀連結攤平時該留哪一個 URL，寧可保守：判斷不出來就當成
+    不是圖片，讓內層那個確定是圖片的路徑勝出。
+    """
+    base = url.split("?", 1)[0].split("#", 1)[0].lower()
+    if base.endswith(_IMAGE_EXTS):
+        return True
+    return any(host in base for host in _IMAGE_CDN_HOSTS)
+
+
+def _flatten_nested_images(text: str) -> str:
+    """把 `[![](inner)](outer)` 這種巢狀圖片連結攤平成單純的 `![alt](url)`。
+
+    Flutter 端的 markdown renderer 對「連結包圖片」這種巢狀語法支援度不一，
+    攤平之後兩邊都能正常吃。alt text（如果內層有寫）會被保留下來。
+
+    外層 URL 有兩種完全不同的情況，必須分開處理：
+
+    1. 外層也是圖片（Blogspot 老文的標準格式：內層 `s320` 縮圖、外層
+       `s1600` 原圖）→ 用外層，拿到解析度更好的版本。
+    2. 外層是網頁（2023 年之後的文章常見：`[![截圖](本地圖)](官網)`）→
+       必須用**內層**。早期版本一律取外層，導致圖片路徑被網頁網址取代，
+       app 端 `Image.network` 會直接破圖。
     """
 
     def repl(m: re.Match) -> str:
-        alt, _thumb, full = m.groups()
-        return f"![{alt}]({full})"
+        alt, inner, outer = m.groups()
+        best = outer if _looks_like_image_url(outer) else inner
+        return f"![{alt}]({best})"
 
     return _NESTED_IMG_RE.sub(repl, text)
 
