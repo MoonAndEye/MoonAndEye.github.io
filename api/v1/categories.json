@@ -1,0 +1,47 @@
+[
+ {
+  "slug": "life",
+  "title_zh": "生活記事",
+  "title_en": "Life Stories",
+  "url_zh": "https://www.marvinswift.com/life/",
+  "url_en": "https://www.marvinswift.com/en/life/",
+  "count_zh": 49,
+  "count_en": 9
+ },
+ {
+  "slug": "programming",
+  "title_zh": "程式開發文章",
+  "title_en": "Programming Articles",
+  "url_zh": "https://www.marvinswift.com/programming/",
+  "url_en": "https://www.marvinswift.com/en/programming/",
+  "count_zh": 73,
+  "count_en": 41
+ },
+ {
+  "slug": "swift",
+  "title_zh": "Swift 開發文章",
+  "title_en": "Swift Articles",
+  "url_zh": "https://www.marvinswift.com/swift/",
+  "url_en": "https://www.marvinswift.com/en/swift/",
+  "count_zh": 48,
+  "count_en": 35
+ },
+ {
+  "slug": "finance",
+  "title_zh": "財經新聞與投資筆記",
+  "title_en": null,
+  "url_zh": "https://www.marvinswift.com/finance/",
+  "url_en": null,
+  "count_zh": 20,
+  "count_en": 0
+ },
+ {
+  "slug": "unitTesting",
+  "title_zh": "單元測試 Unit Testing 系列文章",
+  "title_en": "Unit Testing Series",
+  "url_zh": "https://www.marvinswift.com/unitTesting/",
+  "url_en": "https://www.marvinswift.com/en/unitTesting/",
+  "count_zh": 2,
+  "count_en": 2
+ }
+]

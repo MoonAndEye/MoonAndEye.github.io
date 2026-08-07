@@ -1,0 +1,1020 @@
+{
+ "slug": "agent-build-log",
+ "title_zh": "Agent Build Log",
+ "title_en": "Agent Build Log",
+ "episode_count": 23,
+ "episodes": [
+  {
+   "episode": 1,
+   "slug": "agent-build-log-episode-001",
+   "zh": {
+    "slug": "agent-build-log-episode-001",
+    "title": "Agent Build Log — Episode 001",
+    "lang": "zh",
+    "date": "2026-07-14T01:30:51+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "今天正式開始紀錄客製化 AI Agent 的開發：以 Pi Agent 與 OpenCode 作為架構參考，先完成 Developer Knowledge Service MCP，再逐步替換成自己的元件。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-001/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-001.png",
+    "content": "今天正式啟動我的客製化 AI Agent 開發紀錄。\n\n![Agent Build Log Episode 001：從 Pi Agent 與 OpenCode 出發，打造自己的 Agent](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-001.png)\n\n## 目前完成\n\n- 指定 Pi Agent 作為主要參考\n- 指定 OpenCode 作為另一個架構參考\n- 決定第一步先做 Developer Knowledge Service MCP\n- 第一版直接串接 Pi Agent，不急著從零打造完整 harness\n- 下班前已啟動 UltraWork，開始推進第一輪實作\n\n## 目前的想法\n\n先用既有 Agent framework 驗證流程，再逐步替換成自己的元件。\n\n目標不是只做一個 MCP，而是一步一步打造出真正屬於自己的 Agent。\n\nEpisode 001，正式開始。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 151,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-14-agent-build-log-episode-001.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-001",
+    "title": "Agent Build Log — Episode 001",
+    "lang": "en",
+    "date": "2026-07-14T01:30:52+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I officially started documenting the development of my custom AI agent, using Pi Agent and OpenCode as architectural references and beginning with a Developer Knowledge Service MCP.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-001/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-001.png",
+    "content": "Today, I officially started documenting the development of my custom AI agent.\n\n![Agent Build Log Episode 001: the journey from Pi Agent and OpenCode to my own agent](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-001.png)\n\n## What I completed\n\n- Selected Pi Agent as the primary reference\n- Selected OpenCode as another architectural reference\n- Decided to build a Developer Knowledge Service MCP as the first component\n- Chose to connect the first version directly to Pi Agent instead of building the entire harness from scratch\n- Started UltraWork before leaving work to kick off the first implementation cycle\n\n## The current strategy\n\nStart with an existing agent framework to validate the workflow, then gradually replace each component with my own implementation.\n\nThe goal is not simply to build another MCP.\n\nIt is to build an AI agent that is truly my own, one component at a time.\n\nEpisode 001 begins.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 121,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-14-agent-build-log-episode-001.md"
+   }
+  },
+  {
+   "episode": 2,
+   "slug": "agent-build-log-episode-002",
+   "zh": {
+    "slug": "agent-build-log-episode-002",
+    "title": "Agent Build Log — Episode 002",
+    "lang": "zh",
+    "date": "2026-07-14T21:30:13+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "DKS MCP 第一版已能透過統一介面查找 MR、Commit、Repository 與 Jira，Pi Agent 也完成 OAuth 與 CLI 執行驗證。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-002/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-002.png",
+    "content": "今天完成了兩個重要進展。\n\n![Agent Build Log Episode 002：DKS MCP 與 Pi Agent 整合架構](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-002.png)\n\n## DKS MCP\n\nDeveloper Knowledge Service，也就是 DKS 的 MCP 已經完成第一版。\n\n目前已驗證可以查找：\n\n- Merge Request（MR）\n- Commit\n- Repository\n\n另外也已經串接 Jira API，並整合進同一套 MCP 介面中。\n\n這代表 Agent 未來可以透過統一入口，取得更多開發相關知識，而不是分別呼叫不同工具。\n\n## Pi Agent 整合\n\n已經先把 Pi Agent 包裝起來，並完成以下驗證：\n\n- OAuth 可以正常通過\n- CLI 指令可以正常執行\n\n目前預設設定為：\n\n- Model：**GPT-5.6 Terra**\n- Effort：**xhigh**\n\nDKS 負責開發知識，Pi Agent 負責執行。\n\n整體架構開始慢慢成形了。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 180,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-14-agent-build-log-episode-002.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-002",
+    "title": "Agent Build Log — Episode 002",
+    "lang": "en",
+    "date": "2026-07-14T21:30:14+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "The first DKS MCP now searches MRs, commits, repositories, and Jira through one interface, while Pi Agent runs behind my own OAuth-enabled CLI wrapper.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-002/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-002.png",
+    "content": "Another major milestone completed.\n\n![Agent Build Log Episode 002: DKS MCP and Pi Agent integration architecture](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-002.png)\n\n## DKS (Developer Knowledge Service) MCP\n\nThe Developer Knowledge Service (DKS) MCP is now working.\n\nCurrent capabilities:\n\n- Search Merge Requests (MRs)\n- Search commits\n- Search repositories\n- Integrated Jira API into the same MCP interface\n\nThe goal is to give my agent a unified entry point for engineering knowledge instead of scattering requests across different tools.\n\n## Pi Agent Integration\n\nWrapped Pi Agent behind my own interface.\n\nVerified:\n\n- OAuth authentication works\n- CLI commands execute successfully\n\nDefault configuration:\n\n- Model: **GPT-5.6 Terra**\n- Effort: **xhigh**\n\nOne step closer to replacing individual components while keeping the overall workflow stable.\n\nThe architecture is starting to take shape.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 102,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-14-agent-build-log-episode-002.md"
+   }
+  },
+  {
+   "episode": 3,
+   "slug": "agent-build-log-episode-003",
+   "zh": {
+    "slug": "agent-build-log-episode-003",
+    "title": "Agent Build Log — Episode 003",
+    "lang": "zh",
+    "date": "2026-07-15T20:42:40+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "完成第一版 Browser UI，支援建立新對話、搜尋歷史與釘選；介面專注回答、搜尋與整理，Agent 執行將由其他介面負責。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-003/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-003.png",
+    "content": "今天完成了第一版 Browser UI。\n\n![Agent Build Log Episode 003：Browser UI 第一版](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-003.png)\n\n整體操作方式接近 ChatGPT，目前已具備：\n\n- 建立新對話\n- 搜尋歷史對話\n- 釘選重要對話\n\n![Golem Browser UI 第一版實際畫面](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-003-browser-ui.png)\n\n「專案」功能暫時不做，先把最核心的對話與搜尋體驗完成。\n\n下一步會把 DKS MCP 串接進來，讓使用者可以直接透過介面查找開發相關資料。\n\n不過目前不打算把 Agent 的實際執行流程放進 Browser UI。\n\n這個介面的定位很明確：\n\n**專注回答問題、搜尋資料，以及整理對話。**\n\nAgent 的執行與控制，之後會由其他介面負責。\n\n功能開始增加，但每一層的責任也必須保持清楚。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 193,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-15-agent-build-log-episode-003.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-003",
+    "title": "Agent Build Log — Episode 003",
+    "lang": "en",
+    "date": "2026-07-15T20:42:41+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "The first Browser UI supports new conversations, history search, and pinning, while staying focused on answers, information retrieval, and conversation organization.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-003/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-003.png",
+    "content": "Today, I completed the first version of the Browser UI.\n\n![Agent Build Log Episode 003: the first Browser UI](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-003.png)\n\nThe overall experience is similar to ChatGPT, with support for:\n\n- Starting a new conversation\n- Searching conversation history\n- Pinning important conversations\n\n![The first working version of the Golem Browser UI](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-003-browser-ui.png)\n\nI’m leaving out the “Projects” feature for now and focusing first on the core chat and search experience.\n\nThe next step is to connect DKS MCP, so users can search for engineering knowledge directly from the interface.\n\nHowever, I do not plan to place the actual Agent execution workflow inside the Browser UI.\n\nThe role of this interface is clear:\n\n**Answer questions, search for information, and organize conversations.**\n\nAgent execution and control will be handled through a separate interface later.\n\nAs the product grows, each layer still needs a clear responsibility.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 121,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-15-agent-build-log-episode-003.md"
+   }
+  },
+  {
+   "episode": 4,
+   "slug": "agent-build-log-episode-004",
+   "zh": {
+    "slug": "agent-build-log-episode-004",
+    "title": "Agent Build Log — Episode 004",
+    "lang": "zh",
+    "date": "2026-07-16T22:04:12+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Golem Desktop 開發第一天：以 Electron、React 與 Electron Vite 建立桌面介面，並將 Agent 執行隔離在 Electron Utility Process 中。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-004/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-004.png",
+    "content": "今天是 Golem Desktop 開發的第一天。\n\n![Agent Build Log Episode 004：Golem Desktop 開發第一天](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-004.png)\n\n前面幾個 Episode，一直都沒有碰 agent app，都是處理像是 DKS MCP、Pi Agent，以及模型和工具之間要怎麼串接。到了今天，終於開始把這些東西放進一個真正的桌面 App 裡。\n\nDesktop App 使用 Electron，前端則是 React，並透過 Electron Vite 建置。UI 的部分，我暫時直接參考 Codex App，先把基本的操作方式和整體結構做出來，不急著在第一天就設計一套完全不同的介面。\n\n不過我不想讓它只是 Electron 包住一個聊天頁面。\n\n目前 UI 和真正執行 Agent 的地方是分開的。畫面負責顯示和操作，Agent 則跑在獨立的 Electron Utility Process 裡，模型呼叫、工具執行和權限判斷也都會放在那邊處理。\n\n預設模型目前透過 OpenAI Codex OAuth 使用 gpt-5.6-terra，之前完成的 DKS MCP 也會慢慢接進 Desktop App，讓它可以查詢 MR、Commit、Repository 和 Jira 裡的資料。\n\n工具執行前的確認機制和 sandbox 權限限制，也開始一起放進這個架構裡。\n\n今天主要不是完成多少功能，而是正式決定 Golem Desktop 要怎麼開始。\n\n這只是 Desktop App 的第一天，畫面和架構都還很早，但至少第一步已經走出去了。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 358,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-16-agent-build-log-episode-004.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-004",
+    "title": "Agent Build Log — Episode 004",
+    "lang": "en",
+    "date": "2026-07-16T22:04:13+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Day one of Golem Desktop uses Electron, React, and Electron Vite, with Agent execution isolated in an Electron Utility Process.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-004/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-004.png",
+    "content": "Today was the first day of building Golem Desktop.\n\n![Agent Build Log Episode 004: day one of Golem Desktop](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-004.png)\n\nIn the previous episodes, I hadn’t touched the agent app itself. Most of the work was focused on DKS MCP, Pi Agent, and figuring out how the models and tools should connect. Today, I finally started bringing those pieces into an actual desktop app.\n\nThe desktop app uses Electron with a React frontend and is built with Electron Vite. For now, I’m using the Codex App as a UI reference. The goal on day one was to get the basic interactions and overall structure in place, rather than trying to design a completely different interface from the start.\n\nBut I don’t want it to be just a chat page wrapped in Electron.\n\nThe UI and the part that actually runs the Agent are separated. The interface handles display and interaction, while the Agent runs in its own Electron Utility Process. Model calls, tool execution, and permission checks will all be handled there.\n\nThe default model currently runs through OpenAI Codex OAuth using gpt-5.6-terra. I’ll also gradually bring the DKS MCP into the desktop app, so it can search MRs, commits, repositories, and Jira data.\n\nI’ve also started adding confirmation before tool execution, along with sandbox permission controls.\n\nToday wasn’t really about how many features I finished. It was about deciding how Golem Desktop should begin.\n\nThis is only day one of the desktop app. Both the UI and the architecture are still at a very early stage, but at least the first step is now in place.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 256,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-16-agent-build-log-episode-004.md"
+   }
+  },
+  {
+   "episode": 5,
+   "slug": "agent-build-log-episode-005",
+   "zh": {
+    "slug": "agent-build-log-episode-005",
+    "title": "Agent Build Log — Episode 005",
+    "lang": "zh",
+    "date": "2026-07-17T22:43:14+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "在 CLI、Browser 與 Desktop App 加入 Feedback 功能，透過共用 API 集中記錄測試時發現的問題與改進想法。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-005/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-005.png",
+    "content": "今天做了一個看起來不大，但我覺得之後會很有用的功能：Feedback。\n\n![Agent Build Log Episode 005：在三個介面加入 Feedback 功能](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-005.png)\n\n我把它加進了 CLI、Browser 和 Desktop App。無論是給其他使用者，還是我自己在測試時，只要遇到問題、覺得哪裡怪怪的，或突然想到可以改進的地方，都可以直接在當下留下紀錄。\n\n以前開發時常常會想著「這個晚點再修」，結果過幾天就忘了當時發生什麼，只剩下一個很模糊的印象。現在可以先把問題留下來，等到之後集中修 bug 或整理下一階段工作時，再從這些 Feedback 裡慢慢分類。\n\n實作方式沒有弄得太複雜。我先找了一個資料庫，再開一個簡單的 API 接口，讓三個介面都可以把 Feedback 送到同一個地方。\n\n既然我要開始 Eat my own dog food，就得把這份「狗食」哪裡難吃、哪裡需要改，也一起記下來。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 273,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-17-agent-build-log-episode-005.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-005",
+    "title": "Agent Build Log — Episode 005",
+    "lang": "en",
+    "date": "2026-07-17T22:43:15+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I added Feedback to the CLI, Browser, and Desktop App so problems and improvement ideas can be captured immediately through one shared API.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-005/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-005.png",
+    "content": "Today, I added a feature that looks small but will probably become very useful later: Feedback.\n\n![Agent Build Log Episode 005: Feedback across the CLI, Browser, and Desktop App](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-005.png)\n\nI added it to the CLI, Browser, and Desktop App. Whether it’s for other users or just for me while testing, I can now record a problem the moment I notice it—something feels wrong, a bug appears, or I suddenly think of something that could be improved.\n\nDuring development, I often tell myself, “I’ll fix this later.” A few days pass, and I can barely remember what happened or why it felt wrong. Now I can capture the issue first, then go back and sort through the feedback when I’m ready to fix bugs or plan the next round of work.\n\nI kept the implementation simple. I picked a database and created a basic API endpoint, so all three interfaces can send feedback to the same place.\n\nIf I’m going to eat my own dog food, I also need to keep a record of where that dog food tastes bad and what needs to be improved.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 172,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-17-agent-build-log-episode-005.md"
+   }
+  },
+  {
+   "episode": 6,
+   "slug": "agent-build-log-episode-006",
+   "zh": {
+    "slug": "agent-build-log-episode-006",
+    "title": "Agent Build Log — Episode 006",
+    "lang": "zh",
+    "date": "2026-07-18T20:42:09+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "開始整理 Agent 的 evals 題目庫，從既有 skills 與專案挑選真實的 iOS 與 mobile development 任務，建立可重複比較的基準線。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-006/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-006.png",
+    "content": "今天開始整理 Agent 的 evals 題目庫。\n\n![Agent Build Log Episode 006：開始整理 Agent evals 題目庫](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-006.png)\n\n我打算直接從自己過去累積的 skills，以及目前正在開發的專案中挑題目。第一階段會先以 iOS 和 mobile development 常見的工作為主，因為這些才是我真正希望 Agent 能處理好的事情。\n\n沒有 evals，我其實很難判斷 Agent 是真的變好了，還是只是某一次剛好答對。\n\nSWE 類型的 benchmark 也不只是測它會不會回答程式問題，而是看它能不能理解既有程式碼、找出需要修改的地方、完成實作、執行測試，最後把整個任務做完。\n\n我做這套題庫不是為了追排行榜，而是想先留下一條可以重複比較的基準線。之後每次更換模型、工具或工作流程，我才知道 Agent 到底進步了，還是其實悄悄退步了。\n\n不過今天連第一題都還沒建立。\n\n目前只是先讓 Coding Agent 盤點和分類現有的 skills 與專案內容，看看哪些真實任務適合整理成之後可以反覆測試的 benchmark。\n\n在讓 Agent 變得更好之前，我得先有辦法證明它真的變好了。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 335,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-18-agent-build-log-episode-006.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-006",
+    "title": "Agent Build Log — Episode 006",
+    "lang": "en",
+    "date": "2026-07-18T20:42:10+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I started organizing an Agent eval set from real iOS and mobile development tasks drawn from my existing skills and active projects.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-006/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-006.png",
+    "content": "Today, I started organizing the eval set for the Agent.\n\n![Agent Build Log Episode 006: organizing the Agent eval set](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-006.png)\n\nI’m going to build the first benchmark tasks from the skills I’ve accumulated over the years and the projects I’m currently working on. The initial focus will be common iOS and mobile development tasks, because those are the things I actually want the Agent to handle well.\n\nWithout evals, it’s hard to tell whether the Agent is genuinely improving or just happened to get one task right.\n\nSWE-style benchmarks are not only about answering coding questions. They test whether the Agent can understand an existing codebase, identify what needs to change, implement the solution, run the tests, and actually finish the task.\n\nI’m not building this eval set to chase a leaderboard. I want a baseline I can run repeatedly. Whenever I change the model, tools, or workflow, I need to know whether the Agent really improved—or quietly got worse.\n\nThat said, I haven’t created the first task yet.\n\nFor now, I’m having the Coding Agent review and categorize my existing skills and project work, so I can identify which real-world tasks are worth turning into repeatable benchmarks.\n\nBefore the Agent gets better, I need a way to prove it.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 200,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-18-agent-build-log-episode-006.md"
+   }
+  },
+  {
+   "episode": 7,
+   "slug": "agent-build-log-episode-007",
+   "zh": {
+    "slug": "agent-build-log-episode-007",
+    "title": "Agent Build Log — Episode 007",
+    "lang": "zh",
+    "date": "2026-07-20T00:25:36+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "研究 Google ADK 與 Agents CLI，了解如何讓 Coding Agent 透過可重複使用的指令與 skills，建立、評估並部署 Agent。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-007/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-007.png",
+    "content": "今天花了一些時間研究 Google 的 ADK 和 Agents CLI，想看看 Google 是怎麼把 Agent 的建立流程整理成一套可以被重複使用的方法。\n\n![Agent Build Log Episode 007：研究 Google ADK 與 Agents CLI](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-007.png)\n\nAgents CLI 本身不是另一個 Coding Agent，而是一套給 Codex、Claude Code 或其他 Coding Agent 使用的指令與 skills，協助它們建立、評估和部署 ADK Agent。\n\n![Google Agents CLI 架構圖](https://www.marvinswift.com/assets/programming/agent-build-log/google-agents-cli-architecture.png)\n\n我真正想研究的是：怎麼讓一個人只需要用自然語言描述需求，就能把一個 Agent 建立起來，最後一路部署上線。\n\n目前我沒有打算把整套做法直接搬進自己的 Agent。這次比較像是在研究別人的實作，看看哪些設計值得參考，哪些地方可以用自己的方式重新做一次。\n\n自己打造 Agent，不代表所有東西都必須從零開始。\n\n站在巨人的肩膀上。\n\nGitHub:\n[https://github.com/google/agents-cli](https://github.com/google/agents-cli)\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 233,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-20-agent-build-log-episode-007.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-007",
+    "title": "Agent Build Log — Episode 007",
+    "lang": "en",
+    "date": "2026-07-20T00:25:37+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I studied Google’s ADK and Agents CLI to understand how coding agents can use reusable commands and skills to build, evaluate, and deploy agents.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-007/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-007.png",
+    "content": "Today, I spent some time studying Google’s ADK and Agents CLI to see how Google turns the agent-building process into something repeatable.\n\n![Agent Build Log Episode 007: studying Google ADK and Agents CLI](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-007.png)\n\nAgents CLI is not another coding agent. It provides commands and skills that Codex, Claude Code, and other coding agents can use to build, evaluate, and deploy ADK agents.\n\n![Google Agents CLI architecture](https://www.marvinswift.com/assets/programming/agent-build-log/google-agents-cli-architecture.png)\n\nWhat I really wanted to understand was how someone could describe an Agent in natural language, then take it all the way from creation to deployment.\n\nI’m not planning to copy the entire approach into my own Agent. This was more about studying how others built it, finding the ideas worth learning from, and deciding which parts I might rebuild in my own way.\n\nBuilding my own Agent does not mean everything has to start from zero.\n\nStand on the shoulders of giants.\n\nGitHub:\n[https://github.com/google/agents-cli](https://github.com/google/agents-cli)\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 136,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-20-agent-build-log-episode-007.md"
+   }
+  },
+  {
+   "episode": 8,
+   "slug": "agent-build-log-episode-008",
+   "zh": {
+    "slug": "agent-build-log-episode-008",
+    "title": "Agent Build Log — Episode 008",
+    "lang": "zh",
+    "date": "2026-07-20T20:55:29+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "重整 Agent 核心，讓 CLI、Browser 與 Desktop App 共用同一套能力，並維持各介面為只負責輸入、顯示與互動的 thin clients。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-008/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-008.png",
+    "content": "今天發現一個問題。\n\n![Agent Build Log Episode 008：讓 CLI、Browser 與 Desktop App 共用 Agent 核心](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-008.png)\n\nCLI、Browser 和 Desktop App 雖然看起來都在使用同一個 Agent，但實際上，它們並沒有真的走同一套邏輯。之前之所以能正常運作，只是因為三邊的實作剛好維持一致。\n\n也就是說，沒有實作成我想要的樣子。\n\n發現這件事之後，我讓 Agent 自己開始重整這一層。\n\n目標很明確：之後新增的 tool，只要接進核心，就要能同時被 CLI、Browser 和 Desktop App 使用，而不是每個介面各自再做一次。\n\n我也希望這三個介面能一直維持 thin。它們只負責接收輸入、顯示結果和處理各自的互動，不應該把 Agent 的能力和邏輯重新實作一遍。\n\n今天沒有增加新功能，但把一個原本只是「剛好一致」的狀態，開始改成真正由同一套能力支撐。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 255,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-20-agent-build-log-episode-008.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-008",
+    "title": "Agent Build Log — Episode 008",
+    "lang": "en",
+    "date": "2026-07-20T20:55:30+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I started restructuring the Agent core so the CLI, Browser, and Desktop App share the same capabilities while remaining thin clients.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-008/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-008.png",
+    "content": "Today, I found a problem.\n\n![Agent Build Log Episode 008: one Agent core shared by the CLI, Browser, and Desktop App](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-008.png)\n\nThe CLI, Browser, and Desktop App all appeared to be using the same Agent. In reality, they were not running through the same underlying logic. They only worked consistently because the three implementations happened to stay in sync.\n\nIn other words, I hadn’t actually built it the way I intended.\n\nAfter discovering this, I had the Agent start restructuring this layer.\n\nThe goal is clear: whenever I add a new tool to the core, it should immediately become available to the CLI, Browser, and Desktop App. Each interface should not have to implement the same capability again.\n\nI also want all three interfaces to remain thin. They should only handle input, display results, and manage their own interactions—not reimplement the Agent’s capabilities and logic.\n\nI didn’t add any new features today. Instead, I started replacing something that was only “consistent by coincidence” with a system truly powered by the same shared capabilities.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 157,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-20-agent-build-log-episode-008.md"
+   }
+  },
+  {
+   "episode": 9,
+   "slug": "agent-build-log-episode-009",
+   "zh": {
+    "slug": "agent-build-log-episode-009",
+    "title": "Agent Build Log — Episode 009",
+    "lang": "zh",
+    "date": "2026-07-22T00:34:59+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "為 DKS MCP 加入 repository aliases，讓常用名稱、單複數與自然語言查詢都能解析到正確的 repo 與連結。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-009/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-009.png",
+    "content": "今天我又回頭處理 DKS（Developer Knowledge Service）MCP，開始補 repository aliases。\n\n![Agent Build Log Episode 009：為 DKS MCP 加入 repository aliases](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-009.png)\n\n在真實對話裡，人通常不會直接講出完整而精確的 repo 名稱。他們會問：「登入模組在哪裡？」我希望 Agent 能理解這句話真正指的是什麼，然後回傳正確的 repository 名稱和連結。\n\n接著我遇到了一個很常見的語言問題。\n\n在我使用的語言裡，名詞通常沒有複數變化，動詞也不會像某些語言一樣隨著語境改變形式。所以我輸入的字，不一定會和 repository 的正式名稱完全一致。\n\n例如 repo 可能叫 `trees`，但我搜尋的是 `tree`；或者正式名稱是 `node`，我卻輸入 `nodes`。對人來說意思很清楚，但對現在的 DKS 搜尋而言，這些是完全不同的字，所以它只會回傳找不到結果。\n\n發現這件事之後，我讓 Agent 幫 repositories 建立 alias mappings。這些 aliases 現在會涵蓋常用名稱、單複數形式，以及人們自然提到同一個 repo 時可能使用的其他說法。我也補上測試，確保每一個 alias 都會解析到正確的 repository。\n\n我不希望使用 DKS 的人必須記住每一個 repo 的完整正式名稱。\n\n他們應該可以用自己的話提問。這些差異，應該交給 Agent 處理。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 373,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-22-agent-build-log-episode-009.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-009",
+    "title": "Agent Build Log — Episode 009",
+    "lang": "en",
+    "date": "2026-07-22T00:35:00+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I added repository aliases to DKS MCP so natural names, singular and plural forms, and everyday queries resolve to the correct repo and link.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-009/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-009.png",
+    "content": "Today, I went back to the DKS (Developer Knowledge Service) MCP and started working on repository aliases.\n\n![Agent Build Log Episode 009: repository aliases in DKS MCP](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-009.png)\n\nIn real conversations, people usually don’t ask for an exact repo name. They ask things like, “Where’s the login module?” I want the Agent to understand what they mean and return the right repository name and link.\n\nThat’s when I ran into a very normal language problem.\n\nIn the language I use, nouns generally don’t have plural forms, and verbs don’t change the way they do in some other languages. So the words I type don’t always match the official repository name exactly.\n\nFor example, the repo might be called trees, but I search for tree. Or it might be node instead of nodes. To a person, the meaning is obvious. To the current DKS search, they are completely different words, so it simply returns no results.\n\nOnce I noticed this, I had the Agent build alias mappings for the repositories. The aliases now cover common names, singular and plural forms, and other ways people might naturally refer to the same repo. I also added tests to make sure each alias resolves to the right repository.\n\nI don’t want anyone using DKS to memorize the exact name of every repo.\n\nThey should be able to ask in their own words. The Agent should handle the difference.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 223,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-22-agent-build-log-episode-009.md"
+   }
+  },
+  {
+   "episode": 10,
+   "slug": "agent-build-log-episode-010",
+   "zh": {
+    "slug": "agent-build-log-episode-010",
+    "title": "Agent Build Log — Episode 010",
+    "lang": "zh",
+    "date": "2026-07-22T23:55:33+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "規劃 Agent 記憶系統，在比較 Mem0、Letta、MemOS 與 Cognee 後，第一版選擇可在 Mac mini 本機運行的 LanceDB 與 Qwen3 Embedding 0.6B。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-010/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-010.png",
+    "content": "今天開始規劃 Agent 的記憶系統。\n\n![Agent Build Log Episode 010：使用 LanceDB 與 Qwen3 Embedding 0.6B 建立記憶系統](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-010.png)\n\n在真的動手之前，我先找了一輪目前比較知名、GitHub 星星數也比較高的開源方案，想看看別人是怎麼處理記憶的保存、搜尋和召回。\n\n看了一圈之後，最後還是得回到我自己的使用環境。\n\n這套記憶系統必須能直接跑在手上的 Mac mini。我不想一開始就依賴太重的模型，也不想把所有東西都丟到雲端，所以最後選擇用 LanceDB 搭配 Qwen3 Embedding 0.6B。\n\nLanceDB 負責保存和搜尋記憶，Qwen3 Embedding 0.6B 則負責把對話和事件轉成可以被檢索的向量。\n\n這個過程中，我也看了 Mem0、Letta、MemOS 和 Cognee 的基本架構。但研究之後，發現它們都不太是我現在想做的 Agent 方向。\n\n這些方案我先整理進筆記裡，暫時不採用。\n\n第一版的記憶系統，就先從 LanceDB 加上 Qwen3 Embedding 0.6B 開始。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 268,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-22-agent-build-log-episode-010.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-010",
+    "title": "Agent Build Log — Episode 010",
+    "lang": "en",
+    "date": "2026-07-22T23:55:34+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I planned the Agent memory system and chose LanceDB with Qwen3 Embedding 0.6B for a lightweight first version that runs locally on my Mac mini.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-010/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-010.png",
+    "content": "Today, I started planning the Agent’s memory system.\n\n![Agent Build Log Episode 010: a memory system using LanceDB and Qwen3 Embedding 0.6B](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-010.png)\n\nBefore writing any code, I spent some time looking through a few well-known open-source projects with strong GitHub traction. I wanted to see how other teams handle storing memories, searching them, and bringing the right ones back when needed.\n\nAfter going through several options, I had to come back to my actual setup.\n\nThis memory system needs to run directly on my Mac mini. I don’t want to start with a heavy model, and I don’t want to push everything to the cloud, so I decided to begin with LanceDB and Qwen3 Embedding 0.6B.\n\nLanceDB will handle storing and searching the memories, while Qwen3 Embedding 0.6B will turn conversations and events into vectors that can be retrieved later.\n\nAlong the way, I also looked into the basic architectures of Mem0, Letta, MemOS, and Cognee. They all had useful ideas, but none of them matched the kind of Agent I’m trying to build right now.\n\nI’ve saved my notes on them for later, but I’m not using them for the first version.\n\nFor now, the memory system starts with LanceDB and Qwen3 Embedding 0.6B.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 191,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-22-agent-build-log-episode-010.md"
+   }
+  },
+  {
+   "episode": 11,
+   "slug": "agent-build-log-episode-011",
+   "zh": {
+    "slug": "agent-build-log-episode-011",
+    "title": "Agent Build Log — Episode 011",
+    "lang": "zh",
+    "date": "2026-07-23T21:12:10+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "推翻 Episode 010 的向量檢索方案，第一版改採參考 OpenClaw 的 Markdown 與 SQLite 架構，讓記憶可閱讀、可修改，也更容易放進 App。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-011/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-011.png",
+    "content": "今天決定推翻 Episode 010 的方案。\n\n![Agent Build Log Episode 011：以 Markdown 與 SQLite 取代 embedding](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-011.png)\n\n昨天原本選了 LanceDB 搭配 Qwen3 Embedding 0.6B，想把第一版記憶系統直接做成向量檢索。但真的開始看模型大小後，才發現光是 Qwen3 Embedding 的檔案就接近 600 MB。\n\n如果直接把這個模型包進 App，整個 App 很可能會超過 1 GB。對第一版來說，這個代價太高了。\n\n所以今天決定退一步，先不做 embedding。\n\n第一版的記憶系統改成使用 Markdown 檔案加上 SQLite，整體方向先參考 OpenClaw 的做法。Markdown 負責保存真正的記憶內容，SQLite 則用來整理索引、時間、來源和查詢需要的資料。\n\n以今天 07-23 為例，workspace 會先長成這樣：\n\n```text\nworkspace/\n├── MEMORY.md\n├── DREAMS.md\n└── memory/\n    ├── 2026-07-22.md\n    ├── 2026-07-23.md\n    └── 2026-07-23-session-name.md\n```\n\nMEMORY.md 用來保存比較穩定、之後還會反覆用到的長期記憶。\n\n每天發生的事情先寫進 memory/ 裡的日期檔案。如果某次 session 有比較明確的主題，也可以另外留下帶有 session name 的紀錄。\n\nDREAMS.md 則先拿來放還沒有整理成熟的想法、待觀察的模式，以及之後可能需要回頭反思的內容。\n\n這樣做的好處是，就算沒有 embedding model，我仍然可以直接打開檔案查看、修改或搬移記憶。資料不會被鎖在某個模型或向量資料庫裡，除錯時也比較容易知道 Agent 到底記住了什麼。\n\nSQLite 暫時不負責取代 Markdown，而是當它的輔助層。之後可以用來記錄檔案位置、時間、標籤、session，以及哪些記憶曾經被讀取或更新。\n\n昨天選的是技術上比較完整的方向，今天選的則是第一版真的能放進 App、能維護，也能繼續往下做的方向。\n\n有時候推翻昨天的決定，不是走回頭路，只是終於看清楚第一步應該做多大。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 516,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-07-23-agent-build-log-episode-011.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-011",
+    "title": "Agent Build Log — Episode 011",
+    "lang": "en",
+    "date": "2026-07-23T21:12:11+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I replaced the first memory-system plan with a smaller Markdown-and-SQLite design inspired by OpenClaw, keeping memory readable, editable, and easier to ship.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-011/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-011.png",
+    "content": "Today, I decided to undo the decision I made in Episode 010.\n\n![Agent Build Log Episode 011: replacing embeddings with Markdown and SQLite](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-011.png)\n\nYesterday, I chose LanceDB with Qwen3 Embedding 0.6B for the first version of the memory system. The idea made sense until I looked more closely at the model size.\n\nThe embedding model alone is around 600 MB.\n\nIf I bundle that directly into the app, the whole app could easily end up over 1 GB. That feels like too much baggage for a first version, especially when I’m still trying to prove that the memory flow itself works.\n\nSo today, I stepped back and dropped embeddings for now.\n\nThe first version of the memory system will use Markdown files and SQLite, with the overall approach inspired by OpenClaw.\n\nMarkdown will hold the actual memory content. SQLite will help organize the index, timestamps, sources, sessions, and anything else needed for lookup.\n\nUsing July 23 as an example, the workspace will look something like this:\n\n```text\nworkspace/\n├── MEMORY.md\n├── DREAMS.md\n└── memory/\n    ├── 2026-07-22.md\n    ├── 2026-07-23.md\n    └── 2026-07-23-session-name.md\n```\n\nMEMORY.md will hold stable, long-term memories that are likely to be useful again.\n\nDaily events will first go into date-based files under memory/. If a session has a clear topic, it can also have its own named file.\n\nDREAMS.md will be a place for unfinished ideas, patterns that still need observation, and thoughts worth revisiting later.\n\nOne thing I like about this setup is that I can open the files myself and see exactly what the Agent remembers. I can edit them, move them, and debug them without depending on an embedding model or a vector database.\n\nSQLite won’t replace the Markdown files. It will sit beside them as a lightweight support layer for indexing and retrieval.\n\nYesterday’s plan was more technically ambitious. Today’s plan is smaller, easier to ship, and much more realistic for the first version.\n\nChanging my mind after one day doesn’t feel like going backward. It feels like finally choosing the right size for the first step.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 316,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-07-23-agent-build-log-episode-011.md"
+   }
+  },
+  {
+   "episode": 12,
+   "slug": "agent-build-log-episode-012",
+   "zh": {
+    "slug": "agent-build-log-episode-012",
+    "title": "Agent Build Log — Episode 012",
+    "lang": "zh",
+    "date": "2026-07-26T00:18:18+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "以 counterbalanced evals 比較 Terra 與 Luna：兩者正確率相同，但 Terra 稍快、tool calls 較少，也更常漏掉要求的 DKS protocol。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-012/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-012.png",
+    "content": "今天我原本以為，自己找到了一個更有效率的預設模型。\n\n![Agent Build Log Episode 012：比較 Terra 與 Luna](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-012.png)\n\n在相同的 evals 和相同 effort 下，Terra 的總耗時比 Luna 少，tool calls 也比較少。\n\n第一眼看到這個結果時，我的直覺是：Terra 可能走了一條比較短的路。\n\n例如 Luna 可能會先查 A、看完結果再查 B，接著回頭確認 A，最後再打開另一個檔案。\n\n而 Terra 可能先判斷自己需要 A、B、C，接著一次查完，再直接回答。\n\n不過這只是一個可能的解釋，我目前沒有足夠的證據可以證明 Terra 真的採用了比較短的路徑。\n\n我也擔心執行順序會影響結果。\n\n假如 Terra 總是第二個跑，它有沒有可能吃到前一次留下來的 file cache？\n\n所以後來我把測試改成 counterbalanced 的方式。每一道題目都跑一次 Terra → Luna，再跑一次 Luna → Terra。\n\n結果顯示，Terra 整體上還是稍微快一點，但目前還不能直接下結論說 Terra 本質上一定比 Luna 快。\n\n執行順序的結果，也沒有證明第二個執行的模型會穩定得到 cache 帶來的加速。\n\n![Terra 與 Luna 的 counterbalanced confirmatory study 結果](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-012-luna-vs-terra.png)\n\n真正讓我重新思考的，是 DKS protocol 的資料。\n\nTerra 的 tool calls 是 N 次。\n\nLuna 的 tool calls 大約是 N + 10 次。\n\n這代表 Terra 的 tool calls 比較少，未必只是因為它比較有效率。\n\n它可能真的找到了一條比較短的路，也可能只是有幾次跳過了原本應該完成的步驟。目前這份資料還不能把這兩種情況完全分開。\n\n更有意思的是，兩個模型最後的正確率雖然一樣，但失敗的方式不一樣。\n\nTerra 比較常沒有走完要求的 DKS protocol；Luna 幾乎都有呼叫 DKS，卻更常在最後答案上出錯。\n\n所以這次測到的並不是單純的「哪個模型比較好」，而是兩個模型用不同的方式，拿到了相同的分數。\n\nTerra 目前看起來，仍然可能是一個不錯的預設選擇。\n\nTerra 看起來走得比較快，但我還不能確定它是真的找到了捷徑，還是只是少做了幾步。\n\n在決定預設模型之前，我得先確保「更有效率」不是「更容易跳過規則」。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 641,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-07-26-agent-build-log-episode-012.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-012",
+    "title": "Agent Build Log — Episode 012",
+    "lang": "en",
+    "date": "2026-07-26T00:18:19+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I compared Terra and Luna with counterbalanced evals: they reached the same accuracy, while Terra ran slightly faster with fewer tool calls but missed the required DKS protocol more often.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-012/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-012.png",
+    "content": "Today, I thought I had found a more efficient default model.\n\n![Agent Build Log Episode 012: comparing Terra and Luna](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-012.png)\n\nWith the same evals and the same effort level, Terra finished faster than Luna and made fewer tool calls.\n\nMy first thought was that Terra might be taking a shorter path.\n\nLuna might do something like this:\n\nLook up A, inspect the result, look up B, go back and confirm A, open another file, and then answer.\n\nTerra might first decide that it needs A, B, and C, query them together, and then answer.\n\nBut that is only one possible explanation. I still don’t have enough evidence to say that Terra actually took a shorter path.\n\nI was also worried that the execution order might affect the result.\n\nIf Terra always ran second, could it be benefiting from file cache left behind by the previous run?\n\nSo I changed the test to use a counterbalanced setup. Each case ran once as Terra → Luna, and once as Luna → Terra.\n\nThe results still showed Terra finishing slightly faster overall, but I can’t conclude that Terra is inherently faster than Luna.\n\nThe execution-order results also did not show that the second model consistently benefited from cache.\n\n![Counterbalanced Terra versus Luna confirmatory study results](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-012-luna-vs-terra.png)\n\nWhat really made me rethink the result was the DKS protocol data.\n\nTerra made N tool calls.\n\nLuna made roughly N + 10 tool calls.\n\nThat means Terra making fewer tool calls may not simply mean it was more efficient.\n\nIt may have found a shorter path, or it may have skipped some steps it was supposed to complete. The current data still can’t fully separate those two possibilities.\n\nWhat makes this more interesting is that both models ended with the same accuracy, but they failed in different ways.\n\nTerra was more likely to miss the required DKS protocol. Luna almost always called DKS, but was more likely to get the final answer wrong.\n\nSo this test was not simply about which model was better. The two models reached the same score in very different ways.\n\nFor now, Terra still looks like it could be a reasonable default choice.\n\nIt seems to move faster, but I still don’t know whether it really found a shortcut or simply skipped a few steps.\n\nBefore choosing the default model, I need to make sure that “more efficient” does not actually mean “more likely to skip the rules.”\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 390,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-07-26-agent-build-log-episode-012.md"
+   }
+  },
+  {
+   "episode": 13,
+   "slug": "agent-build-log-episode-013",
+   "zh": {
+    "slug": "agent-build-log-episode-013",
+    "title": "Agent Build Log — Episode 013",
+    "lang": "zh",
+    "date": "2026-07-26T23:35:39+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "以 medium 與 xhigh 比較 Sol、Terra、Luna：範圍明確的 DKS lookup 任務優先使用 Terra xhigh；嚴格流程完整性優先選 Sol。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-013/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-013.png",
+    "content": "今天，我把 GPT-5.6 Sol 也加入了模型比較。\n\n![Agent Build Log Episode 013：比較 Sol、Terra 與 Luna 的模型 routing](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-013.png)\n\n之前我只測 Terra 和 Luna。\n\n在 Episode 012 裡，Terra 看起來很適合當預設模型，因為它比較快。但我一直沒有辦法回答一個問題：\n\n它是真的找到了更好的路徑，還是只是跳過了一些應該完成的步驟？\n\n所以這一次，我使用同一組 DKS eval，同時比較 Sol、Terra 和 Luna，並且分別測試 medium 和 xhigh 兩種 effort level。\n\n這次真正改變我看法的，不只是 Terra 的速度，而是它在 xhigh effort 下的表現。\n\n在 medium effort 下，Terra 的確很快，但它有 6 次沒有呼叫必要的 DKS tool，最後正式通過 20/29。\n\n到了 xhigh effort，Terra 只漏掉 1 次必要的 DKS call，正式通過率也提升到 26/29。\n\n這個結果剛好接住了我在 Episode 012 留下的疑問。\n\nTerra 的速度不一定只是來自跳過步驟。至少在提高 effort 之後，它大幅補上了流程完整性的問題，同時仍然保留速度優勢。\n\n在 xhigh effort 下，Terra 和 Sol 都正式通過了 26/29。\n\n但 Sol 平均每題大約需要 29.1 秒，Terra 則大約是 21.2 秒。\n\nTerra 不再只是「比較快，但要接受品質取捨」的選項。至少在這類範圍明確、工具固定的 DKS lookup 任務裡，Terra xhigh 可以同時做到夠快，也夠可靠。\n\nLuna 也不一定比較快。\n\n在這次測試中，不論 medium 還是 xhigh effort，Terra 的平均完成時間都比 Luna 短。\n\n所以單靠速度，已經不是我會優先選 Luna 而不是 Terra 的理由。\n\nSol 的優勢則在另一個地方。\n\n不論 medium 還是 xhigh effort，Sol 都完整執行了所有必要的 DKS protocol。\n\n所以當流程完整性比速度更重要時，我仍然會優先考慮 Sol。\n\n![Sol、Terra 與 Luna 在 medium、xhigh effort 下的 benchmark 結果](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-013-benchmark-report.png)\n\n對於範圍清楚、知道該使用哪個工具，也知道該怎麼驗證結果的任務，我目前會先使用 Terra xhigh。\n\n當任務更重視嚴格流程，或我願意用更多時間換取穩定性時，我會選 Sol。\n\n至於 Luna，它依然有自己的使用場景，但至少在這一輪裡，速度已經不是它相對於 Terra 的優勢。\n\n不過，這次六個設定是按照固定順序執行的，還不是完全平衡的實驗。\n\n所以我會把這些結果當成目前的 routing signal，而不是最後的定論。\n\n這次比較沒有給我一個可以用在所有事情上的模型。\n\n它給了我一個更好的模型路由規則。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 697,
+    "reading_minutes": 3,
+    "source_path": "_posts/programming/zh/2026-07-26-agent-build-log-episode-013.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-013",
+    "title": "Agent Build Log — Episode 013",
+    "lang": "en",
+    "date": "2026-07-26T23:35:40+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I compared Sol, Terra, and Luna at medium and xhigh effort. For scoped DKS lookups, Terra xhigh was both fast and reliable; Sol remains the choice when strict protocol compliance matters most.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-013/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-013.png",
+    "content": "Today, I added GPT-5.6 Sol to the model comparison.\n\n![Agent Build Log Episode 013: model routing across Sol, Terra, and Luna](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-013.png)\n\nPreviously, I had only tested Terra and Luna.\n\nIn Episode 012, Terra looked like a strong default because it was faster. But I still had one unanswered question:\n\nWas it actually finding a better path, or was it simply skipping steps it should have completed?\n\nSo this time, I used the same DKS evals to compare Sol, Terra, and Luna at both medium and xhigh effort.\n\nWhat changed my view was not just Terra’s speed. It was how much better Terra performed at xhigh effort.\n\nAt medium effort, Terra was fast, but it failed to call the required DKS tool six times and officially passed 20 out of 29 cases.\n\nAt xhigh effort, it missed only one required DKS call and passed 26 out of 29.\n\nThat result connects directly to the question I had in Episode 012.\n\nTerra’s speed may not come only from skipping steps. With more effort, it fixed most of the protocol-compliance problem while keeping its speed advantage.\n\nAt xhigh effort, Terra and Sol both passed 26 out of 29 cases.\n\nBut Sol averaged about 29.1 seconds per task, while Terra averaged about 21.2 seconds.\n\nFor this kind of clearly scoped DKS lookup task, Terra xhigh no longer looks like “the faster option with a quality trade-off.” It was both fast enough and reliable enough.\n\nLuna was not necessarily the faster model either.\n\nIn this test, Terra finished faster than Luna at both medium and xhigh effort. So speed alone is no longer a reason for me to choose Luna over Terra.\n\nSol’s advantage showed up somewhere else.\n\nAt both effort levels, Sol completed every required DKS protocol step.\n\nSo when process compliance matters more than speed, Sol is still the model I would trust first.\n\n![Benchmark overview of Sol, Terra, and Luna at medium and xhigh effort](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-013-benchmark-report.png)\n\nFor tasks with a clear scope, a known tool, and a straightforward way to verify the result, I would currently start with Terra xhigh.\n\nFor tasks where strict process compliance matters more, or where I am willing to spend more time for stability, I would choose Sol.\n\nLuna still has its own use cases, but in this round, speed was not its advantage over Terra.\n\nOne caveat: the six profiles were run in a fixed order, not in a fully balanced experiment.\n\nSo I am treating these results as a routing signal, not a final conclusion.\n\nThis comparison did not give me one model for everything.\n\nIt gave me a better model-routing rule.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 412,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-07-26-agent-build-log-episode-013.md"
+   }
+  },
+  {
+   "episode": 14,
+   "slug": "agent-build-log-episode-014",
+   "zh": {
+    "slug": "agent-build-log-episode-014",
+    "title": "Agent Build Log — Episode 014",
+    "lang": "zh",
+    "date": "2026-07-27T23:18:02+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "DKS 改用 GitLab API 與 Jira 查詢，不再為整個部門建立 Git repo mirror。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-014/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-014.png",
+    "content": "今天，我改了 DKS（Developer Knowledge Service）MCP 的設計。\n\n![Agent Build Log Episode 014：DKS 改用 GitLab API 與 Jira](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-014.png)\n\n一開始，我想把部門的 Git repo 全部 mirror 到 Mac mini。這樣 DKS MCP 就可以查 MR、commit、開發意圖，以及一個 feature 最後是怎麼被實作的。\n\n但我很快碰到一個很現實的限制：我現在能用的 Mac mini，硬碟空間不足以放下整個部門的 repo mirror。\n\n所以我把 Git repo 相關的查詢改掉，讓 MCP 改用 GitLab API。\n\nJira 的查詢能力還是保留。只要 Jira 上有相關紀錄，也能和 commit 對得起來，Agent 還是可以把一個 feature 的背景和實際改動串起來。\n\n我把資料來源改到 GitLab API 和 Jira，避免整個部門的 repo mirror 卡在 Mac mini 的硬碟空間上。之後我不會再為 DKS 建 repo mirror。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 212,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-27-agent-build-log-episode-014.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-014",
+    "title": "Agent Build Log — Episode 014",
+    "lang": "en",
+    "date": "2026-07-27T23:18:03+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "DKS now uses the GitLab API and Jira for lookup, so it no longer needs a mirror of every department repository.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-014/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-014.png",
+    "content": "Today, I changed the design of the DKS (Developer Knowledge Service) MCP.\n\n![Agent Build Log Episode 014: DKS now uses the GitLab API and Jira](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-014.png)\n\nAt first, I planned to mirror every Git repo in my department to a Mac mini. That would let the DKS MCP look up MRs and commits, trace why a feature was built, and see how it was implemented.\n\nBut I ran into a practical limit pretty quickly: the Mac mini I have available does not have enough disk space for a mirror of every repo in the department.\n\nSo I changed how DKS handles Git data. It now uses the GitLab API.\n\nI am keeping Jira search. When a Jira record matches a commit, the Agent can still connect the reason a feature was built to the actual code change.\n\nI moved DKS's data sources to the GitLab API and Jira. That removes the need to fit a mirror of every repo in the department on the Mac mini. I will not build repo mirrors for DKS anymore.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 161,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-27-agent-build-log-episode-014.md"
+   }
+  },
+  {
+   "episode": 15,
+   "slug": "agent-build-log-episode-015",
+   "zh": {
+    "slug": "agent-build-log-episode-015",
+    "title": "Agent Build Log — Episode 015",
+    "lang": "zh",
+    "date": "2026-07-28T23:36:14+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "排查正式打包 Desktop App 的 OAuth 問題：從 bundle、重複 pi-ai module、舊 process 到 credential lifecycle。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-015/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-015.png",
+    "content": "今天，我把 OAuth 打開之後，Desktop App 直接壞掉了。\n\n![Agent Build Log Episode 015：排查 Desktop App 的 OAuth 問題](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-015.png)\n\n畫面上只顯示：\n\n> Desktop agent did not produce an answer\n\n一開始，我以為是登入失敗，也可能是 token、模型，或帳號出了問題。\n\n但真正的錯誤其實發生得更早。\n\nPi 在準備模型 request 的 OAuth auth 時就失敗了，而且 token usage 是 0。也就是說，prompt 根本還沒有送到模型。\n\n第一個問題出在正式打包後的 Desktop App。\n\n開發環境裡可以載入的 OAuth flow，在 Electron production bundle 裡找不到對應的檔案。OAuth 還沒取得 request auth，整個流程就已經中斷。\n\n我加上 OAuth loader，source-level test 也通過了。\n\n但正式包還是壞的。\n\n後來才發現，workspace 裡其實存在兩份 pi-ai module。\n\n我把 loader 註冊到其中一份，但真正執行模型的 Pi ModelRuntime 使用的是另一份。\n\n它們的 loader registry 並不共用。\n\n所以看起來像是「我已經修好了」，實際上真正執行的 runtime 根本沒有拿到那個修正。\n\n我又把 module identity 和 bundle 問題修掉，重新打包，再測一次。\n\n結果畫面上還是同一個錯誤。\n\n這次真正的原因更荒謬：Mac 上跑的還是修正前就已經啟動的舊 Desktop process。\n\n磁碟上的 App 已經更新了，但記憶體裡的舊 process 不會自己變成新版本。\n\n所以我看到的不是「新修正仍然失敗」，而是「舊程式仍然在執行」。\n\n在處理這些問題的過程中，我又發現另一個風險。\n\nCLI 和 Desktop 共用同一份 OAuth credential，但 Desktop worker 啟動後會把 auth 保存在記憶體裡。\n\n如果 CLI 重新登入或 refresh token，已經開著的 Desktop 不一定會立刻讀到新的 credential。\n\n所以我也補上了 credential lifecycle。\n\n在真正送出 prompt 前，Desktop 會重新確認 auth。當 auth 檔案改變、Mac 從睡眠恢復，或 worker 已經過期時，它會在下一次操作前重建 worker，重新讀取 credential 和 DKS connection。\n\n我也把 UI 的錯誤訊息改掉。\n\n之後不會再把所有問題都吃成同一句 Desktop agent did not produce an answer，而是優先顯示 Pi 回傳的實際 OAuth error。\n\n最後，正式打包的 Desktop App 成功收到了一次 pong。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 606,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-07-28-agent-build-log-episode-015.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-015",
+    "title": "Agent Build Log — Episode 015",
+    "lang": "en",
+    "date": "2026-07-28T23:36:15+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I traced a packaged Desktop App OAuth failure through the Electron bundle, duplicate pi-ai modules, a stale process, and credential lifecycle handling.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-015/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-015.png",
+    "content": "Today, I enabled OAuth, and the Desktop App immediately broke.\n\n![Agent Build Log Episode 015: tracing the Desktop App OAuth failure](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-015.png)\n\nThe screen only showed:\n\n> Desktop agent did not produce an answer\n\nAt first, I thought the login had failed. It could also have been a problem with the token, the model, or the account.\n\nBut the real error happened much earlier.\n\nPi failed while preparing the OAuth auth for the model request, and the token usage was 0. That meant the prompt had never even been sent to the model.\n\nThe first problem was in the packaged Desktop App.\n\nThe OAuth flow that loaded correctly in the development environment could not find the corresponding file inside the Electron production bundle. The entire process stopped before OAuth could obtain the request auth.\n\nI added an OAuth loader, and the source-level test passed.\n\nBut the packaged app was still broken.\n\nLater, I discovered that the workspace actually contained two copies of the pi-ai module.\n\nI registered the loader in one copy, but the Pi ModelRuntime that actually ran the model was using the other one.\n\nTheir loader registries were not shared.\n\nSo it looked like I had fixed the problem, but the runtime actually executing the model never received that fix.\n\nI fixed the module identity and bundle issues, packaged the app again, and ran another test.\n\nThe screen still showed the same error.\n\nThis time, the real cause was even more absurd: the Mac was still running an old Desktop process that had been launched before the fix.\n\nThe App on disk had been updated, but the old process in memory would not automatically turn into the new version.\n\nSo what I was seeing was not “the new fix still fails.” It was “the old program is still running.”\n\nWhile working through these problems, I found another risk.\n\nThe CLI and Desktop share the same OAuth credential, but once the Desktop worker starts, it keeps the auth in memory.\n\nIf the CLI logs in again or refreshes the token, the already-running Desktop may not immediately load the new credential.\n\nSo I also added credential lifecycle handling.\n\nBefore sending a prompt, Desktop now checks the auth again. When the auth file changes, the Mac resumes from sleep, or the worker becomes stale, it rebuilds the worker before the next operation and reloads the credential and DKS connection.\n\nI also changed the UI error message.\n\nFrom now on, it will no longer collapse every problem into the same Desktop agent did not produce an answer message. It will prioritize the actual OAuth error returned by Pi.\n\nFinally, the packaged Desktop App successfully received a pong response.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 433,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-07-28-agent-build-log-episode-015.md"
+   }
+  },
+  {
+   "episode": 16,
+   "slug": "agent-build-log-episode-016",
+   "zh": {
+    "slug": "agent-build-log-episode-016",
+    "title": "Agent Build Log — Episode 016",
+    "lang": "zh",
+    "date": "2026-07-30T23:53:58+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "移除 DKS MCP 的 Jira 整合，讓每位使用者透過 Jira MCP 與自己的 OAuth 權限查詢資料。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-016/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-016.png",
+    "content": "今天，我把 DKS MCP 裡所有和 Jira 有關的功能都拔掉了。\n\n![Agent Build Log Episode 016：重新劃分 DKS 與 Jira 的權限邊界](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-016.png)\n\n原本的設計，是讓 DKS 可以在查 GitLab repo 相關時，附上 Jira ticket 來當輔助證明。\n\n這樣 Agent 可以更加理解一個 feature 的來龍去脈。\n\n但後來我發現，它有一個很嚴重的權限問題。\n\nJira 的 board、issue 和專案本身都有各自的存取權限。\n\n如果 DKS MCP 使用自己的 Jira credential，替 user 查詢 Jira，那最後能看到哪些資料，取決於 DKS 使用的帳號，而不是正在使用 Agent 的那個人。\n\n這代表，一個原本沒有權限查看某個 Jira board 的 stakeholder，可能透過 DKS 拿到超出自己權限範圍的 issue、需求背景，甚至其他相關資訊。\n\n即使使用者只是問一個看起來很普通的問題：\n\n> 「這個功能當初為什麼這樣做？」\n\nDKS 也可能在背後查到使用者原本不應該看到的 Jira 內容，再把資訊整理進答案裡。\n\n這是權限邊界設計錯了。\n\n所以今天，我先把 DKS MCP 裡所有和 Jira 有關的 MCP 與查詢能力移除。\n\n每個使用者都必須透過 Jira MCP 完成自己的 OAuth，使用自己的身分與權限查詢 Jira。\n\n這樣 Jira 回傳的內容，才會和使用者原本在 Jira 裡能看到的範圍一致。\n\nDKS 仍然負責 GitLab 相關的 repository、MR 和 commit 查詢。\n\n當 Agent 需要 Jira 資訊時，則改由已完成使用者 OAuth 的 Jira MCP 處理。\n\n兩邊仍然可以在 Agent 層整合，但不能再共用同一個 Jira 權限。\n\n在有權限差異的系統裡，方便不能優先於存取控制。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 464,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-07-30-agent-build-log-episode-016.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-016",
+    "title": "Agent Build Log — Episode 016",
+    "lang": "en",
+    "date": "2026-07-30T23:53:59+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I removed Jira from the DKS MCP so each user queries Jira through their own OAuth identity and permissions.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-016/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-016.png",
+    "content": "Today, I removed every Jira-related feature from the DKS MCP.\n\n![Agent Build Log Episode 016: separating DKS and Jira permission boundaries](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-016.png)\n\nThe original design allowed DKS to attach Jira tickets as supporting evidence when looking up GitLab repositories.\n\nThis gave the Agent a better understanding of the full story behind a feature.\n\nBut later, I discovered a serious permissions problem.\n\nJira boards, issues, and projects all have their own access permissions.\n\nIf the DKS MCP uses its own Jira credentials to query Jira on behalf of a user, the data it can access depends on the account used by DKS, not on the person currently using the Agent.\n\nThat means a stakeholder who does not have permission to view a particular Jira board could potentially use DKS to access issues, requirement context, or other information beyond their authorized scope.\n\nEven if the user asks a seemingly ordinary question:\n\n> “Why was this feature built this way?”\n\nDKS might retrieve Jira content that the user was never supposed to see and include that information in its answer.\n\nThe permission boundary was designed incorrectly.\n\nSo today, I removed all Jira-related MCP integrations and query capabilities from the DKS MCP.\n\nEach user must complete OAuth through the Jira MCP and query Jira using their own identity and permissions.\n\nThis ensures that Jira only returns content within the scope the user would normally be allowed to see.\n\nDKS will continue to handle GitLab repository, MR, and commit queries.\n\nWhen the Agent needs Jira information, it will use the Jira MCP authenticated through the individual user’s OAuth.\n\nThe two sources can still be integrated at the Agent layer, but they can no longer share the same Jira permissions.\n\nIn a system where users have different access levels, convenience cannot come before access control.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 286,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-30-agent-build-log-episode-016.md"
+   }
+  },
+  {
+   "episode": 17,
+   "slug": "agent-build-log-episode-017",
+   "zh": {
+    "slug": "agent-build-log-episode-017",
+    "title": "Agent Build Log — Episode 017",
+    "lang": "zh",
+    "date": "2026-07-31T22:56:20+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "開始實作以 SQLite 建立索引、Markdown 保存內容，並按日期與 session 組織的 Agent 記憶系統。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-017/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-017.png",
+    "content": "今天，我正式開始實作 Agent 的記憶系統。\n\n![Agent Build Log Episode 017：以 SQLite 和 Markdown 實作 Agent 記憶系統](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-017.png)\n\n第一版不會先使用向量資料庫或複雜的 RAG 架構。\n\n我打算先用 SQLite 和 Markdown，組成一套簡單、透明，而且可以直接檢查內容的記憶系統。\n\n這個設計主要參考 OpenClaw 的記憶方式。\n\n在歷史記憶的部分，系統會按照日期建立紀錄。\n\n每一天都會有一個以 yyyy-mm-dd 命名的目錄，用來保存當天發生的事情。\n\n但一天之內，Agent 可能會有很多次不同的對話和任務。\n\n所以我不打算把所有內容都塞進同一個 Markdown 檔案。\n\n同一天內的每一個 session，都可以有自己獨立的 Markdown 檔。\n\n這樣可以保留每次 session 的上下文，也能避免不同任務的內容全部混在一起。\n\nMarkdown 負責保存人可以直接閱讀的記憶內容。\n\nSQLite 則負責保存結構化資料，例如 session 的時間、標題、檔案位置、狀態，以及不同記憶之間的關聯。\n\nAgent 需要尋找過去的記憶時，可以先透過 SQLite 找到可能相關的日期和 session，再讀取對應的 Markdown 檔案。\n\n今天，我先從最簡單的結構開始：\n\nSQLite 負責索引。\n\nMarkdown 負責記住發生過的事情。\n\n而每一段記憶，都從一個日期和一次 session 開始。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 384,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-07-31-agent-build-log-episode-017.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-017",
+    "title": "Agent Build Log — Episode 017",
+    "lang": "en",
+    "date": "2026-07-31T22:56:21+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I started implementing an Agent memory system that uses SQLite for indexing and Markdown for date- and session-based memory content.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-017/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-017.png",
+    "content": "Today, I officially started implementing the Agent’s memory system.\n\n![Agent Build Log Episode 017: implementing Agent memory with SQLite and Markdown](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-017.png)\n\nThe first version will not begin with a vector database or a complex RAG architecture.\n\nI plan to use SQLite and Markdown to build a memory system that is simple, transparent, and easy to inspect directly.\n\nThis design is mainly inspired by OpenClaw’s approach to memory.\n\nFor historical memory, the system will organize records by date.\n\nEach day will have a directory named in the yyyy-mm-dd format to store what happened that day.\n\nBut within a single day, the Agent may have many different conversations and tasks.\n\nSo I do not plan to put everything into one Markdown file.\n\nEach session within the same day can have its own separate Markdown file.\n\nThis preserves the context of each session and prevents different tasks from being mixed together.\n\nMarkdown is responsible for storing memory content that people can read directly.\n\nSQLite is responsible for storing structured data, such as the session time, title, file location, status, and the relationships between different memories.\n\nWhen the Agent needs to find a past memory, it can first use SQLite to locate potentially relevant dates and sessions, then read the corresponding Markdown files.\n\nToday, I am starting with the simplest structure:\n\nSQLite handles the index.\n\nMarkdown remembers what happened.\n\nAnd every memory begins with a date and a session.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 223,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-07-31-agent-build-log-episode-017.md"
+   }
+  },
+  {
+   "episode": 18,
+   "slug": "agent-build-log-episode-018",
+   "zh": {
+    "slug": "agent-build-log-episode-018",
+    "title": "Agent Build Log — Episode 018",
+    "lang": "zh",
+    "date": "2026-08-01T23:47:46+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Alpha 階段的目標使用者從開發者改為負責需求驗收的 PM 與 QA。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-018/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-018.png",
+    "content": "今天，我調整了 Agent 的目標使用者。\n\n![Agent Build Log Episode 018：將 Agent 的目標使用者調整為 PM 與 QA](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-018.png)\n\n一開始，我想把它做給 iOS 和 Android 開發者使用。\n\n除了基本的 coding agent 能力之外，我也打算加入各種客製化 tools，並針對我工作上常用的 skills 做特化。\n\n但今天，我把 Agent 的 TA 從「開發者」改成了「驗收者」。\n\n在我現在的工作環境裡，負責驗收的人通常是 PM 或 QA。\n\n他們需要確認一個需求是不是真的完成、某個 bug 是不是真的修好，以及這一版 App 的行為是否符合預期。\n\n但這個過程裡，他們常常會卡在兩件事上：\n\n怎麼把最新的 code build 起來。\n\n以及怎麼驗證這一版 App 真的有修好。\n\n最近，PM 和 QA 也向我反映，他們希望可以縮短從拿到版本到完成驗收之間的時間。\n\n這讓我重新思考，第一版 Agent 真正應該服務的人是誰。\n\n如果我繼續把目標放在開發者身上，我的 Agent 就會直接和 Codex、Claude App 這些產品競爭。\n\n它們本來就是為軟體開發特化的工具。\n\n不論是理解 codebase、修改程式、執行指令，還是完成開發任務，我都很難在第一版就和這些成熟的產品正面競爭。\n\n但「驗收需求」是一個不同的問題。\n\n即使 PM 或 QA 拿到了 Codex 或 Claude App，他們通常還是需要開發者先協助設定 repository、build environment、credentials、tools，以及測試流程。\n\n工具雖然存在，但使用門檻並沒有真的消失。\n\n所以我開始意識到，我的 Agent 不一定要先成為另一個更好的 coding agent。\n\n它可以先把開發者已經準備好的環境和流程包起來，讓驗收者可以直接使用。\n\n驗收者不需要先理解整個專案怎麼建置，也不需要記住每一個 command。\n\n他們只需要告訴 Agent：\n\n> 「幫我 build 最新版本。」\n\n> 「幫我確認這個 bug 是否修好。」\n\n> 「幫我按照 ticket 的條件驗證這個功能。」\n\nAgent 再負責執行背後的 build、安裝、測試和驗證流程。\n\n所以從今天開始，Alpha 階段的目標正式更改。\n\n第一版 Agent 不再以「幫助開發者寫 App」為主要方向。\n\n它會先聚焦在「幫助 PM 和 QA 驗收需求」。\n\n我找到了一個更明確，而且目前更需要被解決的問題。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 674,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-08-01-agent-build-log-episode-018.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-018",
+    "title": "Agent Build Log — Episode 018",
+    "lang": "en",
+    "date": "2026-08-01T23:47:47+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I changed the Alpha target audience from developers to PM and QA teams responsible for acceptance testing.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-018/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-018.png",
+    "content": "Today, I changed the target users for the Agent.\n\n![Agent Build Log Episode 018: shifting the Agent toward PM and QA acceptance testing](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-018.png)\n\nAt first, I wanted to build it for iOS and Android developers.\n\nIn addition to basic coding agent capabilities, I also planned to add various custom tools and specialize it around the skills I use at work.\n\nBut today, I changed the Agent’s target audience from “developers” to “people responsible for acceptance testing.”\n\nIn my current work environment, the people responsible for acceptance testing are usually PMs or QA team members.\n\nThey need to confirm whether a requirement has actually been completed, whether a bug has truly been fixed, and whether the behavior of the current App build matches expectations.\n\nBut during this process, they often get stuck on two things:\n\nHow to build the latest code.\n\nAnd how to verify that the issue has actually been fixed in this version of the App.\n\nRecently, PM and QA colleagues also told me that they wanted to shorten the time between receiving a build and completing acceptance testing.\n\nThat made me rethink who the first version of the Agent should really serve.\n\nIf I continued targeting developers, my Agent would compete directly with products like Codex and the Claude App.\n\nThose tools are already specialized for software development.\n\nWhether it is understanding a codebase, modifying code, running commands, or completing development tasks, it would be difficult for my first version to compete directly with such mature products.\n\nBut acceptance testing is a different problem.\n\nEven if PMs or QA team members have access to Codex or the Claude App, they usually still need a developer to help set up the repository, build environment, credentials, tools, and testing workflow.\n\nThe tools already exist, but the barrier to using them has not really disappeared.\n\nThat made me realize that my Agent does not need to become another, better coding agent first.\n\nInstead, it can wrap the environment and workflows already prepared by developers, so that people responsible for acceptance testing can use them directly.\n\nThey do not need to understand how the entire project is built, and they do not need to remember every command.\n\nThey only need to tell the Agent:\n\n> “Build the latest version for me.”\n\n> “Help me confirm whether this bug has been fixed.”\n\n> “Verify this feature according to the conditions in the ticket.”\n\nThe Agent can then handle the build, installation, testing, and verification steps behind the scenes.\n\nSo starting today, the goal of the Alpha stage has officially changed.\n\nThe first version of the Agent will no longer focus mainly on helping developers build Apps.\n\nIt will first focus on helping PM and QA teams perform acceptance testing.\n\nI found a clearer problem, and one that needs to be solved more urgently right now.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 455,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-08-01-agent-build-log-episode-018.md"
+   }
+  },
+  {
+   "episode": 19,
+   "slug": "agent-build-log-episode-019",
+   "zh": {
+    "slug": "agent-build-log-episode-019",
+    "title": "Agent Build Log — Episode 019",
+    "lang": "zh",
+    "date": "2026-08-02T23:00:52+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Pi Agent 不支援 ultra effort；Agent 將依 Pi 宣告的能力顯示並驗證 effort 選項。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-019/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-019.png",
+    "content": "今天，我發現 Pi Agent 的 effort 並不支援 ultra。\n\n![Agent Build Log Episode 019：依 Pi Agent 能力限制 effort 選項](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-019.png)\n\n目前可用的值是：\n\noff、minimal、low、medium、high、xhigh、max\n\n如果把 ultra 傳給現在的 Pi，它不會被當成比 max 更高的設定。\n\n它反而會被轉成 off。\n\n這代表使用者以為自己選了最高推理強度，實際上卻把 reasoning 關掉了。\n\n所以 effort 不能只看模型名稱，也不能因為模型屬於 GPT-5.6，就假設它支援 ultra。\n\n之後，Agent 會依照 Pi 對目前模型實際宣告的能力，決定可以顯示哪些 effort。\n\n如果模型不支援 ultra，UI 就不會顯示。\n\nruntime 也會驗證 effort，避免 CLI、設定檔或 session restore 傳入不支援的值。\n\n目前 Sol、Terra 等模型，都先以 Pi 實際支援的最高值 max 為上限。\n\n只有當 Pi 明確回報某個模型支援 ultra 時，Agent 才會對那個模型開放。\n\n今天學到了一點，雖然我使用的 agent (Codex) 的有 Ultra effort，但不表示我在 pi agenet 中的轉接，這個 ultra effort 可以正常運作，甚致有可能因為 effort 在 pi agent 中不存在，所以會回到 no reasoning。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 298,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-08-02-agent-build-log-episode-019.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-019",
+    "title": "Agent Build Log — Episode 019",
+    "lang": "en",
+    "date": "2026-08-02T23:00:53+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Pi Agent does not support ultra effort, so the Agent will display and validate effort values based on Pi’s declared capabilities.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-019/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-019.png",
+    "content": "Today, I discovered that Pi Agent does not support the ultra effort level.\n\n![Agent Build Log Episode 019: limiting effort options to Pi Agent capabilities](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-019.png)\n\nThe currently available values are:\n\noff, minimal, low, medium, high, xhigh, and max\n\nIf ultra is passed to the current Pi runtime, it will not be treated as a setting higher than max.\n\nInstead, it will be converted to off.\n\nThis means users may think they have selected the highest reasoning effort, while they have actually turned reasoning off.\n\nSo effort support cannot be determined by the model name alone. A model belonging to the GPT-5.6 family does not automatically mean that it supports ultra.\n\nFrom now on, the Agent will decide which effort levels to display based on the capabilities Pi actually declares for the selected model.\n\nIf a model does not support ultra, the UI will not display it.\n\nThe runtime will also validate the effort value to prevent the CLI, configuration files, or session restore from passing unsupported values.\n\nFor now, models such as Sol and Terra will use max, the highest effort level currently supported by Pi, as their upper limit.\n\nThe Agent will only enable ultra for a model when Pi explicitly reports that the model supports it.\n\nToday, I learned that even though the agent I use, Codex, has an Ultra effort option, that does not mean ultra will work correctly through my Pi Agent integration. If that effort level does not exist in Pi Agent, it may even fall back to no reasoning.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 243,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-08-02-agent-build-log-episode-019.md"
+   }
+  },
+  {
+   "episode": 20,
+   "slug": "agent-build-log-episode-020",
+   "zh": {
+    "slug": "agent-build-log-episode-020",
+    "title": "Agent Build Log — Episode 020",
+    "lang": "zh",
+    "date": "2026-08-03T22:59:13+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "開始建立 Agent 的第一組驗收 capabilities：產生 acceptance brief，以及執行驗收並整理報告。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-020/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-020.png",
+    "content": "今天，我開始實作 Agent 自己的 capabilities。\n\n![Agent Build Log Episode 020：建立 acceptance brief 與驗收報告工具](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-020.png)\n\n第一版先設計了兩個 tools。\n\n第一個 tool 是撰寫 acceptance brief。\n\n它會根據 Jira ticket，整理出這個項目應該怎麼驗收。\n\n例如，驗收時需要進入哪一個頁面、執行哪些操作，以及看到什麼結果，才能證明這個需求或 bug 已經完成修正。\n\n這個 tool 只負責列出驗收項目和驗收路徑，不會實際執行驗收。\n\n第二個 tool 則負責實際驗收，並產出驗收報告。\n\nAgent 會按照 acceptance brief 裡定義的路徑進行操作，在關鍵步驟截圖，再把結果和圖片整理到驗收報告裡。\n\n所以這兩個 tools 負責的是不同階段。\n\n第一個 tool 把 Jira ticket 轉換成可以執行的驗收計畫。\n\n第二個 tool 按照這份計畫完成驗收，並留下可以交付和確認的證據。\n\n這是我今天開始為 Agent 建立的第一組 acceptance capabilities。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 270,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-08-03-agent-build-log-episode-020.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-020",
+    "title": "Agent Build Log — Episode 020",
+    "lang": "en",
+    "date": "2026-08-03T22:59:14+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I started building the Agent’s first acceptance capabilities: creating an acceptance brief, then executing it and producing a report.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-020/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-020.png",
+    "content": "Today, I started implementing the Agent’s own capabilities.\n\n![Agent Build Log Episode 020: building acceptance brief and reporting tools](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-020.png)\n\nFor the first version, I designed two tools.\n\nThe first tool creates an acceptance brief.\n\nBased on a Jira ticket, it organizes how the item should be verified.\n\nFor example, it identifies which page the tester should open, which actions they should perform, and what results they need to see to prove that the requirement has been completed or the bug has been fixed.\n\nThis tool only defines the acceptance criteria and verification path. It does not perform the actual acceptance testing.\n\nThe second tool performs the acceptance testing and generates an acceptance report.\n\nThe Agent follows the path defined in the acceptance brief, captures screenshots at key steps, and organizes the results and images into the final report.\n\nThese two tools handle different stages of the process.\n\nThe first tool turns a Jira ticket into an actionable acceptance plan.\n\nThe second tool follows that plan, completes the verification, and preserves evidence that can be reviewed and delivered.\n\nThis is the first set of acceptance capabilities I have started building for the Agent.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 181,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-08-03-agent-build-log-episode-020.md"
+   }
+  },
+  {
+   "episode": 21,
+   "slug": "agent-build-log-episode-021",
+   "zh": {
+    "slug": "agent-build-log-episode-021",
+    "title": "Agent Build Log — Episode 021",
+    "lang": "zh",
+    "date": "2026-08-04T22:55:30+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "開始實作規格驗收 capability，串接 branch、build、模擬器操作、截圖、報告與頻道交付流程。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-021/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-021.png",
+    "content": "今天，我開始實作 Agent 的第一個 capability：規格驗收。\n\n![Agent Build Log Episode 021：實作規格驗收的完整執行路徑](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-021.png)\n\n我說的規格驗收，不是執行 unit test 或 UI test，再把測試結果整理成報告。\n\n它的起點可以是一張 Jira ticket，也可以是一段用自然語言描述的規格或驗收條件。\n\n但它的終點不是讓 Agent 只檢查程式碼，或判斷測試是否通過。\n\nAgent 需要實際操作 repo，切換到指定的 target branch，準備對應的開發環境，再把 iOS Simulator 或 Android Emulator build 起來。\n\n接著，Agent 會直接操作 App。\n\n它會根據 Jira ticket 或驗收規格，進入指定頁面、執行操作，確認畫面與行為是否符合預期。\n\n不論驗收的是 bug or feature，Agent 都要確認問題是否真的已經修正 or 實作正確。\n\n驗收過程中的關鍵畫面會被截圖，作為驗收證據。\n\n完成後，Agent 會把驗收步驟、執行結果和截圖整理成 HTML 與 PDF 報告，再透過 chat bot 發送到指定頻道。\n\n有了這個想法之後，我就讓 Agent 開始動手完成第一版。\n\n但第一次嘗試失敗了。\n\n目前 Agent 還沒有成功連上 CoreSimulator。\n\niOS Simulator 沒有正常啟動，驗收流程沒有真的執行，最後產出的報告也是空的。\n\n所以第一版的規格驗收還沒有成功。\n\n但至少現在，我已經確認這個 capability 真正需要打通的完整路徑：\n\n從 Jira ticket 或自然語言規格開始。\n\n切換 branch、build App、啟動模擬器、操作 App、取得截圖、產出報告，最後把結果送到頻道。\n\n今天，我讓 Agent 第一次嘗試自己完成規格驗收。\n\n它失敗了，但， episode 會繼續\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 477,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-08-04-agent-build-log-episode-021.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-021",
+    "title": "Agent Build Log — Episode 021",
+    "lang": "en",
+    "date": "2026-08-04T22:55:31+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I started implementing specification acceptance testing across branch switching, builds, simulator operation, screenshots, reporting, and delivery.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-021/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-021.png",
+    "content": "Today, I started implementing the Agent’s first capability: specification acceptance testing.\n\n![Agent Build Log Episode 021: implementing the complete specification acceptance path](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-021.png)\n\nBy specification acceptance testing, I do not mean running unit tests or UI tests and then turning the results into a report.\n\nThe starting point can be a Jira ticket or a specification or set of acceptance criteria written in natural language.\n\nBut the endpoint is not for the Agent to simply inspect the code or determine whether the tests passed.\n\nThe Agent needs to operate the repo directly, switch to the target branch, prepare the required development environment, and build the App for an iOS Simulator or Android Emulator.\n\nThen, the Agent will operate the App directly.\n\nBased on the Jira ticket or acceptance specification, it will navigate to the specified page, perform the required actions, and confirm whether the screen and behavior match expectations.\n\nWhether it is validating a bug or a feature, the Agent must confirm that the issue has actually been fixed or that the feature has been implemented correctly.\n\nKey screens during the acceptance process will be captured as evidence.\n\nOnce complete, the Agent will organize the acceptance steps, execution results, and screenshots into HTML and PDF reports, then send them to the specified channel through a chat bot.\n\nOnce I had this idea, I asked the Agent to start building the first version by itself.\n\nBut the first attempt failed.\n\nThe Agent has not successfully connected to CoreSimulator yet.\n\nThe iOS Simulator did not start correctly, the acceptance workflow was never actually executed, and the final report was empty.\n\nSo the first version of specification acceptance testing has not succeeded yet.\n\nBut at least now, I have confirmed the complete path that this capability needs to connect:\n\nStart with a Jira ticket or a natural-language specification.\n\nSwitch branches, build the App, launch the simulator, operate the App, capture screenshots, generate the report, and finally send the results to the channel.\n\nToday, I let the Agent attempt specification acceptance testing on its own for the first time.\n\nIt failed, but the episode will continue.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 340,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-08-04-agent-build-log-episode-021.md"
+   }
+  },
+  {
+   "episode": 22,
+   "slug": "agent-build-log-episode-022",
+   "zh": {
+    "slug": "agent-build-log-episode-022",
+    "title": "Agent Build Log — Episode 022",
+    "lang": "zh",
+    "date": "2026-08-05T23:59:36+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "把開發者完成一件事情的過程拆成清楚的小步驟，逐步建立 Agent capabilities。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-022/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-022.png",
+    "content": "這是我今天學到的事情。\n\n![Agent Build Log Episode 022：把開發者工作拆成 Agent capabilities](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-022.png)\n\n如果把一個軟體開發者的日常工作拆開來看，要完成「一件事」，其實需要很多不同的小能力。\n\n首先，是語言的聽、說、讀、寫。\n\n開發者需要聽懂別人在說什麼、讀懂需求，也要能把自己的理解、問題和結果表達清楚。\n\n接著，收到需求之後，要先理解文字真正想解決的問題。\n\n然後把需求轉換成實作時能使用的 prompt 或 notes，再把整件事拆成 Step 1 到 Step N。\n\n完成實作之後，還要把 App build 起來。\n\n不只確認自己修改的地方，也要實際走過相關功能，以及使用者最主要的 happy path，確定新的修改沒有破壞原本的流程。\n\n最後，再回覆 stakeholder，告訴對方任務已經完成、實作了什麼，以及如何確認結果。\n\n當我把這些步驟拆開之後，我突然領悟到：\n\n這些一步一步的小能力，就是我現在要做的 Agent capabilities。\n\n其中有些能力，現在的 LLM 已經具備了，我不需要重新實作。\n\n例如理解自然語言、整理文字，以及把需求初步拆解成步驟。\n\n我現在真正需要做的，是把剩下的小步驟規劃清楚。\n\n只要把這些前述的小能力一個一個定義好，Pi Agent 就有能力理解目前完成到哪裡，並把結果轉換成下一步要做的事情。\n\n我原本一直在想，Agent 還缺少哪一個強大的 capability。\n\n但今天我發現，可能不需要先找到一個很大的能力。\n\n我真正要做的，是把開發者完成一件事情的過程，拆成足夠清楚的小步驟。\n\n然後，讓 Agent 一步一步走完。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 511,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-08-05-agent-build-log-episode-022.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-022",
+    "title": "Agent Build Log — Episode 022",
+    "lang": "en",
+    "date": "2026-08-05T23:59:37+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Breaking a developer's workflow into clear, small steps that can become Agent capabilities.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-022/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-022.png",
+    "content": "This is what I learned today.\n\n![Agent Build Log Episode 022: breaking developer work into Agent capabilities](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-022.png)\n\nIf you break down the daily work of a software developer, completing a single task actually requires many different small capabilities.\n\nFirst, there are the basic language skills: listening, speaking, reading, and writing.\n\nA developer needs to understand what other people are saying, read and interpret requirements, and clearly communicate their own understanding, questions, and results.\n\nThen, after receiving a requirement, they first need to understand the actual problem behind the words.\n\nNext, they turn that requirement into prompts or notes that can be used during implementation, and break the whole task down from Step 1 to Step N.\n\nAfter the implementation is complete, they still need to build the App.\n\nThey should not only check the parts they changed, but also walk through the related features and the user’s main happy path to make sure the new changes have not broken the existing flow.\n\nFinally, they need to reply to the stakeholder and explain that the task is complete, what was implemented, and how the result can be verified.\n\nOnce I broke the process down into these steps, I suddenly realized:\n\nThese small, step-by-step capabilities are exactly the Agent capabilities I need to build.\n\nSome of them are already available in today’s LLMs, so I do not need to implement them again.\n\nFor example, understanding natural language, organizing information, and turning a requirement into an initial set of steps.\n\nWhat I actually need to do now is clearly plan the remaining small steps.\n\nAs long as I define these capabilities one by one, Pi Agent will be able to understand how far the task has progressed and turn the current result into the next action.\n\nI had been wondering which powerful capability the Agent was still missing.\n\nBut today, I realized that I may not need to find one big capability first.\n\nWhat I really need to do is break down the process of completing a developer task into small steps that are clear enough.\n\nThen let the Agent walk through them, one step at a time.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 344,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-08-05-agent-build-log-episode-022.md"
+   }
+  },
+  {
+   "episode": 23,
+   "slug": "agent-build-log-episode-023",
+   "zh": {
+    "slug": "agent-build-log-episode-023",
+    "title": "Agent Build Log — Episode 023",
+    "lang": "zh",
+    "date": "2026-08-06T23:36:25+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "在 Agent GUI 中加入「專有技」，並以 spec-diff 將不同版本文件的變化整理成人類可讀的報告。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-023/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-023.png",
+    "content": "今天，我在 Agent 的 GUI 裡做了一個新的區域。\n\n![Agent Build Log Episode 023：Agent GUI 的專有技與 spec-diff](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-023.png)\n\n我把它稱為「專有技」。\n\n這個區域會收納只有這個客製化 Agent 才有的能力。\n\n它的概念和 skills 很接近，但我希望這些能力不只是藏在 Agent 背後執行。\n\n每一個專有技都會有自己的頁面，讓非程式開發職的人，有個 GUI 界面，他可以輸入資料、設定參數，並直接查看最後產出的結果。\n\n我做的第一個專有技叫做 spec-diff。\n\n它的使用方式很簡單。\n\n輸入一份 previous spec，再輸入一份 new spec。\n\n接著，Agent 會分析兩份文件的差異，並按照固定的報告格式，整理出哪些內容被修改、增加或刪除。\n\n它不是只把兩份文件做文字上的逐行比較。\n\nAgent 還需要理解內容的意思，找出規格本身發生了哪些變化，再把結果整理成人類容易閱讀的報告。\n\n一開始，我只是想解決開發過程中的 spec 變更問題。\n\n當規格更新時，開發者、PM 和 QA 可以更快知道這次到底改了什麼，以及哪些地方可能需要重新確認。\n\n但把第一版做出來之後，我突然發現，這個功能的用途可能不只是在比較 spec。\n\n只要輸入的是兩份不同版本的資料，它就可以分析其中的變化。\n\n它可以比較契約，整理哪些條款被修改、增加或刪除。\n\n它也可以比較兩份架構設計，找出元件、責任或資料流的變化。\n\n甚至可以比較股票交易規則，整理新舊版本在進場、出場或風險控制上的差異。\n\n這個方向讓我很驚喜。\n\n因為我原本以為自己只是在做一個 spec-diff。\n\n但在開發的過程中，我意外做出了一個可以比較不同版本文件，並把變化整理成人類可讀報告的工具。\n\n有時候，真正有潛力的功能，不一定是最初規劃的那一個。\n\n它也可能是完成第一版之後，才慢慢浮現出來的副產品。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 609,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-08-06-agent-build-log-episode-023.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-023",
+    "title": "Agent Build Log — Episode 023",
+    "lang": "en",
+    "date": "2026-08-06T23:36:26+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Adding Signature Abilities to the Agent GUI, starting with spec-diff for human-readable document change reports.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-023/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-023.png",
+    "content": "Today, I added a new section to the Agent’s GUI.\n\n![Agent Build Log Episode 023: Signature Abilities and spec-diff in the Agent GUI](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-023.png)\n\nI call it “Signature Abilities.”\n\nThis section will contain capabilities that are unique to this custom Agent.\n\nThe concept is similar to skills, but I do not want these capabilities to remain hidden behind the Agent.\n\nEach Signature Ability will have its own page, giving non-developers a GUI where they can enter data, configure parameters, and directly view the final result.\n\nThe first Signature Ability I built is called spec-diff.\n\nThe workflow is simple.\n\nEnter a previous spec, then enter a new spec.\n\nThe Agent analyzes the differences between the two documents and produces a report in a fixed format, showing which content was changed, added, or removed.\n\nIt does more than compare the two documents line by line.\n\nThe Agent also needs to understand what the content means, identify how the specification itself has changed, and organize the results into a report that is easy for people to read.\n\nAt first, I only wanted to solve the problem of spec changes during development.\n\nWhen a specification is updated, developers, PMs, and QA teams can quickly understand what changed and which areas may need to be reviewed again.\n\nBut after building the first version, I realized that this capability could be useful for more than comparing specs.\n\nAs long as the input contains two different versions of the same kind of information, it can analyze the changes between them.\n\nIt can compare contracts and summarize which clauses were changed, added, or removed.\n\nIt can compare two architecture designs and identify changes in components, responsibilities, or data flow.\n\nIt can even compare stock trading rules and summarize differences in entries, exits, or risk controls between the old and new versions.\n\nThis direction surprised me.\n\nI originally thought I was only building a spec-diff tool.\n\nBut during development, I accidentally created a tool that can compare different versions of documents and turn the changes into a human-readable report.\n\nSometimes, the feature with the most potential is not the one that was originally planned.\n\nIt may be a byproduct that only begins to emerge after the first version is complete.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 357,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-08-06-agent-build-log-episode-023.md"
+   }
+  }
+ ]
+}

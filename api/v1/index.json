@@ -1,0 +1,89 @@
+{
+ "api_version": 1,
+ "generated_at": "2026-08-07T18:19:14.679503+00:00",
+ "build_id": "6c50b14b7560333c",
+ "site": {
+  "url": "https://www.marvinswift.com",
+  "title": "Marv[in]sight",
+  "languages": [
+   "zh",
+   "en"
+  ]
+ },
+ "endpoints": {
+  "zh/summaries.json": {
+   "path": "/api/v1/zh/summaries.json",
+   "count": 192,
+   "latest": "2026-08-06T23:36:25+08:00",
+   "bytes": 464992,
+   "hash": "c00cc1d3975b1768"
+  },
+  "en/summaries.json": {
+   "path": "/api/v1/en/summaries.json",
+   "count": 88,
+   "latest": "2026-08-06T23:36:26+08:00",
+   "bytes": 77661,
+   "hash": "e3f8a8f98ed4312d"
+  },
+  "categories.json": {
+   "path": "/api/v1/categories.json",
+   "count": 5,
+   "latest": null,
+   "bytes": 1181,
+   "hash": "354ae0c5328c6500"
+  },
+  "videos.json": {
+   "path": "/api/v1/videos.json",
+   "count": null,
+   "latest": null,
+   "bytes": 9169,
+   "hash": "a1b2b5a167b4cf48"
+  },
+  "series/agent-build-log.json": {
+   "path": "/api/v1/series/agent-build-log.json",
+   "count": null,
+   "latest": null,
+   "bytes": 117327,
+   "hash": "48082695b221e160"
+  },
+  "search-index.json": {
+   "path": "/api/v1/search-index.json",
+   "count": 280,
+   "latest": "2026-08-06T23:36:26+08:00",
+   "bytes": 171236,
+   "hash": "55ea49752f810d0c"
+  },
+  "zh/posts.json": {
+   "paginated": true,
+   "page_count": 2,
+   "pages": [
+    {
+     "path": "/api/v1/zh/posts-1.json",
+     "count": 183,
+     "latest": "2026-08-06T23:36:25+08:00",
+     "bytes": 907379,
+     "hash": "673969f444ca200a"
+    },
+    {
+     "path": "/api/v1/zh/posts-2.json",
+     "count": 9,
+     "latest": "2013-05-05T14:59:00+08:00",
+     "bytes": 640733,
+     "hash": "f9283c0610b65f69"
+    }
+   ],
+   "count": 192,
+   "latest": "2026-08-06T23:36:25+08:00",
+   "bytes": 1548112,
+   "hash": "c8ceac9d1a52e76e"
+  },
+  "en/posts.json": {
+   "path": "/api/v1/en/posts.json",
+   "paginated": false,
+   "count": 88,
+   "latest": "2026-08-06T23:36:26+08:00",
+   "bytes": 384343,
+   "hash": "2e463e1b4616908c"
+  }
+ }
+}

@@ -1,0 +1,4046 @@
+[
+ {
+  "slug": "agent-build-log-episode-023",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 023",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Adding Signature Abilities to the Agent GUI, starting with spec-diff for human-readable document change reports.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-023/",
+  "date": "2026-08-06T23:36:26+08:00",
+  "word_count": 357
+ },
+ {
+  "slug": "agent-build-log-episode-023",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 023",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "在 Agent GUI 中加入「專有技」，並以 spec-diff 將不同版本文件的變化整理成人類可讀的報告。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-023/",
+  "date": "2026-08-06T23:36:25+08:00",
+  "word_count": 609
+ },
+ {
+  "slug": "agent-build-log-episode-022",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 022",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Breaking a developer's workflow into clear, small steps that can become Agent capabilities.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-022/",
+  "date": "2026-08-05T23:59:37+08:00",
+  "word_count": 344
+ },
+ {
+  "slug": "agent-build-log-episode-022",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 022",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "把開發者完成一件事情的過程拆成清楚的小步驟，逐步建立 Agent capabilities。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-022/",
+  "date": "2026-08-05T23:59:36+08:00",
+  "word_count": 511
+ },
+ {
+  "slug": "agent-build-log-episode-021",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 021",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started implementing specification acceptance testing across branch switching, builds, simulator operation, screenshots, reporting, and delivery.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-021/",
+  "date": "2026-08-04T22:55:31+08:00",
+  "word_count": 340
+ },
+ {
+  "slug": "agent-build-log-episode-021",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 021",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "開始實作規格驗收 capability，串接 branch、build、模擬器操作、截圖、報告與頻道交付流程。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-021/",
+  "date": "2026-08-04T22:55:30+08:00",
+  "word_count": 477
+ },
+ {
+  "slug": "agent-build-log-episode-020",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 020",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started building the Agent’s first acceptance capabilities: creating an acceptance brief, then executing it and producing a report.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-020/",
+  "date": "2026-08-03T22:59:14+08:00",
+  "word_count": 181
+ },
+ {
+  "slug": "agent-build-log-episode-020",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 020",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "開始建立 Agent 的第一組驗收 capabilities：產生 acceptance brief，以及執行驗收並整理報告。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-020/",
+  "date": "2026-08-03T22:59:13+08:00",
+  "word_count": 270
+ },
+ {
+  "slug": "agent-build-log-episode-019",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 019",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Pi Agent does not support ultra effort, so the Agent will display and validate effort values based on Pi’s declared capabilities.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-019/",
+  "date": "2026-08-02T23:00:53+08:00",
+  "word_count": 243
+ },
+ {
+  "slug": "agent-build-log-episode-019",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 019",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Pi Agent 不支援 ultra effort；Agent 將依 Pi 宣告的能力顯示並驗證 effort 選項。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-019/",
+  "date": "2026-08-02T23:00:52+08:00",
+  "word_count": 298
+ },
+ {
+  "slug": "agent-build-log-episode-018",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 018",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I changed the Alpha target audience from developers to PM and QA teams responsible for acceptance testing.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-018/",
+  "date": "2026-08-01T23:47:47+08:00",
+  "word_count": 455
+ },
+ {
+  "slug": "agent-build-log-episode-018",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 018",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Alpha 階段的目標使用者從開發者改為負責需求驗收的 PM 與 QA。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-018/",
+  "date": "2026-08-01T23:47:46+08:00",
+  "word_count": 674
+ },
+ {
+  "slug": "agent-build-log-episode-017",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 017",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started implementing an Agent memory system that uses SQLite for indexing and Markdown for date- and session-based memory content.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-017/",
+  "date": "2026-07-31T22:56:21+08:00",
+  "word_count": 223
+ },
+ {
+  "slug": "agent-build-log-episode-017",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 017",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "開始實作以 SQLite 建立索引、Markdown 保存內容，並按日期與 session 組織的 Agent 記憶系統。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-017/",
+  "date": "2026-07-31T22:56:20+08:00",
+  "word_count": 384
+ },
+ {
+  "slug": "agent-build-log-episode-016",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 016",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I removed Jira from the DKS MCP so each user queries Jira through their own OAuth identity and permissions.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-016/",
+  "date": "2026-07-30T23:53:59+08:00",
+  "word_count": 286
+ },
+ {
+  "slug": "agent-build-log-episode-016",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 016",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "移除 DKS MCP 的 Jira 整合，讓每位使用者透過 Jira MCP 與自己的 OAuth 權限查詢資料。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-016/",
+  "date": "2026-07-30T23:53:58+08:00",
+  "word_count": 464
+ },
+ {
+  "slug": "agent-build-log-episode-015",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 015",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I traced a packaged Desktop App OAuth failure through the Electron bundle, duplicate pi-ai modules, a stale process, and credential lifecycle handling.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-015/",
+  "date": "2026-07-28T23:36:15+08:00",
+  "word_count": 433
+ },
+ {
+  "slug": "agent-build-log-episode-015",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 015",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "排查正式打包 Desktop App 的 OAuth 問題：從 bundle、重複 pi-ai module、舊 process 到 credential lifecycle。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-015/",
+  "date": "2026-07-28T23:36:14+08:00",
+  "word_count": 606
+ },
+ {
+  "slug": "agent-build-log-episode-014",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 014",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "DKS now uses the GitLab API and Jira for lookup, so it no longer needs a mirror of every department repository.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-014/",
+  "date": "2026-07-27T23:18:03+08:00",
+  "word_count": 161
+ },
+ {
+  "slug": "agent-build-log-episode-014",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 014",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "DKS 改用 GitLab API 與 Jira 查詢，不再為整個部門建立 Git repo mirror。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-014/",
+  "date": "2026-07-27T23:18:02+08:00",
+  "word_count": 212
+ },
+ {
+  "slug": "agent-build-log-episode-013",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 013",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I compared Sol, Terra, and Luna at medium and xhigh effort. For scoped DKS lookups, Terra xhigh was both fast and reliable; Sol remains the choice when strict protocol compliance matters most.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-013/",
+  "date": "2026-07-26T23:35:40+08:00",
+  "word_count": 412
+ },
+ {
+  "slug": "agent-build-log-episode-013",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 013",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "以 medium 與 xhigh 比較 Sol、Terra、Luna：範圍明確的 DKS lookup 任務優先使用 Terra xhigh；嚴格流程完整性優先選 Sol。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-013/",
+  "date": "2026-07-26T23:35:39+08:00",
+  "word_count": 697
+ },
+ {
+  "slug": "agent-build-log-episode-012",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 012",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I compared Terra and Luna with counterbalanced evals: they reached the same accuracy, while Terra ran slightly faster with fewer tool calls but missed the required DKS protocol more often.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-012/",
+  "date": "2026-07-26T00:18:19+08:00",
+  "word_count": 390
+ },
+ {
+  "slug": "agent-build-log-episode-012",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 012",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "以 counterbalanced evals 比較 Terra 與 Luna：兩者正確率相同，但 Terra 稍快、tool calls 較少，也更常漏掉要求的 DKS protocol。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-012/",
+  "date": "2026-07-26T00:18:18+08:00",
+  "word_count": 641
+ },
+ {
+  "slug": "agent-build-log-episode-011",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 011",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I replaced the first memory-system plan with a smaller Markdown-and-SQLite design inspired by OpenClaw, keeping memory readable, editable, and easier to ship.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-011/",
+  "date": "2026-07-23T21:12:11+08:00",
+  "word_count": 316
+ },
+ {
+  "slug": "agent-build-log-episode-011",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 011",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "推翻 Episode 010 的向量檢索方案，第一版改採參考 OpenClaw 的 Markdown 與 SQLite 架構，讓記憶可閱讀、可修改，也更容易放進 App。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-011/",
+  "date": "2026-07-23T21:12:10+08:00",
+  "word_count": 516
+ },
+ {
+  "slug": "agent-build-log-episode-010",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 010",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I planned the Agent memory system and chose LanceDB with Qwen3 Embedding 0.6B for a lightweight first version that runs locally on my Mac mini.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-010/",
+  "date": "2026-07-22T23:55:34+08:00",
+  "word_count": 191
+ },
+ {
+  "slug": "agent-build-log-episode-010",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 010",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "規劃 Agent 記憶系統，在比較 Mem0、Letta、MemOS 與 Cognee 後，第一版選擇可在 Mac mini 本機運行的 LanceDB 與 Qwen3 Embedding 0.6B。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-010/",
+  "date": "2026-07-22T23:55:33+08:00",
+  "word_count": 268
+ },
+ {
+  "slug": "agent-build-log-episode-009",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 009",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I added repository aliases to DKS MCP so natural names, singular and plural forms, and everyday queries resolve to the correct repo and link.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-009/",
+  "date": "2026-07-22T00:35:00+08:00",
+  "word_count": 223
+ },
+ {
+  "slug": "agent-build-log-episode-009",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 009",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "為 DKS MCP 加入 repository aliases，讓常用名稱、單複數與自然語言查詢都能解析到正確的 repo 與連結。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-009/",
+  "date": "2026-07-22T00:34:59+08:00",
+  "word_count": 373
+ },
+ {
+  "slug": "agent-build-log-episode-008",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 008",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started restructuring the Agent core so the CLI, Browser, and Desktop App share the same capabilities while remaining thin clients.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-008/",
+  "date": "2026-07-20T20:55:30+08:00",
+  "word_count": 157
+ },
+ {
+  "slug": "agent-build-log-episode-008",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 008",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "重整 Agent 核心，讓 CLI、Browser 與 Desktop App 共用同一套能力，並維持各介面為只負責輸入、顯示與互動的 thin clients。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-008/",
+  "date": "2026-07-20T20:55:29+08:00",
+  "word_count": 255
+ },
+ {
+  "slug": "agent-build-log-episode-007",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 007",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I studied Google’s ADK and Agents CLI to understand how coding agents can use reusable commands and skills to build, evaluate, and deploy agents.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-007/",
+  "date": "2026-07-20T00:25:37+08:00",
+  "word_count": 136
+ },
+ {
+  "slug": "agent-build-log-episode-007",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 007",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "研究 Google ADK 與 Agents CLI，了解如何讓 Coding Agent 透過可重複使用的指令與 skills，建立、評估並部署 Agent。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-007/",
+  "date": "2026-07-20T00:25:36+08:00",
+  "word_count": 233
+ },
+ {
+  "slug": "agent-build-log-episode-006",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 006",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started organizing an Agent eval set from real iOS and mobile development tasks drawn from my existing skills and active projects.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-006/",
+  "date": "2026-07-18T20:42:10+08:00",
+  "word_count": 200
+ },
+ {
+  "slug": "agent-build-log-episode-006",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 006",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "開始整理 Agent 的 evals 題目庫，從既有 skills 與專案挑選真實的 iOS 與 mobile development 任務，建立可重複比較的基準線。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-006/",
+  "date": "2026-07-18T20:42:09+08:00",
+  "word_count": 335
+ },
+ {
+  "slug": "agent-build-log-episode-005",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 005",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I added Feedback to the CLI, Browser, and Desktop App so problems and improvement ideas can be captured immediately through one shared API.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-005/",
+  "date": "2026-07-17T22:43:15+08:00",
+  "word_count": 172
+ },
+ {
+  "slug": "agent-build-log-episode-005",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 005",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "在 CLI、Browser 與 Desktop App 加入 Feedback 功能，透過共用 API 集中記錄測試時發現的問題與改進想法。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-005/",
+  "date": "2026-07-17T22:43:14+08:00",
+  "word_count": 273
+ },
+ {
+  "slug": "agent-build-log-episode-004",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 004",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Day one of Golem Desktop uses Electron, React, and Electron Vite, with Agent execution isolated in an Electron Utility Process.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-004/",
+  "date": "2026-07-16T22:04:13+08:00",
+  "word_count": 256
+ },
+ {
+  "slug": "agent-build-log-episode-004",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 004",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Golem Desktop 開發第一天：以 Electron、React 與 Electron Vite 建立桌面介面，並將 Agent 執行隔離在 Electron Utility Process 中。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-004/",
+  "date": "2026-07-16T22:04:12+08:00",
+  "word_count": 358
+ },
+ {
+  "slug": "agent-build-log-episode-003",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 003",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "The first Browser UI supports new conversations, history search, and pinning, while staying focused on answers, information retrieval, and conversation organization.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-003/",
+  "date": "2026-07-15T20:42:41+08:00",
+  "word_count": 121
+ },
+ {
+  "slug": "agent-build-log-episode-003",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 003",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "完成第一版 Browser UI，支援建立新對話、搜尋歷史與釘選；介面專注回答、搜尋與整理，Agent 執行將由其他介面負責。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-003/",
+  "date": "2026-07-15T20:42:40+08:00",
+  "word_count": 193
+ },
+ {
+  "slug": "agent-build-log-episode-002",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 002",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "The first DKS MCP now searches MRs, commits, repositories, and Jira through one interface, while Pi Agent runs behind my own OAuth-enabled CLI wrapper.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-002/",
+  "date": "2026-07-14T21:30:14+08:00",
+  "word_count": 102
+ },
+ {
+  "slug": "agent-build-log-episode-002",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 002",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "DKS MCP 第一版已能透過統一介面查找 MR、Commit、Repository 與 Jira，Pi Agent 也完成 OAuth 與 CLI 執行驗證。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-002/",
+  "date": "2026-07-14T21:30:13+08:00",
+  "word_count": 180
+ },
+ {
+  "slug": "agent-build-log-episode-001",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 001",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I officially started documenting the development of my custom AI agent, using Pi Agent and OpenCode as architectural references and beginning with a Developer Knowledge Service MCP.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-001/",
+  "date": "2026-07-14T01:30:52+08:00",
+  "word_count": 121
+ },
+ {
+  "slug": "agent-build-log-episode-001",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 001",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "今天正式開始紀錄客製化 AI Agent 的開發：以 Pi Agent 與 OpenCode 作為架構參考，先完成 Developer Knowledge Service MCP，再逐步替換成自己的元件。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-001/",
+  "date": "2026-07-14T01:30:51+08:00",
+  "word_count": 151
+ },
+ {
+  "slug": "rhythm-heaven-groove-switch",
+  "lang": "en",
+  "title": "Rhythm Heaven Groove - Nintendo's Most Ruthless Rhythm Test Is Back",
+  "category": "life",
+  "tags": [
+   "life",
+   "game",
+   "Nintendo",
+   "Switch",
+   "Rhythm Heaven"
+  ],
+  "summary": "Nintendo's Rhythm Heaven Groove is coming to Nintendo Switch on July 2, 2026, and I am really looking forward to it.",
+  "url": "https://www.marvinswift.com/en/life/rhythm-heaven-groove-switch/",
+  "date": "2026-06-28T22:46:00+08:00",
+  "word_count": 577
+ },
+ {
+  "slug": "rhythm-heaven-groove-switch",
+  "lang": "zh",
+  "title": "節奏天國 奇蹟之星 - 任天堂最會折磨節奏感的遊戲回來了",
+  "category": "life",
+  "tags": [
+   "life",
+   "game",
+   "Nintendo",
+   "Switch",
+   "節奏天國"
+  ],
+  "summary": "任天堂的節奏天國系列終於要在 Nintendo Switch 上推出新作，節奏天國 奇蹟之星 於 2026 年 7 月 2 日發售。這篇先整理體驗版畫面與正式版前的期待。",
+  "url": "https://www.marvinswift.com/life/rhythm-heaven-groove-switch.html",
+  "date": "2026-06-28T22:45:00+08:00",
+  "word_count": 896
+ },
+ {
+  "slug": "started-marvin-builds-ai-agent-workflows",
+  "lang": "en",
+  "title": "I Started Marvin Builds to Document Real AI-Agent Workflows",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent",
+   "Coding Agents",
+   "Workflow",
+   "YouTube",
+   "Marvin Builds"
+  ],
+  "summary": "I started Marvin Builds, a YouTube channel about real AI-agent workflows: giving agents real tasks, watching them run, fixing mistakes, deploying, and verifying the result.",
+  "url": "https://www.marvinswift.com/en/programming/started-marvin-builds-ai-agent-workflows/",
+  "date": "2026-06-14T17:00:00+08:00",
+  "word_count": 286
+ },
+ {
+  "slug": "codex-cli-goal",
+  "lang": "en",
+  "title": "Codex CLI's /goal: Let an AI Agent Remember a Long-Term Goal",
+  "category": "programming",
+  "tags": [
+   "Codex CLI",
+   "OpenAI",
+   "AI Agent",
+   "AI Agent Coding"
+  ],
+  "summary": "/goal is a new experimental feature in Codex CLI. It turns a long-running task into a goal that can be tracked, paused, and resumed, but it currently requires a newer CLI version and a manually enabled feature flag.",
+  "url": "https://www.marvinswift.com/en/programming/codex-cli-goal/",
+  "date": "2026-05-08T11:01:00+08:00",
+  "word_count": 383
+ },
+ {
+  "slug": "codex-cli-goal",
+  "lang": "zh",
+  "title": "Codex CLI 的 /goal：讓 AI agent 記住一個長線目標",
+  "category": "programming",
+  "tags": [
+   "Codex CLI",
+   "OpenAI",
+   "AI Agent",
+   "AI Agent Coding"
+  ],
+  "summary": "/goal 是 Codex CLI 新增的實驗功能，它可以把一個長線任務變成可持續追蹤、暫停和恢復的工作目標，但目前需要新版 CLI 並手動打開 feature flag。",
+  "url": "https://www.marvinswift.com/zh/programming/codex-cli-goal/",
+  "date": "2026-05-08T11:00:00+08:00",
+  "word_count": 493
+ },
+ {
+  "slug": "ai-agent-coding-gutenberg",
+  "lang": "en",
+  "title": "AI Agent Coding: The Second Printing Press Is Happening",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent",
+   "Coding",
+   "App",
+   "Web App",
+   "Mobile App"
+  ],
+  "summary": "AI agent coding is lowering the cost of reproducing app development, much like Gutenberg's printing press moved books from the manuscript market into a larger reader market.",
+  "url": "https://www.marvinswift.com/en/programming/ai-agent-coding-gutenberg/",
+  "date": "2026-05-07T08:31:00+08:00",
+  "word_count": 1132
+ },
+ {
+  "slug": "ai-agent-coding-gutenberg",
+  "lang": "zh",
+  "title": "AI Agent Coding：第二次印刷術正在發生",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent",
+   "Coding",
+   "App",
+   "Web App",
+   "Mobile App"
+  ],
+  "summary": "AI agent coding 正在把 app 開發的複製成本降下來，就像古騰堡印刷術讓書本從手抄本市場走向更大的讀者市場。",
+  "url": "https://www.marvinswift.com/zh/programming/ai-agent-coding-gutenberg/",
+  "date": "2026-05-07T08:30:00+08:00",
+  "word_count": 1665
+ },
+ {
+  "slug": "cloudflare-tunnel-vs-ngrok",
+  "lang": "en",
+  "title": "Cloudflare Tunnel: Why I Now Use It Instead of ngrok",
+  "category": "programming",
+  "tags": [
+   "Cloudflare",
+   "Cloudflare Tunnel",
+   "ngrok",
+   "Webhook",
+   "AI Agent"
+  ],
+  "summary": "If your domain already lives on Cloudflare, Cloudflare Tunnel makes your localhost entry point feel like part of the same development and deployment flow.",
+  "url": "https://www.marvinswift.com/en/programming/cloudflare-tunnel-vs-ngrok/",
+  "date": "2026-04-27T10:05:00+08:00",
+  "word_count": 760
+ },
+ {
+  "slug": "cloudflare-tunnel-vs-ngrok",
+  "lang": "zh",
+  "title": "Cloudflare Tunnel：我現在會用它取代 ngrok",
+  "category": "programming",
+  "tags": [
+   "Cloudflare",
+   "Cloudflare Tunnel",
+   "ngrok",
+   "Webhook",
+   "AI Agent"
+  ],
+  "summary": "如果 domain 已經放在 Cloudflare，當你需要把 localhost 穩定暴露到外網時，Cloudflare Tunnel 會比 ngrok 更像開發流程的一部分。",
+  "url": "https://www.marvinswift.com/zh/programming/cloudflare-tunnel-vs-ngrok/",
+  "date": "2026-04-27T10:00:00+08:00",
+  "word_count": 1051
+ },
+ {
+  "slug": "ai-agent-coding-cloudflare",
+  "lang": "en",
+  "title": "AI Agent Coding - Why I Recommend Cloudflare",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent",
+   "Cloudflare",
+   "Workers",
+   "Pages",
+   "D1",
+   "KV",
+   "Deployment"
+  ],
+  "summary": "If AI agent coding should move beyond demos, Cloudflare is the deployment base I recommend first: domain, Pages, Workers, D1, and KV live on the same platform.",
+  "url": "https://www.marvinswift.com/en/programming/ai-agent-coding-cloudflare/",
+  "date": "2026-04-23T21:01:00+08:00",
+  "word_count": 894
+ },
+ {
+  "slug": "ai-agent-coding-cloudflare",
+  "lang": "zh",
+  "title": "AI Agent Coding - 為什麼我會推薦 Cloudflare",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent",
+   "Cloudflare",
+   "Workers",
+   "Pages",
+   "D1",
+   "KV",
+   "Deployment"
+  ],
+  "summary": "如果要讓 AI agent coding 不只停在 demo，我會把 Cloudflare 當作最推薦的部署底座：domain、Pages、Workers、D1、KV 都在同一個平台。",
+  "url": "https://www.marvinswift.com/zh/programming/ai-agent-coding-cloudflare/",
+  "date": "2026-04-23T21:00:00+08:00",
+  "word_count": 1328
+ },
+ {
+  "slug": "mono-repo-vibe-coding",
+  "lang": "en",
+  "title": "The First Step to Better Vibe Coding: Keep Frontend & Backend in One Folder",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "Vibe Coding",
+   "Mono Repo",
+   "Frontend",
+   "Backend",
+   "Workflow"
+  ],
+  "summary": "Want your AI agent to write better full-stack code? Step one is using a mono repo — keep your frontend and backend in the same folder.",
+  "url": "https://www.marvinswift.com/en/programming/mono-repo-vibe-coding/",
+  "date": "2026-04-12T08:00:00+08:00",
+  "word_count": 435
+ },
+ {
+  "slug": "mono-repo-vibe-coding",
+  "lang": "zh",
+  "title": "Vibe Coding 的第一步：把前後端放在同一個資料夾",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "Vibe Coding",
+   "Mono Repo",
+   "Frontend",
+   "Backend",
+   "Workflow"
+  ],
+  "summary": "想讓 AI agent 幫你寫出更好的全端程式碼？第一步就是用 mono repo，把前後端放在同一個資料夾裡。",
+  "url": "https://www.marvinswift.com/zh/programming/mono-repo-vibe-coding/",
+  "date": "2026-04-12T08:00:00+08:00",
+  "word_count": 665
+ },
+ {
+  "slug": "llm-knowledge-base-source-prompt",
+  "lang": "en",
+  "title": "Starting a Series of Compact Source Prompts",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "Prompt Engineering",
+   "Knowledge Base",
+   "Gumroad",
+   "Claude"
+  ],
+  "summary": "I’m starting a small product line of compact, one-shot prompt artifacts. The first is LLM Knowledge Base Source Prompt, a source spec for generating a markdown-first internal wiki and LLM-friendly knowledge base starter.",
+  "url": "https://www.marvinswift.com/en/programming/llm-knowledge-base-source-prompt/",
+  "date": "2026-04-06T09:50:00+08:00",
+  "word_count": 799
+ },
+ {
+  "slug": "ai-direction-demo-spec-state-machine",
+  "lang": "en",
+  "title": "If You Don’t Give the AI Direction, It Can’t Drive You to the Destination",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent",
+   "Product",
+   "Mobile",
+   "Workflow"
+  ],
+  "summary": "A real-world Figma Make trap: I gave the agent a demo link, so it treated the demo as the spec. The real fix is defining behavior first—your launch state machine.",
+  "url": "https://www.marvinswift.com/en/programming/ai-direction-demo-spec-state-machine/",
+  "date": "2026-03-16T08:00:00+08:00",
+  "word_count": 554
+ },
+ {
+  "slug": "ai-direction-demo-spec-state-machine",
+  "lang": "zh",
+  "title": "你沒給 AI 正確方向，它就載不到你要去的地方",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent",
+   "Product",
+   "Mobile",
+   "Workflow"
+  ],
+  "summary": "用 Figma Make 做 demo 時，我把「可見畫面」當成規格，結果 AI 也把 demo 當成 spec。真正要給的是行為規格：launch state machine。",
+  "url": "https://www.marvinswift.com/zh/programming/ai-direction-demo-spec-state-machine/",
+  "date": "2026-03-16T08:00:00+08:00",
+  "word_count": 1085
+ },
+ {
+  "slug": "comet",
+  "lang": "en",
+  "title": "Comet - The AI Browser That Turns Web Surfing into an Intelligent Conversation (with Referral Code)",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "This article introduces Comet, the AI browser developed by Perplexity, and highlights how it transforms web browsing from simply “reading information” into an interactive experience of thinking and organizing with AI. The article is divided into five sections, explaining Comet’s positioning, key features (such as AI search summaries, automation, and cross-tab organization), user experience, and privacy cautions. It ends with the author’s referral code, inviting readers to try it out. The tone is conversational and suitable for publishing on personal blogs or technical note platforms.",
+  "url": "https://www.marvinswift.com/en/programming/comet/",
+  "date": "2025-10-15T08:00:00+08:00",
+  "word_count": 395
+ },
+ {
+  "slug": "comet",
+  "lang": "zh",
+  "title": "Comet：AI 瀏覽器，讓上網變成一場智能對話 (附推薦碼)",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "這篇文章介紹了由 Perplexity 推出的 AI 瀏覽器 Comet，強調它如何讓使用者在瀏覽網頁時不只是「看資訊」，而是能與 AI 一起思考與整理資料。文章分為五個部分，說明 Comet 的定位、主要功能（如 AI 搜尋摘要、自動化操作、跨分頁整理等）、使用體驗與資安提醒，並在結尾加入作者的推薦碼，邀請讀者實際試用。整體語氣口語化，適合發佈於個人部落格或技術筆記平台。",
+  "url": "https://www.marvinswift.com/zh/programming/comet/",
+  "date": "2025-10-15T08:00:00+08:00",
+  "word_count": 650
+ },
+ {
+  "slug": "think-mode-on-claude-code",
+  "lang": "en",
+  "title": "Using Plan Mode to Let Claude Code Plan Before Implementation",
+  "category": "programming",
+  "tags": [
+   "Claude",
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "This article introduces how to use think mode for code editing on macOS and provides detailed step-by-step instructions.",
+  "url": "https://www.marvinswift.com/en/programming/think-mode-on-claude-code/",
+  "date": "2025-08-07T12:05:00+08:00",
+  "word_count": 417
+ },
+ {
+  "slug": "think-mode-on-claude-code",
+  "lang": "zh",
+  "title": "使用 plan mode 先讓 claude code 規畫，再開始實作",
+  "category": "programming",
+  "tags": [
+   "Claude",
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "本文將介紹如何在 macOS 上使用 plan mode 進行程式碼編輯，並提供詳細的步驟說明。",
+  "url": "https://www.marvinswift.com/zh/programming/think-mode-on-claude-code/",
+  "date": "2025-08-07T12:02:00+08:00",
+  "word_count": 626
+ },
+ {
+  "slug": "mario-kart-world",
+  "lang": "en",
+  "title": "Mario Kart World - Wallpaper Downloads",
+  "category": "life",
+  "tags": [
+   "life",
+   "Mario Kart World"
+  ],
+  "summary": "Nintendo's website now has Mario Kart World wallpapers available for download. Nintendo Mario Kart Download Link Wallpaper 1 Mobile - 1320 x 2868 Mobile - 1440 x 2560 Desktop Wallpaper 2 Mobile - 1320 x 2868 Mobile - 144…",
+  "url": "https://www.marvinswift.com/en/life/mario-kart-world/",
+  "date": "2025-07-25T21:10:00+08:00",
+  "word_count": 70
+ },
+ {
+  "slug": "mario-kart-world",
+  "lang": "zh",
+  "title": "馬力歐賽車世界 - Mario Kart 世界 桌布下載",
+  "category": "life",
+  "tags": [
+   "life",
+   "Mario Kart World"
+  ],
+  "summary": "任天堂的網站，現在有 Mario Kart 世界的桌布下載。 任天堂的馬力歐賽車下載連結 桌布一 手機用 - 1320 x 2868 手機用 - 1440 x 2560 電腦用 桌布二 手機用 - 1320 x 2868 手機用 - 144…",
+  "url": "https://www.marvinswift.com/zh/life/mario-kart-world/",
+  "date": "2025-07-25T21:03:00+08:00",
+  "word_count": 98
+ },
+ {
+  "slug": "paste-capture-image-to-claude-code",
+  "lang": "en",
+  "title": "How to Paste Screen Captures to Claude Code Editor on macOS",
+  "category": "programming",
+  "tags": [
+   "Claude",
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "This article introduces how to paste screen captures to Claude's code editor on macOS, with detailed step-by-step instructions.",
+  "url": "https://www.marvinswift.com/en/programming/paste-capture-image-to-claude-code/",
+  "date": "2025-07-14T16:25:00+08:00",
+  "word_count": 213
+ },
+ {
+  "slug": "paste-capture-image-to-claude-code",
+  "lang": "zh",
+  "title": "將螢幕的截圖貼上到 Claude 的程式碼編輯器的方法，macOS 適用",
+  "category": "programming",
+  "tags": [
+   "Claude",
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "本文將介紹如何在 macOS 上將螢幕截圖貼上到 Claude 的程式碼編輯器中，並提供詳細的步驟說明。",
+  "url": "https://www.marvinswift.com/zh/programming/paste-capture-image-to-claude-code/",
+  "date": "2025-07-14T16:20:00+08:00",
+  "word_count": 332
+ },
+ {
+  "slug": "ai-agent-coding-prompt",
+  "lang": "en",
+  "title": "Prompt to Make AI Agents Present Design First Without Implementation",
+  "category": "programming",
+  "tags": [
+   "Cursor",
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "This year, I've been heavily using AI Agents in program development. Besides general debugging, Agents also participate in my program design process. However, if I don't specifically mention \"don't start coding, I want t…",
+  "url": "https://www.marvinswift.com/en/programming/ai-agent-coding-prompt/",
+  "date": "2025-04-26T11:50:00+08:00",
+  "word_count": 148
+ },
+ {
+  "slug": "ai-agent-coding-prompt",
+  "lang": "zh",
+  "title": "讓 AI Agent 不要動手，先呈現設計結果的 prompt",
+  "category": "programming",
+  "tags": [
+   "Cursor",
+   "AI",
+   "AI Agent"
+  ],
+  "summary": "今年開始，我大量的使用 AI Agent 在程式開發。除了一般 debug 以外，Agent 也會參與我的程式設計過程。但是，AI Agent 如果沒有特別提到「不要動手，我要先 review 你的設計」時，AI Agent 會直接開始寫程…",
+  "url": "https://www.marvinswift.com/zh/programming/ai-agent-coding-prompt/",
+  "date": "2025-04-26T11:39:00+08:00",
+  "word_count": 235
+ },
+ {
+  "slug": "using-cursor-in-jira",
+  "lang": "zh",
+  "title": "在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單",
+  "category": "programming",
+  "tags": [
+   "Cursor",
+   "AI"
+  ],
+  "summary": "2025 年開始，我已經在開發的日常中，大量的使用 Cursor。但如果想法打開，Cursor 輸出的「文字」本來就可以超過「程式」的範圍。如果團隊中一起合作的 PM，使用 Cursor 開單，是不是開發者可以快速的跨越自然語言和程式語言的…",
+  "url": "https://www.marvinswift.com/zh/programming/using-cursor-in-jira/",
+  "date": "2025-03-15T11:39:00+08:00",
+  "word_count": 1278
+ },
+ {
+  "slug": "using-cursor-in-jira.md",
+  "lang": "en",
+  "title": "Using Cursor for Writing GWT (Given-When-Then) Requirements in Jira for Non-Development Roles",
+  "category": "programming",
+  "tags": [
+   "Cursor",
+   "AI"
+  ],
+  "summary": "Since 2025, I have been extensively using Cursor in my daily development work. However, if we think broadly, Cursor's text output capabilities can extend beyond just \"programming\". If Project Managers in the team use Cur…",
+  "url": "https://www.marvinswift.com/en/programming/using-cursor-in-jira.md/",
+  "date": "2025-03-15T11:37:00+08:00",
+  "word_count": 640
+ },
+ {
+  "slug": "swift-cursorrules",
+  "lang": "zh",
+  "title": "在 iOS 開發上，現在使用的 cursorrules (2025.Mar.10th)",
+  "category": "swift",
+  "tags": [
+   "Cursor",
+   "AI",
+   "Swift"
+  ],
+  "summary": "With the introduction of Agent mode in Cursor, I have been actively using cursorrules for iOS development. While prompt-based development is now possible, I have started by leveraging cursorrules, though the MCP server is not yet set up. Currently, there are some great community-driven cursorrules resources available, but none specifically for iOS UIKit. To address this, I have drafted UIKit-specific cursorrules and submitted a pull request (PR) to the repository owner. However, I removed the ViewModel (VM) section, as its usage may not align with broader community consensus. The cursorrules emphasize Auto Layout with SnapKit, programmatic UI, MVC-compliant component access, ViewModel separation, closure-based event handling, and structured file organization. Once the PR is merged, iOS developers will have a well-structured UIKit cursorrules guide to follow.",
+  "url": "https://www.marvinswift.com/zh/swift/swift-cursorrules/",
+  "date": "2025-03-10T15:28:00+08:00",
+  "word_count": 410
+ },
+ {
+  "slug": "swift-cursorrules-en",
+  "lang": "en",
+  "title": "Current Usage of cursorrules in iOS Development (2025.Mar.10th)",
+  "category": "swift",
+  "tags": [
+   "Cursor",
+   "AI",
+   "Swift"
+  ],
+  "summary": "With the introduction of Agent mode in Cursor, I have been actively using cursorrules for iOS development. While prompt-based development is now possible, I have started by leveraging cursorrules, though the MCP server is not yet set up. Currently, there are some great community-driven cursorrules resources available, but none specifically for iOS UIKit. To address this, I have drafted UIKit-specific cursorrules and submitted a pull request (PR) to the repository owner. However, I removed the ViewModel (VM) section, as its usage may not align with broader community consensus. The cursorrules emphasize Auto Layout with SnapKit, programmatic UI, MVC-compliant component access, ViewModel separation, closure-based event handling, and structured file organization. Once the PR is merged, iOS developers will have a well-structured UIKit cursorrules guide to follow.",
+  "url": "https://www.marvinswift.com/en/swift/swift-cursorrules-en/",
+  "date": "2025-03-10T15:27:00+08:00",
+  "word_count": 364
+ },
+ {
+  "slug": "eu-travel-cz-au",
+  "lang": "zh",
+  "title": "歐洲 奧地利-匈牙利-捷克 奧匈捷之旅，交通方式",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel",
+   "Europe"
+  ],
+  "summary": "A guide on transportation options for traveling between Austria, Hungary, and the Czech Republic. Covers flights, trains, and city transit options for an efficient travel plan.",
+  "url": "https://www.marvinswift.com/zh/life/eu-travel-cz-au/",
+  "date": "2025-02-01T21:23:00+08:00",
+  "word_count": 774
+ },
+ {
+  "slug": "eu-travel-cz-au",
+  "lang": "en",
+  "title": "Transportation Guide for Austria, Hungary, and Czech Republic",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel",
+   "Europe"
+  ],
+  "summary": "A guide on transportation options for traveling between Austria, Hungary, and the Czech Republic. Covers flights, trains, and city transit options for an efficient travel plan.",
+  "url": "https://www.marvinswift.com/en/life/eu-travel-cz-au/",
+  "date": "2025-02-01T21:22:00+08:00",
+  "word_count": 350
+ },
+ {
+  "slug": "nintendo-switch-2-is-ready-for-sale",
+  "lang": "en",
+  "title": "Nintendo Switch 2 is Ready for Release",
+  "category": "life",
+  "tags": [
+   "nintendo",
+   "switch"
+  ],
+  "summary": "Nintendo has officially announced the Switch 2, featuring enhanced gameplay with Mario Kart and a potential new Joycon mouse function. Check out the official trailer and reviews from YouTubers",
+  "url": "https://www.marvinswift.com/en/life/nintendo-switch-2-is-ready-for-sale/",
+  "date": "2025-01-20T22:14:00+08:00",
+  "word_count": 88
+ },
+ {
+  "slug": "nintendo-switch-2-is-ready-for-sale",
+  "lang": "zh",
+  "title": "任天堂 Switch 2 已準備好要上市了",
+  "category": "life",
+  "tags": [
+   "nintendo",
+   "switch"
+  ],
+  "summary": "任天堂 Switch 2 已準備好要上市了 - 正式名稱為 Nintendo Switch 2 先上官方推出的正式影片 Switch 2 的亮點1 - 瑪莉歐賽車 Demo 的遊戲是「瑪莉歐賽車」 Switch 2 的亮點2 - Joyco…",
+  "url": "https://www.marvinswift.com/zh/life/nintendo-switch-2-is-ready-for-sale/",
+  "date": "2025-01-19T22:14:00+08:00",
+  "word_count": 139
+ },
+ {
+  "slug": "i18n-in-ios-app-en",
+  "lang": "en",
+  "title": "If You Want to Implement i18n on iOS and Dynamically Switch Languages in the App, This is a Great Library",
+  "category": "swift",
+  "tags": [
+   "i18n",
+   "Swift"
+  ],
+  "summary": "If you’re working on i18n for iOS and need to dynamically switch languages within the app, you can use this package: Localize-Swift. Recently, I worked on an i18n feature and compiled some related resources here. Install…",
+  "url": "https://www.marvinswift.com/en/swift/i18n-in-ios-app-en/",
+  "date": "2024-12-24T23:05:00+08:00",
+  "word_count": 174
+ },
+ {
+  "slug": "i18n-in-ios-app",
+  "lang": "zh",
+  "title": "如果你想要在 iOS 上做 i18n，而且還要在 App 內動態切換語言，這是好用的 library",
+  "category": "swift",
+  "tags": [
+   "i18n",
+   "Swift"
+  ],
+  "summary": "如果你要進行 iOS 的 i18n，而且還要在 App 內動態切換語言，你可以使用這個套件 Localize-Swift。前陣子正在進行 i18n 的 feature，這邊整理了一下相關的資料。 安裝方法 使用 CocoaPods 使用 S…",
+  "url": "https://www.marvinswift.com/zh/swift/i18n-in-ios-app/",
+  "date": "2024-12-24T23:03:00+08:00",
+  "word_count": 294
+ },
+ {
+  "slug": "app-icon-dynamic-change",
+  "lang": "en",
+  "title": "If You Need to Dynamically Change the App Icon, This Article Covers Everything You Need to Know",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift"
+  ],
+  "summary": "Change App icon feature",
+  "url": "https://www.marvinswift.com/en/swift/app-icon-dynamic-change/",
+  "date": "2024-12-10T14:45:00+08:00",
+  "word_count": 245
+ },
+ {
+  "slug": "app-icon-dynamic-change",
+  "lang": "zh",
+  "title": "如果你遇到需要動態改變 App Icon 的需求，這篇文章大概涵蓋了你所需要的知識",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift"
+  ],
+  "summary": "Change App icon feature",
+  "url": "https://www.marvinswift.com/zh/swift/app-icon-dynamic-change/",
+  "date": "2024-12-10T13:30:00+08:00",
+  "word_count": 397
+ },
+ {
+  "slug": "separate-data-source-to-table",
+  "lang": "en",
+  "title": "UITableViewDataSource Can Be Implemented as an Independent Object - An Example with Skeleton Effect",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift"
+  ],
+  "summary": "Usually, we set the UITableView's Delegate and DataSource within the ViewController and implement the DataSource logic directly in the ViewController, as shown in the example below: However, UITableViewDataSource can als…",
+  "url": "https://www.marvinswift.com/en/swift/separate-data-source-to-table/",
+  "date": "2024-12-06T15:03:00+08:00",
+  "word_count": 101
+ },
+ {
+  "slug": "separate-data-source-to-table",
+  "lang": "zh",
+  "title": "UITableView, UICollectionView 的 DataSource 可以獨立一個物件",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift"
+  ],
+  "summary": "UITableViewDataSource 是可以實作一個獨立物件的，範例用 Skeleton 效果為例子 通常我們會在 ViewController 中設定 UITableView 的 Delegate 和 DataSource，並把 D…",
+  "url": "https://www.marvinswift.com/zh/swift/separate-data-source-to-table/",
+  "date": "2024-12-06T15:03:00+08:00",
+  "word_count": 181
+ },
+ {
+  "slug": "introducing-codepan",
+  "lang": "en",
+  "title": "Introducing CodePan - A Platform for Aspiring Frontend Developers",
+  "category": "programming",
+  "tags": [
+   "frontend",
+   "web development",
+   "portfolio"
+  ],
+  "summary": "Introducing CodePan, a platform for aspiring frontend developers to showcase their work, share ideas, and explore creative coding projects.",
+  "url": "https://www.marvinswift.com/en/programming/introducing-codepan/",
+  "date": "2024-10-22T22:01:00+08:00",
+  "word_count": 683
+ },
+ {
+  "slug": "how-ai-transform-the-world-better",
+  "lang": "zh",
+  "title": "AI如何讓世界變得更美好 Dario Amodei by Claude 創辦人 機翻",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "Claude"
+  ],
+  "summary": "TL;DR 強大AI 如何讓世界變得更美好：五大領域的潛在益處 NotebookLM 整理出來的摘要，但建議有空的話，還是把原文看完，會更有感覺。 Dario Amodei 在其文章 \"Machines of Loving Grace\" 中…",
+  "url": "https://www.marvinswift.com/zh/programming/how-ai-transform-the-world-better.html",
+  "date": "2024-10-13T16:20:00+08:00",
+  "word_count": 24146
+ },
+ {
+  "slug": "using-DispatchWorkItem-set-specific-timeout-api-task",
+  "lang": "zh",
+  "title": "使用 DispatchWorkItem 設定特定時間的 API 任務",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift"
+  ],
+  "summary": "how to use DispatchWorkItem to implement a 5-second timeout for an API task in Swift. By using DispatchWorkItem alongside DispatchQueue.asyncAfter, it ensures a clean and efficient timeout mechanism, avoiding the need to modify other API calls. The article highlights the advantages of DispatchWorkItem over using simple flags, such as better code structure, built-in cancellation, precise time control, and efficient resource management. A Swift code example is provided to implement this feature for a real-time inventory check API in an e-commerce app.",
+  "url": "https://www.marvinswift.com/zh/swift/using-DispatchWorkItem-set-specific-timeout-api-task/",
+  "date": "2024-09-22T17:00:00+08:00",
+  "word_count": 699
+ },
+ {
+  "slug": "xcode16-release-notes-whats-new",
+  "lang": "en",
+  "title": "Xcode 16 Release Notes, new features",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift"
+  ],
+  "summary": "Xcode 16 的 Release Notes 中有以下新增功能（New Features)",
+  "url": "https://www.marvinswift.com/en/swift/xcode16-release-notes-whats-new/",
+  "date": "2024-09-22T16:03:00+08:00",
+  "word_count": 280
+ },
+ {
+  "slug": "xcode16-release-notes-whats-new",
+  "lang": "zh",
+  "title": "Xcode 16 Release Notes 新功能 機翻",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift"
+  ],
+  "summary": "Xcode 16 的 Release Notes 中有以下新增功能（New Features)",
+  "url": "https://www.marvinswift.com/zh/swift/xcode16-release-notes-whats-new/",
+  "date": "2024-09-22T16:03:00+08:00",
+  "word_count": 542
+ },
+ {
+  "slug": "cocoapods-enter-maintain-mode",
+  "lang": "en",
+  "title": "Cocoapods Enters Maintain Mode",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Cocoapods",
+   "Xcode"
+  ],
+  "summary": "Since Apple introduced the Swift Package Manager (SPM), CocoaPods has faced significant competitive pressures that have impacted its developmental momentum. As SPM is officially supported and seamlessly integrated into Apple's development environment, competing with Apple in the core domain of package management is often not advantageous. This integration gives Apple a distinct edge, as developers tend to prefer using SPM for dependency management due to its robust support and deep integration with their tools. Consequently, CocoaPods has seen a decline in market share and development investment, necessitating a strategic adjustment to adapt to the evolving development ecosystem.",
+  "url": "https://www.marvinswift.com/en/swift/cocoapods-enter-maintain-mode/",
+  "date": "2024-08-15T23:33:00+08:00",
+  "word_count": 339
+ },
+ {
+  "slug": "cocoapods-enter-maintain-mode",
+  "lang": "zh",
+  "title": "Cocoapods 進入 maintain mode",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Cocoapods",
+   "Xcode"
+  ],
+  "summary": "自從 Apple 推出了 Swift Package Manager (SPM) 以後，CocoaPods 面臨了顯著的競爭壓力，這對其發展動力造成了影響。由於 SPM 是由 Apple 官方支持，直接整合在其開發環境中，這使得與 Apple 在包管理工具這一核心領域內進行競爭變得不太有利。Apple 的廣泛影響力和對其產品的深度整合，使得開發者傾向於選擇 SPM 作為依賴管理工具，這直接影響了 CocoaPods 的市場份額與相關的開發投入。因此，面對來自 Apple 的競爭，CocoaPods 在策略上需要做出調整，以適應不斷變化的開發生態。",
+  "url": "https://www.marvinswift.com/zh/swift/cocoapods-enter-maintain-mode/",
+  "date": "2024-08-15T22:10:00+08:00",
+  "word_count": 1515
+ },
+ {
+  "slug": "xcode15-4-need-using-firebase-new-version",
+  "lang": "en",
+  "title": "For projects using Xcode 15.3 or higher, please upgrade Firebase to version 10.22.0 or higher, otherwise, the application may crash upon release",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "firebase",
+   "xcode"
+  ],
+  "summary": "If you’re using Xcode version 15.3 or higher for your projects that incorporate Firebase, it is crucial to upgrade Firebase to version 10.22.0 or higher to avoid crashes upon release. After our team upgraded to Xcode 15.4, we experienced an increase in crash rates, primarily originating from the AppDelegate and compiler-generated code. Investigations into the crashes, supported by insights from Stack Overflow and Firebase GitHub issues, pinpointed the issue to nanopb. Always ensure that Firebase is updated to at least version 10.22.0 when working with newer versions of Xcode to prevent these issues.",
+  "url": "https://www.marvinswift.com/en/swift/xcode15-4-need-using-firebase-new-version/",
+  "date": "2024-07-27T11:32:00+08:00",
+  "word_count": 155
+ },
+ {
+  "slug": "xcode15-4-need-using-firebase-new-version",
+  "lang": "zh",
+  "title": "要升級 Xcode 15.3 以上的專案，請將 Firebase 升到 10.22.0 以上，否則發佈後會閃退",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "firebase",
+   "xcode"
+  ],
+  "summary": "If you’re using Xcode version 15.3 or higher for your projects that incorporate Firebase, it is crucial to upgrade Firebase to version 10.22.0 or higher to avoid crashes upon release. After our team upgraded to Xcode 15.4, we experienced an increase in crash rates, primarily originating from the AppDelegate and compiler-generated code. Investigations into the crashes, supported by insights from Stack Overflow and Firebase GitHub issues, pinpointed the issue to nanopb. Always ensure that Firebase is updated to at least version 10.22.0 when working with newer versions of Xcode to prevent these issues.",
+  "url": "https://www.marvinswift.com/zh/swift/xcode15-4-need-using-firebase-new-version/",
+  "date": "2024-07-27T11:32:00+08:00",
+  "word_count": 217
+ },
+ {
+  "slug": "data-intensive-applications.md",
+  "lang": "en",
+  "title": "Designing Data-Intensive Applications - Chapter 6 Notes",
+  "category": "programming",
+  "tags": [
+   "system design",
+   "programming"
+  ],
+  "summary": "Notes on Designing Data-Intensive Applications, discussing partitioning strategies for servers.",
+  "url": "https://www.marvinswift.com/en/programming/data-intensive-applications.md/",
+  "date": "2024-07-17T13:50:00+08:00",
+  "word_count": 872
+ },
+ {
+  "slug": "flyweight-pattern",
+  "lang": "en",
+  "title": "Flyweight Pattern - Lightweight Mode (Flyweight Pattern)",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Design Pattern",
+   "Flyweight Pattern"
+  ],
+  "summary": "This article introduces the Flyweight Pattern using examples and scenarios from refactoring.guru.",
+  "url": "https://www.marvinswift.com/en/swift/flyweight-pattern/",
+  "date": "2024-07-17T13:35:00+08:00",
+  "word_count": 470
+ },
+ {
+  "slug": "tableView-has-two-type-value",
+  "lang": "en",
+  "title": "Handling Multiple Data Types in a TableView in Swift",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS",
+   "UI",
+   "TableView"
+  ],
+  "summary": "When your table view contains more than one type of data, you can manage it using this approach. This article provides an example of handling two types of data—posts and ads—within a table view.",
+  "url": "https://www.marvinswift.com/en/swift/tableView-has-two-type-value/",
+  "date": "2024-07-17T13:25:00+08:00",
+  "word_count": 510
+ },
+ {
+  "slug": "delegate-pattern-in-swift",
+  "lang": "en",
+  "title": "Delegate Pattern in Swift",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Design Pattern"
+  ],
+  "summary": "The Delegate Pattern is extensively used in iOS development to delegate responsibilities or behaviors to other objects, thereby achieving decoupling and flexibility. In Swift, we usually use protocols to define the interface for the delegate, and the delegate object conforms to this protocol. This article will explain how to use the delegate pattern in Swift and provide a practical example.",
+  "url": "https://www.marvinswift.com/en/swift/delegate-pattern-in-swift/",
+  "date": "2024-07-17T13:10:00+08:00",
+  "word_count": 598
+ },
+ {
+  "slug": "cocoa-framework-mvc",
+  "lang": "en",
+  "title": "iOS MVC Architecture",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "MVC",
+   "Cocoa framework"
+  ],
+  "summary": "Analyzing the iOS MVC design pattern. MVC stands for Model-View-Controller. The main point is that the model should be isolated from the view, applicable to both macOS and iOS apps. This article uses the book \"Cocoa Design Patterns\" as an example.",
+  "url": "https://www.marvinswift.com/en/swift/cocoa-framework-mvc/",
+  "date": "2024-07-17T12:00:00+08:00",
+  "word_count": 582
+ },
+ {
+  "slug": "which-version-upgrade-will-break-your-project",
+  "lang": "en",
+  "title": "When Upgrading Third-Party Versions, What Kind of Version Number Causes a Project Build to Fail?",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "third party",
+   "cocoapods"
+  ],
+  "summary": "Explaining semantic versioning in development. In semantic version control, we have major, minor, and patch versions, each signifying different types of changes. Patches are for bug fixes, minor updates are compatible, and major updates can break your code. This article also provides examples.",
+  "url": "https://www.marvinswift.com/en/swift/which-version-upgrade-will-break-your-project/",
+  "date": "2024-07-17T08:50:00+08:00",
+  "word_count": 611
+ },
+ {
+  "slug": "using-adapter-pattern-to-libs",
+  "lang": "en",
+  "title": "Wrapping Third-Party Libraries to Ease the Pain of Upgrades",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Design Patterns"
+  ],
+  "summary": "Using the adapter pattern to wrap third-party libraries in Swift. It's common in iOS development to rely on third-party libraries. When libraries are upgraded, they sometimes break the build or cause runtime crashes. Using the adapter pattern can help develop a more stable environment and save time.",
+  "url": "https://www.marvinswift.com/en/swift/using-adapter-pattern-to-libs/",
+  "date": "2024-07-17T08:30:00+08:00",
+  "word_count": 663
+ },
+ {
+  "slug": "swiftui-data-flow",
+  "lang": "en",
+  "title": "SwiftUI Data Flow",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI"
+  ],
+  "summary": "Apple recommends a specific data flow for SwiftUI. It adheres to a unidirectional data flow.",
+  "url": "https://www.marvinswift.com/en/swift/swiftui-data-flow/",
+  "date": "2024-07-17T06:00:00+08:00",
+  "word_count": 202
+ },
+ {
+  "slug": "ref-type-val-type-in-swift",
+  "lang": "en",
+  "title": "Value Types and Reference Types in Swift",
+  "category": "swift",
+  "tags": [
+   "Swift"
+  ],
+  "summary": "Swift designed arrays and dictionaries as value types. When you use an array and copy it, it might behave differently than you expect. This article also includes references to swift.org and the Swift blog.",
+  "url": "https://www.marvinswift.com/en/swift/ref-type-val-type-in-swift/",
+  "date": "2024-07-16T23:11:00+08:00",
+  "word_count": 459
+ },
+ {
+  "slug": "async-await-connect-closure",
+  "lang": "en",
+  "title": "Integrating Escaping Closure with async/await in SwiftUI Projects",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Combine",
+   "Asynchronous"
+  ],
+  "summary": "After Swift 5.5 introduced async/await, this article provides an example of connecting previous escaping closure functions.",
+  "url": "https://www.marvinswift.com/en/swift/async-await-connect-closure/",
+  "date": "2024-07-16T21:42:00+08:00",
+  "word_count": 263
+ },
+ {
+  "slug": "add-webview-in-swiftui",
+  "lang": "en",
+  "title": "Adding a WebView to a SwiftUI Project",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI",
+   "WebView"
+  ],
+  "summary": "This article discusses how to add a WebView to a SwiftUI project.",
+  "url": "https://www.marvinswift.com/en/swift/add-webview-in-swiftui/",
+  "date": "2024-07-16T18:20:00+08:00",
+  "word_count": 267
+ },
+ {
+  "slug": "swiftui-color-picker",
+  "lang": "en",
+  "title": "Color Picker Component, A Beautiful Color Selector",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI",
+   "Apple",
+   "iOS"
+  ],
+  "summary": "This article discusses how to use the Color Picker in SwiftUI.",
+  "url": "https://www.marvinswift.com/en/swift/swiftui-color-picker/",
+  "date": "2024-07-16T18:00:00+08:00",
+  "word_count": 276
+ },
+ {
+  "slug": "unit-testing-from-zero-to-one",
+  "lang": "en",
+  "title": "Unit Testing from Zero to One - Getting Started with Tests in Your Project",
+  "category": "unitTesting",
+  "tags": [
+   "Unit Testing",
+   "Swift",
+   "Xcode"
+  ],
+  "summary": "This article introduces how to integrate unit testing into iOS projects. It highlights the role of unit tests in verifying the correctness of the smallest testable units of code, such as functions, methods, or classes. The author suggests starting with components that do not depend on others and uses a dependency graph to illustrate this point. The article includes practical steps for setting up a unit testing environment in Xcode and discusses examples such as handling JSON responses for authentication. It also explores how unit testing can help manage changing project requirements, noting both its benefits and limitations.",
+  "url": "https://www.marvinswift.com/en/unittesting/unit-testing-from-zero-to-one/",
+  "date": "2024-07-16T15:00:00+08:00",
+  "word_count": 321
+ },
+ {
+  "slug": "add-unit-testing-on-project",
+  "lang": "en",
+  "title": "Adding Testing to Your iOS Project - You Need Testing",
+  "category": "unitTesting",
+  "tags": [
+   "Unit Testing",
+   "Swift",
+   "Xcode"
+  ],
+  "summary": "This article emphasizes the importance of incorporating unit testing into iOS projects. It begins with a metaphor comparing software development to building cathedrals, emphasizing the need for a structured testing phase. The article argues that unit testing improves code quality, readability, and maintainability. It helps in verifying program logic, meeting requirements, and detecting bugs, enabling safe code refactoring. Additionally, it discusses how unit testing saves time and costs by preventing post-release issues, ultimately enhancing development efficiency and product quality. The concept of the testing pyramid is explained, categorizing tests into unit tests, integration tests, and UI tests. The principles of F.I.R.S.T. for unit testing (Fast, Independent, Repeatable, Self-validating, Timely) are outlined to guide developers in effective testing practices. The article concludes by encouraging readers to embrace unit testing as a valuable and broadly applicable skill for iOS projects of any scale.",
+  "url": "https://www.marvinswift.com/en/unittesting/add-unit-testing-on-project/",
+  "date": "2024-07-16T10:00:00+08:00",
+  "word_count": 691
+ },
+ {
+  "slug": "check-third-party-pod-version-from-podfilelock",
+  "lang": "en",
+  "title": "Checking Third-Party Package Versions from Podfile.lock",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Third-Party",
+   "CocoaPods"
+  ],
+  "summary": "This article explains how to check the version of third-party pods used in a project from Podfile.lock.",
+  "url": "https://www.marvinswift.com/en/swift/check-third-party-pod-version-from-podfilelock/",
+  "date": "2024-07-15T14:29:00+08:00",
+  "word_count": 263
+ },
+ {
+  "slug": "unit-testing-from-zero-to-one",
+  "lang": "zh",
+  "title": "單元測試從0到1 - 讓專案開始有測試",
+  "category": "unitTesting",
+  "tags": [
+   "Unit Testing",
+   "Swift",
+   "Xcode"
+  ],
+  "summary": "This article provides an introduction to integrating unit testing into iOS projects, emphasizing its role in validating individual components like functions and classes for correctness. Marvin Lin, the author, advocates starting tests with independent components and utilizes a dependency graph to illustrate where to begin in a project. The guide includes steps for setting up a unit testing environment in Xcode and discusses practical examples, such as handling JSON responses for authentication. It further explores how unit testing can help manage evolving project requirements, highlighting its benefits and limitations. The article ultimately stresses that while unit testing is crucial for functionality verification, it does not inherently solve all aspects of software quality or design.",
+  "url": "https://www.marvinswift.com/unit-testing/unit-testing-from-zero-to-one.html",
+  "date": "2024-06-20T13:20:00+08:00",
+  "word_count": 1288
+ },
+ {
+  "slug": "you-can-download-chatgpt",
+  "lang": "zh",
+  "title": "輪到我可以下載 ChatGPT macOS 應用程式",
+  "category": "programming",
+  "tags": [
+   "ChatGPT",
+   "OpenAI"
+  ],
+  "summary": "If you have a ChatGPT subscription, check the ChatGPT web interface for a download button; if it’s available, you can download the macOS app. The app, built entirely with SwiftUI, syncs ChatGPT’s history and allows the use of GPTs directly within the app. The author also tried generating images using ChatGPT 4.0.",
+  "url": "https://www.marvinswift.com/programming/you-can-download-chatgpt.html",
+  "date": "2024-05-30T22:09:00+08:00",
+  "word_count": 160
+ },
+ {
+  "slug": "wwdc24-post",
+  "lang": "zh",
+  "title": "WWDC24 準備開始了，將在台北時間 6 月 11 日至 6 月 15 日舉行",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC",
+   "iOS",
+   "Apple"
+  ],
+  "summary": "Today, I received a promotional email from Apple, which reminded me that it’s once again time for the annual WWDC conference. This year’s WWDC24 will be held from June 11 to June 15, 2024, Taipei time. Although my recent side projects have been unrelated to Apple devices, I still feel a sense of anticipation and trepidation about the future of Apple devices as WWDC approaches each year.From David Smith’s newsletter, I read an insightful piece titled “Craftsmanship & Consideration.”Lately, I haven’t been spending as much time on social media as I did before the pandemic. This article highlights the “community values” that resonate with me, and I hope that the developer community in Taiwan can engage in more discussions and exchanges in the post-ChatGPT era.",
+  "url": "https://www.marvinswift.com/swift/wwdc24-post.html",
+  "date": "2024-05-29T22:39:00+08:00",
+  "word_count": 228
+ },
+ {
+  "slug": "chat-gpt4o-trans-linear",
+  "lang": "zh",
+  "title": "使用 ChatGPT-4o 重新翻譯 Linear 執行長在 Stripe 上分享關於程式回質的觀點",
+  "category": "programming",
+  "tags": [
+   "programming",
+   "ChatGPT",
+   "OpenAI",
+   "linear"
+  ],
+  "summary": "Dbundle exec jekyll serveiscusses the release of OpenAI's ChatGPT-4o and its capabilities, as demonstrated in a live demo and on YouTube. The author uses ChatGPT-4o to retranslate a previously published article, originally shared by Linear's CEO on Stripe about the quality of programming. The author cautions that even with ChatGPT-4o, translations may vary over time due to model updates, so direct comparisons between versions may not be accurate. The article also explores the concepts of Craft and Quality in the context of professional-grade software.",
+  "url": "https://www.marvinswift.com/programming/chat-gpt4o-trans-linear.html",
+  "date": "2024-05-17T08:57:00+08:00",
+  "word_count": 1142
+ },
+ {
+  "slug": "linear",
+  "lang": "zh",
+  "title": "Linear 執行長在 Stripe 上分享關於程式回質的觀點 - 機翻",
+  "category": "programming",
+  "tags": [
+   "Linear",
+   "Programming"
+  ],
+  "summary": "Discusses the insights shared by Linear's CEO, Karri Saarinen, on the topic of code quality. The original thoughts were shared on Stripe and later translated into Chinese using ChatGPT. The article provides a link to the original post by Karri Saarinen and includes a discussion on the concepts of Craft and Quality in the context of professional-grade software.",
+  "url": "https://www.marvinswift.com/programming/linear.html",
+  "date": "2024-05-13T00:12:00+08:00",
+  "word_count": 1563
+ },
+ {
+  "slug": "swift_5_10_released",
+  "lang": "zh",
+  "title": "Swift 5.10 Released",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS",
+   "Swift 5.10"
+  ],
+  "summary": "Swift 5.10 Released - 下一個版本就是 Swift 6 以下文章內容，來自 Swift.org 的 Swift 5.10 Released，由 Holly Borla 撰寫。 Holly BorlaHolly Borla…",
+  "url": "https://www.marvinswift.com/swift/swift_5_10_released.html",
+  "date": "2024-03-06T11:54:00+08:00",
+  "word_count": 2225
+ },
+ {
+  "slug": "gemini-video-is-fake",
+  "lang": "zh",
+  "title": "Google 的 Gemini AI Demo 影片是經過編輯的，不是真實",
+  "category": "programming",
+  "tags": [
+   "Google Gemini",
+   "ChatGPT",
+   "AI",
+   "LLM"
+  ],
+  "summary": "Google Gemini AI Demo is fake, not real. It's edited",
+  "url": "https://www.marvinswift.com/programming/gemini-video-is-fake.html",
+  "date": "2023-12-10T21:48:00+08:00",
+  "word_count": 287
+ },
+ {
+  "slug": "google-release-gemini-ai-to-compete-ChatGPT",
+  "lang": "zh",
+  "title": "Google 推出 Gemini，從 Pichai 的 X(前身為 Twitter) 中，可以看出驚人的進步",
+  "category": "programming",
+  "tags": [
+   "Google Gemini",
+   "ChatGPT",
+   "AI",
+   "LLM"
+  ],
+  "summary": "Google released Gemini, and from Pichai's X (formerly known as Twitter), we can see the amazing progress. ChatGPT currently don't have any response. And I can not upgrade ChatGPT 4.0. I have written to OpenAI, but I only got an automatic reply",
+  "url": "https://www.marvinswift.com/programming/google-release-gemini-ai-to-compete-ChatGPT.html",
+  "date": "2023-12-07T22:06:00+08:00",
+  "word_count": 582
+ },
+ {
+  "slug": "add-unit-testing-on-project",
+  "lang": "zh",
+  "title": "在 iOS 專案加上測試-You need testing",
+  "category": "unitTesting",
+  "tags": [
+   "Unit Testing",
+   "Swift",
+   "Xcode"
+  ],
+  "summary": "The article emphasizes the significance of incorporating unit testing into iOS projects. It begins with a quote comparing writing code to building cathedrals, highlighting the need for a prayer-like phase after completion. The author argues that unit testing is crucial for improving code quality, readability, and maintenance. Unit testing aids in verifying program logic, meeting requirements, and identifying bugs, allowing for code refactoring without affecting other functionalities. Additionally, the article asserts that unit testing saves time and costs by preventing post-release bug issues, ultimately enhancing development efficiency and product quality. The concept of the testing pyramid is introduced, categorizing tests into unit tests, integration tests, and UI tests. The principles of F.I.R.S.T. for unit testing (Fast, Independent, Repeatable, Self-validating, Timely) are outlined to guide developers in effective testing practices. The article concludes by encouraging readers to embrace unit testing as a practical skill with broad applications, applicable to iOS projects of any scale.",
+  "url": "https://www.marvinswift.com/unit-testing/add-unit-testing-on-project.html",
+  "date": "2023-12-06T17:15:00+08:00",
+  "word_count": 1361
+ },
+ {
+  "slug": "btc-lottery-iner",
+  "lang": "en",
+  "title": "Bought a Bitcoin Lottery Miner with Around 55kH/s Hashrate",
+  "category": "life",
+  "tags": [
+   "bitcoin",
+   "lottery",
+   "miner",
+   "crypto currency",
+   "satoshi",
+   "shopee"
+  ],
+  "summary": "A compact Bitcoin lottery miner with a 55kH/s hashrate, low power consumption, and a simple setup process. It functions quietly and even doubles as a desk clock. Check out product details and purchase link below.",
+  "url": "https://www.marvinswift.com/en/life/btc-lottery-iner/",
+  "date": "2023-11-21T16:50:00+08:00",
+  "word_count": 136
+ },
+ {
+  "slug": "btc-lottery-iner",
+  "lang": "zh",
+  "title": "買了一個比特幣樂透礦機，算力 55kH/s 左右",
+  "category": "life",
+  "tags": [
+   "比特幣",
+   "樂透",
+   "礦機",
+   "bitcoin",
+   "miner",
+   "crypto currency",
+   "satoshi",
+   "shopee",
+   "蝦皮"
+  ],
+  "summary": "有一天心寫來潮，想試試看有沒有便宜比特幣的礦機，在蝦皮上一找，發現比特幣樂透礦機，剛好可以滿足我的需求。 這種礦機大小比較像是一個 USB 隨身碟，但是比較厚，一插上去後，設定好 wifi 和錢包，就可以開始挖礦了。 沒什麼噪音，也不會散熱…",
+  "url": "https://www.marvinswift.com/life/btc-lottery-iner.html",
+  "date": "2023-11-21T16:49:00+08:00",
+  "word_count": 232
+ },
+ {
+  "slug": "iOS17-refresh-control-breaking-change",
+  "lang": "zh",
+  "title": "UIRefresh 在 iOS 17 有破壞性更新，生命周期要移到 viewIsAppearing, from Essential Developer",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS",
+   "UIRefreshControl"
+  ],
+  "summary": "Sam Altman was fired by OpenAI, and a few hours later, Greg Brockman also resigned.Hmm... as of the time of writing, it's the weekend, and currently, it's uncertain what impact this will have on OpenAI and ChatGPT. However, according to the news, the reason for Altman's dismissal is \"Altman was not honest with the board.\" For the latest updates or developments, please refer to the most recent news.The second thing related to iOS is that the lifecycle of UIRefreshControl set in iOS 17 needs to be changed. I learned this from an email newsletter sent by Essential Developer.The email mentions that UIRefreshControl has a destructive update in iOS 17, and the lifecycle needs to be moved to viewIsAppearing, as per Essential Developer.Essential Developer is a high-quality iOS development resource. If you're interested, feel free to support Essential Developer. Supporting can be not only through purchasing courses but also by liking, commenting, and sharing – all forms of support.",
+  "url": "https://www.marvinswift.com/swift/iOS17-refresh-control-breaking-change.html",
+  "date": "2023-11-18T19:14:00+08:00",
+  "word_count": 857
+ },
+ {
+  "slug": "items-you-can-edit-before-your-app-distribution",
+  "lang": "en",
+  "title": "Things You Can Still Edit Before Hitting 'Publish' on the App Store",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS"
+  ],
+  "summary": "This article details the editable options available for iOS apps in the App Store even after Apple’s review but before pressing the ‘Publish’ button. It covers how to switch the release method from manual to automatic on a specific date, reset ratings, and modify the phased release settings.",
+  "url": "https://www.marvinswift.com/en/swift/items-you-can-edit-before-your-app-distribution/",
+  "date": "2023-11-02T08:55:00+08:00",
+  "word_count": 83
+ },
+ {
+  "slug": "items-you-can-edit-before-your-app-distribution",
+  "lang": "zh",
+  "title": "在 App Store 上，按下「發佈」前，還可以編輯的事",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS"
+  ],
+  "summary": "新版本 iOS App 要上架 App Store 前都需要經過 Apple 的審查，在審查後才能發發佈。而審查完後，按下「發佈」前，還可以編輯的事，這邊列出幾個可以編輯的事項。 發佈的方式，可以從手動改成某個日期後自動發佈 送審的時候選擇…",
+  "url": "https://www.marvinswift.com/swift/items-you-can-edit-before-your-app-distribution.html",
+  "date": "2023-11-02T08:54:00+08:00",
+  "word_count": 138
+ },
+ {
+  "slug": "mario-desktop-screen",
+  "lang": "en",
+  "title": "Mario Wonder - Wallpapers Available for Download on Nintendo's Official Website",
+  "category": "life",
+  "tags": [
+   "Mario",
+   "Wonder",
+   "Nintendo",
+   "Switch"
+  ],
+  "summary": "Nintendo has released new Mario Wonder wallpapers featuring Elephant Mario. Available for both desktop and mobile devices, these can be downloaded from Nintendo's official website. Check out the available resolutions and links below.",
+  "url": "https://www.marvinswift.com/en/life/mario-desktop-screen/",
+  "date": "2023-10-25T17:42:00+08:00",
+  "word_count": 44
+ },
+ {
+  "slug": "mario-desktop-screen",
+  "lang": "zh",
+  "title": "馬力歐驚奇 - 桌布可以在任天堂官網下載",
+  "category": "life",
+  "tags": [
+   "Mario",
+   "Wonder",
+   "Nintendo",
+   "Switch"
+  ],
+  "summary": "任天堂桌布可以下載囉，這邊列出現在能下載的桌布 這一期的桌布是馬力歐驚奇，還放了個大象馬力歐塞入水管的圖案 電腦桌布 手機版 1080 1242 相關網站 任天堂壁紙下載點 任天堂網站",
+  "url": "https://www.marvinswift.com/life/mario-desktop-screen.html",
+  "date": "2023-10-25T17:42:00+08:00",
+  "word_count": 78
+ },
+ {
+  "slug": "apple-event-20231031",
+  "lang": "zh",
+  "title": "Apple event - 2023/10/31 at 5 p.m. PT.",
+  "category": "programming",
+  "tags": [
+   "Apple",
+   "Apple Event"
+  ],
+  "summary": "Apple event 要開始了 scary fast",
+  "url": "https://www.marvinswift.com/programming/apple-event-20231031.html",
+  "date": "2023-10-25T00:52:00+08:00",
+  "word_count": 91
+ },
+ {
+  "slug": "apple-build-push-notification-console",
+  "lang": "zh",
+  "title": "Apple 推出了 push notification console 推播通知控制台",
+  "category": "swift",
+  "tags": [
+   "Apple",
+   "Swift",
+   "push notification",
+   "console"
+  ],
+  "summary": "使用 Apple 推播通知控制台，可以更方便的管理推播通知",
+  "url": "https://www.marvinswift.com/swift/apple-build-push-notification-console.html",
+  "date": "2023-10-22T11:03:00+08:00",
+  "word_count": 231
+ },
+ {
+  "slug": "mario-wonder-switch",
+  "lang": "zh",
+  "title": "Switch 新作馬力歐驚奇 - 好久不見的 2D 馬力歐平面作品",
+  "category": "life",
+  "tags": [
+   "Nintendo",
+   "Switch",
+   "馬力歐",
+   "任天堂"
+  ],
+  "summary": "任天堂最近幾次的馬力歐都是出 3D 作品，像是奧德賽、狂怒。在 2023/10/20 馬力歐驚奇發售，在凌晨我馬上用 MOMO 下定。快速發售的商品，在當天晚上六點左右，就送到了，這次下定的是「馬力歐驚奇」還附上了飲料袋和一個可伸縮的購物袋。",
+  "url": "https://www.marvinswift.com/life/mario-wonder-switch.html",
+  "date": "2023-10-21T22:29:00+08:00",
+  "word_count": 134
+ },
+ {
+  "slug": "itironman-finished-in2023",
+  "lang": "zh",
+  "title": "鐵人賽完賽 - 在 iOS 專案上加上 Unit testing - 因為 You need testing",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "Unit Testing"
+  ],
+  "summary": "鐵人賽完賽!! 今年的鐵人賽完成了，連結在下面 D1 - 在 iOS 專案上加上 Unit testing - 因為 You need testing 從 D1 開始，每篇文章的下方，都可以連結到下一篇，接下來，我會把一些比較重要的 Swi…",
+  "url": "https://www.marvinswift.com/programming/itironman-finished-in2023.html",
+  "date": "2023-10-12T00:43:00+08:00",
+  "word_count": 171
+ },
+ {
+  "slug": "apple-event2023",
+  "lang": "zh",
+  "title": "蘋果發表會 2023 日期確定了",
+  "category": "programming",
+  "tags": [
+   "Apple",
+   "Apple Event",
+   "iPhone"
+  ],
+  "summary": "Apple event 2023 is ready, 2023/9/12 10:00 AM PDT",
+  "url": "https://www.marvinswift.com/programming/apple-event2023.html",
+  "date": "2023-08-30T15:41:00+08:00",
+  "word_count": 91
+ },
+ {
+  "slug": "itironman2023",
+  "lang": "zh",
+  "title": "IT 鐵人賽 2023 準備開始了，現在已經在報名階段 9/1 開賽",
+  "category": "programming",
+  "tags": [
+   "Programming"
+  ],
+  "summary": "2023 年 IT 鐵人賽，現在可以報名了。 2023 IT 鐵人賽報名網址 2023 年 IT 鐵人賽報名網站 關於 IT 鐵人賽 2023 iThome 鐵人賽賽季預告 。受理報名：08/01(一) 10:00 AM ~ 09/15(四…",
+  "url": "https://www.marvinswift.com/programming/itironman2023.html",
+  "date": "2023-08-04T09:29:00+08:00",
+  "word_count": 328
+ },
+ {
+  "slug": "apple-visionPro-can-apply-developer-kit-now",
+  "lang": "zh",
+  "title": "從7月25日開始，Apple VisionPro 可以申請開發者套件了",
+  "category": "swift",
+  "tags": [
+   "Apple",
+   "visionPro",
+   "developer kit"
+  ],
+  "summary": "7/25 Apple 發了一封廣告信，告訴開發者們可以申請 visionPro 的 developer kit 囉，只要上 Apple 的網站申請即可。 email 內容 visionPro 申請頁面 相關連結 Apple 開發者需要知道的…",
+  "url": "https://www.marvinswift.com/swift/apple-visionPro-can-apply-developer-kit-now.html",
+  "date": "2023-07-25T08:50:00+08:00",
+  "word_count": 70
+ },
+ {
+  "slug": "openai-launch-chatgpt-in-android",
+  "lang": "zh",
+  "title": "OpenAI CTO Mira Murati 表示，ChatGPT 要在 Android 上推出了",
+  "category": "programming",
+  "tags": [
+   "ChatGPT",
+   "OpenAI",
+   "Android"
+  ],
+  "summary": "This article is about OpenAI CTO Mira Murati said ChatGPT will launch in Android.",
+  "url": "https://www.marvinswift.com/programming/openai-launch-chatgpt-in-android.html",
+  "date": "2023-07-23T12:19:00+08:00",
+  "word_count": 334
+ },
+ {
+  "slug": "primary-action-in-alerts",
+  "lang": "en",
+  "title": "Where to place the main action in alerts? Left or Right? (For Apple OS, place it on the right (i.e., at the end))",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS",
+   "UI"
+  ],
+  "summary": "When designing an alert, should the ok/cancel button be placed on the right or left? Each platform has its guidelines for this design; please follow the documentation. If you are developing for iOS or Android Apps, you should place your primary action button on the right (trail).",
+  "url": "https://www.marvinswift.com/en/swift/primary-action-in-alerts/",
+  "date": "2023-07-16T21:13:00+08:00",
+  "word_count": 731
+ },
+ {
+  "slug": "bard-ai-can-using-chinese",
+  "lang": "zh",
+  "title": "Google Bard 可以輸入中文",
+  "category": "programming",
+  "tags": [
+   "programming",
+   "AI",
+   "ChatGPT",
+   "Google",
+   "Bard"
+  ],
+  "summary": "This article talks about Google Bard can using chinese. Tried fortune teller, draw a tarrot card.",
+  "url": "https://www.marvinswift.com/swift/bard-ai-can-using-chinese.html",
+  "date": "2023-07-14T14:37:00+08:00",
+  "word_count": 305
+ },
+ {
+  "slug": "swiftui-color-picker",
+  "lang": "zh",
+  "title": "Color Picker 元件，很漂亮的顏色選擇器",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI",
+   "Apple",
+   "iOS"
+  ],
+  "summary": "This article talks about how to use Color Picker in SwiftUI.",
+  "url": "https://www.marvinswift.com/swift/swiftui-color-picker.html",
+  "date": "2023-07-05T15:10:00+08:00",
+  "word_count": 438
+ },
+ {
+  "slug": "add-webview-in-swiftui",
+  "lang": "zh",
+  "title": "SwiftUI 專案加入 WebView",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI",
+   "WebView"
+  ],
+  "summary": "This article talks about how to add a WebView in SwiftUI project.",
+  "url": "https://www.marvinswift.com/swift/add-webview-in-swiftui.html",
+  "date": "2023-06-30T13:41:00+08:00",
+  "word_count": 410
+ },
+ {
+  "slug": "what-apple-developers-need-to-know-at-wwdc23",
+  "lang": "zh",
+  "title": "Apple 開發者需要知道的 WWDC23 大小事",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "What Apple developers need to know at WWDC23, link to Apples WWDC23 sessions page",
+  "url": "https://www.marvinswift.com/swift/what-apple-developers-need-to-know-at-wwdc23.html",
+  "date": "2023-06-27T14:46:00+08:00",
+  "word_count": 538
+ },
+ {
+  "slug": "things17-wwdc23",
+  "lang": "zh",
+  "title": "17 件 WWDC23 的大小事",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "wwdc videos, about 17 big and little things in wwdc23",
+  "url": "https://www.marvinswift.com/swift/things17-wwdc23.html",
+  "date": "2023-06-27T14:28:00+08:00",
+  "word_count": 872
+ },
+ {
+  "slug": "xcode15-beta2-release-notes",
+  "lang": "zh",
+  "title": "Xcode 15 beta 2 Release notes ChatGPT 繁中翻譯",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Xcode",
+   "release notes"
+  ],
+  "summary": "This article talking about Xcode 15 beta 2 release notes. Marvin Lin use ChatGPT to translate the release notes to traditional Chinese.",
+  "url": "https://www.marvinswift.com/swift/xcode15-beta2-release-notes.html",
+  "date": "2023-06-26T16:30:00+08:00",
+  "word_count": 12373
+ },
+ {
+  "slug": "zelda-kingdom-tear-ending",
+  "lang": "zh",
+  "title": "王國之淚破關 - 開始真正的體驗海拉魯大地的時刻(內有部分破關畫面)",
+  "category": "life",
+  "tags": [
+   "Zelda",
+   "Nintendo",
+   "Switch"
+  ],
+  "summary": "This article talking about Zelda - kingdom tear. Marvin Lin finish the game first time. Then he will share some experience about continuing the game.",
+  "url": "https://www.marvinswift.com/life/zelda-kingdom-tear-ending.html",
+  "date": "2023-06-24T21:56:00+08:00",
+  "word_count": 270
+ },
+ {
+  "slug": "wwdc23-whats-new-in-uikit",
+  "lang": "en",
+  "title": "WWDC23 - What's New in UIKit - Key Highlights",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "At WWDC 23, significant improvements were announced for UIKit, including a preview feature for UIViewController, a new lifecycle callback `viewIsAppearing(_:)`, and enhanced UICollectionView performance in iOS 17 with self-sizing features in NSCollectionLayout.",
+  "url": "https://www.marvinswift.com/en/swift/wwdc23-whats-new-in-uikit/",
+  "date": "2023-06-09T13:48:00+08:00",
+  "word_count": 422
+ },
+ {
+  "slug": "wwdc23-whats-new-in-uikit",
+  "lang": "zh",
+  "title": "WWDC23 - What's new in UIKit - 重點整理",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "In WWDC 23, what's new in UIKit has some big improvement. UIViewController has preview feature. UIViewController has a new life cycle call back viewIsAppearing(_:). UICollectionView performance is improved in iOS 17, NSCollectionLayout has self sizing features.",
+  "url": "https://www.marvinswift.com/swift/wwdc23-whats-new-in-uikit.html",
+  "date": "2023-06-09T13:48:00+08:00",
+  "word_count": 661
+ },
+ {
+  "slug": "wwdc23-state-union",
+  "lang": "zh",
+  "title": "WWDC23 - Swift 加入了 Macros 特性 - State of the union",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "In WWDC23, Swift got a new feature - Macros. This article talks about how to use Macros in Swift.",
+  "url": "https://www.marvinswift.com/swift/wwdc23-state-union.html",
+  "date": "2023-06-08T18:21:00+08:00",
+  "word_count": 291
+ },
+ {
+  "slug": "ChatGPT-offical-app-on-AppStore",
+  "lang": "zh",
+  "title": "ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "OpenAI"
+  ],
+  "summary": "ChatGPT offical app on App Store, Taiwan can use it now.",
+  "url": "https://www.marvinswift.com/programming/ChatGPT-offical-app-on-AppStore.html",
+  "date": "2023-05-31T13:09:00+08:00",
+  "word_count": 130
+ },
+ {
+  "slug": "check-third-party-pod-version-from-podfilelock",
+  "lang": "zh",
+  "title": "從 Podfile.lock 確認專案使用的第三方套件的版本",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "第三方",
+   "CocoaPods"
+  ],
+  "summary": "This article talks about how to check the third-party pod version from Podfile.lock.",
+  "url": "https://www.marvinswift.com/swift/check-third-party-pod-version-from-podfilelock.html",
+  "date": "2023-05-30T14:29:00+08:00",
+  "word_count": 409
+ },
+ {
+  "slug": "copilot-with-xcode",
+  "lang": "en",
+  "title": "Using GitHub Copilot in Xcode. Conclusion Not Ideal, I Turn It Off When Using Xcode",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Xcode",
+   "Copilot"
+  ],
+  "summary": "This post details my experience using GitHub Copilot in Xcode. Conclusion - it's not very effective, and I prefer to turn it off while using Xcode.",
+  "url": "https://www.marvinswift.com/en/swift/copilot-with-xcode/",
+  "date": "2023-05-24T12:00:00+08:00",
+  "word_count": 308
+ },
+ {
+  "slug": "copilot-with-xcode",
+  "lang": "zh",
+  "title": "Xcode 上使用 GitHub Copilot 的體驗 (結論：不是很理想，現在在使用 Xcode 時候都是關掉 copilot 的)",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Xcode",
+   "copilot"
+  ],
+  "summary": "This is a post about my experience using GitHub Copilot on Xcode. Conclusion - not very good, I turn it off when I use Xcode.",
+  "url": "https://www.marvinswift.com/swift/copilot-with-xcode.html",
+  "date": "2023-05-24T11:03:00+08:00",
+  "word_count": 591
+ },
+ {
+  "slug": "tableView-has-two-type-value",
+  "lang": "zh",
+  "title": "如果 table view 中有兩種以上的資料型態，你可以這樣處理程式碼",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS",
+   "UI",
+   "TableView"
+  ],
+  "summary": "When your table view has two or more type of data, you can do this. This article make an example of if you have two type of data, post and ad, you can use this way to handle it.",
+  "url": "https://www.marvinswift.com/swift/tableView-has-two-type-value.html",
+  "date": "2023-05-18T21:37:00+08:00",
+  "word_count": 872
+ },
+ {
+  "slug": "zelda-kingdom-tear-wall-papers",
+  "lang": "en",
+  "title": "The Legend of Zelda - Tears of the Kingdom Wallpapers Available on Nintendo's Website",
+  "category": "life",
+  "tags": [
+   "Zelda",
+   "Nintendo",
+   "Switch"
+  ],
+  "summary": "Nintendo has released The Legend of Zelda Tears of the Kingdom wallpapers for download. Available for both desktop and mobile devices, check out the available resolutions and download links below.",
+  "url": "https://www.marvinswift.com/en/life/zelda-kingdom-tear-wall-papers/",
+  "date": "2023-05-16T10:07:00+08:00",
+  "word_count": 33
+ },
+ {
+  "slug": "zelda-kingdom-tear-wall-papers",
+  "lang": "zh",
+  "title": "薩爾達傳說 - 王國之淚 桌布可以在任天堂網站下載",
+  "category": "life",
+  "tags": [
+   "Zelda",
+   "Nintendo",
+   "Switch"
+  ],
+  "summary": "Nintendo wall paper can be download on Nintendo website.",
+  "url": "https://www.marvinswift.com/life/zelda-kingdom-tear-wall-papers.html",
+  "date": "2023-05-16T10:07:00+08:00",
+  "word_count": 52
+ },
+ {
+  "slug": "open-box-zelda-ver-switch",
+  "lang": "zh",
+  "title": "開箱薩爾達傳說 王國之淚版 Switch 主機",
+  "category": "life",
+  "tags": [
+   "Switch",
+   "Nintendo",
+   "任天堂"
+  ],
+  "summary": "open trailer of Switch, this is Zelda legend",
+  "url": "https://www.marvinswift.com/life/open-box-zelda-ver-switch.html",
+  "date": "2023-05-15T13:07:00+08:00",
+  "word_count": 249
+ },
+ {
+  "slug": "primary-action-in-alerts",
+  "lang": "zh",
+  "title": "Alerts 出現選項時，主要動作要放哪一邊？左？右？(Apple 的 OS 請放右邊(也就是最後面))",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "iOS",
+   "UI"
+  ],
+  "summary": "When you design an alert, ok/cancel button should put ok on right? or left? Each platform has there guideline on this design, please follow the documents. If you are developing iOS or Android Apps, you should put your primary action button on trail (right).",
+  "url": "https://www.marvinswift.com/swift/primary-action-in-alerts.html",
+  "date": "2023-05-10T13:13:00+08:00",
+  "word_count": 1151
+ },
+ {
+  "slug": "zelda-release-before-3days",
+  "lang": "zh",
+  "title": "還有三天 - 薩爾達傳說 王國之淚 就要上市了",
+  "category": "life",
+  "tags": [
+   "Zelda",
+   "Nintendo",
+   "Switch"
+  ],
+  "summary": "Zelda - tears of the kindon release will be released in 3 days. Nintendo posted on twitter.",
+  "url": "https://www.marvinswift.com/life/zelda-release-before-3days.html",
+  "date": "2023-05-09T15:26:00+08:00",
+  "word_count": 52
+ },
+ {
+  "slug": "delegate-in-table-view-button-tapped",
+  "lang": "zh",
+  "title": "在 TableViewCell 中，使用 delegate pattern 反應使用者點擊 button 後的行為(按讚、追蹤、定閱、分享、小鈴噹)",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "design pattern",
+   "iOS"
+  ],
+  "summary": "This article make an example of cell has an button, when user tapped the button, vc will response to the relative action. This article explained using delegate pattern to finish this feature.",
+  "url": "https://www.marvinswift.com/swift/delegate-in-table-view-button-tapped.html",
+  "date": "2023-05-06T22:47:00+08:00",
+  "word_count": 352
+ },
+ {
+  "slug": "delegate-pattern-in-swift",
+  "lang": "zh",
+  "title": "Delegate Pattern (委派模式)in Swift",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "設計模式",
+   "design pattern"
+  ],
+  "summary": "The Delegate Pattern is widely used in iOS development to delegate responsibilities or behaviors to other objects, increasing flexibility. Swift uses protocols to define the delegate's interface, and the delegate object conforms to that protocol. An example is a job dispatcher that delegates box-moving tasks to a delegate, who can use different tools like a porter or a forklift to move boxes. Regardless of the method used, the box will be moved.",
+  "url": "https://www.marvinswift.com/swift/delegate-pattern-in-swift.html",
+  "date": "2023-05-03T08:47:00+08:00",
+  "word_count": 1004
+ },
+ {
+  "slug": "cocoa-framework-mvc",
+  "lang": "zh",
+  "title": "iOS 的 MVC 架構",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "MVC",
+   "Cocoa framework"
+  ],
+  "summary": "Analyze iOS MVC design pattern. MVC is model-view-controller pattern. The main point is model should isolate with view. Nomatter is macOS app or iOS app. This article using books example - Cocoa design patterns as example.",
+  "url": "https://www.marvinswift.com/swift/cocoa-framework-mvc.html",
+  "date": "2023-05-01T08:48:00+08:00",
+  "word_count": 1088
+ },
+ {
+  "slug": "microsoft-designer",
+  "lang": "zh",
+  "title": "微軟新服務 Microsoft designer 現在不用排隊等白名單了，可以直接使用",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "design",
+   "Microsoft"
+  ],
+  "summary": "If you want to create professional-quality social media posts, invitations, digital postcards, images, and more, you must try Microsoft Designer. It is a graphic design application that can help you create unique things from your ideas. The highlight of Microsoft Designer is that it utilizes artificial intelligence technology to quickly generate original and editable designs with just your input of text. You can even get writing assistance and automatic layout suggestions to make your content more appealing. Microsoft Designer can even provide you with social media sharing titles and tags based on your goals. Microsoft Designer is part of Microsoft 365, so if you're a subscriber to Microsoft 365, you can use this powerful tool for free. And now, there's no need to wait in line. You can register directly on the website and start using Microsoft Designer. Don't miss this opportunity and experience the charm of Microsoft Designer!",
+  "url": "https://www.marvinswift.com/programming/microsoft-designer.html",
+  "date": "2023-04-30T00:48:00+08:00",
+  "word_count": 268
+ },
+ {
+  "slug": "google-bard-is-beta-in-taiwan",
+  "lang": "zh",
+  "title": "Google Bard AI 開放台灣申請了",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "Google"
+  ],
+  "summary": "Google Bard AI can apply beta in Taiwan, this article contains the testing results. I tried asking about stock, invest, TSMC facotry address. Also for the trip advise, it's shows real world info on response.",
+  "url": "https://www.marvinswift.com/programming/google-bard-is-beta-in-taiwan.html",
+  "date": "2023-04-26T16:03:00+08:00",
+  "word_count": 616
+ },
+ {
+  "slug": "why-I-dont-use-spm-in-company-private-pods",
+  "lang": "zh",
+  "title": "為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "cocoapods",
+   "spm"
+  ],
+  "summary": "Compare iOS development third party system. One is cocoapods, another is spm. Currently, I only used cocoapods and using pod to manage my libs. This mainly because dependency relation between libs. For future, if spm let developers more convinient on iOS development, we will change on that time.",
+  "url": "https://www.marvinswift.com/swift/why-I-dont-use-spm-in-company-private-pods.html",
+  "date": "2023-04-25T23:29:00+08:00",
+  "word_count": 635
+ },
+ {
+  "slug": "which-version-upgrade-will-break-your-project",
+  "lang": "zh",
+  "title": "當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "third party",
+   "cocoapods"
+  ],
+  "summary": "Explain semantic version in development. In semantic version control, we have major, minor, patch version. Each change has their own meaning. Patch is for bug fix, minor is compatibal update. Major weill break your code. This article also give your example.",
+  "url": "https://www.marvinswift.com/swift/which-version-upgrade-will-break-your-project.html",
+  "date": "2023-04-24T20:58:00+08:00",
+  "word_count": 1168
+ },
+ {
+  "slug": "charts-crashed-issue",
+  "lang": "en",
+  "title": "The Cause of Crashes in Charts Issues 4049 & 4132",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Charts"
+  ],
+  "summary": "While using Charts version 3.4.1, I experienced crashes when updating datasets and then rendering charts, as referenced in issues 4049 and 4132. This article summarizes these issues and explores solutions to the chart crashes.",
+  "url": "https://www.marvinswift.com/en/swift/charts-crashed-issue/",
+  "date": "2023-04-23T15:30:00+08:00",
+  "word_count": 593
+ },
+ {
+  "slug": "charts-crashed-issue",
+  "lang": "zh",
+  "title": "Charts 的 4049 & 4132 issue，造成閃退的原因",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Charts"
+  ],
+  "summary": "When using Charts 3.4.1, I got crashed when dataSet updated then charts rendering. The issue 4049 and 4132 mentioned about this. This article summarized these issues and find the solution on charts crash.",
+  "url": "https://www.marvinswift.com/swift/charts-crashed-issue.html",
+  "date": "2023-04-23T15:30:00+08:00",
+  "word_count": 983
+ },
+ {
+  "slug": "using-adapter-pattern-to-libs",
+  "lang": "zh",
+  "title": "將第三方 lib 包起來，減少升級 lib 的痛苦",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "設計模式"
+  ],
+  "summary": "Using adapter pattern to wrap third party library in swift. When you are in iOS development, it's quite common to use third party libs. When lib upgrade, sometimes break the build or crash in run time. Using adapter pattern can help you develop more stable and save your time.",
+  "url": "https://www.marvinswift.com/zh/swift/using-adapter-pattern-to-libs/",
+  "date": "2023-04-22T00:01:00+08:00",
+  "word_count": 1121
+ },
+ {
+  "slug": "swiftui-data-flow",
+  "lang": "zh",
+  "title": "SwiftUI 資料流",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI"
+  ],
+  "summary": "Apple have SwiftUI recommend data flow. It's follow one data flow.",
+  "url": "https://www.marvinswift.com/swift/swiftui-data-flow.html",
+  "date": "2023-04-19T20:41:00+08:00",
+  "word_count": 302
+ },
+ {
+  "slug": "ref-type-val-type-in-swift",
+  "lang": "zh",
+  "title": "Swift 中的 Value type 和 Reference type",
+  "category": "swift",
+  "tags": [
+   "Swift"
+  ],
+  "summary": "Swift designed array, dict is value types. When you using array and copied it, it might have different behavior than you think. This article also include the swift.org and swift blog.",
+  "url": "https://www.marvinswift.com/swift/ref-type-val-type-in-swift.html",
+  "date": "2023-04-19T11:42:00+08:00",
+  "word_count": 816
+ },
+ {
+  "slug": "appdelegate-in-swiftui",
+  "lang": "en",
+  "title": "Adding AppDelegate in a SwiftUI Project",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI"
+  ],
+  "summary": "Using SwiftUI to initiate a project, but still needing AppDelegate lifecycle. This article helps you correctly initialize AppDelegate.",
+  "url": "https://www.marvinswift.com/en/swift/appdelegate-in-swiftui/",
+  "date": "2023-04-18T22:50:00+08:00",
+  "word_count": 169
+ },
+ {
+  "slug": "appdelegate-in-swiftui",
+  "lang": "zh",
+  "title": "在 SwiftUI 專案中，加上 AppDelegate",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "SwiftUI"
+  ],
+  "summary": "Using SwiftUI init project, but you still need AppDelegate life cycle. This article helps you init AppDelegate in correct way.",
+  "url": "https://www.marvinswift.com/swift/appdelegate-in-swiftui.html",
+  "date": "2023-04-18T22:43:00+08:00",
+  "word_count": 262
+ },
+ {
+  "slug": "async-await-connect-closure",
+  "lang": "zh",
+  "title": "使用 async/await 串接 escaping closure",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Combine",
+   "非同步"
+  ],
+  "summary": "After Swift 5.5, swift introduced async/await. This article have an example to connect previous escaping closure func.",
+  "url": "https://www.marvinswift.com/swift/async-await-connect-closure.html",
+  "date": "2023-04-18T13:22:00+08:00",
+  "word_count": 460
+ },
+ {
+  "slug": "esun-subscription-stock",
+  "lang": "zh",
+  "title": "玉山金股票4/18開始申購，目前價差約在 5000 元",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "台股",
+   "申購"
+  ],
+  "summary": "Yuanta Financial Holding's stock is available for subscription from 4/18 to 4/20, offering a promising investment opportunity. Yuanta is one of Taiwan's largest financial holding companies, operating multiple subsidiaries, including Yuanta Bank, Yuanta Securities, and Yuanta Insurance, offering diversified financial services. Its excellent financial performance in 2022, with record high revenue and net profits and a 5.3% dividend yield, has been recognized by the market, leading to a 30% increase in its stock price. Yuanta aims to raise funds to expand its business by issuing 150 million new shares at a 9.5% discount. The subscription is worthwhile for investors with a long-term holding perspective and risk tolerance, considering Yuanta's solid fundamentals, reasonable valuation, and attractive subscription discount.",
+  "url": "https://www.marvinswift.com/finance/esun-subscription-stock.html",
+  "date": "2023-04-18T11:51:00+08:00",
+  "word_count": 621
+ },
+ {
+  "slug": "zelda-trail-3rd",
+  "lang": "zh",
+  "title": "薩爾達王國之淚影片釋出",
+  "category": "life",
+  "tags": [
+   "薩爾達",
+   "Switch",
+   "Nintendo"
+  ],
+  "summary": "Nintendo Switch Zelda trail video is out.",
+  "url": "https://www.marvinswift.com/life/zelda-trail-3rd.html",
+  "date": "2023-04-14T09:54:00+08:00",
+  "word_count": 609
+ },
+ {
+  "slug": "tw-national-security-fund",
+  "lang": "zh",
+  "title": "台股國安基金退場，護盤275天",
+  "category": "finance",
+  "tags": [
+   "台股"
+  ],
+  "summary": "The National Stabilization Fund (NSF) in Taiwan entered the stock market on July 13th, 2020 and invested NT$545.08 billion to stabilize the market. During this period, the Taiwan stock market rose by 13.29% with an accumulated profit of NT$8.3 billion for the NSF. The board of directors has decided to end the 275-day long intervention and return to the free market. The exit will be conducted carefully without market impact, and the NSF will continue to monitor the domestic and international economic and political situations and may intervene again if necessary.",
+  "url": "https://www.marvinswift.com/finance/tw-national-security-fund.html",
+  "date": "2023-04-14T09:27:00+08:00",
+  "word_count": 853
+ },
+ {
+  "slug": "us-ppi-non-employed",
+  "lang": "zh",
+  "title": "美國 PPI 年增率降至 2.7%",
+  "category": "finance",
+  "tags": [
+   "finance"
+  ],
+  "summary": "The US Department of Labor has released data for March 2023 on unemployment insurance claims and the Producer Price Index (PPI). The number of new unemployment claims has exceeded 200,000 for three consecutive weeks, indicating that the labor market is still in a crisis state higher than historical averages. However, PPI fell by 0.5% due to the significant drop in energy prices, which may ease overall inflation pressure in the coming months.",
+  "url": "https://www.marvinswift.com/finance/us-ppi-non-employed.html",
+  "date": "2023-04-14T09:10:00+08:00",
+  "word_count": 598
+ },
+ {
+  "slug": "us-cpi-index",
+  "lang": "zh",
+  "title": "美3月CPI年增5%低於預期",
+  "category": "finance",
+  "tags": [
+   "CPI"
+  ],
+  "summary": "US cpi is out, 5%, lower than expect.",
+  "url": "https://www.marvinswift.com/finance/us-cpi-index.html",
+  "date": "2023-04-13T10:48:00+08:00",
+  "word_count": 396
+ },
+ {
+  "slug": "google-code-jam",
+  "lang": "zh",
+  "title": "Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始",
+  "category": "programming",
+  "tags": [
+   "Google",
+   "Code Jam"
+  ],
+  "summary": "Google announce code jam competition",
+  "url": "https://www.marvinswift.com/programming/google-code-jam.html",
+  "date": "2023-04-12T00:23:00+08:00",
+  "word_count": 617
+ },
+ {
+  "slug": "professor-article-about-ai",
+  "lang": "zh",
+  "title": "大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "ChatGPT"
+  ],
+  "summary": "University professors has different opinions about ChatGPT in Computer Sciense students homework.",
+  "url": "https://www.marvinswift.com/programming/professor-article-about-ai.html",
+  "date": "2023-04-11T08:17:00+08:00",
+  "word_count": 833
+ },
+ {
+  "slug": "tsmc-march-income",
+  "lang": "zh",
+  "title": "台積電的3月營收狀況",
+  "category": "finance",
+  "tags": [
+   "台積電",
+   "財經"
+  ],
+  "summary": "TSMC March income is out, lower than previous month 10.9%",
+  "url": "https://www.marvinswift.com/finance/tsmc-march-income.html",
+  "date": "2023-04-11T01:25:00+08:00",
+  "word_count": 384
+ },
+ {
+  "slug": "mario-movie",
+  "lang": "zh",
+  "title": "超級瑪莉歐電影片 上映了",
+  "category": "life",
+  "tags": [
+   "Movie"
+  ],
+  "summary": "Suprer Mario Bro movie is on. This post has trailers",
+  "url": "https://www.marvinswift.com/programming/mario-movie.html",
+  "date": "2023-04-09T00:03:00+08:00",
+  "word_count": 155
+ },
+ {
+  "slug": "non-farm-employment-in-march",
+  "lang": "zh",
+  "title": "美國3月非農就業人數與失業率",
+  "category": "finance",
+  "tags": [
+   "finance"
+  ],
+  "summary": "About US non-farm employment and unemployment rate",
+  "url": "https://www.marvinswift.com/programming/non-farm-employment-in-march.html",
+  "date": "2023-04-08T22:30:00+08:00",
+  "word_count": 534
+ },
+ {
+  "slug": "Android-app-need-add-delete-account",
+  "lang": "zh",
+  "title": "Google 要求未來 Play Store 的 App 都要能刪除帳號",
+  "category": "programming",
+  "tags": [
+   "Android",
+   "Apps"
+  ],
+  "summary": "Google has announced that from January 1, 2023, all Android apps on the Play Store must provide an option to delete user accounts and data through a website to protect user privacy and data security. Non-compliance by app developers will result in being removed from the store or fined.",
+  "url": "https://www.marvinswift.com/programming/Android-app-need-add-delete-account.html",
+  "date": "2023-04-07T15:51:00+08:00",
+  "word_count": 410
+ },
+ {
+  "slug": "xuite-stop-website",
+  "lang": "zh",
+  "title": "Xuite 將會在 2023 年 6 月停止服務",
+  "category": "programming",
+  "tags": [
+   "blog",
+   "programming"
+  ],
+  "summary": "Xuite, one of Taiwan's earliest internet service platforms, will end all services on June 30, 2023, and users are advised to backup or transfer their data. The termination has sparked discussions among netizens as Xuite is seen as a part of their memories and daily lives, and a symbol of Taiwan's internet culture. The end of Xuite marks the end of an era, but its impact is worth remembering.",
+  "url": "https://www.marvinswift.com/programming/xuite-stop-website.html",
+  "date": "2023-04-07T13:40:00+08:00",
+  "word_count": 854
+ },
+ {
+  "slug": "start-using-copilot",
+  "lang": "en",
+  "title": "Accelerating Side Projects with GitHub Copilot",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "Copilot",
+   "Github"
+  ],
+  "summary": "Using GitHub Copilot to speed up my coding and simplify side projects.",
+  "url": "https://www.marvinswift.com/en/programming/start-using-copilot/",
+  "date": "2023-04-07T11:55:00+08:00",
+  "word_count": 488
+ },
+ {
+  "slug": "start-using-copilot",
+  "lang": "zh",
+  "title": "開始使用 Github Copilot 服務，來讓 side project 加速",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "Copilot",
+   "Github"
+  ],
+  "summary": "Using Github Copilot to speed up my coding. Make side projects easier.",
+  "url": "https://www.marvinswift.com/programming/start-using-copilot.html",
+  "date": "2023-04-07T11:53:00+08:00",
+  "word_count": 858
+ },
+ {
+  "slug": "xcode143-released",
+  "lang": "zh",
+  "title": "Xcode 14.3 release note，使用 ChatGPT 翻譯",
+  "category": "swift",
+  "tags": [
+   "Xcode",
+   "Swift",
+   "release note"
+  ],
+  "summary": "Xcode 14.3 release note summary. The important thing is Xcode no longer support Rosetta. Swift has backDeplooyed attribute",
+  "url": "https://www.marvinswift.com/swift/xcode143-released.html",
+  "date": "2023-04-05T11:22:00+08:00",
+  "word_count": 6145
+ },
+ {
+  "slug": "twitter-change-logo-to-doge",
+  "lang": "zh",
+  "title": "Twitter 將 icon 換成狗狗幣(Doge)了",
+  "category": "programming",
+  "tags": [
+   "Twitter",
+   "Doge",
+   "crypto currency"
+  ],
+  "summary": "Twitter change icon to Doge. Elon Musk is playing new idea.",
+  "url": "https://www.marvinswift.com/programming/twitter-change-logo-to-doge.html",
+  "date": "2023-04-04T10:04:00+08:00",
+  "word_count": 173
+ },
+ {
+  "slug": "twitter-algorithm",
+  "lang": "zh",
+  "title": "Twitter 開源了推薦演算法",
+  "category": "programming",
+  "tags": [
+   "Twitter",
+   "open source",
+   "algorithm"
+  ],
+  "summary": "Twitter opened algorithm of recommend",
+  "url": "https://www.marvinswift.com/programming/twitter-algorithm.html",
+  "date": "2023-04-03T00:11:00+08:00",
+  "word_count": 442
+ },
+ {
+  "slug": "bing-chat-can-creat-art",
+  "lang": "zh",
+  "title": "現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "bing",
+   "create",
+   "art",
+   "openAI"
+  ],
+  "summary": "using bing chat drawing",
+  "url": "https://www.marvinswift.com/programming/bing-chat-can-creat-art.html",
+  "date": "2023-04-02T23:09:00+08:00",
+  "word_count": 480
+ },
+ {
+  "slug": "pce-index-febuary",
+  "lang": "zh",
+  "title": "美2月核心PCE增速低於預期",
+  "category": "finance",
+  "tags": [
+   "財經數據",
+   "finance",
+   "stock",
+   "投資"
+  ],
+  "summary": "PCE is lower than predict",
+  "url": "https://www.marvinswift.com/finance/pce-index-febuary.html",
+  "date": "2023-04-01T00:17:00+08:00",
+  "word_count": 349
+ },
+ {
+  "slug": "bing-chat-brain-storming",
+  "lang": "zh",
+  "title": "使用 Bing Chat 幫我發想一些 App 的 idea",
+  "category": "programming",
+  "tags": [
+   "bing chat",
+   "AI",
+   "programming"
+  ],
+  "summary": "Using Microsoft bing chat to brain storming",
+  "url": "https://www.marvinswift.com/programming/bing-chat-brain-storming.html",
+  "date": "2023-03-31T17:24:00+08:00",
+  "word_count": 957
+ },
+ {
+  "slug": "ftx-email-announce",
+  "lang": "zh",
+  "title": "FTX 向客戶發 email，裡面有你的客戶代碼以及資產",
+  "category": "finance",
+  "tags": [
+   "FTX",
+   "crypto coin",
+   "加密貨幣"
+  ],
+  "summary": "FTX send email for detail",
+  "url": "https://www.marvinswift.com/finance/ftx-email-announce.html",
+  "date": "2023-03-31T15:04:00+08:00",
+  "word_count": 1157
+ },
+ {
+  "slug": "michael-burry",
+  "lang": "zh",
+  "title": "Michael Burry 發推 - I was wrong to say sell",
+  "category": "finance",
+  "tags": [
+   "Finance",
+   "Michael Burry"
+  ],
+  "summary": "The movie \"The Big Short\" is a drama film based on a true story. It tells the story of a group of investors who foresaw the collapse of the US real estate market before the 2008 financial crisis. They used a financial derivative called credit default swap to conduct massive short selling operations on mortgage-backed securities, thereby gaining huge profits. The movie presents four storylines, showcasing the investors' motivations, strategies, challenges, and achievements, while also exposing the corruption, greed, and incompetence of the financial system. Through humor, satire, and frankness, the film explains some complex financial terms and concepts to the audience, and encourages them to reflect on the impact and significance of the financial crisis on ordinary people.",
+  "url": "https://www.marvinswift.com/finance/michael-burry.html",
+  "date": "2023-03-31T13:52:00+08:00",
+  "word_count": 260
+ },
+ {
+  "slug": "wwdc23",
+  "lang": "zh",
+  "title": "WWDC2023 時間確定了! 6月6日登場",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC",
+   "Apple",
+   "iOS"
+  ],
+  "summary": "The annual Worldwide Developers Conference (WWDC) by Apple is set to take place online from June 5th to June 9th, showcasing updates for iOS 15, macOS 12, watchOS 8, and tvOS 15, with the possibility of new hardware products. The event includes workshops, keynote speeches, labs, and award presentations for developers to learn and share experiences. Applications for free tickets are open until March 31st, and students can join the Swift Student Challenge to showcase their programming skills. WWDC is a vital bridge between Apple and the developer community, driving innovation and improving people's lives.",
+  "url": "https://www.marvinswift.com/swift/wwdc23.html",
+  "date": "2023-03-31T08:57:00+08:00",
+  "word_count": 831
+ },
+ {
+  "slug": "bing-create-ai-art",
+  "lang": "zh",
+  "title": "使用 Bing create AI 產出各種圖案吧",
+  "category": "life",
+  "tags": [
+   "AI",
+   "bing",
+   "create",
+   "art",
+   "openAI"
+  ],
+  "summary": "Bing release ai art. The name is create. This post shows different prompts to see the ai arts.",
+  "url": "https://www.marvinswift.com/life/bing-create-ai-art.html",
+  "date": "2023-03-29T18:00:00+08:00",
+  "word_count": 515
+ },
+ {
+  "slug": "zelda-tears-of-the-kingdom",
+  "lang": "zh",
+  "title": "薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩",
+  "category": "life",
+  "tags": [
+   "任天堂",
+   "Switch",
+   "薩爾達"
+  ],
+  "summary": "Nintendo released a gameplay video of \"The Legend of Zelda- Breath of the Wild 2\" with all-new mechanics. The game is a sequel to \"Breath of the Wild\" and takes place in the same world but with new elements and challenges. The video showcases Link using different tools and abilities in various scenes, with the mechanics adding to the game's fun, difficulty and strategic elements. The game's graphics have also improved, and it's set to release on May 12, 2023, with multiple language and version options.",
+  "url": "https://www.marvinswift.com/programming/zelda-tears-of-the-kingdom.html",
+  "date": "2023-03-29T09:00:00+08:00",
+  "word_count": 1085
+ },
+ {
+  "slug": "toshiba-been-acquisitions",
+  "lang": "zh",
+  "title": "東芝被溢價收購，股票將下市",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "日本",
+   "財經",
+   "東芝",
+   "Toshiba",
+   "Japan"
+  ],
+  "summary": "Japanese technology company Toshiba may be facing privatization as a consortium led by Japan Industrial Partners (JIP) has offered a $22 billion buyout proposal, valuing Toshiba at a premium price of ¥7,000 per share. If successful, the acquisition would end Toshiba's 140-year history and delist it from the stock exchange. Despite being one of Japan's most renowned technology companies, Toshiba has been involved in several scandals and losses in recent years, leading to a significant drop in its stock price and increased pressure from shareholders. The acquisition group aims to help Toshiba refocus on its core energy and infrastructure businesses to enhance its competitiveness and efficiency. However, the bid still requires approval from global competition laws and the Japanese government, given Toshiba's sensitive involvement in national security and public interests. Some Toshiba board members are reportedly unsatisfied with the offer, believing it undervalues the company's potential.",
+  "url": "https://www.marvinswift.com/finance/toshiba-been-acquisitions.html",
+  "date": "2023-03-27T17:37:00+08:00",
+  "word_count": 482
+ },
+ {
+  "slug": "wanqu-restart",
+  "lang": "zh",
+  "title": "灣區日報重啟了",
+  "category": "programming",
+  "tags": [
+   "程式開發",
+   "programming",
+   "電子報"
+  ],
+  "summary": "灣區日報重啟",
+  "url": "https://www.marvinswift.com/programming/wanqu-restart.html",
+  "date": "2023-03-27T14:42:00+08:00",
+  "word_count": 358
+ },
+ {
+  "slug": "food-ky-big-holder-sell-stocks",
+  "lang": "zh",
+  "title": "美食-KY 董娘美數出脫持股",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "財經",
+   "新聞"
+  ],
+  "summary": "Gourmet Master (2723), the parent company of 85°C Bakery Cafe, saw its stock price drop after reports emerged that the Chairman's spouse would sell all her shares in a block trade for over NT$ 500 million. The company's revenue and profits have declined due to the pandemic, but it plans to distribute a cash dividend of NT$2.5 with a payout ratio of over 90%. Analysts believe the share sale could affect investor confidence and the company's future business strategy, while its Chinese market performance has fallen short of expectations. Investors should wait for more information before making any decisions.",
+  "url": "https://www.marvinswift.com/finance/food-ky-big-holder-sell-stocks.html",
+  "date": "2023-03-27T13:43:00+08:00",
+  "word_count": 381
+ },
+ {
+  "slug": "chatGPT-meme1",
+  "lang": "zh",
+  "title": "梗圖-ChatGPT",
+  "category": "programming",
+  "tags": [
+   "programming"
+  ],
+  "summary": "ChatGPT meme",
+  "url": "https://www.marvinswift.com/finance/chatGPT-meme1.html",
+  "date": "2023-03-26T15:08:00+08:00",
+  "word_count": 81
+ },
+ {
+  "slug": "prompt-engineering",
+  "lang": "zh",
+  "title": "Will 保哥翻譯自 DAIR.AI 的 \"prompt engineering\"「提示工程指南」",
+  "category": "programming",
+  "tags": [
+   "ai",
+   "prompt",
+   "ChatGPT"
+  ],
+  "summary": "Prompt engineering is a technique that uses artificial intelligence (AI) to generate text, and involves designing an appropriate input (prompt) to guide the AI in producing desired outputs. The goal of prompt engineering is to enable AI to understand human intentions and needs, and generate high-quality, useful, and interesting text. Prompt engineering requires consideration of various factors such as the capabilities, limitations, language, style, goals, and background of the AI, and requires continuous testing and improvement of prompt effectiveness. Prompt engineering is both an art and a science that integrates linguistics, psychology, logic, and creativity.",
+  "url": "https://www.marvinswift.com/finance/prompt-engineering.html",
+  "date": "2023-03-26T10:17:00+08:00",
+  "word_count": 227
+ },
+ {
+  "slug": "ChatGPT-plugins",
+  "lang": "zh",
+  "title": "ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?",
+  "category": "programming",
+  "tags": [
+   "ChatGPT",
+   "AI"
+  ],
+  "summary": "ChatGPT plugins enable ChatGPT to interact with various internet resources, enhancing its performance and expanding its application scope. Plugins offer diverse functionalities and prioritize security and ethics. Developers can create limitless plugins that meet OpenAI's standards and objectives, collaborate with other developers, and use ChatGPT's ability to coordinate and manage development teams.",
+  "url": "https://www.marvinswift.com/finance/ChatGPT-plugins.html",
+  "date": "2023-03-25T09:01:00+08:00",
+  "word_count": 585
+ },
+ {
+  "slug": "raise-up-Tw-bank-interest",
+  "lang": "zh",
+  "title": "央行宣布升息半碼",
+  "category": "finance",
+  "tags": [
+   "finance"
+  ],
+  "summary": "Taiwan's central bank raised its policy interest rate by 0.125 percentage points to curb domestic inflation expectations and align with the US Federal Reserve's monetary policy adjustments. This is the fifth consecutive rate hike, with a total increase of 0.625 percentage points. The rate hike will affect deposit and loan rates, and the housing market, but export-oriented industries expect currency stability and increased competitiveness.",
+  "url": "https://www.marvinswift.com/finance/raise-up-Tw-bank-interest.html",
+  "date": "2023-03-24T08:53:00+08:00",
+  "word_count": 342
+ },
+ {
+  "slug": "copilot-x",
+  "lang": "zh",
+  "title": "GitHub Copilot X 推出",
+  "category": "programming",
+  "tags": [
+   "programming",
+   "copilot",
+   "ai"
+  ],
+  "summary": "GitHub Copilot X is a new AI feature by GitHub that uses OpenAI's GPT-4 model and includes chat and voice interfaces. It can help developers with code suggestions, error fixes, unit testing, code analysis, and more. The aim is to enable developers to work more efficiently and creatively.",
+  "url": "https://www.marvinswift.com/finance/copilot-x.html",
+  "date": "2023-03-23T10:18:00+08:00",
+  "word_count": 296
+ },
+ {
+  "slug": "powell-speach-march-twenty-two",
+  "lang": "zh",
+  "title": "聯準會升息1碼，市場失望重挫",
+  "category": "finance",
+  "tags": [
+   "finance"
+  ],
+  "summary": "Federal Reserve Chair Jerome Powell announced on the 22nd that the Fed has decided to raise interest rates by 1 basis point, adjusting the federal funds rate target range to 4.75% to 5%, and indicating that policy rates will reach a terminal level by the end of the year. Powell stated that this was to restore price stability and maintain public confidence in the central bank, and emphasized that the US banking system is sound and resilient enough to handle recent financial turmoil caused by multiple bank failures. His remarks disappointed the market, as investors who had expected the Fed to loosen monetary policy in response to the banking crisis began withdrawing from the US stock market. Meanwhile, Treasury Secretary Janet Yellen stated at a Senate hearing that she had no intention of expanding deposit insurance coverage to protect customers of troubled banks, which also triggered a sell-off in regional bank stocks and dragged down the entire financial sector. The Dow Jones Industrial Average fell 530 points to close at 32,030.11, the S&P 500 index fell nearly 1.7% to close at 3,936.97, and the Nasdaq Composite Index fell more than 1.6% to close at 11,669.96.",
+  "url": "https://www.marvinswift.com/finance/powell-speach-march-twenty-two.html",
+  "date": "2023-03-23T08:58:00+08:00",
+  "word_count": 317
+ },
+ {
+  "slug": "bing-create",
+  "lang": "zh",
+  "title": "Bing 釋出了 AI 繪圖工具 bing.com/create",
+  "category": "programming",
+  "tags": [
+   "programming",
+   "ai",
+   "art"
+  ],
+  "summary": "The Bing Image Creator is an AI drawing tool that generates images based on user input text, using the latest DALL∙E model from OpenAI. It is a free service and does not require waiting on a waiting list, and can be accessed directly on bing.com/create. Users can provide prompts to the system, and the AI will begin drawing the requested image. The service is similar to other AI drawing tools such as Stable Diffusion and Midjourney. Additionally, Microsoft has integrated Bing Image Creator into chatbots, the web, and the Edge browser.",
+  "url": "https://www.marvinswift.com/programming/bing-create.html",
+  "date": "2023-03-22T18:34:00+08:00",
+  "word_count": 799
+ },
+ {
+  "slug": "submit-to-app-store-need-xcode-fourteen",
+  "lang": "zh",
+  "title": "從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。",
+  "category": "swift",
+  "tags": [
+   "iOS",
+   "App Store"
+  ],
+  "summary": "Starting April 2023, all iOS and iPadOS apps must be built with Xcode 14.1 and the iOS 16.1 SDK.",
+  "url": "https://www.marvinswift.com/swift/submit-to-app-store-need-xcode-fourteen.html",
+  "date": "2023-03-22T13:59:00+08:00",
+  "word_count": 183
+ },
+ {
+  "slug": "google-start-bard-ai",
+  "lang": "zh",
+  "title": "Google 開始試用 Bard AI chat",
+  "category": "programming",
+  "tags": [
+   "ai",
+   "bard",
+   "chat",
+   "google"
+  ],
+  "summary": "Google has launched Bard, an AI chat website that generates text based on past data. It's faster than ChatGPT and offers three versions of responses, as well as a \"Google it\" button. Bard is only available in English, and users must join a waiting list. While it's not perfect, users can give feedback to improve its responses. Currently, Bard is not available in Taiwan, but Google aims to expand it globally.",
+  "url": "https://www.marvinswift.com/programming/google-start-bard-ai.html",
+  "date": "2023-03-22T13:14:00+08:00",
+  "word_count": 429
+ },
+ {
+  "slug": "yellen-talk-about-bank-issue",
+  "lang": "zh",
+  "title": "美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "葉倫"
+  ],
+  "summary": "US Treasury Secretary Janet Yellen announced that the government is ready to provide further guarantees to the banking industry to prevent crisis expansion. Her statement boosted market confidence and led to a surge in US stock indices, including the Dow Jones, which closed at a new high. Financial stocks, including First Republic Bank and regional bank ETF, performed strongly. Tesla also rose by about 8% and became a main driver of the Nasdaq index's rise.",
+  "url": "https://www.marvinswift.com/finance/yellen-talk-about-bank-issue.html",
+  "date": "2023-03-22T08:30:00+08:00",
+  "word_count": 312
+ },
+ {
+  "slug": "ESun-news",
+  "lang": "zh",
+  "title": "玉山金控今年辦理現金增資案，預計現增8億股",
+  "category": "finance",
+  "tags": [
+   "財經",
+   "增資",
+   "玉山金"
+  ],
+  "summary": "Yuanta Financial Holdings plans to increase its capital by issuing 800 million shares at a tentative price of NT$20 per share. The funds raised from the increase will be used for investment in its subsidiary, Yuanta Bank, and to supplement operating capital. The discount rate is about 15.79% based on the closing price of NT$23.75 per share. Yuanta Financial Holdings approved the cash increase plan in February of this year.",
+  "url": "https://www.marvinswift.com/finance/2023/03/21/ESun-news.html",
+  "date": "2023-03-21T18:11:00+08:00",
+  "word_count": 161
+ },
+ {
+  "slug": "openai-stop-codex-api",
+  "lang": "zh",
+  "title": "Open AI 發信給客戶，停止 Codex 相關服務",
+  "category": "programming",
+  "tags": [
+   "programming",
+   "AI",
+   "Open AI",
+   "ChatGPT",
+   "Codex"
+  ],
+  "summary": "OpenAI is discontinuing support for the Codex API on March 23rd and urging customers to switch to the GPT-3.5-Turbo model, which is the most cost-effective and efficient option. The affected models are code-cushman:001, code-cushman:002, code-davinci:001, and code-davinci:002.",
+  "url": "https://www.marvinswift.com/programming/openai-stop-codex-api.html",
+  "date": "2023-03-21T10:58:00+08:00",
+  "word_count": 407
+ },
+ {
+  "slug": "taiwan-government-returnsix-thounds",
+  "lang": "zh",
+  "title": "台灣政府普發現金6000元",
+  "category": "finance",
+  "tags": [
+   "finance"
+  ],
+  "summary": "The Taiwanese government will distribute NT$6,000 in cash to all citizens, including foreigners with residency permits and residents of specific rural areas, as a result of exceeding the tax revenue budget by NT$450 billion. The policy aims to share the benefits of the economy with the public and boost consumption and investment. There are three ways to receive the cash - online registration for direct deposit, withdrawing it at designated bank ATMs with a card, or collecting it at post offices with a health insurance card. The distribution date is pending the legislative review of a special budget, which has passed its third reading in February 2023. In addition to distributing the cash, the government plans to allocate the excess tax revenue to local governments, labor and health insurance subsidies, and electricity price subsidies.",
+  "url": "https://www.marvinswift.com/finance/2023/03/21/taiwan-government-returnsix-thounds.html",
+  "date": "2023-03-21T09:01:00+08:00",
+  "word_count": 391
+ },
+ {
+  "slug": "iplaygroundIn",
+  "lang": "zh",
+  "title": "iPlayground 2023 開始跑啦，歡迎應徵工作人員",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "programming",
+   "iPlayground"
+  ],
+  "summary": "The article discusses the benefits of attending developer conferences, such as learning about the latest trends and technologies, receiving practical advice and feedback, building connections and collaborations, and gaining inspiration and motivation. The article also introduces iPlayground, a Taiwanese Swift community that holds an annual conference focused on Apple software development, and provides information about past and future events, as well as related resources. The article encourages interested individuals to sign up for iPlayground's newsletter in order to become a member of the community and attend future events.",
+  "url": "https://www.marvinswift.com/zh/swift/iplaygroundIn/",
+  "date": "2023-03-21T08:30:00+08:00",
+  "word_count": 727
+ },
+ {
+  "slug": "edge-update-embed-ai",
+  "lang": "zh",
+  "title": "Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄",
+  "category": "programming",
+  "tags": [
+   "programming",
+   "life"
+  ],
+  "summary": "Microsoft Edge's new feature, Edge Copilot, integrates AI-powered Bing Chat GPT technology in the sidebar to help users with tasks such as summarizing, comparing, explaining, translating, and writing. It offers default and customizable prompt templates and respects privacy by not collecting or storing any personal data. The feature is innovative, practical, and improves productivity and quality.",
+  "url": "https://www.marvinswift.com/zh/programming/edge-update-embed-ai/",
+  "date": "2023-03-20T20:25:00+08:00",
+  "word_count": 1467
+ },
+ {
+  "slug": "CSGN-acquired",
+  "lang": "zh",
+  "title": "瑞信將被收購，收購方為瑞銀集團",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "acquisition",
+   "bank"
+  ],
+  "summary": "瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎 瑞士兩大銀行集團之一的瑞信集團（Credit Suisse Group）在遭受多起金融醜聞和巨額虧損後，終於在周日（3月19日）宣布被同業瑞銀集團（UBS Group）以30億瑞士法郎…",
+  "url": "https://www.marvinswift.com/finance/2023/03/20/CSGN-acquired.html",
+  "date": "2023-03-20T17:05:00+08:00",
+  "word_count": 1156
+ },
+ {
+  "slug": "using-chatgpt-connect-chatgpt2",
+  "lang": "en",
+  "title": "Connecting ChatGPT to ChatGPT (2)",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Programming",
+   "AI",
+   "ChatGPT"
+  ],
+  "summary": "The article describes how to generate iOS app code by integrating ChatGPT. It starts with how to make an API request using Swift and then moves to adding a basic UI to the app that includes a prompt input text field, an API request button, and a response text display field. Finally, it provides SwiftUI code to make the UI.",
+  "url": "https://www.marvinswift.com/en/swift/using-chatgpt-connect-chatgpt2/",
+  "date": "2023-03-20T13:03:00+08:00",
+  "word_count": 193
+ },
+ {
+  "slug": "using-chatgpt-connect-chatgpt2",
+  "lang": "zh",
+  "title": "使用 ChatGPT 串接 ChatGPT (2)",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "Programming",
+   "AI",
+   "ChatGPT"
+  ],
+  "summary": "The article describes how to generate iOS app code by integrating ChatGPT. It starts with how to make an API request using Swift and then moves to adding a basic UI to the app that includes a prompt input text field, an API request button, and a response text display field. Finally, it provides SwiftUI code to make the UI.",
+  "url": "https://www.marvinswift.com/chatgpt/using-chatgpt-connect-chatgpt2.html",
+  "date": "2023-03-20T13:03:00+08:00",
+  "word_count": 435
+ },
+ {
+  "slug": "twse-website-rwd",
+  "lang": "zh",
+  "title": "台灣證交所網頁改版，RWD 網站設計",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "證交所",
+   "RWD"
+  ],
+  "summary": "台灣證交所網頁改版，RWD 網站設計",
+  "url": "https://www.marvinswift.com/finance/2023/03/20/twse-website-rwd.html",
+  "date": "2023-03-20T11:54:00+08:00",
+  "word_count": 1085
+ },
+ {
+  "slug": "yang-red-been",
+  "lang": "zh",
+  "title": "小吃推薦：楊家紅豆餅-新北板橋江子翠",
+  "category": "life",
+  "tags": [
+   "food",
+   "美食"
+  ],
+  "summary": "Yang Family Red Bean Cake is a bakery in the Jiangzicui area that has been operating for over 10 years, selling only two flavors of cakes - red bean and butter. Both flavors are excellent and made with high-quality ingredients, and the limited daily quantity ensures freshness.",
+  "url": "https://www.marvinswift.com/zh/life/yang-red-been/",
+  "date": "2023-03-20T09:16:00+08:00",
+  "word_count": 309
+ },
+ {
+  "slug": "using-chatgpt-connect-chatgpt1",
+  "lang": "en",
+  "title": "Connecting ChatGPT to ChatGPT (1)",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "programming",
+   "ai",
+   "chatgpt",
+   "python"
+  ],
+  "summary": "Credit Suisse Group, one of Switzerland's two major banking groups, has announced that it will be acquired by rival UBS Group in an all-stock transaction worth CHF 30 billion ($32.5 billion). The acquisition, which was heavily supported by the Swiss government and central bank, aims to prevent a crisis of confidence from threatening the global financial market. Credit Suisse has been struggling with multiple financial scandals and losses, including losses from partnering with Greensill Capital and Archegos Capital Management. The deal will make UBS one of the largest wealth management companies in the world and ends Credit Suisse's 167-year history.",
+  "url": "https://www.marvinswift.com/en/swift/using-chatgpt-connect-chatgpt1/",
+  "date": "2023-03-19T12:36:00+08:00",
+  "word_count": 403
+ },
+ {
+  "slug": "using-chatgpt-connect-chatgpt1",
+  "lang": "zh",
+  "title": "使用 ChatGPT 串接 ChatGPT：(1)",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "programming",
+   "ai",
+   "chatgpt",
+   "python"
+  ],
+  "summary": "Credit Suisse Group, one of Switzerland's two major banking groups, has announced that it will be acquired by rival UBS Group in an all-stock transaction worth CHF 30 billion ($32.5 billion). The acquisition, which was heavily supported by the Swiss government and central bank, aims to prevent a crisis of confidence from threatening the global financial market. Credit Suisse has been struggling with multiple financial scandals and losses, including losses from partnering with Greensill Capital and Archegos Capital Management. The deal will make UBS one of the largest wealth management companies in the world and ends Credit Suisse's 167-year history.",
+  "url": "https://www.marvinswift.com/chatgpt/using-chatgpt-connect-chatgpt1.html",
+  "date": "2023-03-19T12:36:00+08:00",
+  "word_count": 643
+ },
+ {
+  "slug": "swift-standard-tool",
+  "lang": "en",
+  "title": "Swift Code Standardization Tools - SwiftLint & SwiftFormat",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "programming"
+  ],
+  "summary": "The article discusses the importance of standardizing Swift code, especially in collaborative projects involving multiple developers. It highlights the use of SwiftLint and SwiftFormat, two tools that help enforce coding standards and best practices. SwiftLint serves as a static code analysis tool that flags common errors and style issues, while SwiftFormat adjusts coding standards more granically, such as indentation and the order of imports.The primary benefits of using these tools are improved code quality, enhanced readability, and increased development efficiency. The article emphasizes that consistent code standards facilitate easier maintenance and extension of projects, making applications more stable and reliable. It encourages developers, especially those working in large projects, to adopt these tools to streamline their coding process and improve the overall quality of their applications.",
+  "url": "https://www.marvinswift.com/en/swift/swift-standard-tool/",
+  "date": "2023-03-18T14:30:00+08:00",
+  "word_count": 500
+ },
+ {
+  "slug": "swift-standard-tool",
+  "lang": "zh",
+  "title": "Swift 程式碼標準化工具 - swiftlint & swiftformat",
+  "category": "swift",
+  "tags": [
+   "swift",
+   "programming"
+  ],
+  "summary": "Swift 程式碼的標準化 在多人共同協作的專案中，Swift 程式碼的標準化是一個重要的主題，如果你的專案只有一個人，那標準化只需要那一位開發者，但我在實務上是會有三、四個人同時在一個專案的，想憑著過去的經驗讓這群人有程式碼風格的共識，是…",
+  "url": "https://www.marvinswift.com/zh/swift/swift-standard-tool/",
+  "date": "2023-03-18T14:26:00+08:00",
+  "word_count": 992
+ },
+ {
+  "slug": "microsoft-office-copilot-launch",
+  "lang": "zh",
+  "title": "微軟推出了名為「Microsoft 365 Copilot」的新生產力工具",
+  "category": "programming",
+  "tags": [
+   "life"
+  ],
+  "summary": "微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Mi…",
+  "url": "https://www.marvinswift.com/zh/programming/microsoft-office-copilot-launch/",
+  "date": "2023-03-17T15:41:00+08:00",
+  "word_count": 669
+ },
+ {
+  "slug": "swiftformat-version",
+  "lang": "zh",
+  "title": "Swiftformat 在設定 swiftversion 5.7，會把 T 改成 some Any",
+  "category": "swift",
+  "tags": [
+   "swift"
+  ],
+  "summary": "Swiftformat 可調整的各種參數 swiftformat 在進行 formatting 的時候，有很多參數可以調整。詳細的參數如下。 swiftformat 參數連結 當我們把 調整到 的時候，使用泛型 T，就會被改成 some A…",
+  "url": "https://www.marvinswift.com/zh/swift/swiftformat-version/",
+  "date": "2023-03-17T09:12:00+08:00",
+  "word_count": 98
+ },
+ {
+  "slug": "CSGN-issue-news",
+  "lang": "zh",
+  "title": "紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "news"
+  ],
+  "summary": "瑞士信貸(CSGN)有消息說會爆發危機，股價一度暴跌30%",
+  "url": "https://www.marvinswift.com/finance/2023/03/16/CSGN-issue-news.html",
+  "date": "2023-03-16T08:34:00+08:00",
+  "word_count": 107
+ },
+ {
+  "slug": "SVB-broken-v2",
+  "lang": "zh",
+  "title": "紀錄：矽谷銀行(SVB)倒閉於2023年3月10日",
+  "category": "finance",
+  "tags": [
+   "Finance"
+  ],
+  "summary": "矽谷銀行(SVB)倒閉於2023-03-10，紀錄事情的發生",
+  "url": "https://www.marvinswift.com/finance/2023/03/15/SVB-broken-v2.html",
+  "date": "2023-03-15T10:13:00+08:00",
+  "word_count": 484
+ },
+ {
+  "slug": "future-article-will-post-on-page",
+  "lang": "zh",
+  "title": "GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了",
+  "category": "life",
+  "tags": [
+   "Life",
+   "blog"
+  ],
+  "summary": "GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了",
+  "url": "https://www.marvinswift.com/life/2023/03/14/future-article-will-post-on-page.html",
+  "date": "2023-03-14T21:09:00+08:00",
+  "word_count": 185
+ },
+ {
+  "slug": "stories-written-by-ai",
+  "lang": "zh",
+  "title": "AI 寫出來的故事",
+  "category": "programming",
+  "tags": [
+   "ai",
+   "chatgpt"
+  ],
+  "summary": "AI 寫出來的故事 上一篇文章寫了我現在用 ChatGPT 來做的事。 * * AI 寫出來的故事 上一篇文章寫了我現在用 ChatGPT 來做的事。 最近用 ChatGPT 來做的事情**\\ 最近有個 AI 對話機器人，在短期內爆紅，連結…",
+  "url": "https://www.marvinswift.com/programming/2022/12/30/stories-written-by-ai.html",
+  "date": "2022-12-30T16:12:00+08:00",
+  "word_count": 993
+ },
+ {
+  "slug": "the-things-I-delegate-to-chatGPT",
+  "lang": "en",
+  "title": "The Things I Delegate To Chatgpt",
+  "category": null,
+  "tags": [
+   "ChatGPT",
+   "AI"
+  ],
+  "summary": "Recent Activities with ChatGPT Recently, an AI chatbot has gone viral in a short period. Here’s the link: https://chat.openai.com/chat Many people have been sharing the tasks they have done with it, and here I am posting…",
+  "url": "https://www.marvinswift.com/2022/12/19/the-things-I-delegate-to-chatGPT.html",
+  "date": "2022-12-19T00:00:00+08:00",
+  "word_count": 206
+ },
+ {
+  "slug": "flyweight-pattern",
+  "lang": "zh",
+  "title": "Flyweight Pattern — 蠅量級模式(享元模式)",
+  "category": "swift",
+  "tags": [
+   "Design pattern",
+   "Swift"
+  ],
+  "summary": "Flyweight Pattern — 蠅量級模式(享元模式)，本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。",
+  "url": "https://www.marvinswift.com/swift/2022/08/10/flyweight-pattern.html",
+  "date": "2022-08-10T21:16:00+08:00",
+  "word_count": 1076
+ },
+ {
+  "slug": "WWDC22-keynote-platform-state-of-the-union",
+  "lang": "en",
+  "title": "WWDC22 Keynote, Platform State of the Union",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "WWDC 22 開跑啦，這篇節錄 Keynote, Platform State of the union 中和 iOS 開發比較有關的點",
+  "url": "https://www.marvinswift.com/swift/2022/06/10/WWDC22-keynote-platform-state-of-the-union.html",
+  "date": "2022-06-10T15:19:00+08:00",
+  "word_count": 376
+ },
+ {
+  "slug": "Meet-weatherKit-in-WWDC22",
+  "lang": "en",
+  "title": "Meet WeatherKit in WWDC22",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "WWDC22 新 framework - Meet WeatherKit 重點結錄",
+  "url": "https://www.marvinswift.com/swift/2022/06/09/Meet-weatherKit-in-WWDC22.html",
+  "date": "2022-06-09T15:17:00+08:00",
+  "word_count": 314
+ },
+ {
+  "slug": "Meet-weatherKit-in-WWDC22",
+  "lang": "en",
+  "title": "Meet WeatherKit at WWDC22",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "WWDC"
+  ],
+  "summary": "The article provides an overview of WeatherKit, a new framework introduced at WWDC22, designed to supply comprehensive weather data for applications and services. Here are the key points covered in the article",
+  "url": "https://www.marvinswift.com/en/swift/Meet-weatherKit-in-WWDC22/",
+  "date": "2022-06-09T15:17:00+08:00",
+  "word_count": 143
+ },
+ {
+  "slug": "swiftui-and-compose",
+  "lang": "en",
+  "title": "SwiftUI & Compose",
+  "category": "swift",
+  "tags": [
+   "Swift"
+  ],
+  "summary": "Google is currently promoting the Android Study Jam event, and out of curiosity, I participated in the Study Jam online briefing. I have detailed the event in another article, which you can access directly through the li…",
+  "url": "https://www.marvinswift.com/en/swift/swiftui-and-compose/",
+  "date": "2022-06-03T22:34:38+08:00",
+  "word_count": 341
+ },
+ {
+  "slug": "swiftui-and-compose",
+  "lang": "en",
+  "title": "SwiftUI & Compose",
+  "category": "swift",
+  "tags": [
+   "Swift"
+  ],
+  "summary": "Google 的現在正在推 Android study jam 活動，心裡因為好奇，所以也在線上參與了 Study jam 的說明活動。 詳細的文章我寫在另一篇，可以直接從下方連結過去 Android Study Jam — 介紹**\\ Google 官方是很重視 Android 開發環境的，常常會推出不同區域的 Study Jam。這些練習會分成數個階段，當你完成每個階段，都可以拿到徽章，在 2022/06/23 內完成指定的題目後，…",
+  "url": "https://www.marvinswift.com/swift/2022/06/03/swiftui-and-compose.html",
+  "date": "2022-06-03T22:33:38+08:00",
+  "word_count": 564
+ },
+ {
+  "slug": "Kotlin-Multiplatform-mobile-roadmap",
+  "lang": "zh",
+  "title": "Kotlin Multiplatform Mobile beta roadmap 重點節錄",
+  "category": "programming",
+  "tags": [
+   "KMM",
+   "kotlin",
+   "cross platform"
+  ],
+  "summary": "Kotlin Multiplatform Mobile beta roadmap 重點節錄，在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容",
+  "url": "https://www.marvinswift.com/programming/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html",
+  "date": "2022-02-04T14:53:00+08:00",
+  "word_count": 441
+ },
+ {
+  "slug": "Kotlin-Multiplatform-mobile-roadmap",
+  "lang": "en",
+  "title": "Excerpts from the Kotlin Multiplatform Mobile Beta Roadmap",
+  "category": "programming",
+  "tags": [
+   "KMM",
+   "kotlin",
+   "cross platform"
+  ],
+  "summary": "Key excerpts from the Kotlin Multiplatform Mobile beta roadmap, where the relevant team released a video of the KMM beta version roadmap in 2021. The speaker, Ekaterina Petrova, mentioned several improvements from the Alpha to Beta versions.",
+  "url": "https://www.marvinswift.com/en/programming/Kotlin-Multiplatform-mobile-roadmap/",
+  "date": "2022-02-04T14:53:00+08:00",
+  "word_count": 290
+ },
+ {
+  "slug": "Apple-Watch",
+  "lang": "zh",
+  "title": "Apple Watch 開箱",
+  "category": "life",
+  "tags": [
+   "Apple",
+   "life"
+  ],
+  "summary": "Apple Watch 開箱文",
+  "url": "https://www.marvinswift.com/life/2022/01/02/Apple-Watch.html",
+  "date": "2022-01-02T09:30:00+08:00",
+  "word_count": 84
+ },
+ {
+  "slug": "Stripe-system-migrate",
+  "lang": "zh",
+  "title": "Stripe 系統漸進式升級的過程",
+  "category": "programming",
+  "tags": [
+   "system design",
+   "migration"
+  ],
+  "summary": "Stripe 是很知名的支付服務，這篇文章是讀完 Stripe 系統漸進式升級的過程",
+  "url": "https://www.marvinswift.com/programming/2021/12/18/Stripe-system-migrate.html",
+  "date": "2021-12-18T15:11:00+08:00",
+  "word_count": 1651
+ },
+ {
+  "slug": "Stripe-system-migrate",
+  "lang": "en",
+  "title": "The Process of Stripe's Incremental System Upgrade",
+  "category": "programming",
+  "tags": [
+   "system design",
+   "migration"
+  ],
+  "summary": "Stripe is a well-known payment service. This article discusses the process of Stripe's incremental system upgrades.",
+  "url": "https://www.marvinswift.com/en/programming/Stripe-system-migrate/",
+  "date": "2021-12-18T15:11:00+08:00",
+  "word_count": 992
+ },
+ {
+  "slug": "data-intensive-applications",
+  "lang": "zh",
+  "title": "資料密集型應用系統設計-第六章筆記",
+  "category": "programming",
+  "tags": [
+   "system design",
+   "programming"
+  ],
+  "summary": "資料密集型應用系統設計的讀書筆記，伺服器進行分區，討論不同的分區策略",
+  "url": "https://www.marvinswift.com/programming/2021/11/02/data-intensive-applications.html",
+  "date": "2021-11-02T00:00:00+08:00",
+  "word_count": 1911
+ },
+ {
+  "slug": "Using-Turi-create-make-an-app",
+  "lang": "en",
+  "title": "Turi Create - Core ML and Vision",
+  "category": "swift",
+  "tags": [
+   "Core ML",
+   "MLKit",
+   "Swift"
+  ],
+  "summary": "The article discusses how to create an image recognition app using Turi Create, a Python module for developing machine learning models. Presented during WWDC18, Turi Create facilitates the creation of Core ML models, allowing iOS developers to focus more on API functionalities. The process involves preparing and categorizing image data into specific folders, training the model with this data, and ultimately producing a Core ML model file that can be integrated into iOS applications.The demonstration included in the article explains how to train a model to recognize images of Takeshi Kaneshiro, a famous actor. It covers setting up the dataset, training the model with Turi Create, and adjusting parameters like `max_iterations` to enhance model accuracy. The model’s performance is evaluated by its ability to accurately identify and classify new images based on the training it received. The article also touches on the need for sufficient and relevant training data to improve the accuracy and reliability of the machine learning model.",
+  "url": "https://www.marvinswift.com/en/swift/Using-Turi-create-make-an-app/",
+  "date": "2018-08-20T15:33:00+08:00",
+  "word_count": 629
+ },
+ {
+  "slug": "Using-Turi-create-make-an-app",
+  "lang": "zh",
+  "title": "使用 Turi Create 製作圖案辨識的 App - Core ML and Vision",
+  "category": "swift",
+  "tags": [
+   "Core ML",
+   "MLKit",
+   "Swift"
+  ],
+  "summary": "使用 Turi Create 製作圖案辨識的 App - Core ML and Vision",
+  "url": "https://www.marvinswift.com/swift/2018/08/20/Using-Turi-create-make-an-app.html",
+  "date": "2018-08-20T15:32:00+08:00",
+  "word_count": 2251
+ },
+ {
+  "slug": "WWDC18-session712-Turi-create",
+  "lang": "zh",
+  "title": "WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事",
+  "category": "swift",
+  "tags": [
+   "MLKit",
+   "Machine Learning",
+   "Turi Create",
+   "Swift"
+  ],
+  "summary": "WWDC18, Session-712 Turi Create 重點整理 -製作ML model 不再是一個困難的事",
+  "url": "https://www.marvinswift.com/swift/2018/08/12/WWDC18-session712-Turi-create.html",
+  "date": "2018-08-12T15:28:00+08:00",
+  "word_count": 2115
+ },
+ {
+  "slug": "wwdc18-session712-turi-create-highlights",
+  "lang": "en",
+  "title": "WWDC18, Session-712 Turi Create Highlights - Making ML Models is No Longer a Difficult Task",
+  "category": "swift",
+  "tags": [
+   "MLKit",
+   "Machine Learning",
+   "Turi Create",
+   "Swift"
+  ],
+  "summary": "This article summarizes the highlights from WWDC18, Session-712, focusing on Turi Create, a powerful tool for building machine learning models. Originally known as Dato and part of the Graph Lab project from the University of Washington, Turi Create was acquired by Apple in 2016. The session detailed the capabilities of this Python package, emphasizing its ease of use for non-specialists and its ability to generate Core ML models efficiently. Turi Create supports multiple platforms like Mac and Linux and simplifies the machine learning model development process. It requires minimal coding, often less than 20 lines to create a functional object recognition model. The tool is particularly beneficial for iOS developers, allowing them to focus on APIs rather than the complexities of machine learning algorithms. The article also walks through the process of building a machine learning model using Turi Create, from defining the task and preparing data to training the model and deploying it in an app. The session demonstrated the accessibility of machine learning, making it approachable for a broader audience and integrating it seamlessly into app development.",
+  "url": "https://www.marvinswift.com/en/swift/wwdc18-session712-turi-create-highlights/",
+  "date": "2018-08-12T15:28:00+08:00",
+  "word_count": 950
+ },
+ {
+  "slug": "prototype-patter",
+  "lang": "zh",
+  "title": "Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同",
+  "category": "swift",
+  "tags": [
+   "Swift",
+   "design pattern"
+  ],
+  "summary": "Prototype Pattern (原型模式) in Swift (Reference type vs. Value type) 的不同",
+  "url": "https://www.marvinswift.com/swift/2018/06/09/prototype-patter.html",
+  "date": "2018-06-09T21:14:00+08:00",
+  "word_count": 2625
+ },
+ {
+  "slug": "my-ios-app-king-of-song-quiz",
+  "lang": "zh",
+  "title": "iOS 遊戲 App - 猜歌之王 King of Song Quiz",
+  "category": "life",
+  "tags": [
+   "life",
+   "game",
+   "app"
+  ],
+  "summary": "這是一個猜歌的 App App Store 連結:\\ https://itunes.apple.com/tw/app/id1273605195 螢幕截圖: 他是個猜歌遊戲 現在是 v1.1.6 有在看這個版的朋友，麻煩廣一下 玩法很簡單，選…",
+  "url": "https://www.marvinswift.com/life/2017/09/16/my-ios-app-king-of-song-quiz.html",
+  "date": "2017-09-16T16:42:00+08:00",
+  "word_count": 171
+ },
+ {
+  "slug": "zmud-timmer",
+  "lang": "zh",
+  "title": "使用zmud玩mud的第一步 定時器(timmer)和觸發(trigger)",
+  "category": "life",
+  "tags": [
+   "life",
+   "game"
+  ],
+  "summary": "使用zmud玩mud的第一步 定時器(timmer)和觸發(trigger) 如上一篇所說的。 玩mud就是要一直輸入指令，但如果你升一級要輸入100次指令，然後你想升到一百級呢？ 這時候，就必需要用timer了，這邊先用zmud做例子。…",
+  "url": "https://www.marvinswift.com/life/2015/08/27/zmud-timmer.html",
+  "date": "2015-08-27T16:41:00+08:00",
+  "word_count": 809
+ },
+ {
+  "slug": "mud-jy",
+  "lang": "zh",
+  "title": "開始 mud 的武俠世界 金庸修真錄",
+  "category": "life",
+  "tags": [
+   "life",
+   "game"
+  ],
+  "summary": "說到mud 大概這一輩的人都沒什麼聽過了吧 因為我們國中的時候已經有天堂、石器時代 這就是 mud 的界面 大學還有wow，魔獸三國 這些東西 mud就是在 on-line game還沒圖形化之前的產物 所有的東西都像ptt一樣，只有文字…",
+  "url": "https://www.marvinswift.com/life/2015/08/25/mud-jy.html",
+  "date": "2015-08-25T16:40:00+08:00",
+  "word_count": 319
+ },
+ {
+  "slug": "book-recommend-joel-on-software",
+  "lang": "zh",
+  "title": "好書推薦-約耳趣談軟體",
+  "category": "programming",
+  "tags": [
+   "life",
+   "programming"
+  ],
+  "summary": "和大家推薦這本書「約耳趣談軟體」。",
+  "url": "https://www.marvinswift.com/programming/2015/01/10/book-recommend-joel-on-software.html",
+  "date": "2015-01-10T10:11:00+08:00",
+  "word_count": 537
+ },
+ {
+  "slug": "monster-hunter-release-on14",
+  "lang": "zh",
+  "title": "2014年10月11日 魔物獵人開始發售",
+  "category": "life",
+  "tags": [
+   "life",
+   "game"
+  ],
+  "summary": "2014年10月11日 魔物獵人開始發售",
+  "url": "https://www.marvinswift.com/life/2014/10/11/monster-hunter-release-on14.html",
+  "date": "2014-10-11T10:28:00+08:00",
+  "word_count": 767
+ },
+ {
+  "slug": "ingress-get-first-tower",
+  "lang": "zh",
+  "title": "Ingress 佔領到第一座塔！ Google, iOS app 皆有喔",
+  "category": "life",
+  "tags": [
+   "life",
+   "app"
+  ],
+  "summary": "Ingress 佔領到第一座塔！ Google, iOS app 皆有喔 Ingress 在這一篇網誌有寫到，一些資源也在這邊。 這個app最主要的設計中心，我想大概就是要讓你走出戶外玩遊戲，還有一點，發現你生活週遭不同的事物。即使是個小變…",
+  "url": "https://www.marvinswift.com/life/2014/07/19/ingress-get-first-tower.html",
+  "date": "2014-07-19T16:31:00+08:00",
+  "word_count": 651
+ },
+ {
+  "slug": "psv-freedom-war",
+  "lang": "zh",
+  "title": "PSV TV, Freedom Wars 自由戰爭",
+  "category": "life",
+  "tags": [
+   "life",
+   "game"
+  ],
+  "summary": "在日本買東西，現在要加8％的消費稅。也就是在架上雖然只要x元，但實際結帳時，要再加上8％的稅。而且，明年聽說還要漲到10％，這還讓不讓人活呀。 所幸，如果是外國人的話，同一天同一間店裡面，購物超過1萬1千，可以不用交這8％的稅。但如果是在大…",
+  "url": "https://www.marvinswift.com/life/2014/07/11/psv-freedom-war.html",
+  "date": "2014-07-11T16:37:00+08:00",
+  "word_count": 694
+ },
+ {
+  "slug": "iphone4s-fix",
+  "lang": "zh",
+  "title": "iPhone 4S 維修",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "某一天，我舊的iPhone4s沒辦法充電，換了兩條不同的充電線後，我判斷是Dock孔壞掉。因為我的插座可以充我的iphone5s，這樣判斷，線壞的機率很低，而插座是確定沒壞的。那這樣來說，就是Dock 孔壞掉了。所幸，現在網路上有好多好多視…",
+  "url": "https://www.marvinswift.com/life/2014/06/08/iphone4s-fix.html",
+  "date": "2014-06-08T16:21:00+08:00",
+  "word_count": 1194
+ },
+ {
+  "slug": "3ds-reverse-judgement",
+  "lang": "zh",
+  "title": "3DS 逆轉裁判5",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "3DS 逆轉裁判5 首次嘗試用日文直接玩。才發現人物的命名，裡面有放日文的常用句子。 成步堂 歷代的主要人物，發音是なるほどう Na Ru Ho Do\\- ，就是日文的「原來如此」。這一句日文常使用在你突然知道原來不知道的事情，這時候就會說…",
+  "url": "https://www.marvinswift.com/life/2014/05/25/3ds-reverse-judgement.html",
+  "date": "2014-05-25T15:11:00+08:00",
+  "word_count": 345
+ },
+ {
+  "slug": "German-hofbrauhaus-munchen",
+  "lang": "zh",
+  "title": "皇家啤酒屋 Hofbräuhaus München",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel"
+  ],
+  "summary": "皇家啤酒屋 Hofbräuhaus München 皇家啤酒屋裡面約有三千五百個座位。 這家店已經營業了一百年以上，即使已經九點了，但裡面仍然有很多客人。 因為每個服務生要服務的人都太多了，幫我們點菜的服務生態度很差，我們稍微思考了一會兒他…",
+  "url": "https://www.marvinswift.com/life/2014/05/14/German-hofbrauhaus-munchen.html",
+  "date": "2014-05-14T16:29:00+08:00",
+  "word_count": 401
+ },
+ {
+  "slug": "travel-google-map",
+  "lang": "zh",
+  "title": "旅行，Google Map，Smart Phone",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel"
+  ],
+  "summary": "旅行，Google Map，** **Smart Phone** 出國旅行的方式、模式是一直隨著時間而變化的。寂寞星球、地球漫步的作者，當年只靠著地圖與語言，行遍世界。回來後出了一本書，而這一系列延續至今，成為旅遊書籍中的名星之一。2010…",
+  "url": "https://www.marvinswift.com/life/2014/05/13/travel-google-map.html",
+  "date": "2014-05-13T16:28:00+08:00",
+  "word_count": 828
+ },
+ {
+  "slug": "nds-pass-through",
+  "lang": "zh",
+  "title": "NDS 擦身設計",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "NDS 以日本大城市的擦身設計 在某些機緣下，現在我在日本工作，在去日本前，就一直很想玩魔物獵人這一款遊戲。從小時候，我就一直是任天堂遊戲的愛好者，沒想到這次的魔物獵人4竟然先出在3DS上，讓我可以一次嘗試裸眼3D加擦身通信再加上魔物獵人4…",
+  "url": "https://www.marvinswift.com/life/2014/01/04/nds-pass-through.html",
+  "date": "2014-01-04T14:45:00+08:00",
+  "word_count": 1035
+ },
+ {
+  "slug": "sheng-zheng-daily",
+  "lang": "zh",
+  "title": "深圳風土地方誌",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "深圳風土地方誌 深圳市就數據上來看，會是什麼情況呢？他在2010年的時候，常住人口為1000萬人， 其中70％左右為非深圳戶口，30％左右為深圳戶口。2010年年底，地鐵只有兩條，呈十字線，最北也只到少年宮而已，沒有到龍華，南方的兩個地鐵站…",
+  "url": "https://www.marvinswift.com/life/2013/07/18/sheng-zheng-daily.html",
+  "date": "2013-07-18T14:20:00+08:00",
+  "word_count": 971
+ },
+ {
+  "slug": "interview-at-mckinsey",
+  "lang": "zh",
+  "title": "我遇過最有趣的面試，在麥肯錫 McKinsey",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "2012年的春天，那時經過台大的活動中心，看到麥肯錫又要來二活做職涯介紹，決定再去聽一次。第一次聽麥肯錫是2010年的春天吧，那時候也是在社團活動時看到海報，而試著去聽一下顧問公司在幹什麼。 記得2010年的開場，是一個念法律的學姊。他簡單…",
+  "url": "https://www.marvinswift.com/life/2013/07/18/interview-at-mckinsey.html",
+  "date": "2013-07-18T10:41:00+08:00",
+  "word_count": 2172
+ },
+ {
+  "slug": "legendary-boss",
+  "lang": "zh",
+  "title": "傳奇的老闆娘",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "傳奇的老闆娘 在下龍灣的船上，遇到了一位職業生涯根本就是個傳奇的老闆娘。 他拿了一台Canon5D，帶了很多顆鏡頭。一個廣角的，一個大光圈的，還有一個帶有filter的。 這一看就知道財力十分雄厚呀，和他稍微聊了一下，知道這位老闆娘正在做海…",
+  "url": "https://www.marvinswift.com/life/2013/07/17/legendary-boss.html",
+  "date": "2013-07-17T14:44:00+08:00",
+  "word_count": 1191
+ },
+ {
+  "slug": "Austria-Vienna",
+  "lang": "zh",
+  "title": "奧地利-Aurtia Vienna (一)充滿曲線的建築-百水公寓",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel"
+  ],
+  "summary": "奧地利-Aurtia Vienna (一)充滿曲線的建築-百水公寓 維也納是旅程的最後一站，而前一站是捷克的Cesky Krumlov (大多人叫他CK)。在沒有安排這段交通的狀況下，我們是一早就去敲Shuttle bus的門，請他安排兩個…",
+  "url": "https://www.marvinswift.com/life/2013/06/30/Austria-Vienna.html",
+  "date": "2013-06-30T16:27:00+08:00",
+  "word_count": 1026
+ },
+ {
+  "slug": "Austria-Hellbrunn",
+  "lang": "zh",
+  "title": "奧地利-Aurtria 海爾布倫宮 美泉宮",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel"
+  ],
+  "summary": "奧地利\\-Aurtria 海爾布倫宮 美泉宮 No kangaroos in AUSTRIA 奧地利是沒有袋鼠的，有袋鼠的是澳洲。在奧地利的T恤地攤，你一定會看到這個招牌。不過在中文裡面，這兩個國家的發音差很多，所以不會搞錯的。 在薩爾斯堡…",
+  "url": "https://www.marvinswift.com/life/2013/06/23/Austria-Hellbrunn.html",
+  "date": "2013-06-23T16:25:00+08:00",
+  "word_count": 794
+ },
+ {
+  "slug": "Austria-Salzburg",
+  "lang": "zh",
+  "title": "奧地利-薩爾斯堡 Austria-Salzburg",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel"
+  ],
+  "summary": "奧地利-薩爾斯堡 Austria-Salzburg 奧地利的國旗 奧地利的國旗從上而下，由紅、白、紅3 個 平行相等的橫長方形相連。旗面正中是奧地國徽圖案。國旗的來源說法蠻多種的，這邊先使用維基百科上的說法。在西元一千多年的第五次十字軍東征…",
+  "url": "https://www.marvinswift.com/life/2013/06/15/Austria-Salzburg.html",
+  "date": "2013-06-15T16:24:00+08:00",
+  "word_count": 1474
+ },
+ {
+  "slug": "Austrie-Hallstatt",
+  "lang": "zh",
+  "title": "Austria- Hallstatt 哈爾施塔特",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel"
+  ],
+  "summary": "奧地利世界文化遺產Austria- Hallstatt 哈爾施塔特 薩爾斯古堡的「聖牛」 薩爾斯古堡從來沒有被敵人攻佔過，輸掉的幾次，都是自己投降，才被攻佔的。可以說是，只要薩爾斯古堡的門沒有自已打開，敵人就進不來。而薩爾斯堡的奶牛，也是來…",
+  "url": "https://www.marvinswift.com/life/2013/06/12/Austrie-Hallstatt.html",
+  "date": "2013-06-12T16:22:00+08:00",
+  "word_count": 1255
+ },
+ {
+  "slug": "Czech-Republic",
+  "lang": "en",
+  "title": "The Bone Church - Czech Republic (Contains Real Human Bone Photos, View with Caution)",
+  "category": "life",
+  "tags": [
+   "life",
+   "Czech-Republic",
+   "travel"
+  ],
+  "summary": "A visit to the famous Sedlec Ossuary in Kutná Hora, a church decorated with human bones. The article explores its history, artistic arrangements, and the legacy of those laid to rest there.",
+  "url": "https://www.marvinswift.com/en/life/Czech-Republic/",
+  "date": "2013-06-03T15:12:00+08:00",
+  "word_count": 288
+ },
+ {
+  "slug": "Czech-Republic",
+  "lang": "zh",
+  "title": "人骨教堂-Czech Republic(裡面真的有人骨的照片，不能接受請不要點開)",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "人骨教堂-Czech Republic(裡面真的有人骨的照片，不能接受請不要點開) 在上帝的寶座面前，貴族與平民都是一樣的。 人骨教堂在Kutna Hora小鎮，位置是布拉格東方，車程大約一個小時多左右。坐火車就可以到達了，這個鎮也不大，景…",
+  "url": "https://www.marvinswift.com/zh/life/Czech-Republic/",
+  "date": "2013-06-03T15:12:00+08:00",
+  "word_count": 1169
+ },
+ {
+  "slug": "Potsdam",
+  "lang": "zh",
+  "title": "波茲坦 Potsdam 德意志法律紀念碑與標錯的比例尺",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "波茲坦\\-Potsdam德意志法律紀念碑與標錯的比例尺 波茲坦離柏林不遠，坐DB一下就到了。 剛出Potsdam Hbf門口，你會遇到很多人和你推銷。 問你要不要租車，搭車，租腳踏車，這時候我們帥氣的說，不用「這一點點距離，我們走路就行了」…",
+  "url": "https://www.marvinswift.com/life/2013/06/02/Potsdam.html",
+  "date": "2013-06-02T15:05:00+08:00",
+  "word_count": 936
+ },
+ {
+  "slug": "dresden",
+  "lang": "zh",
+  "title": "Dresden 德勒斯登，典雅與現代風格並存的城市",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "Dresden德勒斯登，典雅與現代風格並存的城市 這一次路經德勒斯登，真的只能算是路過。從布拉格移動到柏林的中間，在德勒斯登停留二~三個小時。事實上很想多停留一些時間，不過旅行的時間總是不夠，能在德勒斯登停留的時間就是這麼短。 雖然手上的資…",
+  "url": "https://www.marvinswift.com/life/2013/05/26/dresden.html",
+  "date": "2013-05-26T15:03:00+08:00",
+  "word_count": 1058
+ },
+ {
+  "slug": "Sanxi-tai-yuan",
+  "lang": "zh",
+  "title": "中國-山西太原",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "中國-山西太原 在華南的時候可能太閒，所以被派去山西出差，而且是很長的出差，三十天。比較討厭的是移動日是在禮拜天。為了節省出差費，我們只能挑時段很差的飛機，為此，早上六點就要起床了，出差真的是個很花體力的事情呀。 二月底的華南，已經不冷了，…",
+  "url": "https://www.marvinswift.com/life/2013/05/05/Sanxi-tai-yuan.html",
+  "date": "2013-05-05T15:03:00+08:00",
+  "word_count": 1588
+ },
+ {
+  "slug": "beijing3",
+  "lang": "zh",
+  "title": "北京---(三)長城與明十三陵",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "北京---(三)長城與明十三陵 長城和明十三陵無法使用地鐵到達，必需搭公車或者加入當地旅遊團。我計算了一下旅遊的花費，發現參加旅行團不只是有團體票優惠而已，景點之間的交通也不會有問題，而且如果已經習慣中國風味的食物，參加當地旅行團是個好選擇…",
+  "url": "https://www.marvinswift.com/life/2013/05/05/beijing3.html",
+  "date": "2013-05-05T14:59:00+08:00",
+  "word_count": 2031
+ },
+ {
+  "slug": "beijing2",
+  "lang": "zh",
+  "title": "北京-(二)故宮皇城紫禁城",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "北京-(二)故宮皇城紫禁城 曾經，紫禁城，平民老百姓是不能進去的，皇城之內就像是另一個世界，老百性 對裡面只有猜測。紫禁城最外面的門，叫做「午門」。導遊在這邊也和大家解釋，雖然很多戲劇、影片，都有提到：「推出午門斬了」。這個午門是不是北京城…",
+  "url": "https://www.marvinswift.com/life/2013/05/05/beijing2.html",
+  "date": "2013-05-05T14:58:00+08:00",
+  "word_count": 1478
+ },
+ {
+  "slug": "beijing1",
+  "lang": "zh",
+  "title": "北京—(一)",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "北京—(一) 這次的北京行，並不是出差，而是用自己的假期去玩的。為什麼選擇北京呢？因為1、我台胞證 是有辦的，而且是多次進出簽證也辦好了。2、我領的津貼是要換成人民幣的，就算用剩，我還是可以回龍華用。3、我沒時間查旅程，但在北京，就算我沒查…",
+  "url": "https://www.marvinswift.com/life/2013/05/05/beijing1.html",
+  "date": "2013-05-05T14:52:00+08:00",
+  "word_count": 1470
+ },
+ {
+  "slug": "germany-berlin2",
+  "lang": "zh",
+  "title": "德國-柏林(二) 歷史遺跡 布蘭登堡門和猶太人被害紀念碑",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "德國\\-柏林(二) 歷史遺跡 布蘭登堡門和猶太人被害紀念碑 繼前篇網誌所說的，柏林擁有許多有歷史的建築。這一篇就說兩個和二戰高度相關的建築，一個是布蘭登堡門，另一個是猶太人被害紀念碑，雖說都和二戰有關，但現在的布蘭登堡門建於1700年代後期…",
+  "url": "https://www.marvinswift.com/life/2013/05/02/germany-berlin2.html",
+  "date": "2013-05-02T14:48:00+08:00",
+  "word_count": 1360
+ },
+ {
+  "slug": "germany-berlin1",
+  "lang": "zh",
+  "title": "德國-柏林(一) 看見冷戰的眼淚",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "德國\\-柏林(一) 看見冷戰的眼淚 在WWII期間，整個歐洲是打過來打過去，成千上萬的人犧牲，集中營一個又一個的建立。為了讓大家記得這些歷史，德國的柏林仍保有許多有記念價值的建築物、紀念碑。 當二戰結束，西德歸英、美、法共同管轄，東德歸前蘇…",
+  "url": "https://www.marvinswift.com/life/2013/04/28/germany-berlin1.html",
+  "date": "2013-04-28T14:47:00+08:00",
+  "word_count": 742
+ },
+ {
+  "slug": "see-dentist-at-singapore",
+  "lang": "zh",
+  "title": "在新加坡看牙醫",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "在新加坡看牙醫, Went to see the dentist in Singapore** 公司本來就有補助120sgd/yr的牙醫補助 最近牙齒感覺怪怪的，就跑去檢查一下 牙醫也只是用反射鏡看，再加一個局部xrd(應該只有五顆牙的間距…",
+  "url": "https://www.marvinswift.com/life/2013/04/28/see-dentist-at-singapore.html",
+  "date": "2013-04-28T10:40:00+08:00",
+  "word_count": 452
+ },
+ {
+  "slug": "cheng-du-daily",
+  "lang": "en",
+  "title": "Chengdu, China - The Land of Abundance",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel",
+   "chengdu"
+  ],
+  "summary": "A travel journal about Chengdu, written in 2011, covering its culture, food, local customs, and unique lifestyle. The post highlights its bustling train stations, beautiful bamboo paths, spicy cuisine, and traditional tea houses.",
+  "url": "https://www.marvinswift.com/en/life/cheng-du-daily/",
+  "date": "2013-04-06T14:26:00+08:00",
+  "word_count": 465
+ },
+ {
+  "slug": "cheng-du-daily",
+  "lang": "zh",
+  "title": "中國-成都 天府之國",
+  "category": "life",
+  "tags": [
+   "life",
+   "chengdu"
+  ],
+  "summary": "中國-成都 天府之國 此文章寫於2011年，一切現象請以2011年為準。 成都火車站-人潮永遠不停 在武候祠裡面的一段竹林，是我在成都最喜歡的一段路 成都的竹林，我很喜歡這一段道路 就因為種種原因，我的出差延到 了六月中。六月的成都氣候實在…",
+  "url": "https://www.marvinswift.com/zh/life/cheng-du-daily/",
+  "date": "2013-04-06T14:26:00+08:00",
+  "word_count": 1611
+ },
+ {
+  "slug": "local-language-daily",
+  "lang": "zh",
+  "title": "中國各地方的方言觀察",
+  "category": "life",
+  "tags": [
+   "life"
+  ],
+  "summary": "中國各地方的方言 台灣的方言要算閩南語、客家語、還是原住民語？那是政治人物的問題，對我來說不同的族群使用的語言都可以叫方言，既然我們包含了許多不同的族群，那去定義某種方言為「正統」方言，好像沒什麼正當性。 廣東省、香港、澳門這些地方都是講粵…",
+  "url": "https://www.marvinswift.com/life/2013/04/04/local-language-daily.html",
+  "date": "2013-04-04T14:24:00+08:00",
+  "word_count": 1447
+ },
+ {
+  "slug": "beer-market-at-singapore",
+  "lang": "zh",
+  "title": "啤酒市場，啤酒也有時價 at Singapore",
+  "category": "life",
+  "tags": [
+   "life",
+   "travel",
+   "singapore"
+  ],
+  "summary": "啤酒市場，啤酒也有時價。 一般在吃海鮮的地方，最可怕的就是看到時價的靠示牌。 不過我倒是在新加坡這邊看到啤酒也有所謂的時價。 一進入這家 pub，他是不會給你啤酒的menu的。 因為啤酒是沒有價格的「都是時價。 電視牆上會放上各種啤酒的價格…",
+  "url": "https://www.marvinswift.com/life/2013/04/02/beer-market-at-singapore.html",
+  "date": "2013-04-02T10:37:00+08:00",
+  "word_count": 217
+ }
+]
