@@ -1,0 +1,48 @@
+name: Build app API
+
+on:
+  push:
+    branches: [main]
+    paths:
+      # 只有這些來源改變時才需要重新產生 api/v1/**：
+      # - 文章原始檔本身
+      # - YouTube 資料（videos.json 的資料來源）
+      # - 這支 generator 腳本自己
+      # 注意：故意不把 api/** 放進這個 paths 清單。這支 workflow 自己會
+      # push 一個更新 api/v1/** 的 commit 回 main；雖然 GitHub 預設
+      # github-actions[bot] 的 push 本來就不會觸發其他 workflow（避免
+      # 無限迴圈），但即使哪天這個預設行為改變，只要 api/** 不在 paths
+      # 清單裡，這支 workflow 的自動 commit 也不會再把自己重新觸發一次。
+      - "_posts/**"
+      - "_data/youtube.json"
+      - ".github/scripts/build_app_api.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: app-api
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build app API JSON
+        run: python3 .github/scripts/build_app_api.py
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- api/v1; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add api/v1
+          git commit -m "Update app API JSON"
+          git pull --rebase origin main
+          git push origin main
