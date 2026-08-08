@@ -1,15 +1,24 @@
 ---
 layout: single
 title: Privacy Policy
-description: "Privacy policy for Marvin Builds tools on marvinswift.com, covering the TikTok publishing workflow, OAuth tokens, analytics, and contact details."
+description: "Privacy policies for Marvin Lin's mobile apps and for the Marvin Builds tools on marvinswift.com, covering the TikTok publishing workflow, OAuth tokens, analytics, and contact details."
 permalink: /privacy/
 lang: en
 author_profile: true
 share: false
 comments: false
 toc: false
-last_modified_at: 2026-06-22
+last_modified_at: 2026-08-08
 ---
+
+Everything I publish — the apps and this website — is built and operated by me, Marvin Lin, an individual developer in Taiwan. Each app has its own policy below, because each one collects different things. Questions about any of them: [{{ site.email }}](mailto:{{ site.email }}).
+
+## App privacy policies
+
+{% for entry in site.data.apps %}{% assign app = entry[1] %}- **{{ app.name }}**{% if app.platforms %} ({{ app.platforms | join: ", " }}){% endif %} — [English](/privacy/{{ entry[0] }}/) · [繁體中文](/privacy/{{ entry[0] }}/zh/)
+{% endfor %}
+
+## Website and Marvin Builds tools
 
 This Privacy Policy explains how Marvin Builds tools and integrations operated by Marvin Lin through marvinswift.com handle information, including the TikTok publishing workflow used for the MarvinBuildsAI account.
 

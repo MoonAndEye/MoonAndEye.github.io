@@ -10,7 +10,16 @@
   - 文章依 /zh/、/en/ 前綴互換，只在對應文章存在時輸出。
 {%- endcomment -%}
 {%- unless page.canonical_url -%}
-{%- if page.url == '/' or page.url == '/zh/' or page.url == '/en/' -%}
+{%- if page.alt_lang_url and page.lang -%}
+  {%- comment -%} 頁面自己指名對應語系（例如 /privacy/<app>/ ↔ /privacy/<app>/zh/） {%- endcomment -%}
+  {%- if page.lang == 'zh' -%}
+<link rel="alternate" hreflang="zh-Hant" href="{{ page.url | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ page.alt_lang_url | absolute_url }}">
+  {%- else -%}
+<link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
+<link rel="alternate" hreflang="zh-Hant" href="{{ page.alt_lang_url | absolute_url }}">
+  {%- endif -%}
+{%- elsif page.url == '/' or page.url == '/zh/' or page.url == '/en/' -%}
 <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
 <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
 <link rel="alternate" hreflang="zh-Hant" href="{{ '/zh/' | absolute_url }}">
