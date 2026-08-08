@@ -2,7 +2,7 @@
  "slug": "agent-build-log",
  "title_zh": "Agent Build Log",
  "title_en": "Agent Build Log",
- "episode_count": 23,
+ "episode_count": 24,
  "episodes": [
   {
    "episode": 1,
@@ -1014,6 +1014,50 @@
     "word_count": 357,
     "reading_minutes": 2,
     "source_path": "_posts/programming/en/2026-08-06-agent-build-log-episode-023.md"
+   }
+  },
+  {
+   "episode": 24,
+   "slug": "agent-build-log-episode-024",
+   "zh": {
+    "slug": "agent-build-log-episode-024",
+    "title": "Agent Build Log — Episode 024",
+    "lang": "zh",
+    "date": "2026-08-08T21:32:38+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "模型單次回應速度不等於 Agent 完成整個任務的速度，真正重要的是完成任務需要多少步。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-024/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-024.png",
+    "content": "今天，我遇到一個和原本直覺完全相反的結果。\n\n![Agent Build Log Episode 024：比較 Sol、Terra 和 Luna 完成 Agent 任務的時間](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-024.png)\n\n如果只看 LLM 本身，我原本會認為：\n\n參數量比較大的模型，回應通常會比較慢。\n\n參數量比較小的模型，回應通常會比較快。\n\n所以如果只是回答一個問題，我原本預期速度大概會是：\n\nLuna 最快，Terra 居中，Sol 最慢。\n\n換成 Agent 任務，我原本也有一樣的假設。\n\n我以為完成整個任務的時間，應該也是 Luna 最快，接著 Terra，最後才是 Sol。\n\n但今天實際跑同一個任務時，結果完全不是這樣。\n\n這個任務主要是拿來 tune tool calls 和最後的輸出。\n\n三個模型使用同一套 Agent、同一組 tools，也做同一件事。\n\n結果大概是：\n\nSol：5 分鐘左右。\n\nTerra：8 分鐘左右。\n\nLuna：14 分鐘左右。\n\nLuna 完成這個任務的時間，接近 Sol 的三倍。\n\n更重要的是，Luna 最後還沒有把任務做好。\n\n反而是 Sol 和 Terra，都有把事情正確完成。\n\n這讓我重新理解一件事：\n\n模型本身的單次回應速度，不能直接推論 Agent 完成整個任務的速度。\n\nAgent 的總時間，不只取決於每一次 inference 有多快。\n\n它還取決於模型怎麼規劃、呼叫多少次 tools、會不會重複確認、會不會走錯路，以及能不能在比較少的步驟裡把任務完成。\n\n一個單次回應比較快的模型，如果需要更多輪 tool calls，或是在過程中走了更多不必要的路，最後反而可能花更久。\n\n這次的結果也讓模型選擇變得更有意思。\n\n如果只看成本，我可以選 Terra。\n\n它可以把事情做對，而且比 Sol 便宜一些。\n\n但它花的時間比較久。\n\nSol 則是在這個任務上最快完成，而且結果也是正確的，只是成本會再高一點。\n\n以前我比較容易把模型選擇想成：\n\n更大的模型 = 更慢、更貴。\n\n更小的模型 = 更快、更便宜。\n\n但在 Agent 裡，真正重要的可能不是單次 inference 的速度。\n\n而是：\n\n這個模型到底需要多少步，才能把事情做完。\n\n對我現在正在做的客製化 Agent 來說，這是一個很重要的發現。\n\n因為之後選模型時，我不能只看 token price 或 response latency。\n\n我還要看整個任務的 completion time。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 683,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-08-08-agent-build-log-episode-024.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-024",
+    "title": "Agent Build Log — Episode 024",
+    "lang": "en",
+    "date": "2026-08-08T21:32:39+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Why model response latency does not predict how quickly an Agent will complete an entire task.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-024/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-024.png",
+    "content": "Today, I got a result that was completely opposite to what I expected.\n\n![Agent Build Log Episode 024: comparing Agent task completion time across Sol, Terra, and Luna](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-024.png)\n\nIf I only look at the LLM itself, I would normally assume:\n\nModels with more parameters tend to respond more slowly.\n\nModels with fewer parameters tend to respond more quickly.\n\nSo if the task were simply answering one question, I would expect the speed order to be:\n\nLuna fastest, Terra in the middle, and Sol slowest.\n\nI had the same assumption for Agent tasks.\n\nI expected the total task completion time to follow the same order: Luna first, then Terra, and Sol last.\n\nBut when I ran the same task today, the result was completely different.\n\nThis task was mainly used to tune tool calls and the final output.\n\nAll three models used the same Agent, the same tools, and performed the same task.\n\nThe results were roughly:\n\nSol: around 5 minutes.\n\nTerra: around 8 minutes.\n\nLuna: around 14 minutes.\n\nLuna took almost three times as long as Sol to complete the task.\n\nMore importantly, Luna did not complete the task correctly.\n\nSol and Terra did.\n\nThat made me rethink something:\n\nThe response speed of the model itself does not directly tell you how fast an Agent will complete an entire task.\n\nThe total Agent execution time depends on more than how fast each inference is.\n\nIt also depends on how the model plans, how many tool calls it makes, whether it repeatedly checks the same things, whether it takes wrong turns, and whether it can finish the task in fewer steps.\n\nA model with faster individual responses can still take longer overall if it needs more rounds of tool calls or follows more unnecessary paths.\n\nThis result also makes model selection more interesting.\n\nIf I only care about cost, I can choose Terra.\n\nIt completes the task correctly and is cheaper than Sol.\n\nBut it takes longer.\n\nSol completed this task the fastest and also produced the correct result, but it costs a bit more.\n\nI used to think about model selection like this:\n\nBigger model = slower and more expensive.\n\nSmaller model = faster and cheaper.\n\nBut with Agents, the most important thing may not be the speed of a single inference.\n\nIt may be:\n\nHow many steps does this model need to actually finish the task?\n\nFor the custom Agent I am building, this is an important discovery.\n\nWhen choosing a model from now on, I cannot look only at token price or response latency.\n\nI also need to look at the completion time of the entire task.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 424,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/en/2026-08-08-agent-build-log-episode-024.md"
    }
   }
  ]

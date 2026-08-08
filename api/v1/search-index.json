@@ -1,5 +1,31 @@
 [
  {
+  "slug": "agent-build-log-episode-024",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 024",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Why model response latency does not predict how quickly an Agent will complete an entire task.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-024/",
+  "date": "2026-08-08T21:32:39+08:00",
+  "word_count": 424
+ },
+ {
+  "slug": "agent-build-log-episode-024",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 024",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "模型單次回應速度不等於 Agent 完成整個任務的速度，真正重要的是完成任務需要多少步。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-024/",
+  "date": "2026-08-08T21:32:38+08:00",
+  "word_count": 683
+ },
+ {
   "slug": "agent-build-log-episode-023",
   "lang": "en",
   "title": "Agent Build Log — Episode 023",

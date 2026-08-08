@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-024",
+  "title": "Agent Build Log — Episode 024",
+  "lang": "en",
+  "date": "2026-08-08T21:32:39+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Why model response latency does not predict how quickly an Agent will complete an entire task.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-024/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-024.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 424,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-08-08-agent-build-log-episode-024.md"
+ },
+ {
   "slug": "agent-build-log-episode-023",
   "title": "Agent Build Log — Episode 023",
   "lang": "en",
