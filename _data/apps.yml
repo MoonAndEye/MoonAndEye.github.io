@@ -1,0 +1,45 @@
+# 我開發的 app 清單——隱私政策頁的唯一資料來源。
+#
+# 新增一個 app 要做的事：
+#   1. 在這裡加一筆（key = 網址用的 slug）
+#   2. 複製 privacy/marvinsight/ 兩個頁面（en + zh），改 permalink 與 app 欄位
+#   3. /privacy/ 的 app 清單會自動長出來，不用手動維護
+#
+# services 對應 _data/privacy_services.yml 的 key；每加一個 SDK 就在那邊
+# 定義一次，之後所有 app 共用同一份說明，中英文都不會走鐘。
+
+marvinsight:
+  name: "Marv[in]sight"
+  bundle_id: "com.marvinswift.marvinsight"
+  effective: 2026-08-08
+  platforms:
+    - Android
+  # app 內用到、會把資料送出裝置的第三方服務
+  services:
+    - firebase_analytics
+    - firebase_crashlytics
+    - firebase_remote_config
+  # 內嵌的第三方內容（播放器、地圖之類）
+  embeds:
+    - youtube
+  # 這個 app 會連線的自家網域（公開內容 API，不需登入、不送使用者資料）
+  content_api: "www.marvinswift.com"
+  # Android 的 Google 廣告 ID：firebase_analytics 會自動帶入 AD_ID 權限。
+  # 若之後在 manifest 用 tools:node="remove" 拿掉，記得把這裡改成 false。
+  ad_id: true
+  account: false      # 需要註冊/登入嗎
+  ads: false          # 有廣告嗎
+  purchases: false    # 有內購嗎
+  children: false     # 是否以兒童為主要對象
+  # 只留在裝置上、我完全讀不到的資料
+  local_data:
+    en:
+      - "Bookmarked articles"
+      - "Which articles you have opened (read state)"
+      - "A cached copy of articles and video lists, so the app works offline"
+    zh:
+      - "收藏的文章"
+      - "你開啟過哪些文章（已讀狀態）"
+      - "文章與影片清單的離線快取"
+  stores:
+    play: "https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight"

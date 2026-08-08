@@ -1,0 +1,55 @@
+# 隱私政策用的第三方服務說明（中英雙語），所有 app 共用。
+#
+# 每個 key 描述一個 SDK 實際送出什麼、為什麼送、由誰處理。
+# _data/apps.yml 的 services 欄位引用這裡的 key。
+#
+# 新增服務時務必照實描述——這份文字會直接對應到 Google Play 的
+# 「資料安全」表單與 App Store 的隱私標籤，寫得比實際多或少都是問題。
+
+firebase_analytics:
+  provider: "Google"
+  provider_policy: "https://firebase.google.com/support/privacy"
+  en:
+    name: "Google Analytics for Firebase"
+    data: "Automatically collected app usage events (app opens, screens viewed, session length), device model, operating system version, app version, language, and the country derived from your IP address, together with a randomly generated app instance identifier."
+    purpose: "To see which content people actually read, so I know what to write next."
+  zh:
+    name: "Google Analytics for Firebase"
+    data: "自動收集的使用行為事件（開啟 app、瀏覽了哪些畫面、使用時間長度）、裝置型號、作業系統版本、app 版本、語系，以及由 IP 位址推得的國家，並附帶一組隨機產生的 app 執行個體識別碼。"
+    purpose: "了解哪些內容真的有人讀，決定接下來要寫什麼。"
+
+firebase_crashlytics:
+  provider: "Google"
+  provider_policy: "https://firebase.google.com/support/privacy"
+  en:
+    name: "Firebase Crashlytics"
+    data: "Crash reports containing the error and stack trace, device model, operating system version, app version, and the device state at the moment of the crash (such as available memory). Crash reporting is switched off in development builds."
+    purpose: "To find and fix crashes."
+  zh:
+    name: "Firebase Crashlytics"
+    data: "當機報告，內含錯誤訊息與呼叫堆疊、裝置型號、作業系統版本、app 版本，以及當機當下的裝置狀態（例如可用記憶體）。開發版本不會回報當機。"
+    purpose: "找出並修掉當機。"
+
+firebase_remote_config:
+  provider: "Google"
+  provider_policy: "https://firebase.google.com/support/privacy"
+  en:
+    name: "Firebase Remote Config"
+    data: "The app asks Google's servers for configuration values (for example, whether a version is required to update). The request includes the app instance identifier, app version, and device information."
+    purpose: "To flip settings such as an update notice without shipping a new version."
+  zh:
+    name: "Firebase Remote Config"
+    data: "app 會向 Google 伺服器索取設定值（例如某個版本是否需要強制更新）。這個請求會帶上 app 執行個體識別碼、app 版本與裝置資訊。"
+    purpose: "不用發新版就能調整設定，例如公告更新提示。"
+
+youtube:
+  provider: "Google"
+  provider_policy: "https://policies.google.com/privacy"
+  en:
+    name: "YouTube embedded player"
+    data: "When you play a video inside the app, the video is streamed by YouTube. YouTube receives the request directly and may set its own cookies or identifiers, exactly as it would in a browser."
+    purpose: "To play my videos without leaving the app."
+  zh:
+    name: "YouTube 內嵌播放器"
+    data: "在 app 內播放影片時，影片由 YouTube 提供串流。YouTube 會直接收到該請求，並可能設定自己的 cookie 或識別碼，行為與在瀏覽器觀看相同。"
+    purpose: "不離開 app 就能看我的影片。"
