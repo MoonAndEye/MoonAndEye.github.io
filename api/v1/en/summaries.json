@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-025",
+  "title": "Agent Build Log — Episode 025",
+  "lang": "en",
+  "date": "2026-08-09T23:55:54+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Building Project Scaffold as a Signature Ability for quickly creating clean, testable iOS and Android projects.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-025/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-025.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 256,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-09-agent-build-log-episode-025.md"
+ },
+ {
   "slug": "agent-build-log-episode-024",
   "title": "Agent Build Log — Episode 024",
   "lang": "en",

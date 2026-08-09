@@ -2,7 +2,7 @@
  "slug": "agent-build-log",
  "title_zh": "Agent Build Log",
  "title_en": "Agent Build Log",
- "episode_count": 24,
+ "episode_count": 25,
  "episodes": [
   {
    "episode": 1,
@@ -1058,6 +1058,50 @@
     "word_count": 424,
     "reading_minutes": 2,
     "source_path": "_posts/programming/en/2026-08-08-agent-build-log-episode-024.md"
+   }
+  },
+  {
+   "episode": 25,
+   "slug": "agent-build-log-episode-025",
+   "zh": {
+    "slug": "agent-build-log-episode-025",
+    "title": "Agent Build Log — Episode 025",
+    "lang": "zh",
+    "date": "2026-08-09T23:55:53+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "打造 Project Scaffold 專有技，快速建立乾淨、可建置且可測試的 iOS 或 Android 專案。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-025/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-025.png",
+    "content": "今天，我做了另一個 Agent 的「專有技」。\n\n![Agent Build Log Episode 025：iOS 與 Android 的 Project Scaffold](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-025.png)\n\n這次是 Project Scaffold。\n\n它的目標很單純：快速建立一個可以直接拿來測試的 iOS 或 Android App project。\n\n我不需要它一開始就做成完整產品。\n\n我想要做的，能不能在很短的時間內，產出一個結構乾淨、可以 build、可以測試，而且後面方便繼續加功能的專案。這樣 agent 在疊加\n\n第一版我想要的內容大概是：\n\nApp 啟動後先顯示一個簡單的 splash / snapshot view。\n\n大約 1.5 秒之後，自動進到一個具備基本登入 UI 的頁面。\n\n專案裡也要先放好開發時常用的基礎 libraries 和基本結構。\n\n但對我來說，有三個東西不是 optional。\n\nLint。\n\nFormatter。\n\nUnit Test。\n\n這三個我會直接當成 scaffold 的 must-have。\n\n建立專案之後，我可以直接開始讓 agent 測 UI、測 Agent workflow、測新的 capability，而不是每次都先花時間處理專案初始化。甚致是讓 agent 自己用這個 project 開發\n\n所以這個 Project Scaffold 並不是要幫我完成一個 App。\n\n它比較像是幫我快速準備一個乾淨的實驗場。\n\niOS 或 Android 都一樣。\n\n建立、啟動、登入頁面、lint、format、test。\n\n這些基礎先準備好。\n\n接下來，我才可以把時間花在開發更複雜的能力。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 368,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-08-09-agent-build-log-episode-025.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-025",
+    "title": "Agent Build Log — Episode 025",
+    "lang": "en",
+    "date": "2026-08-09T23:55:54+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Building Project Scaffold as a Signature Ability for quickly creating clean, testable iOS and Android projects.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-025/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-025.png",
+    "content": "Today, I built another “Signature Ability” for the Agent.\n\n![Agent Build Log Episode 025: Project Scaffold for iOS and Android](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-025.png)\n\nThis time, it is Project Scaffold.\n\nThe goal is simple: quickly create a basic iOS or Android App project that I can immediately use for testing.\n\nI do not need it to be a complete product from the beginning.\n\nWhat I want is a clean project that can be generated quickly, can build, can be tested, and is easy to extend later, so the Agent can keep building on top of it.\n\nFor the first version, I want something like this:\n\nWhen the App launches, it first shows a simple splash / snapshot view.\n\nAfter about 1.5 seconds, it automatically moves to a basic login UI.\n\nThe project should also come with the common libraries and basic structure needed for development.\n\nBut for me, three things are not optional.\n\nLint.\n\nFormatter.\n\nUnit Test.\n\nThese are must-haves for the scaffold.\n\nOnce the project is created, I can immediately let the Agent test the UI, test Agent workflows, and test new capabilities, instead of spending time setting up a new project every time.\n\nI can even let the Agent use this project to develop features by itself.\n\nSo Project Scaffold is not meant to build a complete App for me.\n\nIt is more like a clean playground that I can prepare quickly.\n\nThe same idea applies to both iOS and Android.\n\nCreate the project, launch it, provide a login screen, lint, format, and test.\n\nGet these foundations ready first.\n\nThen I can spend my time building more complex capabilities.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 256,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-08-09-agent-build-log-episode-025.md"
    }
   }
  ]

@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-025",
+  "title": "Agent Build Log — Episode 025",
+  "lang": "zh",
+  "date": "2026-08-09T23:55:53+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "打造 Project Scaffold 專有技，快速建立乾淨、可建置且可測試的 iOS 或 Android 專案。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-025/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-025.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 368,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-09-agent-build-log-episode-025.md"
+ },
+ {
   "slug": "agent-build-log-episode-024",
   "title": "Agent Build Log — Episode 024",
   "lang": "zh",
