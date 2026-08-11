@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-026",
+  "title": "Agent Build Log — Episode 026",
+  "lang": "zh",
+  "date": "2026-08-11T21:29:08+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "打造 Bug Blame，從 Jira bug 追查相關程式碼、commit，以及最適合參與調查的開發者。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-026/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-026.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 476,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-08-11-agent-build-log-episode-026.md"
+ },
+ {
   "slug": "agent-build-log-episode-025",
   "title": "Agent Build Log — Episode 025",
   "lang": "zh",

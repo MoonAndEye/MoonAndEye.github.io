@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-026",
+  "title": "Agent Build Log — Episode 026",
+  "lang": "en",
+  "date": "2026-08-11T21:29:09+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Building Bug Blame to trace a Jira bug through related code, commits, and the developers most relevant to the investigation.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-026/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-026.png",
+  "content": "Today, I built another “Signature Ability” for the Agent.\n\n![Agent Build Log Episode 026: Bug Blame traces Jira bugs through code, commits, and developers](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-026.png)\n\nThis one is called Bug Blame.\n\nThe name comes from git blame.\n\nIt starts with a Jira ticket.\n\nThe Agent first understands the bug described in the ticket, along with the features and areas of code that may be affected.\n\nThen, using the repo’s commit history and git blame, it traces backward to find the changes most relevant to the issue.\n\nFinally, it maps those commits to the actual developers.\n\nSo the flow looks roughly like this:\n\nJira ticket → related code → git blame → commit → developer\n\nI call it Bug Blame because git blame is one of the key signals behind the capability.\n\nBut the goal is not simply to answer, “Who wrote this bug?”\n\ngit blame can tell me who last modified a particular line of code, but that does not prove that person caused the bug.\n\nSo I want the final result to have clear levels of confidence.\n\nIf the connection between a commit and the bug is strong, the Agent can point to the most relevant developer.\n\nIf multiple developers have modified the feature over time, it should list the potentially related developers and the commits associated with each of them.\n\nIf there is not enough evidence, it should simply say, “Unable to determine.”\n\nI do not want the Agent to force an answer just for the sake of having one. I want it to reflect the real situation.\n\nWhat this Signature Ability is really trying to solve is this: when a Jira bug ticket appears, I want to quickly find out:\n\nHow this part of the feature was changed over time.\n\nWhich commits are most likely related to the issue.\n\nAnd which developers should be involved in the next investigation.\n\nSo even though it is called Bug Blame,\n\nwhat I really want is a fast way to find the development history and the people most relevant to a bug.\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 325,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-08-11-agent-build-log-episode-026.md"
+ },
+ {
   "slug": "agent-build-log-episode-025",
   "title": "Agent Build Log — Episode 025",
   "lang": "en",

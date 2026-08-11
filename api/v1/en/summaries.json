@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-026",
+  "title": "Agent Build Log — Episode 026",
+  "lang": "en",
+  "date": "2026-08-11T21:29:09+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Building Bug Blame to trace a Jira bug through related code, commits, and the developers most relevant to the investigation.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-026/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-026.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 325,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-08-11-agent-build-log-episode-026.md"
+ },
+ {
   "slug": "agent-build-log-episode-025",
   "title": "Agent Build Log — Episode 025",
   "lang": "en",
