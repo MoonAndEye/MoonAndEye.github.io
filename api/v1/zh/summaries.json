@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-028",
+  "title": "Agent Build Log — Episode 028",
+  "lang": "zh",
+  "date": "2026-08-12T23:39:31+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "使用 Appium 補上 iOS Web Login 的操作缺口，讓 Agent 能繼續完成整個驗收流程。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-028/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-028.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 480,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-08-12-agent-build-log-episode-028.md"
+ },
+ {
   "slug": "agent-build-log-episode-027",
   "title": "Agent Build Log — Episode 027",
   "lang": "zh",

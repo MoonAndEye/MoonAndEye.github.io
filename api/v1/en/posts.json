@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-028",
+  "title": "Agent Build Log — Episode 028",
+  "lang": "en",
+  "date": "2026-08-12T23:39:32+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Using Appium to bridge the iOS web-login gap so the Agent can continue the full acceptance workflow.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-028/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-028.png",
+  "content": "Today, I continued working on the problem left over from the previous episode.\n\n![Agent Build Log Episode 028: Appium bridges the iOS web-login gap in the acceptance workflow](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-028.png)\n\nThere is still one troublesome gap in the iOS acceptance workflow.\n\nIf the App uses native UI, the Agent can use XcodeBuildMCP to operate the Simulator, tap buttons, navigate between screens, and verify the App based on the spec in the Jira ticket.\n\nBut as soon as the login flow moves to a web page, it gets stuck.\n\nXcodeBuildMCP can bring the Agent to the login screen, but it cannot directly interact with the DOM elements inside the webpage.\n\nIn other words:\n\nThe Agent can open the login page.\n\nBut it cannot complete the login by itself.\n\nAnd if it cannot get past login, the rest of the acceptance workflow cannot even begin.\n\nSo today, I started looking for another approach.\n\nWhat I found was Appium.\n\nI discovered that Appium can access the DOM elements on the iOS web login page, which means the Agent has a way to handle the web login flow that XcodeBuildMCP cannot.\n\nThat fills the missing piece in the current acceptance workflow.\n\nNative App UI can still be handled by XcodeBuildMCP.\n\nWhen the flow reaches Web Login, the Agent switches to Appium, finds the corresponding input fields and buttons, and completes the login.\n\nAfter login, it returns to the App.\n\nAt that point, the Agent can finally reach the target tab or ViewController that I actually want to verify.\n\nFrom there, it can continue operating the App according to the Jira ticket spec and eventually generate the acceptance report.\n\nSo what I solved today may look like just a “login problem.”\n\nBut for the Acceptance capability, it was actually a very important missing piece.\n\nIf the Agent is going to perform real App acceptance testing, it cannot only know how to operate one type of UI.\n\nIt needs to be able to move through the entire flow:\n\nApp → Web Login → App → Target Page → Acceptance\n\nIn the previous episode, the Agent reached the login page and got stuck.\n\nToday, I used Appium to let the Agent keep moving forward.\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 350,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-08-12-agent-build-log-episode-028.md"
+ },
+ {
   "slug": "agent-build-log-episode-027",
   "title": "Agent Build Log — Episode 027",
   "lang": "en",

@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-028",
+  "title": "Agent Build Log — Episode 028",
+  "lang": "en",
+  "date": "2026-08-12T23:39:32+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Using Appium to bridge the iOS web-login gap so the Agent can continue the full acceptance workflow.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-028/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-028.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 350,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-08-12-agent-build-log-episode-028.md"
+ },
+ {
   "slug": "agent-build-log-episode-027",
   "title": "Agent Build Log — Episode 027",
   "lang": "en",
