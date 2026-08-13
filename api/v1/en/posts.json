@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-029",
+  "title": "Agent Build Log — Episode 029",
+  "lang": "en",
+  "date": "2026-08-13T23:43:33+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Exploring the Pi Agent extension ecosystem before rebuilding MCP integration, permissions, and Desktop GUI capabilities.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-029/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-029.png",
+  "content": "Today, I started looking more seriously at the Pi Agent extension ecosystem.\n\n![Agent Build Log Episode 029: exploring the Pi Agent extension ecosystem](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-029.png)\n\nUntil now, I had focused mostly on the Agent core, its tools, and the capabilities I was building myself.\n\nBut I realized that many things I planned to build already exist as extensions.\n\nThe first is MCP.\n\nWith an MCP adapter, Pi Agent can connect to existing MCP servers. Since my Agent already depends on tools like DKS, Jira, and XcodeBuildMCP, this means I do not need to rebuild connection handling, tool discovery, and invocation from scratch.\n\nThe second is the Approval / Permission System.\n\nOnce an Agent can run shell commands, modify files, or call MCP tools, I need rules for what can run automatically, what should ask first, and what should be blocked.\n\nPi extensions already provide solutions for this.\n\nThe third is Desktop GUI.\n\nProjects like Pi GUI already provide sessions, workspaces, tool execution views, and other desktop interactions.\n\nThat made me rethink what I really need to build myself.\n\nI am not just using Pi Agent anymore.\n\nI am building on top of an ecosystem.\n\nSo instead of rewriting everything, I can reuse proven extensions and spend more time on what actually makes my Agent different:\n\nAcceptance, Bug Blame, Spec Diff, and the capabilities built around my own workflows.\n\nMy mindset used to be:\n\nIf something is missing, build it.\n\nNow it is:\n\nCheck the ecosystem first.\n\nThen build only what truly belongs to this Agent.\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 242,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-13-agent-build-log-episode-029.md"
+ },
+ {
   "slug": "agent-build-log-episode-028",
   "title": "Agent Build Log — Episode 028",
   "lang": "en",

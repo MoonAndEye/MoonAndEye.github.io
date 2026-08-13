@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-029",
+  "title": "Agent Build Log — Episode 029",
+  "lang": "en",
+  "date": "2026-08-13T23:43:33+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Exploring the Pi Agent extension ecosystem before rebuilding MCP integration, permissions, and Desktop GUI capabilities.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-029/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-029.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 242,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-13-agent-build-log-episode-029.md"
+ },
+ {
   "slug": "agent-build-log-episode-028",
   "title": "Agent Build Log — Episode 028",
   "lang": "en",
