@@ -1,5 +1,31 @@
 [
  {
+  "slug": "agent-build-log-episode-030",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 030",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started building an OpenClaw-style Agent Gateway, then removed it after realizing the Desktop GUI made it unnecessary for now.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-030/",
+  "date": "2026-08-16T00:32:16+08:00",
+  "word_count": 111
+ },
+ {
+  "slug": "agent-build-log-episode-030",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 030",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "原本開始打造類似 OpenClaw 的 Agent Gateway，後來發現 Desktop GUI 已經讓它暫時沒有必要。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-030/",
+  "date": "2026-08-16T00:32:15+08:00",
+  "word_count": 162
+ },
+ {
   "slug": "agent-build-log-episode-029",
   "lang": "en",
   "title": "Agent Build Log — Episode 029",

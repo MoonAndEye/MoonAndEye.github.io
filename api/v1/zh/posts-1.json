@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-030",
+  "title": "Agent Build Log — Episode 030",
+  "lang": "zh",
+  "date": "2026-08-16T00:32:15+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "原本開始打造類似 OpenClaw 的 Agent Gateway，後來發現 Desktop GUI 已經讓它暫時沒有必要。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-030/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-030.png",
+  "content": "今天的任務不多，一開始是想做一個 agent gateway。\n\n![Agent Build Log Episode 030：移除 Agent Gateway](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-030.png)\n\n就像 Openclaw 有一個 gateway，目的是讓 agent 只有一個 run time 實體，但使用者可以同時有數個界面可以和同一個 Agent 溝通。\n\n但！做到一半，後來發現，以我要做的事情來說，我可能不需要 gateway ，因為我有一個 desktop 的 GUI，這一點可能和 openclaw browser 界面不同。\n\n所以，最後我把 gateway 移除掉了，讓這個 agent 不會像 openclaw 那樣，有一個 gateway 或許，我哪一天還會把他加回來，\n\n誰知道呢？\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 162,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-16-agent-build-log-episode-030.md"
+ },
+ {
   "slug": "agent-build-log-episode-029",
   "title": "Agent Build Log — Episode 029",
   "lang": "zh",

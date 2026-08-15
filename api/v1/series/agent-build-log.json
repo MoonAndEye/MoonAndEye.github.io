@@ -2,7 +2,7 @@
  "slug": "agent-build-log",
  "title_zh": "Agent Build Log",
  "title_en": "Agent Build Log",
- "episode_count": 29,
+ "episode_count": 30,
  "episodes": [
   {
    "episode": 1,
@@ -1278,6 +1278,50 @@
     "word_count": 242,
     "reading_minutes": 1,
     "source_path": "_posts/programming/en/2026-08-13-agent-build-log-episode-029.md"
+   }
+  },
+  {
+   "episode": 30,
+   "slug": "agent-build-log-episode-030",
+   "zh": {
+    "slug": "agent-build-log-episode-030",
+    "title": "Agent Build Log — Episode 030",
+    "lang": "zh",
+    "date": "2026-08-16T00:32:15+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "原本開始打造類似 OpenClaw 的 Agent Gateway，後來發現 Desktop GUI 已經讓它暫時沒有必要。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-030/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-030.png",
+    "content": "今天的任務不多，一開始是想做一個 agent gateway。\n\n![Agent Build Log Episode 030：移除 Agent Gateway](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-030.png)\n\n就像 Openclaw 有一個 gateway，目的是讓 agent 只有一個 run time 實體，但使用者可以同時有數個界面可以和同一個 Agent 溝通。\n\n但！做到一半，後來發現，以我要做的事情來說，我可能不需要 gateway ，因為我有一個 desktop 的 GUI，這一點可能和 openclaw browser 界面不同。\n\n所以，最後我把 gateway 移除掉了，讓這個 agent 不會像 openclaw 那樣，有一個 gateway 或許，我哪一天還會把他加回來，\n\n誰知道呢？\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 162,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-08-16-agent-build-log-episode-030.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-030",
+    "title": "Agent Build Log — Episode 030",
+    "lang": "en",
+    "date": "2026-08-16T00:32:16+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I started building an OpenClaw-style Agent Gateway, then removed it after realizing the Desktop GUI made it unnecessary for now.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-030/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-030.png",
+    "content": "Not much happened today.\n\n![Agent Build Log Episode 030: removing the Agent Gateway](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-030.png)\n\nI started out building an Agent Gateway.\n\nThe idea came from OpenClaw’s gateway: keep only one Agent runtime running, while allowing users to interact with the same Agent through multiple interfaces.\n\nIt sounded like something I needed.\n\nBut halfway through building it, I started questioning that assumption.\n\nFor what I’m actually trying to build, I may not need a gateway at all.\n\nI already have a Desktop GUI, which makes my setup different from OpenClaw and its browser-based interface.\n\nSo in the end, I removed the gateway.\n\nFor now, this Agent won’t have a gateway like OpenClaw does.\n\nMaybe one day I’ll add it back.\n\nWho knows?\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 111,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-08-16-agent-build-log-episode-030.md"
    }
   }
  ]
