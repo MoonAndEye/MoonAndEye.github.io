@@ -115,6 +115,59 @@
     margin: 2rem 0;
 }
 
+.marvinsight-about {
+    max-width: 750px;
+    margin: 1.5rem 0 2.5rem;
+    overflow: hidden;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(31, 35, 40, 0.1);
+}
+
+.marvinsight-about__visual,
+.marvinsight-about__visual img {
+    display: block;
+    width: 100%;
+}
+
+.marvinsight-about__visual img {
+    height: auto;
+}
+
+.marvinsight-about__body {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.marvinsight-about__eyebrow {
+    margin: 0 0 0.35rem;
+    color: #0969da;
+    font-family: monospace;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.marvinsight-about__body h2 {
+    margin: 0 0 0.65rem;
+}
+
+.marvinsight-about__body > p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.marvinsight-about__actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+}
+
+.marvinsight-about__actions .btn {
+    margin: 0;
+}
+
 .marvin-builds-channel__banner {
     display: block;
     width: 100%;
@@ -176,6 +229,19 @@
     .marvin-builds-channel__avatar {
         width: 64px;
         height: 64px;
+    }
+
+    .marvinsight-about__body {
+        padding: 1rem;
+    }
+
+    .marvinsight-about__actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .marvinsight-about__actions .btn {
+        text-align: center;
     }
 }
 

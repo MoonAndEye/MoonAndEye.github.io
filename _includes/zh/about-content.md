@@ -1,7 +1,22 @@
 
-## Marvin Lin
-
 {% include custom/language-switch-button.html %}
+
+<section class="marvinsight-about" aria-labelledby="marvinsight-about-heading-zh">
+  <a class="marvinsight-about__visual" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/programming/marvinsight-android-app/editorial-split-theme.png" alt="Marv[in]sight：Ideas, code, and insight">
+  </a>
+  <div class="marvinsight-about__body">
+    <p class="marvinsight-about__eyebrow">Android App</p>
+    <h2 id="marvinsight-about-heading-zh">讓網站留下的內容，被更多人看見</h2>
+    <p>我把這個網站做成 Marv[in]sight Android App，讓多年累積的技術筆記、Agent Build Log 與影片，多一個被找到和閱讀的入口。</p>
+    <div class="marvinsight-about__actions">
+      <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">在 Google Play 下載</a>
+      <a href="/zh/programming/marvinsight-android-app/">閱讀我為什麼做這個 App</a>
+    </div>
+  </div>
+</section>
+
+## Marvin Lin
 
 我喜歡 Apple 相關產品，喜歡寫 Swift。
 除了 Swift 以外，我也喜歡寫 Python。

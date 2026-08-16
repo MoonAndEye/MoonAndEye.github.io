@@ -1,6 +1,21 @@
-## Marvin Lin
-
 {% include custom/language-switch-button.html %}
+
+<section class="marvinsight-about" aria-labelledby="marvinsight-about-heading-en">
+  <a class="marvinsight-about__visual" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/programming/marvinsight-android-app/editorial-split-theme.png" alt="Marv[in]sight: Ideas, code, and insight">
+  </a>
+  <div class="marvinsight-about__body">
+    <p class="marvinsight-about__eyebrow">Android App</p>
+    <h2 id="marvinsight-about-heading-en">Helping More People Find What I Have Written</h2>
+    <p>I turned this website into the Marv[in]sight Android app, giving years of technical notes, the Agent Build Log, and my videos another way to reach readers.</p>
+    <div class="marvinsight-about__actions">
+      <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+      <a href="/en/programming/marvinsight-android-app/">Read why I built the app</a>
+    </div>
+  </div>
+</section>
+
+## Marvin Lin
 
 I like Apple-related products and enjoy writing in Swift. Besides Swift, I also like to write in Python. I enjoy using programming to accomplish things I love to do; my current side projects include iOS apps, macOS apps, and a Twitter bot. 
 
