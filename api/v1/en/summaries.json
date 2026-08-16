@@ -1,5 +1,27 @@
 [
  {
+  "slug": "marvinsight-android-app",
+  "title": "I Turned Marv[in]sight into an App So More People Can Find What I've Written",
+  "lang": "en",
+  "date": "2026-08-16T11:42:01+08:00",
+  "category": "programming",
+  "tags": [
+   "Android",
+   "App",
+   "Marvinsight",
+   "AI Agent"
+  ],
+  "summary": "I turned my personal website into an Android app to give years of technical notes and development logs another way to reach readers.",
+  "url": "https://www.marvinswift.com/en/programming/marvinsight-android-app/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 447,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-08-16-marvinsight-android-app.md"
+ },
+ {
   "slug": "agent-build-log-episode-030",
   "title": "Agent Build Log — Episode 030",
   "lang": "en",

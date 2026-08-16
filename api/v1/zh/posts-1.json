@@ -1,5 +1,28 @@
 [
  {
+  "slug": "marvinsight-android-app",
+  "title": "我把 Marv[in]sight 做成 App，讓寫過的內容被更多人看見",
+  "lang": "zh",
+  "date": "2026-08-16T11:41:01+08:00",
+  "category": "programming",
+  "tags": [
+   "Android",
+   "App",
+   "Marvinsight",
+   "AI Agent"
+  ],
+  "summary": "我把個人網站做成 Android App，讓多年累積的技術筆記與開發紀錄，多一個被找到和閱讀的入口。",
+  "url": "https://www.marvinswift.com/zh/programming/marvinsight-android-app/",
+  "hero_image": null,
+  "content": "我一直希望，這個網站留下來的內容，可以被更多人接觸到。\n\n[![Marv[in]sight：Ideas, code, and insight](/assets/programming/marvinsight-android-app/editorial-split-theme.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target=\"_blank\" rel=\"noopener noreferrer\"}\n\n這裡有我以前開發 iOS App 時整理的技術筆記，也有後來研究 AI、使用 coding agents，以及開發自己的 Agent 時留下來的紀錄。\n\n有些文章記錄的是最後採用的做法，有些則保留了過程中遇到的問題、做錯的判斷，以及後來為什麼改變方向。\n\n最近開始寫 Agent Build Log 之後，這個目的變得更明確。\n\n我不只想留下 Agent 最後做出了什麼，也想記錄每一次選擇背後的原因。模型怎麼選、工具怎麼接、架構為什麼被推翻，以及一個原本看起來合理的方案，實際做下去之後又遇到了什麼問題。\n\n## 讓內容多一個被找到的機會\n\n這些內容如果只留在網站裡，通常要等到有人剛好搜尋到相關問題，才可能被看見。\n\n所以我做了 Marv[in]sight Android App，讓網站多一個被找到和閱讀的入口。\n\n[![在 Marv[in]sight App 中閱讀網站文章](/assets/programming/marvinsight-android-app/posts-zh.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target=\"_blank\" rel=\"noopener noreferrer\"}\n\nApp 裡可以閱讀網站文章與 Agent Build Log，也可以查看 Marvin Builds 的影片。內容同步到手機後，在沒有網路的情況下仍然可以繼續閱讀。\n\n這個 App 讓多年累積的技術筆記，以及現在持續進行的開發紀錄，可以離開瀏覽器，出現在另一個讀者可能找到它們的地方。\n\n## 我想留下的是開發過程\n\nAgent Build Log 是我現在很重視的一部分。\n\n我會把開發過程中的決定留下來，包括選錯的方案、沒有成功的第一次嘗試，以及隔天又推翻前一天決定的時候。\n\n這些內容不一定都是答案，但它們可以讓其他人看到，一個 Agent 從想法走到實作時，真正會經過哪些事情。\n\n[![在 Marv[in]sight App 中閱讀 Agent Build Log](/assets/programming/marvinsight-android-app/build-log-zh.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target=\"_blank\" rel=\"noopener noreferrer\"}\n\n我希望這些紀錄不只對現在的我有用。也許之後有人在做類似的事情時，能從其中一次失敗、一個架構選擇，或一段測試結果裡，找到可以參考的東西。\n\n## 網站仍然是內容的起點\n\nMarv[in]sight 第一版現在已經上架 Google Play。\n\n網站仍然會是所有內容的來源。我會繼續把實作過程、失敗和最後的判斷留下來，新的內容也會持續同步進 App。\n\n如果其中一篇文章或一段開發紀錄，剛好幫助某個人少走一點彎路，那這個 App 就完成了我做它的目的。\n\n[在 Google Play 下載 Marv[in]sight](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){: .btn .btn--primary target=\"_blank\" rel=\"noopener noreferrer\"}\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 751,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-08-16-marvinsight-android-app.md"
+ },
+ {
   "slug": "agent-build-log-episode-030",
   "title": "Agent Build Log — Episode 030",
   "lang": "zh",
@@ -4039,25 +4062,5 @@
   "word_count": 1255,
   "reading_minutes": 4,
   "source_path": "_posts/2013-06-12-Austrie-Hallstatt.md"
- },
- {
-  "slug": "Czech-Republic",
-  "title": "人骨教堂-Czech Republic(裡面真的有人骨的照片，不能接受請不要點開)",
-  "lang": "zh",
-  "date": "2013-06-03T15:12:00+08:00",
-  "category": "life",
-  "tags": [
-   "life"
-  ],
-  "summary": "人骨教堂-Czech Republic(裡面真的有人骨的照片，不能接受請不要點開) 在上帝的寶座面前，貴族與平民都是一樣的。 人骨教堂在Kutna Hora小鎮，位置是布拉格東方，車程大約一個小時多左右。坐火車就可以到達了，這個鎮也不大，景…",
-  "url": "https://www.marvinswift.com/zh/life/Czech-Republic/",
-  "hero_image": "http://2.bp.blogspot.com/-B9A4GMsj3ps/Uat9QwZcmkI/AAAAAAAABUU/B49oFJuj3FY/s1600/ScreenHunter_34+Jun.+02+23.50.jpg",
-  "content": "人骨教堂-Czech Republic(裡面真的有人骨的照片，不能接受請不要點開)\n\n在上帝的寶座面前，貴族與平民都是一樣的。\n\n![](http://2.bp.blogspot.com/-B9A4GMsj3ps/Uat9QwZcmkI/AAAAAAAABUU/B49oFJuj3FY/s1600/ScreenHunter_34+Jun.+02+23.50.jpg)\n\n人骨教堂在Kutna Hora小鎮，位置是布拉格東方，車程大約一個小時多左右。坐火車就可以到達了，這個鎮也不大，景點大概就是人骨教堂、聖母堂。外加一個Foxconn的工廠！\n\n當然Foxconn是不可能開放讓遊客參觀的，但他的確設在這個小鎮比較偏遠的位置。根據其他長官的情報，捷克這個廠應該是後段組裝廠，L10的吧。致於為什麼要在捷克蓋一個組裝廠，因為不是遊客會關心的重點，我們就先跳過吧。\n\n一下車站後，人骨教堂和聖母堂都有路牌的，連距離都標好了，不會有錯。對比之前的波茨坦，這小小的數Km絕對不是問題的。\n\n![](http://4.bp.blogspot.com/-Kh08h2dInlw/Uat9RLJn7qI/AAAAAAAABUc/Rp-Ss0biuVk/s1600/ScreenHunter_36+Jun.+03+00.07.jpg)\n\n教堂的緣起\\-來自聖地的土地\n\n人骨教堂建在14世紀，某位修道院士從聖地\\-耶路撒冷帶回來一把土，撒在現在的教堂位置上。從此，這個地方就變成聖地了。而歐洲的觀點來看，去世後可以埋骨在教堂，是一種很神聖的事情，現在很多古老的教堂都還有以前貴族的遺駭。\n\n從外觀來看，他並沒有那麼突出，和別的大教堂相比，他看起來只是個歌德式教堂。不過他的內部裝潢是讓我印象最深刻的一座，裡面的吊燈、窗飾、領主的家徽，全部都是用人骨拼出來的，總共挑選了四萬左右的骨頭，才組成現在的「人骨教堂」。\n\n![](http://2.bp.blogspot.com/-IremVDXN-QQ/Uat9Q6_WsgI/AAAAAAAABUY/3FkLugm3uyc/s1600/ScreenHunter_40+Jun.+03+00.09.jpg)\n\n人骨是哪來的？\n\n自從聖土被撒下後，這附近的貴族基本上都想在這裡埋骨了。而在十四世紀的黑死病，再加上十五世紀的戰爭，讓這座教堂附近堆滿了一群骨頭。這也讓教堂的墓地空間不夠了，教會決定在此設立一個禮拜堂，讓百年來的骨頭能夠好好地整理，這算是Phase1，此工作據說由一位半盲的僧侶執行，他開始著手整理，但骨頭實在太多了，所以他只進行了清洗和堆疊。\n\n而Phase2，執行於1870年代，就是現在你看到的各種人骨內部擺飾，是由Schwarzenberg家族的工匠\\-Rint執行。工匠在置作這些作品時，先進行挑選。要排列的骨頭必需大小相近，才能組裝。挑好後還要處理、清洗、排列，最後才變成現在的人骨教堂。Rint 也用了這些骨頭排出了自己的簽名。\n\n![](http://1.bp.blogspot.com/-fRJAt26nGCc/Uat9RcfgMUI/AAAAAAAABUo/NtyOINgtwa4/s1600/ScreenHunter_41+Jun.+03+00.32.jpg)\n\n![](http://1.bp.blogspot.com/-aM2ZUR4EE3U/Uat9RpcuOJI/AAAAAAAABUw/zPrDKIhKuic/s1600/ScreenHunter_43+Jun.+03+00.33.jpg)\n\n![](http://4.bp.blogspot.com/-VHoz-iwTphE/Uat9R46z6dI/AAAAAAAABU4/CXV2GwpATls/s1600/ScreenHunter_47+Jun.+03+00.33.jpg)\n\n![](http://2.bp.blogspot.com/-wC7xuPlFD0Q/Uat9SIsayoI/AAAAAAAABVI/yI_jqpltXC0/s1600/ScreenHunter_48+Jun.+03+00.34.jpg)\n\n![](http://3.bp.blogspot.com/-2PQ6HNSSr5o/Uat9SRXhxcI/AAAAAAAABVE/BAwrb-dUabY/s1600/ScreenHunter_49+Jun.+03+00.35.jpg)\n\n![](http://4.bp.blogspot.com/-k5yLjJu06Zs/Uat9Sq7oiWI/AAAAAAAABVQ/XDEiqYZlURM/s1600/ScreenHunter_50+Jun.+03+00.36.jpg)\n\nIHS\n\nIHS代表的是「I耶蘇\\-H-人類\\-S-救世主」，另一張是希臘文的IHΣ，意思是一樣的，不過後來希臘文式微，Σ也變為S。\n\n![](http://2.bp.blogspot.com/-9wNafWINrDM/Uat9S89JzbI/AAAAAAAABVY/hVLm_2rftlE/s1600/ScreenHunter_51+Jun.+03+00.39.jpg)\n\n![](http://1.bp.blogspot.com/-ym1i5SY7ems/Uat9S6NpwlI/AAAAAAAABVc/0OCRQYeukjE/s1600/ScreenHunter_52+Jun.+03+00.42.jpg)\n\nSchwarzenberg家徽\\-被烏鴉啄目的土耳其人\n\n![](http://1.bp.blogspot.com/-l56c7KOyVfU/Uat9TexxUII/AAAAAAAABVs/2q5iZ7thTUE/s1600/ScreenHunter_53+Jun.+03+00.44.jpg)\n\n![](http://3.bp.blogspot.com/-7Da2_ceWU-E/Uat9Tk9uMrI/AAAAAAAABVw/3HvzG636-30/s1600/ScreenHunter_54+Jun.+03+00.47.jpg)\n\n在人骨拚成的巨大家徵右下角，有一隻烏鴉在啄另一個人。這就要說到Schwarzenberg 這家族了，Schwarzenberg是非常富有的家族。這人骨教堂的工匠也是受此家族所托，才進行這樣的工程。而這家徽的由來，則是此家族在一場戰役中擊退了土耳其人，為了宣提自己家族的功蹟，而將土耳其人的頭用這種方式放在自己的家徽。當時的羅馬尼亞人是很痛恨土耳其人的，還會把抓到的土耳其人活活串起來，放在路邊。\n\n話說另一個捷克的渡假聖地 – CK，也在這富有的家族領地裡面，城堡上的握把直接就是這個烏鴉加這顆頭喔。\n\n![](http://1.bp.blogspot.com/-R_XLRhNHKL8/Uat9T17nnQI/AAAAAAAABV4/bQbOxyazlVI/s1600/ScreenHunter_55+Jun.+03+00.56.jpg)\n\n巨大的人骨金字塔，那時候我看這個金字塔看了蠻久的。當人離開世上，不論是王者、騎士、平民，都一樣。看完這個金字塔後，讓我生出更多想法。我想要在生命結束之前去體驗、去感覺這個世界。還是會想前走，會去我所沒去過的地方。\\\n探險！\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": true,
-  "word_count": 1169,
-  "reading_minutes": 4,
-  "source_path": "_posts/life/zh/2023-06-13-Czech-Republic.md"
  }
 ]

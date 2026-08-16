@@ -1,5 +1,28 @@
 [
  {
+  "slug": "marvinsight-android-app",
+  "title": "I Turned Marv[in]sight into an App So More People Can Find What I've Written",
+  "lang": "en",
+  "date": "2026-08-16T11:42:01+08:00",
+  "category": "programming",
+  "tags": [
+   "Android",
+   "App",
+   "Marvinsight",
+   "AI Agent"
+  ],
+  "summary": "I turned my personal website into an Android app to give years of technical notes and development logs another way to reach readers.",
+  "url": "https://www.marvinswift.com/en/programming/marvinsight-android-app/",
+  "hero_image": null,
+  "content": "I have always wanted more people to find the things I have left on this website.\n\n[![Marv[in]sight: Ideas, code, and insight](/assets/programming/marvinsight-android-app/editorial-split-theme.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target=\"_blank\" rel=\"noopener noreferrer\"}\n\nThe site holds technical notes from my years building iOS apps. It also holds what I learned later while studying AI, working with coding agents, and building an Agent of my own.\n\nSome posts document the approach I eventually chose. Others preserve the problems I ran into, the calls I got wrong, and why I changed direction afterward.\n\nThat purpose became clearer when I started writing the Agent Build Log.\n\nThe log records what the Agent eventually built and why I made each choice along the way: how I chose a model, how I connected the tools, why I threw out an architecture, and what happened when an idea that looked reasonable met the real implementation.\n\n## One More Way to Find the Work\n\nContent that lives only on a website often waits for someone to search for the right problem before it gets seen.\n\nI built the Marv[in]sight Android app to give the site another way to be found and read.\n\n[![Read website posts in the Marv[in]sight app](/assets/programming/marvinsight-android-app/posts-en.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target=\"_blank\" rel=\"noopener noreferrer\"}\n\nThe app includes the website posts, the Agent Build Log, and videos from Marvin Builds. Once the content has synced to the phone, it remains available for offline reading.\n\nThe app gives years of technical notes and my ongoing development log somewhere else to meet a reader beyond the browser.\n\n## I Want to Keep the Development Process\n\nThe Agent Build Log has become an important part of what I am working on now.\n\nI write down the decisions I make, including the wrong approach, the first attempt that failed, and the day when I reverse a choice I made the day before.\n\nSome entries end without a clean answer. They still show what an Agent goes through as it moves from an idea to a working implementation.\n\n[![Read the Agent Build Log in the Marv[in]sight app](/assets/programming/marvinsight-android-app/build-log-en.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target=\"_blank\" rel=\"noopener noreferrer\"}\n\nI hope these records remain useful beyond my own work. Someone building something similar may find one failed attempt, one architecture decision, or one test result that helps them move forward.\n\n## The Website Is Still Where the Content Begins\n\nThe first version of Marv[in]sight is now available on Google Play.\n\nThe website will remain the source of everything I publish. I will keep recording the implementation work, the failures, and the final decisions, and new posts will continue to sync to the app.\n\nIf one post or one development note helps someone avoid a wrong turn, the app has done what I built it to do.\n\n[Download Marv[in]sight on Google Play](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){: .btn .btn--primary target=\"_blank\" rel=\"noopener noreferrer\"}\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 447,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-08-16-marvinsight-android-app.md"
+ },
+ {
   "slug": "agent-build-log-episode-030",
   "title": "Agent Build Log — Episode 030",
   "lang": "en",

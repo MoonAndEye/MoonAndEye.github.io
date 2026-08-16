@@ -1,5 +1,27 @@
 [
  {
+  "slug": "marvinsight-android-app",
+  "title": "我把 Marv[in]sight 做成 App，讓寫過的內容被更多人看見",
+  "lang": "zh",
+  "date": "2026-08-16T11:41:01+08:00",
+  "category": "programming",
+  "tags": [
+   "Android",
+   "App",
+   "Marvinsight",
+   "AI Agent"
+  ],
+  "summary": "我把個人網站做成 Android App，讓多年累積的技術筆記與開發紀錄，多一個被找到和閱讀的入口。",
+  "url": "https://www.marvinswift.com/zh/programming/marvinsight-android-app/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 751,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-08-16-marvinsight-android-app.md"
+ },
+ {
   "slug": "agent-build-log-episode-030",
   "title": "Agent Build Log — Episode 030",
   "lang": "zh",
