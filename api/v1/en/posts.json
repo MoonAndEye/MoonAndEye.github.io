@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-031",
+  "title": "Agent Build Log — Episode 031",
+  "lang": "en",
+  "date": "2026-08-16T23:22:47+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started designing plug-in-based IM integrations that keep chat transport separate from the Agent itself.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-031/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png",
+  "content": "Today, I started working on IM integrations like Google Chat, with some of the design inspired by OpenClaw.\n\n![Agent Build Log Episode 031: plug-in-based IM integrations](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png)\n\nThe basic idea is to use a plug-in architecture that keeps the Agent itself separate from the parts responsible for receiving and replying to chat messages.\n\nWhen an inbound chat message mentions the Chat app I configured, the plug-in first identifies it using the space ID and message ID.\n\nIt also goes through a deduplication step before the message is passed into the Agent layer for processing.\n\nOnce the Agent finishes the task, the result goes back through the chat plug-in, which sends the response back to the conversation.\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 107,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-16-agent-build-log-episode-031.md"
+ },
+ {
   "slug": "marvinsight-android-app",
   "title": "I Turned Marv[in]sight into an App So More People Can Find What I've Written",
   "lang": "en",

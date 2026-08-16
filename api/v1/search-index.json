@@ -1,5 +1,31 @@
 [
  {
+  "slug": "agent-build-log-episode-031",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 031",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I started designing plug-in-based IM integrations that keep chat transport separate from the Agent itself.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-031/",
+  "date": "2026-08-16T23:22:47+08:00",
+  "word_count": 107
+ },
+ {
+  "slug": "agent-build-log-episode-031",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 031",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "開始設計 Google Chat 等 IM 整合，透過 Plug-In 將聊天訊息的收發與 Agent 主體分開。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-031/",
+  "date": "2026-08-16T23:22:46+08:00",
+  "word_count": 120
+ },
+ {
   "slug": "marvinsight-android-app",
   "lang": "en",
   "title": "I Turned Marv[in]sight into an App So More People Can Find What I've Written",

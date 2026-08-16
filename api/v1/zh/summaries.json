@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-031",
+  "title": "Agent Build Log — Episode 031",
+  "lang": "zh",
+  "date": "2026-08-16T23:22:46+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "開始設計 Google Chat 等 IM 整合，透過 Plug-In 將聊天訊息的收發與 Agent 主體分開。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-031/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 120,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-16-agent-build-log-episode-031.md"
+ },
+ {
   "slug": "marvinsight-android-app",
   "title": "我把 Marv[in]sight 做成 App，讓寫過的內容被更多人看見",
   "lang": "zh",

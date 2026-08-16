@@ -2,7 +2,7 @@
  "slug": "agent-build-log",
  "title_zh": "Agent Build Log",
  "title_en": "Agent Build Log",
- "episode_count": 30,
+ "episode_count": 31,
  "episodes": [
   {
    "episode": 1,
@@ -1322,6 +1322,50 @@
     "word_count": 111,
     "reading_minutes": 1,
     "source_path": "_posts/programming/en/2026-08-16-agent-build-log-episode-030.md"
+   }
+  },
+  {
+   "episode": 31,
+   "slug": "agent-build-log-episode-031",
+   "zh": {
+    "slug": "agent-build-log-episode-031",
+    "title": "Agent Build Log — Episode 031",
+    "lang": "zh",
+    "date": "2026-08-16T23:22:46+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "開始設計 Google Chat 等 IM 整合，透過 Plug-In 將聊天訊息的收發與 Agent 主體分開。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-031/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png",
+    "content": "準備開始串接 Google Chat 等 IM 通知，設計有參考 OpenClaw。\n\n![Agent Build Log Episode 031：以 Plug-In 串接 IM 通知](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png)\n\n有一個基本的 Plug-In 設計，讓 Agent 的主體和接受 Chat、回應 Chat 的部分切開。\n\n當 Chat inbound message mention 我指定的 Chat 應用程式後，會依照 space ID + message ID 分類，還會經過一個去重的邏輯，然後才會送進 Agent 層進行處理。\n\n處理完後，再回到這個 Chat Plug-In 裡面，把 message 送回去。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 120,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-08-16-agent-build-log-episode-031.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-031",
+    "title": "Agent Build Log — Episode 031",
+    "lang": "en",
+    "date": "2026-08-16T23:22:47+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I started designing plug-in-based IM integrations that keep chat transport separate from the Agent itself.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-031/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png",
+    "content": "Today, I started working on IM integrations like Google Chat, with some of the design inspired by OpenClaw.\n\n![Agent Build Log Episode 031: plug-in-based IM integrations](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png)\n\nThe basic idea is to use a plug-in architecture that keeps the Agent itself separate from the parts responsible for receiving and replying to chat messages.\n\nWhen an inbound chat message mentions the Chat app I configured, the plug-in first identifies it using the space ID and message ID.\n\nIt also goes through a deduplication step before the message is passed into the Agent layer for processing.\n\nOnce the Agent finishes the task, the result goes back through the chat plug-in, which sends the response back to the conversation.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 107,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-08-16-agent-build-log-episode-031.md"
    }
   }
  ]
