@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-032",
+  "title": "Agent Build Log — Episode 032",
+  "lang": "en",
+  "date": "2026-08-17T22:57:35+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I connected the Chat Plug-In to the Agent end to end, working through inbound and outbound failures along the way.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-032/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 160,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-17-agent-build-log-episode-032.md"
+ },
+ {
   "slug": "agent-build-log-episode-031",
   "title": "Agent Build Log — Episode 031",
   "lang": "en",

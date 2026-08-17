@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-032",
+  "title": "Agent Build Log — Episode 032",
+  "lang": "en",
+  "date": "2026-08-17T22:57:35+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I connected the Chat Plug-In to the Agent end to end, working through inbound and outbound failures along the way.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-032/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png",
+  "content": "Today, I continued working on getting the Chat-to-Agent flow fully connected.\n\n![Agent Build Log Episode 032: connecting Chat to the Agent](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png)\n\nAt first, I thought it would be pretty straightforward: connect the Chat Plug-In I designed yesterday, send inbound messages to the Agent, then send the result back after processing.\n\nBut once I started wiring everything together, I realized it was not that simple.\n\nFirst came all kinds of inbound errors.\n\nSometimes the webhook received the message, but the format did not make it into the Chat Plug-In correctly.\n\nOther times, the message came in, but something went wrong when identifying the space, message, or thread, so the Agent never received the actual content it was supposed to handle.\n\nAfter I finally got inbound working, outbound started failing instead.\n\nThe Agent successfully received the message and completed the task, but the final response could not be sent back to Chat.\n\nAnyway, the Agent can now do what OpenClaw and other agents can do: receive instructions directly from a chat interface.\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 160,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-17-agent-build-log-episode-032.md"
+ },
+ {
   "slug": "agent-build-log-episode-031",
   "title": "Agent Build Log — Episode 031",
   "lang": "en",

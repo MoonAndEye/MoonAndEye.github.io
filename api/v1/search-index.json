@@ -1,5 +1,31 @@
 [
  {
+  "slug": "agent-build-log-episode-032",
+  "lang": "en",
+  "title": "Agent Build Log — Episode 032",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I connected the Chat Plug-In to the Agent end to end, working through inbound and outbound failures along the way.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-032/",
+  "date": "2026-08-17T22:57:35+08:00",
+  "word_count": 160
+ },
+ {
+  "slug": "agent-build-log-episode-032",
+  "lang": "zh",
+  "title": "Agent Build Log — Episode 032",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "繼續打通 Chat 與 Agent 的完整流程，解決 inbound 與 outbound 過程中遇到的問題。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-032/",
+  "date": "2026-08-17T22:57:34+08:00",
+  "word_count": 224
+ },
+ {
   "slug": "agent-build-log-episode-031",
   "lang": "en",
   "title": "Agent Build Log — Episode 031",

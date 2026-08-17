@@ -2,7 +2,7 @@
  "slug": "agent-build-log",
  "title_zh": "Agent Build Log",
  "title_en": "Agent Build Log",
- "episode_count": 31,
+ "episode_count": 32,
  "episodes": [
   {
    "episode": 1,
@@ -1366,6 +1366,50 @@
     "word_count": 107,
     "reading_minutes": 1,
     "source_path": "_posts/programming/en/2026-08-16-agent-build-log-episode-031.md"
+   }
+  },
+  {
+   "episode": 32,
+   "slug": "agent-build-log-episode-032",
+   "zh": {
+    "slug": "agent-build-log-episode-032",
+    "title": "Agent Build Log — Episode 032",
+    "lang": "zh",
+    "date": "2026-08-17T22:57:34+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "繼續打通 Chat 與 Agent 的完整流程，解決 inbound 與 outbound 過程中遇到的問題。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-032/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png",
+    "content": "今天，我繼續把 Chat 和 Agent 的流程真正打通。\n\n![Agent Build Log Episode 032：打通 Chat 與 Agent](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png)\n\n原本以為，只要把昨天設計好的 Chat Plug-In 接起來，inbound message 送進 Agent，處理完再把結果回出去，應該就差不多了。\n\n但真的開始串之後，才發現事情沒有那麼順。\n\n一開始是各種 inbound error。\n\n有時候 webhook 有收到訊息，但格式沒有正確進到 Chat Plug-In。\n\n有時候 message 已經進來了，卻在 space、message 或 thread 的識別上出問題，導致 Agent 根本沒有收到真正要處理的內容。\n\n好不容易把 inbound 打通之後，換 outbound 出錯。\n\nAgent 已經成功收到訊息，也完成了處理，但最後的 response 卻送不回 Chat。\n\n總之，這個 Agent 現在和 OpenClaw 或其他 Agent 一樣，可以從聊天界面中接受指令。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 224,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-08-17-agent-build-log-episode-032.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-032",
+    "title": "Agent Build Log — Episode 032",
+    "lang": "en",
+    "date": "2026-08-17T22:57:35+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I connected the Chat Plug-In to the Agent end to end, working through inbound and outbound failures along the way.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-032/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png",
+    "content": "Today, I continued working on getting the Chat-to-Agent flow fully connected.\n\n![Agent Build Log Episode 032: connecting Chat to the Agent](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png)\n\nAt first, I thought it would be pretty straightforward: connect the Chat Plug-In I designed yesterday, send inbound messages to the Agent, then send the result back after processing.\n\nBut once I started wiring everything together, I realized it was not that simple.\n\nFirst came all kinds of inbound errors.\n\nSometimes the webhook received the message, but the format did not make it into the Chat Plug-In correctly.\n\nOther times, the message came in, but something went wrong when identifying the space, message, or thread, so the Agent never received the actual content it was supposed to handle.\n\nAfter I finally got inbound working, outbound started failing instead.\n\nThe Agent successfully received the message and completed the task, but the final response could not be sent back to Chat.\n\nAnyway, the Agent can now do what OpenClaw and other agents can do: receive instructions directly from a chat interface.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 160,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-08-17-agent-build-log-episode-032.md"
    }
   }
  ]

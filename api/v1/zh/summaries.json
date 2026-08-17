@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-032",
+  "title": "Agent Build Log — Episode 032",
+  "lang": "zh",
+  "date": "2026-08-17T22:57:34+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "繼續打通 Chat 與 Agent 的完整流程，解決 inbound 與 outbound 過程中遇到的問題。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-032/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-032.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 224,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-17-agent-build-log-episode-032.md"
+ },
+ {
   "slug": "agent-build-log-episode-031",
   "title": "Agent Build Log — Episode 031",
   "lang": "zh",
