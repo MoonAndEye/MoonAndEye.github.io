@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-033",
+  "title": "Agent Build Log — Episode 033",
+  "lang": "zh",
+  "date": "2026-08-18T22:36:13+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "嘗試讓 Agent 啟動 Android Emulator，卻在第一個指令就被 Permission System 擋住。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-033/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png",
+  "content": "今天做了一個「支線任務」。\n\n![Agent Build Log Episode 033：Permission System 擋住 Android Emulator 任務](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png)\n\n主線沒有往前推，我先跑去處理另一個最近一直想測的東西。\n\n我想試著直接使用自己做的 Agent，把 Android Emulator 啟動起來。\n\n原本想得很簡單。\n\n讓 Agent 找到 Android project。\n\n確認 Emulator。\n\n然後執行指令，把它啟動。\n\n結果第一步就失敗了。\n\nAgent 知道下一步要執行什麼指令，但當它真的準備執行時，被目前 Agent 裡的 Permission System 擋住了。\n\n這反而讓我發現一個很實際的問題。\n\n如果權限設計得太嚴格，Agent 明明知道該做什麼，最後卻什麼都做不了。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 182,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-18-agent-build-log-episode-033.md"
+ },
+ {
   "slug": "agent-build-log-episode-032",
   "title": "Agent Build Log — Episode 032",
   "lang": "zh",

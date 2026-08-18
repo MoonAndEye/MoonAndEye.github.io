@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-033",
+  "title": "Agent Build Log — Episode 033",
+  "lang": "zh",
+  "date": "2026-08-18T22:36:13+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "嘗試讓 Agent 啟動 Android Emulator，卻在第一個指令就被 Permission System 擋住。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-033/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 182,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-18-agent-build-log-episode-033.md"
+ },
+ {
   "slug": "agent-build-log-episode-032",
   "title": "Agent Build Log — Episode 032",
   "lang": "zh",

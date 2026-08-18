@@ -2,7 +2,7 @@
  "slug": "agent-build-log",
  "title_zh": "Agent Build Log",
  "title_en": "Agent Build Log",
- "episode_count": 32,
+ "episode_count": 33,
  "episodes": [
   {
    "episode": 1,
@@ -1410,6 +1410,50 @@
     "word_count": 160,
     "reading_minutes": 1,
     "source_path": "_posts/programming/en/2026-08-17-agent-build-log-episode-032.md"
+   }
+  },
+  {
+   "episode": 33,
+   "slug": "agent-build-log-episode-033",
+   "zh": {
+    "slug": "agent-build-log-episode-033",
+    "title": "Agent Build Log — Episode 033",
+    "lang": "zh",
+    "date": "2026-08-18T22:36:13+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "嘗試讓 Agent 啟動 Android Emulator，卻在第一個指令就被 Permission System 擋住。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-033/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png",
+    "content": "今天做了一個「支線任務」。\n\n![Agent Build Log Episode 033：Permission System 擋住 Android Emulator 任務](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png)\n\n主線沒有往前推，我先跑去處理另一個最近一直想測的東西。\n\n我想試著直接使用自己做的 Agent，把 Android Emulator 啟動起來。\n\n原本想得很簡單。\n\n讓 Agent 找到 Android project。\n\n確認 Emulator。\n\n然後執行指令，把它啟動。\n\n結果第一步就失敗了。\n\nAgent 知道下一步要執行什麼指令，但當它真的準備執行時，被目前 Agent 裡的 Permission System 擋住了。\n\n這反而讓我發現一個很實際的問題。\n\n如果權限設計得太嚴格，Agent 明明知道該做什麼，最後卻什麼都做不了。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 182,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/zh/2026-08-18-agent-build-log-episode-033.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-033",
+    "title": "Agent Build Log — Episode 033",
+    "lang": "en",
+    "date": "2026-08-18T22:36:14+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "I tried to launch an Android Emulator with my Agent, but its Permission System blocked the first command.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-033/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png",
+    "content": "Today, I went on a bit of a side quest.\n\n![Agent Build Log Episode 033: Permission System blocking the Android Emulator task](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png)\n\nI didn’t make any progress on the main track. Instead, I decided to test something else I’d been wanting to try for a while.\n\nI wanted to see if I could use the Agent I built to launch an Android Emulator.\n\nThe plan sounded pretty simple.\n\nHave the Agent find the Android project.\n\nCheck the Emulator.\n\nThen run the command to launch it.\n\nIt failed at the very first step.\n\nThe Agent knew exactly which command it needed to run next. But when it actually tried to execute it, the Permission System in my Agent blocked it.\n\nThat ended up revealing a very practical problem.\n\nIf the permission system is too restrictive, the Agent can know exactly what it needs to do and still end up unable to do anything.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 140,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-08-18-agent-build-log-episode-033.md"
    }
   }
  ]

@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-033",
+  "title": "Agent Build Log — Episode 033",
+  "lang": "en",
+  "date": "2026-08-18T22:36:14+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I tried to launch an Android Emulator with my Agent, but its Permission System blocked the first command.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-033/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 140,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-18-agent-build-log-episode-033.md"
+ },
+ {
   "slug": "agent-build-log-episode-032",
   "title": "Agent Build Log — Episode 032",
   "lang": "en",
