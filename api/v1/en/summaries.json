@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-034",
+  "title": "Agent Build Log — Episode 034",
+  "lang": "en",
+  "date": "2026-08-20T00:07:21+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I narrowed my search for a self-hostable Firebase Remote Config and feature toggle alternative to Unleash and Flagsmith.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-034/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-034.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 110,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-20-agent-build-log-episode-034.md"
+ },
+ {
   "slug": "agent-build-log-episode-033",
   "title": "Agent Build Log — Episode 033",
   "lang": "en",

@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-034",
+  "title": "Agent Build Log — Episode 034",
+  "lang": "zh",
+  "date": "2026-08-20T00:07:20+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "尋找可 self-host、可商用，並兼具 Remote Config 與 Feature Toggle 能力的開源方案。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-034/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-034.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 149,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-20-agent-build-log-episode-034.md"
+ },
+ {
   "slug": "agent-build-log-episode-033",
   "title": "Agent Build Log — Episode 033",
   "lang": "zh",
