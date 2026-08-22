@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-035",
+  "title": "Agent Build Log — Episode 035",
+  "lang": "en",
+  "date": "2026-08-23T00:31:29+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I moved mobile acceptance features into optional plugins, reducing the App from 1.1 GB to around 300 MB.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-035/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-035.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 135,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-23-agent-build-log-episode-035.md"
+ },
+ {
   "slug": "agent-build-log-episode-034",
   "title": "Agent Build Log — Episode 034",
   "lang": "en",

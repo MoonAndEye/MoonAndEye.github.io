@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-035",
+  "title": "Agent Build Log — Episode 035",
+  "lang": "zh",
+  "date": "2026-08-23T00:31:28+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "把 mobile acceptance 功能拆成選配外掛，讓 App 從 1.1 GB 降到約 300 MB。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-035/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-035.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 183,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-08-23-agent-build-log-episode-035.md"
+ },
+ {
   "slug": "agent-build-log-episode-034",
   "title": "Agent Build Log — Episode 034",
   "lang": "zh",

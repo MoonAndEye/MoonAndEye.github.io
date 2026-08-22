@@ -1,5 +1,25 @@
 [
  {
+  "slug": "agent-build-log-episode-035",
+  "title": "Agent Build Log — Episode 035",
+  "lang": "en",
+  "date": "2026-08-23T00:31:29+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "I moved mobile acceptance features into optional plugins, reducing the App from 1.1 GB to around 300 MB.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-035/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-035.png",
+  "content": "I’ve started preparing the version I actually want to ship.\n\n![Agent Build Log Episode 035: moving mobile acceptance features into optional plugins](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-035.png)\n\nThis time, I need to seriously decide which features should be bundled with the App from the start, and which ones should be split out as plugins and downloaded only when needed.\n\nWhen I first started building it, I bundled all the mobile acceptance features directly into the App.\n\nThat included Xcode Build MCP and Appium.\n\nAt one point, the whole App had grown to **1.1 GB**.\n\nBut those features are mainly for acceptance testing, and not everyone is going to need them.\n\nSo I started pulling the acceptance-related parts out and turning them into optional plugins.\n\nAfter splitting them out, the App is now down to around **300 MB**.\n\nIf you need those features, you can just install the plugins when you need them.\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 135,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-08-23-agent-build-log-episode-035.md"
+ },
+ {
   "slug": "agent-build-log-episode-034",
   "title": "Agent Build Log — Episode 034",
   "lang": "en",

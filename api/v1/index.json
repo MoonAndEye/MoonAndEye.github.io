@@ -1,7 +1,7 @@
 {
  "api_version": 1,
- "generated_at": "2026-08-19T16:08:57.281077+00:00",
- "build_id": "f10dd7b19944c153",
+ "generated_at": "2026-08-22T16:32:53.957448+00:00",
+ "build_id": "f5f6aee1389186df",
  "site": {
   "url": "https://www.marvinswift.com",
   "title": "Marv[in]sight",
@@ -13,45 +13,45 @@
  "endpoints": {
   "zh/summaries.json": {
    "path": "/api/v1/zh/summaries.json",
-   "count": 204,
-   "latest": "2026-08-20T00:07:20+08:00",
-   "bytes": 474203,
-   "hash": "a448f55480b111a0"
+   "count": 205,
+   "latest": "2026-08-23T00:31:28+08:00",
+   "bytes": 474929,
+   "hash": "2806a07338088b2a"
   },
   "en/summaries.json": {
    "path": "/api/v1/en/summaries.json",
-   "count": 100,
-   "latest": "2026-08-20T00:07:21+08:00",
-   "bytes": 86815,
-   "hash": "0c37dad4cff26db8"
+   "count": 101,
+   "latest": "2026-08-23T00:31:29+08:00",
+   "bytes": 87558,
+   "hash": "a627dc1a1e13f8ac"
   },
   "categories.json": {
    "path": "/api/v1/categories.json",
    "count": 5,
    "latest": null,
    "bytes": 1181,
-   "hash": "3cff80c86e1f5548"
+   "hash": "c3a13033a43d1d34"
   },
   "videos.json": {
    "path": "/api/v1/videos.json",
    "count": null,
    "latest": null,
    "bytes": 9169,
-   "hash": "a0875f829dafc78e"
+   "hash": "06968bca42f33457"
   },
   "series/agent-build-log.json": {
    "path": "/api/v1/series/agent-build-log.json",
    "count": null,
    "latest": null,
-   "bytes": 170685,
-   "hash": "8356c3ca71c463dd"
+   "bytes": 174147,
+   "hash": "2ea3c793262bfe18"
   },
   "search-index.json": {
    "path": "/api/v1/search-index.json",
-   "count": 304,
-   "latest": "2026-08-20T00:07:21+08:00",
-   "bytes": 181898,
-   "hash": "ff92eecbabcf036c"
+   "count": 306,
+   "latest": "2026-08-23T00:31:29+08:00",
+   "bytes": 182743,
+   "hash": "24ac64f86c1f8760"
   },
   "zh/posts.json": {
    "paginated": true,
@@ -59,10 +59,10 @@
    "pages": [
     {
      "path": "/api/v1/zh/posts-1.json",
-     "count": 190,
-     "latest": "2026-08-20T00:07:20+08:00",
-     "bytes": 906619,
-     "hash": "d533aeffc8fa5428"
+     "count": 191,
+     "latest": "2026-08-23T00:31:28+08:00",
+     "bytes": 908174,
+     "hash": "071593f3f8bd2ad4"
     },
     {
      "path": "/api/v1/zh/posts-2.json",
@@ -72,18 +72,18 @@
      "hash": "04e12eab9d003f77"
     }
    ],
-   "count": 204,
-   "latest": "2026-08-20T00:07:20+08:00",
-   "bytes": 1578092,
-   "hash": "3171368853e33d64"
+   "count": 205,
+   "latest": "2026-08-23T00:31:28+08:00",
+   "bytes": 1579647,
+   "hash": "1beb3da394dab5d9"
   },
   "en/posts.json": {
    "path": "/api/v1/en/posts.json",
    "paginated": false,
-   "count": 100,
-   "latest": "2026-08-20T00:07:21+08:00",
-   "bytes": 414908,
-   "hash": "124f95a12d9ff498"
+   "count": 101,
+   "latest": "2026-08-23T00:31:29+08:00",
+   "bytes": 416655,
+   "hash": "e5ecba8bc061b34c"
   }
  }
 }
