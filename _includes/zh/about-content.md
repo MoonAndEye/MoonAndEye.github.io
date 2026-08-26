@@ -46,21 +46,28 @@
 
 ---
 
-### 黃財神網站 (已下架)
+### 黃財神網站 (原網域已停用)
 
 一個接案做的網站，主要是用來介紹黃財神的相關資訊。
 
-[![黃財神網站](/assets/about/website_jambhala_landing.jpeg){: width="750" }](https://jambhalayellow.com/){:target="_blank"}
+原本的 jambhalayellow.com 網域已經到期，網站現在改放在 Cloudflare Pages 上，內容仍然可以瀏覽。
 
-[![黃財神網站](/assets/about/website_jambhala_divines.jpeg){: width="750" }](https://jambhalayellow.com/){:target="_blank"}
+[![黃財神網站](/assets/about/website_jambhala_landing.jpeg){: width="750" }](https://jambhala-yellow.pages.dev/){:target="_blank"}
+
+[![黃財神網站](/assets/about/website_jambhala_divines.jpeg){: width="750" }](https://jambhala-yellow.pages.dev/){:target="_blank"}
 
 ---
 
-### [iOS App: 歌曲知識王](https://apps.apple.com/tw/app/king-of-song-quiz/id1273605195){:target="_blank"}
+<div style="border-left:4px solid #d97706;background:rgba(217,119,6,.08);padding:.85rem 1.1rem;margin:1.5rem 0;border-radius:4px;">
+  <strong>關於下面幾款 App</strong><br>
+  我的 Apple 開發者帳號憑證已經到期，目前還沒有續訂，所以這些 App 都已經從 App Store 下架，下載連結先暫時移除。等我把開發者帳號續訂回來，會重新上架並補上連結。
+</div>
+
+### iOS App: 歌曲知識王 (暫時下架)
 
 一款好玩的猜歌 app，我個人第一個上架的遊戲 app。玩法簡單，每一局會選出五首歌，遊戲會播放其中的一小段，玩家猜對且使用的時間愈短，分數就會愈高。
 
-[![歌曲知識王 king of song quiz](/assets/about/icon_king_of_song_quiz.jpg){: width="150" }](https://apps.apple.com/tw/app/king-of-song-quiz/id1273605195){:target="_blank"}
+![歌曲知識王 king of song quiz](/assets/about/icon_king_of_song_quiz.jpg){: width="150" }
 
 ---
 ### iOS App: 逆走鐘 (已下架)
@@ -74,11 +81,11 @@ An app dedicated to honoring the computer programming queen, Grace Hopper
 
 >人們其實討厭改變，他們總是說「我們一直都這麼做的」但，我想要反抗這一點所以我掛了一個逆著走的時鐘在牆上。
 
-[![逆走鐘 backwards clock](/assets/about/icon_backwards_clock.jpg){: width="150"}](https://apps.apple.com/tw/app/backwards-clock/id1632935212){:target="_blank"}
+![逆走鐘 backwards clock](/assets/about/icon_backwards_clock.jpg){: width="150"}
 
 ---
-### [macOS: 股票工具列](https://apps.apple.com/tw/app/id6455497589){:target="_blank"}
+### macOS: 股票工具列 (暫時下架)
 
-如果你上班想快速查一下台股股價，但又不想讓別人看到。你可以下載這款 app，他會在 mac 右上方的工具列中，有一個輸入框，你可以輸入股票代碼，就可以查到股價了。
+如果上班時想快速查一下台股股價，又不想讓別人看到，這款 app 就是為此而做的。它會在 mac 右上方的工具列常駐一個輸入框，輸入股票代碼就能查到股價。
 
-[![股票工具列](/assets/about/screenshot_stockTools.png)](https://apps.apple.com/tw/app/id6455497589){:target="_blank"}
+![股票工具列](/assets/about/screenshot_stockTools.png)
