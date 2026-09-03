@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760" font-family="-apple-system, 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#1f2937">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .mono { font-family: ui-monospace, Menlo, Consolas, 'SF Mono', monospace; font-size: 12.5px; }
+      .step { font-size: 12.5px; fill: #475569; }
+      .desc { font-size: 13.5px; fill: #1f2937; }
+      .listen { fill: #e5e7eb; } .listen-t { fill: #374151; }
+      .edit { fill: #dbeafe; } .edit-t { fill: #1e40af; }
+      .block { fill: #ffedd5; } .block-t { fill: #9a3412; }
+      .add { fill: #dcfce7; } .add-t { fill: #166534; }
+    </style>
+  </defs>
+  <rect width="960" height="760" fill="#ffffff"/>
+
+  <text x="30" y="30" font-size="16" font-weight="600">Pi 一趟（run）裡能插手的點：什麼時候、能做什麼</text>
+
+  <!-- legend -->
+  <rect x="560" y="46" width="60" height="22" rx="11" class="listen"/>
+  <text x="590" y="57" text-anchor="middle" dominant-baseline="middle" font-size="12" class="listen-t">只能聽</text>
+  <rect x="628" y="46" width="60" height="22" rx="11" class="edit"/>
+  <text x="658" y="57" text-anchor="middle" dominant-baseline="middle" font-size="12" class="edit-t">能改</text>
+  <rect x="696" y="46" width="110" height="22" rx="11" class="block"/>
+  <text x="751" y="57" text-anchor="middle" dominant-baseline="middle" font-size="12" class="block-t">能擋、能接手</text>
+  <rect x="814" y="46" width="116" height="22" rx="11" class="add"/>
+  <text x="872" y="57" text-anchor="middle" dominant-baseline="middle" font-size="12" class="add-t">加東西進回圈</text>
+
+  <!-- loop box -->
+  <rect x="30" y="178" width="910" height="290" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="300" y="196" font-size="12.5" font-weight="600" fill="#475569">每一輪（turn）都會經過的點</text>
+
+  <!-- spine -->
+  <line x1="260" y1="80" x2="260" y2="572" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- loop back -->
+  <polyline points="260,462 46,462 46,196 258,196" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text transform="translate(62 329) rotate(-90)" text-anchor="middle" font-size="12" fill="#475569">有工具呼叫、或有排隊的話，再轉一輪</text>
+
+  <!-- row 1: input -->
+  <circle cx="260" cy="80" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="80" text-anchor="end" dominant-baseline="middle" class="step">你的輸入進來</text>
+  <rect x="300" y="66" width="64" height="28" rx="6" class="block"/>
+  <text x="332" y="80" text-anchor="middle" dominant-baseline="middle" class="mono block-t">input</text>
+  <text x="376" y="80" dominant-baseline="middle" class="desc">改寫輸入，或整個接手不往下送。skill 和 template 還沒展開</text>
+
+  <!-- row 2: before_agent_start -->
+  <circle cx="260" cy="130" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="130" text-anchor="end" dominant-baseline="middle" class="step">送出之後、回圈開始前</text>
+  <rect x="300" y="116" width="150" height="28" rx="6" class="edit"/>
+  <text x="375" y="130" text-anchor="middle" dominant-baseline="middle" class="mono edit-t">before_agent_start</text>
+  <text x="462" y="130" dominant-baseline="middle" class="desc">塞一則訊息進去，或整個換掉 system prompt</text>
+
+  <!-- row 3: context -->
+  <circle cx="260" cy="215" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="215" text-anchor="end" dominant-baseline="middle" class="step">每一次叫模型之前</text>
+  <rect x="300" y="201" width="76" height="28" rx="6" class="edit"/>
+  <text x="338" y="215" text-anchor="middle" dominant-baseline="middle" class="mono edit-t">context</text>
+  <text x="388" y="215" dominant-baseline="middle" class="desc">過濾或改寫要送給模型的訊息，原紀錄不動</text>
+
+  <!-- row 4: provider -->
+  <circle cx="260" cy="262" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="262" text-anchor="end" dominant-baseline="middle" class="step">送出 HTTP 請求之前</text>
+  <rect x="300" y="240" width="190" height="20" rx="5" class="edit"/>
+  <text x="395" y="250" text-anchor="middle" dominant-baseline="middle" class="mono edit-t">before_provider_headers</text>
+  <rect x="300" y="264" width="190" height="20" rx="5" class="edit"/>
+  <text x="395" y="274" text-anchor="middle" dominant-baseline="middle" class="mono edit-t">before_provider_request</text>
+  <text x="502" y="262" dominant-baseline="middle" class="desc">前者改 header，後者換掉整包 payload</text>
+
+  <!-- row 5: message_end -->
+  <circle cx="260" cy="309" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="309" text-anchor="end" dominant-baseline="middle" class="step">模型的一則訊息定稿</text>
+  <rect x="300" y="295" width="100" height="28" rx="6" class="edit"/>
+  <text x="350" y="309" text-anchor="middle" dominant-baseline="middle" class="mono edit-t">message_end</text>
+  <text x="412" y="309" dominant-baseline="middle" class="desc">換掉那則訊息</text>
+
+  <!-- row 6: tool_call -->
+  <circle cx="260" cy="356" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="356" text-anchor="end" dominant-baseline="middle" class="step">工具要執行之前</text>
+  <rect x="300" y="342" width="84" height="28" rx="6" class="block"/>
+  <text x="342" y="356" text-anchor="middle" dominant-baseline="middle" class="mono block-t">tool_call</text>
+  <text x="396" y="356" dominant-baseline="middle" class="desc">改參數、擋下來，或要求這一趟停下來。權限系統放這裡</text>
+
+  <!-- row 7: tool_result -->
+  <circle cx="260" cy="403" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="403" text-anchor="end" dominant-baseline="middle" class="step">工具跑完、結果回模型前</text>
+  <rect x="300" y="389" width="100" height="28" rx="6" class="edit"/>
+  <text x="350" y="403" text-anchor="middle" dominant-baseline="middle" class="mono edit-t">tool_result</text>
+  <text x="412" y="403" dominant-baseline="middle" class="desc">改結果內容、標記錯誤。截太長的輸出、遮 secret</text>
+
+  <!-- row 8: turn_end -->
+  <circle cx="260" cy="448" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="448" text-anchor="end" dominant-baseline="middle" class="step">一輪結束</text>
+  <rect x="300" y="434" width="80" height="28" rx="6" class="listen"/>
+  <text x="340" y="448" text-anchor="middle" dominant-baseline="middle" class="mono listen-t">turn_end</text>
+  <text x="392" y="448" dominant-baseline="middle" class="desc">只能聽。記帳、寫 log</text>
+
+  <!-- row 9: agent_end -->
+  <circle cx="260" cy="512" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="512" text-anchor="end" dominant-baseline="middle" class="step">一趟結束</text>
+  <rect x="300" y="498" width="88" height="28" rx="6" class="listen"/>
+  <text x="344" y="512" text-anchor="middle" dominant-baseline="middle" class="mono listen-t">agent_end</text>
+  <text x="400" y="512" dominant-baseline="middle" class="desc">只能聽。之後可能自動重試、壓縮再繼續，或跑排隊的 follow-up</text>
+
+  <!-- row 10: agent_settled -->
+  <circle cx="260" cy="556" r="5" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+  <text x="245" y="556" text-anchor="end" dominant-baseline="middle" class="step">真的全部安靜下來</text>
+  <rect x="300" y="542" width="112" height="28" rx="6" class="listen"/>
+  <text x="356" y="556" text-anchor="middle" dominant-baseline="middle" class="mono listen-t">agent_settled</text>
+  <text x="424" y="556" dominant-baseline="middle" class="desc">只能聽。要等他真的停，聽這個</text>
+
+  <!-- off-timeline -->
+  <line x1="30" y1="600" x2="940" y2="600" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="30" y="624" font-size="13" font-weight="600" fill="#475569">不在時間線上的三個點</text>
+
+  <text x="245" y="656" text-anchor="end" dominant-baseline="middle" class="step">註冊時</text>
+  <rect x="300" y="642" width="104" height="28" rx="6" class="add"/>
+  <text x="352" y="656" text-anchor="middle" dominant-baseline="middle" class="mono add-t">registerTool</text>
+  <text x="416" y="656" dominant-baseline="middle" class="desc">加一個新工具給模型用。專屬能力從這裡進來</text>
+
+  <text x="245" y="696" text-anchor="end" dominant-baseline="middle" class="step">任何時候</text>
+  <rect x="300" y="682" width="100" height="28" rx="6" class="add"/>
+  <text x="350" y="696" text-anchor="middle" dominant-baseline="middle" class="mono add-t">sendMessage</text>
+  <text x="412" y="688" dominant-baseline="middle" class="desc">從外面塞訊息進回圈，選 steer、follow-up 或下一次 prompt</text>
+  <text x="412" y="706" dominant-baseline="middle" class="desc">聊天室的訊息、排程，都從這裡叫醒他</text>
+
+  <text x="245" y="736" text-anchor="end" dominant-baseline="middle" class="step">context 快滿要壓縮前</text>
+  <rect x="300" y="722" width="180" height="28" rx="6" class="block"/>
+  <text x="390" y="736" text-anchor="middle" dominant-baseline="middle" class="mono block-t">session_before_compact</text>
+  <text x="492" y="736" dominant-baseline="middle" class="desc">取消，或自己給摘要。記憶系統掛這裡</text>
+</svg>
