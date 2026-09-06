@@ -1,0 +1,633 @@
+[
+  {
+    "day": 0,
+    "kind": "main",
+    "label": "我這一生 如履薄冰",
+    "filename": "day-00-thin-ice.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-00-thin-ice.png",
+    "width": 1054,
+    "height": 1492,
+    "sha256": "fbb27f743af5652bb8ad72b09cf4a213cc3e3498928dc4f0931608457db2c807",
+    "role": "additional"
+  },
+  {
+    "day": 0,
+    "kind": "main",
+    "label": "Day 00 正文",
+    "filename": "day-00-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-00-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "47092c4deb5130dc3cccdff714e57871c3d096c79ff0e8c71f44ed325dc0ad50"
+  },
+  {
+    "day": 0,
+    "kind": "serial",
+    "label": "Day 00 連載",
+    "filename": "day-00-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-00-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "b9db69454ee1bfddeb8317a179f4cd02f2535eba5b4f84061036515c47a1e0a2"
+  },
+  {
+    "day": 1,
+    "kind": "main",
+    "label": "Day 01 正文",
+    "filename": "day-01-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-01-main.png",
+    "width": 972,
+    "height": 1619,
+    "sha256": "338c2d276f22c938193600a9315e8776fb0c4f7b59edd0cbe41ad80c11dada91"
+  },
+  {
+    "day": 1,
+    "kind": "serial",
+    "label": "Day 01 連載",
+    "filename": "day-01-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-01-serial.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "2707e95c20078fae086f397b2858e4cbe3af7880f750aae8930c87da8847859c"
+  },
+  {
+    "day": 2,
+    "kind": "main",
+    "label": "Day 02 正文",
+    "filename": "day-02-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-02-main.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "1ef0f6f3fab79fc7a48819a20da2d4237f127992c666db7c61f82ca15af8b202"
+  },
+  {
+    "day": 2,
+    "kind": "serial",
+    "label": "Day 02 連載",
+    "filename": "day-02-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-02-serial.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "9ba66bc0e6ea6e3e155a4ac1f9b107398f7f416d940d6dbb23cdd141a5dbce4a"
+  },
+  {
+    "day": 3,
+    "kind": "main",
+    "label": "Day 03 正文",
+    "filename": "day-03-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-03-main.png",
+    "width": 971,
+    "height": 1619,
+    "sha256": "3765b79a407469365c1d352c7f2b56c1ad0a596497302daf46c9eb5285c0c891"
+  },
+  {
+    "day": 3,
+    "kind": "serial",
+    "label": "Day 03 連載",
+    "filename": "day-03-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-03-serial.png",
+    "width": 972,
+    "height": 1619,
+    "sha256": "40eaa70eacd60f7e543fc87dee954a84782143b98c74598ab70b5cc2407df6b2"
+  },
+  {
+    "day": 4,
+    "kind": "main",
+    "label": "Day 04 正文",
+    "filename": "day-04-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-04-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "3d9eaba6b34f5288a5b2e5ba07d74c39a38b88bbbb71db9e40c7bdca08d315da"
+  },
+  {
+    "day": 4,
+    "kind": "serial",
+    "label": "Day 04 連載",
+    "filename": "day-04-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-04-serial.png",
+    "width": 972,
+    "height": 1619,
+    "sha256": "3bbff6dd9f21b512afb6b53c7e443c3240893997b7b3711b8d986e54831fe305"
+  },
+  {
+    "day": 5,
+    "kind": "main",
+    "label": "Day 05 正文",
+    "filename": "day-05-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-05-main.png",
+    "width": 972,
+    "height": 1619,
+    "sha256": "e461b52139914243df8698d9d8b214581ae79c70385577943e313a6928661c34"
+  },
+  {
+    "day": 5,
+    "kind": "serial",
+    "label": "Day 05 連載",
+    "filename": "day-05-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-05-serial.png",
+    "width": 971,
+    "height": 1619,
+    "sha256": "cb8b542b89f9c6bf7b8cce50e228302e7175fdd757d1085606e7bd89799e89e8"
+  },
+  {
+    "day": 6,
+    "kind": "main",
+    "label": "Day 06 正文",
+    "filename": "day-06-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-06-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "2f6f9460324aec22faef6b622d5fef0886461238bcb253065163da57564198c5"
+  },
+  {
+    "day": 6,
+    "kind": "serial",
+    "label": "Day 06 連載",
+    "filename": "day-06-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-06-serial.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "b24892ef12eec8c2b5886db5bda8e01774fc8ab75ab6191516311c6cd5a7ebc6"
+  },
+  {
+    "day": 7,
+    "kind": "main",
+    "label": "Day 07 正文",
+    "filename": "day-07-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-07-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "fc53263b3f3b352060e05e7b1e6556ec8ed29ccff635ab26d49bba3d02c71051"
+  },
+  {
+    "day": 7,
+    "kind": "serial",
+    "label": "Day 07 連載",
+    "filename": "day-07-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-07-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "f0eb8eb172217c0e774c363a94b25939ade5f72dcb450d3e86b09f6434041daf"
+  },
+  {
+    "day": 8,
+    "kind": "main",
+    "label": "Day 08 正文",
+    "filename": "day-08-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-08-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "51d4bf207533899fbca652aa0a60196b04eea9adbfef0a536a1a950d3ebf46d6"
+  },
+  {
+    "day": 8,
+    "kind": "serial",
+    "label": "Day 08 連載",
+    "filename": "day-08-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-08-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "079509a65fcc51bcbabe3fa4ffd37de3c3e18dcb853d494364f335875641e7bf"
+  },
+  {
+    "day": 9,
+    "kind": "main",
+    "label": "Day 09 正文",
+    "filename": "day-09-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-09-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "54e5fe2111d8db17207c8c617483d09d713d9bac96aa7366e168cea0371d7859"
+  },
+  {
+    "day": 9,
+    "kind": "serial",
+    "label": "Day 09 連載",
+    "filename": "day-09-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-09-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "38434792be447255e6e4c140f3712c05b2820fa74f7a7ff07dc213069012b987"
+  },
+  {
+    "day": 10,
+    "kind": "main",
+    "label": "Day 10 正文",
+    "filename": "day-10-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-10-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "0f7967fe3a3d0924f1dcfa571bbc4125042febb631ae59ee18242cafae18a5f1"
+  },
+  {
+    "day": 10,
+    "kind": "serial",
+    "label": "Day 10 連載",
+    "filename": "day-10-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-10-serial.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "af003b0666f3952c9f1ad5c6d41f9765d892f8ef2a80df9356aa9c97c73b32c4"
+  },
+  {
+    "day": 11,
+    "kind": "main",
+    "label": "Day 11 正文",
+    "filename": "day-11-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-11-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "0ef048b40614f447a55b33aceaf5e3014ce2c6babee94360be89974da88a794e"
+  },
+  {
+    "day": 11,
+    "kind": "serial",
+    "label": "Day 11 連載",
+    "filename": "day-11-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-11-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "3d1acafcb02947d6c664eee34b63a4cf0c268b594d4d8db3d1805fef74fb7a16"
+  },
+  {
+    "day": 12,
+    "kind": "main",
+    "label": "Day 12 正文",
+    "filename": "day-12-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-12-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "8fca97f6e973e741764d9e522595c365c4f90bc40a935b35f67556829b23b359"
+  },
+  {
+    "day": 12,
+    "kind": "serial",
+    "label": "Day 12 連載",
+    "filename": "day-12-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-12-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "a2e2715cfcce3197d004a1e48068418e02293cb919dbe0bb44c5d942cc6da62b"
+  },
+  {
+    "day": 13,
+    "kind": "main",
+    "label": "Day 13 正文",
+    "filename": "day-13-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-13-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "96481aa7539e9fb370ed234b58d8469c13d670fa3e4b0dd7e0efb5d005cf147e"
+  },
+  {
+    "day": 13,
+    "kind": "serial",
+    "label": "Day 13 連載",
+    "filename": "day-13-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-13-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "ffd6b493b60dda2a792714796e30c2250d4fdbc11448e0b8090405e90a4d2354"
+  },
+  {
+    "day": 14,
+    "kind": "main",
+    "label": "Day 14 正文",
+    "filename": "day-14-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-14-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "904c961f81af61b3567db48149f3fa52f8874fad0452c3356711185624aa5a6b"
+  },
+  {
+    "day": 14,
+    "kind": "serial",
+    "label": "Day 14 連載",
+    "filename": "day-14-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-14-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "90ea9d88c02b5a97e6071a54e2c71eb97a211d17bc94f014351964c38de1a36a"
+  },
+  {
+    "day": 15,
+    "kind": "main",
+    "label": "Day 15 正文",
+    "filename": "day-15-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-15-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "27f0d2a67306e73e4071e986cb2886488f28261e3f3e86f4bdb9bd740fa6e567"
+  },
+  {
+    "day": 15,
+    "kind": "serial",
+    "label": "Day 15 連載",
+    "filename": "day-15-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-15-serial.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "303915a9c87ecdc1cddbb961045cea8e2ffaabd937eb30230b32ebd1134f50f7"
+  },
+  {
+    "day": 16,
+    "kind": "main",
+    "label": "Day 16 正文",
+    "filename": "day-16-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-16-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "f2244eb44ebb801236be14d1484a3d95ac51ad4f63e21eea4065d4b50d6577b1"
+  },
+  {
+    "day": 16,
+    "kind": "serial",
+    "label": "Day 16 連載",
+    "filename": "day-16-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-16-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "e605fce5c1f966a49eb1c205a704a093f62a62ecbae3b22859c12fabf5d1fa52"
+  },
+  {
+    "day": 17,
+    "kind": "main",
+    "label": "Day 17 正文",
+    "filename": "day-17-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-17-main.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "a719339c03389428ba5dbce585aca47802f33923e9450057ce3b041ed6247028"
+  },
+  {
+    "day": 17,
+    "kind": "serial",
+    "label": "Day 17 連載",
+    "filename": "day-17-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-17-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "723a12c69147f8a4e8637f136e10268f18b5125295089e4cb62ac79315e7287d"
+  },
+  {
+    "day": 18,
+    "kind": "main",
+    "label": "Day 18 正文",
+    "filename": "day-18-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-18-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "aeb40e388069835b9d31fd01a3d784fa8f7adf4a0b084ea057044e758c7cd8d9"
+  },
+  {
+    "day": 18,
+    "kind": "serial",
+    "label": "Day 18 連載",
+    "filename": "day-18-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-18-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "d251a6deb5760dd63e9582fb9f6cbbdb7ba0450d9607759db145cdfe2cc79387"
+  },
+  {
+    "day": 19,
+    "kind": "main",
+    "label": "Day 19 正文",
+    "filename": "day-19-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-19-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "3a42f7419323e6f2d3310818a2389a5c1298e4f6acc13fed3a444c651401ebaf"
+  },
+  {
+    "day": 19,
+    "kind": "serial",
+    "label": "Day 19 連載",
+    "filename": "day-19-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-19-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "4ebaefff182998cbbaf2f9a60ae1a69f1003fad957b8b8b7187d592c08353ea1"
+  },
+  {
+    "day": 20,
+    "kind": "main",
+    "label": "Day 20 正文",
+    "filename": "day-20-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-20-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "69ae04f37a808050bf1904c5c4be16c848dc21566c7aab5f52740ec3a304e039"
+  },
+  {
+    "day": 20,
+    "kind": "serial",
+    "label": "Day 20 連載",
+    "filename": "day-20-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-20-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "a2ef36ec1c0746fe61f8bf9600881840159faf62b50853573f88e42fda15dd4b"
+  },
+  {
+    "day": 21,
+    "kind": "main",
+    "label": "Day 21 正文",
+    "filename": "day-21-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-21-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "93cdacf9118cc8f583d04493624496ea775ab16524c9ec6ac50189dd181da7b2"
+  },
+  {
+    "day": 21,
+    "kind": "serial",
+    "label": "Day 21 連載",
+    "filename": "day-21-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-21-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "3ad3e8c3af0e34a5c3dd0f595bc4b303b3e9df5098ceb5e0a866a991b4b1b344"
+  },
+  {
+    "day": 22,
+    "kind": "main",
+    "label": "Day 22 正文",
+    "filename": "day-22-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-22-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "733b004e4a2b2b0792ce1283ec8055d043255bb7af49c068e62a68f56699d83a"
+  },
+  {
+    "day": 22,
+    "kind": "serial",
+    "label": "Day 22 連載",
+    "filename": "day-22-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-22-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "7e3b032eed8c2029668293ed5dfa0e020582891651369b21b66ca9a829ef6b9f"
+  },
+  {
+    "day": 23,
+    "kind": "main",
+    "label": "Day 23 正文",
+    "filename": "day-23-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-23-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "c3987a620adc4e06ad7e7d5828cd01bb2d2a4754d5454197c1906cd274f86aa7"
+  },
+  {
+    "day": 23,
+    "kind": "serial",
+    "label": "Day 23 連載",
+    "filename": "day-23-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-23-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "8dde1f0c7e819bfc71fa3cca576696eeeb38457931f45c2eebccdc9b1aa1b839"
+  },
+  {
+    "day": 24,
+    "kind": "main",
+    "label": "Day 24 正文",
+    "filename": "day-24-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-24-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "0b8ec718b73c2e495b06cf28296799d083493c251eaf2527b0229dae6c538753"
+  },
+  {
+    "day": 24,
+    "kind": "serial",
+    "label": "Day 24 連載",
+    "filename": "day-24-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-24-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "71038c237c4cf71886e7772c1df360d3187aa371f843cbde1e933afa6b6a7f0f"
+  },
+  {
+    "day": 25,
+    "kind": "main",
+    "label": "Day 25 正文",
+    "filename": "day-25-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-25-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "f724e810c13161b4e42aaf89c10758a8966686197b2b852f91460cc6b0e6c53f"
+  },
+  {
+    "day": 25,
+    "kind": "serial",
+    "label": "Day 25 連載",
+    "filename": "day-25-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-25-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "fb698ea11f2184926648e7f7d773f5576c4e0c186c5ab19f42b0290508674bdf"
+  },
+  {
+    "day": 26,
+    "kind": "main",
+    "label": "Day 26 正文",
+    "filename": "day-26-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-26-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "cc1f2dc2769d95b5c31f2be2c1ff7f48c9ca34eb9ff165614f664e2ec6dc50f0"
+  },
+  {
+    "day": 26,
+    "kind": "serial",
+    "label": "Day 26 連載",
+    "filename": "day-26-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-26-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "c9e3731c1b7c6beba118772ab52f39c12944852f38690677fc3c5dabe0cc9739"
+  },
+  {
+    "day": 27,
+    "kind": "main",
+    "label": "Day 27 正文",
+    "filename": "day-27-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-27-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "29bb2cad2bf235a3ce3a3bd7b8080b0ad8a79fda3260a1621434882457feffa0"
+  },
+  {
+    "day": 27,
+    "kind": "serial",
+    "label": "Day 27 連載",
+    "filename": "day-27-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-27-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "fcebc395366ac49053a5887d308be435b5c81b2ce452f4376ba13db04773081e"
+  },
+  {
+    "day": 28,
+    "kind": "main",
+    "label": "Day 28 正文",
+    "filename": "day-28-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-28-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "17f26db648fe51be88c97221bbcef1977e1bf960c1ba0ddd98e204f21d6aec34"
+  },
+  {
+    "day": 28,
+    "kind": "serial",
+    "label": "Day 28 連載",
+    "filename": "day-28-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-28-serial.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "2463696ef8bfd51b585f406014f1c6ab42d4b4a74d2b997cd98d2eab1bf5a41d"
+  },
+  {
+    "day": 29,
+    "kind": "main",
+    "label": "Day 29 正文",
+    "filename": "day-29-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-29-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "e1add8c8f194b3746cff06d95130628dab3a4c2f3d69d4362407024701a70b41"
+  },
+  {
+    "day": 29,
+    "kind": "serial",
+    "label": "Day 29 連載",
+    "filename": "day-29-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-29-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "927146fccd6a8ef412b334c858ee5d51a49a794f838de0c046e18c9d3d53408f"
+  },
+  {
+    "day": 30,
+    "kind": "main",
+    "label": "Day 30 正文",
+    "filename": "day-30-main.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-30-main.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "49c6f85cb15e3cb42a8964f34351d7f38caa6414de873227b12f80e7d88cd072"
+  },
+  {
+    "day": 30,
+    "kind": "serial",
+    "label": "Day 30 連載",
+    "filename": "day-30-serial.png",
+    "url": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-30-serial.png",
+    "width": 1003,
+    "height": 1568,
+    "sha256": "f2f5ddeb1725b2698c37e199f1c6b7f296b9f32e5570ad37d8fd71c6c5b1bb17"
+  }
+]
