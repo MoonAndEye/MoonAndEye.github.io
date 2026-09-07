@@ -1,7 +1,7 @@
 {
  "api_version": 1,
- "generated_at": "2026-09-07T13:42:21.195027+00:00",
- "build_id": "cc9192f3ef129258",
+ "generated_at": "2026-09-07T13:52:04.166271+00:00",
+ "build_id": "a9c50d8f7a22717f",
  "site": {
   "url": "https://www.marvinswift.com",
   "title": "Marv[in]sight",
@@ -15,8 +15,8 @@
    "path": "/api/v1/zh/summaries.json",
    "count": 207,
    "latest": "2026-09-07T21:41:46+08:00",
-   "bytes": 476564,
-   "hash": "7132d5ea934189ab"
+   "bytes": 476612,
+   "hash": "18bb4f094f7be561"
   },
   "en/summaries.json": {
    "path": "/api/v1/en/summaries.json",
@@ -37,7 +37,7 @@
    "count": null,
    "latest": null,
    "bytes": 9646,
-   "hash": "4d279b341d11b956"
+   "hash": "3918c13cb25f70e9"
   },
   "series/agent-build-log.json": {
    "path": "/api/v1/series/agent-build-log.json",
@@ -50,8 +50,8 @@
    "path": "/api/v1/search-index.json",
    "count": 309,
    "latest": "2026-09-07T21:41:46+08:00",
-   "bytes": 184238,
-   "hash": "826d13be43dde2df"
+   "bytes": 184286,
+   "hash": "a7f52fa1b4aca1a7"
   },
   "zh/posts.json": {
    "paginated": true,
@@ -61,8 +61,8 @@
      "path": "/api/v1/zh/posts-1.json",
      "count": 191,
      "latest": "2026-09-07T21:41:46+08:00",
-     "bytes": 905762,
-     "hash": "cbc92d72e7fef6c7"
+     "bytes": 905810,
+     "hash": "49e58a1525892d8d"
     },
     {
      "path": "/api/v1/zh/posts-2.json",
@@ -74,8 +74,8 @@
    ],
    "count": 207,
    "latest": "2026-09-07T21:41:46+08:00",
-   "bytes": 1589431,
-   "hash": "a202fa152b9d383f"
+   "bytes": 1589479,
+   "hash": "2ce36b4a0e60c70f"
   },
   "en/posts.json": {
    "path": "/api/v1/en/posts.json",

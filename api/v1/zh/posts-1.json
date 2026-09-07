@@ -1,14 +1,16 @@
 [
  {
   "slug": "it-ironman-2026-day-00",
-  "title": "開卷：一個散修、一具拍人偶，和三十天 - Day 00",
+  "title": "[IT 鐵人賽] 開卷：一個散修、一具拍人偶，和三十天 - Day 00",
   "lang": "zh",
   "date": "2026-09-07T21:41:46+08:00",
   "category": "programming",
   "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
    "agent",
-   "Pi",
-   "iThome 鐵人賽"
+   "Pi"
   ],
   "summary": "2026 iThome 鐵人賽前言：以 Pi Agent 為本體，用 coding agent 改造自己的個人助理，並以《凡人修 Agent 傳》連載記錄人偶的故事。",
   "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-00/",
