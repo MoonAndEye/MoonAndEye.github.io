@@ -1,5 +1,28 @@
 [
  {
+  "slug": "it-ironman-2026-day-01",
+  "title": "[IT 鐵人賽] 四招通萬法，大巧不工：Pi Agent 只給模型 read、write、edit、bash，為什麼夠用 - Day 01",
+  "lang": "zh",
+  "date": "2026-09-08T01:07:48+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Pi"
+  ],
+  "summary": "Pi Agent 只給模型 read、write、edit、bash 四個基本工具。我整理他的極簡設計、刻意留給擴充的能力，以及為什麼選他作為客製化 Agent 的起點。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-01/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-01-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2250,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-09-08-it-ironman-2026-day-01.md"
+ },
+ {
   "slug": "it-ironman-2026-day-00",
   "title": "[IT 鐵人賽] 開卷：一個散修、一具拍人偶，和三十天 - Day 00",
   "lang": "zh",
