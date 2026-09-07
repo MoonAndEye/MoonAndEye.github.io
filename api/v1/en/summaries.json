@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-036",
+  "title": "Agent Build Log — Episode 036",
+  "lang": "en",
+  "date": "2026-09-07T08:56:05+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "Preparing to use the open-source Pi GUI for text input, model selection, and LLM provider connections, leaving more time for my own Signature Abilities.",
+  "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-036/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-036.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 291,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-09-07-agent-build-log-episode-036.md"
+ },
+ {
   "slug": "agent-build-log-episode-035",
   "title": "Agent Build Log — Episode 035",
   "lang": "en",

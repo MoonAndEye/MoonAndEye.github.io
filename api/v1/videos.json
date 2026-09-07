@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-22T16:32:53.889017+00:00",
+ "generated_at": "2026-09-07T01:01:25.599801+00:00",
  "videos": [
   {
    "id": "qualBRg758I",
@@ -51,6 +51,14 @@
   }
  ],
  "shorts": [
+  {
+   "id": "BKQD57Uxd84",
+   "title": "GPT-6 Astra: Steer Your Agent Mid-Task #Shorts",
+   "published": "2026-09-06T03:42:58+00:00",
+   "thumbnail": "https://i3.ytimg.com/vi/BKQD57Uxd84/hqdefault.jpg",
+   "description": "As of 2026-09-06: GPT-6 Astra supports mid-turn steering, so you can add requirements while the agent is working.\n\nIn this Short, I explain the behavior and the workflow I want to test: start a deskto…",
+   "url": "https://youtu.be/BKQD57Uxd84"
+  },
   {
    "id": "oVEtlueD2FE",
    "title": "Apple Just Made AI Costs Visible #Shorts",

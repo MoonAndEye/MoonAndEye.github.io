@@ -2,7 +2,7 @@
  "slug": "agent-build-log",
  "title_zh": "Agent Build Log",
  "title_en": "Agent Build Log",
- "episode_count": 35,
+ "episode_count": 36,
  "episodes": [
   {
    "episode": 1,
@@ -1542,6 +1542,50 @@
     "word_count": 135,
     "reading_minutes": 1,
     "source_path": "_posts/programming/en/2026-08-23-agent-build-log-episode-035.md"
+   }
+  },
+  {
+   "episode": 36,
+   "slug": "agent-build-log-episode-036",
+   "zh": {
+    "slug": "agent-build-log-episode-036",
+    "title": "Agent Build Log — Episode 036",
+    "lang": "zh",
+    "date": "2026-09-07T08:56:04+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "準備採用開源 Pi GUI，沿用文字換行、模型選擇與 LLM Provider 串接的既有實作，把開發時間留給自己的專有技。",
+    "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-036/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-036.png",
+    "content": "今天，我開始準備把開源的 [Pi GUI](https://github.com/minghinmatthewlam/pi-gui) 用在自己的 Desktop App 裡。\n\n![Agent Build Log Episode 036：使用 Pi GUI 處理桌面互動，準備接入自己的專有技](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-036.png)\n\n在 [Episode 029](/zh/programming/agent-build-log-episode-029/)，我就研究過 Pi Agent 的 extension 生態系，也提到了 Pi GUI。當時，我開始思考哪些功能可以直接使用現有的實作。\n\n現在準備把 App 做到可以 ship，這件事變得更具體了。\n\n之前自己做 Desktop App，除了 Agent 的能力，還有很多介面上的細節要處理。\n\n像是文字的換行、模型的選擇，以及不同 LLM Provider 的串接。\n\n這些看起來都很基本，但每一個都會影響實際使用。\n\n文字換行不順，寫一段需求就會很卡。要換模型時，使用者需要能在介面裡直接選擇。換成另一個 LLM Provider，也需要有地方設定並完成串接。\n\n如果這些都由自己實作，就得持續花時間處理和維護。\n\n所以我打算直接使用 Pi GUI 的開源實作，讓這些桌面上的基本功能可以更快準備好。\n\nPi GUI 本身就是建立在 Pi Agent 上的桌面介面。既然我的 Agent 已經使用 Pi，接下來可以沿用這一層，再把自己的功能加進去。\n\n我比較想繼續投入的，是前面做過的那些「專有技」。\n\n像 Acceptance、Bug Blame 和 Spec Diff。\n\n這些功能對應的是我工作上需要完成的事情，也關係到 PM 和 QA 能不能透過這個 Agent，把規格確認和驗收做完。\n\n現在有了開源的桌面實作可以使用，我希望把更多開發時間留給這些能力。\n\n接下來，我會先把 Pi GUI 和目前的 Agent 接起來，確認文字換行、模型選擇和 Provider 串接的操作，再逐步把自己的專有技接回桌面介面。\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 497,
+    "reading_minutes": 2,
+    "source_path": "_posts/programming/zh/2026-09-07-agent-build-log-episode-036.md"
+   },
+   "en": {
+    "slug": "agent-build-log-episode-036",
+    "title": "Agent Build Log — Episode 036",
+    "lang": "en",
+    "date": "2026-09-07T08:56:05+08:00",
+    "category": "programming",
+    "tags": [
+     "agent"
+    ],
+    "summary": "Preparing to use the open-source Pi GUI for text input, model selection, and LLM provider connections, leaving more time for my own Signature Abilities.",
+    "url": "https://www.marvinswift.com/en/programming/agent-build-log-episode-036/",
+    "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-036.png",
+    "content": "Today, I started preparing to bring the open-source [Pi GUI](https://github.com/minghinmatthewlam/pi-gui) into my own Desktop App.\n\n![Agent Build Log Episode 036: using Pi GUI for desktop interactions and preparing to connect my own Signature Abilities](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-036.png)\n\nBack in [Episode 029](/en/programming/agent-build-log-episode-029/), I explored Pi Agent’s extension ecosystem, including Pi GUI. That was when I started considering which features I could reuse from existing projects.\n\nNow that I’m preparing the App to ship, that decision is becoming more concrete.\n\nBuilding the Desktop App myself has meant handling a lot of interface details alongside the Agent’s capabilities.\n\nThings like line breaks, model selection, and connections to different LLM providers.\n\nThey all sound basic, but each one affects the experience of using the App.\n\nIf line breaks don’t work smoothly, even writing out a requirement becomes frustrating. Users need to be able to select a different model directly in the interface. Switching to another LLM provider also requires somewhere to configure and connect it.\n\nImplementing all of this myself means continuing to spend time maintaining it, too.\n\nSo I plan to use Pi GUI’s open-source implementation to get these basic desktop features ready sooner.\n\nPi GUI is a desktop interface built on Pi Agent. Since my Agent already uses Pi, I can build on that layer and add my own features.\n\nI want to spend more time on the “Signature Abilities” I’ve been building, such as Acceptance, Bug Blame, and Spec Diff.\n\nThese capabilities address tasks I need to complete at work. They also matter to whether PMs and QA can use this Agent to review specifications and finish acceptance testing.\n\nWith an open-source desktop implementation available, I hope to leave more development time for those capabilities.\n\nNext, I’ll connect Pi GUI to my current Agent, check how line breaks, model selection, and provider connections work, then gradually bring my Signature Abilities into the desktop interface.\n",
+    "content_format": "markdown",
+    "inline_html_tags": [],
+    "has_insecure_images": false,
+    "word_count": 291,
+    "reading_minutes": 1,
+    "source_path": "_posts/programming/en/2026-09-07-agent-build-log-episode-036.md"
    }
   }
  ]

@@ -1,5 +1,24 @@
 [
  {
+  "slug": "agent-build-log-episode-036",
+  "title": "Agent Build Log — Episode 036",
+  "lang": "zh",
+  "date": "2026-09-07T08:56:04+08:00",
+  "category": "programming",
+  "tags": [
+   "agent"
+  ],
+  "summary": "準備採用開源 Pi GUI，沿用文字換行、模型選擇與 LLM Provider 串接的既有實作，把開發時間留給自己的專有技。",
+  "url": "https://www.marvinswift.com/zh/programming/agent-build-log-episode-036/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-036.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 497,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-07-agent-build-log-episode-036.md"
+ },
+ {
   "slug": "agent-build-log-episode-035",
   "title": "Agent Build Log — Episode 035",
   "lang": "zh",
