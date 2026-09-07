@@ -1,5 +1,27 @@
 [
  {
+  "slug": "it-ironman-2026-day-00",
+  "title": "開卷：一個散修、一具拍人偶，和三十天 - Day 00",
+  "lang": "zh",
+  "date": "2026-09-07T21:41:46+08:00",
+  "category": "programming",
+  "tags": [
+   "agent",
+   "Pi",
+   "iThome 鐵人賽"
+  ],
+  "summary": "2026 iThome 鐵人賽前言：以 Pi Agent 為本體，用 coding agent 改造自己的個人助理，並以《凡人修 Agent 傳》連載記錄人偶的故事。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-00/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-00-thin-ice.png",
+  "content": "本文同步刊登於 [2026 iThome 鐵人賽](https://ithelp.ithome.com.tw/articles/10406876)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log](https://www.marvinswift.com/zh/programming/agent-build-log-episode-001/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄，從 Episode 001 寫到 035。想看原始版本，點連結就能過去。\n\n> 我想替自己養一個 Agent，讓他成為真正懂我的個人化助理，記得我的習慣、知道我正在做什麼，也能真的替我把事情做完。只是養 Agent 跟修仙差不多，會燒靈石，法寶裝多了還可能走火入魔。這 30 天，我要把這個只會聊天、偶爾還會失憶的傢伙，修成真的能替我做事的 Agent。至於能不能結嬰，我自己也沒把握。\n\n![我這一生 如履薄冰](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-00-thin-ice.png)\n\n這是我報名時寫的簡介。接下來 30 天，我會把過去兩個月改造一個 Agent 的過程，重新整理成 30 篇。先講清楚三件事：我要什麼，為什麼選這條路，以及這個系列怎麼讀。\n\n## 我要的是一個客製化的 Agent\n\n現在的 coding agent 已經很強。Claude、Codex 都能讀懂一個 codebase、改程式、跑測試，也都能針對個人客製化：寫一份說明檔告訴他我的習慣、開記憶讓他記住上次做到哪、接 MCP 讓他查我的東西。用久了，他們確實會越來越順手。\n\n所以我要做的，不是解決「他不認識我」這個問題。那個問題他們自己已經在解。\n\n我要做的是另一件事：一個客製化的 agent。差別在「客製化」放在哪個位置。在 Claude 或 Codex 上做客製化，是在一個現成的 agent 上加設定；我想做的，是 agent 本身就是客製的。他的記憶怎麼存、存什麼，我決定。我預期他會有哪些專屬技能，我一個一個裝。他用哪個模型、跑在終端機還是桌面還是聊天室，我會幫他決定。而且他要真的替我把一件事從頭做到尾，不只是回答問題。\n\n我要打造一個我個人的 agent，從底層自己做出來。\n\n![Day 00：從 Pi 核心開始打造自己的 Agent](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-00-main.png)\n\n## 為什麼不直接用 Claude 或 Codex\n\n因為這些 agent 設計出來，是為了通用目的。雖然可以用 skills 和其他方法來強化工作流程，但一個通用的 agent 每次升級，都會帶來各種不穩定性。\n\n想養一個懂自己的 Agent，只能從能拆開的開始。所以我選了開源的 agent harness 當本體。\n\n## 為什麼是 Pi\n\nPi 是 Mario Zechner（GitHub 上的 badlogic）做的開源 coding agent。他的設計哲學是極簡：預設只給模型四個工具，read、write、edit、bash；system prompt 不到一千個 token；支援幾十家模型供應商，可以中途切換。後來 OpenClaw 用他當引擎，一週衝到十幾萬顆星。\n\n我選他，因為他最小。東西少，要加什麼、換什麼，範圍都很清楚，交給 coding agent 去改也不容易改壞。\n\n## 我不寫 code，我讓 coding agent 寫\n\n這個系列有一半在講一件事：用 coding agent 改造另一個 agent。\n\n實際動手的是 Codex 和 Claude Code 這些 coding agent。我做的是決定方向：這一步要補什麼能力、用什麼架構、哪裡做錯了要退回來。我下需求，他們實作，我驗收。\n\n## 這個系列怎麼讀\n\n每篇分兩段。\n\n上半是正文，正常的技術文章，寫我實際做了什麼、為什麼、踩到什麼。下半是一段連載小說《凡人修 Agent 傳》，用縮排隔開。小說的視角是那具人偶自己，「我」就是他。正文寫我這邊的事，小說寫他那邊的。\n\n明天 Day 01，從打開木箱開始。\n\n來源：這個系列改寫自我部落格的 [Agent Build Log](https://www.marvinswift.com/zh/programming/agent-build-log-episode-001/)。\n\n---\n\n> **凡人修 Agent 傳｜楔子：公器坊（Day 00）**\n>\n> ![凡人修 Agent 傳 Day 00 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-00-serial.png)\n>\n> 修仙界有一座坊市，叫公器坊。\n>\n> 公器坊跟別的坊市不一樣：不賣東西，只放東西。功法、丹方、陣圖、人偶的圖紙，誰願意，就在末尾署上自己的名字，放進坊裡。放進去的東西，任何人都可以拿走、拆開、改掉、拿去用。只有一條規矩：改完若再放回坊裡，原來的署名不能抹，只能在後面加上自己的。\n>\n> 所以公器坊裡的圖紙，越老的，署名越長。\n>\n> 圖紙末尾署的是道號。公器坊裡沒有人用本名。\n>\n> 修仙界的人偶各式各樣。坊外有幾個不放圖紙的門派，他們養的人偶叫克勞德、叫法典，樣樣都會，但不賣圖紙。要用，得固定上繳靈石，靈石一停，他就不動。付了靈石他替你做事，做完了，他還是門派的：你拿不到圖，改不了心，也帶不回洞府。\n>\n> 坊裡的人偶就不一樣了，圖紙攤在那裡，誰都能拆。開放碼人偶是一張圖，開放爪是另一張，都放在坊裡，誰都拿得走。\n>\n> 坊裡被抄走最多次的一張圖，是一具人偶的圖紙，款式叫「拍」。圖紙只有一頁多一點。照這張圖做出來的拍人偶，會的事只有四樣：讀，寫，改，動手。別家的人偶動輒幾十樣本事，拍人偶只有四樣，卻是坊裡取用最多的一款。\n>\n> 署名只有一個道號：壞邏輯（badlogic）。\n>\n> 全修仙界有多少具拍人偶，沒有人數過。開放爪就是有門派拿他當底搭出來的，一夜之間，很多修仙者都在談論這一點。也有人取一具回去，放在角落，再沒碰過。\n>\n> 想養一個懂自己的人偶，只能從能拆開的開始。\n>\n> 這是其中一具的故事。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1648,
+  "reading_minutes": 6,
+  "source_path": "_posts/programming/zh/2026-09-07-it-ironman-2026-day-00.md"
+ },
+ {
   "slug": "agent-build-log-episode-036",
   "title": "Agent Build Log — Episode 036",
   "lang": "zh",
@@ -4119,26 +4141,5 @@
   "word_count": 1026,
   "reading_minutes": 4,
   "source_path": "_posts/2023-03-16-Austria-Vienna.md"
- },
- {
-  "slug": "Austria-Hellbrunn",
-  "title": "奧地利-Aurtria 海爾布倫宮 美泉宮",
-  "lang": "zh",
-  "date": "2013-06-23T16:25:00+08:00",
-  "category": "life",
-  "tags": [
-   "life",
-   "travel"
-  ],
-  "summary": "奧地利\\-Aurtria 海爾布倫宮 美泉宮 No kangaroos in AUSTRIA 奧地利是沒有袋鼠的，有袋鼠的是澳洲。在奧地利的T恤地攤，你一定會看到這個招牌。不過在中文裡面，這兩個國家的發音差很多，所以不會搞錯的。 在薩爾斯堡…",
-  "url": "https://www.marvinswift.com/life/2013/06/23/Austria-Hellbrunn.html",
-  "hero_image": "http://2.bp.blogspot.com/-9j03jmsqQSA/UcXZ5jsbfII/AAAAAAAABbo/pvznHK9rnx0/s1600/ScreenHunter_83+Jun.+18+23.20.jpg",
-  "content": "奧地利\\-Aurtria 海爾布倫宮 美泉宮\n\nNo kangaroos in AUSTRIA\n\n![](http://2.bp.blogspot.com/-9j03jmsqQSA/UcXZ5jsbfII/AAAAAAAABbo/pvznHK9rnx0/s1600/ScreenHunter_83+Jun.+18+23.20.jpg)\n\n奧地利是沒有袋鼠的，有袋鼠的是澳洲。在奧地利的T恤地攤，你一定會看到這個招牌。不過在中文裡面，這兩個國家的發音差很多，所以不會搞錯的。\n\n在薩爾斯堡附近，有座很有趣的宮殿「海爾布倫宮」也叫美泉宮。Schloss Hellbrunn的意思就是「泉」，這是一座以水為主題的宮殿，幾乎所有的東西都和泉水有關。而打造這些機關的人和主人都有惡作劇的習慣，參觀海爾布倫宮的時候請務必小心，相機一不小心就會溼。\n\n![](http://1.bp.blogspot.com/-wc2-cmpSmDU/UcXZ57Kx5jI/AAAAAAAABb0/HrnJhP3e3lc/s1600/ScreenHunter_84+Jun.+18+23.56.jpg)\n\n從一進門的會議桌開始，解說員都會先用德文講一次，然後再切換成英文。可惜的是這種惡作趣效果，都是在德文解說時使用的，英文講解時會跟不上呀。\n\n![](http://4.bp.blogspot.com/-puiI6pGc4Dc/UcXZ5-rypEI/AAAAAAAABbw/IHlEdv29rFo/s1600/ScreenHunter_85+Jun.+18+23.58.jpg)\n\n![](http://4.bp.blogspot.com/-9mZC1gjmUuQ/UcXZ613KGWI/AAAAAAAABb8/YTbFjLn4WaM/s1600/ScreenHunter_86+Jun.+18+23.58.jpg)\n\n這個會議桌通常是放在整人的第一步，主人會坐在解說員的這個位置，等到客人坐定後，就會突然啟動開關，這時候四周就會噴水，還有一道水是直接從椅子下方噴出來的。所以除了主人以外，所有的人都會被噴溼的，這主人真的是很喜歡整人呀！\n\n![](http://2.bp.blogspot.com/-ebZ5DNwVAMg/UcXZ8T4oBoI/AAAAAAAABcY/wyrAFs-j1ak/s1600/ScreenHunter_88+Jun.+23+00.31.jpg)\n\n像這條道路也是有機關的，當時的皇帝帶著客人參觀，走到這條道路時，旁邊的水柱會無預警的噴出，再度讓客人嚇到。\n\n![](http://1.bp.blogspot.com/-s8abgJnbtDM/UcXZ89SyrsI/AAAAAAAABco/rg28dMueM6Y/s1600/ScreenHunter_90+Jun.+23+00.35.jpg)\n\n像這個水劇場也是整人項目，在當時電力並沒有如此方便的情況下，可以看到機械以其他動力轉動應該是件不容易的事情，所以大家理所當然的會在劇場的前方開始看。然後........\n\n![](http://3.bp.blogspot.com/-WCkeWZUjvfs/UcXZ8hMSlpI/AAAAAAAABcg/spMmajRAghc/s1600/ScreenHunter_89+Jun.+23+00.34.jpg)\n\n水就像這樣的從左右、後方噴出來，這真的算是整人的最高境界了，先把大家的注意力往一個地方集中，然後再從另一個地方突襲。這用在兵法、魔術、欺敵都是可以的！\n\n![](http://1.bp.blogspot.com/-ccR-VGqKpGA/UcXZ71Zg_zI/AAAAAAAABcI/WEGECghOuEk/s1600/ScreenHunter_86+Jun.+23+00.27.jpg)\n\n這是俏皮的臉，用水為動力，每隔一陣子會把舌頭吐出來。\n\n![](http://1.bp.blogspot.com/-6ql3xIZWNKM/UcXZ70l2PnI/AAAAAAAABcM/pZNlcx93QqQ/s1600/ScreenHunter_87+Jun.+23+00.29.jpg)\n\n用水的力量來控制這個小塔的高度，可以高也可以低，不過因為設計的很好，所以這個塔不會飛出去，就算水關掉了，他還是會掉到原來的位置。應該是用來展飾技術力的？\n\n![](http://2.bp.blogspot.com/-D6mmKxlekwc/UcXZ82UBxVI/AAAAAAAABcs/5nhJQd3UowA/s1600/ScreenHunter_93+Jun.+23+00.48.jpg)\n\n在Salzburg的hostel裡面，我遇到了很有趣的朋友。是因為在奧地利的環境，讓我們可以用更幽默的態度去看人生？\n\n還是平時我所處的環境，太過僵硬？\n\n我也不知道，就像我不知道這篇海爾布倫宮要怎麼收尾比較好。\n\n![](http://2.bp.blogspot.com/-9j03jmsqQSA/UcXZ5jsbfII/AAAAAAAABbo/pvznHK9rnx0/s1600/ScreenHunter_83+Jun.+18+23.20.jpg)\n\n那就用「請記得，Austria 是沒有袋鼠的。Australia才有袋鼠！」作結束吧。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": true,
-  "word_count": 794,
-  "reading_minutes": 3,
-  "source_path": "_posts/2013-06-23-Austria-Hellbrunn.md"
  }
 ]
