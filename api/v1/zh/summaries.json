@@ -1,5 +1,29 @@
 [
  {
+  "slug": "it-ironman-2026-day-03",
+  "title": "[IT 鐵人賽] 殊途同歸：一個 Agent、多種輸入，Desktop App 和 CLI 要通到同一個核心 - Day 03",
+  "lang": "zh",
+  "date": "2026-09-10T01:07:45+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "CLI",
+   "Desktop App"
+  ],
+  "summary": "CLI 和 Desktop 都能動，底下卻各自帶了一份呼叫 Agent 的邏輯。我把能力收回同一個核心，讓新增工具只接一次，兩個介面就都能用。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-03/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-03-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2298,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-09-10-it-ironman-2026-day-03.md"
+ },
+ {
   "slug": "it-ironman-2026-day-02",
   "title": "[IT 鐵人賽] 小周天：Pi Agent 的核心是一個回圈，每一輪結束都在決定要不要再轉一次 - Day 02",
   "lang": "zh",

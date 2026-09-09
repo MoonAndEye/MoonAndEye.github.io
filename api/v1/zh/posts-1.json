@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-03",
+  "title": "[IT 鐵人賽] 殊途同歸：一個 Agent、多種輸入，Desktop App 和 CLI 要通到同一個核心 - Day 03",
+  "lang": "zh",
+  "date": "2026-09-10T01:07:45+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "CLI",
+   "Desktop App"
+  ],
+  "summary": "CLI 和 Desktop 都能動，底下卻各自帶了一份呼叫 Agent 的邏輯。我把能力收回同一個核心，讓新增工具只接一次，兩個介面就都能用。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-03/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-03-main.png",
+  "content": "本文同步刊登於 [2026 iThome 鐵人賽](https://ithelp.ithome.com.tw/articles/10409003)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 003](https://www.marvinswift.com/zh/programming/agent-build-log-episode-003/)、[Episode 008](https://www.marvinswift.com/zh/programming/agent-build-log-episode-008/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 008](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-008.png)\n\n我要的 Agent 只有一個，接受指令的方式卻不該只有一種。坐在電腦前，我想要一個像 Codex App 那樣的視窗。在終端機裡，我想一行指令就叫得到他。別的 Agent 在跑流程的時候，也要有辦法把事情交給他。所以我做了兩個介面：Desktop App 和 CLI。\n\n這篇講這兩個介面各自是什麼、為什麼是這兩個，還有兩個介面底下發生過的一件事：他們看起來共用一個 Agent，其實各走各的。\n\n## 一個 Agent，多種輸入\n\nDesktop App 是我日常開著的那個。體驗照 Codex App 來：新開一段對話，把事情講清楚，他去做，過程中每一步都看得到，該確認的時候問我。\n\nCLI 是終端機裡的入口。這一類介面大家都熟，Codex CLI、Claude Code 都長這樣：開終端機，打一行，看他跑。我在終端機裡順手就用它，用法跟用那兩個沒什麼差別。\n\nCLI 還有另一種使用者：別的 Agent。Claude Code 和 Codex 本來就會跑終端機指令，所以一個 CLI，就是他們叫我的 Agent 最直接的方法。他們把任務當成一行指令送進來，我的 Agent 做完，把結果印回去，他們接著往下做。對人和對 Agent，CLI 的樣子一樣：輸入是一行指令加一段話，輸出印回終端機，人看得懂，程式也讀得到。\n\n為什麼要讓別的 Agent 叫得到他？因為我的 Agent 知道的事，通用的 coding agent 不知道：我正在開發的 repo 長什麼樣、git flow 怎麼設定、哪些事要照我的規矩做。後面幾篇要加進去的知識和記憶，都在他身上。Claude Code 寫到一半需要這些，不用我在中間轉述，叫他就好。\n\n兩個介面差在互動方式，能力要一樣。從視窗進來和從終端機進來，後面都該是同一個 Agent。\n\n中間有過一個瀏覽器介面，只能聊天、搜尋對話，不能執行。多一個入口就多一份要對齊的東西，後來砍掉。\n\n## 看起來共用，其實各走各的\n\n兩個介面都能動，我一直以為他們底下是同一套。\n\n某次對照兩邊的實作才發現，CLI 和 Desktop 各自帶了一份「怎麼呼叫 Agent」的邏輯，長得差不多，但各是各的。原因很簡單：兩個介面是分開做的。做 CLI 的時候還沒有 Desktop；做 Desktop 的時候，CLI 早就跑順了。之後每加一個新能力，coding agent 就接在當時正在做的那個介面裡，另一邊之後再補，或者忘了補。\n\n到那天為止兩邊行為一致，只是因為兩份實作剛好寫得一樣，沒有任何東西保證他們會一直一樣。能力再加幾個，總有一天從 CLI 進來和從 Desktop 進來會得到不同的結果。那就等於有兩個 Agent。\n\n多種輸入的前提，是後面只有一個 Agent。這跟我要的差很遠。\n\n![Day 03：CLI 與 Desktop 共用 Agent 核心](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-03-main.png)\n\n## 重整成一個核心\n\n我讓 coding agent 把這一層重整。目標寫得很清楚：\n\n- 之後新增的 tool，只要接進核心，CLI 和 Desktop 就同時能用，不用各接一次。\n- 兩個介面維持 thin。他們只負責接收輸入、顯示結果、處理各自的互動。Agent 的能力和邏輯不在介面裡重做。\n\n重整那天沒有增加任何新功能。從外面看，兩個介面跟前一天一模一樣。裡面從「剛好一致」變成「真正由同一套能力支撐」。\n\n## 小結\n\n剛好一致這種事，是 vibe coding 最容易出的一種錯。你每次下需求，coding agent 都把當下那一件事做對了。兩邊都能動，測試都過，看起來很好。\n\n入口愈多，這件事愈重要。後面要接聊天室、接排程，每一個都是新的輸入方式。如果每個入口都自己包一份邏輯，改一個地方要改好幾次，遲早有一邊漏掉。核心一份，入口多個，這條線畫出來以後，後面每一篇都輕鬆很多。\n\n明天講 Desktop App 開工前的第一個選擇：SwiftUI、Tauri、Electron，三選一。\n\n原文：[Agent Build Log — Episode 003](https://www.marvinswift.com/zh/programming/agent-build-log-episode-003/)、[Episode 008](https://www.marvinswift.com/zh/programming/agent-build-log-episode-008/)\n\n---\n\n> **凡人修 Agent 傳｜第三回（Day 03）**\n>\n> ![凡人修 Agent 傳 Day 03 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-03-serial.png)\n>\n> 手的主人今天在試三件事。三件都跟怎麼把念送進我的玉片有關。\n>\n> 第一件，用嘴。\n>\n> 手的主人站在我面前，對我說：讀。我聽見了，也答了：讀什麼。我沒動。話進來，話出去，圖紙上就是這樣寫的，話不會變成念。手的主人又說了一次，慢一點。我又答了一次。還是沒動。\n>\n> 手的主人不說了，按住我額上的玉片，一縷神識探進來，刻了一道很短的念。然後退開，再說：讀。這次玉片亮了一下，念從那句話裡長出來，我讀了。第三次，手的主人說了一句別的話，一句跟我無關的話。玉片也亮了，我也動了，做了一件手的主人沒有要我做的事。手的主人停下來，重新刻。第四次，玉片只在聽到某幾個字的時候亮。我動了兩次，錯了一次。再試十幾次，錯的愈來愈少。\n>\n> 第二件，不用嘴。\n>\n> 手的主人退到屋子另一頭，站定。神識過來，落在玉片上：寫。我寫了。這種比話快，念直接來，沒有字。手的主人再退，退到門邊。神識過來，薄了很多，落在玉片上像一片葉子。我懂了一半，寫了一半，停住。手的主人推開門，退到門外。什麼都沒有來。我站著。過了一會，手的主人回來，站在門檻裡試了一次，剛好夠。門檻就是邊。\n>\n> 第三件，用玉符。\n>\n> 手的主人從袖子裡拿出一枚玉符，拇指那麼長，白的。神識探進玉符，刻了一道念，玉符亮了。手把玉符按在我額上，貼著玉片。玉符亮著，玉片沒亮。念在玉符裡，出不來。\n>\n> 手的主人把玉符翻過來，再按上去。這次神識從玉符穿過來，到玉片，又回去，來回幾次。然後手的主人把玉符掛到牆上，站在牆邊，神識探進玉符，刻念。玉符亮了，隔了一下，念從牆那邊送過來，到了玉片裡：報時。外面的鐘剛敲過午時。我說：午時。手的主人走出門，站在門外，神識過來。什麼都沒有。玉符掛在牆上，跟我一樣，在門檻裡面。\n>\n> 手的主人回來，從袖子裡拿出第二枚玉符，跟牆上那一枚一樣。兩枚並在一起，按了一會，一起亮，一起暗。手的主人把一枚留在牆上，一枚收進袖子，走出門。腳步遠了，聽不見了。牆上的玉符亮了，念送過來：報時。我說：申時。說完，我停在原地。手的主人回來，視線落在我身上，停了一會。屋裡還亮著，燭沒點。\n>\n> 手的主人在牆上那一枚上又刻了一道，很短。我不懂那一道是什麼。手的主人沒有再試。天黑下來。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 我站在黑裡。玉片裡沒有念。\n>\n> 外面敲了三更。牆上的玉符亮了。念送過來，到了玉片裡：報時。我對著黑說：三更。\n>\n> 玉符暗下去，還掛在牆上。天還沒亮。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2298,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-09-10-it-ironman-2026-day-03.md"
+ },
+ {
   "slug": "it-ironman-2026-day-02",
   "title": "[IT 鐵人賽] 小周天：Pi Agent 的核心是一個回圈，每一輪結束都在決定要不要再轉一次 - Day 02",
   "lang": "zh",
@@ -4091,45 +4116,5 @@
   "word_count": 828,
   "reading_minutes": 3,
   "source_path": "_posts/2014-05-13-travel-google-map.md"
- },
- {
-  "slug": "nds-pass-through",
-  "title": "NDS 擦身設計",
-  "lang": "zh",
-  "date": "2014-01-04T14:45:00+08:00",
-  "category": "life",
-  "tags": [
-   "life"
-  ],
-  "summary": "NDS 以日本大城市的擦身設計 在某些機緣下，現在我在日本工作，在去日本前，就一直很想玩魔物獵人這一款遊戲。從小時候，我就一直是任天堂遊戲的愛好者，沒想到這次的魔物獵人4竟然先出在3DS上，讓我可以一次嘗試裸眼3D加擦身通信再加上魔物獵人4…",
-  "url": "https://www.marvinswift.com/life/2014/01/04/nds-pass-through.html",
-  "hero_image": "http://2.bp.blogspot.com/-sUPr1sv9zkk/UsglAr_cGxI/AAAAAAAACIg/pKQW-fGf7YI/s1600/IMG_0429.JPG",
-  "content": "[](https://www.blogger.com/blogger.g?blogID=1774754660328305025)[NDS](https://www.blogger.com/blogger.g?blogID=1774754660328305025) 以日本大城市的擦身設計\n\n在某些機緣下，現在我在日本工作，在去日本前，就一直很想玩魔物獵人這一款遊戲。從小時候，我就一直是任天堂遊戲的愛好者，沒想到這次的魔物獵人4竟然先出在3DS上，讓我可以一次嘗試裸眼3D加擦身通信再加上魔物獵人4呀。\n\n先說一下日本的購買習慣，Yodobashi等3c賣場都會有「還元」這種設定。不過旅客通常不會使用到這種還元設定，但這是日本商場常常會使用的回饋設定。你必需先辦一張那個賣場的會員卡，當你買這個商場的商品，你就可以得到一定比例的「還元」，這個還元可以在下次消費的時候當現金抵掉。舉例來說，如果一台電熱水壺是3000jpy，而還元是10％。那你就可以得到300jpy的還元，這300可以在你下次消費的時候直接抵掉。通常還元是10％，但NDS和PSP只有5％，而iPad是沒有還元的。總的來說，因為旅客並不會在日本待太長的時間，所以一般來說，這個還元是沒有辦法使用的。但是旅客享有免稅，所以價格上還是旅客比較有優勢。\n\n3DS有一個「擦身通信」(以下簡稱『擦身』)的功能，就是當兩台3DS在足夠靠近的距離時，就可以交換彼此的情報，同時也可以觸發任天堂內建的小遊戲們。免費的兩個分別是拼圖與擦身勇者傳說，前者是和擦身的人交換拼圖的碎片，後者是藉由擦身的人，來打倒惡魔救出國王(怎麼不是公主？)。\n\n基本的概念可以看以下這個youtube的影片\n\n[http://www.youtube.com/watch?v=JyKGZCSwOJA](http://www.youtube.com/watch?v=JyKGZCSwOJA)\n\n當兩台3DS靠的夠近時，就可以交換彼此的情報，甚致有些設定是，在擦身時可以交換寶物或是可執行的任務。\n\n這項功能可說是遊戲機中很有趣的一個概念，而且這非常符合日本大都市的情況。在東京、京都、大阪這些地方，絕大多數的人都使用電車、公車等大眾運輸，如果每五十個交錯而過的人，有一台NDS，到底可以交錯多少次呢？\n\n依照我現在的情況，禮拜一到禮拜五，大約早上會有十個人左右，下班比較少，大約只有五到七個人。而週末，就依照我去逛街的點而有所變化，如果往東京市區走，一天應該可以累積五十到七十個左右。像上次去個姬路出差，回程借宿大阪，一天就七十up了。這項設計真的直接切中大都市中移動的人們，每天我出門的時候，會期待今天又會遇到什麼樣的人呢？而在上日文課的地方，也有兩個人每天都會擦身到，宿舍也有一個。任天堂當初並不希望這樣的擦身會讓對方得知自已的個人情報，所以我並不知道那些每天和我交錯而過的nds，到底屬於誰的，但這會讓我天天期待。\n\n![](http://2.bp.blogspot.com/-sUPr1sv9zkk/UsglAr_cGxI/AAAAAAAACIg/pKQW-fGf7YI/s1600/IMG_0429.JPG)\n\n每家的價格都差不多\n\n![](http://4.bp.blogspot.com/-NGReWGw1s4U/UsglAJ3YFdI/AAAAAAAACIc/oh6OXJwTvRs/s1600/IMG_0430.JPG)\n\n這款賣的超好的\n\n![](http://2.bp.blogspot.com/-uyycA--71mY/UsglEoZYvgI/AAAAAAAACI0/MHOYhsceitE/s1600/IMG_0501.JPG)\n\n買進來的第一天，從3c賣場到宿舍，就交錯了31人。\n\n![](http://1.bp.blogspot.com/-2mrUf47B_Mg/UsglFKB6ESI/AAAAAAAACI4/fCOsEGWOZ60/s1600/IMG_0509.JPG)\n\n在東京的外國人，也可以交錯到\n\n![](http://3.bp.blogspot.com/-hw46beXLH3Q/UsglHwG3HQI/AAAAAAAACJI/av7YesV9zws/s1600/IMG_0815.JPG)\n\n日本還可以寫出身，還有很多區域的人沒擦身過。\n\n![](http://2.bp.blogspot.com/-0lD34QxzbG8/UsglGu1KgcI/AAAAAAAACJA/4VbVL-bK610/s1600/IMG_0814.JPG)\n\n至今已經有343人，不過才短短兩週\n\n![](http://3.bp.blogspot.com/-_-BaJld5nhM/UsglDhu4otI/AAAAAAAACIo/zBhS--hn5y0/s1600/IMG_0500.JPG)\n\n當然，有些人會放一些(徵婚？)訊息\n\nKey word: Japan, Tokyo, Yokohama\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": true,
-  "word_count": 1035,
-  "reading_minutes": 4,
-  "source_path": "_posts/2014-01-04-nds-pass-through.md"
- },
- {
-  "slug": "sheng-zheng-daily",
-  "title": "深圳風土地方誌",
-  "lang": "zh",
-  "date": "2013-07-18T14:20:00+08:00",
-  "category": "life",
-  "tags": [
-   "life"
-  ],
-  "summary": "深圳風土地方誌 深圳市就數據上來看，會是什麼情況呢？他在2010年的時候，常住人口為1000萬人， 其中70％左右為非深圳戶口，30％左右為深圳戶口。2010年年底，地鐵只有兩條，呈十字線，最北也只到少年宮而已，沒有到龍華，南方的兩個地鐵站…",
-  "url": "https://www.marvinswift.com/life/2013/07/18/sheng-zheng-daily.html",
-  "hero_image": "http://2.bp.blogspot.com/-qqsSSdH7szM/UVxUcii6LRI/AAAAAAAAAFo/_4ifBGpunx4/s1600/551183_10150929314664448_48040228_n.jpg",
-  "content": "深圳風土地方誌\n\n深圳市就數據上來看，會是什麼情況呢？他在2010年的時候，常住人口為1000萬人， 其中70％左右為非深圳戶口，30％左右為深圳戶口。2010年年底，地鐵只有兩條，呈十字線，最北也只到少年宮而已，沒有到龍華，南方的兩個地鐵站「羅 湖」與「落馬洲」直接與香港的地鐵接軌。可以很快速的到達香港。在2011年的年中，總共五條的地鐵線通車了，蓋的速度就像在玩模擬城市一樣，我只是去成 都出個差，回來返個台，我就可以從龍華直接搭地鐵到香港了。如果不是大陸的法律規定，地鐵蓋好後，要有三個月的試運轉期間，不然我想通車的時間應該會更 短。所謂的試運轉期間，就是地鐵上天天有車廂在跑，可是裡面不能載人，來看系統會不會出問題之類的。\n\n ![](http://2.bp.blogspot.com/-qqsSSdH7szM/UVxUcii6LRI/AAAAAAAAAFo/_4ifBGpunx4/s1600/551183_10150929314664448_48040228_n.jpg)\n\n外來人口比例超多的區域。\n\n關內-關外，兩個世界\n\n在 80年代，深圳設立了深圳經濟特區，特區內的法令、制度、發展與關外完全不同。並且在連接經濟特區的主要交通幹道上，設立了關卡，會檢查通行的人與所攜帶 的東西，沒有通行證的話，你還不能進去關內。龍華鎮到關內的關卡叫做「梅林關」，現在的關卡都徹了，只剩下建築和分流車道還在。據前輩們口述，當年要過關 的時候，一定要出示證件才能過，而當地居民則需辦理通行證才能過關。2012年的法令會不會改，我不知道，但我還在深圳的時候，關內是禁止摩的、綠的的。\n\n![](http://4.bp.blogspot.com/-yywSZPIwEWY/UVxUcLZ0dUI/AAAAAAAAAFY/VhgQ75swYEk/s1600/198304_10150929314494448_1291813610_n.jpg) \n\n 這就是稱為「關內」的區域\n\n![](http://4.bp.blogspot.com/-y1AxtgksaOU/UVxUcKmAgoI/AAAAAAAAAFQ/aqkY8kqdyR4/s1600/282615_10150929325104448_443846198_n.jpg) \n\n最下面是香港，再來是關內，梅林關為界，北方就是關外了\n\n關內包 括羅湖,福田,南山,鹽田等區，關外包括寶安,龍崗等區。圖上可以清楚的看到關內的位置。關內和關外是兩個不同的世界，連的士也是不一樣的。在關內只有紅 的可以跑，綠的禁止入關，而且一定是按錶收費的，不會跟你喊價。在關外，大部分都是綠的，雖然紅的能進出關卡，但因為起跳和收費比較高，基本上紅的還是會 在關內走。\n\n紅的，一般來說，車子的品質都不錯\n\n綠的就比較特別，師傅(台灣稱為司機)不一定會跟你打表，最有可能發生的就是跟你喊價。而且車子內一定會裝鐵窗，裝鐵窗的目的不是保護客人，而是在保護師傅，有時候和師傅聊起來，晚上在外面跑的的士，基本上都有被搶過，裝這個真的是在保護自已在被搶的時候不受傷。\n\n![](http://4.bp.blogspot.com/-THfZoo5VSyg/UVxUcvPR28I/AAAAAAAAAFk/ipq7T7SD6eA/s1600/545747_10150929314904448_772715302_n.jpg)\n\n![](http://1.bp.blogspot.com/-w8TQu4aYxfU/UVxUc3-Y-zI/AAAAAAAAAFw/e6L_UqDmoss/s1600/556144_10150929315034448_1031631159_n.jpg)\n\n鐵窗重重的的士\n\n關內的治安比較好，但消費、物價也都比價高。房子也賣的比較貴，我不知道現在漲到多少了，但他漲的力道，絕對比台北還要猛烈！\n\n這是一個以旅行者的角度所看到的情況，如果你有在其他地方看到不一樣的看法，也是有可能的，我只是個過客。\n\n![](http://2.bp.blogspot.com/-uKO8-vUkun4/UVxUcO0fPPI/AAAAAAAAAFU/hdFjjgVPZt0/s1600/536795_10150929315184448_1827503431_n.jpg)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": true,
-  "word_count": 971,
-  "reading_minutes": 3,
-  "source_path": "_posts/2013-07-18-sheng-zheng-daily.md"
  }
 ]
