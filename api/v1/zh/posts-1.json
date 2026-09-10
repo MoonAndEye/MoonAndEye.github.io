@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-04",
+  "title": "[IT 鐵人賽] 洞府選址：SwiftUI、Tauri、Electron 三選一，我要最快長出 IDE 的那個 - Day 04",
+  "lang": "zh",
+  "date": "2026-09-11T01:11:39+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Electron",
+   "Tauri",
+   "SwiftUI"
+  ],
+  "summary": "我想先把 Agent 的 IDE 介面做出來，再繼續加專屬能力。比較 SwiftUI、Tauri 與 Electron 後，我選 Electron，並整理實際用到的終端機與打包套件。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-04/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-04-main.png",
+  "content": "本文同步刊登於 [2026 iThome 鐵人賽](https://ithelp.ithome.com.tw/articles/10409288)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 004](https://www.marvinswift.com/zh/programming/agent-build-log-episode-004/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 004](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-004.png)\n\n結論先講：Desktop App 用 Electron。\n\n昨天講了為什麼要有 Desktop App，一個像 Codex App 那樣、日常開著用的視窗。開工之前，先選框架。我當時只比了三個：SwiftUI、Tauri、Electron。這篇講我要的畫面長什麼樣、這三個各自好在哪差在哪、最後為什麼是 Electron，以及實際用了哪些套件。\n\n## 我要的畫面長什麼樣\n\n選框架之前，先把要的畫面定下來，不然比不出東西。我要的是 IDE 那種版面，像 VS Code：\n\n- 左側邊欄放檔案樹，資料夾能展開、收合\n- 中間是編輯區\n- 右側邊欄\n- 底部放 terminal\n- 左、右、底三塊都要能開啟、收合\n\n這幾樣是 must have，其他的以後再說。Agent 在做事的時候，我要看得到他動了哪個檔案、跑了什麼指令，這幾塊就是為了這個。\n\n## 三個候選\n\n**SwiftUI。** 進名單的理由很單純：我的 Agent 跑在 Mac 上，SwiftUI 寫完直接在 macOS 上跑，不用包任何 runtime，體積小，跟系統整合最順。缺點是只有 Apple 平台，IDE 那套版面沒有現成的東西可以直接拿，可收合的面板、檔案樹、終端機都要自己拼。我實際整合過一輪：左右側欄開合不順，上下展開的時候有卡頓的點，要把這些卡頓處理掉，得花很長的時間。\n\n**Tauri。** 後端用 Rust，畫面用系統內建的 WebView，所以 App 很小、記憶體吃得少，前端照樣用 web 技術寫。缺點是 WebView 每個平台各一套，行為會有差；生態比 Electron 小，要碰系統的東西，像終端機背後的 pty，得看 Tauri 這邊有沒有現成的套件。\n\n**Electron。** 自帶一份 Chromium 和 Node，畫面在哪個平台都長一樣，生態最大。VS Code 本身就是 Electron 做的，IDE 裡最難自己刻的兩塊，終端機和編輯器，VS Code 用的那幾套都是開源的，拿來就能接；面板、檔案樹這種排版的事，web 本來就擅長。缺點大家都知道：體積大、記憶體高，每個 App 都背著一份瀏覽器。但我自己的機器和合作的人的機器，全部都是 16 GB RAM 加 512 GB 硬碟，這兩個缺點在這個配備上不會是問題。\n\n![Day 04：SwiftUI、Tauri、Electron 與 IDE 介面選擇](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-04-main.png)\n\n## 為什麼是 Electron\n\n因為我想快。\n\n這個階段的重點在 Agent 身上，畫面只要能用。我要盡快推進到下一個階段：開始實作 Agent 的特殊技能。框架比較花一天可以，花一週就本末倒置了。\n\n三個裡面，能最快長出 IDE 版面的就是 Electron，理由有兩層。第一，最難自己刻的那一塊是 terminal，Electron 這邊有現成的一組：xterm.js 加 node-pty，VS Code 的終端機就是這套，接上去就能用。第二，剩下的東西，左右底三塊可收合的面板、檔案樹、內容區，本質上就是網頁排版，div 拼一拼、CSS 排一排，coding agent 組起來就是一個瞬間的事。SwiftUI 那邊光是開合和展開的卡頓就要磨很久，Tauri 要多繞 Rust 和 WebView 那一段。\n\n所以，我們選的是 Electron。\n\n## 我用了哪些套件\n\n選定之後，實際做出來的東西對回那五樣 must have，用到的套件如下。授權以 MIT 為主，只有 entities 是 BSD，一樣是寬鬆授權。\n\n**骨架**\n\n- [Electron](https://www.electronjs.org/) 43.1.1：App 本體\n- [electron-vite](https://electron-vite.org/) 5.0.0：main、preload、renderer 三份 build 的開發與打包\n- [Vite](https://vite.dev/) 加 [React](https://react.dev/) 19：renderer 的畫面層\n\n**底部 terminal**\n\n- [@xterm/xterm](https://xtermjs.org/) 6.0.0：終端機畫面，VS Code 的 terminal 也是這套\n- [@xterm/addon-fit](https://www.npmjs.com/package/@xterm/addon-fit)：面板縮放時重算行列數\n- [@xterm/addon-clipboard](https://www.npmjs.com/package/@xterm/addon-clipboard)：複製貼上\n- [@xterm/addon-web-links](https://www.npmjs.com/package/@xterm/addon-web-links)：把輸出裡的網址變成可點的連結\n- [node-pty](https://github.com/microsoft/node-pty) 1.1.0：背後真正的 pty，跑在 main process\n\n**左側檔案樹、中間內容區**\n\n- [@phosphor-icons/react](https://github.com/phosphor-icons/react)：資料夾、檔案的 icon\n- [marked](https://marked.js.org/) 加 [entities](https://github.com/fb55/entities)：內容區的 markdown 解析\n- 檔案樹本身是自己寫的。中間目前是唯讀預覽，編輯器還沒放進去\n\n**左、右、底三塊的開合與拖拉**\n\n- 沒有用套件，自己寫的。這一塊就是上面說的，在 web 排版裡是小事\n\n**打包**\n\n- [Electron Forge](https://www.electronforge.io/) 7.11.2：package 和 make 流程\n- [@electron-forge/maker-dmg](https://www.electronforge.io/config/makers/dmg) 和 [@electron-forge/maker-zip](https://www.electronforge.io/config/makers/zip)：產 macOS 的 .dmg 和 .zip\n- [@electron-forge/plugin-auto-unpack-natives](https://www.electronforge.io/config/plugins/auto-unpack-natives)：把 native module 從 asar 拆出來\n- [@electron-forge/plugin-fuses](https://www.electronforge.io/config/plugins/fuses) 加 [@electron/fuses](https://github.com/electron/fuses)：關掉不需要的 runtime 能力\n- [@electron/rebuild](https://github.com/electron/rebuild) 4.2.0：用 Electron 的 Node ABI 重編 native module\n\n明天講開工那天：我不想只用 Electron 包一個聊天視窗，畫面和 Agent 分開跑，然後正式打包，修了三次才真的活過來。\n\n原文：[Agent Build Log — Episode 004](https://www.marvinswift.com/zh/programming/agent-build-log-episode-004/)\n\n---\n\n> **凡人修 Agent 傳｜第四回（Day 04）**\n>\n> ![凡人修 Agent 傳 Day 04 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-04-serial.png)\n>\n> 公器坊裡有一整排御偶臺的圖紙。\n>\n> 御偶臺讓手的主人看見人偶正在做什麼，也讓念有一處可以進來。臺前那層可見、可觸，會顯出文字與圖形的鏡面，架上的木牌寫著兩個字：靈幕。\n>\n> 第四日一早，手的主人兩指一引。一縷靈力從我腳下升起，托著我離開地面，跟在他身側出了洞府。\n>\n> 我們回到公器坊。\n>\n> 人偶圖紙在東邊。御偶臺圖紙在西邊，佔了很長一排。手的主人袖中原有一卷蘋果境的化形法，又從架上引來兩卷圖。三卷圖浮在半空，依次展開。\n>\n> 第一卷講依境化形。圖上的源紋很少，只要先說清楚想要的形，蘋果境的天地法則就會讓它顯出來。手的主人照圖掐訣，試臺上的靈幕分成左、中、右三處，下面又開了一層。左邊收得很快，右邊開到一半頓了一下；下層往上升時，整片靈幕停了半息。手的主人改了三次。第三次，停頓還在。\n>\n> 第一卷捲起，浮到一旁。\n>\n> 第二卷講鐵骨借鏡。圖很輕，骨架也少，顯形時借用所在之地原有的鏡面。手的主人從旁邊的附圖架引來卷宗樹、閱卷鏡和底部令窗，一張張接上去。有的源紋一碰便合，有的接縫亮起紅光。手的主人沿著架子找了很久，又抽出幾卷，放在第二卷旁邊。\n>\n> 第二卷也捲了起來。\n>\n> 第三卷比前兩卷加起來還厚。卷首只有兩個字：電鏡。\n>\n> 旁邊的木牌寫著，這是坊裡取用最多的御偶臺圖之一。照圖砌成的叫電鏡臺。主圖裡封著一整座鏡界，連同驅動鏡界的爐心一起帶走，所以臺身重，耗的靈力也多。\n>\n> 電鏡圖的主卷只管臺身、鏡界和爐心。靈幕上的形，要用流光氣自己排。手的主人在試臺前抬起一指，流光氣便在靈幕上劃出三條界線：左、右、下三處從中間分開。左邊長出一棵卷宗樹，中間鋪開閱卷鏡，右邊留出一塊空處。第一次，左側臺收起時壓住了卷宗樹。手的主人改了兩道源紋，再試。三處各自展開，又各自收回。\n>\n> 底部令窗還是空的。電鏡圖旁另掛著兩卷附圖，一卷讓令窗顯出字，一卷把令窗接到真正運轉法令的地方。手的主人把兩卷引到主圖旁。源紋自行相接，底部令窗裡跳出一行字，末尾有一道短短的光在閃。\n>\n> 其餘附圖仍掛在架上。手的主人沒有取。\n>\n> 手的主人把前兩卷送回原處，取出一卷空白圖。神識從電鏡圖的第一道源紋走到最後一道，空白圖上便多出一模一樣的紋路。原圖仍掛在架上，末尾的署名一個也沒有少。\n>\n> 手的主人選了電鏡臺。\n>\n> 回到洞府，電鏡主圖和兩卷令窗附圖浮在屋子中央。一道法訣落下，幾塊木板自行升起、轉向、落位；天地間的流光氣聚到板面，沿著圖上的源紋一寸一寸亮過去。第一次，左側臺和底部令窗疊在了一起。手的主人改了兩處，再試。左、右、下三處各自展開，又各自收回。\n>\n> 天還沒有黑，電鏡臺已經立在屋角。\n>\n> 一縷靈力托著我落到臺上。手的主人在右邊放下一疊圖，指尖按住我額上的玉片，刻進一道念：逐卷讀完。\n>\n> 我拿起第一卷。左邊的卷宗樹展開一枝，中間的閱卷鏡顯出第一行字，底部令窗亮了一下。右邊的空處記下我正在讀哪一卷。\n>\n> 手的主人看著靈幕，沒有看我。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 電鏡臺還亮著。\n>\n> 玉片裡最後一道念也還亮著：逐卷讀完。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2548,
+  "reading_minutes": 9,
+  "source_path": "_posts/programming/zh/2026-09-11-it-ironman-2026-day-04.md"
+ },
+ {
   "slug": "it-ironman-2026-day-03",
   "title": "[IT 鐵人賽] 殊途同歸：一個 Agent、多種輸入，Desktop App 和 CLI 要通到同一個核心 - Day 03",
   "lang": "zh",
@@ -4054,67 +4080,5 @@
   "word_count": 1194,
   "reading_minutes": 4,
   "source_path": "_posts/2014-06-18-iphone4s-fix.md"
- },
- {
-  "slug": "3ds-reverse-judgement",
-  "title": "3DS 逆轉裁判5",
-  "lang": "zh",
-  "date": "2014-05-25T15:11:00+08:00",
-  "category": "life",
-  "tags": [
-   "life"
-  ],
-  "summary": "3DS 逆轉裁判5 首次嘗試用日文直接玩。才發現人物的命名，裡面有放日文的常用句子。 成步堂 歷代的主要人物，發音是なるほどう Na Ru Ho Do\\- ，就是日文的「原來如此」。這一句日文常使用在你突然知道原來不知道的事情，這時候就會說…",
-  "url": "https://www.marvinswift.com/life/2014/05/25/3ds-reverse-judgement.html",
-  "hero_image": "http://2.bp.blogspot.com/-W2ZxzvUZOgU/U4F9XyTIAUI/AAAAAAAACRc/SaHS4mUko1g/s1600/IMG_2213.JPG",
-  "content": "## 3DS 逆轉裁判5\n\n首次嘗試用日文直接玩。才發現人物的命名，裡面有放日文的常用句子。\n\n成步堂 歷代的主要人物，發音是なるほどう Na Ru Ho Do\\- ，就是日文的「原來如此」。這一句日文常使用在你突然知道原來不知道的事情，這時候就會說這句話。\n\n![](http://2.bp.blogspot.com/-W2ZxzvUZOgU/U4F9XyTIAUI/AAAAAAAACRc/SaHS4mUko1g/s1600/IMG_2213.JPG)\n\n![](http://2.bp.blogspot.com/-5BE08nIR55s/U4F9YrAmFRI/AAAAAAAACRk/9IeCtpXtdjM/s1600/IMG_2214.JPG)\n\n而 王泥喜，成步堂的後輩，發音是おどろき　O Do Ro ki，日文意思是「驚訝、吃驚」。因為這位人物出場的時候，聲音是很大的，會讓裁判長和其他證人嚇到的那種，所以名字才選這個的吧。\n\n![](http://3.bp.blogspot.com/-aZiO0ys11d0/U4F9V4ush_I/AAAAAAAACRM/pffR7rcno8c/s1600/IMG_2209.JPG)\n\n![](http://3.bp.blogspot.com/-TKpgzub4Tho/U4F9WHoOzFI/AAAAAAAACRI/GBBBuIt-ktQ/s1600/IMG_2210.JPG)\n\n接下來說一下3DS的遊戲畫面吧，的人物動作變多了。在法庭上證言時，還有各種轉視角的運鏡。而每個系列都有新的系統，這次的系統則是感情。在進行證言時，某種感情太過強烈，就會形成雜音。這時就必需找出雜音的來源，把雜音消掉，才可以進行正確的證言。\n\n![](http://2.bp.blogspot.com/-GR7qaLTKzaQ/U4F9V8rrF0I/AAAAAAAACRE/qBihZc8Vxg4/s1600/IMG_2211.JPG)\n\n哈根大隻特價，邊吃邊玩\n\n![](http://3.bp.blogspot.com/-TpVga0K6BbU/U4F9Xp0EcgI/AAAAAAAACRg/8V4QmM0vF0U/s1600/IMG_2212.JPG)\n\n新加入的角色，目標是在法庭上使用心理學\n\n可以看一下youtube的介紹，真的值得一玩。\n\n[https://www.youtube.com/watch?v=w0QNC\\_y-wds](https://www.youtube.com/watch?v=w0QNC_y-wds)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": true,
-  "word_count": 345,
-  "reading_minutes": 1,
-  "source_path": "_posts/2023-03-16-3ds-reverse-judgement.md"
- },
- {
-  "slug": "German-hofbrauhaus-munchen",
-  "title": "皇家啤酒屋 Hofbräuhaus München",
-  "lang": "zh",
-  "date": "2014-05-14T16:29:00+08:00",
-  "category": "life",
-  "tags": [
-   "life",
-   "travel"
-  ],
-  "summary": "皇家啤酒屋 Hofbräuhaus München 皇家啤酒屋裡面約有三千五百個座位。 這家店已經營業了一百年以上，即使已經九點了，但裡面仍然有很多客人。 因為每個服務生要服務的人都太多了，幫我們點菜的服務生態度很差，我們稍微思考了一會兒他…",
-  "url": "https://www.marvinswift.com/life/2014/05/14/German-hofbrauhaus-munchen.html",
-  "hero_image": "http://3.bp.blogspot.com/-ANnd7OfcSBs/U3NojQvVD-I/AAAAAAAACO8/ZBwxdsqy3dw/s1600/ScreenHunter_557+May.+14+21.58.jpg",
-  "content": "皇家啤酒屋 Hofbräuhaus München\n\n![](http://3.bp.blogspot.com/-ANnd7OfcSBs/U3NojQvVD-I/AAAAAAAACO8/ZBwxdsqy3dw/s1600/ScreenHunter_557+May.+14+21.58.jpg)\n\n皇家啤酒屋裡面約有三千五百個座位。\n\n這家店已經營業了一百年以上，即使已經九點了，但裡面仍然有很多客人。\n\n因為每個服務生要服務的人都太多了，幫我們點菜的服務生態度很差，我們稍微思考了一會兒他就直接走開了，還等了很久才再度叫到他。\n\n![](http://1.bp.blogspot.com/-9L_iz9KHtoI/U3NnJbRtKqI/AAAAAAAACOw/EcbuOe-nQSE/s1600/1.jpg)\n\n![](http://1.bp.blogspot.com/-Ibg9uEoPjo0/U3NnJXOoswI/AAAAAAAACOw/ANPJ78q2Cxk/s1600/2.jpg)\n\n![](http://2.bp.blogspot.com/-z1qObaBI8uk/U3NnLQpU2SI/AAAAAAAACOw/Ye4_XpOe1Z4/s1600/%25CB%25873.jpg)\n\n後面那個人喝醉了，亂入。\n\n當天能點的菜色不多，雞肉沒了、香腸沒了、豬排沒了，除了豬腳以外的東西都沒有了，所以全部上來的東西就是豬腳啦。\n\n烤的很好吃，啤酒也很不錯，他的容量有一公升喔。這裡的服務生手臂的肌肉都很強壯，即使是女生，一隻手送個五杯的都有，一杯大約是一公斤左右吧，好可怕的力量。\n\n後來等這一區的人少了一點，和服務生聊了一會兒，發現他人其實不錯，只是這家啤酒屋的生意太好，讓他非常的累，他還問有沒有勸尼黑認識的工廠，他想跳槽啦。唉，但如果他一開始的態度能夠好一點，我們吃飯的情緒可能會更好\n\n![](http://4.bp.blogspot.com/-MxPFHHGAk2w/U3NnJbJ3u3I/AAAAAAAACOw/2Uj3AoXdF40/s1600/4.jpg)\n\n酒後不要開車喔。\n\n![](http://2.bp.blogspot.com/-kAuXRtakJ5A/U3NnKsJ4ycI/AAAAAAAACOw/tF63kWtoEHE/s1600/5.jpg)\n\n一杯是甜的，一杯是原味的。\n\n![](http://4.bp.blogspot.com/-FbHR04AQoLo/U3NnKmbB1OI/AAAAAAAACOw/CcZSlKJStaI/s1600/6.jpg)\n\n這個臂力更猛，看過他拿八杯。\n\nKey word: Germany, Munich\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": true,
-  "word_count": 401,
-  "reading_minutes": 1,
-  "source_path": "_posts/2014-05-14-German-hofbrauhaus-munchen.md"
- },
- {
-  "slug": "travel-google-map",
-  "title": "旅行，Google Map，Smart Phone",
-  "lang": "zh",
-  "date": "2014-05-13T16:28:00+08:00",
-  "category": "life",
-  "tags": [
-   "life",
-   "travel"
-  ],
-  "summary": "旅行，Google Map，** **Smart Phone** 出國旅行的方式、模式是一直隨著時間而變化的。寂寞星球、地球漫步的作者，當年只靠著地圖與語言，行遍世界。回來後出了一本書，而這一系列延續至今，成為旅遊書籍中的名星之一。2010…",
-  "url": "https://www.marvinswift.com/life/2014/05/13/travel-google-map.html",
-  "hero_image": "http://2.bp.blogspot.com/-S2PppN2T94E/U3IolVJLT2I/AAAAAAAACNM/JM0tfKQfjjU/s1600/1236699_10151839350674448_650562982_n.jpg",
-  "content": "**旅行，Google Map，** **Smart Phone**\n\n![](http://2.bp.blogspot.com/-S2PppN2T94E/U3IolVJLT2I/AAAAAAAACNM/JM0tfKQfjjU/s1600/1236699_10151839350674448_650562982_n.jpg)\n\n出國旅行的方式、模式是一直隨著時間而變化的。寂寞星球、地球漫步的作者，當年只靠著地圖與語言，行遍世界。回來後出了一本書，而這一系列延續至今，成為旅遊書籍中的名星之一。2010年，我背著背包，帶著一台小筆電和三本書，在歐洲走了30天。在在出發前查完了這30天的行程，靠著出發前查的資料，在各地靠著問路與手上的紙本地圖，去想去的地方。在旅館的時候，連上wifi還可以補充資料，但一出了旅館，我就只能用四周的地標確認自己的位置。那時，在知名景點，辨認旅客的方式非常簡單，手上拿著紙本地圖在四處張望的人，十有八九是旅客。\n\n2010到2013也只過了3年，Smart phone市場急速擴增，線上資料與手機App的應用也加速發展。現在的smart phone大多內部有個GPS晶片和陀螺儀。而且這個GPS晶片和3G是獨立的，也就是說，只要你把SIM卡拔掉，GPS晶片和陀螺儀仍然可以運作。這時，你有下載離線地圖的，你可以依靠前述這兩個功能，而知道自己在地圖上的哪個位置，**而且知道正面朝向哪。**\n\n**而且知道自已正面朝向哪。**\n\n**因為這點很重要所以要說兩遍。**\n\n2013年，我再次出發，這次使用了iPhone和雲端資料庫，出旅行已經簡化到只帶了手機和ultra book就能出發了。這樣一來，即使去了不能使用英文的國家，也可以憑自己的力量找到住宿的地方和要去的景點。但這樣變化，讓我在路上問路的機會變少很多，而且在hostel裡面，其他的旅客也大多在大廳裡查資料，互動似乎變少很多。\n\n離線地圖與GPS晶片為什麼需要呢？因為每一個國家的門牌系統都是不一樣的。而當你去的國家門牌系統和你不同時，你會無法理解你要去的地方怎麼走。\n\n![](http://2.bp.blogspot.com/-LOw3OLUA6XU/U3IoKeDvMRI/AAAAAAAACMo/w2ANfqqvYFI/s1600/ScreenHunter_557+May.+13+23.11.jpg)\n\n我住的那個旅館，那條街和特米尼車站的發音太像了！\n\n舉列來說，那一年，我一下飛機直奔羅馬，沒有先在機場下載地圖。住的地方是「B&T rooms」，似乎發音和特米尼車站的某個單字很近，每次我離車站遠一點的地方問路，路上機乎都把我帶回車站。直到我發現了羅馬的路牌是在牆角上，有著和牆壁一樣的保護色，我才能找到旅館。\n\n![](http://1.bp.blogspot.com/-CjVZpsF9CbM/U3IlgVXz5VI/AAAAAAAACLM/mP3QWlBk5PE/s1600/IMG_2181.JPG)\n\n這名牌，在我們找了半個小時候才找到。\n\n現在，google眼鏡已經出來了，如果也可以離線下載地圖，那未來的旅行，會更不一樣。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": true,
-  "word_count": 828,
-  "reading_minutes": 3,
-  "source_path": "_posts/2014-05-13-travel-google-map.md"
  }
 ]

@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-04",
+  "title": "[IT 鐵人賽] 洞府選址：SwiftUI、Tauri、Electron 三選一，我要最快長出 IDE 的那個 - Day 04",
+  "lang": "zh",
+  "date": "2026-09-11T01:11:39+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Electron",
+   "Tauri",
+   "SwiftUI"
+  ],
+  "summary": "我想先把 Agent 的 IDE 介面做出來，再繼續加專屬能力。比較 SwiftUI、Tauri 與 Electron 後，我選 Electron，並整理實際用到的終端機與打包套件。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-04/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-04-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2548,
+  "reading_minutes": 9,
+  "source_path": "_posts/programming/zh/2026-09-11-it-ironman-2026-day-04.md"
+ },
+ {
   "slug": "it-ironman-2026-day-03",
   "title": "[IT 鐵人賽] 殊途同歸：一個 Agent、多種輸入，Desktop App 和 CLI 要通到同一個核心 - Day 03",
   "lang": "zh",
