@@ -1,5 +1,29 @@
 [
  {
+  "slug": "it-ironman-2026-day-05",
+  "title": "[IT 鐵人賽] 三煉方成器：畫面和 Agent 分開跑，正式打包後 OAuth 修了三次才通 - Day 05",
+  "lang": "zh",
+  "date": "2026-09-12T01:08:14+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Electron",
+   "OAuth"
+  ],
+  "summary": "我把畫面和 Agent 分成兩層，正式打包後卻卡在 OAuth。三次修正分別碰到 bundle、module registry 與舊 process，最後才在正式包收到 pong。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-05/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-05-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 3570,
+  "reading_minutes": 13,
+  "source_path": "_posts/programming/zh/2026-09-12-it-ironman-2026-day-05.md"
+ },
+ {
   "slug": "it-ironman-2026-day-04",
   "title": "[IT 鐵人賽] 洞府選址：SwiftUI、Tauri、Electron 三選一，我要最快長出 IDE 的那個 - Day 04",
   "lang": "zh",
