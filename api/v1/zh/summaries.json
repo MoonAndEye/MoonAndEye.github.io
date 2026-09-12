@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-06",
+  "title": "[IT 鐵人賽] 狗食日記：狗食哪裡難吃當下就記，CLI 和 Desktop 寫進同一本 - Day 06",
+  "lang": "zh",
+  "date": "2026-09-13T01:07:54+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Feedback",
+   "CLI",
+   "evals"
+  ],
+  "summary": "我把 Feedback 做成一個資料庫、一個 API，讓 CLI 和 Desktop 共用。用自己的 Agent 時遇到問題，當下留住情境，繼續工作，之後再拿紀錄修 bug、整理 evals 題目。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-06/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-06-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2063,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-09-13-it-ironman-2026-day-06.md"
+ },
+ {
   "slug": "it-ironman-2026-day-05",
   "title": "[IT 鐵人賽] 三煉方成器：畫面和 Agent 分開跑，正式打包後 OAuth 修了三次才通 - Day 05",
   "lang": "zh",
