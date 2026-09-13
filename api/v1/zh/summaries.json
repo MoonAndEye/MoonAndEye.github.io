@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-07",
+  "title": "[IT 鐵人賽] 門規先立：他很會寫程式，卻不知道我的 repo 長什麼樣 - Day 07",
+  "lang": "zh",
+  "date": "2026-09-14T01:06:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Pi",
+   "AGENTS.md",
+   "system prompt"
+  ],
+  "summary": "我保留 Pi 預設的工具規則，全域指示只放跨專案成立的原則，repo 的分支、目錄與測試指令寫進 AGENTS.md。再在 Desktop App 加上個人化輸入框，改完儲存，重開 Agent 就能讀到。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-07/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-07-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2953,
+  "reading_minutes": 10,
+  "source_path": "_posts/programming/zh/2026-09-14-it-ironman-2026-day-07.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-01",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜古騰堡之後人人能讀書，AI Agent 之後人人能做 app - Tip 01",
   "lang": "zh",
