@@ -1,5 +1,68 @@
 [
  {
+  "slug": "zmud-timmer",
+  "title": "使用zmud玩mud的第一步 定時器(timmer)和觸發(trigger)",
+  "lang": "zh",
+  "date": "2015-08-27T16:41:00+08:00",
+  "category": "life",
+  "tags": [
+   "life",
+   "game"
+  ],
+  "summary": "使用zmud玩mud的第一步 定時器(timmer)和觸發(trigger) 如上一篇所說的。 玩mud就是要一直輸入指令，但如果你升一級要輸入100次指令，然後你想升到一百級呢？ 這時候，就必需要用timer了，這邊先用zmud做例子。…",
+  "url": "https://www.marvinswift.com/life/2015/08/27/zmud-timmer.html",
+  "hero_image": "http://1.bp.blogspot.com/-bWTWihYErio/VdyIwgRtbTI/AAAAAAAAQKo/xIazTsXGo7k/s1600/%25E5%25AE%259A%25E6%2599%2582%25E5%2599%25A8.png",
+  "content": "使用zmud玩mud的第一步 定時器(timmer)和觸發(trigger)\n\n如上一篇所說的。\n\n玩mud就是要一直輸入指令，但如果你升一級要輸入100次指令，然後你想升到一百級呢？\n\n這時候，就必需要用timer了，這邊先用zmud做例子。\n\n![](http://1.bp.blogspot.com/-bWTWihYErio/VdyIwgRtbTI/AAAAAAAAQKo/xIazTsXGo7k/s1600/%25E5%25AE%259A%25E6%2599%2582%25E5%2599%25A8.png)\n\n當你打開計時器\n\nTime interval : 這個計時器一個週期幾秒\n\nTimeout margin: 當數到第幾秒時，送出指令\n\nTimeout command: 你想輸入的指令\n\n![](http://2.bp.blogspot.com/-yHFQ9w-6SKk/VdyIwhXj-gI/AAAAAAAAQKk/vOy-ppKrhVk/s1600/ScreenHunter_1063%2BAug.%2B25%2B23.00.jpg)\n\n當然，你也可以使用複數的指令，舉例來說，我想要釣魚，但我身上可能有一條死魚，我想要先把之前釣到的魚丟掉，則command為\n\ndrop siyu; fish\n\nzmud是用分號來進行複數指令\n\n比較多的，是我想學莫聲谷的武功，但是在bot期間，有可能我會學到上限，那我希望在學到上限後直接學下一個。\n\nlearn mo force 180;learn mo yinyun-ziqi 180;learn mo dodge 180; learn mo parry 180; learn mo taoism 180; learn mo strike 180; learn mo taiji-quan 180;sleep\n\n這就是先學「基本內功」，如果基本內功沒滿，則bot則會學180次，通常這時候就沒力了，所以後面的指令輸入也不會行動，直到最一個 sleep。\n\n然後我又發現，可以在前面先放個內力。所以在前面先加上 exercise 10。不過在測試後發現，內力會有一個動作，所以必則把練內力的指令和後面學習的切開。\n\n所以之間放了 #wa 1000，意思就是間隔1000ms (就是1秒)，才發送後面這一串的命令。\n\nexercise 10; #wa 1000; learn mo force 180;learn mo yinyun-ziqi 180;learn mo dodge 180; learn mo parry 180; learn mo taoism 180; learn mo strike 180; learn mo taiji-quan;sleep\n\n這樣，你就完成了自動練功，自動打工。\n\n第二部分就是觸發 trigger\n\n在武俠的世界，你需要喝水吃東西。\n\n但你在bot的過程，可能人不會在電腦前面數個小時，那餓的時候，就要讓他自動進食，不然會進入昏迷狀態。因為這個遊戲餓不死人，所以餓就給他餓也行。\n\n但為了提高效率，你也可以設trigger。\n\nTrigger就是指，當你讀到「某些指令時」，程式就自動發送預設的訊息上去。以這個自動喝水進食為例，就是當程式讀到「你渴得喉嚨冒煙」、「你餓得頭昏眼花」時，自動發送進食喝水的需求。注意，並不需要整句一起設定，因為mud有時候會有吃字的問題，所以在這邊只要取「你渴得」「你餓得」這樣就可以了。\n\n![](http://4.bp.blogspot.com/-EActN1VZAqY/VdyIwcb6H2I/AAAAAAAAQKs/Qtvj2RYHzwo/s1600/trigger.png)\n\n步驟1:按新增\n\n步驟2:第一行就是觸發的訊息，值(value)就是你要發送的指令\n\n所以如果讀到 渴和餓，就發送 drink shui; eat gan liang;\n\n這樣，你就可以開始掛你的機器人了\n\n下一篇是把這些組合起來，寫出一個自動釣魚機器人。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": true,
+  "word_count": 809,
+  "reading_minutes": 3,
+  "source_path": "_posts/2015-08-25-zmud-timmer.md"
+ },
+ {
+  "slug": "mud-jy",
+  "title": "開始 mud 的武俠世界 金庸修真錄",
+  "lang": "zh",
+  "date": "2015-08-25T16:40:00+08:00",
+  "category": "life",
+  "tags": [
+   "life",
+   "game"
+  ],
+  "summary": "說到mud 大概這一輩的人都沒什麼聽過了吧 因為我們國中的時候已經有天堂、石器時代 這就是 mud 的界面 大學還有wow，魔獸三國 這些東西 mud就是在 on-line game還沒圖形化之前的產物 所有的東西都像ptt一樣，只有文字…",
+  "url": "https://www.marvinswift.com/life/2015/08/25/mud-jy.html",
+  "hero_image": "http://3.bp.blogspot.com/-Zjt3awbuAno/VdguOwfZWdI/AAAAAAAAQJY/z9wZZNP-xRw/s1600/ScreenHunter_1062%2BAug.%2B22%2B17.08.jpg",
+  "content": "說到mud 大概這一輩的人都沒什麼聽過了吧\n\n因為我們國中的時候已經有天堂、石器時代\n\n![](http://3.bp.blogspot.com/-Zjt3awbuAno/VdguOwfZWdI/AAAAAAAAQJY/z9wZZNP-xRw/s1600/ScreenHunter_1062%2BAug.%2B22%2B17.08.jpg)\n\n這就是 mud 的界面\n\n大學還有wow，魔獸三國 這些東西\n\nmud就是在 on-line game還沒圖形化之前的產物\n\n所有的東西都像ptt一樣，只有文字\n\n順代一提，他的通訊協定也是 telnet\n\n總而言之，現代的online game還沒出現之前\n\n就是mud的天下\n\n前幾天發現，這個界面是一個很好練習程式的東西\n\n因為他本身不禁外掛啊！\n\n舉例來說\n\n如果你想學張三丰的太極拳\n\n你就要輸入\n\nlearn tiji from chen\n\n然後就會跑出一堆結果\n\n但如果你要學50次才能升一級，總共200級呢？\n\n不可能打這個指令一萬次吧\n\n所以，這些mud一定允許定時自動輸入\n\n我只要決定幾秒後程式自動送出某固定字串就行了\n\n那，再加上 「巨集」 「trigger」\n\n他就可以變成機器人\n\n最近想到一些好玩的東西想試試\n\n所以在\n\n金庸修真錄裡面開了一個帳號，開始闖江湖啦！\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": true,
+  "word_count": 319,
+  "reading_minutes": 1,
+  "source_path": "_posts/2015-08-25-mud-jy.md"
+ },
+ {
+  "slug": "book-recommend-joel-on-software",
+  "title": "好書推薦-約耳趣談軟體",
+  "lang": "zh",
+  "date": "2015-01-10T10:11:00+08:00",
+  "category": "programming",
+  "tags": [
+   "life",
+   "programming"
+  ],
+  "summary": "和大家推薦這本書「約耳趣談軟體」。",
+  "url": "https://www.marvinswift.com/programming/2015/01/10/book-recommend-joel-on-software.html",
+  "hero_image": "https://www.marvinswift.com/assets/posts/book-recommend-joel-on-software/IMG_0236.jpeg",
+  "content": "和大家推薦這本書「約耳趣談軟體」。\n\n![joel-on-software](https://www.marvinswift.com/assets/posts/book-recommend-joel-on-software/IMG_0236.jpeg){: width=\"250\", height=\"500\"}\n\n作者是以色列人，並曾經在傘兵部隊中服役過。之後就一直在軟體業工作，依照書中所寫，應該已經從基層做到管理職了。\n\n推薦的原因，並不是因為看完後，程式功力會上升，如果你期待的是「看完後，原來一千行的程式碼，我改寫完變成50行而已了」，或是「一段程式完後，我原來debug要花30分鐘，後來變成只要1.5分鐘就行了」。抱歉，這本書並不是在講這些事情。如果讀者想期待獲得前述兩項的程式功力，可能要找其他關於程式的書籍，我保證你可以找到一打在談怎麼寫出「高效率」「行數少」的書籍。而且這本書是在10年前出版的，很多架構和工作情形已經和2015年的現在不同了。\n\n那，為什麼要推薦這本書？我心中最大的理由是\n\n## 「這本書很幽默」\n\n對，沒錯，他這本書讀起來很幽默，幽默到不像是一個CS出身的人寫出來的書。\n\n在未來的產業中，軟體的角色比重一定會愈來愈高。但常常有個巨大的鴻溝，橫跨在業主與開發工程師之間。甚致這個鴻溝也有可能出現在軟體公司內部，團隊leader和member之間的溝通出現了問題，導致案子延遲，或者交出了有漏洞的東西，而自己並沒有察覺。\n\n如果你開始發現你的工作開始遇到了 軟體工程師，或者你想要開始架一些軟體相關的事務，開始切入，建議您先看一下這本書。幽默，是工作的潤滑劑，有了這些幽默，你工作起來會比較快樂。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 537,
+  "reading_minutes": 2,
+  "source_path": "_posts/2023-03-16-book-recommend-joel-on-software.md"
+ },
+ {
   "slug": "monster-hunter-release-on14",
   "title": "2014年10月11日 魔物獵人開始發售",
   "lang": "zh",

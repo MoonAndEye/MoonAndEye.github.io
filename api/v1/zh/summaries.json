@@ -1,5 +1,29 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-01",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜古騰堡之後人人能讀書，AI Agent 之後人人能做 app - Tip 01",
+  "lang": "zh",
+  "date": "2026-09-13T22:19:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "AI Agent",
+   "軟體開發"
+  ],
+  "summary": "我用古騰堡印刷術的歷史，看 AI Agent 如何降低做出第一版 app 的成本。當更多人能把想法做成產品，需求、品質與工程判斷會更早進入開發流程。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-01/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2795,
+  "reading_minutes": 10,
+  "source_path": "_posts/programming/zh/2026-09-13-it-ironman-2026-vibe-coding-tip-01.md"
+ },
+ {
   "slug": "it-ironman-2026-day-06",
   "title": "[IT 鐵人賽] 狗食日記：狗食哪裡難吃當下就記，CLI 和 Desktop 寫進同一本 - Day 06",
   "lang": "zh",
