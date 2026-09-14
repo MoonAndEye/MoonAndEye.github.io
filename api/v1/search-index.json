@@ -1,5 +1,24 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-02",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mono repo：前端、後端、mobile 放同一個資料夾 - Tip 02",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "Mono repo",
+   "AI Agent",
+   "軟體開發"
+  ],
+  "summary": "我把前端、後端和 mobile 放在同一個 repo，讓 coding agent 同時讀到 API 定義與呼叫邏輯。這篇整理資料夾結構、共用型別的放法，以及既有專案分開時可以怎麼開始。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-02/",
+  "date": "2026-09-14T13:03:00+08:00",
+  "word_count": 831
+ },
+ {
   "slug": "it-ironman-2026-day-07",
   "lang": "zh",
   "title": "[IT 鐵人賽] 門規先立：他很會寫程式，卻不知道我的 repo 長什麼樣 - Day 07",
