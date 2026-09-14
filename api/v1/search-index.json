@@ -1,5 +1,24 @@
 [
  {
+  "slug": "it-ironman-2026-day-08",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 抄法自鑄：Skill 和 Extension 怎麼分，skill-creator 和 skill-installer 第一天就內建 - Day 08",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Pi",
+   "Skill",
+   "Extension"
+  ],
+  "summary": "我用缺做法還是缺動作來分辨 Skill 與 Extension，並把 skill-installer、skill-creator 內建進 Agent，記下描述、安裝與共用目錄的幾條規矩。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-08/",
+  "date": "2026-09-15T01:08:00+08:00",
+  "word_count": 3717
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-02",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mono repo：前端、後端、mobile 放同一個資料夾 - Tip 02",
