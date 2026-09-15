@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-03",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜基本必備：lint、formatter、unit test，新專案第一天就放進去 - Tip 03",
+  "lang": "zh",
+  "date": "2026-09-15T13:03:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "Lint",
+   "Formatter",
+   "Unit Test"
+  ],
+  "summary": "我開新專案第一天就放進 lint、formatter、unit test，讓 coding agent 建好可用一行指令執行的檢查，再開始加功能。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-03/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 619,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-15-it-ironman-2026-vibe-coding-tip-03.md"
+ },
+ {
   "slug": "it-ironman-2026-day-08",
   "title": "[IT 鐵人賽] 抄法自鑄：Skill 和 Extension 怎麼分，skill-creator 和 skill-installer 第一天就內建 - Day 08",
   "lang": "zh",
