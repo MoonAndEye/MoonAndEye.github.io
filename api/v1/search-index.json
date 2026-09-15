@@ -1,5 +1,27 @@
 [
  {
+  "slug": "it-ironman-2026-day-09",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 四門齊開：interactive、print、JSON、RPC，還有換一顆心 - Day 09",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Pi",
+   "CLI",
+   "RPC",
+   "JSON",
+   "SDK",
+   "reasoning"
+  ],
+  "summary": "同一個 pi 核心可以從 interactive、print、JSON、RPC 四個入口叫起來；我也記下非互動模式少載的設定，以及把 ultra 送成 off 的思考層級坑。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-09/",
+  "date": "2026-09-16T07:06:01+08:00",
+  "word_count": 3980
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-03",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜基本必備：lint、formatter、unit test，新專案第一天就放進去 - Tip 03",
