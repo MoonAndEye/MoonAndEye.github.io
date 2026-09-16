@@ -1,5 +1,69 @@
 [
  {
+  "slug": "flyweight-pattern",
+  "title": "Flyweight Pattern — 蠅量級模式(享元模式)",
+  "lang": "zh",
+  "date": "2022-08-10T21:16:00+08:00",
+  "category": "swift",
+  "tags": [
+   "Design pattern",
+   "Swift"
+  ],
+  "summary": "Flyweight Pattern — 蠅量級模式(享元模式)，本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。",
+  "url": "https://www.marvinswift.com/swift/2022/08/10/flyweight-pattern.html",
+  "hero_image": "https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png",
+  "content": "本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。\n\n* * *\n\n### Flyweight Pattern — 蠅量級模式(享元模式)\n\n本文在介紹 Flyweight Pattern 時採用 [refactoring.guru](https://medium.com/r?url=http%3A%2F%2Frefactoring.guru) 上的範例和情境。\n\n出處: [https://refactoring.guru/design-patterns/flyweight](https://refactoring.guru/design-patterns/flyweight)\n\n* * *\n\n#### 情境:\n\n你寫了一個遊戲，是 FPS 型的，裡面有飛彈、子彈等飛行道具。還有各種酷炫的特效，這些特效和爆炸的聲光效果，都卓越超群。你把這個遊戲 push 上去，讓你和你的朋友玩。\n\n### 但是、Shi ka shi、but 「在你的電腦上是好的」\n\n在你朋友的電腦上，每玩幾分鐘，這個遊戲就閃退了! 遊戲體驗在你朋友的電腦上非常的差。你開始 debug，然後 de 了幾個小時，從 log 中翻找各種數據。你找到原因，是出在 RAM 上，error message 最後 trace 到 RAM 不足。因為你電腦的配置很強，但你的朋友電腦設備沒那麼好，所以 RAM 吃光了。\n\n而 RAM 被吃光的原因，是在那個你寫出來的 particle system (專門處理粒子效果)。每個粒子，例如子彈、飛彈，還有各種會飛的物件，只要出現在玩家的螢幕，就會生出一個 particle 物件，最後，當 RAM 不足的時候，程式就崩潰了。\n\n從下圖可見，每個粒子會佔掉 21 KB。當有 1,000,000 個粒子的時候，這時會需要 21 GB 的 RAM。\n\n![](https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png)\n\nfrom refactoring.guru\n\n我們來看個 Overwatch 畫面。\n\n![](https://cdn-images-1.medium.com/max/800/1*bZSGkmXGYofMadtii2wyGQ.png)\n\n![](https://cdn-images-1.medium.com/max/800/1*UzKC0uTVHQXLaqTyZhmNNA.png)\n\n如何使用 Flyweight 模式，改善你的遊戲體驗?\n\n* * *\n\n### Flyweight 如何減輕系統上的負擔\n\n再回頭看一下 ”Particle” 這個類別，然後思考一下。\n\n![](https://cdn-images-1.medium.com/max/800/1*4dPir95Ideb9wzMRjK9hbg.png)\n\n你應該會發現，有兩個 property 可以設計成不變的 (也就是剛剛講的內部資料)\n\n*   color\n*   sprite\n\n而其他屬性，是會變化的 (也就是剛剛講的外部資料)\n\n*   particle (粒子)\n*   coords (座標)\n*   vector (移動向量)\n*   speed (移動速度)\n\n![](https://cdn-images-1.medium.com/max/800/1*5r80IzFWvGH9MCL0Kgm8nA.png)\n\n再回來看這個系統\n\n![](https://cdn-images-1.medium.com/max/800/1*5yXJEnkUFcrlOgFIqbz86g.png)\n\n最吃資源的，仍然是 sprite，以上面同樣數量的粒子來看。1,000,000 個粒子，在不 init 新的內部資料狀況下，他需要的是 32MB RAM，對比沒有使用 design pattern 的狀況 — 21 GB，這樣的設計，讓你朋友的電腦上，也可以運作順利。\n\n* * *\n\n結束了嗎?這樣已經發揮了 design pattern 最佳的結果了嗎?\n\n### **設計模式是可以進行疊加的!**\n\n* * *\n\n### 再加上一個外部物件儲存池，可以更優化\n\n在實務上，通常會再加上一個「池」(pool)，把生出來的「內部資訊」放在池子 裡面。\n\n在這個案例裡面，因為有一個最大的類別 Game，會在 Game 裡面用一個 property 去存 Particle，當螢幕需要 particle 的時候，系統 會先從池子裡面找有沒有沒用過的 particle，有的話，就拿出來塞「外部資訊」(也就是向量、速度、座標)。如果池子裡面沒有所需要的 partile，就會 init 一個，然後塞外部資訊。\n\n![](https://cdn-images-1.medium.com/max/800/1*9oTHsQUlMpuXtZcj47OviA.png)\n\n當 particle 用完後，就會放入池子裡面，等待下一次被使用。\n\n這可以想成是結合了 Object Pool 模式的蠅量級模式，當然，在 UIKit 中，有某個很重要的元件，使用了這兩個模式的綜合體。\n\n當然還有人再優化，連外部資訊也再加上一套蠅量級模式。\n\n蠅量級的蠅量級模式。沒有最細，只有更細。\n\n* * *\n\n### 再深入一點，當你剛入行，在台灣，你不一定進的去「真正的」遊戲公司，你可能是個 iOS 前端。不論你是哪一領域的前端，在 2022 年，大家起手都是框架。假如你是個 iOS 前端，我們來想想看，在 iOS 系統裡面，哪個東西在應用「蠅量級模式(享元模式)」\n\nBy [Marvin Lin](https://medium.com/@atimis19) on [August 10, 2022](https://medium.com/p/a5ab3b6054f).\n\n[Canonical link](https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1076,
+  "reading_minutes": 4,
+  "source_path": "_posts/2023-03-14-flyweight-pattern.md"
+ },
+ {
+  "slug": "Kotlin-Multiplatform-mobile-roadmap",
+  "title": "Kotlin Multiplatform Mobile beta roadmap 重點節錄",
+  "lang": "zh",
+  "date": "2022-02-04T14:53:00+08:00",
+  "category": "programming",
+  "tags": [
+   "KMM",
+   "kotlin",
+   "cross platform"
+  ],
+  "summary": "Kotlin Multiplatform Mobile beta roadmap 重點節錄，在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容",
+  "url": "https://www.marvinswift.com/programming/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html",
+  "hero_image": null,
+  "content": "### Kotlin Multiplatform Mobile beta roadmap 重點節錄\n\n在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容，主要為\n\n*   新的記憶體管理機制\n*   與 Apple 開法者想關的整合工具\n*   Hierarchical Project 結構調整成預設\n\n* * *\n\n通常，你只需要針對不同平台的特性，去針對特定平台的 API 進行程式的撰寫。但當使用 KMM 進行共用程式碼開發時，有時候你仍然要對共用程式碼進行不同平台的特化。\n\n其中一個例子，就是在併發情境下，Alpha 版的 KMM 在記憶體管理上，容易造成問題，且學習曲線陡峭。開發團隊在 2021 年中的時候，就表示未來的 Kotlin (Beta 版) 會在這個方面進行優化。\n\n* * *\n\nApple Integration\n\nKMM 在 Kotlin 專案的使用，「聽說」已經是相當友善了。而在 Apple 平台，用 embedAndSignAppleFrameworkForXcodeTest 取代以往手動的 packForXcodeTask，此外，還加強了 CocoaPods GradlePlugin DSL 的功能。但這邊有提到，這個 feature 應該會在 Beta release 後進行。\n\n剩下的 Apple project 整合功能，因為還沒開始測試，所以這邊先不介紹剩下的部分\n\n* * *\n\nKMM stable for migration\n\n會在 2022 春季進入 beta，講者說以後會兼顧兼容性，所以應該不用怕大的改動把你的 codebase 搞壞 （Swift 1.0 表示….）\n\n* * *\n\nKotlin Beta roadmap 的影片\n\n在 jetbrains 的文章\n\n[**KMM Beta Roadmap Video Highlights | The Kotlin Blog**\\\n_The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap video is already available for you to…_blog.jetbrains.com](https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/ \"https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/\")[](https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/)\n\nBy [Marvin Lin](https://medium.com/@atimis19) on [February 4, 2022](https://medium.com/p/60f673b3eda7).\n\n[Canonical link](https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 441,
+  "reading_minutes": 2,
+  "source_path": "_posts/2022-02-04-Kotlin-Multiplatform-mobile-roadmap.md"
+ },
+ {
+  "slug": "Apple-Watch",
+  "title": "Apple Watch 開箱",
+  "lang": "zh",
+  "date": "2022-01-02T09:30:00+08:00",
+  "category": "life",
+  "tags": [
+   "Apple",
+   "life"
+  ],
+  "summary": "Apple Watch 開箱文",
+  "url": "https://www.marvinswift.com/life/2022/01/02/Apple-Watch.html",
+  "hero_image": "https://cdn-images-1.medium.com/max/800/1*afi7WwnUCJ6OXflv3gZ3_w.jpeg",
+  "content": "* * *\n\n### AppApple Watch 開箱\n\n訂了一隻 Apple Watch，把 Medium 當個開箱文來用\n\n寄過來的時候，是個長盒子。\n\n![](https://cdn-images-1.medium.com/max/800/1*afi7WwnUCJ6OXflv3gZ3_w.jpeg)\n\n反面看起來，是有個扣環概念的折法\n\n![](https://cdn-images-1.medium.com/max/800/1*3lHzLU3UxSrscD-sjUcx7g.jpeg)\n\n打開! 錶帶和錶殼是分開包裝的\n\n![](https://cdn-images-1.medium.com/max/800/1*nL2d2DO94TIlhnNjBoadCg.jpeg)\n\n![](https://cdn-images-1.medium.com/max/800/1*ebYTb4b-v9cZHvw6zLQTkQ.jpeg)\n\n接下來，就是各個部件了\n\n![](https://cdn-images-1.medium.com/max/600/1*UyI-WDOcyeFoyEcjuPuQGw.jpeg)\n\n![](https://cdn-images-1.medium.com/max/600/1*ynTjnb35Qp0SHZK5EzMmYQ.jpeg)\n\n![](https://cdn-images-1.medium.com/max/600/1*ZCEHRm3XtkIiEFId5Fbh2w.jpeg)\n\n![](https://cdn-images-1.medium.com/max/600/1*n9JTlD0k_EkuhurtppE49w.jpeg)\n\nBy [Marvin Lin](https://medium.com/@atimis19) on [January 2, 2022](https://medium.com/p/ab852b9a7e3e).\n\n[Canonical link](https://medium.com/@atimis19/apple-watch-%E9%96%8B%E7%AE%B1-ab852b9a7e3e)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 84,
+  "reading_minutes": 1,
+  "source_path": "_posts/2022-01-02-Apple-Watch.md"
+ },
+ {
   "slug": "Stripe-system-migrate",
   "title": "Stripe 系統漸進式升級的過程",
   "lang": "zh",

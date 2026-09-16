@@ -1,5 +1,33 @@
 [
  {
+  "slug": "it-ironman-2026-day-10",
+  "title": "[IT 鐵人賽] 石滿自摺：context 快滿了 pi 會自己壓縮，這一天我先用預設的 - Day 10",
+  "lang": "zh",
+  "date": "2026-09-17T01:08:33+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Pi",
+   "CLI",
+   "session",
+   "context",
+   "compaction",
+   "memory"
+  ],
+  "summary": "context 快滿時，pi 會保留最近訊息、把較早內容壓成摘要；這篇整理 session 樹、分支與預設壓縮的運作。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-10/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-10-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2835,
+  "reading_minutes": 10,
+  "source_path": "_posts/programming/zh/2026-09-17-it-ironman-2026-day-10.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-04",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Git 的技巧：別一直在 main 上做，開分支、開 release、打 tag - Tip 04",
   "lang": "zh",

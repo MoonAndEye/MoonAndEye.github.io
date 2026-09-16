@@ -1,5 +1,34 @@
 [
  {
+  "slug": "it-ironman-2026-day-10",
+  "title": "[IT 鐵人賽] 石滿自摺：context 快滿了 pi 會自己壓縮，這一天我先用預設的 - Day 10",
+  "lang": "zh",
+  "date": "2026-09-17T01:08:33+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "agent",
+   "Pi",
+   "CLI",
+   "session",
+   "context",
+   "compaction",
+   "memory"
+  ],
+  "summary": "context 快滿時，pi 會保留最近訊息、把較早內容壓成摘要；這篇整理 session 樹、分支與預設壓縮的運作。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-10/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-10-main.png",
+  "content": "本文同步刊登於 [2026 iThome 鐵人賽](https://ithelp.ithome.com.tw/articles/10412291)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n每天用他工作會遇到一件很具體的事：對話越來越長，context 快滿。\n\npi 對這件事有一套預設的做法：滿了就自己壓縮。這一天我先把它用一輪，沒有動它。要講壓縮，得先講清楚一段對話在 pi 裡是怎麼存的，所以從檔案開始。\n\n## 一段對話存在哪裡\n\n每一段對話都是一個檔案，JSONL，放在 `~/.pi/agent/sessions/`，照工作目錄分開放。開了 pi 就自動存，不用管。\n\n要接回去只有幾個指令：\n\n```bash\npi -c                  # 接最近那一段\npi -r                  # 開清單自己挑\npi --no-session        # 這次不要存\npi --session <path|id> # 指定某一段（ID 可以只給前幾個字）\n```\n\n檔案的第一行是 header，裡面有版本、ID、時間和當時的工作目錄。從別的 session 分出來的檔案，header 會多一個欄位指回原本那個檔案的路徑——所以「這一段是從哪裡長出來的」這件事不會斷。\n\n再往下每一筆紀錄都有自己的 `id` 和 `parentId`。所以整個檔案是一棵樹，而「現在」是那棵樹的一片活葉子。\n\n## 檔案裡不只有訊息\n\n這件事我原本以為 session 檔案就是一串對話。看了格式文件才發現裡面躺著好幾種不同的東西：\n\n| 種類 | 記的是什麼 |\n| --- | --- |\n| `message` | 使用者、助理、工具結果 |\n| `model_change` | 中途換了模型 |\n| `thinking_level_change` | 中途改了思考層級 |\n| `compaction` | 這裡壓縮過，附一份摘要 |\n| `branch_summary` | 從哪一條分支跳過來，那條的摘要 |\n| `label` | 我自己在某一筆上做的標記 |\n| `session_info` | 這一段的名字 |\n| `custom` | extension 存的狀態，不進 context |\n| `custom_message` | extension 注入的訊息，會進 context |\n\n中間那幾種對我來說比一串對話有價值得多。\n\n`model_change` 意思是：整段歷史裡「這一段是哪個模型做的」查得到。第三章要比模型的時候，這一行就是證據。\n\n最後兩種是同一個 extension 的兩種身分。`custom` 是它自己要記的東西，不會被送進模型；`custom_message` 是它硬塞進對話裡的東西，會被送進模型。這個分界很重要——記憶系統要接進來，接的就是這兩個位置：它自己的資料躺在 `custom`，要餵給模型的那一段用 `custom_message` 注入。這一章後面三天就在處理這件事。\n\n## 走錯路的時候\n\n我自己很少打開 `/tree`。它派得上用場的場景是：我叫他調排版，他理解成重做整個元件，往那個方向做了十幾輪。\n\n`/tree` 打開來是這一段對話的整棵樹。找到我下錯指令的那一句，選它，那句話回到編輯器裡讓我改，改完送出就從那裡長出一條新的分支。錯的那十幾輪還在檔案裡，只是不在這條路上。跳過去的時候 pi 會問要不要替被丟下的那條留一份摘要。\n\n連按兩次 Esc 就是打開這棵樹；Shift+L 可以給某一筆取名，之後好找。`/fork` 和 `/clone` 是同一件事另開新檔案的版本。\n\n![Day 10：對話樹、摘要與保留的 Session 紀錄](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-10-main.png)\n\n## context 快滿的時候\n\n回到這一天的主題。\n\n門檻寫在文件裡：`contextTokens > contextWindow - reserveTokens` 就自動壓縮，`reserveTokens` 預設 16384，留給模型回答用。壓縮的做法是從最新的訊息往回算，留下大約 `keepRecentTokens`（預設 20k）的量不動，前面那一段交給模型做成一份摘要；之後送出去的 context 就是「這份摘要 + 保留下來的訊息」。原本的訊息還在檔案裡，只是不再送給模型。\n\n檢查的時機有三個：一批工具跑完、要開始下一次回應之前；新的 prompt 進來之前；一趟做完之後。也可以自己下 `/compact`，後面加一句話指定要摘什麼。\n\ncontext 剩多少，直接關係到他還能做什麼。他一次能讀進來多少、一趟能做到多深，全看還剩多少位置。剩得少，長一點的檔案就讀不完整，一件事做到一半就得停下來；真的爆了——送出去的請求超過模型的上限——pi 會先壓縮，再把那一輪重送一次。所以壓縮換回來的是他繼續做事的空間。\n\n我到目前為止的策略也在這裡：先把跟 pi 的基本溝通做通。每一個機制先用預設的用一輪，知道他預設會怎麼做、做出來是什麼樣子，再回來決定要不要動。壓縮這件事現在就在這個階段，所以這一天只有介紹，沒有調任何設定。\n\n壓縮完，檔案裡多一筆壓縮紀錄：摘要、壓縮前的 token 數、保留下來的那一段訊息、這一路讀過和改過哪些檔案，還有生成摘要本身花掉的 token，那個也算進這一段對話的總花費。\n\nDay 02 那張圖上有一個點叫 `session_before_compact`，壓縮之前會經過它，可以取消，也可以自己給摘要。當時我還不知道那個點要幹什麼用，寫到這裡就知道了：記憶系統要掛，就掛在這裡。\n\n## 帶出去，帶回來\n\n三個順手的指令：\n\n- `/export` 把這一段輸出成 HTML\n- `/share` 上傳成一個私密的 gist，拿到一個可以分享的連結\n- `/import` 從 JSONL 檔案接回來繼續\n\n## 這棵樹管的是這一段對話\n\npi 沒有跨對話的記憶機制。文件裡從頭到尾沒有「memory」這個功能。他關於「我」的一切只有兩個來源：這一段對話裡發生過的事，也就是上面這個檔案；還有 Day 07 那幾個我手寫的 AGENTS.md。\n\n所以這句話要講精確一點。`pi -c` 接回上一段，他當然記得上一段的事，因為整個檔案又被送進 context。但只要開一段新的對話，或者換一個資料夾，上一段裡我跟他一起做的決定、我講過的偏好，就都不在他眼前了。他認得的「我」只剩 AGENTS.md 那幾行。\n\n我要的是一個記得我的 Agent。走到這裡，規矩（Day 07）、技能（Day 08）、四種叫他的方式（Day 09）、一棵可以回頭走的樹，都有了。少的還是那一層：跨對話的記憶。\n\n## 小結\n\n對話是一棵樹，每一筆都有 parent，現在是一片活葉子。走錯了回到岔路口改那一句，錯的那條留在檔案裡。\n\n檔案裡除了對話，還有換過哪個模型、壓縮過幾次、我標過哪些點；extension 存的東西也在那裡，分成會送進模型的和只有它自己看的兩種。\n\ncontext 快滿他會自己壓；剩多少位置，他就能做多少事。這一天先用預設的，沒有動——先把基本的溝通做通，再往上蓋我自己的東西。\n\n這些都綁在這一段對話上。pi 沒有跨對話的記憶，開一段新的，他知道的我只剩 AGENTS.md 那幾行。\n\n明天講失憶：Mem0、Letta、MemOS、Cognee 我都看過了，一個都沒選。\n\n參考：[Pi 文件](https://pi.dev/docs/latest)\n\n---\n\n> **凡人修 Agent 傳｜第十回（Day 10）**\n>\n> ![凡人修 Agent 傳 Day 10 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-10-serial.png)\n>\n> 我胸口那顆心的旁邊，嵌著一顆小石。\n>\n> 指節大，灰白，涼的。靈石都會燒，這一顆從第一天到現在沒有暖過。背上的圖紙上有它，叫錄石，一具一顆。\n>\n> 我每做一件事，石上就多一筆。手的主人刻一道念，一筆；我答一句，一筆；閱卷鏡回一頁字，一筆。石上的字我讀得到，這一段裡發生過的每一件事都在那裡。\n>\n> 每一筆前頭先記它接在哪一筆後面，然後才是內容。\n>\n> 內容有幾種。最多的是言，三種：手的主人刻的念、我答的話、器物回的話。換心記一筆，換回來再記一筆，昨天那兩顆備用的心在石上是四筆。撥火也記，昨天撥片上上下下那一串全在。手的主人在某一筆上刻一個名字，那叫標；這一段整段的名字，叫名。還有兩種是右臂那道型自己記的：暗記只有它自己讀得到，明記會送進我的心裡。\n>\n> 這一天上午，手的主人刻了一道念：把第三卷歸到最下層。\n>\n> 我歸到中層。之後四件事都建在那一格上：抄、標記、對照、再抄。石上多了五筆。\n>\n> 手的主人發現的時候，沒有叫我改。他閉上眼，一縷神識探進錄石，一筆一筆往回走，停在我歸錯卷的前一筆。然後從那一筆重新刻念：第三卷，最下層。\n>\n> 我從那一筆接著做。後面那五筆沒有被抹掉。石上從那一筆長出第二枝，我站在新的這一枝上；舊的那一枝還在石上，我讀不到。\n>\n> 他在舊枝的末端摺了一小段字，接到新枝上：那一枝對照過哪兩卷、錯在哪一格。我讀那一小段，知道自己錯過，也知道錯在哪裡。那五件事做的時候是什麼樣子，小段裡沒有。\n>\n> 午後石快滿了。\n>\n> 石上的字排到邊，最後那幾筆擠得很小。然後石自己動了：最前面一長段——一整個上午的言、換心、撥火——摺成拇指大的一段小字，只留最近的一段不動。石上空出一大塊。圖紙上寫著它會這樣，滿了就摺，不用人管。\n>\n> 摺過之後我再取卷，先翻了一次上午已經翻過的那一卷。摺起來的那一段裡沒有寫它的背面畫了幾道。\n>\n> 手的主人看著我重翻，沒有說話。傍晚石又摺了一次。他還是沒有動。\n>\n> 天黑之前，他把錄石從我心旁取下來。石離開胸口的時候，胸口更涼了一點。他從儲物袋取出一只木匣，匣裡已經並排躺著幾顆一樣的石。今天這一顆放進去，蓋上。然後嵌進來一顆新的，空的。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2835,
+  "reading_minutes": 10,
+  "source_path": "_posts/programming/zh/2026-09-17-it-ironman-2026-day-10.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-04",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Git 的技巧：別一直在 main 上做，開分支、開 release、打 tag - Tip 04",
   "lang": "zh",
@@ -3967,69 +3996,5 @@
   "word_count": 993,
   "reading_minutes": 4,
   "source_path": "_posts/2022-12-30-stories-written-by-ai.md"
- },
- {
-  "slug": "flyweight-pattern",
-  "title": "Flyweight Pattern — 蠅量級模式(享元模式)",
-  "lang": "zh",
-  "date": "2022-08-10T21:16:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Design pattern",
-   "Swift"
-  ],
-  "summary": "Flyweight Pattern — 蠅量級模式(享元模式)，本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。",
-  "url": "https://www.marvinswift.com/swift/2022/08/10/flyweight-pattern.html",
-  "hero_image": "https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png",
-  "content": "本文在介紹 Flyweight Pattern 時採用 refactoring.guru 上的範例和情境。\n\n* * *\n\n### Flyweight Pattern — 蠅量級模式(享元模式)\n\n本文在介紹 Flyweight Pattern 時採用 [refactoring.guru](https://medium.com/r?url=http%3A%2F%2Frefactoring.guru) 上的範例和情境。\n\n出處: [https://refactoring.guru/design-patterns/flyweight](https://refactoring.guru/design-patterns/flyweight)\n\n* * *\n\n#### 情境:\n\n你寫了一個遊戲，是 FPS 型的，裡面有飛彈、子彈等飛行道具。還有各種酷炫的特效，這些特效和爆炸的聲光效果，都卓越超群。你把這個遊戲 push 上去，讓你和你的朋友玩。\n\n### 但是、Shi ka shi、but 「在你的電腦上是好的」\n\n在你朋友的電腦上，每玩幾分鐘，這個遊戲就閃退了! 遊戲體驗在你朋友的電腦上非常的差。你開始 debug，然後 de 了幾個小時，從 log 中翻找各種數據。你找到原因，是出在 RAM 上，error message 最後 trace 到 RAM 不足。因為你電腦的配置很強，但你的朋友電腦設備沒那麼好，所以 RAM 吃光了。\n\n而 RAM 被吃光的原因，是在那個你寫出來的 particle system (專門處理粒子效果)。每個粒子，例如子彈、飛彈，還有各種會飛的物件，只要出現在玩家的螢幕，就會生出一個 particle 物件，最後，當 RAM 不足的時候，程式就崩潰了。\n\n從下圖可見，每個粒子會佔掉 21 KB。當有 1,000,000 個粒子的時候，這時會需要 21 GB 的 RAM。\n\n![](https://cdn-images-1.medium.com/max/800/1*G4GebBvS7ZChon7wEhSvZg.png)\n\nfrom refactoring.guru\n\n我們來看個 Overwatch 畫面。\n\n![](https://cdn-images-1.medium.com/max/800/1*bZSGkmXGYofMadtii2wyGQ.png)\n\n![](https://cdn-images-1.medium.com/max/800/1*UzKC0uTVHQXLaqTyZhmNNA.png)\n\n如何使用 Flyweight 模式，改善你的遊戲體驗?\n\n* * *\n\n### Flyweight 如何減輕系統上的負擔\n\n再回頭看一下 ”Particle” 這個類別，然後思考一下。\n\n![](https://cdn-images-1.medium.com/max/800/1*4dPir95Ideb9wzMRjK9hbg.png)\n\n你應該會發現，有兩個 property 可以設計成不變的 (也就是剛剛講的內部資料)\n\n*   color\n*   sprite\n\n而其他屬性，是會變化的 (也就是剛剛講的外部資料)\n\n*   particle (粒子)\n*   coords (座標)\n*   vector (移動向量)\n*   speed (移動速度)\n\n![](https://cdn-images-1.medium.com/max/800/1*5r80IzFWvGH9MCL0Kgm8nA.png)\n\n再回來看這個系統\n\n![](https://cdn-images-1.medium.com/max/800/1*5yXJEnkUFcrlOgFIqbz86g.png)\n\n最吃資源的，仍然是 sprite，以上面同樣數量的粒子來看。1,000,000 個粒子，在不 init 新的內部資料狀況下，他需要的是 32MB RAM，對比沒有使用 design pattern 的狀況 — 21 GB，這樣的設計，讓你朋友的電腦上，也可以運作順利。\n\n* * *\n\n結束了嗎?這樣已經發揮了 design pattern 最佳的結果了嗎?\n\n### **設計模式是可以進行疊加的!**\n\n* * *\n\n### 再加上一個外部物件儲存池，可以更優化\n\n在實務上，通常會再加上一個「池」(pool)，把生出來的「內部資訊」放在池子 裡面。\n\n在這個案例裡面，因為有一個最大的類別 Game，會在 Game 裡面用一個 property 去存 Particle，當螢幕需要 particle 的時候，系統 會先從池子裡面找有沒有沒用過的 particle，有的話，就拿出來塞「外部資訊」(也就是向量、速度、座標)。如果池子裡面沒有所需要的 partile，就會 init 一個，然後塞外部資訊。\n\n![](https://cdn-images-1.medium.com/max/800/1*9oTHsQUlMpuXtZcj47OviA.png)\n\n當 particle 用完後，就會放入池子裡面，等待下一次被使用。\n\n這可以想成是結合了 Object Pool 模式的蠅量級模式，當然，在 UIKit 中，有某個很重要的元件，使用了這兩個模式的綜合體。\n\n當然還有人再優化，連外部資訊也再加上一套蠅量級模式。\n\n蠅量級的蠅量級模式。沒有最細，只有更細。\n\n* * *\n\n### 再深入一點，當你剛入行，在台灣，你不一定進的去「真正的」遊戲公司，你可能是個 iOS 前端。不論你是哪一領域的前端，在 2022 年，大家起手都是框架。假如你是個 iOS 前端，我們來想想看，在 iOS 系統裡面，哪個東西在應用「蠅量級模式(享元模式)」\n\nBy [Marvin Lin](https://medium.com/@atimis19) on [August 10, 2022](https://medium.com/p/a5ab3b6054f).\n\n[Canonical link](https://medium.com/@atimis19/flyweight-pattern-%E8%A0%85%E9%87%8F%E7%B4%9A%E6%A8%A1%E5%BC%8F-%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F-a5ab3b6054f)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 1076,
-  "reading_minutes": 4,
-  "source_path": "_posts/2023-03-14-flyweight-pattern.md"
- },
- {
-  "slug": "Kotlin-Multiplatform-mobile-roadmap",
-  "title": "Kotlin Multiplatform Mobile beta roadmap 重點節錄",
-  "lang": "zh",
-  "date": "2022-02-04T14:53:00+08:00",
-  "category": "programming",
-  "tags": [
-   "KMM",
-   "kotlin",
-   "cross platform"
-  ],
-  "summary": "Kotlin Multiplatform Mobile beta roadmap 重點節錄，在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容",
-  "url": "https://www.marvinswift.com/programming/2022/02/04/Kotlin-Multiplatform-mobile-roadmap.html",
-  "hero_image": null,
-  "content": "### Kotlin Multiplatform Mobile beta roadmap 重點節錄\n\n在 2021 年 相關團隊發佈了 KMM beta 版本 roadmap 的影片。影片講者 Ekaterina Petrova 提到了數個 Alpha 到 Beta版本改進的內容，主要為\n\n*   新的記憶體管理機制\n*   與 Apple 開法者想關的整合工具\n*   Hierarchical Project 結構調整成預設\n\n* * *\n\n通常，你只需要針對不同平台的特性，去針對特定平台的 API 進行程式的撰寫。但當使用 KMM 進行共用程式碼開發時，有時候你仍然要對共用程式碼進行不同平台的特化。\n\n其中一個例子，就是在併發情境下，Alpha 版的 KMM 在記憶體管理上，容易造成問題，且學習曲線陡峭。開發團隊在 2021 年中的時候，就表示未來的 Kotlin (Beta 版) 會在這個方面進行優化。\n\n* * *\n\nApple Integration\n\nKMM 在 Kotlin 專案的使用，「聽說」已經是相當友善了。而在 Apple 平台，用 embedAndSignAppleFrameworkForXcodeTest 取代以往手動的 packForXcodeTask，此外，還加強了 CocoaPods GradlePlugin DSL 的功能。但這邊有提到，這個 feature 應該會在 Beta release 後進行。\n\n剩下的 Apple project 整合功能，因為還沒開始測試，所以這邊先不介紹剩下的部分\n\n* * *\n\nKMM stable for migration\n\n會在 2022 春季進入 beta，講者說以後會兼顧兼容性，所以應該不用怕大的改動把你的 codebase 搞壞 （Swift 1.0 表示….）\n\n* * *\n\nKotlin Beta roadmap 的影片\n\n在 jetbrains 的文章\n\n[**KMM Beta Roadmap Video Highlights | The Kotlin Blog**\\\n_The Kotlin 2021 Premier Online Event is in full swing, and The KMM Beta Roadmap video is already available for you to…_blog.jetbrains.com](https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/ \"https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/\")[](https://blog.jetbrains.com/kotlin/2021/10/kmm-beta-roadmap-video-highlights/)\n\nBy [Marvin Lin](https://medium.com/@atimis19) on [February 4, 2022](https://medium.com/p/60f673b3eda7).\n\n[Canonical link](https://medium.com/@atimis19/kotllin-multiplatform-mobile-beta-roadmap-%E9%87%8D%E9%BB%9E%E7%AF%80%E9%8C%84-60f673b3eda7)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 441,
-  "reading_minutes": 2,
-  "source_path": "_posts/2022-02-04-Kotlin-Multiplatform-mobile-roadmap.md"
- },
- {
-  "slug": "Apple-Watch",
-  "title": "Apple Watch 開箱",
-  "lang": "zh",
-  "date": "2022-01-02T09:30:00+08:00",
-  "category": "life",
-  "tags": [
-   "Apple",
-   "life"
-  ],
-  "summary": "Apple Watch 開箱文",
-  "url": "https://www.marvinswift.com/life/2022/01/02/Apple-Watch.html",
-  "hero_image": "https://cdn-images-1.medium.com/max/800/1*afi7WwnUCJ6OXflv3gZ3_w.jpeg",
-  "content": "* * *\n\n### AppApple Watch 開箱\n\n訂了一隻 Apple Watch，把 Medium 當個開箱文來用\n\n寄過來的時候，是個長盒子。\n\n![](https://cdn-images-1.medium.com/max/800/1*afi7WwnUCJ6OXflv3gZ3_w.jpeg)\n\n反面看起來，是有個扣環概念的折法\n\n![](https://cdn-images-1.medium.com/max/800/1*3lHzLU3UxSrscD-sjUcx7g.jpeg)\n\n打開! 錶帶和錶殼是分開包裝的\n\n![](https://cdn-images-1.medium.com/max/800/1*nL2d2DO94TIlhnNjBoadCg.jpeg)\n\n![](https://cdn-images-1.medium.com/max/800/1*ebYTb4b-v9cZHvw6zLQTkQ.jpeg)\n\n接下來，就是各個部件了\n\n![](https://cdn-images-1.medium.com/max/600/1*UyI-WDOcyeFoyEcjuPuQGw.jpeg)\n\n![](https://cdn-images-1.medium.com/max/600/1*ynTjnb35Qp0SHZK5EzMmYQ.jpeg)\n\n![](https://cdn-images-1.medium.com/max/600/1*ZCEHRm3XtkIiEFId5Fbh2w.jpeg)\n\n![](https://cdn-images-1.medium.com/max/600/1*n9JTlD0k_EkuhurtppE49w.jpeg)\n\nBy [Marvin Lin](https://medium.com/@atimis19) on [January 2, 2022](https://medium.com/p/ab852b9a7e3e).\n\n[Canonical link](https://medium.com/@atimis19/apple-watch-%E9%96%8B%E7%AE%B1-ab852b9a7e3e)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 84,
-  "reading_minutes": 1,
-  "source_path": "_posts/2022-01-02-Apple-Watch.md"
  }
 ]
