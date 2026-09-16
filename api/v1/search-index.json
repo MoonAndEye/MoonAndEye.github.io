@@ -1,5 +1,16 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-04",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Git 的技巧：別一直在 main 上做，開分支、開 release、打 tag - Tip 04",
+  "category": "programming",
+  "tags": [],
+  "summary": "我把 Git 的基本習慣定成三件事：功能不直接堆在 main、要出版本開 release branch、每次發布都打 tag。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-04/",
+  "date": "2026-09-16T13:01:57+08:00",
+  "word_count": 331
+ },
+ {
   "slug": "it-ironman-2026-day-09",
   "lang": "zh",
   "title": "[IT 鐵人賽] 四門齊開：interactive、print、JSON、RPC，還有換一顆心 - Day 09",
