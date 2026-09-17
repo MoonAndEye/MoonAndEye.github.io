@@ -1,5 +1,28 @@
 [
  {
+  "slug": "it-ironman-2026-day-11",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 這傢伙會失憶：Mem0、Letta、MemOS、Cognee 都看過了，我一個都沒選 - Day 11",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Pi",
+   "Memory",
+   "OpenClaw",
+   "SQLite",
+   "Markdown",
+   "Context",
+   "Embedding"
+  ],
+  "summary": "我沒有採用 Mem0、Letta、MemOS 或 Cognee；第一版的跨對話記憶，選擇本機 Markdown 加 SQLite。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-11/",
+  "date": "2026-09-18T01:06:55+08:00",
+  "word_count": 2398
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-05",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜用 Cloudflare 快速建原型：domain、前端、後端、資料庫都在同一個平台 - Tip 05",

@@ -1,5 +1,107 @@
 [
  {
+  "slug": "microsoft-office-copilot-launch",
+  "title": "微軟推出了名為「Microsoft 365 Copilot」的新生產力工具",
+  "lang": "zh",
+  "date": "2023-03-17T15:41:00+08:00",
+  "category": "programming",
+  "tags": [
+   "life"
+  ],
+  "summary": "微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Mi…",
+  "url": "https://www.marvinswift.com/zh/programming/microsoft-office-copilot-launch/",
+  "hero_image": null,
+  "content": "微軟推出了名為「Microsoft 365 Copilot」的新生產力工具，旨在將下一代人工智慧技術應用到工作中，讓使用者能夠更輕鬆地進行創意和生產力的發揮。Copilot整合了大型語言模型（LLMs）和Microsoft Graph和Microsoft 365應用程序中的數據，可將使用者的語言轉化為最強大的生產力工具，幫助使用者更高效地工作。\n\nCopilot系統可以在Microsoft 365的多種應用程序中使用，例如Word、Excel、PowerPoint、Outlook和Teams，以提高使用者的生產力、解放創造力和升級技能。Copilot還可以在Outlook中協助用戶節省審閱長電子郵件鏈和快速起草建議答覆的時間，而在Teams中，Copilot則可以實時總結關鍵討論點，包括誰說了什麼，人們在哪裡達成了共識，以及哪些地方存在分歧，同時提供建議性行動計劃。Copilot還可以在Excel中分析趨勢和快速創建專業的數據可視化效果。\n\n除了加速個人生產力之外，Copilot還為每個組織創建了一個新的知識模型，利用現有的數據和見解，實現知識的自由流通，節省寶貴的時間。這使得組織內部的知識更容易被發現和應用，並且節省了大量搜尋答案的時間。Copilot還可以協助自動化重複性任務、創建聊天機器人並在幾分鐘內將想法轉化為實用應用程序。\n\n微軟表示，Copilot系統的使用需要一定的學習曲線，但是那些採用這種新的工作方式的人將很快取得優勢。微軟聯席CEO Satya Nadella表示，Copilot將徹底改變人們與AI的互動方式，以及AI與人類之間的互動方式。\n\nCopilot系統是企業級AI的最佳解決方案，不僅整合了OpenAI的ChatGPT，還包括一個複雜的處理和管控引擎，可在企業級應用場景下實現高效穩定的AI模型開發、部署、管理和維護。Copilot系統的開發者希望透過這個產品，幫助企業在應用AI技術方面更加順利，降低開發難度和成本，並且讓企業能夠更好地應對市場和用戶的需求。隨著人工智能技術的發展和應用越來越廣泛，Copilot系統的應用前景也非常看好。\n\n[Microsoft blog](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 669,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2023-03-17-microsoft-office-copilot-launch.md"
+ },
+ {
+  "slug": "swiftformat-version",
+  "title": "Swiftformat 在設定 swiftversion 5.7，會把 T 改成 some Any",
+  "lang": "zh",
+  "date": "2023-03-17T09:12:00+08:00",
+  "category": "swift",
+  "tags": [
+   "swift"
+  ],
+  "summary": "Swiftformat 可調整的各種參數 swiftformat 在進行 formatting 的時候，有很多參數可以調整。詳細的參數如下。 swiftformat 參數連結 當我們把 調整到 的時候，使用泛型 T，就會被改成 some A…",
+  "url": "https://www.marvinswift.com/zh/swift/swiftformat-version/",
+  "hero_image": null,
+  "content": "## Swiftformat 可調整的各種參數\n\nswiftformat 在進行 formatting  的時候，有很多參數可以調整。詳細的參數如下。\n\n[swiftformat 參數連結](https://github.com/nicklockwood/SwiftFormat/blob/master/.swiftformat)\n\n```\n# file options\n\n--exclude Tests/XCTestManifests.swift,Tests/BadConfig,Snapshots,Build,PluginTests\n\n# format options\n\n--allman false\n--binarygrouping 4,8\n--commas always\n--decimalgrouping 3,6\n--elseposition same-line\n--voidtype void\n--exponentcase lowercase\n--exponentgrouping disabled\n--fractiongrouping disabled\n--header ignore\n--hexgrouping 4,8\n--hexliteralcase uppercase\n--ifdef indent\n--indent 4\n--indentcase false\n--importgrouping testable-bottom\n--linebreaks lf\n--maxwidth none\n--octalgrouping 4,8\n--operatorfunc spaced\n--patternlet hoist\n--ranges spaced\n--self remove\n--semicolons inline\n--stripunusedargs always\n--swiftversion 5.1\n--trimwhitespace always\n--wraparguments preserve\n--wrapcollections preserve\n\n# rules\n\n--enable isEmpty\n```\n\n當我們把 `--swiftversion 5.1` 調整到 `--swiftversion 5.7` 的時候，使用泛型 T，就會被改成 some Any。\n\n```\n// --swiftversion 5.1 ~ 5.6\nfunc log<T>(_ message: T) {\n\n// --swiftversion 5.7\nfunc log(_ message: some Any) {\n```\n\n如果仍然不希望 swiftformat 改動 T，那可以在 `.swiftformat` 中，加上 disable，`--disable opaqueGenericParameters`。這樣就不會讓 T 改成 some Any 了。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 98,
+  "reading_minutes": 1,
+  "source_path": "_posts/swift/zh/2023-03-17-swiftformat-version.md"
+ },
+ {
+  "slug": "CSGN-issue-news",
+  "title": "紀錄：瑞士信貸(CSGN)可能會爆發危機2023年3月16日",
+  "lang": "zh",
+  "date": "2023-03-16T08:34:00+08:00",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "news"
+  ],
+  "summary": "瑞士信貸(CSGN)有消息說會爆發危機，股價一度暴跌30%",
+  "url": "https://www.marvinswift.com/finance/2023/03/16/CSGN-issue-news.html",
+  "hero_image": null,
+  "content": "在 SVB 倒閉之後，瑞士信代大股東排除將資金繼續注入瑞士信貸，股價在盤中暴跌30%。大股東為沙國銀行，原因為「監管和法規問題」。瑞士信貸去年虧76億瑞郎，直接將10年來的獲利回吐。去年所有的客戶贖回約1000億美元資產，資金仍然持續外流。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 107,
+  "reading_minutes": 1,
+  "source_path": "_posts/2023-03-16-CSGN-issue-news.md"
+ },
+ {
+  "slug": "SVB-broken-v2",
+  "title": "紀錄：矽谷銀行(SVB)倒閉於2023年3月10日",
+  "lang": "zh",
+  "date": "2023-03-15T10:13:00+08:00",
+  "category": "finance",
+  "tags": [
+   "Finance"
+  ],
+  "summary": "矽谷銀行(SVB)倒閉於2023-03-10，紀錄事情的發生",
+  "url": "https://www.marvinswift.com/finance/2023/03/15/SVB-broken-v2.html",
+  "hero_image": null,
+  "content": "# 矽谷銀行(SVB)倒閉於2023-03-10\n\n在美國時間2023年3月10日，美國矽谷銀行倒閉。根據 SVB 執行長 Greg Becker 的信，在拋售 210 億美元的債券組合後，稅後損失達到 18 億元。在宣告倒閉後，美國聯邦存款保險公司(FDIC)進行接管。SVB 是 FDIC 接管的銀行中，量體排名第二名的。\n\n在美國時間 13 日，Fed 和 FDIC 負責人表示。 SVB 儲戶可以順利拿回資產。\n\n>在收到 FDIC 和聯準會董事會的建議並與總統協商後，葉倫部長批准了使 FDIC 能夠完成的行動，它以充分保護所有儲戶的方式，對矽谷銀行進行決議。\n\n### 為什麼矽谷銀行會倒閉\n\nSVB 將資產配置在長期的國債，因為長期國債相對短期有比較好的利率。但在 2022 年開始，美國聯準會不斷的進行加息，這一年中加了八次息。市場利率上升，債券價格就會下跌。SVB 的客戶集中在科技業，在 2022 年底業界發現成長難以持續，不斷進行裁員，在業界景氣進入往下的趨勢中，眾多客戶進行資金轉移，導致了 SVB 需要先拋售持有的長期債券。一般來說，長期債券在長期持有的狀況下，很難賠到錢的，但短期價格是會被市場影響的。\n\n### 後續\n\n美國時間 2023年3月12日，Signature Bank 被關閉，但所有存戶 13 日起可以領回所有存款。\n\n### Twitter 觀點\n\n大賣空主角原型 - 貝瑞在 Twitter 上則是說，這次的危機應該很快就會結束，事情會告一個段落。(不過他還是看空)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 484,
+  "reading_minutes": 2,
+  "source_path": "_posts/finance/2023-03-15-SVB-broken-v2.md"
+ },
+ {
+  "slug": "future-article-will-post-on-page",
+  "title": "GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了",
+  "lang": "zh",
+  "date": "2023-03-14T21:09:00+08:00",
+  "category": "life",
+  "tags": [
+   "Life",
+   "blog"
+  ],
+  "summary": "GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了",
+  "url": "https://www.marvinswift.com/life/2023/03/14/future-article-will-post-on-page.html",
+  "hero_image": null,
+  "content": "# GitHub Page 部落格弄好了，未來文章都會 po 在 GitHub Page 上了\n\n最近抽空花了點時間，使用了 ChatGPT 輔助，在 GitHub Page 上架了自己的部落格。使用的是 Ruby 的 Jekyll 框架，Jekyll 也是 GitHub Page 上直接推薦的框架。\n\n除了 Jekyll 以外，ChatGPT 還推薦了 Hugo、Hexo、Pelican、Gatsby。但我看了 GitHub 官網都推薦 Jekyll 後，就決定先試試 Jekyll 了。\n\nGithub Page\n\n[https://moonandeye.github.io](https://moonandeye.github.io/)\n\n現在已經搬移了部分文章，接下來都會繼續在 Page 上寫文章，短期還會在 medium 上貼相同文章，但再過一陣子，我就會停用 medium 了。\n\n畢竟，我還是想要有一個不是控在別人手上的 blog。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 185,
+  "reading_minutes": 1,
+  "source_path": "_posts/2023-03-14-future-article-will-post-on-page.md"
+ },
+ {
   "slug": "stories-written-by-ai",
   "title": "AI 寫出來的故事",
   "lang": "zh",
