@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-05",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜用 Cloudflare 快速建原型：domain、前端、後端、資料庫都在同一個平台 - Tip 05",
+  "lang": "zh",
+  "date": "2026-09-17T13:00:33+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "我做原型時，會先想部署：用 Cloudflare 把 domain、前端、API、資料與快取放在同一個平台。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-05/",
+  "hero_image": null,
+  "content": "這一篇改寫自我部落格的《AI Agent Coding - 為什麼我會推薦 Cloudflare》，照這個系列的格式重寫過。原始文章：https://www.marvinswift.com/zh/programming/ai-agent-coding-cloudflare/\n\n要快速做出一個原型，前端加後端，我會從「哪裡部署成本最低」開始想。我的答案是 Cloudflare：domain、前端、API、資料庫、快取都放在同一個平台。\n\n## 為什麼\n\n這個時代要快速做出一款 app，工具很多：Claude 系列、Codex 系列，GitHub 上也有直接在網頁裡寫程式的服務，未來只會更多。\n\n但真的想讓別人試試看寫出來的東西，還是要找個地方部署。\n\n一開始用 coding agent 的時候，大家通常專注在「他能不能幫我寫程式」。真的開始做產品，很快會遇到另一個問題：寫出來的東西要放在哪裡，才可以被別人打開、試用，甚至真的開始運作。這時候要處理的是一整條產品上線的路徑：domain、前端部署、API、資料庫、快取，還有這些設定要怎麼維護。\n\n很多人會先決定 tech stack，再去找免費或成本低的地方部署。我建議反過來，先想部署，才不會只停在 demo。\n\nCloudflare 可以把一個小型產品需要的基礎設施放在同一個平台裡：買 domain、管理 DNS、部署靜態網站、建立 API、存資料、做快取。對 coding agent 來說，這代表整個產品的部署邊界很清楚。我不用一開始就規劃很複雜的 cloud architecture，也不用先決定要維護哪一種 server。先把產品做出來，再用 Cloudflare 的服務推出去。「寫出程式」到「真的上線」中間的距離，因此變短。\n\n## 我怎麼做\n\n一個小產品常用的幾塊，各放哪裡：\n\n| 要放的東西 | Cloudflare 上用什麼 |\n| --- | --- |\n| domain、DNS | Registrar |\n| landing page、文件站、blog、前端 app | Pages |\n| API、webhook、第三方服務的 proxy、排程工作 | Workers |\n| users、posts、orders、settings 這種有結構的資料 | D1 |\n| 快取、feature flags、user preference、routing config | KV |\n| 想試的 AI feature | Workers AI |\n\n**Domain 先買。** 一個產品要有自己的入口，domain 和 DNS 也放在 Cloudflare。購買與接上 Pages、Workers 的操作，下一篇再講。\n\n**前端放 Pages。** 產品一開始只是 landing page、文件站、blog、前端 app 的話，Pages 就很適合。它可以從 Git repo 部署，也可以上傳 build 好的靜態檔案。對 coding agent 的好處是：前端專案、build 指令、部署設定都在同一個 repo 裡，他一起讀得到。他本來就會讀 `package.json`、framework config、README、部署設定，這些規則寫清楚，他比較容易幫我修 build error，也比較容易幫我調部署流程。這也是 Tip 02 把東西都放同一個 repo 的延伸：部署設定也一起放進來。程式碼在 repo、部署設定在另一個平台的 UI 裡，那種擺法比較難維護。\n\n**後端先夠用就好。** 很多產品一開始要的只是一個 API、一個 webhook、第三方服務的 proxy，或一點點排程工作。Workers 很適合，我不用先開一台 server，也不用處理 server 維護。產品開始有資料就接 D1，它是 Cloudflare 的 serverless SQL database，語法接近 SQLite，他也很容易理解；資料是 users、posts、orders、settings 這種結構，用 SQL 先定下來很直覺。KV 放快取、feature flags、user preference、routing config 這種 key-value 的東西。分法很簡單：資料需要查詢和關聯，放 D1；只是用 key 拿 value，放 KV。\n\n**想做 AI feature，先用 Workers AI。** 一開始就自己接一堆模型供應商、處理 API key、處理部署和後端串接，可以先不用。Workers AI 讓我在同一個平台上快速測想法，而且有一定的免費額度，side project、MVP、只是想驗證某個功能，起步成本很低。\n\n一句話：**Pages 放前端，Workers 做後端，D1 存資料，KV 做快取。** 他在理解專案時，會看到一個比較清楚的產品邊界。\n\n## 小結\n\nVibe Coding 的下一步，除了讓他把程式寫出來，還要讓寫出來的東西真的上線。以這個方向看，Cloudflare 是我現在會優先推薦的部署底座。\n\n明天把自己的 domain 接上 Pages 或 Workers。\n\n原文：https://www.marvinswift.com/zh/programming/ai-agent-coding-cloudflare/\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1162,
+  "reading_minutes": 4,
+  "source_path": "_posts/programming/zh/2026-09-17-it-ironman-2026-vibe-coding-tip-05.md"
+ },
+ {
   "slug": "it-ironman-2026-day-10",
   "title": "[IT 鐵人賽] 石滿自摺：context 快滿了 pi 會自己壓縮，這一天我先用預設的 - Day 10",
   "lang": "zh",
@@ -3975,26 +3993,5 @@
   "word_count": 185,
   "reading_minutes": 1,
   "source_path": "_posts/2023-03-14-future-article-will-post-on-page.md"
- },
- {
-  "slug": "stories-written-by-ai",
-  "title": "AI 寫出來的故事",
-  "lang": "zh",
-  "date": "2022-12-30T16:12:00+08:00",
-  "category": "programming",
-  "tags": [
-   "ai",
-   "chatgpt"
-  ],
-  "summary": "AI 寫出來的故事 上一篇文章寫了我現在用 ChatGPT 來做的事。 * * AI 寫出來的故事 上一篇文章寫了我現在用 ChatGPT 來做的事。 最近用 ChatGPT 來做的事情**\\ 最近有個 AI 對話機器人，在短期內爆紅，連結…",
-  "url": "https://www.marvinswift.com/programming/2022/12/30/stories-written-by-ai.html",
-  "hero_image": "https://cdn-images-1.medium.com/max/800/1*91ACQDjnyRok9mEYG0Mg8Q.png",
-  "content": "AI 寫出來的故事\n=========\n\n上一篇文章寫了我現在用 ChatGPT 來做的事。\n\n* * *\n\n### AI 寫出來的故事\n\n![](https://cdn-images-1.medium.com/max/800/1*91ACQDjnyRok9mEYG0Mg8Q.png)\n\n上一篇文章寫了我現在用 ChatGPT 來做的事。\n\n[**最近用 ChatGPT 來做的事情**\\\n_最近有個 AI 對話機器人，在短期內爆紅，連結如下。_medium.com](https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53 \"https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53\")[](https://medium.com/@atimis19/%E6%9C%80%E8%BF%91%E7%94%A8-chatgpt-%E4%BE%86%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85-d3f2a789ca53)\n\n然後，突然想到，如果叫他寫小說，會怎樣呢?\n\n![](https://cdn-images-1.medium.com/max/800/1*MU9Cg2sa6mMjFZIiui3Nvg.png)\n\n整個全文如下\n\n* * *\n\nAI 寫出來的故事\n\n在阿根廷，一位叫做 Juan 的軟體開發者，對足球非常熱愛。他每天晚上都會打開他的 iPhone，使用一款叫做 “Fútbol App” 的 iOS 應用程式，觀看最新的足球比賽影片和新聞。\n\n當世界杯來臨時，Juan 非常興奮。他期待著看到阿根廷隊的比賽，並希望他的國家能夠拿到冠軍。他也特別注意自己的 iPhone，因為他知道這款應用程式將會是他追蹤比賽和新聞的最佳工具。\n\n在比賽期間，Juan 每天都會第一時間打開 “Fútbol App”，看看阿根廷隊的最新消息。他也會和朋友們一起使用應用程式的即時聊天功能，討論比賽的結果和未來的賽程。\n\n最終，阿根廷隊沒有拿到冠軍，但 Juan 依然對足球充滿熱情。他期待著下一屆世界杯的到來，並繼續使用 “Fútbol App” 來追蹤最新的足球消息。\n\nJuan 繼續使用 “Fútbol App”，並希望能夠透過這款軟體，讓更多的足球迷們能夠享受到最新、最準確的足球資訊。因此，他決定專注於改進軟體的功能和使用體驗。\n\n他開始研究如何使用 iOS 的最新技術，例如蘋果的 ARKit 框架，讓使用者能夠在應用程式中檢視三維足球場地和球員模型。他也考慮加入即時聊天功能，讓球迷們能夠在比賽期間互相交流意見。\n\nJuan 的努力沒有白費。 “Fútbol App” 的使用者人數迅速增長，並得到許多好評。甚至有足球球隊的經紀人、訓練師和球員也開始使用這款軟體，為他們的比賽做最佳化的準備。\n\nJuan 很高興看到 “Fútbol App” 的成功，並希望能夠繼續為足球迷們提供最好的服務。他知道，只要他堅持不懈，就能夠讓這款軟體成為足球界不可或缺的工具。\n\nJuan 繼續努力工作，並希望能夠不斷改進 “Fútbol App” 的功能和使用體驗。他也開始與其他軟體開發者合作，希望能夠借助他們的專業知識，讓 “Fútbol App” 更加完善。\n\n在他的努力下，”Fútbol App” 得到了更多的肯定和支持。足球俱樂部、足球聯盟和運動媒體機構都開始使用這款軟體，並為它發表了許多好評。甚至有人向 Juan 提出收購 “Fútbol App” 的邀約，但他決定保留自己的軟體，繼續專注於為足球迷們提供最好的服務。\n\n雖然 “Fútbol App” 的成功讓 Juan 忙碌了許多，但他仍然喜愛足球，並繼續追蹤最新的賽事和新聞。他知道，只要有足球，就會有無限的靈感和樂趣。\n\n* * *\n\n就內容和架構上來說，當然離「頂尖」的小說家還有很大一段距離。但如果和網路上一般日常的 po 文來比較，是不是很像呢?\n\nBTW 這篇文章的封面，也是 AI 產生的\n\n[https://labs.openai.com/e/87LrehmaBKagLmwVkoVDRKmy/0CMZyla5JLWlwsNjhrVLuW6](https://labs.openai.com/e/87LrehmaBKagLmwVkoVDRKmy/0CMZyla5JLWlwsNjhrVLuW6)i\n\nBy [Marvin Lin](https://medium.com/@atimis19) on [December 30, 2022](https://medium.com/p/647af47a0ca1).\n\n[Canonical link](https://medium.com/@atimis19/ai-%E5%AF%AB%E5%87%BA%E4%BE%86%E7%9A%84%E6%95%85%E4%BA%8B-647af47a0ca1)\n\nExported from [Medium](https://medium.com) on March 14, 2023.\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 993,
-  "reading_minutes": 4,
-  "source_path": "_posts/2022-12-30-stories-written-by-ai.md"
  }
 ]
