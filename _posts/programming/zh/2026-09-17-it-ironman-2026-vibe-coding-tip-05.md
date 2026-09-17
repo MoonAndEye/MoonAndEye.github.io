@@ -20,6 +20,8 @@ summary: "我做原型時，會先想部署：用 Cloudflare 把 domain、前端
 description: "我做原型時，會先想部署：用 Cloudflare 把 domain、前端、API、資料與快取放在同一個平台。"
 ---
 
+本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10412468)。
+
 這一篇改寫自我部落格的《AI Agent Coding - 為什麼我會推薦 Cloudflare》，照這個系列的格式重寫過。原始文章：https://www.marvinswift.com/zh/programming/ai-agent-coding-cloudflare/
 
 要快速做出一個原型，前端加後端，我會從「哪裡部署成本最低」開始想。我的答案是 Cloudflare：domain、前端、API、資料庫、快取都放在同一個平台。
