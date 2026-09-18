@@ -20,7 +20,7 @@ summary: "買自己的 domain 時，我會選 Cloudflare：原價、DNS 和 HTTP
 description: "買自己的 domain 時，我會選 Cloudflare：原價、DNS 和 HTTPS 自動接好，Pages 或 Workers 幾分鐘就能上線。"
 ---
 
-這篇是 2026 iT 邦幫忙鐵人賽《Vibe Coding：30 個開發實用技巧》的 Tip 06。
+本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10413115)。
 
 做出來的東西要給人用，先買一個自己的 domain。我推薦在 Cloudflare 買：照 registry 的原價賣、DNS 和 HTTPS 都在同一個地方，接上 Pages 或 Workers 幾分鐘就上線。
 
