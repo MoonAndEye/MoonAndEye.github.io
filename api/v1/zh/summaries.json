@@ -1,5 +1,32 @@
 [
  {
+  "slug": "it-ironman-2026-day-12",
+  "title": "[IT 鐵人賽] 藏經三卷：MEMORY.md、DREAMS.md、memory/ 日期檔，照 OpenClaw 的樣子排 - Day 12",
+  "lang": "zh",
+  "date": "2026-09-19T01:21:16+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Memory",
+   "OpenClaw",
+   "Markdown",
+   "SQLite",
+   "Pi"
+  ],
+  "summary": "我把 Agent 的記憶拆成長期記憶、每日 session 檔與待整理的想法；Markdown 保存內容，SQLite 只負責找回位置。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-12/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-011.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 3142,
+  "reading_minutes": 11,
+  "source_path": "_posts/programming/zh/2026-09-19-it-ironman-2026-day-12.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-06",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜買自己的 domain，在 Cloudflare 買：原價、HTTPS 自動、接 Pages 或 Workers 幾分鐘上線 - Tip 06",
   "lang": "zh",
