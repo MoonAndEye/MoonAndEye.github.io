@@ -1,5 +1,16 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-06",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜買自己的 domain，在 Cloudflare 買：原價、HTTPS 自動、接 Pages 或 Workers 幾分鐘上線 - Tip 06",
+  "category": "programming",
+  "tags": [],
+  "summary": "買自己的 domain 時，我會選 Cloudflare：原價、DNS 和 HTTPS 自動接好，Pages 或 Workers 幾分鐘就能上線。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-06/",
+  "date": "2026-09-18T13:03:21+08:00",
+  "word_count": 613
+ },
+ {
   "slug": "it-ironman-2026-day-11",
   "lang": "zh",
   "title": "[IT 鐵人賽] 這傢伙會失憶：Mem0、Letta、MemOS、Cognee 都看過了，我一個都沒選 - Day 11",

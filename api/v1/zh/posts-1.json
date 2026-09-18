@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-06",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜買自己的 domain，在 Cloudflare 買：原價、HTTPS 自動、接 Pages 或 Workers 幾分鐘上線 - Tip 06",
+  "lang": "zh",
+  "date": "2026-09-18T13:03:21+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "買自己的 domain 時，我會選 Cloudflare：原價、DNS 和 HTTPS 自動接好，Pages 或 Workers 幾分鐘就能上線。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-06/",
+  "hero_image": null,
+  "content": "這篇是 2026 iT 邦幫忙鐵人賽《Vibe Coding：30 個開發實用技巧》的 Tip 06。\n\n做出來的東西要給人用，先買一個自己的 domain。我推薦在 Cloudflare 買：照 registry 的原價賣、DNS 和 HTTPS 都在同一個地方，接上 Pages 或 Workers 幾分鐘就上線。\n\n## 為什麼\n\n昨天把前端、API 和資料庫要放哪裡排好了，今天把自己的 domain 接上去：\n\n- **原價，沒有加價。** Cloudflare Registrar 只收 registry 和 ICANN 收的那個價，續約也照 registry 的定價，沒有續約漲價那一套。\n- **DNS 在同一個地方。** 在 Cloudflare 買的 domain 直接用 Cloudflare 的 nameserver，買完 DNS 就設好了，少一個要登入的地方。\n- **HTTPS 自動。** domain 在 Cloudflare 上，Universal SSL 免費、自動簽、自動續，root domain 和第一層子網域都蓋到。憑證這件事從此不用想。\n- **WHOIS 資料預設遮掉。** registry 允許的話，個人資料不會被 WHOIS 查到，免費。DNSSEC 一鍵開，也免費。\n- **接 Pages、Workers 一個畫面搞定。** 部署好的 Pages 專案或 Worker 加上 custom domain，Cloudflare 自己建 DNS 記錄、自己發憑證。\n\n## 我怎麼做\n\n1. **買**：Cloudflare dashboard 的 Register domains，搜名字、選年數、填聯絡資料、付款。文件寫註冊本身最多三十秒，auto-renew 預設開著。\n2. **接 Pages**：Workers & Pages 選你的 Pages 專案，Custom domains，Set up a domain，打 domain 按 Continue。domain 是這個帳號上的 zone，CNAME 會自動建好。\n3. **接 Worker**：Worker 的 Settings，Domains & Routes，Add，Custom Domain。或者在 wrangler 設定裡寫：\n\n```jsonc\n{\n  \"routes\": [\n    { \"pattern\": \"api.example.com\", \"custom_domain\": true }\n  ]\n}\n```\n\n`npx wrangler deploy` 之後 Cloudflare 自己建 DNS、自己發憑證。\n\n前端用 `app.example.com`，API 用 `api.example.com`。開發時要把另一個網址接回 localhost，下一篇再講 Tunnel。\n\n叫他做也行：\n\n```\n把 example.com 接到 Pages 專案 my-app，api.example.com 接到 Worker my-api，用 wrangler 設定加 custom domain。\n```\n\n## 坑\n\n- 在 Cloudflare Registrar 買的 domain 一定用 Cloudflare 的 nameserver，換不到別家 DNS。想用別家 DNS 的，domain 就去別家買再把 DNS 指過來，Cloudflare 的服務照樣能用。\n- Worker 的 Custom Domain 要 hostname 完全一致，`example.com` 和 `www.example.com` 是兩個。要兩個都通，設一條轉址規則。\n- Registrar 目前不支援中文這類 IDN 網域。\n\n## 小結\n\ndomain 在 Cloudflare 買：原價、DNS 現成、HTTPS 自動、WHOIS 遮掉。接 Pages 或 Workers 幾分鐘上線。\n\n明天講開發時怎麼讓外面連進 localhost：Cloudflare Tunnel 和 ngrok。\n\n參考：\n- Cloudflare 文件：Registrar https://developers.cloudflare.com/registrar/\n- Cloudflare 文件：Pages custom domains https://developers.cloudflare.com/pages/configuration/custom-domains/\n- Cloudflare 文件：Workers Custom Domains https://developers.cloudflare.com/workers/configuration/routing/custom-domains/\n- Cloudflare 文件：Universal SSL https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 613,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-18-it-ironman-2026-vibe-coding-tip-06.md"
+ },
+ {
   "slug": "it-ironman-2026-day-11",
   "title": "[IT 鐵人賽] 這傢伙會失憶：Mem0、Letta、MemOS、Cognee 都看過了，我一個都沒選 - Day 11",
   "lang": "zh",
@@ -3900,26 +3918,5 @@
   "word_count": 643,
   "reading_minutes": 2,
   "source_path": "_posts/programming/zh/2023-03-19-using-chatgpt-connect-chatgpt1.md"
- },
- {
-  "slug": "swift-standard-tool",
-  "title": "Swift 程式碼標準化工具 - swiftlint & swiftformat",
-  "lang": "zh",
-  "date": "2023-03-18T14:26:00+08:00",
-  "category": "swift",
-  "tags": [
-   "swift",
-   "programming"
-  ],
-  "summary": "Swift 程式碼的標準化 在多人共同協作的專案中，Swift 程式碼的標準化是一個重要的主題，如果你的專案只有一個人，那標準化只需要那一位開發者，但我在實務上是會有三、四個人同時在一個專案的，想憑著過去的經驗讓這群人有程式碼風格的共識，是…",
-  "url": "https://www.marvinswift.com/zh/swift/swift-standard-tool/",
-  "hero_image": null,
-  "content": "# Swift 程式碼的標準化\n\n在多人共同協作的專案中，Swift 程式碼的標準化是一個重要的主題，如果你的專案只有一個人，那標準化只需要那一位開發者，但我在實務上是會有三、四個人同時在一個專案的，想憑著過去的經驗讓這群人有程式碼風格的共識，是不可能的。。使用 Swiftlint 和 Swiftformat 可以幫助所有成員檢視和自動修正程式碼風格。\n\n## Swiftlint\n\n[Swiftlint github link](https://github.com/realm/SwiftLint)\n\nSwiftlint 是一種靜態程式碼分析工具，可以檢查我們的程式碼是否符合 Swift 的標準風格和最佳實踐。它可以檢測和警告我們的程式碼中的一些常見錯誤和風格問題，例如缺少註釋、空格、括號和命名不一致等。使用 Swiftlint 可以使我們的程式碼更加一致和易於閱讀，從而提高程式碼品質和可維護性。\n\n你可以使用 --fix 指令，讓 swiftformat 一次處理掉簡單的 format，像是空行等。但這個指令沒辦法處理太複雜的 lint，像是我實測後，他不會移動 trailing closure 中，參數不在 `{` 同一行的狀況。\n\n```\n# swiftlint 自動更正指令\nswiftlint --fix\n```\n\n## Swiftformat\n\n[Swiftformat github link](https://github.com/nicklockwood/SwiftFormat)\n\n和 swiftformat 是類似的工具，我平常會同時用這兩個工具，因為 lint 的能力不太一樣，這個工具可以調整到 indent 的規範，opaque 型別是不是該處理，甚致細緻到 import 的順序是不是依照英文字母排序。\n\n## 好處\n\n程式碼標準化的好處在於提高程式碼質量和可讀性，從而使得我們的程式碼更加易於維護和擴展。通過使用 Swiftlint 和 Swiftformat，我們可以自動檢測和修正我們的程式碼風格問題，從而使得我們的程式碼更加一致和易於閱讀。此外，這些工具還可以提高我們的開發效率，從而使我們更加專注於開發高品質的應用程式。\n\n總的來說，Swift 程式碼的標準化是一個重要的主題，它可以幫助我們提高程式碼品質和可讀性，從而使得我們的程式碼更加易於維護和擴展。通過使用 Swiftlint 和 Swiftformat，我們可以自動檢測和修正我們的程式碼風格問題，從而提高我們的開發效率和應用程式的品質。\n\n繼續來看一下 Swift 程式碼的標準化所帶來的好處。\n- 透過使用 Swiftlint 和 Swiftformat 我們可以自動化檢測和修正我們的程式碼風格問題，這樣可以節省我們大量的時間和精力，提高我們的開發效率。\n- 程式碼標準化可以使得我們的程式碼更加一致和易於閱讀，這樣可以提高程式碼的質量和可維護性。\n- 透過程式碼標準化，我們可以使得我們的程式碼更加易於擴展和維護，這樣可以使得我們開發的應用程式更加穩定和可靠。\n\n總體來說，程式碼標準化是一個非常重要的主題，特別是在大型項目中，它可以使得我們的程式碼更加易於維護和擴展。透過使用 Swiftlint 和 Swiftformat，我們可以自動化檢測和修正我們的程式碼風格問題，提高我們的開發效率和應用程式的品質。如果你還沒有開始使用這些工具，我強烈建議你開始使用它們，這樣可以使得你專案的程式碼更加易於閱讀、維護和擴展。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 992,
-  "reading_minutes": 3,
-  "source_path": "_posts/swift/zh/2023-03-18-swift-standard-tool.md"
  }
 ]
