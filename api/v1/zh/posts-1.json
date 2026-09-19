@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-07",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜把 localhost 開給別人測：Cloudflare Tunnel、ngrok 與自己的 domain - Tip 07",
+  "lang": "zh",
+  "date": "2026-09-19T13:02:35+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "把 localhost 暫時開出去，我會按使用期限選工具：Quick Tunnel 做一次測試、ngrok 給固定 dev domain、Cloudflare Tunnel 綁自己的 domain。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-07/",
+  "hero_image": null,
+  "content": "這一篇改寫自我部落格的《Cloudflare Tunnel：我現在會用它取代 ngrok》，並補上快速 tunnel 與 ngrok 的比較。原始文章：https://www.marvinswift.com/zh/programming/cloudflare-tunnel-vs-ngrok/\n\n本機跑了一個服務，要讓朋友試用、接 webhook 或測 OAuth callback，我會先決定網址要用多久。臨時測一下用快速 tunnel；需要固定網址，就用 ngrok 的 dev domain，或把 Cloudflare Tunnel 綁到自己的 domain。\n\n## 為什麼\n\n這幾種做法都能把外面的 HTTPS 請求帶進 localhost。差別在準備工作，以及下次測試要不要重新填網址。\n\n我已經把 domain 和部署放在 Cloudflare，反覆使用的開發入口也會放在那裡，例如 `dev.example.com`。只想給別人看一次，就先拿一個臨時網址，測完關掉。\n\n## 我怎麼做\n\n先選情境：\n\n| 需要什麼 | 用法 | 準備 |\n| --- | --- | --- |\n| 現在就拿網址，臨時測一下 | Cloudflare Quick Tunnel | 安裝 cloudflared，不用帳號或 domain |\n| 測試網址固定，方便重複填在 webhook 設定裡 | ngrok dev domain | ngrok 帳號、authtoken |\n| 用自己的開發網域，放進固定流程 | Cloudflare Tunnel | Cloudflare 帳號、可設定 DNS 的 domain |\n\n**臨時網址：Cloudflare Quick Tunnel。** 本機服務跑在 8080，裝好 cloudflared 後執行：\n\n```bash\ncloudflared tunnel --url http://localhost:8080\n```\n\nterminal 會印出隨機的 `*.trycloudflare.com` 網址，連進去就是本機的 8080。用完按 Ctrl+C。\n\n**固定 dev domain：ngrok。** 裝好 ngrok，從 dashboard 拿 authtoken 綁帳號，再開服務：\n\n```bash\nngrok config add-authtoken $YOUR_TOKEN\nngrok http 8080\n```\n\n免費方案有一個分配給帳號的 dev domain，下次使用可以沿用。兩種快速測試方式的限制放在一起看：\n\n| | Cloudflare Quick Tunnel | ngrok 免費方案 |\n| --- | --- | --- |\n| 網址 | 隨機的 trycloudflare.com 子網域 | 帳號配發的 dev domain |\n| 瀏覽器開啟 | 直接進服務 | HTML 瀏覽器流量會先看到提示頁 |\n| 額度 | 最多 200 個進行中的請求，超過回 429 | 每月 1 GB 傳出流量、20,000 個 HTTP 請求，最多 3 個 endpoint 同時在線 |\n| 其他限制 | 不支援 SSE，沒有 SLA | 免費方案無法使用自己的 domain |\n\n額度依服務方案而定，使用前看文末官方文件。\n\n**自己的 domain：Cloudflare Tunnel。** 用 dashboard 建立 tunnel，照畫面安裝並執行 cloudflared，再把 published application 的 hostname 指到本機服務即可。要用本機 config 管理，也可以這樣設：\n\n```bash\nbrew install cloudflared\ncloudflared tunnel login\ncloudflared tunnel create my-dev\ncloudflared tunnel route dns my-dev dev.example.com\n```\n\n在 `~/.cloudflared/config.yml` 放入：\n\n```yaml\ntunnel: <TUNNEL_ID>\ncredentials-file: /Users/you/.cloudflared/<TUNNEL_ID>.json\n\ningress:\n  - hostname: dev.example.com\n    service: http://localhost:8080\n  - service: http_status:404\n```\n\n啟動：\n\n```bash\ncloudflared tunnel run my-dev\n```\n\n之後 `https://dev.example.com` 就會連到本機的 8080。正式服務照 Tip 05 部署，這個網址留給開發測試。\n\n## 坑\n\n- hostname 要與 DNS 設定一致，service 的 port 要指向本機真正在跑的服務，最後一條 404 兜底保留。\n- 已經有 `~/.cloudflared/` 的 config 時，Quick Tunnel 可能無法啟動。官方文件提醒先暫時改名；測完恢復，避免影響原本的固定 tunnel。\n- Quick Tunnel 給開發測試用，不支援 SSE，也沒有 SLA。\n- ngrok 的提示頁針對瀏覽器 HTML 流量；程式請求可依文件帶 `ngrok-skip-browser-warning` header。\n\n## 小結\n\n臨時測試先用 Quick Tunnel；需要固定測試網址，用 ngrok 的 dev domain；開發入口要跟自己的 domain 一起管理，就設 Cloudflare Tunnel。\n\n明天講 iOS 的基本必備：SwiftLint 和 SwiftFormat，基本的要用。\n\n參考：\n- Cloudflare Quick Tunnels https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/\n- ngrok Share Localhost https://ngrok.com/docs/share-localhost/quickstart/\n- ngrok Free Plan Limits https://ngrok.com/docs/pricing-limits/free-plan-limits/\n\n原文：https://www.marvinswift.com/zh/programming/cloudflare-tunnel-vs-ngrok/\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 865,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-09-19-it-ironman-2026-vibe-coding-tip-07.md"
+ },
+ {
   "slug": "it-ironman-2026-day-12",
   "title": "[IT 鐵人賽] 藏經三卷：MEMORY.md、DREAMS.md、memory/ 日期檔，照 OpenClaw 的樣子排 - Day 12",
   "lang": "zh",
@@ -3877,50 +3895,5 @@
   "word_count": 435,
   "reading_minutes": 2,
   "source_path": "_posts/programming/zh/2023-03-20-using-chatgpt-connect-chatgpt2.md"
- },
- {
-  "slug": "twse-website-rwd",
-  "title": "台灣證交所網頁改版，RWD 網站設計",
-  "lang": "zh",
-  "date": "2023-03-20T11:54:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance",
-   "證交所",
-   "RWD"
-  ],
-  "summary": "台灣證交所網頁改版，RWD 網站設計",
-  "url": "https://www.marvinswift.com/finance/2023/03/20/twse-website-rwd.html",
-  "hero_image": null,
-  "content": "## 證交所公告\n\n[證交所公告 link](https://www.twse.com.tw/zh/about/news/news/content.html?ff80808186cea0de0186fce2babc0066)\n\n## 證交所新聞稿\n\n臺灣證券交易所股份有限公司 新聞稿\n中華民國112年3月20日\n資訊服務部\n臺灣證券交易所官網全面改版為響應式(RWD)網站設計，於3月19日推\n出\n臺灣證券交易所官網為提升行動裝置使用者之操作體驗，強化網站友善度及互\n動性，於今(2023)年3月19日將本公司官網全面改版為響應式(RWD)網站設計，取代\n與電腦版不同頁面、網址，且屬老舊技術的行動版網站。依據流量分析統計，越來\n越多人透過行動裝置來瀏覽本公司網頁，比例已超過50%。各類行動裝置的螢幕大\n小、比例、操作習慣與使用電腦有所不同，如用手機看電腦規格的網頁，常需操作\n放大縮小，以觀看內容。\n本次改版採用響應式網頁設計(Responsive Web Design)，同一個網址上看到的內\n容，在不同螢幕寬度(桌機、平版、手機)會自動適應產生不同的版面變化，圖像尺寸\n和字體將更加利於行動裝置上瀏覽，所設計的網站連接和按鈕將更容易觸發點擊，\n有著形象視覺一致、減少維護成本、集中網站流量、加高搜尋引擎結果排名與易於\n使用者分享網站等優點。\n以使用行動裝置瀏覽本公司官網報表為例：改版後，遇到較寬的報表時，會將\n重要欄位(如證券代號、日期等)固定住，使用者透過手指左右拖拉即可依序看到表\n格後面欄位的內容，同時亦可清楚知道目前瀏覽項目的證券代號或日期，充分落實\n以使用者為中心的設計。\n臺灣證券交易所透過優化網站使用者操作體驗(User Experience)，提升使用者網\n站操作便利性、友善度及互動性，為持續吸引及服務國內外投資人投資臺灣資本市\n場而努力。\n\n## RWD 參考資料\n\nRWD（Responsive Web Design）指的是設計能夠自動調整網站版面以適應不同的裝置大小和屏幕解析度的技術。現在越來越多的使用者通過移動設備上網，因此，RWD設計變得越來越重要。\n\n首先，RWD設計可以提供更好的使用者體驗。如果一個網站不能自動適應裝置大小，使用者就必須不斷地放大和縮小網頁，以找到他們需要的內容，這樣的體驗是非常糟糕的。相反，RWD設計可以讓網站適應不同的屏幕大小和裝置，使使用者能夠更輕鬆地尋找他們所需要的信息，提供更好的瀏覽體驗。\n\n其次，RWD設計可以提高網站的可用性。如果一個網站不能正確地顯示在移動設備上，那麼它就會失去一部分的受眾。這意味著使用者可能會因為網站不符合他們的期望而放棄訪問。而使用RWD設計可以確保網站可以適應不同的裝置和屏幕大小，讓更多的使用者能夠輕鬆訪問網站。\n\n最後，RWD設計還可以提高網站的SEO排名。由於Google等搜索引擎優先顯示適應不同設備的網站，因此使用RWD設計可以讓您的網站更容易在搜索引擎中被發現，並且在搜索排名上取得更好的成績。\n\n綜上所述，RWD設計是現代網站設計的重要組成部分，它可以提高網站的使用者體驗、可用性和SEO排名。如果您正在考慮重新設計您的網站，請務必考慮使用RWD設計，以提供最佳的網站體驗。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 1085,
-  "reading_minutes": 4,
-  "source_path": "_posts/finance/2023-03-20-twse-website-rwd.md"
- },
- {
-  "slug": "yang-red-been",
-  "title": "小吃推薦：楊家紅豆餅-新北板橋江子翠",
-  "lang": "zh",
-  "date": "2023-03-20T09:16:00+08:00",
-  "category": "life",
-  "tags": [
-   "food",
-   "美食"
-  ],
-  "summary": "Yang Family Red Bean Cake is a bakery in the Jiangzicui area that has been operating for over 10 years, selling only two flavors of cakes - red bean and butter. Both flavors are excellent and made with high-quality ingredients, and the limited daily quantity ensures freshness.",
-  "url": "https://www.marvinswift.com/zh/life/yang-red-been/",
-  "hero_image": "https://www.marvinswift.com/assets/life/food/yang_red_been.jpeg",
-  "content": "![楊家紅豆餅](https://www.marvinswift.com/assets/life/food/yang_red_been.jpeg)\n\n## 楊家紅豆餅\n\n## 營業時間：早上11點開始，賣完為止\n\n這家紅豆餅店位於江子翠地區，已經經營十年以上。這家店的特色是他們只賣兩種口味的餅點：紅豆餅和奶油餅。但是這兩種口味都被做到了極致，令人回味無窮。\n\n紅豆餅的內餡香甜，且每一口都有紅豆的口感，而餅皮則是脆而不硬，口感非常好。奶油餅則是濃郁的奶油香氣和鬆軟的餅體融合在一起，給人一種非常獨特的口感。雖然店家只賣這兩種口味，但是每一種口味都非常優秀，是一種無法用言語形容的美味。\n\n此外，這家店的餅點使用的是優質的食材，每天限量販售也保證了餅點的新鮮度，因此如果您想嚐試這家店的餅點，建議您早一點來，以免向隅。\n\n總之，如果您對紅豆餅和奶油餅感興趣，不妨到這家店品嚐一下。我相信您一定不會失望。\n\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2511399399245!2d121.46905985062942!3d25.025549883897703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a83fa20267a7%3A0xa8542f3b1b1b8b!2z5qWK5a6257SF6LGG6aSF!5e0!3m2!1szh-TW!2stw!4v1679275706894!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n",
-  "content_format": "markdown+html",
-  "inline_html_tags": [
-   "iframe"
-  ],
-  "has_insecure_images": false,
-  "word_count": 309,
-  "reading_minutes": 1,
-  "source_path": "_posts/life/zh/2023-03-20-yang-red-been.md"
  }
 ]

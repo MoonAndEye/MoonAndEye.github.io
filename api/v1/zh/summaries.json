@@ -1,5 +1,22 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-07",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜把 localhost 開給別人測：Cloudflare Tunnel、ngrok 與自己的 domain - Tip 07",
+  "lang": "zh",
+  "date": "2026-09-19T13:02:35+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "把 localhost 暫時開出去，我會按使用期限選工具：Quick Tunnel 做一次測試、ngrok 給固定 dev domain、Cloudflare Tunnel 綁自己的 domain。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-07/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 865,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-09-19-it-ironman-2026-vibe-coding-tip-07.md"
+ },
+ {
   "slug": "it-ironman-2026-day-12",
   "title": "[IT 鐵人賽] 藏經三卷：MEMORY.md、DREAMS.md、memory/ 日期檔，照 OpenClaw 的樣子排 - Day 12",
   "lang": "zh",
