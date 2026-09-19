@@ -19,6 +19,8 @@ summary: "把 localhost 暫時開出去，我會按使用期限選工具：Quick
 description: "把 localhost 暫時開出去，我會按使用期限選工具：Quick Tunnel 做一次測試、ngrok 給固定 dev domain、Cloudflare Tunnel 綁自己的 domain。"
 ---
 
+本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10413685)。
+
 這一篇改寫自我部落格的《Cloudflare Tunnel：我現在會用它取代 ngrok》，並補上快速 tunnel 與 ngrok 的比較。原始文章：https://www.marvinswift.com/zh/programming/cloudflare-tunnel-vs-ngrok/
 
 本機跑了一個服務，要讓朋友試用、接 webhook 或測 OAuth callback，我會先決定網址要用多久。臨時測一下用快速 tunnel；需要固定網址，就用 ngrok 的 dev domain，或把 Cloudflare Tunnel 綁到自己的 domain。
