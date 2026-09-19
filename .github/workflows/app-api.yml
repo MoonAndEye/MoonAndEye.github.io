@@ -22,7 +22,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: app-api
+  # All workflows that commit generated files share this lock.
+  group: main-generated-writes
   cancel-in-progress: false
 
 jobs:
@@ -30,6 +31,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # A queued run checks out the commit that triggered it, but an earlier
+      # run may already have pushed generated API files to main.  Fast-forward
+      # before generating so the generated commit is based on the latest main.
+      - name: Sync with latest main
+        run: git pull --rebase origin main
 
       - name: Build app API JSON
         run: python3 .github/scripts/build_app_api.py

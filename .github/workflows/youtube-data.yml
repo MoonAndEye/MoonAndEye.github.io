@@ -9,7 +9,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: youtube-data
+  # All workflows that commit generated files share this lock.
+  group: main-generated-writes
   cancel-in-progress: false
 
 jobs:
@@ -18,11 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch playlist data
-        env:
-          # 選配：設定 repo secret YOUTUBE_API_KEY 可從 RSS（最新 15 部）升級為
-          # YouTube Data API（每清單最多 MAX_ITEMS=50 部）
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Fetch channel data
         run: python3 .github/scripts/fetch_youtube.py
 
       - name: Commit and push if changed
