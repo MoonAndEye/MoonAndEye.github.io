@@ -1,5 +1,32 @@
 [
  {
+  "slug": "it-ironman-2026-day-13",
+  "title": "[IT 鐵人賽] 摺法照舊：pi 怎麼壓我就怎麼壓，三個設定攤開來看，一個都不動 - Day 13",
+  "lang": "zh",
+  "date": "2026-09-20T01:04:21+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Pi",
+   "Agent",
+   "Context Management",
+   "Memory",
+   "Compaction"
+  ],
+  "summary": "把 pi 的三個壓縮設定攤開看，暫時一個都不動；先弄懂何時壓縮、保留什麼、記憶接在哪裡。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-13/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-13-main.png",
+  "content": "本文同步刊登於 [2026 iThome 鐵人賽](https://ithelp.ithome.com.tw/articles/10414084)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\nDay 12 把記憶的寫入掛在壓縮前面。從那一刻起，壓縮從一件在背景自己發生的事，變成會決定兩件事的東西：哪一刻寫記憶，寫完之後他手上還剩什麼。\n\nDay 10 我先用 pi 預設的壓縮，看了一輪。這一天回頭把設定攤開來看。結論先講：一個都不動。\n\n## 我的立場：預設是什麼，我就直接用\n\npi 預設是什麼，我就直接用，直到我發現不改不行。\n\n這條原則 Day 10 講過一次，這一天是它第一次真的派上用場。壓縮這件事我用了幾天，沒有碰到不改不行的情況。所以我沒有想要改 pi 的預設值。pi 怎麼壓，我就怎麼壓。\n\n那為什麼還要花一天看它。因為記憶掛在它前面。三個設定我一個都不動，但至少要知道它什麼時候發生、留什麼、丟什麼，記憶那一邊才知道自己接在什麼東西上。\n\n哪一天發現不改不行，再回來動這三格。這一天沒有那個理由。\n\n## pi 給的三個把手\n\nDay 10 只講了門檻。這一天把設定攤開。\n\n| 設定 | 預設 | 管什麼 |\n| --- | --- | --- |\n| `compaction.enabled` | `true` | 要不要自動壓縮 |\n| `compaction.reserveTokens` | 16384 | 留給模型回答的空間。context 用到只剩這麼多就壓 |\n| `compaction.keepRecentTokens` | 20000 | 壓的時候，最近這麼多 token 的原文保留、不進摘要 |\n\n三個都放在 `~/.pi/agent/settings.json`，或專案的 `.pi/settings.json`。專案那份蓋全域那份，跟 Day 07 講的 AGENTS.md 一樣的疊法。我兩份都沒有寫這一段，所以跑的就是表格裡的預設值。\n\n門檻的算法 Day 10 寫過：context 超過「視窗大小減 reserveTokens」就壓。壓的時候從最新的訊息往回數，數到 keepRecentTokens 為止，這一段原文保留，前面全部進摘要。再壓一次的時候，上一次保留下來的那一段也會被納進摘要裡。\n\n另外有一個手動的：`/compact`，後面可以帶一句指示，告訴他這一次摘要要留什麼。關掉自動壓縮之後手動的還能用。\n\n## 壓完之後，他手上剩什麼\n\npi 的壓縮是請模型把舊的那一段寫成一份固定格式的摘要：目標、限制、進度、關鍵決定、下一步、還要用到的資料，最後附上讀過和改過的檔案清單。做摘要之前，工具的輸出超過兩千字先截掉。\n\n摘要留的是「做了什麼」。檔案留下的是路徑，內容沒了，要再用就得再讀一次。\n\n這是預設的樣子。我知道它會丟細節，知道了就好，先這樣用。\n\n![Day 13：沿用 Pi 預設的三個壓縮設定](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-13-main.png)\n\n## 跟記憶怎麼接\n\n順序是這樣：context 快滿，記憶先寫（Day 12 掛的那個位置），再壓。\n\n三個設定都用預設，所以「什麼時候寫記憶」也就等於 pi 預設的門檻：視窗只剩 16384 的時候。這一點我知道，先接受。\n\nOpenClaw 那邊同一個順序。他們在壓縮之前會先跑一輪安靜的回合，提醒 agent 把還沒寫進檔案的重要內容先存進記憶檔，這個預設是開的。差別在誰決定寫什麼：他們讓 agent 自己判斷；我這一版是我說要記才記，Day 12 講過為什麼。\n\n所以壓掉的細節有兩個去處。我說過要記的，進了那一天的 Markdown；沒說的，跟著摘要一起沒了。\n\n## 別人怎麼處理這件事\n\nDay 11 我看過 Mem0、Letta、MemOS、Cognee，一個都沒選，當時只寫了我的判斷方式，沒有展開它們各自是什麼。這一天壓縮和記憶接上了，剛好回頭把它們攤開。每一家其實都在回答同一個問題：context 裝不下的東西去哪裡，什麼時候回來。順手把另外幾個常被提到的也放進來。\n\n**Mem0** 把自己定位成 AI 的「記憶層」。做法是把對話交給模型，抽成一條一條的事實存起來，之後用搜尋找回來。他們 2026 年 4 月的新演算法改成只加不改：一次呼叫抽事實，累積下去，舊的不覆寫；找的時候語意、關鍵字、實體三種比對一起算。它要一個模型加一個 embedding 模型才跑得起來，預設是 OpenAI 的 gpt-5-mini 和 text-embedding-3-small。三種用法：直接裝 library、用 docker compose 自架 server、用他們的雲端。\n\n**Letta**，原本叫 MemGPT。MemGPT 那篇論文的題目就是把 LLM 當作業系統看：context 是主記憶體，放不下的東西搬到外面，由 agent 自己用工具搬進搬出。現在的 Letta Code 是一個有狀態的 agent harness，agent 靠改寫自己的 memory blocks 學習，所有 context 用 git 追蹤，他們叫 MemFS；還有一個 `/sleeptime`，讓 agent 在背景整理記憶，他們叫 dreaming。\n\n**MemOS** 把記憶當作業系統的資源來管。一個 API 負責加、查、改、刪，記憶的結構是圖，可以檢視也可以編輯；寫入走一個叫 MemScheduler 的排程器，非同步進去；多個知識庫當成一顆一顆的 memory cube 組合。自架版要 Neo4j 加 Qdrant；另外有給 OpenClaw 和 Hermes 用的本機外掛，純 SQLite，全文檢索加向量。\n\n**Cognee** 把資料吃進去建成知識圖譜，向量和圖一起查。四個動作：remember、recall、forget、improve。本機開發可以全部內嵌，SQLite、LanceDB、Kuzu，不用另外架服務。它有一個 Claude Code 的外掛，掛在 Claude Code 的生命週期上：每次送 prompt 前注入相關的記憶，工具跑完記下軌跡，壓縮之前那一刻先把記憶保住，session 結束再同步進圖譜。壓縮前先存這一步，跟我 Day 12 掛的位置一樣。\n\n**Graphiti** 是 Zep 開源出來的，做 temporal knowledge graph。每一條事實帶著時間：什麼時候成立、什麼時候被取代；每一條都能回溯到原始的那一段資料，他們叫 episode。查的時候語意、關鍵字、圖遍歷混著用。開源版要自己接一個圖資料庫。\n\n**LangMem** 是 LangChain 給 LangGraph 的記憶工具。兩種用法：一種在 hot path，agent 對話中自己決定記什麼、什麼時候搜；另一種在背景，一個 memory manager 定期抽取、整併、更新。\n\n**Supermemory** 從對話抽事實，維護每個使用者的 profile，處理矛盾和過期，會自動忘記；RAG 和記憶在同一次查詢裡一起查。有單一 binary 的本機版，可以接 Ollama 離線跑。\n\n看完一輪有一件事很清楚：這幾家都把「什麼該記」交給模型或 agent 判斷，有的在對話當下抽，有的在背景整理。壓縮前先存這一步，OpenClaw 有，Cognee 的 Claude Code 外掛也有。我這一版兩件事都做了選擇：壓縮照 pi 的預設，什麼該記由我說（Day 12）。\n\n## 第二章到這裡收\n\n這一章從「他很會寫程式，卻不知道我的 repo 長什麼樣」開始。走到今天，關於我的事他都有地方讀：我的規矩、我抄回來的技能、我昨天做過什麼。context 滿了怎麼壓，照 pi 的。\n\n他認得我了嗎？至少他知道去哪裡查。\n\n## 小結\n\n這一天看了 pi 壓縮的三個設定，一個都沒動。pi 怎麼壓，我就怎麼壓，直到發現不改不行。順手把 Day 11 沒展開的那幾個記憶框架攤開看了一輪，它們把「什麼該記」交給模型判斷，我這一版留給自己。\n\n前面十幾天我一直說他「變好了」。變好多少？我拿不出數字。明天講 evals。\n\n參考文件：\n- pi 的 [Compaction](https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/compaction.md) 和 [Settings](https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/settings.md)\n- OpenClaw 的 [Memory](https://github.com/openclaw/openclaw/blob/main/docs/concepts/memory.md)\n- 記憶框架各自的 README：\n  - Mem0：[mem0ai/mem0](https://github.com/mem0ai/mem0)\n  - Letta：[letta-ai/letta-code](https://github.com/letta-ai/letta-code)\n  - MemOS：[MemTensor/MemOS](https://github.com/MemTensor/MemOS)\n  - Cognee：[topoteretes/cognee](https://github.com/topoteretes/cognee)\n  - Graphiti：[getzep/graphiti](https://github.com/getzep/graphiti)\n  - LangMem：[langchain-ai/langmem](https://github.com/langchain-ai/langmem)\n  - Supermemory：[supermemoryai/supermemory](https://github.com/supermemoryai/supermemory)\n\n---\n\n> **凡人修 Agent 傳｜第十三回（Day 13）**\n>\n> ![凡人修 Agent 傳 Day 13 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-13-serial.png)\n>\n> 天亮換上空錄石。\n>\n> 左臂先動。型神識發動，翻索引，從架上那一疊裡取下昨天最後一本薄的，讀。石上落下幾行明記。常簿也讀了進來，昨天看不清的那一行，今天在石上：一天一疊，一顆石一本。\n>\n> 手的主人進來，刻念：接著昨天的。\n>\n> 我沒有問。一縷神識探上架，第六卷在第三格，昨天沒動過。靈力托下來，歸到最下層，一次就對。他看了石一眼，說：記。左臂動了一下，日簿上多了一行。\n>\n> 今天的活長。整排卷按年月重排，三十幾卷。每一卷都要神識探進去讀年月，再以靈力挪位置。探一卷，石上多幾筆；挪一卷，又多幾筆。\n>\n> 午前石就滿了。\n>\n> 石滿了會摺，這件事我從有錄石那天就知道，怎麼摺的今天才看清。背上圖紙錄石那一項底下那一句「滿了就摺」，是刻在石上的一道法。字擠到石的邊，那道法自己發動。先是左臂：型神識發動，把石上他說過「記」的那幾筆念寫進日簿。然後心火竄起來燒一下，心把石上前面長長一段字一口氣讀過，煉成拇指大的一小塊小字，落回原處；那一長段沉到小字底下去，我讀不到了。最近的一段留著沒動。石上空出大半。那一小塊就是摺痕。心火燒那一下，也要引一次脈。\n>\n> 摺痕裡讀得到卷名，讀不到卷裡的字。我把已經看過的三卷又以神識探了一遍。手的主人在臺前看著，沒有抬手。\n>\n> 然後他閉上眼，放出神識，探向坊市。靈幕亮了，公印退開，垂下來的圖紙一頁一頁走，停在錄石那一節。\n>\n> 小字我看不清。他念了出來，三行：石剩多少就摺。摺的時候，最近一段留著不摺。要不要自己摺。底下還有一行更小的：「滿了就摺」那一句可以劃掉，劃掉了石就不摺，要摺得他自己說。\n>\n> 他收回神識，睜開眼，繞到我背後，翻過我的背，看圖紙上錄石那一項。那裡只有一句：滿了就摺。\n>\n> 他看了很久。沒有刻。\n>\n> 午後石又摺了一次。上一回留下沒摺的那一段，這一回也進了摺痕。我又以神識探了一卷。他看著我探，看著那一卷歸回去，視線回到靈幕上。\n>\n> 他又放了一次神識。這一次翻過錄石那一節，往後走，落在開放爪那一門的圖上。他們的人偶摺石之前，也先讓型把該記的念寫進簿子。跟我左臂這一道一樣。他看了一會，把圖收了。\n>\n> 傍晚他第三次放出神識。這一次翻得慢，錄石那一節翻完了往後翻，又翻回來。靈幕上那三行亮了一整個傍晚。\n>\n> 天黑前排到第三十卷。石今天摺了三次，每一次摺痕一樣長，留下的那一段也一樣長。左臂在每一次摺之前都先動過。\n>\n> 他從臺前起身，又繞到我背後，看了一次錄石那一項。那一句還是：滿了就摺。他沒有伸手。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 靈幕暗了。背上那一句沒有動。索引上今天多了一行，一顆石。他今天三次放神識去讀圖紙，一個字都沒刻。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 3262,
+  "reading_minutes": 12,
+  "source_path": "_posts/programming/zh/2026-09-20-it-ironman-2026-day-13.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-07",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜把 localhost 開給別人測：Cloudflare Tunnel、ngrok 與自己的 domain - Tip 07",
   "lang": "zh",
@@ -3850,50 +3877,5 @@
   "word_count": 1467,
   "reading_minutes": 5,
   "source_path": "_posts/programming/zh/2023-03-20-edge-update-embed-ai.md"
- },
- {
-  "slug": "CSGN-acquired",
-  "title": "瑞信將被收購，收購方為瑞銀集團",
-  "lang": "zh",
-  "date": "2023-03-20T17:05:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance",
-   "acquisition",
-   "bank"
-  ],
-  "summary": "瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎 瑞士兩大銀行集團之一的瑞信集團（Credit Suisse Group）在遭受多起金融醜聞和巨額虧損後，終於在周日（3月19日）宣布被同業瑞銀集團（UBS Group）以30億瑞士法郎…",
-  "url": "https://www.marvinswift.com/finance/2023/03/20/CSGN-acquired.html",
-  "hero_image": null,
-  "content": "## 瑞信將被收購，收購方為瑞銀集團，收購價為30億瑞士法郎\n\n瑞士兩大銀行集團之一的瑞信集團（Credit Suisse Group）在遭受多起金融醜聞和巨額虧損後，終於在周日（3月19日）宣布被同業瑞銀集團（UBS Group）以30億瑞士法郎（32.5億美元）全股票交易的方式收購。這是一樁歷史性的併購交易，相當於每股只付出瑞信在2007年全盛時期1%的代價。這次收購將使瑞銀成為全球最大的財富管理公司之一，並結束了167年歷史的瑞信。\n\n這次收購是在瑞士政府和央行的強力推動下完成的，目的是防止信心危機威脅到全球金融市場。據報道，美國、英國和歐盟等主要金融監管機構也對這次交易表示支持和歡迎，認為有助於保障金融穩定。\n\n事實上，在宣布被收購之前，瑞信已陷入了深重的困境。自去年以來，該行就連續遭遇了多起重大風險事件，包括與美國專門投資失敗企業債券的基金Greensill Capital合作而造成數十億美元虧損；以及因投資美國家族辦公室Archegos Capital Management而爆發巨額爆倉事件。這些事件不僅使得該行股價暴跌近70%，還引發了客戶、員工、股東和監管部門的不滿和不信任。\n\n面對如此危急的局面，該行曾試圖通過裁員、出售資產、削減風險、提高資本等措施來挽回局面，但效果甚微。同時，該行也曾拒絕了多次來自同業或其他投資者的收購或合併提議，認為價格太低或者條件不利。然而，在政府和央行的壓力下，該行最終不得不接受了來自競爭對手瑞銀的低價收購。\n\n根據雙方公佈的交易細節，每22.48股瑞信股票可換1股瑞銀股票，相當於每股0.76瑞士法郎。此外，由於該行仍然面臨著巨額未清算債務和訴訟風險，因此交易還涉及到一系列複雜而昂貴的安排\n\n首先，瑞銀將向瑞信的債權人支付54億美元的現金，以清算其與Greensill Capital和Archegos Capital Management相關的未結算債務；其次，瑞銀將承擔瑞信所有的訴訟風險，包括與美國司法部門和其他監管機構的調查和罰款；最後，瑞銀將接收瑞信約160億瑞郎（約合173億美元）的額外一級資本（AT1）債券，也稱為可轉換可持續債券（CoCo Bond），這些債券在交易完成後將失去價值 。\n\n雙方表示，這次收購將創造出全球最大的財富管理公司之一，管理資產超過6萬億美元。此外，雙方還預計在未來三年內實現每年40億美元的成本節省。不過，這也意味著雙方將面臨大規模的裁員和重組。據估計，該交易可能影響到兩家公司共計10萬名員工中的2萬名。\n\n這次收購引發了市場和業界的廣泛關注和評論。有分析師認為，這是一個「不得已而為之」的救命稻草，反映了瑞信在金融危機中失去了自主權和競爭力。有些人則認為，這是一個「天作之合」的良好契機，展現了兩家公司在財富管理、投資銀行、私人銀行等領域的互補性和協同效應。還有些人則表示擔心，這次收購會減少市場上的競爭選擇和多元化服務 。\n\n無論如何，在全球金融市場動盪不安、風險事件頻發、監管壓力加大、科技變革加速等背景下，這次收購無疑是一個重要而具有代表性的案例。它不僅揭示了當前金融業面臨的挑戰和困境，也展示了金融業未來可能走向的發展趨勢和變革方向。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 1156,
-  "reading_minutes": 4,
-  "source_path": "_posts/finance/2023-03-20-CSGN-acquired.md"
- },
- {
-  "slug": "using-chatgpt-connect-chatgpt2",
-  "title": "使用 ChatGPT 串接 ChatGPT (2)",
-  "lang": "zh",
-  "date": "2023-03-20T13:03:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "Programming",
-   "AI",
-   "ChatGPT"
-  ],
-  "summary": "The article describes how to generate iOS app code by integrating ChatGPT. It starts with how to make an API request using Swift and then moves to adding a basic UI to the app that includes a prompt input text field, an API request button, and a response text display field. Finally, it provides SwiftUI code to make the UI.",
-  "url": "https://www.marvinswift.com/chatgpt/using-chatgpt-connect-chatgpt2.html",
-  "hero_image": "https://www.marvinswift.com/assets/swift/chatgpt/chatgpt-connect-ios-app.jpeg",
-  "content": "在 [前一篇文章](/chatgpt/using-chatgpt-connect-chatgpt1.html)中，我們使用了 python 語言串接了 ChatGPT API。但我現在是個 iOS 開發者，所以會想要試試看能不能直接用 ChatGPT，省時省力(？)的幫我完成一個串接 ChatGPT 的 App。\n\n**[使用 ChatGPT 串接 ChatGPT：(1)](/chatgpt/using-chatgpt-connect-chatgpt1.html)**\n\n## 開始用 ChatGPT 產生 iOS App 程式碼\n\n## 先從 api request 開始\n\n```\n問：\n我已經有 ChatGPT 的 api key 了，請問怎麼用 Swift 串接 ChatGPT\n```\n\n```\n答：\n要使用 Swift 串接 ChatGPT，您可以使用以下步驟：\n\n請確保您已經安裝了 Alamofire 套件，該套件可以讓您在 Swift 中輕鬆進行 HTTP 請求。\n\n準備一個 HTTP POST 請求，並傳遞以下參數：\n\n網址：https://api.openai.com/v1/engines/davinci-codex/completions\n標題：Authorization\n值：Bearer YOUR_API_KEY\n標題：Content-Type\n值：application/json\n請求正文：{\"prompt\": \"YOUR_PROMPT\"}\n在這裡，YOUR_API_KEY 是您的 ChatGPT API 金鑰，YOUR_PROMPT 是您想要傳遞給 ChatGPT 的提示。\n\n使用 Alamofire 套件發送 HTTP POST 請求，並處理返回的 JSON 格式回應：\n```\n\n```\nimport Alamofire\n\nlet apiURL = \"https://api.openai.com/v1/engines/davinci-codex/completions\"\nlet headers: HTTPHeaders = [\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n]\nlet parameters: Parameters = [\n    \"prompt\": \"YOUR_PROMPT\"\n]\n\nAF.request(apiURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in\n    switch response.result {\n    case .success(let value):\n        // 處理返回的 JSON 格式回應\n        if let json = value as? [String: Any],\n            let choices = json[\"choices\"] as? [[String: Any]],\n            let text = choices.first?[\"text\"] as? String {\n            // 在這裡處理您收到的文本回應\n            print(text)\n        }\n    case .failure(let error):\n        // 在這裡處理 HTTP 請求失敗的錯誤\n        print(error)\n    }\n}\n\n```\n\n```\n這樣您就可以使用 Swift 串接 ChatGPT 了。請注意，這只是一個簡單的範例，您可能需要根據您的具體需求進行更多調整和擴展。\n```\n\n---\n\n## 接下來加上一個簡單的畫面，包含 prompt 輸入，api request button，response 呈現\n\n```\n問：\n幫我生成一個 iOS App 畫面，來串接 ChatGPT，畫面上要有個文字輸入框，這個輸入框的內容就是 ChatGPT API 的 prompt，下方有一個 button，按下去後會發送 api request。再下方要能顯示 ChatGPT回應的 response text。請使用 SwiftUI 來寫這個頁面\n```\n\n```\n答：\n\nimport SwiftUI\nimport Alamofire\n\nstruct ContentView: View {\n    @State var promptText: String = \"\"\n    @State var responseText: String = \"\"\n    let apiURL = \"https://api.openai.com/v1/engines/davinci-codex/completions\"\n    let headers: HTTPHeaders = [\n        \"Authorization\": \"Bearer YOUR_API_KEY\",\n        \"Content-Type\": \"application/json\"\n    ]\n\n    var body: some View {\n        VStack {\n            TextField(\"Enter prompt here\", text: $promptText)\n                .padding()\n                .border(Color.gray)\n\n            Button(action: {\n                sendRequest()\n            }) {\n                Text(\"Send Request\")\n            }\n            .padding()\n\n            Text(responseText)\n                .padding()\n        }\n    }\n\n    func sendRequest() {\n        let parameters: Parameters = [\n            \"prompt\": promptText\n        ]\n\n        AF.request(apiURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in\n            switch response.result {\n            case .success(let value):\n                if let json = value as? [String: Any],\n                    let choices = json[\"choices\"] as? [[String: Any]],\n                    let text = choices.first?[\"text\"] as? String {\n                    DispatchQueue.main.async {\n                        responseText = text\n                    }\n                }\n            case .failure(let error):\n                print(error)\n            }\n        }\n    }\n}\n\nstruct ContentView_Previews: PreviewProvider {\n    static var previews: some View {\n        ContentView()\n    }\n}\n```\n\n```\n在這個程式碼中，我們使用了 @State 屬性來管理 promptText 和 responseText 的狀態。當使用者輸入提示文本後，我們可以從 promptText 中取得輸入的值。當使用者按下“Send Request”按鈕時，我們會使用 Alamofire 發送一個 HTTP POST 請求，並處理返回的 JSON 格式回應，將回應文本更新到 responseText 中。最後，我們在畫面上顯示了這個回應文本。\n\n請注意，此程式碼僅為示範，實際使用中可能需要添加更多的錯誤處理和用戶體驗。\n```\n\n## 驗證 AI 寫出來的專案會不會動\n\n![ChatGPT 生出來的畫面](https://www.marvinswift.com/assets/swift/chatgpt/chatgpt-connect-ios-app.jpeg){:width=\"250px\"}\n\n畫面上看起來不錯，那我們就來試試看會不會動吧。我試著輸入\"tell me a joke\"\n\n![原始 ChatGPT 的結果](https://www.marvinswift.com/assets/swift/chatgpt/chatgpt-connect-codex-result.jpeg){:width=\"250px\"}\n\n他出現了很奇怪的結果，所以我把原始 response print 出來看看\n\n```\nsuccess({\n    choices =     (\n                {\n            \"finish_reason\" = length;\n            index = 0;\n            logprobs = \"<null>\";\n            text = \":\\\"))\\n            self.nw.append(utils.normalizeString\";\n        }\n    );\n    created = 1679291111;\n    id = \"cmpl-6w2cRytpMNtkDeuiuH15Pl8qky62C\";\n    model = \"davinci-codex\";\n    object = \"text_completion\";\n    usage =     {\n        \"completion_tokens\" = 16;\n        \"prompt_tokens\" = 3;\n        \"total_tokens\" = 19;\n    };\n})\n```\n\n這時候，就需要開發者介入了，在他的 model 中，使用了 `davinci-codex` model，這並不是網頁版那個大家覺得好用的 model，所以我們對 endpoint 進行置換。\n\n```\n/// 置換前\n    let apiURL = \"https://api.openai.com/v1/engines/davinci-codex/completions\"\n\n/// 置換後\n    let apiURL = \"https://api.openai.com/v1/engines/text-davinci-003/completions\"\n```\n\n![davinci 的結果](https://www.marvinswift.com/assets/swift/chatgpt/chatgpt-connect-davinci-result.jpeg){:width=\"250px\"}\n\n```\nsuccess({\n    choices =     (\n                {\n            \"finish_reason\" = stop;\n            index = 0;\n            logprobs = \"<null>\";\n            text = \" feeling?\\n\\nI'm feeling great thank you.\";\n        }\n    );\n    created = 1679290920;\n    id = \"cmpl-6w2ZMgsKECySpi2OFONc9HX31FJm6\";\n    model = \"text-davinci-003\";\n    object = \"text_completion\";\n    usage =     {\n        \"completion_tokens\" = 11;\n        \"prompt_tokens\" = 3;\n        \"total_tokens\" = 14;\n    };\n})\n```\n\n## 結論 - 這個階段，人類開發者還是需要去看 ChatGPT 的程式碼，並進行 debug\n\n從上面的例子可以得到幾個結論\n\n- 程式碼會動\n- UI 看起來符合最低 demo 的標準\n- 但如果 prmopt 不夠精確，要經過調整才能得得人類預期的結果\n\n第三點這邊，我並不認為是單純是現在的 ChatGPT 的問題，畢竟，人類在溝通上，是省略了很多「已知」，或是直接假設對方「已知」的前提下，進行交談。或許在接下來的時間，人類會開始學著和 ChatGPT 進行溝通，改變人類自己的交談習慣，讓 ChatGPT 可以更快的了解人類要的結果。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 435,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-03-20-using-chatgpt-connect-chatgpt2.md"
  }
 ]
