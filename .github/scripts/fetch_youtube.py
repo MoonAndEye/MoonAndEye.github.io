@@ -12,6 +12,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 import os
+import re
 import sys
 import time
 import urllib.request
@@ -75,6 +76,23 @@ def extract_json_assignment(text, variable):
         raise ValueError(f"YouTube page did not contain {variable}")
     payload = text[start + len(marker):]
     return json.JSONDecoder().raw_decode(payload)[0]
+
+
+def extract_published_from_html(html):
+    """Read the publish date from alternate public metadata representations."""
+    for tag in re.findall(r"<meta\b[^>]*>", html, flags=re.IGNORECASE):
+        attributes = dict(
+            re.findall(r'''([:\w-]+)\s*=\s*["']([^"']*)["']''', tag)
+        )
+        if attributes.get("itemprop") in {"datePublished", "uploadDate", "publishDate"}:
+            if attributes.get("content"):
+                return attributes["content"]
+
+    for field in ("publishDate", "uploadDate", "datePublished"):
+        match = re.search(rf'"{field}"\s*:\s*"([^"]+)"', html)
+        if match:
+            return match.group(1)
+    return ""
 
 
 def iter_dicts(value):
@@ -159,14 +177,15 @@ def fetch_video_details(video_id):
     description = details.get("shortDescription") or text_content(
         microformat.get("description", {})
     )
+    published = (
+        microformat.get("publishDate")
+        or microformat.get("uploadDate")
+        or extract_published_from_html(html)
+    )
     return {
         "id": video_id,
         "title": title,
-        "published": normalize_timestamp(
-            microformat.get("publishDate")
-            or microformat.get("uploadDate")
-            or ""
-        ),
+        "published": normalize_timestamp(published),
         "thumbnail": thumbnail_url(video_id),
         "description": clip(description),
     }
@@ -176,6 +195,12 @@ def hydrate_item(item, previous):
     try:
         details = fetch_video_details(item["id"])
         old = previous.get(item["id"], {})
+        if not details.get("title"):
+            details["title"] = item["title"]
+        if not details.get("published") and old.get("published"):
+            details["published"] = old["published"]
+        if not details.get("description") and old.get("description"):
+            details["description"] = old["description"]
         if old.get("thumbnail"):
             details["thumbnail"] = old["thumbnail"]
         return details
