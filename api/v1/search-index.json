@@ -1,5 +1,24 @@
 [
  {
+  "slug": "it-ironman-2026-day-14",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 金丹還是假丹：沒有 evals，我不知道 Agent 是變好了還是剛好答對 - Day 14",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Evals",
+   "Testing",
+   "Pi"
+  ],
+  "summary": "我用自己的 repo 建立一套只測「找 repo」的固定題庫，讓 Agent 的表現從感覺變成可以重跑、比較的基準線。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-14/",
+  "date": "2026-09-21T06:51:25+08:00",
+  "word_count": 2349
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-08",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜iOS 的基本必備：SwiftLint 和 SwiftFormat 要用 - Tip 08",

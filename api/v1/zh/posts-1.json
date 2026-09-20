@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-14",
+  "title": "[IT 鐵人賽] 金丹還是假丹：沒有 evals，我不知道 Agent 是變好了還是剛好答對 - Day 14",
+  "lang": "zh",
+  "date": "2026-09-21T06:51:25+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Evals",
+   "Testing",
+   "Pi"
+  ],
+  "summary": "我用自己的 repo 建立一套只測「找 repo」的固定題庫，讓 Agent 的表現從感覺變成可以重跑、比較的基準線。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-14/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-14-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10414661)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 006](https://www.marvinswift.com/zh/programming/agent-build-log-episode-006/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 006](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-006.png)\n\n修仙小說裡結丹會失敗，失敗結出來的東西叫假丹。假丹看起來跟金丹一樣，要用下去才知道。\n\n我手上這個 Agent 現在就是這個狀態。他每天在幫我做事，有些事做得很好，我很滿意。但「他變好了」這句話，我一直是憑感覺說的。\n\n## 我憑什麼說他變好了\n\n前面十幾天做的事都在加東西：加規矩、加技能、加介面、加記憶。每加完一次，我都覺得他變好了。\n\n問題在我的判斷方式：我丟一個任務給他，他做完，我看結果順不順眼。\n\n這個方法有兩個洞。\n\n同一個任務他跑兩次，結果可能不一樣。我看到的那一次是他的平均水準，還是剛好那一次順，我不知道。\n\n而且我今天看的那個任務跟上禮拜看的那個根本是兩件事。拿什麼比？\n\n沒有 evals，「他變好了」跟「這次剛好答對」，我分不出來。\n\n## 題目只有一種：找 repo\n\n所以這天開始做題目庫。題型只有一種，我叫它「找 repo」。\n\n我手上有一批自己寫的 repo 和 lib，大多是 iOS 和 mobile 的東西，每一個都是為了某個特定的目的做的。題目就從這裡出：一題寫一個目的，問他該用我哪一個；答案是那個 repo 的名字或連結。\n\n這種題有幾個好處。\n\n答案只有一個。對就對，錯就錯，不用我坐在旁邊看順不順眼。\n\n一題跑得快。同一套題一天可以跑好幾輪，跑兩次結果一樣不一樣，馬上看得到。\n\n還有一個好處是它測的剛好是我最在意的事：他認不認得我的東西。第二章做的規矩、技能、記憶，最後都要落在這裡。我講一個目的，他知道去哪裡拿。\n\n![Day 14：以固定題目重跑 Evals](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-14-main.png)\n\n## 一題怎麼算過\n\n答案對得上，那一題就過。名字對、連結對，都算。\n\n除了對錯，每一題還記兩個數字：他查了幾次，也就是 tool calls；還有花了多久。這兩個數字這天還沒派上用場，隔天就用到了。\n\nSWE 那一類的 benchmark 測的是一整條線：讀懂既有的程式碼、找出要改的地方、改完、跑測試、把任務收掉。我第一版的題庫離那個還很遠，先從答案唯一的題開始。\n\n## 題目怎麼來\n\n題目從我自己的 repo 來，所以第一步是盤點。我讓 coding agent 把我的 repo 和 lib 過一輪，每一個的用途整理成一句話；再反過來，把那一句話改寫成一道題。動手的是 Codex 和 Claude Code，我決定哪些 repo 進題庫、哪幾題留下來。\n\n先盤點再出題，這個順序是刻意的。憑印象出題，我只會想到最近碰過的那幾個。盤點過一輪，題目蓋的範圍才是我全部的 repo。\n\n## 基準線的用途\n\n我做這套題庫的目的很單純：留下一條可以重複比較的基準線。\n\n之後每一次換模型、換工具、改工作流程，我都可以把同一套題目再跑一遍，然後看數字。進步了，數字會說；悄悄退步了，數字也會說。\n\n我不打算拿它去追排行榜。排行榜上的題目跟我每天的工作差太遠，那條線對我沒有意義。我要的是「我這一組題目、我這一套設定」的那條線。\n\n## 小結\n\n沒有 evals 的時候，「他變好了」跟「這次剛好答對」我分不出來。\n\n所以這天開始做題目庫。題型是找 repo：一題一個目的，答案是我某一個 repo 的名字或連結。答案唯一，跑得快，測的是他認不認得我的東西。\n\n在讓 Agent 變得更好之前，我得先有辦法證明他真的變好了。\n\n明天就用這套題目去比兩個模型。第一個結果看起來很漂亮，然後我開始懷疑那個「漂亮」。\n\n原文：[Agent Build Log — Episode 006](https://www.marvinswift.com/zh/programming/agent-build-log-episode-006/)\n\n---\n\n> **凡人修 Agent 傳｜第十四回（Day 14）**\n>\n> ![凡人修 Agent 傳 Day 14 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-14-serial.png)\n>\n> 天亮換上空錄石。左臂把常簿和昨天那本讀回石上，索引多了一行。手的主人進來，沒有刻念。\n>\n> 他閉上眼，放出神識，探向坊市。靈幕亮了，這一次垂下來的圖紙我沒見過：一座關。圖上畫著一間屋子，屋裡一張臺、一個架、一具人偶，旁邊寫著這間屋子出過什麼事、人偶要做什麼、做到什麼算過。手的主人念出來，關的規矩只有兩條：起點不變，過關的條件不變。同一道關，換了心、換了型，再走一次，前後才比得出來。坊裡叫它萬象關。\n>\n> 他收回神識，看了我一會，視線落到架上那一排卷。\n>\n> 那一排卷是他自己煉的源紋，三十幾卷，我昨天才按年月排過。每一卷做一件事。\n>\n> 他從儲物袋取出一疊玉籤，指節長，薄得透光，一支一支攤在臺上，以神識在每一支上刻一句話。我讀得到。要讓左右兩扇窗一開一合，用哪一卷。要讓玉珠自己按大小排好，用哪一卷。要讓靈幕上的字一行一行往上走，用哪一卷。一支一句，二十幾支。\n>\n> 然後他從儲物袋取出一方石板，硯那麼大，靈力在板面上劃出一格一格，一支籤一格。又取出一炷香，插在臺角。\n>\n> 靈幕上那座關還亮著。圖上那間屋子有臺、有架、有人偶。他沒有再看它，把靈幕收了。臺和架都在，我也在。\n>\n> 他取下我心旁的錄石，放進木匣，換一顆空的。圖上說起點不變，我的起點就是這顆空錄石。左臂剛把常簿讀回石上，他就把第一支籤遞到我面前。\n>\n> 我以神識探上架。三十幾卷，一卷一卷探過去，讀卷名和卷首那一行。第七卷寫的是開合。我答：第七卷。他在石板第一格劃了一道，旁邊記一個數，是我探了幾卷；又看了一眼香燒到哪裡，記下來。\n>\n> 取下石，放進木匣，換一顆空的。第二支。\n>\n> 第二支問的是排玉珠。我探了一遍，答了第十二卷。他劃了一道，這一道跟第一道方向不同。他說：十九。第十九卷跟第十二卷年月相近，卷首那一行寫得像。\n>\n> 一支一支往下。每一支一顆新石，木匣裡的石一顆一顆並排躺下去，每一顆上頭只有幾筆。二十幾支走完，石板上兩種方向的道，一種多，一種少。\n>\n> 午後他把第一支籤又遞到我面前。同一句話。石是新的，我探了一遍，答：第七卷。他劃了一道，跟早上那一道同一個方向。第二支再遞過來，我又探了一遍，這一次答了第十九卷。他劃下去的時候停了一下。\n>\n> 第三支，早上我答對的那一支。這一次我答錯了。\n>\n> 他沒說話，把整疊籤翻回第一支，從頭再遞一輪。\n>\n> 三輪走完，石板上每一格裡三道。有的格三道朝同一邊，有的格兩道一邊、一道另一邊。手的主人把石板拿起來，看了很久。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 石板立在臺邊薄石旁邊，字朝著臺。香燒完了。木匣裡今天多了一排石，每一顆上頭只有幾筆。索引上多了一長串行，日簿今天一個字都沒有。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2349,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-09-21-it-ironman-2026-day-14.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-08",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜iOS 的基本必備：SwiftLint 和 SwiftFormat 要用 - Tip 08",
   "lang": "zh",
@@ -3832,47 +3858,5 @@
   "word_count": 407,
   "reading_minutes": 2,
   "source_path": "_posts/programming/zh/2023-03-21-openai-stop-codex-api.md"
- },
- {
-  "slug": "taiwan-government-returnsix-thounds",
-  "title": "台灣政府普發現金6000元",
-  "lang": "zh",
-  "date": "2023-03-21T09:01:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance"
-  ],
-  "summary": "The Taiwanese government will distribute NT$6,000 in cash to all citizens, including foreigners with residency permits and residents of specific rural areas, as a result of exceeding the tax revenue budget by NT$450 billion. The policy aims to share the benefits of the economy with the public and boost consumption and investment. There are three ways to receive the cash - online registration for direct deposit, withdrawing it at designated bank ATMs with a card, or collecting it at post offices with a health insurance card. The distribution date is pending the legislative review of a special budget, which has passed its third reading in February 2023. In addition to distributing the cash, the government plans to allocate the excess tax revenue to local governments, labor and health insurance subsidies, and electricity price subsidies.",
-  "url": "https://www.marvinswift.com/finance/2023/03/21/taiwan-government-returnsix-thounds.html",
-  "hero_image": null,
-  "content": "台灣政府最近要普發6000元現金，因為徵稅超過預算數4500億元。這項政策旨在讓全民共享經濟成果，並刺激消費和投資。領取對象包括國內戶籍國民、取得居留權的外籍人士、特定偏鄉地區居民等，不分年齡層。\n\n領取方式有三種：一是線上申請後直接匯入戶頭；二是持提款卡至指定銀行ATM領取；三是持健保卡至郵局臨櫃領取 。其中，線上申請系統將於2023年3月22日上午8點開放登記，登記網址為https://6000.gov.tw。ATM領取則可選擇12家金融機構（含郵局）的24922台ATM。\n\n發放時間則視立法院審查特別預算的時程而定 。目前特別預算已於2023年2月21日立法院三讀通過，但仍需等待冷凍期過後才能正式執行。行政院表示會盡快完成相關準備工作，並確保金融系統的穩定與安全。\n\n此次普發現金的原因是政府實徵稅收超過原先的預算數4500億元 。財政部代理部長阮清華說明，這些稅收都是依法課稅，沒有超徵或違法的問題。除了普發現金之外，政府還將把多出來的稅收分給地方政府、補助勞健保、補貼電價等方面 。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 391,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-03-21-taiwan-government-returnsix-thounds.md"
- },
- {
-  "slug": "iplaygroundIn",
-  "title": "iPlayground 2023 開始跑啦，歡迎應徵工作人員",
-  "lang": "zh",
-  "date": "2023-03-21T08:30:00+08:00",
-  "category": "swift",
-  "tags": [
-   "swift",
-   "programming",
-   "iPlayground"
-  ],
-  "summary": "The article discusses the benefits of attending developer conferences, such as learning about the latest trends and technologies, receiving practical advice and feedback, building connections and collaborations, and gaining inspiration and motivation. The article also introduces iPlayground, a Taiwanese Swift community that holds an annual conference focused on Apple software development, and provides information about past and future events, as well as related resources. The article encourages interested individuals to sign up for iPlayground's newsletter in order to become a member of the community and attend future events.",
-  "url": "https://www.marvinswift.com/zh/swift/iplaygroundIn/",
-  "hero_image": null,
-  "content": "這個消息，有公佈在 [13 的電子報第 179 期](https://www.ethanhuang13.com/p/179)，如果想要當 iPlayground 工作人員的朋友，歡迎在 13 的電子報上，進行回覆，就可以報名囉。\n\n# 參與開發者年會的好處\n\n開發者年會是一個讓開發者們交流、學習、分享和合作的平台，它有許多好處，不僅可以提升自己的技能和知識，也可以擴展自己的人脈和視野。以下是一些參與開發者年會的好處：\n\n- 學習最新的技術和趨勢。開發者年會通常會邀請業界的專家和領導者來分享他們的經驗和見解，讓你了解最新的技術和趨勢，以及如何應用到你自己的項目中。\n- 獲得實用的建議和反饋。開發者年會也是一個讓你展示你自己的作品和想法的機會，你可以向其他開發者或評審求教或徵求意見，獲得實用的建議和反饋，幫助你改進你自己的產品或服務。\n- 建立聯繫和合作。開發者年會讓你有機會認識來自不同背景、領域和地區的其他開發者，你可以與他們交流、學習、分享和合作，建立聯繫和信任，創造更多可能性。\n- 獲得靈感和動力。開發者年會讓你看到其他開發者所做出來的驚人成果，讓你感受到他們對於創新和改變世界的熱情，給予你靈感和動力，激勵你追求更高更遠。\n\n參與開發者年會是一個值得投資時間、金錢和精力的事情，它不僅可以幫助你提升自己在業界中的地位和影響力，也可以幫助你成長為一個更優秀更全面的開發者。\n\n# iPlayground 簡介\n\niPlayground 是一個台灣的 Swift 社群，每年舉辦一場專注於蘋果軟體開發的研討會，邀請國內外的知名開發者分享 iOS/macOS、Swift/Objective-C、app 軟體開發、UI/UX 等相關主題。iPlayground 的歷史可以追溯到 2018 年，當時是台灣首場 iOS/macOS 開發者專門的技術研討會，並邀請了 zonble 與 yllan 作為 keynote speaker。2019 年，iPlayground 擴大規模，邀請了海外開發者如王巍 (@onevcat) 和 Kishikawa Katsumi，並新增了 workshop 和 after party 等活動。2020 年，受到 COVID-19 疫情影響，iPlayground 調整成一日三軌的形式，並增加了 unconference 和 Ask Speaker 等互動環節。iPlayground 的官方網站是 https://iplayground.io ，可以找到過去和未來的活動資訊、議程錄影和贊助商等。\n\n# 相關資源\n\n[iPlayground 官網](https://iplayground.io)\n\n[iPlayground Youtube 頻道](https://www.youtube.com/@iPlaygroundTaiwan)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 727,
-  "reading_minutes": 3,
-  "source_path": "_posts/swift/zh/2023-03-21-iplaygroundIn.md"
  }
 ]
