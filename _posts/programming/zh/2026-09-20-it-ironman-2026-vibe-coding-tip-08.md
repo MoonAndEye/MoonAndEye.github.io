@@ -17,6 +17,8 @@ tags:
 summary: "iOS 專案把 SwiftLint 與 SwiftFormat 放進 repo 和 build，讓 lint、格式規則每次都能檢查程式碼。"
 description: "iOS 專案把 SwiftLint 與 SwiftFormat 放進 repo 和 build，讓 lint、格式規則每次都能檢查程式碼。"
 ---
+本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10414256)。
+
 做 iOS，Tip 03 講的三道關落到工具上：lint 用 SwiftLint，formatter 用 SwiftFormat。基本的，要用。
 
 ## 為什麼
