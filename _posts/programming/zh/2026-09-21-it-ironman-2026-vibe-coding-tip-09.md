@@ -17,6 +17,8 @@ summary: "用購物車折扣拆解 unit test：加總後打折與每件各自打
 description: "用購物車折扣拆解 unit test：加總後打折與每件各自打折是兩條規則，還要測到金額精度與空車邊界。"
 ---
 
+本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10414812)。
+
 Unit test 要寫。寫什麼？拿購物車打折當例子：全部加總再打 30% off，跟每一件各打 30% off 再加總，是兩個 case，兩個都要寫。
 
 ## 為什麼
