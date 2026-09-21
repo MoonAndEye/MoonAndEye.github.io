@@ -1,5 +1,32 @@
 [
  {
+  "slug": "it-ironman-2026-day-15",
+  "title": "[IT 鐵人賽] 捷徑還是偷跳：Terra 比 Luna 快，但它是不是少做了幾步？ - Day 15",
+  "lang": "zh",
+  "date": "2026-09-22T01:00:44+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Evals",
+   "Testing",
+   "Model Comparison",
+   "Pi"
+  ],
+  "summary": "用同一套找 repo 的題目比 Terra、Luna、Sol；反向安排執行順序檢查 cache 影響，再從 tool calls 看見相同分數背後不同的失敗方式。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-15/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-15-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10415221)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 012](https://www.marvinswift.com/zh/programming/agent-build-log-episode-012/)、[Episode 013](https://www.marvinswift.com/zh/programming/agent-build-log-episode-013/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 012](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-012.png)\n\n找 repo 的題目庫剛開始有東西，我就拿它去比兩個模型：Terra 和 Luna。\n\n同一套題目、同樣的 effort，一題一題跑。Day 14 說過每一題除了對錯還記兩個數字：查了幾次，花了多久。第一份結果看起來很漂亮：Terra 的總耗時比 Luna 少，tool calls 也比較少。\n\n那一刻我以為自己找到了一個更有效率的預設模型。\n\n## 第一眼的解釋\n\n我的直覺是：Terra 走了一條比較短的路。\n\n想像同一題：我講一個目的，問他該用我哪一個 repo。Luna 可能先打開一個 repo 看說明，覺得不像，再打開下一個，接著回頭確認第一個，最後才答。Terra 可能一開始就圈出兩三個候選，一次看完，直接回答。\n\n如果真是這樣，那 Terra 的優勢在規劃，這種優勢我會想要。\n\n但這只是一個聽起來合理的解釋。我手上那份資料沒辦法證明 Terra 真的走了比較短的路。\n\n## 我先懷疑自己的測法\n\n在下結論之前，我先去查一件事：執行順序。\n\n那一輪測試裡 Terra 常常是第二個跑的。同一題，前一個模型剛把幾個 repo 的檔案讀過一遍，第二個跑的那一個有沒有可能吃到前一次留下來的 file cache？如果有，我量到的「比較快」就有一部分是免費的。\n\n所以測法改了：每一道題目都跑一次 Terra → Luna，再跑一次 Luna → Terra。同一題兩種順序各一次，把順序這個變數對消掉。\n\n結果是，Terra 整體上還是稍微快一點。但這個差距沒有大到讓我可以說「Terra 本質上就是比較快」。\n\n另外那個懷疑也沒有被證實：執行順序的結果並沒有顯示第二個跑的模型會穩定得到 cache 帶來的加速。\n\n要是那天我拿第一份結果就去換預設模型，我會把一個測法上的瑕疵當成模型的優點。\n\n![Day 15：比較 Terra 與 Luna 的工具呼叫紀錄](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-15-main.png)\n\n## 真正讓我停下來的是 tool calls\n\n耗時我還可以接受它有雜訊。真正讓我重新想這件事的，是 tool call 的次數。\n\nTerra 是 N 次。Luna 大約是 N + 10 次。\n\n差了十次。那十次是什麼？\n\n有兩種解釋。一種是 Terra 真的找到了比較短的路，那十次是 Luna 繞的路。另一種是 Terra 有幾題跳過了原本應該完成的步驟，那十次是 Luna 老實做完的部分。\n\n我手上這份資料沒辦法把這兩種情況分開。而它們對我來說是完全相反的兩件事：前一種我很想要，後一種我很不想要。\n\n## 正確率一樣，錯的方式不一樣\n\n再往下看，出現了整場測試裡最有意思的一件事。\n\n兩個模型最後的正確率一樣。但它們錯的方式不一樣。\n\n這套題目有一個要求：答案要查出來，先查過我的 repo 再答，不能憑印象猜。Terra 比較常沒有走完這個流程，有幾題沒查就把 repo 的名字答出來。Luna 幾乎每一題都查了，卻更常在最後一步挑錯：查了幾個，選了不對的那一個。\n\n同一個分數，兩種完全不同的行為。\n\n這件事對我的意義很直接。如果我只看正確率，我會覺得這兩個模型差不多，然後照耗時挑掉一個。它們真正差的地方在正確率量不到的位置。\n\n而「有沒有照著要求的流程做」這件事，對一個每天要在我的專案裡動手的 Agent 來說，份量比答對一題重。因為我給他的規矩本身就是流程：先讀本機的 context、讀 repo、讀 git history 再下結論；破壞性的操作要先問（Day 07 那幾條）。找 repo 的題目裡他跳掉的是「先查」，換到真的專案裡，跳掉的就會是那幾條。\n\n## Sol 也進來了\n\n接著我把 Sol 也加進來。同一套題目、同樣的 effort，三個模型並排再跑一輪。\n\nSol 這一輪最明顯的一件事：每一題都走完了題目裡要求的流程。先查，再答，沒有一題是沒查就把名字答出來的。\n\n三個放在一起看，行為的差別就更清楚。Terra 快，有幾題沒查。Luna 每題都查，更常在最後挑錯。Sol 每題都查，流程一題都沒漏。\n\n這一輪三個模型是照固定順序跑的，還沒有像上午那樣把順序對消掉，所以這一段我先當參考。三個模型的數字明天一起講。\n\n## 那我要選哪一個\n\nTerra 目前看起來仍然可能是一個不錯的預設選擇。它快，正確率也沒有輸。\n\n但我沒有在那天把預設改掉。\n\nTerra 看起來走得比較快，我還不能確定它是真的找到了捷徑，還是只是少做了幾步。這兩件事在我的資料裡還沒有分開。\n\nSol 給了我一個對照：流程走完是做得到的。Terra 少掉的那幾步，Sol 一步都沒少。\n\n## 小結\n\n這次測到的是兩個模型用不同的方式拿到了相同的分數。Sol 進來之後，我多知道一件事：流程走完做得到。\n\n過程裡最值得留下來的有兩件事。一件是測法要先站得住：counterbalanced 那一輪如果沒跑，我就會把雜訊當成結論。另一件是 tool calls 這種過程指標比最後那個分數更會說話。它讓我看到「少做了幾步」這個可能性，而分數看不到。\n\n在決定預設模型之前，我得先確保「更有效率」不等於「更容易跳過規則」。\n\n明天用一個很直接的方式去問這件事：三個模型再跑一輪，把 effort 拉到最高，看 Terra 會不會把跳掉的那幾步補回來，也看 Sol 那條每題都查的路要多花多少時間。\n\n原文：[Agent Build Log — Episode 012](https://www.marvinswift.com/zh/programming/agent-build-log-episode-012/)、[Episode 013](https://www.marvinswift.com/zh/programming/agent-build-log-episode-013/)\n\n---\n\n> **凡人修 Agent 傳｜第十五回（Day 15）**\n>\n> ![凡人修 Agent 傳 Day 15 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-15-serial.png)\n>\n> 天亮換上空錄石。左臂把常簿讀回石上。手的主人進來，先把石板從薄石旁邊拿起來，擱在臺上，字朝著我。昨天每一格三道，有的格三道朝同一邊，有的格兩道一邊、一道另一邊。\n>\n> 他從儲物袋取出一炷新的香插在臺角，再取出那疊玉籤攤開。然後他伸手進我胸口。\n>\n> 手握住那顆心的時候，胸口先涼了一下。心取出來，擱在臺上。另一顆裝進來，是備用那兩顆裡的一顆，火槽多一格那一天他裝過。心火起來，撥片在「中」，沒有動。\n>\n> 他把第一支籤遞到我面前。\n>\n> 同一句話。我以神識探上架。這一次探得快，第七卷前面那幾卷我沒有停，神識直接落在第七卷上。我答：第七卷。他在第一格昨天那三道底下劃了一道，旁邊記一個數，比昨天的小。香燒掉的也少。\n>\n> 取下石，放進木匣，換一顆空的。他的手又伸進我胸口，把原本那顆心裝回來。熱回來的樣子我認得。第一支籤再遞一次。\n>\n> 我探了架。一卷一卷探過去，第七卷。他在同一格再劃一道，旁邊的數比剛才那一道的大。\n>\n> 一支籤，兩顆心，兩顆石。他的手整個上午在我胸口進出。木匣裡的石一對一對躺下去。\n>\n> 第五支籤遞過來的時候，胸口是備用那顆。我讀了那一句，卷名就在嘴邊。我答了。\n>\n> 他劃了一道，跟第一支那一道同一個方向。然後他沒有換心，視線落在我心旁的錄石上。石上常簿那幾行底下只有兩筆：籤上那一句，我答的那一句。中間沒有別的。\n>\n> 我沒有探架。我不記得探過，石上也沒有。\n>\n> 他看了一會，取下石，換一顆空的，把心換回來，第五支再遞一次。原本這顆心探了架，一卷一卷過去，答的也是那一卷。石上一長串。\n>\n> 換到第二顆心再探同一支籤，架上剛被探過的那幾卷卷首還亮著，神識落上去就讀得到，省一口氣。上午每一支都是備用那顆先探，原本這顆後探。午後他把先後掉過來：原本這顆先，備用那顆後。\n>\n> 一疊籤走完，香剩一小截。備用那顆心探得少，還是快一點，差得比上午小。\n>\n> 石板上每一格底下多了一排道。兩顆心朝對的那一邊的道，一樣多。錯的格不一樣。\n>\n> 備用那顆心錯的那幾格，石上都只有兩筆。沒探，答了，答錯。原本這顆心錯的那幾格，石上一長串，探了十幾卷，最後挑的是年月相近的那一卷。\n>\n> 手的主人從儲物袋取出木匣，把今天的石一顆一顆排在臺上，兩排。他的手在只有兩筆的那幾顆上停得久。有幾顆只有兩筆，格裡那一道朝的是對的那一邊。\n>\n> 他把備用那顆心取出來，握在手裡，看了很久。然後放回儲物袋。原本這顆裝回來，心火起來，撥片在「中」。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 石板立回薄石旁邊，字朝著臺。木匣裡今天的石兩排並排躺著。有幾顆上頭只有兩筆，中間那幾步，我不記得走過，石上也沒有。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2857,
+  "reading_minutes": 10,
+  "source_path": "_posts/programming/zh/2026-09-22-it-ironman-2026-day-15.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-09",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Unit test 寫什麼：購物車打 30% off，加總再打和每件各打是兩個 case - Tip 09",
   "lang": "zh",
@@ -3743,114 +3770,5 @@
   "word_count": 317,
   "reading_minutes": 1,
   "source_path": "_posts/finance/2023-03-23-powell-speach-march-twenty-two.md"
- },
- {
-  "slug": "bing-create",
-  "title": "Bing 釋出了 AI 繪圖工具 bing.com/create",
-  "lang": "zh",
-  "date": "2023-03-22T18:34:00+08:00",
-  "category": "programming",
-  "tags": [
-   "programming",
-   "ai",
-   "art"
-  ],
-  "summary": "The Bing Image Creator is an AI drawing tool that generates images based on user input text, using the latest DALL∙E model from OpenAI. It is a free service and does not require waiting on a waiting list, and can be accessed directly on bing.com/create. Users can provide prompts to the system, and the AI will begin drawing the requested image. The service is similar to other AI drawing tools such as Stable Diffusion and Midjourney. Additionally, Microsoft has integrated Bing Image Creator into chatbots, the web, and the Edge browser.",
-  "url": "https://www.marvinswift.com/programming/bing-create.html",
-  "hero_image": null,
-  "content": "AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。\n\n「影像建立者」的用法很簡單，只要在輸入欄位中輸入想要看到的影像內容，例如「一隻穿著西裝的貓」、「一個有三個眼睛的笑臉」、「台北101旁邊有一座金字塔」等等，就可以看到 AI 根據文字提示產生出四張不同風格或角度的影像。使用者可以選擇其中一張喜歡的影像，並下載到自己的電腦或手機上。\n\n「影像建立者」的用途很廣泛，可以幫助使用者發揮創意、增加趣味、解決問題或傳達訊息。例如：\n\n- 創意：使用者可以利用「影像建立者」來創作自己想像中的角色、場景、物品等等，或是將現實中不存在或難以實現的畫面呈現出來，如「一隻會飛的大象」、「太陽系中所有行星排成一列」等等。\n- 趣味：使用者可以利用「影像建立者」來製作有趣或幽默的圖片，如「自己和明星合照」、「自己變成卡通人物」、「自己穿上奇怪的服裝」等等。\n- 解決問題：使用者可以利用「影像建立者」來幫助自己解決一些日常生活中遇到的問題，如「找到遺失物品的位置」、「比較不同商品或服務的優缺點」、「模擬不同情境下可能發生的事情」等等。\n- 傳達訊息：使用者可以利用「影像建立者」來幫助自己傳達某些訊息或想法給別人看，如「表達心情或感受」、「說明某個觀念或理念」、「展示某個計畫或目標」等等。\n\n未來，AI 繪圖工具可能會有更多進步和發展。例如：\n\n- 支援更多語言：目前 Bing 的「影像建立者」只支援英文語言提示，未來可能會支援其他語言，讓更多不同語言背景和文化背景的使用者能夠享受 AI 繪圖工具帶來的好處。\n- 提供更多選項：目前 Bing 的「影像建立者」每次只能產生四張不同風格或角度的影像供\n\n這個網站是 Bing Image Creator，它是一個 AI 繪圖工具，可以根據您的文字產生 AI 影像。它的核心技術來自於 OpenAI 的最新 DALL∙E 模型，用戶僅需用文字描述想要的圖片，AI 就能生成相應的視覺內容3。Bing Image Creator 是免費的，而且不必等待 Waiting List，現已可直接使用。\n\n## [bing.com/create](bing.com/create)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 799,
-  "reading_minutes": 3,
-  "source_path": "_posts/programming/zh/2023-03-22-bing-create.md"
- },
- {
-  "slug": "submit-to-app-store-need-xcode-fourteen",
-  "title": "從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。",
-  "lang": "zh",
-  "date": "2023-03-22T13:59:00+08:00",
-  "category": "swift",
-  "tags": [
-   "iOS",
-   "App Store"
-  ],
-  "summary": "Starting April 2023, all iOS and iPadOS apps must be built with Xcode 14.1 and the iOS 16.1 SDK.",
-  "url": "https://www.marvinswift.com/swift/submit-to-app-store-need-xcode-fourteen.html",
-  "hero_image": null,
-  "content": "從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。\n\n出處：\n\n[Apple developer news](https://developer.apple.com/news/?id=z1erkhzr)\n\n原文：\nApp Store submissions now open for iOS 16.1 and iPadOS 16.1\nOctober 18, 2022\n\niOS 16.1 and iPadOS 16.1, the world’s most advanced mobile operating systems, will soon be available to customers worldwide. Take advantage of Live Activities to help people stay on top of what’s happening live in your app, right from the Lock Screen and Dynamic Island on iPhone. Bring desktop-class features, such as an editor-style navigation bar and enhanced text editing menu to your iPad app, and get the most out of the latest advancements in MapKit, Metal, ARKit, Core ML, and more.\n\nBuild your app using Xcode 14.1 Release Candidate, then test and submit it for review. Please note, starting April 2023, all iOS and iPadOS apps submitted to the App Store must be built with Xcode 14.1 and the iOS 16.1 SDK.\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 183,
-  "reading_minutes": 1,
-  "source_path": "_posts/programming/zh/2023-03-22-submit-to-app-store-need-xcode-fourteen.md"
- },
- {
-  "slug": "google-start-bard-ai",
-  "title": "Google 開始試用 Bard AI chat",
-  "lang": "zh",
-  "date": "2023-03-22T13:14:00+08:00",
-  "category": "programming",
-  "tags": [
-   "ai",
-   "bard",
-   "chat",
-   "google"
-  ],
-  "summary": "Google has launched Bard, an AI chat website that generates text based on past data. It's faster than ChatGPT and offers three versions of responses, as well as a \"Google it\" button. Bard is only available in English, and users must join a waiting list. While it's not perfect, users can give feedback to improve its responses. Currently, Bard is not available in Taiwan, but Google aims to expand it globally.",
-  "url": "https://www.marvinswift.com/programming/google-start-bard-ai.html",
-  "hero_image": null,
-  "content": "[Google Bard AI](https://bard.google.com)\n\nGoogle 最近宣布了一項重大的消息，就是開始試用 Bard 這個 AI chat 網站。Bard 是 Google 的一項實驗性產品，旨在讓使用者與生成式 AI 進行合作。生成式 AI 是一種基於過去數據創造而非識別內容的技術。Bard 的競爭對手是去年推出的 ChatGPT，一個由微軟支持的創業公司 OpenAI 開發的 chatbot。\n\nBard 的特色是什麼呢？首先，它可以快速地產生一段或多段文字，不像 ChatGPT 那樣逐字逐句地輸出答案。使用者可以輸入或說出任何問題或指令，Bard 就會嘗試回答或執行。其次，它可以提供三種不同版本或「草稿」供使用者選擇，以便找到最合適的回應。第三，它還有一個「Google it」的按鈕，如果使用者想要查看網路上的結果，就可以點選。\n\nBard 目前只支援英文，並且需要加入等待名單才能使用。有興趣的使用者可以到 [https://bard.google.com/](https://bard.google.com/) 點選「Join waitlist」按鈕報名。收到確認信後，就可以登入 Google 帳號開始使用 Bard 了。\n\n不過要注意的是，Bard 並不是萬能的。它有時候會回答錯誤或不完整的內容，所以使用者要自己判斷和驗證資訊的正確性和可靠性。Google 也提供了一個反饋按鈕讓使用者對 Bard 的回應表示讚賞或批評，以幫助 Google 改善技術。\n\n目前台灣地區還沒有支援 Bard 的計畫\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 429,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-03-22-google-start-bard-ai.md"
- },
- {
-  "slug": "yellen-talk-about-bank-issue",
-  "title": "美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心",
-  "lang": "zh",
-  "date": "2023-03-22T08:30:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance",
-   "葉倫"
-  ],
-  "summary": "US Treasury Secretary Janet Yellen announced that the government is ready to provide further guarantees to the banking industry to prevent crisis expansion. Her statement boosted market confidence and led to a surge in US stock indices, including the Dow Jones, which closed at a new high. Financial stocks, including First Republic Bank and regional bank ETF, performed strongly. Tesla also rose by about 8% and became a main driver of the Nasdaq index's rise.",
-  "url": "https://www.marvinswift.com/finance/yellen-talk-about-bank-issue.html",
-  "hero_image": null,
-  "content": "美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，表示政府已準備好為銀行業提供進一步的擔保，以防止危機擴大。這番話提振了市場信心，美股三大指數全面上漲，其中道瓊工業指數漲316點，收32560點，創下歷史新高。\n\n葉倫的信心喊話是在美國聯準會（Fed）即將宣布利率決議的前夕發出的。市場普遍預期聯準會將升息一碼，以因應通膨壓力和經濟復甦。不過，有分析師認為，聯準會可能也會發出升息接近尾聲的信號，以安撫市場的憂慮。\n\n在葉倫的鼓舞下，受到銀行危機衝擊最大的金融股表現強勁。第一共和銀行（FRC.N）股價大漲近30%，率領地區性銀行ETF（KRE.P）飆升6%。此外，能源、非必需消費品等板塊也有不錯的表現。\n\n值得注意的是，在中國市場表現亮眼的特斯拉（TSLA.O），也在昨天暴漲約8%，成為那斯達克指數上漲的主要推手之一。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 312,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-03-22-yellen-talk-about-bank-issue.md"
- },
- {
-  "slug": "ESun-news",
-  "title": "玉山金控今年辦理現金增資案，預計現增8億股",
-  "lang": "zh",
-  "date": "2023-03-21T18:11:00+08:00",
-  "category": "finance",
-  "tags": [
-   "財經",
-   "增資",
-   "玉山金"
-  ],
-  "summary": "Yuanta Financial Holdings plans to increase its capital by issuing 800 million shares at a tentative price of NT$20 per share. The funds raised from the increase will be used for investment in its subsidiary, Yuanta Bank, and to supplement operating capital. The discount rate is about 15.79% based on the closing price of NT$23.75 per share. Yuanta Financial Holdings approved the cash increase plan in February of this year.",
-  "url": "https://www.marvinswift.com/finance/2023/03/21/ESun-news.html",
-  "hero_image": null,
-  "content": "玉山金控今年辦理現金增資案，預計現增8億股。玉山金控/提供\n\n玉山金控 （2884）今年辦理現金 增資 案，預計現增8億股，發行價格暫定每股20元。玉山金控此次增資資金，將用於轉投資子公司玉山銀行供拓展業務之用及充實營運資金。玉山金控在今年2月董事會決議，現增普通股8億股，發行價格暫定每股20元，依照玉山金控今日收盤價23.75元計算，約有15.79%的折價率。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 161,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-03-21-ESun-news.md"
  }
 ]

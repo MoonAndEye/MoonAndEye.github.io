@@ -1,5 +1,114 @@
 [
  {
+  "slug": "bing-create",
+  "title": "Bing 釋出了 AI 繪圖工具 bing.com/create",
+  "lang": "zh",
+  "date": "2023-03-22T18:34:00+08:00",
+  "category": "programming",
+  "tags": [
+   "programming",
+   "ai",
+   "art"
+  ],
+  "summary": "The Bing Image Creator is an AI drawing tool that generates images based on user input text, using the latest DALL∙E model from OpenAI. It is a free service and does not require waiting on a waiting list, and can be accessed directly on bing.com/create. Users can provide prompts to the system, and the AI will begin drawing the requested image. The service is similar to other AI drawing tools such as Stable Diffusion and Midjourney. Additionally, Microsoft has integrated Bing Image Creator into chatbots, the web, and the Edge browser.",
+  "url": "https://www.marvinswift.com/programming/bing-create.html",
+  "hero_image": null,
+  "content": "AI 繪圖工具是一種利用人工智慧技術，根據文字描述生成影像的創意工具。微軟的搜尋引擎 Bing 最近推出了一個名為「影像建立者」（Image Creator）的 AI 繪圖功能，讓使用者可以在網頁上輕鬆地創造出各種有趣或實用的影像。\n\n「影像建立者」的用法很簡單，只要在輸入欄位中輸入想要看到的影像內容，例如「一隻穿著西裝的貓」、「一個有三個眼睛的笑臉」、「台北101旁邊有一座金字塔」等等，就可以看到 AI 根據文字提示產生出四張不同風格或角度的影像。使用者可以選擇其中一張喜歡的影像，並下載到自己的電腦或手機上。\n\n「影像建立者」的用途很廣泛，可以幫助使用者發揮創意、增加趣味、解決問題或傳達訊息。例如：\n\n- 創意：使用者可以利用「影像建立者」來創作自己想像中的角色、場景、物品等等，或是將現實中不存在或難以實現的畫面呈現出來，如「一隻會飛的大象」、「太陽系中所有行星排成一列」等等。\n- 趣味：使用者可以利用「影像建立者」來製作有趣或幽默的圖片，如「自己和明星合照」、「自己變成卡通人物」、「自己穿上奇怪的服裝」等等。\n- 解決問題：使用者可以利用「影像建立者」來幫助自己解決一些日常生活中遇到的問題，如「找到遺失物品的位置」、「比較不同商品或服務的優缺點」、「模擬不同情境下可能發生的事情」等等。\n- 傳達訊息：使用者可以利用「影像建立者」來幫助自己傳達某些訊息或想法給別人看，如「表達心情或感受」、「說明某個觀念或理念」、「展示某個計畫或目標」等等。\n\n未來，AI 繪圖工具可能會有更多進步和發展。例如：\n\n- 支援更多語言：目前 Bing 的「影像建立者」只支援英文語言提示，未來可能會支援其他語言，讓更多不同語言背景和文化背景的使用者能夠享受 AI 繪圖工具帶來的好處。\n- 提供更多選項：目前 Bing 的「影像建立者」每次只能產生四張不同風格或角度的影像供\n\n這個網站是 Bing Image Creator，它是一個 AI 繪圖工具，可以根據您的文字產生 AI 影像。它的核心技術來自於 OpenAI 的最新 DALL∙E 模型，用戶僅需用文字描述想要的圖片，AI 就能生成相應的視覺內容3。Bing Image Creator 是免費的，而且不必等待 Waiting List，現已可直接使用。\n\n## [bing.com/create](bing.com/create)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 799,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2023-03-22-bing-create.md"
+ },
+ {
+  "slug": "submit-to-app-store-need-xcode-fourteen",
+  "title": "從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。",
+  "lang": "zh",
+  "date": "2023-03-22T13:59:00+08:00",
+  "category": "swift",
+  "tags": [
+   "iOS",
+   "App Store"
+  ],
+  "summary": "Starting April 2023, all iOS and iPadOS apps must be built with Xcode 14.1 and the iOS 16.1 SDK.",
+  "url": "https://www.marvinswift.com/swift/submit-to-app-store-need-xcode-fourteen.html",
+  "hero_image": null,
+  "content": "從 2023 年 4 月開始，所有提交到 App Store 的 iOS 和 iPadOS 應用程式都必須使用 Xcode 14.1 和 iOS 16.1 SDK 建立。\n\n出處：\n\n[Apple developer news](https://developer.apple.com/news/?id=z1erkhzr)\n\n原文：\nApp Store submissions now open for iOS 16.1 and iPadOS 16.1\nOctober 18, 2022\n\niOS 16.1 and iPadOS 16.1, the world’s most advanced mobile operating systems, will soon be available to customers worldwide. Take advantage of Live Activities to help people stay on top of what’s happening live in your app, right from the Lock Screen and Dynamic Island on iPhone. Bring desktop-class features, such as an editor-style navigation bar and enhanced text editing menu to your iPad app, and get the most out of the latest advancements in MapKit, Metal, ARKit, Core ML, and more.\n\nBuild your app using Xcode 14.1 Release Candidate, then test and submit it for review. Please note, starting April 2023, all iOS and iPadOS apps submitted to the App Store must be built with Xcode 14.1 and the iOS 16.1 SDK.\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 183,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2023-03-22-submit-to-app-store-need-xcode-fourteen.md"
+ },
+ {
+  "slug": "google-start-bard-ai",
+  "title": "Google 開始試用 Bard AI chat",
+  "lang": "zh",
+  "date": "2023-03-22T13:14:00+08:00",
+  "category": "programming",
+  "tags": [
+   "ai",
+   "bard",
+   "chat",
+   "google"
+  ],
+  "summary": "Google has launched Bard, an AI chat website that generates text based on past data. It's faster than ChatGPT and offers three versions of responses, as well as a \"Google it\" button. Bard is only available in English, and users must join a waiting list. While it's not perfect, users can give feedback to improve its responses. Currently, Bard is not available in Taiwan, but Google aims to expand it globally.",
+  "url": "https://www.marvinswift.com/programming/google-start-bard-ai.html",
+  "hero_image": null,
+  "content": "[Google Bard AI](https://bard.google.com)\n\nGoogle 最近宣布了一項重大的消息，就是開始試用 Bard 這個 AI chat 網站。Bard 是 Google 的一項實驗性產品，旨在讓使用者與生成式 AI 進行合作。生成式 AI 是一種基於過去數據創造而非識別內容的技術。Bard 的競爭對手是去年推出的 ChatGPT，一個由微軟支持的創業公司 OpenAI 開發的 chatbot。\n\nBard 的特色是什麼呢？首先，它可以快速地產生一段或多段文字，不像 ChatGPT 那樣逐字逐句地輸出答案。使用者可以輸入或說出任何問題或指令，Bard 就會嘗試回答或執行。其次，它可以提供三種不同版本或「草稿」供使用者選擇，以便找到最合適的回應。第三，它還有一個「Google it」的按鈕，如果使用者想要查看網路上的結果，就可以點選。\n\nBard 目前只支援英文，並且需要加入等待名單才能使用。有興趣的使用者可以到 [https://bard.google.com/](https://bard.google.com/) 點選「Join waitlist」按鈕報名。收到確認信後，就可以登入 Google 帳號開始使用 Bard 了。\n\n不過要注意的是，Bard 並不是萬能的。它有時候會回答錯誤或不完整的內容，所以使用者要自己判斷和驗證資訊的正確性和可靠性。Google 也提供了一個反饋按鈕讓使用者對 Bard 的回應表示讚賞或批評，以幫助 Google 改善技術。\n\n目前台灣地區還沒有支援 Bard 的計畫\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 429,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2023-03-22-google-start-bard-ai.md"
+ },
+ {
+  "slug": "yellen-talk-about-bank-issue",
+  "title": "美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，提振了市場信心",
+  "lang": "zh",
+  "date": "2023-03-22T08:30:00+08:00",
+  "category": "finance",
+  "tags": [
+   "finance",
+   "葉倫"
+  ],
+  "summary": "US Treasury Secretary Janet Yellen announced that the government is ready to provide further guarantees to the banking industry to prevent crisis expansion. Her statement boosted market confidence and led to a surge in US stock indices, including the Dow Jones, which closed at a new high. Financial stocks, including First Republic Bank and regional bank ETF, performed strongly. Tesla also rose by about 8% and became a main driver of the Nasdaq index's rise.",
+  "url": "https://www.marvinswift.com/finance/yellen-talk-about-bank-issue.html",
+  "hero_image": null,
+  "content": "美國財政部長葉倫（Janet Yellen）昨天（21日）向市場喊話，表示政府已準備好為銀行業提供進一步的擔保，以防止危機擴大。這番話提振了市場信心，美股三大指數全面上漲，其中道瓊工業指數漲316點，收32560點，創下歷史新高。\n\n葉倫的信心喊話是在美國聯準會（Fed）即將宣布利率決議的前夕發出的。市場普遍預期聯準會將升息一碼，以因應通膨壓力和經濟復甦。不過，有分析師認為，聯準會可能也會發出升息接近尾聲的信號，以安撫市場的憂慮。\n\n在葉倫的鼓舞下，受到銀行危機衝擊最大的金融股表現強勁。第一共和銀行（FRC.N）股價大漲近30%，率領地區性銀行ETF（KRE.P）飆升6%。此外，能源、非必需消費品等板塊也有不錯的表現。\n\n值得注意的是，在中國市場表現亮眼的特斯拉（TSLA.O），也在昨天暴漲約8%，成為那斯達克指數上漲的主要推手之一。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 312,
+  "reading_minutes": 1,
+  "source_path": "_posts/finance/2023-03-22-yellen-talk-about-bank-issue.md"
+ },
+ {
+  "slug": "ESun-news",
+  "title": "玉山金控今年辦理現金增資案，預計現增8億股",
+  "lang": "zh",
+  "date": "2023-03-21T18:11:00+08:00",
+  "category": "finance",
+  "tags": [
+   "財經",
+   "增資",
+   "玉山金"
+  ],
+  "summary": "Yuanta Financial Holdings plans to increase its capital by issuing 800 million shares at a tentative price of NT$20 per share. The funds raised from the increase will be used for investment in its subsidiary, Yuanta Bank, and to supplement operating capital. The discount rate is about 15.79% based on the closing price of NT$23.75 per share. Yuanta Financial Holdings approved the cash increase plan in February of this year.",
+  "url": "https://www.marvinswift.com/finance/2023/03/21/ESun-news.html",
+  "hero_image": null,
+  "content": "玉山金控今年辦理現金增資案，預計現增8億股。玉山金控/提供\n\n玉山金控 （2884）今年辦理現金 增資 案，預計現增8億股，發行價格暫定每股20元。玉山金控此次增資資金，將用於轉投資子公司玉山銀行供拓展業務之用及充實營運資金。玉山金控在今年2月董事會決議，現增普通股8億股，發行價格暫定每股20元，依照玉山金控今日收盤價23.75元計算，約有15.79%的折價率。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 161,
+  "reading_minutes": 1,
+  "source_path": "_posts/finance/2023-03-21-ESun-news.md"
+ },
+ {
   "slug": "openai-stop-codex-api",
   "title": "Open AI 發信給客戶，停止 Codex 相關服務",
   "lang": "zh",
