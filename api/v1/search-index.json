@@ -8,7 +8,7 @@
   "summary": "用購物車折扣拆解 unit test：加總後打折與每件各自打折是兩條規則，還要測到金額精度與空車邊界。",
   "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-09/",
   "date": "2026-09-21T13:00:00+08:00",
-  "word_count": 419
+  "word_count": 431
  },
  {
   "slug": "it-ironman-2026-day-14",

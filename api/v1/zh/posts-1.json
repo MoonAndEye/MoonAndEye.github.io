@@ -9,11 +9,11 @@
   "summary": "用購物車折扣拆解 unit test：加總後打折與每件各自打折是兩條規則，還要測到金額精度與空車邊界。",
   "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-09/",
   "hero_image": null,
-  "content": "Unit test 要寫。寫什麼？拿購物車打折當例子：全部加總再打 30% off，跟每一件各打 30% off 再加總，是兩個 case，兩個都要寫。\n\n## 為什麼\n\n這兩種算法聽起來一樣，算出來的錢可能差一點。三件 19.99 的東西：加總是 59.97，打 30% off 是 41.98；每件先打 30% off 變 13.99，三件加起來是 41.97。差了 0.01，帳對不起來常常就是差在這裡。\n\n產品要的是哪一種，得先定下來。定下來之後寫成測試，他改購物車的程式時，哪一種算法被動到，測試會先叫。\n\n## 我怎麼做\n\n至少這幾個 case：\n\n1. 空的購物車，總價 0\n2. 一件 100 元，30% off，總價 70\n3. 三件 19.99，加總再打 30% off，總價 41.98\n4. 三件 19.99，每件各打 30% off 再加總，總價 41.97\n\n寫成測試大概像這樣（用 JavaScript 的測試框架當例子）：\n\n```js\ntest(\"空車\", () => {\n  expect(discountOnTotal([], 0.3)).toBe(0);\n});\n\ntest(\"加總再打 30% off\", () => {\n  expect(discountOnTotal([19.99, 19.99, 19.99], 0.3)).toBe(41.98);\n});\n\ntest(\"每件各打 30% off 再加總\", () => {\n  expect(discountPerItem([19.99, 19.99, 19.99], 0.3)).toBe(41.97);\n});\n```\n\n第三、第四個 case 一起寫，規則才說得清楚：要的是哪一種，另一種算出來會差多少。\n\n## 坑\n\n- 浮點數。19.99 × 0.7 是 13.993，59.97 × 0.7 是 41.979，兩個函式算完都要先四捨五入到分再比，測試才過得了；或者一開始就用整數的「分」算。\n- 空車、一件、多件都要有 case，邊界最容易漏。\n\n## 小結\n\nUnit test 寫的是規則：加總再打折和每件各打折，各一個 case，數字要算到分。\n\n明天講 iOS 開發另一個好用的東西：XcodeBuildMCP，讓他自己 build、自己跑 simulator。\n",
+  "content": "本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10414812)。\n\nUnit test 要寫。寫什麼？拿購物車打折當例子：全部加總再打 30% off，跟每一件各打 30% off 再加總，是兩個 case，兩個都要寫。\n\n## 為什麼\n\n這兩種算法聽起來一樣，算出來的錢可能差一點。三件 19.99 的東西：加總是 59.97，打 30% off 是 41.98；每件先打 30% off 變 13.99，三件加起來是 41.97。差了 0.01，帳對不起來常常就是差在這裡。\n\n產品要的是哪一種，得先定下來。定下來之後寫成測試，他改購物車的程式時，哪一種算法被動到，測試會先叫。\n\n## 我怎麼做\n\n至少這幾個 case：\n\n1. 空的購物車，總價 0\n2. 一件 100 元，30% off，總價 70\n3. 三件 19.99，加總再打 30% off，總價 41.98\n4. 三件 19.99，每件各打 30% off 再加總，總價 41.97\n\n寫成測試大概像這樣（用 JavaScript 的測試框架當例子）：\n\n```js\ntest(\"空車\", () => {\n  expect(discountOnTotal([], 0.3)).toBe(0);\n});\n\ntest(\"加總再打 30% off\", () => {\n  expect(discountOnTotal([19.99, 19.99, 19.99], 0.3)).toBe(41.98);\n});\n\ntest(\"每件各打 30% off 再加總\", () => {\n  expect(discountPerItem([19.99, 19.99, 19.99], 0.3)).toBe(41.97);\n});\n```\n\n第三、第四個 case 一起寫，規則才說得清楚：要的是哪一種，另一種算出來會差多少。\n\n## 坑\n\n- 浮點數。19.99 × 0.7 是 13.993，59.97 × 0.7 是 41.979，兩個函式算完都要先四捨五入到分再比，測試才過得了；或者一開始就用整數的「分」算。\n- 空車、一件、多件都要有 case，邊界最容易漏。\n\n## 小結\n\nUnit test 寫的是規則：加總再打折和每件各打折，各一個 case，數字要算到分。\n\n明天講 iOS 開發另一個好用的東西：XcodeBuildMCP，讓他自己 build、自己跑 simulator。\n",
   "content_format": "markdown",
   "inline_html_tags": [],
   "has_insecure_images": false,
-  "word_count": 419,
+  "word_count": 431,
   "reading_minutes": 2,
   "source_path": "_posts/programming/zh/2026-09-21-it-ironman-2026-vibe-coding-tip-09.md"
  },
