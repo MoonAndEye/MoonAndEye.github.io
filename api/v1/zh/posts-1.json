@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-09",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Unit test 寫什麼：購物車打 30% off，加總再打和每件各打是兩個 case - Tip 09",
+  "lang": "zh",
+  "date": "2026-09-21T13:00:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "用購物車折扣拆解 unit test：加總後打折與每件各自打折是兩條規則，還要測到金額精度與空車邊界。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-09/",
+  "hero_image": null,
+  "content": "Unit test 要寫。寫什麼？拿購物車打折當例子：全部加總再打 30% off，跟每一件各打 30% off 再加總，是兩個 case，兩個都要寫。\n\n## 為什麼\n\n這兩種算法聽起來一樣，算出來的錢可能差一點。三件 19.99 的東西：加總是 59.97，打 30% off 是 41.98；每件先打 30% off 變 13.99，三件加起來是 41.97。差了 0.01，帳對不起來常常就是差在這裡。\n\n產品要的是哪一種，得先定下來。定下來之後寫成測試，他改購物車的程式時，哪一種算法被動到，測試會先叫。\n\n## 我怎麼做\n\n至少這幾個 case：\n\n1. 空的購物車，總價 0\n2. 一件 100 元，30% off，總價 70\n3. 三件 19.99，加總再打 30% off，總價 41.98\n4. 三件 19.99，每件各打 30% off 再加總，總價 41.97\n\n寫成測試大概像這樣（用 JavaScript 的測試框架當例子）：\n\n```js\ntest(\"空車\", () => {\n  expect(discountOnTotal([], 0.3)).toBe(0);\n});\n\ntest(\"加總再打 30% off\", () => {\n  expect(discountOnTotal([19.99, 19.99, 19.99], 0.3)).toBe(41.98);\n});\n\ntest(\"每件各打 30% off 再加總\", () => {\n  expect(discountPerItem([19.99, 19.99, 19.99], 0.3)).toBe(41.97);\n});\n```\n\n第三、第四個 case 一起寫，規則才說得清楚：要的是哪一種，另一種算出來會差多少。\n\n## 坑\n\n- 浮點數。19.99 × 0.7 是 13.993，59.97 × 0.7 是 41.979，兩個函式算完都要先四捨五入到分再比，測試才過得了；或者一開始就用整數的「分」算。\n- 空車、一件、多件都要有 case，邊界最容易漏。\n\n## 小結\n\nUnit test 寫的是規則：加總再打折和每件各打折，各一個 case，數字要算到分。\n\n明天講 iOS 開發另一個好用的東西：XcodeBuildMCP，讓他自己 build、自己跑 simulator。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 419,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-21-it-ironman-2026-vibe-coding-tip-09.md"
+ },
+ {
   "slug": "it-ironman-2026-day-14",
   "title": "[IT 鐵人賽] 金丹還是假丹：沒有 evals，我不知道 Agent 是變好了還是剛好答對 - Day 14",
   "lang": "zh",
@@ -3834,29 +3852,5 @@
   "word_count": 161,
   "reading_minutes": 1,
   "source_path": "_posts/finance/2023-03-21-ESun-news.md"
- },
- {
-  "slug": "openai-stop-codex-api",
-  "title": "Open AI 發信給客戶，停止 Codex 相關服務",
-  "lang": "zh",
-  "date": "2023-03-21T10:58:00+08:00",
-  "category": "programming",
-  "tags": [
-   "programming",
-   "AI",
-   "Open AI",
-   "ChatGPT",
-   "Codex"
-  ],
-  "summary": "OpenAI is discontinuing support for the Codex API on March 23rd and urging customers to switch to the GPT-3.5-Turbo model, which is the most cost-effective and efficient option. The affected models are code-cushman:001, code-cushman:002, code-davinci:001, and code-davinci:002.",
-  "url": "https://www.marvinswift.com/programming/openai-stop-codex-api.html",
-  "hero_image": null,
-  "content": "## Open AI 發信給客戶，停止 Codex 相關服務\n\n在3月23日，我們將停止支援Codex API。所有客戶將需要轉換到其他模型。Codex最初在2021年以免費有限制的測試版推出，一直保持著該狀態。考慮到我們最新的GPT-3.5代碼任務模型的進展，我們將不再支援Codex，並鼓勵所有客戶轉換到GPT-3.5-Turbo。\n關於GPT-3.5-Turbo\nGPT-3.5-Turbo是GPT-3.5系列中性價比最高、性能最優的模型。它可以進行編程任務，同時還具備靈活的自然語言能力。\n\n您可以通過以下方式了解更多：\nGPT-3.5模型概述\n聊天補全指南\n\n受影響的模型\n以下模型將被停止支援：\ncode-cushman:001\ncode-cushman:002\ncode-davinci:001\ncode-davinci:002\n\n我們了解這個轉變可能暫時有些不便，但我們相信這將使我們能夠增加對我們最新和最能力強的模型的投資。\n\nOpenAI團隊\n\n---\n\n## 英文原文\n\nOn March 23rd, we will discontinue support for the Codex API. All customers will have to transition to a different model. Codex was initially introduced as a free limited beta in 2021, and has maintained that status to date. Given the advancements of our newest GPT-3.5 models for coding tasks, we will no longer be supporting Codex and encourage all customers to transition to GPT-3.5-Turbo.\nAbout GPT-3.5-Turbo\nGPT-3.5-Turbo is the most cost effective and performant model in the GPT-3.5 family. It can both do coding tasks while also being complemented with flexible natural language capabilities.\n\nYou can learn more through:\nGPT-3.5 model overview\nChat completions guide\n\nModels affected\nThe following models will be discontinued:\ncode-cushman:001\ncode-cushman:002\ncode-davinci:001\ncode-davinci:002\n\nWe understand this transition may be temporarily inconvenient, but we are confident it will allow us to increase our investment in our latest and most capable models.\n\n—The OpenAI team\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 407,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-03-21-openai-stop-codex-api.md"
  }
 ]
