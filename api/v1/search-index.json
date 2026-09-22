@@ -8,7 +8,7 @@
   "summary": "用 XcodeBuildMCP 把 iOS 專案的 build、simulator 與 log 交給 agent，並整理安裝方式、CLI 與 code signing 的坑。",
   "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-10/",
   "date": "2026-09-22T13:00:00+08:00",
-  "word_count": 304
+  "word_count": 316
  },
  {
   "slug": "it-ironman-2026-day-15",
