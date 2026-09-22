@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-16",
+  "title": "[IT 鐵人賽] 三顆心、兩種火候、29 道題：比出來的是一套路由規則 - Day 16",
+  "lang": "zh",
+  "date": "2026-09-23T01:34:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Model Comparison",
+   "Evals",
+   "Testing",
+   "Routing"
+  ],
+  "summary": "用同一套 29 題比較 Sol、Terra、Luna 在 medium 與 xhigh 下的正確率、流程完整性、tool calls 與耗時，整理出依任務選模型與思考強度的 routing signal。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-16/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-16-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1951,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-09-23-it-ironman-2026-day-16.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-10",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜iOS 開發用 XcodeBuildMCP：讓他自己 build、跑 simulator - Tip 10",
   "lang": "zh",

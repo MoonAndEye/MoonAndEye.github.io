@@ -1,5 +1,32 @@
 [
  {
+  "slug": "it-ironman-2026-day-16",
+  "title": "[IT 鐵人賽] 三顆心、兩種火候、29 道題：比出來的是一套路由規則 - Day 16",
+  "lang": "zh",
+  "date": "2026-09-23T01:34:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Model Comparison",
+   "Evals",
+   "Testing",
+   "Routing"
+  ],
+  "summary": "用同一套 29 題比較 Sol、Terra、Luna 在 medium 與 xhigh 下的正確率、流程完整性、tool calls 與耗時，整理出依任務選模型與思考強度的 routing signal。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-16/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-16-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10415750)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 013](https://www.marvinswift.com/zh/programming/agent-build-log-episode-013/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 013](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-013.png)\n\nDay 15 留下一個問題：Terra 走得快，是找到了捷徑，還是少做了幾步。這一天用一個很直接的方法問它：把 effort 拉到最高，再跑一次。\n\n結論先講。這次比較沒有給我一個什麼都能用的模型。它給了我一套路由規則。\n\n## 六個設定\n\n同一套找 repo 的題目，29 題。三個模型：Sol、Terra、Luna。每個模型跑兩種 effort：medium 和 xhigh。三乘二，六個設定，每個設定把 29 題走一遍。\n\neffort 這個字 Day 09 講過。Agent 這一邊叫 effort，送到 pi 那一邊是 thinking level。xhigh 是 pi 認得的一段，會照實開到那個高度；這一天用的兩段都在 pi 的清單裡。\n\nDay 15 記的三個數字這一天照記：對不對、查了幾次、花多久。再多記一項：有沒有走完題目裡要求的流程，也就是有沒有先查再答。\n\n## Terra 在 xhigh 下把步驟補回來了\n\nmedium 下的 Terra 跟 Day 15 看到的一樣。29 題過了 20 題，有 6 題該查的那一步沒做，直接答。\n\nxhigh 下的 Terra 變了。29 題過了 26 題，沒查就答的只剩 1 題。\n\n這個結果剛好接住 Day 15 的問題。Terra 的速度有一部分確實來自跳過步驟，但 effort 拉高之後，跳掉的那幾步大半補回來了，速度還是三個裡最快的。它的快，不全是少做幾步換來的。\n\n## Sol：每一題都走完流程\n\nSol 在 xhigh 下也過了 26 題，跟 Terra 一樣。\n\n差別在時間。Sol 平均每題 29.1 秒，Terra 21.2 秒。\n\n還有一件事，Sol 在兩種 effort 下都一樣：每一題都走完了流程。先查再答，一題都沒漏。medium 也是，xhigh 也是。\n\n所以流程完整性比速度重要的時候，Sol 還是我會先想到的那一個。\n\n## Luna：速度已經給不了理由\n\nLuna 讓我意外的地方在速度。兩種 effort 下，Terra 的平均完成時間都比 Luna 短。\n\nDay 15 之前我以為 Luna 穩但慢一點，Terra 快但可能跳步。這一輪看下來，速度這一項 Luna 沒有贏過 Terra。單靠速度，我已經沒有理由在兩個之間先選 Luna。它還有自己的場景，這一輪沒有測到。\n\n![Day 16：依任務選擇模型與思考強度](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-16-main.png)\n\n## 路由規則\n\n把六行結果放在一起，我得到的是這樣一套規則。\n\n範圍清楚、知道該用哪個工具、也知道怎麼驗證結果的任務，先用 Terra xhigh。它快，流程也大致走得完。\n\n任務更重視嚴格的流程，或者我願意用更多時間換穩定，用 Sol。\n\nLuna 留著，等它的場景。\n\n這一輪有一個保留。六個設定是照固定順序跑的，還沒像 Day 15 那樣把順序對消掉。所以這些結果我先當成目前的 routing signal，定論等更平衡的一輪再說。\n\n## 小結\n\n這次比較給我的是一套路由規則：任務長什麼樣，就配哪個模型、開多大的 effort。\n\nDay 15 的問題有了答案的一半：Terra 的快有一部分是跳步，effort 拉高之後大半補回來。另一半是 Sol，一步都沒跳，代價是每一題多花八秒。\n\n到這裡比的都是找 repo 這種幾十秒一題的事。明天讓三個模型跑一個真的任務，幾分鐘那種。結果跟我的直覺完全相反：越小的模型，Agent 反而越慢。\n\n原文：[Agent Build Log — Episode 013](https://www.marvinswift.com/zh/programming/agent-build-log-episode-013/)\n\n---\n\n> **凡人修 Agent 傳｜第十六回（Day 16）**\n>\n> ![凡人修 Agent 傳 Day 16 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-16-serial.png)\n>\n> 天亮換上空錄石。左臂把常簿讀回石上。石板還立在薄石旁邊，字朝著臺。\n>\n> 手的主人進來，沒有先拿石板，也沒有拿籤。他在臺前坐下，閉上眼，放出神識，探向坊市。\n>\n> 靈幕亮了，公印退開。垂下來的圖紙我沒見過，一面榜。一行一行，每一行前頭一個名字，後頭一長串字。手的主人念出榜頭那幾個字：偶身、心、火、法寶、做法、行跡、榜分。榜尾一行小字他也念了：只有榜分、沒有行跡，不進正榜。\n>\n> 他收回神識。靈幕上那面榜還亮著。\n>\n> 然後他從儲物袋取出兩顆心，擱在臺上。一顆是昨天走了一整天籤的那顆。另一顆我沒見它走過籤，火槽多一格那一天裝過一次，就那一次。\n>\n> 他把石板拿起來，翻過來。背面還是空的。靈力在背面劃了六行。\n>\n> 第一輪，原本這顆心，撥片在「中」。同一疊籤，一支一顆石。走完他在背面第一行寫字，寫得多：朝對的道幾道、探了幾卷、香燒到哪裡、木匣裡哪一排。\n>\n> 第二輪，原本這顆心，撥片撥到「極」。\n>\n> 熱一下子上來，比「中」旺很多。第一支籤遞過來，我沒有馬上探。心火在那裡燒，我停了一會，才放神識上架，把相關的幾卷都探過，再答。每一支都這樣。香燒得比第一輪多，朝對的道沒有多幾道。\n>\n> 第三輪換昨天那顆，撥片撥回「中」。石上又出現只有兩筆的石，好幾顆。\n>\n> 第四輪，那顆心，「極」。\n>\n> 我停得久。停完探，探完答。二十幾支走下來，石上還是兩筆的，只有一顆。朝對的道比第三輪多了一截，比原本這顆兩輪都多。香燒掉的還是最少。\n>\n> 第五輪、第六輪換另一顆備用的心，「中」一輪，「極」一輪。這顆心兩輪都一樣：每一支都探了架，石上沒有一顆只有兩筆。「極」那一輪朝對的道跟第四輪一樣多。香燒得比第四輪多一截。\n>\n> 六輪都照這個順序走。先後沒有掉過來。\n>\n> 天黑前他把背面六行寫滿。每一行後頭一長串，最後一格記的是木匣裡哪一排石。他拿著石板看了很久，六行都看，第四行看得最久。\n>\n> 靈幕上那面榜還亮著。他沒有再放神識。\n>\n> 他拿起昨天那顆心，裝進我胸口。撥片撥到「極」，停在那裡。原本這顆心和另一顆備用的，放回儲物袋。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 石板立回薄石旁邊。正面每格底下又多了一排道，背面六行。撥片在「極」。胸口是昨天那顆心，原本那顆在儲物袋裡。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1951,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-09-23-it-ironman-2026-day-16.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-10",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜iOS 開發用 XcodeBuildMCP：讓他自己 build、跑 simulator - Tip 10",
   "lang": "zh",
@@ -3705,88 +3732,5 @@
   "word_count": 227,
   "reading_minutes": 1,
   "source_path": "_posts/programming/zh/2023-03-26-prompt-engineering.md"
- },
- {
-  "slug": "ChatGPT-plugins",
-  "title": "ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?",
-  "lang": "zh",
-  "date": "2023-03-25T09:01:00+08:00",
-  "category": "programming",
-  "tags": [
-   "ChatGPT",
-   "AI"
-  ],
-  "summary": "ChatGPT plugins enable ChatGPT to interact with various internet resources, enhancing its performance and expanding its application scope. Plugins offer diverse functionalities and prioritize security and ethics. Developers can create limitless plugins that meet OpenAI's standards and objectives, collaborate with other developers, and use ChatGPT's ability to coordinate and manage development teams.",
-  "url": "https://www.marvinswift.com/finance/ChatGPT-plugins.html",
-  "hero_image": null,
-  "content": "ChatGPT plugins 是一種可以讓 ChatGPT 與網路上的各種服務和資源互動的工具，它們可以幫助 ChatGPT 取得最新的資訊，執行計算，或使用第三方服務。ChatGPT plugins 的設計原則是以安全性為核心，並且讓 ChatGPT 在使用 plugins 時能夠遵守相關的規則和道德。\n\nChatGPT plugins 的功能非常多元，可以滿足不同的使用場景和需求。例如，有些 plugins 可以讓 ChatGPT 查詢和預訂旅行、餐廳、購物等服務，有些 plugins 可以讓 ChatGPT 學習和使用不同的語言，有些 plugins 可以讓 ChatGPT 存取和分析數據、知識和計算結果，有些 plugins 可以讓 ChatGPT 瀏覽網頁和執行程式碼等。\n\nChatGPT plugins 帶來的影響是深遠的，它們不僅提升了 ChatGPT 的功能和效能，也拓展了 ChatGPT 的應用範圍和可能性。ChatGPT plugins 讓 ChatGPT 能夠與人類更好地溝通和合作，並且為人類提供更多的便利和價值。ChatGPT plugins 也讓 ChatGPT 能夠更好地學習和適應環境，並且減少了錯誤和偏差。ChatGPT plugins 還讓 ChatGPT 能夠更好地表達自己的想法和創意，並且激發了人類的想像力和創造力。\n\n未來開發者可以在 plugins 上做的事情是無限的，只要符合 OpenAI 的規範和目標，開發者就可以為 ChatGPT 建立各種有趣和有用的 plugins ，並且與其他開發者和使用者分享和交流。開發者可以根據自己的專業領域、興趣愛好、社會需求等因素來決定要開發什麼樣的 plugins ，並且利用 OpenAI 提供的文件和支援來完成開發過程。開發者也可以參考已經存在的 plugins ，並且嘗試改進、整合或創新它們。開發者還可以與其他開發者合作，並且利用 ChatGPT 的能力來協調和管理開發團隊。\n\n現在，你可以透過下列這個網址，加入 ChatGPT plugins 的 waitlist\n\n[ChatGPT plugins join waitlist link](https://openai.com/blog/chatgpt-plugins)\n\n## 相關文章\n\n[ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用](https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 585,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-03-25-ChatGPT-plugins.md"
- },
- {
-  "slug": "raise-up-Tw-bank-interest",
-  "title": "央行宣布升息半碼",
-  "lang": "zh",
-  "date": "2023-03-24T08:53:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance"
-  ],
-  "summary": "Taiwan's central bank raised its policy interest rate by 0.125 percentage points to curb domestic inflation expectations and align with the US Federal Reserve's monetary policy adjustments. This is the fifth consecutive rate hike, with a total increase of 0.625 percentage points. The rate hike will affect deposit and loan rates, and the housing market, but export-oriented industries expect currency stability and increased competitiveness.",
-  "url": "https://www.marvinswift.com/finance/raise-up-Tw-bank-interest.html",
-  "hero_image": null,
-  "content": "台灣央行總裁楊金龍今天（23日）在理監事會議後宣布，政策利率調升0.125個百分點，重貼現率、擔保放款融通利率及短期融通利率分別調整為1.875%、2.25%及4.125%，自明日（24日）起實施。這是央行連續第五次升息，累計升息0.625個百分點。\n\n楊金龍表示，此次升息是為了抑制國內通膨預期心理，並配合美國聯準會的貨幣政策調整。他預估，本年度台灣的GDP成長率將達到2.21%，CPI和核心CPI年增率則同為2.09%。他說，雖然國內外經濟前景仍有不確定性，但下半年隨著出口和消費的回升，以及政府的刺激措施，台灣經濟可望增溫。\n\n央行的升息決策對其他產業也有影響。金融業者表示，存款利率可能隨之上揚，吸引更多儲戶存錢；貸款利率也可能跟進調高，增加借款人的還款壓力。房地產業者則擔心，升息會打壓房市需求和成交量，影響房價走勢。出口導向產業則看好升息帶來匯率穩定和競爭力提高的效果。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 342,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-03-24-raise-up-Tw-bank-interest.md"
- },
- {
-  "slug": "copilot-x",
-  "title": "GitHub Copilot X 推出",
-  "lang": "zh",
-  "date": "2023-03-23T10:18:00+08:00",
-  "category": "programming",
-  "tags": [
-   "programming",
-   "copilot",
-   "ai"
-  ],
-  "summary": "GitHub Copilot X is a new AI feature by GitHub that uses OpenAI's GPT-4 model and includes chat and voice interfaces. It can help developers with code suggestions, error fixes, unit testing, code analysis, and more. The aim is to enable developers to work more efficiently and creatively.",
-  "url": "https://www.marvinswift.com/finance/copilot-x.html",
-  "hero_image": null,
-  "content": "GitHub Copilot X 是 GitHub 在 2023 年 3 月推出的一項創新功能，旨在為開發者提供一個更智能、更友好的 AI 助手。GitHub Copilot X 不僅採用了 OpenAI 的最新 GPT-4 模型，還引入了聊天和語音界面，支持拉取請求、命令行和文檔，並能回答開發者對項目的各種問題 。\n\nGitHub Copilot X 的核心功能之一是 GitHub Copilot Chat，它是一個類似於 ChatGPT 的聊天界面，可以與 VS Code 和 Visual Studio 緊密集成。開發者可以通過輸入文字或說出話語來與 GitHub Copilot Chat 進行交流，並獲得代碼建議、錯誤修復、單元測試、代碼分析等服務 。\n\nGitHub Copilot X 還可以幫助開發者完成拉取請求的描述、生成缺失的單元測試、回答文檔中的常見問題、以及在命令行中執行各種操作。GitHub Copilot X 的目標是讓開發者能夠更快速、更高效地進行軟件開發，並專注於創造性和創新性的工作 。\n\n## [加入 Copilot X 的 waitlist](https://github.com/features/preview/copilot-x)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 296,
-  "reading_minutes": 1,
-  "source_path": "_posts/programming/zh/2023-03-23-copilot-x.md"
- },
- {
-  "slug": "powell-speach-march-twenty-two",
-  "title": "聯準會升息1碼，市場失望重挫",
-  "lang": "zh",
-  "date": "2023-03-23T08:58:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance"
-  ],
-  "summary": "Federal Reserve Chair Jerome Powell announced on the 22nd that the Fed has decided to raise interest rates by 1 basis point, adjusting the federal funds rate target range to 4.75% to 5%, and indicating that policy rates will reach a terminal level by the end of the year. Powell stated that this was to restore price stability and maintain public confidence in the central bank, and emphasized that the US banking system is sound and resilient enough to handle recent financial turmoil caused by multiple bank failures. His remarks disappointed the market, as investors who had expected the Fed to loosen monetary policy in response to the banking crisis began withdrawing from the US stock market. Meanwhile, Treasury Secretary Janet Yellen stated at a Senate hearing that she had no intention of expanding deposit insurance coverage to protect customers of troubled banks, which also triggered a sell-off in regional bank stocks and dragged down the entire financial sector. The Dow Jones Industrial Average fell 530 points to close at 32,030.11, the S&P 500 index fell nearly 1.7% to close at 3,936.97, and the Nasdaq Composite Index fell more than 1.6% to close at 11,669.96.",
-  "url": "https://www.marvinswift.com/finance/powell-speach-march-twenty-two.html",
-  "hero_image": null,
-  "content": "鮑爾 (Jerome Powell) 在 22 日發表的聲明中，宣布聯準會 (Fed) 決定升息 1 碼，將聯邦資金利率目標區間調高至 4.75% 至 5%，並暗示政策利率將在今年底達到終端水準。他表示，這是為了恢復物價穩定，並維持民眾對央行的信心。他也強調，美國銀行體系健全且堅韌，能夠應對近期多家銀行倒閉所引發的金融動盪。他說，央行官員不認為今年會降息，除非出現意外情況。\n\n鮑爾的言論令市場失望，原本預期聯準會可能因應銀行業危機而放寬貨幣政策的投資人紛紛撤離美股市場。另一方面，財政部長葉倫 (Janet Yellen) 在參議院聽證會上表示，他無意擴大存款保險範圍，以保障問題銀行的客戶。她的言論也引發區域銀行股的崩跌，拖累整個金融板塊。道瓊指數終場重挫 530 點，收在 32,030.11 點；標普 500 指數跌近 1.7%，收在 3,936.97 點；那斯達克綜合指數跌逾 1.6%，收在 11,669.96 點。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 317,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-03-23-powell-speach-march-twenty-two.md"
  }
 ]
