@@ -17,6 +17,8 @@ summary: "用 XcodeBuildMCP 把 iOS 專案的 build、simulator 與 log 交給 a
 description: "用 XcodeBuildMCP 把 iOS 專案的 build、simulator 與 log 交給 agent，並整理安裝方式、CLI 與 code signing 的坑。"
 ---
 
+本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10415419)。
+
 做 iOS，我給他裝 XcodeBuildMCP。這很好用。
 
 ## 為什麼
