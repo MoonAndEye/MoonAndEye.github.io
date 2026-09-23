@@ -1,5 +1,16 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-11",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 用 Firebase Authentication：Email、Google、Apple 與匿名登入 - Tip 11",
+  "category": "programming",
+  "tags": [],
+  "summary": "用 Firebase Authentication 快速接上 Email／密碼、Google、Apple 與匿名登入，並把登入、登出與重開 app 的驗收條件交代清楚。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-11/",
+  "date": "2026-09-23T13:01:00+08:00",
+  "word_count": 427
+ },
+ {
   "slug": "it-ironman-2026-day-16",
   "lang": "zh",
   "title": "[IT 鐵人賽] 三顆心、兩種火候、29 道題：比出來的是一套路由規則 - Day 16",

@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-11",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 用 Firebase Authentication：Email、Google、Apple 與匿名登入 - Tip 11",
+  "lang": "zh",
+  "date": "2026-09-23T13:01:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "用 Firebase Authentication 快速接上 Email／密碼、Google、Apple 與匿名登入，並把登入、登出與重開 app 的驗收條件交代清楚。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-11/",
+  "hero_image": null,
+  "content": "本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10415931)。\n\n做 mobile，要快速有一套登入，我會用 Firebase Authentication。Email／密碼、Google、Apple，再加匿名登入，看 app 需要哪幾種。\n\n## 為什麼\n\n用 Firebase 可以很快有一套 Authentication 加 Remote Config。一個 app 第一天就要這兩件事：使用者要能登入，上線之後要能從外面改設定。自己做都要一個後端；Firebase 一個專案裡兩個都有，SDK 裝一次，設定在同一個 console 裡。這一篇先講登入，Remote Config 明天講。\n\n## 我怎麼做\n\n先把 app 接上 Firebase：\n\n1. 在 Firebase console 建專案，把 iOS 和 Android 的 app 加進去，各自下載設定檔（iOS 是 `GoogleService-Info.plist`，Android 是 `google-services.json`）放進專案\n2. 開 Authentication，勾要用的登入方式：Email／密碼、Google、Apple，再加匿名登入（Anonymous），看 app 要哪幾種；Google 和 Apple 各自有 provider 那一端的設定要做\n3. 讓他實作登入、登出和登入狀態變化，匿名登入也列進需求，別漏掉\n4. 這些步驟都可以交給他做，設定檔的路徑跟他說清楚\n\n我會把想要的行為寫成一段 prompt，避免他只做出登入畫面：\n\n```text\n幫這個 app 接 Firebase Authentication。\n登入方式依需求選 Email／密碼、Google、Apple、匿名登入。\n\n先列出本專案需要的 Firebase 與 provider 設定，缺的資料列給我。\n設定齊全後，實作並驗收：\n1. 登入成功後顯示目前的登入狀態。\n2. 登入失敗時顯示錯誤，讓使用者重試。\n3. 登出後回到未登入狀態。\n4. 重開 app 後，依實際登入狀態決定進主頁或登入頁。\n5. 有啟用匿名登入時，也走完匿名登入流程。\n回報實際測過的情境，以及還沒測的部分。\n```\n\n這些是我要交代給他的驗收條件。測試時每種啟用的登入方式分開走一遍，成功、失敗和登出都要看。\n\n## 小結\n\n登入用 Firebase Authentication。先選需要的登入方式，再把登入、登出與重開 app 的行為一起交代清楚。\n\n明天講 Remote Config：強制更新、建議更新、維修中、正常使用，Day 1 就做進去。\n\n參考：\n- Firebase Authentication https://firebase.google.com/docs/auth\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 427,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-23-it-ironman-2026-vibe-coding-tip-11.md"
+ },
+ {
   "slug": "it-ironman-2026-day-16",
   "title": "[IT 鐵人賽] 三顆心、兩種火候、29 道題：比出來的是一套路由規則 - Day 16",
   "lang": "zh",
@@ -3710,27 +3728,5 @@
   "word_count": 81,
   "reading_minutes": 1,
   "source_path": "_posts/programming/zh/2023-03-26-chatGPT-meme1.md"
- },
- {
-  "slug": "prompt-engineering",
-  "title": "Will 保哥翻譯自 DAIR.AI 的 \"prompt engineering\"「提示工程指南」",
-  "lang": "zh",
-  "date": "2023-03-26T10:17:00+08:00",
-  "category": "programming",
-  "tags": [
-   "ai",
-   "prompt",
-   "ChatGPT"
-  ],
-  "summary": "Prompt engineering is a technique that uses artificial intelligence (AI) to generate text, and involves designing an appropriate input (prompt) to guide the AI in producing desired outputs. The goal of prompt engineering is to enable AI to understand human intentions and needs, and generate high-quality, useful, and interesting text. Prompt engineering requires consideration of various factors such as the capabilities, limitations, language, style, goals, and background of the AI, and requires continuous testing and improvement of prompt effectiveness. Prompt engineering is both an art and a science that integrates linguistics, psychology, logic, and creativity.",
-  "url": "https://www.marvinswift.com/finance/prompt-engineering.html",
-  "hero_image": null,
-  "content": "prompt engineering 是一種利用人工智慧 (AI) 生成文本的技術，它需要設計一個適當的輸入 (prompt) 來引導 AI 產生想要的輸出。prompt engineering 的目的是讓 AI 能夠理解人類的意圖和需求，並且生成高質量、有用和有趣的文本。prompt engineering 需要考慮多種因素，例如 AI 的能力、限制、語言、風格、目標、背景等，並且需要不斷地測試和改進 prompt 的效果。prompt engineering 是一門融合了語言學、心理學、邏輯學和創意的藝術和科學。\n\n---\n\n## Will 保哥在 FB 上說已經將 DAIR.AI 的書用 ChatGPT 翻譯成繁體中文\n\n我相信在讀完這個提示工程，對 ChatGPT 的使用，應該會更廣泛，更精確。\n\n[電子書網址](https://promptingguide.azurewebsites.net/)\n\n[Will 保哥的技術交流中心](https://www.facebook.com/will.fans)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 227,
-  "reading_minutes": 1,
-  "source_path": "_posts/programming/zh/2023-03-26-prompt-engineering.md"
  }
 ]
