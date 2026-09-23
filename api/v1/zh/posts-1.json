@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-17",
+  "title": "[IT 鐵人賽] undefined",
+  "lang": "zh",
+  "date": "2026-09-24T01:06:07+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Model Comparison",
+   "Completion Time",
+   "Tool Calls"
+  ],
+  "summary": "同一件 Agent 任務跑三個模型，最小的模型反而花最久還沒做好；這篇把完成時間、tool calls 和模型選擇攤開來看。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-17/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-17-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10416286)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 024](https://www.marvinswift.com/zh/programming/agent-build-log-episode-024/)、[Episode 027](https://www.marvinswift.com/zh/programming/agent-build-log-episode-027/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 024](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-024.png)\n\n這一天碰到一個跟直覺完全相反的結果。\n\n同一件任務，三個模型各跑一次。我原本以為最小的那個會最快做完。結果最小的那個最慢，慢到將近三倍，而且沒做好。\n\n## 我原本的直覺\n\n只看模型本身，我的直覺很單純：參數量大的模型，回應慢；參數量小的，回應快。所以單純回答一個問題，速度大概是 Luna 最快、Terra 居中、Sol 最慢。\n\n換成 Agent 任務，我原本也用同一套假設：整件事做完的時間，也是 Luna 最快，接著 Terra，最後 Sol。\n\n## 實際跑出來\n\n這一天跑的任務是拿來調 tool calls 和最後輸出的。三個模型用同一套 Agent、同一組 tools，做同一件事。\n\n結果大概是這樣。\n\n| 模型 | 完成時間 | 結果 |\n| --- | --- | --- |\n| Sol | 5 分鐘左右 | 做對 |\n| Terra | 8 分鐘左右 | 做對 |\n| Luna | 14 分鐘左右 | 沒做好 |\n\nLuna 花的時間接近 Sol 的三倍，最後任務還沒做好。做對的是 Sol 和 Terra。\n\n後來在另一個任務上又量了一次，數字差不多：Sol 5 分鐘、Terra 8 分鐘、Luna 15 分鐘。\n\n![Day 17：比較整件任務完成時間](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-17-main.png)\n\n## 一次回答快，推不出一件事做完快\n\n這個結果讓我重新理解一件事：模型單次回應的速度，推不出 Agent 完成整個任務的速度。\n\nAgent 的總時間取決於每一次 inference 多快，也取決於模型怎麼規劃、呼叫多少次 tools、會不會重複確認、會不會走錯路、能不能在比較少的步驟裡把事情做完。\n\n一個單次回應比較快的模型，如果需要更多輪 tool calls，或者在過程中多走了不必要的路，最後反而花得更久。Luna 這一輪就是這樣。\n\nDay 15 看的是 tool calls 的次數，Day 16 看的是流程有沒有走完。這一天把它們接起來：步數多，時間就長；步數多又走錯，時間長還沒做好。\n\n## 選模型的時候，多看一個數字\n\n這個結果讓模型的選擇變得更有意思。\n\n只看成本，我可以選 Terra。它把事情做對，價格比 Sol 便宜一些，代價是花的時間比較久。\n\nSol 在這個任務上最快做完，結果也對，成本再高一點。\n\n以前我比較容易把模型選擇想成：更大的模型，更慢、更貴；更小的模型，更快、更便宜。在 Agent 裡，真正重要的可能是這個模型要多少步才能把事情做完。\n\n所以之後選模型，我不能只看 token price 或 response latency，還要看整個任務的 completion time。\n\n## 小結\n\n同一件任務，最小的模型花了最久，還沒做好。單次回應的速度推不出任務完成的時間；要多少步做完，才是 Agent 裡那個真正的變數。\n\n第三章到這裡：Day 14 立了題目庫，Day 15、16 用它比出一套路由規則，這一天再加一個看時間的角度。\n\n模型比了幾天，Desktop App 上幾個老問題一直擱著。明天回頭處理它們，方法是去看別人怎麼做的。\n\n原文：[Agent Build Log — Episode 024](https://www.marvinswift.com/zh/programming/agent-build-log-episode-024/)、[Episode 027](https://www.marvinswift.com/zh/programming/agent-build-log-episode-027/)\n\n---\n\n> **凡人修 Agent 傳｜第十七回（Day 17）**\n>\n> ![凡人修 Agent 傳 Day 17 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-17-serial.png)\n>\n> 天亮換上空錄石。手的主人進來，從儲物袋取出兩顆心擱在臺上，再伸手進我胸口，把昨天那顆也取出來，擱在旁邊。三顆並排。\n>\n> 我第一次看見它們並排。原本那顆最小。昨天那顆大一些。另一顆備用的最大，幾乎是原本那顆的兩倍。\n>\n> 他從儲物袋取出一炷新的香插在臺角。牆邊契的旁邊掛著那只靈石袋，脈每應一次，袋裡就少一顆。他把袋取下來掂了掂，掛回去。\n>\n> 今天沒有籤。他刻了一道念：把架上三十幾卷的卷名和年月抄成一張總目，掛在架側；抄完自己對一遍。\n>\n> 他先裝原本那顆，最小的。撥片還在「極」。\n>\n> 這顆心每一步都快。神識探一卷，年月念出來，抄一行，比另外兩顆都快。可是探到第十幾卷，它回頭把前面的重探了一遍。抄到一半，改了三處。總目抄完，對的時候又從第一卷探起，探了一半，香燒完了。總目掛上去，有兩卷年月抄錯。石上一長串。他取下靈石袋掂了掂，袋癟了一大截。\n>\n> 第二顆，昨天那顆。撥片沒動。\n>\n> 一卷一卷探，抄，三十幾卷探過一遍抄完。對一遍，對完。香燒了一半多。總目沒有錯。靈石袋輕了一些。\n>\n> 第三顆，最大那顆。\n>\n> 每一步都停得久。神識落在一卷上，停一停，才念年月，才抄。我以為會慢。可是它探過一遍就抄完了，沒有回頭。對一遍，也沒有回頭。香燒不到三分之一。總目沒有錯。他掂靈石袋，比第二顆那一輪輕得多一點。\n>\n> 三張總目並排在臺上。第一張兩處錯，兩張對。三截香灰在臺角，一長、一中、一短。\n>\n> 他把靈石袋取下來，倒在臺上數。數完裝回去，掛上。袋子掛在牆邊，癟了一截。\n>\n> 最大那顆心放回儲物袋。原本那顆也放回去。昨天那顆裝進我胸口。他把第三張總目掛在架側，另外兩張收進儲物袋。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 架側掛著一張總目。臺角三截香灰。牆邊那只靈石袋，比早上輕了很多。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1744,
+  "reading_minutes": 6,
+  "source_path": "_posts/programming/zh/2026-09-24-it-ironman-2026-day-17.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-11",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 用 Firebase Authentication：Email、Google、Apple 與匿名登入 - Tip 11",
   "lang": "zh",
@@ -3639,94 +3665,5 @@
   "word_count": 1085,
   "reading_minutes": 4,
   "source_path": "_posts/life/zh/2023-03-29-zelda-tears-of-the-kingdom.md"
- },
- {
-  "slug": "toshiba-been-acquisitions",
-  "title": "東芝被溢價收購，股票將下市",
-  "lang": "zh",
-  "date": "2023-03-27T17:37:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance",
-   "日本",
-   "財經",
-   "東芝",
-   "Toshiba",
-   "Japan"
-  ],
-  "summary": "Japanese technology company Toshiba may be facing privatization as a consortium led by Japan Industrial Partners (JIP) has offered a $22 billion buyout proposal, valuing Toshiba at a premium price of ¥7,000 per share. If successful, the acquisition would end Toshiba's 140-year history and delist it from the stock exchange. Despite being one of Japan's most renowned technology companies, Toshiba has been involved in several scandals and losses in recent years, leading to a significant drop in its stock price and increased pressure from shareholders. The acquisition group aims to help Toshiba refocus on its core energy and infrastructure businesses to enhance its competitiveness and efficiency. However, the bid still requires approval from global competition laws and the Japanese government, given Toshiba's sensitive involvement in national security and public interests. Some Toshiba board members are reportedly unsatisfied with the offer, believing it undervalues the company's potential.",
-  "url": "https://www.marvinswift.com/finance/toshiba-been-acquisitions.html",
-  "hero_image": null,
-  "content": "在 2013 ~ 2017 的時候，我是在日本工作。東芝(Toshiba)有個海外 recruitment 專案，專門招募「不在」日本的人，然後發給簽證並給與日文訓練，在結訓的時候分發到各個事業部門。那是一段很有趣的經驗，接下來也會找時間去寫這一段的經驗。\n\n---\n\n## 東芝被收購\n\n根據多家媒體報導，日本東芝（Toshiba）可能面臨被私有化的命運，因為一個由日本產業合作夥伴公司（JIP）為首的投資者集團，已經提出了一份高達220億美元的收購要約，每股價格為7000日圓，遠高於東芝目前的市場價值。如果收購案成功，東芝將從證交所下市，結束其140多年的歷史。\n\n東芝是日本最知名的科技企業之一，涉足核能、半導體、電子、家電等多個領域，但近年來卻陷入了一連串的醜聞和虧損，包括會計造假、核電廠建設失敗、記憶體事業出售等。這些事件讓東芝的股價大幅下跌，也引發了外資和股東的不滿和壓力。收購方表示，他們希望能夠幫助東芝重整旗鼓，專注於其核心的能源和基礎設施事業，並提升其競爭力和效率。\n\n東芝董事會尚未正式回應收購要約，但有消息指出，部分董事對出價不滿意，認為低估了東芝的價值和潛力。此外，收購案還需要通過全球競爭法的審核，以及獲得日本政府的批准，因為東芝涉及國家安全和公共利益的敏感領域。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 482,
-  "reading_minutes": 2,
-  "source_path": "_posts/finance/2023-03-27-toshiba-been-acquisitions.md"
- },
- {
-  "slug": "wanqu-restart",
-  "title": "灣區日報重啟了",
-  "lang": "zh",
-  "date": "2023-03-27T14:42:00+08:00",
-  "category": "programming",
-  "tags": [
-   "程式開發",
-   "programming",
-   "電子報"
-  ],
-  "summary": "灣區日報重啟",
-  "url": "https://www.marvinswift.com/programming/wanqu-restart.html",
-  "hero_image": null,
-  "content": "> 关注创业，互联网，技术。就像是你远方的老朋友每天推荐几篇优质英文文章，一起每天进步一点点。在 AI 横行的年代，更需要人类的手动推荐，手动点评；人类好的品味不会被 AI 淘汰的。 by W @ San Francisco\n\n之前一直都有訂灣區日報，不過這個電子報之後停了，我覺得非常可惜，下面有提到停的原因。\n\n[來源](https://wanqu.substack.com/p/2fc)\n\n> Hello，\n我打算重启湾区日报了：\nhttps://www.wanqu.co/\n与前几年的运营的不同之处：\n1）只在网站 wanqu.co 上更新，先不推送到其他渠道了\n2）只有中文标题，不写长一点的简评了\n3）滚动更新，看到有意思的文章就在网站上推荐，不像以前那样集中5篇一次推送\n上次从 2014 年做到了2018年，之后就没怎么更新了。这次简化一下发布的流程，节省时间，减少工作量，希望这次能做久一点：）\n\n我這邊有把 **灣區日報** 的連結放在 [Swift社群資源](/swift-community/) 這一頁，除了灣區日報以外，還列出開發者相關的電子報，有興趣的朋友，歡迎到社群資源頁面瀏覽。\n\n## [Swift社群資源列表](/swift-community/)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 358,
-  "reading_minutes": 1,
-  "source_path": "_posts/programming/zh/2023-03-27-wanqu-restart.md"
- },
- {
-  "slug": "food-ky-big-holder-sell-stocks",
-  "title": "美食-KY 董娘美數出脫持股",
-  "lang": "zh",
-  "date": "2023-03-27T13:43:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance",
-   "財經",
-   "新聞"
-  ],
-  "summary": "Gourmet Master (2723), the parent company of 85°C Bakery Cafe, saw its stock price drop after reports emerged that the Chairman's spouse would sell all her shares in a block trade for over NT$ 500 million. The company's revenue and profits have declined due to the pandemic, but it plans to distribute a cash dividend of NT$2.5 with a payout ratio of over 90%. Analysts believe the share sale could affect investor confidence and the company's future business strategy, while its Chinese market performance has fallen short of expectations. Investors should wait for more information before making any decisions.",
-  "url": "https://www.marvinswift.com/finance/food-ky-big-holder-sell-stocks.html",
-  "hero_image": null,
-  "content": "美食-ky（2723），經營知名連鎖烘培品牌85度C的公司，今日傳出董事長吳政學的配偶將以鉅額逐筆交易的方式，出脫手中全部3463.1張持股，估計可獲利逾5億元。消息一出，引發市場擔憂公司未來營運前景，股價在今日開盤即遭賣壓重創，一路下滑至跌停價149元，成交量達到1.2萬張，創下近兩個月來的新高。\n\n美食-ky去年受到中國和美國市場的疫情衝擊，全年營收和獲利均大幅下滑，每股盈餘僅有2.68元，為上市以來的新低。不過，公司仍擬配發現金股利2.5元，配發率超過9成，顯示對股東的友善。今年前兩個月，隨著中國和美國市場逐漸復甦，公司營收也呈現正成長，但仍低於同業水準。\n\n分析師指出，美食-ky的大股東賣股可能有多種原因，例如個人財務規劃、減少持股比例、籌措資金等，但也可能反映出對公司未來發展的不看好。他們認為，美食-ky面臨的挑戰包括競爭激烈、成本上升、品牌形象衰退等，需要加強產品創新和差異化策略，才能提升競爭力和獲利能力。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 381,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-03-27-food-ky-big-holder-sell-stocks.md"
- },
- {
-  "slug": "chatGPT-meme1",
-  "title": "梗圖-ChatGPT",
-  "lang": "zh",
-  "date": "2023-03-26T15:08:00+08:00",
-  "category": "programming",
-  "tags": [
-   "programming"
-  ],
-  "summary": "ChatGPT meme",
-  "url": "https://www.marvinswift.com/finance/chatGPT-meme1.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/chatgpt-meme/meme1.jpeg",
-  "content": "在 ChatGPT 開始被大量應用之後，出現了各種梗圖，這邊列出我看到的兩個梗圖。\n\n## 梗圖1\n![ChatGPT meme1](https://www.marvinswift.com/assets/posts/chatgpt-meme/meme1.jpeg)\n\n## 梗圖2\n![ChatGPT meme2](https://www.marvinswift.com/assets/posts/chatgpt-meme/meme2.jpeg)\n\n或許這兩個迷因被大量使用的日子，不遠了。\n\n## 相關文章\n\n[ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用](https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 81,
-  "reading_minutes": 1,
-  "source_path": "_posts/programming/zh/2023-03-26-chatGPT-meme1.md"
  }
 ]

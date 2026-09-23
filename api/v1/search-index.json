@@ -1,5 +1,24 @@
 [
  {
+  "slug": "it-ironman-2026-day-17",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] undefined",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Model Comparison",
+   "Completion Time",
+   "Tool Calls"
+  ],
+  "summary": "同一件 Agent 任務跑三個模型，最小的模型反而花最久還沒做好；這篇把完成時間、tool calls 和模型選擇攤開來看。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-17/",
+  "date": "2026-09-24T01:06:07+08:00",
+  "word_count": 1744
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-11",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 用 Firebase Authentication：Email、Google、Apple 與匿名登入 - Tip 11",
