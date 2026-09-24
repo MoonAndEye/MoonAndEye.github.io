@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-12",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Remote Config 控參數：Day 1 就把強制更新、建議更新、維修中、正常使用做進去 - Tip 12",
+  "lang": "zh",
+  "date": "2026-09-24T13:01:57+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "把強制更新、建議更新、維修中、正常使用四種狀態放進 Remote Config，讓 app Day 1 就能處理上線後的版本與維修情境。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-12/",
+  "hero_image": null,
+  "content": "這篇是 Vibe Coding 系列 Tip 12：先把 app 的四種狀態交給 Remote Config 控制，讓後續更新與維修不用重新發版。\n\nRemote Config 控參數很好用。app 的 Day 1 就把四個狀態做進 Remote Config：強制更新、建議更新、維修中、正常使用。\n\n## 為什麼\n\napp 發出去之後，裝在使用者手機上的那一版就改不了了。出了嚴重的問題要大家更新、後端要停機維修、某一版有 bug 想請大家升級，這些都得在 app 開起來的第一個畫面就處理。這個開關放在 Remote Config 裡，改一個參數，全部的使用者下一次開 app 就吃到。\n\n## 我怎麼做\n\n四個狀態，一個參數決定：\n\n| 狀態 | app 開起來做什麼 |\n| --- | --- |\n| 正常使用 | 直接進 app |\n| 建議更新 | 提示有新版，可以關掉繼續用 |\n| 強制更新 | 只能去商店更新，進不了 app |\n| 維修中 | 顯示維修訊息，進不了 app |\n\nRemote Config 裡大概放這幾個參數：\n\n```json\n{\n  \"app_status\": \"normal\",\n  \"min_supported_version\": \"1.2.0\",\n  \"latest_version\": \"1.4.0\",\n  \"maintenance_message\": \"系統維護中，預計 02:00 恢復\"\n}\n```\n\n`app_status` 四個值：`normal`、`suggest_update`、`force_update`、`maintenance`。app 啟動先抓 Remote Config，照 `app_status` 決定走哪一條；`min_supported_version` 是保險，版本比它低的直接當強制更新。這一段邏輯讓他寫，四個狀態各給一個測試（接 Tip 09）。\n\n## 坑\n\n- 抓不到 Remote Config 的時候（沒網路、第一次開），app 裡的預設值要是「正常使用」。預設值設成別的，斷網的人會被擋在外面。\n- 版本號要拆成三段數字比，別當字串比。字串比的話 1.10 會被當成比 1.9 小，裝了最新版的人反而被要求更新。\n\n## 小結\n\n四個狀態 Day 1 就做進 Remote Config，之後出什麼事，改一個參數就能先擋住。\n\n明天講 mobile 開發我建議的最後一件事：埋 debug console log，AI 很好 debug。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 518,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-24-it-ironman-2026-vibe-coding-tip-12.md"
+ },
+ {
   "slug": "it-ironman-2026-day-17",
   "title": "[IT 鐵人賽] 省靈石不一定省時辰：5 分鐘、8 分鐘、14 分鐘，模型越小 Agent 反而越慢 - Day 17",
   "lang": "zh",
@@ -3643,27 +3661,5 @@
   "word_count": 515,
   "reading_minutes": 2,
   "source_path": "_posts/programming/zh/2023-03-29-bing-create-ai-art.md"
- },
- {
-  "slug": "zelda-tears-of-the-kingdom",
-  "title": "薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩",
-  "lang": "zh",
-  "date": "2023-03-29T09:00:00+08:00",
-  "category": "life",
-  "tags": [
-   "任天堂",
-   "Switch",
-   "薩爾達"
-  ],
-  "summary": "Nintendo released a gameplay video of \"The Legend of Zelda- Breath of the Wild 2\" with all-new mechanics. The game is a sequel to \"Breath of the Wild\" and takes place in the same world but with new elements and challenges. The video showcases Link using different tools and abilities in various scenes, with the mechanics adding to the game's fun, difficulty and strategic elements. The game's graphics have also improved, and it's set to release on May 12, 2023, with multiple language and version options.",
-  "url": "https://www.marvinswift.com/programming/zelda-tears-of-the-kingdom.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/banner.jpeg",
-  "content": "薩爾達迷們有福了！任天堂今天發布了一段由製作人青沼英二親自實機試玩的影片，展示了即將推出的《薩爾達傳說 王國之淚》的各項全新機制。這款遊戲是《薩爾達傳說 曠野之息》的續作，故事發生在同一個世界，但加入了許多新的元素和挑戰。\n\n影片中，我們可以看到主角林克在不同的場景中使用不同的道具和技能，例如可以讓他穿透牆壁的魔法手套，可以讓他在空中暫停和瞄準的緩降傘，以及可以讓他控制時間和物體的時之力。這些機制不僅增加了遊戲的趣味性，也提高了遊戲的難度和策略性。青沼英二表示，這些機制都是為了讓玩家有更多的自由度和創造力，並且體驗到薩爾達世界的奧妙和神秘。\n\n除了機制之外，影片也展示了遊戲的部分劇情和角色，例如林克和薩爾達公主的關係，以及邪惡的卡拉姆·加農的復活。遊戲的畫面也有明顯的提升，色彩更加鮮豔，細節更加豐富，光影效果也更加逼真。青沼英二表示，這款遊戲是他們對《曠野之息》的完美延伸，也是他們對薩爾達系列的最高傑作。\n\n《薩爾達傳說 王國之淚》預定於 2023年5月12日 在 Nintendo Switch 平台上推出，目前已經開始接受預購。這款遊戲將會支持中文、英文、日文等多種語言，並且有多種版本可供選擇，包括標準版、豪華版和限量版。對於喜歡冒險和探索的玩家來說，這款遊戲絕對是一個不容錯過的大作。\n\n## 任天堂 Switch 同款機\n\n任天堂今日發佈了一款全新的Switch主機，以《薩爾達傳說 王國之淚》為主題，將於2023年5月12日與遊戲同步上市。這款主機採用了OLED螢幕，提供了更鮮豔的色彩和更高的對比度，並且擁有64GB的內建儲存空間，讓玩家可以下載更多的遊戲。主機的外觀也經過了特別的設計，以深藍色為基調，配上金色的細節，呼應了遊戲中的王國之淚。Joy-Con手把也採用了相同的配色，並在手把上印有薩爾達和碧姬的圖案。此外，主機底座也有著金色的王國之淚圖騰，讓玩家在連接電視時也能感受到遊戲的氛圍。\n\n這款《薩爾達傳說 王國之淚》同款機是繼《薩爾達傳說 禦天之劍 HD》同款機後，任天堂為了紀念《薩爾達傳說》系列35週年而推出的另一項限定商品。根據任天堂的官方消息，這款同款機將在台灣地區以11,280元的價格發售，並附贈一張《薩爾達傳說 王國之淚》遊戲下載序號。不過，由於數量有限，任天堂建議有興趣的玩家要盡快預約購買，以免向隅。《薩爾達傳說 王國之淚》是《薩爾達傳說 曠野之息》的續作，延續了前作的開放世界和自由探索的特色，並加入了更多的新要素和驚喜。遊戲中，玩家將再次扮演薩爾達，與碧姬一起冒險，揭開海拉魯王國的秘密，並阻止一股邪惡的力量。遊戲將支援繁體中文介面和配音。\n\n## 釋出的王國之淚 Youtube 影片\n\n[製作人青沼英二遊玩《薩爾達傳說 王國之淚》影片（台灣）](https://www.youtube.com/watch?v=J1lDJFdYJkI)\n\n---\n\n[Nintendo Switch（OLED款式） 薩爾達傳說 王國之淚版主機（台灣）](https://www.youtube.com/watch?v=4NtoxFo8iPc)\n\n---\n\n## 相關照片\n\n### 4/28 同款機要發售啦\n\n![王國之淚 4/28 發售](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/banner.jpeg)\n\n![Switch 王國之淚同款機](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/switch1.jpeg)\n\n![Switch 王國之淚同款機](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/switch2.jpeg)\n\n![Switch 王國之淚同款機](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/switch3.jpeg)\n\n![Switch 王國之淚同款機](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/switch4.jpeg)\n\n---\n\n![王國之淚遊戲照](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/game1.jpeg)\n\n![王國之淚遊戲照](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/game2.jpeg)\n\n![王國之淚遊戲照](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/game3.jpeg)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 1085,
-  "reading_minutes": 4,
-  "source_path": "_posts/life/zh/2023-03-29-zelda-tears-of-the-kingdom.md"
  }
 ]

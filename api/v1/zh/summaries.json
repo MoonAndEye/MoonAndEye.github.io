@@ -1,5 +1,22 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-12",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Remote Config 控參數：Day 1 就把強制更新、建議更新、維修中、正常使用做進去 - Tip 12",
+  "lang": "zh",
+  "date": "2026-09-24T13:01:57+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "把強制更新、建議更新、維修中、正常使用四種狀態放進 Remote Config，讓 app Day 1 就能處理上線後的版本與維修情境。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-12/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 518,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-24-it-ironman-2026-vibe-coding-tip-12.md"
+ },
+ {
   "slug": "it-ironman-2026-day-17",
   "title": "[IT 鐵人賽] 省靈石不一定省時辰：5 分鐘、8 分鐘、14 分鐘，模型越小 Agent 反而越慢 - Day 17",
   "lang": "zh",
