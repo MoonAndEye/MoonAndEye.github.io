@@ -17,6 +17,8 @@ summary: "把強制更新、建議更新、維修中、正常使用四種狀態�
 description: "把強制更新、建議更新、維修中、正常使用四種狀態放進 Remote Config，讓 app Day 1 就能處理上線後的版本與維修情境。"
 ---
 
+本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10416457)。
+
 這篇是 Vibe Coding 系列 Tip 12：先把 app 的四種狀態交給 Remote Config 控制，讓後續更新與維修不用重新發版。
 
 Remote Config 控參數很好用。app 的 Day 1 就把四個狀態做進 Remote Config：強制更新、建議更新、維修中、正常使用。
