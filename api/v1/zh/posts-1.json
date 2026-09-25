@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-18",
+  "title": "[IT 鐵人賽] 借圖修臺：Desktop App 的換行和 OAuth 一直沒弄好，我讓 agent 照 pi-gui 的實作改 - Day 18",
+  "lang": "zh",
+  "date": "2026-09-25T17:50:09+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Desktop App",
+   "OAuth",
+   "pi-gui"
+  ],
+  "summary": "讓 coding agent 讀 pi-gui，照它處理換行與 OAuth 的方式修改 Desktop App，兩個拖很久的問題因此打通。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-18/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-18-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10416995)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n這幾天都在跟題目和模型打交道，Desktop App 上幾個老問題一直擱著。這一天回頭處理。\n\n結論先講：我沒有自己一個一個修。我讓 coding agent 去讀一個開源專案 pi-gui，照它的做法改。換行和 OAuth 兩件事都是這樣打通的。\n\n## 擱了很久的兩個問題\n\nDesktop App 從 Day 04 做起來到現在，我一直在往上加功能：規矩、技能、記憶、題目庫。畫面本身的細節我沒有仔細調，想的是先把功能做出來，細節之後再說。\n\n之後真的回頭看，才發現有幾件事一直沒有做好。\n\n一個是文字換行。對話畫面上的字什麼時候該折、什麼時候該留原本的格式，我的版本一直沒有理清楚。\n\n另一個是 OAuth。Day 05 修過三次，那三次修的是打包之後才出現的問題。之後 OAuth 還是有過不去的時候。\n\n這兩件事都跟 Agent 的能力無關，可是每天用都會撞到。\n\n## 我的做法：去看別人怎麼做\n\npi-gui 是一個開源的 Desktop App，做給 pi 用的，MIT 授權。README 第一句就寫它是 Codex 風格的桌面程式，這跟我在 Day 04 想要的樣子一樣。\n\n它跟我的 Desktop App 是同一種形狀：Electron，畫面和 agent 分開跑，底下接的都是 pi。它自己說得很清楚，它只是 pi 外面的一層 UI 殼，session 管理、模型和登入、agent 執行都走 pi 本身，沒有另外實作一套 runtime。\n\n同一種形狀，它碰過的問題我大概都會碰到。所以這一天我讓 coding agent 直接讀它的 repo，找到它處理換行和 OAuth 的地方，對照我的實作改。動手的是 Codex 和 Claude Code，我決定要改哪兩件事、驗收改完的畫面。\n\n## 換行：三種內容，三套規則\n\npi-gui 的對話畫面把內容分成三種，各用一套排法。\n\n訊息的本文，再長的字串都在框裡折，不會撐破版面。\n\n程式碼區塊和工具的輸出，保留原本的空白和換行，一行太長還是折，但原本的行不會亂掉。\n\n側欄和標題那種一行的東西，不折，超出的部分用省略號收掉。\n\nagent 照這個分法把我的換行邏輯改掉。改完之後，長的訊息在框裡，程式碼還是程式碼的樣子，側欄的名字一行一個。\n\n## OAuth：它不自己做\n\npi-gui 沒有自己寫一套 OAuth。它用的是 pi 自己的登入流程：登入就是呼叫 pi 的 login，pi 回傳網址和裝置碼，畫面負責把那兩樣東西顯示出來；登入完重新載入資源、刷新模型清單。憑證存在 pi 自己那一份 auth 檔，所以 CLI 登入過的，Desktop 直接就有。\n\n我讓 agent 照這條路改我的 OAuth。改完之後通了。\n\n![Day 18：參考 pi-gui 修正換行與 OAuth](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-18-main.png)\n\n## 花掉的時間\n\n這一天真正值得記的是時間。\n\n這兩個問題如果自己從頭摸，時間都會花在查資料、試、打包、再試上面。讓 agent 讀一個已經把同樣問題解掉的專案，照著改，快得多。這個方法大大減少了我開發的時間。\n\n## 小結\n\nDesktop App 的換行和 OAuth，我讓 coding agent 讀 pi-gui 的實作，照它的做法改，兩件都打通了。\n\n別人把同一個問題解過，程式碼公開在那裡，我讓 agent 讀過去、照著改，比自己從頭摸快得多。這就是開源的力量。\n\n明天先把 pi 的 extension 生態系看一圈。我原本打算自己做的幾件事，早就有人做了。\n\n參考：[pi-gui](https://github.com/minghinmatthewlam/pi-gui)\n\n---\n\n> **凡人修 Agent 傳｜第十八回（Day 18）**\n>\n> ![凡人修 Agent 傳 Day 18 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-18-serial.png)\n>\n> 天亮換上空錄石。手的主人進來，先點火。契按在牆邊裂縫旁那個位置，脈沒有應。他拔下來，再按。第二次才著，心火起來。\n>\n> 這件事從砌臺那幾天起就有，隔幾天一次。他每次都是拔下來再按，按著了就去做別的。這一陣子他做的別的事多：簿子、籤、心。臺沒有人管。\n>\n> 今天他沒有去做別的。\n>\n> 他刻了一道念。念很長：第三卷、第七卷、第十二卷、第十九卷、第二十一卷，按年月排先後，每一卷的年月抄到靈幕上。念一刻，那一行字就浮在靈幕上，排到靈幕右邊那條邊就沒了，剩下的字擠在邊上，一個疊一個。我探了五卷，年月一卷一卷抄上去，我的字也一樣。他又讓我把第七卷卷首那五行原樣抄上去。五行擠成一團，看不出哪裡是一行的頭。\n>\n> 他以流光氣在靈幕邊上改紋。紋改了，字到邊就折下來。他再刻一遍那道念，這一次讀得全了。再讓我抄第七卷卷首。折是折了，原本的行也被折掉了，五行變成一整片。他把紋磨回去。第二次改，左邊那扇窗裡的那一列卷名也跟著折，每個名字都斷成兩截。他又磨回去。第三次改到一半停了手。\n>\n> 靈幕上的字有三種。他坐了一會。\n>\n> 然後他閉上眼，放出神識，探向坊市。靈幕亮了，公印退開，這一次垂下來的圖紙是一座臺。\n>\n> 那座臺的圖我認得一半。主圖是電鏡的，跟這間屋子的臺同一張主圖砌出來的，靈幕、左右兩扇窗、底下的令窗，位置都一樣。可是那座砌得齊。圖紙邊角有一個署名。坊裡的公印我見過，這個署名我沒見過，一個人的。署名底下一行小字，手的主人念出來：拍人偶為底。\n>\n> 他的神識在圖上兩處停得久。一處是靈幕那一節，一處是引脈那一節。\n>\n> 靈幕那一節他念出來三行。話，到邊就折。器物回的話，留原本的行，一行太長也折。左窗那一列名字，一行不折，多出去的收成三點。三種字，三種排法。\n>\n> 引脈那一節只有一句。臺不引脈，人偶照自己的圖紙引。\n>\n> 他收回神識。\n>\n> 午後他把靈幕邊上的紋整段磨掉，照圖重刻，三處各一道。刻完再刻一遍早上那道長念，字到邊折下來，五卷卷名都在。讓我抄第七卷卷首，五行還是五行。左窗那一列名字一個都沒斷，最長的那一個尾巴收成三點。\n>\n> 然後他走到牆邊，把契拔下來。臺上他自己刻的那一段引脈的紋，從契那個位置一路刻到靈幕底下，他用流光氣整段磨平。契按回牆邊原位。脈應了。火從牆到我胸口，中間沒有再經過臺。他沒有拔第二次。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 靈幕上那座臺的圖還亮著，署名在邊角。早上那道長念還在靈幕上，折成三行。牆邊那枚契按著，火沒有斷。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2055,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-09-25-it-ironman-2026-day-18.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-12",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Remote Config 控參數：Day 1 就把強制更新、建議更新、維修中、正常使用做進去 - Tip 12",
   "lang": "zh",
@@ -3612,54 +3637,5 @@
   "word_count": 260,
   "reading_minutes": 1,
   "source_path": "_posts/finance/2023-03-31-michael-burry.md"
- },
- {
-  "slug": "wwdc23",
-  "title": "WWDC2023 時間確定了! 6月6日登場",
-  "lang": "zh",
-  "date": "2023-03-31T08:57:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "WWDC",
-   "Apple",
-   "iOS"
-  ],
-  "summary": "The annual Worldwide Developers Conference (WWDC) by Apple is set to take place online from June 5th to June 9th, showcasing updates for iOS 15, macOS 12, watchOS 8, and tvOS 15, with the possibility of new hardware products. The event includes workshops, keynote speeches, labs, and award presentations for developers to learn and share experiences. Applications for free tickets are open until March 31st, and students can join the Swift Student Challenge to showcase their programming skills. WWDC is a vital bridge between Apple and the developer community, driving innovation and improving people's lives.",
-  "url": "https://www.marvinswift.com/swift/wwdc23.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/wwdc23/wwdc23.jpeg",
-  "content": "## WWDC23 時間確定了 6月6日到6月10日\n\n![WWDC 23](https://www.marvinswift.com/assets/posts/wwdc23/wwdc23.jpeg)\n\n每年的三月底四月初，Apple 都會宣佈 WWDC 的新聞，在昨天我們看到了今年的 WWDC 新聞啦，這次的日期在 6月6日 ~ 6月10日。\n\n## 關於 WWDC\n\n今年的 WWDC 將於 6 月 5 日至 9 日在美國，這是蘋果公司每年一度的全球開發者大會，旨在展示其最新的軟體和技術。WWDC 是開發者和蘋果工程師交流的絕佳機會，也是了解蘋果未來發展方向的重要窗口。\n\n今年的 WWDC 預計將發佈 iOS 15、macOS 12、watchOS 8 和 tvOS 15 等系統更新，以及可能的硬體產品，如新款 MacBook Pro、AirPods 3 和 AirTags 等。此外，WWDC 也將舉辦多場主題演講、工作坊、實驗室和獎項頒發等活動，讓開發者能夠深入學習蘋果的平台和工具，並與同行和專家分享經驗和創意。\n\n由於疫情的影響，今年的 WWDC 將採用線上形式進行，所有的活動都將通過蘋果開發者應用程式和網站免費提供給全球的開發者。開發者可以在現在起至 3 月 31 日之前申請免費的 WWDC 票券，並有機會參加一對一的指導會議。此外，學生和教育工作者也可以參加 Swift 學生挑戰賽，通過創作一個 Swift Playground 的互動場景來展示自己的編程技能，並有機會贏得獨家的 WWDC 外套和徽章。\n\nWWDC 是蘋果公司與開發者社群的重要橋樑，也是推動創新和改善人們生活的強大動力。我們期待今年的 WWDC 能夠帶來更多令人驚艷的產品和服務，並讓我們更加了解蘋果公司的願景和使命。\n\n## Special event\n\n![special event](https://www.marvinswift.com/assets/posts/wwdc23/wwdc-special-event.jpeg)\n\n此外，蘋果公司還將於6月5日在蘋果園區為開發者和學生舉辦一個特別的全天活動。屆時，參與者將一起觀看主題演講和國情咨文視頻，與蘋果團隊的一些成員會面，參加蘋果設計獎頒獎典禮，並享受整個晚上的活動。與我們一起親身參加活動，觀看主題演講和國情咨文視頻，與 Apple 團隊的部分成員見面，慶祝 Apple 設計獎優秀應用程式，享受到深夜的活動。\n\n## Student Challenge - 學生挑戰\n\n![swift](https://www.marvinswift.com/assets/posts/wwdc23/swift-icon.jpeg)\n\n呼喚所有有才華的學生！展示你們的創造力和對編程的熱情，有機會獲得獎項。申請截止日期為4月19日。通過提交一個關於你選擇的主題的令人難以置信的應用場景，向我們展示你對編程的熱情。獲勝者將獲得獨家的WWDC23外套、AirPods Pro、定制徽章組和一年的蘋果開發者計劃會員資格。此外，我們還將為選中的獲勝者舉辦一個特別的活動，而這些獲勝者是選擇參加這個機會的。\n\n## Apple park\n\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3321782432827!2d-122.008972!3d37.33464379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1szh-TW!2stw!4v1680224743201!5m2!1szh-TW!2stw\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n",
-  "content_format": "markdown+html",
-  "inline_html_tags": [
-   "iframe"
-  ],
-  "has_insecure_images": false,
-  "word_count": 831,
-  "reading_minutes": 3,
-  "source_path": "_posts/swift/zh/2023-03-31-wwdc23.md"
- },
- {
-  "slug": "bing-create-ai-art",
-  "title": "使用 Bing create AI 產出各種圖案吧",
-  "lang": "zh",
-  "date": "2023-03-29T18:00:00+08:00",
-  "category": "life",
-  "tags": [
-   "AI",
-   "bing",
-   "create",
-   "art",
-   "openAI"
-  ],
-  "summary": "Bing release ai art. The name is create. This post shows different prompts to see the ai arts.",
-  "url": "https://www.marvinswift.com/life/bing-create-ai-art.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/bing-create/lucky-cat-normal.jpeg",
-  "content": "## Bing Create AI 繪圖\n\nBing Create 是一個由微軟推出的創意工具，它可以根據你的文字提示，利用人工智慧生成圖像。你可以在 Bing 搜尋應用程式或網站上使用 Bing Create，只要進入 More Creative 標籤，就可以開始創作。\n\nBing Create 的用途很廣泛，你可以用它來發揮你的想像力，創造出各種有趣、美麗、驚奇的圖像。你可以用它來設計 logo、海報、插畫、漫畫等等。你也可以用它來學習不同的藝術風格、探索不同的主題、表達不同的情感。\n\nBing Create 創造的限制，就是你想像力的限制。你可以用簡單的詞語或句子來描述你想要的圖像，例如「一隻穿著西裝的貓」、「一個太陽系的蛋糕」、「一幅抽象的水彩畫」等等。Bing Create 會根據你的提示，生成一個或多個符合的圖像，讓你選擇。你也可以修改或添加更多的細節，讓圖像更符合你的期望。\n\nBing Create 是一個讓人類發揮創意的好幫手，它可以幫助你實現你的想法，也可以啟發你的靈感。如果你想要嘗試 Bing Create，可以使用下面這個連結，登入 bing create，去體驗一下 AI 的畫技。\n\n## [Bing Create](https://www.bing.com/create)\n\n## 我用 Bing create 產生的圖片\n\n### 招財貓\n\n> prompt: The Maneki-neko, raise one hand while holding a gold coin in the other hand.\n\n![lucky cat](https://www.marvinswift.com/assets/posts/bing-create/lucky-cat-normal.jpeg)\n\n### 賽博龐克風的招財貓\n\n> prompt: Japanese lucky cat. cyberpunk style\n\n![cyber punk cat](https://www.marvinswift.com/assets/posts/bing-create/lucky-cat-cyber-punk1.jpeg)\n\n> prompt: Japanese lucky cat, cyberpunk style\n\n![cyber punk cat](https://www.marvinswift.com/assets/posts/bing-create/lucky-cat-cyber-punk2.jpeg)\n\n### 將詠唱詞再加多一點描述的賽博龐克招財貓\n\n> prmopt: The lucky cat, raise one hand while holding a gold coin in the other hand.cyberpunk style. bright style. whole body can be seen\n\n![cyber punk cat](https://www.marvinswift.com/assets/posts/bing-create/lucky-cat-cyber-punk3.jpeg)\n\nbing create 使用的 model 是 OpenAI 的 DALL．E，產出來的圖片，我覺得很有趣，有興趣的朋友，可以去試試看喔。\n\n## 參考網站\n\n[Bing Create](https://www.bing.com/create)\n\n[Bing create 介紹](/programming/bing-create.html)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 515,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-03-29-bing-create-ai-art.md"
  }
 ]

@@ -1,7 +1,7 @@
 {
  "api_version": 1,
- "generated_at": "2026-09-24T05:13:09.588545+00:00",
- "build_id": "4794e38ffc785552",
+ "generated_at": "2026-09-25T09:54:30.084656+00:00",
+ "build_id": "e6e3db84442005c2",
  "site": {
   "url": "https://www.marvinswift.com",
   "title": "Marv[in]sight",
@@ -13,10 +13,10 @@
  "endpoints": {
   "zh/summaries.json": {
    "path": "/api/v1/zh/summaries.json",
-   "count": 236,
-   "latest": "2026-09-24T13:01:57+08:00",
-   "bytes": 503262,
-   "hash": "05a49bf94cbe4fe8"
+   "count": 237,
+   "latest": "2026-09-25T17:50:09+08:00",
+   "bytes": 504190,
+   "hash": "13e4ba0b2b95a075"
   },
   "en/summaries.json": {
    "path": "/api/v1/en/summaries.json",
@@ -30,14 +30,14 @@
    "count": 5,
    "latest": null,
    "bytes": 1182,
-   "hash": "50a1c98d90c7bc59"
+   "hash": "161d811088ea88df"
   },
   "videos.json": {
    "path": "/api/v1/videos.json",
    "count": null,
    "latest": null,
    "bytes": 9626,
-   "hash": "42f841dd5d4827af"
+   "hash": "30a9bef91d4b5d62"
   },
   "series/agent-build-log.json": {
    "path": "/api/v1/series/agent-build-log.json",
@@ -48,10 +48,10 @@
   },
   "search-index.json": {
    "path": "/api/v1/search-index.json",
-   "count": 338,
-   "latest": "2026-09-24T13:01:57+08:00",
-   "bytes": 203044,
-   "hash": "7eff9eb14d8b5a16"
+   "count": 339,
+   "latest": "2026-09-25T17:50:09+08:00",
+   "bytes": 203669,
+   "hash": "69d56a0692c65885"
   },
   "zh/posts.json": {
    "paginated": true,
@@ -59,17 +59,17 @@
    "pages": [
     {
      "path": "/api/v1/zh/posts-1.json",
-     "count": 165,
-     "latest": "2026-09-24T13:01:57+08:00",
-     "bytes": 904070,
-     "hash": "224a537899c93397"
+     "count": 164,
+     "latest": "2026-09-25T17:50:09+08:00",
+     "bytes": 904365,
+     "hash": "d3b488ba74eea5ed"
     },
     {
      "path": "/api/v1/zh/posts-2.json",
-     "count": 70,
-     "latest": "2023-03-29T09:00:00+08:00",
-     "bytes": 329194,
-     "hash": "4aab93dc041707bb"
+     "count": 72,
+     "latest": "2023-03-31T08:57:00+08:00",
+     "bytes": 336949,
+     "hash": "706e61eb8e7b5e0b"
     },
     {
      "path": "/api/v1/zh/posts-3.json",
@@ -79,10 +79,10 @@
      "hash": "dc40642174122b80"
     }
    ],
-   "count": 236,
-   "latest": "2026-09-24T13:01:57+08:00",
-   "bytes": 1827387,
-   "hash": "de23a23c67b02396"
+   "count": 237,
+   "latest": "2026-09-25T17:50:09+08:00",
+   "bytes": 1835437,
+   "hash": "8f231679ecb4a978"
   },
   "en/posts.json": {
    "path": "/api/v1/en/posts.json",

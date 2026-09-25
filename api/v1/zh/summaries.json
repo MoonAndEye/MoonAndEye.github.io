@@ -1,5 +1,29 @@
 [
  {
+  "slug": "it-ironman-2026-day-18",
+  "title": "[IT 鐵人賽] 借圖修臺：Desktop App 的換行和 OAuth 一直沒弄好，我讓 agent 照 pi-gui 的實作改 - Day 18",
+  "lang": "zh",
+  "date": "2026-09-25T17:50:09+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Desktop App",
+   "OAuth",
+   "pi-gui"
+  ],
+  "summary": "讓 coding agent 讀 pi-gui，照它處理換行與 OAuth 的方式修改 Desktop App，兩個拖很久的問題因此打通。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-18/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-18-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2055,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-09-25-it-ironman-2026-day-18.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-12",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Remote Config 控參數：Day 1 就把強制更新、建議更新、維修中、正常使用做進去 - Tip 12",
   "lang": "zh",
