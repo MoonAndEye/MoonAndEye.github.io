@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-13",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 開發建議埋 debug console log，AI 很好 debug - Tip 13",
+  "lang": "zh",
+  "date": "2026-09-25T18:00:19+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "在 mobile 的重要流程埋好 debug console log，讓 AI 除錯有線索，同時避免雜訊與敏感資料外洩。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-13/",
+  "hero_image": null,
+  "content": "本文同步刊登於 [iT 邦幫忙](https://ithelp.ithome.com.tw/articles/10417000)。\n\n這篇是 Vibe Coding 系列 Tip 13：在 mobile 的重要路徑埋 debug console log，讓 AI 除錯時有執行線索。\n\n做 mobile，我建議埋 debug console log。這樣 AI 很好 debug。\n\n## 為什麼\n\n他看不到手機的畫面，看得到 log。畫面上發生的事，log 裡有一行，他就能對出來是哪一步出了問題；沒有那一行，他只能猜。\n\n## 我怎麼做\n\n埋在會出事的地方：\n\n- 畫面切換：從哪一頁到哪一頁\n- API：送出什麼、回來什麼、花了多久\n- 登入狀態變化：登入、登出、token 過期\n- Remote Config 抓到的值（接 Tip 12）\n\n格式固定，每一行帶一個 tag，好 grep：\n\n```\n[Auth] signIn ok uid=abc123\n[API] GET /cart 200 132ms\n[RemoteConfig] app_status=normal min_supported_version=1.2.0\n[Nav] Cart -> Checkout\n```\n\n只在 debug build 開，release 不印：uid、token 這種東西別留在使用者裝置的 console 裡。出問題的時候，把 console 的 log 整段抓下來貼給他，或者讓他自己跑起來抓（Tip 10 的 XcodeBuildMCP 就能抓 log），指出哪一段不對，他從那幾行開始查。\n\n## 小結\n\ndebug console log 埋好，他 debug 的時候有東西可以看。\n\n明天講怎麼下指令：先讓他把設計攤出來、不動手。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 317,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-09-25-it-ironman-2026-vibe-coding-tip-13.md"
+ },
+ {
   "slug": "it-ironman-2026-day-18",
   "title": "[IT 鐵人賽] 借圖修臺：Desktop App 的換行和 OAuth 一直沒弄好，我讓 agent 照 pi-gui 的實作改 - Day 18",
   "lang": "zh",

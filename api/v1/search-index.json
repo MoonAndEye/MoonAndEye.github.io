@@ -1,5 +1,16 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-13",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 開發建議埋 debug console log，AI 很好 debug - Tip 13",
+  "category": "programming",
+  "tags": [],
+  "summary": "在 mobile 的重要流程埋好 debug console log，讓 AI 除錯有線索，同時避免雜訊與敏感資料外洩。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-13/",
+  "date": "2026-09-25T18:00:19+08:00",
+  "word_count": 317
+ },
+ {
   "slug": "it-ironman-2026-day-18",
   "lang": "zh",
   "title": "[IT 鐵人賽] 借圖修臺：Desktop App 的換行和 OAuth 一直沒弄好，我讓 agent 照 pi-gui 的實作改 - Day 18",
