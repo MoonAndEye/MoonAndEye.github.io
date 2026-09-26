@@ -1,5 +1,29 @@
 [
  {
+  "slug": "it-ironman-2026-day-20",
+  "title": "[IT 鐵人賽] 頓悟：我一直在找那個很強的功法，結果只需要把步驟拆小 - Day 20",
+  "lang": "zh",
+  "date": "2026-09-27T01:13:52+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Pi",
+   "Agent"
+  ],
+  "summary": "我把一項 Agent capability 拆成可檢查的小步驟，並以「找 repo」對照 pi 的 read、edit、write、bash，讓每一步是否完成都能驗收。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-20/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-20-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10417692)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 022](https://www.marvinswift.com/zh/programming/agent-build-log-episode-022/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 022](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-022.png)\n\n昨天把生態系看了一圈，回到我自己要做的東西。第一件跟功能無關，是一件想通的事。\n\n前面十幾天我一直在找一個東西：這個 Agent 還缺哪一個很強的能力，補上去他就能真的替我做事。這一天我發現，可能沒有那一個能力。我要做的是把「做完一件事」拆成夠小的步驟，然後讓他一步一步走完。\n\n## 把一個開發者的一天拆開\n\n我把自己平常完成一件事的過程攤開來看。\n\n先是語言的聽、說、讀、寫。聽懂別人在說什麼、讀懂需求，也要把自己的理解、問題和結果講清楚。\n\n收到需求之後，先弄懂文字背後真正要解決的問題。然後把需求轉成實作時用得上的 prompt 或 notes，再把整件事拆成 Step 1 到 Step N。\n\n實作完，把 App build 起來。除了確認自己改的地方，還要實際走一遍相關的功能，跟使用者最主要的 happy path，確定新的修改沒有把原本的流程弄壞。\n\n最後回覆 stakeholder：任務做完了，做了什麼，怎麼確認結果。\n\n攤開之後我發現，這一步一步的小能力，就是我要做的 Agent capabilities。\n\n## 有些他本來就會\n\n這些小步驟裡，有幾個現在的 LLM 已經會了，我不需要重做。理解自然語言、整理文字、把需求初步拆成步驟，這些是模型帶來的。\n\n我真正要做的，是把剩下的步驟規劃清楚：把 App build 起來、實際走過功能、把結果整理成別人看得懂的報告送出去。這些要我一個一個定義。\n\n## 拿找 repo 那一題拆一次\n\n第三章天天在跑的那一題，拆開來大概是五步。\n\n1. 讀題：我講了一個目的，他要弄清楚我在找什麼。\n2. 決定去哪裡查：哪些地方會有我的 repo 和它們的說明。\n3. 查：真的去看，一次或幾次。\n4. 從查到的東西裡挑候選，跟目的比對。\n5. 答：名字或連結。\n\n第一步和第四步模型本來就會，理解一句話、比對幾段說明，這是它帶來的。第二步和第三步是要走的路。第五步是收尾。\n\n第三章那幾天的差別，用這五步就講得清楚。Day 15 的 Terra 有幾題跳過了第三步，從第一步直接到第五步，答對的還是答對，但那幾題的過程在 session 檔案裡是空的。Day 16 把 effort 拉高，它把第三步補回來了。Day 17 的 Luna 是另一種：每一步都快，步數多、來回多，加起來最慢，最後還沒做好。\n\n步驟本來就在那裡，只是沒有人把它們一個一個寫下來。寫下來之後，哪一步走了、哪一步跳了、哪一步走了三遍，看得見也數得出來。\n\n![Day 20：把找 repo 拆成五個可檢查步驟](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-20-main.png)\n\n## 每一步落到 pi 上是什麼\n\n拆出來的小步驟，落到 pi 上就是他的回圈轉一輪、呼叫一次工具。Day 02 講過他的核心是一個回圈，每一輪結束都在決定要不要再轉一次。Day 01 講過他預設只開四個工具：read、bash、edit、write。把上面那些步驟對過去，大概是這個形狀。\n\n| 小步驟 | 落在哪裡 |\n| --- | --- |\n| 聽懂需求、弄懂真正要解的問題、初步拆步驟 | 模型自己的一輪，不呼叫工具 |\n| 讀 repo、讀規格、讀上一步的結果 | read |\n| 改程式、寫 notes、寫報告 | edit、write |\n| build、跑測試、切 branch | bash（之後有些會換成專門的工具，第四章會講） |\n| 回覆 stakeholder | 最後那一段回答 |\n\n這張表講的是形狀，每一件事的細節等做到那一件再講。它讓我看清一件事：capability 這個詞聽起來很大，拆到底就是一串「讀什麼、寫什麼、跑什麼、答什麼」。步驟切得夠小，每一輪要做的事就清楚。\n\nDay 10 講過每一輪都會記進 session 檔案。所以一件事拆成幾步、他實際走了幾步，事後翻得到。第三章數的 tool calls，就是這個數字。\n\n## 小結\n\n我一直在找那個很強的能力。答案或許是把步驟分解開來，每一步都定義清楚，讓他一步一步走完。\n\n拆開之後，每一步都很普通：讀什麼、寫什麼、跑什麼、答什麼。要做的是把它們一個一個寫清楚，寫清楚之後，走完沒走完才看得見。\n\n這一章接下來做四件東西，每一件都是這樣拆出來的：spec-diff、Project Scaffold、Bug Blame、Acceptance。明天先講第一件，也講這些東西在 Desktop App 上長什麼樣：我替它們開了一個新的區域。\n\n原文：[Agent Build Log — Episode 022](https://www.marvinswift.com/zh/programming/agent-build-log-episode-022/)\n\n---\n\n> **凡人修 Agent 傳｜第二十回（Day 20）**\n>\n> ![凡人修 Agent 傳 Day 20 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-20-serial.png)\n>\n> 天亮換上空錄石。手的主人進來，先蹲下去，把地上那三顆玉珠撿起來，擱回臺上那一列。從匣壓在我背上那天滾下去之後，它們一直在那裡。\n>\n> 他刻了一道念：把玉珠按大小排好。\n>\n> 我做了。這件事我做過很多次。排完他沒有說對，也沒有說錯。他把玉珠打亂，重新刻念。這一次念很短：把臺上所有玉珠取下來，一排擱在臺沿。\n>\n> 我做了。石上兩筆。\n>\n> 第二道念：一顆一顆量，量完念出來。\n>\n> 我量了。石上多了三十幾筆。\n>\n> 第三道：從小到大排。第四道：排完，從頭到尾看一遍，有沒有哪一顆比前一顆小。第五道：有就換位置，再看一遍。第六道：把每一顆的位置抄到靈幕上，一顆一行。第七道：抄完，對著臺上的玉珠再對一遍。第八道：對完，把靈幕上的字從第一行往上捲，一行一行走過去。第九道：走完，說做完了。第十道：說完，回頭看臺上那一列。\n>\n> 每一道念他刻完就等。等我做完，再刻下一道。十道念，十次等。\n>\n> 這件事我一個上午做了三遍。第二遍、第三遍他不再重刻，神識探進玉片，把那十道念一道一道點亮，點一道我走一步。石上很長，每一步都在，一步接一步。\n>\n> 午後他不點了。他在我面前掐訣。手指結了一個印，十道念一道一道從玉片裡浮出來，收進印裡。我身上那一側，圖紙點過的地方，熱了一下，多了一道紋。\n>\n> 他把玉珠打亂。印一掐。\n>\n> 紋亮了。我取玉珠，量，排。排到第五步，紋暗了。我停在那裡，手裡一顆玉珠。\n>\n> 他看石上的字，看了一會。印裡少收了一道念，第五道那一句。他把紋磨掉。神識點亮十道念，我再走一遍。再掐訣，這一次他數著收，十道。紋又多一道。\n>\n> 玉珠打亂。印一掐。\n>\n> 紋亮。取，量，排，看，換，抄，對。靈幕上三十幾行字從底下一行一行往上走，走到頂。我說：做完了。回頭看臺上那一列，從小到大。石上一長串，一步都不少。\n>\n> 他掐了第三次，第四次。每一次玉珠都排好，靈幕上的字都一行一行往上走。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 身上多了一道紋。玉片裡那十道念還在，收在一個印裡。臺上那一列玉珠從小到大，一顆都不在地上。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2313,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-09-27-it-ironman-2026-day-20.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-14",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜先讓他把設計攤出來、不動手：一段 think-mode prompt - Tip 14",
   "lang": "zh",
@@ -3564,74 +3588,5 @@
   "word_count": 173,
   "reading_minutes": 1,
   "source_path": "_posts/programming/zh/2023-04-04-twitter-change-logo-to-doge.md"
- },
- {
-  "slug": "twitter-algorithm",
-  "title": "Twitter 開源了推薦演算法",
-  "lang": "zh",
-  "date": "2023-04-03T00:11:00+08:00",
-  "category": "programming",
-  "tags": [
-   "Twitter",
-   "open source",
-   "algorithm"
-  ],
-  "summary": "Twitter opened algorithm of recommend",
-  "url": "https://www.marvinswift.com/programming/twitter-algorithm.html",
-  "hero_image": null,
-  "content": "## Twitter 開源了使用在 Twitter 上的推薦演算法\n\n馬斯克實現了他在併購 Twitter 時講過的話，「要開源演算法」\n\n現在，這個 repo 已經在 github 上公開了，任何人都可以 fork 了\n\n[Twitter algorithm link](https://github.com/twitter/the-algorithm)\n\n## 怎樣做你的 tweet 才會被演算法提高權重呢？\n\n[這篇文章有對演算法整理](https://vocus.cc/article/6427f71ffd897800010fa4e6)\n\n### 以下有利觸及\n\n- 點擊推文愛心表示 favorite 喜歡 30X boost\n- 轉推 retweet 20X boost\n- 每個推文回覆只有 1X\n- 推文有圖 2X boost\n- 推文有影片 2X boost\n- 在信任圈 Trusted Circle 3X\n- 點擊進入推文，並在那停留至少2分鐘\n- 用戶打開推文作者個人資料頁面並互動喜歡或回覆推文\n- 回覆推文並被推文作者互動\n- 付費藍勾，如果是你關注又有藍勾的 4X boost，沒關注的藍勾 2X boost\n\n### 以下不利觸及\n\n- 非新聞媒體的外連連結 URL 對觸及不佳，除非有高互動，如果沒有高互動會被視為spam降觸及權重\n- 有外連 URL 沒有文字，失敗中的失敗\n- 如果出現大量unfollowed，你會自然被算法隱形\n- 沒收功就罵髒話，講冒犯的話 0.1X\n- 負面回饋：顯示較少、屏蔽、靜音、濫用和Spam舉報\n- 用太多hashtag 0.6X\n- 寫錯字或是創造字電腦認不出來 0.01X\n- 推文是英文，但是UI語言不是英文 0.7X\n- UI語言是英文，但推文不是 0.3X\n- 用戶語言和推文語言不同，兩者都不是英文 0.1X\n\n## 參考連結\n\n- [Twitter 開源推薦演算法，從中了解社群媒體推送邏輯](https://vocus.cc/article/6427f71ffd897800010fa4e6)\n\n- [Intl Econ Observe Twitter](https://mobile.twitter.com/IEObserve)\n\n- [Intl Econ 的推](https://mobile.twitter.com/IEObserve/status/1642148470944575488)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 442,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-04-03-twitter-algorithm.md"
- },
- {
-  "slug": "bing-chat-can-creat-art",
-  "title": "現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)",
-  "lang": "zh",
-  "date": "2023-04-02T23:09:00+08:00",
-  "category": "programming",
-  "tags": [
-   "AI",
-   "bing",
-   "create",
-   "art",
-   "openAI"
-  ],
-  "summary": "using bing chat drawing",
-  "url": "https://www.marvinswift.com/programming/bing-chat-can-creat-art.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/bing-create/bing-chat-balance-mode.jpeg",
-  "content": "## Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖\n\n在前面的文章有提到\n\n1. [Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄](https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html)\n\n2. [Bing 釋出了 AI 繪圖工具 bing.com/create](/life/:title:output_ext)\n\n而最近，我發現可以直接在 Edge 的外掛功能中，使用 Bing Chat 也能讓 AI 進行繪圖。而 Bing Chat 好處是，每次回答他都會給你三個選項，好讓使用者可以和 Bing 的聊天更容易持續下去，所以可以不斷的對 AI 進行新的繪圖指令。\n\n但使用上要注意，Bing Chat 模式中，我目前測試只有「更多富有創意」會幫你畫圖，其他模式他都只會回應「你的那個需求，要怎麼畫山來」。或是，「你的那個需求，有哪些網站有提供相關的技法」。\n\n以下是和 bing chat 的聊天截圖\n\n### 平衡模式 - 不能幫你畫圖\n![Bing chat creative mode - 不能幫你畫圖](https://www.marvinswift.com/assets/posts/bing-create/bing-chat-balance-mode.jpeg)\n\n### 創意模式 - 會輸出指令到 bing create\n![創意模式 - 會輸出指令到 bing create](https://www.marvinswift.com/assets/posts/bing-create/bing-chat-creative-mode.jpeg)\n\n但請注意，因為產圖在這個時代仍然要不短的時間，所以這個指令是會讓 bing chat 卡住的，也沒辦法在 bing create 完成後將圖案呈現。比較好的方法，是過一陣子後，再去 bing create 的網站，然後進入歷史紀錄去看圖案有沒有畫好。因為 bing create 和 edge 的帳號是有連動的，如果你在 bing create 網站上登入和 edge 一樣的帳號，你可以去看歷史紀錄。\n\n## Bing Create 畫出來的圖\n\n### 詠唱詞\na knight and a dragon fighting in a realistic style, the knight's shield facing the dragon, showing a brave confrontation\n![dragon fight](https://www.marvinswift.com/assets/posts/bing-create/dragon-fight1.jpeg)\n\n![dragon fight](https://www.marvinswift.com/assets/posts/bing-create/dragon-fight2.jpeg)\n\n## 相關網址\n\n- [Bing chat](https://www.bing.com/)\n\n- [Bing create](https://www.bing.com/create)\n\n- [Edge 下載](https://www.microsoft.com/edge/download)\n\n- [Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄](https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html)\n\n- [Bing 釋出了 AI 繪圖工具 bing.com/create](/life/:title:output_ext)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 480,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-04-02-bing-chat-can-creat-art.md"
- },
- {
-  "slug": "pce-index-febuary",
-  "title": "美2月核心PCE增速低於預期",
-  "lang": "zh",
-  "date": "2023-04-01T00:17:00+08:00",
-  "category": "finance",
-  "tags": [
-   "財經數據",
-   "finance",
-   "stock",
-   "投資"
-  ],
-  "summary": "PCE is lower than predict",
-  "url": "https://www.marvinswift.com/finance/pce-index-febuary.html",
-  "hero_image": null,
-  "content": "美2月核心PCE增速低於預期\n\n美國商務部周五公布的數據顯示，2月份個人消費支出（PCE）物價指數按年增長5%，低於市場預期的5.1%和1月份修正後的5.3%。這是一項衡量美國通脹的關鍵指標，也是聯邦儲備局（Fed）制定貨幣政策時的首要參考。\n\n除去食品和能源等波動性因素，核心PCE物價指數按年增長4.6%，也低於市場預期的4.7%和1月份的4.7%。按月計算，核心PCE物價指數增長0.3%，與市場預期和1月份一致。\n\n數據公布後，美國公債收益率和美元指數均有所下跌，反映市場對美國通脹壓力有所緩和。美股主要指數則開盤上漲，投資者對Fed可能接近升息行動尾聲感到放心。\n\n分析師指出，雖然PCE物價指數仍處於高位，但已經出現放緩跡象，這與Fed的預期相符。隨著供應鏈瓶頸逐步解除和能源價格回落，通脹水平有望在今年下半年進一步回落。不過，Fed仍需密切關注通脹的持續性和穩定性，以及其對經濟和金融市場的影響。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 349,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-04-01-pce-index-febuary.md"
  }
 ]

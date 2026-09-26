@@ -1,5 +1,28 @@
 [
  {
+  "slug": "it-ironman-2026-day-20",
+  "title": "[IT 鐵人賽] 頓悟：我一直在找那個很強的功法，結果只需要把步驟拆小 - Day 20",
+  "lang": "zh",
+  "date": "2026-09-27T01:13:52+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Pi",
+   "Agent"
+  ],
+  "summary": "我把一項 Agent capability 拆成可檢查的小步驟，並以「找 repo」對照 pi 的 read、edit、write、bash，讓每一步是否完成都能驗收。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-20/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-20-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2313,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-09-27-it-ironman-2026-day-20.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-14",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜先讓他把設計攤出來、不動手：一段 think-mode prompt - Tip 14",
   "lang": "zh",

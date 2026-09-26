@@ -1,5 +1,74 @@
 [
  {
+  "slug": "twitter-algorithm",
+  "title": "Twitter 開源了推薦演算法",
+  "lang": "zh",
+  "date": "2023-04-03T00:11:00+08:00",
+  "category": "programming",
+  "tags": [
+   "Twitter",
+   "open source",
+   "algorithm"
+  ],
+  "summary": "Twitter opened algorithm of recommend",
+  "url": "https://www.marvinswift.com/programming/twitter-algorithm.html",
+  "hero_image": null,
+  "content": "## Twitter 開源了使用在 Twitter 上的推薦演算法\n\n馬斯克實現了他在併購 Twitter 時講過的話，「要開源演算法」\n\n現在，這個 repo 已經在 github 上公開了，任何人都可以 fork 了\n\n[Twitter algorithm link](https://github.com/twitter/the-algorithm)\n\n## 怎樣做你的 tweet 才會被演算法提高權重呢？\n\n[這篇文章有對演算法整理](https://vocus.cc/article/6427f71ffd897800010fa4e6)\n\n### 以下有利觸及\n\n- 點擊推文愛心表示 favorite 喜歡 30X boost\n- 轉推 retweet 20X boost\n- 每個推文回覆只有 1X\n- 推文有圖 2X boost\n- 推文有影片 2X boost\n- 在信任圈 Trusted Circle 3X\n- 點擊進入推文，並在那停留至少2分鐘\n- 用戶打開推文作者個人資料頁面並互動喜歡或回覆推文\n- 回覆推文並被推文作者互動\n- 付費藍勾，如果是你關注又有藍勾的 4X boost，沒關注的藍勾 2X boost\n\n### 以下不利觸及\n\n- 非新聞媒體的外連連結 URL 對觸及不佳，除非有高互動，如果沒有高互動會被視為spam降觸及權重\n- 有外連 URL 沒有文字，失敗中的失敗\n- 如果出現大量unfollowed，你會自然被算法隱形\n- 沒收功就罵髒話，講冒犯的話 0.1X\n- 負面回饋：顯示較少、屏蔽、靜音、濫用和Spam舉報\n- 用太多hashtag 0.6X\n- 寫錯字或是創造字電腦認不出來 0.01X\n- 推文是英文，但是UI語言不是英文 0.7X\n- UI語言是英文，但推文不是 0.3X\n- 用戶語言和推文語言不同，兩者都不是英文 0.1X\n\n## 參考連結\n\n- [Twitter 開源推薦演算法，從中了解社群媒體推送邏輯](https://vocus.cc/article/6427f71ffd897800010fa4e6)\n\n- [Intl Econ Observe Twitter](https://mobile.twitter.com/IEObserve)\n\n- [Intl Econ 的推](https://mobile.twitter.com/IEObserve/status/1642148470944575488)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 442,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2023-04-03-twitter-algorithm.md"
+ },
+ {
+  "slug": "bing-chat-can-creat-art",
+  "title": "現在 Edge 的外掛 bing chat 也可以用指令來畫圖了(限創意模式)",
+  "lang": "zh",
+  "date": "2023-04-02T23:09:00+08:00",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "bing",
+   "create",
+   "art",
+   "openAI"
+  ],
+  "summary": "using bing chat drawing",
+  "url": "https://www.marvinswift.com/programming/bing-chat-can-creat-art.html",
+  "hero_image": "https://www.marvinswift.com/assets/posts/bing-create/bing-chat-balance-mode.jpeg",
+  "content": "## Bing Chat 的 更多創意 模式，讓你可以使用 Bing 來繪圖\n\n在前面的文章有提到\n\n1. [Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄](https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html)\n\n2. [Bing 釋出了 AI 繪圖工具 bing.com/create](/life/:title:output_ext)\n\n而最近，我發現可以直接在 Edge 的外掛功能中，使用 Bing Chat 也能讓 AI 進行繪圖。而 Bing Chat 好處是，每次回答他都會給你三個選項，好讓使用者可以和 Bing 的聊天更容易持續下去，所以可以不斷的對 AI 進行新的繪圖指令。\n\n但使用上要注意，Bing Chat 模式中，我目前測試只有「更多富有創意」會幫你畫圖，其他模式他都只會回應「你的那個需求，要怎麼畫山來」。或是，「你的那個需求，有哪些網站有提供相關的技法」。\n\n以下是和 bing chat 的聊天截圖\n\n### 平衡模式 - 不能幫你畫圖\n![Bing chat creative mode - 不能幫你畫圖](https://www.marvinswift.com/assets/posts/bing-create/bing-chat-balance-mode.jpeg)\n\n### 創意模式 - 會輸出指令到 bing create\n![創意模式 - 會輸出指令到 bing create](https://www.marvinswift.com/assets/posts/bing-create/bing-chat-creative-mode.jpeg)\n\n但請注意，因為產圖在這個時代仍然要不短的時間，所以這個指令是會讓 bing chat 卡住的，也沒辦法在 bing create 完成後將圖案呈現。比較好的方法，是過一陣子後，再去 bing create 的網站，然後進入歷史紀錄去看圖案有沒有畫好。因為 bing create 和 edge 的帳號是有連動的，如果你在 bing create 網站上登入和 edge 一樣的帳號，你可以去看歷史紀錄。\n\n## Bing Create 畫出來的圖\n\n### 詠唱詞\na knight and a dragon fighting in a realistic style, the knight's shield facing the dragon, showing a brave confrontation\n![dragon fight](https://www.marvinswift.com/assets/posts/bing-create/dragon-fight1.jpeg)\n\n![dragon fight](https://www.marvinswift.com/assets/posts/bing-create/dragon-fight2.jpeg)\n\n## 相關網址\n\n- [Bing chat](https://www.bing.com/)\n\n- [Bing create](https://www.bing.com/create)\n\n- [Edge 下載](https://www.microsoft.com/edge/download)\n\n- [Edge 更新，這一版的 Edged 將 AI 功能直接放在側邊欄](https://moonandeye.github.io/programming/2023/03/20/edge-update-embed-ai.html)\n\n- [Bing 釋出了 AI 繪圖工具 bing.com/create](/life/:title:output_ext)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 480,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2023-04-02-bing-chat-can-creat-art.md"
+ },
+ {
+  "slug": "pce-index-febuary",
+  "title": "美2月核心PCE增速低於預期",
+  "lang": "zh",
+  "date": "2023-04-01T00:17:00+08:00",
+  "category": "finance",
+  "tags": [
+   "財經數據",
+   "finance",
+   "stock",
+   "投資"
+  ],
+  "summary": "PCE is lower than predict",
+  "url": "https://www.marvinswift.com/finance/pce-index-febuary.html",
+  "hero_image": null,
+  "content": "美2月核心PCE增速低於預期\n\n美國商務部周五公布的數據顯示，2月份個人消費支出（PCE）物價指數按年增長5%，低於市場預期的5.1%和1月份修正後的5.3%。這是一項衡量美國通脹的關鍵指標，也是聯邦儲備局（Fed）制定貨幣政策時的首要參考。\n\n除去食品和能源等波動性因素，核心PCE物價指數按年增長4.6%，也低於市場預期的4.7%和1月份的4.7%。按月計算，核心PCE物價指數增長0.3%，與市場預期和1月份一致。\n\n數據公布後，美國公債收益率和美元指數均有所下跌，反映市場對美國通脹壓力有所緩和。美股主要指數則開盤上漲，投資者對Fed可能接近升息行動尾聲感到放心。\n\n分析師指出，雖然PCE物價指數仍處於高位，但已經出現放緩跡象，這與Fed的預期相符。隨著供應鏈瓶頸逐步解除和能源價格回落，通脹水平有望在今年下半年進一步回落。不過，Fed仍需密切關注通脹的持續性和穩定性，以及其對經濟和金融市場的影響。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 349,
+  "reading_minutes": 1,
+  "source_path": "_posts/finance/2023-04-01-pce-index-febuary.md"
+ },
+ {
   "slug": "bing-chat-brain-storming",
   "title": "使用 Bing Chat 幫我發想一些 App 的 idea",
   "lang": "zh",
