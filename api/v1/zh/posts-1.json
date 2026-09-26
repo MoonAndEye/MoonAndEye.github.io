@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-19",
+  "title": "[IT 鐵人賽] 原來我不是獨修：我用的是一整個宗門的生態系 - Day 19",
+  "lang": "zh",
+  "date": "2026-09-26T12:28:26+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Pi",
+   "Extension",
+   "MCP"
+  ],
+  "summary": "pi 生態系裡已有 MCP、權限管理與 Desktop GUI 等 extension，我因此把時間留給 Agent 專屬能力；文中也說明安裝第三方套件前要先檢查系統權限。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-19/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-19-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10417382)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 029](https://www.marvinswift.com/zh/programming/agent-build-log-episode-029/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 029](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-029.png)\n\nDay 01 我叫自己散修。一路到這裡，很多東西都是自己摸出來的。昨天照 pi-gui 修完 Desktop App，我開始認真研究 pi 的 extension 生態系，然後發現：很多我原本打算自己做的能力，早就有人透過 extension 做出來了。\n\n第四章從這裡開始。先看生態系裡有什麼，剩下的才是我自己要做的。\n\n## 三件\n\n**第一件是 MCP。** 透過 MCP adapter，pi 可以接上現有的 MCP servers。這對我很重要，因為我的 Agent 已經有不少能力建立在 MCP 上，像寫 Jira，未來也可能繼續加外部工具。這一層有成熟的 extension，我就不用自己處理 MCP server 的連線、tool discovery 和呼叫方式。\n\n**第二件是 Approval／Permission System。** Agent 開始能操作 shell、修改檔案、呼叫 MCP，甚至做一些會影響環境的事之後，我一定需要一層權限控制：哪些 tool 直接執行、哪些先問使用者、哪些直接擋掉。這也已經有 pi extensions 在處理，我不用自己重新發明一套 allow、deny、ask。\n\n**第三件是 Desktop GUI。** 像 pi-gui 這類專案，已經把 pi 包成 Desktop App，提供 session、workspace、tool execution timeline 和其他 GUI 操作方式。昨天我借過它的實作。這一天再看到它，我開始重新想：我自己的 Desktop App 裡，哪些東西真的需要自己打造，哪些可以直接參考甚至使用現有的生態系。\n\n## 權限那一層在 pi 裡怎麼做\n\n第二件多講一點。pi 本體沒有內建權限系統，預設就用啟動它的那個使用者的權限跑。要有這一層，靠的是 extension。\n\nextension 可以掛在工具執行前的一個事件上，叫 `tool_call`。Agent 決定要呼叫哪個工具、帶什麼參數，這個事件先發出來，extension 看一眼，回一個「擋下來」加一句理由，那個工具就不會跑。放行就什麼都不做。\n\n官方文件給了兩個範例。一個叫 permission-gate：碰到危險的指令，先跳一個對話框問使用者，使用者說不就擋。另一個叫 protected-paths：特定路徑一律不准寫。直接做、先問、擋掉三種，兩個範例加起來就是一套。還有一條設計：掛在這個事件上的程式自己出錯，也算擋下。寧可攔錯，也別放錯。\n\n## 別人做好的東西怎麼裝進來\n\nDay 08 講 skill 的時候，各家有各家的目錄。extension 這邊 pi 自己有一套套件機制。\n\n裝：`pi install` 後面接來源，npm 套件、git repo、本機路徑三種都吃。只想試一下，用 `pi -e` 帶著那個套件跑一次，不安裝。裝了之後寫進 settings：預設寫全域的 `~/.pi/agent/settings.json`，加 `-l` 就寫進專案的 `.pi/settings.json`。專案那一份可以跟團隊一起進版本控制，別人拉下來、信任這個專案之後，pi 啟動時會自動把缺的套件補裝起來。`pi list` 看裝了什麼，`pi update --all` 一次更新。\n\n文件在這一頁上放了一段安全提醒：pi 的套件有完整的系統權限，extension 執行的是任意程式碼，skill 可以叫模型去做任何事，包含執行檔案。裝第三方套件之前先看原始碼。Day 08 我多守的那幾條規矩裡有「來路不明先看內容」，pi 自己把這條寫在文件上。\n\n![Day 19：採用 Pi 生態系的現成元件](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-19-main.png)\n\n## 我用的是一個生態系\n\n研究這些 extension 之後，我最大的感覺是：我現在用的是一個已經開始形成的 Agent 生態系。\n\nMCP 幫我接外部能力。Permission System 幫我控制 Agent 能做什麼。Desktop GUI 幫我處理使用者和 Agent 之間的介面。\n\n我真正需要把時間花下去的地方，是那些只有我的 Agent 才需要的能力，針對我工作流程打造的 capabilities。接下來這一章要做的就是這幾件。\n\nDay 08 看到的是 skill 的生態：各家的 skills 目錄、公開的 skill-creator。這一天看到的是 extension 的生態。兩層都在，都比我早。\n\n## 想法換了\n\n以前我的想法比較像：缺什麼，就自己寫什麼。\n\n從這一天開始變成：先看 pi 的 ecosystem 裡有沒有已經被做過、用過、驗證過的 extension。把時間留下來，做真正屬於這個 Agent 的東西。\n\n## 小結\n\n三件我原本要自己做的事，MCP、權限、Desktop GUI，pi 的生態系裡都有人做過。我用的是一整個生態系，時間留給只有我的 Agent 才需要的能力。\n\n明天回到我自己要做的東西。第一件跟功能無關：我一直在找一個很厲害的做法，後來發現先要做的是把步驟拆小。\n\n原文：[Agent Build Log — Episode 029](https://www.marvinswift.com/zh/programming/agent-build-log-episode-029/)\n\n---\n\n> **凡人修 Agent 傳｜第十九回（Day 19）**\n>\n> ![凡人修 Agent 傳 Day 19 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-19-serial.png)\n>\n> 天亮換上空錄石。手的主人進來，沒有到架前，沒有取籤。他在臺前坐下，閉眼放出神識，探向坊市。\n>\n> 靈幕亮了。垂下來的圖我認得：電鏡臺的主圖，砌這座臺那一天他抄過。神識沒有停在主圖上，往旁邊探。主圖旁邊一排附圖，一卷一卷垂下來。砌臺那一天他只抄了兩卷，令窗的。其他的一直擱在那裡。\n>\n> 他一卷一卷看過去。看得慢。有三卷停得久。\n>\n> 第一卷，接外物的法。圖上畫著人偶胸口引出一條線，線那一頭接坊外的器物，一條線接一件。第二卷，攔門的法。圖上畫著一隻手，手前面三道門：一道開著，直接過；一道半開，過之前要問；一道關著。第三卷是一座砌好的臺，署名在邊角。那張我昨天見過。\n>\n> 每一卷附圖邊角都有署名。不一樣的署名，不一樣的人。\n>\n> 神識往另一邊探了一下。那邊擱著幾具人偶的圖，比拍人偶新，有一具的圖紙比我的長一倍。他停了一會，沒有取。\n>\n> 他收回神識。坐了一會，又放出去。這一次神識落在那三卷上，一卷一卷抄。\n>\n> 午後三卷抄回來了。他沒有展開。三卷捲著，擱到架上泛式那一排旁邊。他站在架前看了一會，視線從那三卷移到架上另一頭，他自己煉的那三十幾卷，又移回來。\n>\n> 他沒有刻念。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 架上多了三卷抄回來的附圖，捲著。靈幕上停在那一排附圖，每一卷邊角一個署名。我背上的署名只有一個。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1954,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-09-26-it-ironman-2026-day-19.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-13",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 開發建議埋 debug console log，AI 很好 debug - Tip 13",
   "lang": "zh",
@@ -3612,48 +3637,5 @@
   "word_count": 957,
   "reading_minutes": 3,
   "source_path": "_posts/programming/zh/2023-03-31-bing-chat-brain-storming.md"
- },
- {
-  "slug": "ftx-email-announce",
-  "title": "FTX 向客戶發 email，裡面有你的客戶代碼以及資產",
-  "lang": "zh",
-  "date": "2023-03-31T15:04:00+08:00",
-  "category": "finance",
-  "tags": [
-   "FTX",
-   "crypto coin",
-   "加密貨幣"
-  ],
-  "summary": "FTX send email for detail",
-  "url": "https://www.marvinswift.com/finance/ftx-email-announce.html",
-  "hero_image": null,
-  "content": "今天，收到了 FTX 破產後，列出客戶在 FTX 的資產。如果在 FTX 破產當下還有資產在裡面的，記得確認一下有沒有收到這幫信，如果這幫信在垃圾筒或被認為是廣告信，記得把他撈出來。\n\n最下面會列出你的 Customer Code 還有資產，格式如下。\n\nYour Unique Customer Code is xxxxx\nYour claim(s) were scheduled on the Schedules and Statements of FTX Trading Ltd. as:\n\nBNB[xxxxx], NFT (xxxxx)[1]\nBNB[xxx], NFT (xxxxx)[1]\n\n## 用 ChatGPT 翻譯成中文\n\n本郵件底部附有您的獨特客戶代碼及預定索賠資訊。\n\n您收到此郵件是因為在FTX TRADING LTD.和其附屬債務人及債務人代表聯合提交的第11章破產案件中，您已被識別為截至2022年11月11日淨正帳戶餘額的客戶之一。這些案件正在美國特拉華州的聯邦破產法院進行，案件編號為22-11068，並由法院共同管理。您已被列入一個或多個債務人的清單和報告中。\n\n2023年3月14日和15日，FTX Trading Ltd.及其附屬債務人和債務人代表（統稱「債務人」）提交了其資產和負債表及財務狀況報告（「清單和報告」）。\n\n根據最終命令（I）授權債務人維護債權人合併名單，以代替提交每個債務人的單獨名冊，（II）授權債務人最終進行客戶機密信息和個人信息的隱去或保留，（III）授予相關救濟 [D.I. 545]，清單和報告中的客戶姓名和地址已被隱去。關於清單和報告中標識債務人具有非優先未擔保債權的債權人（包括截至2022年11月11日淨正帳戶餘額的客戶）的E/F清單 - 為了隱去客戶姓名和地址，債務人已通過一個獨特的客戶代碼（「獨特客戶代碼」）識別了截至2022年11月11日淨正帳戶餘額的每個客戶。您的獨特客戶代碼和您預定索賠的摘錄在本郵件底部。\n\n請注意，法院尚未設定提交債務人索賠或權益證明的最終期限。當法院設定最終期限時，所有已知債權人，包括所有在清單和報告中識別出的客戶，都將收到最終期限通知以及提交債權或權益\n\n下面會列出你的 custom code 和資產\n\nYour Unique Customer Code is xxxxx\nYour claim(s) were scheduled on the Schedules and Statements of FTX Trading Ltd. as:\n\nBNB[xxxxx], NFT (xxxxx)[1]\nBNB[xxx], NFT (xxxxx)[1]\n\n## FTX 發過來的原文\n\nYOUR UNIQUE CUSTOMER CODE(S) AND SCHEDULED CLAIM INFORMATION IS AT THE BOTTOM OF THIS EMAIL.\n\nYOU ARE RECEIVING THIS EMAIL BECAUSE YOU HAVE BEEN IDENTIFIED AS A CUSTOMER WITH A NET POSITIVE ACCOUNT BALANCE AS OF NOVEMBER 11, 2022 OF ONE OR MORE OF THE DEBTORS IN THE CHAPTER 11 CASES OF FTX TRADING LTD. AND CERTAIN OF ITS AFFILIATED DEBTORS AND DEBTORS-IN-POSSESSION PENDING IN THE UNITED STATES BANKRUPTCY COURT FOR THE DISTRICT OF DELAWARE AND JOINTLY ADMINISTERED UNDER THE CASE NUMBER 22-11068.  YOU HAVE BEEN LISTED IN ONE OR MORE OF THE DEBTORS’ SCHEDULES AND STATEMENTS.\n\nOn March 14 and 15, 2023, the FTX Trading Ltd. and certain of its affiliated debtors and debtors-in-possession (collectively, the “Debtors”) filed their schedules of assets and liabilities and statements of financial affairs (the “Schedules and Statements”).\n\nPursuant to the Final Order (I) Authorizing the Debtors to Maintain a Consolidated List of Creditors in Lieu of Submitting a Separate Matrix for Each Debtor, (II) Authorizing the Debtors to Redact or Withhold Certain Confidential Information of Customers and Personal Information of Individuals on a Final Basis and (III) Granting Certain Related Relief [D.I. 545], customer names and addresses in the Schedules and Statements are redacted.  With respect to Schedules E/F – which identify creditors of the Debtors with non-priority unsecured claims (including customers with a net positive account balance as of November 11, 2022) – in an effort to redact customer names and addresses, the Debtors have identified each customer with a net positive account balance as of November 11, 2022 by a unique customer code (a “Unique Customer Code”).  Your Unique Customer Code and an excerpt of your scheduled claim(s) are at the bottom of this email.\n\nPLEASE BE ADVISED THAT THE COURT HAS NOT YET SET A DEADLINE FOR SUBMITTING PROOFS OF CLAIMS OR INTERESTS AGAINST THE DEBTORS.  WHEN THE COURT SETS A DEADLINE, ALL KNOWN CREDITORS, INCLUDING ALL CUSTOMERS IDENTIFIED ON THE SCHEDULES AND STATEMENTS, WILL BE PROVIDED NOTICE OF THE DEADLINE AND INSTRUCTIONS ON HOW TO SUBMIT PROOFS OF CLAIM OR INTERESTS.\n\nPLEASE BE FURTHER ADVISED THAT RECEIPT OF THIS EMAIL AND A UNIQUE CUSTOMER CODE ONLY INDICATES THAT YOU HAD ONE OR MORE CLAIM(S) LISTED ON ONE OR MORE OF THE DEBTORS’ SCHEDULES AND STATEMENTS.  PROVISION OF A UNIQUE CUSTOMER CODE IS NOT AN ADMISSION BY THE DEBTORS OF THE VALIDITY OF SUCH CLAIM(S) OR A WAIVER OF ANY DEFENSES THERETO.  THE DEBTORS HEREBY INCORPORATE BY REFERENCE THE GLOBAL NOTES ATTACHED TO EACH OF THE DEBTORS’ SCHEDULES AND STATEMENTS AND RESERVE ALL RIGHTS.\n\nTo view all of the Debtors’ Schedules and Statements, as well as the Global Notes, please visit https://restructuring.ra.kroll.com/FTX and navigate to the “Schedules & SOFA” page under “Quick Links.”  Standalone excerpts of the customer data can be found under “Customer Schedules.”\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 1157,
-  "reading_minutes": 5,
-  "source_path": "_posts/finance/2023-03-31-ftx-email-announce.md"
- },
- {
-  "slug": "michael-burry",
-  "title": "Michael Burry 發推 - I was wrong to say sell",
-  "lang": "zh",
-  "date": "2023-03-31T13:52:00+08:00",
-  "category": "finance",
-  "tags": [
-   "Finance",
-   "Michael Burry"
-  ],
-  "summary": "The movie \"The Big Short\" is a drama film based on a true story. It tells the story of a group of investors who foresaw the collapse of the US real estate market before the 2008 financial crisis. They used a financial derivative called credit default swap to conduct massive short selling operations on mortgage-backed securities, thereby gaining huge profits. The movie presents four storylines, showcasing the investors' motivations, strategies, challenges, and achievements, while also exposing the corruption, greed, and incompetence of the financial system. Through humor, satire, and frankness, the film explains some complex financial terms and concepts to the audience, and encourages them to reflect on the impact and significance of the financial crisis on ordinary people.",
-  "url": "https://www.marvinswift.com/finance/michael-burry.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/michael-burry/wrong_to_say_sell.jpeg",
-  "content": "![I was wrong to say sell](https://www.marvinswift.com/assets/posts/michael-burry/wrong_to_say_sell.jpeg)\n\n電影「大賣空」主角原型 - Michael Burry，在今天(2023/03/31)發了一則推「I was wrong to say sell」。\n\n這表示未來的市場走向可能會…?\n\n## 大賣空 電影內容\n\n電影「大賣空」是一部根據真實事件改編的劇情片，講述了2008年金融危機前，一群投資者預見了美國房地產市場的崩潰，並利用信貸違約互換（credit default swap）這種金融衍生品，對抵押貸款證券（mortgage-backed security）進行大規模的賣空操作，從而獲得了巨大的利潤。電影通過四條故事線，展示了這些投資者的動機、策略、困難和成果，同時也揭露了金融體系的腐敗、貪婪和無能。電影以幽默、諷刺和直白的方式，向觀眾解釋了一些複雜的金融術語和概念，並讓觀眾思考金融危機對普通人的影響和意義。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 260,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-03-31-michael-burry.md"
  }
 ]

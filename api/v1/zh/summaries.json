@@ -1,5 +1,29 @@
 [
  {
+  "slug": "it-ironman-2026-day-19",
+  "title": "[IT 鐵人賽] 原來我不是獨修：我用的是一整個宗門的生態系 - Day 19",
+  "lang": "zh",
+  "date": "2026-09-26T12:28:26+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Pi",
+   "Extension",
+   "MCP"
+  ],
+  "summary": "pi 生態系裡已有 MCP、權限管理與 Desktop GUI 等 extension，我因此把時間留給 Agent 專屬能力；文中也說明安裝第三方套件前要先檢查系統權限。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-19/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-19-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1954,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-09-26-it-ironman-2026-day-19.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-13",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Mobile 開發建議埋 debug console log，AI 很好 debug - Tip 13",
   "lang": "zh",
