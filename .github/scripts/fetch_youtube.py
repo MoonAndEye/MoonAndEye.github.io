@@ -67,15 +67,43 @@ def normalize_timestamp(value):
 
 def extract_json_assignment(text, variable):
     """Decode a JSON object assigned to a variable in a YouTube HTML page."""
-    marker = f"var {variable} = "
-    start = text.find(marker)
-    if start < 0:
-        marker = f"{variable} = "
+    markers = (
+        f"var {variable} = ",
+        f"window.{variable} = ",
+        f'window["{variable}"] = ',
+        f"window['{variable}'] = ",
+        f"{variable} = ",
+    )
+    for marker in markers:
         start = text.find(marker)
-    if start < 0:
-        raise ValueError(f"YouTube page did not contain {variable}")
-    payload = text[start + len(marker):]
-    return json.JSONDecoder().raw_decode(payload)[0]
+        if start >= 0:
+            payload = text[start + len(marker):]
+            return json.JSONDecoder().raw_decode(payload)[0]
+    raise ValueError(f"YouTube page did not contain {variable}")
+
+
+def fetch_page_data(url, variable):
+    """Retry successful HTTP responses that are not usable YouTube pages."""
+    last_error = None
+    for attempt in range(3):
+        html = http_get(url).decode("utf-8", errors="replace")
+        try:
+            return html, extract_json_assignment(html, variable)
+        except ValueError as error:
+            last_error = error
+            if attempt == 2:
+                break
+            delay = 2**attempt
+            print(
+                f"warning: YouTube response lacked usable {variable}; "
+                f"retrying in {delay}s ({attempt + 1}/3)",
+                file=sys.stderr,
+            )
+            time.sleep(delay)
+
+    raise ValueError(
+        f"YouTube did not return usable {variable} from {url} after 3 attempts"
+    ) from last_error
 
 
 def extract_published_from_html(html):
@@ -120,8 +148,7 @@ def thumbnail_url(video_id):
 
 
 def fetch_channel_items(section):
-    html = http_get(CHANNEL_PAGES[section]).decode("utf-8", errors="replace")
-    data = extract_json_assignment(html, "ytInitialData")
+    _, data = fetch_page_data(CHANNEL_PAGES[section], "ytInitialData")
     items = []
     seen = set()
 
@@ -167,10 +194,9 @@ def fetch_channel_items(section):
 
 
 def fetch_video_details(video_id):
-    html = http_get(
-        f"https://www.youtube.com/watch?v={video_id}"
-    ).decode("utf-8", errors="replace")
-    data = extract_json_assignment(html, "ytInitialPlayerResponse")
+    html, data = fetch_page_data(
+        f"https://www.youtube.com/watch?v={video_id}", "ytInitialPlayerResponse"
+    )
     details = data.get("videoDetails", {})
     microformat = data.get("microformat", {}).get("playerMicroformatRenderer", {})
     title = details.get("title") or text_content(microformat.get("title", {}))
