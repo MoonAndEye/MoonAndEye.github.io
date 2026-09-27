@@ -28,9 +28,9 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # A queued run checks out the commit that triggered it, but an earlier
       # run may already have pushed generated API files to main.  Fast-forward
