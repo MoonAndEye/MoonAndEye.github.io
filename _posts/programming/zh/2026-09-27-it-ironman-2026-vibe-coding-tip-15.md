@@ -15,6 +15,8 @@ summary: "我曾把 Figma Make share link 當成產品規格，結果 Agent 依 
 description: "我曾把 Figma Make share link 當成產品規格，結果 Agent 依 demo 把啟動畫面做成主頁。這篇示範如何用入口狀態、分支條件與成功條件，寫出可執行的行為規格。"
 ---
 
+本文同步刊登於 [iT 鐵人賽第二系列](https://ithelp.ithome.com.tw/articles/10417828)。
+
 這一篇改寫自我部落格的《你沒給 AI 正確方向，它就載不到你要去的地方》，照這個系列的格式重寫過。原始文章：https://www.marvinswift.com/zh/programming/ai-direction-demo-spec-state-machine/
 
 你沒給他正確方向，他就載不到你要去的地方。要他做對 UI，先把行為規格寫清楚，別只給他畫面。
