@@ -1,7 +1,7 @@
 {
  "api_version": 1,
- "generated_at": "2026-09-27T05:26:41.831001+00:00",
- "build_id": "2f1df96e4fd3a965",
+ "generated_at": "2026-09-27T07:18:55.285162+00:00",
+ "build_id": "ceb1ab06ab8870f7",
  "site": {
   "url": "https://www.marvinswift.com",
   "title": "Marv[in]sight",
@@ -37,7 +37,7 @@
    "count": null,
    "latest": null,
    "bytes": 9626,
-   "hash": "cf9780e3186b6f0b"
+   "hash": "55aa6ae4d1e991ec"
   },
   "series/agent-build-log.json": {
    "path": "/api/v1/series/agent-build-log.json",
