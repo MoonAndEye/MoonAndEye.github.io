@@ -1,5 +1,22 @@
 [
  {
+  "slug": "it-ironman-2026-day-21",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 第一件法寶 spec-diff：本來只想比規格，結果連法規都能比 - Day 21",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "spec-diff"
+  ],
+  "summary": "我在 Desktop App 加入「專有技」區域，第一個功能 spec-diff 會比較兩版文件的語意差異；我也拿台灣處置股規定的前後版本實測。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-21/",
+  "date": "2026-09-28T01:11:09+08:00",
+  "word_count": 1661
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-15",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜給行為規格、不給畫面：demo 當 spec 給他，他就照 demo 做 - Tip 15",
