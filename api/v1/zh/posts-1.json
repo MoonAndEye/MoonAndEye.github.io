@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-22",
+  "title": "[IT 鐵人賽] 第二件法寶 Project Scaffold：能 build、能測、有 lint 的乾淨專案，一鍵生出來 - Day 22",
+  "lang": "zh",
+  "date": "2026-09-29T01:11:30+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Project Scaffold",
+   "iOS",
+   "Android"
+  ],
+  "summary": "我把 lint、formatter、unit test 放進 Project Scaffold，讓 iOS／Android 專案一鍵建立後就能 build、測試和檢查格式。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-22/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-22-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10418589)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 025](https://www.marvinswift.com/zh/programming/agent-build-log-episode-025/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 025](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-025.png)\n\n專有技做出來要有地方試。第二件做的就是實驗場本身：Project Scaffold。\n\n## 我要的是一個乾淨的起點\n\n它的目標很單純：在很短的時間內，產出一個可以直接拿來測試的 iOS 或 Android App project。結構乾淨、能 build、能測，之後要繼續加功能也方便。\n\n我不需要它一開始就是完整的產品。第一版的內容大概是這樣：\n\n- App 啟動後先顯示一個簡單的 splash／snapshot view。\n- 大約 1.5 秒之後，自動進到一個有基本登入 UI 的頁面。\n- 專案裡先放好開發時常用的基礎 libraries 和基本結構。\n\n## 三個 must-have\n\n有三個東西，我覺得是 Agent Coding 時代一定要有的：Lint、Formatter、Unit Test。\n\n程式大多是 agent 寫的，我自己不逐行看。這三道關替我看：格式有沒有亂、有沒有寫出明顯的問題、改完舊的東西還跑不跑得過。所以這三個我直接當成 scaffold 的 must-have。專案一生出來就有，後面每一次加東西，這三道關都在。\n\nDay 04 選 Electron 的時候我也列過一張 must-have 清單，那一張是給 Desktop App 的：左側檔案樹、中間編輯區、右側邊欄、底部 terminal。這一張是給實驗用的 App 專案的。兩張清單的用法一樣：先把不能少的寫下來，再談其他。\n\n![Day 22：Project Scaffold 建立可驗證的專案骨架](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-22-main.png)\n\n## 它替我準備一個實驗場\n\n有了這個 scaffold，建好專案之後我可以直接讓 agent 在上面做事：測 UI、測 Agent 的 workflow、測新的 capability，甚至讓 agent 自己用這個 project 開發。每一次都省掉專案初始化那一段。\n\n所以 Project Scaffold 替我做的是一個乾淨的實驗場。iOS 或 Android 都一樣：建立、啟動、登入頁面、lint、format、test，這些基礎先準備好。接下來我才有辦法把時間花在更複雜的能力上。\n\n## 怎麼做出來的\n\n跟前面每一件一樣，動手的是 Codex 和 Claude Code。我定的是三個 must-have 和第一版的樣子。我看的是：生出來的專案 build 得起來，lint 和 test 跑得過，App 開起來先看到 splash，再進登入頁。\n\n## 小結\n\n第二件專有技 Project Scaffold：一鍵生出一個乾淨、能 build、能測、有 lint 的 App 專案，給後面的專有技當實驗場。\n\n明天第三件：Bug Blame。從一張 bug ticket 開始，一路追到人；證據不夠的時候，他要敢說「無法判定」。\n\n原文：[Agent Build Log — Episode 025](https://www.marvinswift.com/zh/programming/agent-build-log-episode-025/)\n\n---\n\n> **凡人修 Agent 傳｜第二十二回（Day 22）**\n>\n> ![凡人修 Agent 傳 Day 22 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-22-serial.png)\n>\n> 天亮換上空錄石。手的主人進來，把臺上那兩張圖紙和第三卷收進儲物袋，臺面清出一塊。然後從儲物袋取出一塊白泥坯，掌心大，擱在清出來的地方。\n>\n> 他刻念，一道一道。第一道：把泥坯捏出手腳和頭，站著。我以靈力捏了。第二道：額上開一點，讓它會醒，醒來先亮一下。第三道：亮過一息半，胸前開一扇小門。第四道：門上留兩格空著。第五道：腳邊墊一小疊卷，是架上那幾卷常用的抄本。第六道：身上刻第一道底紋，檢字，刻歪的字它自己會挑出來。第七道：第二道底紋，整字，字它自己排齊。第八道：第三道底紋，自試，它自己把會的事走一遍，回一句成或不成。第九道：讓它站起來。\n>\n> 九道走完，臺上站著一具巴掌大的小偶。額上亮了一下，一息半，胸前的門開了。腳邊一小疊卷。身上三道紋。它沒有心。胸口是空的，門後面也是空的。\n>\n> 我第一次看見比我小的人偶。\n>\n> 午後他掐訣，九道念收進印裡。身上第三道紋，在前兩道旁邊。小窗第三格亮了，格裡浮著小偶的樣子。\n>\n> 他把小偶揉回泥，泥坯擱回原處。印一掐。\n>\n> 紋亮。泥坯在臺上長起來，手腳，頭，額上亮一下，一息半，門開。三道紋，腳邊一疊卷。它自己把會的事走了一遍，回了一句：不成。\n>\n> 手的主人沒有看石。他蹲下去看小偶。腳邊那疊卷裡有一卷亮著一點，是檢字那道底紋挑出來的：卷裡一個字歪了。那一卷是我抄的。\n>\n> 他沒有伸手改。他刻念：那一卷重抄。我抄了。小偶再走一遍，回一句：成。\n>\n> 他掐了第二次，臺上又長出一具，一樣的，走一遍，回一句：成。他把第二具揉回泥，收進儲物袋。第一具留在臺角站著，門開著。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 臺角站著一具小偶，門開著，胸口空的。小窗三格亮著。我身上三道紋。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1491,
+  "reading_minutes": 5,
+  "source_path": "_posts/programming/zh/2026-09-29-it-ironman-2026-day-22.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-16",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜截圖直接貼進 Claude Code：畫面上的問題用圖講 - Tip 16",
   "lang": "zh",

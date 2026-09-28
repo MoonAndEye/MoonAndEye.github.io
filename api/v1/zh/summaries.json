@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-22",
+  "title": "[IT 鐵人賽] 第二件法寶 Project Scaffold：能 build、能測、有 lint 的乾淨專案，一鍵生出來 - Day 22",
+  "lang": "zh",
+  "date": "2026-09-29T01:11:30+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Project Scaffold",
+   "iOS",
+   "Android"
+  ],
+  "summary": "我把 lint、formatter、unit test 放進 Project Scaffold，讓 iOS／Android 專案一鍵建立後就能 build、測試和檢查格式。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-22/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-22-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1491,
+  "reading_minutes": 5,
+  "source_path": "_posts/programming/zh/2026-09-29-it-ironman-2026-day-22.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-16",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜截圖直接貼進 Claude Code：畫面上的問題用圖講 - Tip 16",
   "lang": "zh",
