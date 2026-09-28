@@ -1,5 +1,22 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-16",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜截圖直接貼進 Claude Code：畫面上的問題用圖講 - Tip 16",
+  "lang": "zh",
+  "date": "2026-09-28T13:12:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "我整理了 macOS 把截圖貼進 Claude Code 的方式，也對照 terminal、iTerm2 與 VS Code 擴充套件在貼圖和行號參照上的差異。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-16/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 582,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-28-it-ironman-2026-vibe-coding-tip-16.md"
+ },
+ {
   "slug": "it-ironman-2026-day-21",
   "title": "[IT 鐵人賽] 第一件法寶 spec-diff：本來只想比規格，結果連法規都能比 - Day 21",
   "lang": "zh",
