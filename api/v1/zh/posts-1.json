@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-23",
+  "title": "[IT 鐵人賽] 第三件法寶 Bug Blame：從 Jira ticket 追到開發者，但它要敢說「無法判定」 - Day 23",
+  "lang": "zh",
+  "date": "2026-09-30T01:11:07+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Bug Blame",
+   "Jira",
+   "git blame"
+  ],
+  "summary": "我讓 Bug Blame 從 Jira ticket 追到相關程式碼、commit 與開發者，並要求結果附上信心程度；證據不足時就明確回覆無法判定。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-23/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-23-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10419083)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 026](https://www.marvinswift.com/zh/programming/agent-build-log-episode-026/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 026](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-026.png)\n\n第三件專有技叫 Bug Blame。名字來自 git blame，起點是一張 Jira ticket。\n\n## 從既有的 Jira 出發，走完一個流程\n\nJira 是本來就在用的系統，bug 進來就是一張 ticket。這件事從那裡出發，走完一個流程。\n\n流程大概是這樣：\n\nJira ticket → related code → git blame → commit → developer\n\nAgent 先理解 ticket 裡描述的 bug，以及可能受到影響的功能和程式碼範圍。接著透過 repo 的 commit history 和 git blame 往回追，找出跟這個問題最相關的修改。最後把這些 commits 對應到實際的開發者。\n\n中間的紀錄也在 Jira。追到哪裡、對到哪幾個 commit，都跟那張 ticket 放在一起。\n\n我叫它 Bug Blame，因為 git blame 是這個能力背後很重要的一條線索。\n\n![Day 23：Bug Blame 追查線索並保留無法判定的結果](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-23-main.png)\n\n## 結果要有信心程度\n\ngit blame 可以告訴我某一行程式碼最後是誰修改的，但這不代表 bug 就是那個人造成的。\n\n所以我希望最後的結果能有清楚的信心程度。\n\n- 如果某個 commit 和 bug 之間的關聯很強，Agent 可以指出最相關的開發者。\n- 如果這個功能曾經由多位開發者修改，他應該列出可能相關的開發者，以及各自對應的 commits。\n- 如果證據不足，他就直接說：無法判定。\n\n我不希望 Agent 為了給出答案而勉強判斷。我希望他反映真實情況。\n\n## 它真正要解的問題\n\n一張 bug ticket 出現的時候，我想很快知道三件事：這部分功能過去是怎麼被修改的；哪些 commits 最可能跟問題有關；接下來應該找哪些開發者一起調查。\n\n所以 Bug Blame 這個名字底下，我真正想要的是一個快速找出開發歷史、以及跟 bug 最相關人員的方法。\n\n## 小結\n\n第三件專有技 Bug Blame：從既有的 Jira 出發，一張 ticket 經 git blame 追到 commit 和開發者，紀錄留在 Jira，結果帶信心程度，證據不足就說無法判定。\n\n明天第四件，也是最大的一件：Acceptance。從一張 ticket 到一份驗收報告，第一次就失敗了。\n\n原文：[Agent Build Log — Episode 026](https://www.marvinswift.com/zh/programming/agent-build-log-episode-026/)\n\n---\n\n> **凡人修 Agent 傳｜第二十三回（Day 23）**\n>\n> ![凡人修 Agent 傳 Day 23 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-23-serial.png)\n>\n> 天亮換上空錄石。手的主人進來，從儲物袋取出一卷源紋攤在臺上。這卷我沒見過。架上那三十幾卷是他一個人煉的，刻痕只有一種筆跡。這一卷上的刻痕有好幾種，每一段後頭一個署名、一個年月，署名有四五個。\n>\n> 他又取出一張帖，指節寬，上頭寫著這卷用起來哪裡裂了：走到某一處，斷。\n>\n> 念，一道一道。讀帖。在卷上找跟裂有關的段。讀那幾段刻痕的署名和年月。挑最近改過、跟裂最有關的幾刻。對到人。最後一道：說出來的時候帶著信心，只有一個人改過就指那個人，附上那幾刻；好幾個人改過就一個一個列，各對哪幾刻；證據不夠，就說找不到，不硬指。\n>\n> 我走了一遍。帖上寫的裂，我在卷上找到那一段，最近一刻是一個署名，我指了他，附上那一刻。手的主人看了那一刻，說：對。\n>\n> 午後他掐訣，收印。身上第四道紋。小窗第四格亮了，格裡浮著一張帖。\n>\n> 第二張帖。印一掐。我找到段，最近一刻，指了那個署名。他看了那一刻，看了很久。那一刻做的事是把一段字從卷首挪到卷中，一個字沒改。跟裂沒有關係。他磨掉紋，在印裡加一道念：最後刻的人不一定是裂的來處，看他刻的是什麼。重收。\n>\n> 第二張帖再來。我讀了那幾刻刻的是什麼，挪位置的那一刻略過去，往前找到兩個署名，各自改過裂的那一處。我一個一個列，各對哪幾刻。他沒有再磨。\n>\n> 第三張帖。印一掐。我讀帖，帖上寫裂在某一處。我在卷上找那一處。沒有。整卷探過去，帖上寫的那一處卷上沒有對應的段，一個字都對不上。印裡最後那一道念亮著。\n>\n> 我說：找不到。\n>\n> 他看了石上那一筆，沒有再刻。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 那卷別人的源紋捲起來收進儲物袋。三張帖擱在小窗邊。身上四道紋。石上今天有一筆兩個字：找不到。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1416,
+  "reading_minutes": 5,
+  "source_path": "_posts/programming/zh/2026-09-30-it-ironman-2026-day-23.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-17",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Codex 的 /goal：給他一個長線目標，CLI 和 Desktop App 都有 - Tip 17",
   "lang": "zh",
@@ -3620,27 +3646,5 @@
   "word_count": 854,
   "reading_minutes": 3,
   "source_path": "_posts/programming/zh/2023-04-07-xuite-stop-website.md"
- },
- {
-  "slug": "start-using-copilot",
-  "title": "開始使用 Github Copilot 服務，來讓 side project 加速",
-  "lang": "zh",
-  "date": "2023-04-07T11:53:00+08:00",
-  "category": "programming",
-  "tags": [
-   "AI",
-   "Copilot",
-   "Github"
-  ],
-  "summary": "Using Github Copilot to speed up my coding. Make side projects easier.",
-  "url": "https://www.marvinswift.com/programming/start-using-copilot.html",
-  "hero_image": null,
-  "content": "## 開始使用 Copilot\n\n因為我主要工作是 iOS 開發，使用的 IDE 是 Xcode，目前在 Xcode 上並沒有整合 Copilot 很好的方法，所以我一直都沒有使用 Copilot。\n\n不過現在有寫幾個 projects，會需要用到 Python 和 Ruby，現在開始試用 GitHub 的 Copilot，希望這個在我不熟的領域，可以加速我開發。\n\n## 關於 Copilot 服務\n\nGitHub Copilot 是一款 AI 程式碼工具，它可以在你寫程式的時候依照內文給予你相對應的建議。 GitHub Copilot 由 OpenAI Codex AI 系統提供支持，該系統在公共互聯網文本和數十億行程式碼上進行訓練 。GitHub Copilot 可以幫助你節省開發時間，提高程式碼品質，並學習新的語言或框架。\n\n要使用 GitHub Copilot，你需要先申請試用，然後在 Visual Studio Code 中安裝 GitHub Copilot 擴充功能。你可以在任何語言或框架中使用 GitHub Copilot，但它尤其適用於 Python、JavaScript、TypeScript、Ruby、Java、Go 等主流語言。GitHub Copilot 會根據你的程式碼內容和註解，自動以灰色文本建議整行或整個函數。你可以按 Tab 接受建議，或按 Alt + \\\\ 跳出建議。你也可以按 Ctrl + Enter 打開 GitHub Copilot 的建議視窗，查看更多的選項。\n\nGitHub Copilot 是一個強大的工具，但它不是完美的。它可能會產生不正確、不安全或不符合版權的程式碼。你應該始終審查 GitHub Copilot 的建議，並對自己寫的程式碼負責。GitHub Copilot 也不會替你做出架構或商業邏輯的決定，你還是需要理解技術的架構，並把問題拆解成簡單的步驟。\n\nGithub Copilot 是一個基於人工智慧的程式碼生成工具，它可以幫助開發者快速編寫高品質的程式碼。Github Copilot 的主要特點有：\n\n- 它可以根據開發者的註釋、函數名稱、變數名稱等提示，自動生成符合邏輯和語法的程式碼片段。\n- 它可以從開源代碼庫中學習各種程式語言和框架的用法，並適應開發者的風格和偏好。\n- 它可以提供多個程式碼建議，讓開發者選擇最適合的一個，或者修改和組合成自己想要的程式碼。\n- 它可以在任何編輯器或環境中使用，只需安裝 Github Copilot 擴充套件，並與 Github 帳號連接。\n- 它是一個持續學習和改進的工具，隨著開發者的使用和回饋，它會變得更加智能和準確。\n- 當看到灰色文本的建議時，按 Tab 接受，或按 Esc 忽略。\n- 如果沒有看到建議，或想要更改建議，可以使用以下快捷鍵：\n  - Alt + \\\\ : 跳出建議\n  - Alt + [ , Alt + ] : 切換不同建議\n  - Ctrl + Enter : 打開建議視窗\n\n## 開始使用 Copilot\n\n[Copilot quickstart](https://docs.github.com/en/copilot/quickstart)\n\n在這個頁面，填進付款資訊，就可以開始使用了，如果你用的是 VSCode， Copilot 的 plugin 會聯動你的 github 帳號，接下來就可以在你的專案中，讓 copilot 來協助開發了。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 858,
-  "reading_minutes": 3,
-  "source_path": "_posts/programming/zh/2023-04-07-start-using-copilot.md"
  }
 ]

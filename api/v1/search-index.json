@@ -1,5 +1,24 @@
 [
  {
+  "slug": "it-ironman-2026-day-23",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 第三件法寶 Bug Blame：從 Jira ticket 追到開發者，但它要敢說「無法判定」 - Day 23",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Bug Blame",
+   "Jira",
+   "git blame"
+  ],
+  "summary": "我讓 Bug Blame 從 Jira ticket 追到相關程式碼、commit 與開發者，並要求結果附上信心程度；證據不足時就明確回覆無法判定。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-23/",
+  "date": "2026-09-30T01:11:07+08:00",
+  "word_count": 1416
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-17",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Codex 的 /goal：給他一個長線目標，CLI 和 Desktop App 都有 - Tip 17",
