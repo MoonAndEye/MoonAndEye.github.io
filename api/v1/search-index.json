@@ -1,5 +1,16 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-17",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Codex 的 /goal：給他一個長線目標，CLI 和 Desktop App 都有 - Tip 17",
+  "category": "programming",
+  "tags": [],
+  "summary": "我整理 Codex /goal 在 Desktop App 與 CLI 的使用方式，補上 CLI 舊版啟用步驟、新版功能狀態檢查，以及一段可交給 agent 執行的 prompt。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-17/",
+  "date": "2026-09-29T13:00:00+08:00",
+  "word_count": 575
+ },
+ {
   "slug": "it-ironman-2026-day-22",
   "lang": "zh",
   "title": "[IT 鐵人賽] 第二件法寶 Project Scaffold：能 build、能測、有 lint 的乾淨專案，一鍵生出來 - Day 22",
