@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-18",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜非開發職能也能用：PM 用 Codex App 或 Claude App 寫 Given-When-Then，直接進 Jira - Tip 18",
+  "lang": "zh",
+  "date": "2026-09-30T13:00:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "我示範如何用 Codex App 或 Claude App 把 PM 的需求整理成 Given-When-Then 並寫進 Jira，也說明 prompt 要補哪些業務規則，避免開出只有通用錯誤訊息的需求單。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-18/",
+  "hero_image": null,
+  "content": "本文同步刊登於 [iT 鐵人賽第二系列](https://ithelp.ithome.com.tw/articles/10419204).\n\n這一篇改寫自我部落格的《在非開發職能上，使用 Cursor 在 Jira 寫 GWT (Given - When - Then) 需求單》，照這個系列的格式重寫過。原始文章：https://www.marvinswift.com/zh/programming/using-cursor-in-jira/\n\ncoding agent 產出的「文字」本來就可以超過「程式」的範圍。團隊裡的 PM 也能用他開單：用 Codex App 或 Claude App 產 Given-When-Then 的需求單，直接寫進 Jira。開發者就能快速跨過自然語言和程式語言的隔閡，直接進開發。\n\n## 為什麼\n\n寫需求單這件事，他產的是文字，程式只是文字的一種。PM 用跟開發者同一類的工具寫需求單，寫出來的格式是開發者看得懂、測試也能直接對的 Given-When-Then，兩邊接起來就快。\n\n原文（2025 年 3 月）是用 Cursor 做這件事，還要裝 Jira 外掛、開資料夾管文件。現在用 Codex App 或 Claude App，打開就能用，Cursor 那一套省掉了。\n\n## 我怎麼做\n\n打開 Codex App 或 Claude App，這樣下：\n\n```markdown\n請依 Given - When - Then (GWT) 的格式，將下列需求寫成 GWT 文件。\nlogin\nlogout\nreset password\n```\n\n產出來的其中一段長這樣：\n\n```gherkin\nFeature: 使用者登入\n\nScenario: 成功登入\nGiven 使用者在登入頁面\nWhen 使用者輸入正確的帳號和密碼\nAnd 點擊登入按鈕\nThen 系統應該成功登入\nAnd 導向到首頁\nAnd 顯示登入成功訊息\n\nScenario: 登入失敗 - 錯誤的認證資訊\nGiven 使用者在登入頁面\nWhen 使用者輸入錯誤的帳號或密碼\nAnd 點擊登入按鈕\nThen 系統應該顯示錯誤訊息\nAnd 使用者停留在登入頁面\n```\n\n每個功能都有成功和失敗的情境：Given 是初始狀態，When 是使用者的操作，Then 是預期的系統回應。這段直接寫進 Jira 的票。接了 Jira 的 MCP，可以讓他直接把票開進 Jira；沒接，複製貼進票裡也只是一步。\n\n## 坑\n\n他只知道你寫在 prompt 裡的事。上面那段 prompt 只給了三個功能名，所以產出來的 Then 是「顯示錯誤訊息」這種通用句。業務規則要一起給，像密碼錯幾次要鎖、鎖多久，他才寫得進 Scenario；沒給的，他會用最常見的做法補上，開票前自己先看一遍。\n\n## 小結\n\n寫需求單這件事，PM 用 Codex App 或 Claude App 就能做，產出來是 Given-When-Then，進 Jira 之後開發者直接接。\n\n明天開始講 skill 那一組：先講 skill 放在哪裡、從哪裡拿。\n\n原文：https://www.marvinswift.com/zh/programming/using-cursor-in-jira/\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 548,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-09-30-it-ironman-2026-vibe-coding-tip-18.md"
+ },
+ {
   "slug": "it-ironman-2026-day-23",
   "title": "[IT 鐵人賽] 第三件法寶 Bug Blame：從 Jira ticket 追到開發者，但它要敢說「無法判定」 - Day 23",
   "lang": "zh",
@@ -3625,26 +3643,5 @@
   "word_count": 410,
   "reading_minutes": 1,
   "source_path": "_posts/programming/zh/2023-04-07-Android-app-need-add-delete-account.md"
- },
- {
-  "slug": "xuite-stop-website",
-  "title": "Xuite 將會在 2023 年 6 月停止服務",
-  "lang": "zh",
-  "date": "2023-04-07T13:40:00+08:00",
-  "category": "programming",
-  "tags": [
-   "blog",
-   "programming"
-  ],
-  "summary": "Xuite, one of Taiwan's earliest internet service platforms, will end all services on June 30, 2023, and users are advised to backup or transfer their data. The termination has sparked discussions among netizens as Xuite is seen as a part of their memories and daily lives, and a symbol of Taiwan's internet culture. The end of Xuite marks the end of an era, but its impact is worth remembering.",
-  "url": "https://www.marvinswift.com/programming/xuite-stop-website.html",
-  "hero_image": null,
-  "content": "## Xuite 停止服務\n\nxuite 是台灣最早的網路服務平台之一，提供了部落格、相簿、影音、雲端硬碟等多元功能，曾經是許多網友的記憶和生活的一部分。然而，近日 xuite 官方宣布，將於 2023 年 6 月 30 日結束所有服務，並建議用戶儘快備份或轉移自己的資料，以免造成不必要的損失。\n\n## Xuite 介紹\n\nxuite 的結束服務，引發了網友們的討論和感嘆。有人表示，xuite 是他們的青春回憶，記錄了他們的成長和心情，也是他們與親友分享生活點滴的平台。有人認為，xuite 是台灣網路文化的一個象徵，見證了台灣網路發展的歷史和變遷。有人則表示，xuite 的結束服務是一種無奈和遺憾，反映了台灣網路市場的競爭和變動，也提醒了用戶要珍惜和保護自己的數位資產。\n\nxuite 的結束服務，無疑是台灣網路界的一個重大事件，也是一個時代的終結。xuite 曾經是台灣網友的共同記憶，也是台灣網路文化的一部分。雖然 xuite 要走入歷史，但它留下的印記和影響，仍然值得我們回顧和紀念。\n\n## 多想兩分鐘，你可以開始自己架你自己的 blog\n\n如前所述，如果使用某個公司的服務，最怕的就是終止服務。從以前的蕃薯藤、奇摩小站、無名小站，你用過幾個呢？在最熱門的時候，沒有人會覺得這些部落格服務會結束，但真的發生的時候，如果你想要保留你的文章，都會是不小的工程。而這個因素，也是我用 jekyll 架個人 blog 在 github page 的原因。如果真的有要搬網站/備份的需求，整個 git 就是我的備份。而所有的文章，都是用 md 檔，搬移備份都容易。\n\n### 如果你不太熟悉架站\n\n建議選個看起來會長久，或是當時人氣很高的 blog。如果是 2023 年，我會覺得 medium.com, WordPress, Blogger 都是可以選的部落格。\n\n[medium](https://medium.com/)\n\n[blogger](https://www.blogger.com/)\n\n[WordPress.com](https://wordpress.com/zh-tw/)\n\n### 如果你會架站/或想架站\n\n如果你想要在 github page 上架個人部落格，你可以使用 jekyll 這個靜態網站生成器。jekyll 可以讓你用 markdown 語法撰寫文章，並且提供多種主題和外掛程式，讓你可以客製化你的部落格風格和功能。要使用 jekyll，你需要先安裝 ruby 和 bundler，然後在你的 github 倉庫中建立一個名為 username.github.io 的分支，其中 username 是你的 github 使用者名稱。接著，你可以在本地端建立一個 jekyll 專案，並且使用 bundler 安裝相關的套件。最後，你可以將你的專案推送到 github 倉庫中，並且在瀏覽器中訪問 username.github.io 來查看你的部落格。\n\n而細節，你可以使用 ChatGPT 或是 Copilot 或是 Bing Chat 得到答案。\n\n這個時代，有 AI 真的太方便了。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 854,
-  "reading_minutes": 3,
-  "source_path": "_posts/programming/zh/2023-04-07-xuite-stop-website.md"
  }
 ]
