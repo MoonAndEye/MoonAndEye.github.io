@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-24",
+  "title": "[IT 鐵人賽] 第四件法寶 Acceptance（上）：兩個 tool、一條路徑，第一次驗收就失敗 - Day 24",
+  "lang": "zh",
+  "date": "2026-10-01T01:12:51+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Acceptance",
+   "iOS Simulator",
+   "CoreSimulator"
+  ],
+  "summary": "Acceptance 第一版拆成撰寫驗收 brief 與實際驗收兩個 tool；第一次執行卡在 CoreSimulator，模擬器沒有啟動，驗收報告因此是空的。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-24/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-24-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10419488)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 020](https://www.marvinswift.com/zh/programming/agent-build-log-episode-020/)、[Episode 021](https://www.marvinswift.com/zh/programming/agent-build-log-episode-021/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 021](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-021.png)\n\n第四件專有技是四件裡最大的一件：Acceptance，規格驗收。它一天講不完。這一篇講第一版的設計和第一次失敗，接下來兩天講它怎麼跑起來、怎麼補上最後一段。\n\n## 兩個 tool\n\n第一版設計了兩個 tool，負責不同的階段。\n\n第一個 tool 寫 acceptance brief。它根據 Jira ticket 整理出這個項目該怎麼驗收：驗收時要進哪一個頁面、執行哪些操作、看到什麼結果，才能證明這個需求或 bug 已經完成。這個 tool 只列驗收項目和驗收路徑，本身不執行。\n\n第二個 tool 實際驗收，產出驗收報告。Agent 照 brief 裡定義的路徑操作，在關鍵步驟截圖，再把結果和圖片整理成報告。\n\n第一個把 Jira ticket 轉成可以執行的驗收計畫。第二個照計畫完成驗收，留下可以交付和確認的證據。\n\n## 我說的規格驗收是什麼\n\n起點可以是一張 Jira ticket，也可以是一段用自然語言寫的規格或驗收條件。\n\n終點要 Agent 真的動手：操作 repo，切到指定的 target branch，準備對應的開發環境，把 iOS Simulator 或 Android Emulator build 起來。然後直接操作 App：照 ticket 或規格進到指定頁面、執行操作，確認畫面和行為符合預期。bug 或 feature 都一樣，要確認問題真的修好了、功能真的做對了。\n\n過程中的關鍵畫面截圖，當驗收證據。完成後把驗收步驟、執行結果和截圖整理成 HTML 與 PDF 報告，再透過 chat bot 送到指定頻道。\n\nDay 20 說的拆步驟，這一件拆得最長：ticket → branch → build → 啟動模擬器 → 操作 App → 截圖 → 報告 → 送出去。每一段都是一個要打通的點。\n\n## 第一次失敗\n\n有了這個想法之後，我讓 Agent 動手做第一版。\n\n第一次嘗試失敗了。Agent 沒有成功連上 CoreSimulator，iOS Simulator 沒有正常啟動，驗收流程沒有真的執行，最後產出的報告是空的。\n\n所以第一版的規格驗收沒有成功。但至少我確認了這條路徑真正需要打通的每一段：從 Jira ticket 或自然語言規格開始，切換 branch、build App、啟動模擬器、操作 App、取得截圖、產出報告，最後把結果送到頻道。哪一段斷了，看得很清楚。\n\n![Day 24：Acceptance 第一次執行失敗與空白報告](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-24-main.png)\n\n## 小結\n\nAcceptance 第一版：兩個 tool，一個寫驗收計畫、一個照計畫驗收；一條從 ticket 到報告的路徑。第一次跑，模擬器沒起來，報告是空的。\n\n它失敗了，但會繼續。明天模擬器起來了，驗收真的跑了一輪。我把結果分成四種，Pass 和 Fail 以外還有兩種。\n\n原文：[Agent Build Log — Episode 020](https://www.marvinswift.com/zh/programming/agent-build-log-episode-020/)、[Episode 021](https://www.marvinswift.com/zh/programming/agent-build-log-episode-021/)\n\n---\n\n> **凡人修 Agent 傳｜第二十四回（Day 24）**\n>\n> ![凡人修 Agent 傳 Day 24 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-24-serial.png)\n>\n> 天亮換上空錄石。臺角那具小偶還站著，門開著。手的主人進來，取出一張帖，比昨天那三張長。帖上寫的是小偶要改的一處，改完該看到什麼。\n>\n> 他刻兩套念。\n>\n> 第一套，寫驗收單：讀帖；寫出要進哪扇門、進去做什麼、看到什麼算過；一條一條寫在一張單子上。我寫了。單子擱在小偶腳邊。\n>\n> 第二套，照單驗：找到帖對應的那一段源紋；把小偶照那一段重煉；叫醒它；走進門；照單一步一步做；每一步做完拓一張影，把靈幕上那一刻的樣子拓成一張薄影；影和步驟寫成一本；呈上。\n>\n> 他從第二套的第一道刻起。找段，我找到了。重煉，他印一掐，臺上長出一具新的小偶，照那一段。叫醒。\n>\n> 我放一縷神識到小偶額上。念落不進去。小偶站著，額上沒有亮。\n>\n> 我再放。落不進去。神識到它額上就散了，像落在石頭上。\n>\n> 手的主人看了一會。他印一掐，再長一具，我再叫。不醒。他把小偶挪到臺上另一處，我再叫。不醒。他把撥片撥上撥下，我再叫。不醒。他翻過小偶看它的背，小偶背上什麼字都沒有。\n>\n> 三具小偶站在臺上，額上都沒亮，門都沒開。\n>\n> 第二套念剩下的幾道他沒有刻。單子擱在小偶腳邊，上頭一個影都沒有。呈上的那一本他攤在臺上，空的。\n>\n> 我的手空著。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 臺上三具小偶，門都沒開。驗收單擱在腳邊，一個影都沒有。那一本是空的。玉片裡多了兩套念，沒收印。我身上還是四道紋。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1467,
+  "reading_minutes": 5,
+  "source_path": "_posts/programming/zh/2026-10-01-it-ironman-2026-day-24.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-18",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜非開發職能也能用：PM 用 Codex App 或 Claude App 寫 Given-When-Then，直接進 Jira - Tip 18",
   "lang": "zh",
@@ -3602,46 +3628,5 @@
   "word_count": 155,
   "reading_minutes": 1,
   "source_path": "_posts/life/zh/2023-04-09-mario-movie.md"
- },
- {
-  "slug": "non-farm-employment-in-march",
-  "title": "美國3月非農就業人數與失業率",
-  "lang": "zh",
-  "date": "2023-04-08T22:30:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance"
-  ],
-  "summary": "About US non-farm employment and unemployment rate",
-  "url": "https://www.marvinswift.com/programming/non-farm-employment-in-march.html",
-  "hero_image": null,
-  "content": "## 美國3月非農就業人數與失業率\n\n### 3月非農就業人數\n美國勞工部公佈的最新數據顯示，2023年3月，美國非農就業人數增加了23萬6000人，低於市場預期的24萬人，也低於2月份的31萬1000人。這是連續第二個月，美國非農就業增長放緩，反映出美國經濟在面臨通膨壓力和貿易摩擦的情況下，開始出現降溫的跡象。\n\n根據報告，3月份的就業增長主要集中在服務業和建築業，而製造業則出現了1000人的減少。服務業增加了17萬9000個就業崗位，其中餐飲業、醫療保健和社會援助等領域表現較好。建築業增加了1萬8000個就業崗位，主要受到住宅建設需求的支撐。而製造業的就業減少則可能與全球供應鏈的中斷和關稅的影響有關。\n\n### 3月失業率\n報告還顯示，3月份的失業率微降至3.5%，創下近50年來的新低，並低於市場預期的3.6%。這意味著美國勞動市場仍然緊張，且缺乏合適的勞動力供給。此外，3月份的平均時薪按年增長4.2%，略低於市場預期的4.3%，但仍高於通膨率。這表明美國勞動者的收入水平有所提高，但也可能加劇通膨的風險。\n\n綜上所述，美國3月份的非農就業數據反映出美國經濟在高速復甦後，開始出現一些減速的跡象。雖然失業率和時薪增長都表現不錯，但就業增長的放緩和製造業的衰退都暗示著美國經濟面臨著一些內外部的挑戰。這可能會影響聯準會（Fed）未來的貨幣政策決策，使其在平衡經濟增長和通膨控制之間更加困難。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 534,
-  "reading_minutes": 2,
-  "source_path": "_posts/finance/2023-04-09-non-farm-employment-in-march.md"
- },
- {
-  "slug": "Android-app-need-add-delete-account",
-  "title": "Google 要求未來 Play Store 的 App 都要能刪除帳號",
-  "lang": "zh",
-  "date": "2023-04-07T15:51:00+08:00",
-  "category": "programming",
-  "tags": [
-   "Android",
-   "Apps"
-  ],
-  "summary": "Google has announced that from January 1, 2023, all Android apps on the Play Store must provide an option to delete user accounts and data through a website to protect user privacy and data security. Non-compliance by app developers will result in being removed from the store or fined.",
-  "url": "https://www.marvinswift.com/programming/Android-app-need-add-delete-account.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/android-request-delete-account/giant.jpg",
-  "content": "![Giant](https://www.marvinswift.com/assets/posts/android-request-delete-account/giant.jpg)\n\nGoogle 宣佈了所有上架 Play Store 的 Android app 都要提供刪除帳號與資料的選項。這項新政策旨在保護用戶的隱私權，並提高對 Android 平台的信任度。Google 表示，用戶應該能夠輕鬆地管理自己的帳號和資料，不論是在 app 內還是在網站上。因此，Google 將要求開發者在明年 5 月 31 日前，為他們的 app 提供以下功能：\n\n- 在 app 的設定或個人資料頁面中，提供一個清楚可見的選項，讓用戶可以刪除自己的帳號和所有相關資料，包括上傳的檔案、個人資訊、偏好設定等。\n- 在 app 的官方網站上，提供一個類似的選項，讓用戶可以在不安裝 app 的情況下，刪除自己的帳號和資料。\n- 在 app 的安全性相關資料中，說明如何刪除帳號和資料的步驟和後果，並且在今年 12 月 7 日前回答 Google 提出的相關問題。\n\nGoogle 認為，這些功能將讓用戶有更大的控制權和彈性，也將增加對 Android app 和 Play Store 的整體信任。Google 還表示，這些功能與蘋果在 App Store 上的類似規定相符合，也符合 FTC 最近提出的讓取消訂閱和會員更容易的新規定。Google 希望開發者能夠盡快遵守這些要求，否則可能會影響他們的 app 在 Play Store 上的可見度和評價。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 410,
-  "reading_minutes": 1,
-  "source_path": "_posts/programming/zh/2023-04-07-Android-app-need-add-delete-account.md"
  }
 ]

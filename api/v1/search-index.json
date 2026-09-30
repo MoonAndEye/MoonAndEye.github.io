@@ -1,5 +1,24 @@
 [
  {
+  "slug": "it-ironman-2026-day-24",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 第四件法寶 Acceptance（上）：兩個 tool、一條路徑，第一次驗收就失敗 - Day 24",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Acceptance",
+   "iOS Simulator",
+   "CoreSimulator"
+  ],
+  "summary": "Acceptance 第一版拆成撰寫驗收 brief 與實際驗收兩個 tool；第一次執行卡在 CoreSimulator，模擬器沒有啟動，驗收報告因此是空的。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-24/",
+  "date": "2026-10-01T01:12:51+08:00",
+  "word_count": 1467
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-18",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜非開發職能也能用：PM 用 Codex App 或 Claude App 寫 Given-When-Then，直接進 Jira - Tip 18",
