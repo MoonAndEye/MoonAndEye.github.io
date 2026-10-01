@@ -16,6 +16,8 @@ tags:
 summary: "我整理了用 Skills hub 尋找 skill、以 Codex skill-installer、skills.sh CLI 或 Claude Code plugin 安裝的流程，並說明如何確認安裝範圍與 agent 實際載入。"
 description: "我整理了用 Skills hub 尋找 skill、以 Codex skill-installer、skills.sh CLI 或 Claude Code plugin 安裝的流程，並說明如何確認安裝範圍與 agent 實際載入。"
 ---
+本篇也同步刊登於 [iT 鐵人賽文章](https://ithelp.ithome.com.tw/articles/10419620)。
+
 想讓 agent 用一套現成做法，我會先找 skill。找到合適的，再裝到需要用它的專案或個人環境裡。Skills hub 是找來源的地方，skill installer 則可以幫我完成安裝。
 
 ## 為什麼
