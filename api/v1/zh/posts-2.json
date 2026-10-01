@@ -1,5 +1,49 @@
 [
  {
+  "slug": "google-code-jam",
+  "title": "Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始",
+  "lang": "zh",
+  "date": "2023-04-12T00:23:00+08:00",
+  "category": "programming",
+  "tags": [
+   "Google",
+   "Code Jam"
+  ],
+  "summary": "Google announce code jam competition",
+  "url": "https://www.marvinswift.com/programming/google-code-jam.html",
+  "hero_image": null,
+  "content": "## Round A 比賽時間\n\nRound A\nApr 15 2023, 14:00 UTC 開始\n\nApr 15 2023, 18:00 UTC 結束\n\n## Code Jam\n\n如果你是一位熱愛編程的人，那麼你一定不會錯過 Google 的 coding 比賽 Code Jam。Code Jam 是一項由 Google 主辦的國際程序設計競賽，旨在幫助 Google 發掘潛在的工程領域頂級人才。Code Jam 每年只舉行一次，但每次要進行好幾輪，通過層層篩選，最終從近 10 萬名報名者中選出 25 個人參加最後的全球總決賽。\n\nCode Jam 的比賽題目涵蓋了各種算法和數學問題，需要參賽者在有限的時間內寫出正確、高效、可讀的代碼。Code Jam 的難度很高，不僅考驗參賽者的基礎知識和邏輯思維，還考驗他們的創造力和應變能力。Code Jam 的魅力在於它能夠讓參賽者體驗到編程的樂趣和挑戰，同時也能夠讓他們學習到新的技術和知識。\n\n## Code Jam 的比賽流程\n\n- 資格賽（Qualification Round）：所有報名的參賽者都可以參加這一輪，共有 4 個題目，時間為 30 小時。只要在時間內解出至少一個題目，就可以晉級到下一輪。\n- 第一輪（Round 1）：分為 A、B、C 三個子輪，每個子輪有 4 個題目，時間為 2.5 小時。每個子輪的前 1500 名參賽者可以晉級到下一輪。\n- 第二輪（Round 2）：有 4 個題目，時間為 3 小時。前 1000 名參賽者可以晉級到下一輪。\n- 第三輪（Round 3）：有 4 個題目，時間為 3 小時。前 25 名參賽者可以晉級到決賽。\n- 決賽（Finals）：在 Google 總部舉行，有 4 個題目，時間為 4 小時。最終的冠軍將獲得 15,000 美元的獎金和 Code Jam Champ 的稱號。\n\n## 比賽前的準備\n\n如果你想要參加 Code Jam，你需要具備以下條件：\n\n- 熟悉至少一種支持的程式語言（C++、C#、Go、Java、JavaScript、Kotlin、Python 或 Swift）。\n- 能夠使用 Google 提供的平台提交代碼和測試結果。\n- 能夠閱讀和理解英文題目和規則。\n\n如果你想要了解更多關於 Code Jam 的信息，你可以訪問官方網站或關注官方社交媒體。\n\n## 連結\n\n[Code Jam](https://codingcompetitions.withgoogle.com/codejam)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 617,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2023-04-12-google-code-jam.md"
+ },
+ {
+  "slug": "professor-article-about-ai",
+  "title": "大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰",
+  "lang": "zh",
+  "date": "2023-04-11T08:17:00+08:00",
+  "category": "programming",
+  "tags": [
+   "AI",
+   "ChatGPT"
+  ],
+  "summary": "University professors has different opinions about ChatGPT in Computer Sciense students homework.",
+  "url": "https://www.marvinswift.com/programming/professor-article-about-ai.html",
+  "hero_image": null,
+  "content": "## 大學教授在各自的臉書上對於 ChatGPT 的「討論」\n\n昨天晚上我個人的 FB 動態牆上，對於 ChatGPT 的討論突然變得非常多，好奇看了一下發生了什麼事。原來是蘇文鈺教授回了個「被罵了」的文章，再看前面所敘述的文字。因為蘇教授之前寫了一篇讓學生使用 ChatGPT 進行作業的文章。而李家同教授在 4/10 的聯合報寫了一篇關於 ChatGPT 的文章，標題如下。\n\n#### [我們要創造不會思考的下一代？]\n\n[新聞連結](https://udn.com/news/story/7339/7086778)\n\n> 很多人對ChatGPT極為推崇，甚至有大學資工系資深教授要求學生用ChatGPT寫程式。這則新聞令我膽戰心驚，嚇出一身冷汗，因為這樣做會害死學生。學生寫程式有兩個步驟，第一個步驟是畫出流程圖，第二個步驟是利用程式語言寫出程式來。流程圖有如造房子時的設計圖，畫流程圖是需要邏輯思考的，培養好的程式工程師，就是在培養他的邏輯思考能力。一旦流程圖畫對了，程式也就很容易寫出來了。反過來說，一個學生如果不會畫出流程圖，他是絕對不可能寫程式的.....\n\n然後，接下來就有一堆人跳出來，對這些文章進行不同的論述。\n\n## 贊成派\n### 蘇文鈺教授讓學生直接使用 ChatGPT 寫程式的 FB 貼文\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0fyzvxLmk4cEra2RHMgcxBcHYvF8F6fjsFLPn5wwE2koh2AbGEjh77YcFvbkRo4iyl&show_text=true&width=500\" width=\"500\" height=\"824\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 楊智傑副教授的看法\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&show_text=true&width=500\" width=\"500\" height=\"460\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 李家同教授對 ChatGPT 的立場\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02umxnXfJiwTvgNQuMyMc5Xuh4tiw4yyevrkFeRmb7KjHyaXCtmPWhqiaBxMoghMDxl%26id%3D100007748738834&show_text=true&width=500\" width=\"500\" height=\"266\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 蘇文鈺教授「似乎」是某篇文章進行回應的文章\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0bZMbN59NPqa9WoSfa2Duw4s3iEaYJk17ikJSamJD96LXuMZRKvkpkjGmDvCJ6dXQl&show_text=true&width=500\" width=\"500\" height=\"307\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 生成式 AI 對未來軟體的影響，有無前例可循？\n\n曾經，人類使用獸力來當移動工具，所以有個職業是「馬伕」和「人力車」。\n\n1886 年德國工程師 卡爾．賓士 製造了三輪汽車。而後 載姆勒 製造出四輪汽車。\n\n接下來，人類在汽車上嚐試了各種動力源，在數十年前，主流為石油。\n\n而在近十年，自動駕駛的汽車配上電力源，變成大家注目的焦點。\n\n在汽車這個「概念」還沒有被發明之前，如果去問正在使用交通工具的人，大家都會回應「我想要更快的馬、吃更少的馬、休息更少的馬」。\n\n目前看 ChatGPT 發展的方向，我無法就此斷定 ChatGPT 這個產品真的可以一直贏到最後，但這個「概念」出現時，我可以保證，我們下一代的工作方式，不會和這個時代一樣\n\n## 其他連結\n\n[微軟推出了名為「Microsoft 365 Copilot」的新生產力工具](https://moonandeye.github.io/programming/2023/03/17/microsoft-office-copilot-launch.html)\n\n[開始使用 Github Copilot 服務，來讓 side project 加速](https://moonandeye.github.io/programming/start-using-copilot.html)\n\n[使用 Bing Chat 幫我發想一些 App 的 idea](https://moonandeye.github.io/programming/bing-chat-brain-storming.html)\n\n[Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」](https://moonandeye.github.io/finance/prompt-engineering.html)\n\n[ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?](https://moonandeye.github.io/finance/ChatGPT-plugins.html)\n\n[ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用](https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html)\n",
+  "content_format": "markdown+html",
+  "inline_html_tags": [
+   "iframe"
+  ],
+  "has_insecure_images": false,
+  "word_count": 833,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2023-04-11-professor-article-about-ai.md"
+ },
+ {
   "slug": "tsmc-march-income",
   "title": "台積電的3月營收狀況",
   "lang": "zh",

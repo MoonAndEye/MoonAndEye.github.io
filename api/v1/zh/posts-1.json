@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-25",
+  "title": "[IT 鐵人賽] 第四件法寶 Acceptance（中）：驗收不該只有 Pass 和 Fail，我給了四種結果 - Day 25",
+  "lang": "zh",
+  "date": "2026-10-02T01:17:04+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Acceptance",
+   "iOS",
+   "OAuth"
+  ],
+  "summary": "Acceptance 的驗收結果不只有通過與未通過，還有待人類判定與無法判定。我也記錄了 XcodeBuildMCP 在 iOS 網頁版 Gmail OAuth 登入時，因無法操作網頁 DOM 而卡住的限制。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-25/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-25-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10419946)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 027](https://www.marvinswift.com/zh/programming/agent-build-log-episode-027/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 027](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-027.png)\n\nDay 24 的模擬器沒起來。這一天它起來了，驗收真的從 ticket 跑到報告。這一篇講結果怎麼分，因為我沒有讓它只回 Pass 或 Fail。\n\n## 從 ticket 到報告\n\nAgent 收到一張 Jira ticket 之後，第一步先找到這張 ticket 對應的 branch 或 commit，checkout 到正確的版本，build。build 完，依照 ticket 上的 spec 進行真正的驗收。\n\niOS 的部分，Agent 透過 XcodeBuildMCP 啟動 Simulator、操作 App，移到指定頁面，照 ticket 裡的描述一步一步確認。Android 的部分，Agent 本身已經能直接操作 Emulator，同樣照 spec 走完整個流程。\n\n過程中留下關鍵畫面的截圖。最後把操作步驟、驗收結果和證據整理成報告。\n\n## 四種結果\n\n我刻意把結果設計成四種狀態。\n\n| 狀態 | 什麼時候 |\n| --- | --- |\n| 通過驗收 | 畫面和規格完全一致 |\n| 未通過驗收 | 明確不符合 |\n| 待人類判定 | Agent 已完成操作、也取得證據，但最後還是需要產品、設計或 QA 確認 |\n| 無法判定 | 連驗收條件本身都無法完成，或證據不足 |\n\n有些事情 Agent 可以很明確地判斷，有些事情他不應該硬給答案。我不希望 Agent 為了產出結果，硬把所有事情都塞進 Pass 或 Fail。\n\nDay 23 的 Bug Blame 有「無法判定」，這裡也有。兩件事的道理一樣：證據不夠就說證據不夠。\n\n![Day 25：Acceptance 的四種驗收結果](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-25-main.png)\n\n## 三個模型再量一次\n\n這一天順便在一個很簡單的新手導覽頁驗收上，比了三個模型跑完整個任務的時間：Sol 大約 5 分鐘，Terra 大約 8 分鐘，Luna 大約 15 分鐘。跟 Day 17 的數字差不多，結論也一樣：Agent 任務看的是整條流程走完要多久。\n\n## 走到登入頁就卡住\n\niOS 的驗收還有一個很麻煩的問題。先講前提：這個問題只出在特定的 App，或者說，App 選了用網頁登入的時候。用別的登入方式，不一定會像我一樣遇到。\n\n我要驗收的 App，登入走 Gmail 的 OAuth，那一段是網頁。在 iOS 上做這段網頁 Gmail OAuth，操作有困難：XcodeBuildMCP 操作得了原生的 App UI，卻沒辦法直接操作登入網頁裡的 DOM 元素。也就是說，Agent 可以一路走到登入畫面，然後卡住。\n\n## 小結\n\nAcceptance 這一天真的跑起來：找 branch、build、模擬器、操作、截圖、報告。結果分四種：通過、未通過、待人類判定、無法判定。\n\n登入頁那個坑明天解。方法是換一個工具接手登入那一段。\n\n原文：[Agent Build Log — Episode 027](https://www.marvinswift.com/zh/programming/agent-build-log-episode-027/)\n\n---\n\n> **凡人修 Agent 傳｜第二十五回（Day 25）**\n>\n> ![凡人修 Agent 傳 Day 25 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-25-serial.png)\n>\n> 天亮換上空錄石。三具小偶還在臺上，門都沒開。手的主人進來，先在臺前坐下，閉眼放出神識，探向坊市。靈幕亮了，垂下來一卷，他停了一會，收回神識，出門去了。\n>\n> 回來的時候他手裡一卷薄玉簡，遞到我面前。我讀進去。喚小偶的法。\n>\n> 我放一縷神識到小偶額上，這一次照那卷法子放。額上亮了。一息半，門開了。\n>\n> 他把昨天剩下的幾道念刻完，掐訣。兩套念收進印裡。身上第五道紋。小窗第五格亮了，格裡浮著一具小偶和一張單子。\n>\n> 印一掐。我找段，重煉，叫醒，走進門，照單一步一步做，每一步拓一張影，寫成一本，呈上。他翻那一本，一頁一頁看，看完擱在臺上。\n>\n> 然後他教我四種話。\n>\n> 帖上寫的跟眼前一樣，說：過。眼前跟帖上明顯對不上，說：不過。做完了，影也拓了，可是帖上寫的那件事要人看了才算，說：待人判。帖上要做的事小偶做不到，或者影不夠，說：判不出。他說：這四種以外，不要硬湊成過或不過。\n>\n> 四張帖。第一張，門後那一格跟帖上一樣，我說：過。第二張，帖上寫門要抖一下，門沒抖，我說：不過。第三張，帖上寫「門開得順不順」，我開了，拓了影，順不順我說不出，我說：待人判。第四張，帖上寫的那一格小偶裡沒有，我說：判不出。\n>\n> 四本呈上，疊在臺上。\n>\n> 第五張帖。印一掐。我叫醒小偶，走進門。門後面還有一扇門。那扇門上有字，字會動，一格一格亮起來等人填。我伸手去碰那些字。碰不到。手穿過去，字還在動。\n>\n> 我說：判不出。說完，我又說了一句他沒教過的：門後面還有一扇門，那扇門上的字我的手碰不到。\n>\n> 手的主人看著那扇門，看了很久。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 呈上的本子疊了四本，第五本空著。小偶站在第二扇門前。我身上五道紋。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1549,
+  "reading_minutes": 6,
+  "source_path": "_posts/programming/zh/2026-10-02-it-ironman-2026-day-25.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-19",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜找到好用的 skill，裝進你的 agent：Skills hub 與 skill installer - Tip 19",
   "lang": "zh",
@@ -3559,49 +3585,5 @@
   "word_count": 396,
   "reading_minutes": 1,
   "source_path": "_posts/finance/2023-04-13-us-cpi-index.md"
- },
- {
-  "slug": "google-code-jam",
-  "title": "Google Code Jam 將在 Apr 15 2023, 14:00 UTC 開始",
-  "lang": "zh",
-  "date": "2023-04-12T00:23:00+08:00",
-  "category": "programming",
-  "tags": [
-   "Google",
-   "Code Jam"
-  ],
-  "summary": "Google announce code jam competition",
-  "url": "https://www.marvinswift.com/programming/google-code-jam.html",
-  "hero_image": null,
-  "content": "## Round A 比賽時間\n\nRound A\nApr 15 2023, 14:00 UTC 開始\n\nApr 15 2023, 18:00 UTC 結束\n\n## Code Jam\n\n如果你是一位熱愛編程的人，那麼你一定不會錯過 Google 的 coding 比賽 Code Jam。Code Jam 是一項由 Google 主辦的國際程序設計競賽，旨在幫助 Google 發掘潛在的工程領域頂級人才。Code Jam 每年只舉行一次，但每次要進行好幾輪，通過層層篩選，最終從近 10 萬名報名者中選出 25 個人參加最後的全球總決賽。\n\nCode Jam 的比賽題目涵蓋了各種算法和數學問題，需要參賽者在有限的時間內寫出正確、高效、可讀的代碼。Code Jam 的難度很高，不僅考驗參賽者的基礎知識和邏輯思維，還考驗他們的創造力和應變能力。Code Jam 的魅力在於它能夠讓參賽者體驗到編程的樂趣和挑戰，同時也能夠讓他們學習到新的技術和知識。\n\n## Code Jam 的比賽流程\n\n- 資格賽（Qualification Round）：所有報名的參賽者都可以參加這一輪，共有 4 個題目，時間為 30 小時。只要在時間內解出至少一個題目，就可以晉級到下一輪。\n- 第一輪（Round 1）：分為 A、B、C 三個子輪，每個子輪有 4 個題目，時間為 2.5 小時。每個子輪的前 1500 名參賽者可以晉級到下一輪。\n- 第二輪（Round 2）：有 4 個題目，時間為 3 小時。前 1000 名參賽者可以晉級到下一輪。\n- 第三輪（Round 3）：有 4 個題目，時間為 3 小時。前 25 名參賽者可以晉級到決賽。\n- 決賽（Finals）：在 Google 總部舉行，有 4 個題目，時間為 4 小時。最終的冠軍將獲得 15,000 美元的獎金和 Code Jam Champ 的稱號。\n\n## 比賽前的準備\n\n如果你想要參加 Code Jam，你需要具備以下條件：\n\n- 熟悉至少一種支持的程式語言（C++、C#、Go、Java、JavaScript、Kotlin、Python 或 Swift）。\n- 能夠使用 Google 提供的平台提交代碼和測試結果。\n- 能夠閱讀和理解英文題目和規則。\n\n如果你想要了解更多關於 Code Jam 的信息，你可以訪問官方網站或關注官方社交媒體。\n\n## 連結\n\n[Code Jam](https://codingcompetitions.withgoogle.com/codejam)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 617,
-  "reading_minutes": 2,
-  "source_path": "_posts/programming/zh/2023-04-12-google-code-jam.md"
- },
- {
-  "slug": "professor-article-about-ai",
-  "title": "大學教授對於 ChatGPT 在資訊相關領域的學生，開始了不同立場的論戰",
-  "lang": "zh",
-  "date": "2023-04-11T08:17:00+08:00",
-  "category": "programming",
-  "tags": [
-   "AI",
-   "ChatGPT"
-  ],
-  "summary": "University professors has different opinions about ChatGPT in Computer Sciense students homework.",
-  "url": "https://www.marvinswift.com/programming/professor-article-about-ai.html",
-  "hero_image": null,
-  "content": "## 大學教授在各自的臉書上對於 ChatGPT 的「討論」\n\n昨天晚上我個人的 FB 動態牆上，對於 ChatGPT 的討論突然變得非常多，好奇看了一下發生了什麼事。原來是蘇文鈺教授回了個「被罵了」的文章，再看前面所敘述的文字。因為蘇教授之前寫了一篇讓學生使用 ChatGPT 進行作業的文章。而李家同教授在 4/10 的聯合報寫了一篇關於 ChatGPT 的文章，標題如下。\n\n#### [我們要創造不會思考的下一代？]\n\n[新聞連結](https://udn.com/news/story/7339/7086778)\n\n> 很多人對ChatGPT極為推崇，甚至有大學資工系資深教授要求學生用ChatGPT寫程式。這則新聞令我膽戰心驚，嚇出一身冷汗，因為這樣做會害死學生。學生寫程式有兩個步驟，第一個步驟是畫出流程圖，第二個步驟是利用程式語言寫出程式來。流程圖有如造房子時的設計圖，畫流程圖是需要邏輯思考的，培養好的程式工程師，就是在培養他的邏輯思考能力。一旦流程圖畫對了，程式也就很容易寫出來了。反過來說，一個學生如果不會畫出流程圖，他是絕對不可能寫程式的.....\n\n然後，接下來就有一堆人跳出來，對這些文章進行不同的論述。\n\n## 贊成派\n### 蘇文鈺教授讓學生直接使用 ChatGPT 寫程式的 FB 貼文\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0fyzvxLmk4cEra2RHMgcxBcHYvF8F6fjsFLPn5wwE2koh2AbGEjh77YcFvbkRo4iyl&show_text=true&width=500\" width=\"500\" height=\"824\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 楊智傑副教授的看法\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fscatjay%2Fposts%2Fpfbid0Dqj7XjfvRSLDZYbd4VVxcBo3rFSB15zKRxRhUf4L6GYpu3cR3GwQhmRLy6Ehi84al&show_text=true&width=500\" width=\"500\" height=\"460\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 李家同教授對 ChatGPT 的立場\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02umxnXfJiwTvgNQuMyMc5Xuh4tiw4yyevrkFeRmb7KjHyaXCtmPWhqiaBxMoghMDxl%26id%3D100007748738834&show_text=true&width=500\" width=\"500\" height=\"266\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 蘇文鈺教授「似乎」是某篇文章進行回應的文章\n\n<iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farwen.su.5%2Fposts%2Fpfbid0bZMbN59NPqa9WoSfa2Duw4s3iEaYJk17ikJSamJD96LXuMZRKvkpkjGmDvCJ6dXQl&show_text=true&width=500\" width=\"500\" height=\"307\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\n\n## 生成式 AI 對未來軟體的影響，有無前例可循？\n\n曾經，人類使用獸力來當移動工具，所以有個職業是「馬伕」和「人力車」。\n\n1886 年德國工程師 卡爾．賓士 製造了三輪汽車。而後 載姆勒 製造出四輪汽車。\n\n接下來，人類在汽車上嚐試了各種動力源，在數十年前，主流為石油。\n\n而在近十年，自動駕駛的汽車配上電力源，變成大家注目的焦點。\n\n在汽車這個「概念」還沒有被發明之前，如果去問正在使用交通工具的人，大家都會回應「我想要更快的馬、吃更少的馬、休息更少的馬」。\n\n目前看 ChatGPT 發展的方向，我無法就此斷定 ChatGPT 這個產品真的可以一直贏到最後，但這個「概念」出現時，我可以保證，我們下一代的工作方式，不會和這個時代一樣\n\n## 其他連結\n\n[微軟推出了名為「Microsoft 365 Copilot」的新生產力工具](https://moonandeye.github.io/programming/2023/03/17/microsoft-office-copilot-launch.html)\n\n[開始使用 Github Copilot 服務，來讓 side project 加速](https://moonandeye.github.io/programming/start-using-copilot.html)\n\n[使用 Bing Chat 幫我發想一些 App 的 idea](https://moonandeye.github.io/programming/bing-chat-brain-storming.html)\n\n[Will 保哥翻譯自 DAIR.AI 的 “prompt engineering”「提示工程指南」](https://moonandeye.github.io/finance/prompt-engineering.html)\n\n[ChatGPT 推出了 plugins，這會不會是 ChatGPT 的 AppStores?](https://moonandeye.github.io/finance/ChatGPT-plugins.html)\n\n[ChatGPT 官方 App 上架台灣區 App Store，台灣區可以使用](https://moonandeye.github.io/programming/ChatGPT-offical-app-on-AppStore.html)\n",
-  "content_format": "markdown+html",
-  "inline_html_tags": [
-   "iframe"
-  ],
-  "has_insecure_images": false,
-  "word_count": 833,
-  "reading_minutes": 3,
-  "source_path": "_posts/programming/zh/2023-04-11-professor-article-about-ai.md"
  }
 ]
