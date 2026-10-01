@@ -1,5 +1,22 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-19",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜找到好用的 skill，裝進你的 agent：Skills hub 與 skill installer - Tip 19",
+  "lang": "zh",
+  "date": "2026-10-01T13:00:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "我整理了用 Skills hub 尋找 skill、以 Codex skill-installer、skills.sh CLI 或 Claude Code plugin 安裝的流程，並說明如何確認安裝範圍與 agent 實際載入。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-19/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 732,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-10-01-it-ironman-2026-vibe-coding-tip-19.md"
+ },
+ {
   "slug": "it-ironman-2026-day-24",
   "title": "[IT 鐵人賽] 第四件法寶 Acceptance（上）：兩個 tool、一條路徑，第一次驗收就失敗 - Day 24",
   "lang": "zh",

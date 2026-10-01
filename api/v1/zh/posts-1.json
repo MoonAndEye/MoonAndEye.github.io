@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-19",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜找到好用的 skill，裝進你的 agent：Skills hub 與 skill installer - Tip 19",
+  "lang": "zh",
+  "date": "2026-10-01T13:00:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "我整理了用 Skills hub 尋找 skill、以 Codex skill-installer、skills.sh CLI 或 Claude Code plugin 安裝的流程，並說明如何確認安裝範圍與 agent 實際載入。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-19/",
+  "hero_image": null,
+  "content": "想讓 agent 用一套現成做法，我會先找 skill。找到合適的，再裝到需要用它的專案或個人環境裡。Skills hub 是找來源的地方，skill installer 則可以幫我完成安裝。\n\n## 為什麼\n\nskill 通常是一個資料夾，裡面用 `SKILL.md` 寫什麼時候用、怎麼做。別人已經整理好的做法，可以先拿來試；找到之後，還要確認裝給哪個 agent、放在哪裡，他才讀得到。\n\n## 我怎麼做\n\n**先找來源。** skills.sh 可以找公開的 skill；anthropics/skills 有 Anthropic 的範例，Codex 的新範例看 openai/plugins；舊的 openai/skills 已標示 deprecated，裡面仍保留 skill-installer 的說明。先讀 description，確認它處理的是我要做的事，再看 `SKILL.md` 內文。\n\n**選一種安裝方式。** 這幾個入口不用全部跑一遍：\n\n| 入口 | 怎麼用 |\n| --- | --- |\n| Codex 的 `$skill-installer` | 告訴他 skill 名稱或 GitHub 目錄網址，讓他安裝 |\n| skills.sh 的 CLI | 用 `npx skills add` 安裝，依提示選 skill 與目標 agent |\n| Claude Code plugin | 先加入 marketplace，再安裝其中的 plugin，取得包在裡面的 skills |\n\nskill installer 是「裝 skill 的 skill」。我把安裝需求交給他，他依說明找來源、處理目錄。像這樣：\n\n```text\n用 skill-installer 幫我安裝這個 GitHub 目錄裡的 skill：<skill 的網址>。\n裝完告訴我來源、安裝路徑，以及怎麼讓目前的 agent 載入它。\n同名的已經存在時，先列出差異。\n```\n\n想直接用 CLI，先找、再選要裝的內容：\n\n```bash\nnpx skills find typescript\nnpx skills add vercel-labs/agent-skills\nnpx skills list\n```\n\n這支 CLI 預設裝到專案範圍；加 `-g` 是個人範圍，跨專案使用。互動安裝可以選 symlink 或 copy，實際位置依目標 agent 而定。裝完看清楚輸出的路徑。\n\nClaude Code 透過 plugin 安裝的例子：\n\n```text\n/plugin marketplace add anthropics/skills\n/plugin install example-skills@anthropic-agent-skills\n```\n\nPlugin 怎麼把多個元件包在一起，後面另有一篇。這裡先把想用的 skill 裝好。\n\n**最後確認能用。** 看安裝結果裡的路徑與載入說明，再給他一個符合 description 的小任務，確認他有使用這份 skill。指令跑完只是安裝這一步完成。\n\n## 坑\n\n裝進來的 skill 是給 agent 的指示。來源要看清楚，同名的先處理；只給這個專案用的，就留在專案範圍。需要重新載入或重開 session 時，照目前工具的安裝結果做。\n\n裝好了他卻沒用上，多半是那一行 description 跟你講話的方式對不上，他判斷用不到。這種時候直接打 `/` 加上 skill 的名字叫它，先確認這份 skill 本身有效；要他以後自己判斷得出來，就回頭把 description 改準。\n\n## 小結\n\n找來源、選安裝方式、確認路徑，再試一次。現成的 skill 能用起來，之後才知道哪些地方需要改成自己的做法。\n\n明天講 skill creator，把自己常用的做法寫成 skill。\n\n參考：\n- skills.sh https://skills.sh\n- vercel-labs/skills https://github.com/vercel-labs/skills\n- anthropics/skills https://github.com/anthropics/skills\n- openai/skills https://github.com/openai/skills\n- openai/plugins https://github.com/openai/plugins\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 732,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-10-01-it-ironman-2026-vibe-coding-tip-19.md"
+ },
+ {
   "slug": "it-ironman-2026-day-24",
   "title": "[IT 鐵人賽] 第四件法寶 Acceptance（上）：兩個 tool、一條路徑，第一次驗收就失敗 - Day 24",
   "lang": "zh",
@@ -3585,48 +3603,5 @@
   "word_count": 833,
   "reading_minutes": 3,
   "source_path": "_posts/programming/zh/2023-04-11-professor-article-about-ai.md"
- },
- {
-  "slug": "tsmc-march-income",
-  "title": "台積電的3月營收狀況",
-  "lang": "zh",
-  "date": "2023-04-11T01:25:00+08:00",
-  "category": "finance",
-  "tags": [
-   "台積電",
-   "財經"
-  ],
-  "summary": "TSMC March income is out, lower than previous month 10.9%",
-  "url": "https://www.marvinswift.com/finance/tsmc-march-income.html",
-  "hero_image": null,
-  "content": "## 台積電 3 月營收狀況\n\n台灣積體電路製造股份有限公司（TSMC）是全球最大的專業積體電路（IC）製造服務商，為客戶提供先進的製程技術和高品質的晶圓產品。TSMC在2023年3月的營收表現不如預期，主要受到全球晶片短缺的影響，以及新型冠狀病毒（COVID-19）疫情對市場需求的不確定性。\n\n根據TSMC今日公佈的2023年3月營收報告，2023年3月合併營收約為新台幣1,454億800萬元，較上月減少了10.9%，較去年同期減少了15.4%。累計2023年1至3月營收約為新台幣5,086億3,300萬元，較去年同期增加了3.6%。TSMC表示，2023年第一季的營收符合先前預測的範圍，但低於季節性水準，主要因為智慧型手機和高階計算產品的需求下降。\n\nTSMC預期2023年第二季的營收將有所回升，主要受惠於5奈米和7奈米製程的強勁需求，以及汽車和物聯網產品的持續復甦。TSMC表示，將持續投資擴充產能，以滿足客戶的長期需求，並提升競爭力。TSMC也表示，將積極應對COVID-19疫情帶來的挑戰，並確保員工和供應鏈夥伴的健康和安全。\n\n## 參考連結\n\n[台積公司報告](https://pr.tsmc.com/chinese/news/3010)\n\n[科技新報新聞](https://technews.tw/2021/04/09/tsmc-2330-202103-financial-report/)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 384,
-  "reading_minutes": 1,
-  "source_path": "_posts/finance/2023-04-11-tsmc-march-income.md"
- },
- {
-  "slug": "mario-movie",
-  "title": "超級瑪莉歐電影片 上映了",
-  "lang": "zh",
-  "date": "2023-04-09T00:03:00+08:00",
-  "category": "life",
-  "tags": [
-   "Movie"
-  ],
-  "summary": "Suprer Mario Bro movie is on. This post has trailers",
-  "url": "https://www.marvinswift.com/programming/mario-movie.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/mario-movie/movie-ticket.jpg",
-  "content": "超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。\n\n在電影裡，有很多那些懷舊的場景，都會穿插出現，如果你是很喜歡任天堂的玩家，一定不要錯過。\n\n![Mario movie ticket](https://www.marvinswift.com/assets/posts/mario-movie/movie-ticket.jpg)\n\n## Youtube 的預告片\n\n### 預告片1\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iE-BqYVfA4I\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n### 預告片2\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sov-IOMEYbY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n### 預告片3\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vR5aIE7FOYk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n",
-  "content_format": "markdown+html",
-  "inline_html_tags": [
-   "iframe"
-  ],
-  "has_insecure_images": false,
-  "word_count": 155,
-  "reading_minutes": 1,
-  "source_path": "_posts/life/zh/2023-04-09-mario-movie.md"
  }
 ]

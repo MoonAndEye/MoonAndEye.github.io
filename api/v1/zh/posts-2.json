@@ -1,5 +1,48 @@
 [
  {
+  "slug": "tsmc-march-income",
+  "title": "台積電的3月營收狀況",
+  "lang": "zh",
+  "date": "2023-04-11T01:25:00+08:00",
+  "category": "finance",
+  "tags": [
+   "台積電",
+   "財經"
+  ],
+  "summary": "TSMC March income is out, lower than previous month 10.9%",
+  "url": "https://www.marvinswift.com/finance/tsmc-march-income.html",
+  "hero_image": null,
+  "content": "## 台積電 3 月營收狀況\n\n台灣積體電路製造股份有限公司（TSMC）是全球最大的專業積體電路（IC）製造服務商，為客戶提供先進的製程技術和高品質的晶圓產品。TSMC在2023年3月的營收表現不如預期，主要受到全球晶片短缺的影響，以及新型冠狀病毒（COVID-19）疫情對市場需求的不確定性。\n\n根據TSMC今日公佈的2023年3月營收報告，2023年3月合併營收約為新台幣1,454億800萬元，較上月減少了10.9%，較去年同期減少了15.4%。累計2023年1至3月營收約為新台幣5,086億3,300萬元，較去年同期增加了3.6%。TSMC表示，2023年第一季的營收符合先前預測的範圍，但低於季節性水準，主要因為智慧型手機和高階計算產品的需求下降。\n\nTSMC預期2023年第二季的營收將有所回升，主要受惠於5奈米和7奈米製程的強勁需求，以及汽車和物聯網產品的持續復甦。TSMC表示，將持續投資擴充產能，以滿足客戶的長期需求，並提升競爭力。TSMC也表示，將積極應對COVID-19疫情帶來的挑戰，並確保員工和供應鏈夥伴的健康和安全。\n\n## 參考連結\n\n[台積公司報告](https://pr.tsmc.com/chinese/news/3010)\n\n[科技新報新聞](https://technews.tw/2021/04/09/tsmc-2330-202103-financial-report/)\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 384,
+  "reading_minutes": 1,
+  "source_path": "_posts/finance/2023-04-11-tsmc-march-income.md"
+ },
+ {
+  "slug": "mario-movie",
+  "title": "超級瑪莉歐電影片 上映了",
+  "lang": "zh",
+  "date": "2023-04-09T00:03:00+08:00",
+  "category": "life",
+  "tags": [
+   "Movie"
+  ],
+  "summary": "Suprer Mario Bro movie is on. This post has trailers",
+  "url": "https://www.marvinswift.com/programming/mario-movie.html",
+  "hero_image": "https://www.marvinswift.com/assets/posts/mario-movie/movie-ticket.jpg",
+  "content": "超級瑪莉是我的童年，我玩過的任天堂主機系列，是任天堂、超級任天堂、N64、Wii、Switch。而掌機系列，則是 GBA、NDS、3DS。而裡面我一定會玩到瑪莉歐系列。在知道這部超級瑪莉歐要上映時，我很興奮。因為那是我從小孩子玩到現在的電玩。\n\n在電影裡，有很多那些懷舊的場景，都會穿插出現，如果你是很喜歡任天堂的玩家，一定不要錯過。\n\n![Mario movie ticket](https://www.marvinswift.com/assets/posts/mario-movie/movie-ticket.jpg)\n\n## Youtube 的預告片\n\n### 預告片1\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iE-BqYVfA4I\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n### 預告片2\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sov-IOMEYbY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n### 預告片3\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vR5aIE7FOYk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n",
+  "content_format": "markdown+html",
+  "inline_html_tags": [
+   "iframe"
+  ],
+  "has_insecure_images": false,
+  "word_count": 155,
+  "reading_minutes": 1,
+  "source_path": "_posts/life/zh/2023-04-09-mario-movie.md"
+ },
+ {
   "slug": "non-farm-employment-in-march",
   "title": "美國3月非農就業人數與失業率",
   "lang": "zh",
