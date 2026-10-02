@@ -1,5 +1,31 @@
 [
  {
+  "slug": "it-ironman-2026-day-26",
+  "title": "[IT 鐵人賽] 第四件法寶 Acceptance（下）：走到登入頁就卡住，用 Appium 補上 Web Login - Day 26",
+  "lang": "zh",
+  "date": "2026-10-03T01:17:18+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Acceptance",
+   "iOS",
+   "OAuth",
+   "Appium"
+  ],
+  "summary": "iOS App 驗收到 Gmail OAuth 網頁登入時，XcodeBuildMCP 卡在 DOM 操作；本文用 Appium 接手網頁登入，再回到原生 App 完成 Acceptance。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-26/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-26-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1285,
+  "reading_minutes": 5,
+  "source_path": "_posts/programming/zh/2026-10-03-it-ironman-2026-day-26.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-20",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Skill creator 的概念：把一件事的做法寫成 skill - Tip 20",
   "lang": "zh",

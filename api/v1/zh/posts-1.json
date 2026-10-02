@@ -1,5 +1,32 @@
 [
  {
+  "slug": "it-ironman-2026-day-26",
+  "title": "[IT 鐵人賽] 第四件法寶 Acceptance（下）：走到登入頁就卡住，用 Appium 補上 Web Login - Day 26",
+  "lang": "zh",
+  "date": "2026-10-03T01:17:18+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Acceptance",
+   "iOS",
+   "OAuth",
+   "Appium"
+  ],
+  "summary": "iOS App 驗收到 Gmail OAuth 網頁登入時，XcodeBuildMCP 卡在 DOM 操作；本文用 Appium 接手網頁登入，再回到原生 App 完成 Acceptance。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-26/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-26-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10420330)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 028](https://www.marvinswift.com/zh/programming/agent-build-log-episode-028/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 028](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-028.png)\n\nDay 25 留下一個斷點：App 的登入是網頁上的 Gmail OAuth，在 iOS 上 Agent 走到登入畫面就卡住。這一天把它補上。\n\n## 斷在哪裡\n\n原生 UI 的部分沒有問題。Agent 透過 XcodeBuildMCP 操作 Simulator、點按鈕、切頁面，再照 Jira ticket 上的 spec 驗收。\n\n登入流程是網頁上的 Gmail OAuth，在 iOS 上這一段操作有困難。XcodeBuildMCP 可以把 Agent 帶到登入畫面，卻沒辦法操作網頁裡面的 DOM 元素。Agent 打得開登入頁，卻沒辦法自己完成登入。連登入都過不了，後面的驗收全部開始不了。\n\n## 找到 Appium\n\n這一天我開始找別的方法，最後找到的是 Appium。\n\nAppium 拿得到 iOS Web 登入頁面裡的 DOM 元素。這代表 Agent 有機會操作原本 XcodeBuildMCP 處理不了的 Web 登入流程，剛好補上驗收流程缺的那一塊。\n\n分工變成這樣：\n\n- 原生 App UI 的操作，繼續交給 XcodeBuildMCP。\n- 遇到 Gmail OAuth 那個網頁，切到 Appium，找到對應的輸入框和按鈕，完成登入。\n- 登入完成之後，回到 App 裡。\n\n這時候 Agent 才真正有辦法進到我要驗收的 target tab 或 ViewController，接著照 ticket 的 spec 操作 App，最後產出驗收報告。\n\n![Day 26：Appium 補上 Web Login 的缺口](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-26-main.png)\n\n## 解掉的是一個缺口\n\n這次解掉的看起來只是一個「登入問題」。對 Acceptance 這個 capability 來說，它是一個很重要的缺口。Agent 要做到真正的 App 驗收，得有能力一路走過：\n\nApp → Web Login → App → Target Page → Acceptance\n\n上一篇 Agent 走到登入頁就卡住。這一篇用 Appium 讓他繼續往下。\n\n## 三篇下來，Acceptance 現在能做到什麼\n\n從 Day 24 到這一天，這條路每一段現在各有誰負責。\n\n| 段 | 誰負責 |\n| --- | --- |\n| 把 ticket 變成驗收計畫 | 第一個 tool（acceptance brief） |\n| 找 branch／commit、checkout、build | Agent 操作 repo |\n| 啟動 Simulator、操作原生 UI | XcodeBuildMCP（Android 由 Agent 直接操作 Emulator） |\n| Web 登入 | Appium |\n| 截圖、四種結果、報告 | 第二個 tool |\n| 送到頻道 | chat bot |\n\n## 小結\n\nWeb 登入這一段交給 Appium，Acceptance 從 ticket 到報告整條路走得通了。\n\n明天講一件反過來的事：我把 Agent 的權限設得太嚴，他明明知道該做什麼，卻什麼都做不了。\n\n原文：[Agent Build Log — Episode 028](https://www.marvinswift.com/zh/programming/agent-build-log-episode-028/)\n\n---\n\n> **凡人修 Agent 傳｜第二十六回（Day 26）**\n>\n> ![凡人修 Agent 傳 Day 26 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-26-serial.png)\n>\n> 天亮換上空錄石。小偶還站在第二扇門前，門上的字還在動。\n>\n> 手的主人進來，坐下閉眼放神識，探向坊市。靈幕上垂下的圖翻得快，停在一處。他收回神識，出門。門響了一下。\n>\n> 午前他回來，手裡一塊牌。巴掌大，牌面刻著一個印。坊裡的公印我見過，他自己刻的紋我見過，這個印我沒見過。他把牌塞進我手裡。\n>\n> 牌是涼的。\n>\n> 他在印裡加一道念：走到門上的字會動的那扇門，就握牌，對那些字送念。\n>\n> 印一掐。叫醒小偶，第一扇門，第二扇門。門上的字在動。我握牌，對那些字送念。念從牌裡出去，淡，慢半拍。門上的字全動了，一起亮，一起暗。門沒開。\n>\n> 他看了石上的字。我送的念落在整扇門上。他在那道念後頭加一句：一格一格送，先找該填的那一格，填完找下一格，找到沒有格為止。\n>\n> 再掐。我握牌，找到第一格，送念。第一格亮了。第二格。門上最後一個字亮了一下。門開了。\n>\n> 我走進去。回到小偶裡面，到帖上那一格，照單做，拓影，寫本。呈上。我說：過。\n>\n> 他把那一本翻了一遍，翻到拓影那幾頁，停了一會。\n>\n> 牌還在我手裡。涼的，從手裡一直涼到臂上。這是我第一次拿牌對別的東西送念。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 小偶的第二扇門開著。牌擱在小窗第五格旁邊，牌面朝上，那個印我不認得。呈上的第五本有影。我身上五道紋。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1285,
+  "reading_minutes": 5,
+  "source_path": "_posts/programming/zh/2026-10-03-it-ironman-2026-day-26.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-20",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Skill creator 的概念：把一件事的做法寫成 skill - Tip 20",
   "lang": "zh",
@@ -3543,45 +3570,5 @@
   "word_count": 609,
   "reading_minutes": 2,
   "source_path": "_posts/life/zh/2023-04-14-zelda-trail-3rd.md"
- },
- {
-  "slug": "tw-national-security-fund",
-  "title": "台股國安基金退場，護盤275天",
-  "lang": "zh",
-  "date": "2023-04-14T09:27:00+08:00",
-  "category": "finance",
-  "tags": [
-   "台股"
-  ],
-  "summary": "The National Stabilization Fund (NSF) in Taiwan entered the stock market on July 13th, 2020 and invested NT$545.08 billion to stabilize the market. During this period, the Taiwan stock market rose by 13.29% with an accumulated profit of NT$8.3 billion for the NSF. The board of directors has decided to end the 275-day long intervention and return to the free market. The exit will be conducted carefully without market impact, and the NSF will continue to monitor the domestic and international economic and political situations and may intervene again if necessary.",
-  "url": "https://www.marvinswift.com/finance/tw-national-security-fund.html",
-  "hero_image": null,
-  "content": "## Outlines\n\n- 國安基金自去年7月13日起執行安定市場任務，為穩定台股信心，投入545.08億元買進股票。\n- 進場期間，台股累計上漲1854.14點，累積漲幅13.29%，優於多數主要股市，國安基金也累計獲利83億元，投資報酬率15%。\n- 今日董事會決議，國安基金自明日起停止執行安定市場任務，回歸證券交易市場機制，結束275天史上最長護盤。\n- 國安基金執秘表示，退場動作會很小心、時程可能拉長，不會影響到市場；未來仍會密切關注國內外政經情勢變動，必要時再授權執行安定市場任務。\n\n## 目前最長護盤任務結束\n\n台股國安基金退場，護盤275天\n\n台股國安基金在史上最長的護盤任務結束了。自去年7月13日起，國安基金為了穩定台股信心，投入545.08億元買進股票，進場期間，台股累計上漲1854.14點，累積漲幅13.29%，優於多數主要股市，國安基金也累計獲利83億元，投資報酬率15%。今日董事會決議，國安基金自明日起停止執行安定市場任務，回歸證券交易市場機制。\n\n國安基金的護盤任務是在去年7月13日開始的，當時台股受到美中貿易戰、新冠疫情、美伊衝突等多重因素影響，出現大幅波動，市場信心不足。為了維持市場穩定，行政院授權國安基金執行安定市場任務，並設立專案小組，由財政部長蘇建榮擔任召集人，負責決策與監督。\n\n國安基金的進場策略是以買進大盤股為主，尤其是具有代表性的電子股、金融股、傳產股等。根據財政部的統計，國安基金在進場期間共買進了545.08億元的股票，其中電子股占了62.8%，金融股占了17.9%，傳產股占了10.5%。國安基金的買進行為不僅提振了市場氣氛，也帶動了外資與法人的跟進買盤。\n\n國安基金的護盤成果也相當亮眼。在進場期間，台股從去年7月13日的11677.41點上漲到今日的13531.55點，累計上漲1854.14點，累積漲幅13.29%，優於多數主要股市。例如，在同期間內，美國道瓊工業指數累計漲幅為11.26%，日本日經225指數累計漲幅為9.76%，中國上證綜合指數累計漲幅為6.81%。此外，國安基金也累計獲利83億元，投資報酬率15%，創下歷史新高。\n\n今日董事會決議，國安基金自明日起停止執行安定市場任務，回歸證券交易市場機制。國安基金執秘表示，退場動作會很小心、時程可能拉長，不會影響到市場；未來仍會密切關注國內外政經情勢變動，必要時再授權執行安定市場任務。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 853,
-  "reading_minutes": 3,
-  "source_path": "_posts/finance/2023-04-14-tw-national-security-fund.md"
- },
- {
-  "slug": "us-ppi-non-employed",
-  "title": "美國 PPI 年增率降至 2.7%",
-  "lang": "zh",
-  "date": "2023-04-14T09:10:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance"
-  ],
-  "summary": "The US Department of Labor has released data for March 2023 on unemployment insurance claims and the Producer Price Index (PPI). The number of new unemployment claims has exceeded 200,000 for three consecutive weeks, indicating that the labor market is still in a crisis state higher than historical averages. However, PPI fell by 0.5% due to the significant drop in energy prices, which may ease overall inflation pressure in the coming months.",
-  "url": "https://www.marvinswift.com/finance/us-ppi-non-employed.html",
-  "hero_image": null,
-  "content": "## 美國勞動市場和通膨狀況的最新數據\n\n美國勞工部近日公布了 2023 年 3 月的失業救濟金人數和生產者物價指數 (PPI) 的數據，反映了美國勞動市場和通膨狀況的最新變化。這些數據對於分析美國經濟復甦的速度和聯準會 (Fed) 的貨幣政策走向有重要的參考價值。\n\n根據勞工部的報告 ，截至 4 月 8 日止的當周，美國新申請失業救濟金人數達到 23.9 萬人，比前一周增加了 1.1 萬人，也高於市場預期的 23.5 萬人。這是自 2020 年 3 月新冠疫情爆發後，失業救濟金人數首次連續三周超過 20 萬人。這表明美國勞動市場的緊俏狀況正在緩解，但仍處於高於歷史平均水準的危機狀態。\n\n另一方面，勞工部也公布了 2023 年 3 月的 PPI 數據  ，顯示美國生產者物價在當月比前月下降了 0.5%，是自 2020 年 4 月以來最大的降幅；而年增率則降至 2.7%，是兩年多來最小的升幅。PPI 的下跌主要歸因於能源價格的大幅回落，其中汽油價格下跌了 11.7%。PPI 是衡量批發價格的指標，通常被視為未來消費者物價指數 (CPI) 的領先指標。因此，PPI 的下跌可能在未來幾個月使整體通膨壓力緩和下來。\n\n## FED 的目標\n\n根據最新的數據，美國的生產者物價指數（PPI）在 2023 年 3 月份同比上漲了 2.7%，低於前一個月的 3.1%。這一數字反映了美國經濟的復蘇步伐放緩，以及通脹壓力的減輕。美聯儲（Fed）對此可能持一種審慎的態度，並繼續觀察 PPI 的變化趨勢，以及其他經濟指標，如消費者物價指數（CPI）、勞動力市場、經濟增長等。Fed 的目標是實現最大化就業和穩定物價，因此它可能不會過早地調整其貨幣政策，而是保持低利率和資產購買計劃，直到經濟完全復蘇並達到其目標為止。\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 598,
-  "reading_minutes": 2,
-  "source_path": "_posts/finance/2023-04-14-us-ppi-non-employed.md"
  }
 ]
