@@ -16,6 +16,8 @@ tags:
 summary: "我用 skill-creator 把重複做法整理成 skill，從釐清需求、寫 SKILL.md、測試到調整 description，並說明如何控制內文長度。"
 description: "我用 skill-creator 把重複做法整理成 skill，從釐清需求、寫 SKILL.md、測試到調整 description，並說明如何控制內文長度。"
 ---
+本篇也同步刊登於 [iT 鐵人賽文章](https://ithelp.ithome.com.tw/articles/10420168)。
+
 skill creator 是「寫 skill 的 skill」：告訴他你想把哪件事變成 skill，他帶著你問清楚、寫草稿、測、改。
 
 ## 為什麼
