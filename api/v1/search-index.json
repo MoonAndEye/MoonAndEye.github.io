@@ -8,7 +8,7 @@
   "summary": "整理 Claude Code 與 Codex 的 plugin 目錄，說明如何把 skill、subagent、hook 和 MCP server 打包分享，也列出安裝與從 standalone 遷移時要檢查的設定。",
   "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-21/",
   "date": "2026-10-03T13:05:00+08:00",
-  "word_count": 491
+  "word_count": 506
  },
  {
   "slug": "it-ironman-2026-day-26",
