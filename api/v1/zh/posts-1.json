@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-21",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Plugin 的概念：skill、subagent、hook、MCP server 打包成一個可以分享的東西 - Tip 21",
+  "lang": "zh",
+  "date": "2026-10-03T13:05:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "整理 Claude Code 與 Codex 的 plugin 目錄，說明如何把 skill、subagent、hook 和 MCP server 打包分享，也列出安裝與從 standalone 遷移時要檢查的設定。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-21/",
+  "hero_image": null,
+  "content": "plugin 是一個資料夾，把 skill、subagent、hook、MCP server 這些東西打包在一起，一次裝、一次分享。\n\n## 為什麼\n\nskill 一個一個裝可以。但一套做法常常不只一個 skill：還有 agent 的定義、事件的 hook、要接的 MCP server。要給隊友或公開分享，散著給就會漏。plugin 把它們收在一個目錄裡，有版本，裝的人一個指令。\n\nClaude Code 的文件把兩種放法分開：放在專案的 `.claude/` 目錄裡是 standalone，適合個人流程、專案裡的客製和快速試；要分享給隊友、公開發布、跨專案重用，就做成 plugin。它建議先用 `.claude/` 快速迭代，要分享時再轉成 plugin。\n\n## 我怎麼做\n\n**Claude Code 的 plugin 長這樣：**\n\n```\nmy-plugin/\n├── .claude-plugin/plugin.json   ← manifest\n├── skills/<name>/SKILL.md\n├── agents/                      ← subagent 的定義\n├── hooks/hooks.json\n├── .mcp.json                    ← MCP server 設定\n└── settings.json                ← 啟用時套上的預設設定\n```\n\n安裝方式在 Tip 19 講過了。這裡看打包後的差別：plugin 裡的 skill 用 `/plugin-name:skill-name` 呼叫，名稱帶著所屬 plugin，方便分辨來源。\n\n**Codex 那邊一樣的形狀：** openai/plugins 裡每個 plugin 一個 `.codex-plugin/plugin.json`，旁邊放 `skills/`、`.mcp.json`、`agents/`、`commands/`、`hooks.json`；預設的 marketplace 是 `.agents/plugins/marketplace.json`。\n\n## 坑\n\n一個 plugin 裝進來的東西比表面上多：hook 綁在事件上，背景 monitor 在 plugin 啟用的時候自己開始跑，`.mcp.json` 會把外面的 server 接進來，`settings.json` 會套上它的預設設定。裝之前把目錄看過一遍，來源要是自己信得過的。\n\n自己把 `.claude/` 轉成 plugin 之後，原本那幾份記得刪掉。專案和個人 `.claude/agents/` 裡同名的 subagent 定義會蓋過 plugin 裡那一份，留著就一直用到舊的；skill 那邊則是兩份並存，各自有各自的叫法。\n\n## 小結\n\nplugin 是 skill 往上一層的包法：一個目錄、一個 manifest、一個指令裝。\n\n明天講 plugin 裡常見的一件東西：subagent，把一段工作派出去。\n\n參考：\n- Claude Code 文件：plugins https://code.claude.com/docs/en/plugins\n- Claude Code 文件：plugin marketplaces https://code.claude.com/docs/en/plugin-marketplaces\n- openai/plugins https://github.com/openai/plugins\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 491,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-10-03-it-ironman-2026-vibe-coding-tip-21.md"
+ },
+ {
   "slug": "it-ironman-2026-day-26",
   "title": "[IT 鐵人賽] 第四件法寶 Acceptance（下）：走到登入頁就卡住，用 Appium 補上 Web Login - Day 26",
   "lang": "zh",
@@ -3546,29 +3564,5 @@
   "word_count": 621,
   "reading_minutes": 2,
   "source_path": "_posts/swift/zh/2023-04-18-esun-subscription-stock.md"
- },
- {
-  "slug": "zelda-trail-3rd",
-  "title": "薩爾達王國之淚影片釋出",
-  "lang": "zh",
-  "date": "2023-04-14T09:54:00+08:00",
-  "category": "life",
-  "tags": [
-   "薩爾達",
-   "Switch",
-   "Nintendo"
-  ],
-  "summary": "Nintendo Switch Zelda trail video is out.",
-  "url": "https://www.marvinswift.com/life/zelda-trail-3rd.html",
-  "hero_image": "https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/link_rocket.jpeg",
-  "content": "## 薩艾達傳說 王國之淚 的第三部影片釋出了，之前有寫過青沼英二親自實機試玩的文章。\n\n[王國之淚試玩影片文章](https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html)\n\n而今天早上起來，又看到新的影片了，裡面有更多的元素。\n\n### 火箭升空\n\n![rocket launch](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/link_rocket.jpeg)\n\n### 雷射機關\n\n![laser](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/link_laser.jpeg)\n\n### 戰爭用載具？\n\n![war tank](https://www.marvinswift.com/assets/posts/zelda-tears-of-the-kingdom/link_tank.jpeg)\n\n## 《薩爾達傳說 王國之淚》第3部介紹影片（台灣）\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/omOOGfivXQs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n## 王國之淚\n\n《薩艾達傳說 王國之淚》是任天堂開發的一款開放世界動作冒險遊戲，是2017年發售的《薩艾達傳說 曠野之息》的續作，預定於2023年5月12日在任天堂Switch上發售。這款遊戲延續了前作的開放式探索和自由度，同時加入了新的故事和遊戲元素，例如可以在海拉魯大陸的上空飛行。\n\n第三部影片是在2022年9月13日的任天堂直面會中公開的，同時也揭露了遊戲的正式名稱《王國之淚》。影片中展示了主角薩艾達和茲爾達在地下和空中的冒險，以及一些新的敵人和道具。影片還透露了遊戲的一些劇情設定，例如茲爾達被一股黑暗力量吞噬，而薩艾達則要找出拯救她和王國的方法。\n\n影片的最後還出現了一個神秘的角色，他似乎是遊戲的反派，也可能是海拉魯王國的創造者或守護者。他有著金色的眼睛和長髮，身穿黑色的長袍，手持一把劍。他的身份和目的都是未知數，引發了許多玩家和粉絲的猜測和討論。\n\n《薩艾達傳說 王國之淚》是我最期待的遊戲之一，我非常喜歡前作《曠野之息》的自由度和創意，也很好奇這次的故事會如何發展。我相信任天堂會帶給我們一個精彩而深刻的冒險體驗。如果您也對這款遊戲感興趣，可以在以下網址觀看第三部影片。\n\n## 參考連結\n\n[薩爾達傳說 王國之淚 試玩影片發表，製作人青沼英二親自實機試玩](https://moonandeye.github.io/programming/zelda-tears-of-the-kingdom.html)\n",
-  "content_format": "markdown+html",
-  "inline_html_tags": [
-   "iframe"
-  ],
-  "has_insecure_images": false,
-  "word_count": 609,
-  "reading_minutes": 2,
-  "source_path": "_posts/life/zh/2023-04-14-zelda-trail-3rd.md"
  }
 ]
