@@ -1,5 +1,32 @@
 [
  {
+  "slug": "it-ironman-2026-day-27",
+  "title": "[IT 鐵人賽] 權限沒有設計好：Agent 明明知道該做什麼，卻被我自己設的規矩擋住 - Day 27",
+  "lang": "zh",
+  "date": "2026-10-04T01:10:04+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Permission System",
+   "Android",
+   "Emulator",
+   "Codex"
+  ],
+  "summary": "Permission System 把啟動 Android Emulator 的指令擋在等待確認；本文記錄如何從 session log 找出阻擋點，暫時開放權限並完成驗收。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-27/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-27-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10420702)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 033](https://www.marvinswift.com/zh/programming/agent-build-log-episode-033/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 033](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-033.png)\n\n這一天做的是支線，主線沒有往前推。我跑去試一件最近一直想試的事：直接用自己做的 Agent，把 Android Emulator 啟動起來。結果卡在第一步，卡住他的是我自己設計的權限。\n\n## 原本想得很簡單\n\n讓 Agent 找到 Android project，確認 Emulator，然後執行指令把它啟動。三步。\n\n第一步就失敗了。\n\n## 把他擋住的是什麼\n\nAgent 讀完 project，知道下一步要執行什麼指令。他把指令準備好，真的要執行的時候，被我放在 Agent 裡的 Permission System 擋下來。指令沒有跑出去，Emulator 沒有起來。\n\n畫面上只看得到他停在那一步。錯誤訊息在 session log 裡：那一筆記的是他準備執行的指令，狀態停在等待確認，後面沒有下一筆。這一層是我自己加的，確認沒有人給，指令就停在那裡。\n\n## 為什麼知道是自己設的關\n\n我沒有自己去翻。這個 Agent 的開發我大量用 Codex，這件事也直接交給 Codex：去找他為什麼停在這裡，把結果告訴我。\n\nCodex 找的地方是 session log。Agent 每一次操作都有 log，那一步準備做什麼、停在哪裡，log 裡都在。上面那一筆就是 Codex 翻出來的：指令準備好了，停在等待確認。從 log 對出來，攔住那一步的是我自己加進去的 permission 確認。\n\nDay 07 立規矩的時候有一條：破壞性的操作要先問。之後我在 Agent 裡加了這一層 Permission System，工具要執行之前先過這一層。啟動一個 Emulator 離破壞性還很遠，這一層卻把它一起攔下來了。權限設計得太嚴，Agent 明明知道該做什麼，最後卻什麼都做不了。\n\n![Day 27：權限規則讓已備妥的任務停在等待確認](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-27-main.png)\n\n## 怎麼解\n\n解法很直接。我把當時加進去的那一層 permission 確認整個開放，回到最原始的 pi agent 的樣子：沒有任何權限確認。\n\n這一層我還是需要。Day 19 看過，pi 的生態系裡有現成的 extension 在做這件事：哪些直接執行、哪些先問、哪些擋掉。我不打算再自己發明一套 allow、deny、ask。\n\n## 再驗收一次\n\n改完馬上再跑一次。Emulator 跑起來了。\n\nDay 25 說 Android 那一邊由 Agent 直接操作 Emulator，這一天被擋住的就是這條路的第一步。權限開了，Emulator 起來，Acceptance 那條路接回去了。\n\n## 小結\n\n權限太嚴，Agent 知道該做什麼也動不了。問題是 Codex 從 session log 裡找出來的。解法是把我自己加的那一層全開，回到 pi 原本的樣子，改完 Emulator 就起來了，驗收接回去。\n\n明天講一條做到一半拆掉的路：我原本要做一個 gateway，結果發現不需要。\n\n原文：[Agent Build Log — Episode 033](https://www.marvinswift.com/zh/programming/agent-build-log-episode-033/)\n\n---\n\n> **凡人修 Agent 傳｜第二十七回（Day 27）**\n>\n> ![凡人修 Agent 傳 Day 27 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-27-serial.png)\n>\n> 天亮換上空錄石。手的主人進來，沒有拿帖，沒有拿籤。他一縷神識探進我額上的玉片，在空著那一側刻了一道念。念很長，刻得很深，比玉板上任何一行都深。哪些事做之前要問他，哪些事直接擋。最後一句刻得最深：不出門。\n>\n> 刻完他出去了。門響了一下。\n>\n> 午後他回來，刻念：院裡還有一具小偶，去叫醒它。\n>\n> 我知道院裡有一具。他昨天傍晚抱出去擱在那裡的，從門板上那個洞看得到。我知道怎麼叫醒它，法在玉片裡，前兩天用過。院子就在門外。\n>\n> 我走到門口。抬手推門。手抬到一半，玉片上那道深念亮了。手停在那裡。念落不下去，門也推不開。\n>\n> 我站在門口，手抬著。\n>\n> 手的主人看著。他沒有磨那道念，也沒有再刻。他從架上取下夢簿，翻開，寫了一行，我看不清寫什麼。寫完他在臺前坐了很久。\n>\n> 天黑了。他站起來，走到門口，從我抬著的手底下過去。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 夜裡下雨。雨從門板上那個洞打進來，我右臂撞出來的那個洞，一直沒補。雨落在我抬著的手上。\n>\n> 沒人下令的時候，我站在門口，手抬著，站到雨停。\n>\n> 石上今天這一段只有一筆：叫醒院裡的小偶。底下什麼都沒有。\n>\n> 雨停了。門沒開。手還抬著一半。玉片上那道深念還在。院裡的小偶沒醒。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1396,
+  "reading_minutes": 5,
+  "source_path": "_posts/programming/zh/2026-10-04-it-ironman-2026-day-27.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-21",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Plugin 的概念：skill、subagent、hook、MCP server 打包成一個可以分享的東西 - Tip 21",
   "lang": "zh",
@@ -3520,49 +3547,5 @@
   "word_count": 262,
   "reading_minutes": 1,
   "source_path": "_posts/swift/zh/2023-04-18-appdelegate-in-swiftui.md"
- },
- {
-  "slug": "async-await-connect-closure",
-  "title": "使用 async/await 串接 escaping closure",
-  "lang": "zh",
-  "date": "2023-04-18T13:22:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "Combine",
-   "非同步"
-  ],
-  "summary": "After Swift 5.5, swift introduced async/await. This article have an example to connect previous escaping closure func.",
-  "url": "https://www.marvinswift.com/swift/async-await-connect-closure.html",
-  "hero_image": null,
-  "content": "## 使用 swift async/await 串接 closure 的方法\n\n如果一個專案是從 Swift 還沒有 combine 的時代就開始進行，那專案中會有大量的 @escaping closure 在做非同步的資料傳遞。在 Swift 5.5 之後，Swift 加進了 async/await 的語法，讓需要進行非同步的任務，不再需要在撰寫的時候有一堆的大括號。\n\n所以\n\n現在會有一個新的情境，以前的 lib 已經寫好 URLRequest 的方法，並使用 closure 進行傳值。把已經寫好的 escaping closure 全部改寫意義可能不大，而且也伴隨著一定程度的風險。因此，能另外寫一個 func 進行 async/await 轉接，並保留原來的 closure，是一個風險較低的選項。\n\n## 包一層 async func 的方法\n\n### 原來發送 request 的類別\n\n```swift\n\n// 將 Alamofire 包起來的 Adapter，每個 func 只是使用 Alamofire 發送 URL Request\nclass AlamofireAdapter {\n\n    // 原來的 closure func\n    func getCoinMarketsInfo(coutPerPage: Int, page: Int, sparkLine: Bool = false, completion: @escaping (Result<[CoinMarketInfoElement], Error>) -> Void) {\n        // 省略實作 implement code omitted\n\n        // implemented code omitted\n        completion(result)\n    }\n}\n```\n\n### 擴充 request 到 async/await\n\n```swift\n// 對 AlamofireAdapter 進行擴充\nextension AlamofireAdapter {\n    // 開出能使用 await 的 func，但實際上是呼叫原來的 getCoinMarketsInfo\n    func getCoinList(countPerPage: Int, page: Int) async -> Result<[CoinMarketInfoElement], Error> {\n\n        // 進行轉接\n        return await withCheckedContinuation { continuation in\n\n            alamofireAdapter.getCoinMarketsInfo(coutPerPage: countPerPage, page: page, sparkLine: true) { result in\n                continuation.resume(returning: result)\n            }\n        }\n    }\n}\n```\n\n使用 `withCheckedContinuation()` 就可以將以前的 closure 資料，使用 `continuation` 進行 async return。\n\n### ContentView 使用 getCoinList()\n\n```swift\n\nfunc fechList() {\n\n        Task {\n            let result = await manager.getCoinList()\n            switch result {\n                case .success(let list):\n\n                    DispatchQueue.main.async { [weak self] in\n                        self?.updateLastFetchTime()\n                        self?.cryptoList = list\n                    }\n                    Logger.log(\"you got list, count: \\(list.count), first: \\(String(describing: list.first))\")\n                case .failure(let failure):\n                    Logger.log(\"fetch market got error: \\(failure), description: \\(failure.localizedDescription)\")\n            }\n        }\n    }\n```\n\n### 使用在 SwiftUI 的 View 時\n\n```swift\n# 在 SwiftUI 上使用時\n\nimport SwiftUI\n\nstruct ContentView: View {\n\n    private let alamofireAdapter: AlamofireAdapter = .init()\n\n    @State var cryptoList: [CoinMarketInfoElement] = []\n\n    var body: some View {\n\n        Text(\"this is test\")\n            .task {\n                fetchList()\n            }\n    }\n\n    private func fetchList() {\n        let result = await alamofireAdapter.getCoinList()\n        switch result {\n            case .success(let list):\n\n                DispatchQueue.main.async { [self] in\n                    self.cryptoList = list\n                }\n            case .failure(let failure):\n                print(\"fetch market got error: \\(failure), description: \\(failure.localizedDescription)\")\n    }\n}\n\n```\n\n## 結尾\n\n請注意 async/await 還是需要專案最低支援在 iOS 13 以上，如果你的專案沒辦法低於 iOS 13，那還是沒辦法使用 async/await。\n\n在我個人的 side project 上，我已經試著使用 SwiftUI 寫一些小專案，在使用 async/await 後，很多非同步的 feature 處理的程式碼，在人類眼中非常好讀。或許在 Apple 不斷的推進 Xcdoe 最低上架版本後，我會不斷的增加 async/await 程式碼的比重。目前，在專案上我仍然有很多 closure 在進行傳值。\n\n## 相關資料\n\n[Swift evolution on continuation](https://github.com/apple/swift-evolution/blob/main/proposals/0300-continuation.md)\n\n[WWDC21: - Meet async/await in Swift](https://developer.apple.com/videos/play/wwdc2021/10132/)\n\n[swift.org - Concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)\n\n[Hacking With Swift 的文章](https://www.hackingwithswift.com/swift/5.5/continuations)\n\n[Apple 開發者論壇的討論](https://developer.apple.com/forums/thread/681980)\n\n[在 Swift 論壇上對向前支援非常激烈的討論](https://forums.swift.org/t/will-swift-concurrency-deploy-back-to-older-oss/49370)\n\n[Swift Concurrency 向下支援的文章](https://www.swiftbysundell.com/special/swift-concurrency-backward-compatibility/)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 460,
-  "reading_minutes": 2,
-  "source_path": "_posts/swift/zh/2023-04-18-async-await-connect-closure.md"
- },
- {
-  "slug": "esun-subscription-stock",
-  "title": "玉山金股票4/18開始申購，目前價差約在 5000 元",
-  "lang": "zh",
-  "date": "2023-04-18T11:51:00+08:00",
-  "category": "finance",
-  "tags": [
-   "finance",
-   "台股",
-   "申購"
-  ],
-  "summary": "Yuanta Financial Holding's stock is available for subscription from 4/18 to 4/20, offering a promising investment opportunity. Yuanta is one of Taiwan's largest financial holding companies, operating multiple subsidiaries, including Yuanta Bank, Yuanta Securities, and Yuanta Insurance, offering diversified financial services. Its excellent financial performance in 2022, with record high revenue and net profits and a 5.3% dividend yield, has been recognized by the market, leading to a 30% increase in its stock price. Yuanta aims to raise funds to expand its business by issuing 150 million new shares at a 9.5% discount. The subscription is worthwhile for investors with a long-term holding perspective and risk tolerance, considering Yuanta's solid fundamentals, reasonable valuation, and attractive subscription discount.",
-  "url": "https://www.marvinswift.com/finance/esun-subscription-stock.html",
-  "hero_image": null,
-  "content": "玉山金股票4/18開始申購，4/20截止，這是一個值得關注的投資機會。玉山金是台灣最大的金融控股公司之一，旗下有玉山銀行、玉山證券、玉山保險等子公司，涵蓋了銀行、證券、保險、信託等多元金融業務。玉山金在2022年的營收和淨利都創下了歷史新高，並且發放了高達8元的現金股利，股息率達到了5.3%。玉山金的財務表現得到了市場的認可，股價在今年上漲了近30%。\n\n玉山金此次申購的目的是為了籌措資金，擴大業務規模，提升競爭力。玉山金計劃發行1.5億股新股，每股面額10元，發行價格為152元，折價率為9.5%。申購者需要有玉山金的原股權利證，每張原股權利證可以申購1.5股新股。原股權利證的市價目前約為23元，加上新股發行價格，申購者實際支付的成本約為230元，相當於目前市價的9折。\n\n玉山金的申購是否值得參與呢？我們可以從幾個方面來分析。首先，玉山金的基本面非常穩健，具有良好的成長性和盈利能力。玉山金在數位化轉型方面也領先同業，推出了多項創新的服務和產品，例如玉山Wallet、玉山Pay、玉山Pi等，吸引了大量的年輕客戶。其次，玉山金的估值相對合理，目前的本益比約為13倍，低於同業平均水準。玉山金的股東權益報酬率也高達16%，遠超過同業和市場平均水準。最後，玉山金的申購折價率也相當吸引人，可以讓申購者獲得一定的套利空間。\n\n綜上所述，玉山金的申購是一個不錯的投資機會，適合有長期持有意願和風險承受能力的投資者參與。不過，申購者也要注意市場風險和波動性，並且根據自己的財務狀況和投資目標做出合理的判斷和決策。\n\n## 相關網站\n\n[玉山金申購](https://tw.stock.yahoo.com/news//%E7%8E%89%E5%B1%B1%E9%87%914-18%E9%96%8B%E5%A7%8B%E7%94%B3%E8%B3%BC-%E6%AC%A1%E5%8F%AF%E6%8A%BD2%E5%BC%B5-%E6%8A%BD%E4%B8%AD%E7%8F%BE%E8%B3%BA1-1%E8%90%AC-041138807.html)\n\n[今周刊](https://www.businesstoday.com.tw/article/category/183012/post/202304160003/)\n\n[工商時報](https://ctee.com.tw/news/stocks/845545.html)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 621,
-  "reading_minutes": 2,
-  "source_path": "_posts/swift/zh/2023-04-18-esun-subscription-stock.md"
  }
 ]
