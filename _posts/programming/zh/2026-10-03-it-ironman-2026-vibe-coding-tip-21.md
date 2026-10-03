@@ -15,6 +15,8 @@ tags:
 summary: "整理 Claude Code 與 Codex 的 plugin 目錄，說明如何把 skill、subagent、hook 和 MCP server 打包分享，也列出安裝與從 standalone 遷移時要檢查的設定。"
 description: "整理 Claude Code 與 Codex 的 plugin 目錄，說明如何把 skill、subagent、hook 和 MCP server 打包分享，也列出安裝與從 standalone 遷移時要檢查的設定。"
 ---
+本篇 iT 鐵人賽文章：[前往 iT 閱讀](https://ithelp.ithome.com.tw/articles/10420425)。
+
 plugin 是一個資料夾，把 skill、subagent、hook、MCP server 這些東西打包在一起，一次裝、一次分享。
 
 ## 為什麼
