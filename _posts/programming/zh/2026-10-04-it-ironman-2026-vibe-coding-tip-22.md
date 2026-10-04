@@ -15,6 +15,8 @@ tags:
 summary: "說明何時把大型輸出、平行研究和串接任務交給 subagent，並用可直接複製的 prompt 範例控制回傳內容。"
 description: "說明何時把大型輸出、平行研究和串接任務交給 subagent，並用可直接複製的 prompt 範例控制回傳內容。"
 ---
+本篇 iT 鐵人賽文章：[前往 iT 閱讀](https://ithelp.ithome.com.tw/articles/10420778)。
+
 一段工作會吐出一大堆你之後用不到的東西，像跑測試、翻文件、讀 log，就派一個 subagent 去做。他在自己的 context 裡做完，只把摘要交回來。
 
 ## 為什麼
