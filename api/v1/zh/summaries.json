@@ -1,5 +1,22 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-22",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜派出子代理：會塞爆 context 的工作交給 subagent，只拿摘要回來 - Tip 22",
+  "lang": "zh",
+  "date": "2026-10-04T13:00:00+08:00",
+  "category": "programming",
+  "tags": [],
+  "summary": "說明何時把大型輸出、平行研究和串接任務交給 subagent，並用可直接複製的 prompt 範例控制回傳內容。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-22/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 576,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-10-04-it-ironman-2026-vibe-coding-tip-22.md"
+ },
+ {
   "slug": "it-ironman-2026-day-27",
   "title": "[IT 鐵人賽] 權限沒有設計好：Agent 明明知道該做什麼，卻被我自己設的規矩擋住 - Day 27",
   "lang": "zh",
