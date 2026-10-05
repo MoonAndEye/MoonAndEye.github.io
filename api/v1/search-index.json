@@ -33,7 +33,7 @@
   "summary": "整理 MCP 如何讓 coding agent 連接 Jira、資料庫、監控等外部服務，示範 Claude Code 的 HTTP／stdio 設定和接入前要確認的信任風險。",
   "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-23/",
   "date": "2026-10-05T13:00:00+08:00",
-  "word_count": 456
+  "word_count": 471
  },
  {
   "slug": "it-ironman-2026-vibe-coding-tip-22",
