@@ -8,6 +8,9 @@ tags: [IT鐵人賽, 2026鐵人賽, Vibe Coding, Vibe Coding 技巧, MCP, Claude 
 summary: "整理 MCP 如何讓 coding agent 連接 Jira、資料庫、監控等外部服務，示範 Claude Code 的 HTTP／stdio 設定和接入前要確認的信任風險。"
 description: "整理 MCP 如何讓 coding agent 連接 Jira、資料庫、監控等外部服務，示範 Claude Code 的 HTTP／stdio 設定和接入前要確認的信任風險。"
 ---
+
+本篇 iT 鐵人賽文章：[前往 iT 閱讀](https://ithelp.ithome.com.tw/articles/10421246)。
+
 MCP 是 Model Context Protocol，一個開放標準：外面的工具、資料庫、服務照這個標準做一個 server，agent 就能接上去用。Tip 10 的 XcodeBuildMCP、Tip 18 提到的 Jira MCP，都是這種 server。
 
 ## 為什麼
