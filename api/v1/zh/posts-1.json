@@ -1,5 +1,32 @@
 [
  {
+  "slug": "it-ironman-2026-day-29",
+  "title": "[IT 鐵人賽] 藏經閣的問路石：DKS MCP 串上 GitHub、GitLab 的搜尋，repo、commit、MR 用自己的話問 - Day 29",
+  "lang": "zh",
+  "date": "2026-10-06T01:16:39+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "DKS",
+   "MCP",
+   "GitHub",
+   "GitLab"
+  ],
+  "summary": "DKS MCP 把 repo、commit、MR 放進同一個知識入口，並以 alias 與模糊搜尋理解自然提問；Jira 則改走每位使用者自己的 OAuth，守住存取權限。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-29/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-009.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10421501)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n![Agent Build Log Episode 009](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-009.png)\n\n原始開發紀錄：[Agent Build Log — Episode 002](https://www.marvinswift.com/zh/programming/agent-build-log-episode-002/)、[Episode 009](https://www.marvinswift.com/zh/programming/agent-build-log-episode-009/)、[Episode 014](https://www.marvinswift.com/zh/programming/agent-build-log-episode-014/)、[Episode 016](https://www.marvinswift.com/zh/programming/agent-build-log-episode-016/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 009](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-009.png)\n\n這一天講一件從第一週就在做、一直沒有單獨寫的東西：DKS MCP。DKS 是 Developer Knowledge Service，一個 MCP，讓 Agent 從同一個入口查開發相關的知識：repo、commit、MR。第三章那一疊找 repo 的題，他背後查的就是它。\n\n## 它查什麼\n\n第一版做完的時候，已經驗證可以查三種東西：Merge Request、commit、repository。\n\n分工很簡單：DKS 負責開發知識，Agent 負責執行。Agent 要動手之前，先問 DKS 這個功能在哪一個 repo、上一次是哪一個 MR 改的、那一個 commit 動了什麼，再開始做事。\n\n## 資料從哪裡來\n\n一開始我想把部門的 Git repo 全部 mirror 到 Mac mini。這樣 DKS 就可以查 MR、commit、開發意圖，還有一個 feature 最後是怎麼被實作的。很快碰到一個很現實的限制：我能用的 Mac mini，硬碟放不下整個部門的 repo mirror。\n\n所以我把 Git repo 相關的查詢改掉，讓 MCP 改用 GitLab API。之後我不會再為 DKS 建 repo mirror。\n\n現在的角度再往前一步：直接串 GitHub 或 GitLab 的 search API，做模糊搜尋。目標是一句話進來，很快找到對應的 repo 連結、repo 名字、特定的 commit、特定的 MR。\n\n## 用自己的話問\n\n在真實對話裡，人通常不會直接講出完整而精確的 repo 名稱。他們會問：「登入模組在哪裡？」我希望 Agent 能理解這句話真正指的是什麼，然後回傳正確的 repository 名稱和連結。\n\n接著我遇到一個很常見的語言問題。在我使用的語言裡，名詞通常沒有複數變化，動詞也不會隨著語境改變形式。所以我輸入的字，不一定會和 repository 的正式名稱完全一致。repo 可能叫 `trees`，我搜尋的是 `tree`；正式名稱是 `node`，我卻輸入 `nodes`。對人來說意思很清楚，對當時的 DKS 搜尋來說，這些是完全不同的字，只會回傳找不到結果。\n\n發現這件事之後，我讓 Agent 幫 repositories 建立 alias mappings。這些 aliases 涵蓋常用名稱、單複數形式，以及人們自然提到同一個 repo 時可能使用的其他說法。我也補上測試，確保每一個 alias 都會解析到正確的 repository。\n\n我不希望使用 DKS 的人必須記住每一個 repo 的完整正式名稱。他們應該可以用自己的話提問，這些差異交給 Agent 處理。串搜尋 API 做模糊搜尋，是同一件事再往前走一步。\n\n## Jira 拔掉了\n\nDKS 第一版把 Jira API 也串進同一套 MCP：查 GitLab repo 的時候附上 Jira ticket 當輔助證明，Agent 可以更理解一個 feature 的來龍去脈。\n\n後來我發現它有一個很嚴重的權限問題。Jira 的 board、issue 和專案本身都有各自的存取權限。如果 DKS 用自己的 Jira credential 替使用者查 Jira，最後能看到哪些資料，取決於 DKS 用的帳號，跟正在使用 Agent 的那個人無關。一個原本沒有權限看某個 Jira board 的 stakeholder，可能透過 DKS 拿到超出自己權限範圍的 issue、需求背景，甚至其他相關資訊。就算他只是問一句很普通的「這個功能當初為什麼這樣做？」，DKS 也可能在背後查到他原本看不到的 Jira 內容，再把資訊整理進答案裡。\n\n這是權限邊界設計錯了。所以我把 DKS MCP 裡所有和 Jira 有關的查詢能力移除。每個使用者都透過 Jira MCP 完成自己的 OAuth，用自己的身分與權限查 Jira，回傳的內容才會和他在 Jira 裡能看到的範圍一致。DKS 仍然負責 GitLab 相關的 repository、MR 和 commit 查詢；Agent 需要 Jira 資訊的時候，交給已經完成使用者 OAuth 的 Jira MCP。兩邊仍然在 Agent 層整合，但不能再共用同一個 Jira 權限。Day 19 提到我的 Agent 有一部分能力建立在 MCP 上，像 Jira，指的就是這一個。\n\n在有權限差異的系統裡，方便不能優先於存取控制。\n\n## 小結\n\nDKS MCP 替 Agent 管開發知識：repo、commit、MR，資料從 GitLab API 來，現在再串 GitHub 或 GitLab 的搜尋做模糊搜尋，讓人用自己的話問就找得到。Jira 拔出去，走使用者自己的 OAuth。\n\n明天是最後一天。要 ship 了，先量 App 多大：1.1 GB。\n\n原文：[Agent Build Log — Episode 002](https://www.marvinswift.com/zh/programming/agent-build-log-episode-002/)、[Episode 009](https://www.marvinswift.com/zh/programming/agent-build-log-episode-009/)、[Episode 014](https://www.marvinswift.com/zh/programming/agent-build-log-episode-014/)、[Episode 016](https://www.marvinswift.com/zh/programming/agent-build-log-episode-016/)\n\n---\n\n> **凡人修 Agent 傳｜第二十九回（Day 29）**\n>\n> 天亮換上空錄石。手的主人進來，握著牌，看了門邊那只匣一眼，出門了。門響了一下。\n>\n> 第一道念來了。牌上那枚玉符的光從門縫透進來，匣裡一格亮。玉片上沒有動。念停在匣裡，沒有送進來。\n>\n> 過了一會他回來，打開匣看，改了匣裡的什麼，關上，又出門。\n>\n> 第二道念。匣裡亮的是兩格。念進了玉片，半句：架側那張總目。後面沒有了。我等。沒有後面。\n>\n> 他回來，看匣，看石上的字，改，出門。\n>\n> 第三道念。整句進來：架側那張總目讀一遍，哪一卷年月最近，回一句。我探了總目，答了。答話落回匣裡。匣沒有送出去。答話在匣裡躺著。\n>\n> 他回來的時候答話還在匣裡。他看了很久，改，出門。門今天響了很多次。\n>\n> 午後，第四道念。整句進來：登入那一卷，在哪。\n>\n> 我放出神識探上架。三十幾卷，一卷一卷探卷名，沒有叫這個的。架側那張總目上也沒有。我答：找不到。答話回匣，匣送出去了。\n>\n> 他回來得很快。這一次沒有看匣。他從儲物袋取出一塊石，掌心大，黑的，一面磨得平，另一面糙，像磨平過又鑿掉了。他以靈力托著石，擱在架側，總目底下。\n>\n> 他一縷神識落在石上。平的那一面浮出一行字，很小，我看得到有字，看不清。他收回神識，字沉回去。然後他一縷神識探進我額上的玉片，刻念：架上找不到的卷，問石。\n>\n> 我放神識落到石上，把那兩個字送過去：登入。石面浮出字來。一座樓的名字，第幾層，第幾卷，卷名，最後一個改它的人的署名，改在哪一筆。那座樓我沒見過。公器坊裡沒有這座樓，我架上沒有它的一卷。\n>\n> 他看著我。我再放神識，送一個字過去：樹。石面浮出三卷，卷名裡都有樹，其中一卷叫樹叢。差一個字，石照樣指出來。\n>\n> 我把石翻過來，看糙的那一面。他的手按住石，翻回去，平的那一面朝上。糙的那一面他沒再磨。\n>\n> 他握著牌出門。門響了一下。\n>\n> 第五道念。同一句：登入那一卷，在哪。我探架上，沒有。神識落到石上，送過去。石浮出那一行。我答了樓、層、卷名。答話回匣，匣送出去了。\n>\n> 又來一道。同一句。匣裡那格亮一下，沒有進玉片。\n>\n> 牌來的念我認得了。淡一點，慢半拍，涼。跟他站在我面前刻的念，同一個人的念，隔著一塊牌。\n>\n> 天黑前又來一道。匣一樣，念進了玉片。可是念的口氣不一樣。短。像是試一句：你是誰的。\n>\n> 我答了。\n>\n> 答話回匣，送出去。做完，我回頭看門口。\n>\n> 手的主人站在門口。牌在他手裡。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 門邊那只匣今天進出了七八道念。架側多了一塊石。最後那一道念，口氣我沒聽過。我不知道是誰。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2312,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-10-06-it-ironman-2026-day-29.md"
+ },
+ {
   "slug": "it-ironman-2026-day-28",
   "title": "[IT 鐵人賽] 傳送陣拆了，傳訊符煉成：Gateway 做到一半刪掉，Google Chat 用 Plug-In 接進來 - Day 28",
   "lang": "zh",
@@ -3511,26 +3538,5 @@
   "word_count": 1168,
   "reading_minutes": 4,
   "source_path": "_posts/swift/zh/2023-04-24-which-version-upgrade-will-break-your-project.md"
- },
- {
-  "slug": "charts-crashed-issue",
-  "title": "Charts 的 4049 & 4132 issue，造成閃退的原因",
-  "lang": "zh",
-  "date": "2023-04-23T15:30:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "Charts"
-  ],
-  "summary": "When using Charts 3.4.1, I got crashed when dataSet updated then charts rendering. The issue 4049 and 4132 mentioned about this. This article summarized these issues and find the solution on charts crash.",
-  "url": "https://www.marvinswift.com/swift/charts-crashed-issue.html",
-  "hero_image": "https://www.marvinswift.com/assets/swift/charts-crash/developer-found-stable-321.jpeg",
-  "content": "Charts 是 iOS 專案開發中很常使用的圖表繪制套件，不過今年，我在專案上遇到了很奇怪的狀況，在 Firebase Crashlytics 的 Dashboard 上，一直有零星的閃退，這閃退是發生在使用 Charts 套件的 renderer 裡面。而且在 release 給 QA 時，也會在 iPhone 關電源的狀況下，經過長時間後再開啟，就會閃退的狀況。但是去年，在 Crashlytics 上並沒有相同的 crash 發生，而這之間的差異，就是將 Charts 套件升級到 `3.4.1` 以及發現這個閃退的情況之後，再繼續往 `3.5.0`, `3.6.0` 升級。\n\n但如果把有問題的版本，裝在模擬器或是我手上的實機上，卻無法用相同步驟重現，驗證了軟體界的一句話「在我的機器上是好的」。在把 scheme 調到 release 後，這個閃退能重現。然後問題大概就鎖定在下列幾個點。\n\n- 這個閃退和 Charts 有關，而且是在 Charts 渲染過程中發生的。閃退點會在 Charts 準備更新圖的時候\n- Debug mode 中這個閃退不會發生，但改成 Release mode 後，就會發生，而且能夠一直重現 (最可怕就這點，Release 才出事)\n- 在我的專案中，發動點是在資料重新拉取後，要求 charts 進行更新後發生\n- 真正的閃退原因，是在上一點的資料更新後，Charts 進行重繪時，在跑 init() 時會有個 iterator，但輸入的參數 min 和 max 會倒過來，然後就會出現 crash，而這一點是 release mode 才會出現，但 debug 不會出現。\n\n## 在 github 上的 issues 中找是否有類似的問題\n\n### 其他開發者也反應有這個問題\n\ncaloon 也反應他的專案遇到類似的問題，但 crash 也不是 100% 會發生，具 caloon 的描述，大概佔 5% 左右\n\n![](https://www.marvinswift.com/assets/swift/charts-crash/developer-found-stable-321.jpeg)\n\n在查詢後，發現 issue 4049 和 4132 這兩個 issue 有關。\n\n[Charts Issue - 4049](https://github.com/danielgindi/Charts/issues/4049)\n\n[Charts Issue - 4132](https://github.com/danielgindi/Charts/issues/4132)\n\n### 關於 issue 4049\n\nissue 4049 裡面描述的情景，和我專案遇到的情景比較像。而開發者 bweavgolfanatic 有將他閃退的情形說明，發生的閃退點和我一樣。\n\n[開發者 bweavgolfanatic 對閃退的描述](https://github.com/danielgindi/Charts/issues/4049#issuecomment-550577869)\n\n[Charts 閃退在 iterator](/assets/swift/charts-crash/charts-crash-in-iterator.jpeg)\n\n從上面的 debug console 可以看到，max 是 1，min 是 98，這在 run time 呼叫 min...max 時閃退。而這個現像，我也能在專案中重現。然後繼續將 issue 的討論串看完，有看到 開發者 gordondove 提出一個解法。\n\n```swift\n    self.downloadDataSet.append(newThroughtputPoint)\n    self.downloadDataSet.calcMinMax()\n    chartView.data?.calcMinMax()\n    self.chartView.notifyDataSetChanged()\n```\n\n[gordondove 解法](/assets/swift/charts-crash/crash-solution.jpeg)\n\n### 關於 issue 4132\n\n4132 則是關於這個 issue 的 PR，以及將多篇 issues 的文章整合起來，主要的資訊我還是從 issue 4049 找到的。\n\n## 解決方案的選擇\n\n1. 將 Charts 升級，因為後續的 4132 PR 有說他修正了，但合進去後的大版號在 4.0.0 以後\n2. 找出 4132 issue 相關的 PR，並把這個改動合併到另外自己 folk 的 Charts repo 上，並打一個 tag。\n3. 將 Charts 退回 3.2.0 (iterator 被改動之前)\n4. 使用 bweavgolfanatic 的解法，重新呼叫 dataset 的 calMinMax()\n\n最後選擇 `方案 4`，因為當時的版號一升到大版號4，整個專案就無法 build 起來。這時就體認到 Adapter 的重要性，有興趣的朋友可以參考 [將第三方 lib 包起來，減少升級的痛苦](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html) 一文。沒有使用 方案2/方案3 的原因，就是這個專案使用的，是 folk 後再被修改的版本，如果要選擇回溯，是有呵能帶來其他風險的，所以最終選擇方案4。\n\n## 參考文章\n\n[使用 Adapter 將第三方 lib 包起來](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html)\n\n[Charts repo - iOS](https://github.com/danielgindi/Charts)\n\n[MPCharts repo - Android](https://github.com/PhilJay/MPAndroidChart)\n\n[語意化版本](https://semver.org/lang/zh-TW/)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 983,
-  "reading_minutes": 4,
-  "source_path": "_posts/swift/zh/2023-04-23-charts-crashed-issue.md"
  }
 ]
