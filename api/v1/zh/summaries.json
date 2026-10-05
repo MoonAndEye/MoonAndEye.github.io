@@ -1,5 +1,29 @@
 [
  {
+  "slug": "it-ironman-2026-day-28",
+  "title": "[IT 鐵人賽] 傳送陣拆了，傳訊符煉成：Gateway 做到一半刪掉，Google Chat 用 Plug-In 接進來 - Day 28",
+  "lang": "zh",
+  "date": "2026-10-05T14:30:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Google Chat",
+   "Plug-In"
+  ],
+  "summary": "Gateway 做到一半，我決定先拆掉；Chat 則只接自己用的 Google Chat，透過 Plug-In 處理收訊、分類、去重與回覆。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-28/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-28-main.png",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2403,
+  "reading_minutes": 9,
+  "source_path": "_posts/programming/zh/2026-10-05-it-ironman-2026-day-28.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-22",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜派出子代理：會塞爆 context 的工作交給 subagent，只拿摘要回來 - Tip 22",
   "lang": "zh",

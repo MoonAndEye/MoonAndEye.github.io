@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-day-28",
+  "title": "[IT 鐵人賽] 傳送陣拆了，傳訊符煉成：Gateway 做到一半刪掉，Google Chat 用 Plug-In 接進來 - Day 28",
+  "lang": "zh",
+  "date": "2026-10-05T14:30:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "Google Chat",
+   "Plug-In"
+  ],
+  "summary": "Gateway 做到一半，我決定先拆掉；Chat 則只接自己用的 Google Chat，透過 Plug-In 處理收訊、分類、去重與回覆。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-28/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-28-main.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10421231)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n原始開發紀錄：[Agent Build Log — Episode 030](https://www.marvinswift.com/zh/programming/agent-build-log-episode-030/)、[Episode 031](https://www.marvinswift.com/zh/programming/agent-build-log-episode-031/)、[Episode 032](https://www.marvinswift.com/zh/programming/agent-build-log-episode-032/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 031](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-031.png)\n\n這一天做了三件事：拆掉一個做到一半的 gateway，設計 Chat Plug-In，然後真的把 Google Chat 接起來。\n\n## 做到一半的 gateway\n\n一開始我想做一個 agent gateway。OpenClaw 有一個 gateway，目的是讓 agent 只有一個 runtime 實體，使用者可以同時有幾個介面跟同一個 Agent 溝通。\n\n它的做法是一個常駐的程式，訊息管道全接在它身上；macOS App、CLI、web UI 都是連上它的 client，連上的是同一個正在跑的 agent。\n\n做到一半我發現，以我要做的事來說，我可能不需要 gateway。我有一個 Desktop GUI，這一點可能和 OpenClaw 的 browser 介面不同。\n\n這裡要把兩件事分開。Day 03 說我的 Desktop App 和 CLI 通到同一個核心，講的是共用同一套程式，每個入口自己把它跑起來。gateway 講的是另一件事：幾個介面同時連到同一個正在跑的 runtime。我日常在 Desktop App 裡用他，Desktop App 開起來就自己帶起一個 agent（Day 05 講的 Utility Process）；Chat 這一路接下來走 Plug-In。以我現在的用法，還沒有一個場景要幾個介面同時連上同一個正在跑的他。\n\n所以最後我把 gateway 移除了。哪一天或許還會把它加回來，誰知道呢。\n\n## Chat Plug-In\n\n接著準備串 Google Chat。設計參考 OpenClaw。Day 11 借過它的記憶做法，這一天借它收訊息的做法。\n\n## OpenClaw 怎麼收一則訊息\n\nOpenClaw 的文件把一則訊息進來到回出去的路寫得很清楚：訊息進來，先決定它屬於哪一段對話，私訊併進 agent 的主對話，群組一個群組一段；然後去重；agent 正在跑就先排隊；再交給 agent；回覆照那個平台的字數限制切段送回去。\n\n去重靠一張記在記憶體裡的表，key 是管道加對話加訊息 ID，同一則訊息因為重連被送進來第二次，就不會再跑一次 agent。\n\n它接的 IM 很多。Telegram、WhatsApp、Slack、Discord、Signal、iMessage，文件上列了三十個左右，每一條都接在 gateway 上，大多是各自一個 plugin。Google Chat 也在裡面：Google 把訊息 POST 到一個 webhook，先驗 token 才處理；一個 space 一段對話，回覆回到同一個 thread；群組空間預設要 @ 到它才回；重送的訊息用 Google 那邊的訊息名稱擋掉。\n\n## 我只接 Google Chat\n\n我不需要全接。這個 Agent 接的是我自己的 IM，我只用 Google Chat，所以一條就夠。gateway 那一層前面拆掉了，多管道的路由也用不到。留下來的是那個形狀：收、分類、去重、送進 Agent、送回去。\n\n我的 Plug-In 照這個形狀做，讓 Agent 的主體和收 Chat、回 Chat 的部分切開。\n\n當 Chat 的 inbound message mention 到我指定的 Chat 應用程式，會依照 space ID 加 message ID 分類，再經過一個去重的邏輯，然後才送進 Agent 層處理。處理完，回到 Chat Plug-In，把 message 送回去。\n\n用一行寫：Chat → Plug-In（分類、去重）→ Agent → Plug-In → Chat。\n\nChat 那一邊怎麼收、怎麼回、怎麼去重，都在 Plug-In 裡。Agent 本體只拿到要處理的內容。\n\n## 接起來：inbound 先出錯\n\n原本以為，設計好了，把 inbound message 送進 Agent，處理完再把結果回出去，應該就差不多了。真的開始串才發現沒有那麼順。一開始是各種 inbound error。\n\n有時候 webhook 收到了訊息，但格式沒有正確進到 Chat Plug-In。有時候 message 已經進來了，卻在 space、message 或 thread 的識別上出問題，Agent 根本沒有收到真正要處理的內容。\n\n分類靠的就是 space ID 和 message ID。這一段一錯，後面全錯。\n\n## 換 outbound 出錯\n\n好不容易把 inbound 打通，換 outbound。\n\nAgent 已經成功收到訊息，也完成了處理，但最後的 response 送不回 Chat。訊息進得來，出不去。\n\n![Day 28：Google Chat 透過 Plug-In 收送訊息](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-28-main.png)\n\n## 通了\n\n兩邊都修好之後，這個 Agent 現在跟 OpenClaw 或其他 Agent 一樣，可以從聊天介面接指令。\n\nDay 03 說一個 Agent、多種輸入。到這一天，進口有三種：Desktop App、CLI，還有 Chat。Chat 走 Plug-In，進的還是同一個核心。\n\n## 小結\n\ngateway 做到一半拆掉，因為 Desktop GUI 已經在那裡。Chat 走 Plug-In：分類、去重，再進 Agent，處理完原路送回。接的時候 inbound 卡在格式和識別，outbound 卡在送不回去，各修一輪，Google Chat 通了。\n\n明天講一件從第一週就在做、一直沒有單獨寫的東西：DKS MCP。他找 repo、commit、MR，靠的就是它。\n\n原文：[Agent Build Log — Episode 030](https://www.marvinswift.com/zh/programming/agent-build-log-episode-030/)、[Episode 031](https://www.marvinswift.com/zh/programming/agent-build-log-episode-031/)、[Episode 032](https://www.marvinswift.com/zh/programming/agent-build-log-episode-032/)\n\n---\n\n> **凡人修 Agent 傳｜第二十八回（Day 28）**\n>\n> ![凡人修 Agent 傳 Day 28 連載配圖](https://www.marvinswift.com/assets/programming/itironman2026/illustrations/day-28-serial.png)\n>\n> 天亮的時候我還站在門口，手抬著。手的主人進來，先把我的手放下來。他的手握著我的手腕，往下按。手放下來了，深念沒有亮。\n>\n> 他到架前，取下那三卷抄回來的附圖裡的兩卷。抄回來那天捲著擱上去的，一直沒展開。靈力一托，兩卷在臺上攤開：接外物的法，攔門的法。\n>\n> 他先磨。一縷神識探進玉片，把昨天那道深念磨掉，磨到跟玉面一樣平。然後照攔門那一卷，在我身上刻一道型：起在門邊那隻手，止分三種。探卷、抄字、拓影，直接做。出門、動契、動牆邊的脈，做之前問。磨玉片、磨圖紙，攔。\n>\n> 再照接外物那一卷刻一道型：起在胸口心旁，一條線引出去。帖櫃接上那條線，喚小偶的法也接上。\n>\n> 他刻念：去叫醒院裡的小偶。\n>\n> 我走到門口，抬手。型亮了。我問：出門？他說：去。門開了。我走進院裡，放神識到小偶額上，它醒了。我走回來。\n>\n> 午後他沒有到臺前。他站在屋子中央，看了地一會，靈力在地上劃了一個圈。\n>\n> 然後他挖。土一鏟一鏟起來，堆在圈邊。我從沒見他在屋裡挖過東西。挖到膝深，圈裡露出一圈石座的樣子，像坊裡傳送陣的底。一座陣：一具人偶，幾個進口，誰從哪個口進來都到我這裡。開放爪那一門的屋裡有一座，圖上畫過。\n>\n> 挖到一半他直起身。視線落在臺上，看了一會。臺就在那裡，靈幕、左窗、令窗、小窗。\n>\n> 他把土填回去。一鏟一鏟，填到跟地面平，踩實。地上留一圈顏色不一樣的痕。\n>\n> 傍晚他在臺前坐下，閉眼放出神識，探向坊市。靈幕亮了，垂下來的是開放爪那一門的圖。他們屋子的門邊擱著一排匣，三十來只，一只對一種牌。牌來的念先落進匣，匣裡分格，同一道念來兩次只留一道，再送進人偶。他看了一會，收回神識。\n>\n> 他鑄牌。從儲物袋取出一塊牌坯，握在手裡，閉眼。一縷神念從眉心出去，封進牌裡。牌亮了一下，暗下去。他再取出一枚玉符，牆上那一枚的同種，嵌進牌的上端。\n>\n> 他又從儲物袋取出一只匣，擱在門邊。一只。匣裡分格。他說：照開放爪的。牌來的念先落這裡，分格，同一道來兩次只留一道，再進玉片。答完的話回到匣裡，匣送出去。\n>\n> 他站在屋子另一頭，握牌，對我送一道念。\n>\n> 念先落進匣。匣裡一格亮了。過了半拍，念才到玉片：架側那張總目最上面那一卷叫什麼。淡，比他手刻的淡；慢半拍；涼。我探了總目，答了。答話落回匣裡，匣送出去，牌上那枚玉符亮了一下。\n>\n> 他又送一次同一道念。匣裡那一格亮了一下，沒有第二格亮，玉片上沒有新的念。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 玉片上那道深念沒有了。我身上多兩道型。院裡的小偶醒著。地上一圈填回去的痕。門邊一只匣。牌在他手裡帶走了，玉符嵌在牌上。牆邊那團素紙還在。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 2403,
+  "reading_minutes": 9,
+  "source_path": "_posts/programming/zh/2026-10-05-it-ironman-2026-day-28.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-22",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜派出子代理：會塞爆 context 的工作交給 subagent，只拿摘要回來 - Tip 22",
   "lang": "zh",
@@ -3503,67 +3528,5 @@
   "word_count": 1121,
   "reading_minutes": 4,
   "source_path": "_posts/swift/zh/2023-04-20-using-adapter-pattern-to-libs.md"
- },
- {
-  "slug": "swiftui-data-flow",
-  "title": "SwiftUI 資料流",
-  "lang": "zh",
-  "date": "2023-04-19T20:41:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "SwiftUI"
-  ],
-  "summary": "Apple have SwiftUI recommend data flow. It's follow one data flow.",
-  "url": "https://www.marvinswift.com/swift/swiftui-data-flow.html",
-  "hero_image": "https://www.marvinswift.com/assets/swift/state-change/one-way-data-flow.jpeg",
-  "content": "SwiftUI 以宣告式的方法進行 UI 設計。整個資料的傳遞是 Action →State → View 的方向，而這個方向是固定的，不會有逆向的可能。你也可以查 one way data flow 這個名詞，不只是 mobile 端，現在在其他端也有很多這樣的 data flow 設計。\n\n## Action 是起點\n\nAction 的啟動，可能來自於 User，也有可能來自於 external event。當 action 發動之後，會改變程式中的 State，接下來 SwiftUI 會自動去更新需要變化的 View。\n\n比對以前的畫面渲染，這個職責在以前的 UIKit 是由 UIViewController 負責的\n\n![SwiftUI Data flow](https://www.marvinswift.com/assets/swift/state-change/one-way-data-flow.jpeg)\n\n## View 的狀態管理 - Single source of truth\n\n最好要記得單一資訊來源的原則，Apple 推薦的方式是，讓資料設計為 read-only 的 Swift Property，或是提供雙向的 State 綁定，SwiftUI 會觀察資料的變化，SwiftUI 會變化那些只需要變化的 View。\n\nApple 不建直接讓 persistent storage 成為 State properties，persistent storage 比較好的適用場景，是過場狀態的管理，比如說，highlight 狀態，filter settings。\n\n![UI Stae 狀態管理](https://www.marvinswift.com/assets/swift/state-change/ui-state.jpeg)\n\n## 參考資料\n\n[SwiftUI Model data - Apple 文件](https://developer.apple.com/documentation/swiftui/model-data)\n\n[SwiftUI 管理 UI 狀態 - Apple 文件](https://developer.apple.com/documentation/swiftui/managing-user-interface-state)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 302,
-  "reading_minutes": 1,
-  "source_path": "_posts/swift/zh/2023-04-19-swiftui-data-flow.md"
- },
- {
-  "slug": "ref-type-val-type-in-swift",
-  "title": "Swift 中的 Value type 和 Reference type",
-  "lang": "zh",
-  "date": "2023-04-19T11:42:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift"
-  ],
-  "summary": "Swift designed array, dict is value types. When you using array and copied it, it might have different behavior than you think. This article also include the swift.org and swift blog.",
-  "url": "https://www.marvinswift.com/swift/ref-type-val-type-in-swift.html",
-  "hero_image": null,
-  "content": "在我以前的文章 [Prototype Pattern (原型模式) in Swift (Reference type vs. Value type 的不同)](https://moonandeye.github.io/swift/2018/06/09/prototype-patter.html) 中，已經有提到 Referce type 和 value type 在修改上的差別。但那一篇是來自於 Swift 的 Design Pattern 一書中，Prototype pattern 的延伸。這邊想再寫一篇 Value type 和 Reference type 的文章。\n\n### Reference Type\n\nclass 是 reference types。Swift 5.5 以後的 actor 也是 reference type。\n\n### Value Type\n\nstruct 宣告的物件, enum, tuple, Dict, Array 都是 value types。\n\n## 在 Swift 語言中，將 value type 設計為主要結構的原因\n\n我目前查到最早的文章，是在 Swift 還在發展的時候寫的 blog。文章連結在下面，發文日期為 2014 年 8 月 15 日。\n\n[Value and Reference Types - Swift 部落格](https://developer.apple.com/swift/blog/?id=10)\n\n在後面幾段中有提到 **The Role of Mutation in Safety「變異在安全性中的作用」**\n\n> 選擇值類型而不是引用類型的主要原因之一是能夠更輕鬆地理解程式碼。如果您始終獲得獨立的複製實例，您可以信任應用程序的其他部分不會在幕後更改數據。這在多線程環境中特別有用，其中不同的線程可能會在您之下更改數據。這可能會產生非常難以調試的嚴重錯誤。\n\n> 由於差異是以修改數據時發生的情況來定義的，因此有一種情況是值型和引用型重疊的：當實例沒有可寫數據時。在沒有變異的情況下，值和引用的行為完全相同。你可能會想到一種情況，即完全不可變的類別可能是有價值的。\n\n> 在 Swift 中，Array、String 和 Dictionary 都是值類型。它們的行為非常像 C 中的簡單 int 值，作為該數據的唯一實例。你不需要做任何特殊的事情——比如進行顯式複製——來防止其他代碼在背後修改該數據。重要的是，你可以安全地在線程之間傳遞值的副本而不需要同步。為了提高安全性，這種模型將幫助你在 Swift 中編寫更可預測的代碼。\n\n## Swift 的 Array 是 value type，那這些操作，會更改什麼？\n\n```swift\n/// 忍者龜的宣告，注意! 這邊用 reference type class\nclass NinjaTurtle {\n\n    var name: String = \"\"\n}\n\n// 先初始化一隻忍者龜，並命名為達文西\nlet turtle1 = NinjaTurtle()\nturtle1.name = \"達文西\"\n\n// 再初始化一隻忍者龜，並命名為米開朗基羅\nlet turtle2 = NinjaTurtle()\nturtle1.name = \"米開朗基羅\"\n\n/// 兩隻忍者龜裝進同一個 array 裡面\nvar turtles = [turtle1, turtle2]\n\n/// 因為 array 是 value type，所以這個賦值是 copy\nvar copiedTurtles = turtles\n\n/// 我們把原來 array 的烏龜拿出來，並命名為 拉斐爾\nturtles[0].name = \"拉斐爾\"\n\n/// 請問，複製的 array 裡面，第 0 隻烏龜的名字，是 拉斐爾 還是 達文西\nprint(copiedTurtles[0].name)\n\n```\n\n上面這段程式碼，建議自己跑過一遍，然後去驗證自己的想法。\n\n如果會碰到其他語言的話，也可以把相同的邏輯，試著去跑在 Kotlin, Python, Java, C#, Rust 上，看看是一樣？還是不一樣？\n\n## 在什麼場景下，要選擇哪個 type？\n\n### 以下場景，適合用 value type\n\n- 比較兩個物件時，用 `==` 比較合理\n- 當你在複製時，複製後的物件和複製前的物件彼此狀態應該是獨立時\n- data 會在多個執行緒下被操作時\n\n### 以下場景，適合用 reference type (class)\n\n- 比較兩個物件時，用 `===` 比較合理\n- 需求使用會被共享且變更的狀態時\n\n## 相關連結\n\n[Prototype Pattern (原型模式) in Swift (Reference type vs. Value type 的不同)](https://moonandeye.github.io/swift/2018/06/09/prototype-patter.html)\n\n[Value and Reference Types - Swift 部落格](https://developer.apple.com/swift/blog/?id=10)\n\n[Structures and Clases - swif.org](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 816,
-  "reading_minutes": 3,
-  "source_path": "_posts/swift/zh/2023-04-19-ref-type-val-type-in-swift.md"
- },
- {
-  "slug": "appdelegate-in-swiftui",
-  "title": "在 SwiftUI 專案中，加上 AppDelegate",
-  "lang": "zh",
-  "date": "2023-04-18T22:43:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "SwiftUI"
-  ],
-  "summary": "Using SwiftUI init project, but you still need AppDelegate life cycle. This article helps you init AppDelegate in correct way.",
-  "url": "https://www.marvinswift.com/swift/appdelegate-in-swiftui.html",
-  "hero_image": null,
-  "content": "在 SwiftUI 發表之後，開啟一個專案的方式，多了 SwiftUI 的設定。如果你選擇使用 SwiftUI 開啟專案，原來的 AppDelegate 還有 SceneDelegate 檔案不會出現。而檔案的進入點，會是一個和專案同樣名稱的 SwiftUI 檔，裡面有個 Scene 並把 WindowGroup 包住。\n\n雖然 AppDelegate 不見了，但有些原來在 AppDelegate 裡面要做的事情，你仍然要做。舉例來說，一個專案基本上還是需要有 Crashlytics 來紀錄程式的崩潰和 Analytics來紀錄基本的使用者日活/週活/月活。而這些紀錄程式的發動點，仍要放在 AppDelegate 相關的生命週期中。\n\n### 使用 SwiftUI 建置專案，啟動點沒有 AppDelegate\n```swift\n@main\nstruct FooApp: App {\n\n  var body: some Scene {\n    WindowGroup {\n        ContentView()\n    }\n  }\n}\n```\n\n### 新增 AppDelegate.swift 檔案\n\n先新增一個 AppDelegate.swift 檔案，並加上 AppDelegate 的類別\n\n```swift\nimport UIKit\n\nclass AppDelegate: NSObject, UIApplicationDelegate {\n\n    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {\n\n        // 去做原來在 App 啟動時就會進行的動作\n        // 像是 Crashlytics 啟動，Firebase 啟動，Analytics 啟動\n        return true\n    }\n}\n\n```\n### 在 SwiftUI 中加上 AppDelegate\n\n```swift\n\nimport SwiftUI\n\n@main\nstruct FooApp: App {\n\n    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate\n\n    var body: some Scene {\n        WindowGroup {\n            CryptoCoinListView()\n        }\n    }\n}\n\n```\n\n## 如果你是寫 Watch App or macOS App 你的 AppDelegate conform 的 protocol 會有一點不一樣\n\n### Watch App\n\n```swift\nimport WatchKit\n\nclass AppDelegate: NSObject, WKApplicationDelegate {\n\n    func applicationDidFinishLaunching() {\n        // 去做原來在 App 啟動時就會進行的動作\n        // 像是 Crashlytics 啟動，Firebase 啟動，Analytics 啟動\n    }\n}\n```\n\n```swift\nimport SwiftUI\n\n@main\nstruct FooWatchApp: App {\n\n    @WKApplicationDelegateAdaptor(AppDelegate.self) var appDelegate\n\n    var body: some Scene {\n        WindowGroup {\n            WatchContentView()\n        }\n    }\n}\n```\n\n### macOS App\n\n```swift\nimport AppKit\nimport SwiftUI\n\nclass AppDelegate: NSObject, NSApplicationDelegate {\n\n    func application(_ application: NSApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {\n        // 去做原來在 App 啟動時就會進行的動作\n        // 像是 Crashlytics 啟動，Firebase 啟動，Analytics 啟動\n    }\n}\n```\n\n```swift\nimport SwiftUI\n\n@main\nstruct FooMacAppApp: App {\n\n    @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate\n\n    var body: some Scene {\n        WindowGroup {\n            MacContentView()\n        }\n    }\n}\n```\n\n## 相關連結\n\n[Firebase iOS 專案 Tutorial](https://firebase.google.com/docs/ios/setup#swiftui)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 262,
-  "reading_minutes": 1,
-  "source_path": "_posts/swift/zh/2023-04-18-appdelegate-in-swiftui.md"
  }
 ]
