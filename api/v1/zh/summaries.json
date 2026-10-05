@@ -24,6 +24,30 @@
   "source_path": "_posts/programming/zh/2026-10-05-it-ironman-2026-day-28.md"
  },
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-23",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜MCP 的概念：agent 接外面工具的標準插座 - Tip 23",
+  "lang": "zh",
+  "date": "2026-10-05T13:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "MCP",
+   "Claude Code"
+  ],
+  "summary": "整理 MCP 如何讓 coding agent 連接 Jira、資料庫、監控等外部服務，示範 Claude Code 的 HTTP／stdio 設定和接入前要確認的信任風險。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-23/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 456,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-10-05-it-ironman-2026-vibe-coding-tip-23.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-22",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜派出子代理：會塞爆 context 的工作交給 subagent，只拿摘要回來 - Tip 22",
   "lang": "zh",

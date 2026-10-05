@@ -18,6 +18,24 @@
   "word_count": 2403
  },
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-23",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜MCP 的概念：agent 接外面工具的標準插座 - Tip 23",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "MCP",
+   "Claude Code"
+  ],
+  "summary": "整理 MCP 如何讓 coding agent 連接 Jira、資料庫、監控等外部服務，示範 Claude Code 的 HTTP／stdio 設定和接入前要確認的信任風險。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-23/",
+  "date": "2026-10-05T13:00:00+08:00",
+  "word_count": 456
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-22",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜派出子代理：會塞爆 context 的工作交給 subagent，只拿摘要回來 - Tip 22",

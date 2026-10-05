@@ -25,6 +25,31 @@
   "source_path": "_posts/programming/zh/2026-10-05-it-ironman-2026-day-28.md"
  },
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-23",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜MCP 的概念：agent 接外面工具的標準插座 - Tip 23",
+  "lang": "zh",
+  "date": "2026-10-05T13:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "MCP",
+   "Claude Code"
+  ],
+  "summary": "整理 MCP 如何讓 coding agent 連接 Jira、資料庫、監控等外部服務，示範 Claude Code 的 HTTP／stdio 設定和接入前要確認的信任風險。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-23/",
+  "hero_image": null,
+  "content": "MCP 是 Model Context Protocol，一個開放標準：外面的工具、資料庫、服務照這個標準做一個 server，agent 就能接上去用。Tip 10 的 XcodeBuildMCP、Tip 18 提到的 Jira MCP，都是這種 server。\n\n## 為什麼\n\n沒有 MCP 的時候，他要用外面的東西，靠的是你把資料貼進對話，或者他自己拼 CLI 指令。Claude Code 的文件講什麼時候該接一個 server：當你發現自己一直從別的工具，像 issue tracker、監控面板，複製東西進對話。接上之後，他直接讀、直接動那個系統。\n\n文件列的例子：從 Jira 的 issue 做功能、開 PR；查 Sentry 和 Statsig 看某個功能的使用量；從 PostgreSQL 撈十個用過某功能的使用者；照 Figma 的設計更新 email 模板；開 Gmail 草稿邀人。\n\n## 我怎麼做\n\nClaude Code 用 `claude mcp add` 接 server，常見的兩種接法：\n\n```bash\n# 遠端 HTTP server（雲端服務最常見）\nclaude mcp add --transport http <name> <url>\n\n# 本機 stdio server：跑一個本地程式當 server\nclaude mcp add --transport stdio airtable -- npx -y airtable-mcp-server\n\n# 管理\nclaude mcp list\nclaude mcp get <name>\nclaude mcp remove <name>\n```\n\n`claude mcp list` 會在每個 server 旁邊標狀態：連上了、要先登入、連不上。雲端的 server 多半要授權，在 Claude Code 裡打 `/mcp`，挑那一台把登入流程走完；之後 token 被伺服器退掉，也是回到 `/mcp` 重新登入。\n\n要找現成的 server，Anthropic Directory 上有審過的；自己做的話，MCP 的規格、schema 和文件都在 modelcontextprotocol.io。\n\n## 坑\n\n接進來的 server 等於讓他多一雙手。文件特別提醒：接之前確認你信任這個 server；會抓外部內容的 server 有 prompt injection 的風險。\n\n## 小結\n\nMCP 是 agent 接工具的標準插座。用得到就接，接之前看清楚是誰的。\n\n明天講這一組的最後一個：Codex CLI，它是 CLI，所以別的 agent 也叫得動它。\n\n參考：\n- Claude Code 文件：MCP https://code.claude.com/docs/en/mcp\n- Model Context Protocol https://modelcontextprotocol.io\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 456,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/zh/2026-10-05-it-ironman-2026-vibe-coding-tip-23.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-22",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜派出子代理：會塞爆 context 的工作交給 subagent，只拿摘要回來 - Tip 22",
   "lang": "zh",
@@ -3507,26 +3532,5 @@
   "word_count": 983,
   "reading_minutes": 4,
   "source_path": "_posts/swift/zh/2023-04-23-charts-crashed-issue.md"
- },
- {
-  "slug": "using-adapter-pattern-to-libs",
-  "title": "將第三方 lib 包起來，減少升級 lib 的痛苦",
-  "lang": "zh",
-  "date": "2023-04-22T00:01:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "設計模式"
-  ],
-  "summary": "Using adapter pattern to wrap third party library in swift. When you are in iOS development, it's quite common to use third party libs. When lib upgrade, sometimes break the build or crash in run time. Using adapter pattern can help you develop more stable and save your time.",
-  "url": "https://www.marvinswift.com/zh/swift/using-adapter-pattern-to-libs/",
-  "hero_image": "https://www.marvinswift.com/assets/swift/adapter-pattern/Alamofire-tags.jpeg",
-  "content": "現在的 iOS 開發，通常會用到第三方 libs。而隨著每年的 Swift 改版, Xcode 改版, 語法改變，libs 也會升版。下方是 Alamofire 和 Charts 進一年來的版號升級趨勢，libs 是會升級的。依照 [語意化版本的說明](https://semver.org/lang/zh-TW/) 如果動到大版號，是不太可能一行都不改，然後專案可以 build 成功的。有時候升級到中版號的 libs，也會出現意料之外的情形。\n\n假設你使用的第三方 lib 會散落在專案裡面幾十個地方，那升級時要改動處就會在幾十處。隨著版號跳的愈大，或是散落的數量不斷的上升，會不斷的增加 lib 升級的風險。\n\n![Alamofire tags list](https://www.marvinswift.com/assets/swift/adapter-pattern/Alamofire-tags.jpeg){:width=50%}\n\n![Charts tags list](https://www.marvinswift.com/assets/swift/adapter-pattern/Charts-tags.jpeg){:width=50%}\n\n## 減少依賴的 libs 因為升級而痛苦的方法 - 把 libs 包起來\n\n在使用 libs 時，先思考界面會使用的參數，這邊先用最常見的紀錄事件的 lib 為例子。Google Firebase 服務的 FirebaseAnalytics 紀錄需要這兩個參數。\n\n- 參數名: String\n- 參數字典: [String: Any]?\n\n那這兩個參數，通常會設定為 Adapter func 中的 arguments。\n\n### 第一版，只使用了 FirebaseAnalytics\n\n```swift\nimport Foundation\nimport FirebaseAnalytics\n\n/// 將分析相關模組包住的物件，只有這個檔案會 import 分析相關模組\nstruct AnalyticsAdapter {\n\n    /// 紀錄分析事件的 func，在要紀錄時，發動的是這個 func，接口參數會參考被包住的 lib 接口參數\n    func logEvent(name: String, parameters: [String: Any]?) {\n\n        Analytics.logEvent(name, parameters: parameters)\n    }\n}\n```\n\n### 第二版 除了 Google Analytics 以外，還要再加上 Flurry\n\n```swift\n/// 將分析相關模組包住的物件，只有這個檔案會 import 分析相關模組\nstruct AnalyticsAdapter {\n\n    /// 紀錄分析事件的 func，在要紀錄時，發動的是這個 func，接口參數會參考被包住的 lib 接口參數\n    func logEvent(name: String, parameters: [String: Any]?) {\n        /// 第一版時就存在的 Google Analytics\n        Analytics.logEvent(name, parameters: parameters)\n        /// 在第二版加上去的追蹤 lib\n        Flurry.log(eventName: name, parameters: parameters)\n    }\n}\n```\n\n### Adapter 在專案中用起來的圖，大概的樣子\n\n在專案中，如果是 VCs 或是 Models 需要用到第三方 libs 的功能，就會透過 adapter 類別去呼叫，VCs 不會碰到第三方，會碰到第三方 lib 的，在這個架構下，只有 adapter 物件會碰到第三方 lib。用起來的樣子，就像下面這個圖\n\n![Adapter 在專案中用起來的樣子](https://www.marvinswift.com/assets/swift/adapter-pattern/AdaptersDiagram.jpeg)\n\n## 範例 - 使用 Alamofire\n\n```swift\nimport Foundation\nimport Alamofire\n\n/// 轉接 Alamofire 的物件，專門處理 URLRequest\nstruct AlamofireAdapter {\n\n    /// 將 request 送出，並先定義好可解開的 Decodable 物件，在完成後回傳 (Result<T: Decodable, Error>)\n    func sendRequestDecodable<T: Decodable>(_ request: URLRequest, completion: @escaping ((Result<T, Error>) -> Void)) {\n\n        /// 如果 Alamofire 升級到大版號 6 的時候，這邊的實作會修改\n        AF.request(request)\n            .validate(statusCode: 200..<300)\n            .responseDecodable { (dataResponse: DataResponse<T, AFError>) in\n\n                switch dataResponse.result {\n                    case .success(let decodableObj):\n                        completion(.success(decodableObj))\n                    case .failure(let error):\n                        completion(.failure(error))\n                }\n            }\n    }\n}\n```\n\n## 範例 - 使用圖片快取套件\n\n```swift\n//\n//  ImageCacheAdapter.swift\n//  ChatGPT\n//\n//  Created by cm0679 on 2023/4/22.\n//\n\nimport UIKit\nimport Kingfisher\n\n/// 專門處理 ImageView 與網路圖片資源交互作用的物件\nstruct ImageCacheAdapter {\n\n    /// 接口為: UIImageView, URL, 與 placheHolder。placholder 預設為 nil\n    /// 當 tableViewCell 中的 imageView 在 cellForRowAt 時將 imageView 傳入\n    func downloadAndCache(imageView: UIImageView, with url: URL, placeHolder: UIImage?) {\n\n        /// 如果想把 Kingfisher 改成 sd_webImage，將下列實作換掉即可\n        imageView.kf.setImage(\n            with: url,\n            placeholder: placeHolder) { result in\n\n            switch result {\n            case .success(let value):\n                print(\"Task done for: \\(value.source.url?.absoluteString ?? \"\")\")\n            case .failure(let error):\n                print(\"Job failed: \\(error.localizedDescription)\")\n            }\n        }\n    }\n}\n\n```\n\n## 使用 protocol 的方式進行 Adapter\n\n如果去網路上找 Adapter pattern 的文章，會有一種先寫 protocol 的範例出來，如果是用前面的 URLRequest 為例的話，風格會是這樣。先寫一個 protocol，並將 func 定義好。然後在前述所用的轉接 Alamofire 的 Adapter 物件，讓該物件 conform URLRequest protocol，並在 func 中完成實作。\n\n```swift\nimport Foundation\nimport Alamofire\n\nprotocol URLRequestAdapter {\n    /// 將 request 送出，並先定義好可解開的 Decodable 物件，在完成後回傳 (Result<T: Decodable, Error>)\n    func sendRequestDecodable<T: Decodable>(_ request: URLRequest, completion: @escaping ((Result<T, Error>) -> Void))\n}\n\n/// 轉接 Alamofire 的物件，專門處理 URLRequest\nstruct AlamofireAdapter: URLRequestAdapter {\n\n    /// 將 request 送出，並先定義好可解開的 Decodable 物件，在完成後回傳 (Result<T: Decodable, Error>)\n    func sendRequestDecodable<T: Decodable>(_ request: URLRequest, completion: @escaping ((Result<T, Error>) -> Void)) {\n\n        /// 如果 Alamofire 升級到大版號 6 的時候，這邊的實作會修改\n        AF.request(request)\n            .validate(statusCode: 200..<300)\n            .responseDecodable { (dataResponse: DataResponse<T, AFError>) in\n\n                switch dataResponse.result {\n                    case .success(let decodableObj):\n                        completion(.success(decodableObj))\n                    case .failure(let error):\n                        completion(.failure(error))\n                }\n            }\n    }\n}\n```\n\n在應用的時候，這裡用 `FooModel` 為例，`FooModel` 只會看到 URLRequestAdapter protocol，但在 init 的時候，將這個物件用 `AlamofireAdapter` 進行 init()。實際上使用的狀況，可能會像下面的 `FooModel` 一樣。\n\n```swift\nclass FooModel {\n\n    let urlRequestAdapter: URLRequestAdapter\n\n    init(urlRequestAdapter: URLRequestAdapter) {\n        self.urlRequestAdapter = AlamofireAdapter()\n    }\n\n    func requestSomething() {\n\n        guard let url = URL(string: \"foo_url\") else {\n            return\n        }\n\n        let someRequest = URLRequest(url: url)\n        urlRequestAdapter.sendRequestDecodable(someRequest) { (response: (Result<String, Error>)) in\n\n            print(\"response: \\(response)\")\n        }\n    }\n}\n```\n\n雖然這樣寫，會需要多宣告一個 protocol，好像不多宣告這個 protocol，你也可以達成一樣的事情，但這是有故事的。這種先寫一個稱之為「界面」的程式碼，然後再寫出一個物件去繼承這個界面，在其他語言中是非常常見的事情。當然和其他語言比起來，Swift 是相對較年輕的語言，直接套用前人的模式是很合理也很合邏輯的。此外，如果你的程式碼並不是包成 app release 出去，這種先寫界面，再寫物件繼承的手法，在進行整個 SDK 抽換的時候，是很有用的。舉例來說：支付 SDK 從 信用卡支付 改到 Apple Pay。或是第三方登入從 Facebook 登入改到 Github 登入，在這個模式上都是可以達到的。\n\n### 不過在 mobile APP 開發中呢?\n\n那如果很確定你手上的專案就是 iOS App，很確定套件就是用最大宗，星星數最多，folks 最多，還有沒有一定要先寫 protocol 再寫物件 conform protocol?\n\n我．沒．有．答．案\n\n但思考的方法可以從這幾個點出發\n\n- 這個專案是個人 side project？ 還是公司重要專案？ 還是公司實驗專案？\n- 這個 feature 的套件是不是只有少數幾個獨大？\n- 這個專案怎麼決定專案使用第三方 libs 的方針？\n\n最重要的當然是「專案團隊」的共識，如果專案人數只有 1，那共識當然是 1 個人決定，但當專案成員是複數的時候，優先思考的反而會是，這個專案怎麼決定第三方 libs。在怎麼「使用 libs 的共識」的更上一層，是有個「團隊開發溝通」這一層要先思考的。\n\n## 參考資料\n\n[語意化版本說明](https://semver.org/lang/zh-TW/)\n\n[Refactoring Guru 的 Adapter pattern Swift Sample](https://refactoring.guru/design-patterns/adapter/swift/example#example-1)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 1121,
-  "reading_minutes": 4,
-  "source_path": "_posts/swift/zh/2023-04-20-using-adapter-pattern-to-libs.md"
  }
 ]
