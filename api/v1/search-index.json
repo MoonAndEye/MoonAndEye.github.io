@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-24",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Codex CLI 的概念：它是 CLI，所以 Claude 叫得動它 - Tip 24",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "Codex CLI",
+   "Claude Code"
+  ],
+  "summary": "整理 Codex CLI 如何讓 Claude Code 呼叫 Codex、用 codex exec 交辦非互動任務，並保留我目前無法以 -p 呼叫 Claude Code 的限制。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-24/",
+  "date": "2026-10-06T13:00:00+08:00",
+  "word_count": 422
+ },
+ {
   "slug": "it-ironman-2026-day-29",
   "lang": "zh",
   "title": "[IT 鐵人賽] 藏經閣的問路石：DKS MCP 串上 GitHub、GitLab 的搜尋，repo、commit、MR 用自己的話問 - Day 29",
