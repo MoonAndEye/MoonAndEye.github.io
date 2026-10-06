@@ -1,5 +1,26 @@
 [
  {
+  "slug": "it-ironman-2026-day-30",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] 修道途中：法寶裝太多先瘦身，1.1 GB 到 300 MB，以及這 30 天 - Day 30",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "App",
+   "Acceptance",
+   "Appium",
+   "Xcode",
+   "Build"
+  ],
+  "summary": "拆出 Appium 和 Xcode Build MCP 等驗收功能後，App 從 1.1 GB 降到約 300 MB。Day 30 回看這 30 天留下與推翻的決定，以及 Agent 現在能做的事。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-30/",
+  "date": "2026-10-07T01:18:51+08:00",
+  "word_count": 1996
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-24",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Codex CLI 的概念：它是 CLI，所以 Claude 叫得動它 - Tip 24",

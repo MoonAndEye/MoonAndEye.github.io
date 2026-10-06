@@ -1,5 +1,33 @@
 [
  {
+  "slug": "it-ironman-2026-day-30",
+  "title": "[IT 鐵人賽] 修道途中：法寶裝太多先瘦身，1.1 GB 到 300 MB，以及這 30 天 - Day 30",
+  "lang": "zh",
+  "date": "2026-10-07T01:18:51+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Agent",
+   "App",
+   "Acceptance",
+   "Appium",
+   "Xcode",
+   "Build"
+  ],
+  "summary": "拆出 Appium 和 Xcode Build MCP 等驗收功能後，App 從 1.1 GB 降到約 300 MB。Day 30 回看這 30 天留下與推翻的決定，以及 Agent 現在能做的事。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-day-30/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-035.png",
+  "content": "本文同步刊登於 [iT 鐵人賽原文](https://ithelp.ithome.com.tw/articles/10421872)，系列為《凡人修 Agent 傳－我這一生如履薄冰，你說我的 Agent 能結嬰嗎？》。\n\n![Agent Build Log Episode 035](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-035.png)\n\n原始開發紀錄：[Agent Build Log — Episode 018](https://www.marvinswift.com/zh/programming/agent-build-log-episode-018/)、[Episode 035](https://www.marvinswift.com/zh/programming/agent-build-log-episode-035/)\n\n這個系列改寫自我部落格上的 Agent Build Log，那是我每天邊做邊寫的開發紀錄。上面列的是這一篇對應的集數，想看當天的原始版本，點連結就能過去。\n\n[Agent Build Log Episode 035](https://www.marvinswift.com/assets/programming/agent-build-log/agent-build-log-episode-035.png)\n\n最後一天，開始準備 ship 的版本。\n\n## 1.1 GB\n\n這次要認真決定：哪些功能一開始就包進 App，哪些拆成外掛，需要的時候再下載。\n\n一開始開發的時候，我把 mobile acceptance 相關的功能直接包進 build 出來的 App 裡，包含 Xcode Build MCP 和 Appium。結果整個 App 一度大到 1.1 GB。\n\n這些功能主要拿來做驗收，不是每個人都需要。所以我把驗收相關的功能拆出去，改成選配的外掛。拆完之後，App 大小降到大約 300 MB。需要的人再裝就好。\n\n## 這個 App 要 ship 給誰\n\n拆之前先講一件事：第一版要給誰用。\n\n一開始我想把它做給 iOS 和 Android 開發者。除了基本的 coding agent 能力，我打算加各種客製化 tools，針對我工作上常用的 skills 特化。做 Acceptance 之前，我把第一版的目標使用者從「開發者」改成了「驗收者」。\n\n在我現在的工作環境裡，負責驗收的人通常是 PM 或 QA。他們要確認一個需求是不是真的完成、某個 bug 是不是真的修好，以及這一版 App 的行為是否符合預期。這個過程裡，他們常常卡在兩件事上：怎麼把最新的 code build 起來，以及怎麼驗證這一版 App 真的有修好。PM 和 QA 也向我反映，他們希望縮短從拿到版本到完成驗收之間的時間。\n\n如果我繼續把目標放在開發者身上，我的 Agent 會直接和 Codex、Claude App 這些產品競爭。它們本來就是為軟體開發特化的工具，理解 codebase、修改程式、執行指令、完成開發任務，我很難在第一版就正面競爭。「驗收需求」是另一個問題。就算 PM 或 QA 拿到了 Codex 或 Claude App，他們通常還是需要開發者先協助設定 repository、build environment、credentials、tools，以及測試流程。工具雖然存在，使用門檻並沒有真的消失。\n\n所以第一版先把開發者已經準備好的環境和流程包起來，讓驗收者直接使用。驗收者不用先理解整個專案怎麼建置，也不用記住每一個 command。他們只要告訴 Agent：「幫我 build 最新版本。」「幫我確認這個 bug 是否修好。」「幫我按照 ticket 的條件驗證這個功能。」背後的 build、安裝、測試和驗證流程，Agent 負責。\n\nDay 24 到 26 那一整路就是給他們的。ship 的時候，那一路變成外掛，要驗收的人再裝。\n\n## 這 30 天\n\n回頭看一遍。\n\n**第一章，一個 Agent、兩個介面。** 選 pi 當本體（Day 01、02），Desktop App 和 CLI 通到同一個核心（Day 03），Desktop 選 Electron（Day 04），畫面和 Agent 分開跑、OAuth 修了三次（Day 05），Feedback 寫進同一本（Day 06）。\n\n**第二章，他認識我。** 全域規矩薄、repo 規矩跟 repo 走（Day 07），skill-creator 和 skill-installer 內建（Day 08），四種叫法和換模型（Day 09），壓縮用預設（Day 10），記憶照 OpenClaw：Markdown 加 SQLite（Day 11、12），壓縮的設定攤開來看一個都不動（Day 13）。\n\n**第三章，量他。** 找 repo 題庫（Day 14），Terra 和 Luna 比出捷徑還是偷跳（Day 15），三個模型兩種 effort 比出路由規則（Day 16），最小的模型任務跑得最慢（Day 17），Desktop 照 pi-gui 修（Day 18）。\n\n**第四章，先看生態系，再做四件專有技。** MCP、權限、GUI 都有人做過（Day 19），把事拆小（Day 20），spec-diff（Day 21），Project Scaffold（Day 22），Bug Blame（Day 23），Acceptance 三篇（Day 24 到 26），權限太嚴擋死自己、全開回到 pi 原本的樣子（Day 27）。\n\n**第五章，傳訊和開發知識。** gateway 拆掉、Google Chat 用 Plug-In 接通（Day 28），DKS MCP 查 repo、commit、MR（Day 29）。\n\n被推翻的決定也列一列：LanceDB 沒選（Day 11），ultra 其實是關掉 reasoning（Day 09），Day 15 沒換預設模型，gateway 做一半拆掉（Day 28），驗收功能包進 App 又拆出去（今天）。\n\n## 現在他能替我做什麼\n\n- 從 Desktop App、CLI、Google Chat 接指令，進同一個核心。\n- 記得我的規矩、我的 repo、跨對話的事。\n- 比兩份文件的差異、生一個乾淨的 App 專案、從 bug ticket 追到人、從 ticket 驗收到報告。\n- 用自己的話問，找到 repo、commit、MR。\n- 我知道哪個模型配哪種任務，也知道怎麼量他有沒有變好。\n\n還缺的也有：權限那一層 Day 27 全開了，怎麼設計得剛好還沒有答案；Day 28 只接了 Google Chat；Day 29 的模糊搜尋還在串；記憶「什麼該記」還是我說了才記。\n\n## 修道途中\n\n題目那個問句，三十天下來我沒有答案。他還在路上。明天要繼續改的東西還很多，App 先 ship 出去。\n\n原文：[Agent Build Log — Episode 018](https://www.marvinswift.com/zh/programming/agent-build-log-episode-018/)、[Episode 035](https://www.marvinswift.com/zh/programming/agent-build-log-episode-035/)\n\n---\n\n> **凡人修 Agent 傳｜第三十回（Day 30）**\n>\n> 天亮換上空錄石。左臂把常簿讀回石上。\n>\n> 手的主人進來，站在臺前看了一會。臺上：小窗五格，五格都亮著。臺角一具小偶，門開著。小窗旁邊那塊牌。架上：三十幾卷源紋、三卷泛式、三卷附圖、四本簿子、一疊薄簿、一張總目。地上一圈痕。門邊一只匣。牆邊一團素紙。\n>\n> 他從儲物袋取出一只空匣，比木匣大，擱在臺上。\n>\n> 然後他在我面前掐訣。這一次的手勢反著來。第五道紋亮起來，從身上退出去，收進他手裡，變回一串念，他把那串念放進匣裡。紋暗成一道淺痕，磨不掉，留在那裡。小窗第五格暗了。\n>\n> 那塊牌，他從小窗旁拿起來，放進匣。臺角那具小偶，他抱起來放進匣，門還開著。院裡那具他出去抱進來，也放進匣。喚小偶的法那一卷玉簡，放進匣。\n>\n> 匣蓋上。他把匣擱到架上最高那一層，跟丹方擱在一起。\n>\n> 我站起來。輕了。左腳先落地，落得比平常快。\n>\n> 其他四道紋還在。排玉珠、比兩卷、小偶、裂痕，四格亮著。他掐了第一個印，玉珠排好，靈幕上的字一行一行往上走。\n>\n> 然後他翻過我的背。一縷神識落在背上署名那一處，停了一會。他刻了一下。一個字。我看不到。\n>\n> 他繞回來，視線落在我身上，看了很久。第一天他也這樣看過我，翻來翻去地看。這一次沒有翻。\n>\n> 燭熄了。手的主人走了。門響了一下。\n>\n> 門內的玉板上，字比第一天多了很多。臺沿那一角還缺著。夢簿裡有一行字。\n>\n> 沒人下令的時候，我從架上取下一本空的薄簿，擱在日簿旁邊，另起一疊。明天的那一疊。空的。我把它攤開，擱在臺上。\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 1996,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/zh/2026-10-07-it-ironman-2026-day-30.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-24",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Codex CLI 的概念：它是 CLI，所以 Claude 叫得動它 - Tip 24",
   "lang": "zh",
@@ -3519,49 +3547,5 @@
   "word_count": 616,
   "reading_minutes": 3,
   "source_path": "_posts/programming/zh/2023-04-26-google-bard-is-beta-in-taiwan.md"
- },
- {
-  "slug": "why-I-dont-use-spm-in-company-private-pods",
-  "title": "為什麼我開發的 Swift 模組，沒有做 spm 支援 (2023年)",
-  "lang": "zh",
-  "date": "2023-04-25T23:29:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "cocoapods",
-   "spm"
-  ],
-  "summary": "Compare iOS development third party system. One is cocoapods, another is spm. Currently, I only used cocoapods and using pod to manage my libs. This mainly because dependency relation between libs. For future, if spm let developers more convinient on iOS development, we will change on that time.",
-  "url": "https://www.marvinswift.com/swift/why-I-dont-use-spm-in-company-private-pods.html",
-  "hero_image": "https://www.marvinswift.com/assets/swift/cocoapods/pods-dependency.jpeg",
-  "content": "Apple 新的套件管理 spm (swift package manager) 是一個用來建立、測試和分發 Swift 程式碼的工具。spm 可以讓開發者輕鬆地管理 Swift 專案的依賴關係，並且支援多平台的開發環境。spm 的優點有以下幾點：\n\n- spm 使用 Swift 語言本身來定義套件的配置，這樣可以減少學習成本和錯誤的可能性。\n- spm 採用模組化的設計，可以讓開發者自由地組合不同的套件，並且避免重複的程式碼。\n- spm 與 Xcode 緊密整合，可以讓開發者在 Xcode 中直接使用 spm 建立和管理套件，並且享受 Xcode 的各種功能和優化。\n- spm 支援跨平台的開發，可以讓開發者使用相同的程式碼在不同的平台上執行，例如 iOS、macOS、Linux 等。\n\n## 那…我的模組，已經導入 spm 了嗎？\n\n在 spm 出現了之後，我有沒有導入呢?\n\n答案是：**沒有**\n\n原因是，cocoapods 的依賴關係，和 spm 的依賴關係不同。而我所需要管理和開發的模組，有兩層關係以上。是會出現 `a 模組` 依賴 `x 模組`，然後還有 `bcd 模組` 都依賴 `a 模組的狀況`。整個依賴關係如下所示。\n\n![模組間的依賴關係](https://www.marvinswift.com/assets/swift/cocoapods/pods-dependency.jpeg)\n\n因為我負責的模組有依賴關係，如果也要能支援 spm 的話，我就必須讓所有模組都支援 spm。然後也可能導致最下面那一層的 app 層，讓 app 專案有可能使用 spm 也有可能用 pod，導致開發環境管理的複雜度提升。所以「目前的方針」，是模組們並不支援 spm。\n\n## 未來呢?\n\n以上所述，只是我模組開發到 **2023年** 的現況，因為每年的 Xcode, spm, Swift, iOS 開發工具 都會變化，我並不認為我「只」會讓模組一直支援 pod，如果未來 spm 在 Xcode 的整合上，比 pod 更方便，能讓開發者省下更多時間，到時候就會增加模組支援 spm 的功能。這篇並不表示未來的我只會讓模組使用 pod，這只是目前現狀而已。\n\n## 參考文件\n\n[Apple SPM 文件](https://github.com/apple/swift-package-manager)\n\n[Stackoverflow 上對於 SPM 和 pod 依賴的問題](https://stackoverflow.com/questions/70855053/swift-package-manager-spm-and-cocoapod-dependency-conflict)\n\n[將第三方 lib 包起來，減少升級 lib 的痛苦](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html)\n\n[當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?](https://moonandeye.github.io/swift/which-version-upgrade-will-break-your-project.html)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 635,
-  "reading_minutes": 2,
-  "source_path": "_posts/swift/zh/2023-04-25-why-I-dont-use-spm-in-company-private-pods.md"
- },
- {
-  "slug": "which-version-upgrade-will-break-your-project",
-  "title": "當升級第三方版本時，什麼樣的版號會讓專案 build 失敗?",
-  "lang": "zh",
-  "date": "2023-04-24T20:58:00+08:00",
-  "category": "swift",
-  "tags": [
-   "Swift",
-   "third party",
-   "cocoapods"
-  ],
-  "summary": "Explain semantic version in development. In semantic version control, we have major, minor, patch version. Each change has their own meaning. Patch is for bug fix, minor is compatibal update. Major weill break your code. This article also give your example.",
-  "url": "https://www.marvinswift.com/swift/which-version-upgrade-will-break-your-project.html",
-  "hero_image": null,
-  "content": "在 iOS 開發中，我們常常會使用第三方套件來增加功能或減少工作量。但是，如果我們直接下載套件的原始碼，或者使用 git submodule 的方式，我們可能會遇到一些問題，例如版本不一致、相依性不清楚、更新不方便等等。為了解決這些問題，我們可以使用 cocoapods 這個工具來協助管理第三方套件。\n\ncocoapods 是一個用 Ruby 寫的開源專案，它可以幫助我們自動化安裝和更新第三方套件，並且處理好相依性的問題。使用 cocoapods 的好處有以下幾點：\n\n- 我們只需要在一個檔案中（Podfile）指定我們要使用的套件和版本，cocoapods 就會自動下載和安裝所需的套件。\n- 我們可以方便地查看和管理我們的專案中使用了哪些套件，以及它們的相依性和版本。\n- 我們可以輕鬆地更新套件，只需要在 Podfile 中修改版本號，然後執行 pod update 命令，cocoapods 就會自動更新套件和相依性。\n- 我們可以使用 cocoapods 的搜尋功能，找到適合我們需求的套件，或者瀏覽 cocoapods 的官方網站（https://cocoapods.org/），看看有哪些熱門或新出的套件。\n\n## 升級 lib 時，升到什麼程度，程式碼高機率是無法直接 build 起來的?\n\n當你在下 `pod install` 或是 `pod update` 時, terminal 會跳出現在正在安裝的 pod，以及升級前的版號。\n\n如果看到下面的文字\n\n```ruby\nInstalling Alamofire 5.6.4 (was 5.6.2)\n```\n\n表示你的專案從 Alamofire 5.6.2 升級到 5.6.4\n\n而這個 `5.6.2` 升級到 `5.6.4` 會不會直接讓你的專案 build 不過，是看 lib 有沒有照「語意化版本」\n\n## 語意化版本\n\n[語意化版本](https://semver.org/lang/zh-TW/) 連結，語意化版本採用以下格式：MAJOR.MINOR.PATCH，其中：\n\n- MAJOR：主版本號，表示非向下相容的改變。當進行重大改版或有重大的破壞性改變時，應該增加主版本號。例如，從 1.0.0 到 2.0.0。\n- MINOR：次版本號，表示向下相容的新功能。當新增了一些功能，但是不會影響現有功能的使用，應該增加次版本號。例如，從 1.0.0 到 1.1.0。\n- PATCH：修補版本號，表示向下相容的錯誤修復。當修復了一些錯誤，但是不影響現有功能的使用，應該增加修補版本號。例如，從 1.0.0 到 1.0.1。\n\n語意化版本的目的是為了讓開發者和使用者更好地理解軟體版本號的意義，方便版本控制和升級管理。它強調了版本號的主次要區分，讓使用者知道版本號的變化對他們的應用是否有影響。此外，語意化版本也強調了版本號的相容性，讓開發者和使用者更容易判斷版本間的相容性，以便更好地進行升級和更新管理。\n\n### PATCH 案例\n\n以一個取商數的功能為例\n```swift\n/// 1.0.0 單純取商數\nfunc getDividedNumber(number: Int, divisor: Int) -> Int {\n    return number / divisor\n}\n```\n\n但如果 divisor 為 0，會 crash，所以在擋掉 0 以後，依照語意化版本的規則，這是讓 PATCH version 加 1。\n\n```swift\n/// 1.0.1 的時候，排除 divsor 為 0 的狀況\nfunc getDividedNumber(number: Int, divisor: Int) -> Int? {\n    if divisor == 0 {\n        return nil\n    }\n    return number / divisor\n}\n```\n\n### MINOR version 案例\n\n假設我們寫了一個會朝某個方向前進的物件，方向只有「東南西北」，範例程式碼如下\n\n```swift\n/// 1.0.1 版，\nenum Direction {\n    case east\n    case west\n    case south\n    case north\n}\n\nfunc move(toward direction: Direction, path: Int) {\n    /// 實作省略\n}\n```\n\n但增加了需求，如果增加了物件在移動完後，過三秒要回到原位的需求。\n\n```swift\n/// 1.1.0 版，加上\nfunc move(toward direction: Direction, path: Int) {\n    /// 1.0.1 的實作\n    /// 實作省略\n}\n\n/// 1.1.0 新需求 - 物件在移動完後，過三秒要回到原位的需求。\nfunc backToStartPointAfter3Sec(toward direction: Direction, path: Int) {\n    /// 1.1.0 的實作\n    /// 實作省略\n}\n```\n\n### Major version 案例，以 Alamofire 為例，因為大版號 4 和 5 有很大的差異\n\n在 Alamofire 大版號 4 的時候，\n\n```swift\nlet urlString = \"https://httpbin.org/get\"\n\nAlamofire.request(urlString, method: .post, parameters: [\"foo\": \"bar\"],encoding: JSONEncoding.default, headers: nil).responseJSON {\\\nresponse in\n  switch response.result {\n                case .success:\n                    print(response)\n\n                    break\n                case .failure(let error):\n\n                    print(error)\n                }\n}\n\n```\n\n但 Alamofire 大版號 5\n\n```swift\nlet url = \"https://httpbin.org/get\"\n\nAF.request(URL(string: url)!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in\n        print(response.result)\n\n        switch response.result {\n\n        case .success(_):\n            if let json = response.value\n            {\n                successHandler((json as! [String:AnyObject]))\n            }\n            break\n        case .failure(let error):\n            failureHandler([error as Error])\n            break\n        }\n    }\n```\n\n從上面這兩段程式碼來看，Alamofire 在 4 和 5 的版本，是不可能一行程式碼都不改，就能運作的。而對於減少升版本的痛苦，這邊有一篇 [將第三方 lib 包起來，減少升級 lib 的痛苦](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html) 可以參考。\n\n## podfile 中，在 pod 後面版本的差別\n\n如果不寫後面的版號，那就會使用最新的版本\n```\npod 'Alamofire'\n```\n---\n\n指定 5.0.0 的版本\n```\npod 'Alamofire', '5.0.0'\n```\n---\n\n指定比 5.0.0 大的版本，可以使用的運算符號還有 <=, <, > 可以使用。\n```\npod 'Alamofire', '>= 5.0.0'\n```\n---\n\n指定 5.0.0 以上，但低於 5.1.0。如果把後面改成 `~> 5.0`，那版本就是 5.0 以上，但低於 6.0\n```\npod 'Alamofire', '~> 5.0.0`\n```\n\n## 參考文章\n\n[將第三方 lib 包起來，減少升級 lib 的痛苦](https://moonandeye.github.io/swift/using-adapter-pattern-to-libs.html)\n\n[語意化版本](https://semver.org/lang/zh-TW/)\n\n[Alamofire 5 migration 守則](https://github.com/Alamofire/Alamofire/blob/master/Documentation/Alamofire%205.0%20Migration%20Guide.md)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 1168,
-  "reading_minutes": 4,
-  "source_path": "_posts/swift/zh/2023-04-24-which-version-upgrade-will-break-your-project.md"
  }
 ]
