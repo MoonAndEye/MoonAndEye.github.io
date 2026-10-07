@@ -1,5 +1,30 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-25",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜紀錄放 GitHub Issues：一件事一張票，open source 常用的方法直接拿來用 - Tip 25",
+  "lang": "zh",
+  "date": "2026-10-07T13:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "GitHub Issues",
+   "GitHub"
+  ],
+  "summary": "用 GitHub Issues 做專案紀錄：一件事一張票，搭配 label、milestone、PR 關聯與 issue template，把開源專案的工作方法直接用在自己的 repo。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-25/",
+  "hero_image": null,
+  "content": "本篇 iT 鐵人賽文章：[前往 iT 閱讀](https://ithelp.ithome.com.tw/articles/10421970)。\n\n專案的紀錄放哪裡？我放 GitHub Issues。想到的功能、發現的 bug、討論過的決定，一件事一張 issue。開源專案用這套用了很多年，方法都是現成的，直接拿來用。\n\n## 為什麼\n\n紀錄跟 code 在同一個 repo 裡，不用另外開一套工具。每一張 issue 有編號，別的 issue 或 PR 裡打 `#12` 就連起來，之後回頭找得到來龍去脈。他也讀得到：GitHub 有官方的 MCP server（Tip 23 講的那種插座），接上之後他能開票、讀票、關票；用 `gh` 這支 CLI 也行。\n\n我這次鐵人賽兩個系列的稿子，就全放在一個 repo 的 issues 裡，一篇一張。\n\n## 我怎麼做\n\n開源專案常用的方法，照 GitHub 的文件列出來：\n\n1. **一件事一張 issue。** bug、想加的功能、要做的事、要記下來討論的東西，各開一張。標題一句話講清楚，內文寫發生了什麼、原本期待什麼、怎麼重現。\n2. **用 label 分類。** 每個新 repo 預設就有一組 label：`bug`、`enhancement`、`documentation`、`question`、`duplicate`、`wontfix`、`good first issue`、`help wanted` 這些。先用預設的，不夠再加。\n3. **用 milestone 綁版本。** 要出 1.2.0，開一個 milestone，這一版要做的 issue 都掛上去，milestone 那一頁會算完成百分比。\n4. **內文用 task list 拆小步。** `- [ ]` 一行一步，勾完就是進度；哪一步要另外追，滑過去按一下就能轉成一張新的 issue。\n5. **PR 連 issue。** PR 的描述寫 `Fixes #12`，merge 進 main 那張 issue 自動關。關鍵字有三組：close、fix、resolve，各自的時態都認。Tip 04 開的那條 branch，收尾的 PR 就這樣寫。\n6. **放 issue template。** `.github/ISSUE_TEMPLATE/` 底下放模板，開票的人照格式填，該有的欄位不會漏。\n7. **問答和看板另外放。** 問題、想法、公告放 Discussions；要看全貌用 Projects，table、board、roadmap 三種排法。\n\n第 6 點的模板可以直接抄。`.github/ISSUE_TEMPLATE/bug.yml`：\n\n```yaml\nname: Bug\ndescription: 回報一個問題\ntitle: \"[Bug] \"\nlabels: [\"bug\"]\nbody:\n  - type: textarea\n    attributes:\n      label: 發生了什麼\n      description: 你做了什麼、畫面上出現什麼\n    validations:\n      required: true\n  - type: textarea\n    attributes:\n      label: 原本期待什麼\n    validations:\n      required: true\n  - type: textarea\n    attributes:\n      label: 怎麼重現\n      placeholder: |\n        1. 打開……\n        2. 按……\n        3. 看到……\n```\n\n開票這件事也能交給他。接了 GitHub 的 MCP，一句話：\n\n```\n把剛剛那個問題開成一張 issue，掛 bug 這個 label，內文寫發生了什麼、原本期待什麼、怎麼重現。\n```\n\n## 坑\n\n一張 issue 只講一件事。討論岔出去了，把那則留言轉成一張新的 issue（留言選單裡的 Reference in new issue），或者整張轉成 Discussion，原本那張留給原本的事。\n\n## 小結\n\n紀錄放 GitHub Issues：一件事一張、label 分類、PR 寫 `Fixes #編號`、模板放 `.github/ISSUE_TEMPLATE/`。開源專案的方法直接用。\n\n明天講另一件不一定要在本機做的事：Claude Code 和 Codex 都有雲端版。\n\n參考：\n- GitHub 文件：About issues https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues\n- GitHub 文件：Managing labels https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels\n- GitHub 文件：Linking a pull request to an issue https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue\n- GitHub 文件：Syntax for issue forms https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms\n- GitHub MCP Server https://github.com/github/github-mcp-server\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 714,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-10-07-it-ironman-2026-vibe-coding-tip-25.md"
+ },
+ {
   "slug": "it-ironman-2026-day-30",
   "title": "[IT 鐵人賽] 修道途中：法寶裝太多先瘦身，1.1 GB 到 300 MB，以及這 30 天 - Day 30",
   "lang": "zh",
@@ -3526,26 +3551,5 @@
   "word_count": 268,
   "reading_minutes": 1,
   "source_path": "_posts/programming/zh/2023-04-30-microsoft-designer.md"
- },
- {
-  "slug": "google-bard-is-beta-in-taiwan",
-  "title": "Google Bard AI 開放台灣申請了",
-  "lang": "zh",
-  "date": "2023-04-26T16:03:00+08:00",
-  "category": "programming",
-  "tags": [
-   "AI",
-   "Google"
-  ],
-  "summary": "Google Bard AI can apply beta in Taiwan, this article contains the testing results. I tried asking about stock, invest, TSMC facotry address. Also for the trip advise, it's shows real world info on response.",
-  "url": "https://www.marvinswift.com/programming/google-bard-is-beta-in-taiwan.html",
-  "hero_image": "https://www.marvinswift.com/assets/programming/bard-beta/bard-white-list.png",
-  "content": "Google Bard AI 開放申請了，只要點選下面的連結按同意，就可以了。\n\n[申請測試連結](https://bard.google.com/?hl=en)\n\n## 申請過程\n\n### Bard 的測試信\n\n在申請完後，會有一封信寄到你的信箱，打開來會看到他附上了用 Bard 寫出來的一首詩給你。\n\n![bard white list message with poem](https://www.marvinswift.com/assets/programming/bard-beta/bard-white-list.png)\n\n等待時間並不長，我只等了八分鐘，就可以用了。\n\n![bard second email](https://www.marvinswift.com/assets/programming/bard-beta/email-list.png)\n\n## 開始使用 Bard\n\nbard 現在只能接受英文，所以我這邊的問題都是用英文問的。\n\n### 問新聞\n\n![Ask bard news](https://www.marvinswift.com/assets/programming/bard-beta/ask-news.png)\n\n### 問股價\n\n問了 Bard 能不能預測今晚 AAPL 的股價。回應是不行。\n\n![Ask bard Apple's stock price in next day](https://www.marvinswift.com/assets/programming/bard-beta/ask-predict-stock-price.png)\n\n### 改問 AAPL 財報資料\n\n改問已經發生的歷史資料，他可以回答出財報，包含數字。\n\n![問財報](https://www.marvinswift.com/assets/programming/bard-beta/ask-aaple-report.png)\n\n### 問一下台積電工廠的地址\n\n非常詳細啊，連廠房的名字都列上來了，看名字大概也知道哪個地址上的工廠是做哪一段半導體製程的。(不過，這應該是新聞都有報的)\n\n![台積電地址](https://www.marvinswift.com/assets/programming/bard-beta/ask-tsmc-address.png)\n\n### 問 Android 和 iPhone 誰賣得比較好\n\n這邊也給的出數字，而且數字也的確來自另一份報告。\n\n![問 Android 和 iPhone 誰賣得比較好](https://www.marvinswift.com/assets/programming/bard-beta/ask-iphone-android-selling.png)\n\n### 問投資標的\n\n給出很穩健的標的， AAPL, MSFT, AMZN, GOOGL, TSLA\n\nApple (AAPL): Apple is one of the most valuable companies in the world, and it is a leader in the technology industry. The company is known for its innovative products, such as the iPhone, iPad, and Mac. Apple is also a major player in the services industry, with its App Store, Apple Music, and Apple Pay.\nMicrosoft (MSFT): Microsoft is another tech giant that is a good investment target. The company is a leader in the software industry, and it also has a strong presence in the cloud computing market. Microsoft is a well-established company with a long history of innovation.\nAmazon (AMZN): Amazon is a leading e-commerce company, and it is also a major player in the cloud computing market. The company is known for its low prices and its wide selection of products. Amazon is also a growing force in the advertising market.\nAlphabet (GOOGL): Alphabet is the parent company of Google, which is one of the most popular search engines in the world. Google also has a strong presence in the advertising market, and it is a leader in the development of artificial intelligence.\nTesla (TSLA): Tesla is a leading electric vehicle manufacturer, and it is also a player in the solar energy market. The company is known for its innovative products and its ambitious goals. Tesla is a high-growth company, but it is also a risky investment.\n\n![問投資標的](https://www.marvinswift.com/assets/programming/bard-beta/ask-invest-target.png)\n\n### 如何用 API 的方法串接 Bard\n\n![如何用 API 的方法串接 Bard](https://www.marvinswift.com/assets/programming/bard-beta/ask-connect-bard-api.png)\n\n## 試用心得\n\nBard 在問像是餐廳等資訊時，我查起來是有這些餐廳的。然後在數字的表現上，不會有很大的誤差。\n\n## 參考網址\n\n[Bard AI](https://bard.google.com/u/1/faq?hl=en)\n\n[Using Bard API](https://www.googlecloudcommunity.com/gc/AI-ML/Google-Bard-API/m-p/538517)\n",
-  "content_format": "markdown",
-  "inline_html_tags": [],
-  "has_insecure_images": false,
-  "word_count": 616,
-  "reading_minutes": 3,
-  "source_path": "_posts/programming/zh/2023-04-26-google-bard-is-beta-in-taiwan.md"
  }
 ]

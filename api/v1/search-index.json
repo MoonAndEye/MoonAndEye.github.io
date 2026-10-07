@@ -1,5 +1,23 @@
 [
  {
+  "slug": "it-ironman-2026-vibe-coding-tip-25",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜紀錄放 GitHub Issues：一件事一張票，open source 常用的方法直接拿來用 - Tip 25",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "GitHub Issues",
+   "GitHub"
+  ],
+  "summary": "用 GitHub Issues 做專案紀錄：一件事一張票，搭配 label、milestone、PR 關聯與 issue template，把開源專案的工作方法直接用在自己的 repo。",
+  "url": "https://www.marvinswift.com/zh/programming/it-ironman-2026-vibe-coding-tip-25/",
+  "date": "2026-10-07T13:00:00+08:00",
+  "word_count": 714
+ },
+ {
   "slug": "it-ironman-2026-day-30",
   "lang": "zh",
   "title": "[IT 鐵人賽] 修道途中：法寶裝太多先瘦身，1.1 GB 到 300 MB，以及這 30 天 - Day 30",
