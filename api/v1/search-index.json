@@ -1,5 +1,24 @@
 [
  {
+  "slug": "it-iron-man-2026-vibe-coding-tip-26",
+  "lang": "zh",
+  "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜雲端的 Claude Code 和 Codex：不一定要在本機跑，每個裝置看到的是同一個 session - Tip 26",
+  "category": "programming",
+  "tags": [
+   "IT鐵人賽",
+   "2026鐵人賽",
+   "Vibe Coding",
+   "Vibe Coding 技巧",
+   "Claude Code",
+   "Codex",
+   "AI Agent"
+  ],
+  "summary": "Claude Code 和 Codex 的雲端 session 可以跨瀏覽器、手機與 terminal 接續；我也整理了 --teleport 產生本機副本時要留意的差異。",
+  "url": "https://www.marvinswift.com/zh/programming/it-iron-man-2026-vibe-coding-tip-26/",
+  "date": "2026-10-08T13:00:00+08:00",
+  "word_count": 703
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-25",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜紀錄放 GitHub Issues：一件事一張票，open source 常用的方法直接拿來用 - Tip 25",
