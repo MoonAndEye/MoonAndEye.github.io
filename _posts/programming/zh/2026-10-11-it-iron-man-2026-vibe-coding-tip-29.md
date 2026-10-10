@@ -9,6 +9,8 @@ summary: "用一段可直接貼用的 prompt，要求 coding agent 遵守 SOLID�
 description: "用一段可直接貼用的 prompt，要求 coding agent 遵守 SOLID、FIRST，並只在適合任務時採用 design patterns。"
 ---
 
+本篇 iT 鐵人賽文章：[前往 iT 閱讀](https://ithelp.ithome.com.tw/articles/10423218)。
+
 叫他開始實作的時候，我建議在 prompt 補上三件事：遵守 SOLID，單元測試符合 FIRST，有適合這個任務的 design pattern 就優先採用。
 
 ## 為什麼
