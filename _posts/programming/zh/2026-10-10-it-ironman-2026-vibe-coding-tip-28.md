@@ -9,6 +9,8 @@ summary: "Cloudflare Workers AI、OpenRouter 與符合資格 OpenAI API 組織�
 description: "Cloudflare Workers AI、OpenRouter 與符合資格 OpenAI API 組織的免費額度、重置時間、超額規則與資料分享條件。"
 ---
 
+本篇 iT 鐵人賽文章：[前往 iT 閱讀](https://ithelp.ithome.com.tw/articles/10423110)。
+
 原型階段先別付錢給模型。Cloudflare、OpenRouter 都有免費額度，OpenAI 也有一部分。這一篇把額度和規則列出來。
 
 ## 為什麼
