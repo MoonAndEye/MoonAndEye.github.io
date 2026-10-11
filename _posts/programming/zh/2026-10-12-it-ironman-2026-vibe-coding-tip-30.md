@@ -1,7 +1,8 @@
 ---
 layout: single
-title: [IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Design prototype：用 Claude Design 或 HTML 先做 mobile 畫面 - Tip 30
+title: "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Design prototype：用 Claude Design 或 HTML 先做 mobile 畫面 - Tip 30"
 date: 2026-10-12 01:00 +0800
+permalink: /zh/programming/it-ironman-2026-vibe-coding-tip-30/
 category: programming
 author: Marvin Lin
 tags: [IT鐵人賽, 2026鐵人賽, Vibe Coding, Vibe Coding 技巧, Claude Design, Mobile]
