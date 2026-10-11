@@ -9,6 +9,8 @@ tags: [IT鐵人賽, 2026鐵人賽, Vibe Coding, Vibe Coding 技巧, Claude Desig
 summary: 先用 Claude Design 或 HTML 做 mobile prototype，確認版面和流程後再進 app 實作。
 ---
 
+本篇 iT 鐵人賽文章：[前往 iT 閱讀](https://ithelp.ithome.com.tw/articles/10423509)。
+
 做 mobile 畫面，我建議先做 design prototype。可以用 Claude Design，也可以請 coding agent 用 HTML、CSS 和少量 JavaScript 先做一版。在還要反覆改版面的階段，這樣比直接進 app 實作快。
 
 ## 為什麼
