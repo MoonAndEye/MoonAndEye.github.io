@@ -1,14 +1,29 @@
 {% include custom/language-switch-button.html %}
 
-<section class="marvinsight-about" aria-labelledby="marvinsight-about-heading-en">
-  <a class="marvinsight-about__visual" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">
+<section class="app-card" aria-labelledby="lianwu-heading-en">
+  <a class="app-card__visual" href="https://lianwu.app/blog" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/about/lianwu-en.png" width="1200" height="630" alt="Lian Wu: Switch AI without losing the conversation. OpenAI, Claude, Gemini, Grok, OpenRouter and more in one Mac app">
+  </a>
+  <div class="app-card__body">
+    <p class="app-card__eyebrow">Mac App</p>
+    <h2 id="lianwu-heading-en">Lian Wu: Switch AI Without Losing the Conversation</h2>
+    <p>I built Lian Wu, a Mac app that connects OpenAI, Claude, Gemini, Grok, OpenRouter and more. Change models mid-conversation, and the new one carries on from everything said so far.</p>
+    <p>Sign in with the ChatGPT or Claude plan you already pay for, or add API keys. Buy the app once, with no subscription. For Macs with Apple silicon.</p>
+    <div class="app-card__actions">
+      <a class="btn btn--primary" href="https://lianwu.app/blog" target="_blank" rel="noopener noreferrer">Explore Lian Wu</a>
+    </div>
+  </div>
+</section>
+
+<section class="app-card" aria-labelledby="marvinsight-about-heading-en">
+  <a class="app-card__visual" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">
     <img src="/assets/programming/marvinsight-android-app/editorial-split-theme.png" alt="Marv[in]sight: Ideas, code, and insight">
   </a>
-  <div class="marvinsight-about__body">
-    <p class="marvinsight-about__eyebrow">Android App</p>
+  <div class="app-card__body">
+    <p class="app-card__eyebrow">Android App</p>
     <h2 id="marvinsight-about-heading-en">Helping More People Find What I Have Written</h2>
     <p>I turned this website into the Marv[in]sight Android app, giving years of technical notes, the Agent Build Log, and my videos another way to reach readers.</p>
-    <div class="marvinsight-about__actions">
+    <div class="app-card__actions">
       <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
       <a href="/en/programming/marvinsight-android-app/">Read why I built the app</a>
     </div>
