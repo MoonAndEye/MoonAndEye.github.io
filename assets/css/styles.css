@@ -1,10 +1,4 @@
 @media (max-width: 480px) {
-    .buy-me-coffee {
-        display: none;
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-
     .join-membership {
         display: none;
         margin-top: 16px;
@@ -115,7 +109,7 @@
     margin: 2rem 0;
 }
 
-.marvinsight-about {
+.app-card {
     max-width: 750px;
     margin: 1.5rem 0 2.5rem;
     overflow: hidden;
@@ -125,21 +119,21 @@
     box-shadow: 0 10px 24px rgba(31, 35, 40, 0.1);
 }
 
-.marvinsight-about__visual,
-.marvinsight-about__visual img {
+.app-card__visual,
+.app-card__visual img {
     display: block;
     width: 100%;
 }
 
-.marvinsight-about__visual img {
+.app-card__visual img {
     height: auto;
 }
 
-.marvinsight-about__body {
+.app-card__body {
     padding: 1.25rem 1.5rem 1.5rem;
 }
 
-.marvinsight-about__eyebrow {
+.app-card__eyebrow {
     margin: 0 0 0.35rem;
     color: #0969da;
     font-family: monospace;
@@ -149,22 +143,22 @@
     text-transform: uppercase;
 }
 
-.marvinsight-about__body h2 {
+.app-card__body h2 {
     margin: 0 0 0.65rem;
 }
 
-.marvinsight-about__body > p:last-of-type {
+.app-card__body > p:last-of-type {
     margin-bottom: 1rem;
 }
 
-.marvinsight-about__actions {
+.app-card__actions {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.75rem 1rem;
 }
 
-.marvinsight-about__actions .btn {
+.app-card__actions .btn {
     margin: 0;
 }
 
@@ -231,16 +225,16 @@
         height: 64px;
     }
 
-    .marvinsight-about__body {
+    .app-card__body {
         padding: 1rem;
     }
 
-    .marvinsight-about__actions {
+    .app-card__actions {
         align-items: stretch;
         flex-direction: column;
     }
 
-    .marvinsight-about__actions .btn {
+    .app-card__actions .btn {
         text-align: center;
     }
 }

@@ -1,15 +1,30 @@
 
 {% include custom/language-switch-button.html %}
 
-<section class="marvinsight-about" aria-labelledby="marvinsight-about-heading-zh">
-  <a class="marvinsight-about__visual" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">
+<section class="app-card" aria-labelledby="lianwu-heading-zh">
+  <a class="app-card__visual" href="https://lianwu.app/blog" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/about/lianwu-zh-TW.png" width="1200" height="630" alt="Lian Wu：換 AI，對話不中斷。在同一個 Mac App 連接 OpenAI、Claude、Gemini、Grok、OpenRouter 等服務">
+  </a>
+  <div class="app-card__body">
+    <p class="app-card__eyebrow">Mac App</p>
+    <h2 id="lianwu-heading-zh">Lian Wu：隨時換 AI，對話不中斷</h2>
+    <p>我做了 Lian Wu，把 OpenAI、Claude、Gemini、Grok、OpenRouter 等服務接進同一個 Mac App。對話進行到一半也能換模型，新的模型會接著目前為止的所有內容繼續。</p>
+    <p>可以用你已經付費的 ChatGPT 或 Claude 方案登入，也可以加入 API 金鑰。App 一次買斷，沒有訂閱費，適用搭載 Apple M 系列晶片的 Mac。</p>
+    <div class="app-card__actions">
+      <a class="btn btn--primary" href="https://lianwu.app/blog" target="_blank" rel="noopener noreferrer">認識 Lian Wu</a>
+    </div>
+  </div>
+</section>
+
+<section class="app-card" aria-labelledby="marvinsight-about-heading-zh">
+  <a class="app-card__visual" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">
     <img src="/assets/programming/marvinsight-android-app/editorial-split-theme.png" alt="Marv[in]sight：Ideas, code, and insight">
   </a>
-  <div class="marvinsight-about__body">
-    <p class="marvinsight-about__eyebrow">Android App</p>
+  <div class="app-card__body">
+    <p class="app-card__eyebrow">Android App</p>
     <h2 id="marvinsight-about-heading-zh">讓網站留下的內容，被更多人看見</h2>
     <p>我把這個網站做成 Marv[in]sight Android App，讓多年累積的技術筆記、Agent Build Log 與影片，多一個被找到和閱讀的入口。</p>
-    <div class="marvinsight-about__actions">
+    <div class="app-card__actions">
       <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight" target="_blank" rel="noopener noreferrer">在 Google Play 下載</a>
       <a href="/zh/programming/marvinsight-android-app/">閱讀我為什麼做這個 App</a>
     </div>

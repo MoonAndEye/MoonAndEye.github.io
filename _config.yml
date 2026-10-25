@@ -88,6 +88,10 @@ author:
   location         : "Taipei, Taiwan"
   twitter          : "atimisMoon" # SEO：jekyll-seo-tag 的 twitter:creator；也會在側邊欄顯示 X 連結
   links:
+    - label: "Lian Wu"
+      icon: "fas fa-fw fa-laptop"
+      url: "https://lianwu.app/blog"
+      target: "_blank"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/@MarvinBuildsAI"
