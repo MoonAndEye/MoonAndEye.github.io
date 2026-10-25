@@ -21,6 +21,6 @@
     {% endif %}
 
   {% endif %}
-  {% include googleAdsense.html %}
+  {% if page.ads != false %}{% include googleAdsense.html %}{% endif %}
   </div>
 {% endif %}

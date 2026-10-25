@@ -21,6 +21,13 @@ LANG=en_US.UTF-8 bundle exec jekyll build
 
 終端機通常會自己設好 locale，所以這是 agent 環境才需要，跟原始碼無關。
 
+## 關於頁不放廣告
+
+Marvin（2026-10-26）：關於頁是主推 Lian Wu 的地方，Google 自動廣告曾插進 Lian Wu 卡片中間（「試用熱門App」），
+會讓人以為是 Lian Wu 的按鈕。所以 `about.markdown` 與 `en/about.md` 的 front matter 設 `ads: false`，
+`_layouts/default.html` 與 `_includes/sidebar.html` 遇到它就不載入 AdSense，頁首、側邊欄、頁尾都沒有廣告。
+別的頁面要拿掉廣告時，加同一個設定即可。
+
 ## 關於頁的外部連結會失效
 
 引用或改動前先確認：`curl -sS -o /dev/null -w "%{http_code}\n" -L "<url>"`。
