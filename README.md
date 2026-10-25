@@ -24,10 +24,6 @@ bundle exec jekyll serve --port 4001
 
 熱更新已內建，改 `_posts/`、`_layouts/`、`_includes/` 後重新整理瀏覽器即可；改到 `_config.yml` 要重啟 server。
 
-## 客制化 Jekyll 加上去的 script
-### 每月贊助的 banner，現在放在左邊 side bar
-檔名: joinMembership.html
-
 ## 所有頁面上方的共用元件
 是在 masthead.html 裡面，從 title 到 subtitle 都可以改
 
