@@ -23,9 +23,12 @@
 
     gtag('config', 'G-VLY0RSDRM1');
   </script>
+  {% comment %}A page with `ads: false` loads no AdSense, so Auto ads cannot place anything on it.{% endcomment %}
+  {% if page.ads != false %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8823334702749737"
   crossorigin="anonymous">
   </script>
+  {% endif %}
   {% endif %}
   {% include head.html %}
   {% include head/custom.html %}
@@ -51,7 +54,7 @@
 
   <div id="footer" class="page__footer">
     <footer>
-      {% if jekyll.environment == "production" %}
+      {% if jekyll.environment == "production" and page.ads != false %}
         {% include googleAdsenseFooter.html %}
       {% endif %}
       {% include footer/custom.html %}
