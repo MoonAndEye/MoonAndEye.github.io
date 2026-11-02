@@ -1,12 +1,20 @@
 {
- "generated_at": "2026-10-11T17:14:34.169998+00:00",
+ "generated_at": "2026-11-02T01:23:47.177947+00:00",
  "videos": [
+  {
+   "id": "gVZYmYk5FtY",
+   "title": "Claude hit its limit? Keep the same conversation in GPT (Mac app)",
+   "published": "2026-10-29T09:34:09+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/gVZYmYk5FtY/hqdefault.jpg",
+   "description": "Switch AI anytime. Keep the conversation.\n▶ Try Lian Wu: https://lianwu.app/yt\n\nLian Wu is a Mac app that connects OpenAI, Claude, Gemini, Grok, OpenRouter and more. In this demo, Claude sorts 40 samp…",
+   "url": "https://youtu.be/gVZYmYk5FtY"
+  },
   {
    "id": "qualBRg758I",
    "title": "I Used Codex to Search Flights From Multiple Starting Cities",
    "published": "2026-07-13T17:00:09+00:00",
    "thumbnail": "https://i.ytimg.com/vi/qualBRg758I/hqdefault.jpg",
-   "description": "I found lower fares by changing where the trip started.\n\nI used Codex with SerpApi to compare the same London trip from Taipei, Hong Kong, Singapore, and Kuala Lumpur. Codex organized the results into…",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nI found lower fares by changing where the trip started.\n\nI used Codex with SerpApi to compare the same London trip from Taipei, Hong Kong, Singapore, and Kuala…",
    "url": "https://youtu.be/qualBRg758I"
   },
   {
@@ -14,7 +22,7 @@
    "title": "I Gave Codex One Image to Build a Web Game Demo",
    "published": "2026-06-22T15:39:04+00:00",
    "thumbnail": "https://i.ytimg.com/vi/5YAfCv0Cy3E/hqdefault.jpg",
-   "description": "In the Codex era, building a demo should start with image generation.\n\nNot because the image is final art. Because a strong image gives an agent a clearer target than a long, flat spec. It shows layou…",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nIn the Codex era, building a demo should start with image generation.\n\nNot because the image is final art. Because a strong image gives an agent a clearer targ…",
    "url": "https://youtu.be/5YAfCv0Cy3E"
   },
   {
@@ -22,7 +30,7 @@
    "title": "Move AI Memory Between Agents: Codex to Claude",
    "published": "2026-06-06T10:55:48+00:00",
    "thumbnail": "https://i.ytimg.com/vi/CcRcaeP1mw8/hqdefault.jpg",
-   "description": "In this Marvin Builds video, I demo a simple but useful AI-agent workflow:\ntake reviewed memory/context from one AI agent, bring it into another agent, and verify what the receiving agent learned.\n\nTh…",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nIn this Marvin Builds video, I demo a simple but useful AI-agent workflow:\ntake reviewed memory/context from one AI agent, bring it into another agent, and ver…",
    "url": "https://youtu.be/CcRcaeP1mw8"
   },
   {
@@ -30,7 +38,7 @@
    "title": "Codex Automations for Baseball Research",
    "published": "2026-05-30T06:25:09+00:00",
    "thumbnail": "https://i.ytimg.com/vi/WVxG1Ekkf_I/hqdefault.jpg",
-   "description": "Codex Automations can prepare recurring research context before you start working.\n\nIn this Marvin Builds demo, baseball research is the example: public Major League and Minor League sources, candidat…",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nCodex Automations can prepare recurring research context before you start working.\n\nIn this Marvin Builds demo, baseball research is the example: public Major …",
    "url": "https://youtu.be/WVxG1Ekkf_I"
   },
   {
@@ -38,7 +46,7 @@
    "title": "I did not build a scouting app. I scheduled Codex Automations.",
    "published": "2026-05-25T08:58:06+00:00",
    "thumbnail": "https://i.ytimg.com/vi/ooqKjlHq0TA/hqdefault.jpg",
-   "description": "Prompt from the video:\n\nPrepare a daily football scouting brief that can be run as a recurring Codex Automation for an independent football scout.\n\nThis is a Codex Automations demo, but the report sho…",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nPrompt from the video:\n\nPrepare a daily football scouting brief that can be run as a recurring Codex Automation for an independent football scout.\n\nThis is a C…",
    "url": "https://youtu.be/ooqKjlHq0TA"
   },
   {
@@ -46,11 +54,43 @@
    "title": "I asked Codex agent to install OpenClaw",
    "published": "2026-05-19T04:08:57+00:00",
    "thumbnail": "https://i.ytimg.com/vi/EqDgXWrr2us/hqdefault.jpg",
-   "description": "If you tried to install OpenClaw before and got stuck, this video is for you.\n\nIn this first Marvin Builds episode, I use Codex on a Mac as a setup operator: it installs OpenClaw, verifies that the lo…",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nIf you tried to install OpenClaw before and got stuck, this video is for you.\n\nIn this first Marvin Builds episode, I use Codex on a Mac as a setup operator: i…",
    "url": "https://youtu.be/EqDgXWrr2us"
   }
  ],
  "shorts": [
+  {
+   "id": "P39SnUlSh68",
+   "title": "Do you use more than one AI? #Shorts",
+   "published": "2026-11-01T05:50:59+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/P39SnUlSh68/hqdefault.jpg",
+   "description": "From my Dev Day talk, Oct 31, 2026.\n\nI use more than one AI, because each one is good at different things. I don't want to choose just one. I want to switch between them in the same conversation, and …",
+   "url": "https://youtu.be/P39SnUlSh68"
+  },
+  {
+   "id": "ZainKv6-pC8",
+   "title": "Claude's 5-hour limit is gone. The weekly one isn't. #Shorts",
+   "published": "2026-10-31T16:17:24+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/ZainKv6-pC8/hqdefault.jpg",
+   "description": "Claude just removed the 5-hour limit. Only on Ultra, for verified accounts.\n\nUltra is the new name for Max 20x. The weekly limit is still there, at ten times Pro's usage. Pro and Max still have the 5-…",
+   "url": "https://youtu.be/ZainKv6-pC8"
+  },
+  {
+   "id": "T2U9kjHUIaQ",
+   "title": "Can a second AI check the first one's work? #Shorts",
+   "published": "2026-10-29T15:28:35+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/T2U9kjHUIaQ/hqdefault.jpg",
+   "description": "Claude sorted 40 sample comments into five themes. Then I switched to GPT in the same Lian Wu conversation and asked it to challenge the grouping. GPT pushed back on C29: onboarding, not access.\n▶ Try…",
+   "url": "https://youtu.be/T2U9kjHUIaQ"
+  },
+  {
+   "id": "gTPruloD9wQ",
+   "title": "Claude hit its limit? Keep the same chat in GPT #Shorts",
+   "published": "2026-10-29T09:40:29+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/gTPruloD9wQ/hqdefault.jpg",
+   "description": "Same conversation, new model. Lian Wu for Mac: $20 once, no subscription, 14-day full refund. I'm the developer. lianwu.app",
+   "url": "https://youtu.be/gTPruloD9wQ"
+  },
   {
    "id": "BKQD57Uxd84",
    "title": "GPT-6 Astra: Steer Your Agent Mid-Task #Shorts",
