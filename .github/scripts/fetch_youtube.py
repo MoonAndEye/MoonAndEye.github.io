@@ -6,6 +6,16 @@ script.  The channel pages still expose the public video metadata needed here,
 so this script reads the ``/videos`` and ``/shorts`` pages and hydrates each
 listed video from its watch page.
 
+From GitHub's datacenter IPs YouTube answers a long video's watch page with a
+"Sign in to confirm you're not a bot" check: the player data is empty, but the
+page's ``ytInitialData`` still carries the title and the publish *day*.  Shorts
+pages are not checked and give the exact timestamp.  To stay within that:
+
+* only new videos and the newest few are fetched; everything else is reused
+  from the previous ``_data/youtube.json``;
+* a video with no publish date at all is left out of this run (with a workflow
+  warning) instead of failing the whole update.
+
 Stdlib only so it runs on a bare GitHub Actions runner.
 """
 from concurrent.futures import ThreadPoolExecutor
@@ -25,6 +35,8 @@ CHANNEL_PAGES = {
     "shorts": f"https://www.youtube.com/{CHANNEL_HANDLE}/shorts",
 }
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS", "50"))
+# Newest videos per section that are re-read on every run (title / description edits).
+REFRESH_RECENT = int(os.environ.get("REFRESH_RECENT", "3"))
 DESC_LIMIT = 200
 OUT = Path(__file__).resolve().parents[2] / "_data" / "youtube.json"
 
@@ -35,7 +47,7 @@ RETRYABLE_HTTP_STATUS = {408, 425, 429, 500, 502, 503, 504}
 def http_get(url):
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     last_error = None
-    for attempt in range(3):
+    for attempt in range(4):
         try:
             with urllib.request.urlopen(req, timeout=30) as response:
                 return response.read()
@@ -45,8 +57,10 @@ def http_get(url):
                 raise
         except URLError as error:
             last_error = error
-        if attempt < 2:
-            time.sleep(2**attempt)
+        if attempt < 3:
+            # A 429 means "slow down": wait longer than for a dropped connection.
+            rate_limited = isinstance(last_error, HTTPError) and last_error.code == 429
+            time.sleep(2**attempt * (5 if rate_limited else 1))
     raise last_error
 
 
@@ -193,52 +207,121 @@ def fetch_channel_items(section):
     return items
 
 
-def fetch_video_details(video_id):
-    html, data = fetch_page_data(
-        f"https://www.youtube.com/watch?v={video_id}", "ytInitialPlayerResponse"
+MONTHS = {
+    name: number
+    for number, name in enumerate(
+        ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"),
+        start=1,
     )
-    details = data.get("videoDetails", {})
-    microformat = data.get("microformat", {}).get("playerMicroformatRenderer", {})
+}
+DAY_TEXT_RE = re.compile(r"\b(" + "|".join(MONTHS) + r")[a-z]*\.? (\d{1,2}), (\d{4})\b")
+
+
+def parse_day_text(text):
+    """'Oct 29, 2026' (also 'Premiered Oct 29, 2026') -> '2026-10-29', or ''."""
+    match = DAY_TEXT_RE.search(text or "")
+    if not match:
+        return ""
+    month, day, year = match.groups()
+    return f"{int(year):04d}-{MONTHS[month]:02d}-{int(day):02d}"
+
+
+def details_from_initial_data(data):
+    """Title, description and publish day from a watch page's ytInitialData.
+
+    This survives the bot check that empties ytInitialPlayerResponse.
+    """
+    primary = secondary = None
+    for node in iter_dicts(data):
+        primary = primary or node.get("videoPrimaryInfoRenderer")
+        secondary = secondary or node.get("videoSecondaryInfoRenderer")
+        if primary and secondary:
+            break
+    primary, secondary = primary or {}, secondary or {}
+    return {
+        "title": text_content(primary.get("title", {})),
+        "published": parse_day_text(text_content(primary.get("dateText", {}))),
+        "description": text_content(secondary.get("attributedDescription", {})),
+    }
+
+
+def fetch_watch_page(url):
+    """Return the page HTML once it embeds YouTube's JSON, retrying otherwise."""
+    for attempt in range(3):
+        html = http_get(url).decode("utf-8", errors="replace")
+        if "ytInitialPlayerResponse" in html or "ytInitialData" in html:
+            return html
+        if attempt < 2:
+            delay = 2**attempt
+            print(f"warning: {url} lacked page data; retrying in {delay}s ({attempt + 1}/3)", file=sys.stderr)
+            time.sleep(delay)
+    raise ValueError(f"YouTube did not return usable page data from {url} after 3 attempts")
+
+
+def fetch_video_details(video_id, section):
+    # A Short's own page is not bot-checked and has the exact timestamp.  For a
+    # long video /shorts/<id> just redirects to the (checked) watch page.
+    path = "shorts/" + video_id if section == "shorts" else "watch?v=" + video_id
+    html = fetch_watch_page(f"https://www.youtube.com/{path}")
+
+    try:
+        player = extract_json_assignment(html, "ytInitialPlayerResponse")
+    except ValueError:
+        player = {}
+    details = player.get("videoDetails", {})
+    microformat = player.get("microformat", {}).get("playerMicroformatRenderer", {})
     title = details.get("title") or text_content(microformat.get("title", {}))
     description = details.get("shortDescription") or text_content(
         microformat.get("description", {})
     )
-    published = (
+    published = normalize_timestamp(
         microformat.get("publishDate")
         or microformat.get("uploadDate")
         or extract_published_from_html(html)
     )
+
+    if not (title and published and description):
+        try:
+            fallback = details_from_initial_data(extract_json_assignment(html, "ytInitialData"))
+        except ValueError:
+            fallback = {}
+        title = title or fallback.get("title", "")
+        description = description or fallback.get("description", "")
+        published = published or fallback.get("published", "")  # day only, e.g. 2026-10-29
     return {
         "id": video_id,
         "title": title,
-        "published": normalize_timestamp(published),
+        "published": published,
         "thumbnail": thumbnail_url(video_id),
         "description": clip(description),
     }
 
 
-def hydrate_item(item, previous):
-    try:
-        details = fetch_video_details(item["id"])
-        old = previous.get(item["id"], {})
-        if not details.get("title"):
-            details["title"] = item["title"]
-        if not details.get("published") and old.get("published"):
-            details["published"] = old["published"]
-        if not details.get("description") and old.get("description"):
-            details["description"] = old["description"]
-        if old.get("thumbnail"):
-            details["thumbnail"] = old["thumbnail"]
-        return details
-    except Exception as error:  # Keep the update useful if one video is transiently unavailable.
-        old = previous.get(item["id"], {})
-        print(f"warning: could not hydrate {item['id']}: {error}", file=sys.stderr)
-        return {
-            **item,
-            "published": old.get("published", ""),
-            "thumbnail": old.get("thumbnail", item["thumbnail"]),
-            "description": old.get("description", ""),
-        }
+def needs_fetch(index, item, previous):
+    """New or undated videos, and the newest few, are read from YouTube again."""
+    old = previous.get(item["id"])
+    return index < REFRESH_RECENT or not old or not old.get("published")
+
+
+def hydrate_item(index, item, previous, section):
+    old = previous.get(item["id"], {})
+    details = {}
+    if needs_fetch(index, item, previous):
+        try:
+            details = fetch_video_details(item["id"], section)
+        except Exception as error:  # Keep the update useful if one video is transiently unavailable.
+            print(f"warning: could not hydrate {item['id']}: {error}", file=sys.stderr)
+
+    published = details.get("published", "")
+    if old.get("published") and (not published or len(published) == 10):
+        published = old["published"]  # a stored exact time beats a missing or day-only one
+    return {
+        "id": item["id"],
+        "title": details.get("title") or item["title"] or old.get("title", ""),
+        "published": published,
+        "thumbnail": old.get("thumbnail", item["thumbnail"]),
+        "description": details.get("description") or old.get("description", ""),
+    }
 
 
 def main():
@@ -259,14 +342,27 @@ def main():
             print(f"error: no items found for {section}", file=sys.stderr)
             sys.exit(1)
 
-        with ThreadPoolExecutor(max_workers=6) as executor:
-            result[section] = list(
-                executor.map(lambda item: hydrate_item(item, previous), items)
+        # One at a time: only a handful of pages are read, and bursts get a 429.
+        with ThreadPoolExecutor(max_workers=1) as executor:
+            hydrated = list(
+                executor.map(
+                    lambda pair: hydrate_item(pair[0], pair[1], previous, section),
+                    enumerate(items),
+                )
             )
-        if any(not item.get("published") for item in result[section]):
-            print(f"error: missing publish date for {section}", file=sys.stderr)
+        # Never publish a video without a date (the site shows it and puts it in
+        # structured data).  Leave it out; the next run tries again.
+        for item in hydrated:
+            if not item["published"]:
+                print(
+                    f"::warning title=YouTube {section}::no publish date for {item['id']} "
+                    f"({item['title']}); left out until a later run can read it"
+                )
+        result[section] = [item for item in hydrated if item["published"]]
+        if not result[section]:
+            print(f"error: no dated items for {section}", file=sys.stderr)
             sys.exit(1)
-        print(f"{section}: {len(result[section])} items from channel page")
+        print(f"{section}: {len(result[section])} of {len(items)} items from channel page")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
