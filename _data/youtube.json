@@ -1,6 +1,27 @@
 {
  "videos": [
   {
+   "id": "41HjLEeBkOU",
+   "title": "I tested ChatGPT Images 2.6: GIFs, saved references, SVG",
+   "published": "2026-11-07",
+   "thumbnail": "https://i.ytimg.com/vi/41HjLEeBkOU/hqdefault.jpg",
+   "description": "Lian Wu, the desktop app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nChatGPT can now make GIFs. I tested everything new in Images 2.6 on my own account. Here is what actu…"
+  },
+  {
+   "id": "iFSCPvhZoK8",
+   "title": "Next month's ad budget? Ask three AIs (Roundtable)",
+   "published": "2026-11-07",
+   "thumbnail": "https://i.ytimg.com/vi/iFSCPvhZoK8/hqdefault.jpg",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nNext month's ad budget? Ask three AIs. Open Roundtable from Guilds and choose Challenge a plan. Ask how to sell next month, and attach your ads, your plan and…"
+  },
+  {
+   "id": "eVA-QwHEf6I",
+   "title": "Roundtable: three AIs argue your decision, then sum it up",
+   "published": "2026-11-06",
+   "thumbnail": "https://i.ytimg.com/vi/eVA-QwHEf6I/hqdefault.jpg",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nBig decision? Don't ask just one AI. Open Roundtable from Guilds and pick the kind of discussion: make a decision, brainstorm ideas, challenge a plan, or expl…"
+  },
+  {
    "id": "9l-g0mICsXQ",
    "title": "Painter: describe once, draw four at a time, keep every picture on your Mac",
    "published": "2026-11-05",
@@ -59,6 +80,13 @@
  ],
  "shorts": [
   {
+   "id": "W4kVZ8KAPPo",
+   "title": "Big decision? Don't ask just one AI. Roundtable #Shorts",
+   "published": "2026-11-07T03:29:49+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/W4kVZ8KAPPo/hqdefault.jpg",
+   "description": "Big decision? Don't ask just one AI.\n\nRoundtable puts three AIs in one discussion, each on its own model. An advocate argues for it, a critic argues against it, and a synthesizer pulls it together.\n\nA…"
+  },
+  {
    "id": "A3WUM2x0hvk",
    "title": "從小籠包到書法，一次畫四張｜畫家 Painter #Shorts",
    "published": "2026-11-05T16:53:30+00:00",
@@ -74,7 +102,7 @@
   },
   {
    "id": "dBGoPlADiBQ",
-   "title": "富士山とお寿司を、一度に4枚｜Painter #Shorts",
+   "title": "Sushi and Mount Fuji, four at a time | Painter #Shorts",
    "published": "2026-11-05T16:52:09+00:00",
    "thumbnail": "https://i.ytimg.com/vi/dBGoPlADiBQ/hqdefault.jpg",
    "description": "富士山とお寿司を、一度に4枚。\n\n描きたい画像を Painter に一度説明するだけ。いま使っている画像モデル（ChatGPT プラン、OpenAI の API キー、OpenRouter）で、一度に4枚描きます。\n\n気に入った一枚を参考にして、次は夕焼けの富士山と桜並木。描いた画像は、すべて Mac のギャラリーに残ります。\n\nPainter は、私が作っている Mac アプリ「Lian Wu」…"
