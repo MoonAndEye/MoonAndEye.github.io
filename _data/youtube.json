@@ -1,6 +1,13 @@
 {
  "videos": [
   {
+   "id": "f7AhPYTHkRk",
+   "title": "How I actually use ChatGPT Images 2.6 (Part 2)",
+   "published": "2026-11-08",
+   "thumbnail": "https://i.ytimg.com/vi/f7AhPYTHkRk/hqdefault.jpg",
+   "description": "Lian Wu, the Mac app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nPart 2: how I actually use ChatGPT Images 2.6, in my own work.\nPart 1, where I tested what's new:    • I …"
+  },
+  {
    "id": "41HjLEeBkOU",
    "title": "I tested ChatGPT Images 2.6: GIFs, saved references, SVG",
    "published": "2026-11-07",
@@ -80,6 +87,20 @@
  ],
  "shorts": [
   {
+   "id": "6hMx0csui-U",
+   "title": "Is a hot dog a sandwich? Three AIs debated it #Shorts",
+   "published": "2026-11-08T14:37:04+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/6hMx0csui-U/hqdefault.jpg",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nA viewer on our Roundtable video asked us to settle it: is a hot dog a sandwich? So I put the question to three AIs in Roundtable, each on its own model, all …"
+  },
+  {
+   "id": "X0y-JR90vs4",
+   "title": "ChatGPT can now make GIFs. I tested it #Shorts",
+   "published": "2026-11-08T08:49:35+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/X0y-JR90vs4/hqdefault.jpg",
+   "description": "Lian Wu, the desktop app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nChatGPT can now make GIFs. I tested Images 2.6 on my own account.\n\nGIFs: a story prompt gave nine fra…"
+  },
+  {
    "id": "W4kVZ8KAPPo",
    "title": "Big decision? Don't ask just one AI. Roundtable #Shorts",
    "published": "2026-11-07T03:29:49+00:00",
@@ -88,14 +109,14 @@
   },
   {
    "id": "A3WUM2x0hvk",
-   "title": "從小籠包到書法，一次畫四張｜畫家 Painter #Shorts",
+   "title": "From xiaolongbao to calligraphy, four at a time | Painter #Shorts",
    "published": "2026-11-05T16:53:30+00:00",
    "thumbnail": "https://i.ytimg.com/vi/A3WUM2x0hvk/hqdefault.jpg",
    "description": "從小籠包到書法，一次畫四張。\n\n想畫什麼，在畫家描述一次就好。用你已經有的圖像模型（ChatGPT 訂閱、OpenAI API 金鑰或 OpenRouter），一次畫四張。\n\n挑一張喜歡的當參考圖，再用同樣的畫風寫一幅書法：王之渙〈登鸛雀樓〉的「欲窮千里目，更上一層樓」。每張圖都收在你 Mac 上的同一個圖庫。\n\n畫家是 Lian Wu 裡的 Guild，Lian Wu 是我正在做的 Mac Ap…"
   },
   {
    "id": "8zz_RbceJPU",
-   "title": "김치 밥상부터 태권도까지, 한 번에 네 장 | Painter #Shorts",
+   "title": "From kimchi to taekwondo, four at a time | Painter #Shorts",
    "published": "2026-11-05T16:52:50+00:00",
    "thumbnail": "https://i.ytimg.com/vi/8zz_RbceJPU/hqdefault.jpg",
    "description": "김치 밥상부터 태권도까지, 한 번에 네 장.\n\n그리고 싶은 그림을 Painter에 한 번만 설명하세요. 지금 쓰는 이미지 모델(ChatGPT 요금제, OpenAI API 키, OpenRouter)로 한 번에 네 장을 그립니다.\n\n마음에 드는 한 장을 참고로 골라, 같은 그림체로 태권도 선수를 그렸어요. 그린 그림은 모두 내 Mac의 갤러리에 남습니다.\n\nP…"
