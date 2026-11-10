@@ -28,6 +28,4 @@ description: 我常常換不同的 AI，但對話從來不會跟著我走。所�
 
 故事就是這樣。下面是 app 本身：這支 75 秒的 demo 裡，Claude 把四十則留言分組。接著我在同一段對話切到 GPT，由 GPT 檢查 Claude 的結果。
 
-<video controls preload="metadata" width="100%" title="Lian Wu demo：同一段對話從 Claude 切到 GPT">
-  <source src="https://lianwu.app/media/video/switch-ai-75s-a4082dcc6c.mp4" type="video/mp4">
-</video>
+{% include youtube.html id="gVZYmYk5FtY" title="Claude hit its limit? Keep the same conversation in GPT (Mac app)" %}
