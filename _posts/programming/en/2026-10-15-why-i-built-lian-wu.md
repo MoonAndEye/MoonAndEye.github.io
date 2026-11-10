@@ -28,6 +28,4 @@ Why the name? Lian Wu is a fruit from where I grew up. In English it's called th
 
 That's the story. Here's the app itself: in this 75-second demo, Claude sorts forty comments into groups. Then I switch the same conversation to GPT, and GPT checks Claude's work.
 
-<video controls preload="metadata" width="100%" title="Lian Wu demo: switching from Claude to GPT in the same conversation">
-  <source src="https://lianwu.app/media/video/switch-ai-75s-a4082dcc6c.mp4" type="video/mp4">
-</video>
+{% include youtube.html id="gVZYmYk5FtY" title="Claude hit its limit? Keep the same conversation in GPT (Mac app)" %}
