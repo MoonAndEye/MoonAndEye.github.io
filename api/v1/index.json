@@ -1,7 +1,7 @@
 {
  "api_version": 1,
- "generated_at": "2026-11-10T00:51:32.810203+00:00",
- "build_id": "95ae568f37b4ec01",
+ "generated_at": "2026-11-10T04:18:03.226598+00:00",
+ "build_id": "69e866969cf74307",
  "site": {
   "url": "https://www.marvinswift.com",
   "title": "Marv[in]sight",
@@ -16,14 +16,14 @@
    "count": 267,
    "latest": "2026-10-12T01:00:00+08:00",
    "bytes": 531542,
-   "hash": "0ab1987d89640537"
+   "hash": "b0b39f19249f213b"
   },
   "en/summaries.json": {
    "path": "/api/v1/en/summaries.json",
    "count": 103,
    "latest": "2026-10-15T12:00:00+08:00",
    "bytes": 89089,
-   "hash": "5475c2a8c441d0a3"
+   "hash": "7282a1f532922c2b"
   },
   "categories.json": {
    "path": "/api/v1/categories.json",
@@ -36,15 +36,15 @@
    "path": "/api/v1/videos.json",
    "count": null,
    "latest": null,
-   "bytes": 19441,
-   "hash": "46706ce61e670fcd"
+   "bytes": 21341,
+   "hash": "3e204f05f0b7616f"
   },
   "series/agent-build-log.json": {
    "path": "/api/v1/series/agent-build-log.json",
    "count": null,
    "latest": null,
    "bytes": 180051,
-   "hash": "3c48bd242319c95e"
+   "hash": "8f1f367c63a5262d"
   },
   "search-index.json": {
    "path": "/api/v1/search-index.json",
@@ -62,14 +62,14 @@
      "count": 161,
      "latest": "2026-10-12T01:00:00+08:00",
      "bytes": 907927,
-     "hash": "8e8159f7d72db7de"
+     "hash": "e06cc5bcf3bcfc21"
     },
     {
      "path": "/api/v1/zh/posts-2.json",
      "count": 105,
      "latest": "2023-05-03T08:47:00+08:00",
      "bytes": 493535,
-     "hash": "a8f47972518c3302"
+     "hash": "6897a679b99ca5cc"
     },
     {
      "path": "/api/v1/zh/posts-3.json",
@@ -82,7 +82,7 @@
    "count": 267,
    "latest": "2026-10-12T01:00:00+08:00",
    "bytes": 1995585,
-   "hash": "14a3539e1c624774"
+   "hash": "3d1c6e9431693cf7"
   },
   "en/posts.json": {
    "path": "/api/v1/en/posts.json",
@@ -90,7 +90,7 @@
    "count": 103,
    "latest": "2026-10-15T12:00:00+08:00",
    "bytes": 421927,
-   "hash": "a42e7c94ce2e8e55"
+   "hash": "f2de8dd5048c71db"
   }
  }
 }
