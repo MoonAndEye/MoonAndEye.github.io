@@ -14,13 +14,10 @@
   "summary": "I switch between AIs all the time, but my conversations never came with me. So I built an agent app where they do.",
   "url": "https://www.marvinswift.com/en/programming/why-i-built-lian-wu/",
   "hero_image": "https://www.marvinswift.com/assets/programming/why-i-built-lian-wu/wax-apples.jpg",
-  "content_format": "markdown+html",
-  "inline_html_tags": [
-   "source",
-   "video"
-  ],
+  "content_format": "markdown",
+  "inline_html_tags": [],
   "has_insecure_images": false,
-  "word_count": 228,
+  "word_count": 245,
   "reading_minutes": 1,
   "source_path": "_posts/programming/en/2026-10-15-why-i-built-lian-wu.md"
  },
