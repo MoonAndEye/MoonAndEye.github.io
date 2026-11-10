@@ -5,14 +5,14 @@ date: 2026-07-30 23:53:58 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-016.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-016.jpg
 summary: "移除 DKS MCP 的 Jira 整合，讓每位使用者透過 Jira MCP 與自己的 OAuth 權限查詢資料。"
 description: "移除 DKS MCP 的 Jira 整合，讓每位使用者透過 Jira MCP 與自己的 OAuth 權限查詢資料。"
 ---
 
 今天，我把 DKS MCP 裡所有和 Jira 有關的功能都拔掉了。
 
-![Agent Build Log Episode 016：重新劃分 DKS 與 Jira 的權限邊界](/assets/programming/agent-build-log/agent-build-log-episode-016.png)
+![Agent Build Log Episode 016：重新劃分 DKS 與 Jira 的權限邊界](/assets/programming/agent-build-log/agent-build-log-episode-016.jpg)
 
 原本的設計，是讓 DKS 可以在查 GitLab repo 相關時，附上 Jira ticket 來當輔助證明。
 

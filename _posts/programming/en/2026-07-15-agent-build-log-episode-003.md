@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-003.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-003.jpg
 summary: "The first Browser UI supports new conversations, history search, and pinning, while staying focused on answers, information retrieval, and conversation organization."
 description: "The first Browser UI supports new conversations, history search, and pinning, while staying focused on answers, information retrieval, and conversation organization."
 ---
 
 Today, I completed the first version of the Browser UI.
 
-![Agent Build Log Episode 003: the first Browser UI](/assets/programming/agent-build-log/agent-build-log-episode-003.png)
+![Agent Build Log Episode 003: the first Browser UI](/assets/programming/agent-build-log/agent-build-log-episode-003.jpg)
 
 The overall experience is similar to ChatGPT, with support for:
 
@@ -21,7 +21,7 @@ The overall experience is similar to ChatGPT, with support for:
 - Searching conversation history
 - Pinning important conversations
 
-![The first working version of the Golem Browser UI](/assets/programming/agent-build-log/agent-build-log-episode-003-browser-ui.png)
+![The first working version of the Golem Browser UI](/assets/programming/agent-build-log/agent-build-log-episode-003-browser-ui.jpg)
 
 I’m leaving out the “Projects” feature for now and focusing first on the core chat and search experience.
 

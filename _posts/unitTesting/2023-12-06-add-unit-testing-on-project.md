@@ -18,7 +18,7 @@ permalink: /unit-testing/:title:output_ext
 > Software and cathedrals are much the same – first we build them, then we pray.Sam Redwine
 > 
 
-![You need testing](/assets/unitTesting/add-test-target-on-xcode/you-need-testing.png)
+![You need testing](/assets/unitTesting/add-test-target-on-xcode/you-need-testing.jpg)
 
 ## 在 iOS 專案加上測試 You need testing
 

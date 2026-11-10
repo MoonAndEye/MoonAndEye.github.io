@@ -5,14 +5,14 @@ date: 2026-08-08 21:32:38 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-024.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-024.jpg
 summary: "模型單次回應速度不等於 Agent 完成整個任務的速度，真正重要的是完成任務需要多少步。"
 description: "模型單次回應速度不等於 Agent 完成整個任務的速度，真正重要的是完成任務需要多少步。"
 ---
 
 今天，我遇到一個和原本直覺完全相反的結果。
 
-![Agent Build Log Episode 024：比較 Sol、Terra 和 Luna 完成 Agent 任務的時間](/assets/programming/agent-build-log/agent-build-log-episode-024.png)
+![Agent Build Log Episode 024：比較 Sol、Terra 和 Luna 完成 Agent 任務的時間](/assets/programming/agent-build-log/agent-build-log-episode-024.jpg)
 
 如果只看 LLM 本身，我原本會認為：
 

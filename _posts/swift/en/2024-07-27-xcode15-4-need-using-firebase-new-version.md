@@ -12,7 +12,7 @@ description: If you’re using Xcode version 15.3 or higher for your projects th
 
 If you are using Xcode version 15.3 or higher and your project utilizes Firebase, please ensure to upgrade Firebase to version 10.22.0 or higher; otherwise, your application may crash upon release.
 
-![Crashlytics report on xcode15.4 vs. firebase 10.10.0](/assets/swift/crash-on-firebase10-10-0/crashlytics.png)
+![Crashlytics report on xcode15.4 vs. firebase 10.10.0](/assets/swift/crash-on-firebase10-10-0/crashlytics.jpg)
 
 In early July, our team agreed to upgrade to Xcode 15.4. While other pods were kept stable, we noticed an increase in crash rates post-launch, as depicted in the image above.
 

@@ -5,14 +5,14 @@ date: 2026-08-11 21:29:08 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-026.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-026.jpg
 summary: "打造 Bug Blame，從 Jira bug 追查相關程式碼、commit，以及最適合參與調查的開發者。"
 description: "打造 Bug Blame，從 Jira bug 追查相關程式碼、commit，以及最適合參與調查的開發者。"
 ---
 
 今天，我做了 Agent 的另一個「專有技」。
 
-![Agent Build Log Episode 026：Bug Blame 從 Jira bug 追查程式碼、commit 與開發者](/assets/programming/agent-build-log/agent-build-log-episode-026.png)
+![Agent Build Log Episode 026：Bug Blame 從 Jira bug 追查程式碼、commit 與開發者](/assets/programming/agent-build-log/agent-build-log-episode-026.jpg)
 
 這次叫做 Bug Blame。
 

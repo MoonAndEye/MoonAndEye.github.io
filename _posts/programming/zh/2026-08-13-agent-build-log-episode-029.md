@@ -5,14 +5,14 @@ date: 2026-08-13 23:43:32 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-029.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-029.jpg
 summary: "先研究 Pi Agent extension 生態系，再決定哪些 MCP、權限與 Desktop GUI 能力值得自己打造。"
 description: "先研究 Pi Agent extension 生態系，再決定哪些 MCP、權限與 Desktop GUI 能力值得自己打造。"
 ---
 
 今天，我開始比較認真研究 Pi Agent 的 extension 生態系。
 
-![Agent Build Log Episode 029：研究 Pi Agent 的 extension 生態系](/assets/programming/agent-build-log/agent-build-log-episode-029.png)
+![Agent Build Log Episode 029：研究 Pi Agent 的 extension 生態系](/assets/programming/agent-build-log/agent-build-log-episode-029.jpg)
 
 之前我一直把注意力放在 Agent core、本身的 tools，以及我自己的 capabilities。
 

@@ -5,14 +5,14 @@ date: 2026-08-20 00:07:20 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-034.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-034.jpg
 summary: "尋找可 self-host、可商用，並兼具 Remote Config 與 Feature Toggle 能力的開源方案。"
 description: "尋找可 self-host、可商用，並兼具 Remote Config 與 Feature Toggle 能力的開源方案。"
 ---
 
 今天也沒有推進主線任務。
 
-![Agent Build Log Episode 034：研究 Unleash 和 Flagsmith](/assets/programming/agent-build-log/agent-build-log-episode-034.png)
+![Agent Build Log Episode 034：研究 Unleash 和 Flagsmith](/assets/programming/agent-build-log/agent-build-log-episode-034.jpg)
 
 我今天在研究，有哪些開源套件的功能類似 Firebase Remote Config，但同時又具備 Feature Toggle 的能力。
 

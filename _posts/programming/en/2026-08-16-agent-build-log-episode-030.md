@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-030.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-030.jpg
 summary: "I started building an OpenClaw-style Agent Gateway, then removed it after realizing the Desktop GUI made it unnecessary for now."
 description: "I started building an OpenClaw-style Agent Gateway, then removed it after realizing the Desktop GUI made it unnecessary for now."
 ---
 
 Not much happened today.
 
-![Agent Build Log Episode 030: removing the Agent Gateway](/assets/programming/agent-build-log/agent-build-log-episode-030.png)
+![Agent Build Log Episode 030: removing the Agent Gateway](/assets/programming/agent-build-log/agent-build-log-episode-030.jpg)
 
 I started out building an Agent Gateway.
 

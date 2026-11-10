@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-016.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-016.jpg
 summary: "I removed Jira from the DKS MCP so each user queries Jira through their own OAuth identity and permissions."
 description: "I removed Jira from the DKS MCP so each user queries Jira through their own OAuth identity and permissions."
 ---
 
 Today, I removed every Jira-related feature from the DKS MCP.
 
-![Agent Build Log Episode 016: separating DKS and Jira permission boundaries](/assets/programming/agent-build-log/agent-build-log-episode-016.png)
+![Agent Build Log Episode 016: separating DKS and Jira permission boundaries](/assets/programming/agent-build-log/agent-build-log-episode-016.jpg)
 
 The original design allowed DKS to attach Jira tickets as supporting evidence when looking up GitLab repositories.
 

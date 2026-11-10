@@ -5,14 +5,14 @@ date: 2026-08-16 23:22:46 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-031.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-031.jpg
 summary: "開始設計 Google Chat 等 IM 整合，透過 Plug-In 將聊天訊息的收發與 Agent 主體分開。"
 description: "開始設計 Google Chat 等 IM 整合，透過 Plug-In 將聊天訊息的收發與 Agent 主體分開。"
 ---
 
 準備開始串接 Google Chat 等 IM 通知，設計有參考 OpenClaw。
 
-![Agent Build Log Episode 031：以 Plug-In 串接 IM 通知](/assets/programming/agent-build-log/agent-build-log-episode-031.png)
+![Agent Build Log Episode 031：以 Plug-In 串接 IM 通知](/assets/programming/agent-build-log/agent-build-log-episode-031.jpg)
 
 有一個基本的 Plug-In 設計，讓 Agent 的主體和接受 Chat、回應 Chat 的部分切開。
 

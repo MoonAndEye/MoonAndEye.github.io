@@ -47,7 +47,7 @@
 
   <div class="marvin-builds-channel__summary">
     <a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" aria-label="開啟 Marvin Builds YouTube 頻道" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">
-      <img class="marvin-builds-channel__avatar" src="/assets/about/marvin-builds-ai-avatar.png" alt="Marvin Builds 頻道頭像">
+      <img class="marvin-builds-channel__avatar" src="/assets/about/marvin-builds-ai-avatar.jpg" alt="Marvin Builds 頻道頭像">
     </a>
 
     <div>
@@ -103,4 +103,4 @@ An app dedicated to honoring the computer programming queen, Grace Hopper
 
 如果上班時想快速查一下台股股價，又不想讓別人看到，這款 app 就是為此而做的。它會在 mac 右上方的工具列常駐一個輸入框，輸入股票代碼就能查到股價。
 
-![股票工具列](/assets/about/screenshot_stockTools.png)
+![股票工具列](/assets/about/screenshot_stockTools.jpg)

@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-009.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-009.jpg
 summary: "I added repository aliases to DKS MCP so natural names, singular and plural forms, and everyday queries resolve to the correct repo and link."
 description: "I added repository aliases to DKS MCP so natural names, singular and plural forms, and everyday queries resolve to the correct repo and link."
 ---
 
 Today, I went back to the DKS (Developer Knowledge Service) MCP and started working on repository aliases.
 
-![Agent Build Log Episode 009: repository aliases in DKS MCP](/assets/programming/agent-build-log/agent-build-log-episode-009.png)
+![Agent Build Log Episode 009: repository aliases in DKS MCP](/assets/programming/agent-build-log/agent-build-log-episode-009.jpg)
 
 In real conversations, people usually don’t ask for an exact repo name. They ask things like, “Where’s the login module?” I want the Agent to understand what they mean and return the right repository name and link.
 

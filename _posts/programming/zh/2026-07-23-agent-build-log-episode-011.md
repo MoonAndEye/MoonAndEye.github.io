@@ -5,14 +5,14 @@ date: 2026-07-23 21:12:10 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-011.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-011.jpg
 summary: "推翻 Episode 010 的向量檢索方案，第一版改採參考 OpenClaw 的 Markdown 與 SQLite 架構，讓記憶可閱讀、可修改，也更容易放進 App。"
 description: "推翻 Episode 010 的向量檢索方案，第一版改採參考 OpenClaw 的 Markdown 與 SQLite 架構，讓記憶可閱讀、可修改，也更容易放進 App。"
 ---
 
 今天決定推翻 Episode 010 的方案。
 
-![Agent Build Log Episode 011：以 Markdown 與 SQLite 取代 embedding](/assets/programming/agent-build-log/agent-build-log-episode-011.png)
+![Agent Build Log Episode 011：以 Markdown 與 SQLite 取代 embedding](/assets/programming/agent-build-log/agent-build-log-episode-011.jpg)
 
 昨天原本選了 LanceDB 搭配 Qwen3 Embedding 0.6B，想把第一版記憶系統直接做成向量檢索。但真的開始看模型大小後，才發現光是 Qwen3 Embedding 的檔案就接近 600 MB。
 

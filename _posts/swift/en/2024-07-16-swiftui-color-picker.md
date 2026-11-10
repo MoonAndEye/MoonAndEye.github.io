@@ -20,11 +20,11 @@ The Color Picker is one of my favorite SwiftUI components. If you were to manual
 
 Let's now make a test project: a backwards clock dial with a splash of color.
 
-![color picker](/assets/swift/color-picker/color_picker_1.png)
+![color picker](/assets/swift/color-picker/color_picker_1.jpg)
 
 ![color picker](/assets/swift/color-picker/color_picker_2.jpeg)
 
-![color picker](/assets/swift/color-picker/color_picker_3.png)
+![color picker](/assets/swift/color-picker/color_picker_3.jpg)
 
 
 ### Introducing ColorPickerContainerView
@@ -219,7 +219,7 @@ This clock app was later developed into a version that was published on the App 
 
 [https://apps.apple.com/backwards-clock/id1632935212](https://apps.apple.com/backwards-clock/id1632935212)
 
-![backward clock](/assets/swift/color-picker/color_picker_7.png)
+![backward clock](/assets/swift/color-picker/color_picker_7.jpg)
 
 ## Related Documentation
 

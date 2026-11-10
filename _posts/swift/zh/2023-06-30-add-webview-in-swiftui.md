@@ -86,7 +86,7 @@ struct URLNotCorrectView: View {
 }
 ```
 
-![no internet view](/assets/swift/webview-in-swiftui/no_internet.png){: width="50%" }
+![no internet view](/assets/swift/webview-in-swiftui/no_internet.jpg){: width="50%" }
 
 最後， MyWebView 看起來就像這樣
 
@@ -125,4 +125,4 @@ struct DemoApp: App {
 
 ### 展示 Grace Hopper 的 wiki
 
-![Wiki of Grace Hopper](/assets/swift/webview-in-swiftui/grace_hopper_wiki.png){: width="50%" }
+![Wiki of Grace Hopper](/assets/swift/webview-in-swiftui/grace_hopper_wiki.jpg){: width="50%" }

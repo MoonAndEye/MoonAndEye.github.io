@@ -7,12 +7,12 @@ author: Marvin Lin
 tags: [agent]
 summary: 今天正式開始紀錄客製化 AI Agent 的開發：以 Pi Agent 與 OpenCode 作為架構參考，先完成 Developer Knowledge Service MCP，再逐步替換成自己的元件。
 description: 今天正式開始紀錄客製化 AI Agent 的開發：以 Pi Agent 與 OpenCode 作為架構參考，先完成 Developer Knowledge Service MCP，再逐步替換成自己的元件。
-image: /assets/programming/agent-build-log/agent-build-log-episode-001.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-001.jpg
 ---
 
 今天正式啟動我的客製化 AI Agent 開發紀錄。
 
-![Agent Build Log Episode 001：從 Pi Agent 與 OpenCode 出發，打造自己的 Agent](/assets/programming/agent-build-log/agent-build-log-episode-001.png)
+![Agent Build Log Episode 001：從 Pi Agent 與 OpenCode 出發，打造自己的 Agent](/assets/programming/agent-build-log/agent-build-log-episode-001.jpg)
 
 ## 目前完成
 

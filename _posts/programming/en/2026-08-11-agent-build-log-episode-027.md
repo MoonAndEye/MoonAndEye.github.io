@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-027.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-027.jpg
 summary: "Building Acceptance to turn a Jira ticket into a complete, evidence-backed acceptance report across iOS and Android."
 description: "Building Acceptance to turn a Jira ticket into a complete, evidence-backed acceptance report across iOS and Android."
 ---
 
 Today, I built another “Signature Ability” for the Agent.
 
-![Agent Build Log Episode 027: Acceptance turns a Jira ticket into an evidence-backed report](/assets/programming/agent-build-log/agent-build-log-episode-027.png)
+![Agent Build Log Episode 027: Acceptance turns a Jira ticket into an evidence-backed report](/assets/programming/agent-build-log/agent-build-log-episode-027.jpg)
 
 This one is Acceptance.
 

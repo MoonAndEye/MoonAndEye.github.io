@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-032.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-032.jpg
 summary: "I connected the Chat Plug-In to the Agent end to end, working through inbound and outbound failures along the way."
 description: "I connected the Chat Plug-In to the Agent end to end, working through inbound and outbound failures along the way."
 ---
 
 Today, I continued working on getting the Chat-to-Agent flow fully connected.
 
-![Agent Build Log Episode 032: connecting Chat to the Agent](/assets/programming/agent-build-log/agent-build-log-episode-032.png)
+![Agent Build Log Episode 032: connecting Chat to the Agent](/assets/programming/agent-build-log/agent-build-log-episode-032.jpg)
 
 At first, I thought it would be pretty straightforward: connect the Chat Plug-In I designed yesterday, send inbound messages to the Agent, then send the result back after processing.
 

@@ -5,14 +5,14 @@ date: 2026-08-17 22:57:34 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-032.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-032.jpg
 summary: "繼續打通 Chat 與 Agent 的完整流程，解決 inbound 與 outbound 過程中遇到的問題。"
 description: "繼續打通 Chat 與 Agent 的完整流程，解決 inbound 與 outbound 過程中遇到的問題。"
 ---
 
 今天，我繼續把 Chat 和 Agent 的流程真正打通。
 
-![Agent Build Log Episode 032：打通 Chat 與 Agent](/assets/programming/agent-build-log/agent-build-log-episode-032.png)
+![Agent Build Log Episode 032：打通 Chat 與 Agent](/assets/programming/agent-build-log/agent-build-log-episode-032.jpg)
 
 原本以為，只要把昨天設計好的 Chat Plug-In 接起來，inbound message 送進 Agent，處理完再把結果回出去，應該就差不多了。
 

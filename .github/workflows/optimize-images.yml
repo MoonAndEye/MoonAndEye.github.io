@@ -1,0 +1,30 @@
+name: Check image sizes
+
+# 只檢查 assets 裡的圖沒有超寬或單檔過大。
+# 不取代 GitHub Pages 的 pages-build-deployment，也不在 build 時重壓圖片。
+on:
+  pull_request:
+    paths:
+      - "assets/**"
+      - ".github/scripts/optimize_images.py"
+      - ".github/workflows/optimize-images.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: pip install pillow
+
+      - name: Reject oversized images
+        run: python3 .github/scripts/optimize_images.py --check

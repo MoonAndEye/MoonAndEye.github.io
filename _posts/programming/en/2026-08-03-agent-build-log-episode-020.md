@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-020.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-020.jpg
 summary: "I started building the Agent’s first acceptance capabilities: creating an acceptance brief, then executing it and producing a report."
 description: "I started building the Agent’s first acceptance capabilities: creating an acceptance brief, then executing it and producing a report."
 ---
 
 Today, I started implementing the Agent’s own capabilities.
 
-![Agent Build Log Episode 020: building acceptance brief and reporting tools](/assets/programming/agent-build-log/agent-build-log-episode-020.png)
+![Agent Build Log Episode 020: building acceptance brief and reporting tools](/assets/programming/agent-build-log/agent-build-log-episode-020.jpg)
 
 For the first version, I designed two tools.
 

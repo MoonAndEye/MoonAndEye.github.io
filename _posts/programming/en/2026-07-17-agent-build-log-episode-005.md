@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-005.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-005.jpg
 summary: "I added Feedback to the CLI, Browser, and Desktop App so problems and improvement ideas can be captured immediately through one shared API."
 description: "I added Feedback to the CLI, Browser, and Desktop App so problems and improvement ideas can be captured immediately through one shared API."
 ---
 
 Today, I added a feature that looks small but will probably become very useful later: Feedback.
 
-![Agent Build Log Episode 005: Feedback across the CLI, Browser, and Desktop App](/assets/programming/agent-build-log/agent-build-log-episode-005.png)
+![Agent Build Log Episode 005: Feedback across the CLI, Browser, and Desktop App](/assets/programming/agent-build-log/agent-build-log-episode-005.jpg)
 
 I added it to the CLI, Browser, and Desktop App. Whether it’s for other users or just for me while testing, I can now record a problem the moment I notice it—something feels wrong, a bug appears, or I suddenly think of something that could be improved.
 

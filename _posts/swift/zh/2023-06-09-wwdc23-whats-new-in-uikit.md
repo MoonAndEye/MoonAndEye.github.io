@@ -20,7 +20,7 @@ permalink: /swift/:title:output_ext
 
 ### Preview in UIView
 
-![Preview in UIVC](/assets/swift/wwdc23/uikit_preview_uiview.png)
+![Preview in UIVC](/assets/swift/wwdc23/uikit_preview_uiview.jpg)
 
 ## 重點2： UIViewController 加了一個 call back `viewIsAppearing(_:)`，且這個生命週期有 back-deploys 到 iOS 13.0
 

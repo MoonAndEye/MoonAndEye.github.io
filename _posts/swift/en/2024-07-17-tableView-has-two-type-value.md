@@ -15,7 +15,7 @@ List-type UIs are very common in iOS apps, as seen in built-in apps like "Contac
 
 If there is a large amount of data in the list, making it difficult for users to find what they are looking for at once, features like a search bar are often added to filter results. For example, in the Phone app, if you have 500 contacts but are looking for 'Marvin,' you can use the search functionality to narrow down the results.
 
-![UITableView has two types of data](/assets/swift/tableview-two-type-data/two-type-list.png)
+![UITableView has two types of data](/assets/swift/tableview-two-type-data/two-type-list.jpg)
 
 ## How can you handle a table that needs to display two different types of data?
 

@@ -13,11 +13,11 @@ permalink: /swift/:title:output_ext
 
 ### email 內容
 
-![apple email visionPro](/assets/swift/apple-can-applly-visionpro-developerkit/apple-email.png)
+![apple email visionPro](/assets/swift/apple-can-applly-visionpro-developerkit/apple-email.jpg)
 
 ### visionPro 申請頁面
 
-![visionPro developer kit apply](/assets/swift/apple-can-applly-visionpro-developerkit/developerkit-apply.png)
+![visionPro developer kit apply](/assets/swift/apple-can-applly-visionpro-developerkit/developerkit-apply.jpg)
 
 ## 相關連結
 

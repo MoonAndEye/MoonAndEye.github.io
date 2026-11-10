@@ -52,7 +52,7 @@ permalink: /programming/:title:output_ext
 
 在這篇文章發佈之前，還沒有看到 ChatGPT 或 Altman 有其他回應。而且這個禮拜，我一直想要升級 ChatGPT 4.0，但 OpenAI 升級的按鈕一直沒有開發，我也沒辦法升級。即使我已經寫信給 OpenAI，也只是得到了一個自動回信， noting! 
 
-![沒辦法升級 ChatGPT 4.0](/assets/programming/chatgpt/chatGPT-can-not-upgrade-now.png)
+![沒辦法升級 ChatGPT 4.0](/assets/programming/chatgpt/chatGPT-can-not-upgrade-now.jpg)
 
 ## Youtube 影片
 

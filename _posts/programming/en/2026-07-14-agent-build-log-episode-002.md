@@ -8,12 +8,12 @@ tags: [agent]
 lang: en
 summary: "The first DKS MCP now searches MRs, commits, repositories, and Jira through one interface, while Pi Agent runs behind my own OAuth-enabled CLI wrapper."
 description: "The first DKS MCP now searches MRs, commits, repositories, and Jira through one interface, while Pi Agent runs behind my own OAuth-enabled CLI wrapper."
-image: /assets/programming/agent-build-log/agent-build-log-episode-002.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-002.jpg
 ---
 
 Another major milestone completed.
 
-![Agent Build Log Episode 002: DKS MCP and Pi Agent integration architecture](/assets/programming/agent-build-log/agent-build-log-episode-002.png)
+![Agent Build Log Episode 002: DKS MCP and Pi Agent integration architecture](/assets/programming/agent-build-log/agent-build-log-episode-002.jpg)
 
 ## DKS (Developer Knowledge Service) MCP
 

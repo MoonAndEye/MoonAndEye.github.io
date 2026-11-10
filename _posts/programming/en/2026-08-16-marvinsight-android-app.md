@@ -29,7 +29,7 @@ Content that lives only on a website often waits for someone to search for the r
 
 I built the Marv[in]sight Android app to give the site another way to be found and read.
 
-[![Read website posts in the Marv[in]sight app](/assets/programming/marvinsight-android-app/posts-en.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
+[![Read website posts in the Marv[in]sight app](/assets/programming/marvinsight-android-app/posts-en.jpg)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
 
 The app includes the website posts, the Agent Build Log, and videos from Marvin Builds. Once the content has synced to the phone, it remains available for offline reading.
 
@@ -43,7 +43,7 @@ I write down the decisions I make, including the wrong approach, the first attem
 
 Some entries end without a clean answer. They still show what an Agent goes through as it moves from an idea to a working implementation.
 
-[![Read the Agent Build Log in the Marv[in]sight app](/assets/programming/marvinsight-android-app/build-log-en.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
+[![Read the Agent Build Log in the Marv[in]sight app](/assets/programming/marvinsight-android-app/build-log-en.jpg)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
 
 I hope these records remain useful beyond my own work. Someone building something similar may find one failed attempt, one architecture decision, or one test result that helps them move forward.
 

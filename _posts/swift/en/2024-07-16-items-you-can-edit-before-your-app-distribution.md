@@ -21,4 +21,4 @@ You can change this if it was initially set to manual during submission. If it w
 ![Reset Ratings](/assets/swift/items-can-be-edit-aft-submit-appStore/reset_rank.png)
 
 ### Change Phased Release
-![Change Phased Release](/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.png)
+![Change Phased Release](/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.jpg)

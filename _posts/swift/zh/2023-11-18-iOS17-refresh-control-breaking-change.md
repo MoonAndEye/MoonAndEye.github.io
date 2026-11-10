@@ -35,14 +35,14 @@ email 提到，UIRefreshControl 在 iOS 17 有破壞性更新，生命周期要�
 
 以下是 Essential Developer 在 Youtube 中 live 示範
 
-![consoleGotWarning](/assets/swift/refresh-breaking-on-ios17/configUIRefreshControl.png)
+![consoleGotWarning](/assets/swift/refresh-breaking-on-ios17/configUIRefreshControl.jpg)
 
 在 iOS 17 以前，在 viewDidLoad() 將 UIRefreshControl 設定好，並執行 refresh() 是沒問題的。
 
 
 **但是在 iOS 17** 同樣的程式碼，並不會看到 UIRefreshControl 的 animation，而且 console 下方也會有 warning message
 
-![consoleGotWarning](/assets/swift/refresh-breaking-on-ios17/consoleGotWarning.png)
+![consoleGotWarning](/assets/swift/refresh-breaking-on-ios17/consoleGotWarning.jpg)
 
 ### 改到 viewWillAppear(:) 或 viewDidAppear(:) 生命週期有用嗎？
 

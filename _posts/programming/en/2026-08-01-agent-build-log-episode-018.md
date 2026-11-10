@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-018.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-018.jpg
 summary: "I changed the Alpha target audience from developers to PM and QA teams responsible for acceptance testing."
 description: "I changed the Alpha target audience from developers to PM and QA teams responsible for acceptance testing."
 ---
 
 Today, I changed the target users for the Agent.
 
-![Agent Build Log Episode 018: shifting the Agent toward PM and QA acceptance testing](/assets/programming/agent-build-log/agent-build-log-episode-018.png)
+![Agent Build Log Episode 018: shifting the Agent toward PM and QA acceptance testing](/assets/programming/agent-build-log/agent-build-log-episode-018.jpg)
 
 At first, I wanted to build it for iOS and Android developers.
 

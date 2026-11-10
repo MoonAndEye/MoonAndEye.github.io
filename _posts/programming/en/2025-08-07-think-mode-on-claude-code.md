@@ -24,17 +24,17 @@ In Claude Code, you can use the shortcut Shift + Tab to switch modes. The first 
 ## Advantages of Think Mode
 
 ### Plan First, Then Execute
-![think mode request prompt](/assets/programming/claude-code-think-mode/think-mode-request-prompt.png)
+![think mode request prompt](/assets/programming/claude-code-think-mode/think-mode-request-prompt.jpg)
 
 When you make a request to Claude in think mode, Claude will first analyze and think about your requirements, then provide a detailed plan blueprint.
 
 ### View Implementation Blueprint
-![plan mode blueprint](/assets/programming/claude-code-think-mode/plan-mode-blueprint.png)
+![plan mode blueprint](/assets/programming/claude-code-think-mode/plan-mode-blueprint.jpg)
 
 In plan mode, Claude will display a complete implementation plan, allowing you to understand the entire implementation process before actual execution.
 
 ### Execute After Confirmation
-![action after planning](/assets/programming/claude-code-think-mode/action-after-planing.png)
+![action after planning](/assets/programming/claude-code-think-mode/action-after-planing.jpg)
 
 When you confirm the plan, Claude will start executing actual code modifications based on the previous planning.
 

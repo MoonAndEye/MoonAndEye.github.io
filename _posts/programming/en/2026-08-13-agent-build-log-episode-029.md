@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-029.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-029.jpg
 summary: "Exploring the Pi Agent extension ecosystem before rebuilding MCP integration, permissions, and Desktop GUI capabilities."
 description: "Exploring the Pi Agent extension ecosystem before rebuilding MCP integration, permissions, and Desktop GUI capabilities."
 ---
 
 Today, I started looking more seriously at the Pi Agent extension ecosystem.
 
-![Agent Build Log Episode 029: exploring the Pi Agent extension ecosystem](/assets/programming/agent-build-log/agent-build-log-episode-029.png)
+![Agent Build Log Episode 029: exploring the Pi Agent extension ecosystem](/assets/programming/agent-build-log/agent-build-log-episode-029.jpg)
 
 Until now, I had focused mostly on the Agent core, its tools, and the capabilities I was building myself.
 

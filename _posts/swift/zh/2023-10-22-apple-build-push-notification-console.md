@@ -14,13 +14,13 @@ permalink: /swift/:title:output_ext
 
 ## Apple Push Notification Console 截圖
 
-![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console1.png)
+![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console1.jpg)
 
 ### 除了使用後台以外，也有提供 cURL 的方式，除了 token，也可以用 certificate 的方式
-![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console2.png)
+![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console2.jpg)
 
 ### payload 的客製化在這邊調整
-![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console3.png)
+![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console3.jpg)
 
 ### 也可以直接使用 json format
-![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console4.png)
+![Apple Push Notification Console](/assets/swift/apple-push-notification-console/apple-console4.jpg)

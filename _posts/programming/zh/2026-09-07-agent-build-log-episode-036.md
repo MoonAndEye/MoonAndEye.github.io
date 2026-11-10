@@ -5,14 +5,14 @@ date: 2026-09-07 08:56:04 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-036.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-036.jpg
 summary: "準備採用開源 Pi GUI，沿用文字換行、模型選擇與 LLM Provider 串接的既有實作，把開發時間留給自己的專有技。"
 description: "準備採用開源 Pi GUI，沿用文字換行、模型選擇與 LLM Provider 串接的既有實作，把開發時間留給自己的專有技。"
 ---
 
 今天，我開始準備把開源的 [Pi GUI](https://github.com/minghinmatthewlam/pi-gui) 用在自己的 Desktop App 裡。
 
-![Agent Build Log Episode 036：使用 Pi GUI 處理桌面互動，準備接入自己的專有技](/assets/programming/agent-build-log/agent-build-log-episode-036.png)
+![Agent Build Log Episode 036：使用 Pi GUI 處理桌面互動，準備接入自己的專有技](/assets/programming/agent-build-log/agent-build-log-episode-036.jpg)
 
 在 [Episode 029](/zh/programming/agent-build-log-episode-029/)，我就研究過 Pi Agent 的 extension 生態系，也提到了 Pi GUI。當時，我開始思考哪些功能可以直接使用現有的實作。
 

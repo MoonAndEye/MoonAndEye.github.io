@@ -33,4 +33,4 @@ permalink: /life/:title:output_ext
 
 ### [比特幣樂透礦機](https://shope.ee/2VRGeYrz0O)
 
-[![蝦皮賣場照片](/assets/life/btc-lottery-miner/shopee.png)](https://shope.ee/2VRGeYrz0O)
+[![蝦皮賣場照片](/assets/life/btc-lottery-miner/shopee.jpg)](https://shope.ee/2VRGeYrz0O)

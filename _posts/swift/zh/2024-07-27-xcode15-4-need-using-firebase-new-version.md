@@ -11,7 +11,7 @@ description: If you’re using Xcode version 15.3 or higher for your projects th
 
 如果你使用了 Xcode 15.3 以上的版本，並且專案中使用了 Firebase，請注意 Firebase 版本要升到 10.22.0 以上，否則發佈後會閃退。
 
-![Crashlytics report on xcode15.4 vs. firebase 10.10.0](/assets/swift/crash-on-firebase10-10-0/crashlytics.png)
+![Crashlytics report on xcode15.4 vs. firebase 10.10.0](/assets/swift/crash-on-firebase10-10-0/crashlytics.jpg)
 
 7月初，團隊講好一起把 Xcode 升到 15.4 以上，其他的 pods 都是固定的，然後一線，閃退率就起來了，上面的圖就是上線後的結果。
 

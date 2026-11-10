@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-008.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-008.jpg
 summary: "I started restructuring the Agent core so the CLI, Browser, and Desktop App share the same capabilities while remaining thin clients."
 description: "I started restructuring the Agent core so the CLI, Browser, and Desktop App share the same capabilities while remaining thin clients."
 ---
 
 Today, I found a problem.
 
-![Agent Build Log Episode 008: one Agent core shared by the CLI, Browser, and Desktop App](/assets/programming/agent-build-log/agent-build-log-episode-008.png)
+![Agent Build Log Episode 008: one Agent core shared by the CLI, Browser, and Desktop App](/assets/programming/agent-build-log/agent-build-log-episode-008.jpg)
 
 The CLI, Browser, and Desktop App all appeared to be using the same Agent. In reality, they were not running through the same underlying logic. They only worked consistently because the three implementations happened to stay in sync.
 

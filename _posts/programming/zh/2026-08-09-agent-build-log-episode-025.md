@@ -5,14 +5,14 @@ date: 2026-08-09 23:55:53 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-025.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-025.jpg
 summary: "打造 Project Scaffold 專有技，快速建立乾淨、可建置且可測試的 iOS 或 Android 專案。"
 description: "打造 Project Scaffold 專有技，快速建立乾淨、可建置且可測試的 iOS 或 Android 專案。"
 ---
 
 今天，我做了另一個 Agent 的「專有技」。
 
-![Agent Build Log Episode 025：iOS 與 Android 的 Project Scaffold](/assets/programming/agent-build-log/agent-build-log-episode-025.png)
+![Agent Build Log Episode 025：iOS 與 Android 的 Project Scaffold](/assets/programming/agent-build-log/agent-build-log-episode-025.jpg)
 
 這次是 Project Scaffold。
 

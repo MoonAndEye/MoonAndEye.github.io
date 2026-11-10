@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-011.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-011.jpg
 summary: "I replaced the first memory-system plan with a smaller Markdown-and-SQLite design inspired by OpenClaw, keeping memory readable, editable, and easier to ship."
 description: "I replaced the first memory-system plan with a smaller Markdown-and-SQLite design inspired by OpenClaw, keeping memory readable, editable, and easier to ship."
 ---
 
 Today, I decided to undo the decision I made in Episode 010.
 
-![Agent Build Log Episode 011: replacing embeddings with Markdown and SQLite](/assets/programming/agent-build-log/agent-build-log-episode-011.png)
+![Agent Build Log Episode 011: replacing embeddings with Markdown and SQLite](/assets/programming/agent-build-log/agent-build-log-episode-011.jpg)
 
 Yesterday, I chose LanceDB with Qwen3 Embedding 0.6B for the first version of the memory system. The idea made sense until I looked more closely at the model size.
 

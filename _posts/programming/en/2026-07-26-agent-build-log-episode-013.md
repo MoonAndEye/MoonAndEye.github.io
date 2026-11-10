@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-013.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-013.jpg
 summary: "I compared Sol, Terra, and Luna at medium and xhigh effort. For scoped DKS lookups, Terra xhigh was both fast and reliable; Sol remains the choice when strict protocol compliance matters most."
 description: "I compared Sol, Terra, and Luna at medium and xhigh effort. For scoped DKS lookups, Terra xhigh was both fast and reliable; Sol remains the choice when strict protocol compliance matters most."
 ---
 
 Today, I added GPT-5.6 Sol to the model comparison.
 
-![Agent Build Log Episode 013: model routing across Sol, Terra, and Luna](/assets/programming/agent-build-log/agent-build-log-episode-013.png)
+![Agent Build Log Episode 013: model routing across Sol, Terra, and Luna](/assets/programming/agent-build-log/agent-build-log-episode-013.jpg)
 
 Previously, I had only tested Terra and Luna.
 

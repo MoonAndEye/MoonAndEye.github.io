@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-022.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-022.jpg
 summary: "Breaking a developer's workflow into clear, small steps that can become Agent capabilities."
 description: "Breaking a developer's workflow into clear, small steps that can become Agent capabilities."
 ---
 
 This is what I learned today.
 
-![Agent Build Log Episode 022: breaking developer work into Agent capabilities](/assets/programming/agent-build-log/agent-build-log-episode-022.png)
+![Agent Build Log Episode 022: breaking developer work into Agent capabilities](/assets/programming/agent-build-log/agent-build-log-episode-022.jpg)
 
 If you break down the daily work of a software developer, completing a single task actually requires many different small capabilities.
 

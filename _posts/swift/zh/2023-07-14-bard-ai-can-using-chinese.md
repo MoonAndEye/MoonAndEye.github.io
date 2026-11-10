@@ -14,11 +14,11 @@ Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣�
 
 ### 不過實測後，發現收盤和最低的數字是對的，但開盤的數字是不正確的
 
-![bard can using chinese](/assets/programming/bard-can-using-chinese/bard-can-using-chinese.png)
+![bard can using chinese](/assets/programming/bard-can-using-chinese/bard-can-using-chinese.jpg)
 
 除了第一個回答以外，還多了了三個 draft 的選項可以參考，點開來看，開盤的數字也都不正確，2023/7/15 正確的開盤是 17283 點。
 
-![bard answer has draft](/assets/programming/bard-can-using-chinese/bard-draft.png)
+![bard answer has draft](/assets/programming/bard-can-using-chinese/bard-draft.jpg)
 
 ## 向 Bard 問了幾個問題
 
@@ -26,7 +26,7 @@ Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣�
 
 先從算命開始，因為在 ChatGPT 的時候，只要輸入出生年月日時辰，ChatGPT 就會用四柱八字幫你算命，我想測測看 Bard 能不能也做到一樣的事情
 
-![bard fortune teller](/assets/programming/bard-can-using-chinese/bard-fortune-teller.png)
+![bard fortune teller](/assets/programming/bard-can-using-chinese/bard-fortune-teller.jpg)
 
 **結論：不行**
 
@@ -34,7 +34,7 @@ Google AI 可以使用中文進行問答了，和 ChatGPT 不同的是，同樣�
 
 ### 讓 Bard 抽塔羅牌試試
 
-![bard draw a tarrot card](/assets/programming/bard-can-using-chinese/bard-tarrot.png)
+![bard draw a tarrot card](/assets/programming/bard-can-using-chinese/bard-tarrot.jpg)
 
 **結論：可以抽牌**
 

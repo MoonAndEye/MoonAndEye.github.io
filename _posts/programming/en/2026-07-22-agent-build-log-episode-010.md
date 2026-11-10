@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-010.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-010.jpg
 summary: "I planned the Agent memory system and chose LanceDB with Qwen3 Embedding 0.6B for a lightweight first version that runs locally on my Mac mini."
 description: "I planned the Agent memory system and chose LanceDB with Qwen3 Embedding 0.6B for a lightweight first version that runs locally on my Mac mini."
 ---
 
 Today, I started planning the Agent’s memory system.
 
-![Agent Build Log Episode 010: a memory system using LanceDB and Qwen3 Embedding 0.6B](/assets/programming/agent-build-log/agent-build-log-episode-010.png)
+![Agent Build Log Episode 010: a memory system using LanceDB and Qwen3 Embedding 0.6B](/assets/programming/agent-build-log/agent-build-log-episode-010.jpg)
 
 Before writing any code, I spent some time looking through a few well-known open-source projects with strong GitHub traction. I wanted to see how other teams handle storing memories, searching them, and bringing the right ones back when needed.
 

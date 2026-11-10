@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-006.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-006.jpg
 summary: "I started organizing an Agent eval set from real iOS and mobile development tasks drawn from my existing skills and active projects."
 description: "I started organizing an Agent eval set from real iOS and mobile development tasks drawn from my existing skills and active projects."
 ---
 
 Today, I started organizing the eval set for the Agent.
 
-![Agent Build Log Episode 006: organizing the Agent eval set](/assets/programming/agent-build-log/agent-build-log-episode-006.png)
+![Agent Build Log Episode 006: organizing the Agent eval set](/assets/programming/agent-build-log/agent-build-log-episode-006.jpg)
 
 I’m going to build the first benchmark tasks from the skills I’ve accumulated over the years and the projects I’m currently working on. The initial focus will be common iOS and mobile development tasks, because those are the things I actually want the Agent to handle well.
 

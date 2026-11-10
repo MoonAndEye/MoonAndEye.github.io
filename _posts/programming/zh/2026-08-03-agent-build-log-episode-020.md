@@ -5,14 +5,14 @@ date: 2026-08-03 22:59:13 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-020.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-020.jpg
 summary: "開始建立 Agent 的第一組驗收 capabilities：產生 acceptance brief，以及執行驗收並整理報告。"
 description: "開始建立 Agent 的第一組驗收 capabilities：產生 acceptance brief，以及執行驗收並整理報告。"
 ---
 
 今天，我開始實作 Agent 自己的 capabilities。
 
-![Agent Build Log Episode 020：建立 acceptance brief 與驗收報告工具](/assets/programming/agent-build-log/agent-build-log-episode-020.png)
+![Agent Build Log Episode 020：建立 acceptance brief 與驗收報告工具](/assets/programming/agent-build-log/agent-build-log-episode-020.jpg)
 
 第一版先設計了兩個 tools。
 

@@ -85,7 +85,7 @@ struct URLNotCorrectView: View {
 }
 ```
 
-![no internet view](/assets/swift/webview-in-swiftui/no_internet.png){: width="50%" }
+![no internet view](/assets/swift/webview-in-swiftui/no_internet.jpg){: width="50%" }
 
 Finally, `MyWebView` looks like this:
 
@@ -124,4 +124,4 @@ You can also intentionally insert a string that is not a URL; if it cannot be co
 
 ### Displaying Grace Hopper's Wiki
 
-![Wiki of Grace Hopper](/assets/swift/webview-in-swiftui/grace_hopper_wiki.png){: width="50%" }
+![Wiki of Grace Hopper](/assets/swift/webview-in-swiftui/grace_hopper_wiki.jpg){: width="50%" }

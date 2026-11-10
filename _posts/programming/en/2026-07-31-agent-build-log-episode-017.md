@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-017.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-017.jpg
 summary: "I started implementing an Agent memory system that uses SQLite for indexing and Markdown for date- and session-based memory content."
 description: "I started implementing an Agent memory system that uses SQLite for indexing and Markdown for date- and session-based memory content."
 ---
 
 Today, I officially started implementing the Agent’s memory system.
 
-![Agent Build Log Episode 017: implementing Agent memory with SQLite and Markdown](/assets/programming/agent-build-log/agent-build-log-episode-017.png)
+![Agent Build Log Episode 017: implementing Agent memory with SQLite and Markdown](/assets/programming/agent-build-log/agent-build-log-episode-017.jpg)
 
 The first version will not begin with a vector database or a complex RAG architecture.
 

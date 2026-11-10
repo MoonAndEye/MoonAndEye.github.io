@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-024.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-024.jpg
 summary: "Why model response latency does not predict how quickly an Agent will complete an entire task."
 description: "Why model response latency does not predict how quickly an Agent will complete an entire task."
 ---
 
 Today, I got a result that was completely opposite to what I expected.
 
-![Agent Build Log Episode 024: comparing Agent task completion time across Sol, Terra, and Luna](/assets/programming/agent-build-log/agent-build-log-episode-024.png)
+![Agent Build Log Episode 024: comparing Agent task completion time across Sol, Terra, and Luna](/assets/programming/agent-build-log/agent-build-log-episode-024.jpg)
 
 If I only look at the LLM itself, I would normally assume:
 

@@ -36,12 +36,12 @@ permalink: /unit-testing/:title:output_ext
 
 在 Project targets 的頁籤，按下 + 號，選擇 Unit Testing Bundle，就可以讓專案開始有測試。
 
-![add test bundle](/assets/unitTesting/from-zero-to-one/add_test_bundle.png)
+![add test bundle](/assets/unitTesting/from-zero-to-one/add_test_bundle.jpg)
 
 ### 預設的測試模板
 
 加上檔案後，這預設的模版，你會看到兩個測試，以及 setup 和 tear down。
-![Unit testing template](/assets/unitTesting/from-zero-to-one/unit_testing_template.png)
+![Unit testing template](/assets/unitTesting/from-zero-to-one/unit_testing_template.jpg)
 
 ### 第一步，加上 @testable import
 
@@ -98,7 +98,7 @@ final class CocoaTests: XCTestCase {
 ```
 
 ### 這時候，你會得到 failed test result，你會看到 Unit testing 告訴你哪個 model 的值是不對
-![first test, you got error](/assets/unitTesting/from-zero-to-one/first_fail_test.png)
+![first test, you got error](/assets/unitTesting/from-zero-to-one/first_fail_test.jpg)
 
 第二步，再將固定的 access token , refresh token 設為 equal 的值
 ```swift
@@ -114,7 +114,7 @@ func testTokenResponse() throws {
 
 ### 再跑一次 testing，讓 test 通過
 
-![pass test](/assets/unitTesting/from-zero-to-one/second_test_pass.png)
+![pass test](/assets/unitTesting/from-zero-to-one/second_test_pass.jpg)
 
 ## 另一個場景：需求變更 or 需求疊加
 

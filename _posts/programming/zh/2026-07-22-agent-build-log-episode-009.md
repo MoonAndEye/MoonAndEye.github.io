@@ -5,14 +5,14 @@ date: 2026-07-22 00:34:59 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-009.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-009.jpg
 summary: "為 DKS MCP 加入 repository aliases，讓常用名稱、單複數與自然語言查詢都能解析到正確的 repo 與連結。"
 description: "為 DKS MCP 加入 repository aliases，讓常用名稱、單複數與自然語言查詢都能解析到正確的 repo 與連結。"
 ---
 
 今天我又回頭處理 DKS（Developer Knowledge Service）MCP，開始補 repository aliases。
 
-![Agent Build Log Episode 009：為 DKS MCP 加入 repository aliases](/assets/programming/agent-build-log/agent-build-log-episode-009.png)
+![Agent Build Log Episode 009：為 DKS MCP 加入 repository aliases](/assets/programming/agent-build-log/agent-build-log-episode-009.jpg)
 
 在真實對話裡，人通常不會直接講出完整而精確的 repo 名稱。他們會問：「登入模組在哪裡？」我希望 Agent 能理解這句話真正指的是什麼，然後回傳正確的 repository 名稱和連結。
 
