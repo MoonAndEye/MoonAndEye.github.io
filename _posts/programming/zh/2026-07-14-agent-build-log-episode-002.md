@@ -7,12 +7,12 @@ author: Marvin Lin
 tags: [agent]
 summary: DKS MCP 第一版已能透過統一介面查找 MR、Commit、Repository 與 Jira，Pi Agent 也完成 OAuth 與 CLI 執行驗證。
 description: DKS MCP 第一版已能透過統一介面查找 MR、Commit、Repository 與 Jira，Pi Agent 也完成 OAuth 與 CLI 執行驗證。
-image: /assets/programming/agent-build-log/agent-build-log-episode-002.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-002.jpg
 ---
 
 今天完成了兩個重要進展。
 
-![Agent Build Log Episode 002：DKS MCP 與 Pi Agent 整合架構](/assets/programming/agent-build-log/agent-build-log-episode-002.png)
+![Agent Build Log Episode 002：DKS MCP 與 Pi Agent 整合架構](/assets/programming/agent-build-log/agent-build-log-episode-002.jpg)
 
 ## DKS MCP
 

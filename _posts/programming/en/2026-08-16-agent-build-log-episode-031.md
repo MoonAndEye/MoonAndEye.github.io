@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-031.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-031.jpg
 summary: "I started designing plug-in-based IM integrations that keep chat transport separate from the Agent itself."
 description: "I started designing plug-in-based IM integrations that keep chat transport separate from the Agent itself."
 ---
 
 Today, I started working on IM integrations like Google Chat, with some of the design inspired by OpenClaw.
 
-![Agent Build Log Episode 031: plug-in-based IM integrations](/assets/programming/agent-build-log/agent-build-log-episode-031.png)
+![Agent Build Log Episode 031: plug-in-based IM integrations](/assets/programming/agent-build-log/agent-build-log-episode-031.jpg)
 
 The basic idea is to use a plug-in architecture that keeps the Agent itself separate from the parts responsible for receiving and replying to chat messages.
 

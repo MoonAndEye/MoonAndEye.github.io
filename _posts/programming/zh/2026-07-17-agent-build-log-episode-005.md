@@ -5,14 +5,14 @@ date: 2026-07-17 22:43:14 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-005.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-005.jpg
 summary: "在 CLI、Browser 與 Desktop App 加入 Feedback 功能，透過共用 API 集中記錄測試時發現的問題與改進想法。"
 description: "在 CLI、Browser 與 Desktop App 加入 Feedback 功能，透過共用 API 集中記錄測試時發現的問題與改進想法。"
 ---
 
 今天做了一個看起來不大，但我覺得之後會很有用的功能：Feedback。
 
-![Agent Build Log Episode 005：在三個介面加入 Feedback 功能](/assets/programming/agent-build-log/agent-build-log-episode-005.png)
+![Agent Build Log Episode 005：在三個介面加入 Feedback 功能](/assets/programming/agent-build-log/agent-build-log-episode-005.jpg)
 
 我把它加進了 CLI、Browser 和 Desktop App。無論是給其他使用者，還是我自己在測試時，只要遇到問題、覺得哪裡怪怪的，或突然想到可以改進的地方，都可以直接在當下留下紀錄。
 

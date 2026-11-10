@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-033.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-033.jpg
 summary: "I tried to launch an Android Emulator with my Agent, but its Permission System blocked the first command."
 description: "I tried to launch an Android Emulator with my Agent, but its Permission System blocked the first command."
 ---
 
 Today, I went on a bit of a side quest.
 
-![Agent Build Log Episode 033: Permission System blocking the Android Emulator task](/assets/programming/agent-build-log/agent-build-log-episode-033.png)
+![Agent Build Log Episode 033: Permission System blocking the Android Emulator task](/assets/programming/agent-build-log/agent-build-log-episode-033.jpg)
 
 I didn’t make any progress on the main track. Instead, I decided to test something else I’d been wanting to try for a while.
 

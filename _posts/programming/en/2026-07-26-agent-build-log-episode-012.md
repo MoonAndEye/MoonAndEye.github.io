@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-012.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-012.jpg
 summary: "I compared Terra and Luna with counterbalanced evals: they reached the same accuracy, while Terra ran slightly faster with fewer tool calls but missed the required DKS protocol more often."
 description: "I compared Terra and Luna with counterbalanced evals: they reached the same accuracy, while Terra ran slightly faster with fewer tool calls but missed the required DKS protocol more often."
 ---
 
 Today, I thought I had found a more efficient default model.
 
-![Agent Build Log Episode 012: comparing Terra and Luna](/assets/programming/agent-build-log/agent-build-log-episode-012.png)
+![Agent Build Log Episode 012: comparing Terra and Luna](/assets/programming/agent-build-log/agent-build-log-episode-012.jpg)
 
 With the same evals and the same effort level, Terra finished faster than Luna and made fewer tool calls.
 
@@ -37,7 +37,7 @@ The results still showed Terra finishing slightly faster overall, but I can’t 
 
 The execution-order results also did not show that the second model consistently benefited from cache.
 
-![Counterbalanced Terra versus Luna confirmatory study results](/assets/programming/agent-build-log/agent-build-log-episode-012-luna-vs-terra.png)
+![Counterbalanced Terra versus Luna confirmatory study results](/assets/programming/agent-build-log/agent-build-log-episode-012-luna-vs-terra.jpg)
 
 What really made me rethink the result was the DKS protocol data.
 

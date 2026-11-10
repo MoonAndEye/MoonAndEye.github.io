@@ -33,4 +33,4 @@ It makes almost no noise and doesn’t generate much heat. Since the hashrate is
 
 ### [Bitcoin Lottery Miner](https://shope.ee/2VRGeYrz0O)
 
-[![Shopee Store Image](/assets/life/btc-lottery-miner/shopee.png)](https://shope.ee/2VRGeYrz0O)
+[![Shopee Store Image](/assets/life/btc-lottery-miner/shopee.jpg)](https://shope.ee/2VRGeYrz0O)

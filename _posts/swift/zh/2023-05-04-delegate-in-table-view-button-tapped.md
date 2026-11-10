@@ -21,7 +21,7 @@ classes: wide
 
 UI wireframe 如下，一個 cell 中有一張圖案，可能會放畫家的自畫像或代表作，然後旁邊有畫家的名字和流派，再加上一個可以 follow 的 button。按下去後，會收到系統對這個畫家的最新訊息，以及相關 feature。
 
-![artist list](/assets/swift/deleagate-in-tableview/artistList.png)
+![artist list](/assets/swift/deleagate-in-tableview/artistList.jpg)
 
 ### 藝術家 model 物件
 ```swift

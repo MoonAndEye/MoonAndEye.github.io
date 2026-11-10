@@ -5,14 +5,14 @@ date: 2026-08-06 23:36:25 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-023.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-023.jpg
 summary: "在 Agent GUI 中加入「專有技」，並以 spec-diff 將不同版本文件的變化整理成人類可讀的報告。"
 description: "在 Agent GUI 中加入「專有技」，並以 spec-diff 將不同版本文件的變化整理成人類可讀的報告。"
 ---
 
 今天，我在 Agent 的 GUI 裡做了一個新的區域。
 
-![Agent Build Log Episode 023：Agent GUI 的專有技與 spec-diff](/assets/programming/agent-build-log/agent-build-log-episode-023.png)
+![Agent Build Log Episode 023：Agent GUI 的專有技與 spec-diff](/assets/programming/agent-build-log/agent-build-log-episode-023.jpg)
 
 我把它稱為「專有技」。
 

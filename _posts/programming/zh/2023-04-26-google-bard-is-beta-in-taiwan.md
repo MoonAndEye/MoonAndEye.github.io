@@ -24,7 +24,7 @@ Google Bard AI 開放申請了，只要點選下面的連結按同意，就可�
 
 等待時間並不長，我只等了八分鐘，就可以用了。
 
-![bard second email](/assets/programming/bard-beta/email-list.png)
+![bard second email](/assets/programming/bard-beta/email-list.jpg)
 
 ## 開始使用 Bard
 
@@ -32,31 +32,31 @@ bard 現在只能接受英文，所以我這邊的問題都是用英文問的。
 
 ### 問新聞
 
-![Ask bard news](/assets/programming/bard-beta/ask-news.png)
+![Ask bard news](/assets/programming/bard-beta/ask-news.jpg)
 
 ### 問股價
 
 問了 Bard 能不能預測今晚 AAPL 的股價。回應是不行。
 
-![Ask bard Apple's stock price in next day](/assets/programming/bard-beta/ask-predict-stock-price.png)
+![Ask bard Apple's stock price in next day](/assets/programming/bard-beta/ask-predict-stock-price.jpg)
 
 ### 改問 AAPL 財報資料
 
 改問已經發生的歷史資料，他可以回答出財報，包含數字。
 
-![問財報](/assets/programming/bard-beta/ask-aaple-report.png)
+![問財報](/assets/programming/bard-beta/ask-aaple-report.jpg)
 
 ### 問一下台積電工廠的地址
 
 非常詳細啊，連廠房的名字都列上來了，看名字大概也知道哪個地址上的工廠是做哪一段半導體製程的。(不過，這應該是新聞都有報的)
 
-![台積電地址](/assets/programming/bard-beta/ask-tsmc-address.png)
+![台積電地址](/assets/programming/bard-beta/ask-tsmc-address.jpg)
 
 ### 問 Android 和 iPhone 誰賣得比較好
 
 這邊也給的出數字，而且數字也的確來自另一份報告。
 
-![問 Android 和 iPhone 誰賣得比較好](/assets/programming/bard-beta/ask-iphone-android-selling.png)
+![問 Android 和 iPhone 誰賣得比較好](/assets/programming/bard-beta/ask-iphone-android-selling.jpg)
 
 ### 問投資標的
 
@@ -68,11 +68,11 @@ Amazon (AMZN): Amazon is a leading e-commerce company, and it is also a major pl
 Alphabet (GOOGL): Alphabet is the parent company of Google, which is one of the most popular search engines in the world. Google also has a strong presence in the advertising market, and it is a leader in the development of artificial intelligence.
 Tesla (TSLA): Tesla is a leading electric vehicle manufacturer, and it is also a player in the solar energy market. The company is known for its innovative products and its ambitious goals. Tesla is a high-growth company, but it is also a risky investment.
 
-![問投資標的](/assets/programming/bard-beta/ask-invest-target.png)
+![問投資標的](/assets/programming/bard-beta/ask-invest-target.jpg)
 
 ### 如何用 API 的方法串接 Bard
 
-![如何用 API 的方法串接 Bard](/assets/programming/bard-beta/ask-connect-bard-api.png)
+![如何用 API 的方法串接 Bard](/assets/programming/bard-beta/ask-connect-bard-api.jpg)
 
 ## 試用心得
 

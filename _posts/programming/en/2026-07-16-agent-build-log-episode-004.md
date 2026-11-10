@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-004.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-004.jpg
 summary: "Day one of Golem Desktop uses Electron, React, and Electron Vite, with Agent execution isolated in an Electron Utility Process."
 description: "Day one of Golem Desktop uses Electron, React, and Electron Vite, with Agent execution isolated in an Electron Utility Process."
 ---
 
 Today was the first day of building Golem Desktop.
 
-![Agent Build Log Episode 004: day one of Golem Desktop](/assets/programming/agent-build-log/agent-build-log-episode-004.png)
+![Agent Build Log Episode 004: day one of Golem Desktop](/assets/programming/agent-build-log/agent-build-log-episode-004.jpg)
 
 In the previous episodes, I hadn’t touched the agent app itself. Most of the work was focused on DKS MCP, Pi Agent, and figuring out how the models and tools should connect. Today, I finally started bringing those pieces into an actual desktop app.
 

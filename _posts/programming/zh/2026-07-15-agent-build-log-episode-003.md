@@ -5,14 +5,14 @@ date: 2026-07-15 20:42:40 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-003.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-003.jpg
 summary: "完成第一版 Browser UI，支援建立新對話、搜尋歷史與釘選；介面專注回答、搜尋與整理，Agent 執行將由其他介面負責。"
 description: "完成第一版 Browser UI，支援建立新對話、搜尋歷史與釘選；介面專注回答、搜尋與整理，Agent 執行將由其他介面負責。"
 ---
 
 今天完成了第一版 Browser UI。
 
-![Agent Build Log Episode 003：Browser UI 第一版](/assets/programming/agent-build-log/agent-build-log-episode-003.png)
+![Agent Build Log Episode 003：Browser UI 第一版](/assets/programming/agent-build-log/agent-build-log-episode-003.jpg)
 
 整體操作方式接近 ChatGPT，目前已具備：
 
@@ -20,7 +20,7 @@ description: "完成第一版 Browser UI，支援建立新對話、搜尋歷史�
 - 搜尋歷史對話
 - 釘選重要對話
 
-![Golem Browser UI 第一版實際畫面](/assets/programming/agent-build-log/agent-build-log-episode-003-browser-ui.png)
+![Golem Browser UI 第一版實際畫面](/assets/programming/agent-build-log/agent-build-log-episode-003-browser-ui.jpg)
 
 「專案」功能暫時不做，先把最核心的對話與搜尋體驗完成。
 

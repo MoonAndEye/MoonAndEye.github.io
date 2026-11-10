@@ -5,14 +5,14 @@ date: 2026-07-31 22:56:20 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-017.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-017.jpg
 summary: "開始實作以 SQLite 建立索引、Markdown 保存內容，並按日期與 session 組織的 Agent 記憶系統。"
 description: "開始實作以 SQLite 建立索引、Markdown 保存內容，並按日期與 session 組織的 Agent 記憶系統。"
 ---
 
 今天，我正式開始實作 Agent 的記憶系統。
 
-![Agent Build Log Episode 017：以 SQLite 和 Markdown 實作 Agent 記憶系統](/assets/programming/agent-build-log/agent-build-log-episode-017.png)
+![Agent Build Log Episode 017：以 SQLite 和 Markdown 實作 Agent 記憶系統](/assets/programming/agent-build-log/agent-build-log-episode-017.jpg)
 
 第一版不會先使用向量資料庫或複雜的 RAG 架構。
 

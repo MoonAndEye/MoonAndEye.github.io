@@ -43,7 +43,7 @@ I like Apple-related products and enjoy writing in Swift. Besides Swift, I also 
 
   <div class="marvin-builds-channel__summary">
     <a href="https://www.youtube.com/@MarvinBuildsAI" target="_blank" rel="noopener noreferrer" aria-label="Open Marvin Builds on YouTube" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">
-      <img class="marvin-builds-channel__avatar" src="/assets/about/marvin-builds-ai-avatar.png" alt="Marvin Builds channel avatar">
+      <img class="marvin-builds-channel__avatar" src="/assets/about/marvin-builds-ai-avatar.jpg" alt="Marvin Builds channel avatar">
     </a>
 
     <div>
@@ -61,11 +61,11 @@ I like Apple-related products and enjoy writing in Swift. Besides Swift, I also 
 
 Earnings Rosetta is a platform focused on U.S. stock market earnings calls. The site collects verbatim transcripts from earnings calls of U.S. companies and uses AI to automatically generate key summaries, enabling users to quickly grasp the latest updates and highlights from earnings calls and make more informed investment decisions.
 
-[![Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot](/assets/about/website-earnings-rosetta-calendar-view.png){: width="750" alt="Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot" }](https://earningsrosetta.com/en?utm_source=blog){:target="_blank"}
+[![Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot](/assets/about/website-earnings-rosetta-calendar-view.jpg){: width="750" alt="Earnings Rosetta Calendar View - Earnings Call Calendar Screenshot" }](https://earningsrosetta.com/en?utm_source=blog){:target="_blank"}
 
 #### [Earnings Rosetta iOS & Android Download Page](https://earningsrosetta.com/en/download?utm_source=blog){:target="_blank"}
 
-[![Earnings Rosetta DownloadView](/assets/about/earnings-rosetta-download.png){: width="750" alt="Earnings Rosetta DownloadView" }](https://earningsrosetta.com/en/download?utm_source=blog){:target="_blank"}
+[![Earnings Rosetta DownloadView](/assets/about/earnings-rosetta-download.jpg){: width="750" alt="Earnings Rosetta DownloadView" }](https://earningsrosetta.com/en/download?utm_source=blog){:target="_blank"}
 
 ### Jambhala website (Original domain retired)
 
@@ -107,4 +107,4 @@ An app written in tribute to the "Queen of Computer Programming" - **Grace Hoppe
 
 Built for checking Taiwan stock prices at work without others noticing. It keeps an input box in the top right toolbar of your Mac, where you can enter a stock code to get the current price.
 
-![Stock toolbar](/assets/about/screenshot_stockTools.png)
+![Stock toolbar](/assets/about/screenshot_stockTools.jpg)

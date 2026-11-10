@@ -5,14 +5,14 @@ date: 2026-08-04 22:55:30 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-021.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-021.jpg
 summary: "開始實作規格驗收 capability，串接 branch、build、模擬器操作、截圖、報告與頻道交付流程。"
 description: "開始實作規格驗收 capability，串接 branch、build、模擬器操作、截圖、報告與頻道交付流程。"
 ---
 
 今天，我開始實作 Agent 的第一個 capability：規格驗收。
 
-![Agent Build Log Episode 021：實作規格驗收的完整執行路徑](/assets/programming/agent-build-log/agent-build-log-episode-021.png)
+![Agent Build Log Episode 021：實作規格驗收的完整執行路徑](/assets/programming/agent-build-log/agent-build-log-episode-021.jpg)
 
 我說的規格驗收，不是執行 unit test 或 UI test，再把測試結果整理成報告。
 

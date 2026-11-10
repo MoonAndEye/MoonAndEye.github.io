@@ -5,14 +5,14 @@ date: 2026-08-02 23:00:52 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-019.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-019.jpg
 summary: "Pi Agent 不支援 ultra effort；Agent 將依 Pi 宣告的能力顯示並驗證 effort 選項。"
 description: "Pi Agent 不支援 ultra effort；Agent 將依 Pi 宣告的能力顯示並驗證 effort 選項。"
 ---
 
 今天，我發現 Pi Agent 的 effort 並不支援 ultra。
 
-![Agent Build Log Episode 019：依 Pi Agent 能力限制 effort 選項](/assets/programming/agent-build-log/agent-build-log-episode-019.png)
+![Agent Build Log Episode 019：依 Pi Agent 能力限制 effort 選項](/assets/programming/agent-build-log/agent-build-log-episode-019.jpg)
 
 目前可用的值是：
 

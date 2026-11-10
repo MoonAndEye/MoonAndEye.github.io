@@ -20,11 +20,11 @@ Color Picker 是我很喜歡的一個 SwiftUI 元件，這個元件如果是用 
 
 我們現在來讓測試專案: 逆走鐘的錶盤帶一點顏色
 
-![color picker](/assets/swift/color-picker/color_picker_1.png)
+![color picker](/assets/swift/color-picker/color_picker_1.jpg)
 
 ![color picker](/assets/swift/color-picker/color_picker_2.jpeg)
 
-![color picker](/assets/swift/color-picker/color_picker_3.png)
+![color picker](/assets/swift/color-picker/color_picker_3.jpg)
 
 
 ### 新增 ColorPickerContainerView
@@ -219,7 +219,7 @@ struct ClockContainerView: View {
 
 [https://apps.apple.com/backwards-clock/id1632935212](https://apps.apple.com/backwards-clock/id1632935212)
 
-![backward clock](/assets/swift/color-picker/color_picker_7.png)
+![backward clock](/assets/swift/color-picker/color_picker_7.jpg)
 
 ## 相關文件
 

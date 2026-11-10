@@ -5,14 +5,14 @@ date: 2026-08-23 00:31:28 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-035.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-035.jpg
 summary: "把 mobile acceptance 功能拆成選配外掛，讓 App 從 1.1 GB 降到約 300 MB。"
 description: "把 mobile acceptance 功能拆成選配外掛，讓 App 從 1.1 GB 降到約 300 MB。"
 ---
 
 開始準備 ship 的版本了。
 
-![Agent Build Log Episode 035：把驗收功能拆成選配外掛](/assets/programming/agent-build-log/agent-build-log-episode-035.png)
+![Agent Build Log Episode 035：把驗收功能拆成選配外掛](/assets/programming/agent-build-log/agent-build-log-episode-035.jpg)
 
 這次要認真決定，哪些功能應該一開始就包進 App，哪些功能應該拆成外掛，需要的時候再下載。
 

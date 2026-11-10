@@ -5,14 +5,14 @@ date: 2026-07-28 23:36:14 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-015.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-015.jpg
 summary: "排查正式打包 Desktop App 的 OAuth 問題：從 bundle、重複 pi-ai module、舊 process 到 credential lifecycle。"
 description: "排查正式打包 Desktop App 的 OAuth 問題：從 bundle、重複 pi-ai module、舊 process 到 credential lifecycle。"
 ---
 
 今天，我把 OAuth 打開之後，Desktop App 直接壞掉了。
 
-![Agent Build Log Episode 015：排查 Desktop App 的 OAuth 問題](/assets/programming/agent-build-log/agent-build-log-episode-015.png)
+![Agent Build Log Episode 015：排查 Desktop App 的 OAuth 問題](/assets/programming/agent-build-log/agent-build-log-episode-015.jpg)
 
 畫面上只顯示：
 

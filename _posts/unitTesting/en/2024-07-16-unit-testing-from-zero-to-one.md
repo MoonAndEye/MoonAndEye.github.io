@@ -35,12 +35,12 @@ Commonly passed around objects are usually DTOs related to JSON responses. Let's
 
 In the Project targets tab, click the + sign, select Unit Testing Bundle, and you can start having tests in your project.
 
-![add test bundle](/assets/unitTesting/from-zero-to-one/add_test_bundle.png)
+![add test bundle](/assets/unitTesting/from-zero-to-one/add_test_bundle.jpg)
 
 ### Default Test Template
 
 After adding the file, you will see two tests, along with setup and teardown.
-![Unit testing template](/assets/unitTesting/from-zero-to-one/unit_testing_template.png)
+![Unit testing template](/assets/unitTesting/from-zero-to-one/unit_testing_template.jpg)
 
 ### First Step, Add @testable Import
 
@@ -97,7 +97,7 @@ The first step is to test if this unit testing can alert you when there is an er
 ```
 
 ### At this point, you will receive a failed test result, which will tell you which model's value is incorrect.
-![first test, you got error](/assets/unitTesting/from-zero-to-one/first_fail_test.png)
+![first test, you got error](/assets/unitTesting/from-zero-to-one/first_fail_test.jpg)
 
 The second step is to set the fixed access token and refresh token as the equal values.
 ```swift

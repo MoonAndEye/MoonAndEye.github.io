@@ -5,14 +5,14 @@ date: 2026-07-26 00:18:18 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-012.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-012.jpg
 summary: "以 counterbalanced evals 比較 Terra 與 Luna：兩者正確率相同，但 Terra 稍快、tool calls 較少，也更常漏掉要求的 DKS protocol。"
 description: "以 counterbalanced evals 比較 Terra 與 Luna：兩者正確率相同，但 Terra 稍快、tool calls 較少，也更常漏掉要求的 DKS protocol。"
 ---
 
 今天我原本以為，自己找到了一個更有效率的預設模型。
 
-![Agent Build Log Episode 012：比較 Terra 與 Luna](/assets/programming/agent-build-log/agent-build-log-episode-012.png)
+![Agent Build Log Episode 012：比較 Terra 與 Luna](/assets/programming/agent-build-log/agent-build-log-episode-012.jpg)
 
 在相同的 evals 和相同 effort 下，Terra 的總耗時比 Luna 少，tool calls 也比較少。
 
@@ -34,7 +34,7 @@ description: "以 counterbalanced evals 比較 Terra 與 Luna：兩者正確率�
 
 執行順序的結果，也沒有證明第二個執行的模型會穩定得到 cache 帶來的加速。
 
-![Terra 與 Luna 的 counterbalanced confirmatory study 結果](/assets/programming/agent-build-log/agent-build-log-episode-012-luna-vs-terra.png)
+![Terra 與 Luna 的 counterbalanced confirmatory study 結果](/assets/programming/agent-build-log/agent-build-log-episode-012-luna-vs-terra.jpg)
 
 真正讓我重新思考的，是 DKS protocol 的資料。
 

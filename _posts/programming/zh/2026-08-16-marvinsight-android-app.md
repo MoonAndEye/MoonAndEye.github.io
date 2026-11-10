@@ -28,7 +28,7 @@ description: "我把個人網站做成 Android App，讓多年累積的技術筆
 
 所以我做了 Marv[in]sight Android App，讓網站多一個被找到和閱讀的入口。
 
-[![在 Marv[in]sight App 中閱讀網站文章](/assets/programming/marvinsight-android-app/posts-zh.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
+[![在 Marv[in]sight App 中閱讀網站文章](/assets/programming/marvinsight-android-app/posts-zh.jpg)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
 
 App 裡可以閱讀網站文章與 Agent Build Log，也可以查看 Marvin Builds 的影片。內容同步到手機後，在沒有網路的情況下仍然可以繼續閱讀。
 
@@ -42,7 +42,7 @@ Agent Build Log 是我現在很重視的一部分。
 
 這些內容不一定都是答案，但它們可以讓其他人看到，一個 Agent 從想法走到實作時，真正會經過哪些事情。
 
-[![在 Marv[in]sight App 中閱讀 Agent Build Log](/assets/programming/marvinsight-android-app/build-log-zh.png)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
+[![在 Marv[in]sight App 中閱讀 Agent Build Log](/assets/programming/marvinsight-android-app/build-log-zh.jpg)](https://play.google.com/store/apps/details?id=com.marvinswift.marvinsight){:target="_blank" rel="noopener noreferrer"}
 
 我希望這些紀錄不只對現在的我有用。也許之後有人在做類似的事情時，能從其中一次失敗、一個架構選擇，或一段測試結果裡，找到可以參考的東西。
 

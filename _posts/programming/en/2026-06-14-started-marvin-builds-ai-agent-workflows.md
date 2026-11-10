@@ -47,10 +47,10 @@ These are the kinds of episodes I want the channel to make easier to understand.
     <p><a href="https://youtu.be/CcRcaeP1mw8" target="_blank" rel="noopener">Watch the video</a></p>
   </article>
   <article style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px;">
-    <a href="https://youtu.be/WVxG1Ekkf_I" target="_blank" rel="noopener"><img src="/assets/programming/marvin-builds-ai-agent-workflows/codex-automations-baseball-research.png" alt="YouTube thumbnail for Codex Automations baseball research workflow" style="width: 100%;"></a>
+    <a href="https://youtu.be/WVxG1Ekkf_I" target="_blank" rel="noopener"><img src="/assets/programming/marvin-builds-ai-agent-workflows/codex-automations-baseball-research.jpg" alt="YouTube thumbnail for Codex Automations baseball research workflow" style="width: 100%;"></a>
     <h3 style="margin-top: 0.75em;">Codex Automations for Baseball Research</h3>
     <p>A recurring research workflow using baseball as the example: scan public sources, surface candidate signals, explain uncertainty, and leave the final call to human review.</p>
-    <img src="/assets/programming/marvin-builds-ai-agent-workflows/baseball-research-workflow-keyframes.png" alt="Key frames from the Codex Automations baseball research workflow" style="width: 100%;">
+    <img src="/assets/programming/marvin-builds-ai-agent-workflows/baseball-research-workflow-keyframes.jpg" alt="Key frames from the Codex Automations baseball research workflow" style="width: 100%;">
     <p><small>Key frame: the agent prepares context and questions; the human still makes the judgment.</small></p>
     <p><a href="https://youtu.be/WVxG1Ekkf_I" target="_blank" rel="noopener">Watch the video</a></p>
   </article>

@@ -18,8 +18,8 @@ permalink: /programming/:title:output_ext
 
 桌面 App 除了保有/同步 ChatGPT 的歷史紀錄，還可以直接在 App 內使用 GPTs
 
-![App 內可以使用 GPTs](/assets/programming/openai/gpts.png)
+![App 內可以使用 GPTs](/assets/programming/openai/gpts.jpg)
 
 這邊嘗試用 ChatGPT 4o 產生幾張圖
 
-![ChatGPT 4o 產生的圖](/assets/programming/openai/try-create-image.png)
+![ChatGPT 4o 產生的圖](/assets/programming/openai/try-create-image.jpg)

@@ -16,7 +16,7 @@ permalink: /swift/:title:output_ext
 
 ### 這個敏捷燕子飛行的下方，有個 platforms.append() 加的就是 vision pro
 
-[![Platform append vision pro](/assets/swift/wwdc23/platform_append.png)]((https://developer.apple.com/videos/play/wwdc2023/111488/))
+[![Platform append vision pro](/assets/swift/wwdc23/platform_append.jpg)]((https://developer.apple.com/videos/play/wwdc2023/111488/))
 
 ## 影片文字檔
 

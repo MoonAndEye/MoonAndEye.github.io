@@ -5,14 +5,14 @@ date: 2026-08-05 23:59:36 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-022.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-022.jpg
 summary: "把開發者完成一件事情的過程拆成清楚的小步驟，逐步建立 Agent capabilities。"
 description: "把開發者完成一件事情的過程拆成清楚的小步驟，逐步建立 Agent capabilities。"
 ---
 
 這是我今天學到的事情。
 
-![Agent Build Log Episode 022：把開發者工作拆成 Agent capabilities](/assets/programming/agent-build-log/agent-build-log-episode-022.png)
+![Agent Build Log Episode 022：把開發者工作拆成 Agent capabilities](/assets/programming/agent-build-log/agent-build-log-episode-022.jpg)
 
 如果把一個軟體開發者的日常工作拆開來看，要完成「一件事」，其實需要很多不同的小能力。
 

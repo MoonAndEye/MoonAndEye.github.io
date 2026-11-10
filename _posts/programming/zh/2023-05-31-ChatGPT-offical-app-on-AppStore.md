@@ -14,7 +14,7 @@ permalink: /programming/:title:output_ext
 
 [ChatGPT 官方 App](https://apps.apple.com/us/app/chatgpt/id6448311069)
 
-![ChatGPT App 頁面](/assets/programming/chatgpt/chatgpt.png)
+![ChatGPT App 頁面](/assets/programming/chatgpt/chatgpt.jpg)
 
 ## ChatGPT 下載連結
 

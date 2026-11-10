@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-023.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-023.jpg
 summary: "Adding Signature Abilities to the Agent GUI, starting with spec-diff for human-readable document change reports."
 description: "Adding Signature Abilities to the Agent GUI, starting with spec-diff for human-readable document change reports."
 ---
 
 Today, I added a new section to the Agent’s GUI.
 
-![Agent Build Log Episode 023: Signature Abilities and spec-diff in the Agent GUI](/assets/programming/agent-build-log/agent-build-log-episode-023.png)
+![Agent Build Log Episode 023: Signature Abilities and spec-diff in the Agent GUI](/assets/programming/agent-build-log/agent-build-log-episode-023.jpg)
 
 I call it “Signature Abilities.”
 

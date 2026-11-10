@@ -5,14 +5,14 @@ date: 2026-08-11 22:40:07 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-027.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-027.jpg
 summary: "打造 Acceptance，將 Jira ticket 轉換成 iOS 或 Android 的完整驗收流程與證據報告。"
 description: "打造 Acceptance，將 Jira ticket 轉換成 iOS 或 Android 的完整驗收流程與證據報告。"
 ---
 
 今天，我做了另一個 Agent 的「專有技」。
 
-![Agent Build Log Episode 027：Acceptance 將 Jira ticket 轉換成完整驗收報告](/assets/programming/agent-build-log/agent-build-log-episode-027.png)
+![Agent Build Log Episode 027：Acceptance 將 Jira ticket 轉換成完整驗收報告](/assets/programming/agent-build-log/agent-build-log-episode-027.jpg)
 
 這次是 Acceptance。
 

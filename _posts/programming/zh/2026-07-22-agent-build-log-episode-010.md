@@ -5,14 +5,14 @@ date: 2026-07-22 23:55:33 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-010.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-010.jpg
 summary: "規劃 Agent 記憶系統，在比較 Mem0、Letta、MemOS 與 Cognee 後，第一版選擇可在 Mac mini 本機運行的 LanceDB 與 Qwen3 Embedding 0.6B。"
 description: "規劃 Agent 記憶系統，在比較 Mem0、Letta、MemOS 與 Cognee 後，第一版選擇可在 Mac mini 本機運行的 LanceDB 與 Qwen3 Embedding 0.6B。"
 ---
 
 今天開始規劃 Agent 的記憶系統。
 
-![Agent Build Log Episode 010：使用 LanceDB 與 Qwen3 Embedding 0.6B 建立記憶系統](/assets/programming/agent-build-log/agent-build-log-episode-010.png)
+![Agent Build Log Episode 010：使用 LanceDB 與 Qwen3 Embedding 0.6B 建立記憶系統](/assets/programming/agent-build-log/agent-build-log-episode-010.jpg)
 
 在真的動手之前，我先找了一輪目前比較知名、GitHub 星星數也比較高的開源方案，想看看別人是怎麼處理記憶的保存、搜尋和召回。
 

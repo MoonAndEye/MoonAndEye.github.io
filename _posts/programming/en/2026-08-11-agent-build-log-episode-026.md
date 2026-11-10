@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-026.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-026.jpg
 summary: "Building Bug Blame to trace a Jira bug through related code, commits, and the developers most relevant to the investigation."
 description: "Building Bug Blame to trace a Jira bug through related code, commits, and the developers most relevant to the investigation."
 ---
 
 Today, I built another “Signature Ability” for the Agent.
 
-![Agent Build Log Episode 026: Bug Blame traces Jira bugs through code, commits, and developers](/assets/programming/agent-build-log/agent-build-log-episode-026.png)
+![Agent Build Log Episode 026: Bug Blame traces Jira bugs through code, commits, and developers](/assets/programming/agent-build-log/agent-build-log-episode-026.jpg)
 
 This one is called Bug Blame.
 

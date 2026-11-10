@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-036.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-036.jpg
 summary: "Preparing to use the open-source Pi GUI for text input, model selection, and LLM provider connections, leaving more time for my own Signature Abilities."
 description: "Preparing to use the open-source Pi GUI for text input, model selection, and LLM provider connections, leaving more time for my own Signature Abilities."
 ---
 
 Today, I started preparing to bring the open-source [Pi GUI](https://github.com/minghinmatthewlam/pi-gui) into my own Desktop App.
 
-![Agent Build Log Episode 036: using Pi GUI for desktop interactions and preparing to connect my own Signature Abilities](/assets/programming/agent-build-log/agent-build-log-episode-036.png)
+![Agent Build Log Episode 036: using Pi GUI for desktop interactions and preparing to connect my own Signature Abilities](/assets/programming/agent-build-log/agent-build-log-episode-036.jpg)
 
 Back in [Episode 029](/en/programming/agent-build-log-episode-029/), I explored Pi Agent’s extension ecosystem, including Pi GUI. That was when I started considering which features I could reuse from existing projects.
 

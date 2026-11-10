@@ -15,7 +15,7 @@ description: This article emphasizes the importance of incorporating unit testin
 > Software and cathedrals are much the same – first we build them, then we pray. - Sam Redwine
 > 
 
-![You need testing](/assets/unitTesting/add-test-target-on-xcode/you-need-testing.png)
+![You need testing](/assets/unitTesting/add-test-target-on-xcode/you-need-testing.jpg)
 
 ## Adding Testing to Your iOS Project - You Need Testing
 

@@ -5,14 +5,14 @@ date: 2026-07-27 23:18:02 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-014.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-014.jpg
 summary: "DKS 改用 GitLab API 與 Jira 查詢，不再為整個部門建立 Git repo mirror。"
 description: "DKS 改用 GitLab API 與 Jira 查詢，不再為整個部門建立 Git repo mirror。"
 ---
 
 今天，我改了 DKS（Developer Knowledge Service）MCP 的設計。
 
-![Agent Build Log Episode 014：DKS 改用 GitLab API 與 Jira](/assets/programming/agent-build-log/agent-build-log-episode-014.png)
+![Agent Build Log Episode 014：DKS 改用 GitLab API 與 Jira](/assets/programming/agent-build-log/agent-build-log-episode-014.jpg)
 
 一開始，我想把部門的 Git repo 全部 mirror 到 Mac mini。這樣 DKS MCP 就可以查 MR、commit、開發意圖，以及一個 feature 最後是怎麼被實作的。
 

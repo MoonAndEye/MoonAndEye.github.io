@@ -20,4 +20,4 @@ permalink: /swift/:title:output_ext
 ![重置評分](/assets/swift/items-can-be-edit-aft-submit-appStore/reset_rank.png)
 
 ### 更改階段性發佈
-![改階段性發佈](/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.png)
+![改階段性發佈](/assets/swift/items-can-be-edit-aft-submit-appStore/phased_release.jpg)

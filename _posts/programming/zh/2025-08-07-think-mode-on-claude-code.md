@@ -24,17 +24,17 @@ description: 本文將介紹如何在 macOS 上使用 plan mode 進行程式碼�
 ## think mode 的優點
 
 ### 先規劃再執行
-![think mode request prompt](/assets/programming/claude-code-think-mode/think-mode-request-prompt.png)
+![think mode request prompt](/assets/programming/claude-code-think-mode/think-mode-request-prompt.jpg)
 
 當你在 think mode 中向 Claude 提出請求時，Claude 會先分析和思考你的需求，然後提供一個詳細的計劃藍圖。
 
 ### 查看實作藍圖
-![plan mode blueprint](/assets/programming/claude-code-think-mode/plan-mode-blueprint.png)
+![plan mode blueprint](/assets/programming/claude-code-think-mode/plan-mode-blueprint.jpg)
 
 在 think mode 中，Claude 會展示完整的實作計劃，讓你可以在實際執行之前就了解整個實作流程。
 
 ### 確認後執行
-![action after planning](/assets/programming/claude-code-think-mode/action-after-planing.png)
+![action after planning](/assets/programming/claude-code-think-mode/action-after-planing.jpg)
 
 當你確認計劃後，Claude 會根據之前的規劃開始執行實際的程式碼修改。
 

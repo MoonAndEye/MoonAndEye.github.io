@@ -5,14 +5,14 @@ date: 2026-08-01 23:47:46 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-018.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-018.jpg
 summary: "Alpha 階段的目標使用者從開發者改為負責需求驗收的 PM 與 QA。"
 description: "Alpha 階段的目標使用者從開發者改為負責需求驗收的 PM 與 QA。"
 ---
 
 今天，我調整了 Agent 的目標使用者。
 
-![Agent Build Log Episode 018：將 Agent 的目標使用者調整為 PM 與 QA](/assets/programming/agent-build-log/agent-build-log-episode-018.png)
+![Agent Build Log Episode 018：將 Agent 的目標使用者調整為 PM 與 QA](/assets/programming/agent-build-log/agent-build-log-episode-018.jpg)
 
 一開始，我想把它做給 iOS 和 Android 開發者使用。
 

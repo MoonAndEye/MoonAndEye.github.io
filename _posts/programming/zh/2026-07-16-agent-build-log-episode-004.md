@@ -5,14 +5,14 @@ date: 2026-07-16 22:04:12 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-004.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-004.jpg
 summary: "Golem Desktop 開發第一天：以 Electron、React 與 Electron Vite 建立桌面介面，並將 Agent 執行隔離在 Electron Utility Process 中。"
 description: "Golem Desktop 開發第一天：以 Electron、React 與 Electron Vite 建立桌面介面，並將 Agent 執行隔離在 Electron Utility Process 中。"
 ---
 
 今天是 Golem Desktop 開發的第一天。
 
-![Agent Build Log Episode 004：Golem Desktop 開發第一天](/assets/programming/agent-build-log/agent-build-log-episode-004.png)
+![Agent Build Log Episode 004：Golem Desktop 開發第一天](/assets/programming/agent-build-log/agent-build-log-episode-004.jpg)
 
 前面幾個 Episode，一直都沒有碰 agent app，都是處理像是 DKS MCP、Pi Agent，以及模型和工具之間要怎麼串接。到了今天，終於開始把這些東西放進一個真正的桌面 App 裡。
 

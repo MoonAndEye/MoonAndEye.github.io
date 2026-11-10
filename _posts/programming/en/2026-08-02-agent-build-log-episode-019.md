@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-019.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-019.jpg
 summary: "Pi Agent does not support ultra effort, so the Agent will display and validate effort values based on Pi’s declared capabilities."
 description: "Pi Agent does not support ultra effort, so the Agent will display and validate effort values based on Pi’s declared capabilities."
 ---
 
 Today, I discovered that Pi Agent does not support the ultra effort level.
 
-![Agent Build Log Episode 019: limiting effort options to Pi Agent capabilities](/assets/programming/agent-build-log/agent-build-log-episode-019.png)
+![Agent Build Log Episode 019: limiting effort options to Pi Agent capabilities](/assets/programming/agent-build-log/agent-build-log-episode-019.jpg)
 
 The currently available values are:
 

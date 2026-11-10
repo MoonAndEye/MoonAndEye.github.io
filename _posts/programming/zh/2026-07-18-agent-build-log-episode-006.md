@@ -5,14 +5,14 @@ date: 2026-07-18 20:42:09 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-006.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-006.jpg
 summary: "開始整理 Agent 的 evals 題目庫，從既有 skills 與專案挑選真實的 iOS 與 mobile development 任務，建立可重複比較的基準線。"
 description: "開始整理 Agent 的 evals 題目庫，從既有 skills 與專案挑選真實的 iOS 與 mobile development 任務，建立可重複比較的基準線。"
 ---
 
 今天開始整理 Agent 的 evals 題目庫。
 
-![Agent Build Log Episode 006：開始整理 Agent evals 題目庫](/assets/programming/agent-build-log/agent-build-log-episode-006.png)
+![Agent Build Log Episode 006：開始整理 Agent evals 題目庫](/assets/programming/agent-build-log/agent-build-log-episode-006.jpg)
 
 我打算直接從自己過去累積的 skills，以及目前正在開發的專案中挑題目。第一階段會先以 iOS 和 mobile development 常見的工作為主，因為這些才是我真正希望 Agent 能處理好的事情。
 

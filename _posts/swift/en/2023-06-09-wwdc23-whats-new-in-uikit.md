@@ -20,7 +20,7 @@ At WWDC23, it was announced that UIViewController in UIKit can now utilize the P
 
 ### Preview in UIView
 
-![Preview in UIVC](/assets/swift/wwdc23/uikit_preview_uiview.png)
+![Preview in UIVC](/assets/swift/wwdc23/uikit_preview_uiview.jpg)
 
 ## Highlight 2: New Lifecycle Callback `viewIsAppearing(_:)` in UIViewController, Back-Deployed to iOS 13.0
 

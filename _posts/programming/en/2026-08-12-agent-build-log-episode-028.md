@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-028.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-028.jpg
 summary: "Using Appium to bridge the iOS web-login gap so the Agent can continue the full acceptance workflow."
 description: "Using Appium to bridge the iOS web-login gap so the Agent can continue the full acceptance workflow."
 ---
 
 Today, I continued working on the problem left over from the previous episode.
 
-![Agent Build Log Episode 028: Appium bridges the iOS web-login gap in the acceptance workflow](/assets/programming/agent-build-log/agent-build-log-episode-028.png)
+![Agent Build Log Episode 028: Appium bridges the iOS web-login gap in the acceptance workflow](/assets/programming/agent-build-log/agent-build-log-episode-028.jpg)
 
 There is still one troublesome gap in the iOS acceptance workflow.
 

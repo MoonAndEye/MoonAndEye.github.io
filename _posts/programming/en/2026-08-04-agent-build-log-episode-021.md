@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-021.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-021.jpg
 summary: "I started implementing specification acceptance testing across branch switching, builds, simulator operation, screenshots, reporting, and delivery."
 description: "I started implementing specification acceptance testing across branch switching, builds, simulator operation, screenshots, reporting, and delivery."
 ---
 
 Today, I started implementing the Agent’s first capability: specification acceptance testing.
 
-![Agent Build Log Episode 021: implementing the complete specification acceptance path](/assets/programming/agent-build-log/agent-build-log-episode-021.png)
+![Agent Build Log Episode 021: implementing the complete specification acceptance path](/assets/programming/agent-build-log/agent-build-log-episode-021.jpg)
 
 By specification acceptance testing, I do not mean running unit tests or UI tests and then turning the results into a report.
 

@@ -5,14 +5,14 @@ date: 2026-08-12 23:39:31 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-028.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-028.jpg
 summary: "使用 Appium 補上 iOS Web Login 的操作缺口，讓 Agent 能繼續完成整個驗收流程。"
 description: "使用 Appium 補上 iOS Web Login 的操作缺口，讓 Agent 能繼續完成整個驗收流程。"
 ---
 
 今天，繼續解決上一篇留下來的問題。
 
-![Agent Build Log Episode 028：Appium 補上 iOS 驗收流程的 Web Login 缺口](/assets/programming/agent-build-log/agent-build-log-episode-028.png)
+![Agent Build Log Episode 028：Appium 補上 iOS 驗收流程的 Web Login 缺口](/assets/programming/agent-build-log/agent-build-log-episode-028.jpg)
 
 iOS 的驗收目前有一個很麻煩的斷點。
 

@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-015.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-015.jpg
 summary: "I traced a packaged Desktop App OAuth failure through the Electron bundle, duplicate pi-ai modules, a stale process, and credential lifecycle handling."
 description: "I traced a packaged Desktop App OAuth failure through the Electron bundle, duplicate pi-ai modules, a stale process, and credential lifecycle handling."
 ---
 
 Today, I enabled OAuth, and the Desktop App immediately broke.
 
-![Agent Build Log Episode 015: tracing the Desktop App OAuth failure](/assets/programming/agent-build-log/agent-build-log-episode-015.png)
+![Agent Build Log Episode 015: tracing the Desktop App OAuth failure](/assets/programming/agent-build-log/agent-build-log-episode-015.jpg)
 
 The screen only showed:
 

@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-014.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-014.jpg
 summary: "DKS now uses the GitLab API and Jira for lookup, so it no longer needs a mirror of every department repository."
 description: "DKS now uses the GitLab API and Jira for lookup, so it no longer needs a mirror of every department repository."
 ---
 
 Today, I changed the design of the DKS (Developer Knowledge Service) MCP.
 
-![Agent Build Log Episode 014: DKS now uses the GitLab API and Jira](/assets/programming/agent-build-log/agent-build-log-episode-014.png)
+![Agent Build Log Episode 014: DKS now uses the GitLab API and Jira](/assets/programming/agent-build-log/agent-build-log-episode-014.jpg)
 
 At first, I planned to mirror every Git repo in my department to a Mac mini. That would let the DKS MCP look up MRs and commits, trace why a feature was built, and see how it was implemented.
 

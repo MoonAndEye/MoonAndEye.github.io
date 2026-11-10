@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-025.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-025.jpg
 summary: "Building Project Scaffold as a Signature Ability for quickly creating clean, testable iOS and Android projects."
 description: "Building Project Scaffold as a Signature Ability for quickly creating clean, testable iOS and Android projects."
 ---
 
 Today, I built another “Signature Ability” for the Agent.
 
-![Agent Build Log Episode 025: Project Scaffold for iOS and Android](/assets/programming/agent-build-log/agent-build-log-episode-025.png)
+![Agent Build Log Episode 025: Project Scaffold for iOS and Android](/assets/programming/agent-build-log/agent-build-log-episode-025.jpg)
 
 This time, it is Project Scaffold.
 

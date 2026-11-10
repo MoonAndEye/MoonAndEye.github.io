@@ -6,14 +6,14 @@ category: programming
 author: Marvin Lin
 tags: [agent]
 lang: en
-image: /assets/programming/agent-build-log/agent-build-log-episode-035.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-035.jpg
 summary: "I moved mobile acceptance features into optional plugins, reducing the App from 1.1 GB to around 300 MB."
 description: "I moved mobile acceptance features into optional plugins, reducing the App from 1.1 GB to around 300 MB."
 ---
 
 I’ve started preparing the version I actually want to ship.
 
-![Agent Build Log Episode 035: moving mobile acceptance features into optional plugins](/assets/programming/agent-build-log/agent-build-log-episode-035.png)
+![Agent Build Log Episode 035: moving mobile acceptance features into optional plugins](/assets/programming/agent-build-log/agent-build-log-episode-035.jpg)
 
 This time, I need to seriously decide which features should be bundled with the App from the start, and which ones should be split out as plugins and downloaded only when needed.
 

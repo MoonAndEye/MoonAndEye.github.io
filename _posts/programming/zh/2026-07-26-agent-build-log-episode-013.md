@@ -5,14 +5,14 @@ date: 2026-07-26 23:35:39 +0800
 category: programming
 author: Marvin Lin
 tags: [agent]
-image: /assets/programming/agent-build-log/agent-build-log-episode-013.png
+image: /assets/programming/agent-build-log/agent-build-log-episode-013.jpg
 summary: "以 medium 與 xhigh 比較 Sol、Terra、Luna：範圍明確的 DKS lookup 任務優先使用 Terra xhigh；嚴格流程完整性優先選 Sol。"
 description: "以 medium 與 xhigh 比較 Sol、Terra、Luna：範圍明確的 DKS lookup 任務優先使用 Terra xhigh；嚴格流程完整性優先選 Sol。"
 ---
 
 今天，我把 GPT-5.6 Sol 也加入了模型比較。
 
-![Agent Build Log Episode 013：比較 Sol、Terra 與 Luna 的模型 routing](/assets/programming/agent-build-log/agent-build-log-episode-013.png)
+![Agent Build Log Episode 013：比較 Sol、Terra 與 Luna 的模型 routing](/assets/programming/agent-build-log/agent-build-log-episode-013.jpg)
 
 之前我只測 Terra 和 Luna。
 

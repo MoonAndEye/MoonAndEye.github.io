@@ -13,23 +13,23 @@ Since 2025, I have been extensively using Cursor in my daily development work. H
 
 ## [Cursor IDE Download](https://www.cursor.com/)
 
-[![Cursor IDE Landing Page](/assets/programming/cursor-in-jira/cursor_landing.png)](https://www.cursor.com/)
+[![Cursor IDE Landing Page](/assets/programming/cursor-in-jira/cursor_landing.jpg)](https://www.cursor.com/)
 
 ## Expanding Model Selection in Cursor
 
 By default, model expansion includes Claude series and ChatGPT4o-mini, cursor-small, but Gemini 2.0 or ChatGPT o1 are not enabled by default. To use other models, you need to enable them in Cursor settings.
 
-![Cursor settings](/assets/programming/cursor-in-jira/cursor_setting_touch.png)
+![Cursor settings](/assets/programming/cursor-in-jira/cursor_setting_touch.jpg)
 
 Here you can choose different models by selecting the ones you want to use. Each model has its characteristics - for example, deepseek-v3 is very fast, while deepseek-r1 or claude-sonnet 3.7 with think have thinking capabilities.
 
-![Cursor models choose](/assets/programming/cursor-in-jira/cursor_models_choose.png)
+![Cursor models choose](/assets/programming/cursor-in-jira/cursor_models_choose.jpg)
 
 ## Right Sidebar - Start Using AI Assistance (cmd + shift + B)
 
 In this sidebar, you can write your questions, task requirements, or ask about architecture. For project management roles, you can certainly write GWT (Given-When-Then) Jira tickets.
 
-![Cursor right bar](/assets/programming/cursor-in-jira/cursor_right_bar.png)
+![Cursor right bar](/assets/programming/cursor-in-jira/cursor_right_bar.jpg)
 
 ## Left Sidebar - Folder Navigation, Search, Installed Plugins (cmd + B)
 
@@ -49,7 +49,7 @@ In this sidebar, you can write your questions, task requirements, or ask about a
 - One-click access to [Cursor Marketplace](https://www.cursor.com/marketplace)
 - Shortcut: Cmd + Shift + X to open extension management
 
-![Cursor left bar](/assets/programming/cursor-in-jira/cursor_left_bar.png)
+![Cursor left bar](/assets/programming/cursor-in-jira/cursor_left_bar.jpg)
 
 If you have too many installed plugins to display, they will be listed in a dropdown menu that you can expand
 
@@ -59,14 +59,14 @@ If you have too many installed plugins to display, they will be listed in a drop
 
 Working without switching windows naturally improves efficiency. In this marketplace, there's a Jira plugin available. First select marketplace, then search for Jira, and click install. You can then start editing/modifying Jira tickets directly in VSCode or Cursor.
 
-![Jira plug in](/assets/programming/cursor-in-jira/cursor_jira_plug_in.png)
+![Jira plug in](/assets/programming/cursor-in-jira/cursor_jira_plug_in.jpg)
 
 ## Create a Folder to Start Writing Jira Tickets or Any Documents
 Basic usage - use folders to manage your documents, regardless of their type. While git version control has a learning curve, non-developers can use fileName_yyyyMMdd_version for version control. This is because document writing differs from programming - documents might need multiple versions for comparison, while code only needs one version for release.
 
 First, create a folder
 
-![create folder image](/assets/programming/cursor-in-jira/create_demo_folder.png)
+![create folder image](/assets/programming/cursor-in-jira/create_demo_folder.jpg)
 
 Open Cursor and select that folder
 

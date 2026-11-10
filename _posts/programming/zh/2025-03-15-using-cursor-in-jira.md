@@ -12,23 +12,23 @@ summary:
 
 ## [Cursor IDE 下載](https://www.cursor.com/)
 
-[![Cursor IDE Landing Page](/assets/programming/cursor-in-jira/cursor_landing.png)](https://www.cursor.com/)
+[![Cursor IDE Landing Page](/assets/programming/cursor-in-jira/cursor_landing.jpg)](https://www.cursor.com/)
 
 ## Cursor Model 選擇的擴充
 
 Model 的擴充，預設是 claude 系和 ChatGPT4o-mini, cursor-small, 預設不會打開 Gemini 2.0 或 ChatGPT o1，所以要打開才能使用其他模型。在這邊選擇 cursor setting。
 
-![Cursor settings](/assets/programming/cursor-in-jira/cursor_setting_touch.png)
+![Cursor settings](/assets/programming/cursor-in-jira/cursor_setting_touch.jpg)
 
 這邊可以選擇在使用不同的 models，只要把想使用的 models 勾選起來，就可以選擇更多的 models。每一個 model 都有特性，像是 deepseek-v3 速度就很快，但選到 deepseek-r1 或 calude-sonnet 3.7 with think 就具備思考的特性。
 
-![Cursor models choose](/assets/programming/cursor-in-jira/cursor_models_choose.png)
+![Cursor models choose](/assets/programming/cursor-in-jira/cursor_models_choose.jpg)
 
 ## 右側欄 - 開始使用 AI 開始輔助 (cmd  + shift + B)
 
 你可以在右邊這一欄，寫上你想要問的，要求任務，問架構，所以在管理專案的職能上，當然可以寫出 GWT (Give - When - Then) 的 jira 單
 
-![Cursor right bar](/assets/programming/cursor-in-jira/cursor_right_bar.png)
+![Cursor right bar](/assets/programming/cursor-in-jira/cursor_right_bar.jpg)
 
 
 ## 左側欄 - folder navigation, search, 裝載的外掛 (cmd + B)
@@ -49,7 +49,7 @@ Model 的擴充，預設是 claude 系和 ChatGPT4o-mini, cursor-small, 預設�
 - 一鍵連結至 [Cursor Marketplace](https://www.cursor.com/marketplace)  
 - 快捷鍵: Cmd + Shift + X 開啟擴充管理
 
-![Cursor left bar](/assets/programming/cursor-in-jira/cursor_left_bar.png)
+![Cursor left bar](/assets/programming/cursor-in-jira/cursor_left_bar.jpg)
 
 其他你裝的外掛太多，無法顯示，都會列在後面，長度如果太長的話，要按一個下拉式選單，就可以展開
 
@@ -59,14 +59,14 @@ Model 的擴充，預設是 claude 系和 ChatGPT4o-mini, cursor-small, 預設�
 
 如果能不切換視窗，對工作者的效率當然是好的，在這個 marketplace 裡面，是有 Jira 的外掛套件的，先選擇 marketplace，然後打上 Jira 開始找 Jira 套件，然後選擇 install。就可以開始在 VSCode or Cursor 中開始 編輯/修改 Jira 的票了。
 
-![Jira plug in](/assets/programming/cursor-in-jira/cursor_jira_plug_in.png)
+![Jira plug in](/assets/programming/cursor-in-jira/cursor_jira_plug_in.jpg)
 
 ## 開一個 Folder 開始寫 Jira ticket 或是任何你要產生的文件
 基本用法 - 用 folder (資料夾) 來管理你的文件，不論那是什麼文件，git 版控有學習門檻，因為 git 有學習曲線高的狀況，非開發者實際上可以用 fileName_yyyyMMdd_version 來當版本控制也可以。因為在文案的撰寫和程式不一樣，文案可能要複數時間版本比較內容，但程式只需要發佈時，就出去一份
 
 先開一個資料夾
 
-![create folder image](/assets/programming/cursor-in-jira/create_demo_folder.png)
+![create folder image](/assets/programming/cursor-in-jira/create_demo_folder.jpg)
 
 打開 cursor ，選擇那個資料夾
 

@@ -15,7 +15,7 @@ classes: wide
 
 如果列表中的資料量很多，使用者很難一次找到目標，通常還會加上搜尋框等功能，進行 filter。像是 電話 app 中的聯絡人，如果你的聯絡人有 500 個，但要找的聯絡人是 Marvin，就可以透過搜尋來進行。
 
-![UITableView has two type data](/assets/swift/tableview-two-type-data/two-type-list.png)
+![UITableView has two type data](/assets/swift/tableview-two-type-data/two-type-list.jpg)
 
 ## 上述的 Table 都是一種類型的資料，如果 Table 要呈現兩種不同的資料時，可以怎麼做？
 
