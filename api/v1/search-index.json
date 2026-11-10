@@ -1,5 +1,21 @@
 [
  {
+  "slug": "why-i-built-lian-wu",
+  "lang": "en",
+  "title": "Why I built Lian Wu",
+  "category": "programming",
+  "tags": [
+   "Lian Wu",
+   "AI",
+   "AI Agent",
+   "Mac"
+  ],
+  "summary": "I switch between AIs all the time, but my conversations never came with me. So I built an agent app where they do.",
+  "url": "https://www.marvinswift.com/en/programming/why-i-built-lian-wu/",
+  "date": "2026-10-15T12:00:00+08:00",
+  "word_count": 228
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-30",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Design prototype：用 Claude Design 或 HTML 先做 mobile 畫面 - Tip 30",

@@ -1,6 +1,46 @@
 {
- "generated_at": "2026-11-02T01:23:47.177947+00:00",
+ "generated_at": "2026-11-10T00:04:00.424902+00:00",
  "videos": [
+  {
+   "id": "f7AhPYTHkRk",
+   "title": "How I actually use ChatGPT Images 2.6 (Part 2)",
+   "published": "2026-11-08",
+   "thumbnail": "https://i.ytimg.com/vi/f7AhPYTHkRk/hqdefault.jpg",
+   "description": "Lian Wu, the Mac app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nPart 2: how I actually use ChatGPT Images 2.6, in my own work.\nPart 1, where I tested what's new:    • I …",
+   "url": "https://youtu.be/f7AhPYTHkRk"
+  },
+  {
+   "id": "41HjLEeBkOU",
+   "title": "I tested ChatGPT Images 2.6: GIFs, saved references, SVG",
+   "published": "2026-11-07",
+   "thumbnail": "https://i.ytimg.com/vi/41HjLEeBkOU/hqdefault.jpg",
+   "description": "Lian Wu, the desktop app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nChatGPT can now make GIFs. I tested everything new in Images 2.6 on my own account. Here is what actu…",
+   "url": "https://youtu.be/41HjLEeBkOU"
+  },
+  {
+   "id": "iFSCPvhZoK8",
+   "title": "Next month's ad budget? Ask three AIs (Roundtable)",
+   "published": "2026-11-07",
+   "thumbnail": "https://i.ytimg.com/vi/iFSCPvhZoK8/hqdefault.jpg",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nNext month's ad budget? Ask three AIs. Open Roundtable from Guilds and choose Challenge a plan. Ask how to sell next month, and attach your ads, your plan and…",
+   "url": "https://youtu.be/iFSCPvhZoK8"
+  },
+  {
+   "id": "eVA-QwHEf6I",
+   "title": "Roundtable: three AIs argue your decision, then sum it up",
+   "published": "2026-11-06",
+   "thumbnail": "https://i.ytimg.com/vi/eVA-QwHEf6I/hqdefault.jpg",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nBig decision? Don't ask just one AI. Open Roundtable from Guilds and pick the kind of discussion: make a decision, brainstorm ideas, challenge a plan, or expl…",
+   "url": "https://youtu.be/eVA-QwHEf6I"
+  },
+  {
+   "id": "9l-g0mICsXQ",
+   "title": "Painter: describe once, draw four at a time, keep every picture on your Mac",
+   "published": "2026-11-05",
+   "thumbnail": "https://i.ytimg.com/vi/9l-g0mICsXQ/hqdefault.jpg",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nDescribe a picture once in Painter. Choose a shape, like square for Instagram, and how many to draw. It draws four at a time with the image model you already …",
+   "url": "https://youtu.be/9l-g0mICsXQ"
+  },
   {
    "id": "gVZYmYk5FtY",
    "title": "Claude hit its limit? Keep the same conversation in GPT (Mac app)",
@@ -59,6 +99,78 @@
   }
  ],
  "shorts": [
+  {
+   "id": "6hMx0csui-U",
+   "title": "Is a hot dog a sandwich? Three AIs debated it #Shorts",
+   "published": "2026-11-08T14:37:04+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/6hMx0csui-U/hqdefault.jpg",
+   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nA viewer on our Roundtable video asked us to settle it: is a hot dog a sandwich? So I put the question to three AIs in Roundtable, each on its own model, all …",
+   "url": "https://youtu.be/6hMx0csui-U"
+  },
+  {
+   "id": "X0y-JR90vs4",
+   "title": "ChatGPT can now make GIFs. I tested it #Shorts",
+   "published": "2026-11-08T08:49:35+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/X0y-JR90vs4/hqdefault.jpg",
+   "description": "Lian Wu, the desktop app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nChatGPT can now make GIFs. I tested Images 2.6 on my own account.\n\nGIFs: a story prompt gave nine fra…",
+   "url": "https://youtu.be/X0y-JR90vs4"
+  },
+  {
+   "id": "W4kVZ8KAPPo",
+   "title": "Big decision? Don't ask just one AI. Roundtable #Shorts",
+   "published": "2026-11-07T03:29:49+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/W4kVZ8KAPPo/hqdefault.jpg",
+   "description": "Big decision? Don't ask just one AI.\n\nRoundtable puts three AIs in one discussion, each on its own model. An advocate argues for it, a critic argues against it, and a synthesizer pulls it together.\n\nA…",
+   "url": "https://youtu.be/W4kVZ8KAPPo"
+  },
+  {
+   "id": "A3WUM2x0hvk",
+   "title": "From xiaolongbao to calligraphy, four at a time | Painter #Shorts",
+   "published": "2026-11-05T16:53:30+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/A3WUM2x0hvk/hqdefault.jpg",
+   "description": "從小籠包到書法，一次畫四張。\n\n想畫什麼，在畫家描述一次就好。用你已經有的圖像模型（ChatGPT 訂閱、OpenAI API 金鑰或 OpenRouter），一次畫四張。\n\n挑一張喜歡的當參考圖，再用同樣的畫風寫一幅書法：王之渙〈登鸛雀樓〉的「欲窮千里目，更上一層樓」。每張圖都收在你 Mac 上的同一個圖庫。\n\n畫家是 Lian Wu 裡的 Guild，Lian Wu 是我正在做的 Mac Ap…",
+   "url": "https://youtu.be/A3WUM2x0hvk"
+  },
+  {
+   "id": "8zz_RbceJPU",
+   "title": "From kimchi to taekwondo, four at a time | Painter #Shorts",
+   "published": "2026-11-05T16:52:50+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/8zz_RbceJPU/hqdefault.jpg",
+   "description": "김치 밥상부터 태권도까지, 한 번에 네 장.\n\n그리고 싶은 그림을 Painter에 한 번만 설명하세요. 지금 쓰는 이미지 모델(ChatGPT 요금제, OpenAI API 키, OpenRouter)로 한 번에 네 장을 그립니다.\n\n마음에 드는 한 장을 참고로 골라, 같은 그림체로 태권도 선수를 그렸어요. 그린 그림은 모두 내 Mac의 갤러리에 남습니다.\n\nP…",
+   "url": "https://youtu.be/8zz_RbceJPU"
+  },
+  {
+   "id": "dBGoPlADiBQ",
+   "title": "Sushi and Mount Fuji, four at a time | Painter #Shorts",
+   "published": "2026-11-05T16:52:09+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/dBGoPlADiBQ/hqdefault.jpg",
+   "description": "富士山とお寿司を、一度に4枚。\n\n描きたい画像を Painter に一度説明するだけ。いま使っている画像モデル（ChatGPT プラン、OpenAI の API キー、OpenRouter）で、一度に4枚描きます。\n\n気に入った一枚を参考にして、次は夕焼けの富士山と桜並木。描いた画像は、すべて Mac のギャラリーに残ります。\n\nPainter は、私が作っている Mac アプリ「Lian Wu」…",
+   "url": "https://youtu.be/dBGoPlADiBQ"
+  },
+  {
+   "id": "kfqbX8v8a98",
+   "title": "Need a picture for your next post? Painter #Shorts",
+   "published": "2026-11-05T15:30:01+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/kfqbX8v8a98/hqdefault.jpg",
+   "description": "OpenAI just shipped Images 2.6. Next video, I put it through Painter. First, here's how Painter works.\n\nDescribe a picture once in Painter. It draws four at a time with the image model you already hav…",
+   "url": "https://youtu.be/kfqbX8v8a98"
+  },
+  {
+   "id": "IndtUUSWliM",
+   "title": "Claude's 5-hour limit is gone. The weekly one isn't. #Shorts",
+   "published": "2026-11-02T16:55:14+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/IndtUUSWliM/hqdefault.jpg",
+   "description": "Claude just removed the 5-hour limit. Only on Ultra, for verified accounts.\n\nUltra is the new name for Max 20x. The weekly limit is still there, at ten times Pro's usage. Pro and Max still have the 5-…",
+   "url": "https://youtu.be/IndtUUSWliM"
+  },
+  {
+   "id": "R_J7Y-V32Q8",
+   "title": "ChatGPT and Codex will share one limit in December #Shorts",
+   "published": "2026-11-02T15:17:16+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/R_J7Y-V32Q8/hqdefault.jpg",
+   "description": "ChatGPT and Codex will share one usage limit, starting in December.\n\nOn Plus, Pro and Business, one allowance covers chat and Codex, counted in tokens. Stronger models and harder tasks usually use mor…",
+   "url": "https://youtu.be/R_J7Y-V32Q8"
+  },
   {
    "id": "P39SnUlSh68",
    "title": "Do you use more than one AI? #Shorts",

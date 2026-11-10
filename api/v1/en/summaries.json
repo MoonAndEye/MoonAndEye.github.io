@@ -1,5 +1,30 @@
 [
  {
+  "slug": "why-i-built-lian-wu",
+  "title": "Why I built Lian Wu",
+  "lang": "en",
+  "date": "2026-10-15T12:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "Lian Wu",
+   "AI",
+   "AI Agent",
+   "Mac"
+  ],
+  "summary": "I switch between AIs all the time, but my conversations never came with me. So I built an agent app where they do.",
+  "url": "https://www.marvinswift.com/en/programming/why-i-built-lian-wu/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/why-i-built-lian-wu/wax-apples.jpg",
+  "content_format": "markdown+html",
+  "inline_html_tags": [
+   "source",
+   "video"
+  ],
+  "has_insecure_images": false,
+  "word_count": 228,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/en/2026-10-15-why-i-built-lian-wu.md"
+ },
+ {
   "slug": "agent-build-log-episode-036",
   "title": "Agent Build Log — Episode 036",
   "lang": "en",
