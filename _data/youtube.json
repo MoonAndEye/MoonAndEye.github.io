@@ -1,6 +1,13 @@
 {
  "videos": [
   {
+   "id": "U2XJam5H3Lg",
+   "title": "Claude Fable 5.2 built an operating system. Here's what else is new",
+   "published": "2026-11-10",
+   "thumbnail": "https://i.ytimg.com/vi/U2XJam5H3Lg/hqdefault.jpg",
+   "description": "Claude Fable 5.2 is out. Here's what's new, from Anthropic's announcement of November 9, 2026.\n\nOne Anthropic engineer gave it an empty folder. Eight days and over 1,000 subagents later, it had an ope…"
+  },
+  {
    "id": "f7AhPYTHkRk",
    "title": "How I actually use ChatGPT Images 2.6 (Part 2)",
    "published": "2026-11-08",
@@ -87,6 +94,20 @@
  ],
  "shorts": [
   {
+   "id": "ObCN9It1nfg",
+   "title": "去冰、少冰要不要補滿？三個 AI 認真討論（配音版）｜Roundtable #Shorts",
+   "published": "2026-11-10T14:31:55+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/ObCN9It1nfg/hqdefault.jpg",
+   "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n這一版是我自己用中文配音。\n\n客人點冰飲選去冰或少冰，杯子會空出一截，店家要不要補滿？我在 Roundtable 讓三個 AI 討論了三輪，題目是咖啡店店長的兩個做法：\nA. 免費用飲料補滿。\nB. 預設不補，只給原配方的飲料量，但客人可以加價（例如 15 元）補滿。\n三個 AI 各用不同的模型，思考程度都設「低」。\n\n- …"
+  },
+  {
+   "id": "Vmt7JkrKWIY",
+   "title": "去冰、少冰要不要補滿？三個 AI 認真討論｜Roundtable #Shorts",
+   "published": "2026-11-10T05:01:36+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/Vmt7JkrKWIY/hqdefault.jpg",
+   "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n客人點冰飲選去冰或少冰，杯子會空出一截，店家要不要補滿？我在 Roundtable 讓三個 AI 討論了三輪，題目是咖啡店店長的兩個做法：\nA. 免費用飲料補滿。\nB. 預設不補，只給原配方的飲料量，但客人可以加價（例如 15 元）補滿。\n三個 AI 各用不同的模型，思考程度都設「低」。\n\n- Ella（GPT-6 Luna…"
+  },
+  {
    "id": "EIc2X4M8FGg",
    "title": "One saved picture, one word: how I use ChatGPT Images 2.6 #Shorts",
    "published": "2026-11-09T13:06:10+00:00",
@@ -95,14 +116,14 @@
   },
   {
    "id": "29NSs7xhYnM",
-   "title": "김밥에서 김을 빼도 김밥일까? AI 셋이 진지하게 토론｜Roundtable #Shorts",
+   "title": "Is gimbap without seaweed still gimbap? Three AIs debated it | Roundtable #Shorts",
    "published": "2026-11-09T12:31:55+00:00",
    "thumbnail": "https://i.ytimg.com/vi/29NSs7xhYnM/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n김밥에서 김을 빼도 김밥일까? 음식의 이름은 재료, 모양, 문화 중 무엇으로 정해질까요? Roundtable에서 AI 셋에게 3라운드 토론을 시켰습니다. 모델은 각각 다르고, 추론 수준은 모두 '낮음'.\n\n- Ella (GPT-6 Luna): 처음엔 '예'. 김이 빠져도 말아 만든 모양과 김…"
   },
   {
    "id": "u9CAGUGadP0",
-   "title": "カレーは飲み物か？AI 3体が本気で議論｜Roundtable #Shorts",
+   "title": "Is curry a drink? Three AIs debated it | Roundtable #Shorts",
    "published": "2026-11-09T09:12:10+00:00",
    "thumbnail": "https://i.ytimg.com/vi/u9CAGUGadP0/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\nカレーは飲み物か？ネットで長年続くこの論争を、Roundtable で AI 3体に3ラウンド議論させました。モデルはそれぞれ別、推論はすべて「低い」。\n\n- Ella（GPT-6 Luna）：いいえ。飲み込めることと、飲み物であることは別。\n- Grace（Gemini 3.5 Flash Lite）：ポタージュもスムージ…"
