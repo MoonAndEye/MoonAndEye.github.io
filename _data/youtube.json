@@ -1,6 +1,20 @@
 {
  "videos": [
   {
+   "id": "HV3eVHoWzDw",
+   "title": "Gemini 4 Carbon, explained: one prompt, a team of agents",
+   "published": "2026-11-11",
+   "thumbnail": "https://i.ytimg.com/vi/HV3eVHoWzDw/hqdefault.jpg",
+   "description": "One prompt, and a team of Gemini 4 Carbon agents turned historical photos and engineering plates into an interactive 3D exhibition of how the Eiffel Tower was built. Here's what Google made available …"
+  },
+  {
+   "id": "HzpYayj-8JY",
+   "title": "Claude Whiteboards, Sheets and Data, explained",
+   "published": "2026-11-11",
+   "thumbnail": "https://i.ytimg.com/vi/HzpYayj-8JY/hqdefault.jpg",
+   "description": "Talk through a messy plan out loud, and Claude turns it into a whiteboard your whole team can edit live. Here's what Anthropic launched on November 10, 2026: Claude Whiteboards, Claude Sheets, and Cla…"
+  },
+  {
    "id": "U2XJam5H3Lg",
    "title": "Claude Fable 5.2 built an operating system. Here's what else is new",
    "published": "2026-11-10",
@@ -94,6 +108,20 @@
  ],
  "shorts": [
   {
+   "id": "JAM3ToAoGhM",
+   "title": "One prompt, a team of agents: Gemini 4 Carbon #Shorts",
+   "published": "2026-11-11T16:08:21+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/JAM3ToAoGhM/hqdefault.jpg",
+   "description": "One prompt, and a team of Gemini 4 Carbon agents turned historical photos and engineering plates into an interactive 3D exhibition of how the Eiffel Tower was built.\n\n- /swarm in Google Antigravity (p…"
+  },
+  {
+   "id": "Fq5_8aXsh0U",
+   "title": "Talk it out, Claude draws the whiteboard #Shorts",
+   "published": "2026-11-11T12:03:54+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/Fq5_8aXsh0U/hqdefault.jpg",
+   "description": "Talk through a messy plan out loud, and Claude turns it into a whiteboard your whole team can edit live.\n\n- Claude Whiteboards (beta): dictate a brain dump; Claude groups the ideas, puts the steps in …"
+  },
+  {
    "id": "ObCN9It1nfg",
    "title": "去冰、少冰要不要補滿？三個 AI 認真討論（配音版）｜Roundtable #Shorts",
    "published": "2026-11-10T14:31:55+00:00",
@@ -102,7 +130,7 @@
   },
   {
    "id": "Vmt7JkrKWIY",
-   "title": "去冰、少冰要不要補滿？三個 AI 認真討論｜Roundtable #Shorts",
+   "title": "No ice or less ice: should the cafe fill the cup? Three AIs debated it | Roundtable #Shorts",
    "published": "2026-11-10T05:01:36+00:00",
    "thumbnail": "https://i.ytimg.com/vi/Vmt7JkrKWIY/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n客人點冰飲選去冰或少冰，杯子會空出一截，店家要不要補滿？我在 Roundtable 讓三個 AI 討論了三輪，題目是咖啡店店長的兩個做法：\nA. 免費用飲料補滿。\nB. 預設不補，只給原配方的飲料量，但客人可以加價（例如 15 元）補滿。\n三個 AI 各用不同的模型，思考程度都設「低」。\n\n- Ella（GPT-6 Luna…"
