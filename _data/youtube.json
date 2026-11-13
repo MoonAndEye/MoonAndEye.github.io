@@ -1,6 +1,20 @@
 {
  "videos": [
   {
+   "id": "A-Ppm9GSUlI",
+   "title": "Grok Bot 1.0: From Chatbot to AI Teammate",
+   "published": "2026-11-12",
+   "thumbnail": "https://i.ytimg.com/vi/A-Ppm9GSUlI/hqdefault.jpg",
+   "description": "Grok Bot 1.0 is here, and the interesting part is not just another chat window. xAI pitches it as an AI teammate you can share with your team, bring into meetings, and give real work. This is a news b…"
+  },
+  {
+   "id": "TOHgiuxBQGI",
+   "title": "Anthropic's IPO, explained: what the S-1 actually says",
+   "published": "2026-11-12",
+   "thumbnail": "https://i.ytimg.com/vi/TOHgiuxBQGI/hqdefault.jpg",
+   "description": "Anthropic filed to go public: $70 to $78 a share, on the Nasdaq, under the ticker ANT. Here is what its own S-1/A (filed with the SEC on November 10, 2026), its IPO fact sheet and its roadshow video s…"
+  },
+  {
    "id": "HV3eVHoWzDw",
    "title": "Gemini 4 Carbon, explained: one prompt, a team of agents",
    "published": "2026-11-11",
@@ -108,6 +122,27 @@
  ],
  "shorts": [
   {
+   "id": "oLSIBvpj718",
+   "title": "Jensen Huang resigns as NVIDIA CEO: what the release says #Shorts",
+   "published": "2026-11-12T15:56:27+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/oLSIBvpj718/hqdefault.jpg",
+   "description": "Jensen Huang has resigned as NVIDIA's President, CEO and a member of the Board, effective immediately. The facts from NVIDIA's own press release (Nov 12, 2026):\n\n- Colette Kress, NVIDIA's CFO since 20…"
+  },
+  {
+   "id": "hPGd1YUmgqg",
+   "title": "Anthropic's IPO in 60 seconds #Shorts",
+   "published": "2026-11-12T14:44:17+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/hPGd1YUmgqg/hqdefault.jpg",
+   "description": "Anthropic filed to go public: $70 to $78 a share, on the Nasdaq, under the ticker ANT. What its own S-1/A says, in under a minute.\n\n- At the $74 midpoint, the offering is about $61 billion. For scale:…"
+  },
+  {
+   "id": "MeBPrHX73b0",
+   "title": "Grok Bot 1.0: an AI teammate, not a chat window #Shorts",
+   "published": "2026-11-12T14:36:43+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/MeBPrHX73b0/hqdefault.jpg",
+   "description": "Grok Bot 1.0 is xAI's move from chatbot to AI teammate: a bot your whole team shares, that joins your meetings and does real work.\n\n- Team Bots: several people work with the same bot instead of making…"
+  },
+  {
    "id": "JAM3ToAoGhM",
    "title": "One prompt, a team of agents: Gemini 4 Carbon #Shorts",
    "published": "2026-11-11T16:08:21+00:00",
@@ -123,7 +158,7 @@
   },
   {
    "id": "ObCN9It1nfg",
-   "title": "去冰、少冰要不要補滿？三個 AI 認真討論（配音版）｜Roundtable #Shorts",
+   "title": "No ice: should the cafe fill the cup? Three AIs debated it (narrated) | Roundtable #Shorts",
    "published": "2026-11-10T14:31:55+00:00",
    "thumbnail": "https://i.ytimg.com/vi/ObCN9It1nfg/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n這一版是我自己用中文配音。\n\n客人點冰飲選去冰或少冰，杯子會空出一截，店家要不要補滿？我在 Roundtable 讓三個 AI 討論了三輪，題目是咖啡店店長的兩個做法：\nA. 免費用飲料補滿。\nB. 預設不補，只給原配方的飲料量，但客人可以加價（例如 15 元）補滿。\n三個 AI 各用不同的模型，思考程度都設「低」。\n\n- …"
