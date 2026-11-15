@@ -1,6 +1,20 @@
 {
  "videos": [
   {
+   "id": "R3UFmDK8Gdw",
+   "title": "Anthropic IPO 完整解析：申報文件到底寫了什麼",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/R3UFmDK8Gdw/hqdefault.jpg",
+   "description": "Anthropic 申請上市了：每股 70 到 78 美元，在 Nasdaq 掛牌，股票代號 ANT。這集我直接用它 2026 年 11 月 10 日送給美國證管會 SEC 的申報文件（S-1/A）、官方 IPO 簡報和路演影片來看這次 IPO。來自新聞報導的內容，片中都會標明是報導。這是我用中文自己配音的版本。\n\n發行條件：825,000,000 股 Class A 普通股，其中約 8 億 10…"
+  },
+  {
+   "id": "0KiwE7E0a1s",
+   "title": "Gemini 4 Hydrogen, explained: the big model plans, the fast one does the work",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/0KiwE7E0a1s/hqdefault.jpg",
+   "description": "Google just paired two AI models: a big one that plans, and a fast one that does the work. Google announced Gemini 4 Hydrogen on November 12, 2026, together with a new option in Google Antigravity cal…"
+  },
+  {
    "id": "q5QtriJ6Bik",
    "title": "Claude Meetings, explained: Claude joins your call and builds while you talk",
    "published": "2026-11-13",
@@ -128,6 +142,41 @@
   }
  ],
  "shorts": [
+  {
+   "id": "-z8uaPCvKqM",
+   "title": "Gemini 4 Hydrogen: the big model plans, the fast one does the work #Shorts",
+   "published": "2026-11-14T17:31:52+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/-z8uaPCvKqM/hqdefault.jpg",
+   "description": "Google paired two AI models: a big one that plans, and a fast one that does the work. This is Orchestrator in Google Antigravity, with Gemini 4 Carbon and the new Gemini 4 Hydrogen, in under a minute.…"
+  },
+  {
+   "id": "qqAoyf-NsAc",
+   "title": "ChatGPT Wallet: how an AI agent pays without your card number #Shorts",
+   "published": "2026-11-14T17:31:22+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/qqAoyf-NsAc/hqdefault.jpg",
+   "description": "An AI agent paid $66.30, and it never got the real card number. This is OpenAI's ChatGPT Wallet, launched on November 13, 2026, in under a minute. From OpenAI's announcement and its own demo video; no…"
+  },
+  {
+   "id": "Yqba7A8_8Vo",
+   "title": "Anthropic 申請上市：一分鐘看申報文件的重點 #Shorts",
+   "published": "2026-11-14T17:14:47+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/Yqba7A8_8Vo/hqdefault.jpg",
+   "description": "Anthropic 申請上市了：每股 70 到 78 美元，在 Nasdaq 掛牌，股票代號 ANT。以下都來自它 2026 年 11 月 10 日送給美國證管會 SEC 的申報文件（S-1/A）和官方 IPO 簡報。這是我用中文自己配音的版本。\n\n- 用中間價 74 美元算，這次募資約 610 億美元。沙烏地阿美 2019 年募了 256 億美元；SpaceX 2026 年 6 月募了 750 …"
+  },
+  {
+   "id": "hr0_FoBpWI0",
+   "title": "Your AI agent writes outdated web code. Chrome has a fix. #Shorts",
+   "published": "2026-11-14T16:52:11+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/hr0_FoBpWI0/hqdefault.jpg",
+   "description": "Your AI coding agent is writing outdated web code, and Google Chrome has a fix: Modern Web Guidance. Everything here comes from the project's README, as read on November 15, 2026. This is a breakdown …"
+  },
+  {
+   "id": "PzGQn67dzOI",
+   "title": "Why one Microsoft glitch took down Outlook, Teams and Copilot #Shorts",
+   "published": "2026-11-14T08:02:45+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/PzGQn67dzOI/hqdefault.jpg",
+   "description": "One Microsoft problem took down Outlook, Teams and Copilot, and even the Microsoft 365 connectors in ChatGPT and Claude. Downdetector got outage reports from 74 countries and territories.\n\nWhat Micros…"
+  },
   {
    "id": "__QuaA-d5bg",
    "title": "黃仁勳辭去 NVIDIA 執行長：新聞稿說了什麼 #Shorts",
