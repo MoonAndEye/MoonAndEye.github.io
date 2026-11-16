@@ -1,6 +1,34 @@
 {
  "videos": [
   {
+   "id": "QSqX6ENd7Qs",
+   "title": "The US grounded every flight for 4 hours. Officials blame one router.",
+   "published": "2026-11-15",
+   "thumbnail": "https://i.ytimg.com/vi/QSqX6ENd7Qs/hqdefault.jpg",
+   "description": "On Friday, November 13, the FAA stopped every flight in the United States from taking off. The stop lasted four hours and twenty-five minutes. The next day, officials said it started with one router a…"
+  },
+  {
+   "id": "hs1BXLCmUzs",
+   "title": "Should a café deliver? Three AIs debate it, then Lian Wu draws the ordering page",
+   "published": "2026-11-15",
+   "thumbnail": "https://i.ytimg.com/vi/hs1BXLCmUzs/hqdefault.jpg",
+   "description": "Three AIs debated delivery. Then Lian Wu drew the café's ordering page. By the end: a decision, a page brief and a drawn prototype.\n\nThe steps as text, with every request: https://lianwu.app/use-cases…"
+  },
+  {
+   "id": "ef9sFhogRYo",
+   "title": "SpaceX caught a Starship from orbit. Here is the whole flight.",
+   "published": "2026-11-15",
+   "thumbnail": "https://i.ytimg.com/vi/ef9sFhogRYo/hqdefault.jpg",
+   "description": "For the first time, a launch tower caught a spaceship coming back from orbit. On Starship's 15th flight, Ship 42 circled the Earth 14 times and was caught by the tower it launched from, 22 hours and 3…"
+  },
+  {
+   "id": "IST0gu54XBE",
+   "title": "One drawing for a café's post, window screen, sign and menu",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/IST0gu54XBE/hqdefault.jpg",
+   "description": "One drawing became Lian Wu Café's post, screens and menu card. It started with one sentence about this week's drink.\n\nThe steps as text, with every picture: https://lianwu.app/use-cases/one-draw...\n\nL…"
+  },
+  {
    "id": "R3UFmDK8Gdw",
    "title": "Anthropic IPO 完整解析：申報文件到底寫了什麼",
    "published": "2026-11-14",
@@ -13,6 +41,13 @@
    "published": "2026-11-14",
    "thumbnail": "https://i.ytimg.com/vi/0KiwE7E0a1s/hqdefault.jpg",
    "description": "Google just paired two AI models: a big one that plans, and a fast one that does the work. Google announced Gemini 4 Hydrogen on November 12, 2026, together with a new option in Google Antigravity cal…"
+  },
+  {
+   "id": "rZ-rkJ7nc38",
+   "title": "ChatGPT Wallet, explained: how an AI agent pays without your card number",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/rZ-rkJ7nc38/hqdefault.jpg",
+   "description": "ChatGPT Wallet lets an AI agent pay for you, and the agent never gets your real card number. OpenAI launched it on November 13, 2026. This is a news breakdown from OpenAI's announcement, its Help Cent…"
   },
   {
    "id": "q5QtriJ6Bik",
@@ -142,6 +177,20 @@
   }
  ],
  "shorts": [
+  {
+   "id": "eOZ7KhfMzjw",
+   "title": "Should a café deliver? Three AIs debate it, then Lian Wu draws the ordering page #Shorts",
+   "published": "2026-11-15T22:57:21+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/eOZ7KhfMzjw/hqdefault.jpg",
+   "description": "The full film, with chapters and captions: https://youtu.be/hs1BXLCmUzs\n\nThree AIs debated delivery. Then Lian Wu drew the café's ordering page. By the end: a decision, a page brief and a drawn protot…"
+  },
+  {
+   "id": "OSb9hh_q4Ic",
+   "title": "SpaceX caught a Starship from orbit. The booster was lost. #Shorts",
+   "published": "2026-11-15T15:42:50+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/OSb9hh_q4Ic/hqdefault.jpg",
+   "description": "A launch tower caught a spaceship coming back from orbit, for the first time. This is Starship Flight 15 in under three minutes, from SpaceX's own mission page, webcast and footage.\n\n- The score: Ship…"
+  },
   {
    "id": "-z8uaPCvKqM",
    "title": "Gemini 4 Hydrogen: the big model plans, the fast one does the work #Shorts",
