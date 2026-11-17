@@ -1,5 +1,27 @@
 [
  {
+  "slug": "lianwu-two-qr-codes-with-app-icon",
+  "title": "One link, two QR codes with my app icon, made in Lian Wu",
+  "lang": "en",
+  "date": "2026-11-18T00:40:00+08:00",
+  "category": "programming",
+  "tags": [
+   "Lian Wu",
+   "QR Code",
+   "AI",
+   "Mac"
+  ],
+  "summary": "One link, two QR codes with the app icon in the middle, each styled for where it is seen. Then Painter puts each in a scene, and I read both pictures back before using them.",
+  "url": "https://www.marvinswift.com/en/programming/lianwu-two-qr-codes-with-app-icon/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 447,
+  "reading_minutes": 2,
+  "source_path": "_posts/programming/en/2026-11-18-lianwu-two-qr-codes-with-app-icon.md"
+ },
+ {
   "slug": "x-algorithm-november-2026",
   "title": "I Read X's Algorithm Code. Here's What Changed in November.",
   "lang": "en",

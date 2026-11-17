@@ -1,5 +1,27 @@
 [
  {
+  "slug": "lianwu-two-qr-codes-with-app-icon",
+  "title": "一個連結、兩個 QR Code，中間放 app icon：我用 Lian Wu 做的",
+  "lang": "zh",
+  "date": "2026-11-18T00:40:00+08:00",
+  "category": "programming",
+  "tags": [
+   "Lian Wu",
+   "QR Code",
+   "AI",
+   "Mac"
+  ],
+  "summary": "同一個連結做成兩個 QR Code，中間都放 app icon，各自配合會被看到的地方。再交給 Painter 放進場景，用之前兩張圖都讀回來確認。",
+  "url": "https://www.marvinswift.com/zh/programming/lianwu-two-qr-codes-with-app-icon/",
+  "hero_image": null,
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 702,
+  "reading_minutes": 3,
+  "source_path": "_posts/programming/zh/2026-11-18-lianwu-two-qr-codes-with-app-icon.md"
+ },
+ {
   "slug": "x-algorithm-november-2026",
   "title": "我讀了 X 的推薦演算法原始碼：11 月改了什麼，小帳號該怎麼做",
   "lang": "zh",
