@@ -110,11 +110,11 @@ Author diversity is on. In [`xai-value-model/scoring.rs`](https://github.com/xai
 
 ## What this means for small creators
 
-**1. Make your first 2 hours count.** Cold start only looks at original posts under 2 hours old with under 200 home impressions, and picks by like rate. Post when your audience is awake, and write something people will like *right away*.
+<span style="color: red;">**1. Make your first 2 hours count.**</span> Cold start only looks at original posts under 2 hours old with under 200 home impressions, and picks by like rate. Post when your audience is awake, and write something people will like *right away*.
 
-**2. Optimize for like rate, not just likes.** The cold-start pick uses likes divided by impressions. A tight post that a few people love beats a broad post that many people scroll past.
+<span style="color: red;">**2. Optimize for like rate, not just likes.**</span> The cold-start pick uses likes divided by impressions. A tight post that a few people love beats a broad post that many people scroll past.
 
-**3. Make people stay.** Continuous dwell got the biggest relative bump (+25%), and likes went up too. A clear first line, a useful screenshot, a short list: anything that earns a few more seconds.
+<span style="color: red;">**3. Make people stay.**</span> Continuous dwell got the biggest relative bump (+25%), and likes went up too. A clear first line, a useful screenshot, a short list: anything that earns a few more seconds.
 
 **4. Ask for replies, then answer them.** A reply is worth 5, and a reply from a mutual follower adds 15 more. Replying to the people who reply to you builds mutuals, and mutuals' replies are the biggest positive signal left.
 
@@ -137,3 +137,11 @@ X rewards posts people like quickly, stay on, reply to and follow from. It quiet
 I'll keep reading the commits as they land. If something big changes, I'll write it up.
 
 *Based on the open-sourced code in [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) as of commit a284320 (November 17, 2026). Weights are published defaults and may differ from what runs in production.*
+
+## Follow along on X
+
+I share what I learn building AI tools, and every time X's algorithm changes, I break it down on X first. Follow me at [@atimisMoon](https://x.com/atimisMoon) so you don't miss the next update.
+
+[![Profile card for MarvinSwift (@atimisMoon) on X](/assets/programming/x-algorithm-november-2026/atimismoon-x-profile-card.svg)](https://x.com/atimisMoon){:target="_blank" rel="noopener noreferrer"}
+
+*Profile card built from X's public profile data on November 17, 2026. It's not a screenshot of x.com.*
