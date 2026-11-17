@@ -9,7 +9,7 @@ summary: "我讀了 X 開源的推薦演算法：11 月按讚和停留時間權�
 description: "我讀了 X 開源的推薦演算法：11 月按讚和停留時間權重調高、複製連結歸零，小帳號還有 2 小時的冷啟動機會。"
 ---
 
-我花了一週讀 X 開源的推薦演算法程式碼，也就是 [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) 這個 repo，幫你整理重點。
+我讀了 X 開源的推薦演算法程式碼，也就是 [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) 這個 repo，幫你整理重點。
 
 以下內容都來自 2026 年 11 月 17 日的 commit [a284320](https://github.com/xai-org/x-algorithm/commit/a284320b66a9dce35e6f5d6b052ee308eeb12326)。X 在 11 月推了 11 次更新，跟 10 月最後一版相比改了 403 個檔案。大部分是底層調整，但有幾行對想成長的小帳號影響很大。
 

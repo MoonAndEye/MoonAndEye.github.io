@@ -10,7 +10,7 @@ summary: "I read X's open-source recommendation code. In November, likes and dwe
 description: "I read X's open-source recommendation code. In November, likes and dwell time went up, copy-link shares went to zero, and small accounts still get a 2-hour cold-start window."
 ---
 
-I spent the last week reading X's open-source recommendation code, the [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) repo, so you don't have to.
+I went through X's open-source recommendation code, the [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) repo, so you don't have to.
 
 Everything below comes from the code as of commit [a284320](https://github.com/xai-org/x-algorithm/commit/a284320b66a9dce35e6f5d6b052ee308eeb12326) (November 17, 2026). X pushed 11 updates in November, and 403 files changed since the last October snapshot. Most of that is plumbing. A few lines matter a lot if you're a small account trying to grow.
 
