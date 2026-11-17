@@ -1,6 +1,110 @@
 {
- "generated_at": "2026-11-10T04:18:03.156730+00:00",
+ "generated_at": "2026-11-17T08:40:43.829234+00:00",
  "videos": [
+  {
+   "id": "QSqX6ENd7Qs",
+   "title": "The US grounded every flight for 4 hours. Officials blame one router.",
+   "published": "2026-11-15",
+   "thumbnail": "https://i.ytimg.com/vi/QSqX6ENd7Qs/hqdefault.jpg",
+   "description": "On Friday, November 13, the FAA stopped every flight in the United States from taking off. The stop lasted four hours and twenty-five minutes. The next day, officials said it started with one router a…",
+   "url": "https://youtu.be/QSqX6ENd7Qs"
+  },
+  {
+   "id": "hs1BXLCmUzs",
+   "title": "Should a café deliver? Three AIs debate it, then Lian Wu draws the ordering page",
+   "published": "2026-11-15",
+   "thumbnail": "https://i.ytimg.com/vi/hs1BXLCmUzs/hqdefault.jpg",
+   "description": "Three AIs debated delivery. Then Lian Wu drew the café's ordering page. By the end: a decision, a page brief and a drawn prototype.\n\nThe steps as text, with every request: https://lianwu.app/use-cases…",
+   "url": "https://youtu.be/hs1BXLCmUzs"
+  },
+  {
+   "id": "ef9sFhogRYo",
+   "title": "SpaceX caught a Starship from orbit. Here is the whole flight.",
+   "published": "2026-11-15",
+   "thumbnail": "https://i.ytimg.com/vi/ef9sFhogRYo/hqdefault.jpg",
+   "description": "For the first time, a launch tower caught a spaceship coming back from orbit. On Starship's 15th flight, Ship 42 circled the Earth 14 times and was caught by the tower it launched from, 22 hours and 3…",
+   "url": "https://youtu.be/ef9sFhogRYo"
+  },
+  {
+   "id": "IST0gu54XBE",
+   "title": "One drawing for a café's post, window screen, sign and menu",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/IST0gu54XBE/hqdefault.jpg",
+   "description": "One drawing became Lian Wu Café's post, screens and menu card. It started with one sentence about this week's drink.\n\nThe steps as text, with every picture: https://lianwu.app/use-cases/one-draw...\n\nL…",
+   "url": "https://youtu.be/IST0gu54XBE"
+  },
+  {
+   "id": "R3UFmDK8Gdw",
+   "title": "Anthropic IPO 完整解析：申報文件到底寫了什麼",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/R3UFmDK8Gdw/hqdefault.jpg",
+   "description": "Anthropic 申請上市了：每股 70 到 78 美元，在 Nasdaq 掛牌，股票代號 ANT。這集我直接用它 2026 年 11 月 10 日送給美國證管會 SEC 的申報文件（S-1/A）、官方 IPO 簡報和路演影片來看這次 IPO。來自新聞報導的內容，片中都會標明是報導。這是我用中文自己配音的版本。\n\n發行條件：825,000,000 股 Class A 普通股，其中約 8 億 10…",
+   "url": "https://youtu.be/R3UFmDK8Gdw"
+  },
+  {
+   "id": "0KiwE7E0a1s",
+   "title": "Gemini 4 Hydrogen, explained: the big model plans, the fast one does the work",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/0KiwE7E0a1s/hqdefault.jpg",
+   "description": "Google just paired two AI models: a big one that plans, and a fast one that does the work. Google announced Gemini 4 Hydrogen on November 12, 2026, together with a new option in Google Antigravity cal…",
+   "url": "https://youtu.be/0KiwE7E0a1s"
+  },
+  {
+   "id": "rZ-rkJ7nc38",
+   "title": "ChatGPT Wallet, explained: how an AI agent pays without your card number",
+   "published": "2026-11-14",
+   "thumbnail": "https://i.ytimg.com/vi/rZ-rkJ7nc38/hqdefault.jpg",
+   "description": "ChatGPT Wallet lets an AI agent pay for you, and the agent never gets your real card number. OpenAI launched it on November 13, 2026. This is a news breakdown from OpenAI's announcement, its Help Cent…",
+   "url": "https://youtu.be/rZ-rkJ7nc38"
+  },
+  {
+   "id": "q5QtriJ6Bik",
+   "title": "Claude Meetings, explained: Claude joins your call and builds while you talk",
+   "published": "2026-11-13",
+   "thumbnail": "https://i.ytimg.com/vi/q5QtriJ6Bik/hqdefault.jpg",
+   "description": "Claude can now join your video calls. You ask it out loud, and it builds the document or the whiteboard while your team is still talking. Anthropic announced Claude Meetings on November 12, 2026, and …",
+   "url": "https://youtu.be/q5QtriJ6Bik"
+  },
+  {
+   "id": "A-Ppm9GSUlI",
+   "title": "Grok Bot 1.0: From Chatbot to AI Teammate",
+   "published": "2026-11-12",
+   "thumbnail": "https://i.ytimg.com/vi/A-Ppm9GSUlI/hqdefault.jpg",
+   "description": "Grok Bot 1.0 is here, and the interesting part is not just another chat window. xAI pitches it as an AI teammate you can share with your team, bring into meetings, and give real work. This is a news b…",
+   "url": "https://youtu.be/A-Ppm9GSUlI"
+  },
+  {
+   "id": "TOHgiuxBQGI",
+   "title": "Anthropic's IPO, explained: what the S-1 actually says",
+   "published": "2026-11-12",
+   "thumbnail": "https://i.ytimg.com/vi/TOHgiuxBQGI/hqdefault.jpg",
+   "description": "Anthropic filed to go public: $70 to $78 a share, on the Nasdaq, under the ticker ANT. Here is what its own S-1/A (filed with the SEC on November 10, 2026), its IPO fact sheet and its roadshow video s…",
+   "url": "https://youtu.be/TOHgiuxBQGI"
+  },
+  {
+   "id": "HV3eVHoWzDw",
+   "title": "Gemini 4 Carbon, explained: one prompt, a team of agents",
+   "published": "2026-11-11",
+   "thumbnail": "https://i.ytimg.com/vi/HV3eVHoWzDw/hqdefault.jpg",
+   "description": "One prompt, and a team of Gemini 4 Carbon agents turned historical photos and engineering plates into an interactive 3D exhibition of how the Eiffel Tower was built. Here's what Google made available …",
+   "url": "https://youtu.be/HV3eVHoWzDw"
+  },
+  {
+   "id": "HzpYayj-8JY",
+   "title": "Claude Whiteboards, Sheets and Data, explained",
+   "published": "2026-11-11",
+   "thumbnail": "https://i.ytimg.com/vi/HzpYayj-8JY/hqdefault.jpg",
+   "description": "Talk through a messy plan out loud, and Claude turns it into a whiteboard your whole team can edit live. Here's what Anthropic launched on November 10, 2026: Claude Whiteboards, Claude Sheets, and Cla…",
+   "url": "https://youtu.be/HzpYayj-8JY"
+  },
+  {
+   "id": "U2XJam5H3Lg",
+   "title": "Claude Fable 5.2 built an operating system. Here's what else is new",
+   "published": "2026-11-10",
+   "thumbnail": "https://i.ytimg.com/vi/U2XJam5H3Lg/hqdefault.jpg",
+   "description": "Claude Fable 5.2 is out. Here's what's new, from Anthropic's announcement of November 9, 2026.\n\nOne Anthropic engineer gave it an empty folder. Eight days and over 1,000 subagents later, it had an ope…",
+   "url": "https://youtu.be/U2XJam5H3Lg"
+  },
   {
    "id": "f7AhPYTHkRk",
    "title": "How I actually use ChatGPT Images 2.6 (Part 2)",
@@ -100,6 +204,142 @@
  ],
  "shorts": [
   {
+   "id": "w1yWrFFS938",
+   "title": "The US grounded every flight for 4 hours. One router. #Shorts",
+   "published": "2026-11-16T12:43:59+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/w1yWrFFS938/hqdefault.jpg",
+   "description": "On November 13 the FAA stopped every flight in the United States from taking off, for four hours and twenty-five minutes. Officials say it started with one router at one remote site. The short version…",
+   "url": "https://youtu.be/w1yWrFFS938"
+  },
+  {
+   "id": "KGCB3Chcjtg",
+   "title": "40 Amazon satellites. 0 in orbit. #Shorts",
+   "published": "2026-11-16T10:15:28+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/KGCB3Chcjtg/hqdefault.jpg",
+   "description": "ULA's Vulcan rocket lost 40 Amazon Leo satellites on Sunday, Nov 15. Why it matters for internet from low orbit, and what I'll track next.\n\nFull video, with chapters and sources: https://youtu.be/OyEa…",
+   "url": "https://youtu.be/KGCB3Chcjtg"
+  },
+  {
+   "id": "eOZ7KhfMzjw",
+   "title": "Should a café deliver? Three AIs debate it, then Lian Wu draws the ordering page #Shorts",
+   "published": "2026-11-15T22:57:21+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/eOZ7KhfMzjw/hqdefault.jpg",
+   "description": "The full film, with chapters and captions: https://youtu.be/hs1BXLCmUzs\n\nThree AIs debated delivery. Then Lian Wu drew the café's ordering page. By the end: a decision, a page brief and a drawn protot…",
+   "url": "https://youtu.be/eOZ7KhfMzjw"
+  },
+  {
+   "id": "OSb9hh_q4Ic",
+   "title": "SpaceX caught a Starship from orbit. The booster was lost. #Shorts",
+   "published": "2026-11-15T15:42:50+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/OSb9hh_q4Ic/hqdefault.jpg",
+   "description": "A launch tower caught a spaceship coming back from orbit, for the first time. This is Starship Flight 15 in under three minutes, from SpaceX's own mission page, webcast and footage.\n\n- The score: Ship…",
+   "url": "https://youtu.be/OSb9hh_q4Ic"
+  },
+  {
+   "id": "-z8uaPCvKqM",
+   "title": "Gemini 4 Hydrogen: the big model plans, the fast one does the work #Shorts",
+   "published": "2026-11-14T17:31:52+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/-z8uaPCvKqM/hqdefault.jpg",
+   "description": "Google paired two AI models: a big one that plans, and a fast one that does the work. This is Orchestrator in Google Antigravity, with Gemini 4 Carbon and the new Gemini 4 Hydrogen, in under a minute.…",
+   "url": "https://youtu.be/-z8uaPCvKqM"
+  },
+  {
+   "id": "qqAoyf-NsAc",
+   "title": "ChatGPT Wallet: how an AI agent pays without your card number #Shorts",
+   "published": "2026-11-14T17:31:22+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/qqAoyf-NsAc/hqdefault.jpg",
+   "description": "An AI agent paid $66.30, and it never got the real card number. This is OpenAI's ChatGPT Wallet, launched on November 13, 2026, in under a minute. From OpenAI's announcement and its own demo video; no…",
+   "url": "https://youtu.be/qqAoyf-NsAc"
+  },
+  {
+   "id": "Yqba7A8_8Vo",
+   "title": "Anthropic 申請上市：一分鐘看申報文件的重點 #Shorts",
+   "published": "2026-11-14T17:14:47+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/Yqba7A8_8Vo/hqdefault.jpg",
+   "description": "Anthropic 申請上市了：每股 70 到 78 美元，在 Nasdaq 掛牌，股票代號 ANT。以下都來自它 2026 年 11 月 10 日送給美國證管會 SEC 的申報文件（S-1/A）和官方 IPO 簡報。這是我用中文自己配音的版本。\n\n- 用中間價 74 美元算，這次募資約 610 億美元。沙烏地阿美 2019 年募了 256 億美元；SpaceX 2026 年 6 月募了 750 …",
+   "url": "https://youtu.be/Yqba7A8_8Vo"
+  },
+  {
+   "id": "hr0_FoBpWI0",
+   "title": "Your AI agent writes outdated web code. Chrome has a fix. #Shorts",
+   "published": "2026-11-14T16:52:11+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/hr0_FoBpWI0/hqdefault.jpg",
+   "description": "Your AI coding agent is writing outdated web code, and Google Chrome has a fix: Modern Web Guidance. Everything here comes from the project's README, as read on November 15, 2026. This is a breakdown …",
+   "url": "https://youtu.be/hr0_FoBpWI0"
+  },
+  {
+   "id": "PzGQn67dzOI",
+   "title": "Why one Microsoft glitch took down Outlook, Teams and Copilot #Shorts",
+   "published": "2026-11-14T08:02:45+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/PzGQn67dzOI/hqdefault.jpg",
+   "description": "One Microsoft problem took down Outlook, Teams and Copilot, and even the Microsoft 365 connectors in ChatGPT and Claude. Downdetector got outage reports from 74 countries and territories.\n\nWhat Micros…",
+   "url": "https://youtu.be/PzGQn67dzOI"
+  },
+  {
+   "id": "__QuaA-d5bg",
+   "title": "黃仁勳辭去 NVIDIA 執行長：新聞稿說了什麼 #Shorts",
+   "published": "2026-11-13T05:02:27+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/__QuaA-d5bg/hqdefault.jpg",
+   "description": "黃仁勳辭去 NVIDIA 總裁、執行長和董事職務，立即生效。以下只根據 NVIDIA 2026 年 11 月 12 日的新聞稿：\n\n- 財務長 Colette Kress（2013 年起任職）接任代理執行長，並繼續兼任財務長，直到正式執行長產生。董事會會從公司內外尋找人選。\n- Harvey C. Jones 出任 NVIDIA 史上第一位董事長。他曾是新思科技（Synopsys）的執行長和執行董…",
+   "url": "https://youtu.be/__QuaA-d5bg"
+  },
+  {
+   "id": "oLSIBvpj718",
+   "title": "Jensen Huang resigns as NVIDIA CEO: what the release says #Shorts",
+   "published": "2026-11-12T15:56:27+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/oLSIBvpj718/hqdefault.jpg",
+   "description": "Jensen Huang has resigned as NVIDIA's President, CEO and a member of the Board, effective immediately. The facts from NVIDIA's own press release (Nov 12, 2026):\n\n- Colette Kress, NVIDIA's CFO since 20…",
+   "url": "https://youtu.be/oLSIBvpj718"
+  },
+  {
+   "id": "hPGd1YUmgqg",
+   "title": "Anthropic's IPO in 60 seconds #Shorts",
+   "published": "2026-11-12T14:44:17+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/hPGd1YUmgqg/hqdefault.jpg",
+   "description": "Anthropic filed to go public: $70 to $78 a share, on the Nasdaq, under the ticker ANT. What its own S-1/A says, in under a minute.\n\n- At the $74 midpoint, the offering is about $61 billion. For scale:…",
+   "url": "https://youtu.be/hPGd1YUmgqg"
+  },
+  {
+   "id": "MeBPrHX73b0",
+   "title": "Grok Bot 1.0: an AI teammate, not a chat window #Shorts",
+   "published": "2026-11-12T14:36:43+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/MeBPrHX73b0/hqdefault.jpg",
+   "description": "Grok Bot 1.0 is xAI's move from chatbot to AI teammate: a bot your whole team shares, that joins your meetings and does real work.\n\n- Team Bots: several people work with the same bot instead of making…",
+   "url": "https://youtu.be/MeBPrHX73b0"
+  },
+  {
+   "id": "JAM3ToAoGhM",
+   "title": "One prompt, a team of agents: Gemini 4 Carbon #Shorts",
+   "published": "2026-11-11T16:08:21+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/JAM3ToAoGhM/hqdefault.jpg",
+   "description": "One prompt, and a team of Gemini 4 Carbon agents turned historical photos and engineering plates into an interactive 3D exhibition of how the Eiffel Tower was built.\n\n- /swarm in Google Antigravity (p…",
+   "url": "https://youtu.be/JAM3ToAoGhM"
+  },
+  {
+   "id": "Fq5_8aXsh0U",
+   "title": "Talk it out, Claude draws the whiteboard #Shorts",
+   "published": "2026-11-11T12:03:54+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/Fq5_8aXsh0U/hqdefault.jpg",
+   "description": "Talk through a messy plan out loud, and Claude turns it into a whiteboard your whole team can edit live.\n\n- Claude Whiteboards (beta): dictate a brain dump; Claude groups the ideas, puts the steps in …",
+   "url": "https://youtu.be/Fq5_8aXsh0U"
+  },
+  {
+   "id": "ObCN9It1nfg",
+   "title": "No ice: should the cafe fill the cup? Three AIs debated it (narrated) | Roundtable #Shorts",
+   "published": "2026-11-10T14:31:55+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/ObCN9It1nfg/hqdefault.jpg",
+   "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n這一版是我自己用中文配音。\n\n客人點冰飲選去冰或少冰，杯子會空出一截，店家要不要補滿？我在 Roundtable 讓三個 AI 討論了三輪，題目是咖啡店店長的兩個做法：\nA. 免費用飲料補滿。\nB. 預設不補，只給原配方的飲料量，但客人可以加價（例如 15 元）補滿。\n三個 AI 各用不同的模型，思考程度都設「低」。\n\n- …",
+   "url": "https://youtu.be/ObCN9It1nfg"
+  },
+  {
+   "id": "Vmt7JkrKWIY",
+   "title": "No ice or less ice: should the cafe fill the cup? Three AIs debated it | Roundtable #Shorts",
+   "published": "2026-11-10T05:01:36+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/Vmt7JkrKWIY/hqdefault.jpg",
+   "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n客人點冰飲選去冰或少冰，杯子會空出一截，店家要不要補滿？我在 Roundtable 讓三個 AI 討論了三輪，題目是咖啡店店長的兩個做法：\nA. 免費用飲料補滿。\nB. 預設不補，只給原配方的飲料量，但客人可以加價（例如 15 元）補滿。\n三個 AI 各用不同的模型，思考程度都設「低」。\n\n- Ella（GPT-6 Luna…",
+   "url": "https://youtu.be/Vmt7JkrKWIY"
+  },
+  {
    "id": "EIc2X4M8FGg",
    "title": "One saved picture, one word: how I use ChatGPT Images 2.6 #Shorts",
    "published": "2026-11-09T13:06:10+00:00",
@@ -109,7 +349,7 @@
   },
   {
    "id": "29NSs7xhYnM",
-   "title": "김밥에서 김을 빼도 김밥일까? AI 셋이 진지하게 토론｜Roundtable #Shorts",
+   "title": "Is gimbap without seaweed still gimbap? Three AIs debated it | Roundtable #Shorts",
    "published": "2026-11-09T12:31:55+00:00",
    "thumbnail": "https://i.ytimg.com/vi/29NSs7xhYnM/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n김밥에서 김을 빼도 김밥일까? 음식의 이름은 재료, 모양, 문화 중 무엇으로 정해질까요? Roundtable에서 AI 셋에게 3라운드 토론을 시켰습니다. 모델은 각각 다르고, 추론 수준은 모두 '낮음'.\n\n- Ella (GPT-6 Luna): 처음엔 '예'. 김이 빠져도 말아 만든 모양과 김…",
@@ -117,7 +357,7 @@
   },
   {
    "id": "u9CAGUGadP0",
-   "title": "カレーは飲み物か？AI 3体が本気で議論｜Roundtable #Shorts",
+   "title": "Is curry a drink? Three AIs debated it | Roundtable #Shorts",
    "published": "2026-11-09T09:12:10+00:00",
    "thumbnail": "https://i.ytimg.com/vi/u9CAGUGadP0/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\nカレーは飲み物か？ネットで長年続くこの論争を、Roundtable で AI 3体に3ラウンド議論させました。モデルはそれぞれ別、推論はすべて「低い」。\n\n- Ella（GPT-6 Luna）：いいえ。飲み込めることと、飲み物であることは別。\n- Grace（Gemini 3.5 Flash Lite）：ポタージュもスムージ…",

@@ -1,5 +1,30 @@
 [
  {
+  "slug": "x-algorithm-november-2026",
+  "title": "I Read X's Algorithm Code. Here's What Changed in November.",
+  "lang": "en",
+  "date": "2026-11-17T16:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "X",
+   "Twitter",
+   "Recommendation Algorithm",
+   "Growth",
+   "Open Source"
+  ],
+  "summary": "I read X's open-source recommendation code. In November, likes and dwell time went up, copy-link shares went to zero, and small accounts still get a 2-hour cold-start window.",
+  "url": "https://www.marvinswift.com/en/programming/x-algorithm-november-2026/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/x-algorithm-november-2026/atimismoon-x-profile-card.svg",
+  "content_format": "markdown+html",
+  "inline_html_tags": [
+   "span"
+  ],
+  "has_insecure_images": false,
+  "word_count": 1389,
+  "reading_minutes": 7,
+  "source_path": "_posts/programming/en/2026-11-17-x-algorithm-november-2026.md"
+ },
+ {
   "slug": "why-i-built-lian-wu",
   "title": "Why I built Lian Wu",
   "lang": "en",

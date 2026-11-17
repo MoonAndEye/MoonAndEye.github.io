@@ -1,5 +1,30 @@
 [
  {
+  "slug": "x-algorithm-november-2026",
+  "title": "我讀了 X 的推薦演算法原始碼：11 月改了什麼，小帳號該怎麼做",
+  "lang": "zh",
+  "date": "2026-11-17T16:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "X",
+   "Twitter",
+   "推薦演算法",
+   "社群經營",
+   "Open Source"
+  ],
+  "summary": "我讀了 X 開源的推薦演算法：11 月按讚和停留時間權重調高、複製連結歸零，小帳號還有 2 小時的冷啟動機會。",
+  "url": "https://www.marvinswift.com/zh/programming/x-algorithm-november-2026/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/x-algorithm-november-2026/atimismoon-x-profile-card.svg",
+  "content_format": "markdown+html",
+  "inline_html_tags": [
+   "span"
+  ],
+  "has_insecure_images": false,
+  "word_count": 2241,
+  "reading_minutes": 8,
+  "source_path": "_posts/programming/zh/2026-11-17-x-algorithm-november-2026.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-30",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Design prototype：用 Claude Design 或 HTML 先做 mobile 畫面 - Tip 30",
   "lang": "zh",
