@@ -50,6 +50,22 @@
   "word_count": 245
  },
  {
+  "slug": "why-i-built-lian-wu",
+  "lang": "zh",
+  "title": "為什麼我做了 Lian Wu（蓮霧）",
+  "category": "programming",
+  "tags": [
+   "Lian Wu",
+   "AI",
+   "AI Agent",
+   "Mac"
+  ],
+  "summary": "換 AI 的時候，對話留在舊的 app。所以我做了一個 Mac agent app，換 AI，對話會跟著走。",
+  "url": "https://www.marvinswift.com/zh/programming/why-i-built-lian-wu/",
+  "date": "2026-10-15T12:00:00+08:00",
+  "word_count": 404
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-30",
   "lang": "zh",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Design prototype：用 Claude Design 或 HTML 先做 mobile 畫面 - Tip 30",

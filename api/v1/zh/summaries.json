@@ -25,6 +25,28 @@
   "source_path": "_posts/programming/zh/2026-11-17-x-algorithm-november-2026.md"
  },
  {
+  "slug": "why-i-built-lian-wu",
+  "title": "為什麼我做了 Lian Wu（蓮霧）",
+  "lang": "zh",
+  "date": "2026-10-15T12:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "Lian Wu",
+   "AI",
+   "AI Agent",
+   "Mac"
+  ],
+  "summary": "換 AI 的時候，對話留在舊的 app。所以我做了一個 Mac agent app，換 AI，對話會跟著走。",
+  "url": "https://www.marvinswift.com/zh/programming/why-i-built-lian-wu/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/why-i-built-lian-wu/wax-apples.jpg",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 404,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-10-15-why-i-built-lian-wu.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-30",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Design prototype：用 Claude Design 或 HTML 先做 mobile 畫面 - Tip 30",
   "lang": "zh",

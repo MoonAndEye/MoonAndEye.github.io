@@ -1,7 +1,7 @@
 {
  "api_version": 1,
- "generated_at": "2026-11-17T08:40:43.895416+00:00",
- "build_id": "e959d6c920f34c5c",
+ "generated_at": "2026-11-17T08:45:06.351497+00:00",
+ "build_id": "6952869748ac6096",
  "site": {
   "url": "https://www.marvinswift.com",
   "title": "Marv[in]sight",
@@ -13,10 +13,10 @@
  "endpoints": {
   "zh/summaries.json": {
    "path": "/api/v1/zh/summaries.json",
-   "count": 268,
+   "count": 269,
    "latest": "2026-11-17T16:00:00+08:00",
-   "bytes": 532471,
-   "hash": "139f13c646566899"
+   "bytes": 533228,
+   "hash": "f8839eb306d68c38"
   },
   "en/summaries.json": {
    "path": "/api/v1/en/summaries.json",
@@ -30,14 +30,14 @@
    "count": 5,
    "latest": null,
    "bytes": 1182,
-   "hash": "65650a1f83ab1810"
+   "hash": "d5bc21fe19f03fda"
   },
   "videos.json": {
    "path": "/api/v1/videos.json",
    "count": null,
    "latest": null,
    "bytes": 37053,
-   "hash": "d213f893fe84e9ad"
+   "hash": "8687c5ebb9d9a46f"
   },
   "series/agent-build-log.json": {
    "path": "/api/v1/series/agent-build-log.json",
@@ -48,10 +48,10 @@
   },
   "search-index.json": {
    "path": "/api/v1/search-index.json",
-   "count": 372,
+   "count": 373,
    "latest": "2026-11-17T16:00:00+08:00",
-   "bytes": 224926,
-   "hash": "52120a3dac9b0d84"
+   "bytes": 225392,
+   "hash": "66d392db6531e64a"
   },
   "zh/posts.json": {
    "paginated": true,
@@ -59,10 +59,10 @@
    "pages": [
     {
      "path": "/api/v1/zh/posts-1.json",
-     "count": 161,
+     "count": 162,
      "latest": "2026-11-17T16:00:00+08:00",
-     "bytes": 905248,
-     "hash": "3762ab46e305665c"
+     "bytes": 907776,
+     "hash": "80e66939be6e4760"
     },
     {
      "path": "/api/v1/zh/posts-2.json",
@@ -79,10 +79,10 @@
      "hash": "dc40642174122b80"
     }
    ],
-   "count": 268,
+   "count": 269,
    "latest": "2026-11-17T16:00:00+08:00",
-   "bytes": 2005597,
-   "hash": "2a963f98033b4660"
+   "bytes": 2008125,
+   "hash": "8a02f9b14d240907"
   },
   "en/posts.json": {
    "path": "/api/v1/en/posts.json",

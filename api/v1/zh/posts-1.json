@@ -26,6 +26,29 @@
   "source_path": "_posts/programming/zh/2026-11-17-x-algorithm-november-2026.md"
  },
  {
+  "slug": "why-i-built-lian-wu",
+  "title": "為什麼我做了 Lian Wu（蓮霧）",
+  "lang": "zh",
+  "date": "2026-10-15T12:00:00+08:00",
+  "category": "programming",
+  "tags": [
+   "Lian Wu",
+   "AI",
+   "AI Agent",
+   "Mac"
+  ],
+  "summary": "換 AI 的時候，對話留在舊的 app。所以我做了一個 Mac agent app，換 AI，對話會跟著走。",
+  "url": "https://www.marvinswift.com/zh/programming/why-i-built-lian-wu/",
+  "hero_image": "https://www.marvinswift.com/assets/programming/why-i-built-lian-wu/wax-apples.jpg",
+  "content": "*原文刊於 [Lian Wu 部落格](https://lianwu.app/blog/why-i-built-lian-wu)。英文版：[Why I built Lian Wu](/en/programming/why-i-built-lian-wu/)。*\n\n我平常會輪流用好幾家的 AI：OpenAI 的 GPT、Gemini、Grok、Claude，還有透過 OpenRouter 接的各種模型。\n\n麻煩在換的那一刻。對話留在原本的 app，新的 AI 不知道我剛剛在做什麼。我只能停下來，到另一個地方從頭交代一次，原本的節奏就斷了。\n\nOpenCode 這類可以接很多 provider 的工具，我也用過。但用起來，都不是我想要的 agent。\n\n所以我自己做了一個。Lian Wu 是 Mac 上的桌面 agent app，照我習慣的方式工作。對話做到一半，我可以直接換成另一個 AI，前面的整段對話會一起帶過去。\n\n## Guild：把好幾個 skill 串成一件事\n\n比較大的工作，我會交給 Guild。一個 Guild 會把幾個 skill 照順序串起來，完成一件事，概念有點像 Codex 或 Claude Code 的 plugin。\n\n例如 Code Review。它會把一個 pull request 交給一組 AI reviewer，每一個發現都由大家投票決定要不要留下。\n\n## 為什麼叫蓮霧\n\n蓮霧是我長大的地方很常見的水果，英文叫 wax apple。咬下去很脆、水分很多，很好吃，所以我用它來命名。\n\n![掛在枝上的粉紅與紅色蓮霧](https://www.marvinswift.com/assets/programming/why-i-built-lian-wu/wax-apples.jpg)\n\n## 實際用起來\n\n下面這支 75 秒的 demo，先讓 Claude 把四十則留言分組。接著我在同一段對話裡換成 GPT，請 GPT 檢查 Claude 分得對不對。\n\n{% include youtube.html id=\"gVZYmYk5FtY\" title=\"Claude hit its limit? Keep the same conversation in GPT (Mac app)\" %}\n",
+  "content_format": "markdown",
+  "inline_html_tags": [],
+  "has_insecure_images": false,
+  "word_count": 404,
+  "reading_minutes": 1,
+  "source_path": "_posts/programming/zh/2026-10-15-why-i-built-lian-wu.md"
+ },
+ {
   "slug": "it-ironman-2026-vibe-coding-tip-30",
   "title": "[IT 鐵人賽] Vibe Coding：30 個開發實用技巧｜Design prototype：用 Claude Design 或 HTML 先做 mobile 畫面 - Tip 30",
   "lang": "zh",
