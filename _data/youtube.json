@@ -1,6 +1,27 @@
 {
  "videos": [
   {
+   "id": "E7oaOCFQMes",
+   "title": "Make one link into two QR codes with your app icon, each styled for where it is seen",
+   "published": "2026-11-17",
+   "thumbnail": "https://i.ytimg.com/vi/E7oaOCFQMes/hqdefault.jpg",
+   "description": "One link, two QR codes, both with the app icon in the middle: playful dots for a card at a street show, bold squares for a giant sign outside a café. Painter puts each code in its scene, and both pict…"
+  },
+  {
+   "id": "WTBNXLqEBT0",
+   "title": "X changed its algorithm in November. Nobody announced it.",
+   "published": "2026-11-16",
+   "thumbnail": "https://i.ytimg.com/vi/WTBNXLqEBT0/hqdefault.jpg",
+   "description": "X changed the algorithm behind its For You feed in November, without an announcement. The changes are in the code X publishes on GitHub (xai-org/x-algorithm), so I compared the November updates and re…"
+  },
+  {
+   "id": "OyEaTzSUpNo",
+   "title": "40 Amazon satellites. 0 in orbit. Vulcan's failure and the race in low orbit",
+   "published": "2026-11-16",
+   "thumbnail": "https://i.ytimg.com/vi/OyEaTzSUpNo/hqdefault.jpg",
+   "description": "On Sunday, November 15, ULA's Vulcan rocket left Florida with 40 Amazon Leo satellites. About ten minutes in, ULA says, it suffered an anomaly. None of the satellites reached orbit. This is what happe…"
+  },
+  {
    "id": "QSqX6ENd7Qs",
    "title": "The US grounded every flight for 4 hours. Officials blame one router.",
    "published": "2026-11-15",
@@ -177,6 +198,20 @@
   }
  ],
  "shorts": [
+  {
+   "id": "9G2DJtPzPXo",
+   "title": "One link, two QR codes with your app icon #Shorts",
+   "published": "2026-11-17T16:57:51+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/9G2DJtPzPXo/hqdefault.jpg",
+   "description": "One link, two QR codes, both with the app icon in the middle: playful dots for a card at a street show, bold squares for a giant sign outside a café. Painter puts each code in its scene, and both pict…"
+  },
+  {
+   "id": "5RunD_EPqlg",
+   "title": "X moved the sliders. Nobody announced it.",
+   "published": "2026-11-17T09:04:14+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/5RunD_EPqlg/hqdefault.jpg",
+   "description": "X changed its For You algorithm in November without an announcement. The changes are in the code X publishes on GitHub.\n\nNov 5: likes +7%, time spent on a post +25%, taps -9%, video opens now count fo…"
+  },
   {
    "id": "w1yWrFFS938",
    "title": "The US grounded every flight for 4 hours. One router. #Shorts",
@@ -498,13 +533,6 @@
    "published": "2026-05-21T14:54:14+00:00",
    "thumbnail": "https://i.ytimg.com/vi/2HORbGbVhPc/hqdefault.jpg",
    "description": "If OpenClaw setup got stuck, this is the workflow I would use now: give the setup task to Codex, watch the process, and verify the result.\n\nFull workflow: https://youtu.be/EqDgXWrr2us\n\nMarvin Builds: …"
-  },
-  {
-   "id": "EI3m0HcLV1Y",
-   "title": "Karpathy joins Anthropic: my hope for AI agents #Shorts",
-   "published": "2026-05-20T06:46:09+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/EI3m0HcLV1Y/hqdefault.jpg",
-   "description": "Andrej Karpathy joined Anthropic. My quick reaction as someone learning and building AI agents: I hope this pushes agents toward better human collaboration.\n\nSource: https://x.com/karpathy/status/2056…"
   }
  ]
 }
