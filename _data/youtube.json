@@ -1,6 +1,13 @@
 {
  "videos": [
   {
+   "id": "dYFvnlh9TpE",
+   "title": "GPT-6.2 Astra vs Sol: which one should you use?",
+   "published": "2026-11-18",
+   "thumbnail": "https://i.ytimg.com/vi/dYFvnlh9TpE/hqdefault.jpg",
+   "description": "OpenAI released GPT-6.2 Astra on November 17, with a cheaper sibling, GPT-6.2 Sol. Astra got better and cheaper at the same time. But for most of us, the bigger news may be Sol. And OpenAI says Astra …"
+  },
+  {
    "id": "E7oaOCFQMes",
    "title": "Make one link into two QR codes with your app icon, each styled for where it is seen",
    "published": "2026-11-17",
@@ -198,6 +205,41 @@
   }
  ],
  "shorts": [
+  {
+   "id": "YcpOlRyXO7c",
+   "title": "SpaceX's cargo Dragon is packed to come home. The ocean said wait. #Shorts",
+   "published": "2026-11-19T01:15:33+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/YcpOlRyXO7c/hqdefault.jpg",
+   "description": "On November 18, NASA called off the departure of SpaceX's CRS-35 cargo Dragon from the International Space Station because of unfavorable weather at the splashdown sites off the coast of California. D…"
+  },
+  {
+   "id": "R5hyJ-jp5OA",
+   "title": "黃仁勳說願意回 NVIDIA，董事會當天就說不 #Shorts",
+   "published": "2026-11-18T16:23:16+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/R5hyJ-jp5OA/hqdefault.jpg",
+   "description": "11 月 17 日早上，黃仁勳在 X 上說：如果董事會認為他回來對公司最好，他很榮幸能再當 NVIDIA 執行長。\n\n當天下午的財報會議上，董事長 Harvey Jones 回了一句：董事會一致接受他的辭職，不打算讓他復職。\n\n注意用詞。董事會說的是「不打算」，不是「永遠不會」。但至少現在，答案是不。\n\n片中只用三份原始資料：黃仁勳的 X 貼文、NVIDIA 11 月 12 日的公告、Q3 FY2…"
+  },
+  {
+   "id": "iYWz-mOrRGM",
+   "title": "Any dance video → a clean motion template | Subject Matte in Lian Wu #Shorts",
+   "published": "2026-11-18T16:00:32+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/iYWz-mOrRGM/hqdefault.jpg",
+   "description": "New in Lian Wu: Subject Matte.\n\nGive it any dance video and it takes the room away. What's left is the dancer in grays: the nearer, the whiter. Fast breakdance spins, three dancers at once, every fram…"
+  },
+  {
+   "id": "DNZv2waHSw4",
+   "title": "Jensen Huang offered to return as NVIDIA's CEO. The board said no. #Shorts",
+   "published": "2026-11-18T14:20:11+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/DNZv2waHSw4/hqdefault.jpg",
+   "description": "On November 17, Jensen Huang posted on X that he would be honored to return as NVIDIA's CEO if the board decided it was in the company's best interest. The same day, on NVIDIA's earnings call, board c…"
+  },
+  {
+   "id": "mnSiZwyVPMg",
+   "title": "GPT-6.2 Sol: half a point behind Astra, a fifth of the cost #Shorts",
+   "published": "2026-11-18T11:23:35+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/mnSiZwyVPMg/hqdefault.jpg",
+   "description": "OpenAI released GPT-6.2 Astra on November 17, with a cheaper sibling, Sol. OpenAI says Sol lands within half a point of Astra on FrontierCode 2.0, at about a fifth of the cost.\n\n- API prices, standard…"
+  },
   {
    "id": "9G2DJtPzPXo",
    "title": "One link, two QR codes with your app icon #Shorts",
@@ -498,41 +540,6 @@
    "published": "2026-06-06T16:31:30+00:00",
    "thumbnail": "https://i.ytimg.com/vi/Cj8D5jgf1zc/hqdefault.jpg",
    "description": "One X post started this thread: Gergely Orosz said everyone on Google's Engineering Education team was laid off, and that he checked with people inside Google.\n\nThis is not a Google announcement, and …"
-  },
-  {
-   "id": "4sES7QNYuPc",
-   "title": "Google cut engineering education? #Shorts",
-   "published": "2026-06-06T16:31:24+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/4sES7QNYuPc/hqdefault.jpg",
-   "description": "A careful read of Gergely Orosz's single-source report about Google's Engineering Education team, the first visible spread on X and Hacker News, and why the signal matters.\n\nNot a Google official anno…"
-  },
-  {
-   "id": "StjQL2zM_ug",
-   "title": "Claude Code /effort: Max to Ultracode #Shorts",
-   "published": "2026-06-02T08:48:57+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/StjQL2zM_ug/hqdefault.jpg",
-   "description": "Claude Code has a small but useful control: type /effort and you can tune the balance between faster responses and deeper thinking.\n\nIn this Marvin Builds Short, I show the newer /effort UI moving fro…"
-  },
-  {
-   "id": "oiXZbYk_mUc",
-   "title": "Codex Automations for Baseball Research #Shorts",
-   "published": "2026-05-31T14:51:16+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/oiXZbYk_mUc/hqdefault.jpg",
-   "description": "Codex Automations can prepare recurring research context before you start working.\n\nIn this Marvin Builds Short, baseball research is the example: public Major League and Minor League sources, candida…"
-  },
-  {
-   "id": "CjFdGYU4xGE",
-   "title": "Codex Automations: Mega7 morning brief #Shorts",
-   "published": "2026-05-23T04:54:35+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/CjFdGYU4xGE/hqdefault.jpg",
-   "description": "Codex Automations can prepare recurring context before work starts. In this Short, I use a Mega7 US market morning brief as one example.\n\nThis is a workflow demo, not investment advice.\n\nCopy/paste pr…"
-  },
-  {
-   "id": "2HORbGbVhPc",
-   "title": "Codex installed OpenClaw for me #Shorts",
-   "published": "2026-05-21T14:54:14+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/2HORbGbVhPc/hqdefault.jpg",
-   "description": "If OpenClaw setup got stuck, this is the workflow I would use now: give the setup task to Codex, watch the process, and verify the result.\n\nFull workflow: https://youtu.be/EqDgXWrr2us\n\nMarvin Builds: …"
   }
  ]
 }
