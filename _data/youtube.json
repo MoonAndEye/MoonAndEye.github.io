@@ -1,6 +1,27 @@
 {
  "videos": [
   {
+   "id": "5cGUcUYSyxk",
+   "title": "Voyager 1 Is Now One Light-Day From Earth",
+   "published": "2026-11-21",
+   "thumbnail": "https://i.ytimg.com/vi/5cGUcUYSyxk/hqdefault.jpg",
+   "description": "Voyager 1 is now one light-day from Earth: a command sent today arrives tomorrow, and the reply takes another day. What that means, how a 1977 spacecraft keeps running on a 50-year-old nuclear battery…"
+  },
+  {
+   "id": "SlqKcKpv7gU",
+   "title": "Anthropic's First Day: +34% at the Open, +17% at the Close",
+   "published": "2026-11-20",
+   "thumbnail": "https://i.ytimg.com/vi/SlqKcKpv7gU/hqdefault.jpg",
+   "description": "Anthropic's first trade printed at $111.50, 34% above the $83 IPO price. Four hours later, ANT closed at $97.17: up 17% for the people who got in at $83, and down 13% for the people who bought the ope…"
+  },
+  {
+   "id": "rfrbrNf5RGM",
+   "title": "Anthropic's $81.3B IPO: What Changed in One Week, and What Didn't",
+   "published": "2026-11-19",
+   "thumbnail": "https://i.ytimg.com/vi/rfrbrNf5RGM/hqdefault.jpg",
+   "description": "Last week I explained Anthropic's IPO from its own filing. Back then, the plan added up to about $61 billion. On November 18 it priced at $81.3 billion, the biggest IPO in history. This is a follow-up…"
+  },
+  {
    "id": "dYFvnlh9TpE",
    "title": "GPT-6.2 Astra vs Sol: which one should you use?",
    "published": "2026-11-18",
@@ -188,16 +209,30 @@
    "published": "2026-05-30T06:25:09+00:00",
    "thumbnail": "https://i.ytimg.com/vi/WVxG1Ekkf_I/hqdefault.jpg",
    "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nCodex Automations can prepare recurring research context before you start working.\n\nIn this Marvin Builds demo, baseball research is the example: public Major …"
-  },
-  {
-   "id": "ooqKjlHq0TA",
-   "title": "I did not build a scouting app. I scheduled Codex Automations.",
-   "published": "2026-05-25T08:58:06+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/ooqKjlHq0TA/hqdefault.jpg",
-   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nPrompt from the video:\n\nPrepare a daily football scouting brief that can be run as a recurring Codex Automation for an independent football scout.\n\nThis is a C…"
   }
  ],
  "shorts": [
+  {
+   "id": "ZJbTOMxH5yI",
+   "title": "This Falcon 9 Booster Just Flew for the 11th Time #Shorts",
+   "published": "2026-11-21T10:04:45+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/ZJbTOMxH5yI/hqdefault.jpg",
+   "description": "Falcon 9 booster B1100 just flew for the 11th time and landed on the droneship \"Of Course I Still Love You\" about 8 minutes after liftoff. Liftoff was Friday, November 20, at 8:20 p.m. Pacific time, f…"
+  },
+  {
+   "id": "19UGq2qRPBA",
+   "title": "Voyager 1 Is Now One Light-Day From Earth #Shorts",
+   "published": "2026-11-21T09:12:33+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/19UGq2qRPBA/hqdefault.jpg",
+   "description": "Voyager 1 is now one light-day from Earth: a command sent today arrives tomorrow, and the reply takes another day. How a 1977 spacecraft got there, how it keeps running on a 50-year-old nuclear batter…"
+  },
+  {
+   "id": "mDvRJma8hrk",
+   "title": "One Debug = 2 Days?! Voyager 1 Is One Light-Day Away #Shorts",
+   "published": "2026-11-21T08:48:08+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/mDvRJma8hrk/hqdefault.jpg",
+   "description": "Imagine fixing a bug when every message takes two days to come back. That is the job NASA's Voyager team has right now: Voyager 1 just became the first spacecraft to reach one light-day from Earth, an…"
+  },
   {
    "id": "h2Mxf6GdgDs",
    "title": "Anthropic (ANT) Day One: +34% at the Open, +17% at the Close #Shorts",
@@ -512,27 +547,6 @@
    "published": "2026-09-06T03:42:58+00:00",
    "thumbnail": "https://i.ytimg.com/vi/BKQD57Uxd84/hqdefault.jpg",
    "description": "As of 2026-09-06: GPT-6 Astra supports mid-turn steering, so you can add requirements while the agent is working.\n\nIn this Short, I explain the behavior and the workflow I want to test: start a deskto…"
-  },
-  {
-   "id": "oVEtlueD2FE",
-   "title": "Apple Just Made AI Costs Visible #Shorts",
-   "published": "2026-06-27T15:05:56+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/oVEtlueD2FE/hqdefault.jpg",
-   "description": "As of 2026-06-27: Apple raised prices on Macs and iPads, and the reason is bigger than Apple.\n\nApple points to AI data centers pushing up memory and storage chip costs. Micron is saying the other side…"
-  },
-  {
-   "id": "uTehpid3tRM",
-   "title": "Claude Tag: AI Agents Join Team Chat #Shorts",
-   "published": "2026-06-24T15:52:56+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/uTehpid3tRM/hqdefault.jpg",
-   "description": "Anthropic introduced Claude Tag, a Slack beta that lets teams mention @Claude inside a channel.\n\nMy takeaway: the real shift is not Claude inside Slack. It is AI agents moving from private chat window…"
-  },
-  {
-   "id": "9JTs6EvMyBQ",
-   "title": "claude -p Still Works With Your Subscription #Shorts",
-   "published": "2026-06-16T11:56:19+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/9JTs6EvMyBQ/hqdefault.jpg",
-   "description": "Anthropic paused its planned Claude Agent SDK credit change. For now, Agent SDK usage, claude -p, and third-party apps built on the Agent SDK continue to work with Claude subscriptions the same way as…"
   }
  ]
 }
