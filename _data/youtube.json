@@ -1,6 +1,27 @@
 {
  "videos": [
   {
+   "id": "2xZowWrUNYU",
+   "title": "The Riemann Hypothesis Has a Proof. 17 Million Lines, Checked by Machines",
+   "published": "2026-11-22",
+   "thumbnail": "https://i.ytimg.com/vi/2xZowWrUNYU/hqdefault.jpg",
+   "description": "For 167 years, nobody could prove the Riemann Hypothesis. On November 20, 2026, Levent Alpöge, a mathematician at Anthropic, released a proof he says he found working with Claude. It is 17 million lin…"
+  },
+  {
+   "id": "ZS2gTJKSzrs",
+   "title": "NASA Didn't Stream This Landing. How a Cargo Dragon Comes Home (CRS-35)",
+   "published": "2026-11-22",
+   "thumbnail": "https://i.ytimg.com/vi/ZS2gTJKSzrs/hqdefault.jpg",
+   "description": "NASA did not stream this landing. On November 21, 2026, the CRS-35 cargo Dragon splashed down near Los Angeles, bringing back a 3D-bioprinted blood vessel, frozen tumor organoids, microbes and a light…"
+  },
+  {
+   "id": "cBPRE9GRyX8",
+   "title": "Hubble Zooms In on the Supernova of 1181: It's Made of Beads",
+   "published": "2026-11-21",
+   "thumbnail": "https://i.ytimg.com/vi/cBPRE9GRyX8/hqdefault.jpg",
+   "description": "In August 1181, astronomers in China and Japan recorded a new star. In October 2026, Hubble took a close look at what it left behind: the nebula Pa 30. Its thin glowing filaments turn out to be chains…"
+  },
+  {
    "id": "5cGUcUYSyxk",
    "title": "Voyager 1 Is Now One Light-Day From Earth",
    "published": "2026-11-21",
@@ -188,30 +209,44 @@
    "published": "2026-07-13T17:00:09+00:00",
    "thumbnail": "https://i.ytimg.com/vi/qualBRg758I/hqdefault.jpg",
    "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nI found lower fares by changing where the trip started.\n\nI used Codex with SerpApi to compare the same London trip from Taipei, Hong Kong, Singapore, and Kuala…"
-  },
-  {
-   "id": "5YAfCv0Cy3E",
-   "title": "I Gave Codex One Image to Build a Web Game Demo",
-   "published": "2026-06-22T15:39:04+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/5YAfCv0Cy3E/hqdefault.jpg",
-   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nIn the Codex era, building a demo should start with image generation.\n\nNot because the image is final art. Because a strong image gives an agent a clearer targ…"
-  },
-  {
-   "id": "CcRcaeP1mw8",
-   "title": "Move AI Memory Between Agents: Codex to Claude",
-   "published": "2026-06-06T10:55:48+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/CcRcaeP1mw8/hqdefault.jpg",
-   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nIn this Marvin Builds video, I demo a simple but useful AI-agent workflow:\ntake reviewed memory/context from one AI agent, bring it into another agent, and ver…"
-  },
-  {
-   "id": "WVxG1Ekkf_I",
-   "title": "Codex Automations for Baseball Research",
-   "published": "2026-05-30T06:25:09+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/WVxG1Ekkf_I/hqdefault.jpg",
-   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nCodex Automations can prepare recurring research context before you start working.\n\nIn this Marvin Builds demo, baseball research is the example: public Major …"
   }
  ],
  "shorts": [
+  {
+   "id": "PNC9vbrdUqQ",
+   "title": "This clay mesh wasn’t sculpted.",
+   "published": "2026-11-22T13:42:59+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/PNC9vbrdUqQ/hqdefault.jpg",
+   "description": "This clay mesh wasn’t sculpted.\n\nDirect3D-V3 generates geometry on raw SDF voxels — no VAE — at up to 1536³.\n\nThe stills are official DreamTech demos, not meshes I generated. Geometry only. Code and M…"
+  },
+  {
+   "id": "OOA6RTHk4qc",
+   "title": "Math in the Weights: A CPU Inside an LLM? #Shorts",
+   "published": "2026-11-22T12:53:45+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/OOA6RTHk4qc/hqdefault.jpg",
+   "description": "Why teach an LLM arithmetic when you can compile it into its weights?\n\nA new paper, \"A CPU Inside an LLM\" (Tanmay Sah), claims exact + / − / × written straight into a pretrained model: zero training e…"
+  },
+  {
+   "id": "25SzqyG4nI4",
+   "title": "A cargo Dragon just splashed down off Los Angeles",
+   "published": "2026-11-22T07:42:39+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/25SzqyG4nI4/hqdefault.jpg",
+   "description": "A cargo Dragon just splashed down off Los Angeles.\n\nNASA: 2:03 p.m. PST, Nov. 21. SpaceX: 2:04 p.m. PT. No livestream.\n\n37 days at the space station. Fourth flight for this capsule.\n\nWhat came home: 3…"
+  },
+  {
+   "id": "TaVtqsYllr4",
+   "title": "167 Years. Proved?! The Riemann Hypothesis Has a Machine-Checked Proof #Shorts",
+   "published": "2026-11-22T04:36:15+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/TaVtqsYllr4/hqdefault.jpg",
+   "description": "This math problem stood for 167 years. Now it has a proof. On November 20, 2026, Levent Alpöge, a mathematician at Anthropic, released a proof of the Riemann Hypothesis as a Lean library of 17 million…"
+  },
+  {
+   "id": "2lEF3s-xqTI",
+   "title": "The Star of 1181: Hubble Sees Its Wreck Up Close #Shorts",
+   "published": "2026-11-22T04:17:44+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/2lEF3s-xqTI/hqdefault.jpg",
+   "description": "In 1181, astronomers in China and Japan wrote down a new star. Hubble just looked at what it left behind, the nebula Pa 30: its straight glowing lines are rows of separate knots, 226 of them counted, …"
+  },
   {
    "id": "ZJbTOMxH5yI",
    "title": "This Falcon 9 Booster Just Flew for the 11th Time #Shorts",
@@ -512,41 +547,6 @@
    "published": "2026-11-02T15:17:16+00:00",
    "thumbnail": "https://i.ytimg.com/vi/R_J7Y-V32Q8/hqdefault.jpg",
    "description": "ChatGPT and Codex will share one usage limit, starting in December.\n\nOn Plus, Pro and Business, one allowance covers chat and Codex, counted in tokens. Stronger models and harder tasks usually use mor…"
-  },
-  {
-   "id": "P39SnUlSh68",
-   "title": "Do you use more than one AI? #Shorts",
-   "published": "2026-11-01T05:50:59+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/P39SnUlSh68/hqdefault.jpg",
-   "description": "From my Dev Day talk, Oct 31, 2026.\n\nI use more than one AI, because each one is good at different things. I don't want to choose just one. I want to switch between them in the same conversation, and …"
-  },
-  {
-   "id": "ZainKv6-pC8",
-   "title": "Claude's 5-hour limit is gone. The weekly one isn't. #Shorts",
-   "published": "2026-10-31T16:17:24+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/ZainKv6-pC8/hqdefault.jpg",
-   "description": "Claude just removed the 5-hour limit. Only on Ultra, for verified accounts.\n\nUltra is the new name for Max 20x. The weekly limit is still there, at ten times Pro's usage. Pro and Max still have the 5-…"
-  },
-  {
-   "id": "T2U9kjHUIaQ",
-   "title": "Can a second AI check the first one's work? #Shorts",
-   "published": "2026-10-29T15:28:35+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/T2U9kjHUIaQ/hqdefault.jpg",
-   "description": "Claude sorted 40 sample comments into five themes. Then I switched to GPT in the same Lian Wu conversation and asked it to challenge the grouping. GPT pushed back on C29: onboarding, not access.\n▶ Try…"
-  },
-  {
-   "id": "gTPruloD9wQ",
-   "title": "Claude hit its limit? Keep the same chat in GPT #Shorts",
-   "published": "2026-10-29T09:40:29+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/gTPruloD9wQ/hqdefault.jpg",
-   "description": "Same conversation, new model. Lian Wu for Mac: $20 once, no subscription, 14-day full refund. I'm the developer. lianwu.app"
-  },
-  {
-   "id": "BKQD57Uxd84",
-   "title": "GPT-6 Astra: Steer Your Agent Mid-Task #Shorts",
-   "published": "2026-09-06T03:42:58+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/BKQD57Uxd84/hqdefault.jpg",
-   "description": "As of 2026-09-06: GPT-6 Astra supports mid-turn steering, so you can add requirements while the agent is working.\n\nIn this Short, I explain the behavior and the workflow I want to test: start a deskto…"
   }
  ]
 }
