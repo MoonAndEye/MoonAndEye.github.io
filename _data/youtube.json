@@ -1,16 +1,23 @@
 {
  "videos": [
   {
+   "id": "-KgZh0nDDR4",
+   "title": "GPT-6.2 Sol vs Astra: Same NASA Moon Reactor Brief, Two AI Builds",
+   "published": "2026-11-24T14:34:05+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/-KgZh0nDDR4/hqdefault.jpg",
+   "description": "Today's NASA news: the agency is asking industry to design LR-1, its first nuclear reactor for the Moon. I used it as a demo to compare two AI models. GPT-6.2 Sol and GPT-6.2 Astra got the same brief …"
+  },
+  {
    "id": "2xZowWrUNYU",
    "title": "The Riemann Hypothesis Has a Proof. 17 Million Lines, Checked by Machines",
-   "published": "2026-11-22",
+   "published": "2026-11-23T00:23:42+00:00",
    "thumbnail": "https://i.ytimg.com/vi/2xZowWrUNYU/hqdefault.jpg",
    "description": "For 167 years, nobody could prove the Riemann Hypothesis. On November 20, 2026, Levent Alpöge, a mathematician at Anthropic, released a proof he says he found working with Claude. It is 17 million lin…"
   },
   {
    "id": "ZS2gTJKSzrs",
    "title": "NASA Didn't Stream This Landing. How a Cargo Dragon Comes Home (CRS-35)",
-   "published": "2026-11-22",
+   "published": "2026-11-22T23:33:21+00:00",
    "thumbnail": "https://i.ytimg.com/vi/ZS2gTJKSzrs/hqdefault.jpg",
    "description": "NASA did not stream this landing. On November 21, 2026, the CRS-35 cargo Dragon splashed down near Los Angeles, bringing back a 3D-bioprinted blood vessel, frozen tumor organoids, microbes and a light…"
   },
@@ -202,16 +209,16 @@
    "published": "2026-10-29T09:34:09+00:00",
    "thumbnail": "https://i.ytimg.com/vi/gVZYmYk5FtY/hqdefault.jpg",
    "description": "Switch AI anytime. Keep the conversation.\n▶ Try Lian Wu: https://lianwu.app/yt\n\nLian Wu is a Mac app that connects OpenAI, Claude, Gemini, Grok, OpenRouter and more. In this demo, Claude sorts 40 samp…"
-  },
-  {
-   "id": "qualBRg758I",
-   "title": "I Used Codex to Search Flights From Multiple Starting Cities",
-   "published": "2026-07-13T17:00:09+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/qualBRg758I/hqdefault.jpg",
-   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\nI found lower fares by changing where the trip started.\n\nI used Codex with SerpApi to compare the same London trip from Taipei, Hong Kong, Singapore, and Kuala…"
   }
  ],
  "shorts": [
+  {
+   "id": "t1GPHZ2rZZM",
+   "title": "黃仁勳回任輝達執行長 NVDA漲31.48%｜2026/11/23",
+   "published": "2026-11-24T06:49:32+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/t1GPHZ2rZZM/hqdefault.jpg",
+   "description": "黃仁勳回任輝達執行長｜2026/11/23\n\n【美股收盤】\nNVDA：165.05 美元（+31.48%）\n\n【事件】\n11/22 董事會決議，恢復黃仁勳擔任總裁、執行長與董事，即日生效。\n11/23 公司新聞稿：全票通過。董事長 Harvey Jones 留任。財務長 Kress 卸下臨時執行長，繼續擔任財務長。\n官方表示，相關調查仍會進行到結束。\n\n【現場畫面】\n影片來源：CNBC（@CNBC…"
+  },
   {
    "id": "MIkjrcwDFgI",
    "title": "Two Falcon 9 Launches From One Pad, 32 Hours Apart #Shorts",
@@ -540,13 +547,6 @@
    "published": "2026-11-05T16:52:50+00:00",
    "thumbnail": "https://i.ytimg.com/vi/8zz_RbceJPU/hqdefault.jpg",
    "description": "김치 밥상부터 태권도까지, 한 번에 네 장.\n\n그리고 싶은 그림을 Painter에 한 번만 설명하세요. 지금 쓰는 이미지 모델(ChatGPT 요금제, OpenAI API 키, OpenRouter)로 한 번에 네 장을 그립니다.\n\n마음에 드는 한 장을 참고로 골라, 같은 그림체로 태권도 선수를 그렸어요. 그린 그림은 모두 내 Mac의 갤러리에 남습니다.\n\nP…"
-  },
-  {
-   "id": "dBGoPlADiBQ",
-   "title": "Sushi and Mount Fuji, four at a time | Painter #Shorts",
-   "published": "2026-11-05T16:52:09+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/dBGoPlADiBQ/hqdefault.jpg",
-   "description": "富士山とお寿司を、一度に4枚。\n\n描きたい画像を Painter に一度説明するだけ。いま使っている画像モデル（ChatGPT プラン、OpenAI の API キー、OpenRouter）で、一度に4枚描きます。\n\n気に入った一枚を参考にして、次は夕焼けの富士山と桜並木。描いた画像は、すべて Mac のギャラリーに残ります。\n\nPainter は、私が作っている Mac アプリ「Lian Wu」…"
   }
  ]
 }
