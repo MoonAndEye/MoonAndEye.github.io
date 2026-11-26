@@ -1,6 +1,13 @@
 {
  "videos": [
   {
+   "id": "REem39CqH1M",
+   "title": "The Riemann Hypothesis Was Proved With AI. What Is It Good For?",
+   "published": "2026-11-25",
+   "thumbnail": "https://i.ytimg.com/vi/REem39CqH1M/hqdefault.jpg",
+   "description": "On November 20, 2026, Levent Alpöge, a mathematician at Anthropic, released a proof of the Riemann Hypothesis that he says he found working with Claude, and machines checked it. Everyone asks the same…"
+  },
+  {
    "id": "-KgZh0nDDR4",
    "title": "GPT-6.2 Sol vs Astra: Same NASA Moon Reactor Brief, Two AI Builds",
    "published": "2026-11-24T14:34:05+00:00",
@@ -202,16 +209,37 @@
    "published": "2026-11-05",
    "thumbnail": "https://i.ytimg.com/vi/9l-g0mICsXQ/hqdefault.jpg",
    "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nDescribe a picture once in Painter. Choose a shape, like square for Instagram, and how many to draw. It draws four at a time with the image model you already …"
-  },
-  {
-   "id": "gVZYmYk5FtY",
-   "title": "Claude hit its limit? Keep the same conversation in GPT (Mac app)",
-   "published": "2026-10-29T09:34:09+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/gVZYmYk5FtY/hqdefault.jpg",
-   "description": "Switch AI anytime. Keep the conversation.\n▶ Try Lian Wu: https://lianwu.app/yt\n\nLian Wu is a Mac app that connects OpenAI, Claude, Gemini, Grok, OpenRouter and more. In this demo, Claude sorts 40 samp…"
   }
  ],
  "shorts": [
+  {
+   "id": "KyAw2rsXW2k",
+   "title": "The Riemann Hypothesis Was Proved With AI. What's It Good For? #Shorts",
+   "published": "2026-11-25T17:03:31+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/KyAw2rsXW2k/hqdefault.jpg",
+   "description": "The Riemann Hypothesis was just proved, with AI, and a machine checked the proof. What is it good for? Its older cousin, the Riemann Hypothesis for finite fields (Hasse, Weil, Deligne, 1930s to 1974),…"
+  },
+  {
+   "id": "zI5nucVB4vM",
+   "title": "Claude Can Now Turn Its Apps Into Real Desktop Apps #Shorts",
+   "published": "2026-11-25T09:02:32+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/zI5nucVB4vM/hqdefault.jpg",
+   "description": "People at Anthropic built a full image editor in Claude, and now it installs on your computer like a real app.\n\nInstall as app is in beta in Claude for Mac and Windows. An installed app gets its own i…"
+  },
+  {
+   "id": "_RSIc_rmkfY",
+   "title": "Claude Can Now Approve Some of Your Pull Requests #Shorts",
+   "published": "2026-11-25T08:54:28+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/_RSIc_rmkfY/hqdefault.jpg",
+   "description": "Claude can now approve some of your pull requests on its own, when your team's policy allows it.\n\nAnthropic launched Claude Ship for Team and Enterprise plans on GitHub. Code Review checks the change,…"
+  },
+  {
+   "id": "C9ZOa4trv_o",
+   "title": "This Star's Layers May Have Mixed Hours Before It Exploded #Shorts",
+   "published": "2026-11-25T07:15:01+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/C9ZOa4trv_o/hqdefault.jpg",
+   "description": "Just hours before this star exploded, its layers may have mixed.\n\nNASA's Webb telescope took a fresh mid-infrared look at Cassiopeia A, the cloud of gas and dust left by that explosion. Each dust clum…"
+  },
   {
    "id": "t1GPHZ2rZZM",
    "title": "黃仁勳回任輝達執行長 NVDA漲31.48%｜2026/11/23",
@@ -519,34 +547,6 @@
    "published": "2026-11-08T14:37:04+00:00",
    "thumbnail": "https://i.ytimg.com/vi/6hMx0csui-U/hqdefault.jpg",
    "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nA viewer on our Roundtable video asked us to settle it: is a hot dog a sandwich? So I put the question to three AIs in Roundtable, each on its own model, all …"
-  },
-  {
-   "id": "X0y-JR90vs4",
-   "title": "ChatGPT can now make GIFs. I tested it #Shorts",
-   "published": "2026-11-08T08:49:35+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/X0y-JR90vs4/hqdefault.jpg",
-   "description": "Lian Wu, the desktop app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nChatGPT can now make GIFs. I tested Images 2.6 on my own account.\n\nGIFs: a story prompt gave nine fra…"
-  },
-  {
-   "id": "W4kVZ8KAPPo",
-   "title": "Big decision? Don't ask just one AI. Roundtable #Shorts",
-   "published": "2026-11-07T03:29:49+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/W4kVZ8KAPPo/hqdefault.jpg",
-   "description": "Big decision? Don't ask just one AI.\n\nRoundtable puts three AIs in one discussion, each on its own model. An advocate argues for it, a critic argues against it, and a synthesizer pulls it together.\n\nA…"
-  },
-  {
-   "id": "A3WUM2x0hvk",
-   "title": "From xiaolongbao to calligraphy, four at a time | Painter #Shorts",
-   "published": "2026-11-05T16:53:30+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/A3WUM2x0hvk/hqdefault.jpg",
-   "description": "從小籠包到書法，一次畫四張。\n\n想畫什麼，在畫家描述一次就好。用你已經有的圖像模型（ChatGPT 訂閱、OpenAI API 金鑰或 OpenRouter），一次畫四張。\n\n挑一張喜歡的當參考圖，再用同樣的畫風寫一幅書法：王之渙〈登鸛雀樓〉的「欲窮千里目，更上一層樓」。每張圖都收在你 Mac 上的同一個圖庫。\n\n畫家是 Lian Wu 裡的 Guild，Lian Wu 是我正在做的 Mac Ap…"
-  },
-  {
-   "id": "8zz_RbceJPU",
-   "title": "From kimchi to taekwondo, four at a time | Painter #Shorts",
-   "published": "2026-11-05T16:52:50+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/8zz_RbceJPU/hqdefault.jpg",
-   "description": "김치 밥상부터 태권도까지, 한 번에 네 장.\n\n그리고 싶은 그림을 Painter에 한 번만 설명하세요. 지금 쓰는 이미지 모델(ChatGPT 요금제, OpenAI API 키, OpenRouter)로 한 번에 네 장을 그립니다.\n\n마음에 드는 한 장을 참고로 골라, 같은 그림체로 태권도 선수를 그렸어요. 그린 그림은 모두 내 Mac의 갤러리에 남습니다.\n\nP…"
   }
  ]
 }
