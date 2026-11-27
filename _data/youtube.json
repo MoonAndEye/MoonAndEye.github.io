@@ -202,16 +202,23 @@
    "published": "2026-11-06",
    "thumbnail": "https://i.ytimg.com/vi/eVA-QwHEf6I/hqdefault.jpg",
    "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nBig decision? Don't ask just one AI. Open Roundtable from Guilds and pick the kind of discussion: make a decision, brainstorm ideas, challenge a plan, or expl…"
-  },
-  {
-   "id": "9l-g0mICsXQ",
-   "title": "Painter: describe once, draw four at a time, keep every picture on your Mac",
-   "published": "2026-11-05",
-   "thumbnail": "https://i.ytimg.com/vi/9l-g0mICsXQ/hqdefault.jpg",
-   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nDescribe a picture once in Painter. Choose a shape, like square for Instagram, and how many to draw. It draws four at a time with the image model you already …"
   }
  ],
  "shorts": [
+  {
+   "id": "qyJMThG_XT4",
+   "title": "Hera Checked the Asteroid We Crashed Into #Shorts",
+   "published": "2026-11-27T03:00:21+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/qyJMThG_XT4/hqdefault.jpg",
+   "description": "In 2022, NASA's DART spacecraft crashed into the asteroid moon Dimorphos on purpose. Now ESA's Hera has gone back to check the crash site: where DART hit, the surface is flat, with a crater the size o…"
+  },
+  {
+   "id": "3HQOSKnozJo",
+   "title": "SpaceX Pledges Its Own Stock to American Kids #Shorts",
+   "published": "2026-11-26T15:55:21+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/3HQOSKnozJo/hqdefault.jpg",
+   "description": "SpaceX says it will contribute one newly issued Class A share to every currently active Trump Account, and Elon Musk will personally match it. President and COO Gwynne Shotwell has separately pledged …"
+  },
   {
    "id": "KyAw2rsXW2k",
    "title": "The Riemann Hypothesis Was Proved With AI. What's It Good For? #Shorts",
@@ -533,20 +540,6 @@
    "published": "2026-11-09T12:31:55+00:00",
    "thumbnail": "https://i.ytimg.com/vi/29NSs7xhYnM/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n김밥에서 김을 빼도 김밥일까? 음식의 이름은 재료, 모양, 문화 중 무엇으로 정해질까요? Roundtable에서 AI 셋에게 3라운드 토론을 시켰습니다. 모델은 각각 다르고, 추론 수준은 모두 '낮음'.\n\n- Ella (GPT-6 Luna): 처음엔 '예'. 김이 빠져도 말아 만든 모양과 김…"
-  },
-  {
-   "id": "u9CAGUGadP0",
-   "title": "Is curry a drink? Three AIs debated it | Roundtable #Shorts",
-   "published": "2026-11-09T09:12:10+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/u9CAGUGadP0/hqdefault.jpg",
-   "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\nカレーは飲み物か？ネットで長年続くこの論争を、Roundtable で AI 3体に3ラウンド議論させました。モデルはそれぞれ別、推論はすべて「低い」。\n\n- Ella（GPT-6 Luna）：いいえ。飲み込めることと、飲み物であることは別。\n- Grace（Gemini 3.5 Flash Lite）：ポタージュもスムージ…"
-  },
-  {
-   "id": "6hMx0csui-U",
-   "title": "Is a hot dog a sandwich? Three AIs debated it #Shorts",
-   "published": "2026-11-08T14:37:04+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/6hMx0csui-U/hqdefault.jpg",
-   "description": "Try Lian Wu (Mac): https://lianwu.app/yt\n\nA viewer on our Roundtable video asked us to settle it: is a hot dog a sandwich? So I put the question to three AIs in Roundtable, each on its own model, all …"
   }
  ]
 }
