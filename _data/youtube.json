@@ -1,6 +1,13 @@
 {
  "videos": [
   {
+   "id": "J9iMb42H4Qk",
+   "title": "We Hit an Asteroid in 2022. Here's What It Looks Like Now",
+   "published": "2026-11-26",
+   "thumbnail": "https://i.ytimg.com/vi/J9iMb42H4Qk/hqdefault.jpg",
+   "description": "In September 2022, NASA's DART spacecraft slammed into the small asteroid Dimorphos on purpose, and its orbit got 33 minutes shorter. Now ESA's Hera has arrived to see what the impact did: one face fl…"
+  },
+  {
    "id": "REem39CqH1M",
    "title": "The Riemann Hypothesis Was Proved With AI. What Is It Good For?",
    "published": "2026-11-25",
@@ -205,6 +212,20 @@
   }
  ],
  "shorts": [
+  {
+   "id": "3A9dNIA7_lY",
+   "title": "It Took 5 AIs to Find 15,072 Cosmic Lenses #Shorts",
+   "published": "2026-11-27T16:00:11+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/3A9dNIA7_lY/hqdefault.jpg",
+   "description": "It took five AIs to find the universe's magnifying glasses. ESA's Euclid space telescope has released the biggest catalogue of strong gravitational lenses yet: 15,072 high-confidence candidates, more …"
+  },
+  {
+   "id": "uR_5MV9aOxc",
+   "title": "Same Size, 5× the Heat: What Is Heating Neptune? #Shorts",
+   "published": "2026-11-27T10:30:32+00:00",
+   "thumbnail": "https://i.ytimg.com/vi/uR_5MV9aOxc/hqdefault.jpg",
+   "description": "Uranus and Neptune are almost the same size and made of almost the same stuff. Yet Neptune leaks over five times as much heat from deep inside: about 433 milliwatts per square metre, against about 78 …"
+  },
   {
    "id": "qyJMThG_XT4",
    "title": "Hera Checked the Asteroid We Crashed Into #Shorts",
@@ -526,20 +547,6 @@
    "published": "2026-11-10T05:01:36+00:00",
    "thumbnail": "https://i.ytimg.com/vi/Vmt7JkrKWIY/hqdefault.jpg",
    "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n客人點冰飲選去冰或少冰，杯子會空出一截，店家要不要補滿？我在 Roundtable 讓三個 AI 討論了三輪，題目是咖啡店店長的兩個做法：\nA. 免費用飲料補滿。\nB. 預設不補，只給原配方的飲料量，但客人可以加價（例如 15 元）補滿。\n三個 AI 各用不同的模型，思考程度都設「低」。\n\n- Ella（GPT-6 Luna…"
-  },
-  {
-   "id": "EIc2X4M8FGg",
-   "title": "One saved picture, one word: how I use ChatGPT Images 2.6 #Shorts",
-   "published": "2026-11-09T13:06:10+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/EIc2X4M8FGg/hqdefault.jpg",
-   "description": "Lian Wu, the Mac app I'm building to switch AI models mid-conversation: https://lianwu.app/yt\n\nHow I actually use ChatGPT Images 2.6. Part 2, in under a minute.\n\n- Saved references: I saved my mascot …"
-  },
-  {
-   "id": "29NSs7xhYnM",
-   "title": "Is gimbap without seaweed still gimbap? Three AIs debated it | Roundtable #Shorts",
-   "published": "2026-11-09T12:31:55+00:00",
-   "thumbnail": "https://i.ytimg.com/vi/29NSs7xhYnM/hqdefault.jpg",
-   "description": "Lian Wu（Mac）: https://lianwu.app/yt\n\n김밥에서 김을 빼도 김밥일까? 음식의 이름은 재료, 모양, 문화 중 무엇으로 정해질까요? Roundtable에서 AI 셋에게 3라운드 토론을 시켰습니다. 모델은 각각 다르고, 추론 수준은 모두 '낮음'.\n\n- Ella (GPT-6 Luna): 처음엔 '예'. 김이 빠져도 말아 만든 모양과 김…"
   }
  ]
 }
